@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+  <include>OpenClose</include>
+  <controls>
+      <control type="image">
+	  <posx>210</posx>
+        <width>1500</width>
+        <height>1080</height>
+        <texture border="150">images/Dialog.png</texture>
+      </control>
+      <control type="label" id="1">
+        <description>header label</description>
+        <posx>460</posx>
+        <posy>140</posy>
+        <width>1000</width>
+        <height>70</height>
+        <label>$ADDON[script.trakt 1650]</label>
+        <align>center</align>
+        <aligny>center</aligny>
+      </control>
+      <control type="image" description="linetop">
+        <posx>360</posx>
+        <posy>220</posy>
+        <width>1200</width>
+        <height>1</height>
+        <texture>images/Line.png</texture>
+      </control>
+	  <control type="image" description="linetop2">
+        <posx>360</posx>
+        <posy>280</posy>
+        <width>1200</width>
+        <height>1</height>
+        <texture>images/Line.png</texture>
+      </control>
+	  <control type="image" description="linebott">
+        <posx>360</posx>
+        <posy>850</posy>
+        <width>1200</width>
+        <height>1</height>
+        <texture>images/Line.png</texture>
+      </control>
+      <control type="label" id="25">
+        <description>Title</description>
+        <posx>460</posx>
+        <posy>220</posy>
+        <width>1000</width>
+        <height>60</height>
+        <label></label>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>font13</font>
+      </control>
+	  <!--control type="image" description="BG">
+        <posx>450</posx>
+        <posy>280</posy>
+        <width>1000</width>
+        <height>200</height>
+        <texture border="150">images/black.png</texture>
+      </control-->
+      <control type="list" id="4">
+        <posx>400</posx>
+        <posy>281</posy>
+        <width>560</width>
+		<height>150</height>
+        <onup>4</onup>
+        <ondown>4</ondown>
+        <onleft>61</onleft>
+        <onright>111</onright>
+        <pagecontrol>61</pagecontrol>
+        <scrolltime>200</scrolltime>
+        <itemlayout height="46" width="540">
+          <control type="label" id="8">
+            <posx>260</posx>
+            <posy>0</posy>
+            <width>520</width>
+            <height>46</height>
+			<font>size24</font>
+            <selectedcolor>FFEB9E17</selectedcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <info>ListItem.Label</info>
+          </control>
+        </itemlayout>
+        <focusedlayout height="46" width="540">
+          <control type="image">
+            <width>540</width>
+            <height>46</height>
+            <texture flipx="true">images/White2.png</texture>
+            <visible>Control.HasFocus(4)</visible>
+            <animation effect="fade" time="300">Visible</animation>
+            <animation effect="fade" time="300">Hidden</animation>
+          </control>
+          <control type="label" id="8">
+            <posx>260</posx>
+            <posy>0</posy>
+            <width>520</width>
+            <height>46</height>
+			<font>size24</font>
+            <selectedcolor>FF666666</selectedcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <info>ListItem.Label</info>
+          </control>
+        </focusedlayout>
+      </control>
+      <control type="scrollbar" id="61">
+        <posx>360</posx>
+        <posy>310</posy>
+        <height>460</height>
+        <onleft>noop</onleft>
+        <onright>4</onright>
+        <ondown>61</ondown>
+        <onup>61</onup>
+        <showonepage>false</showonepage>
+      </control>
+      <control type="group" id="100">
+        <defaultcontrol>111</defaultcontrol>
+        <posx>950</posx>
+        <posy>350</posy>
+        <width>1000</width>
+        <height>480</height>
+        <control type="label" id="110">
+          <description>Title</description>
+          <posx>10</posx>
+          <posy>0</posy>
+          <width>270</width>
+          <height>30</height>
+          <label>$ADDON[script.trakt 1667]</label>
+          <align>center</align>
+          <aligny>center</aligny>
+        </control>
+        <control type="list" id="111">
+          <posx>25</posx>
+          <posy>50</posy>
+          <width>240</width>
+          <height>480</height>
+          <onup>4</onup>
+          <ondown>113</ondown>
+          <onleft>4</onleft>
+          <onright>141</onright>
+          <scrolltime>200</scrolltime>
+          <itemlayout height="50" width="240">
+            <control type="label">
+              <posx>120</posx>
+              <posy>0</posy>
+              <width>200</width>
+              <height>50</height>
+              <selectedcolor>red</selectedcolor>
+			  <font>size24</font>
+              <align>center</align>
+              <aligny>center</aligny>
+              <info>ListItem.Label</info>
+            </control>
+          </itemlayout>
+          <focusedlayout height="50" width="240">
+            <control type="image">
+              <width>240</width>
+              <height>50</height>
+              <texture border="5">images/Whitebutton.png</texture>
+              <visible>Control.HasFocus(111)</visible>
+            </control>
+            <control type="label">
+              <posx>120</posx>
+              <posy>0</posy>
+              <width>200</width>
+              <height>50</height>
+              <selectedcolor>red</selectedcolor>
+			  <font>size24</font>
+              <align>center</align>
+              <aligny>center</aligny>
+              <info>ListItem.Label</info>
+            </control>
+          </focusedlayout>
+        </control>
+        <control type="label" id="140">
+          <description>Title</description>
+          <posx>290</posx>
+          <posy>0</posy>
+          <width>270</width>
+          <height>30</height>
+          <label>$ADDON[script.trakt 1668]</label>
+          <align>center</align>
+          <aligny>center</aligny>
+        </control>
+        <control type="list" id="141">
+          <posx>305</posx>
+          <posy>50</posy>
+          <width>240</width>
+          <height>480</height>
+          <onup>4</onup>
+          <ondown>114</ondown>
+          <onleft>111</onleft>
+          <onright>113</onright>
+          <scrolltime>200</scrolltime>
+          <itemlayout height="46" width="240">
+            <control type="label">
+              <posx>120</posx>
+              <posy>0</posy>
+              <width>200</width>
+              <height>46</height>
+              <selectedcolor>red</selectedcolor>
+			  <font>size24</font>
+              <align>center</align>
+              <aligny>center</aligny>
+              <info>ListItem.Label</info>
+            </control>
+          </itemlayout>
+          <focusedlayout height="46" width="240">
+            <control type="image">
+              <width>240</width>
+              <height>46</height>
+              <texture border="5">images/Whitebutton.png</texture>
+              <visible>Control.HasFocus(141)</visible>
+            </control>
+            <control type="label">
+              <posx>120</posx>
+              <posy>0</posy>
+              <width>200</width>
+              <height>46</height>
+              <selectedcolor>red</selectedcolor>
+			  <font>size24</font>
+              <align>center</align>
+              <aligny>center</aligny>
+              <info>ListItem.Label</info>
+            </control>
+          </focusedlayout>
+        </control>
+        <control type="button" id="113">
+          <description>Manual button</description>
+          <posx>10</posx>
+          <posy>280</posy>
+          <width>270</width>
+          <height>46</height>
+		  <font>size24</font>
+          <label>$ADDON[script.trakt 1669]</label>
+          <align>center</align>
+          <onleft>110</onleft>
+          <onright>114</onright>
+          <onup>111</onup>
+          <ondown>16</ondown>
+        </control>
+        <control type="button" id="114">
+          <description>Manual button</description>
+          <posx>290</posx>
+          <posy>280</posy>
+          <width>270</width>
+          <height>46</height>
+          <label>$ADDON[script.trakt 1670]</label>
+          <align>center</align>
+          <onleft>113</onleft>
+		   <font>size24</font>
+          <onright>noop</onright>
+          <onup>141</onup>
+          <ondown>16</ondown>
+        </control>
+      </control>
+	  <control type="grouplist" description="ok cancel">
+	  <posx>450</posx>
+	  <posy>880</posy>
+	  <width>1000</width>
+	  <onup>100</onup>
+	  <itemgap>10</itemgap>
+	  <orientation>horizontal</orientation>
+	  <align>center</align>
+      <control type="button" id="15">
+        <description>add</description>
+        <width>200</width>
+        <height>40</height>
+        <label>$ADDON[script.trakt 1651]</label>
+        <texturefocus border="5">images/Whitebutton.png</texturefocus>
+      </control>
+      <control type="button" id="16">
+        <description>ok</description>
+        <width>200</width>
+        <height>40</height>
+        <label>$ADDON[script.trakt 1652]</label>
+      </control>
+      <control type="button" id="17">
+        <description>cancel</description>
+        <width>200</width>
+        <height>40</height>
+        <label>$ADDON[script.trakt 1653]</label>
+      </control>
+	  </control>
+	  <control type="image">
+	  <posx>941</posx>
+	  <posy>280</posy>
+	  <width>1</width>
+	  <height>570</height>
+	  <texture>images/black.png</texture>
+	  <colordiffuse>60FFFFFF</colordiffuse>
+	  </control>
+  </controls>
+</window>

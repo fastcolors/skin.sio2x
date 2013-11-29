@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="130" type="dialog">
+  <defaultcontrol always="true">5</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+<backgroundcolor>0xffffffff</backgroundcolor>
+
+
+  <include>OpenClose</include>
+  <controls>
+    <include>BlackBackground</include>
+    <control type="label" id="1000" description="Profile Name">
+      <include>Heading</include>
+    </control>
+	<control type="image" id="2">
+	<posx>180</posx>
+	<posy>200</posy>
+		  <width>600</width>
+		  <height>700</height>
+		  <texture>def_user.png</texture>
+		  <aspectratio>keep</aspectratio>
+		  </control>
+    <control type="label" id="1001" description="Profile Directory">
+      <posy>60</posy>
+	  <font>Size21</font>
+      <include>Heading</include>
+    </control>
+    <control type="group">
+      <posx>960</posx>
+      <posy>222</posy>
+      <control type="grouplist" id="5">
+        <description>Control Area</description>
+        <width>900</width>
+        <height>810</height>
+        <itemgap>0</itemgap>
+        <aligny>top</aligny>
+        <orientation>vertical</orientation>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>29</onup>
+        <ondown>28</ondown>
+      </control>
+      <control type="button" id="7">
+        <height>81</height>
+        <align>left</align>
+        <texturefocus>images/Whitebutton.png</texturefocus>
+      </control>
+      <control type="radiobutton" id="8">
+        <height>81</height>
+        <align>left</align>
+        <texturefocus>images/Whitebutton.png</texturefocus>
+      </control>
+      <control type="spincontrolex" id="9">
+        <height>81</height>
+        <align>left</align>
+        <texturefocus>images/Whitebutton.png</texturefocus>
+      </control>
+      <control type="image" description="Line split">
+        <posy>512</posy>
+        <width>802</width>
+        <height>1</height>
+        <texture>images/Line.png</texture>
+        <aspectratio>stretch</aspectratio>
+      </control>
+      <control type="button" id="28" description="OK">
+        <posx>225</posx>
+        <posy>531</posy>
+        <width>450</width>
+        <label>186</label>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>5</onup>
+        <ondown>29</ondown>
+        <texturefocus>images/Whitebutton.png</texturefocus>
+      </control>
+      <control type="button" id="29" description="Cancel">
+        <posx>225</posx>
+        <posy>627</posy>
+        <width>450 </width>
+        <label>222</label>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
+        <onup>28</onup>
+        <ondown>5</ondown>
+        <texturefocus>images/Whitebutton.png</texturefocus>
+      </control>
+    </control>
+	<control type="image">
+	  <posx>959</posx>
+	  <width>1</width>
+	  <height>1080</height>
+	  <texture>images/LineV.png</texture>
+	  </control>
+  </controls>
+</window>
