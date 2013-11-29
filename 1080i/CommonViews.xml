@@ -547,24 +547,42 @@
   </include>
   <include name="HD_Badge">
     <control type="image">
-	<animation effect="slide" end="0,-16" condition="ListItem.IsStereoscopic | Control.Isvisible(50) | !IsEmpty(ListItem.Premiered)">Conditional</animation>
-    <animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-      
+	<animation effect="slide" end="0,14" condition="!ListItem.IsStereoscopic">Conditional</animation>
 	  <visible>!IsEmpty(ListItem.VideoResolution)</visible>
       <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
       <posx>42r</posx>
-      <height>111</height>
+      <height>50</height>
       <width>42</width>
       <aspectratio>keep</aspectratio>
       <texture>badges/720.png</texture>
     </control>
 	 <control type="image">
 	<visible>ListItem.IsStereoscopic</visible>
-	<animation effect="slide" end="0,-14" condition="ListItem.IsStereoscopic + Control.Isvisible(50)">Conditional</animation>
-    <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-      <posy>30</posy>
+      <posy>33</posy>
 	  <posx>42r</posx>
-      <height>80</height>
+      <height>50</height>
+      <width>42</width>
+      <aspectratio>keep</aspectratio>
+      <texture>badges/3d.png</texture>
+    </control>
+  </include>
+  <include name="HD_Badge_LL">
+    <control type="image">
+	<animation effect="slide" end="0,14" condition="!ListItem.IsStereoscopic">Conditional</animation>
+	  <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+      <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+      <posy>14</posy>
+	  <posx>42r</posx>
+      <height>50</height>
+      <width>42</width>
+      <aspectratio>keep</aspectratio>
+      <texture>badges/720.png</texture>
+    </control>
+	 <control type="image">
+	<visible>ListItem.IsStereoscopic</visible>
+      <posy>50</posy>
+	  <posx>42r</posx>
+      <height>50</height>
       <width>42</width>
       <aspectratio>keep</aspectratio>
       <texture>badges/3d.png</texture>
@@ -719,7 +737,7 @@
   <include name="LargeListLayout">
     <itemlayout width="890" height="111">
 	<include>Watched_MarksLW</include>
-            <include>HD_Badge</include>
+            <include>HD_Badge_LL</include>
             <include>ArrowNF</include>
       <control type="group">
         <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year) + IsEmpty(ListItem.Artist)" effect="slide" end="0,18" time="0" reversible="true">Conditional</animation>
@@ -760,7 +778,7 @@
     </itemlayout>
     <focusedlayout width="890" height="111">
 	<include>Watched_MarksLW</include>
-            <include>HD_Badge</include>
+            <include>HD_Badge_LL</include>
             <include>ArrowFO</include>
 	<include>LargeSelector</include>
       <control type="group">
