@@ -76,7 +76,7 @@
             <posy>0</posy>
             <width>810</width>
             <height>69</height>
-            <texture border="8">images/Buttonselect.png</texture>
+            <texture border="8">images/WhiteButton.png</texture>
           </control>
           <control type="label">
             <posx>30</posx>
@@ -94,7 +94,7 @@
         <texture>images/LineL.png</texture>
       </control>
       <control type="grouplist" id="5" description="Control Area">
-        <posx>435</posx>
+        <centerx>960</centerx>
         <posy>410</posy>
         <width>1080</width>
         <height>450</height>
@@ -114,11 +114,9 @@
         <align>left</align>
         <radioposx>1020</radioposx>
       </control>
-      <control type="group">
-        <posy>72</posy>
         <control type="button" id="6" description="Settings">
-          <posx>435</posx>
-          <posy>723</posy>
+          <centerx>960</centerx>
+          <posy>795</posy>
           <width>1080</width>
           <height>75</height>
           <align>left</align>
@@ -130,32 +128,32 @@
         </control>
         <control type="image" description="Splitter">
           <posx>415</posx>
-          <posy>813</posy>
+          <posy>885</posy>
           <height>1</height>
           <width>1120</width>
           <texture>images/LineR.png</texture>
         </control>
+		<control type="grouplist">
+		<centerx>960</centerx>
+          <posy>903</posy>
+		  <align>center</align>
+		  <orientation>horizontal</orientation>
+		  <itemgap>20</itemgap>
         <control type="button" id="28" description="OK">
-          <posx>510</posx>
-          <posy>831</posy>
           <width>330</width>
           <label>186</label>
           <onleft>noop</onleft>
           <onright>29</onright>
           <onup>6</onup>
           <ondown>3</ondown>
-          <texturenofocus border="4">images/white.png</texturenofocus>
         </control>
         <control type="button" id="29" description="Cancel">
-          <posx>1008</posx>
-          <posy>831</posy>
           <width>330</width>
           <label>222</label>
           <onleft>28</onleft>
           <onright>noop</onright>
           <onup>6</onup>
           <ondown>3</ondown>
-          <texturenofocus border="4">images/white.png</texturenofocus>
         </control>
       </control>
     </control>

@@ -2,8 +2,8 @@
 <addon id="skin.sio2x" version="2.0.0" name="SiO2-X" provider-name="FastColors">
   <requires>
     <import addon="xbmc.gui" version="5.0.1"/>
-	<import addon="service.skin.widgets" version="0.0.13"/>
-    <!--import addon="script.favourites" version="3.2.5"/>
+	<!--import addon="service.skin.widgets" version="0.0.13"/>
+    <import addon="script.favourites" version="3.2.5"/>
 	<import addon="script.populate.sets" version="0.0.1"/>
 	<import addon="script.globalsearch" version="2.0.8"/>
 	<import addon="script.cinema.experience" version="3.0.3"/-->
@@ -93,7 +93,7 @@
     <description lang="zh"></description>
 	-->
 	
-    <disclaimer>SiO2 - X - Infos and changelog at www.XBMCHUB.com</disclaimer>
+    <disclaimer>SiO2 - X - May cause addiction.</disclaimer>
    
   </extension>
 </addon>

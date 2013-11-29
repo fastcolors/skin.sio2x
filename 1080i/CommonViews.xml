@@ -840,23 +840,9 @@
     <texturenofocus>-</texturenofocus>
     <alttexturenofocus>-</alttexturenofocus>
   </include>
-  <include name="Plot51Commons">
-    <posx>0</posx>
-    <posy>48</posy>
-    <width>758</width>
-    <height>168</height>
-    <font>size30</font>
-    <textcolor>Silver</textcolor>
-    <align>justify</align>
-    <aligny>bottom</aligny>
-    <autoscroll delay="8000" time="4300" repeat="10000"></autoscroll>
-  </include>
   <include name="Genre51Commons">
-    <posy>-9</posy>
-    <font>size30</font>
-    <textcolor></textcolor>
     <width>758</width>
-    <height>36</height>
+    <height>40</height>
     <align>left</align>
     <scroll>false</scroll>
   </include>
@@ -1054,7 +1040,7 @@
         <width>750</width>
         <height>81</height>
         <align>center</align>
-        <textcolor>Yellow</textcolor>
+        <textcolor>red</textcolor>
         <label>$INFO[Control.GetLabel(5)]</label>
       </control>
       <control type="label" description="Notifications">
@@ -1063,24 +1049,15 @@
         <width>750</width>
         <height>81</height>
         <align>center</align>
-        <textcolor>Yellow</textcolor>
+        <textcolor>red</textcolor>
         <label>$INFO[Control.GetLabel(6)]</label>
       </control>
     </control>
     <control type="group" description="Thumbs no info">
       <posy>240</posy>
       <visible>ListItem.IsFolder + !IsEmpty(Container.FolderPath)</visible>
-      <animation effect="fade" time="400">Visible</animation>
+      <animation effect="fade" time="200">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
-      <control type="image" description="Thumb Reflection">
-        <posx>180</posx>
-        <posy>621</posy>
-        <width>621</width>
-        <height>621</height>
-        <include>Icon_Fade</include>
-        <texture background="true" diffuse="images/Reflection0Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="top">keep</aspectratio>
-      </control>
       <control type="image" description="Thumb">
         <posx>180</posx>
         <posy>0</posy>
@@ -1093,7 +1070,7 @@
     </control>
     <control type="group" description="Faded Info thumbs">
       <visible>!ListItem.IsFolder</visible>
-      <animation effect="fade" time="400">Visible</animation>
+      <animation effect="fade" time="200">Visible</animation>
       <animation effect="fade" time="10">Hidden</animation>
       <control type="group">
         <posx>260</posx>
@@ -1121,40 +1098,42 @@
       <animation effect="fade" time="10">Hidden</animation>
       <posx>110</posx>
       <posy>27</posy>
-      <control type="group">
+      <control type="grouplist">
         <posx>20</posx>
         <posy>610</posy>
+		<itemgap>0</itemgap>
         <control type="label">
-          <posx>-20</posx>
           <width>640</width>
           <font>size33B</font>
-          <textcolor>black</textcolor>
+		  <height>45</height>
           <include>Genre51Commons</include>
           <label>$INFO[ListItem.Label]</label>
         </control>
+		<control type="label" description="More Info">
+          <include>Genre51Commons</include>
+          <label>$LOCALIZE[24051] [COLOR=red]$INFO[ListItem.Property(Addon.Version)] [/COLOR] $VAR[TopLabel, •]</label>
+        </control>
         <control type="textbox">
-          <posy>45</posy>
           <height>210</height>
-          <include>Plot51Commons</include>
-          <label>$VAR[Plots]</label>
+    <width>758</width>
+    <textcolor>Silver</textcolor>
+    <align>justify</align>
+    <autoscroll delay="8000" time="4300" repeat="10000"></autoscroll>
+  <label>$VAR[Plots]</label>
         </control>
         <control type="label" description="Bottom Label">
-          <posy>260</posy>
           <include>Genre51Commons</include>
           <label>$INFO[ListItem.Genre]</label>
         </control>
         <control type="label" description="Bottom Label">
           <visible>container.content(addons)</visible>
-          <posy>260</posy>
           <scroll>true</scroll>
+		  <font>size21</font>
+		  <textcolor>red</textcolor>
           <include>Genre51Commons</include>
           <label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
         </control>
-        <control type="label" description="More Info">
-          <posy>300</posy>
-          <include>Genre51Commons</include>
-          <label>$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]$VAR[TopLabel, • ]</label>
-        </control>
+        
       </control>
     </control>
   </include>
