@@ -1,17 +1,17 @@
 # XBMC Media Center language file
-# Addon Name: SiO2
-# Addon id: skin.SiO2
-# Addon version: 1.2.0
+# Addon Name: SiO2x
+# Addon id: skin.SiO2x
+# Addon version: 2.0.0
 # Addon Provider: FastColors
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: XBMC Skin SiO2\n"
+"Project-Id-Version: XBMC Skin SiO2x\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2013-01-24 19:04+0000\n"
 "Last-Translator: fastcolors <fastcolors@gmail.com>\n"
-"Language-Team: English (http://www.transifex.com/projects/p/sio2-1/language/en/)\n"
+"Language-Team: English\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
