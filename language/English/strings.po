@@ -376,5 +376,5 @@ msgid "Shelf Cinema Experience"
 msgstr "Shelf Cinema Experience"
 
 msgctxt "#31089"
-msgid "Turns off Home Page Background."
-msgstr "Turns off Home Page Background."
+msgid "PRPVVOOVOVOVOVOV."
+msgstr "PRPVVOOVOVOVOVOV."
