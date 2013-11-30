@@ -8,7 +8,7 @@
 	<import addon="script.globalsearch" version="2.0.8"/>
 	<import addon="script.cinema.experience" version="3.0.3"/-->
   </requires>
-  <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
+  <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="true">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
     </extension>
   <extension point="xbmc.addon.metadata">

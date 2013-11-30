@@ -1155,11 +1155,10 @@
           <visible>container.content(addons)</visible>
           <scroll>true</scroll>
 		  <font>size21</font>
-		  <textcolor>red</textcolor>
+		  <textcolor>black</textcolor>
           <include>Genre51Commons</include>
           <label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
         </control>
-        
       </control>
     </control>
   </include>
