@@ -98,11 +98,6 @@
           </control>
         </itemlayout>
         <focusedlayout height="160">
-          <control type="button">
-            <onfocus condition="SubString(ListItem.path,videodb://movies/sets/)">RunScript(special://skin/resources/sets.py,$INFO[ListItem.label])</onfocus>
-            <texturefocus>-</texturefocus>
-            <texturenofocus>-</texturenofocus>
-          </control>
           <control type="image">
             <animation effect="fade" end="0" time="30">UnFocus</animation>
             <posx>1280</posx>
@@ -441,18 +436,12 @@
               <width>267</width>
               <texture>$INFO[ListItem.Thumb]</texture>
             </control>
-            <control type="image">
-              <posx>15</posx>
-              <posy>10</posy>
-              <height>400</height>
-              <width>267</width>
-              <texture>$VAR[dvdbox]</texture>
-            </control>
             <control type="group">
               <animation effect="fade" start="0" end="100" time="250">Focus</animation>
               <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
               <control type="image">
-                <width>297</width>
+			  <posx>5</posx>
+                <width>288</width>
                 <height>420</height>
                 <texture border="9">images/SetsOver.png</texture>
               </control>
