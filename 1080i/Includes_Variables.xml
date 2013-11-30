@@ -122,12 +122,6 @@
     <value>$INFO[ListItem.Icon]</value>
   </variable>
   
-  <variable name="fanart">
-  <value condition="StringCompare(ListItem.Label,..) + Skin.HasSetting(CustomBg)">$INFO[Skin.String(CustomBgHome)]</value>
-  <value condition="IsEmpty(ListItem.Art(fanart)) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
-  <value>$INFO[ListItem.Art(fanart)]</value>
-  </variable>
-  
   <variable name="hideconnection">
   <value condition="Skin.HasSetting(hideconnection)">$LOCALIZE[16039]</value>
   <value>$LOCALIZE[16041]</value>
@@ -143,8 +137,15 @@
   <value>images/dvdbox.png</value>
   </variable>
   
-   <variable name="bgimg">
-  <value condition="Skin.HasSetting(CustomBg) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHome)]</value>
+  <variable name="fanart">
+  <value condition="StringCompare(ListItem.Label,..) + Skin.HasSetting(CustomBg)">$INFO[Skin.String(CustomBgHome)]</value>
+  <value condition="IsEmpty(ListItem.Art(fanart)) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
+  <value>$INFO[ListItem.Art(fanart)]</value>
+  </variable>
+  
+  <variable name="bgimg">
+  <value condition="Skin.HasSetting(CustomBg) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
+  <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
   <value>Shades/gradientback.png</value>
   </variable>
   
