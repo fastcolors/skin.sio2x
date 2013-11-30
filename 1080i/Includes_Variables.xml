@@ -144,7 +144,7 @@
   </variable>
   
    <variable name="bgimg">
-  <value condition="Skin.HasSetting(CustomBg)">$INFO[Skin.String(CustomBgHome)]</value>
+  <value condition="Skin.HasSetting(CustomBg) + !Window.IsActive(DialogVideoInfo.xml)">$INFO[Skin.String(CustomBgHome)]</value>
   <value>Shades/gradientback.png</value>
   </variable>
   

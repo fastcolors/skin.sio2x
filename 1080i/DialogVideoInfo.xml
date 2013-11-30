@@ -112,15 +112,7 @@
           <aspectratio>keep</aspectratio>
           <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
         </control>
-        <control type="image">
-          <visible>!IsEmpty(ListItem.AudioChannels)</visible>
-          <height>50</height>
-          <width>130</width>
-          <bordersize>3</bordersize>
-          <aspectratio>keep</aspectratio>
-          <texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>
-        </control>
-        <control type="image">
+		<control type="image">
           <visible>!IsEmpty(ListItem.AudioCodec)</visible>
           <height>50</height>
           <width>130</width>
@@ -129,7 +121,16 @@
           <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
         </control>
         <control type="image">
-          <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+          <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+          <height>50</height>
+          <width>130</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
+        </control>
+        
+        <control type="image">
+          <visible>!IsEmpty(ListItem.FileExtension)</visible>
           <height>50</height>
           <width>130</width>
           <bordersize>3</bordersize>
