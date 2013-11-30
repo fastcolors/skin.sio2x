@@ -368,6 +368,15 @@
 	  <colordiffuse>FFFFFFFF</colordiffuse>
     </control>
 	<control type="image" description="Default BG">
+	<visible>!Window.IsActive(Home.xml)</visible>
+      <width>1920</width>
+      <height>1080</height>
+	  <texture background="true">$VAR[bgimg]</texture>
+	  <aspectratio align="left">scale</aspectratio>
+	  <colordiffuse>33FFFFFF</colordiffuse>
+    </control>
+	<control type="image" description="Default BG">
+	<visible>Window.IsActive(Home.xml)</visible>
       <width>1920</width>
       <height>1080</height>
 	  <texture background="true">$VAR[bgimg]</texture>
