@@ -3,10 +3,9 @@
   <defaultcontrol always="true">50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
 <backgroundcolor>background</backgroundcolor>
-<views>52,50,51,53,54,500</views>
+<views>50,52,53,54,500</views>
   <include>OpenClose</include>
   <controls>
-  
     <include>Musicviews</include>
     <control type="group" description="Side menu 9000 group">
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>

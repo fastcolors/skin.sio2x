@@ -3,6 +3,7 @@
   <include name="Musicviews">
     <control type="group" description="Base Music List">
       <visible>Control.IsVisible(50)</visible>
+	  <include>BlackBackground</include>
 	  <control type="group">
         <visible>!Container.content(musicvideos)</visible>
         <include>left_Panel_square</include>
@@ -12,7 +13,7 @@
         <include>left_Panel_square</include>
         <include>MusicInfo</include>
       </control>
-      <control type="group" description="List">
+      <control type="group" description="BigList">
         <posx>960</posx>
       <posy>131</posy>
         <control type="fixedlist" id="50">
@@ -43,106 +44,6 @@
         <onright>noop</onright>
       </control>
     </control>
-    <control type="group" description="Big List">
-      <visible>Control.IsVisible(51)</visible>
-      <include>left_Panel_square</include>
-      <include>MusicInfo</include>
-      <control type="group" description="Slider and List">
-        <include>SlimListItemCount</include>
-        <posx>960</posx>
-      <posy>131</posy>
-        <control type="fixedlist" id="51">
-          <width>900</width>
-          <height>891</height>
-          <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-          <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-          <onup>51</onup>
-          <ondown>51</ondown>
-          <pagecontrol>60</pagecontrol>
-          <viewtype label="535">Media info</viewtype>
-          <focusposition>5</focusposition>
-          <movement>5</movement>
-          <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">200</scrolltime>
-          <itemlayout width="890" height="81">
-            <control type="label" description="Main Label">
-              <width max="629">auto</width>
-              <include>52MainLabel</include>
-              <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Label2">
-              <visible>![Player.HasAudio + ListItem.IsPlaying]</visible>
-              <visible>container.content(songs)</visible>
-              <include>52Label2</include>
-              <label>$INFO[ListItem.Duration]</label>
-            </control>
-            <control type="image" description="playing">
-              <visible>[Player.HasAudio + ListItem.IsPlaying]</visible>
-              <posx>99r</posx>
-              <posy>0</posy>
-              <height>81</height>
-              <width>36</width>
-              <aspectratio>keep</aspectratio>
-              <texture>images/NowPlayingNF.png</texture>
-            </control>
-			<control type="image">
-                <width>900</width>
-                <height>1</height>
-                <texture>images/Line.png</texture>
-              </control>
-          </itemlayout>
-          <focusedlayout width="890" height="81">
-		  <control type="image">
-                <animation effect="fade" end="0" time="30">UnFocus</animation>
-                <width>920</width>
-                <height>81</height>
-                <texture>images/white.png</texture>
-                <colordiffuse>335555FF</colordiffuse>
-              </control>
-            <control type="label" description="Main Label">
-              <width max="629">auto</width>
-              <textcolor>black</textcolor>
-  			  <include>52MainLabel</include>
-              <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label" description="Label2">
-              <visible>![Player.HasAudio + ListItem.IsPlaying]</visible>
-              <include>52Label2FO</include>
-              <label>$INFO[ListItem.Duration]</label>
-            </control>
-            <control type="image" description="playing">
-              <visible>[Player.HasAudio + ListItem.IsPlaying]</visible>
-              <animation effect="fade" start="50" end="100" time="100" delay="200">Focus</animation>
-              <posx>99r</posx>
-              <posy>0</posy>
-              <height>81</height>
-              <width>36</width>
-              <aspectratio>keep</aspectratio>
-              <texture>images/NowPlayingFO.png</texture>
-            </control>
-			<control type="image">
-                <width>900</width>
-                <height>1</height>
-                <texture>images/Line.png</texture>
-              </control>
-          </focusedlayout>
-        </control>
-		<control type="image">
-        <width>1</width>
-        <height>1080</height>
-        <texture>images/LineV.png</texture>
-      </control>
-      </control>
-      <control type="scrollbar" id="60">
-        <posx>51r</posx>
-        <posy>137</posy>
-        <height>880
-		</height>
-        <onleft>51</onleft>
-        <onright>noop</onright>
-      </control>
-    </control>
-    
     <!--ICONE-->
     <control type="group" description="Icon View">
       <visible>Control.IsVisible(53)</visible>
@@ -227,7 +128,6 @@
               <height>45</height>
               <font>size27</font>
               <textcolor>black</textcolor>
-              
               <align>center</align>
               <label>[B]$INFO[ListItem.Label][/B]</label>
             </control>
@@ -312,21 +212,7 @@
 	<!--SIO2-->
 	<control type="group" description="sio2view">
       <visible>Control.IsVisible(52)</visible>
-      <control type="image">
-        <include>Fanart_Fade</include>
-        <posx></posx>
-        <posy></posy>
-        <width>1920</width>
-        <height>1080</height>
-        <info>ListItem.Art(fanart)</info>
-        <colordiffuse>50DDFFDD</colordiffuse>
-        <aspectratio align="left">scale</aspectratio>
-      </control>
-      <control type="image">
-        <include>Dimensions_Fullscreen</include>
-        <texture>images/sio2right.png</texture>
-		<colordiffuse>AAFFFFFF</colordiffuse>
-      </control>
+      <include>BlackBackground</include>
       <control type="fixedlist" id="52">
         <visible>!Container.Content(songs)</visible>
         <posx>60</posx>
@@ -344,6 +230,7 @@
         <pagecontrol>60</pagecontrol>
         <viewtype label="Sio2View">Sio2View</viewtype>
         <focusposition>2</focusposition>
+		<movement>2</movement>
         <preloaditems>4</preloaditems>
         <scrolltime>250</scrolltime>
         <itemlayout height="160">
@@ -428,7 +315,8 @@
         <align>center</align>
         <label>$INFO[ListItem.Tagline]</label>
 	  </control>
-	  <control type="grouplist" description="detailedinfos">
+<!--INFOS-->
+	  <control type="grouplist" description="Infos">
 	  <posx>60</posx>
 	  <posy>200</posy>
 	  <height>600</height>
@@ -471,7 +359,7 @@
         <label>$LOCALIZE[21896]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Disbanded)][/B][/COLOR]</label>
 	  </control>
 	  <control type="label">
-	  <visible>!Container.Content(Artists)</visible>
+	  <visible>!Container.Content(Artists) + !IsEmpty(ListItem.Year)</visible>
         <width>700</width>
         <height>20</height>
         <font>Size20</font>
@@ -480,6 +368,7 @@
         <label>$LOCALIZE[345]: [COLOR Silver][B]$INFO[ListItem.Year][/B][/COLOR]</label>
 	  </control>
 	  <control type="textbox">
+	  <visible>!IsEmpty(ListItem.Property(Artist_Style)) + !IsEmpty(ListItem.Property(Album_Style))</visible>
         <width>700</width>
         <height>80</height>
         <font>Size20</font>
@@ -489,6 +378,7 @@
         <label>$LOCALIZE[515] / $LOCALIZE[176]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Style)]$INFO[ListItem.Property(Album_Style)][/B][/COLOR]</label>
 	  </control>
 	  <control type="textbox">
+	  <visible>!IsEmpty(ListItem.Property(Artist_Mood)) + !IsEmpty(ListItem.Property(Album_Mood))</visible>
         <width>700</width>
         <height>80</height>
         <font>Size20</font>
@@ -498,7 +388,7 @@
         <label>$LOCALIZE[175]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Mood)]$INFO[ListItem.Property(Album_Mood)][/B][/COLOR]</label>
 	  </control>
 	  <control type="label">
-	  <visible>!Container.Content(Artists)</visible>
+	  <visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
         <width>700</width>
         <height>20</height>
         <font>Size20</font>
@@ -507,7 +397,7 @@
         <label>$LOCALIZE[21899]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Label)][/B][/COLOR]</label>
 	  </control>
 	  <control type="label">
-	  <visible>Container.Content(Artists)</visible>
+	  <visible>!IsEmpty(ListItem.Property(Artist_Instrument))</visible>
         <width>700</width>
         <height>20</height>
         <font>Size20</font>
@@ -516,6 +406,7 @@
         <label>$LOCALIZE[21892]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Instrument)][/B][/COLOR]</label>
 	  </control>
 	  <control type="label">
+	  <visible>!IsEmpty(ListItem.Property(Album_Type))</visible>
         <width>700</width>
         <height>20</height>
         <font>Size20</font>
@@ -524,6 +415,7 @@
         <label>$LOCALIZE[564]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Type)][/B][/COLOR]</label>
 	  </control>
 	  <control type="textbox">
+	  <visible>!IsEmpty(ListItem.Property(Album_Theme))</visible>
         <width>700</width>
         <height>60</height>
         <font>Size20</font>
@@ -548,14 +440,6 @@
         <textcolor>gray</textcolor>
         <align>right</align>
         <label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
-	  </control>
-	  <control type="label">
-        <width>700</width>
-        <height>20</height>
-        <font>Size20</font>
-        <textcolor>gray</textcolor>
-        <align>right</align>
-        <label>$LOCALIZE[582]: [COLOR Silver][B]$INFO[Container.Viewmode][/B][/COLOR]</label>
 	  </control>
 	  </control>
 	  <control type="grouplist" description="flags">
@@ -631,10 +515,9 @@
           <height>380</height>
           <width>420</width>
           <texture>$VAR[Locandine]</texture>
-          <aspectratio>scale</aspectratio>
+          <aspectratio>keep</aspectratio>
         </control>
       </control>
-	   
       <control type="image">
         <posx>1340</posx>
 		<posy>-100</posy>
