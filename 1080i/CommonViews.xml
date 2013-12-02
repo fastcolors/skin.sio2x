@@ -834,8 +834,9 @@
    </include>
    <include name="DialogGLs">
       <centerx>960</centerx>
+	  <posy>8</posy>
       <width>470</width>
-      <height>1080</height>
+      <height>1064</height>
       <itemgap>3</itemgap>
       <onleft>50</onleft>
       <onright>50</onright>
@@ -846,7 +847,7 @@
    </include>
    <include name="DialogButt">
       <width>450</width>
-      <height>60</height>
+      <height>56</height>
       <textoffsetx>0</textoffsetx>
       <align>center</align>
       <aligny>center</aligny>

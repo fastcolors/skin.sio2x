@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
    <include name="Musicviews">
+   	  <!--LIST-->
       <control type="group" description="Base Music List">
          <visible>Control.IsVisible(50)</visible>
          <include>BlackBackground</include>
@@ -208,7 +209,6 @@
             <onright>9000</onright>
          </control>
       </control>
-      
       <!--SIO2-->
       <control type="group" description="sio2view">
          <visible>Control.IsVisible(52)</visible>
@@ -555,19 +555,6 @@
             <onright>noop</onright>
          </control>
       </control>
-      <control type="label">
-         <description>Page Count Label</description>
-         <posx>40r</posx>
-         <posy>50r</posy>
-         <width>500</width>
-         <height>20</height>
-         <font>font12</font>
-         <textcolor>gray</textcolor>
-         <scroll>false</scroll>
-         <align>right</align>
-         <aligny>center</aligny>
-         <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>
-      </control>
       <!-- FANART -->
       <control type="group" description="Musiclay">
          <posy>40</posy>
@@ -691,6 +678,19 @@
             <texturesliderbarfocus border="6">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
             <showonepage>false</showonepage>
          </control>
+      </control>
+	  <control type="label">
+         <description>Page Count Label</description>
+         <posx>40r</posx>
+         <posy>50r</posy>
+         <width>500</width>
+         <height>20</height>
+         <font>font12</font>
+         <textcolor>gray</textcolor>
+         <scroll>false</scroll>
+         <align>right</align>
+         <aligny>center</aligny>
+         <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>
       </control>
    </include>
 </includes>

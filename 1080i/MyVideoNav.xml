@@ -10,28 +10,31 @@
   50 List
   53 Icons
   500 Fanart
+  55 Banners
   -->
    <include>OpenClose</include>
    <controls>
       <include>Videoviews</include>
-      <!--include>WindowsTopInfos</include-->
+      <include>WindowsTopInfos</include>
       <control type="group" description="Side menu 9000 group">
          <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !Window.IsVisible(traktContextMenu.xml)</visible>
          <include>9000slide</include>
          <control type="image" description="List back">
-            <posx>-50</posx>
-            <width>530</width>
-            <height>1080</height>
+		 	<posy>-10</posy>
+            <posx>1430</posx>
+            <width>550</width>
+            <height>1100</height>
             <aspectratio>stretch</aspectratio>
-            <texture border="50">MusicOSD/Back.png</texture>
+            <texture border="50">sidepanel/Back.png</texture>
          </control>
          <control type="grouplist" id="9000">
-            <centerx>235</centerx>
+            <centerx>1685</centerx>
             <include>DialogGLs</include>
             <control type="button" id="607">
                <enable>false</enable>
+			   <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
                <include>DialogButt</include>
-               <label>•• $LOCALIZE[33063]••</label>
+               <label>•• $LOCALIZE[33063] ••</label>
             </control>
             <control type="togglebutton" id="14" description="Toggle Watched">
                <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -99,6 +102,7 @@
             </control>
             <control type="button" id="599">
                <enable>false</enable>
+			   <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
                <include>DialogButt</include>
                <label>•• $LOCALIZE[582] ••</label>
             </control>

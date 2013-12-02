@@ -4,17 +4,18 @@
   <include file="Includes_Variables.xml" />
   <include file="Defaults.xml" />
   <include file="CommonViews.xml" />
-  <include file="Videoviews.xml" />
-  <include file="Musicviews.xml" />
+  <include file="views/Videoviews.xml" />
+  <include file="views/Musicviews.xml" />
   <include file="PVRviews.xml" />
-  <include file="Programviews.xml" />
+  <include file="views/Programviews.xml" />
   <include file="Includes_Home.xml" />
   <include file="Includes_Shelf.xml" />
   <include name="VisibleFade">
     <animation effect="fade" start="0" end="100" time="200">visiblechange</animation>
   </include>
    <include name="9000slide">
-    <animation effect="slide" start="-520,0" end="0,0" time="300" reversible="true">visiblechange</animation>
+    <animation effect="slide" start="520,0" end="0,0" time="300" reversible="false">visiblechange</animation>
+  
   </include>
   <include name="OpenClose">
     <animation effect="fade" time="150">WindowOpen</animation>

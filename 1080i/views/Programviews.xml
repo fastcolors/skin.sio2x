@@ -1,44 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
    <include name="Programviews">
-      <control type="group">
-         <visible>Control.IsVisible(50)</visible>
-         <control type="group">
-            <include>Left_Panel_Addons</include>
-         </control>
-         <control type="group" description="Slider and List">
-            <include>LargeListItemCount</include>
-            <posx>1020</posx>
-            <posy>131</posy>
-            <control type="fixedlist" id="50">
-               <posx>0</posx>
-               <posy>0</posy>
-               <width>802</width>
-               <height>888</height>
-               <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-               <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-               <onup>50</onup>
-               <ondown>50</ondown>
-               <pagecontrol>60</pagecontrol>
-               <viewtype label="537">Big list</viewtype>
-               <focusposition>3</focusposition>
-               <movement>4</movement>
-               <preloaditems>4</preloaditems>
-               <scrolltime tween="sine" easing="inout">280</scrolltime>
-               <include>LargeListAddonsLayout</include>
-            </control>
-            <include>LargeListSlider</include>
-         </control>
-         <include>ListFade</include>
-         <control type="scrollbar" id="60">
-            <posx>51r</posx>
-            <posy>135</posy>
-            <height>870</height>
-            <onleft>50</onleft>
-            <onright>noop</onright>
-         </control>
-      </control>
-      <control type="group" description="sio2view">
+      <!--SIO2-->
+	  <control type="group" description="sio2view">
          <visible>Control.IsVisible(52)</visible>
          <control type="image">
             <include>Fanart_Fade</include>
@@ -87,9 +51,9 @@
                   <width>340</width>
                   <height>140</height>
                   <font>Size24B</font>
-                  <textcolor>3</textcolor>
+                  <textcolor>Silver</textcolor>
                   <align>right</align>
-                  <label>$INFO[ListItem.label]</label>
+                  <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
                </control>
                <control type="image">
                   <posx>1280</posx>
@@ -120,9 +84,8 @@
                   <width>340</width>
                   <height>140</height>
                   <font>Size24B</font>
-                  <textcolor>White</textcolor>
                   <align>right</align>
-                  <label>$INFO[ListItem.label]</label>
+                  <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
                </control>
                <control type="image">
                   <posx>1280</posx>
@@ -138,7 +101,6 @@
             <width>1140</width>
             <height>80</height>
             <font>Size42B</font>
-            <textcolor>Yellow</textcolor>
             <align>center</align>
             <label>$INFO[ListItem.label]</label>
          </control>
@@ -147,10 +109,9 @@
             <posy>110</posy>
             <width>860</width>
             <height>50</height>
-            <font>Size20</font>
-            <textcolor>Silver</textcolor>
+            <font>Size30</font>
             <align>center</align>
-            <label>$INFO[ListItem.Tagline]</label>
+            <label>$LOCALIZE[19114] : [COLOR=red]$INFO[ListItem.Property(Addon.Version)][/COLOR]</label>
          </control>
          <control type="textbox" description="plots">
             <posx>140</posx>
@@ -266,6 +227,45 @@
             <onright>noop</onright>
          </control>
       </control>
+	  <!--BIG LIST-->
+	  <control type="group">
+         <visible>Control.IsVisible(50)</visible>
+         <control type="group">
+            <include>Left_Panel_Addons</include>
+         </control>
+         <control type="group" description="Slider and List">
+            <include>LargeListItemCount</include>
+            <posx>1020</posx>
+            <posy>131</posy>
+            <control type="fixedlist" id="50">
+               <posx>0</posx>
+               <posy>0</posy>
+               <width>802</width>
+               <height>888</height>
+               <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+               <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+               <onup>50</onup>
+               <ondown>50</ondown>
+               <pagecontrol>60</pagecontrol>
+               <viewtype label="537">Big list</viewtype>
+               <focusposition>3</focusposition>
+               <movement>4</movement>
+               <preloaditems>4</preloaditems>
+               <scrolltime tween="sine" easing="inout">280</scrolltime>
+               <include>LargeListAddonsLayout</include>
+            </control>
+            <include>LargeListSlider</include>
+         </control>
+         <include>ListFade</include>
+         <control type="scrollbar" id="60">
+            <posx>51r</posx>
+            <posy>135</posy>
+            <height>870</height>
+            <onleft>50</onleft>
+            <onright>noop</onright>
+         </control>
+      </control>
+      <!--LIST-->
       <control type="group" description="51 List base">
          <visible>Control.IsVisible(51)</visible>
          <include>Left_Panel_Addons</include>
@@ -319,8 +319,7 @@
         <include>HeadingR</include>
         <label>$VAR[RootLabel]</label>
       </control>-->
-      </control>
-      
+      </control> 
       <!--ICONE-->
       <control type="group">
          <visible>Control.IsVisible(53)</visible>
@@ -485,7 +484,8 @@
             <onright>9000</onright>
          </control>
       </control>
-      <control type="group">
+      <!--FANART-->
+	  <control type="group">
          <visible>Control.IsVisible(500)</visible>
          <control type="image">
             <include>Dimensions_Fullscreen</include>
@@ -712,6 +712,20 @@
                </item>
             </content>
          </control>
+      </control>
+	   <control type="label">
+         <animation effect="slide" end="-860,14" condition="Control.IsVisible(53)">Conditional</animation>
+         <description>Page Count Label</description>
+         <posx>40r</posx>
+         <posy>50r</posy>
+         <width>500</width>
+         <height>20</height>
+         <font>font12</font>
+         <textcolor>gray</textcolor>
+         <scroll>false</scroll>
+         <align>right</align>
+         <aligny>center</aligny>
+         <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>
       </control>
    </include>
 </includes>
