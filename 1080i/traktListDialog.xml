@@ -85,7 +85,7 @@
           <control type="image">
             <width>540</width>
             <height>46</height>
-            <texture flipx="true">images/White2.png</texture>
+            <texture flipx="true">images/buttonselect1.png</texture>
             <visible>Control.HasFocus(4)</visible>
             <animation effect="fade" time="300">Visible</animation>
             <animation effect="fade" time="300">Hidden</animation>
@@ -156,7 +156,7 @@
             <control type="image">
               <width>240</width>
               <height>50</height>
-              <texture border="5">images/Whitebutton.png</texture>
+              <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
               <visible>Control.HasFocus(111)</visible>
             </control>
             <control type="label">
@@ -209,7 +209,7 @@
             <control type="image">
               <width>240</width>
               <height>46</height>
-              <texture border="5">images/Whitebutton.png</texture>
+              <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
               <visible>Control.HasFocus(141)</visible>
             </control>
             <control type="label">
@@ -267,7 +267,7 @@
         <width>200</width>
         <height>40</height>
         <label>$ADDON[script.trakt 1651]</label>
-        <texturefocus border="5">images/Whitebutton.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
       </control>
       <control type="button" id="16">
         <description>ok</description>

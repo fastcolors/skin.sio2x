@@ -99,16 +99,12 @@
           <width>270</width>
           <label>10523</label>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
         <control type="button" id="13" description="Get Thumb">
           <height>60</height>
           <width>270</width>
           <label>13405</label>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
         <control type="button" id="14" description="Decrease Rating">
           <height>60</height>
@@ -116,8 +112,6 @@
           <label>-  $LOCALIZE[563]</label>
           <onclick>DecreaseRating</onclick>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
         <control type="button" id="15" description="Increase Rating">
           <height>60</height>
@@ -125,25 +119,13 @@
           <label>+ $LOCALIZE[563]</label>
           <onclick>IncreaseRating</onclick>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
         <control type="button" id="10" description="Save rating">
           <height>60</height>
           <width>270</width>
           <label>186</label>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
-        <!--<control type="button" id="11" description="Cancel">
-					<height>40</height>
-					<width>180</width>
-					<label>222</label>
-					<font>size27</font>
-					<texturefocus>images/backfocus.png</texturefocus>
-					<alttexturefocus>images/backfocus.png</alttexturefocus>
-				</control>-->
         <control type="togglebutton" id="8999" description="Path">
           <height>60</height>
           <width>270</width>
@@ -151,8 +133,6 @@
           <font>size27</font>
           <label>35500</label>
           <onclick>Skin.ToggleSetting(ShowFileInfo)</onclick>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
       </control>
     </control>

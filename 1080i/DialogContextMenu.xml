@@ -34,9 +34,8 @@
       <width>480</width>
       <height>60</height>
       <focusedcolor>black</focusedcolor>
-      <texturefocus>images/WhiteButton.png</texturefocus>
+      <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
       <texturenofocus>-</texturenofocus>
     </control>
-	
   </controls>
 </window>

@@ -39,8 +39,6 @@
         <onright>11</onright>
         <onup>10</onup>
         <ondown>10</ondown>
-		<colordiffuse>FFFFFFFF</colordiffuse>
-        <texturefocus border="8">images/Buttonselect.png</texturefocus>
       </control>
       <control type="button" id="11" description="Yes">
         <posx>502</posx>
@@ -51,8 +49,6 @@
         <onright>10</onright>
         <onup>11</onup>
         <ondown>11</ondown>
-		<colordiffuse>FFFFFFFF</colordiffuse>
-        <texturefocus border="8">images/Buttonselect.png</texturefocus>
       </control>
     </control>
   </controls>

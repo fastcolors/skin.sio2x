@@ -46,7 +46,7 @@
           <visible>Control.HasFocus(222)</visible>
           <height>80</height>
           <width>384</width>
-          <texture>images/backfocus.png</texture>
+          <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
         </control>
         <control type="label">
           <posx>192</posx>

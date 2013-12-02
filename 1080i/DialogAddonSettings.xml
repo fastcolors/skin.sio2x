@@ -56,24 +56,16 @@
       <orientation>horizontal</orientation>
       <control type="button" id="10" description="OK">
         <label>186</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus border="5">images/backfocus.png</texturefocus>
       </control>
       <control type="button" id="12" description="Default">
         <label>409</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus border="5">images/backfocus.png</texturefocus>
       </control>
       <control type="button" id="11" description="Cancel">
         <label>222</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus border="5">images/backfocus.png</texturefocus>
       </control>
     </control>
     <control type="button" id="13" description="Button Template">
       <font>size33</font>
-      <texturenofocus>-</texturenofocus>
-      <texturefocus border="5">images/backfocus.png</texturefocus>
     </control>
     <control type="grouplist" id="2" description="Stage">
       <posx>300</posx>

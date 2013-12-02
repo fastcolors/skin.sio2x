@@ -3,8 +3,6 @@
   <defaultcontrol always="true">3</defaultcontrol>
   <allowoverlay>no</allowoverlay>
 <backgroundcolor>0xffffffff</backgroundcolor>
-
-
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
@@ -30,22 +28,20 @@
     </control>
     <control type="grouplist" id="3" description="TopMenu">
       <posx>0</posx>
-      <posy>78</posy>
-      <width>auto</width>
-      <align>center</align>
+      <posy>100</posy>
+      <width>400</width>
+	  <height>880</height>
       <height>80</height>
-      <itemgap>5</itemgap>
       <onup>20</onup>
-      <ondown>5</ondown>
-      <orientation>horizontal</orientation>
+      <onright>5</onright>
     </control>
     <control type="grouplist" id="5" description="Stage">
-      <posx>250</posx>
-      <posy>200</posy>
+      <posx>450</posx>
+      <posy>100</posy>
       <width>1420</width>
-      <height>860</height>
+      <height>500</height>
       <onright>60</onright>
-      <onup>3</onup>
+      <onup>20</onup>
       <ondown>5</ondown>
       <onright>3</onright>
       <onleft>3</onleft>
@@ -55,30 +51,27 @@
     <control type="button" id="7" description="Button">
       <width>300</width>
       <texturenofocus>-</texturenofocus>
-      <font>size34</font>
+      <font>size30</font>
       <align>left</align>
     </control>
     <control type="radiobutton" id="8" description="Radio Button">
       <width>300</width>
       <texturenofocus>-</texturenofocus>
       <radioposx>0</radioposx>
-      <font>size34</font>
+      <font>size30</font>
       <align>left</align>
     </control>
     <control type="spincontrolex" id="9" description="Spin control">
       <width>1260</width>
-      <texturenofocus>-</texturenofocus>
       <align>left</align>
-      <font>size34</font>
+      <font>size30</font>
     </control>
     <control type="button" id="10" description="Category Button">
-      <texturenofocus>-</texturenofocus>
-      <texturefocus border="4">images/backfocus.png</texturefocus>
-      <colordiffuse>FFFFFFFF</colordiffuse>
+      <width>320</width>
       <textoffsetx>20</textoffsetx>
       <align>center</align>
       <aligny>center</aligny>
-      <font>size34</font>
+      <font>size30</font>
     </control>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
@@ -90,11 +83,26 @@
     <control type="button" id="20">
       <description>Setting level button</description>
       <posy>5</posy>
-      <posx>510r</posx>
-      <width>500</width>
+      <posx>300</posx>
+      <width>300</width>
       <label>10037</label>
       <onclick>SettingsLevelChange</onclick>
-      <ondown>3</ondown>
+      <ondown>5</ondown>
+    </control>
+	  <control type="label">
+      <description>Setting level button</description>
+      <posy>5</posy>
+      <posx>40</posx>
+      <width>250</width>
+      <label>Settings Level:</label>
+    </control>
+	<control type="textbox" id="6">
+      <description>S</description>
+      <posy>540</posy>
+      <posx>40</posx>
+      <width>400</width>
+	  <height>400</height>
+      <label>Settings Level:</label>
     </control>
   </controls>
 </window>

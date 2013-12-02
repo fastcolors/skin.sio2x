@@ -160,32 +160,24 @@
           <width>330</width>
           <label>184</label>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
         <control type="button" id="10" description="Get Thumb">
           <height>60</height>
           <width>330</width>
           <label>13405</label>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
         <control type="button" id="11" description="Last FM">
           <height>60</height>
           <width>330</width>
           <label>Last FM</label>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
         <control type="button" id="12" description="Get FanArt">
           <height>60</height>
           <width>330</width>
           <label>20413</label>
           <font>size27</font>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
         <control type="togglebutton" id="8999" description="Path">
           <visible>!Container.content(artists)</visible>
@@ -195,8 +187,6 @@
           <font>size27</font>
           <label>35500</label>
           <onclick>Skin.ToggleSetting(ShowFileInfo)</onclick>
-          <texturefocus>images/backfocus.png</texturefocus>
-          <alttexturefocus>images/backfocus.png</alttexturefocus>
         </control>
       </control>
     </control>

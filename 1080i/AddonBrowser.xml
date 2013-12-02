@@ -52,8 +52,7 @@
 	<animation effect="fade" end="0" time="30">UnFocus</animation>
 	<width>920</width>
 	<height>81</height>
-	<texture>images/White2.png</texture>
-	<colordiffuse>445555FF</colordiffuse>
+	<texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
 	</control>
           <control type="label" description="Main Label">
             <width max="720">auto</width>

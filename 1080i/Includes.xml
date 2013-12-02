@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+  <include file="homepanel.xml" />
   <include file="Includes_Variables.xml" />
   <include file="Defaults.xml" />
   <include file="CommonViews.xml" />
@@ -11,6 +12,9 @@
   <include file="Includes_Shelf.xml" />
   <include name="VisibleFade">
     <animation effect="fade" start="0" end="100" time="200">visiblechange</animation>
+  </include>
+   <include name="9000slide">
+    <animation effect="slide" start="-520,0" end="0,0" time="300" reversible="true">visiblechange</animation>
   </include>
   <include name="OpenClose">
     <animation effect="fade" time="150">WindowOpen</animation>

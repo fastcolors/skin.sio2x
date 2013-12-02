@@ -76,7 +76,7 @@
             <posy>0</posy>
             <width>810</width>
             <height>69</height>
-            <texture border="8">images/WhiteButton.png</texture>
+            <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
           </control>
           <control type="label">
             <posx>30</posx>
