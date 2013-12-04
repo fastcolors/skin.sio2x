@@ -7,7 +7,7 @@
         <control type="group">
              <control type="image">
 	  <posx>410</posx>
-	  <posy>200</posy>
+	  <top>200</top>
         <width>1100</width>
         <height>680</height>
         <texture border="150">images/Dialog.png</texture>
@@ -16,7 +16,7 @@
             <control type="label" id="10011"> <!--DIALOG TITLE-->
                 <description>Title</description>
                 <centerx>960</centerx>
-                <posy>360</posy>
+                <top>360</top>
                 <width>600</width>
                 <height>30</height>
                 <label>$ADDON[script.trakt 1313]</label>
@@ -27,7 +27,7 @@
             <control type="label" id="10012"> <!--MEDIA TITLE-->
                 <description>Title</description>
                 <centerx>960</centerx>
-                <posy>400</posy>
+                <top>400</top>
                 <width>600</width>
                 <height>24</height>
                 <label></label>
@@ -39,7 +39,7 @@
             <control type="label" id="10013"> <!--RATING TITLE-->
                 <description>Title</description>
                 <centerx>960</centerx>
-                <posy>430</posy>
+                <top>430</top>
                 <width>600</width>
                 <height>24</height>
                 <label></label>
@@ -51,14 +51,14 @@
         </control>
 <control type="image">
 <centerx>960</centerx>
-<posy>470</posy>
+<top>470</top>
 <width>700</width>
 <height>1</height>
 <texture>images/Line.png</texture>
 </control>
 <control type="image">
 <centerx>960</centerx>
-<posy>680</posy>
+<top>680</top>
 <width>700</width>
 <height>1</height>
 <texture>images/Line.png</texture>
@@ -66,7 +66,7 @@
         <!--SIMPLE -->
         <control type="group" id="10014">
 		<posx>700</posx>
-		<posy>500</posy>
+		<top>500</top>
             <control type="button" id="10030">
                 <description>Love Button</description>
                 <width>250</width>
@@ -98,7 +98,7 @@
         <!--ADVANCED-->
         <control type="group" id="10015">
 		<posx>690</posx>
-		<posy>550</posy>
+		<top>550</top>
             <control type="button" id="11030">
                 <description>1 Button</description>
                 <width>50</width>
@@ -325,7 +325,7 @@
             <control type="image">
                 <description>9 Button Placeholder</description>
                 <posx>440</posx>
-                <posy>130</posy>
+                <top>130</top>
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/9_b.png</texture>

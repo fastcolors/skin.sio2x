@@ -10,21 +10,21 @@
     </control>
     <control type="image" description="Background">
       <posx>60</posx>
-      <posy>650</posy>
+      <top>650</top>
       <width>1800</width>
       <height>300</height>
       <texture border="50">Seekbar/OSDBackground.png</texture>
     </control>
     <control type="image" description="Background">
       <posx>60</posx>
-      <posy>650</posy>
+      <top>650</top>
       <width>1800</width>
       <height>300</height>
       <texture border="50">Seekbar/OSDBackground.png</texture>
     </control>
     <control type="group">
       <control type="image">
-        <posy>540</posy>
+        <top>540</top>
         <posx>1580</posx>
         <width>250</width>
         <height>350</height>
@@ -33,7 +33,7 @@
       </control>
       <control type="group">
         <animation effect="fade" time="200">VisibleChange</animation>
-        <posy>660</posy>
+        <top>660</top>
         <control type="label" description="Main label">
           <visible>VideoPlayer.Content(MusicVideos)</visible>
           <include>FullscreenInfoLabel</include>
@@ -47,7 +47,7 @@
         <control type="label" description="Label 2">
           <visible>VideoPlayer.Content(MusicVideos)</visible>
           <font>size27</font>
-          <posy>45</posy>
+          <top>45</top>
           <textcolor>silver</textcolor>
           <include>FullscreenInfoLabel</include>
           <label>$INFO[VideoPlayer.Album]</label>
@@ -55,7 +55,7 @@
         <control type="label" description="chapters">
           <visible>Player.ChapterCount</visible>
           <font>size27</font>
-          <posy>45</posy>
+          <top>45</top>
           <textcolor>silver</textcolor>
           <include>FullscreenInfoLabel</include>
           <label>$LOCALIZE[21396]$INFO[Player.Chapter, : ]$INFO[Player.ChapterCount, / ]</label>
@@ -63,7 +63,7 @@
         <control type="label" description="Episode s-e">
           <visible>VideoPlayer.Content(Episodes)</visible>
           <font>size27</font>
-          <posy>45</posy>
+          <top>45</top>
           <textcolor>=</textcolor>
           <include>FullscreenInfoLabel</include>
           <label>$INFO[VideoPlayer.TVShowTitle] - $LOCALIZE[20373] $INFO[VideoPlayer.Season], $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
@@ -71,14 +71,14 @@
 		<control type="label" description="music video title">
           <visible>VideoPlayer.Content(Musicvideos)</visible>
           <font>size27</font>
-          <posy>45</posy>
+          <top>45</top>
           <textcolor>=</textcolor>
           <include>FullscreenInfoLabel</include>
           <label>$INFO[VideoPlayer.Title]</label>
         </control>
         <control type="textbox">
           <posx>400</posx>
-          <posy>100</posy>
+          <top>100</top>
           <width>1120</width>
           <height>170</height>
           <label>$INFO[VideoPlayer.Plot]</label>
@@ -90,7 +90,7 @@
       <control type="grouplist">
         <posx>60</posx>
         <width>1800</width>
-        <posy>590</posy>
+        <top>590</top>
         <height>60</height>
         <itemgap>20</itemgap>
         <align>center</align>
@@ -121,14 +121,14 @@
     </control>
     <control type="image">
       <posx>110</posx>
-      <posy>700</posy>
+      <top>700</top>
       <height>200</height>
       <width>250</width>
       <aspectratio>scale</aspectratio>
       <texture diffuse="images/Diffuse.png">$INFO[Player.Art(fanart)]</texture>
     </control>
     <control type="group">
-      <posy>10</posy>
+      <top>10</top>
       <control type="label" description="Clock">
         <posx>60</posx>
         <width>695</width>
@@ -139,7 +139,7 @@
       </control>
       <control type="label">
         <posx>60</posx>
-        <posy>55</posy>
+        <top>55</top>
         <width>495</width>
         <height>30</height>
         <label>[B]$INFO[Player.Time][/B]</label>
@@ -156,7 +156,7 @@
       </control>
       <control type="label">
         <posx>60r</posx>
-        <posy>55</posy>
+        <top>55</top>
         <height>30</height>
         <width>195</width>
         <align>right</align>

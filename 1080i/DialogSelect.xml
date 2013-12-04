@@ -29,7 +29,7 @@
          </control>
          <control type="group">
             <posx>1020</posx>
-            <posy>150</posy>
+            <top>150</top>
             <control type="list" id="3">
                <width>802</width>
                <height>888</height>
@@ -83,7 +83,7 @@
       <control type="group" description="Group 6 Thumbs">
          <control type="group" description="Slider and List">
             <posx>1020</posx>
-            <posy>140</posy>
+            <top>140</top>
             <control type="list" id="6">
                <width>802</width>
                <height>886</height>
@@ -180,7 +180,7 @@
       </control>
       <control type="group" description="Thumbs">
          <posx>270</posx>
-         <posy>315</posy>
+         <top>315</top>
          <control type="image" description="Item Thumb">
             <width>450</width>
             <height>450</height>
@@ -191,7 +191,7 @@
       </control>
       <control type="group" description="Button 5">
          <control type="button" id="5" description="decision button">
-            <posy>970</posy>
+            <top>970</top>
             <height>110</height>
             <width>960</width>
             <font>size36</font>
@@ -206,7 +206,7 @@
             <visible>Control.IsVisible(5)</visible>
             <animation effect="fade" end="50" condition="!Control.HasFocus(5)" reversible="false">Conditional</animation>
             <posx>120</posx>
-            <posy>990</posy>
+            <top>990</top>
             <width>48</width>
             <height>81</height>
             <texture>images/loop.png</texture>
@@ -220,14 +220,14 @@
          <texture>images/LineV.png</texture>
       </control>
       <control type="image">
-         <posy>970</posy>
+         <top>970</top>
          <width>960</width>
          <height>1</height>
          <texture>images/Line.png</texture>
       </control>
       <control type="scrollbar" id="60">
          <posx>39r</posx>
-         <posy>135</posy>
+         <top>135</top>
          <height>870</height>
          <onleft>3</onleft>
          <onright>noop</onright>

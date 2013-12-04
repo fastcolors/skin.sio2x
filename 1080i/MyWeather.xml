@@ -16,7 +16,7 @@
     <control type="group" description="Bottom">
       <control type="label" description="last updated label">
         <posx>1400</posx>
-        <posy>960</posy>
+        <top>960</top>
         <width>400</width>
         <height>45</height>
         <label>$LOCALIZE[31016]</label>
@@ -25,7 +25,7 @@
       </control>
       <control type="label" id="11" description="last update">
         <posx>1400</posx>
-        <posy>990</posy>
+        <top>990</top>
         <width>400</width>
         <height>45</height>
         <label>-</label>
@@ -37,7 +37,7 @@
         <description>Location</description>
         <colordiffuse>FFFFAA00</colordiffuse>
         <posx>200</posx>
-        <posy>200</posy>
+        <top>200</top>
         <width>500</width>
         <visible>true</visible>
         <texturefocus></texturefocus>
@@ -52,7 +52,7 @@
       </control>
     </control>
     <control type="button" id="2" description="Refresh">
-      <posy>980</posy>
+      <top>980</top>
       <posx>760</posx>
       <onright>noop</onright>
       <onleft>noop</onleft>
@@ -65,10 +65,10 @@
     <control type="group" id="51">
       <visible>!StringCompare(Weather.Plugin,weather.weatherplus)</visible>
       <posx>200</posx>
-      <posy>160</posy>
+      <top>160</top>
       <control type="label" description="Temp value">
         <posx>950</posx>
-        <posy>80</posy>
+        <top>80</top>
         <width>500</width>
         <font>size212</font>
 		<textcolor>white</textcolor>
@@ -79,7 +79,7 @@
       </control>
       <control type="label" description="Feels like label">
         <posx>950</posx>
-        <posy>170</posy>
+        <top>170</top>
         <width>500</width>
         <height>30</height>
 		<textcolor>white</textcolor>
@@ -89,7 +89,7 @@
       </control>
       <control type="label" description="Current dew value">
         <posx>950</posx>
-        <posy>210</posy>
+        <top>210</top>
         <width>500</width>
         <height>30</height>
 		<textcolor>white</textcolor>
@@ -98,7 +98,7 @@
         <label>$LOCALIZE[405] : $INFO[Window.Property(Current.DewPoint)]</label>
       </control>
       <control type="label" description="Current humidity value">
-        <posy>120</posy>
+        <top>120</top>
         <width>600</width>
         <height>30</height>
 		<textcolor>white</textcolor>
@@ -107,7 +107,7 @@
         <label>$LOCALIZE[406] : $INFO[Window.Property(Current.Humidity)]</label>
       </control>
       <control type="label" description="Current uv label">
-        <posy>160</posy>
+        <top>160</top>
         <width>600</width>
         <height>30</height>
 		<textcolor>white</textcolor>
@@ -117,7 +117,7 @@
       </control>
       <control type="label" description="Current wind value">
         <posx>20</posx>
-        <posy>200</posy>
+        <top>200</top>
         <width>600</width>
         <height>30</height>
 		<textcolor>white</textcolor>
@@ -128,7 +128,7 @@
     </control>
     <control type="list" id="150" description="DAYS">
       <posx>210</posx>
-      <posy>460</posy>
+      <top>460</top>
       <width>1500</width>
       <height>490</height>
       <onup>3</onup>
@@ -139,7 +139,7 @@
       <itemlayout width="250">
         <control type="label">
           <posx>125</posx>
-          <posy>0</posy>
+          <top>0</top>
           <height>120</height>
           <width>220</width>
 		  <textcolor>white</textcolor>
@@ -150,7 +150,7 @@
         </control>
         <control type="label" description="temps">
           <posx>125</posx>
-          <posy>300</posy>
+          <top>300</top>
           <height>100</height>
           <width>220</width>
           <align>center</align>
@@ -160,7 +160,7 @@
         </control>
         <control type="label" description="Conditions">
           <posx>125</posx>
-          <posy>400</posy>
+          <top>400</top>
           <height>45</height>
           <width>220</width>
           <font>size21</font>
@@ -171,7 +171,7 @@
         </control>
         <control type="image" description="Dayicon">
           <posx>25</posx>
-          <posy>122</posy>
+          <top>122</top>
           <height>220</height>
           <width>220</width>
           <texture>$INFO[ListItem.thumb]</texture>
@@ -187,7 +187,7 @@
       <focusedlayout width="250">
 	  <control type="label">
           <posx>125</posx>
-          <posy>0</posy>
+          <top>0</top>
           <height>120</height>
           <width>220</width>
           <align>center</align>
@@ -199,7 +199,7 @@
         </control>
         <control type="label">
           <posx>125</posx>
-          <posy>0</posy>
+          <top>0</top>
           <height>120</height>
           <width>220</width>
           <align>center</align>
@@ -211,7 +211,7 @@
         </control>
         <control type="label" description="temps">
           <posx>125</posx>
-          <posy>300</posy>
+          <top>300</top>
           <height>100</height>
           <width>220</width>
           <align>center</align>
@@ -221,7 +221,7 @@
         </control>
         <control type="label" description="Conditions">
           <posx>125</posx>
-          <posy>400</posy>
+          <top>400</top>
           <height>45</height>
           <width>220</width>
           <font>size21</font>
@@ -232,7 +232,7 @@
         </control>
         <control type="image" description="Dayicon">
           <posx>25</posx>
-          <posy>122</posy>
+          <top>122</top>
           <height>220</height>
           <width>220</width>
           <texture>$INFO[ListItem.thumb]</texture>

@@ -8,7 +8,7 @@
   	<control type="group" id="101" description="Options content">
       <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
       <posx>630</posx>
-      <posy>865</posy>
+      <top>865</top>
       <animation type="Focus">
         <effect type="slide" tween="Cubic" easing="out" start="0,0" end="0,-800" time="800" />
       </animation>
@@ -17,7 +17,7 @@
       </animation>
       <control type="image">
         <posx>550</posx>
-        <posy>200</posy>
+        <top>200</top>
         <width>680</width>
         <height>520</height>
         <aspectratio>stretch</aspectratio>
@@ -25,7 +25,7 @@
       </control>
       <control type="grouplist" id="101" description="OSD Options">
         <posx>600</posx>
-        <posy>246</posy>
+        <top>246</top>
         <width>640</width>
         <height>640</height>
         <itemgap>0</itemgap>
@@ -100,13 +100,13 @@
       <animation effect="fade" end="100" time="400">Visible</animation>
       <animation effect="fade" end="0" time="100">Hidden</animation>
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <control type="group">
         <control type="group" description="Dialog Background">
           <visible>Window.IsVisible(videoosd.xml) + Window.IsActive(dialogseekbar.xml)</visible>
           <control type="image">
             <posx>35</posx>
-            <posy>873</posy>
+            <top>873</top>
             <width>1850</width>
             <height>150</height>
             <aspectratio>stretch</aspectratio>
@@ -115,7 +115,7 @@
         </control>
         <control type="label" description="Title">
           <posx>120</posx>
-          <posy>880</posy>
+          <top>880</top>
           <height>60</height>
           <width>840</width>
           <scroll>true</scroll>
@@ -130,7 +130,7 @@
           <animation effect="rotatey" end="20" center="1720,0" reversible="false" condition="true">Conditional</animation>
           <visible>!ControlGroup(101).HasFocus()</visible>
           <posx>1610</posx>
-          <posy>600</posy>
+          <top>600</top>
           <control type="image" description="CoverReal">
             <height>300</height>
             <width>220</width>
@@ -144,7 +144,7 @@
             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(poster)]</texture>
           </control>
           <control type="image" description="CoverRef">
-            <posy>300</posy>
+            <top>300</top>
             <height>300</height>
             <width>220</width>
             <aspectratio>keep</aspectratio>
@@ -157,7 +157,7 @@
             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
           </control>
           <control type="image" description="CoverRef">
-            <posy>300</posy>
+            <top>300</top>
             <height>300</height>
             <width>220</width>
             <aspectratio>keep</aspectratio>
@@ -166,7 +166,7 @@
           <control type="label" description="Episode">
             <visible>VideoPlayer.Content(Episodes)</visible>
             <posx>190</posx>
-            <posy>290</posy>
+            <top>290</top>
             <height>60</height>
             <width>220</width>
             <scroll>false</scroll>
@@ -178,7 +178,7 @@
           <control type="label" description="Channel">
             <visible>Pvr.IsPlayingTV</visible>
             <posx>190</posx>
-            <posy>290</posy>
+            <top>290</top>
             <height>60</height>
             <width>220</width>
             <scroll>false</scroll>
@@ -191,7 +191,7 @@
       </control>
       <control type="list" id="100">
         <posx>1000</posx>
-        <posy>220r</posy>
+        <top>220r</top>
         <onright>100</onright>
         <onleft>100</onleft>
         <onup>101</onup>
@@ -314,7 +314,7 @@
         <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800" />
       </animation>
       <posx>1500</posx>
-      <posy>1030</posy>
+      <top>1030</top>
       <width>48</width>
       <height>48</height>
       <texture>images/Dialogpull.png</texture>
@@ -328,7 +328,7 @@
 			<animation effect="fade" time="200">VisibleChange</animation>
 	<control type="image">
 	<posx>510</posx>
-			<posy>500</posy>
+			<top>500</top>
         <width>900</width>
         <height>450</height>
         <aspectratio>stretch</aspectratio>
@@ -337,7 +337,7 @@
 	<control type="grouplist" id="500">
 			
 			<posx>710</posx>
-			<posy>300</posy>
+			<top>300</top>
 			<width>500</width>
 			<height>500</height>
 			<align>bottom</align>
@@ -355,7 +355,7 @@
 				<width>500</width>
 				<height>50</height>
 				<control type="label" id="">
-					<posy>20</posy>
+					<top>20</top>
 					<width>500</width>
 					<height>15</height>
 					<font>Size33</font>

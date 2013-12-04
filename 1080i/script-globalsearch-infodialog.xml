@@ -5,7 +5,7 @@
   <controls>
     <control type="list" id="100">
       <posx>-10</posx>
-      <posy>-10</posy>
+      <top>-10</top>
       <width>1</width>
       <height>1</height>
       <visible>false</visible>
@@ -29,7 +29,7 @@
       </control>
 	  <control type="label" description="title">
 	  <posx>600</posx>
-        <posy>50</posy>
+        <top>50</top>
         <width>1200</width>
         <height>50</height>
         <font>size39B</font>
@@ -39,7 +39,7 @@
 	  <control type="label">
 	  <visible>Control.IsVisible(110)</visible>
 	  <posx>600</posx>
-        <posy>96</posy>
+        <top>96</top>
         <width>1000</width>
         <height>45</height>
         <font>size27</font>
@@ -48,7 +48,7 @@
 	  <control type="label">
 	  <visible>Control.IsVisible(120)</visible>
 	  <posx>600</posx>
-        <posy>96</posy>
+        <top>96</top>
         <width>1000</width>
         <height>45</height>
         <font>size27</font>
@@ -57,7 +57,7 @@
 	  <control type="label">
 	  <visible>Control.IsVisible(150) | Control.IsVisible(170) | Control.IsVisible(180)</visible>
 	  <posx>600</posx>
-        <posy>96</posy>
+        <top>96</top>
         <width>1000</width>
         <height>45</height>
         <font>size27</font>
@@ -66,7 +66,7 @@
 	  <control type="label">
 	  <visible>Control.IsVisible(140)</visible>
 	  <posx>600</posx>
-        <posy>96</posy>
+        <top>96</top>
         <width>1000</width>
         <height>45</height>
         <font>size27</font>
@@ -76,7 +76,7 @@
         <camera x="265" y="330" />
         <animation condition="true" effect="rotatey" center="265,0" end="-20">conditional</animation>
         <posx>60</posx>
-        <posy>60</posy>
+        <top>60</top>
         <width>500</width>
         <height>600</height>
         <aspectratio>keep</aspectratio>
@@ -85,14 +85,14 @@
       <control type="group" id="101">
         <control type="list" id="110">
             <posx>150</posx>
-            <posy>750</posy>
+            <top>750</top>
             <width>1770</width>
             <height>504</height>
             <pagecontrol>-</pagecontrol>
             <itemlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -102,7 +102,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -113,7 +113,7 @@
             <focusedlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -123,7 +123,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -208,14 +208,14 @@
         </control>
         <control type="list" id="120">
           <posx>150</posx>
-            <posy>750</posy>
+            <top>750</top>
             <width>1770</width>
             <height>504</height>
             <pagecontrol>-</pagecontrol>
             <itemlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -225,7 +225,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -236,7 +236,7 @@
             <focusedlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -246,7 +246,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -313,14 +313,14 @@
         </control>
         <control type="list" id="130">
           <posx>150</posx>
-            <posy>750</posy>
+            <top>750</top>
             <width>1770</width>
             <height>504</height>
             <pagecontrol>-</pagecontrol>
             <itemlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -330,7 +330,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -341,7 +341,7 @@
             <focusedlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -351,7 +351,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -388,14 +388,14 @@
         </control>
         <control type="list" id="140">
           <posx>150</posx>
-            <posy>750</posy>
+            <top>750</top>
             <width>1770</width>
             <height>504</height>
             <pagecontrol>-</pagecontrol>
             <itemlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -405,7 +405,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -416,7 +416,7 @@
             <focusedlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -426,7 +426,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -499,14 +499,14 @@
         </control>
         <control type="list" id="150">
           <posx>150</posx>
-            <posy>750</posy>
+            <top>750</top>
             <width>1770</width>
             <height>504</height>
             <pagecontrol>-</pagecontrol>
             <itemlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -516,7 +516,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -527,7 +527,7 @@
             <focusedlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -537,7 +537,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -604,14 +604,14 @@
         </control>
         <control type="list" id="160">
          <posx>150</posx>
-            <posy>750</posy>
+            <top>750</top>
             <width>1770</width>
             <height>504</height>
             <pagecontrol>-</pagecontrol>
             <itemlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -621,7 +621,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -632,7 +632,7 @@
             <focusedlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -642,7 +642,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -709,14 +709,14 @@
         </control>
         <control type="list" id="170">
           <posx>150</posx>
-            <posy>750</posy>
+            <top>750</top>
             <width>1770</width>
             <height>504</height>
             <pagecontrol>-</pagecontrol>
             <itemlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -726,7 +726,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -737,7 +737,7 @@
             <focusedlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -747,7 +747,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -820,14 +820,14 @@
         </control>
         <control type="list" id="180">
           <posx>150</posx>
-            <posy>750</posy>
+            <top>750</top>
             <width>1770</width>
             <height>504</height>
             <pagecontrol>-</pagecontrol>
             <itemlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -837,7 +837,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -848,7 +848,7 @@
             <focusedlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -858,7 +858,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>1649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -933,13 +933,13 @@
 	  <control type="group">
 	  <posx>600</posx>
 	  <control type="image" description="Line">
-        <posy>140</posy>
+        <top>140</top>
         <height>1</height>
         <width>1000</width>
         <texture>images/LineL.png</texture>
       </control>
       <control type="textbox" description="plot">
-        <posy>140</posy>
+        <top>140</top>
         <width>1200</width>
         <height>250</height>
         <align>justify</align>
@@ -948,7 +948,7 @@
         <visible>Control.IsVisible(110) | Control.IsVisible(120) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
       </control>
 	  <control type="textbox" description="plot">
-        <posy>140</posy>
+        <top>140</top>
         <width>1200</width>
         <height>250</height>
         <align>justify</align>
@@ -956,7 +956,7 @@
         <autoscroll time="3000" delay="20000" repeat="5000">true</autoscroll>
         <visible>Control.IsVisible(160)</visible></control>
 	  <control type="textbox" description="plot">
-        <posy>140</posy>
+        <top>140</top>
         <width>1200</width>
         <height>250</height>
         <align>justify</align>
@@ -965,7 +965,7 @@
         <visible>Control.IsVisible(170)</visible>
       </control>
 	  <control type="textbox" description="plot">
-        <posy>140</posy>
+        <top>140</top>
         <width>1200</width>
         <height>250</height>
         <align>justify</align>
@@ -974,7 +974,7 @@
         <visible>Control.IsVisible(180)</visible>
       </control>
       <control type="image" description="Line">
-        <posy>390</posy>
+        <top>390</top>
         <height>1</height>
         <width>1000</width>
         <texture>images/LineL.png</texture>
@@ -982,7 +982,7 @@
 	  </control>
       <control type="grouplist" id="190">
 	  <posx>600</posx>
-        <posy>490</posy>
+        <top>490</top>
         <width>1200</width>
         <ondown>50</ondown>
         <itemgap>10</itemgap>
@@ -1031,7 +1031,7 @@
       </control>
 	<control type="grouplist" description="Flags">
 		<posx>600</posx>
-        <posy>420</posy>
+        <top>420</top>
         <width>1200</width>
         <height>50</height>
         <itemgap>30</itemgap>

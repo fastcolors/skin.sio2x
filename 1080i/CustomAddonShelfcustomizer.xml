@@ -6,7 +6,7 @@
   <controls>
     <control type="label" description="Heading">
       <posx>495</posx>
-      <posy>20</posy>
+      <top>20</top>
       <width>930</width>
       <height>75</height>
       <align>center</align>
@@ -16,10 +16,10 @@
       <label>Shelf Addons</label>
     </control>
     <control type="group">
-      <posy>180</posy>
+      <top>180</top>
       <control type="image" description="Line bottom">
         <posx>0</posx>
-        <posy>270</posy>
+        <top>270</top>
         <width>1920</width>
         <height>1</height>
         <texture>images/Line1.png</texture>
@@ -28,7 +28,7 @@
         <posx>480</posx>
         <control type="image" description="THUMB">
           <posx>320</posx>
-          <posy>0</posy>
+          <top>0</top>
           <height>190</height>
           <width>320</width>
           <texture>icons/addons.png</texture>
@@ -37,7 +37,7 @@
         </control>
         <control type="image" description="Selection Overlay">
           <posx>320</posx>
-          <posy></posy>
+          <top></top>
           <height>190</height>
           <width>320</width>
           <texture>images/atvslider.png</texture>
@@ -45,7 +45,7 @@
         </control>
         <control type="label" description="Main Label">
           <posx>480</posx>
-          <posy>190</posy>
+          <top>190</top>
           <height>40</height>
           <width>320</width>
           <align>center</align>
@@ -55,7 +55,7 @@
     </control>
     <control type="grouplist" id="52">
       <posx>600</posx>
-      <posy>480</posy>
+      <top>480</top>
       <width>720</width>
       <height>600</height>
       <onup>50</onup>
@@ -240,7 +240,7 @@
     </control>
     <control type="image">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <width>1920</width>
       <height>450</height>
       <texture>Shades/Shelfoverlay.png</texture>

@@ -6,7 +6,7 @@
   <controls>
     <control type="group">
       <posx>855</posx>
-      <posy>666</posy>
+      <top>666</top>
       <control type="image" id="901" description="Muted">
         <width>210</width>
         <height>206</height>

@@ -9,7 +9,7 @@
       <include>WindowsTopInfos</include>
       <control type="group">
          <posx>960</posx>
-         <posy>80</posy>
+         <top>80</top>
          <control type="grouplist" id="50">
             <width>900</width>
             <height>960</height>
@@ -107,7 +107,7 @@
       <include>Linemiddle</include>
       <control type="group" description="Left panel">
          <posx>270</posx>
-         <posy>160</posy>
+         <top>160</top>
          <control type="image" description="Network">
             <visible>Controlgroup(50).HasFocus(13)</visible>
             <include>Help_Panel</include>
@@ -218,14 +218,14 @@
       </control>
       <control type="image" description="Line">
          <posx>150</posx>
-         <posy>540</posy>
+         <top>540</top>
          <height>1</height>
          <width>660</width>
          <texture>images/Line.png</texture>
       </control>
       <control type="textbox" description="HelpDetails">
          <posx>170</posx>
-         <posy>560</posy>
+         <top>560</top>
          <width>660</width>
          <height>380</height>
          <font>size33</font>
@@ -236,7 +236,7 @@
          <include>VisibleFade</include>
          <visible>Container(50).HasFocus(16) + Skin.HasSetting(CustomImage)</visible>
          <posx>60</posx>
-         <posy>500</posy>
+         <top>500</top>
          <width>840</width>
          <height>40</height>
          <font>size21</font>

@@ -6,14 +6,14 @@
     <control type="progress" id="23" description="Progress Bar">
       <visible>true</visible>
       <posx>84</posx>
-      <posy>-750</posy>
+      <top>-750</top>
       <width>747</width>
       <info>Player.Progress</info>
       <visible>true</visible>
     </control>
     <control type="image">
       <posx>190</posx>
-      <posy>90r</posy>
+      <top>90r</top>
       <width>750</width>
       <height>500</height>
       <aspectratio>stretch</aspectratio>
@@ -21,7 +21,7 @@
     </control>
     <control type="group" id="101">
       <posx>200</posx>
-      <posy>90r</posy>
+      <top>90r</top>
       <control type="list" id="102">
         <onright>102</onright>
         <onleft>102</onleft>
@@ -33,7 +33,7 @@
         <itemlayout width="90">
           <control type="image">
             <posx>0</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>90</width>
             <height>98</height>
             <texture>$INFO[ListItem.thumb]</texture>
@@ -42,7 +42,7 @@
         <focusedlayout width="90">
           <control type="image">
             <posx>0</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>90</width>
             <height>98</height>
             <texture>$INFO[ListItem.label]</texture>
@@ -128,14 +128,14 @@
       </animation>
       <control type="image">
         <posx>1090</posx>
-        <posy>920</posy>
+        <top>920</top>
         <width>950</width>
         <height>900</height>
         <texture border="150">images/Dialog.png</texture>
       </control>
       <control type="label" description="Dialog heading">
         <posx>1215</posx>
-        <posy>1076</posy>
+        <top>1076</top>
         <width>690</width>
         <height>52</height>
         <label>33063</label>
@@ -145,7 +145,7 @@
       </control>
       <control type="grouplist" id="100" description="Music OSD Options">
         <posx>1298</posx>
-        <posy>1166</posy>
+        <top>1166</top>
         <width>525</width>
         <height>483</height>
         <onleft>101</onleft>
@@ -210,7 +210,7 @@
         <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800" />
       </animation>
       <posx>1540</posx>
-      <posy>1030</posy>
+      <top>1030</top>
       <width>48</width>
       <height>48</height>
       <texture>images/Dialogpull.png</texture>

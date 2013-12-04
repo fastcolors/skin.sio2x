@@ -18,10 +18,10 @@
     <control type="group">
       <control type="group" description="Thumbs">
         <posx>0</posx>
-        <posy>6</posy>
+        <top>6</top>
         <control type="image" description="Icon">
           <posx>1250</posx>
-          <posy>300</posy>
+          <top>300</top>
           <width>570</width>
           <height>570</height>
           <aspectratio align="right" aligny="top">keep</aspectratio>
@@ -30,10 +30,10 @@
       </control>
       <control type="group" description="Top info">
         <posx>80</posx>
-        <posy>75</posy>
+        <top>75</top>
         <control type="label" description="Item Label">
           <visible>true</visible>
-          <posy>195</posy>
+          <top>195</top>
           <width>1050</width>
           <height>60</height>
           <include>TitleCommons</include>
@@ -43,7 +43,7 @@
         </control>
         <control type="label" description="Album Title">
           <visible>true</visible>
-          <posy>195</posy>
+          <top>195</top>
           <width>1050</width>
           <height>60</height>
           <include>TitleCommons</include>
@@ -53,7 +53,7 @@
         </control>
         <control type="label" description="Artist Label">
           <visible>!container.content(artists)</visible>
-          <posy>270</posy>
+          <top>270</top>
           <width>1050</width>
           <height>45</height>
           <font>size33</font>
@@ -63,7 +63,7 @@
         </control>
         <control type="label" description="Styles Label">
           <visible>container.content(artists)</visible>
-          <posy>270</posy>
+          <top>270</top>
           <width>1050</width>
           <height>45</height>
           <font>size33</font>
@@ -75,7 +75,7 @@
         <control type="label" description="Moods Label">
           <visible>container.content(artists)</visible>
           <visible>IsEmpty(ListItem.Property(Artist_Style))</visible>
-          <posy>270</posy>
+          <top>270</top>
           <width>1050</width>
           <height>45</height>
           <font>size33</font>
@@ -85,7 +85,7 @@
           <label>$INFO[ListItem.Property(Artist_Mood)]</label>
         </control>
         <control type="label" description="Year and Genre">
-          <posy>315</posy>
+          <top>315</top>
           <width>1050</width>
           <height>45</height>
           <font>size33</font>
@@ -94,7 +94,7 @@
           <label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Genre]</label>
         </control>
         <control type="label" description="Genre">
-          <posy>315</posy>
+          <top>315</top>
           <width>1050</width>
           <height>45</height>
           <font>size33</font>
@@ -104,7 +104,7 @@
         </control>
         <control type="textbox" id="4" description="Plot">
           <posx>0</posx>
-          <posy>405</posy>
+          <top>405</top>
           <width>1050</width>
           <height>378</height>
           <font>size33</font>
@@ -116,7 +116,7 @@
     <control type="label" description="Path">
       <visible>Skin.HasSetting(ShowFileInfo)</visible>
       <posx>60</posx>
-      <posy>990</posy>
+      <top>990</top>
       <width>1800</width>
       <height>27</height>
       <font>size22</font>
@@ -128,7 +128,7 @@
     </control>
     <control type="image">
       <posx>0</posx>
-      <posy>1023</posy>
+      <top>1023</top>
       <height>60</height>
       <width>1920</width>
       <aspectratio>stretch</aspectratio>
@@ -136,18 +136,18 @@
     </control>
     <control type="image" description="Navbar">
       <posx>-82</posx>
-      <posy>1028</posy>
+      <top>1028</top>
       <width>2085</width>
       <height>1</height>
       <aspectratio>stretch</aspectratio>
       <texture>images/Line1.png</texture>
     </control>
     <control type="group" description="Options">
-      <posy>0</posy>
+      <top>0</top>
       <posx>0</posx>
       <control type="grouplist" id="300">
         <posx>15</posx>
-        <posy>1024</posy>
+        <top>1024</top>
         <width>1890</width>
         <height>58</height>
         <itemgap>0</itemgap>

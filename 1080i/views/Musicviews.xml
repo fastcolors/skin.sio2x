@@ -16,7 +16,7 @@
          </control>
          <control type="group" description="BigList">
             <posx>960</posx>
-            <posy>131</posy>
+            <top>131</top>
             <control type="fixedlist" id="50">
                <!--visible>!Container.content(songs)</visible-->
                <width>920</width>
@@ -39,7 +39,7 @@
          <include>Linemiddle</include>
          <control type="scrollbar" id="60">
             <posx>51r</posx>
-            <posy>135</posy>
+            <top>135</top>
             <height>870</height>
             <onleft>50</onleft>
             <onright>noop</onright>
@@ -54,7 +54,7 @@
                <visible>!Container.content(songs)</visible>
                <viewtype label="536">Icons</viewtype>
                <posx>60</posx>
-               <posy>140</posy>
+               <top>140</top>
                <width>1800</width>
                <height>897</height>
                <orientation>vertical</orientation>
@@ -68,7 +68,7 @@
                <itemlayout height="345" width="300">
                   <control type="image">
                      <posx>22</posx>
-                     <posy>279</posy>
+                     <top>279</top>
                      <width>255</width>
                      <height>255</height>
                      <texture flipy="true" diffuse="images/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
@@ -77,7 +77,7 @@
                   <control type="image">
                      <visible>container.content(albums)</visible>
                      <posx>22</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>255</width>
                      <height>255</height>
                      <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
@@ -86,7 +86,7 @@
                   <control type="image">
                      <visible>!container.content(albums)</visible>
                      <posx>22</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>255</width>
                      <height>255</height>
                      <texture background="true">$INFO[ListItem.Icon]</texture>
@@ -97,7 +97,7 @@
                   <control type="image">
                      <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
                      <posx>22</posx>
-                     <posy>279</posy>
+                     <top>279</top>
                      <width>255</width>
                      <height>255</height>
                      <texture flipy="true" diffuse="images/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
@@ -106,7 +106,7 @@
                   <control type="image">
                      <visible>container.content(albums)</visible>
                      <posx>22</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>255</width>
                      <height>255</height>
                      <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
@@ -115,7 +115,7 @@
                   <control type="image">
                      <visible>!container.content(albums)</visible>
                      <posx>22</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>255</width>
                      <height>255</height>
                      <texture background="true">$INFO[ListItem.Icon]</texture>
@@ -124,7 +124,7 @@
                   <control type="label">
                      <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                      <posx>150</posx>
-                     <posy>300</posy>
+                     <top>300</top>
                      <width>270</width>
                      <height>45</height>
                      <font>size27</font>
@@ -138,7 +138,7 @@
                <include>Scrollanim</include>
                <control type="image">
                   <posx>69</posx>
-                  <posy>151</posy>
+                  <top>151</top>
                   <width>281</width>
                   <height>281</height>
                   <texture border="20">images/GeneralSlider.png</texture>
@@ -157,7 +157,7 @@
          </control>
          <control type="image" description="Line Split">
             <posx>82</posx>
-            <posy>139</posy>
+            <top>139</top>
             <width>1748</width>
             <height>1</height>
             <texture>images/LineL.png</texture>
@@ -165,7 +165,7 @@
          </control>
          <control type="label" description="Media details">
             <posx>82</posx>
-            <posy>90</posy>
+            <top>90</top>
             <width>1200</width>
             <textcolor>Silver</textcolor>
             <include>Genre51Commons</include>
@@ -173,7 +173,7 @@
          </control>
          <control type="grouplist">
             <posx>304r</posx>
-            <posy>106</posy>
+            <top>106</top>
             <height>24</height>
             <width>195</width>
             <itemgap>15</itemgap>
@@ -182,7 +182,7 @@
             <control type="image" description="Rating">
                <visible>!IsEmpty(ListItem.StarRating)</visible>
                <posx>1590</posx>
-               <posy>0</posy>
+               <top>0</top>
                <include>MusicRating</include>
             </control>
             <control type="label" description="Media details">
@@ -196,14 +196,14 @@
             </control>
          </control>
          <control type="image" description="shade">
-            <posy>100</posy>
+            <top>100</top>
             <width>1920</width>
             <height>1080</height>
             <texture>Shades/iconvshade.png</texture>
          </control>
          <control type="scrollbar" id="60">
             <posx>45r</posx>
-            <posy>219</posy>
+            <top>219</top>
             <height>660</height>
             <onleft>53</onleft>
             <onright>9000</onright>
@@ -216,7 +216,7 @@
          <control type="fixedlist" id="52">
             <visible>!Container.Content(songs)</visible>
             <posx>60</posx>
-            <posy>60</posy>
+            <top>60</top>
             <width>1820</width>
             <height>970</height>
             <visible>!container.content(Sets)</visible>
@@ -236,7 +236,7 @@
             <itemlayout height="160">
                <control type="image">
                   <posx>1680</posx>
-                  <posy>20</posy>
+                  <top>20</top>
                   <width>108</width>
                   <height>108</height>
                   <texture>$VAR[Locandine]</texture>
@@ -244,7 +244,7 @@
                </control>
                <control type="textbox">
                   <posx>1310</posx>
-                  <posy>20</posy>
+                  <top>20</top>
                   <width>340</width>
                   <height>140</height>
                   <font>Size24B</font>
@@ -269,7 +269,7 @@
                </control>
                <control type="image">
                   <posx>1680</posx>
-                  <posy>20</posy>
+                  <top>20</top>
                   <width>108</width>
                   <height>108</height>
                   <texture>$VAR[Locandine]</texture>
@@ -277,7 +277,7 @@
                </control>
                <control type="textbox">
                   <posx>1310</posx>
-                  <posy>20</posy>
+                  <top>20</top>
                   <width>340</width>
                   <height>140</height>
                   <font>Size24B</font>
@@ -295,7 +295,7 @@
          </control>
          <control type="label">
             <posx>100</posx>
-            <posy>42</posy>
+            <top>42</top>
             <width>1140</width>
             <height>80</height>
             <font>Size42B</font>
@@ -305,7 +305,7 @@
          </control>
          <control type="textbox">
             <posx>240</posx>
-            <posy>110</posy>
+            <top>110</top>
             <width>860</width>
             <height>50</height>
             <font>Size20</font>
@@ -316,7 +316,7 @@
          <!--INFOS-->
          <control type="grouplist" description="Infos">
             <posx>60</posx>
-            <posy>200</posy>
+            <top>200</top>
             <height>600</height>
             <width>750</width>
             <itemgap>10</itemgap>
@@ -442,7 +442,7 @@
          </control>
          <control type="grouplist" description="flags">
             <posx>60</posx>
-            <posy>540</posy>
+            <top>540</top>
             <height>600</height>
             <width>810</width>
             <itemgap>10</itemgap>
@@ -500,7 +500,7 @@
          </control>
          <control type="textbox" description="plots">
             <posx>140</posx>
-            <posy>600</posy>
+            <top>600</top>
             <width>1060</width>
             <height>420</height>
             <align>justify</align>
@@ -508,7 +508,7 @@
          </control>
          <control type="group" description="icon+overlay">
             <posx>800</posx>
-            <posy>180</posy>
+            <top>180</top>
             <control type="image">
                <height>380</height>
                <width>420</width>
@@ -518,13 +518,13 @@
          </control>
          <control type="image">
             <posx>1340</posx>
-            <posy>-100</posy>
+            <top>-100</top>
             <height>1280</height>
             <width>1</width>
             <texture>images/LineV.png</texture>
          </control>
          <control type="image">
-            <posy>600</posy>
+            <top>600</top>
             <height>1</height>
             <width>1340</width>
             <texture>images/LineR.png</texture>
@@ -549,7 +549,7 @@
          </control>
          <control type="scrollbar" id="60">
             <posx>50r</posx>
-            <posy>120</posy>
+            <top>120</top>
             <height>820</height>
             <onleft>50</onleft>
             <onright>noop</onright>
@@ -557,7 +557,7 @@
       </control>
       <!-- FANART -->
       <control type="group" description="Musiclay">
-         <posy>40</posy>
+         <top>40</top>
          <visible>Control.IsVisible(500)</visible>
          <include>VisibleFade</include>
          <control type="label">
@@ -568,7 +568,7 @@
          </control>
          <control type="image" description="fanart">
             <posx>50</posx>
-            <posy>80</posy>
+            <top>80</top>
             <width>1080</width>
             <height>500</height>
             <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
@@ -576,7 +576,7 @@
          </control>
          <control type="textbox" id="807">
             <posx>1160</posx>
-            <posy>80</posy>
+            <top>80</top>
             <width>700</width>
             <height>580</height>
             <align>justify</align>
@@ -585,14 +585,14 @@
          </control>
          <control type="image">
             <posx>1130</posx>
-            <posy>80</posy>
+            <top>80</top>
             <width>800</width>
             <height>1</height>
             <texture>images/LineL.png</texture>
          </control>
          <control type="image">
             <posx>560</posx>
-            <posy>660</posy>
+            <top>660</top>
             <width>1360</width>
             <height>1</height>
             <texture>images/LineR.png</texture>
@@ -606,7 +606,7 @@
             <onleft>500</onleft>
             <onright>500</onright>
             <posx>70</posx>
-            <posy>60</posy>
+            <top>60</top>
             <width>1800</width>
             <height>1000</height>
             <orientation>horizontal</orientation>
@@ -619,10 +619,10 @@
             <scrolltime tween="sine" easing="inout">280</scrolltime>
             <itemlayout width="300">
                <control type="group">
-                  <posy>620</posy>
+                  <top>620</top>
                   <control type="image" description="THUMBNAIL">
                      <posx>10</posx>
-                     <posy>10</posy>
+                     <top>10</top>
                      <height>280</height>
                      <width>280</width>
                      <texture background="true" fallback="Defaultalbumcover.png">$INFO[ListItem.thumb]</texture>
@@ -634,10 +634,10 @@
                <control type="group">
                   <animation effect="zoom" start="100" end="150" center="10,910" time="250" tween="Quadratic" easing="in">Focus</animation>
                   <animation effect="zoom" start="150" end="100" center="10,910" time="60">unFocus</animation>
-                  <posy>620</posy>
+                  <top>620</top>
                   <control type="image" description="white">
                      <posx>1</posx>
-                     <posy>1</posy>
+                     <top>1</top>
                      <height>298</height>
                      <width>298</width>
                      <texture background="true">images/white.png</texture>
@@ -646,7 +646,7 @@
                   <control type="image" description="White">
                      <animation effect ="fade" start="100" end="0" time="10">unFocus</animation>
                      <posx>8</posx>
-                     <posy>8</posy>
+                     <top>8</top>
                      <height>284</height>
                      <width>284</width>
                      <texture background="true">images/White.png</texture>
@@ -655,7 +655,7 @@
                   </control>
                   <control type="image" description="THUMBNAIL">
                      <posx>10</posx>
-                     <posy>10</posy>
+                     <top>10</top>
                      <height>280</height>
                      <width>280</width>
                      <texture background="true" fallback="Defaultalbumcover.png">$INFO[ListItem.thumb]</texture>
@@ -667,7 +667,7 @@
          <control type="scrollbar" id="60">
             <animation effect="fade" delay="200" time="300">VisibleChange</animation>
             <posx>198</posx>
-            <posy>998</posy>
+            <top>998</top>
             <width>1525</width>
             <height>9</height>
             <onup>500</onup>
@@ -682,7 +682,7 @@
 	  <control type="label">
          <description>Page Count Label</description>
          <posx>40r</posx>
-         <posy>50r</posy>
+         <top>50r</top>
          <width>500</width>
          <height>20</height>
          <font>font12</font>

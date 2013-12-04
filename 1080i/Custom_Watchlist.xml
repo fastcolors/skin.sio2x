@@ -13,7 +13,7 @@
     <include>WindowsTopInfos</include>
     <control type="image" description="Line">
       <posx>-200</posx>
-      <posy>1007</posy>
+      <top>1007</top>
       <height>1</height>
       <width>2320</width>
       <texture>images/Line.png</texture>
@@ -21,7 +21,7 @@
     <control type="list" id="222">
       <visible>true</visible>
       <posx>385</posx>
-      <posy>1005</posy>
+      <top>1005</top>
       <height>80</height>
       <width>1200</width>
       <onup>700</onup>
@@ -86,7 +86,7 @@
         <include>VisibleFade</include>
         <control type="group" description="ReccomendedMoviesList">
           <posx>-210</posx>
-          <posy>80</posy>
+          <top>80</top>
           <control type="fixedlist" id="52">
             <height>926</height>
             <width>2200</width>
@@ -101,10 +101,10 @@
             <preloaditems>2</preloaditems>
             <itemlayout width="300" height="500">
               <control type="group">
-                <posy>450</posy>
+                <top>450</top>
                 <control type="image" description="THUMBNAIL Reflection">
                   <posx>85</posx>
-                  <posy>440</posy>
+                  <top>440</top>
                   <height>350</height>
                   <width>230</width>
                   <texture background="true" flipy="true" diffuse="images/Reflection.png">$INFO[ListItem.Thumb]</texture>
@@ -112,7 +112,7 @@
                 </control>
                 <control type="image" description="THUMBNAIL">
                   <posx>85</posx>
-                  <posy>80</posy>
+                  <top>80</top>
                   <height>350</height>
                   <width>230</width>
                   <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
@@ -133,14 +133,14 @@
                   <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="image">
-                  <posy>60</posy>
+                  <top>60</top>
                   <height>1</height>
                   <width>1920</width>
                   <texture>images/Line.png</texture>
                 </control>
                 <control type="image">
                   <posx>400</posx>
-                  <posy>490</posy>
+                  <top>490</top>
                   <height>1</height>
                   <width>1430</width>
                   <texture>images/LineL.png</texture>
@@ -148,7 +148,7 @@
                 <control type="textbox">
                   <description>plot</description>
                   <posx>450</posx>
-                  <posy>60</posy>
+                  <top>60</top>
                   <width>840</width>
                   <height>430</height>
                   <font>Size27</font>
@@ -159,7 +159,7 @@
                 </control>
                 <control type="group">
                   <posx>280</posx>
-                  <posy>150</posy>
+                  <top>150</top>
                   <control type="image">
                     <height>50</height>
                     <width>130</width>
@@ -168,7 +168,7 @@
                     <texture>$INFO[ListItem.Property(Res),badges/video/,.png]</texture>
                   </control>
                   <control type="image">
-                    <posy>80</posy>
+                    <top>80</top>
                     <height>50</height>
                     <width>130</width>
                     <bordersize>3</bordersize>
@@ -185,7 +185,7 @@
                   </control>
                   <control type="image">
                     <posx>1050</posx>
-                    <posy>80</posy>
+                    <top>80</top>
                     <height>50</height>
                     <width>130</width>
                     <bordersize>3</bordersize>
@@ -195,12 +195,12 @@
                 </control>
               </control>
               <control type="group">
-                <posy>450</posy>
+                <top>450</top>
                 <animation effect="zoom" end="150" center="178,880" time="300" tween="Quadratic" easing="in">Focus</animation>
                 <animation effect="zoom" start="150" end="100" center="178,880" time="150">unFocus</animation>
                 <control type="image" description="black">
                   <posx>72</posx>
-                  <posy>67</posy>
+                  <top>67</top>
                   <height>376</height>
                   <width>256</width>
                   <texture background="true">images/white.png</texture>
@@ -208,7 +208,7 @@
                 </control>
                 <control type="image" description="white">
                   <posx>84</posx>
-                  <posy>78</posy>
+                  <top>78</top>
                   <height>353</height>
                   <width>232</width>
                   <texture background="true">images/White.png</texture>
@@ -217,7 +217,7 @@
                 </control>
                 <control type="image" description="THUMBNAIL">
                   <posx>85</posx>
-                  <posy>80</posy>
+                  <top>80</top>
                   <height>350</height>
                   <width>230</width>
                   <texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
@@ -362,7 +362,7 @@
       </control>
       <control type="group" id="701" description="Episodes">
         <posx>110</posx>
-        <posy>60</posy>
+        <top>60</top>
         <visible>Container(222).Hasfocus(1) | Control.IsVisible()</visible>
         <include>VisibleFade</include>
         <control type="fixedlist" id="51">
@@ -378,9 +378,9 @@
           <preloaditems>2</preloaditems>
           <itemlayout width="370" height="250">
             <control type="group">
-              <posy>680</posy>
+              <top>680</top>
               <control type="image" description="THUMBNAIL">
-                <posy>70</posy>
+                <top>70</top>
                 <posx>60</posx>
                 <height>169</height>
                 <width>300</width>
@@ -389,13 +389,13 @@
               </control>
               <control type="image">
                 <posx>60</posx>
-                <posy>20</posy>
+                <top>20</top>
                 <width>300</width>
                 <height>60</height>
                 <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Property(Banner)]</texture>
               </control>
               <control type="image" description="STARTED">
-                <posy>210</posy>
+                <top>210</top>
                 <posx>60</posx>
                 <height>30</height>
                 <width>30</width>
@@ -406,11 +406,11 @@
           </itemlayout>
           <focusedlayout width="370" height="250">
             <control type="group">
-              <posy>680</posy>
+              <top>680</top>
               <animation effect ="zoom" end="150" center="200,905" time="300">Focus</animation>
               <animation effect ="zoom" start="150" end="100" center="200,905" time="150">unFocus</animation>
               <control type="image" description="THUMBNAIL BLACK">
-                <posy>2</posy>
+                <top>2</top>
                 <posx>52</posx>
                 <height>243</height>
                 <width>316</width>
@@ -419,7 +419,7 @@
               </control>
               <control type="image" description="THUMBNAIL WHITE">
                 <animation effect ="fade" start="100" end="0" time="10">unFocus</animation>
-                <posy>8</posy>
+                <top>8</top>
                 <posx>58</posx>
                 <height>233</height>
                 <width>304</width>
@@ -429,13 +429,13 @@
               </control>
               <control type="image">
                 <posx>60</posx>
-                <posy>10</posy>
+                <top>10</top>
                 <width>300</width>
                 <height>60</height>
                 <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Property(Banner)]</texture>
               </control>
               <control type="image" description="THUMBNAIL">
-                <posy>70</posy>
+                <top>70</top>
                 <posx>60</posx>
                 <height>169</height>
                 <width>300</width>
@@ -443,7 +443,7 @@
                 <aspectratio scalediffuse="false">scale</aspectratio>
               </control>
               <control type="image" description="STARTED">
-                <posy>210</posy>
+                <top>210</top>
                 <posx>60</posx>
                 <height>30</height>
                 <width>30</width>
@@ -456,7 +456,7 @@
               <animation effect="fade" start="10" end="0" time="10" reversible="false">unfocus</animation>
               <control type="image">
                 <posx>309</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <height>200</height>
                 <width>1082</width>
                 <texture diffuse="images/DiffuseBanner.png">$INFO[ListItem.Property(Banner)]</texture>
@@ -464,13 +464,13 @@
               </control>
               <control type="image">
                 <posx>309</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <height>200</height>
                 <width>1082</width>
                 <texture background="true">images/BannerOverlay.png</texture>
               </control>
               <control type="label" description="EPISODE TITLE">
-                <posy>210</posy>
+                <top>210</top>
                 <posx>850</posx>
                 <width>800</width>
                 <height>40</height>
@@ -481,7 +481,7 @@
               <control type="textbox">
                 <description>plot</description>
                 <posx>300</posx>
-                <posy>270</posy>
+                <top>270</top>
                 <width>1100</width>
                 <height>300</height>
                 <font>Size27</font>
@@ -492,7 +492,7 @@
               </control>
               <control type="group">
                 <posx>560</posx>
-                <posy>600</posy>
+                <top>600</top>
                 <orientation>horizontal</orientation>
                 <control type="image">
                   <height>50</height>
@@ -687,7 +687,7 @@
         <control type="group" description="MusicPage">
           <control type="wraplist" id="53">
             <posx>70</posx>
-            <posy>60</posy>
+            <top>60</top>
             <width>1780</width>
             <height>1000</height>
             <orientation>horizontal</orientation>
@@ -700,10 +700,10 @@
             <scrolltime tween="sine" easing="inout">280</scrolltime>
             <itemlayout width="300">
               <control type="group">
-                <posy>620</posy>
+                <top>620</top>
                 <control type="image" description="THUMBNAIL">
                   <posx>10</posx>
-                  <posy>10</posy>
+                  <top>10</top>
                   <height>280</height>
                   <width>280</width>
                   <texture background="true" fallback="Defaultalbumcover.png">$INFO[ListItem.thumb]</texture>
@@ -724,7 +724,7 @@
                 </control>
                 <control type="image" description="fanart">
                   <posx>50</posx>
-                  <posy>80</posy>
+                  <top>80</top>
                   <width>1080</width>
                   <height>500</height>
                   <texture background="true">$INFO[ListItem.Property(Fanart)]</texture>
@@ -732,7 +732,7 @@
                 </control>
                 <control type="textbox">
                   <posx>1150</posx>
-                  <posy>70</posy>
+                  <top>70</top>
                   <width>600</width>
                   <height>510</height>
                   <align>justify</align>
@@ -744,10 +744,10 @@
               <control type="group">
                 <animation effect="zoom" start="100" end="150" center="10,910" time="250" tween="Quadratic" easing="in">Focus</animation>
                 <animation effect="zoom" start="150" end="100" center="10,910" time="60">unFocus</animation>
-                <posy>620</posy>
+                <top>620</top>
                 <control type="image" description="white">
                   <posx>1</posx>
-                  <posy>1</posy>
+                  <top>1</top>
                   <height>298</height>
                   <width>298</width>
                   <texture background="true">images/white.png</texture>
@@ -756,7 +756,7 @@
                 <control type="image" description="White">
                   <animation effect ="fade" start="100" end="0" time="10">unFocus</animation>
                   <posx>8</posx>
-                  <posy>8</posy>
+                  <top>8</top>
                   <height>284</height>
                   <width>284</width>
                   <texture background="true">images/White.png</texture>
@@ -765,7 +765,7 @@
                 </control>
                 <control type="image" description="THUMBNAIL">
                   <posx>10</posx>
-                  <posy>10</posy>
+                  <top>10</top>
                   <height>280</height>
                   <width>280</width>
                   <texture background="true" fallback="Defaultalbumcover.png">$INFO[ListItem.thumb]</texture>

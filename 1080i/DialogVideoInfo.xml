@@ -20,7 +20,7 @@
       <control type="image" description="Thumb">
         <visible>!Container.Content(episodes)</visible>
         <posx>60</posx>
-        <posy>60</posy>
+        <top>60</top>
         <width>500</width>
         <height>600</height>
         <texture background="true" diffuse="images/diffuse.png">$INFO[ListItem.Art(poster)]</texture>
@@ -29,7 +29,7 @@
       <control type="image" description="Thumb">
         <visible>!Container.Content(episodes)</visible>
         <posx>60</posx>
-        <posy>660</posy>
+        <top>660</top>
         <width>500</width>
         <height>600</height>
         <texture flipy="true" background="true" diffuse="images/Reflection0.png">$INFO[ListItem.Art(poster)]</texture>
@@ -39,7 +39,7 @@
     <control type="image" description="Thumb Season">
       <visible>Container.Content(episodes)</visible>
       <posx>60</posx>
-      <posy>60</posy>
+      <top>60</top>
       <width>500</width>
       <height>600</height>
       <texture>$INFO[ListItem.Art(season.poster)]</texture>
@@ -49,7 +49,7 @@
     <control type="group">
       <posx>600</posx>
       <control type="label" description="title">
-        <posy>50</posy>
+        <top>50</top>
         <width>1200</width>
         <height>50</height>
         <font>size39B</font>
@@ -57,7 +57,7 @@
         <label>$INFO[ListItem.Title] $INFO[ListItem.Year, (,)]</label>
       </control>
       <control type="label">
-        <posy>96</posy>
+        <top>96</top>
         <width>1000</width>
         <height>45</height>
         <font>size27</font>
@@ -66,32 +66,32 @@
       </control>
       <control type="image" description="Stars rating">
         <posx>1065</posx>
-        <posy>100</posy>
+        <top>100</top>
         <height>45</height>
         <width>135</width>
         <aspectratio align="right">keep</aspectratio>
         <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
       </control>
       <control type="image" description="Line">
-        <posy>140</posy>
+        <top>140</top>
         <height>1</height>
         <width>1000</width>
         <texture>images/LineL.png</texture>
       </control>
       <control type="textbox" id="4" description="plot">
-        <posy>140</posy>
+        <top>140</top>
         <width>1200</width>
         <height>250</height>
         <align>justify</align>
       </control>
       <control type="image" description="Line">
-        <posy>390</posy>
+        <top>390</top>
         <height>1</height>
         <width>1000</width>
         <texture>images/LineL.png</texture>
       </control>
       <control type="grouplist" description="Flags">
-        <posy>405</posy>
+        <top>405</top>
         <width>1200</width>
         <height>50</height>
         <itemgap>30</itemgap>
@@ -140,13 +140,13 @@
       </control>
       <control type="group" description="List Info">
         <posx>0</posx>
-        <posy>450</posy>
+        <top>450</top>
         <control type="group">
           <!--visible>![container.content(tvshows) | container.content(episodes) | SubString(Container.FolderPath,videodb://musicvideos/,left) | Control.HasFocus(10)]</visible-->
           <include>VisibleFade</include>
           <control type="list">
             <posx>400</posx>
-            <posy>250</posy>
+            <top>250</top>
             <width>900</width>
             <height>504</height>
             <onleft>noop</onleft>
@@ -157,7 +157,7 @@
             <itemlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -169,7 +169,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -182,7 +182,7 @@
             <focusedlayout height="26">
               <control type="label">
                 <posx>230</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>230</width>
                 <height>45</height>
                 <font>size21</font>
@@ -194,7 +194,7 @@
               </control>
               <control type="label">
                 <posx>251</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <width>649</width>
                 <height>45</height>
                 <font>size21</font>
@@ -312,7 +312,7 @@
         </control>
       </control>
       <control type="grouplist">
-        <posy>490</posy>
+        <top>490</top>
         <width>1200</width>
         <ondown>50</ondown>
         <itemgap>10</itemgap>
@@ -361,7 +361,7 @@
     </control>
     <control type="fixedlist" id="50">
       <posx>-130</posx>
-      <posy>700</posy>
+      <top>700</top>
       <width>1170</width>
       <height>400</height>
       <onleft>noop</onleft>
@@ -376,7 +376,7 @@
       <itemlayout width="250" height="400">
         <control type="image" description="Thumb">
           <posx>15</posx>
-          <posy>15</posy>
+          <top>15</top>
           <height>320</height>
           <width>205</width>
           <aspectratio scalediffuse="false">scale</aspectratio>
@@ -386,7 +386,7 @@
       <focusedlayout width="250" height="400">
         <control type="image" description="Thumb">
           <posx>15</posx>
-          <posy>15</posy>
+          <top>15</top>
           <height>320</height>
           <width>205</width>
           <aspectratio scalediffuse="false">scale</aspectratio>
@@ -395,7 +395,7 @@
       </focusedlayout>
     </control>
     <control type="group" description="actorsandroles">
-      <posy>1000</posy>
+      <top>1000</top>
       <visible>control.HasFocus(50)</visible>
       <animation effect="slide" start="0,100" end="0,0" time="200">visiblechange</animation>
       <control type="image">
@@ -415,7 +415,7 @@
       </control>
     </control>
     <control type="image" description="line central">
-      <posy>690</posy>
+      <top>690</top>
       <height>1</height>
       <width>1920</width>
       <texture>images/Line.png</texture>

@@ -125,7 +125,7 @@
       </control>
       <control type="group" description="Items description">
          <posx>500</posx>
-         <posy>550</posy>
+         <top>550</top>
          <control type="textbox" description="infos">
 			<centerx>710</centerx>
             <width>660</width>

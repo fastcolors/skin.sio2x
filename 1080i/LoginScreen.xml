@@ -8,11 +8,11 @@
   <include>OpenClose</include>
   <controls>
     <control type="group">
-      <posy>75</posy>
+      <top>75</top>
       <control type="fixedlist" id="52">
         <animation effect="slide" start="0,0" end="-225,0" time="0" condition="StringCompare(Container(52).NumItems,2)">conditional</animation>
         <posx>285</posx>
-        <posy>249</posy>
+        <top>249</top>
         <width>1350</width>
         <height>450</height>
         <onleft>noop</onleft>
@@ -27,7 +27,7 @@
         <itemlayout width="450" height="450">
           <control type="image">
             <posx>75</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>300</width>
             <height>300</height>
             <aspectratio scalediffuse="false">scale</aspectratio>
@@ -37,7 +37,7 @@
         <focusedlayout width="450" height="450">
           <control type="image">
             <posx>75</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>300</width>
             <height>300</height>
             <aspectratio scalediffuse="false">scale</aspectratio>
@@ -49,7 +49,7 @@
         <visible>Control.HasFocus(52)</visible>
         <animation effect="fade" time="300">VisibleChange</animation>
         <posx>797</posx>
-        <posy>236</posy>
+        <top>236</top>
         <width>326</width>
         <height>326</height>
         <aspectratio>stretch</aspectratio>
@@ -68,10 +68,10 @@
     </control>
     <control type="group" description="Labels and button">
       <posx>0</posx>
-      <posy>696</posy>
+      <top>696</top>
       <control type="label" description="label 1">
         <posx>0</posx>
-        <posy>30</posy>
+        <top>30</top>
         <height>45</height>
         <width>1920</width>
         <align>center</align>
@@ -81,7 +81,7 @@
       </control>
       <control type="label" description="Label 2">
         <posx>0</posx>
-        <posy>69</posy>
+        <top>69</top>
         <width>1920</width>
         <font>size27</font>
         <align>center</align>
@@ -90,7 +90,7 @@
       </control>
       <control type="button" id="11" description="Quit xbmc">
         <posx>915</posx>
-        <posy>255</posy>
+        <top>255</top>
         <width>90</width>
         <height>90</height>
         <onup>52</onup>

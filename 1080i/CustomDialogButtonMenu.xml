@@ -12,7 +12,7 @@
     </control>
     <control type="image" description="Dialog">
       <posx>350</posx>
-      <posy>290</posy>
+      <top>290</top>
       <width>1220</width>
       <height>500</height>
       <aspectratio>stretch</aspectratio>
@@ -20,7 +20,7 @@
     </control>
     <control type="grouplist" id="9000">
       <posx>500</posx>
-      <posy>450</posy>
+      <top>450</top>
       <width>920</width>
       <height>126</height>
       <onleft>9000</onleft>
@@ -113,7 +113,7 @@
     </control>
     <control type="group">
       <posx>660</posx>
-      <posy>565</posy>
+      <top>565</top>
       <control type="label">
         <visible>ControlGroup(9000).HasFocus(1)</visible>
         <width>600</width>

@@ -10,7 +10,7 @@
             <visible>!substring(ListItem.MPAA,Rated R)</visible>
             <include>Fanart_Fade</include>
             <posx></posx>
-            <posy></posy>
+            <top></top>
             <width>1920</width>
             <height>1080</height>
             <texture background="true">$INFO[Container(52).ListItem.Property(fanart_image)]</texture>
@@ -21,7 +21,7 @@
             <visible>substring(ListItem.MPAA,Rated R)</visible>
             <include>Fanart_Fade</include>
             <posx></posx>
-            <posy></posy>
+            <top></top>
             <width>1920</width>
             <height>1080</height>
             <texture background="true">$INFO[Container(52).ListItem.Property(fanart_image)]</texture>
@@ -35,7 +35,7 @@
          </control>
          <control type="fixedlist" id="52">
             <posx>60</posx>
-            <posy>130</posy>
+            <top>130</top>
             <width>1820</width>
             <height>810</height>
             <onleft>noop</onleft>
@@ -51,7 +51,7 @@
             <itemlayout height="160">
                <control type="image">
                   <posx>1680</posx>
-                  <posy>10</posy>
+                  <top>10</top>
                   <width>108</width>
                   <height>140</height>
                   <texture>$INFO[ListItem.Thumb]</texture>
@@ -60,7 +60,7 @@
                <control type="image">
                   <visible>!IntegerGreaterThan(ListItem.PlayCount,0)</visible>
                   <posx>1316</posx>
-                  <posy>120</posy>
+                  <top>120</top>
                   <width>360</width>
                   <height>30</height>
                   <texture>Overlay/False.png</texture>
@@ -68,7 +68,7 @@
                </control>
                <control type="textbox">
                   <posx>1310</posx>
-                  <posy>20</posy>
+                  <top>20</top>
                   <width>340</width>
                   <height>140</height>
                   <font>Size24B</font>
@@ -93,7 +93,7 @@
                </control>
                <control type="image">
                   <posx>1680</posx>
-                  <posy>10</posy>
+                  <top>10</top>
                   <width>108</width>
                   <height>140</height>
                   <texture>$INFO[ListItem.Thumb]</texture>
@@ -102,7 +102,7 @@
                <control type="image">
                   <visible>!IntegerGreaterThan(ListItem.PlayCount,0)</visible>
                   <posx>1316</posx>
-                  <posy>120</posy>
+                  <top>120</top>
                   <width>360</width>
                   <height>30</height>
                   <texture>Overlay/False.png</texture>
@@ -110,7 +110,7 @@
                </control>
                <control type="textbox">
                   <posx>1310</posx>
-                  <posy>20</posy>
+                  <top>20</top>
                   <width>340</width>
                   <height>140</height>
                   <font>Size24B</font>
@@ -129,7 +129,7 @@
          </control>
          <control type="label">
             <posx>100</posx>
-            <posy>42</posy>
+            <top>42</top>
             <width>1140</width>
             <height>80</height>
             <font>Size42B</font>
@@ -140,7 +140,7 @@
          </control>
          <control type="textbox">
             <posx>240</posx>
-            <posy>110</posy>
+            <top>110</top>
             <width>860</width>
             <height>50</height>
             <font>Size20</font>
@@ -150,7 +150,7 @@
          </control>
          <control type="grouplist" description="detailedinfos">
             <posx>60</posx>
-            <posy>180</posy>
+            <top>180</top>
             <height>600</height>
             <width>1000</width>
             <itemgap>10</itemgap>
@@ -255,7 +255,7 @@
          </control>
          <control type="grouplist" description="flags">
             <posx>60</posx>
-            <posy>540</posy>
+            <top>540</top>
             <height>600</height>
             <width>810</width>
             <itemgap>10</itemgap>
@@ -310,7 +310,7 @@
          <control type="group" description="nonsetinfos">
             <control type="textbox" description="plots">
                <posx>140</posx>
-               <posy>600</posy>
+               <top>600</top>
                <width>1060</width>
                <height>420</height>
                <align>justify</align>
@@ -318,7 +318,7 @@
             </control>
             <control type="group" description="icon+overlay">
                <posx>900</posx>
-               <posy>180</posy>
+               <top>180</top>
                <control type="image">
                   <height>400</height>
                   <width>267</width>
@@ -327,7 +327,7 @@
                </control>
                <control type="image">
                   <posx>-6</posx>
-                  <posy>-7</posy>
+                  <top>-7</top>
                   <width>281</width>
                   <height>414</height>
                   <texture border="10" background="true">images/dvdbox3d.png</texture>
@@ -335,7 +335,7 @@
                </control>
                <control type="image">
                   <posx>-10</posx>
-                  <posy>350</posy>
+                  <top>350</top>
                   <width>60</width>
                   <height>60</height>
                   <visible>!IntegerGreaterThan(ListItem.PlayCount,0)</visible>
@@ -347,13 +347,13 @@
       </control>
       <control type="image">
          <posx>1340</posx>
-         <posy>-100</posy>
+         <top>-100</top>
          <height>1280</height>
          <width>1</width>
          <texture>images/LineV.png</texture>
       </control>
       <control type="image">
-         <posy>600</posy>
+         <top>600</top>
          <height>1</height>
          <width>1340</width>
          <texture>images/LineR.png</texture>
@@ -378,7 +378,7 @@
       </control>
       <control type="scrollbar" id="60">
          <posx>50r</posx>
-         <posy>120</posy>
+         <top>120</top>
          <height>820</height>
          <onleft>52</onleft>
          <onright>noop</onright>
@@ -388,7 +388,7 @@
          <include>DialogOpenCloseVisible</include>
          <control type="image" description="List back">
             <posx>540</posx>
-            <posy>105</posy>
+            <top>105</top>
             <width>840</width>
             <height>870</height>
             <aspectratio>stretch</aspectratio>
@@ -425,7 +425,7 @@
       </control>
       <control type="grouplist">
          <posx>33</posx>
-         <posy>0</posy>
+         <top>0</top>
          <width>1230</width>
          <height>75</height>
          <align>left</align>
@@ -454,14 +454,14 @@
          <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
          <control type="image">
             <posx>1388</posx>
-            <posy>975</posy>
+            <top>975</top>
             <width>81</width>
             <height>81</height>
             <texture border="12">images/SortLetterBG.png</texture>
          </control>
          <control type="label">
             <posx>1388</posx>
-            <posy>975</posy>
+            <top>975</top>
             <width>81</width>
             <height>81</height>
             <align>center</align>

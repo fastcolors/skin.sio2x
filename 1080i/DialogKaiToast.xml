@@ -7,19 +7,19 @@
   <controls>
    <control type="group">
       <posx>1230</posx>
-      <posy>965</posy>
+      <top>965</top>
 	  <animation effect="slide" start="710,0" end="0,0" time="450">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="710,0" time="450">WindowClose</animation>
       <control type="image" description="Dialog BG">
         <posx>0</posx>
-        <posy>0</posy>
+        <top>0</top>
         <width>700</width>
         <height>108</height>
         <texture border="30">images/ProgressBG.png</texture>
       </control>
       <control type="group">
         <posx>20</posx>
-        <posy>14</posy>
+        <top>14</top>
         <control type="image" id="400" description="File Icon">
           <width>80</width>
           <height>80</height>
@@ -49,7 +49,7 @@
         </control>
         <control type="label" id="401" description="Heading">
           <posx>90</posx>
-          <posy>3</posy>
+          <top>3</top>
           <width>610</width>
           <height>27</height>
           <font>size26</font>
@@ -60,7 +60,7 @@
         </control>
         <control type="label" id="402" description="Message">
           <posx>90</posx>
-          <posy>34</posy>
+          <top>34</top>
           <width>610</width>
           <height>70</height>
           <scroll>true</scroll>

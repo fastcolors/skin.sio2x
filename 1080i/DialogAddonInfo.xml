@@ -21,10 +21,10 @@
       <control type="group">
          <control type="group" description="Thumbs">
             <posx>0</posx>
-            <posy>6</posy>
+            <top>6</top>
             <control type="image" description="Icon">
                <posx>1350</posx>
-               <posy>170</posy>
+               <top>170</top>
                <width>495</width>
                <height>495</height>
                <aspectratio align="right" aligny="top">keep</aspectratio>
@@ -33,9 +33,9 @@
          </control>
          <control type="group" description="top">
             <posx>90</posx>
-            <posy>170</posy>
+            <top>170</top>
             <control type="label" description="Item Label">
-               <posy>0</posy>
+               <top>0</top>
                <width>1125</width>
                <height>60</height>
                <textcolor>black</textcolor>
@@ -45,7 +45,7 @@
                <info>ListItem.Property(Addon.Name)</info>
             </control>
             <control type="label" description="summary">
-               <posy>75</posy>
+               <top>75</top>
                <width>1125</width>
                <height>45</height>
                <font>size30</font>
@@ -54,7 +54,7 @@
                <label>$INFO[ListItem.Property(Addon.Summary)]</label>
             </control>
             <control type="label" description="Author">
-               <posy>150</posy>
+               <top>150</top>
                <width>1125</width>
                <height>45</height>
                <font>size33</font>
@@ -63,7 +63,7 @@
                <label>$INFO[ListItem.Property(Addon.Creator)]</label>
             </control>
             <control type="label" description="Version">
-               <posy>195</posy>
+               <top>195</top>
                <width>1125</width>
                <height>45</height>
                <font>size33</font>
@@ -72,7 +72,7 @@
                <label>$LOCALIZE[24051] [COLOR=red] [B]$INFO[ListItem.Property(Addon.Version)][/B] [/COLOR]</label>
             </control>
             <control type="label" description="Disclaimer">
-               <posy>270</posy>
+               <top>270</top>
                <width>1125</width>
                <height>45</height>
                <font>size21</font>
@@ -82,7 +82,7 @@
             </control>
             <control type="textbox" description="Plot">
                <posx>0</posx>
-               <posy>330</posy>
+               <top>330</top>
                <width>1200</width>
                <height>336</height>
                <align>justify</align>
@@ -93,14 +93,14 @@
       </control>
       <control type="image">
          <posx>0</posx>
-         <posy>1002</posy>
+         <top>1002</top>
          <height>72</height>
          <width>1920</width>
          <aspectratio>stretch</aspectratio>
          <texture>images/BlackT.png</texture>
       </control>
       <control type="image" description="Line bott">
-         <posy>1002</posy>
+         <top>1002</top>
          <width>1920</width>
          <height>1</height>
          <aspectratio>stretch</aspectratio>
@@ -108,7 +108,7 @@
       </control>
       <control type="group" description="Options">
          <control type="grouplist" id="300">
-            <posy>1000</posy>
+            <top>1000</top>
             <width>auto</width>
             <align>center</align>
             <height>80</height>

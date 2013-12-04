@@ -8,18 +8,18 @@
   <controls>
     <control type="image">
       <posx>150</posx>
-      <posy>-75</posy>
+      <top>-75</top>
       <width>1620</width>
       <height>1230</height>
       <texture border="150">images/Dialog.png</texture>
     </control>
     <control type="group">
       <posx>435</posx>
-      <posy>180</posy>
+      <top>180</top>
       <control type="label">
         <description>header label</description>
         <posx>60</posx>
-        <posy>-30</posy>
+        <top>-30</top>
         <width>930</width>
         <height>45</height>
         <font>size28</font>
@@ -30,7 +30,7 @@
       <control type="label" id="3">
         <description>No Settings Label</description>
         <posx>30</posx>
-        <posy>270</posy>
+        <top>270</top>
         <width>960</width>
         <align>center</align>
         <label>35004</label>
@@ -40,7 +40,7 @@
         <animation effect="slide" start="0,0" end="8,0" time="0" condition="!Control.IsVisible(60)">Conditional</animation>
         <description>control area</description>
         <posx>45</posx>
-        <posy>105</posy>
+        <top>105</top>
         <width>945</width>
         <height>480</height>
         <itemgap>8</itemgap>
@@ -52,7 +52,7 @@
       </control>
       <control type="scrollbar" id="60">
         <posx>987</posx>
-        <posy>105</posy>
+        <top>105</top>
         <width>36</width>
         <onleft>3</onleft>
         <onright>3</onright>
@@ -64,7 +64,7 @@
       <control type="button" id="7">
         <description>Default Button</description>
         <posx>0</posx>
-        <posy>0</posy>
+        <top>0</top>
         <height>60</height>
         <font>size27</font>
         <!--<texturefocus border="5">button-focus2.png</texturefocus>-->
@@ -72,7 +72,7 @@
       <control type="radiobutton" id="8">
         <description>Default RadioButton</description>
         <posx>0</posx>
-        <posy>0</posy>
+        <top>0</top>
         <height>60</height>
         <font>size27</font>
         <!--<texturefocus border="5">button-focus2.png</texturefocus>-->
@@ -80,7 +80,7 @@
       <control type="spincontrolex" id="9">
         <description>Default SpinControlex</description>
         <posx>0</posx>
-        <posy>0</posy>
+        <top>0</top>
         <height>60</height>
         <font>size27</font>
         <!--<texturefocus border="5">button-focus2.png</texturefocus>
@@ -100,10 +100,10 @@
       </control>
       <control type="group" id="9000">
         <posx>60</posx>
-        <posy>638</posy>
+        <top>638</top>
         <control type="button" id="29">
           <description>Cancel Button</description>
-          <posy>0</posy>
+          <top>0</top>
           <posx>0</posx>
           <width>300</width>
           <height>60</height>
@@ -119,7 +119,7 @@
         </control>
         <control type="button" id="28">
           <description>OK Button</description>
-          <posy>0</posy>
+          <top>0</top>
           <posx>315</posx>
           <width>300</width>
           <height>60</height>
@@ -135,7 +135,7 @@
         </control>
         <control type="button" id="50">
           <description>Defaults Button</description>
-          <posy>0</posy>
+          <top>0</top>
           <posx>630</posx>
           <width>300</width>
           <height>60</height>

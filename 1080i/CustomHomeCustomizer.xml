@@ -6,7 +6,7 @@
   <controls>
     <control type="label" description="Heading">
       <posx>60r</posx>
-      <posy>40</posy>
+      <top>40</top>
       <width>720</width>
       <height>55</height>
       <font>size42B</font>
@@ -16,7 +16,7 @@
     </control>
     <control type="group">
       <control type="image" description="Line bottom">
-        <posy>490</posy>
+        <top>490</top>
         <width>1920</width>
         <height>1</height>
         <texture>images/Line1.png</texture>
@@ -25,7 +25,7 @@
         <control type="panel" id="50">
           <width>1800</width>
           <height>600</height>
-          <posy>518</posy>
+          <top>518</top>
           <posx>60</posx>
           <onleft>50</onleft>
           <onright>50</onright>
@@ -35,7 +35,7 @@
           <itemlayout height="230" width="300">
             <control type="image" description="THMBSBASE">
               <posx>20</posx>
-              <posy>48</posy>
+              <top>48</top>
               <width>260</width>
               <height>168</height>
               <colordiffuse>FF555555</colordiffuse>
@@ -44,7 +44,7 @@
             <control type="Image" description="THUMB">
               <visible>!IsEmpty(Listitem.thumb)</visible>
               <posx>20</posx>
-              <posy>48</posy>
+              <top>48</top>
               <height>168</height>
               <width>260</width>
               <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
@@ -53,7 +53,7 @@
             <control type="Image" description="THUMB">
               <visible>IsEmpty(Listitem.thumb)</visible>
               <posx>20</posx>
-              <posy>48</posy>
+              <top>48</top>
               <height>168</height>
               <width>260</width>
               <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
@@ -61,7 +61,7 @@
             </control>
             <control type="label" description="Main Label">
               <posx>150</posx>
-              <posy>220</posy>
+              <top>220</top>
               <width>300</width>
               <height>24</height>
               <align>center</align>
@@ -71,7 +71,7 @@
           <focusedlayout  height="230" width="370">
             <control type="image" description="THMBSBASE">
               <posx>20</posx>
-              <posy>48</posy>
+              <top>48</top>
               <width>260</width>
               <height>168</height>
               <colordiffuse>FF666666</colordiffuse>
@@ -80,7 +80,7 @@
             <control type="Image" description="THUMB">
               <visible>!IsEmpty(Listitem.thumb)</visible>
               <posx>20</posx>
-              <posy>48</posy>
+              <top>48</top>
               <height>168</height>
               <width>260</width>
               <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
@@ -89,7 +89,7 @@
             <control type="Image" description="THUMB">
               <visible>IsEmpty(Listitem.thumb)</visible>
               <posx>20</posx>
-              <posy>48</posy>
+              <top>48</top>
               <height>168</height>
               <width>260</width>
               <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
@@ -97,7 +97,7 @@
             </control>
             <control type="image" description="Selection Overlay">
               <posx>20</posx>
-              <posy>48</posy>
+              <top>48</top>
               <height>168</height>
               <width>260</width>
               <texture>images/atvslider.png</texture>
@@ -105,7 +105,7 @@
             </control>
             <control type="label" description="Main Label">
               <posx>150</posx>
-              <posy>220</posy>
+              <top>220</top>
               <width>300</width>
               <height>24</height>
               <align>center</align>
@@ -551,7 +551,7 @@
       </control>
     </control>
     <control type="grouplist" id="520" description="MOVIES">
-      <posy>60</posy>
+      <top>60</top>
       <posx>60</posx>
       <ondown>50</ondown>
       <onright>50</onright>
@@ -580,7 +580,7 @@
       </control>
     </control>
     <control type="grouplist" id="520" description="TV">
-      <posy>60</posy>
+      <top>60</top>
       <posx>60</posx>
       <ondown>50</ondown>
       <onright>50</onright>
@@ -610,10 +610,10 @@
     </control>
     <control type="group" id="520">
       <visible>Container(50).HasFocus(1003)</visible>
-      <posy>30</posy>
+      <top>30</top>
       <posx>40</posx>
       <control type="label">
-        <posy>40</posy>
+        <top>40</top>
         <posx>800</posx>
         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
         <width>1000</width>
@@ -632,7 +632,7 @@
         <onclick>Skin.Reset(MusicShelf_Custom)</onclick>
       </control>
       <control type="radiobutton" id="303" description="Custom">
-        <posy>55</posy>
+        <top>55</top>
         <onup>300</onup>
         <ondown>52</ondown>
         <include>SettingsSubmenuButtons</include>
@@ -712,10 +712,10 @@
     </control>
     <control type="group" id="520" description="PICTURES">
       <visible>Container(50).HasFocus(1004)</visible>
-      <posy>30</posy>
+      <top>30</top>
       <posx>40</posx>
       <control type="label">
-        <posy>40</posy>
+        <top>40</top>
         <posx>20</posx>
         <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
         <width>1000</width>
@@ -814,10 +814,10 @@
     </control>
     <control type="group" id="520" description="ADDONS">
       <visible>Container(50).HasFocus(1005)</visible>
-      <posy>30</posy>
+      <top>30</top>
       <posx>40</posx>
       <control type="label">
-        <posy>40</posy>
+        <top>40</top>
         <posx>20</posx>
         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
         <width>1000</width>
@@ -952,10 +952,10 @@
     </control>
     <control type="group" description="VADDONS">
       <visible>Container(50).HasFocus(1013)</visible>
-      <posy>30</posy>
+      <top>30</top>
       <posx>40</posx>
       <control type="label">
-        <posy>40</posy>
+        <top>40</top>
         <posx>20</posx>
         <width>1000</width>
         <textcolor>gray</textcolor>
@@ -1080,10 +1080,10 @@
     </control>
     <control type="group" description="ADDONS">
       <visible>[Container(50).HasFocus(601) + IsEmpty(Skin.String(HomeFav.1.Label))] | [Container(50).HasFocus(602) + IsEmpty(Skin.String(HomeFav.2.Label))] | [Container(50).HasFocus(603) + IsEmpty(Skin.String(HomeFav.3.Label))] | [Container(50).HasFocus(604) + IsEmpty(Skin.String(HomeFav.4.Label))] | [Container(50).HasFocus(605) + IsEmpty(Skin.String(HomeFav.5.Label))] | [Container(50).HasFocus(606) + IsEmpty(Skin.String(HomeFav.6.Label))]</visible>
-      <posy>30</posy>
+      <top>30</top>
       <posx>40</posx>
       <control type="label">
-        <posy>40</posy>
+        <top>40</top>
         <posx>20</posx>
         <width>1000</width>
         <textcolor>gray</textcolor>
@@ -1093,10 +1093,10 @@
     </control>
     <control type="group" description="CUSTOM ICONS FAVS">
       <visible>[Container(50).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.Label))] | [Container(50).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.Label))] | [Container(50).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.Label))] | [Container(50).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.Label))] | [Container(50).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.Label))] | [Container(50).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.Label))]</visible>
-      <posy>30</posy>
+      <top>30</top>
       <posx>40</posx>
       <control type="label">
-        <posy>40</posy>
+        <top>40</top>
         <posx>20</posx>
         <width>1000</width>
         <textcolor>gray</textcolor>
@@ -1108,14 +1108,14 @@
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
       <control type="image">
         <posx>525</posx>
-		<posy>200</posy>
+		<top>200</top>
 		<width>870</width>
         <height>560</height>
         <texture border="150">images/Dialog.png</texture>
       </control>
       <control type="label" description="Dialog heading">
         <posx>550</posx>
-        <posy>360</posy>
+        <top>360</top>
         <width>820</width>
         <height>52</height>
         <label>[B]Favourite Options[/B]</label>
@@ -1172,12 +1172,12 @@
       </control>
     </control>
     <control type="group" id="520" description="WEATHER">
-      <posy>60</posy>
+      <top>60</top>
       <posx>60</posx>
       <visible>Container(50).HasFocus(1006)</visible>
       <control type="label">
         <posx>450</posx>
-        <posy>80</posy>
+        <top>80</top>
         <width>900</width>
         <height>60</height>
         <align>center</align>
@@ -1187,7 +1187,7 @@
       </control>
       <control type="label">
         <posx>450</posx>
-        <posy>150</posy>
+        <top>150</top>
         <width>900</width>
         <height>60</height>
         <align>center</align>
@@ -1197,7 +1197,7 @@
       <control type="button" id="100">
         <ondown>50</ondown>
         <posx>750</posx>
-        <posy>250</posy>
+        <top>250</top>
         <width>300</width>
         <height>60</height>
         <align>center</align>
@@ -1207,12 +1207,12 @@
       </control>
     </control>
     <control type="group" id="521" description="WEATHER">
-      <posy>60</posy>
+      <top>60</top>
       <posx>60</posx>
       <visible>Container(50).HasFocus(356)</visible>
       <control type="textbox">
         <posx>450</posx>
-        <posy>100</posy>
+        <top>100</top>
         <width>900</width>
         <height>300</height>
         <align>center</align>

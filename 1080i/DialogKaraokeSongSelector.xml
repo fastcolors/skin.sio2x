@@ -4,7 +4,7 @@
   <controls>
     <control type="group">
       <posx>459</posx>
-      <posy>250</posy>
+      <top>250</top>
       <control type="image" description="List back">
         <width>1002</width>
         <height>560</height>
@@ -13,7 +13,7 @@
       </control>
       <control type="grouplist" id="9000">
         <posx>210</posx>
-        <posy>152</posy>
+        <top>152</top>
         <control type="label" id="1">
           <description>header label</description>
           <width>615</width>

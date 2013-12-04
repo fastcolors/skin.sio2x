@@ -13,20 +13,20 @@
     </control>
 	<control type="image" id="2">
 	<posx>180</posx>
-	<posy>200</posy>
+	<top>200</top>
 		  <width>600</width>
 		  <height>700</height>
 		  <texture>def_user.png</texture>
 		  <aspectratio>keep</aspectratio>
 		  </control>
     <control type="label" id="1001" description="Profile Directory">
-      <posy>60</posy>
+      <top>60</top>
 	  <font>Size21</font>
       <include>Heading</include>
     </control>
     <control type="group">
       <posx>960</posx>
-      <posy>222</posy>
+      <top>222</top>
       <control type="grouplist" id="5">
         <description>Control Area</description>
         <width>900</width>
@@ -55,7 +55,7 @@
         <texturefocus>images/buttonselect2.png</texturefocus>
       </control>
       <control type="image" description="Line split">
-        <posy>512</posy>
+        <top>512</top>
         <width>802</width>
         <height>1</height>
         <texture>images/Line.png</texture>
@@ -63,7 +63,7 @@
       </control>
       <control type="button" id="28" description="OK">
         <posx>225</posx>
-        <posy>531</posy>
+        <top>531</top>
         <width>450</width>
         <label>186</label>
         <onleft>noop</onleft>
@@ -74,7 +74,7 @@
       </control>
       <control type="button" id="29" description="Cancel">
         <posx>225</posx>
-        <posy>627</posy>
+        <top>627</top>
         <width>450 </width>
         <label>222</label>
         <onleft>noop</onleft>

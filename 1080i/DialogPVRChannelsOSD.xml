@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">11</defaultcontrol>
 	<controls>
 	<control type="image">
-	<posy>310</posy>
+	<top>310</top>
 	<height>760</height>
 	<width>1920</width>
 	<texture>images/Black.png</texture>
@@ -14,7 +14,7 @@
     <include>VisibleFade</include>
 	<control type="label">
 	 <posx>80</posx>
-      <posy>310</posy>
+      <top>310</top>
 	  <height>40</height>
 	  <width>500</width>
 	  <textcolor>Yellow</textcolor>
@@ -22,11 +22,11 @@
 	</control>
     <control type="group">
       <posx>80</posx>
-      <posy>340</posy>
+      <top>340</top>
       <control type="label">
         <description>Date Time label</description>
 		<posx>200</posx>
-        <posy>20</posy>
+        <top>20</top>
         <width>120</width>
         <height>20</height>
         <font>size26</font>
@@ -38,7 +38,7 @@
       <control type="label">
         <description>Channel</description>
         <posx>220</posx>
-        <posy>20</posy>
+        <top>20</top>
         <width>600</width>
         <height>20</height>
         <font>size26B</font>
@@ -50,7 +50,7 @@
 	  <control type="label">
         <description>Title</description>
         <posx>840</posx>
-        <posy>20</posy>
+        <top>20</top>
         <width>600</width>
         <height>20</height>
         <font>size26B</font>
@@ -62,7 +62,7 @@
       <control type="label">
         <description>Status header label</description>
         <posx>1580</posx>
-        <posy>20</posy>
+        <top>20</top>
         <width>250</width>
         <height>20</height>
         <font>Size26B</font>
@@ -74,14 +74,14 @@
       <control type="image">
         <description>separator image</description>
         <posx>60</posx>
-        <posy>57</posy>
+        <top>57</top>
         <width>1760</width>
         <height>2</height>
         <texture>images/line.png</texture>
       </control>
       <control type="list" id="11">
         <posx>0</posx>
-        <posy>60</posy>
+        <top>60</top>
         <width>1760</width>
         <height>480</height>
         <onup>11</onup>
@@ -110,7 +110,7 @@
           </control>
           <control type="label">
             <posx>220</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>600</width>
             <height>40</height>
             <font>Size26</font>
@@ -122,7 +122,7 @@
           </control>
 		  <control type="label">
             <posx>840</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>640</width>
             <height>40</height>
             <font>Size26</font>
@@ -134,7 +134,7 @@
           </control>
           <control type="image">
             <posx>1710</posx>
-            <posy>6</posy>
+            <top>6</top>
             <width>30</width>
             <height>30</height>
             <texture>pvr/rec.png</texture>
@@ -155,7 +155,7 @@
           </control>
           <control type="image">
             <posx>1710</posx>
-            <posy>6</posy>
+            <top>6</top>
             <width>30</width>
             <height>30</height>
             <texture>pvr/timer.png</texture>
@@ -195,7 +195,7 @@
           </control>
           <control type="label">
             <posx>220</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>600</width>
             <height>40</height>
             <font>Size26</font>
@@ -207,7 +207,7 @@
           </control>
 		  <control type="label">
             <posx>840</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>640</width>
             <height>40</height>
             <font>Size26</font>
@@ -220,7 +220,7 @@
           <control type="textbox">
             <description>Plot Value for TVShow</description>
             <posx>60</posx>
-            <posy>40</posy>
+            <top>40</top>
             <width>1600</width>
             <height>70</height>
             <font>font12</font>
@@ -230,7 +230,7 @@
           </control>
           <control type="image">
             <posx>1710</posx>
-            <posy>6</posy>
+            <top>6</top>
             <width>30</width>
             <height>30</height>
             <texture>pvr/rec.png</texture>
@@ -251,7 +251,7 @@
           </control>
           <control type="image">
             <posx>1710</posx>
-            <posy>6</posy>
+            <top>6</top>
             <width>30</width>
             <height>30</height>
             <texture>pvr/timer.png</texture>
@@ -274,7 +274,7 @@
       </control>
       <control type="scrollbar" id="60">
         <posx>1780</posx>
-        <posy>60</posy>
+        <top>60</top>
         <height>480</height>
         <onleft>11</onleft>
         <onright>noop</onright>

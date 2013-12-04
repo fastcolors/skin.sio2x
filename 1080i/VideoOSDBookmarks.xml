@@ -6,18 +6,18 @@
   <controls>
     <control type="image">
       <posx>225</posx>
-      <posy>0</posy>
+      <top>0</top>
       <width>1470</width>
       <height>1080</height>
       <texture border="150">images/Dialog.png</texture>
     </control>
     <control type="group">
       <posx>360</posx>
-      <posy>150</posy>
+      <top>150</top>
       <control type="label">
         <description>header label</description>
         <posx>30</posx>
-        <posy>-15</posy>
+        <top>-15</top>
         <width>1140</width>
         <align>center</align>
         <label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - ($INFO[Container(11).NumItems]) $LOCALIZE[31001] - $LOCALIZE[31000] ($INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])</label>
@@ -25,7 +25,7 @@
       </control>
       <control type="panel" id="11">
         <posx>66</posx>
-        <posy>90</posy>
+        <top>90</top>
         <width>1080</width>
         <height>540</height>
         <onleft>2</onleft>
@@ -39,7 +39,7 @@
         <itemlayout height="270" width="360">
           <control type="image">
             <posx>10</posx>
-            <posy>3</posy>
+            <top>3</top>
             <width>330</width>
             <height>210</height>
             <bordertexture border="1">images/ThumbBorder2.png</bordertexture>
@@ -49,7 +49,7 @@
           </control>
           <control type="label">
             <posx>168</posx>
-            <posy>225</posy>
+            <top>225</top>
             <width>338</width>
             <height>22</height>
             <align>center</align>
@@ -60,7 +60,7 @@
         <focusedlayout height="270" width="360">
           <control type="image">
             <posx>10</posx>
-            <posy>3</posy>
+            <top>3</top>
             <width>330</width>
             <height>210</height>
             <bordertexture border="1">images/ThumbBorder3.png</bordertexture>
@@ -70,7 +70,7 @@
           </control>
           <control type="label">
             <posx>168</posx>
-            <posy>225</posy>
+            <top>225</top>
             <width>338</width>
             <height>22</height>
             <align>center</align>
@@ -81,7 +81,7 @@
       </control>
       <control type="grouplist" id="9000">
         <posx>30</posx>
-        <posy>690</posy>
+        <top>690</top>
         <width>1140</width>
         <height>75</height>
         <itemgap>30</itemgap>

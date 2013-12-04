@@ -12,7 +12,7 @@
     </control>
     <control type="group">
       <posx>1020</posx>
-      <posy>147</posy>
+      <top>147</top>
       <control type="grouplist" id="5">
         <width>802</width>
         <height>810</height>
@@ -41,7 +41,7 @@
       </control>
       <control type="image" description="Line split">
         <posx>0</posx>
-        <posy>692</posy>
+        <top>692</top>
         <width>802</width>
         <height>1</height>
         <texture>images/Line.png</texture>
@@ -49,7 +49,7 @@
       </control>
       <control type="button" id="28" description="OK">
         <posx>225</posx>
-        <posy>711</posy>
+        <top>711</top>
         <width>352</width>
         <label>186</label>
         <onleft>noop</onleft>
@@ -60,7 +60,7 @@
       </control>
       <control type="button" id="29" description="Cancel">
         <posx>225</posx>
-        <posy>807</posy>
+        <top>807</top>
         <width>352</width>
         <label>222</label>
         <onleft>noop</onleft>

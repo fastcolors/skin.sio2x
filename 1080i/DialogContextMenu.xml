@@ -16,7 +16,7 @@
     </control>
     <control type="grouplist" id="996" description="Context menu container">
       <posx>150</posx>
-      <posy>150</posy>
+      <top>150</top>
       <width>480</width>
       <height max="960">auto</height>
       <itemgap>3</itemgap>
@@ -30,7 +30,7 @@
     </control>
     <control type="button" id="1000" description="Buttons">
       <posx>150</posx>
-      <posy></posy>
+      <top></top>
       <width>480</width>
       <height>60</height>
       <focusedcolor>black</focusedcolor>

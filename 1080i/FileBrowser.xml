@@ -13,7 +13,7 @@
       </control>
       <control type="group" description="Group 450 No Thumbs">
         <control type="group">
-          <posy>142</posy>
+          <top>142</top>
           <posx>960</posx>
           <control type="list" id="450">
             <width>900</width>
@@ -52,7 +52,7 @@
     </control>
     <control type="group" description="Thumbs">
       <posx>110</posx>
-      <posy>215</posy>
+      <top>215</top>
       <control type="image" description="Item Thumb">
         <visible>!SubString(Control.GetLabel(416),*)</visible>
         <width>765</width>
@@ -76,7 +76,7 @@
       <include>DialogOpenCloseVisible</include>
       <control type="image" description="List back">
         <posx>540</posx>
-        <posy>255</posy>
+        <top>255</top>
         <width>840</width>
         <height>570</height>
         <aspectratio>stretch</aspectratio>
@@ -107,7 +107,7 @@
     </control>
     <control type="label" id="412" description="Main Label">
       <posx>30</posx>
-      <posy>1029</posy>
+      <top>1029</top>
       <height>45</height>
       <width>1050</width>
       <scroll>false</scroll>
@@ -118,7 +118,7 @@
     </control>
     <control type="scrollbar" id="60">
       <posx>51r</posx>
-      <posy>147</posy>
+      <top>147</top>
       <height>882</height>
       <onleft>450</onleft>
       <onright>9000</onright>

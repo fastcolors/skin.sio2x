@@ -18,11 +18,11 @@
       <description>Timeline Media Window</description>
       <visible>Control.IsVisible(15) | Control.IsVisible(10)</visible>
       <posx>1200</posx>
-      <posy>60</posy>
+      <top>60</top>
       <control type="image">
 	  <visible>!Player.HasMedia</visible>
         <posx>5</posx>
-        <posy>5</posy>
+        <top>5</top>
         <width>610</width>
         <height>400</height>
         <texture>pvr/tvset.png</texture>
@@ -30,21 +30,21 @@
 	  <control type="image">
 	  <visible>Player.HasMedia</visible>
         <posx>0</posx>
-        <posy>0</posy>
+        <top>0</top>
         <width>620</width>
         <height>410</height>
         <texture>images/black.png</texture>
       </control>
       <control type="videowindow">
         <posx>5</posx>
-        <posy>5</posy>
+        <top>5</top>
         <width>610</width>
         <height>400</height>
         <visible>Player.HasVideo</visible>
       </control>
       <control type="visualisation">
         <posx>5</posx>
-        <posy>5</posy>
+        <top>5</top>
         <width>610</width>
         <height>400</height>
         <visible>Player.HasAudio</visible>
@@ -57,21 +57,21 @@
       <control type="image">
 	  <visible>!Player.HasMedia</visible>
         <posx>120</posx>
-        <posy>80</posy>
+        <top>80</top>
         <width>760</width>
         <height>495</height>
         <texture>pvr/tvset.png</texture>
       </control>
       <control type="videowindow">
         <posx>120</posx>
-        <posy>80</posy>
+        <top>80</top>
         <width>760</width>
         <height>495</height>
         <visible>Player.HasVideo</visible>
       </control>
       <control type="visualisation">
         <posx>120</posx>
-        <posy>80</posy>
+        <top>80</top>
         <width>760</width>
         <height>495</height>
         <visible>Player.HasAudio</visible>
@@ -101,7 +101,7 @@
       <include>DialogOpenCloseVisible</include>
        <control type="image" description="List back">
         <posx>540</posx>
-        <posy>190</posy>
+        <top>190</top>
         <width>840</width>
         <height>700</height>
         <aspectratio>stretch</aspectratio>

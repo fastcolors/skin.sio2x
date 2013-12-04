@@ -8,7 +8,7 @@
          <control type="fixedlist" id="52">
             <visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>
             <posx>60</posx>
-            <posy>60</posy>
+            <top>60</top>
             <width>1820</width>
             <height>970</height>
             <onleft condition="SubString(ListItem.path,videodb://movies/sets/)">990</onleft>
@@ -27,7 +27,7 @@
             <itemlayout height="160">
                <control type="image">
                   <posx>1680</posx>
-                  <posy>10</posy>
+                  <top>10</top>
                   <width>108</width>
                   <height>140</height>
                   <texture>$VAR[Locandine]</texture>
@@ -35,7 +35,7 @@
                </control>
                <control type="image">
                   <posx>1660</posx>
-                  <posy>118</posy>
+                  <top>118</top>
                   <width>40</width>
                   <height>40</height>
                   <texture>$VAR[WatchStatus,overlay/List/]</texture>
@@ -43,7 +43,7 @@
                </control>
                <control type="textbox">
                   <posx>1310</posx>
-                  <posy>20</posy>
+                  <top>20</top>
                   <width>340</width>
                   <height>100</height>
                   <font>Size24B</font>
@@ -53,7 +53,7 @@
                </control>
                <control type="group" description="unwatched">
                   <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                  <posy>110</posy>
+                  <top>110</top>
                   <posx>1740</posx>
                   <control type="image">
                      <height>55</height>
@@ -62,7 +62,7 @@
                      <texture>Badges/Badgecount.png</texture>
                   </control>
                   <control type="label">
-                     <posy>4</posy>
+                     <top>4</top>
                      <centerx>55</centerx>
                      <height>40</height>
                      <width min="20" max="50">auto</width>
@@ -75,7 +75,7 @@
                </control>
                <control type="image">
                   <posx>1620</posx>
-                  <posy>110</posy>
+                  <top>110</top>
                   <width>40</width>
                   <height>55</height>
                   <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
@@ -83,7 +83,7 @@
                </control>
 			   <control type="image">
                   <posx>1290</posx>
-                  <posy>110</posy>
+                  <top>110</top>
                   <width>120</width>
                   <height>55</height>
                   <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
@@ -106,7 +106,7 @@
                </control>
                <control type="image">
                   <posx>1680</posx>
-                  <posy>10</posy>
+                  <top>10</top>
                   <width>108</width>
                   <height>140</height>
                   <texture>$VAR[Locandine]</texture>
@@ -114,7 +114,7 @@
                </control>
                <control type="image">
                   <posx>1660</posx>
-                  <posy>118</posy>
+                  <top>118</top>
                   <width>40</width>
                   <height>40</height>
                   <texture>$VAR[WatchStatus,overlay/List/]</texture>
@@ -122,7 +122,7 @@
                </control>
                <control type="textbox">
                   <posx>1310</posx>
-                  <posy>20</posy>
+                  <top>20</top>
                   <width>340</width>
                   <height>100</height>
                   <font>Size24B</font>
@@ -132,7 +132,7 @@
                </control>
                <control type="group" description="unwatched">
                   <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                  <posy>110</posy>
+                  <top>110</top>
                   <posx>1740</posx>
                   <control type="image">
                      <height>55</height>
@@ -141,7 +141,7 @@
                      <texture>Badges/Badgecount.png</texture>
                   </control>
                   <control type="label">
-                     <posy>4</posy>
+                     <top>4</top>
                      <centerx>55</centerx>
                      <height>40</height>
                      <width min="20" max="50">auto</width>
@@ -154,7 +154,7 @@
                </control>
                <control type="image">
                   <posx>1620</posx>
-                  <posy>110</posy>
+                  <top>110</top>
                   <width>40</width>
                   <height>55</height>
                   <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
@@ -162,7 +162,7 @@
                </control>
 			   <control type="image">
                   <posx>1290</posx>
-                  <posy>110</posy>
+                  <top>110</top>
                   <width>120</width>
                   <height>55</height>
                   <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
@@ -188,7 +188,7 @@
          <control type="textbox">
             <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
             <centerx>670</centerx>
-            <posy>70</posy>
+            <top>70</top>
             <width>1140</width>
             <height>55</height>
             <font>Size20</font>
@@ -199,7 +199,7 @@
          <!--<control type="grouplist" description="detailedinfos">
             <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
             <posx>60</posx>
-            <posy>180</posy>
+            <top>180</top>
             <height>600</height>
             <width>1000</width>
             <itemgap>10</itemgap>
@@ -315,7 +315,7 @@
          <control type="grouplist" description="flags">
             <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
             <posx>130</posx>
-            <posy>565</posy>
+            <top>565</top>
             <height>600</height>
             <width>810</width>
             <itemgap>10</itemgap>
@@ -379,7 +379,7 @@
             <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
             <control type="textbox" description="plots">
                <posx>60</posx>
-               <posy>630</posy>
+               <top>630</top>
                <width>1240</width>
                <height>480</height>
                <align>justify</align>
@@ -389,7 +389,7 @@
             </control>
             <control type="group" description="icon+overlay">
                <posx>1000</posx>
-               <posy>160</posy>
+               <top>160</top>
                <control type="image">
                   <height>440</height>
                   <width>294</width>
@@ -398,7 +398,7 @@
                </control>
                <control type="image">
                   <posx>-6</posx>
-                  <posy>-7</posy>
+                  <top>-7</top>
                   <height>454</height>
                   <width>308</width>
                   <texture border="10" background="true">$VAR[dvdbox]</texture>
@@ -406,7 +406,7 @@
                </control>
                <control type="image">
                   <posx>-10</posx>
-                  <posy>390</posy>
+                  <top>390</top>
                   <width>60</width>
                   <height>60</height>
                   <info>ListItem.Overlay</info>
@@ -418,7 +418,7 @@
             <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
             <control type="panel" id="990">
                <posx>85</posx>
-               <posy>110</posy>
+               <top>110</top>
                <width>1200</width>
                <height>1080</height>
                <onup>noop</onup>
@@ -427,13 +427,13 @@
                <itemlayout width="297" height="480">
                   <control type="image">
                      <posx>15</posx>
-                     <posy>10</posy>
+                     <top>10</top>
                      <height>400</height>
                      <width>267</width>
                      <texture>$INFO[ListItem.Thumb]</texture>
                   </control>
                   <control type="textbox">
-                     <posy>415</posy>
+                     <top>415</top>
                      <width>297</width>
                      <height>60</height>
                      <align>center</align>
@@ -444,7 +444,7 @@
                <focusedlayout width="297" height="480">
                   <control type="image">
                      <posx>15</posx>
-                     <posy>10</posy>
+                     <top>10</top>
                      <height>400</height>
                      <width>267</width>
                      <texture>$INFO[ListItem.Thumb]</texture>
@@ -459,7 +459,7 @@
                         <texture border="9">images/SetsOver.png</texture>
                      </control>
                      <control type="textbox">
-                        <posy>10</posy>
+                        <top>10</top>
                         <width>290</width>
                         <height>400</height>
                         <font>Size22</font>
@@ -468,7 +468,7 @@
                      </control>
                   </control>
                   <control type="textbox">
-                     <posy>415</posy>
+                     <top>415</top>
                      <width>297</width>
                      <height>60</height>
                      <align>center</align>
@@ -487,7 +487,7 @@
          </control>
          <control type="image">
             <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
-            <posy>630</posy>
+            <top>630</top>
             <height>30</height>
             <width>1341</width>
             <texture diffuse="images/DiffuseShelfSlider.png" flipy="true">images/LineR.png</texture>
@@ -495,7 +495,7 @@
          </control>
 		 <control type="image">
             <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
-            <posy>130</posy>
+            <top>130</top>
             <height>1</height>
             <width>1341</width>
             <texture>images/LineR.png</texture>
@@ -534,7 +534,7 @@
          </control>
          <control type="scrollbar" id="60">
             <posx>50r</posx>
-            <posy>120</posy>
+            <top>120</top>
             <height>820</height>
             <onleft>50</onleft>
             <onright>noop</onright>
@@ -553,7 +553,7 @@
          <control type="group">
             <include>LargeListItemCount</include>
             <posx>960</posx>
-            <posy>131</posy>
+            <top>131</top>
             <control type="fixedlist" id="50">
                <visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>
                <width>920</width>
@@ -576,7 +576,7 @@
          <include>Linemiddle</include>
          <control type="scrollbar" id="60">
             <posx>39r</posx>
-            <posy>135</posy>
+            <top>135</top>
             <height>870</height>
             <onleft>51</onleft>
             <onright>noop</onright>
@@ -590,7 +590,7 @@
          <control type="group" description="Slider and List">
             <include>SlimListItemCount</include>
             <posx>960</posx>
-            <posy>131</posy>
+            <top>131</top>
             <control type="fixedlist" id="51">
                <width>940</width>
                <height>891</height>
@@ -662,7 +662,7 @@
          </control>
          <control type="scrollbar" id="60">
             <posx>39r</posx>
-            <posy>135</posy>
+            <top>135</top>
             <height>870</height>
             <onright>noop</onright>
             <onleft>51</onleft>
@@ -681,7 +681,7 @@
             <control type="panel" id="53">
                <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(Sets)</visible>
                <posx>60</posx>
-               <posy>60</posy>
+               <top>60</top>
                <width>1800</width>
                <height>900</height>
                <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
@@ -697,7 +697,7 @@
                <itemlayout condition="![Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets) | Container.Content(Episodes)]" height="360" width="360">
                   <control type="image">
                      <posx>45</posx>
-                     <posy>9</posy>
+                     <top>9</top>
                      <width>281</width>
                      <height>281</height>
                      <texture diffuse="images/diffusepic.png" background="true">$INFO[ListItem.Icon]</texture>
@@ -705,7 +705,7 @@
                   </control>
                   <control type="label">
                      <posx>181</posx>
-                     <posy>290</posy>
+                     <top>290</top>
                      <width>296</width>
                      <height>45</height>
                      <font>size27</font>
@@ -717,7 +717,7 @@
                <focusedlayout condition="![Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets) | Container.Content(Episodes)]" height="360" width="360">
                   <control type="image">
                      <posx>45</posx>
-                     <posy>9</posy>
+                     <top>9</top>
                      <width>281</width>
                      <height>281</height>
                      <texture diffuse="images/diffusepic.png" background="true">$INFO[ListItem.Icon]</texture>
@@ -725,7 +725,7 @@
                   </control>
                   <control type="label">
                      <posx>181</posx>
-                     <posy>290</posy>
+                     <top>290</top>
                      <width>296</width>
                      <height>45</height>
                      <font>size27</font>
@@ -739,7 +739,7 @@
                         <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                         <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
                         <posx>45</posx>
-                        <posy>9</posy>
+                        <top>9</top>
                         <width>281</width>
                         <height>281</height>
                         <texture>images/picselection.png</texture>
@@ -750,7 +750,7 @@
                <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="380" width="257">
                   <control type="image">
                      <posx>35</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>197</width>
                      <height>294</height>
                      <texture background="true">$VAR[Locandine]</texture>
@@ -761,7 +761,7 @@
                      <control type="image">
                         <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                         <posx>123</posx>
-                        <posy>276</posy>
+                        <top>276</top>
                         <height>45</height>
                         <width>150</width>
                         <aspectratio>keep</aspectratio>
@@ -770,7 +770,7 @@
                      <control type="label" description="Label2">
                         <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                         <posx>197</posx>
-                        <posy>270</posy>
+                        <top>270</top>
                         <height>45</height>
                         <width>150</width>
                         <font>size24</font>
@@ -784,7 +784,7 @@
                   <control type="image" description="WatchStatus">
                      <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
                      <posx>30</posx>
-                     <posy>290</posy>
+                     <top>290</top>
                      <height>32</height>
                      <width>60</width>
                      <aspectratio align="left">keep</aspectratio>
@@ -794,7 +794,7 @@
                <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="380" width="257">
                   <control type="image">
                      <posx>35</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>197</width>
                      <height>294</height>
                      <texture background="true">$VAR[Locandine]</texture>
@@ -802,7 +802,7 @@
                   </control>
                   <control type="textbox">
                      <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-                     <posy>334</posy>
+                     <top>334</top>
                      <width>270</width>
                      <height>56</height>
                      <font>size21</font>
@@ -816,7 +816,7 @@
                      <control type="image">
                         <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                         <posx>123</posx>
-                        <posy>276</posy>
+                        <top>276</top>
                         <height>45</height>
                         <width>150</width>
                         <aspectratio>keep</aspectratio>
@@ -825,7 +825,7 @@
                      <control type="label" description="Label2">
                         <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                         <posx>197</posx>
-                        <posy>270</posy>
+                        <top>270</top>
                         <height>45</height>
                         <width>150</width>
                         <font>size24</font>
@@ -839,7 +839,7 @@
                   <control type="image" description="WatchStatus">
                      <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
                      <posx>30</posx>
-                     <posy>290</posy>
+                     <top>290</top>
                      <height>32</height>
                      <width>60</width>
                      <aspectratio align="left">keep</aspectratio>
@@ -851,7 +851,7 @@
                         <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                         <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
                         <posx>19</posx>
-                        <posy>9</posy>
+                        <top>9</top>
                         <width>228</width>
                         <height>323</height>
                         <texture border="20">images/GeneralSlider.png</texture>
@@ -862,7 +862,7 @@
                <itemlayout condition="Container.Content(Episodes)" height="375" width="450">
                   <control type="image">
                      <posx>45</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>360</width>
                      <height>255</height>
                      <texture>images/ThumbBorder2.png</texture>
@@ -871,7 +871,7 @@
                   <control type="image">
                      <visible>container.content(episodes)</visible>
                      <posx>45</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>360</width>
                      <height>255</height>
                      <texture background="true">$INFO[ListItem.Icon]</texture>
@@ -880,7 +880,7 @@
                   <control type="image">
                      <visible>![container.content(episodes)]</visible>
                      <posx>45</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>360</width>
                      <height>255</height>
                      <texture background="true">$INFO[ListItem.Icon]</texture>
@@ -889,7 +889,7 @@
                   <control type="image" description="WatchStatus">
                      <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
                      <posx>40</posx>
-                     <posy>251</posy>
+                     <top>251</top>
                      <height>32</height>
                      <width>60</width>
                      <aspectratio align="left">keep</aspectratio>
@@ -899,7 +899,7 @@
                <focusedlayout condition="Container.Content(Episodes)" height="375" width="450">
                   <control type="image">
                      <posx>45</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>360</width>
                      <height>255</height>
                      <texture>images/ThumbBorder2.png</texture>
@@ -908,7 +908,7 @@
                   <control type="image">
                      <visible>container.content(episodes)</visible>
                      <posx>45</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>360</width>
                      <height>255</height>
                      <texture background="true">$INFO[ListItem.Icon]</texture>
@@ -917,7 +917,7 @@
                   <control type="image">
                      <visible>![container.content(episodes)]</visible>
                      <posx>45</posx>
-                     <posy>24</posy>
+                     <top>24</top>
                      <width>360</width>
                      <height>255</height>
                      <texture background="true">$INFO[ListItem.Icon]</texture>
@@ -926,7 +926,7 @@
                   <control type="label">
                      <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                      <posx>225</posx>
-                     <posy>300</posy>
+                     <top>300</top>
                      <width>420</width>
                      <height>45</height>
                      <font>size27</font>
@@ -937,7 +937,7 @@
                   <control type="image" description="WatchStatus">
                      <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
                      <posx>40</posx>
-                     <posy>251</posy>
+                     <top>251</top>
                      <height>32</height>
                      <width>60</width>
                      <aspectratio align="left">keep</aspectratio>
@@ -949,7 +949,7 @@
                         <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                         <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
                         <posx>30</posx>
-                        <posy>11</posy>
+                        <top>11</top>
                         <width>386</width>
                         <height>280</height>
                         <texture border="20">images/GeneralSlider.png</texture>
@@ -961,7 +961,7 @@
          </control>
          <control type="image" description="Line Split">
             <posx>260</posx>
-            <posy>60</posy>
+            <top>60</top>
             <width>1500</width>
             <height>1</height>
             <texture>images/Line.png</texture>
@@ -974,7 +974,7 @@
          </control>
          <control type="label" description="Media title">
             <posx>60</posx>
-            <posy>910</posy>
+            <top>910</top>
             <width>1800</width>
             <font>size42B</font>
             <textcolor>Silver</textcolor>
@@ -983,7 +983,7 @@
          </control>
          <control type="label" description="Media details">
             <posx>60</posx>
-            <posy>955</posy>
+            <top>955</top>
             <width>1800</width>
             <textcolor>Silver</textcolor>
             <align>center</align>
@@ -992,7 +992,7 @@
          </control>
          <control type="image" description="Mpaa">
             <posx>320r</posx>
-            <posy>995</posy>
+            <top>995</top>
             <visible>!IsEmpty(ListItem.Mpaa)</visible>
             <height>60</height>
             <width>60</width>
@@ -1000,7 +1000,7 @@
          </control>
          <control type="image" description="Stars">
             <posx>250r</posx>
-            <posy>1010</posy>
+            <top>1010</top>
             <visible>!IsEmpty(ListItem.Rating)</visible>
             <height>24</height>
             <width>135</width>
@@ -1009,7 +1009,7 @@
          </control>
          <control type="grouplist">
             <posx>100</posx>
-            <posy>1015</posy>
+            <top>1015</top>
             <height>50</height>
             <width>1720</width>
             <itemgap>15</itemgap>
@@ -1055,14 +1055,14 @@
          </control>
          <control type="scrollbar" id="60">
             <posx>30r</posx>
-            <posy>100</posy>
+            <top>100</top>
             <height>800</height>
             <onleft>53</onleft>
             <onright>noop</onright>
          </control>
          <control type="image" description="Line Split">
             <posx>560</posx>
-            <posy>1030</posy>
+            <top>1030</top>
             <width>900</width>
             <height>1</height>
             <texture>images/Line.png</texture>
@@ -1085,7 +1085,7 @@
                <visible>!IsEmpty(Container.FolderPath)</visible>
                <viewtype label="539">Banners</viewtype>
                <posx>60</posx>
-               <posy>140</posy>
+               <top>140</top>
                <width>1800</width>
                <height>928</height>
                <orientation>vertical</orientation>
@@ -1101,7 +1101,7 @@
                <itemlayout condition="container.content(tvshows)" height="200" width="1800">
                   <control type="image">
                      <posx>521</posx>
-                     <posy>80</posy>
+                     <top>80</top>
                      <width>758</width>
                      <height>140</height>
                      <texture background="true" diffuse="images/DiffuseBanner.png">$INFO[ListItem.Art(banner)]</texture>
@@ -1110,7 +1110,7 @@
                   <control type="image">
                      <visible>StringCompare(ListItem.Label,..)</visible>
                      <posx>521</posx>
-                     <posy>80</posy>
+                     <top>80</top>
                      <width>758</width>
                      <height>140</height>
                      <texture background="true" diffuse="images/DiffuseBanner.png">DefaultFolderBackBanner.png</texture>
@@ -1119,7 +1119,7 @@
                   <control type="image">
                      <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                      <posx>1200</posx>
-                     <posy>130</posy>
+                     <top>130</top>
                      <height>45</height>
                      <width>150</width>
                      <aspectratio>keep</aspectratio>
@@ -1128,7 +1128,7 @@
                   <control type="label" description="Label2">
                      <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                      <posx>1275</posx>
-                     <posy>125</posy>
+                     <top>125</top>
                      <height>45</height>
                      <width>150</width>
                      <font>size26</font>
@@ -1141,7 +1141,7 @@
                   </control>
                   <control type="image">
                      <visible>!StringCompare(ListItem.Label,..)</visible>
-                     <posy>125</posy>
+                     <top>125</top>
                      <posx>490</posx>
                      <width>50</width>
                      <height>50</height>
@@ -1155,7 +1155,7 @@
                      <control type="image">
                         <visible>StringCompare(ListItem.Label,..)</visible>
                         <posx>521</posx>
-                        <posy>80</posy>
+                        <top>80</top>
                         <width>758</width>
                         <height>140</height>
                         <texture background="true" diffuse="images/DiffuseBanner.png">DefaultFolderBackBanner.png</texture>
@@ -1163,7 +1163,7 @@
                      </control>
                      <control type="image">
                         <posx>521</posx>
-                        <posy>80</posy>
+                        <top>80</top>
                         <width>758</width>
                         <height>140</height>
                         <texture background="true" diffuse="images/DiffuseBanner.png">$INFO[ListItem.Art(banner)]</texture>
@@ -1171,7 +1171,7 @@
                      </control>
                      <control type="image">
                         <posx>521</posx>
-                        <posy>79</posy>
+                        <top>79</top>
                         <width>758</width>
                         <height>142</height>
                         <texture background="true">images/BannerOverlay.png</texture>
@@ -1180,7 +1180,7 @@
                      <control type="image">
                         <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                         <posx>1200</posx>
-                        <posy>130</posy>
+                        <top>130</top>
                         <height>45</height>
                         <width>150</width>
                         <aspectratio>keep</aspectratio>
@@ -1189,7 +1189,7 @@
                      <control type="label" description="Label2">
                         <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                         <posx>1275</posx>
-                        <posy>125</posy>
+                        <top>125</top>
                         <height>45</height>
                         <width>150</width>
                         <font>size26</font>
@@ -1201,7 +1201,7 @@
                      </control>
                      <control type="image">
                         <visible>!StringCompare(ListItem.Label,..)</visible>
-                        <posy>125</posy>
+                        <top>125</top>
                         <posx>490</posx>
                         <width>50</width>
                         <height>50</height>
@@ -1213,7 +1213,7 @@
          </control>
          <control type="image" description="Line Split">
             <posx>129</posx>
-            <posy>140</posy>
+            <top>140</top>
             <width>1674</width>
             <height>1</height>
             <texture>images/LineL.png</texture>
@@ -1221,7 +1221,7 @@
          </control>
          <control type="grouplist" description="Media Header">
             <posx>40</posx>
-            <posy>3</posy>
+            <top>3</top>
             <width>930</width>
             <height>75</height>
             <align>left</align>
@@ -1245,7 +1245,7 @@
          </control>
          <control type="label" description="Media details">
             <posx>129</posx>
-            <posy>90</posy>
+            <top>90</top>
             <width>1350</width>
             <textcolor>Silver</textcolor>
             <include>Genre51Commons</include>
@@ -1254,14 +1254,14 @@
          <control type="image" description="Rating">
             <visible>!IsEmpty(ListItem.Rating)</visible>
             <posx>240r</posx>
-            <posy>90</posy>
+            <top>90</top>
             <height>24</height>
             <width>135</width>
             <aspectratio align="right">keep</aspectratio>
             <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
          </control>
          <control type="image" description="Bottom fade">
-            <posy>870</posy>
+            <top>870</top>
             <width>1920</width>
             <height>210</height>
             <texture>images/DefaultGradient.png</texture>
@@ -1269,7 +1269,7 @@
          </control>
          <control type="scrollbar" id="60">
             <posx>45r</posx>
-            <posy>219</posy>
+            <top>219</top>
             <height>780</height>
             <onleft>53</onleft>
             <onright>9000</onright>
@@ -1295,7 +1295,7 @@
             <onright>500</onright>
             <viewtype label="$LOCALIZE[20445]">Fanart</viewtype>
             <posx>-210</posx>
-            <posy>570</posy>
+            <top>570</top>
             <width>2200</width>
             <height>700</height>
             <orientation>horizontal</orientation>
@@ -1306,7 +1306,7 @@
             <itemlayout width="300" height="500">
                <control type="image" description="Reflection">
                   <posx>85</posx>
-                  <posy>440</posy>
+                  <top>440</top>
                   <height>350</height>
                   <width>230</width>
                   <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[Locandine]</texture>
@@ -1314,7 +1314,7 @@
                </control>
                <control type="image" description="Thumb">
                   <posx>85</posx>
-                  <posy>80</posy>
+                  <top>80</top>
                   <height>350</height>
                   <width>230</width>
                   <texture background="true">$VAR[Locandine]</texture>
@@ -1322,7 +1322,7 @@
                </control>
                <control type="image" description="WatchStatus">
                   <posx>76</posx>
-                  <posy>380</posy>
+                  <top>380</top>
                   <height>60</height>
                   <width>60</width>
                   <aspectratio align="left">keep</aspectratio>
@@ -1335,7 +1335,7 @@
                   <animation effect="zoom" start="150" end="100" center="178,430" time="120">unFocus</animation>
                   <control type="image" description="black">
                      <posx>77</posx>
-                     <posy>72</posy>
+                     <top>72</top>
                      <height>366</height>
                      <width>246</width>
                      <texture background="true">images/black.png</texture>
@@ -1344,7 +1344,7 @@
                   </control>
                   <control type="image" description="THUMBNAIL">
                      <posx>85</posx>
-                     <posy>80</posy>
+                     <top>80</top>
                      <height>350</height>
                      <width>230</width>
                      <texture background="true" fallback="DefaultVideoCover.png">$VAR[Locandine]</texture>
@@ -1352,7 +1352,7 @@
                   </control>
                   <control type="image" description="WatchStatus">
                      <posx>76</posx>
-                     <posy>380</posy>
+                     <top>380</top>
                      <height>60</height>
                      <width>60</width>
                      <aspectratio align="left">keep</aspectratio>
@@ -1378,11 +1378,11 @@
          </control>
          <control type="group" description="Media Info">
             <visible>!StringCompare(ListItem.label,..)</visible>
-            <posy>40</posy>
+            <top>40</top>
             <posx>98</posx>
             <control type="image" description="Stars rating">
                <posx>1590</posx>
-               <posy>435</posy>
+               <top>435</top>
                <height>45</height>
                <width>135</width>
                <aspectratio aligny="center" align="right">keep</aspectratio>
@@ -1396,7 +1396,7 @@
             </control>
             <control type="image" description="Line Split">
                <posx>450</posx>
-               <posy>515</posy>
+               <top>515</top>
                <width>1300</width>
                <height>1</height>
                <texture>images/LineL.png</texture>
@@ -1405,20 +1405,20 @@
             <control type="group">
                <!--<visible>!SubString(ListItem.Path,videodb://1/7)</visible>-->
                <control type="image" description="lineplot">
-                  <posy>70</posy>
+                  <top>70</top>
                   <posx>550</posx>
                   <width>620</width>
                   <height>1</height>
                   <texture>images/Line.png</texture>
                </control>
                <control type="image" description="lineplot">
-                  <posy>80</posy>
+                  <top>80</top>
                   <width>1724</width>
                   <height>1</height>
                   <texture>images/Line.png</texture>
                </control>
                <control type="textbox" description="Plot">
-                  <posy>80</posy>
+                  <top>80</top>
                   <width>1724</width>
                   <height>330</height>
                   <font>size30</font>
@@ -1429,13 +1429,13 @@
                   <!--<label>$INFO[ListItem.Plot]</label>-->
                </control>
                <control type="image" description="lineplot">
-                  <posy>410</posy>
+                  <top>410</top>
                   <width>1724</width>
                   <height>1</height>
                   <texture>images/Line.png</texture>
                </control>
                <control type="label">
-                  <posy>440</posy>
+                  <top>440</top>
                   <font>size27</font>
                   <height>40</height>
                   <align>center</align>
@@ -1443,7 +1443,7 @@
                   <label>$VAR[TopLabel]</label>
                </control>
                <control type="grouplist" description="Flags">
-                  <posy>540</posy>
+                  <top>540</top>
                   <width min="90" max="1724">auto</width>
                   <height>150</height>
                   <itemgap>30</itemgap>
@@ -1489,7 +1489,7 @@
                   </control>
                </control>
                <control type="label" description="Genre">
-                  <posy>470</posy>
+                  <top>470</top>
                   <font>size27</font>
                   <width>1724</width>
                   <height>50</height>
@@ -1502,7 +1502,7 @@
          <control type="scrollbar" id="60">
             <animation effect="fade" delay="200" time="300">VisibleChange</animation>
             <posx>198</posx>
-            <posy>1038</posy>
+            <top>1038</top>
             <width>1525</width>
             <height>9</height>
             <onup>500</onup>
@@ -1518,7 +1518,7 @@
          <animation effect="slide" end="-860,14" condition="Control.IsVisible(53)">Conditional</animation>
          <description>Page Count Label</description>
          <posx>40r</posx>
-         <posy>50r</posy>
+         <top>50r</top>
          <width>500</width>
          <height>20</height>
          <font>font12</font>

@@ -14,7 +14,7 @@
       </control>
       <control type="image">
         <posx>1447</posx>
-        <posy>160</posy>
+        <top>160</top>
         <width>98</width>
         <height>45</height>
         <texture>images/rightarrow.png</texture>
@@ -22,7 +22,7 @@
       <control type="image" id="110">
         <description>Service Logo</description>
         <posx>350</posx>
-        <posy>140</posy>
+        <top>140</top>
         <width>1000</width>
         <height>70</height>
         <aspectratio align="center">keep</aspectratio>
@@ -30,7 +30,7 @@
       <control type="group" id="111">
         <control type="label" id="100" description="Textarea">
           <posx>150</posx>
-          <posy>220</posy>
+          <top>220</top>
           <width>1400</width>
           <height>60</height>
           <font>size27</font>
@@ -41,21 +41,21 @@
         </control>
         <control type="image" description="linetop">
           <posx>120</posx>
-          <posy>280</posy>
+          <top>280</top>
           <width>1460</width>
           <height>1</height>
           <texture>images/Line.png</texture>
         </control>
         <control type="image" description="linebottom">
           <posx>120</posx>
-          <posy>850</posy>
+          <top>850</top>
           <width>1460</width>
           <height>1</height>
           <texture>images/Line.png</texture>
         </control>
         <control type="label" description="Local subtitle available">
           <posx>200</posx>
-          <posy>870</posy>
+          <top>870</top>
           <width>1300</width>
           <height>60</height>
           <textcolor>White</textcolor>
@@ -67,7 +67,7 @@
       </control>
       <control type="list" id="120">
         <posx>180</posx>
-        <posy>281</posy>
+        <top>281</top>
         <width>1360</width>
         <height>569</height>
         <onleft>60</onleft>
@@ -193,7 +193,7 @@
       </control>
       <control type="scrollbar" id="60">
         <posx>152</posx>
-        <posy>303</posy>
+        <top>303</top>
         <height>522</height>
         <onleft>noop</onleft>
         <onright>120</onright>
@@ -202,18 +202,18 @@
     </control>
     <control type="group" id="250">
       <posx>-60</posx>
-      <posy>90</posy>
+      <top>90</top>
       <animation effect="slide" start="0,0" end="-450,0" time="400" reversible="true" condition="Control.HasFocus(150) | Control.HasFocus(122)">Conditional</animation>
       <control type="image" description="BG">
         <posx>1827</posx>
-        <posy>45</posy>
+        <top>45</top>
         <width>708</width>
         <height>810</height>
         <texture border="150">images/Dialog.png</texture>
       </control>
       <control type="label" description="XBMC Subtitles label">
         <posx>2000</posx>
-        <posy>211</posy>
+        <top>211</top>
         <width>360</width>
         <height>30</height>
         <label>[B]$ADDON[script.xbmc.subtitles 760][/B]</label>
@@ -224,14 +224,14 @@
       <control type="image">
         <description>separator</description>
         <posx>1975</posx>
-        <posy>258</posy>
+        <top>258</top>
         <width>450</width>
         <height>1</height>
         <texture>images/Line.png</texture>
       </control>
       <control type="list" id="150">
         <posx>2000</posx>
-        <posy>265</posy>
+        <top>265</top>
         <width>375</width>
         <height>442</height>
         <onleft>120</onleft>
@@ -243,7 +243,7 @@
         <itemlayout width="375" height="54">
           <control type="label">
             <posx>15</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>345</width>
             <height>57</height>
             <font>size27</font>
@@ -255,7 +255,7 @@
           </control>
           <control type="label">
             <posx>15</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>345</width>
             <height>57</height>
             <font>size26</font>
@@ -268,7 +268,7 @@
         <focusedlayout width="375" height="54">
           <control type="image">
             <posx>0</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>375</width>
             <height>57</height>
             <texture border="8">images/Buttonselect.png</texture>
@@ -276,7 +276,7 @@
           </control>
           <control type="label">
             <posx>15</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>345</width>
             <height>57</height>
             <font>size27</font>
@@ -289,7 +289,7 @@
           </control>
           <control type="label">
             <posx>15</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>345</width>
             <height>57</height>
             <font>size26</font>

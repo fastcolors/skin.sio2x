@@ -10,14 +10,14 @@
     <control type="group">
       <control type="visualisation" id="2" description="Visualisation">
         <posx>0</posx>
-        <posy>0</posy>
+        <top>0</top>
         <width>1920</width>
         <height>1080</height>
       </control>
       <control type="progress" id="23" description="Progress Bar">
         <visible>true</visible>
         <posx>84</posx>
-        <posy>-750</posy>
+        <top>-750</top>
         <width>747</width>
         <info>Player.Progress</info>
         <visible>true</visible>
@@ -54,7 +54,7 @@
         <animation effect="fade" time="500">Visible</animation>
         <animation effect="fade" time="200">Hidden</animation>
         <control type="group" description="Info panel LEFT">
-          <posy>30</posy>
+          <top>30</top>
           <animation type="Conditional" condition="!IntegerGreaterThan(Control.GetLabel(23),0)" reversible="false">
             <effect type="zoom" tween="quadratic" start="0" end="100" time="800" center="640,360" />
             <effect type="fade" start="0" end="100" time="800" center="640,360" />
@@ -74,11 +74,11 @@
           <control type="group" description="Music Cover group">
             <camera x="450" y="540" />
             <animation effect="rotatey" start="0" end="-20" center="450,0" time="0" reversible="false" condition="true">Conditional</animation>
-            <posy>225</posy>
+            <top>225</top>
             <posx>220</posx>
             <control type="image" description="Record">
               <posx>298</posx>
-              <posy>0</posy>
+              <top>0</top>
               <height>600</height>
               <width>600</width>
               <fadetime>300</fadetime>
@@ -87,7 +87,7 @@
             </control>
             <control type="image" description="MusicAlbum">
               <posx>0</posx>
-              <posy>600</posy>
+              <top>600</top>
               <height>600</height>
               <width>600</width>
               <fadetime>300</fadetime>
@@ -96,7 +96,7 @@
             </control>
             <control type="image" description="MusicAlbum">
               <posx>0</posx>
-              <posy>0</posy>
+              <top>0</top>
               <height>600</height>
               <width>600</width>
               <fadetime>300</fadetime>
@@ -108,7 +108,7 @@
             <posx>739</posx>
             <control type="image" description="Info BG">
               <posx>-35</posx>
-              <posy>515</posy>
+              <top>515</top>
               <width>1000</width>
               <height>300</height>
               <fadetime>400</fadetime>
@@ -119,7 +119,7 @@
             </control>
             <control type="label" description="Title label">
               <posx>0</posx>
-              <posy>525</posy>
+              <top>525</top>
               <width>900</width>
               <scroll>true</scroll>
               <align>left</align>
@@ -131,7 +131,7 @@
             </control>
             <control type="label" description="Artist">
               <posx>0</posx>
-              <posy>585</posy>
+              <top>585</top>
               <width>900</width>
               <label>$INFO[MusicPlayer.Artist]</label>
               <scroll>true</scroll>
@@ -140,7 +140,7 @@
               <textcolor>3</textcolor>
             </control>
             <control type="label" description="Album">
-              <posy>636</posy>
+              <top>636</top>
               <width>900</width>
               <label>$INFO[MusicPlayer.Album]</label>
               <align>left</align>
@@ -149,7 +149,7 @@
             </control>
             <control type="label" description="Track position">
               <posx>0</posx>
-              <posy>690</posy>
+              <top>690</top>
               <width>900</width>
               <align>left</align>
               <textcolor></textcolor>
@@ -158,10 +158,10 @@
               <font>size26</font>
             </control>
             <control type="group">
-              <posy>756</posy>
+              <top>756</top>
               <control type="label">
                 <posx>0</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <height>30</height>
                 <width>123</width>
                 <align>left</align>
@@ -171,7 +171,7 @@
               </control>
               <control type="progress" description="Progress Bar">
                 <posx>122</posx>
-                <posy>11</posy>
+                <top>11</top>
                 <width>675</width>
                 <height>13</height>
                 <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
@@ -184,7 +184,7 @@
               </control>
               <control type="label">
                 <posx>930</posx>
-                <posy>0</posy>
+                <top>0</top>
                 <height>30</height>
                 <width>123</width>
                 <align>right</align>
@@ -194,7 +194,7 @@
               </control>
               <control type="label">
                 <posx>777</posx>
-                <posy>45</posy>
+                <top>45</top>
                 <height>30</height>
                 <width>135</width>
                 <align>left</align>
@@ -207,7 +207,7 @@
           </control>
         </control>
         <control type="group" description="Info panel RIGHT">
-          <posy>30</posy>
+          <top>30</top>
           <visible>IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)</visible>
           <animation type="Visible" reversible="false">
             <effect type="rotatey" tween="quadratic" start="-180" end="0" time="1000" center="960," />
@@ -220,11 +220,11 @@
           <control type="group" description="Music Cover group">
             <camera x="1470" y="540" />
             <animation effect="rotatey" start="0" end="20" center="1470," time="0" reversible="false" condition="true">Conditional</animation>
-            <posy>225</posy>
+            <top>225</top>
             <posx>1110</posx>
             <control type="image" description="Record">
               <posx>-298</posx>
-              <posy>0</posy>
+              <top>0</top>
               <height>600</height>
               <width>600</width>
               <fadetime>300</fadetime>
@@ -233,7 +233,7 @@
             </control>
             <control type="image" description="MusicAlbum">
               <posx>0</posx>
-              <posy>600</posy>
+              <top>600</top>
               <height>600</height>
               <width>600</width>
               <fadetime>300</fadetime>
@@ -242,7 +242,7 @@
             </control>
             <control type="image" description="MusicAlbum">
               <posx>0</posx>
-              <posy>0</posy>
+              <top>0</top>
               <height>600</height>
               <width>600</width>
               <fadetime>300</fadetime>
@@ -254,7 +254,7 @@
             <posx>1166</posx>
             <control type="image" description="Info BG">
               <posx>-965</posx>
-              <posy>515</posy>
+              <top>515</top>
               <width>1000</width>
               <height>300</height>
               <fadetime>400</fadetime>
@@ -265,7 +265,7 @@
             </control>
             <control type="label" description="Title label">
               <posx>0</posx>
-              <posy>525</posy>
+              <top>525</top>
               <width>900</width>
               <scroll>true</scroll>
               <align>right</align>
@@ -276,7 +276,7 @@
             </control>
             <control type="label" description="Artist">
               <posx>0</posx>
-              <posy>585</posy>
+              <top>585</top>
               <width>900</width>
               <label>$INFO[MusicPlayer.Artist]</label>
               <scroll>true</scroll>
@@ -285,7 +285,7 @@
               <textcolor>3</textcolor>
             </control>
             <control type="label" description="Album">
-              <posy>636</posy>
+              <top>636</top>
               <width>900</width>
               <label>$INFO[MusicPlayer.Album]</label>
               <align>right</align>
@@ -294,7 +294,7 @@
             </control>
             <control type="label" description="Track position">
               <posx>0</posx>
-              <posy>690</posy>
+              <top>690</top>
               <width>900</width>
               <align>right</align>
               <textcolor></textcolor>
@@ -305,10 +305,10 @@
             </control>
           </control>
           <control type="group">
-            <posy>756</posy>
+            <top>756</top>
             <control type="label">
               <posx>237</posx>
-              <posy>0</posy>
+              <top>0</top>
               <height>30</height>
               <width>123</width>
               <align>left</align>
@@ -318,7 +318,7 @@
             </control>
             <control type="progress" description="Progress Bar">
               <posx>357</posx>
-              <posy>11</posy>
+              <top>11</top>
               <width>675</width>
               <height>13</height>
               <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
@@ -331,7 +331,7 @@
             </control>
             <control type="label">
               <posx>1166</posx>
-              <posy>0</posy>
+              <top>0</top>
               <height>30</height>
               <width>123</width>
               <align>right</align>
@@ -341,7 +341,7 @@
             </control>
             <control type="label">
               <posx>777</posx>
-              <posy>45</posy>
+              <top>45</top>
               <height>30</height>
               <width>135</width>
               <align>left</align>
@@ -356,12 +356,12 @@
     </control>
     <control type="group" id="0">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <visible>Player.ShowCodec</visible>
       <animation effect="fade" time="200">VisibleChange</animation>
       <control type="image" description="Info Background">
         <posx>0</posx>
-        <posy>0</posy>
+        <top>0</top>
         <width>1920</width>
         <height>60</height>
         <texture>images/white.png</texture>
@@ -369,7 +369,7 @@
       </control>
       <control type="label" description="row 1 sys label">
         <posx>45</posx>
-        <posy>0</posy>
+        <top>0</top>
         <width>1770</width>
         <height>60</height>
         <align>left</align>
@@ -379,7 +379,7 @@
       </control>
       <control type="label" description="row 2 sys label">
         <posx>1875</posx>
-        <posy>0</posy>
+        <top>0</top>
         <width>1770</width>
         <height>60</height>
         <align>right</align>
@@ -389,7 +389,7 @@
       </control>
     </control>
     <control type="group">
-      <posy>40</posy>
+      <top>40</top>
       <visible>IntegerGreaterThan(Control.GetLabel(23),95) | !IntegerGreaterThan(Control.GetLabel(23),5)</visible>
       <animation effect="fade" start="0" end="100" time="1000" tween="Elastic" easing="inout">VisibleChange</animation>
       <control type="group">
@@ -404,7 +404,7 @@
         </control>
         <control type="label" description="Previous">
           <posx>30</posx>
-          <posy>34</posy>
+          <top>34</top>
           <height>36</height>
           <width>750</width>
           <label>$INFO[MusicPlayer.offset(-1).Title]</label>
@@ -426,7 +426,7 @@
         </control>
         <control type="label" description="Next">
           <posx>70r</posx>
-          <posy>34</posy>
+          <top>34</top>
           <height>36</height>
           <width>750</width>
           <align>right</align>

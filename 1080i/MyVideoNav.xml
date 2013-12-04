@@ -20,7 +20,7 @@
          <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !Window.IsVisible(traktContextMenu.xml)</visible>
          <include>9000slide</include>
          <control type="image" description="List back">
-		 	<posy>-10</posy>
+		 	<top>-10</top>
             <posx>1430</posx>
             <width>550</width>
             <height>1100</height>

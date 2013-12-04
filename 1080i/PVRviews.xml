@@ -6,7 +6,7 @@
     <visible>Control.IsVisible(11)</visible>
     <include>VisibleFade</include>
     <control type="grouplist">
-      <posy>600</posy>
+      <top>600</top>
       <posx>120</posx>
       <itemgap>15</itemgap>
       <control type="label">
@@ -51,7 +51,7 @@
     </control>
     <control type="group">
       <posx>1020</posx>
-      <posy>131</posy>
+      <top>131</top>
       <include>LargeListItemCount</include>
       <control type="fixedlist" id="11">
         <width>802</width>
@@ -160,7 +160,7 @@
     </control>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
-      <posy>135</posy>
+      <top>135</top>
       <height>870</height>
       <onleft>11</onleft>
       <onright>noop</onright>
@@ -168,7 +168,7 @@
     <control type="label">
       <description>Page Count Label</description>
       <posx>40r</posx>
-      <posy>50r</posy>
+      <top>50r</top>
       <width>500</width>
       <height>20</height>
       <font>font12</font>
@@ -186,7 +186,7 @@
     <visible>Control.IsVisible(12)</visible>
     <include>VisibleFade</include>
     <control type="grouplist">
-      <posy>600</posy>
+      <top>600</top>
       <posx>120</posx>
       <itemgap>15</itemgap>
       <control type="label">
@@ -231,7 +231,7 @@
     </control>
     <control type="group">
       <posx>1020</posx>
-      <posy>131</posy>
+      <top>131</top>
       <control type="fixedlist" id="12"> 
 	  <include>SlimListItemCount</include>
         <width>802</width>
@@ -330,7 +330,7 @@
     <include>ListFade</include>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
-      <posy>135</posy>
+      <top>135</top>
       <height>870</height>
       <onleft>11</onleft>
       <onright>noop</onright>
@@ -338,7 +338,7 @@
     <control type="label">
       <description>Page Count Label</description>
       <posx>40r</posx>
-      <posy>50r</posy>
+      <top>50r</top>
       <width>500</width>
       <height>20</height>
       <font>font12</font>
@@ -362,7 +362,7 @@
     <include>left_Panel_livetv</include>
     <control type="group"> <include>LargeListItemCount</include>
       <posx>1020</posx>
-      <posy>131</posy>
+      <top>131</top>
       <control type="fixedlist" id="13">
         <width>802</width>
         <height>888</height>
@@ -451,7 +451,7 @@
     </control>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
-      <posy>135</posy>
+      <top>135</top>
       <height>870</height>
       <onleft>13</onleft>
       <onright>noop</onright>
@@ -459,7 +459,7 @@
     <control type="label">
       <description>Page Count Label</description>
       <posx>40r</posx>
-      <posy>53r</posy>
+      <top>53r</top>
       <width>500</width>
       <height>20</height>
       <font>font12</font>
@@ -477,7 +477,7 @@
     <visible>Control.IsVisible(10)</visible>
     <include>VisibleFade</include>
     <control type="image">
-      <posy>479</posy>
+      <top>479</top>
       <width>1920</width>
       <height>600</height>
       <texture>timelineback.png</texture>
@@ -485,7 +485,7 @@
     <control type="epggrid" id="10">
       <description>EPG Grid</description>
       <posx>40</posx>
-      <posy>520</posy>
+      <top>520</top>
       <width>1880</width>
       <height>500</height>
       <pagecontrol>10</pagecontrol>
@@ -513,7 +513,7 @@
         <animation effect="fade" start="110" time="200">UnFocus</animation>
         <control type="label">
           <posx>40</posx>
-          <posy>0</posy>
+          <top>0</top>
           <width>40</width>
           <height>52</height>
           <font>font12</font>
@@ -525,7 +525,7 @@
         </control>
         <control type="label" id="1">
           <posx>60</posx>
-          <posy>0</posy>
+          <top>0</top>
           <width>300</width>
           <height>52</height>
           <font>Size26</font>
@@ -547,7 +547,7 @@
         </control>
         <control type="label">
           <posx>40</posx>
-          <posy>0</posy>
+          <top>0</top>
           <width>40</width>
           <height>52</height>
           <font>font12</font>
@@ -600,7 +600,7 @@
         </control>
         <control type="image">
           <posx>0</posx>
-          <posy>13</posy>
+          <top>13</top>
           <width>25</width>
           <height>25</height>
           <texture>pvr/rec.png</texture>
@@ -608,7 +608,7 @@
         </control>
         <control type="image">
           <posx>0</posx>
-          <posy>13</posy>
+          <top>13</top>
           <width>25</width>
           <height>25</height>
           <texture>pvr/timer.png</texture>
@@ -652,7 +652,7 @@
         </control>
         <control type="image">
           <posx>0</posx>
-          <posy>13</posy>
+          <top>13</top>
           <width>25</width>
           <height>25</height>
           <texture>pvr/rec.png</texture>
@@ -660,7 +660,7 @@
         </control>
         <control type="image">
           <posx>0</posx>
-          <posy>13</posy>
+          <top>13</top>
           <width>25</width>
           <height>25</height>
           <texture>pvr/timer.png</texture>
@@ -671,11 +671,11 @@
     <control type="group">
       <visible>ListItem(10).HasEpg</visible>
       <posx>60</posx>
-      <posy>60</posy>
+      <top>60</top>
       <control type="label">
         <description>header label</description>
         <posx>20</posx>
-        <posy>20</posy>
+        <top>20</top>
         <width>1100</width>
         <height>30</height>
         <font>size26</font>
@@ -687,7 +687,7 @@
       <control type="label">
         <description>Title label</description>
         <posx>20</posx>
-        <posy>60</posy>
+        <top>60</top>
         <width>1100</width>
         <height>30</height>
         <font>size33B</font>
@@ -700,7 +700,7 @@
       <control type="group">
         <control type="image">
           <posx>0</posx>
-          <posy>100</posy>
+          <top>100</top>
           <width>1160</width>
           <height>1</height>
           <texture>images/Line.png</texture>
@@ -708,7 +708,7 @@
         </control>
         <control type="image">
           <posx>0</posx>
-          <posy>380</posy>
+          <top>380</top>
           <width>1160</width>
           <height>1</height>
           <texture>images/Line.png</texture>
@@ -717,7 +717,7 @@
         <control type="textbox" id="400">
           <description>Plot value</description>
           <posx>20</posx>
-          <posy>100</posy>
+          <top>100</top>
           <width>1080</width>
           <height>280</height>
           <font>size26</font>
@@ -729,7 +729,7 @@
         <control type="label">
           <description>Duration</description>
           <posx>60</posx>
-          <posy>390</posy>
+          <top>390</top>
           <width>1000</width>
           <height>25</height>
           <align>center</align>
@@ -748,11 +748,11 @@
     <include>VisibleFade</include>
     <control type="group">
       <posx>80</posx>
-      <posy>80</posy>
+      <top>80</top>
       <control type="grouplist">
         <orientation>horizontal</orientation>
         <posx>0</posx>
-        <posy>20</posy>
+        <top>20</top>
         <width>1760</width>
         <height>40</height>
         <align>center</align>
@@ -796,7 +796,7 @@
       </control>
       <control type="list" id="14">
         <posx>0</posx>
-        <posy>60</posy>
+        <top>60</top>
         <width>1760</width>
         <height>480</height>
         <onup>11</onup>
@@ -911,7 +911,7 @@
           <control type="textbox">
             <description>Plot Value for TVShow</description>
             <posx>60</posx>
-            <posy>40</posy>
+            <top>40</top>
             <width>1600</width>
             <height>70</height>
             <font>font12</font>
@@ -923,7 +923,7 @@
       </control>
       <control type="scrollbar" id="60">
         <posx>1900</posx>
-        <posy>0</posy>
+        <top>0</top>
         <width>8</width>
         <height>480</height>
         <onleft>11</onleft>
@@ -935,7 +935,7 @@
     <control type="label">
       <description>Next timer date</description>
       <posx>210</posx>
-      <posy>1000</posy>
+      <top>1000</top>
       <width>1500</width>
       <height>60</height>
       <align>center</align>
@@ -946,7 +946,7 @@
     <control type="label">
       <description>Page Count Label</description>
       <posx>40r</posx>
-      <posy>53r</posy>
+      <top>53r</top>
       <width>500</width>
       <height>20</height>
       <font>font12</font>
@@ -965,7 +965,7 @@
     <include>VisibleFade</include> <include>left_Panel_livetv</include>
     <control type="group">
       <posx>1020</posx>
-      <posy>131</posy>
+      <top>131</top>
       <include>LargeListItemCount</include>
       <control type="fixedlist" id="17">
         <width>802</width>
@@ -1035,7 +1035,7 @@
     </control>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
-      <posy>135</posy>
+      <top>135</top>
       <height>870</height>
       <onleft>11</onleft>
       <onright>noop</onright>
@@ -1043,7 +1043,7 @@
     <control type="label">
       <description>Page Count Label</description>
       <posx>40r</posx>
-      <posy>53r</posy>
+      <top>53r</top>
       <width>500</width>
       <height>20</height>
       <font>font12</font>
@@ -1062,11 +1062,11 @@
     <include>VisibleFade</include>
     <control type="group">
       <posx>80</posx>
-      <posy>520</posy>
+      <top>520</top>
       <control type="label">
         <description>Date Time label</description>
         <posx>0</posx>
-        <posy>20</posy>
+        <top>20</top>
         <width>300</width>
         <height>20</height>
         <font>Size26</font>
@@ -1078,7 +1078,7 @@
       <control type="label">
         <description>Title</description>
         <posx>300</posx>
-        <posy>20</posy>
+        <top>20</top>
         <width>600</width>
         <height>20</height>
         <font>Size26</font>
@@ -1090,7 +1090,7 @@
       <control type="label">
         <description>Status header label</description>
         <posx>960</posx>
-        <posy>20</posy>
+        <top>20</top>
         <width>140</width>
         <height>20</height>
         <font>Size26</font>
@@ -1102,14 +1102,14 @@
       <control type="image">
         <description>separator image</description>
         <posx>-480</posx>
-        <posy>50</posy>
+        <top>50</top>
         <width>2720</width>
         <height>2</height>
         <texture>images/line.png</texture>
       </control>
       <control type="list" id="15">
         <posx>0</posx>
-        <posy>60</posy>
+        <top>60</top>
         <width>1760</width>
         <height>480</height>
         <onup>15</onup>
@@ -1126,7 +1126,7 @@
           </control>
           <control type="label">
             <posx>120</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>400</width>
             <height>40</height>
             <font>font12</font>
@@ -1138,7 +1138,7 @@
           </control>
           <control type="label">
             <posx>550</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>640</width>
             <height>40</height>
             <font>Size26</font>
@@ -1150,7 +1150,7 @@
           </control>
           <control type="image">
             <posx>970</posx>
-            <posy>10</posy>
+            <top>10</top>
             <width>30</width>
             <height>20</height>
             <texture>PVR-IsRecording.png</texture>
@@ -1158,7 +1158,7 @@
           </control>
           <control type="label">
             <posx>1005</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>80</width>
             <height>40</height>
             <font>font10</font>
@@ -1171,7 +1171,7 @@
           </control>
           <control type="image">
             <posx>970</posx>
-            <posy>10</posy>
+            <top>10</top>
             <width>20</width>
             <height>20</height>
             <texture>PVR-HasTimer.png</texture>
@@ -1198,7 +1198,7 @@
           </control>
           <control type="label">
             <posx>120</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>400</width>
             <height>40</height>
             <font>font12</font>
@@ -1210,7 +1210,7 @@
           </control>
           <control type="label">
             <posx>550</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>640</width>
             <height>40</height>
             <font>Size26</font>
@@ -1223,7 +1223,7 @@
           <control type="textbox">
             <description>Plot Value for TVShow</description>
             <posx>60</posx>
-            <posy>40</posy>
+            <top>40</top>
             <width>1600</width>
             <height>70</height>
             <font>font12</font>
@@ -1233,7 +1233,7 @@
           </control>
           <control type="image">
             <posx>970</posx>
-            <posy>10</posy>
+            <top>10</top>
             <width>30</width>
             <height>20</height>
             <texture>PVR-IsRecording.png</texture>
@@ -1241,7 +1241,7 @@
           </control>
           <control type="label">
             <posx>1005</posx>
-            <posy>0</posy>
+            <top>0</top>
             <width>80</width>
             <height>40</height>
             <font>font10</font>
@@ -1254,7 +1254,7 @@
           </control>
           <control type="image">
             <posx>970</posx>
-            <posy>10</posy>
+            <top>10</top>
             <width>20</width>
             <height>20</height>
             <texture>PVR-HasTimer.png</texture>
@@ -1276,7 +1276,7 @@
       </control>
       <control type="scrollbar" id="75">
         <posx>1780</posx>
-        <posy>60</posy>
+        <top>60</top>
         <height>480</height>
         <onleft>15</onleft>
         <onright>noop</onright>
@@ -1287,7 +1287,7 @@
     <control type="label">
       <description>Page Count Label</description>
       <posx>50r</posx>
-      <posy>540</posy>
+      <top>540</top>
       <width>500</width>
       <height>20</height>
       <font>font12</font>
@@ -1307,7 +1307,7 @@
 	<include>left_Panel_livetv</include>
     <control type="group">
       <posx>1020</posx>
-      <posy>131</posy>
+      <top>131</top>
       <include>LargeListItemCount</include>
       <control type="fixedlist" id="16">
         <width>802</width>
@@ -1380,7 +1380,7 @@
 	</control>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
-      <posy>135</posy>
+      <top>135</top>
       <height>870</height>
       <onleft>16</onleft>
       <onright>noop</onright>
@@ -1388,7 +1388,7 @@
     <control type="label">
       <description>Page Count Label</description>
       <posx>40r</posx>
-      <posy>53r</posy>
+      <top>53r</top>
       <width>500</width>
       <height>20</height>
       <font>font12</font>

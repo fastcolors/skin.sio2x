@@ -39,7 +39,7 @@
 </control>
 <control type="grouplist" id="3" description="TopMenu">
    <posx>500</posx>
-   <posy>80</posy>
+   <top>80</top>
    <width>400</width>
    <height>880</height>
    <onup>20</onup>
@@ -48,7 +48,7 @@
 </control>
 <control type="grouplist" id="5" description="Stage">
    <posx>900</posx>
-   <posy>80</posy>
+   <top>80</top>
    <width>980</width>
    <height>920</height>
    <onright>60</onright>
@@ -88,7 +88,7 @@
    <font>size30</font> </control>
 <control type="scrollbar" id="60">
    <posx>39r</posx>
-   <posy>159</posy>
+   <top>159</top>
    <height>861</height>
    <onleft>5</onleft>
    <onright>noop</onright>

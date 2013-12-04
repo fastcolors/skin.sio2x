@@ -7,7 +7,7 @@
     <control type="image" id="140">
       <description>bg</description>
       <posx>-20</posx>
-      <posy>90</posy>
+      <top>90</top>
       <width>760</width>
       <height>410</height>
       <texture border="200">images/Dialog.png</texture>
@@ -15,7 +15,7 @@
     <control type="label" id="141">
       <description>label_title</description>
       <posx>130</posx>
-      <posy>220</posy>
+      <top>220</top>
       <width>300</width>
       <height>32</height>
       <label>Browse:</label>
@@ -25,7 +25,7 @@
     <control type="textbox" id="142">
       <description>path</description>
       <posx>130</posx>
-      <posy>260</posy>
+      <top>260</top>
       <width>480</width>
       <height>80</height>
       <align>left</align>
@@ -36,7 +36,7 @@
     <control type="button" id="143">
       <description>browse</description>
       <posx>130</posx>
-      <posy>330</posy>
+      <top>330</top>
       <width>100</width>
       <height>32</height>
       <align>center</align>
@@ -53,7 +53,7 @@
     <control type="button" id="144">
       <description>edit</description>
       <posx>250</posx>
-      <posy>330</posy>
+      <top>330</top>
       <width>100</width>
       <height>32</height>
       <align>center</align>
@@ -70,7 +70,7 @@
     <control type="button" id="145">
       <description>ok</description>
       <posx>370</posx>
-      <posy>330</posy>
+      <top>330</top>
       <width>100</width>
       <height>32</height>
       <align>center</align>
@@ -87,7 +87,7 @@
     <control type="button" id="146">
       <description>cancel</description>
       <posx>490</posx>
-      <posy>330</posy>
+      <top>330</top>
       <width>100</width>
       <height>32</height>
       <align>center</align>

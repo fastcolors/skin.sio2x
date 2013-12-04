@@ -12,7 +12,7 @@
       <control type="group" description="Group 3 Plain list">
          <control type="group">
             <posx>1020</posx>
-            <posy>150</posy>
+            <top>150</top>
             <control type="list" id="3">
                <width>802</width>
                <height>888</height>
@@ -66,7 +66,7 @@
             <animation effect="fade" time="200">VisibleChange</animation>
             <visible>Container(3).HasNext</visible>
             <posx>1005</posx>
-            <posy>963</posy>
+            <top>963</top>
             <height>81</height>
             <width>832</width>
             <texture>images/DefaultGradient.png</texture>
@@ -76,7 +76,7 @@
       <control type="group" description="Group 6 Thumbs">
          <control type="group" description="Slider and List">
             <posx>1020</posx>
-            <posy>140</posy>
+            <top>140</top>
             <control type="list" id="6">
                <width>802</width>
                <height>886</height>
@@ -175,7 +175,7 @@
             <animation effect="fade" time="200">VisibleChange</animation>
             <visible>Container(6).HasNext</visible>
             <posx>1005</posx>
-            <posy>963</posy>
+            <top>963</top>
             <height>81</height>
             <width>832</width>
             <texture>images/DefaultGradient.png</texture>
@@ -184,7 +184,7 @@
       </control>
       <control type="group" description="Thumbs">
          <posx>270</posx>
-         <posy>315</posy>
+         <top>315</top>
          <control type="image" description="Item Thumb">
             <width>450</width>
             <height>450</height>
@@ -196,7 +196,7 @@
       <control type="group" description="Button 5">
          <control type="button" id="5" description="Manual Get more button">
             <posx>68</posx>
-            <posy>113</posy>
+            <top>113</top>
             <height>165</height>
             <width>855</width>
             <font>size36</font>
@@ -210,7 +210,7 @@
             <visible>Control.IsVisible(5)</visible>
             <animation effect="fade" time="100">VisibleChange</animation>
             <posx>120</posx>
-            <posy>155</posy>
+            <top>155</top>
             <width>48</width>
             <height>81</height>
             <texture>images/loop.png</texture>
@@ -221,7 +221,7 @@
             <visible>Control.HasFocus(5)</visible>
             <animation effect="fade" time="100">VisibleChange</animation>
             <posx>120</posx>
-            <posy>155</posy>
+            <top>155</top>
             <width>48</width>
             <height>81</height>
             <texture>images/loop.png</texture>
@@ -236,7 +236,7 @@
       </control>
       <control type="scrollbar" id="60">
          <posx>39r</posx>
-         <posy>135</posy>
+         <top>135</top>
          <height>870</height>
          <onleft>3</onleft>
          <onright>noop</onright>

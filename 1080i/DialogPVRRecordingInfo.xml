@@ -5,11 +5,11 @@
   <controls>
   <control type="group">
       <posx>400</posx>
-      <posy>290</posy>
+      <top>290</top>
 <include>PVRinfos</include>
       <control type="grouplist" id="9000">
         <posx>40</posx>
-        <posy>460</posy>
+        <top>460</top>
         <width>1080</width>
         <height>40</height>
         <itemgap>5</itemgap>

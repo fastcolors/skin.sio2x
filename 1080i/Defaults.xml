@@ -2,7 +2,7 @@
 <includes>
    <default type="label">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <label>-</label>
       <height>75</height>
       <align>left</align>
@@ -19,7 +19,7 @@
    </default>
    <default type="fadelabel">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <height>75</height>
       <label>-</label>
       <align>left</align>
@@ -47,7 +47,7 @@
    </default>
    <default type="image">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <width>-</width>
       <height>-</height>
       <align>center</align>
@@ -57,7 +57,7 @@
    </default>
    <default type="button">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <width>390</width>
       <height>75</height>
       <align>center</align>
@@ -75,7 +75,7 @@
    </default>
    <default type="edit">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <width>390</width>
       <height>75</height>
       <align>center</align>
@@ -93,7 +93,7 @@
    </default>
    <default type="togglebutton">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <width>450</width>
       <height>75</height>
       <align>center</align>
@@ -113,7 +113,7 @@
    </default>
    <default type="radiobutton">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <height>75</height>
       <align>left</align>
       <aligny>center</aligny>
@@ -134,7 +134,7 @@
    </default>
    <default type="spincontrol">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <textureup>images/ArrowUpNF.png</textureup>
       <textureupfocus>images/ArrowUpFO.png</textureupfocus>
       <texturedown>images/ArrowDownNF.png</texturedown>
@@ -155,7 +155,7 @@
    </default>
    <default type="spincontrolex">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <width>450</width>
       <height>75</height>
       <label>-</label>
@@ -188,7 +188,7 @@
    </default>
    <default type="sliderex" description="Default Slider">
       <posx>795</posx>
-      <posy>225</posy>
+      <top>225</top>
       <height>75</height>
       <width>450</width>
       <sliderwidth>150</sliderwidth>
@@ -208,7 +208,7 @@
    </default>
    <default type="scrollbar">
       <posx>0</posx>
-      <posy>0</posy>
+      <top>0</top>
       <width>9</width>
       <orientation>vertical</orientation>
       <texturesliderbackground border="0,4,0,4">Scrollbar/ScrollbarBG.png</texturesliderbackground>

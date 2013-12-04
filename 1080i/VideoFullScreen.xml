@@ -14,7 +14,7 @@
       </control>
       <control type="grouplist" id="0">
         <posx>60</posx>
-        <posy>90</posy>
+        <top>90</top>
         <width>1800</width>
         <height>500</height>
         <itemgap>10</itemgap>

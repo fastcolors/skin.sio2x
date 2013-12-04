@@ -6,24 +6,24 @@
   <controls>
     <control type="group">
       <posx>510</posx>
-      <posy>210</posy>
+      <top>210</top>
       <control type="image">
         <posx>-30</posx>
-        <posy>-30</posy>
+        <top>-30</top>
         <width>1440</width>
         <height>744</height>
         <texture border="22">images/Dialog.png</texture>
       </control>
       <control type="label">
         <posx>15</posx>
-        <posy>48</posy>
+        <top>48</top>
         <width>873</width>
         <align>center</align>
         <info>ListItem.Label</info>
       </control>
       <control type="list" id="450">
         <posx>15</posx>
-        <posy>117</posy>
+        <top>117</top>
         <width>870</width>
         <height>552</height>
         <onleft>450</onleft>

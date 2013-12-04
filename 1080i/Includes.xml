@@ -53,7 +53,7 @@
   </include>
   <include name="HiddenButton">
     <posx>-30</posx>
-    <posy>-30</posy>
+    <top>-30</top>
     <width>1</width>
     <height>1</height>
     <label>-</label>
@@ -62,7 +62,7 @@
   </include>
   <include name="Heading">
     <posx>330</posx>
-    <posy>0</posy>
+    <top>0</top>
     <align>center</align>
     <aligny>center</aligny>
     <width>1260</width>
@@ -72,7 +72,7 @@
   </include>
   <include name="HeadingL">
     <posx>60</posx>
-    <posy>20</posy>
+    <top>20</top>
     <align>left</align>
     <aligny>center</aligny>
     <width>1260</width>
@@ -82,7 +82,7 @@
   </include>
   <include name="HeadingR">
     <posx>960</posx>
-    <posy>60</posy>
+    <top>60</top>
     <width>930</width>
     <height>75</height>
     <align>center</align>
@@ -92,7 +92,7 @@
   </include>
   <include name="Dimensions_Fullscreen">
     <posx>0</posx>
-    <posy>0</posy>
+    <top>0</top>
     <width>1920</width>
     <height>1080</height>
   </include>
@@ -102,7 +102,7 @@
       <control type="label" description="Clock other windows">
         <visible>!Skin.HasSetting(HideClock)</visible>
         <posx>30r</posx>
-        <posy>3</posy>
+        <top>3</top>
         <width>195</width>
         <height>75</height>
         <align>right</align>
@@ -155,7 +155,7 @@
       <visible>![Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59) | Control.IsVisible(500) | Control.IsVisible(510) | Control.IsVisible(501) | Control.IsVisible(502) | [Window.IsActive(myPVR) + Control.IsVisible(10)] | [Window.IsActive(myPVR) + Control.IsVisible(15)] | [Window.IsActive(myPVR) + Control.IsVisible(14)]]</visible>
       <animation effect="slide" end="12,-65" condition="Control.IsVisible(52)">Conditional</animation>
 	  <posx>990</posx>
-      <posy>60</posy>
+      <top>60</top>
       <width>940</width>
       <height>75</height>
       <align>center</align>
@@ -181,7 +181,7 @@
     <control type="grouplist">
       <visible>Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59) | Control.IsVisible(500) | Control.IsVisible(501) | Control.IsVisible(510) | Control.IsVisible(502) | [Window.IsActive(myPVR) + Control.IsVisible(10)] | [Window.IsActive(myPVR) + Control.IsVisible(14)] | [Window.IsActive(myPVR) + Control.IsVisible(15)]</visible>
       <posx>33</posx>
-      <posy>0</posy>
+      <top>0</top>
       <width>1230</width>
       <height>75</height>
       <align>left</align>
@@ -210,14 +210,14 @@
       <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
       <control type="image">
         <posx>1388</posx>
-        <posy>975</posy>
+        <top>975</top>
         <width>81</width>
         <height>81</height>
         <texture border="12">images/SortLetterBG.png</texture>
       </control>
       <control type="label">
         <posx>1388</posx>
-        <posy>975</posy>
+        <top>975</top>
         <width>81</width>
         <height>81</height>
         <align>center</align>
@@ -231,14 +231,14 @@
       <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
       <control type="image">
         <posx>920</posx>
-        <posy>975</posy>
+        <top>975</top>
         <width>81</width>
         <height>81</height>
         <texture border="12">images/SortLetterBG.png</texture>
       </control>
       <control type="label">
         <posx>920</posx>
-        <posy>975</posy>
+        <top>975</top>
         <width>81</width>
         <height>81</height>
         <align>center</align>
@@ -252,14 +252,14 @@
       <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
       <control type="image">
         <posx>1800</posx>
-        <posy>499</posy>
+        <top>499</top>
         <width>81</width>
         <height>81</height>
         <texture border="12">images/SortLetterBG.png</texture>
       </control>
       <control type="label">
         <posx>1800</posx>
-        <posy>499</posy>
+        <top>499</top>
         <width>81</width>
         <height>81</height>
         <align>center</align>
@@ -274,7 +274,7 @@
       <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
       <include>VisibleFade</include>
       <posx>15</posx>
-      <posy>960</posy>
+      <top>960</top>
       <control type="image" description="Playing BG">
         <width>390</width>
         <height>105</height>
@@ -283,7 +283,7 @@
       <control type="group">
         <control type="image">
           <posx>15</posx>
-          <posy>15</posy>
+          <top>15</top>
           <width>75</width>
           <height>75</height>
           <texture>$INFO[MusicPlayer.Cover]</texture>
@@ -291,7 +291,7 @@
         </control>
         <control type="image">
           <posx>15</posx>
-          <posy>15</posy>
+          <top>15</top>
           <width>75</width>
           <height>75</height>
           <texture>$INFO[VideoPlayer.Cover]</texture>
@@ -299,7 +299,7 @@
         </control>
         <control type="label">
           <posx>105</posx>
-          <posy>9</posy>
+          <top>9</top>
           <aligny>center</aligny>
           <width>261</width>
           <height>36</height>
@@ -309,7 +309,7 @@
         </control>
         <control type="label">
           <posx>105</posx>
-          <posy>36</posy>
+          <top>36</top>
           <aligny>center</aligny>
           <width>261</width>
           <height>36</height>
@@ -318,7 +318,7 @@
         </control>
         <control type="label">
           <posx>105</posx>
-          <posy>60</posy>
+          <top>60</top>
           <aligny>center</aligny>
           <width>261</width>
           <height>36</height>
@@ -327,7 +327,7 @@
         </control>
         <control type="label">
           <posx>105</posx>
-          <posy>9</posy>
+          <top>9</top>
           <aligny>center</aligny>
           <width>261</width>
           <height>36</height>
@@ -337,7 +337,7 @@
         </control>
         <control type="label">
           <posx>105</posx>
-          <posy>36</posy>
+          <top>36</top>
           <aligny>center</aligny>
           <width>261</width>
           <height>36</height>
@@ -346,7 +346,7 @@
         </control>
         <control type="label">
           <posx>105</posx>
-          <posy>60</posy>
+          <top>60</top>
           <aligny>center</aligny>
           <width>261</width>
           <height>36</height>
@@ -393,21 +393,21 @@
       <control type="image">
         <description>background image</description>
         <posx>-170</posx>
-        <posy>-150</posy>
+        <top>-150</top>
         <width>1460</width>
         <height>800</height>
         <texture border="150">images/Dialog.png</texture>
         <visible>![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
       </control>
 	  <control type="image">
-          <posy>110</posy>
+          <top>110</top>
           <width>1160</width>
           <height>1</height>
           <texture>images/Line.png</texture>
         </control>
         <control type="image">
           <posx>0</posx>
-          <posy>370</posy>
+          <top>370</top>
           <width>1160</width>
           <height>1</height>
           <texture>images/Line.png</texture>
@@ -415,7 +415,7 @@
       <control type="label">
         <description>header label</description>
         <posx>20</posx>
-        <posy>0</posy>
+        <top>0</top>
         <width>1100</width>
         <height>30</height>
         <font>size26</font>
@@ -427,7 +427,7 @@
       <control type="label">
         <description>Title label</description>
         <posx>20</posx>
-        <posy>40</posy>
+        <top>40</top>
         <width>1100</width>
         <height>30</height>
         <font>size33B</font>
@@ -440,7 +440,7 @@
       <control type="label">
         <description>Start time</description>
         <posx>20</posx>
-        <posy>75</posy>
+        <top>75</top>
         <width>1100</width>
         <height>25</height>
         <align>center</align>
@@ -452,7 +452,7 @@
       <control type="textbox" id="400">
         <description>Plot value</description>
         <posx>20</posx>
-        <posy>110</posy>
+        <top>110</top>
         <width>1080</width>
         <height>260</height>
         <font>size26</font>
@@ -464,7 +464,7 @@
       <control type="label">
         <description>Duration</description>
         <posx>60</posx>
-        <posy>390</posy>
+        <top>390</top>
         <width>1000</width>
         <height>25</height>
         <align>center</align>
@@ -475,7 +475,7 @@
       <control type="label">
         <description>Duration</description>
         <posx>60</posx>
-        <posy>420</posy>
+        <top>420</top>
         <width>1000</width>
         <height>25</height>
         <align>center</align>
@@ -487,7 +487,7 @@
   <include name="User">
   <control type="group">
     <control type="image">
-      <posy>1000</posy>
+      <top>1000</top>
       <posx>10</posx>
       <width>80</width>
       <height>80</height>
@@ -495,7 +495,7 @@
       <aspectratio>stretch</aspectratio>
     </control>
 	<control type="label">
-      <posy>1000</posy>
+      <top>1000</top>
       <posx>100</posx>
       <width>1800</width>
       <height>80</height>

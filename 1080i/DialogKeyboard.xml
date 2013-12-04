@@ -15,7 +15,7 @@
       </animation>
       <control type="image" description="List back">
         <posx>-50</posx>
-        <posy>-50</posy>
+        <top>-50</top>
         <width>1085</width>
         <height>1200</height>
         <aspectratio>stretch</aspectratio>
@@ -23,17 +23,17 @@
       </control>
       <control type="label" id="311" description="Heading">
         <posx>110</posx>
-        <posy>80</posy>
+        <top>80</top>
         <width>870</width>
         <font>size33</font>
         <align>left</align>
       </control>
       <control type="group">
         <posx>0</posx>
-        <posy>150</posy>
+        <top>150</top>
         <control type="label" id="310" description="Edit Text">
           <posx>122</posx>
-          <posy>8</posy>
+          <top>8</top>
           <width>735</width>
           <height>60</height>
           <align>left</align>
@@ -52,7 +52,7 @@
         <control type="grouplist" id="9002" description="functions">
           <orientation>horizontal</orientation>
           <posx>110</posx>
-          <posy>110</posy>
+          <top>110</top>
           <width>760</width>
           <align>center</align>
           <itemgap>0</itemgap>
@@ -80,7 +80,7 @@
         </control>
         <control type="group">
           <posx>140</posx>
-          <posy>160</posy>
+          <top>160</top>
           <control type="group" description="1st row">
             <control type="button" id="65">
               <description>'A' button</description>
@@ -142,7 +142,7 @@
             </control>
           </control>
           <control type="group" description="2nd row">
-            <posy>90</posy>
+            <top>90</top>
             <control type="button" id="71">
               <description>'G' button</description>
               <posx>0</posx>
@@ -199,7 +199,7 @@
             </control>
           </control>
           <control type="group" description="3rd row">
-            <posy>180</posy>
+            <top>180</top>
             <control type="button" id="77">
               <description>'M' button</description>
               <onleft>307</onleft>
@@ -255,7 +255,7 @@
             </control>
           </control>
           <control type="group" description="4th row">
-            <posy>270</posy>
+            <top>270</top>
             <control type="button" id="83">
               <description>'S' button</description>
               <posx>0</posx>
@@ -312,7 +312,7 @@
             </control>
           </control>
           <control type="group" description="5th row">
-            <posy>360</posy>
+            <top>360</top>
             <control type="button" id="89">
               <description>'Y' button</description>
               <posx>0</posx>
@@ -369,7 +369,7 @@
             </control>
           </control>
           <control type="group" description="6th row">
-            <posy>450</posy>
+            <top>450</top>
             <control type="button" id="52">
               <description>'4' button</description>
               <posx>0</posx>
@@ -426,7 +426,7 @@
             </control>
           </control>
           <control type="grouplist" description="7th row">
-            <posy>560</posy>
+            <top>560</top>
             <posx>-28</posx>
             <itemgap>0</itemgap>
             <align>center</align>
