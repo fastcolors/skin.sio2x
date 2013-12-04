@@ -20,7 +20,7 @@
       </control>
       <control type="image" description="Line">
         <posx>-90</posx>
-        <posy>503</posy>
+        <top>503</top>
         <width>2100</width>
         <height>1</height>
         <aspectratio>stretch</aspectratio>
@@ -32,7 +32,7 @@
       <animation effect="slide" condition="Control.IsVisible(312) + !Skin.HasSetting(IntruderTV) + !Container(312).HasPrevious" end="480,0">Conditional</animation>
       <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
       <posx></posx>
-      <posy>26</posy>
+      <top>26</top>
       <width>34</width>
       <height>34</height>
       <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
@@ -50,7 +50,7 @@
       <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
       <width>1800</width>
       <height>1080</height>
-      <posy>522</posy>
+      <top>522</top>
       <posx>60</posx>
       <onleft>9000</onleft>
       <onright>9000</onright>
@@ -62,7 +62,7 @@
         <control type="image" description="THMBSBASE">
           <visible>!Skin.HasSetting(colormenu)</visible>
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture>icons/base.png</texture>
@@ -70,7 +70,7 @@
         <control type="image" description="THMBSBASECOLOR">
           <visible>Skin.HasSetting(colormenu)</visible>
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture>$INFO[ListItem.Property(color)]</texture>
@@ -78,7 +78,7 @@
         <control type="image" description="THMBSICONS">
           <visible>!IsEmpty(Listitem.thumb)</visible>
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
@@ -86,14 +86,14 @@
         <control type="image" description="THMBSICONS">
           <visible>IsEmpty(Listitem.thumb)</visible>
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
         </control>
         <control type="image" description="THMBS weather">
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
@@ -101,14 +101,14 @@
         </control>
         <!--<control type="image" description="OVERLAY">
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture>icons/overlay.png</texture>
         </control>-->
         <control type="label" description="LABEL">
           <posx>150</posx>
-          <posy>220</posy>
+          <top>220</top>
           <width>300</width>
           <height>24</height>
           <font>size24</font>
@@ -121,7 +121,7 @@
         <control type="image" description="THMBSBASE">
           <visible>Skin.HasSetting(colormenu)</visible>
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture>$INFO[ListItem.Property(color)]</texture>
@@ -129,7 +129,7 @@
         <control type="image" description="THMBSBASE">
           <visible>!Skin.HasSetting(colormenu)</visible>
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture>icons/base.png</texture>
@@ -139,7 +139,7 @@
           <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
           <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture>$INFO[ListItem.Property(color)]</texture>
@@ -147,7 +147,7 @@
         <control type="image" description="THMBSICONS">
           <visible>!IsEmpty(Listitem.thumb)</visible>
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
@@ -155,14 +155,14 @@
         <control type="image" description="THMBSICONS">
           <visible>IsEmpty(Listitem.thumb)</visible>
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
 		</control>
         <control type="image" description="THMBS WEATHER">
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
@@ -170,7 +170,7 @@
         </control>
        <!-- <control type="image" description="THMBSOVERLAY">
           <posx>20</posx>
-          <posy>48</posy>
+          <top>48</top>
           <width>260</width>
           <height>168</height>
           <texture>icons/overlay.png</texture>
@@ -179,7 +179,7 @@
 	  <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
           <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
       <posx>20</posx>
-	  <posy>48</posy>
+	  <top>48</top>
       <width>260</width>
       <height>168</height>
       <texture>images/atvslider.png</texture>
@@ -188,7 +188,7 @@
         <control type="label" description="label">
           <animation effect="fade" start="80" end="100" time="300=" delay="300">Focus</animation>
           <posx>150</posx>
-          <posy>220</posy>
+          <top>220</top>
           <width>300</width>
           <height>24</height>
           <font>size24</font>
@@ -201,7 +201,26 @@
         <include>homepanel</include>
       </content>
     </control>
-	
+	 <control type="image">
+	 <animation effect="slide" end="485,0" time="400" condition="!Container(312).HasPrevious + !Skin.HasSetting(IntruderTV)">Conditional</animation>
+      <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV)</visible>
+      <visible>Library.HasContent(TVShows)</visible>
+      <left>-5</left>
+	  <top>30</top>
+      <width>1</width>
+      <height>450</height>
+      <texture>images/LineV.png</texture>
+    </control>
+    <control type="image">
+	 <animation effect="slide" end="325,0" time="400" condition="!Container(311).HasPrevious + [!Skin.HasSetting(Intruder) | Player.HasVideo]">Conditional</animation>
+      <visible>Container(9000).HasFocus(340) + [!Skin.HasSetting(Intruder) | Player.HasVideo]</visible>
+      <visible>Library.HasContent(Movies)</visible>
+	  <left>-5</left>
+      <top>30</top>
+      <width>1</width>
+      <height>450</height>
+      <texture>images/LineV.png</texture>
+    </control>
     <include>weather_shelf</include>
 	<include condition="true">EPG_shelf</include>
     <control type="group" id="700" description="Shelf items">
@@ -226,7 +245,7 @@
     </control>
 	</control>
     <control type="image">
-      <posy>980</posy>
+      <top>980</top>
       <width>1920</width>
       <height>100</height>
       <texture>images/bottomshader.png</texture>
@@ -236,7 +255,7 @@
         <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
         <include>OpenClose</include>
         <posx>0</posx>
-        <posy>1038</posy>
+        <top>1038</top>
         <width>1920</width>
         <height>33</height>
         <font>size22</font>
@@ -249,7 +268,7 @@
       <control type="image" description="RSS Left fade">
         <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
         <posx>0</posx>
-        <posy>1038</posy>
+        <top>1038</top>
         <width>90</width>
         <height>33</height>
         <texture>images/DefaultGradientH.png</texture>
@@ -257,7 +276,7 @@
       <control type="image" description="RSS Right fade">
         <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
         <posx>1830</posx>
-        <posy>1038</posy>
+        <top>1038</top>
         <width>90</width>
         <height>33</height>
         <texture flipx="true">images/DefaultGradientH.png</texture>
@@ -268,7 +287,7 @@
       <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
       <animation effect="slide" tween="Sine" easing="Out" start="430,0" end="0,0" time="600" delay="200">VisibleChange</animation>
       <posx>1500</posx>
-      <posy>440</posy>
+      <top>440</top>
       <control type="image" description="Playing BG">
         <width>430</width>
         <height>105</height>
@@ -277,7 +296,7 @@
       <control type="group">
         <control type="image">
           <posx>18</posx>
-          <posy>15</posy>
+          <top>15</top>
           <width>75</width>
           <height>75</height>
           <texture>$INFO[MusicPlayer.Cover]</texture>
@@ -285,7 +304,7 @@
         </control>
         <control type="label">
           <posx>110</posx>
-          <posy>9</posy>
+          <top>9</top>
           <aligny>center</aligny>
           <width>300</width>
           <height>36</height>
@@ -295,7 +314,7 @@
         </control>
         <control type="label">
           <posx>110</posx>
-          <posy>36</posy>
+          <top>36</top>
           <aligny>center</aligny>
           <width>300</width>
           <height>36</height>
@@ -304,7 +323,7 @@
         </control>
         <control type="label">
           <posx>110</posx>
-          <posy>60</posy>
+          <top>60</top>
           <aligny>center</aligny>
           <width>300</width>
           <height>36</height>
@@ -317,7 +336,7 @@
 	<width>1895</width>
 	<height>1080</height>
 	<control type="grouplist">
-      <posy>20</posy>
+      <top>20</top>
 	  <orientation>horizontal</orientation>
 	  <itemgap>18</itemgap>
 	  <align>right</align>
@@ -331,7 +350,7 @@
 	<control type="label" description="Battery">
 	<visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,99) + !Skin.HasSetting(hideconnection)</visible>
       <posx>35r</posx>
-      <posy>20</posy>
+      <top>20</top>
       <width min="30" max="500">auto</width>
       <height>45</height>
       <font>size30</font>
@@ -348,41 +367,6 @@
     </control>
 	</control>
 	</control>
-    <control type="image">
-      <include>ShelfFade</include>
-      <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV)</visible>
-      <visible>Library.HasContent(TVShows) + !Container(312).HasPrevious</visible>
-      <posy>30</posy>
-      <posx>480</posx>
-      <width>2</width>
-      <height>500</height>
-      <texture>images/LineV.png</texture>
-    </control>
-    <control type="image">
-      <include>ShelfFade</include>
-      <visible>Container(9000).HasFocus(340) + [!Skin.HasSetting(Intruder) | Player.HasVideo]</visible>
-      <visible>Library.HasContent(Movies) + !Container(311).HasPrevious</visible>
-      <posy>30</posy>
-      <posx>320</posx>
-      <width>2</width>
-      <height>500</height>
-      <texture>images/LineV.png</texture>
-    </control>
-	<control type="group">
-	<visible>Player.HasVideo + [System.Platform.OSX | System.Platform.Windows]</visible>
-    <control type="image">
-      <posx>1390</posx>
-      <posy>902</posy>
-      <width>320</width>
-      <height>188</height>
-      <texture>images/black.png</texture>
-    </control>
-    <control type="videowindow">
-      <posx>1400</posx>
-      <posy>912</posy>
-      <width>300</width>
-      <height>168</height>
-    </control>
-	</control>
+   
   </controls>
 </window>
