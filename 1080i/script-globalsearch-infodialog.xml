@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol>-</defaultcontrol>
+   <backgroundcolor>background</backgroundcolor>
   <controls>
     <control type="list" id="100">
       <posx>-10</posx>
@@ -17,14 +18,14 @@
       <control type="image">
         <width>1920</width>
         <height>1080</height>
-        <texture>images/black.png</texture>
+        <texture>images/White.png</texture>
       </control>
       <control type="image" id="199">
         <width>1920</width>
         <height>1080</height>
-        <colordiffuse>65FFFFFF</colordiffuse>
+        <colordiffuse>22FFFFFF</colordiffuse>
         <aspectratio>scale</aspectratio>
-        <texture>$INFO[Container(100).ListItem.Property(Fanart_Image)]</texture>
+        <texture>$INFO[Container(100).ListItem.Property(Fanart)]</texture>
       </control>
 	  <control type="label" description="title">
 	  <posx>600</posx>
@@ -32,7 +33,6 @@
         <width>1200</width>
         <height>50</height>
         <font>size39B</font>
-		<textcolor>yellow</textcolor>
         <align>Left</align>
         <label>$INFO[Container(100).ListItem.Label] $INFO[Container(100).ListItem.Property(Year), (,)]</label>
       </control>
@@ -43,7 +43,6 @@
         <width>1000</width>
         <height>45</height>
         <font>size27</font>
-        <textcolor>white</textcolor>
         <label>$INFO[Container(100).ListItem.Property(Tagline)]</label>
       </control>
 	  <control type="label">
@@ -53,7 +52,6 @@
         <width>1000</width>
         <height>45</height>
         <font>size27</font>
-        <textcolor>white</textcolor>
         <label>$INFO[Container(100).ListItem.Property(Studio)]</label>
       </control>
 	  <control type="label">
@@ -63,7 +61,6 @@
         <width>1000</width>
         <height>45</height>
         <font>size27</font>
-        <textcolor>white</textcolor>
         <label>$INFO[Container(100).ListItem.Property(Artist)]</label>
       </control>
 	  <control type="label">
@@ -73,7 +70,6 @@
         <width>1000</width>
         <height>45</height>
         <font>size27</font>
-        <textcolor>white</textcolor>
         <label>$INFO[Container(100).ListItem.Property(TvShowTitle)] - S$INFO[Container(100).ListItem.Property(Season)] • E$INFO[Container(100).ListItem.Property(Episode)]</label>
       </control>
       <control type="image">
@@ -85,51 +81,6 @@
         <height>600</height>
         <aspectratio>keep</aspectratio>
         <texture diffuse="images/diffuse.png">$INFO[Container(100).ListItem.Icon]</texture>
-      </control>
-      <control type="grouplist" description="Flags">
-        <visible>Control.IsVisible(110) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
-		<posx>600</posx>
-        <posy>420</posy>
-        <width>1200</width>
-        <height>50</height>
-        <itemgap>30</itemgap>
-        <orientation>horizontal</orientation>
-        <align>center</align>
-        <control type="image">
-          <height>50</height>
-          <width>130</width>
-          <bordersize>3</bordersize>
-          <aspectratio>keep</aspectratio>
-          <colordiffuse>Silver</colordiffuse>
-          <texture>$INFO[Container(100).ListItem.Property(VideoResolution),badges/video/,.png]</texture>
-        </control>
-        <control type="image">
-          <visible>!IsEmpty(Container(100).ListItem.Property(VideoCodec))</visible>
-          <height>50</height>
-          <width>130</width>
-          <bordersize>3</bordersize>
-          <aspectratio>keep</aspectratio>
-          <colordiffuse>Silver</colordiffuse>
-          <texture>$INFO[Container(100).ListItem.Property(VideoCodec),badges/video/,.png]</texture>
-        </control>
-        <control type="image">
-          <visible>!IsEmpty(Container(100).ListItem.Property(AudioChannels))</visible>
-          <height>50</height>
-          <width>130</width>
-          <bordersize>3</bordersize>
-          <aspectratio>keep</aspectratio>
-          <colordiffuse>Silver</colordiffuse>
-          <texture>$INFO[Container(100).ListItem.Property(AudioChannels),badges/channels,.png]</texture>
-        </control>
-        <control type="image">
-          <visible>!IsEmpty(Container(100).ListItem.Property(AudioCodec))</visible>
-          <height>50</height>
-          <width>130</width>
-          <bordersize>3</bordersize>
-          <aspectratio>keep</aspectratio>
-          <colordiffuse>Silver</colordiffuse>
-          <texture>$INFO[Container(100).ListItem.Property(AudioCodec),badges/audio/,.png]</texture>
-        </control>
       </control>
       <control type="group" id="101">
         <control type="list" id="110">
@@ -147,8 +98,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -158,8 +107,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </itemlayout>
@@ -172,8 +119,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -183,8 +128,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </focusedlayout>
@@ -278,8 +221,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -289,8 +230,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </itemlayout>
@@ -303,8 +242,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -314,8 +251,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </focusedlayout>
@@ -391,8 +326,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -402,8 +335,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </itemlayout>
@@ -416,8 +347,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -427,8 +356,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </focusedlayout>
@@ -474,8 +401,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -485,8 +410,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </itemlayout>
@@ -499,8 +422,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -510,8 +431,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </focusedlayout>
@@ -593,8 +512,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -604,8 +521,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </itemlayout>
@@ -618,8 +533,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -629,8 +542,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </focusedlayout>
@@ -706,8 +617,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -717,8 +626,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </itemlayout>
@@ -731,8 +638,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -742,8 +647,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </focusedlayout>
@@ -819,8 +722,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -830,8 +731,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </itemlayout>
@@ -844,8 +743,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -855,8 +752,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </focusedlayout>
@@ -938,8 +833,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -949,8 +842,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </itemlayout>
@@ -963,8 +854,6 @@
                 <font>size21</font>
                 <align>right</align>
                 <aligny>center</aligny>
-                <textcolor></textcolor>
-                <selectedcolor>selected</selectedcolor>
                 <info>ListItem.Label</info>
               </control>
               <control type="label">
@@ -974,8 +863,6 @@
                 <height>45</height>
                 <font>size21</font>
                 <aligny>center</aligny>
-                <textcolor>2</textcolor>
-                <selectedcolor>2</selectedcolor>
                 <info>ListItem.Label2</info>
               </control>
             </focusedlayout>
@@ -1129,7 +1016,6 @@
           <height>40</height>
           <label>-</label>
           <font>size30</font>
-          <textcolor>FFFFFFFF</textcolor>
           <align>center</align>
           <aligny>center</aligny>
         </control-->
@@ -1143,6 +1029,47 @@
           <texturenofocus>info/empty.png</texturenofocus>
         </control>
       </control>
+	<control type="grouplist" description="Flags">
+		<posx>600</posx>
+        <posy>420</posy>
+        <width>1200</width>
+        <height>50</height>
+        <itemgap>30</itemgap>
+        <orientation>horizontal</orientation>
+        <align>center</align>
+        <control type="image">
+          <height>50</height>
+          <width>130</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <texture>$INFO[Container(100).ListItem.Property(VideoResolution),badges/video/,.png]</texture>
+        </control>
+        <control type="image">
+          <visible>!IsEmpty(Container(100).ListItem.Property(VideoCodec))</visible>
+          <height>50</height>
+          <width>130</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <texture>$INFO[Container(100).ListItem.Property(VideoCodec),badges/video/,.png]</texture>
+        </control>
+        <control type="image">
+          <visible>!IsEmpty(Container(100).ListItem.Property(AudioChannels))</visible>
+          <height>50</height>
+          <width>130</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <texture>$INFO[Container(100).ListItem.Property(AudioChannels),badges/,.png]</texture>
+        </control>
+        <control type="image">
+          <visible>!IsEmpty(Container(100).ListItem.Property(AudioCodec))</visible>
+          <height>50</height>
+          <width>130</width>
+          <bordersize>3</bordersize>
+          <aspectratio>keep</aspectratio>
+          <texture>$INFO[Container(100).ListItem.Property(AudioCodec),badges/audio/,.png]</texture>
+        </control>
+      </control>
+	  
     </control>
   </controls>
 </window>

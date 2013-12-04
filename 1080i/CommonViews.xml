@@ -285,16 +285,9 @@
          </control>
       </control>
       <control type="group" description="Songs">
-         <visible>Container.content(Songs) + !ListItem.IsFolder</visible>
+         <visible>Container.content(Songs)</visible>
          <animation effect="fade" time="400">Visible</animation>
          <animation effect="fade" time="0">Hidden</animation>
-         <control type="image">
-            <include>Fanart_Fade</include>
-            <width>1920</width>
-            <height>1080</height>
-            <info>ListItem.Art(fanart)</info>
-            <colordiffuse>FF333333</colordiffuse>
-         </control>
          <control type="group" description="Music Square">
             <posx>225</posx>
             <posy>90</posy>
@@ -302,7 +295,7 @@
                <width>600</width>
                <height>600</height>
                <include>Icon_Fade</include>
-               <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Thumb]</texture>
+               <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Icon]</texture>
                <aspectratio aligny="bottom">keep</aspectratio>
             </control>
          </control>
@@ -402,7 +395,7 @@
                <height>1</height>
                <width>780</width>
                <aspectratio>stretch</aspectratio>
-               <texture>images/Liner.png</texture>
+               <texture>images/LineR.png</texture>
             </control>
             <control type="image" description="Separator">
                <posx>0</posx>
@@ -421,7 +414,6 @@
                   <font>size30</font>
                   <width>750</width>
                   <height>30</height>
-                  <textcolor></textcolor>
                   <scroll>false</scroll>
                   <label>$LOCALIZE[558]:  [COLOR=black]$INFO[ListItem.Album][/COLOR]</label>
                </control>
@@ -429,21 +421,18 @@
                   <font>size30</font>
                   <width>750</width>
                   <height>30</height>
-                  <textcolor></textcolor>
                   <label>$LOCALIZE[515]:  [COLOR=black]$INFO[ListItem.Genre][/COLOR]</label>
                </control>
                <control type="label" description="Type">
                   <font>size30</font>
                   <width>750</width>
                   <height>30</height>
-                  <textcolor></textcolor>
                   <label>$LOCALIZE[564]:  [COLOR=black][UPPERCASE]$INFO[ListItem.FileExtension][/UPPERCASE][/COLOR]</label>
                </control>
                <control type="label" description="Duration">
                   <font>size30</font>
                   <width>750</width>
                   <height>30</height>
-                  <textcolor></textcolor>
                   <label>$LOCALIZE[180]:  [COLOR=black]$INFO[ListItem.Duration][/COLOR]</label>
                </control>
             </control>
@@ -610,27 +599,6 @@
          </control>
       </control>
    </include>
-   <include name="ArrowNF">
-      <control type="image" description="arrow">
-         <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
-         <posx>35r</posx>
-         <height>81</height>
-         <width>42</width>
-         <aspectratio>keep</aspectratio>
-         <texture>images/ArrowNF.png</texture>
-      </control>
-   </include>
-   <include name="ArrowFO">
-      <control type="image" description="arrow">
-         <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
-         <animation effect="fade" start="30" end="100" time="150" delay="300">Focus</animation>
-         <posx>35r</posx>
-         <height>81</height>
-         <width>42</width>
-         <aspectratio>keep</aspectratio>
-         <texture>images/ArrowFO.png</texture>
-      </control>
-   </include>
    <include name="Sets">
       <control type="image" description="Sets">
          <visible>Window.IsActive(MyVideoNav.xml)</visible>
@@ -734,7 +702,6 @@
       <itemlayout width="890" height="111">
          <include>Watched_MarksLW</include>
          <include>HD_Badge_LL</include>
-         <include>ArrowNF</include>
          <control type="group">
             <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year) + IsEmpty(ListItem.Artist)" effect="slide" end="0,18" time="0" reversible="true">Conditional</animation>
             <control type="label" description="Main Label">
@@ -746,7 +713,7 @@
          </control>
          <control type="group">
             <control type="label" description="Label2">
-               <visible>!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
+               <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
                <posx>45</posx>
                <include>BigListDetails</include>
                <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
@@ -759,23 +726,18 @@
                <label>$INFO[ListItem.Premiered]</label>
             </control>
             <control type="label" description="Label2">
-               <visible>container.content(episodes)</visible>
+               <visible>container.content(episodes) | Container.Content(songs)</visible>
                <posx>45</posx>
                <align>left</align>
                <include>BigListDetails</include>
                <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
             </control>
          </control>
-         <control type="image">
-            <width>802</width>
-            <height>1</height>
-            <texture>images/Line.png</texture>
-         </control>
+         <include>listline</include>
       </itemlayout>
       <focusedlayout width="890" height="111">
          <include>Watched_MarksLW</include>
          <include>HD_Badge_LL</include>
-         <include>ArrowFO</include>
          <include>LargeSelector</include>
          <control type="group">
             <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year)  + IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
@@ -787,14 +749,14 @@
             </control>
          </control>
          <control type="label" description="Label2">
-            <visible>!isEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)</visible>
-            <posx>45</posx>
+            <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
+             <posx>45</posx>
             <width>630</width>
             <include>BigListDetailsFO</include>
             <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
          </control>
          <control type="label" description="Label2">
-            <visible>container.content(episodes)</visible>
+            <visible>container.content(episodes) | Container.Content(songs)</visible>
             <posx>45</posx>
             <align>left</align>
             <include>BigListDetailsFO</include>
@@ -808,11 +770,7 @@
             <include>BigListDetailsFO</include>
             <label>$INFO[ListItem.Premiered]</label>
          </control>
-         <control type="image">
-            <width>802</width>
-            <height>1</height>
-            <texture>images/Line.png</texture>
-         </control>
+         <include>listline</include>
       </focusedlayout>
    </include>
    <include name="ButtonMenu">
@@ -1204,7 +1162,7 @@
       <control type="image">
          <width>900</width>
          <height>1</height>
-         <texture>images/Line.png</texture>
+         <texture>images/LineL.png</texture>
       </control>
    </include>
 </includes>

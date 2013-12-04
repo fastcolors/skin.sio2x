@@ -7,4 +7,5 @@
 	<color name="Silver">FF303030</color>
 	<color name="Disabled">FF6767676</color>	
 	<color name="Yellow">FFFA9600</color>
+	<color name="invalid">FFFF0000</color>
 </colors>

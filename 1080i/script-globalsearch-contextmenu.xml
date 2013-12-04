@@ -22,8 +22,6 @@
 			<posy>500</posy>
 			<width>500</width>
 			<align>center</align>
-			<textcolor>88FFFFFF</textcolor>
-			<focusedcolor>FFFFFFFF</focusedcolor>
 			<onleft>1001</onleft>
 			<onright>1001</onright>
 			<onup>1003</onup>
@@ -34,8 +32,6 @@
 			<posy>500</posy>
 			<width>500</width>
 			<align>center</align>
-			<textcolor>88FFFFFF</textcolor>
-			<focusedcolor>FFFFFFFF</focusedcolor>
 			<onleft>1002</onleft>
 			<onright>1002</onright>
 			<onup>1001</onup>
@@ -46,8 +42,6 @@
 			<posy>500</posy>
 			<width>500</width>
 			<align>center</align>
-			<textcolor>88FFFFFF</textcolor>
-			<focusedcolor>FFFFFFFF</focusedcolor>
 			<onleft>1003</onleft>
 			<onright>1003</onright>
 			<onup>1002</onup>

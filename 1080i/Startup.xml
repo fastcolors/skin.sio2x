@@ -3,14 +3,13 @@
   <defaultcontrol always="true">10</defaultcontrol>
   <allowoverlay>no</allowoverlay>
 <backgroundcolor>background</backgroundcolor>
-
-
-  <!--<onload>XBMC.PlayMedia(special://skin/mov/introMovie.mov)</onload>-->
+<!--<onload>XBMC.PlayMedia(special://skin/mov/introMovie.mov)</onload>-->
   <controls>
+  <include>BlackBackground</include>
     <control type="button" id="10" description="Startup Trigger">
       <texturenofocus>-</texturenofocus>
       <texturefocus>-</texturefocus>
-	  <onfocus>ReplaceWindow(Home)</onfocus>
+	  <onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
     </control>
   </controls>
 </window>

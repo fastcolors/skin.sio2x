@@ -15,7 +15,7 @@
       <shadowcolor>white</shadowcolor>
       <scroll>true</scroll>
       <scrollspeed>50</scrollspeed>
-      <scrollsuffix>•</scrollsuffix>
+      <scrollsuffix> • </scrollsuffix>
    </default>
    <default type="fadelabel">
       <posx>0</posx>
@@ -32,7 +32,7 @@
       <disabledcolor>Disabled</disabledcolor>
       <scrollout>false</scrollout>
       <pauseatend>3000</pauseatend>
-      <scrollsuffix>•  •</scrollsuffix>
+      <scrollsuffix> •  • </scrollsuffix>
    </default>
    <default type="textbox">
       <label>-</label>
@@ -69,6 +69,7 @@
       <focusedcolor>black</focusedcolor>
       <selectedcolor>black</selectedcolor>
       <disabledcolor>Disabled</disabledcolor>
+	  <invalidcolor>invalid</invalidcolor>
       <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
       <pulseonselect>false</pulseonselect>
    </default>
@@ -86,6 +87,7 @@
       <focusedcolor>black</focusedcolor>
       <selectedcolor>black</selectedcolor>
       <disabledcolor>Disabled</disabledcolor>
+	  <invalidcolor>invalid</invalidcolor>
       <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
       <pulseonselect>false</pulseonselect>
    </default>
@@ -111,7 +113,7 @@
    </default>
    <default type="radiobutton">
       <posx>0</posx>
-      <posy>6</posy>
+      <posy>0</posy>
       <height>75</height>
       <align>left</align>
       <aligny>center</aligny>
@@ -121,11 +123,11 @@
       <focusedcolor>black</focusedcolor>
       <selectedcolor>black</selectedcolor>
       <disabledcolor>Disabled</disabledcolor>
-      <radiowidth>40</radiowidth>
-      <radioheight>40</radioheight>
+      <radiowidth>46</radiowidth>
+      <radioheight>46</radioheight>
       <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
-      <textureradiofocus>images/RadioON.png</textureradiofocus>
-      <textureradionofocus>images/RadioOFF.png</textureradionofocus>
+      <textureradiofocus aspectratio="keep">images/RadioON.png</textureradiofocus>
+      <textureradionofocus aspectratio="keep">images/RadioOFF.png</textureradionofocus>
       <textoffsetx>20</textoffsetx>
       <!--<radioposx>262</radioposx>-->
       <pulseonselect>false</pulseonselect>
@@ -189,14 +191,15 @@
       <posy>225</posy>
       <height>75</height>
       <width>450</width>
-      <sliderwidth>100</sliderwidth>
-      <sliderheight>24</sliderheight>
-      <texturesliderbar>OSD/SliderBackground.png</texturesliderbar>
-      <textureslidernib>OSD/SliderNibNF.png</textureslidernib>
-      <textureslidernibfocus>OSD/SliderNibFO.png</textureslidernibfocus>
+      <sliderwidth>150</sliderwidth>
+      <sliderheight>45</sliderheight>
+      <texturesliderbar>images/slider_bg.png</texturesliderbar>
+      <textureslidernib>images/slider_nib_nf.png</textureslidernib>
+      <textureslidernibfocus>images/slider_nib.png</textureslidernibfocus>
       <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
       <texturenofocus>-</texturenofocus>
       <font>size33</font>
+	  <aligny>center</aligny>
       <textcolor>White</textcolor>
       <focusedcolor>black</focusedcolor>
       <selectedcolor>black</selectedcolor>

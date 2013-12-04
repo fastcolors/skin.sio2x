@@ -16,18 +16,18 @@
         <effect type="slide" tween="Cubic" easing="in" start="0,-800" end="0,0" time="500" />
       </animation>
       <control type="image">
-        <posx>430</posx>
-        <posy>66</posy>
-        <width>900</width>
-        <height>780</height>
+        <posx>550</posx>
+        <posy>200</posy>
+        <width>680</width>
+        <height>520</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="150">images/Dialog.png</texture>
+        <texture border="50">sidepanel/Back.png</texture>
       </control>
       <control type="grouplist" id="101" description="OSD Options">
         <posx>600</posx>
         <posy>246</posy>
-        <width>720</width>
-        <height>720</height>
+        <width>640</width>
+        <height>640</height>
         <itemgap>0</itemgap>
         <onleft>100</onleft>
         <onright>100</onright>
@@ -35,6 +35,7 @@
         <ondown>101</ondown>
         <scrolltime>240</scrolltime>
         <control type="togglebutton" id="701" description="Subtitles">
+		<width>590</width>
           <include>DialogButt</include>
           <label>$LOCALIZE[33003] $LOCALIZE[287]</label>
 		  <onclick>SetFocus(100,2)</onclick>
@@ -45,24 +46,28 @@
           <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture-->
         </control>
         <control type="button" id="703">
+		<width>590</width>
           <include>DialogButt</include>
           <label>13395</label>
 		  <onclick>SetFocus(100,2)</onclick>
           <onclick>ActivateWindow(OSDVideoSettings)</onclick>
         </control>
         <control type="button" id="704">
+		<width>590</width>
           <include>DialogButt</include>
           <label>$LOCALIZE[292] &amp; $LOCALIZE[287]</label>
 		  <onclick>SetFocus(100,2)</onclick>
           <onclick>ActivateWindow(OSDAudioSettings)</onclick>
         </control>
         <control type="button" id="705">
+		<width>590</width>
           <include>DialogButt</include>
           <label>298</label>
 		  <onclick>SetFocus(100,2)</onclick>
           <onclick>ActivateWindow(VideoBookmarks)</onclick>
         </control>
         <control type="togglebutton" id="706" description="Info">
+		<width>590</width>
           <include>DialogButt</include>
           <label>20176</label>
 		  <onclick>SetFocus(100,2)</onclick>
@@ -74,11 +79,13 @@
           <usealttexture>Window.IsActive(142)</usealttexture>
         </control>
         <control type="button" id="707">
+		<width>590</width>
           <include>DialogButt</include>
           <label>21445</label>
           <onclick>CodecInfo</onclick>
         </control>
         <control type="button" id="708">
+		<width>590</width>
           <include>DialogButt</include>
           <label>25003</label>
 		  <onclick>SetFocus(100,2)</onclick>

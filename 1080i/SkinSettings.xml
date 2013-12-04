@@ -5,194 +5,103 @@
    <backgroundcolor>background</backgroundcolor>
    <include>OpenClose</include>
    <controls>
+      <include>BlackBackground</include>
       <include>WindowsTopInfos</include>
       <control type="group">
          <posx>960</posx>
-         <posy>131</posy>
-         <control type="list" id="50">
-            <posy>30</posy>
+         <posy>80</posy>
+         <control type="grouplist" id="50">
             <width>900</width>
-            <height>882</height>
+            <height>960</height>
             <onleft>noop</onleft>
             <onright>noop</onright>
             <onup>50</onup>
             <ondown>50</ondown>
             <pagecontrol>60</pagecontrol>
-            <movement>5</movement>
-            <scrolltime tween="sine" easing="inout">280</scrolltime>
-            <itemlayout width="900" height="81">
-               <control type="label" description="Main Label">
-                  <include>52MainLabel</include>
-                  <label>$INFO[ListItem.Label]</label>
-               </control>
-               <control type="label" description="Label 2">
-                  <posx>20r</posx>
-                  <height>81</height>
-                  <width min="30" max="450">auto</width>
-                  <font>size27</font>
-                  <scroll>false</scroll>
-                  <haspath>true</haspath>
-                  <align>right</align>
-                  <textcolor>black</textcolor>
-                  <label>$INFO[ListItem.Label2]</label>
-               </control>
-               <control type="image" description="Icon">
-                  <animation condition="true" effect="fade" start="100" end="60" time="0">Conditional</animation>
-                  <posx>60r</posx>
-                  <height>81</height>
-                  <width>42</width>
-                  <aspectratio>keep</aspectratio>
-                  <texture>$INFO[ListItem.Icon]</texture>
-               </control>
-               <include>listline</include>
-            </itemlayout>
-            <focusedlayout width="900" height="81">
-               <control type="image">
-                  <width>900</width>
-                  <height>81</height>
-                  <texture>images/White.png</texture>
-                  <colordiffuse>$VAR[diffuseselect]</colordiffuse>
-               </control>
-               <control type="label" description="Main Label">
-                  <textcolor>black</textcolor>
-                  <include>52MainLabel</include>
-                  <label>$INFO[ListItem.Label]</label>
-               </control>
-               <control type="label" description="Label 2">
-                  <posx>20r</posx>
-                  <height>81</height>
-                  <width min="30" max="450">auto</width>
-                  <font>size27</font>
-                  <scroll>false</scroll>
-                  <haspath>true</haspath>
-                  <align>right</align>
-                  <textcolor>black</textcolor>
-                  <label>$INFO[ListItem.Label2]</label>
-               </control>
-               <control type="image" description="Icon">
-                  <animation effect="fade" start="60" end="100" time="100" delay="200">Focus</animation>
-                  <posx>60r</posx>
-                  <height>81</height>
-                  <width>42</width>
-                  <aspectratio>keep</aspectratio>
-                  <texture>$INFO[ListItem.Icon]</texture>
-               </control>
-               <include>listline</include>
-            </focusedlayout>
-            <content>
-               <!--item id="3" description="">
-            <label></label>
-            <label2></label2>
-            <onclick></onclick>
-          </item-->
-               <item id="2" description="Lyrics">
-                  <label>31062</label>
-                  <label2>$INFO[Skin.String(LyricPath)]</label2>
-                  <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
-               </item>
-               <item id="4" description="Scrollbars">
-                  <visible>Skin.HasSetting(Scrollbars_Passive)</visible>
-                  <label>$LOCALIZE[31041]</label>
-                  <label2>$LOCALIZE[31043]</label2>
-                  <onclick>Skin.ToggleSetting(Scrollbars_Passive)</onclick>
-               </item>
-               <item id="4" description="Scrollbars">
-                  <visible>!Skin.HasSetting(Scrollbars_Passive)</visible>
-                  <label>$LOCALIZE[31041]</label>
-                  <label2>$LOCALIZE[31042]</label2>
-                  <onclick>Skin.ToggleSetting(Scrollbars_Passive)</onclick>
-               </item>
-               <item id="5" description="Options dialog">
-                  <visible>Skin.HasSetting(ViewsMenuOff)</visible>
-                  <label>$LOCALIZE[31044]</label>
-                  <label2>$LOCALIZE[1223]</label2>
-                  <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
-               </item>
-               <item id="5" description="Options dialog">
-                  <visible>!Skin.HasSetting(ViewsMenuOff)</visible>
-                  <label>$LOCALIZE[31044]</label>
-                  <label2>$LOCALIZE[305]</label2>
-                  <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
-               </item>
-               <item id="7" description="Shelf Cinema">
-                  <label>31088</label>
-                  <label2>$VAR[scelta]</label2>
-                  <onclick>Skin.ToggleSetting(scelta)</onclick>
-               </item>
-               <item id="1" description="HomeColor">
-                  <label>31033</label>
-                  <label2>$VAR[colormenu]</label2>
-                  <onclick>Skin.ToggleSetting(colormenu)</onclick>
-               </item>
-               <item id="8" description="Home Customize">
-                  <label>31052</label>
-                  <onclick>ActivateWindow(1117)</onclick>
-               </item>
-               <!--item id="20" description="white Home">
-            <label>$LOCALIZE[353] $LOCALIZE[513] $LOCALIZE[33068]</label>
-			<label2>$VAR[BlackMetal]</label2>
-            <onclick>Skin.ToggleSetting(BlackMetal)</onclick>
-          </item>
-          <item id="18" description="VideoGuides">
-            <label>31082</label>
-            <onclick>RunScript(special://skin/resources/json.py)</onclick>
-          </item-->
-               <item id="9" description="Quit button function">
-                  <label>$LOCALIZE[31049]</label>
-                  <label2 fallback="33061">$VAR[QuitLabel]</label2>
-                  <onclick>ActivateWindow(1114)</onclick>
-               </item>
-               <item id="11" description="Show Clock">
-                  <visible>Skin.HasSetting(HideClock)</visible>
-                  <label>$LOCALIZE[31047]</label>
-                  <label2>106</label2>
-                  <onclick>Skin.ToggleSetting(HideClock)</onclick>
-               </item>
-               <item id="11" description="Show Clock">
-                  <visible>!Skin.HasSetting(HideClock)</visible>
-                  <label>$LOCALIZE[31047]</label>
-                  <label2>107</label2>
-                  <onclick>Skin.ToggleSetting(HideClock)</onclick>
-               </item>
-               <item id="14" description="Music Default">
-                  <label>$LOCALIZE[31053]</label>
-                  <label2>$INFO[Skin.String(MusicLink)]</label2>
-                  <onclick>ActivateWindow(1121)</onclick>
-               </item>
-               <item id="15" description="Home Background">
-                  <label>$LOCALIZE[31028]</label>
-                  <label2>$VAR[CustomBgHome]</label2>
-                  <onclick condition="!Skin.HasSetting(CustomBg)">Skin.SetFile(CustomBgHome,.jpg|.png,special://skin/backgrounds)</onclick>
-                  <onclick condition="Skin.HasSetting(CustomBg)">Skin.Reset(CustomBgHome)</onclick>
-                  <onclick>Skin.ToggleSetting(CustomBg)</onclick>
-                  <onclick condition="Skin.HasSetting(CustomBg)">Skin.Reset(colormenu)</onclick>
-                  <onclick condition="!Skin.HasSetting(CustomBg)">Skin.ToggleSetting(colormenu)</onclick>
-               </item>
-               <item id="16" description="Custom Image for Shelf">
-                  <label>$LOCALIZE[31030]</label>
-                  <label2>$VAR[CustomImgStatus]</label2>
-                  <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetImage(ShelfCustomImage)</onclick>
-                  <onclick condition="Skin.HasSetting(CustomImage)">Skin.Reset(CustomImage)</onclick>
-                  <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetBool(CustomImage)</onclick>
-               </item>
-               <item id="6" description="Internet">
-                  <label>31061</label>
-                  <label2>$VAR[hideconnection]</label2>
-                  <onclick>Skin.ToggleSetting(hideconnection)</onclick>
-               </item>
-               <item id="17" description="Manteinance">
-                  <visible>System.HasAddon(service.clean.up)</visible>
-                  <label>31069</label>
-                  <icon>DefaultIconWarning.png</icon>
-                  <onclick>ActivateWindow(1717)</onclick>
-               </item>
-               <item id="12" description="Reset Skin">
-                  <label>31036</label>
-                  <onclick>Skin.ResetSettings</onclick>
-                  <onclick>XBMC.ReloadSkin()</onclick>
-                  <icon>DefaultIconWarning.png</icon>
-               </item>
-            </content>
+            <control type="button" id="1">
+               <width>auto</width>
+               <align>left</align>
+               <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+               <label>31062</label>
+               <label2>$INFO[Skin.String(LyricPath)]</label2>
+               <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
+            </control>
+            <control type="radiobutton" id="2">
+               <label>$LOCALIZE[31041]</label>
+               <onclick>Skin.ToggleSetting(Scrollbars_Passive)</onclick>
+               <selected>!Skin.HasSetting(Scrollbars_Passive)</selected>
+            </control>
+            <control type="radiobutton" id="3">
+               <label>$LOCALIZE[31044]</label>
+               <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
+               <selected>!Skin.HasSetting(ViewsMenuOff)</selected>
+            </control>
+            <control type="radiobutton" id="4">
+               <label>$LOCALIZE[31088]</label>
+               <onclick>Skin.ToggleSetting(scelta)</onclick>
+               <selected>Skin.HasSetting(scelta)</selected>
+            </control>
+            <control type="radiobutton" id="5">
+               <label>$LOCALIZE[31033]</label>
+               <onclick>Skin.ToggleSetting(colormenu)</onclick>
+               <selected>Skin.HasSetting(colormenu)</selected>
+            </control>
+            <control type="button" id="6">
+               <width>auto</width>
+               <align>left</align>
+               <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+               <label>$LOCALIZE[31052]</label>
+               <onclick>ActivateWindow(1117)</onclick>
+            </control>
+            <control type="button" id="8">
+               <width>auto</width>
+               <align>left</align>
+               <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+               <label>$LOCALIZE[31049] $VAR[QuitLabel]</label>
+               <onclick>ActivateWindow(1114)</onclick>
+            </control>
+            <control type="radiobutton" id="9">
+               <label>$LOCALIZE[31047]</label>
+               <onclick>Skin.ToggleSetting(HideClock)</onclick>
+               <selected>!Skin.HasSetting(HideClock)</selected>
+            </control>
+            <control type="button" id="10">
+               <width>auto</width>
+               <align>left</align>
+               <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+               <label>$LOCALIZE[31053] :   $INFO[Skin.String(MusicLink)]</label>
+               <onclick>ActivateWindow(1121)</onclick>
+            </control>
+            <control type="radiobutton" id="11">
+               <label>$LOCALIZE[31028]</label>
+               <onclick condition="!Skin.HasSetting(CustomBg)">Skin.SetFile(CustomBgHome,.jpg|.png,special://skin/backgrounds)</onclick>
+               <onclick condition="Skin.HasSetting(CustomBg)">Skin.Reset(CustomBgHome)</onclick>
+               <onclick>Skin.ToggleSetting(CustomBg)</onclick>
+               <onclick condition="Skin.HasSetting(CustomBg)">Skin.Reset(colormenu)</onclick>
+               <onclick condition="!Skin.HasSetting(CustomBg)">Skin.ToggleSetting(colormenu)</onclick>
+               <selected>Skin.HasSetting(CustomBg)</selected>
+            </control>
+            <control type="radiobutton" id="12">
+               <label>$LOCALIZE[31030]</label>
+               <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetImage(ShelfCustomImage)</onclick>
+               <onclick condition="Skin.HasSetting(CustomImage)">Skin.Reset(CustomImage)</onclick>
+               <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetBool(CustomImage)</onclick>
+               <selected>Skin.HasSetting(CustomImage)</selected>
+            </control>
+            <control type="radiobutton" id="13">
+               <label>31061</label>
+               <onclick>Skin.ToggleSetting(hideconnection)</onclick>
+               <selected>!Skin.HasSetting(hideconnection)</selected>
+            </control>
+            <control type="button" id="15">
+               <visible>System.HasAddon(service.clean.up)</visible>
+               <label>31036</label>
+               <width>auto</width>
+               <align>left</align>
+               <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+               <onclick>Skin.ResetSettings</onclick>
+               <onclick>XBMC.ReloadSkin()</onclick>
+            </control>
          </control>
       </control>
       <include>Linemiddle</include>
@@ -200,90 +109,99 @@
          <posx>270</posx>
          <posy>160</posy>
          <control type="image" description="Network">
-            <visible>Container(50).HasFocus(6)</visible>
+            <visible>Controlgroup(50).HasFocus(13)</visible>
             <include>Help_Panel</include>
             <colordiffuse>silver</colordiffuse>
             <texture>help/wireless.png</texture>
          </control>
          <control type="image" description="NetworkOFF">
-            <visible>Container(50).HasFocus(6) + Skin.HasSetting(hideconnection)</visible>
+            <visible>Controlgroup(50).HasFocus(13) + Skin.HasSetting(hideconnection)</visible>
             <include>Help_Panel</include>
             <texture>help/off.png</texture>
          </control>
          <control type="image" description="ColorMenu">
-            <visible>Container(50).HasFocus(1)</visible>
+            <visible>Controlgroup(50).HasFocus(5)</visible>
             <include>Help_Panel</include>
             <texture>help/colormenu.png</texture>
          </control>
          <control type="image" description="ColorMenuOff">
-            <visible>Container(50).HasFocus(1) + !Skin.HasSetting(colormenu)</visible>
+            <visible>Controlgroup(50).HasFocus(5) + !Skin.HasSetting(colormenu)</visible>
             <include>Help_Panel</include>
-            <texture>help/OFF.png</texture>
+            <texture>help/off.png</texture>
          </control>
          <control type="image" description="Logo">
-            <visible>Container(50).HasFocus(2) | Container(50).HasFocus(3)</visible>
+            <visible>Controlgroup(50).HasFocus(1)</visible>
             <include>Help_Panel</include>
             <texture>DefaultAddon.png</texture>
          </control>
          <control type="image" description="ScrollBars">
-            <visible>Container(50).HasFocus(4)</visible>
+            <visible>Controlgroup(50).HasFocus(2)</visible>
             <include>Help_Panel</include>
-            <texture>help/scrollbars.jpg</texture>
+            <texture>help/scrollbars.png</texture>
          </control>
          <control type="image" description="ScrollBars">
-            <visible>Container(50).HasFocus(4) + Skin.HasSetting(Scrollbars_Passive)</visible>
+            <visible>Controlgroup(50).HasFocus(2) + Skin.HasSetting(Scrollbars_Passive)</visible>
             <include>Help_Panel</include>
-            <texture>help/OFF.png</texture>
+            <texture>help/off.png</texture>
          </control>
          <control type="image" description="Menuviews">
-            <visible>Container(50).HasFocus(5)</visible>
+            <visible>Controlgroup(50).HasFocus(3)</visible>
             <include>Help_Panel</include>
-            <texture>help/OptionsMenu.jpg</texture>
+            <texture>help/optionsmenu.png</texture>
          </control>
          <control type="image" description="Menuviews">
-            <visible>Container(50).HasFocus(5) + Skin.HasSetting(ViewsMenuOff)</visible>
+            <visible>Controlgroup(50).HasFocus(3) + Skin.HasSetting(ViewsMenuOff)</visible>
             <include>Help_Panel</include>
-            <texture>help/OFF.png</texture>
+            <texture>help/off.png</texture>
          </control>
-         <control type="image" description="HomePageCustomizer">
-            <visible>Container(50).HasFocus(8)</visible>
+         <control type="image" description="shelf cinema">
+            <visible>Controlgroup(50).HasFocus(4)</visible>
             <include>Help_Panel</include>
-            <texture>help/Homemenu.jpg</texture>
+            <texture>help/shelf.png</texture>
          </control>
-         <control type="image" description="quits">
-            <visible>Container(50).HasFocus(9)</visible>
+		 <control type="image" description="HomePageCustomizer">
+            <visible>Controlgroup(50).HasFocus(6)</visible>
             <include>Help_Panel</include>
-            <colordiffuse>silver</colordiffuse>
-            <texture>icons/Quits.png</texture>
+            <texture>help/homemenu.png</texture>
+         </control>
+		 <control type="image" description="HomePageCustomizer">
+            <visible>Controlgroup(50).HasFocus(6)</visible>
+            <include>Help_Panel</include>
+            <texture>help/homemenu.png</texture>
+         </control>
+		 <control type="image" description="quits">
+            <visible>Controlgroup(50).HasFocus(8)</visible>
+            <include>Help_Panel</include>
+            <texture>help/menu$INFO[Skin.String(shutdown)].png</texture>
          </control>
          <control type="image" description="clock">
-            <visible>Container(50).HasFocus(11)</visible>
+            <visible>Controlgroup(50).HasFocus(9)</visible>
             <include>Help_Panel</include>
-            <texture>help/Clock.jpg</texture>
+            <texture>help/clock.png</texture>
          </control>
          <control type="image" description="clock">
-            <visible>Container(50).HasFocus(11) + Skin.HasSetting(HideClock)</visible>
+            <visible>Controlgroup(50).HasFocus(9) + Skin.HasSetting(HideClock)</visible>
             <include>Help_Panel</include>
-            <texture>help/Off.png</texture>
+            <texture>help/off.png</texture>
          </control>
          <control type="image" description="reset">
-            <visible>Container(50).HasFocus(12) | Container(50).HasFocus(17)</visible>
+            <visible>Controlgroup(50).HasFocus(15) | Controlgroup(50).HasFocus(14)</visible>
             <include>Help_Panel</include>
-            <texture>help/Warning.png</texture>
+            <texture>help/warning.png</texture>
          </control>
          <control type="image" description="shelf">
-            <visible>Container(50).HasFocus(14)</visible>
+            <visible>Controlgroup(50).HasFocus(10)</visible>
             <include>Help_Panel</include>
             <colordiffuse>silver</colordiffuse>
             <texture>icons/music.png</texture>
          </control>
          <control type="image" description="shelf">
-            <visible>Container(50).HasFocus(15)</visible>
+            <visible>Controlgroup(50).HasFocus(11)</visible>
             <include>Help_Panel</include>
             <texture>$INFO[Skin.String(CustomBgHome)]</texture>
          </control>
          <control type="image" description="icon shelf">
-            <visible>Container(50).HasFocus(16)</visible>
+            <visible>Controlgroup(50).HasFocus(12)</visible>
             <include>Help_Panel</include>
             <texture>$VAR[ShelfLogo]</texture>
          </control>

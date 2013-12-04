@@ -6,8 +6,8 @@
    <views>50,52,53,500</views>
     <!--
   52 Sio2
-  51 Big List
-  50 List
+  50 Big List
+  missing 50 List
   53 Icons
   500 Fanart
   -->
@@ -94,7 +94,7 @@
             </control>
             <control type="radiobutton" id="600" description="sio2">
                <include>DialogButt</include>
-               <enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>
+               <enable>!Container.Content(files) + !Container.Content(songs) + !IsEmpty(Container.FolderPath)</enable>
                <onclick>Container.SetViewMode(52)</onclick>
                <selected>Control.IsVisible(52)</selected>
                <label>SiO2</label>
@@ -102,19 +102,19 @@
             <control type="radiobutton" id="601" description="View Big List">
                <include>DialogButt</include>
                <enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>
-               <onclick>Container.SetViewMode(51)</onclick>
-               <selected>Control.IsVisible(51)</selected>
+               <onclick>Container.SetViewMode(50)</onclick>
+               <selected>Control.IsVisible(50)</selected>
                <label>$LOCALIZE[537]</label>
             </control>
             <control type="radiobutton" id="603" description="Icons">
-               <enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>
+               <enable>!Container.Content(files) + !Container.Content(songs) + !IsEmpty(Container.FolderPath)</enable>
                <include>DialogButt</include>
                <onclick>Container.SetViewMode(53)</onclick>
                <selected>Control.IsVisible(53)</selected>
                <label>$LOCALIZE[536]</label>
             </control>
             <control type="radiobutton" id="605" description="Fanart">
-               <enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>
+               <enable>!Container.Content(files) + !Container.Content(songs) + !IsEmpty(Container.FolderPath)</enable>
                <include>DialogButt</include>
                <onclick>Container.SetViewMode(500)</onclick>
                <selected>Control.IsVisible(500)</selected>

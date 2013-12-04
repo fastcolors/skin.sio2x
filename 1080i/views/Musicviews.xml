@@ -4,13 +4,13 @@
    	  <!--LIST-->
       <control type="group" description="Base Music List">
          <visible>Control.IsVisible(50)</visible>
-         <include>BlackBackground</include>
+		 <include>BlackBackground</include>
          <control type="group">
-            <visible>!Container.content(musicvideos)</visible>
+            <visible>![Container.content(musicvideos) | Container.content(songs]</visible>
             <include>left_Panel_square</include>
          </control>
          <control type="group">
-            <visible>Container.content(musicvideos)</visible>
+            <visible>Container.content(musicvideos) | Container.content(songs)</visible>
             <include>left_Panel_square</include>
             <include>MusicInfo</include>
          </control>
@@ -18,7 +18,7 @@
             <posx>960</posx>
             <posy>131</posy>
             <control type="fixedlist" id="50">
-               <visible>!Container.content(songs)</visible>
+               <!--visible>!Container.content(songs)</visible-->
                <width>920</width>
                <height>888</height>
                <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
@@ -216,11 +216,11 @@
          <control type="fixedlist" id="52">
             <visible>!Container.Content(songs)</visible>
             <posx>60</posx>
-            <posy>130</posy>
+            <posy>60</posy>
+            <width>1820</width>
+            <height>970</height>
             <visible>!container.content(Sets)</visible>
             <visible>!IsEmpty(Container.FolderPath)</visible>
-            <width>1820</width>
-            <height>810</height>
             <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
             <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
             <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>

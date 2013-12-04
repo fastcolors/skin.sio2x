@@ -6,8 +6,8 @@
    <views>52,51,50,53,55,500</views>
    <!--
   52 Sio2
-  51 Big List
-  50 List
+  50 Big List
+  51 List
   53 Icons
   500 Fanart
   55 Banners
@@ -116,14 +116,14 @@
             <control type="radiobutton" id="601" description="View Big List">
                <include>DialogButt</include>
                <enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>
-               <onclick>Container.SetViewMode(51)</onclick>
-               <selected>Control.IsVisible(51)</selected>
+               <onclick>Container.SetViewMode(50)</onclick>
+               <selected>Control.IsVisible(50)</selected>
                <label>$LOCALIZE[537]</label>
             </control>
             <control type="radiobutton" id="602" description="List">
                <include>DialogButt</include>
-               <onclick>Container.SetViewMode(50)</onclick>
-               <selected>Control.IsVisible(50)</selected>
+               <onclick>Container.SetViewMode(51)</onclick>
+               <selected>Control.IsVisible(51)</selected>
                <label>$LOCALIZE[535]</label>
             </control>
             <control type="radiobutton" id="603" description="Icons">

@@ -3,8 +3,6 @@
   <defaultcontrol always="true">2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
 <backgroundcolor>0xffffffff</backgroundcolor>
-
-
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
@@ -88,6 +86,7 @@
 		  <aspectratio>keep</aspectratio>
 		  </control>
 	<control type="image">
+	<top>100</top>
 	<posx>959</posx>
 	<width>1</width>
 	<height>1080</height>

@@ -184,8 +184,8 @@ msgid "Shelf items"
 msgstr "Shelf items"
 
 msgctxt "#31041"
-msgid "Scrollbars"
-msgstr "Scrollbars"
+msgid "Active  Scrollbars"
+msgstr "Active Scrollbars"
 
 msgctxt "#31042"
 msgid "Active"
@@ -216,8 +216,8 @@ msgid "Recommended"
 msgstr "Recommended"
 
 msgctxt "#31049"
-msgid "Home menu Power button function"
-msgstr "Home menu Power button function"
+msgid "Select Power icon function - Now Set to:"
+msgstr "Select Power icon function - Now Set to:"
 
 msgctxt "#31050"
 msgid "Choose from menu"

@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="129">
   <defaultcontrol always="true">10</defaultcontrol>
-  <animation effect="fade" time="400">WindowOpen</animation>
-  <animation effect="fade" time="400">WindowClose</animation>
+  <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
     <control type="image">
-      <posx>0</posx>
-      <posy>0</posy>
       <width>1920</width>
       <height>1080</height>
-      <texture>images/white.png</texture>
+      <texture>images/White.png</texture>
       <animation effect="fade" time="200">WindowOpen</animation>
     </control>
-    <!--control type="image">
-            <description>background image</description>
-            <posx>-15</posx>
-            <posy>-15</posy>
-            <width>540</width>
-            <height>375</height>
-            <texture>dialog-panel2.png</texture>
-        </control-->
     <control type="label" id="2">
       <description>Heading Label</description>
       <posx>450</posx>
