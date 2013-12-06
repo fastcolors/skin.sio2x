@@ -359,8 +359,10 @@
     <orientation>horizontal</orientation>
     <scrolltime>400</scrolltime>
     <itemlayout condition="Library.HasContent(TVShows)" height="357" width="480">
+	<control type="group">
+	 <animation effect="zoom" condition="true" start="100" end="90" center="240,0">Conditional</animation>
       <control type="image" description="Reflection">
-        <posx>43</posx>
+        <centerx>240</centerx>
         <top>330</top>
         <width>393</width>
         <height>220</height>
@@ -368,19 +370,19 @@
         <aspectratio scalediffuse="false">scale</aspectratio>
       </control>
       <control type="image">
-        <posx>43</posx>
-        <top>110</top>
-        <width>393</width>
-        <height>220</height>
+        <centerx>240</centerx>
+        <top>128</top>
+        <width>433</width>
+        <height>242</height>
         <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
         <aspectratio scalediffuse="false">scale</aspectratio>
       </control>
       <control type="group">
         <control type="image">
-          <posx>43</posx>
+         <centerx>240</centerx>
           <top>35</top>
-          <width>393</width>
-          <height>75</height>
+          <width>433</width>
+          <height>93</height>
           <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.label2]</texture>
         </control>
       </control>
@@ -388,34 +390,34 @@
         <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
         <control type="label">
           <posx>240</posx>
-          <top>290</top>
+           <top>330</top>
           <width>375</width>
           <height>36</height>
-          <font>size22</font>
+          <font>size26</font>
           <textcolor>white</textcolor>
+		  <shadowcolor>black</shadowcolor>
           <label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>
           <align>center</align>
         </control>
       </control>
+	  </control>
     </itemlayout>
     <focusedlayout condition="Library.HasContent(TVShows)" height="357" width="480">
       <control type="group">
-	  <animation effect="zoom" end="110" center="240,0" time="200">Focus</animation>
-	  <animation effect="zoom" start="110" end="100" center="240,0" time="100">unFocus</animation>
+	  <animation effect="zoom" start="90" end="100" center="240,0" time="200">Focus</animation>
+	  <animation effect="zoom" start="100" end="90" center="240,0" time="100">unFocus</animation>
 	  <control type="image">
 		<visible>Control.HasFocus(312)</visible>
 		<animation effect="fade" start="100" end="0" time="20">unFocus</animation>
           <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
-		<posx>-70</posx>
-		<top>-110</top>
-          <width>620</width>
-          <height>520</height>
+		<centerx>240</centerx>
+		<top>-90</top>
+          <width>660</width>
+          <height>540</height>
           <texture>images/spotlight.png</texture>
         </control>
-      <control type="image" description="Reflection">
-        <animation effect="fade" start="100" end="0" time="400">focus</animation>
-        <animation effect="fade" start="0" end="100" time="400">unfocus</animation>
-        <posx>43</posx>
+     <control type="image" description="Reflection">
+        <centerx>240</centerx>
         <top>330</top>
         <width>393</width>
         <height>220</height>
@@ -423,20 +425,19 @@
         <aspectratio scalediffuse="false">scale</aspectratio>
       </control>
       <control type="image">
-        <posx>43</posx>
-        <top>110</top>
-        <width>393</width>
-        <height>220</height>
+        <centerx>240</centerx>
+        <top>128</top>
+        <width>433</width>
+        <height>242</height>
         <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
         <aspectratio scalediffuse="false">scale</aspectratio>
       </control>
       <control type="group">
-        <visible>!IsEmpty(ListItem.Label2)</visible>
         <control type="image">
-          <posx>43</posx>
+         <centerx>240</centerx>
           <top>35</top>
-          <width>393</width>
-          <height>75</height>
+          <width>433</width>
+          <height>93</height>
           <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.label2]</texture>
         </control>
       </control>
@@ -444,11 +445,12 @@
         <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
         <control type="label">
           <posx>240</posx>
-          <top>290</top>
+          <top>330</top>
           <width>375</width>
           <height>36</height>
-          <font>size22</font>
+          <font>size26</font>
           <textcolor>white</textcolor>
+		  <shadowcolor>black</shadowcolor>
           <label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>
           <align>center</align>
         </control>
@@ -478,7 +480,7 @@
       <posx>110</posx>
       <top>504</top>
       <width>100</width>
-      <height>18</height>
+      <height>33</height>
       <texture>images/dockfocus.png</texture>
       <animation effect="fade" time="220">VisibleChange</animation>
       <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
@@ -495,7 +497,7 @@
       <posx>190</posx>
       <top>504</top>
       <width>100</width>
-      <height>18</height>
+      <height>33</height>
       <texture>images/dockfocus.png</texture>
       <aspectratio>stretch</aspectratio>
       <animation effect="fade" time="220">VisibleChange</animation>
@@ -1498,7 +1500,7 @@
         <posx>142</posx>
         <top>504</top>
         <width>100</width>
-        <height>18</height>
+        <height>33</height>
         <texture>images/dockfocus.png</texture>
         <aspectratio>stretch</aspectratio>
         <animation effect="fade" time="220">VisibleChange</animation>
@@ -1677,7 +1679,7 @@
         <posx>142</posx>
         <top>504</top>
         <width>100</width>
-        <height>18</height>
+        <height>33</height>
         <texture>images/dockfocus.png</texture>
         <aspectratio>stretch</aspectratio>
         <animation effect="fade" time="220">VisibleChange</animation>
@@ -1817,7 +1819,7 @@
         <posx>110</posx>
         <top>504</top>
         <width>100</width>
-        <height>18</height>
+        <height>33</height>
         <texture>images/dockfocus.png</texture>
         <aspectratio>stretch</aspectratio>
         <animation effect="fade" time="220">VisibleChange</animation>
@@ -1976,7 +1978,7 @@
         <posx>142</posx>
         <top>504</top>
         <width>100</width>
-        <height>18</height>
+        <height>33</height>
         <texture>images/dockfocus.png</texture>
         <aspectratio>stretch</aspectratio>
         <animation effect="fade" time="220">VisibleChange</animation>
@@ -2241,7 +2243,7 @@
         <posx>110</posx>
         <top>504</top>
         <width>100</width>
-        <height>18</height>
+        <height>33</height>
         <texture>images/dockfocus.png</texture>
         <aspectratio>stretch</aspectratio>
         <animation effect="fade" time="220">VisibleChange</animation>
