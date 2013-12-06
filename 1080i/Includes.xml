@@ -15,7 +15,29 @@
   </include>
    <include name="9000slide">
     <animation effect="slide" start="520,0" end="0,0" time="300" reversible="false">visiblechange</animation>
-  
+  </include>
+   <include name="BlackBackground">
+    <control type="image" description="Default BG">
+      <width>1920</width>
+      <height>1080</height>
+	  <texture>images/white.png</texture>
+	  <colordiffuse>FFFFFFFF</colordiffuse>
+    </control>
+	<control type="image" description="Default BG">
+	<visible>!Window.IsActive(Home.xml)</visible>
+      <width>1920</width>
+      <height>1080</height>
+	  <texture background="true">$VAR[bgimg]</texture>
+	  <aspectratio align="left">scale</aspectratio>
+	  <colordiffuse>33FFFFFF</colordiffuse>
+    </control>
+	<control type="image" description="Default BG">
+	<visible>Window.IsActive(Home.xml)</visible>
+      <width>1920</width>
+      <height>1080</height>
+	  <texture background="true">$VAR[bgimg]</texture>
+	  <colordiffuse>77FFFFFF</colordiffuse>
+    </control>
   </include>
   <include name="OpenClose">
     <animation effect="fade" time="150">WindowOpen</animation>
@@ -71,7 +93,7 @@
     <font>size42</font>
   </include>
   <include name="HeadingL">
-    <posx>60</posx>
+    <centerx>480</centerx>
     <top>20</top>
     <align>left</align>
     <aligny>center</aligny>
@@ -81,9 +103,9 @@
     <font>size42</font>
   </include>
   <include name="HeadingR">
-    <posx>960</posx>
-    <top>60</top>
-    <width>930</width>
+    <centerx>1440</centerx>
+    <top>50</top>
+    <width>960</width>
     <height>75</height>
     <align>center</align>
     <aligny>bottom</aligny>
@@ -96,32 +118,7 @@
     <width>1920</width>
     <height>1080</height>
   </include>
-  <include name="Header">
-    <control type="group">
-      <visible>![Window.IsActive(home) | Window.IsActive(LoginScreen.xml)]</visible>
-      <control type="label" description="Clock other windows">
-        <visible>!Skin.HasSetting(HideClock)</visible>
-        <posx>30r</posx>
-        <top>3</top>
-        <width>195</width>
-        <height>75</height>
-        <align>right</align>
-        <aligny>center</aligny>
-        <font>size30</font>
-        <textcolor>White</textcolor>
-        <label>$INFO[System.Time]</label>
-      </control>
-      <control type="label" description="ROOTLABEL">
-        <align>center</align>
-        <aligny>center</aligny>
-        <width>1920</width>
-        <height>75</height>
-        <textcolor>black</textcolor>
-        <font>size42</font>
-        <label>$VAR[RootLabel]</label>
-      </control>
-    </control>
-  </include>
+ 
   <include name="WindowsTopInfos">
     <control type="group">
 	<control type="image">
@@ -151,26 +148,28 @@
         <label>$INFO[System.Time]</label>
       </control>
     </control>
+<!--VIEWTOPINFOS-->
     <control type="grouplist">
-      <visible>![Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59) | Control.IsVisible(500) | Control.IsVisible(510) | Control.IsVisible(501) | Control.IsVisible(502) | [Window.IsActive(myPVR) + Control.IsVisible(10)] | [Window.IsActive(myPVR) + Control.IsVisible(15)] | [Window.IsActive(myPVR) + Control.IsVisible(14)]]</visible>
-      <animation effect="slide" end="12,-65" condition="Control.IsVisible(52)">Conditional</animation>
-	  <posx>990</posx>
-      <top>60</top>
-      <width>940</width>
+	 <animation condition="Control.IsVisible(52)" effect="slide" end="190,40">Conditional</animation>
+	 <animation condition="Control.IsVisible(53)" effect="slide" end="-480,0">Conditional</animation>
+	 <animation condition="Control.IsVisible(55)" effect="slide" end="-1250,0">Conditional</animation>
+	 <animation condition="Control.IsVisible(500)" effect="slide" end="-1250,0">Conditional</animation>
+	 <animation condition="Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]" effect="slide" end="-1250,0">Conditional</animation>
+      <centerx>1440</centerx>
+      <width>580</width>
       <height>75</height>
       <align>center</align>
       <aligny>bottom</aligny>
       <orientation>horizontal</orientation>
       <control type="label" id="7777" description="Heading">
-        <width min="60" max="750">auto</width>
+        <width>auto</width>
         <height>75</height>
         <font>Size42</font>
-        <textcolor>black</textcolor>
         <scroll>false</scroll>
         <label>$VAR[RootLabel]</label>
       </control>
       <control type="label" description="Number of files">
-        <visible>!IsEmpty(Control.GetLabel(7777))</visible>
+        <visible>!StringCompare(Container.NumItems,0)</visible>
         <width min="60" max="120">auto</width>
         <height>81</height>
         <font>size26</font>
@@ -178,96 +177,21 @@
         <label>$INFO[Container.NumItems,  (,)]</label>
       </control>
     </control>
-    <control type="grouplist">
-      <visible>Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59) | Control.IsVisible(500) | Control.IsVisible(501) | Control.IsVisible(510) | Control.IsVisible(502) | [Window.IsActive(myPVR) + Control.IsVisible(10)] | [Window.IsActive(myPVR) + Control.IsVisible(14)] | [Window.IsActive(myPVR) + Control.IsVisible(15)]</visible>
-      <posx>33</posx>
-      <top>0</top>
-      <width>1230</width>
-      <height>75</height>
-      <align>left</align>
-      <aligny>bottom</aligny>
-      <orientation>horizontal</orientation>
-      <control type="label" id="7777" description="Heading">
-        <width min="60" max="1080">auto</width>
-        <height>75</height>
-        <font>size42</font>
-        <textcolor>black</textcolor>
-        <scroll>false</scroll>
-        <label>$VAR[RootLabel]</label>
-      </control>
-      <control type="label" description="Number of files">
-        <visible>!IsEmpty(Control.GetLabel(7777))</visible>
-        <width min="60" max="120">auto</width>
-        <height>81</height>
-        <font>size26</font>
-        <textcolor>gray</textcolor>
-        <label>$INFO[Container.NumItems,  (,)]</label>
-      </control>
-    </control>
+<!--SCROLLLETTER-->	
     <control type="group" description="Scroll letter">
-      <visible>Container.Scrolling + !Control.IsVisible(53) + !Control.IsVisible(500)</visible>
-      <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
-      <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
-      <control type="image">
-        <posx>1388</posx>
-        <top>975</top>
-        <width>81</width>
-        <height>81</height>
-        <texture border="12">images/SortLetterBG.png</texture>
-      </control>
+      <visible>Container.Scrolling + Control.HasFocus(60)</visible>
+      <animation effect="fade" start="0" end="60" time="60" delay="0" reversible="true">Visible</animation>
+      <animation effect="fade" start="60" end="0" time="160" delay="260" reversible="true">Hidden</animation>
       <control type="label">
-        <posx>1388</posx>
-        <top>975</top>
-        <width>81</width>
-        <height>81</height>
+        <width>1920</width>
+        <height>1080</height>
         <align>center</align>
-        <font>size38</font>
+		<aligny>center</aligny>
+        <font>giant</font>
+		<textcolor>white</textcolor>
         <label>$INFO[ListItem.SortLetter]</label>
       </control>
     </control>
-    <control type="group" description="Scroll letter">
-      <visible>Container.Scrolling + Control.IsVisible(500) + Control.HasFocus(60)</visible>
-      <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
-      <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
-      <control type="image">
-        <posx>920</posx>
-        <top>975</top>
-        <width>81</width>
-        <height>81</height>
-        <texture border="12">images/SortLetterBG.png</texture>
-      </control>
-      <control type="label">
-        <posx>920</posx>
-        <top>975</top>
-        <width>81</width>
-        <height>81</height>
-        <align>center</align>
-        <font>size38</font>
-        <label>$INFO[ListItem.SortLetter]</label>
-      </control>
-    </control>
-    <control type="group" description="Scroll letter">
-      <visible>Container.Scrolling + Control.IsVisible(53)</visible>
-      <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
-      <animation effect="fade" start="100" end="0" time="150" delay="250" reversible="false">Hidden</animation>
-      <control type="image">
-        <posx>1800</posx>
-        <top>499</top>
-        <width>81</width>
-        <height>81</height>
-        <texture border="12">images/SortLetterBG.png</texture>
-      </control>
-      <control type="label">
-        <posx>1800</posx>
-        <top>499</top>
-        <width>81</width>
-        <height>81</height>
-        <align>center</align>
-        <font>size38</font>
-        <label>$INFO[ListItem.SortLetter]</label>
-      </control>
-    </control>
-    
     <!--DA FARE-->
     <control type="group" description="Player Info">
       <visible>!Control.HasFocus(340) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
@@ -278,7 +202,7 @@
       <control type="image" description="Playing BG">
         <width>390</width>
         <height>105</height>
-        <texture border="14">musicOSD/back.png</texture>
+        <texture border="50">musicOSD/back.png</texture>
       </control>
       <control type="group">
         <control type="image">
@@ -366,29 +290,6 @@
     <height>68</height>
     <aspectratio aligny="center" align="left">stretch</aspectratio>
   </include>
-  <include name="BlackBackground">
-    <control type="image" description="Default BG">
-      <width>1920</width>
-      <height>1080</height>
-	  <texture>images/white.png</texture>
-	  <colordiffuse>FFFFFFFF</colordiffuse>
-    </control>
-	<control type="image" description="Default BG">
-	<visible>!Window.IsActive(Home.xml)</visible>
-      <width>1920</width>
-      <height>1080</height>
-	  <texture background="true">$VAR[bgimg]</texture>
-	  <aspectratio align="left">scale</aspectratio>
-	  <colordiffuse>33FFFFFF</colordiffuse>
-    </control>
-	<control type="image" description="Default BG">
-	<visible>Window.IsActive(Home.xml)</visible>
-      <width>1920</width>
-      <height>1080</height>
-	  <texture background="true">$VAR[bgimg]</texture>
-	  <colordiffuse>77FFFFFF</colordiffuse>
-    </control>
-  </include>
   <include name="PVRinfos">
       <control type="image">
         <description>background image</description>
@@ -403,14 +304,14 @@
           <top>110</top>
           <width>1160</width>
           <height>1</height>
-          <texture>images/Line.png</texture>
+          <texture>lines/Line.png</texture>
         </control>
         <control type="image">
           <posx>0</posx>
           <top>370</top>
           <width>1160</width>
           <height>1</height>
-          <texture>images/Line.png</texture>
+          <texture>lines/Line.png</texture>
         </control>
       <control type="label">
         <description>header label</description>

@@ -59,7 +59,7 @@
                   <posx>1280</posx>
                   <width>440</width>
                   <height>1</height>
-                  <texture>images/LineL.png</texture>
+                  <texture>lines/LineL.png</texture>
                </control>
             </itemlayout>
             <focusedlayout height="160">
@@ -91,7 +91,7 @@
                   <posx>1280</posx>
                   <width>440</width>
                   <height>1</height>
-                  <texture>images/LineL.png</texture>
+                  <texture>lines/LineL.png</texture>
                </control>
             </focusedlayout>
          </control>
@@ -134,13 +134,13 @@
             <top>-100</top>
             <height>1280</height>
             <width>1</width>
-            <texture>images/LineV.png</texture>
+            <texture>lines/LineV.png</texture>
          </control>
          <control type="image">
             <top>600</top>
             <height>1</height>
             <width>1340</width>
-            <texture>images/LineR.png</texture>
+            <texture>lines/LineR.png</texture>
          </control>
          <control type="group" description="EPISODES BLADE">
             <visible>Container.Content(episodes)</visible>
@@ -433,7 +433,7 @@
             <top>139</top>
             <width>1748</width>
             <height>1</height>
-            <texture>images/LineL.png</texture>
+            <texture>lines/LineL.png</texture>
             <aspectratio>stretch</aspectratio>
          </control>
          <control type="label" description="Media details">
@@ -596,7 +596,7 @@
                <top>577</top>
                <width>1890</width>
                <height>1</height>
-               <texture>images/LineST.png</texture>
+               <texture>lines/Line.png</texture>
                <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" description="Line Split">
@@ -604,7 +604,7 @@
                <top>510</top>
                <width>1890</width>
                <height>1</height>
-               <texture>images/LineST.png</texture>
+               <texture>lines/Line.png</texture>
                <aspectratio>stretch</aspectratio>
             </control>
             <control type="textbox">

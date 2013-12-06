@@ -100,13 +100,11 @@
             </content>
          </control>
       </control>
-      <control type="group" description="Left panel">
-         <posx>500</posx>
          <control type="image" description="Logo">
             <visible>!Container(500).HasFocus(2)</visible>
             <animation effect="fade" time="100">VisibleChange</animation>
-            <centerx>710</centerx>
-			<centery>300</centery>
+            <centerx>1210</centerx>
+			<top>100</top>
             <width>500</width>
             <height>500</height>
             <aspectratio align="center">keep</aspectratio>
@@ -115,19 +113,16 @@
          <control type="image" description="Logo">
             <visible>Container(500).HasFocus(2)</visible>
             <animation effect="fade" time="100">VisibleChange</animation>
-             <centerx>710</centerx>
-			<centery>300</centery>
+             <centerx>1210</centerx>
+			<top>80</top>
             <width>500</width>
             <height>500</height>
-            <aspectratio align="center">keep</aspectratio>
+            <aspectratio>keep</aspectratio>
             <texture background="true">images/Sio2Logo.png</texture>
          </control>
-      </control>
-      <control type="group" description="Items description">
-         <posx>500</posx>
-         <top>550</top>
          <control type="textbox" description="infos">
-			<centerx>710</centerx>
+			<centerx>1210</centerx>
+			<top>550</top>
             <width>660</width>
             <height>500</height>
             <font>size33</font>
@@ -136,8 +131,6 @@
             <align>center</align>
             <label>$VAR[settingsmain]</label>
          </control>
-
-      </control>
       <control type="image">
          <posx>500</posx>
          <height>1080</height>

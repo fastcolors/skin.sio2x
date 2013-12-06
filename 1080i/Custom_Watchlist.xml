@@ -16,7 +16,7 @@
       <top>1007</top>
       <height>1</height>
       <width>2320</width>
-      <texture>images/Line.png</texture>
+      <texture>lines/Line.png</texture>
     </control>
     <control type="list" id="222">
       <visible>true</visible>
@@ -136,14 +136,14 @@
                   <top>60</top>
                   <height>1</height>
                   <width>1920</width>
-                  <texture>images/Line.png</texture>
+                  <texture>lines/Line.png</texture>
                 </control>
                 <control type="image">
                   <posx>400</posx>
                   <top>490</top>
                   <height>1</height>
                   <width>1430</width>
-                  <texture>images/LineL.png</texture>
+                  <texture>lines/LineL.png</texture>
                 </control>
                 <control type="textbox">
                   <description>plot</description>

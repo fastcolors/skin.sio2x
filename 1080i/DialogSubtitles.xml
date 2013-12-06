@@ -44,14 +44,14 @@
           <top>280</top>
           <width>1460</width>
           <height>1</height>
-          <texture>images/Line.png</texture>
+          <texture>lines/Line.png</texture>
         </control>
         <control type="image" description="linebottom">
           <posx>120</posx>
           <top>850</top>
           <width>1460</width>
           <height>1</height>
-          <texture>images/Line.png</texture>
+          <texture>lines/Line.png</texture>
         </control>
         <control type="label" description="Local subtitle available">
           <posx>200</posx>
@@ -227,7 +227,7 @@
         <top>258</top>
         <width>450</width>
         <height>1</height>
-        <texture>images/Line.png</texture>
+        <texture>lines/Line.png</texture>
       </control>
       <control type="list" id="150">
         <posx>2000</posx>

@@ -22,7 +22,7 @@
         <top>270</top>
         <width>1920</width>
         <height>1</height>
-        <texture>images/Line1.png</texture>
+        <texture>lines/Line1.png</texture>
       </control>
       <control type="group">
         <posx>480</posx>

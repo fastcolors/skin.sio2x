@@ -26,7 +26,7 @@
           <top>200</top>
           <width>1620</width>
           <height>1</height>
-          <texture>images/Line.png</texture>
+          <texture>lines/Line.png</texture>
           <aspectratio>stretch</aspectratio>
         </control>
 		<control type="image">
@@ -34,7 +34,7 @@
           <top>790</top>
           <width>1620</width>
           <height>1</height>
-          <texture>images/Line.png</texture>
+          <texture>lines/Line.png</texture>
           <aspectratio>stretch</aspectratio>
         </control>
 		<control type="image">

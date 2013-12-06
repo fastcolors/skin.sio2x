@@ -23,21 +23,21 @@
         <top>220</top>
         <width>1200</width>
         <height>1</height>
-        <texture>images/Line.png</texture>
+        <texture>lines/Line.png</texture>
       </control>
 	  <control type="image" description="linetop2">
         <posx>360</posx>
         <top>280</top>
         <width>1200</width>
         <height>1</height>
-        <texture>images/Line.png</texture>
+        <texture>lines/Line.png</texture>
       </control>
 	  <control type="image" description="linebott">
         <posx>360</posx>
         <top>850</top>
         <width>1200</width>
         <height>1</height>
-        <texture>images/Line.png</texture>
+        <texture>lines/Line.png</texture>
       </control>
       <control type="label" id="25">
         <description>Title</description>

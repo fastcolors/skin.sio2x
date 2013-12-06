@@ -53,21 +53,21 @@
         <top>80</top>
         <height>1</height>
         <width>1120</width>
-        <texture>images/Line.png</texture>
+        <texture>lines/Line.png</texture>
       </control>
       <control type="image" description="Separator">
         <posx>400</posx>
         <top>260</top>
         <height>1</height>
         <width>1120</width>
-        <texture>images/Line.png</texture>
+        <texture>lines/Line.png</texture>
       </control>
       <control type="image" description="Separator">
         <posx>400</posx>
         <top>605</top>
         <height>1</height>
         <width>1120</width>
-        <texture>images/Line.png</texture>
+        <texture>lines/Line.png</texture>
       </control>
       <control type="group">
         <posx>0</posx>

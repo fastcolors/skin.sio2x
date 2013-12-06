@@ -24,34 +24,34 @@
         <top>100</top>
         <width>2</width>
         <height>750</height>
-        <texture>images/LineV.png</texture>
+        <texture>lines/LineV.png</texture>
       </control>
       <control type="image">
         <posx>1064</posx>
         <top>100</top>
         <width>2</width>
         <height>750</height>
-        <texture>images/LineV.png</texture>
+        <texture>lines/LineV.png</texture>
       </control>
 	  <control type="image">
         <posx>1534</posx>
         <top>100</top>
         <width>2</width>
         <height>750</height>
-        <texture>images/LineV.png</texture>
+        <texture>lines/LineV.png</texture>
       </control>
 	  <control type="image">
         <posx>120</posx>
         <top>190</top>
         <width>1680</width>
         <height>1</height>
-        <texture>images/Line.png</texture>
+        <texture>lines/Line.png</texture>
       </control>
     <control type="group">
 	<posx>15</posx>
       <control type="group">
         <control type="label">
-          <description>header</description>
+          <description>WindowsTopInfos</description>
           <posx>90</posx>
           <top>90</top>
           <width>1740</width>

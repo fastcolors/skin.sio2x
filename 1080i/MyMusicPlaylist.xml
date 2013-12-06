@@ -61,7 +61,7 @@
                      <control type="image">
                         <width>920</width>
                         <height>1</height>
-                        <texture>images/Line.png</texture>
+                        <texture>lines/Line.png</texture>
                      </control>
                   </itemlayout>
                   <focusedlayout width="890" height="111">
@@ -104,7 +104,7 @@
                      <control type="image">
                         <width>900</width>
                         <height>1</height>
-                        <texture>images/Line.png</texture>
+                        <texture>lines/Line.png</texture>
                      </control>
                   </focusedlayout>
                </control>
@@ -121,7 +121,7 @@
             <posx>960</posx>
             <width>1</width>
             <height>1080</height>
-            <texture>images/LineV.png</texture>
+            <texture>lines/LineV.png</texture>
          </control>
          <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>

@@ -44,7 +44,7 @@
             <control type="radiobutton" id="5">
                <label>$LOCALIZE[31033]</label>
                <onclick>Skin.ToggleSetting(colormenu)</onclick>
-               <selected>Skin.HasSetting(colormenu)</selected>
+               <selected>!Skin.HasSetting(colormenu)</selected>
             </control>
             <control type="button" id="6">
                <width>auto</width>
@@ -221,7 +221,7 @@
          <top>540</top>
          <height>1</height>
          <width>660</width>
-         <texture>images/Line.png</texture>
+         <texture>lines/Line.png</texture>
       </control>
       <control type="textbox" description="HelpDetails">
          <posx>170</posx>

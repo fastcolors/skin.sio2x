@@ -3,16 +3,11 @@
   <defaultcontrol always="true">450</defaultcontrol>
   <allowoverlay>no</allowoverlay>
 <backgroundcolor>0xffffffff</backgroundcolor>
-
-
   <onunload>RunScript(script.favourites)</onunload>
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
-    <control type="label" description="Header label">
-      <include>HeadingR</include>
-      <label>1036</label>
-    </control>
+    <include>WindowsTopInfos</include>
     <control type="group">
       <posx>960</posx>
       <top>131</top>

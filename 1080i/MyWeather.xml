@@ -181,7 +181,7 @@
 		<posx>250</posx>
 		<width>5</width>
 		<height>500</height>
-		<texture>images/LineV.png</texture>
+		<texture>lines/LineV.png</texture>
 		</control>
       </itemlayout>
       <focusedlayout width="250">
@@ -242,7 +242,7 @@
 		<posx>250</posx>
 		<width>5</width>
 		<height>500</height>
-		<texture>images/LineV.png</texture>
+		<texture>lines/LineV.png</texture>
 		</control>
       </focusedlayout>
       <content>

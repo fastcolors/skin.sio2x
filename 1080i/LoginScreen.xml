@@ -106,6 +106,6 @@
         <label>$LOCALIZE[13009]</label>
       </control>
     </control>
-    <include>Header</include>
+    <include>WindowsTopInfos</include>
   </controls>
 </window>

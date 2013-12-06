@@ -80,7 +80,7 @@
                   <posx>1280</posx>
                   <width>440</width>
                   <height>1</height>
-                  <texture>images/LineL.png</texture>
+                  <texture>lines/LineL.png</texture>
                </control>
             </itemlayout>
             <focusedlayout height="160">
@@ -122,7 +122,7 @@
                   <posx>1280</posx>
                   <width>440</width>
                   <height>1</height>
-                  <texture>images/LineL.png</texture>
+                  <texture>lines/LineL.png</texture>
                </control>
             </focusedlayout>
             <content target="video">plugin://plugin.treddi.fast/</content>
@@ -350,13 +350,13 @@
          <top>-100</top>
          <height>1280</height>
          <width>1</width>
-         <texture>images/LineV.png</texture>
+         <texture>lines/LineV.png</texture>
       </control>
       <control type="image">
          <top>600</top>
          <height>1</height>
          <width>1340</width>
-         <texture>images/LineR.png</texture>
+         <texture>lines/LineR.png</texture>
       </control>
       <control type="group">
          <control type="image">

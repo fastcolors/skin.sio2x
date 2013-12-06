@@ -125,7 +125,7 @@
         <posx>958</posx>
         <height>1980</height>
         <width>4</width>
-        <texture>images/LineV.png</texture>
+        <texture>lines/LineV.png</texture>
       </control>
       <control type="image">
         <top>40</top>
@@ -198,7 +198,7 @@
         <posx>15</posx>
         <width>390</width>
         <height>1</height>
-        <texture>images/Line.png</texture>
+        <texture>lines/Line.png</texture>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="grouplist" id="8999">

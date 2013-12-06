@@ -4,6 +4,7 @@
 <allowoverlay>no</allowoverlay>
 <backgroundcolor>0xffffffff</backgroundcolor>
 <controls>
+<include>BlackBackground</include>
 <control type="label" id="6">
 <top>-500</top>
 <width>0</width>
@@ -160,6 +161,7 @@
 <control type="image">
 <left>-100</left>
 <width>1020</width>
+<height>285</height>
 <texture border="50">sidepanel/Back.png</texture>
 </control>
 <control type="textbox" id="6">

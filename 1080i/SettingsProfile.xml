@@ -6,7 +6,7 @@
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
-	<include>Header</include>
+	<include>WindowsTopInfos</include>
     <control type="togglebutton" id="4" description="Toggle Login Screen">
       <posx>80</posx>
       <top>100</top>

@@ -28,7 +28,7 @@
         <top>70</top>
         <height>1</height>
         <width>1035</width>
-        <texture>images/LineR.png</texture>
+        <texture>lines/LineR.png</texture>
       </control>
       <control type="spincontrolex" id="3" description="Content Type">
         <posx>1100</posx>
@@ -91,7 +91,7 @@
         <top>390</top>
         <height>1</height>
         <width>1200</width>
-        <texture>images/LineL.png</texture>
+        <texture>lines/LineL.png</texture>
       </control>
       <control type="grouplist" id="5" description="Control Area">
         <centerx>960</centerx>
@@ -131,7 +131,7 @@
           <top>885</top>
           <height>1</height>
           <width>1120</width>
-          <texture>images/LineR.png</texture>
+          <texture>lines/LineR.png</texture>
         </control>
 		<control type="grouplist">
 		<centerx>960</centerx>

@@ -71,7 +71,7 @@
           <control type="image">
             <width>802</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
           </control>
           <control type="label">
             <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
@@ -108,7 +108,7 @@
           <control type="image">
             <width>802</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
           </control>
           <control type="image" description="selector">
             <animation effect="fade" end="0" time="30">UnFocus</animation>
@@ -156,7 +156,7 @@
       <posx>1020</posx>
       <width>1</width>
       <height>1080</height>
-      <texture>images/LineV.png</texture>
+      <texture>lines/LineV.png</texture>
     </control>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
@@ -280,7 +280,7 @@
 			<control type="image">
             <width>802</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
           </control>
         </itemlayout>
         <focusedlayout width="802" height="81">
@@ -322,7 +322,7 @@
 		  <control type="image">
             <width>802</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
           </control>
         </focusedlayout>
       </control>
@@ -352,7 +352,7 @@
 	<posx>1020</posx>
 	<width>1</width>
 	<height>1080</height>
-	<texture>images/LineV.png</texture>
+	<texture>lines/LineV.png</texture>
 	</control>
   </control>
   </include>
@@ -402,7 +402,7 @@
           <control type="image">
             <width>802</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
           </control>
         </itemlayout>
         <focusedlayout width="802" height="111">
@@ -438,7 +438,7 @@
           <control type="image">
             <width>802</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
           </control>
         </focusedlayout>
       </control>
@@ -447,7 +447,7 @@
       <posx>1020</posx>
       <width>1</width>
       <height>1080</height>
-      <texture>images/LineV.png</texture>
+      <texture>lines/LineV.png</texture>
     </control>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
@@ -703,7 +703,7 @@
           <top>100</top>
           <width>1160</width>
           <height>1</height>
-          <texture>images/Line.png</texture>
+          <texture>lines/Line.png</texture>
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
@@ -711,7 +711,7 @@
           <top>380</top>
           <width>1160</width>
           <height>1</height>
-          <texture>images/Line.png</texture>
+          <texture>lines/Line.png</texture>
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="textbox" id="400">
@@ -985,7 +985,7 @@
           <control type="image">
             <width>802</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
           </control>
           <control type="label" description="Main Label">
             <posx>45</posx>
@@ -1004,7 +1004,7 @@
           <control type="image">
             <width>802</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
           </control>
           <control type="image">
             <width>802</width>
@@ -1031,7 +1031,7 @@
       <posx>1020</posx>
       <width>1</width>
       <height>1080</height>
-      <texture>images/LineV.png</texture>
+      <texture>lines/LineV.png</texture>
     </control>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
@@ -1328,7 +1328,7 @@
 		<control type="image">
             <width>802</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
           </control>
           <control type="label" description="Main Label">
             <posx>45</posx>
@@ -1347,7 +1347,7 @@
           <control type="image">
             <width>802</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
           </control>
           <control type="image" description="selector">
             <animation effect="fade" end="0" time="30">UnFocus</animation>
@@ -1376,7 +1376,7 @@
 	<posx>1020</posx>
 	<width>1</width>
 	<height>1080</height>
-	<texture>images/LineV.png</texture>
+	<texture>lines/LineV.png</texture>
 	</control>
     <control type="scrollbar" id="60">
       <posx>39r</posx>

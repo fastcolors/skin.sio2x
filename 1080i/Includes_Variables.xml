@@ -32,7 +32,7 @@
       <value condition="Container.content(movies) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342]</value>
       <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
       <value condition="Container.content(musicvideos) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
-      <value condition="Window.IsActive(56)">$LOCALIZE[5] - SiO2</value>
+      <value condition="Window.IsActive(SkinSettings)">$LOCALIZE[5] - SiO2</value>
       <value condition="Window.IsActive(Settings.xml)">$LOCALIZE[5]</value>
       <value condition="Window.IsActive(AddonBrowser.xml) + IsEmpty(Container.FolderName)">$LOCALIZE[31037]</value>
       <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
@@ -136,7 +136,7 @@
    <variable name="bgimg">
       <value condition="Skin.HasSetting(CustomBg) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
       <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-      <value>Shades/gradientback.png</value>
+      <value>special://skin/backgrounds/light_texture.jpg</value>
    </variable>
    <variable name="filebrowserthumb">
       <value condition="SubString(Control.GetLabel(412),jpg) | SubString(Control.GetLabel(412),png)">$INFO[Control.GetLabel(412)]</value>

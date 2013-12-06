@@ -11,7 +11,7 @@
       <texture>Shades/Infoshade.png</texture>
       <aspectratio>stretch</aspectratio>
     </control>
-    <include>Header</include>
+    <include>WindowsTopInfos</include>
     <control type="group">
       <control type="group" description="Thumbs">
         <posx>0</posx>
@@ -79,7 +79,7 @@
       <width>2085</width>
       <height>1</height>
       <aspectratio>stretch</aspectratio>
-      <texture>images/Line1.png</texture>
+      <texture>lines/Line1.png</texture>
     </control>
     <control type="group" description="Options">
       <top>0</top>

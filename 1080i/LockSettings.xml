@@ -44,7 +44,7 @@
         <top>692</top>
         <width>802</width>
         <height>1</height>
-        <texture>images/Line.png</texture>
+        <texture>lines/Line.png</texture>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="button" id="28" description="OK">

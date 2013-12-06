@@ -17,7 +17,7 @@
 	  <texture background="true">$VAR[bgimg]</texture>
 	  <colordiffuse>33FFFFFF</colordiffuse>
     </control>
-      <include>Header</include>
+      <include>WindowsTopInfos</include>
       <control type="group">
          <control type="group" description="Thumbs">
             <posx>0</posx>
@@ -104,7 +104,7 @@
          <width>1920</width>
          <height>1</height>
          <aspectratio>stretch</aspectratio>
-         <texture>images/Line.png</texture>
+         <texture>lines/Line.png</texture>
       </control>
       <control type="group" description="Options">
          <control type="grouplist" id="300">

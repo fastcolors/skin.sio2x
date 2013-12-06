@@ -175,7 +175,7 @@
             <top>570</top>
             <width>756</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
          </control>
          <control type="textbox" description="plot">
             <top>570</top>
@@ -188,7 +188,7 @@
             <top>920</top>
             <width>756</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
          </control>
       </control>
    </include>
@@ -203,7 +203,7 @@
             <top>550</top>
             <width>756</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
          </control>
          <control type="textbox" description="plot">
             <top>550</top>
@@ -216,7 +216,7 @@
             <top>900</top>
             <width>756</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
          </control>
       </control>
    </include>
@@ -395,7 +395,7 @@
                <height>1</height>
                <width>780</width>
                <aspectratio>stretch</aspectratio>
-               <texture>images/LineR.png</texture>
+               <texture>lines/LineR.png</texture>
             </control>
             <control type="image" description="Separator">
                <posx>0</posx>
@@ -403,7 +403,7 @@
                <height>1</height>
                <width>760</width>
                <aspectratio>stretch</aspectratio>
-               <texture>images/LineL.png</texture>
+               <texture>lines/LineL.png</texture>
             </control>
             <control type="grouplist" description="Labels">
                <posx>20</posx>
@@ -694,7 +694,7 @@
          <control type="image">
             <width>900</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
          </control>
       </focusedlayout>
    </include>
@@ -804,7 +804,7 @@
       <scrolltime>200</scrolltime>
    </include>
    <include name="DialogButt">
-      <width>450</width>
+      <width>470</width>
       <height>56</height>
       <textoffsetx>0</textoffsetx>
       <align>center</align>
@@ -1002,7 +1002,7 @@
             <top>630</top>
             <width>682</width>
             <height>1</height>
-            <texture>images/Line.png</texture>
+            <texture>lines/Line.png</texture>
             <aspectratio>stretch</aspectratio>
          </control>
          <control type="label" description="Updates">
@@ -1139,7 +1139,7 @@
          <top>-300</top>
          <width>1</width>
          <height>1680</height>
-         <texture>images/LineV.png</texture>
+         <texture>lines/LineV.png</texture>
       </control>
    </include>
    <include name="SmallSelector">
@@ -1162,7 +1162,7 @@
       <control type="image">
          <width>900</width>
          <height>1</height>
-         <texture>images/LineL.png</texture>
+         <texture>lines/LineL.png</texture>
       </control>
    </include>
 </includes>

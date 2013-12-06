@@ -936,7 +936,7 @@
         <top>140</top>
         <height>1</height>
         <width>1000</width>
-        <texture>images/LineL.png</texture>
+        <texture>lines/LineL.png</texture>
       </control>
       <control type="textbox" description="plot">
         <top>140</top>
@@ -977,7 +977,7 @@
         <top>390</top>
         <height>1</height>
         <width>1000</width>
-        <texture>images/LineL.png</texture>
+        <texture>lines/LineL.png</texture>
       </control>
 	  </control>
       <control type="grouplist" id="190">

@@ -351,7 +351,7 @@
 			<include>VisibleFadeEffect</include>
 			
 			<control type="group">
-				<description>Header</description>
+				<description>WindowsTopInfos</description>
 				<width>500</width>
 				<height>50</height>
 				<control type="label" id="">

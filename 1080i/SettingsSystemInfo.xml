@@ -12,7 +12,7 @@
       <width>1920</width>
       <height>1</height>
       <aspectratio>stretch</aspectratio>
-      <texture>images/Line.png</texture>
+      <texture>lines/Line.png</texture>
     </control>
     <control type="image" description="Line Split">
       <posx>0</posx>
@@ -20,7 +20,7 @@
       <width>1920</width>
       <height>1</height>
       <aspectratio>stretch</aspectratio>
-      <texture>images/Line.png</texture>
+      <texture>lines/Line.png</texture>
     </control>
     <control type="label" description="Heading">
       <include>Heading</include>
