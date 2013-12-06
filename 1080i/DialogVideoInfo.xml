@@ -6,14 +6,14 @@
   <include>OpenClose</include>
   <controls>
     <include>BlackBackground</include>
-    <control type="image" description="Fanart">
+    <!--control type="image" description="Fanart">
       <visible>!IsEmpty(ListItem.Property(fanart_image))</visible>
       <include>VisibleFade</include>
       <include>Dimensions_Fullscreen</include>
       <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
       <aspectratio>scale</aspectratio>
       <colordiffuse>30FFFFFF</colordiffuse>
-    </control>
+    </control-->
     <control type="group" description="rotate Poster">
       <camera x="265" y="330" />
       <animation condition="true" effect="rotatey" center="265,0" end="-20">conditional</animation>
@@ -76,7 +76,7 @@
         <top>140</top>
         <height>1</height>
         <width>1000</width>
-        <texture>images/LineL.png</texture>
+        <texture>lines/LineL.png</texture>
       </control>
       <control type="textbox" id="4" description="plot">
         <top>140</top>
@@ -88,7 +88,7 @@
         <top>390</top>
         <height>1</height>
         <width>1000</width>
-        <texture>images/LineL.png</texture>
+        <texture>lines/LineL.png</texture>
       </control>
       <control type="grouplist" description="Flags">
         <top>405</top>
@@ -418,7 +418,7 @@
       <top>690</top>
       <height>1</height>
       <width>1920</width>
-      <texture>images/Line.png</texture>
+      <texture>lines/Line.png</texture>
     </control>
   </controls>
 </window>
