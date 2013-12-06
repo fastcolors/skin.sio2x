@@ -10,23 +10,6 @@
   <include>BlackBackground</include>
   <control type="group">
   <include>OpenClose</include>
-    <control type="group" description="Furniture">
-      <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-	  <control type="image" description="Stage">
-	  <width>1920</width>
-        <height>1580</height>
-        <aspectratio>stretch</aspectratio>
-        <texture>images/HomeBG.png</texture>
-      </control>
-      <control type="image" description="Line">
-        <posx>-90</posx>
-        <top>503</top>
-        <width>2100</width>
-        <height>1</height>
-        <aspectratio>stretch</aspectratio>
-        <texture>images/Line1.png</texture>
-      </control>
-    </control>
     <control type="button" id="9009">
       <animation effect="slide" condition="[Control.IsVisible(311) + !Skin.HasSetting(Intruder) + !Container(311).HasPrevious] | [Control.IsVisible(311) + !Container(311).HasPrevious + Player.HasVideo]" end="320,0">Conditional</animation>
       <animation effect="slide" condition="Control.IsVisible(312) + !Skin.HasSetting(IntruderTV) + !Container(312).HasPrevious" end="480,0">Conditional</animation>
@@ -50,7 +33,7 @@
       <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
       <width>1800</width>
       <height>1080</height>
-      <top>522</top>
+      <top>536</top>
       <posx>60</posx>
       <onleft>9000</onleft>
       <onright>9000</onright>
@@ -58,9 +41,9 @@
       <ondown>noop</ondown>
       <orientation>vertical</orientation>
       <scrolltime tween="sine" easing="inout">280</scrolltime>
-      <itemlayout height="230" width="300">
+      <itemlayout height="220" width="300">
         <control type="image" description="THMBSBASE">
-          <visible>!Skin.HasSetting(colormenu)</visible>
+          <visible>Skin.HasSetting(colormenu)</visible>
           <posx>20</posx>
           <top>48</top>
           <width>260</width>
@@ -68,7 +51,7 @@
           <texture>icons/base.png</texture>
         </control>
         <control type="image" description="THMBSBASECOLOR">
-          <visible>Skin.HasSetting(colormenu)</visible>
+          <visible>!Skin.HasSetting(colormenu)</visible>
           <posx>20</posx>
           <top>48</top>
           <width>260</width>
@@ -117,9 +100,9 @@
           <label>[B]$INFO[ListItem.label][/B]</label>
         </control>
       </itemlayout>
-      <focusedlayout height="230" width="300">
+      <focusedlayout height="220" width="300">
         <control type="image" description="THMBSBASE">
-          <visible>Skin.HasSetting(colormenu)</visible>
+          <visible>!Skin.HasSetting(colormenu)</visible>
           <posx>20</posx>
           <top>48</top>
           <width>260</width>
@@ -127,7 +110,7 @@
           <texture>$INFO[ListItem.Property(color)]</texture>
         </control>
         <control type="image" description="THMBSBASE">
-          <visible>!Skin.HasSetting(colormenu)</visible>
+          <visible>Skin.HasSetting(colormenu)</visible>
           <posx>20</posx>
           <top>48</top>
           <width>260</width>
@@ -135,7 +118,7 @@
           <texture>icons/base.png</texture>
         </control>
         <control type="image" description="THMBSBASE">
-          <visible>!Skin.HasSetting(colormenu)</visible>
+          <visible>Skin.HasSetting(colormenu)</visible>
           <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
           <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
           <posx>20</posx>
@@ -201,7 +184,39 @@
         <include>homepanel</include>
       </content>
     </control>
-	 <control type="image">
+	 <control type="group" description="Furniture">
+      <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+	  <control type="image" description="Stage">
+	  <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>images/HomeBG.png</texture>
+      </control>
+      <control type="image" description="Line">
+        <posx>-90</posx>
+        <top>503</top>
+        <width>2100</width>
+        <height>1</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>lines/Line1.png</texture>
+      </control>
+	  <control type="rss" description="RSS Feed">
+        <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+        <include>OpenClose</include>
+        <posx>0</posx>
+        <top>506</top>
+        <width>1920</width>
+        <height>33</height>
+        <font>size22</font>
+        <urlset>1</urlset>
+        <shadowcolor>-</shadowcolor>
+        <titlecolor>darkred</titlecolor>
+        <headlinecolor>gray</headlinecolor>
+        <textcolor>gray</textcolor>
+      </control>
+    </control>
+	 <control type="image" description="TVLINE">
+	 <include>ShelfFade</include>
 	 <animation effect="slide" end="485,0" time="400" condition="!Container(312).HasPrevious + !Skin.HasSetting(IntruderTV)">Conditional</animation>
       <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV)</visible>
       <visible>Library.HasContent(TVShows)</visible>
@@ -209,9 +224,10 @@
 	  <top>30</top>
       <width>1</width>
       <height>450</height>
-      <texture>images/LineV.png</texture>
+      <texture>lines/LineV.png</texture>
     </control>
-    <control type="image">
+    <control type="image" description="MOVIELINE">
+	<include>ShelfFade</include>
 	 <animation effect="slide" end="325,0" time="400" condition="!Container(311).HasPrevious + [!Skin.HasSetting(Intruder) | Player.HasVideo]">Conditional</animation>
       <visible>Container(9000).HasFocus(340) + [!Skin.HasSetting(Intruder) | Player.HasVideo]</visible>
       <visible>Library.HasContent(Movies)</visible>
@@ -219,7 +235,7 @@
       <top>30</top>
       <width>1</width>
       <height>450</height>
-      <texture>images/LineV.png</texture>
+      <texture>lines/LineV.png</texture>
     </control>
     <include>weather_shelf</include>
 	<include condition="true">EPG_shelf</include>
@@ -244,44 +260,6 @@
       </control>
     </control>
 	</control>
-    <control type="image">
-      <top>980</top>
-      <width>1920</width>
-      <height>100</height>
-      <texture>images/bottomshader.png</texture>
-    </control>
-    <control type="group" description="RSS">
-      <control type="rss" description="RSS Feed">
-        <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-        <include>OpenClose</include>
-        <posx>0</posx>
-        <top>1038</top>
-        <width>1920</width>
-        <height>33</height>
-        <font>size22</font>
-        <urlset>1</urlset>
-        <shadowcolor>white</shadowcolor>
-        <titlecolor>White</titlecolor>
-        <headlinecolor>White</headlinecolor>
-        <textcolor>gray</textcolor>
-      </control>
-      <control type="image" description="RSS Left fade">
-        <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-        <posx>0</posx>
-        <top>1038</top>
-        <width>90</width>
-        <height>33</height>
-        <texture>images/DefaultGradientH.png</texture>
-      </control>
-      <control type="image" description="RSS Right fade">
-        <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-        <posx>1830</posx>
-        <top>1038</top>
-        <width>90</width>
-        <height>33</height>
-        <texture flipx="true">images/DefaultGradientH.png</texture>
-      </control>
-    </control>
     <control type="group" description="Player Info">
       <visible>Player.HasAudio</visible>
       <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
@@ -332,41 +310,16 @@
         </control>
       </control>
     </control>
-	<control type="group">
-	<width>1895</width>
-	<height>1080</height>
-	<control type="grouplist">
-      <top>20</top>
-	  <orientation>horizontal</orientation>
-	  <itemgap>18</itemgap>
-	  <align>right</align>
-	  <control type="image" description="WebLink">
-	<visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
-	<width>30</width>
-	<height>48</height>
-	<texture>wireless.png</texture>
-	<aspectratio>scale</aspectratio>
+	<control type="label">
+	<description>SKIN VERSION</description>
+	<right>1910</right>
+	<top>1060</top>
+	<width>80</width>
+	<height>20</height>
+	<font>XS</font>
+	<textcolor>lightblue</textcolor>
+	<align>right</align>
+	<label>$INFO[System.AddonVersion(skin.sio2x)]</label>
 	</control>
-	<control type="label" description="Battery">
-	<visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,99) + !Skin.HasSetting(hideconnection)</visible>
-      <posx>35r</posx>
-      <top>20</top>
-      <width min="30" max="500">auto</width>
-      <height>45</height>
-      <font>size30</font>
-      <textcolor>White</textcolor>
-      <label>$INFO[System.BatteryLevel] Batt.</label>
-    </control>
-    <control type="label" description="Clock">
-      <visible>!Skin.HasSetting(HideClock)</visible> 
-      <width min="30" max="500">auto</width>
-      <height>45</height>
-      <font>size30</font>
-      <textcolor>White</textcolor>
-      <label>$INFO[System.Time] $INFO[System.Date]</label>
-    </control>
-	</control>
-	</control>
-   
   </controls>
 </window>
