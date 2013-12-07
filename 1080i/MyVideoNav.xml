@@ -134,7 +134,7 @@
                <label>$LOCALIZE[536]</label>
             </control>
             <control type="radiobutton" id="605" description="Fanart">
-               <enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>
+               <enable>!Container.Content(files) + !Container.Content(episodes) + !IsEmpty(Container.FolderPath)</enable>
                <include>DialogButt</include>
                <onclick>Container.SetViewMode(500)</onclick>
                <selected>Control.IsVisible(500)</selected>

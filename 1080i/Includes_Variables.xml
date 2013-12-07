@@ -51,6 +51,7 @@
       <value condition="IsEmpty(Container.FolderName)">$INFO[System.CurrentWindow]</value>
       <value>$INFO[Container.FolderName]</value>
    </variable>
+   
    <variable name="TopLabel" description="INFOS">
       <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
       <value condition="Container.content(Albums)">$INFO[ListItem.Label]</value>
@@ -58,6 +59,7 @@
       <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Creator),  ]</value>
       <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
       <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Label]</value>
+	  <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$INFO[ListItem.Year]</value>
       <value condition="Container.Content(Movies) + IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.MPAA, • ]</value>
       <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]] • $LOCALIZE[20410, • ]$INFO[ListItem.MPAA, • ]</value>
       <value condition="Container.Content(Seasons) | Container.Content(TVShows)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]$INFO[ListItem.MPAA, • ]</value>
@@ -147,6 +149,16 @@
       <value>$LOCALIZE[16039]</value>
    </variable>
    <variable name="diffuseselect">
-      <value>555555FF</value>
+   <value condition="StringCompare(ListItem.MPAA,R) | StringCompare(ListItem.MPAA,TV-MA) | SubString(ListItem.MPAA,18)">88FF2200</value>
+   <value condition="SubString(ListItem.MPAA,PG) | StringCompare(ListItem.MPAA,G) | StringCompare(ListItem.MPAA,U) | StringCompare(ListItem.MPAA,T)">770CF704</value>
+   <value condition="StringCompare(ListItem.MPAA,PG-13) | StringCompare(ListItem.MPAA,12) | StringCompare(ListItem.MPAA,15) | SubString(ListItem.MPAA,14)">88FF8800</value>
+   <value>775555FF</value>
+   </variable>
+   
+   <variable name="diffuseselectshelf">
+   <value condition="StringCompare(Container(311).ListItem.Property(MPAA),R)">CCFF0000</value>
+   <value condition="StringCompare(Container(311).ListItem.Property(MPAA),PG) | StringCompare(Container(311).ListItem.Property(MPAA),G) | StringCompare(Container(311).ListItem.Property(MPAA),U) | StringCompare(Container(311).ListItem.Property(MPAA),T)">CC00FF00</value>
+   <value condition="StringCompare(Container(311).ListItem.Property(MPAA),PG-13) | StringCompare(Container(311).ListItem.Property(MPAA),12) | StringCompare(Container(311).ListItem.Property(MPAA),15)">CCFF8800</value>
+   <value>CC000000</value>
    </variable>
 </includes>

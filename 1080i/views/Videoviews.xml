@@ -176,29 +176,29 @@
                </control>
             </focusedlayout>
          </control>
-		 <control type="grouplist">
-		 <top>25</top>
+         <control type="grouplist">
+            <top>25</top>
             <centerx>670</centerx>
-			<align>center</align>
-			<orientation>horizontal</orientation>
-         <control type="label">
-            <width min="60">auto</width>
-            <height>45</height>
-            <font>Size42B</font>
             <align>center</align>
-            <label>$INFO[ListItem.label]</label>
+            <orientation>horizontal</orientation>
+            <control type="label">
+               <width min="60">auto</width>
+               <height>45</height>
+               <font>Size42B</font>
+               <align>center</align>
+               <label>$INFO[ListItem.label]</label>
+            </control>
+            <control type="label">
+               <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+               <width min="60">auto</width>
+               <height>50</height>
+               <font>Size26</font>
+               <textcolor>gray</textcolor>
+               <align>center</align>
+               <label>$INFO[Container(990).NumItems,(,)]</label>
+            </control>
          </control>
-          <control type="label">
-		  <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
-            <width min="60">auto</width>
-            <height>50</height>
-            <font>Size26</font>
-			<textcolor>gray</textcolor>
-            <align>center</align>
-            <label>$INFO[Container(990).NumItems,(,)]</label>
-         </control>
-		 </control>
-		 <control type="textbox">
+         <control type="textbox">
             <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
             <centerx>670</centerx>
             <top>70</top>
@@ -502,7 +502,7 @@
                      <label>$INFO[ListItem.Title]</label>
                   </control>
                </focusedlayout>
-			   <content target="video">$INFO[Container.ListItem.Path]</content>
+               <content target="video">$INFO[Container.ListItem.Path]</content>
                <!--content>plugin://script.populate.set/,$INFO[Container(52).ListItem.Label]</content-->
             </control>
          </control>
@@ -558,7 +558,7 @@
          </control>
          <!--ADDONS-END-->
          <control type="image">
-		  <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
+            <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
             <top>130</top>
             <height>1</height>
             <width>1341</width>
@@ -770,11 +770,10 @@
          </control>
          <control type="group">
             <control type="panel" id="53">
-               <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(Sets)</visible>
-               <posx>60</posx>
+               <centerx>990</centerx>
                <top>60</top>
-               <width>1800</width>
-               <height>900</height>
+               <width>1920</width>
+               <height>1020</height>
                <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
                <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
@@ -833,12 +832,12 @@
                         <top>9</top>
                         <width>281</width>
                         <height>281</height>
-                        <texture>images/picselection.png</texture>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/picselection.png</texture>
                         <aspectratio>stretch</aspectratio>
                      </control>
                   </control>
                </focusedlayout>
-               <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="380" width="257">
+               <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="300" width="200">
                   <control type="image">
                      <posx>35</posx>
                      <top>24</top>
@@ -881,75 +880,95 @@
                      <aspectratio align="left">keep</aspectratio>
                      <texture>$VAR[WatchStatus]</texture>
                   </control>
+				  <control type="image" description="Mpaa">
+                           <right>228</right>
+                           <top>29</top>
+                           <visible>!IsEmpty(ListItem.Mpaa)</visible>
+                           <height>32</height>
+                           <width>32</width>
+                           <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
+                        </control>
                </itemlayout>
-               <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="380" width="257">
-                  <control type="image">
-                     <posx>35</posx>
-                     <top>24</top>
-                     <width>197</width>
-                     <height>294</height>
-                     <texture background="true">$VAR[Locandine]</texture>
-                     <aspectratio>scale</aspectratio>
-                  </control>
-                  <control type="textbox">
-                     <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-                     <top>334</top>
-                     <width>270</width>
-                     <height>56</height>
-                     <font>size21</font>
-                     <textcolor>black</textcolor>
-                     <align>center</align>
-                     <autoscroll>false</autoscroll>
-                     <label>[B]$INFO[ListItem.Label][/B]</label>
-                  </control>
+               <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="300" width="200">
                   <control type="group">
-                     <visible>container.content(TVshows) | container.content(seasons)</visible>
-                     <control type="image">
-                        <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                        <posx>123</posx>
-                        <top>276</top>
-                        <height>45</height>
-                        <width>150</width>
-                        <aspectratio>keep</aspectratio>
-                        <texture>badges/BadgeCount.png</texture>
-                     </control>
-                     <control type="label" description="Label2">
-                        <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                        <posx>197</posx>
-                        <top>270</top>
-                        <height>45</height>
-                        <width>150</width>
-                        <font>size24</font>
-                        <scroll>true</scroll>
-                        <align>center</align>
-                        <scroll>false</scroll>
-                        <textcolor>white</textcolor>
-                        <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
-                     </control>
-                  </control>
-                  <control type="image" description="WatchStatus">
-                     <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
-                     <posx>30</posx>
-                     <top>290</top>
-                     <height>32</height>
-                     <width>60</width>
-                     <aspectratio align="left">keep</aspectratio>
-                     <texture>$VAR[WatchStatus]</texture>
-                  </control>
-                  <control type="group" description="Selection">
-                     <include>Scrollanim</include>
-                     <control type="image">
-                        <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                        <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                        <posx>19</posx>
-                        <top>9</top>
-                        <width>228</width>
-                        <height>323</height>
-                        <texture border="20">images/GeneralSlider.png</texture>
-                        <aspectratio>stretch</aspectratio>
+                     <animation effect="zoom" center="140,35" end="130" time="200" reversible="true">Focus</animation>
+                     <animation effect="zoom" center="140,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
+                     <control type="group" description="Selection">
+                        <include>Scrollanim</include>
+                        <control type="image">
+                           <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
+                           <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                           <posx>19</posx>
+                           <top>9</top>
+                           <width>228</width>
+                           <height>323</height>
+                           <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                           <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                           <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
+                           <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                           <posx>19</posx>
+                           <top>9</top>
+                           <width>228</width>
+                           <height>323</height>
+                           <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                           <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                           <posx>35</posx>
+                           <top>24</top>
+                           <width>197</width>
+                           <height>294</height>
+                           <texture background="true">$VAR[Locandine]</texture>
+                           <aspectratio>scale</aspectratio>
+                        </control>
+                        <control type="group">
+                           <visible>container.content(TVshows) | container.content(seasons)</visible>
+                           <control type="image">
+                              <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                              <posx>123</posx>
+                              <top>276</top>
+                              <height>45</height>
+                              <width>150</width>
+                              <aspectratio>keep</aspectratio>
+                              <texture>badges/BadgeCount.png</texture>
+                           </control>
+                           <control type="label" description="Label2">
+                              <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                              <posx>197</posx>
+                              <top>270</top>
+                              <height>45</height>
+                              <width>150</width>
+                              <font>size24</font>
+                              <scroll>true</scroll>
+                              <align>center</align>
+                              <scroll>false</scroll>
+                              <textcolor>white</textcolor>
+                              <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
+                           </control>
+                        </control>
+                        <control type="image" description="WatchStatus">
+                           <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
+                           <posx>30</posx>
+                           <top>290</top>
+                           <height>32</height>
+                           <width>60</width>
+                           <aspectratio align="left">keep</aspectratio>
+                           <texture>$VAR[WatchStatus]</texture>
+                        </control>
+                        <control type="image" description="Mpaa">
+                           <right>228</right>
+                           <top>29</top>
+                           <visible>!IsEmpty(ListItem.Mpaa)</visible>
+                           <height>32</height>
+                           <width>32</width>
+                           <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
+                        </control>
                      </control>
                   </control>
                </focusedlayout>
+               <!--EPISODES-->
                <itemlayout condition="Container.Content(Episodes)" height="375" width="450">
                   <control type="image">
                      <posx>45</posx>
@@ -1048,6 +1067,7 @@
                      </control>
                   </control>
                </focusedlayout>
+               <!--EPISODESEND-->
             </control>
          </control>
          <control type="image" description="Line Split">
@@ -1058,79 +1078,76 @@
             <texture>lines/Line.png</texture>
             <aspectratio>stretch</aspectratio>
          </control>
-         <control type="image" description="shade">
-            <width>1920</width>
-            <height>1080</height>
-            <texture>Shades/iconvshade.png</texture>
-         </control>
-         <control type="label" description="Media title">
-            <posx>60</posx>
-            <top>910</top>
-            <width>1800</width>
-            <font>size42B</font>
-            <textcolor>Silver</textcolor>
+		 <control type="group">
+		 <visible>!Container.Content(episodes)</visible>
+		 <visible>[Container(53).Column(0) + !StringCompare(ListItem.Label,..)] | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3) | Container(53).Column(4)</visible>
+		 <posx>1230</posx>
+      <top>450</top>
+	  <animation effect="slide" start="710,0" end="0,0" time="450" delay="200">visiblechange</animation>
+	  <control type="image" description="Dialog BG">
+        <width>700</width>
+        <height>168</height>
+        <texture border="30">images/ProgressBG.png</texture>
+      </control>
+	  <control type="image" description="Dialog BG">
+        <width>700</width>
+        <height>168</height>
+        <texture border="30" colordiffuse="$VAR[diffuseselect]">images/ProgressBG.png</texture>
+      </control>
+	  <control type="label" description="Title">
+	  <centerx>350</centerx>
+        <top>4</top>
+        <width>680</width>
+        <height>50</height>
             <align>center</align>
-            <label>$INFO[ListItem.label]</label>
+            <font>Size38</font>
+            <label>$INFO[ListItem.Title]</label>
          </control>
          <control type="label" description="Media details">
-            <posx>60</posx>
-            <top>955</top>
-            <width>1800</width>
-            <textcolor>Silver</textcolor>
+        <top>45</top>
+        <width>700</width>
+        <height>50</height>
             <align>center</align>
-            <font>Size13</font>
-            <label>[COLOR=gray]$VAR[TopLabel,  ][/COLOR]</label>
+            <font>Size26</font>
+            <label>$VAR[TopLabel]</label>
          </control>
-         <control type="image" description="Mpaa">
-            <posx>320r</posx>
-            <top>995</top>
-            <visible>!IsEmpty(ListItem.Mpaa)</visible>
-            <height>60</height>
-            <width>60</width>
-            <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
-         </control>
-         <control type="image" description="Stars">
-            <posx>250r</posx>
-            <top>1010</top>
-            <visible>!IsEmpty(ListItem.Rating)</visible>
-            <height>24</height>
-            <width>135</width>
-            <aspectratio align="right">keep</aspectratio>
-            <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
-         </control>
-         <control type="grouplist">
-            <posx>100</posx>
-            <top>1015</top>
-            <height>50</height>
-            <width>1720</width>
+		 <control type="grouplist">
+        <top>90</top>
+        <width>700</width>
+        <height>108</height>
             <itemgap>15</itemgap>
             <orientation>horizontal</orientation>
+			<align>center</align>
             <control type="image" description="Sets">
                <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
-               <height>33</height>
-               <width>60</width>
+               <height>50</height>
+               <width>150</width>
                <aspectratio>keep</aspectratio>
                <texture>badges/setsFO.png</texture>
             </control>
             <control type="image">
-               <height>30</height>
+			<visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                <height>30</height>
                <width>70</width>
                <aspectratio>keep</aspectratio>
                <texture>$INFO[ListItem.VideoResolution,badges/Video/,.png]</texture>
             </control>
             <control type="image">
-               <height>30</height>
+			<visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                <height>30</height>
                <width>70</width>
                <aspectratio>keep</aspectratio>
                <texture>$INFO[ListItem.VideoCodec,badges/Video/,.png]</texture>
             </control>
             <control type="image">
+			<visible>!IsEmpty(ListItem.AudioCodec)</visible>
                <height>30</height>
                <width>70</width>
                <aspectratio>keep</aspectratio>
                <texture>$INFO[ListItem.AudioCodec,badges/Audio/,.png]</texture>
             </control>
             <control type="image">
+			<visible>!IsEmpty(ListItem.FileExtension)</visible>
                <height>30</height>
                <width>70</width>
                <aspectratio>keep</aspectratio>
@@ -1144,21 +1161,137 @@
                <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
             </control>
          </control>
-         <control type="scrollbar" id="60">
-            <posx>30r</posx>
-            <top>100</top>
-            <height>800</height>
-            <onleft>53</onleft>
-            <onright>noop</onright>
+		 <control type="image" description="Stars">
+            <centerx>350</centerx>
+            <top>120</top>
+            <visible>!IsEmpty(ListItem.Rating)</visible>
+            <height>40</height>
+            <width>250</width>
+            <aspectratio>keep</aspectratio>
+            <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
          </control>
-         <control type="image" description="Line Split">
-            <posx>560</posx>
-            <top>1030</top>
-            <width>900</width>
-            <height>1</height>
-            <texture>lines/Line.png</texture>
-            <aspectratio>stretch</aspectratio>
+		 </control>
+		 <control type="group">
+		 <visible>Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8)</visible>
+		 <posx>-10</posx>
+      <top>450</top>
+	  <animation effect="slide" start="-710,0" end="0,0" time="450" delay="200">visiblechange</animation>
+	  <control type="image" description="Dialog BG">
+        <width>700</width>
+        <height>168</height>
+        <texture border="30" flipx="true">images/ProgressBG.png</texture>
+      </control>
+	  <control type="image" description="Dialog BG">
+        <width>700</width>
+        <height>168</height>
+        <texture border="30" flipx="true"  colordiffuse="$VAR[diffuseselect]">images/ProgressBG.png</texture>
+      </control>
+	  <control type="label" description="Title">
+	  <centerx>350</centerx>
+        <top>4</top>
+        <width>680</width>
+        <height>50</height>
+            <align>center</align>
+            <font>Size38</font>
+            <label>$INFO[ListItem.Title]</label>
          </control>
+         <control type="label" description="Media details">
+        <top>45</top>
+        <width>700</width>
+        <height>50</height>
+            <align>center</align>
+            <font>Size26</font>
+            <label>$VAR[TopLabel]</label>
+         </control>
+		 <control type="grouplist">
+        <top>90</top>
+        <width>700</width>
+        <height>108</height>
+            <itemgap>15</itemgap>
+            <orientation>horizontal</orientation>
+			<align>center</align>
+            <control type="image" description="Sets">
+               <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+               <height>50</height>
+               <width>150</width>
+               <aspectratio>keep</aspectratio>
+               <texture>badges/setsFO.png</texture>
+            </control>
+           <control type="image">
+			<visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                <height>30</height>
+               <width>70</width>
+               <aspectratio>keep</aspectratio>
+               <texture>$INFO[ListItem.VideoResolution,badges/Video/,.png]</texture>
+            </control>
+            <control type="image">
+			<visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                <height>30</height>
+               <width>70</width>
+               <aspectratio>keep</aspectratio>
+               <texture>$INFO[ListItem.VideoCodec,badges/Video/,.png]</texture>
+            </control>
+            <control type="image">
+			<visible>!IsEmpty(ListItem.AudioCodec)</visible>
+               <height>30</height>
+               <width>70</width>
+               <aspectratio>keep</aspectratio>
+               <texture>$INFO[ListItem.AudioCodec,badges/Audio/,.png]</texture>
+            </control>
+            <control type="image">
+			<visible>!IsEmpty(ListItem.FileExtension)</visible>
+               <height>30</height>
+               <width>70</width>
+               <aspectratio>keep</aspectratio>
+               <texture>$INFO[ListItem.FileExtension,badges/Video/,.png]</texture>
+            </control>
+            <control type="image">
+               <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+               <height>30</height>
+               <width>70</width>
+               <aspectratio>keep</aspectratio>
+               <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
+            </control>
+         </control>
+		 <control type="image" description="Stars">
+            <centerx>350</centerx>
+            <top>120</top>
+            <visible>!IsEmpty(ListItem.Rating)</visible>
+            <height>40</height>
+            <width>250</width>
+            <aspectratio>keep</aspectratio>
+            <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+         </control>
+		 </control>
+         <control type="image" description="Stars">
+		 <visible>Container.Content(Episodes)</visible>
+            <centerx>450r</centerx>
+            <top>10</top>
+            <visible>!IsEmpty(ListItem.Rating)</visible>
+            <height>50</height>
+            <width>300</width>
+            <aspectratio>keep</aspectratio>
+            <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+         </control>
+         
+         <control type="group">
+            <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+            <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+            <control type="image">
+               <posx>-8r</posx>
+               <top>90</top>
+               <height>910</height>
+               <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
+            </control>
+            <control type="scrollbar" id="60">
+               <posx>-37r</posx>
+               <top>120</top>
+               <height>850</height>
+               <onleft>50</onleft>
+               <onright>noop</onright>
+            </control>
+         </control>
+         
       </control>
       <!--BANNERS-->
       <control type="group" description="BANNERS">
@@ -1582,7 +1715,7 @@
          </control>
       </control>
       <control type="label">
-         <animation effect="slide" end="-860,14" condition="Control.IsVisible(53)">Conditional</animation>
+         <animation effect="slide" end="-1700,-1000" condition="Control.IsVisible(53)">Conditional</animation>
          <description>Page Count Label</description>
          <posx>40r</posx>
          <top>50r</top>

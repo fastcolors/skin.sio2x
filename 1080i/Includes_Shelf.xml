@@ -23,7 +23,6 @@
     <scrolltime>400</scrolltime>
     <itemlayout height="350" width="320" condition="!Control.IsVisible(319)">
       <control type="group">
-        <!--animation condition="true" center="160,350" effect="zoom" end="100">Conditional</animation-->
         <control type="image" description="Reflection">
           <posx>35</posx>
           <top>409</top>
@@ -62,7 +61,8 @@
       <control type="group">
         <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
         <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
-        <control type="image">
+        
+		<control type="image">
 		<visible>Control.HasFocus(311)</visible>
 		<animation effect="fade" start="100" end="0" time="20">unFocus</animation>
           <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
@@ -71,22 +71,9 @@
           <height>420</height>
           <texture>images/spotlight.png</texture>
         </control>
-		<control type="image">
-		<animation effect="fade" start="100" end="0" time="20">unFocus</animation>
-          <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
-		<visible>Control.HasFocus(311)</visible>
-		<posx>35</posx>
-		<top>22</top>
-          <width>254</width>
-          <height>381</height>
-          <texture>images/white.png</texture>
-        </control>
-        <control type="group">
-          <animation effect="fade" start="100" end="25" time="200">Focus</animation>
-          <animation effect="fade" start="25" end="100" time="80">unFocus</animation>
-		  <control type="group">
-		  <animation effect="fade" start="100" end="0" time="100">Focus</animation>
-          <animation effect="fade" start="0" end="100" time="180">unFocus</animation>
+		<control type="group">
+		<animation effect="fade" start="100" end="0" time="100">Focus</animation>
+          <animation effect="fade" start="0" end="100" time="150">unFocus</animation>
           <control type="image" description="Reflection">
             <posx>35</posx>
             <top>409</top>
@@ -120,18 +107,27 @@
             <texture border="10" background="true">$VAR[dvdbox]</texture>
             <aspectratio>stretch</aspectratio>
           </control>
+		<control type="image">
+		<animation effect="fade" start="70" end="0" time="100">unFocus</animation>
+          <animation effect="fade" start="0" end="70" time="150" delay="80">Focus</animation>
+		<visible>Control.HasFocus(311)</visible>
+		<posx>35</posx>
+		<top>22</top>
+          <width>254</width>
+          <height>381</height>
+          <texture colordiffuse="$VAR[diffuseselectshelf]" border="2">images/shelfmovieselect.png</texture>
         </control>
         <control type="textbox">
           <visible>ControlGroup(700).HasFocus()</visible>
-          <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-          <animation effect="fade" start="100" end="0" time="200">unFocus</animation>
+          <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+          <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
           <posx>38</posx>
           <top>28</top>
           <width>244</width>
           <height>369</height>
           <font>size22</font>
-          <textcolor>black</textcolor>
-		  <shadowcolor>white</shadowcolor>
+          <textcolor>white</textcolor>
+		  <shadowcolor>black</shadowcolor>
 		  <autoscroll>false</autoscroll>
           <label>[B]$INFO[ListItem.Label][/B][CR][CR]$INFO[ListItem.Property(Duration)] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]: $INFO[ListItem.Label2][CR][CR]$INFO[ListItem.Property(Genre)][CR][CR]$INFO[ListItem.Property(MPAA)]</label>
           <align>center</align>
@@ -334,7 +330,7 @@
           <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
           <top>370</top>
           <width>384</width>
-          <height>55</height>
+          <height>62</height>
           <font>size24B</font>
           <textcolor>white</textcolor>
 		  <autoscroll>false</autoscroll>
