@@ -787,8 +787,6 @@
       <height>40</height>
       <font>size22</font>
       <align>center</align>
-      <texturefocus border="8">images/Buttonselect.png</texturefocus>
-      <alttexturefocus border="8">images/Buttonselect.png</alttexturefocus>
    </include>
    <include name="DialogGLs">
       <centerx>960</centerx>
