@@ -77,9 +77,7 @@
                             <texture>lines/Line.png</texture>
                         </control>
                         <control type="label">
-                            <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18"
-                                       time="0" reversible="true">Conditional
-                            </animation>
+                            <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                             <posx>40</posx>
                             <width>40</width>
                             <height>75</height>
@@ -91,9 +89,7 @@
                             <info>ListItem.ChannelNumber</info>
                         </control>
                         <control type="label">
-                            <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18"
-                                       time="0" reversible="true">Conditional
-                            </animation>
+                            <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                             <posx>45</posx>
                             <width>650</width>
                             <selectedcolor>red</selectedcolor>
@@ -126,9 +122,7 @@
                             <colordiffuse>445555FF</colordiffuse>
                         </control>
                         <control type="label">
-                            <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18"
-                                       time="0" reversible="true">Conditional
-                            </animation>
+                            <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                             <posx>40</posx>
                             <width>40</width>
                             <height>75</height>
@@ -140,9 +134,7 @@
                             <info>ListItem.ChannelNumber</info>
                         </control>
                         <control type="label">
-                            <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18"
-                                       time="0" reversible="true">Conditional
-                            </animation>
+                            <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
                             <posx>45</posx>
                             <width>650</width>
                             <selectedcolor>red</selectedcolor>
@@ -187,9 +179,7 @@
                 <scroll>false</scroll>
                 <align>right</align>
                 <aligny>center</aligny>
-                <label>$LOCALIZE[31000]
-                    ([COLOR=White]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])
-                </label>
+                <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])</label>
             </control>
         </control>
     </include>
@@ -209,10 +199,7 @@
                     <textcolor>gray</textcolor>
                     <align>center</align>
                     <visible>Container(12).ListItem.HasEpg</visible>
-                    <label>$INFO[Container(21).ListItem.StartTime] •
-                        [COLOR=red][B]$INFO[Container(12).ListItem.Title][/B][/COLOR] •
-                        $INFO[Container(12).ListItem.EndTime]
-                    </label>
+                    <label>$INFO[Container(21).ListItem.StartTime] • [COLOR=red][B]$INFO[Container(12).ListItem.Title][/B][/COLOR] • $INFO[Container(12).ListItem.EndTime]</label>
                 </control>
                 <control type="label">
                     <width>760</width>
@@ -361,9 +348,7 @@
                 <scroll>false</scroll>
                 <align>right</align>
                 <aligny>center</aligny>
-                <label>$LOCALIZE[31000]
-                    ([COLOR=White]$INFO[Container(12).CurrentPage]/$INFO[Container(12).NumPages][/COLOR])
-                </label>
+                <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container(12).CurrentPage]/$INFO[Container(12).NumPages][/COLOR])</label>
             </control>
             <control type="image">
                 <posx>1020</posx>
@@ -489,9 +474,7 @@
                 <scroll>false</scroll>
                 <align>right</align>
                 <aligny>center</aligny>
-                <label>$LOCALIZE[31000]
-                    ([COLOR=White]$INFO[Container(13).CurrentPage]/$INFO[Container(13).NumPages][/COLOR])
-                </label>
+                <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container(13).CurrentPage]/$INFO[Container(13).NumPages][/COLOR])</label>
             </control>
         </control>
     </include>
@@ -597,9 +580,7 @@
                         <width></width>
                         <height>52</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="20" fallback="pvr/pvrbutton.png">
-                            $INFO[ListItem.Property(GenreType),pvr/,.png]
-                        </texture>
+                        <texture border="20" fallback="pvr/pvrbutton.png">$INFO[ListItem.Property(GenreType),pvr/,.png]</texture>
                     </control>
                     <control type="label" id="1">
                         <visible>!ListItem.IsRecording</visible>
@@ -646,9 +627,7 @@
                         <width>-</width>
                         <height>52</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="20" fallback="pvr/pvrbutton.png">
-                            $INFO[ListItem.Property(GenreType),pvr/,.png]
-                        </texture>
+                        <texture border="20" fallback="pvr/pvrbutton.png">$INFO[ListItem.Property(GenreType),pvr/,.png]</texture>
                     </control>
                     <control type="image" id="14">
                         <width>-</width>
@@ -980,9 +959,7 @@
                 <scroll>false</scroll>
                 <align>right</align>
                 <aligny>center</aligny>
-                <label>$LOCALIZE[31000]
-                    ([COLOR=White]$INFO[Container(14).CurrentPage]/$INFO[Container(14).NumPages][/COLOR])
-                </label>
+                <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container(14).CurrentPage]/$INFO[Container(14).NumPages][/COLOR])</label>
             </control>
         </control>
     </include>
@@ -1082,9 +1059,7 @@
                 <scroll>false</scroll>
                 <align>right</align>
                 <aligny>center</aligny>
-                <label>$LOCALIZE[31000]
-                    ([COLOR=White]$INFO[Container(17).CurrentPage]/$INFO[Container(17).NumPages][/COLOR])
-                </label>
+                <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container(17).CurrentPage]/$INFO[Container(17).NumPages][/COLOR])</label>
             </control>
         </control>
     </include>
@@ -1328,9 +1303,7 @@
                 <scroll>false</scroll>
                 <align>right</align>
                 <aligny>center</aligny>
-                <label>$LOCALIZE[31000]
-                    ([COLOR=gray]$INFO[Container(15).CurrentPage]/$INFO[Container(15).NumPages][/COLOR])
-                </label>
+                <label>$LOCALIZE[31000] ([COLOR=gray]$INFO[Container(15).CurrentPage]/$INFO[Container(15).NumPages][/COLOR])</label>
             </control>
         </control>
     </include>
@@ -1432,9 +1405,7 @@
                 <scroll>false</scroll>
                 <align>right</align>
                 <aligny>center</aligny>
-                <label>$LOCALIZE[31000]
-                    ([COLOR=White]$INFO[Container(16).CurrentPage]/$INFO[Container(16).NumPages][/COLOR])
-                </label>
+                <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container(16).CurrentPage]/$INFO[Container(16).NumPages][/COLOR])</label>
             </control>
         </control>
     </include>
