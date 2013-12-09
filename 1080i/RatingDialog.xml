@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
-    <include>OpenClose</include>
+   <window>
+   <include>OpenClose</include>
 
     <controls>
         <!--DIALOG BASE-->
         <control type="group">
-            <control type="image">
-                <posx>410</posx>
-                <top>200</top>
-                <width>1100</width>
-                <height>680</height>
-                <texture border="150">images/Dialog.png</texture>
-            </control>
+             <control type="image">
+	  <posx>410</posx>
+	  <top>200</top>
+        <width>1100</width>
+        <height>680</height>
+        <texture border="150">images/Dialog.png</texture>
+      </control>
 
             <control type="label" id="10011"> <!--DIALOG TITLE-->
                 <description>Title</description>
@@ -49,24 +49,24 @@
                 <textcolor>FF999999</textcolor>
             </control>
         </control>
-        <control type="image">
-            <centerx>960</centerx>
-            <top>470</top>
-            <width>700</width>
-            <height>1</height>
-            <texture>lines/Line.png</texture>
-        </control>
-        <control type="image">
-            <centerx>960</centerx>
-            <top>680</top>
-            <width>700</width>
-            <height>1</height>
-            <texture>lines/Line.png</texture>
-        </control>
+<control type="image">
+<centerx>960</centerx>
+<top>470</top>
+<width>700</width>
+<height>1</height>
+<texture>lines/Line.png</texture>
+</control>
+<control type="image">
+<centerx>960</centerx>
+<top>680</top>
+<width>700</width>
+<height>1</height>
+<texture>lines/Line.png</texture>
+</control>
         <!--SIMPLE -->
         <control type="group" id="10014">
-            <posx>700</posx>
-            <top>500</top>
+		<posx>700</posx>
+		<top>500</top>
             <control type="button" id="10030">
                 <description>Love Button</description>
                 <width>250</width>
@@ -97,8 +97,8 @@
 
         <!--ADVANCED-->
         <control type="group" id="10015">
-            <posx>690</posx>
-            <top>550</top>
+		<posx>690</posx>
+		<top>550</top>
             <control type="button" id="11030">
                 <description>1 Button</description>
                 <width>50</width>
@@ -183,9 +183,7 @@
                 <onup>11034</onup>
                 <onleft>11032</onleft>
                 <onright>11034</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -212,9 +210,7 @@
                 <onup>11035</onup>
                 <onleft>11033</onleft>
                 <onright>11035</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -224,9 +220,7 @@
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/5_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)</visible>
             </control>
 
             <control type="button" id="11035">
@@ -243,9 +237,7 @@
                 <onup>11036</onup>
                 <onleft>11034</onleft>
                 <onright>11036</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -255,9 +247,7 @@
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/6_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)</visible>
             </control>
 
             <control type="button" id="11036">
@@ -274,9 +264,7 @@
                 <onup>11037</onup>
                 <onleft>11035</onleft>
                 <onright>11037</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -286,9 +274,7 @@
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/7_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)</visible>
             </control>
 
             <control type="button" id="11037">
@@ -305,9 +291,7 @@
                 <onup>11038</onup>
                 <onleft>11036</onleft>
                 <onright>11038</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -317,9 +301,7 @@
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/8_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)</visible>
             </control>
 
             <control type="button" id="11038">
@@ -336,9 +318,7 @@
                 <onup>11039</onup>
                 <onleft>11037</onleft>
                 <onright>11039</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)|!Control.HasFocus(11037)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)|!Control.HasFocus(11037)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -349,9 +329,7 @@
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/9_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)</visible>
             </control>
 
             <control type="button" id="11039">
@@ -368,9 +346,7 @@
                 <onup>11030</onup>
                 <onleft>11038</onleft>
                 <onright>11030</onright>
-                <visible allowhiddenfocus="true">
-                    !Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)|!Control.HasFocus(11037)|!Control.HasFocus(11038)
-                </visible>
+                <visible allowhiddenfocus="true">!Control.HasFocus(11030)|!Control.HasFocus(11031)|!Control.HasFocus(11032)|!Control.HasFocus(11033)|!Control.HasFocus(11034)|!Control.HasFocus(11035)|!Control.HasFocus(11036)|!Control.HasFocus(11037)|!Control.HasFocus(11038)</visible>
                 <animation effect="zoom" end="115,115" center="auto" time="100">focus</animation>
             </control>
 
@@ -380,9 +356,7 @@
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/10_b.png</texture>
-                <visible>
-                    Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)|Control.HasFocus(11038)
-                </visible>
+                <visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)|Control.HasFocus(11038)</visible>
             </control>
         </control>
 
