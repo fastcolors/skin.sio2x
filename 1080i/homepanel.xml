@@ -73,7 +73,7 @@
           <property name="color">icons/teak.png</property>
           <onclick>ActivateWindow(MyWeather)</onclick>
         </item>
-		 <item id="356">
+		<item id="356">
           <visible>!Skin.HasSetting(sear)</visible>
           <thumb>icons/search.png</thumb>
 		  <label>137</label>

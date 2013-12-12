@@ -36,10 +36,10 @@
                     <posx>100</posx>
                     <width>760</width>
                     <height>8</height>
-                    <texturebg>MusicOSD/ProgressBG.png</texturebg>
-                    <midtexture>MusicOSD/ProgressM.png</midtexture>
-                    <righttexture>MusicOSD/ProgressR.png</righttexture>
-                    <lefttexture>MusicOSD/ProgressL.png</lefttexture>
+                    <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
+                <midtexture border="6,6,6,6">MusicOSD/ProgressM.png</midtexture>
+                <righttexture border="0,6,0,6">MusicOSD/ProgressR.png</righttexture>
+                <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
                     <visible>Container(11).ListItem.HasEpg</visible>
                     <info>Container(11).ListItem.Progress</info>
                 </control>
@@ -216,10 +216,10 @@
                     <posx>100</posx>
                     <width>760</width>
                     <height>8</height>
-                    <texturebg>MusicOSD/ProgressBG.png</texturebg>
-                    <midtexture>MusicOSD/ProgressM.png</midtexture>
-                    <righttexture>MusicOSD/ProgressR.png</righttexture>
-                    <lefttexture>MusicOSD/ProgressL.png</lefttexture>
+                    <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
+                    <midtexture border="6,6,6,6">MusicOSD/ProgressM.png</midtexture>
+                    <righttexture border="0,6,0,6">MusicOSD/ProgressR.png</righttexture>
+                    <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
                     <visible>Container(12).ListItem.HasEpg</visible>
                     <info>Container(12).ListItem.Progress</info>
                 </control>
