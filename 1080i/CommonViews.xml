@@ -789,7 +789,7 @@
       <align>center</align>
    </include>
    <include name="DialogGLs">
-      <centerx>960</centerx>
+      <right>725</right>
 	  <top>8</top>
       <width>470</width>
       <height>1064</height>
