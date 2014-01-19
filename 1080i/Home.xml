@@ -21,7 +21,7 @@
       <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
       <onclick  condition="Control.IsVisible(311)">Skin.ToggleSetting(MoviesShelfWL)</onclick>
       <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
-	  <colordiffuse>FFFFFFFF</colordiffuse>
+	  <colordiffuse>FF000000</colordiffuse>
       <onclick>ReplaceWindow(0)</onclick>
       <onup>noop</onup>
       <ondown condition="Control.IsVisible(311)">311</ondown>
