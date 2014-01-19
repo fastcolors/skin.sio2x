@@ -125,7 +125,7 @@
                   <texture>lines/LineL.png</texture>
                </control>
             </focusedlayout>
-            <content target="video">plugin://plugin.treddi.fast/</content>
+            <content target="video">plugin://plugin.3d.content/</content>
          </control>
          <control type="label">
             <posx>100</posx>
