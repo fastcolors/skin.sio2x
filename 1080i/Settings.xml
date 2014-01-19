@@ -103,7 +103,7 @@
          <control type="image" description="Logo">
             <visible>!Container(500).HasFocus(2)</visible>
             <animation effect="fade" time="100">VisibleChange</animation>
-            <centerx>1210</centerx>
+            <left>960</left>
 			<top>100</top>
             <width>500</width>
             <height>500</height>
@@ -113,7 +113,7 @@
          <control type="image" description="Logo">
             <visible>Container(500).HasFocus(2)</visible>
             <animation effect="fade" time="100">VisibleChange</animation>
-             <centerx>1210</centerx>
+             <left>960</left>
 			<top>80</top>
             <width>500</width>
             <height>500</height>
@@ -121,7 +121,7 @@
             <texture background="true">images/Sio2Logo.png</texture>
          </control>
          <control type="textbox" description="infos">
-			<centerx>1210</centerx>
+			<left>880</left>
 			<top>550</top>
             <width>660</width>
             <height>500</height>
