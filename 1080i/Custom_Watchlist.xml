@@ -13,7 +13,7 @@
     <include>WindowsTopInfos</include>
     <control type="image" description="Line">
       <posx>-200</posx>
-      <top>1007</top>
+      <top>1004</top>
       <height>1</height>
       <width>2320</width>
       <texture>lines/Line.png</texture>
@@ -87,7 +87,7 @@
         <control type="group" description="ReccomendedMoviesList">
           <posx>-210</posx>
           <top>80</top>
-          <control type="fixedlist" id="52">
+          <control type="fixedlist" id="500">
             <height>926</height>
             <width>2200</width>
             <onleft>noop</onleft>
@@ -365,7 +365,7 @@
         <top>60</top>
         <visible>Container(222).Hasfocus(1) | Control.IsVisible()</visible>
         <include>VisibleFade</include>
-        <control type="fixedlist" id="51">
+        <control type="fixedlist" id="500">
           <height>926</height>
           <width>1740</width>
           <onleft>noop</onleft>
@@ -685,7 +685,7 @@
         <visible>Container(222).Hasfocus(2) | Control.IsVisible()</visible>
         <include>VisibleFade</include>
         <control type="group" description="MusicPage">
-          <control type="wraplist" id="53">
+          <control type="wraplist" id="500">
             <posx>70</posx>
             <top>60</top>
             <width>1780</width>
