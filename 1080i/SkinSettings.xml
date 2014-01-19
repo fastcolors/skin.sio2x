@@ -125,7 +125,7 @@
             <texture>help/colormenu.png</texture>
          </control>
          <control type="image" description="ColorMenuOff">
-            <visible>Controlgroup(50).HasFocus(5) + !Skin.HasSetting(colormenu)</visible>
+            <visible>Controlgroup(50).HasFocus(5) + Skin.HasSetting(colormenu)</visible>
             <include>Help_Panel</include>
             <texture>help/off.png</texture>
          </control>
