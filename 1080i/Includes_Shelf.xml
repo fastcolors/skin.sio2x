@@ -349,16 +349,16 @@
   </include>
   <include name="EpisodeShortcutsCommons">
     <include>ShelfFade</include>
-    <top>102</top>
+    <top>82</top>
     <width>1920</width>
     <height>402</height>
     <orientation>horizontal</orientation>
     <scrolltime>400</scrolltime>
     <itemlayout condition="Library.HasContent(TVShows)" height="357" width="480">
 	<control type="group">
-	 <animation effect="zoom" condition="true" start="100" end="90" center="240,0">Conditional</animation>
+	 <animation effect="zoom" condition="true" start="100" end="90" center="240,180">Conditional</animation>
       <control type="image" description="Reflection">
-        <centerx>240</centerx>
+        <left>43</left>
         <top>330</top>
         <width>393</width>
         <height>220</height>
@@ -366,7 +366,7 @@
         <aspectratio scalediffuse="false">scale</aspectratio>
       </control>
       <control type="image">
-        <centerx>240</centerx>
+        <left>23</left>
         <top>128</top>
         <width>433</width>
         <height>242</height>
@@ -375,7 +375,7 @@
       </control>
       <control type="group">
         <control type="image">
-         <centerx>240</centerx>
+         <left>23</left>
           <top>35</top>
           <width>433</width>
           <height>93</height>
@@ -385,7 +385,7 @@
       <control type="group">
         <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
         <control type="label">
-          <posx>240</posx>
+          <left>240</left>
            <top>330</top>
           <width>375</width>
           <height>36</height>
@@ -400,20 +400,20 @@
     </itemlayout>
     <focusedlayout condition="Library.HasContent(TVShows)" height="357" width="480">
       <control type="group">
-	  <animation effect="zoom" start="90" end="100" center="240,0" time="200">Focus</animation>
-	  <animation effect="zoom" start="100" end="90" center="240,0" time="100">unFocus</animation>
+	  <animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>
+	  <animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>
 	  <control type="image">
 		<visible>Control.HasFocus(312)</visible>
 		<animation effect="fade" start="100" end="0" time="20">unFocus</animation>
           <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
-		<centerx>240</centerx>
+		<left>-80</left>
 		<top>-90</top>
           <width>660</width>
           <height>540</height>
           <texture>images/spotlight.png</texture>
         </control>
      <control type="image" description="Reflection">
-        <centerx>240</centerx>
+        <left>43</left>
         <top>330</top>
         <width>393</width>
         <height>220</height>
@@ -421,7 +421,7 @@
         <aspectratio scalediffuse="false">scale</aspectratio>
       </control>
       <control type="image">
-        <centerx>240</centerx>
+        <left>23</left>
         <top>128</top>
         <width>433</width>
         <height>242</height>
@@ -430,7 +430,7 @@
       </control>
       <control type="group">
         <control type="image">
-         <centerx>240</centerx>
+         <left>23</left>
           <top>35</top>
           <width>433</width>
           <height>93</height>
@@ -459,7 +459,7 @@
           <animation effect="fade" start="100" end="0" time="50">unFocus</animation>
           <posx>240</posx>
           <top>0</top>
-          <width>435</width>
+          <width>450</width>
           <height>30</height>
           <font>size26</font>
           <textcolor>black</textcolor>
