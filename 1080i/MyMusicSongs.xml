@@ -27,7 +27,7 @@
             <texture border="50">sidepanel/Back.png</texture>
          </control>
          <control type="grouplist" id="9000">
-            <centerx>1685</centerx>
+            <left>1450</left>
             <include>DialogGLs</include>
             <control type="button" id="607">
                <enable>false</enable>

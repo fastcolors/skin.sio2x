@@ -178,11 +178,12 @@
 			</control>
 			<control type="grouplist">
 				<top>25</top>
-				<centerx>670</centerx>
+				<right>650</right>
+                <width>1140</width>
 				<align>center</align>
 				<orientation>horizontal</orientation>
 				<control type="label">
-					<width min="60">auto</width>
+					<width min="60" max="1080">auto</width>
 					<height>45</height>
 					<font>Size42B</font>
 					<align>center</align>
@@ -200,7 +201,7 @@
 			</control>
 			<control type="textbox">
 				<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
-				<centerx>670</centerx>
+				<right>650</right>
 				<top>70</top>
 				<width>1140</width>
 				<height>55</height>
@@ -211,7 +212,7 @@
 			</control>
 			<control type="grouplist" description="detailedinfos">
 				<visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
-				<right>1140</right>
+				<right>840</right>
 				<top>170</top>
 				<height>600</height>
 				<width>1000</width>
@@ -769,7 +770,7 @@
 			</control>
 			<control type="group">
 				<control type="panel" id="53">
-					<centerx>990</centerx>
+					<left>30</left>
 					<top>60</top>
 					<width>1920</width>
 					<height>1020</height>
@@ -849,7 +850,7 @@
 							<visible>container.content(TVshows) | container.content(seasons)</visible>
 							<control type="image">
 								<visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-								<posx>123</posx>
+								<left>123</left>
 								<top>276</top>
 								<height>45</height>
 								<width>150</width>
@@ -880,7 +881,7 @@
 							<texture>$VAR[WatchStatus]</texture>
 						</control>
 						<control type="image" description="Mpaa">
-							<right>228</right>
+							<left>190</left>
 							<top>29</top>
 							<visible>!IsEmpty(ListItem.Mpaa)</visible>
 							<height>32</height>
@@ -957,7 +958,7 @@
 									<texture>$VAR[WatchStatus]</texture>
 								</control>
 								<control type="image" description="Mpaa">
-									<right>228</right>
+									<left>190</left>
 									<top>29</top>
 									<visible>!IsEmpty(ListItem.Mpaa)</visible>
 									<height>32</height>
@@ -1094,7 +1095,7 @@
 					<texture border="30" colordiffuse="$VAR[diffuseselect]">images/ProgressBG.png</texture>
 				</control>
 				<control type="label" description="Title">
-					<centerx>350</centerx>
+					<left>10</left>
 					<top>4</top>
 					<width>680</width>
 					<height>50</height>
@@ -1161,7 +1162,7 @@
 					</control>
 				</control>
 				<control type="image" description="Stars">
-					<centerx>350</centerx>
+					<left>225</left>
 					<top>120</top>
 					<visible>!IsEmpty(ListItem.Rating)</visible>
 					<height>40</height>
@@ -1186,7 +1187,7 @@
 					<texture border="30" flipx="true"  colordiffuse="$VAR[diffuseselect]">images/ProgressBG.png</texture>
 				</control>
 				<control type="label" description="Title">
-					<centerx>350</centerx>
+					<left>10</left>
 					<top>4</top>
 					<width>680</width>
 					<height>50</height>
@@ -1253,7 +1254,7 @@
 					</control>
 				</control>
 				<control type="image" description="Stars">
-					<centerx>350</centerx>
+					<left>225</left>
 					<top>120</top>
 					<visible>!IsEmpty(ListItem.Rating)</visible>
 					<height>40</height>
