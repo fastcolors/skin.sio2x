@@ -37,9 +37,9 @@
                     <width>760</width>
                     <height>8</height>
                     <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
-                <midtexture border="6,6,6,6">MusicOSD/ProgressM.png</midtexture>
-                <righttexture border="0,6,0,6">MusicOSD/ProgressR.png</righttexture>
-                <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
+                    <midtexture border="6,6,6,6">MusicOSD/ProgressM.png</midtexture>
+                    <righttexture border="0,6,0,6">MusicOSD/ProgressR.png</righttexture>
+                    <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
                     <visible>Container(11).ListItem.HasEpg</visible>
                     <info>Container(11).ListItem.Progress</info>
                 </control>

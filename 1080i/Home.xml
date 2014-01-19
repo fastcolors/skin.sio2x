@@ -119,8 +119,8 @@
         </control>
         <control type="image" description="THMBSBASE">
           <visible>Skin.HasSetting(colormenu)</visible>
-          <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
-          <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
+          <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
+          <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
           <posx>20</posx>
           <top>48</top>
           <width>260</width>
