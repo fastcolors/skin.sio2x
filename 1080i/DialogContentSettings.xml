@@ -94,7 +94,7 @@
         <texture>lines/LineL.png</texture>
       </control>
       <control type="grouplist" id="5" description="Control Area">
-        <centerx>960</centerx>
+        <left>430</left>
         <top>410</top>
         <width>1080</width>
         <height>450</height>
@@ -115,11 +115,11 @@
         <radioposx>1020</radioposx>
       </control>
         <control type="button" id="6" description="Settings">
-          <centerx>960</centerx>
+          <left>430</left>
           <top>795</top>
           <width>1080</width>
           <height>75</height>
-          <align>left</align>
+          <align>center</align>
           <label>$LOCALIZE[5]</label>
           <onup>5</onup>
           <onleft>28</onleft>

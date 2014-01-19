@@ -589,7 +589,8 @@
                         <height>52</height>
                         <font>font12</font>
                         <aligny>center</aligny>
-                        <selectedcolor>White</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>-</shadowcolor>
                         <align>left</align>
                         <scroll>false</scroll>
                         <label>$INFO[ListItem.Label]</label>
@@ -601,7 +602,8 @@
                         <height>52</height>
                         <font>font12</font>
                         <aligny>center</aligny>
-                        <selectedcolor>White</selectedcolor>
+                        <textcolor>red</textcolor>
+                        <shadowcolor>-</shadowcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -642,7 +644,8 @@
                         <height>52</height>
                         <font>font12</font>
                         <aligny>center</aligny>
-                        <selectedcolor>White</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>-</shadowcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -653,7 +656,8 @@
                         <height>52</height>
                         <font>font12</font>
                         <aligny>center</aligny>
-                        <selectedcolor>White</selectedcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>-</shadowcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
