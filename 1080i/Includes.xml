@@ -93,17 +93,17 @@
         <font>size42</font>
     </include>
     <include name="HeadingL">
-        <centerx>480</centerx>
+        <left>0</left>
         <top>20</top>
         <align>left</align>
         <aligny>center</aligny>
-        <width>1260</width>
+        <width>1110</width>
         <height>45</height>
         <textcolor>black</textcolor>
         <font>size42</font>
     </include>
     <include name="HeadingR">
-        <centerx>1440</centerx>
+        <left>960</left>
         <top>50</top>
         <width>960</width>
         <height>75</height>

@@ -287,7 +287,7 @@
             </control>
             <control type="label">
                 <top>25</top>
-                <centerx>670</centerx>
+                <left>0</left>
                 <width>1340</width>
                 <height>45</height>
                 <font>Size42B</font>
@@ -295,7 +295,7 @@
                 <label>$INFO[ListItem.label]</label>
             </control>
             <control type="textbox">
-                <centerx>670</centerx>
+                <left>100</left>
                 <top>70</top>
                 <width>1140</width>
                 <height>55</height>
@@ -441,7 +441,7 @@
                 <autoscroll delay="20000" time="6000" repeat="30000"></autoscroll>
             </control>
             <control type="image">
-                <centerx>1060</centerx>
+                <left>850</left>
                 <top>120</top>
                 <height>380</height>
                 <width>420</width>

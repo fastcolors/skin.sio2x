@@ -63,13 +63,13 @@
                         </control>
                         <control type="label">
                             <top>4</top>
-                            <centerx>55</centerx>
+                            <left>30</left>
                             <height>40</height>
-                            <width min="20" max="50">auto</width>
+                            <width>50</width>
                             <font>size21</font>
                             <align>center</align>
                             <textcolor>white</textcolor>
-                            <shadowcolor></shadowcolor>
+                            <shadowcolor>-</shadowcolor>
                             <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
                         </control>
                     </control>
@@ -142,7 +142,7 @@
                         </control>
                         <control type="label">
                             <top>4</top>
-                            <centerx>55</centerx>
+                            <left>30</left>
                             <height>40</height>
                             <width min="20" max="50">auto</width>
                             <font>size21</font>
@@ -528,7 +528,7 @@
                     <label>[B]$VAR[Plots][/B]</label>
                 </control>
                 <control type="textbox" description="disclaimer">
-                    <centerx>670</centerx>
+                    <left>80</left>
                     <top>740</top>
                     <width>1200</width>
                     <height>60</height>
@@ -548,8 +548,8 @@
                     <label>[B]Author:   $INFO[ListItem.Property(Addon.Creator)][CR]Type:   $INFO[ListItem.Property(Addon.Type)][/B]</label>
                 </control>
                 <control type="image" description="icon">
-                    <centerx>1080</centerx>
-                    <top>160</top>
+                    <left>80</left>
+                    <top>200</top>
                     <height>440</height>
                     <width>440</width>
                     <texture>$VAR[Locandine]</texture>
@@ -1205,6 +1205,7 @@
                 </control>
                 <control type="grouplist">
                     <top>90</top>
+                    <left>10</left>
                     <width>700</width>
                     <height>108</height>
                     <itemgap>15</itemgap>
@@ -1222,21 +1223,21 @@
                         <height>30</height>
                         <width>70</width>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.VideoResolution,badges/Video/,.png]</texture>
+                        <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
                     </control>
                     <control type="image">
                         <visible>!IsEmpty(ListItem.VideoCodec)</visible>
                         <height>30</height>
                         <width>70</width>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.VideoCodec,badges/Video/,.png]</texture>
+                        <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
                     </control>
                     <control type="image">
                         <visible>!IsEmpty(ListItem.AudioCodec)</visible>
                         <height>30</height>
                         <width>70</width>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.AudioCodec,badges/Audio/,.png]</texture>
+                        <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
                     </control>
                     <control type="image">
                         <visible>!IsEmpty(ListItem.FileExtension)</visible>
@@ -1265,7 +1266,7 @@
             </control>
             <control type="image" description="Stars">
                 <visible>Container.Content(Episodes)</visible>
-                <centerx>450r</centerx>
+                <right>300</right>
                 <top>10</top>
                 <visible>!IsEmpty(ListItem.Rating)</visible>
                 <height>50</height>

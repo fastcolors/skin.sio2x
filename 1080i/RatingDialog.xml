@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-   <window>
-   <include>OpenClose</include>
+<window>
+    <include>OpenClose</include>
 
     <controls>
         <!--DIALOG BASE-->
         <control type="group">
-             <control type="image">
-	  <posx>410</posx>
-	  <top>200</top>
-        <width>1100</width>
-        <height>680</height>
-        <texture border="150">images/Dialog.png</texture>
-      </control>
+            <control type="image">
+                <posx>410</posx>
+                <top>200</top>
+                <width>1100</width>
+                <height>680</height>
+                <texture border="150">images/Dialog.png</texture>
+            </control>
 
             <control type="label" id="10011"> <!--DIALOG TITLE-->
                 <description>Title</description>
-                <centerx>960</centerx>
+                <left>660</left>
                 <top>360</top>
                 <width>600</width>
                 <height>30</height>
@@ -26,7 +26,7 @@
 
             <control type="label" id="10012"> <!--MEDIA TITLE-->
                 <description>Title</description>
-                <centerx>960</centerx>
+                <left>660</left>
                 <top>400</top>
                 <width>600</width>
                 <height>24</height>
@@ -38,7 +38,7 @@
 
             <control type="label" id="10013"> <!--RATING TITLE-->
                 <description>Title</description>
-                <centerx>960</centerx>
+                <left>660</left>
                 <top>430</top>
                 <width>600</width>
                 <height>24</height>
@@ -49,24 +49,24 @@
                 <textcolor>FF999999</textcolor>
             </control>
         </control>
-<control type="image">
-<centerx>960</centerx>
-<top>470</top>
-<width>700</width>
-<height>1</height>
-<texture>lines/Line.png</texture>
-</control>
-<control type="image">
-<centerx>960</centerx>
-<top>680</top>
-<width>700</width>
-<height>1</height>
-<texture>lines/Line.png</texture>
-</control>
+        <control type="image">
+            <left>610</left>
+            <top>470</top>
+            <width>700</width>
+            <height>1</height>
+            <texture>lines/Line.png</texture>
+        </control>
+        <control type="image">
+            <left>610</left>
+            <top>680</top>
+            <width>700</width>
+            <height>1</height>
+            <texture>lines/Line.png</texture>
+        </control>
         <!--SIMPLE -->
         <control type="group" id="10014">
-		<posx>700</posx>
-		<top>500</top>
+            <posx>700</posx>
+            <top>500</top>
             <control type="button" id="10030">
                 <description>Love Button</description>
                 <width>250</width>
@@ -94,11 +94,10 @@
                 <onright>10030</onright>
             </control>
         </control>
-
         <!--ADVANCED-->
         <control type="group" id="10015">
-		<posx>690</posx>
-		<top>550</top>
+            <posx>690</posx>
+            <top>550</top>
             <control type="button" id="11030">
                 <description>1 Button</description>
                 <width>50</width>
