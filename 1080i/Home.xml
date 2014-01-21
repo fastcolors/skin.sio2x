@@ -203,8 +203,7 @@
                 <control type="rss" description="RSS Feed">
                     <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
                     <include>OpenClose</include>
-                    <posx>0</posx>
-                    <top>506</top>
+                    <top>507</top>
                     <width>1920</width>
                     <height>33</height>
                     <font>size22</font>
@@ -312,7 +311,7 @@
         </control>
         <control type="label">
             <description>SKIN VERSION</description>
-            <right>1910</right>
+            <right>10</right>
             <top>1060</top>
             <width>80</width>
             <height>20</height>
@@ -320,6 +319,17 @@
             <textcolor>lightblue</textcolor>
             <align>right</align>
             <label>$INFO[System.AddonVersion(skin.sio2x)]</label>
+        </control>
+        <control type="label" description="clock">
+            <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Skin.HasSetting(HideClock)</visible>
+            <right>40</right>
+            <top>26</top>
+            <width>330</width>
+            <height>33</height>
+            <font>size24B</font>
+            <align>right</align>
+            <label>$INFO[System.Time] - $INFO[System.Date]</label>
+            <shadowcolor>-</shadowcolor>
         </control>
     </controls>
 </window>
