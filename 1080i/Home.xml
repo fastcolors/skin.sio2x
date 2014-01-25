@@ -320,16 +320,38 @@
             <align>right</align>
             <label>$INFO[System.AddonVersion(skin.sio2x)]</label>
         </control>
-        <control type="label" description="clock">
+
+        <control type="grouplist">
             <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Skin.HasSetting(HideClock)</visible>
+            <top>18</top>
             <right>40</right>
-            <top>26</top>
-            <width>330</width>
-            <height>33</height>
-            <font>size24B</font>
+            <orientation>horizontal</orientation>
+            <itemgap>16</itemgap>
             <align>right</align>
-            <label>$INFO[System.Time] - $INFO[System.Date]</label>
-            <shadowcolor>-</shadowcolor>
+            <control type="image" description="WebLink">
+                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                <width>30</width>
+                <height>48</height>
+                <texture>wireless.png</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="label" description="Battery">
+                <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,99) + !Skin.HasSetting(hideconnection)</visible>
+                <posx>35r</posx>
+                <posy>20</posy>
+                <width min="30" max="500">auto</width>
+                <height>45</height>
+                <font>size30</font>
+                <textcolor>White</textcolor>
+                <label>$INFO[System.BatteryLevel] Batt.</label>
+            </control>
+            <control type="label" description="Clock">
+                <visible>!Skin.HasSetting(HideClock)</visible>
+                <width min="30" max="500">auto</width>
+                <height>45</height>
+                <font>size28</font>
+                <label>[B]$INFO[System.Time] $INFO[System.Date][/B]</label>
+            </control>
         </control>
     </controls>
 </window>

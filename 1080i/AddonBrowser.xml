@@ -4,12 +4,7 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <controls>
-        <control type="image" description="Default BG">
-            <width>1920</width>
-            <height>1080</height>
-            <texture background="true">$INFO[Skin.String(CustomBgHome)]</texture>
-            <colordiffuse>77FFFFFF</colordiffuse>
-        </control>
+        <include>BlackBackground</include>
         <control type="group" description="List">
             <include>SlimListItemCount</include>
             <posx>960</posx>

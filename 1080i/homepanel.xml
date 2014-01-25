@@ -285,7 +285,7 @@
             <thumb>icons/quits.png</thumb>
             <label>351</label>
             <property name="color">icons/darkblue.png</property>
-            <onclick>ActivateWindow(1191)</onclick>
+            <onclick>ActivateWindow(shutdownmenu)</onclick>
         </item>
     </include>
 </includes>

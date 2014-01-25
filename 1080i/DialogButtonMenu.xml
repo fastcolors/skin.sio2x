@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="buttonMenu" id="1191">
+<window type="buttonMenu">
   <defaultcontrol>9000</defaultcontrol>
   <include>DialogOpenClose</include>
   <controls>
@@ -108,53 +108,17 @@
         <texturefocus>BM_TimeroffFO.png</texturefocus>
 		<colordiffuse>FFFFFFFF</colordiffuse>
         <onclick>AlarmClock(Timer,Quit())</onclick>
-        <label>13013</label>
+        <label>Timer</label>
       </control>
     </control>
     <control type="group">
       <posx>660</posx>
       <top>565</top>
-      <control type="label">
-        <visible>ControlGroup(9000).HasFocus(1)</visible>
+      <control type="label" id="3100">
         <width>600</width>
         <align>center</align>
         <font>size39B</font>
         <label>13009</label>
-      </control>
-      <control type="label">
-        <visible>ControlGroup(9000).HasFocus(2)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>13005</label>
-      </control>
-      <control type="label">
-        <visible>ControlGroup(9000).HasFocus(3)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>13011</label>
-      </control>
-      <control type="label">
-        <visible>ControlGroup(9000).HasFocus(4)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>13013</label>
-      </control>
-      <control type="label">
-        <visible>ControlGroup(9000).HasFocus(5)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>31032</label>
-      </control>
-	  <control type="label">
-        <visible>ControlGroup(9000).HasFocus(6)</visible>
-        <width>600</width>
-        <align>center</align>
-        <font>size39B</font>
-        <label>Timer</label>
       </control>
     </control>
   </controls>

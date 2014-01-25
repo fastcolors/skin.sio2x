@@ -185,8 +185,8 @@
                 </control>
                 <control type="image">
                     <posx>250</posx>
-                    <width>5</width>
-                    <height>500</height>
+                    <width>3</width>
+                    <height>482</height>
                     <texture>lines/LineV.png</texture>
                 </control>
             </itemlayout>
@@ -246,8 +246,8 @@
                 </control>
                 <control type="image">
                     <posx>250</posx>
-                    <width>5</width>
-                    <height>500</height>
+                    <width>3</width>
+                    <height>482</height>
                     <texture>lines/LineV.png</texture>
                 </control>
             </focusedlayout>

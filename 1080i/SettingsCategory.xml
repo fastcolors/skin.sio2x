@@ -65,7 +65,7 @@
             <height>75</height>
             <texturenofocus>-</texturenofocus>
             <invalidcolor>invalid</invalidcolor>
-            <font>size30</font>
+            <font>size24</font>
             <align>left</align>
         </control>
         <control type="radiobutton" id="8" description="Radio Button">
@@ -73,20 +73,21 @@
             <height>75</height>
             <texturenofocus>-</texturenofocus>
             <radioposx>0</radioposx>
-            <font>size30</font>
+            <font>size24</font>
             <align>left</align>
         </control>
         <control type="spincontrolex" id="9" description="Spin control">
             <width>1260</width>
             <height>75</height>
             <align>left</align>
-            <font>size30</font> </control>
+            <font>size24</font>
+        </control>
         <control type="button" id="10" description="Category Button">
             <width>400</width>
             <height>75</height>
             <align>center</align>
             <aligny>center</aligny>
-            <font>size30</font> </control>
+            <font>size24</font> </control>
         <control type="scrollbar" id="60">
             <posx>39r</posx>
             <top>159</top>

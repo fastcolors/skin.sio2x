@@ -12,9 +12,10 @@
             <top>80</top>
             <control type="grouplist" id="50">
                 <width>900</width>
-                <height>960</height>
+                <height>980</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
+                <itemgap>0</itemgap>
                 <onup>50</onup>
                 <ondown>50</ondown>
                 <pagecontrol>60</pagecontrol>
