@@ -8,9 +8,9 @@
             <control type="fixedlist" id="52">
                 <visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>
                 <posx>60</posx>
-                <top>130</top>
+                <top>100</top>
                 <width>1920</width>
-                <height>840</height>
+                <height>979</height>
                 <onleft condition="SubString(ListItem.path,videodb://movies/sets/)">990</onleft>
                 <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                 <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
@@ -30,7 +30,7 @@
                         <top>10</top>
                         <width>94</width>
                         <height>120</height>
-                        <texture>$VAR[Locandine]</texture>
+                        <texture background="true">$VAR[Locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
@@ -109,7 +109,7 @@
                         <top>10</top>
                         <width>94</width>
                         <height>120</height>
-                        <texture>$VAR[Locandine]</texture>
+                        <texture background="true">$VAR[Locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
@@ -596,7 +596,7 @@
                     </control>
                 </control>
             </control>
-            <!--GLOBALSTUFF-->
+<!--GLOBALSTUFF-->
             <control type="image">
                 <posx>1340</posx>
                 <height>1080</height>
@@ -604,9 +604,11 @@
                 <texture>lines/LineV.png</texture>
             </control>
             <control type="image" description="sfumatura sotto lista">
-                <animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,2)" end="0,-281">Conditional</animation>
-                <animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,4)" end="0,-141">Conditional</animation>
-                <top>971</top>
+                <animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,6)" end="0,-140">Conditional</animation>
+                <animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,4)" end="0,-140">Conditional</animation>
+                <animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,2)" end="0,-140">Conditional</animation>
+                <animation effect="slide" condition="IntegerGreaterThan(Container.NumItems,6) + !Container.HasNext" end="0,-140" time="220" reversible="true">Conditional</animation>
+                <top>1080</top>
                 <left>1340</left>
                 <height>60</height>
                 <width>580</width>
@@ -614,17 +616,17 @@
                 <colordiffuse>88FFFFFF</colordiffuse>
             </control>
             <control type="group">
+                <top>85</top>
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
                 <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
                 <control type="image">
-                    <posx>-8r</posx>
-                    <top>90</top>
+                    <left>-8r</left>
                     <height>910</height>
                     <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>-37r</posx>
-                    <top>120</top>
+                    <left>-37r</left>
+                    <top>30</top>
                     <height>850</height>
                     <onleft>50</onleft>
                     <onright>noop</onright>
@@ -644,11 +646,11 @@
             <control type="group">
                 <include>LargeListItemCount</include>
                 <posx>960</posx>
-                <top>131</top>
+                <top>125</top>
                 <control type="fixedlist" id="50">
                     <visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>
                     <width>920</width>
-                    <height>888</height>
+                    <height>890</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
                     <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
@@ -681,7 +683,7 @@
             <control type="group" description="Slider and List">
                 <include>SlimListItemCount</include>
                 <posx>960</posx>
-                <top>131</top>
+                <top>120</top>
                 <control type="fixedlist" id="51">
                     <width>940</width>
                     <height>891</height>
@@ -1713,19 +1715,21 @@
                 <showonepage>false</showonepage>
             </control>
         </control>
-        <control type="label">
-            <animation effect="slide" end="-1700,-1000" condition="Control.IsVisible(53)">Conditional</animation>
-            <description>Page Count Label</description>
-            <posx>40r</posx>
-            <top>50r</top>
-            <width>500</width>
-            <height>20</height>
-            <font>font12</font>
-            <textcolor>gray</textcolor>
-            <scroll>false</scroll>
-            <align>right</align>
-            <aligny>center</aligny>
-            <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>
-        </control>
+        <!--<control type="label">-->
+            <!--&lt;!&ndash;<visible>Container.Scrolling</visible>&ndash;&gt;-->
+            <!--<animation effect="slide" end="-1700,-1000" condition="Control.IsVisible(53)">Conditional</animation>-->
+            <!--<animation effect="slide" end="-580,0" condition="Control.IsVisible(52)">Conditional</animation>-->
+            <!--<description>Page Count Label</description>-->
+            <!--<posx>40r</posx>-->
+            <!--<top>50r</top>-->
+            <!--<width>500</width>-->
+            <!--<height>20</height>-->
+            <!--<font>font12</font>-->
+            <!--<textcolor>gray</textcolor>-->
+            <!--<scroll>false</scroll>-->
+            <!--<align>right</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>-->
+        <!--</control>-->
     </include>
 </includes>
