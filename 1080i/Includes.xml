@@ -150,13 +150,14 @@
         </control>
         <!--VIEWTOPINFOS-->
         <control type="grouplist">
-            <animation condition="Control.IsVisible(52)" effect="slide" end="190,40">Conditional</animation>
-            <animation condition="Control.IsVisible(53)" effect="slide" end="-480,0">Conditional</animation>
-            <animation condition="Control.IsVisible(55)" effect="slide" end="-1250,0">Conditional</animation>
-            <animation condition="Control.IsVisible(500)" effect="slide" end="-1250,0">Conditional</animation>
+            <animation condition="Control.IsVisible(52)" effect="slide" end="220,0">Conditional</animation>
+            <animation condition="Control.IsVisible(53)" effect="slide" end="-480,-40">Conditional</animation>
+            <animation condition="Control.IsVisible(55)" effect="slide" end="-1250,-40">Conditional</animation>
+            <animation condition="Control.IsVisible(500)" effect="slide" end="-1250,-40">Conditional</animation>
             <animation condition="Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]" effect="slide" end="-1250,0">Conditional</animation>
-            <left>1150</left>
-            <width>580</width>
+            <top>40</top>
+            <centerleft>1440</centerleft>
+            <width>560</width>
             <height>75</height>
             <align>center</align>
             <aligny>bottom</aligny>
