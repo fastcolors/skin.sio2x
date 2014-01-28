@@ -5,10 +5,10 @@
     <backgroundcolor>background</backgroundcolor>
     <controls>
         <include>BlackBackground</include>
-        <control type="button" id="10" description="Startup Trigger">
+        <control type="button" id="10">
+            <onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
-            <onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
         </control>
     </controls>
 </window>

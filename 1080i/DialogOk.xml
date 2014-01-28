@@ -4,8 +4,6 @@
     <defaultcontrol always="true">10</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
-
-
     <include>DialogOpenClose</include>
     <controls>
         <control type="group">
