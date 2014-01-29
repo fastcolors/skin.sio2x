@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="skin.sio2x" version="2.0.2" name="SiO2-X" provider-name="FastColors">
-	<requires>
-		<import addon="xbmc.gui" version="5.0.1"/>
-		<!--import addon="service.skin.widgets" version="0.0.13"/>
-    <import addon="script.favourites" version="3.2.5"/>
-	<import addon="script.populate.set" version="0.0.1"/>
-	<import addon="script.globalsearch" version="2.0.8"/>
-	<import addon="script.cinema.experience" version="3.0.3"/>
-    <import addon="plugin.3d.content" version="0.0.1"/-->
-	</requires>
-	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
-		<res width="1920" height="1080" aspect="16:9" default="false" folder="1080i"/>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<!--summary lang="ar">A simple and handy Skin visually based on AppleTv</summary>
+    <requires>
+        <import addon="xbmc.gui" version="5.0.1"/>
+        <import addon="service.skin.widgets" version="0.0.13"/>
+        <import addon="script.favourites" version="3.2.5"/>
+        <import addon="script.cinema.experience" version="3.0.3"/>
+        <!--import addon="script.populate.set" version="0.0.1"/>
+        <import addon="script.globalsearch" version="2.0.8"/>
+        <import addon="plugin.3d.content" version="0.0.1"/-->
+    </requires>
+    <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="false" folder="1080i"/>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <!--summary lang="ar">A simple and handy Skin visually based on AppleTv</summary>
     <summary lang="be">A simple and handy Skin visually based on AppleTv</summary>
     <summary lang="bg">A simple and handy Skin visually based on AppleTv</summary>
     <summary lang="ca">Una Skin simple i pràctic basat en AppleTV</summary>
@@ -52,7 +52,7 @@
     <summary lang="uk">Проста і зручна шкіри заснована на AppleTV</summary>
     <summary lang="vi">Giao diện đơn giản và tiện dụng dựa trên AppleTV</summary>
     <summary lang="zh">一个简单和方便的皮肤上的AppleTV</summary-->
-		<!--<description lang="ar"></description>
+        <!--<description lang="ar"></description>
     <description lang="be"></description>
     <description lang="bg"></description>
     <description lang="ca"></description>
@@ -60,29 +60,29 @@
     <description lang="da"></description>
     <description lang="de"></description>
     <description lang="el"></description>-->
-		<description lang="en">If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-		<description lang="es">Si te gusta la política Apple "todo a mano" para interfaces, entonces debe darle una oportunidad a esta Skin. La diseñé tratando de poner menos clics posible entre usted y lo que estas tratando de hacer (o ver ;) ) [CR] Gracias a los probadores e inspiradores: .. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-		<!--<description lang="et"></description>
+        <description lang="en">If you like Apple "everything at hand" policy for interfaces, You might want to give this Skin a try. I designed it trying to put as few clicks as possible between You and what You're trying to do (or watch ;) ).[CR] Thanks to testers and Inspirers: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+        <description lang="es">Si te gusta la política Apple "todo a mano" para interfaces, entonces debe darle una oportunidad a esta Skin. La diseñé tratando de poner menos clics posible entre usted y lo que estas tratando de hacer (o ver ;) ) [CR] Gracias a los probadores e inspiradores: .. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+        <!--<description lang="et"></description>
     <description lang="fi"></description>-->
-		<description lang="fr">Si vous aimez Apple "tout sous la main" la politique pour les interfaces, vous pourriez vouloir donner à ce thème un essai. Je l'ai conçu comme essayer de mettre quelques clics possible entre vous et ce que vous essayez de faire (ou de regarder;)) [CR] Merci aux testeurs et les inspirateurs:.. Toiva, défilement, Abrasher, Lucanoid, Relyter.</description>
-		<!--<description lang="gl"></description>
+        <description lang="fr">Si vous aimez Apple "tout sous la main" la politique pour les interfaces, vous pourriez vouloir donner à ce thème un essai. Je l'ai conçu comme essayer de mettre quelques clics possible entre vous et ce que vous essayez de faire (ou de regarder;)) [CR] Merci aux testeurs et les inspirateurs:.. Toiva, défilement, Abrasher, Lucanoid, Relyter.</description>
+        <!--<description lang="gl"></description>
     <description lang="he"></description>
     <description lang="hr"></description>
     <description lang="hu"></description>
     <description lang="is"></description>-->
-		<description lang="it">Se ti piace la politica di Apple per le interfacce grafiche "tutto a portata di mano", allora dovresti provare questa Skin. L'ho progettata cercando di mettere il minor numero di click tra te e quello che stai cercando di fare (o di guardare ;) ) [CR] Grazie ai testers e agli ispiratori:.. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-		<!--<description lang="ja"></description>
+        <description lang="it">Se ti piace la politica di Apple per le interfacce grafiche "tutto a portata di mano", allora dovresti provare questa Skin. L'ho progettata cercando di mettere il minor numero di click tra te e quello che stai cercando di fare (o di guardare ;) ) [CR] Grazie ai testers e agli ispiratori:.. Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+        <!--<description lang="ja"></description>
     <description lang="km"></description>
     <description lang="ko"></description>
     <description lang="lt"></description>
     <description lang="mk"></description>
     <description lang="nl"></description>
     <description lang="no"></description>-->
-		<description lang="pl">Jeżeli Wam się podoba podejście Apple Inc. do interfejsów, możecie spróbować tą skórę. Zaprojektowałem ją próbując maksymalnie ułatwić użytkownikom dostęp do ich mediów.[CR] Podziękowania dla testerów i pomysłodawców: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-		<!--<description lang="pt"></description>
+        <description lang="pl">Jeżeli Wam się podoba podejście Apple Inc. do interfejsów, możecie spróbować tą skórę. Zaprojektowałem ją próbując maksymalnie ułatwić użytkownikom dostęp do ich mediów.[CR] Podziękowania dla testerów i pomysłodawców: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+        <!--<description lang="pt"></description>
     <description lang="ro"></description>-->
-		<description lang="ru">Если Вам нравится подход Apple к интерфейсам - "все под рукой", то Вам, возможно, понравится этот скин. Я сделал его, пытаясь максимально уменьшить количество кликов мышкой для выполнения вашей задачи.[CR] Спасибо для тестеров и доноров идей: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
-		<!-- <description lang="sk"></description>
+        <description lang="ru">Если Вам нравится подход Apple к интерфейсам - "все под рукой", то Вам, возможно, понравится этот скин. Я сделал его, пытаясь максимально уменьшить количество кликов мышкой для выполнения вашей задачи.[CR] Спасибо для тестеров и доноров идей: Toiva, Scrolling, Abrasher, Lucanoid, Relyter.</description>
+        <!-- <description lang="sk"></description>
     <description lang="sl"></description>
     <description lang="sv"></description>
     <description lang="th"></description>
@@ -90,7 +90,7 @@
     <description lang="uk"></description>
     <description lang="vi"></description>
     <description lang="zh"></description>
-	-->
-		<disclaimer>SiO2 - X - May cause addiction.</disclaimer>
-	</extension>
+    -->
+        <disclaimer>SiO2 - X - May cause addiction.</disclaimer>
+    </extension>
 </addon>
