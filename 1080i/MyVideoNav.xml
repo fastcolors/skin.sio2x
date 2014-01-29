@@ -3,6 +3,7 @@
     <defaultcontrol always="true">52</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
+
     <views>52,51,50,53,55,500</views>
     <!--
    52 Sio2
@@ -14,6 +15,7 @@
    -->
     <include>OpenClose</include>
     <controls>
+        <include>BlackBackground</include>
         <include>Videoviews</include>
         <include>WindowsTopInfos</include>
         <control type="group" description="Side menu 9000 group">

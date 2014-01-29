@@ -17,6 +17,8 @@
         <animation effect="slide" start="520,0" end="0,0" time="300" reversible="false">visiblechange</animation>
     </include>
     <include name="BlackBackground">
+        <control type="group">
+            <visible>![[Container.Content(Addons) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(movies)] + [Control.IsVisible(51) | Control.IsVisible(53)]]</visible>
         <control type="image" description="Default BG">
             <width>1920</width>
             <height>1080</height>
@@ -37,6 +39,7 @@
             <height>1080</height>
             <texture background="true">$VAR[bgimg]</texture>
             <colordiffuse>77FFFFFF</colordiffuse>
+        </control>
         </control>
     </include>
     <include name="OpenClose">
@@ -150,6 +153,7 @@
         </control>
         <!--VIEWTOPINFOS-->
         <control type="grouplist">
+            <animation condition="Control.IsVisible(575)" effect="slide" end="0,-30">Conditional</animation>
             <animation condition="Control.IsVisible(52)" effect="slide" end="220,0">Conditional</animation>
             <animation condition="Control.IsVisible(53)" effect="slide" end="-480,-40">Conditional</animation>
             <animation condition="Control.IsVisible(55)" effect="slide" end="-1250,-40">Conditional</animation>

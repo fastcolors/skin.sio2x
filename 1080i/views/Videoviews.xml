@@ -4,7 +4,7 @@
         <!--NEW VIEW SiO2-->
         <control type="group" description="sio2view">
             <visible>Control.IsVisible(52)</visible>
-            <include>BlackBackground</include>
+            <!--<include>BlackBackground</include>-->
             <control type="fixedlist" id="52">
                 <visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>
                 <posx>60</posx>
@@ -619,12 +619,6 @@
         <!--LISTA GRANDE -->
         <control type="group" description="BigList">
             <visible>Control.IsVisible(50)</visible>
-            <control type="image">
-                <fadetime>100</fadetime>
-                <include>Dimensions_Fullscreen</include>
-                <texture>$VAR[fanart]</texture>
-                <colordiffuse>2BFFFFFF</colordiffuse>
-            </control>
             <include>left_Panel</include>
             <control type="group">
                 <include>LargeListItemCount</include>
@@ -747,12 +741,6 @@
         <!--ICONE-->
         <control type="group" description="Icons view">
             <visible>Control.IsVisible(53)</visible>
-            <control type="image">
-                <fadetime>100</fadetime>
-                <include>Dimensions_Fullscreen</include>
-                <texture>$VAR[fanart]</texture>
-                <colordiffuse>2BFFFFFF</colordiffuse>
-            </control>
             <control type="group">
                 <control type="panel" id="53">
                     <left>30</left>
@@ -1281,13 +1269,6 @@
         <control type="group" description="BANNERS">
             <visible>Control.IsVisible(55)</visible>
             <control type="group" description="Container and frame">
-                <control type="image">
-                    <include>Dimensions_Fullscreen</include>
-                    <include>Fanart_Fade</include>
-                    <texture background="true">$VAR[fanart]</texture>
-                    <colordiffuse>55AAAABB</colordiffuse>
-                    <aspectratio>scale</aspectratio>
-                </control>
                 <control type="fixedlist" id="55" description="bannerlist">
                     <visible>container.content(tvshows)</visible>
                     <visible>!IsEmpty(Container.FolderPath)</visible>
