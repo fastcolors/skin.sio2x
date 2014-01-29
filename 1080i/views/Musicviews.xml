@@ -177,9 +177,9 @@
             <include>BlackBackground</include>
             <control type="fixedlist" id="52">
                 <posx>60</posx>
-                <top>130</top>
+                <top>100</top>
                 <width>1920</width>
-                <height>840</height>
+                <height>979</height>
                 <visible>!IsEmpty(Container.FolderPath)</visible>
                 <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                 <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
@@ -190,7 +190,7 @@
                 <pagecontrol>60</pagecontrol>
                 <viewtype label="Sio2View">Sio2View</viewtype>
                 <focusposition>2</focusposition>
-                <movement>2</movement>
+                <movement>4</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime>250</scrolltime>
                 <itemlayout height="140">
@@ -286,8 +286,7 @@
                 </focusedlayout>
             </control>
             <control type="label">
-                <top>25</top>
-                <left>0</left>
+                <top>20</top>
                 <width>1340</width>
                 <height>45</height>
                 <font>Size42B</font>
@@ -306,10 +305,10 @@
             </control>
             <!--INFOS-->
             <control type="grouplist" description="Infos">
-                <right>1100</right>
-                <top>170</top>
+                <centerleft>530</centerleft>
+                <top>155</top>
                 <height>600</height>
-                <width>1000</width>
+                <width>900</width>
                 <itemgap>10</itemgap>
                 <control type="label">
                     <visible>!Container.Content(Albums) + !IsEmpty(ListItem.Property(Artist_Born))</visible>
@@ -317,7 +316,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[21893]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Born)][/B][/COLOR]</label>
                 </control>
                 <control type="label">
@@ -326,7 +324,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[21897]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Died)][/B][/COLOR]</label>
                 </control>
                 <control type="label">
@@ -335,7 +332,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[21894]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Formed)][/B][/COLOR]</label>
                 </control>
                 <control type="label">
@@ -344,7 +340,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[21896]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Disbanded)][/B][/COLOR]</label>
                 </control>
                 <control type="label">
@@ -353,7 +348,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[345]: [COLOR Silver][B]$INFO[ListItem.Year][/B][/COLOR]</label>
                 </control>
                 <control type="textbox">
@@ -362,7 +356,6 @@
                     <height>80</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <autoscroll>false</autoscroll>
                     <label>$LOCALIZE[515] / $LOCALIZE[176]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Style)]$INFO[ListItem.Property(Album_Style)][/B][/COLOR]</label>
                 </control>
@@ -372,7 +365,6 @@
                     <height>80</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <autoscroll>false</autoscroll>
                     <label>$LOCALIZE[175]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Mood)]$INFO[ListItem.Property(Album_Mood)][/B][/COLOR]</label>
                 </control>
@@ -382,7 +374,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[21899]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Label)][/B][/COLOR]</label>
                 </control>
                 <control type="label">
@@ -391,7 +382,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[21892]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Instrument)][/B][/COLOR]</label>
                 </control>
                 <control type="label">
@@ -400,7 +390,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[564]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Type)][/B][/COLOR]</label>
                 </control>
                 <control type="textbox">
@@ -409,7 +398,6 @@
                     <height>60</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[21895]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Theme)][/B][/COLOR]</label>
                 </control>
                 <control type="label">
@@ -418,7 +406,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[576]: [COLOR Silver][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
                 </control>
                 <control type="label">
@@ -427,7 +414,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
                 </control>
             </control>
@@ -445,7 +431,7 @@
                 <top>120</top>
                 <height>380</height>
                 <width>420</width>
-                <texture>$VAR[Locandine]</texture>
+                <texture diffuse="images/Diffuse.png">$VAR[Locandine]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -479,16 +465,18 @@
                     <aspectratio align="left">scale</aspectratio>
                 </control>
             </control>
-            <control type="image" description="sfumatura sotto list">
-                <animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,2)" end="0,-281">Conditional</animation>
-                <animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,4)" end="0,-141">Conditional</animation>
-                <top>971</top>
-                <left>1340</left>
-                <height>60</height>
-                <width>580</width>
-                <texture diffuse="images/ombra.png" flipy="true">lines/LineL.png</texture>
-                <colordiffuse>88FFFFFF</colordiffuse>
-            </control>
+            <!--<control type="image" description="sfumatura sotto lista">-->
+                <!--<animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,6)" end="0,-140">Conditional</animation>-->
+                <!--<animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,4)" end="0,-140">Conditional</animation>-->
+                <!--<animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,2)" end="0,-140">Conditional</animation>-->
+                <!--<animation effect="slide" condition="IntegerGreaterThan(Container.NumItems,6) + !Container.HasNext" end="0,-140" time="220" reversible="true">Conditional</animation>-->
+                <!--<top>1080</top>-->
+                <!--<left>1340</left>-->
+                <!--<height>60</height>-->
+                <!--<width>580</width>-->
+                <!--<texture diffuse="images/ombra.png" flipy="true">lines/LineL.png</texture>-->
+                <!--<colordiffuse>88FFFFFF</colordiffuse>-->
+            <!--</control>-->
             <control type="group">
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
                 <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
@@ -631,18 +619,18 @@
                 <showonepage>false</showonepage>
             </control>
         </control>
-        <control type="label">
-            <description>Page Count Label</description>
-            <posx>40r</posx>
-            <top>50r</top>
-            <width>500</width>
-            <height>20</height>
-            <font>font12</font>
-            <textcolor>gray</textcolor>
-            <scroll>false</scroll>
-            <align>right</align>
-            <aligny>center</aligny>
-            <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>
-        </control>
+        <!--<control type="label">-->
+            <!--<description>Page Count Label</description>-->
+            <!--<posx>40r</posx>-->
+            <!--<top>50r</top>-->
+            <!--<width>500</width>-->
+            <!--<height>20</height>-->
+            <!--<font>font12</font>-->
+            <!--<textcolor>gray</textcolor>-->
+            <!--<scroll>false</scroll>-->
+            <!--<align>right</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>-->
+        <!--</control>-->
     </include>
 </includes>

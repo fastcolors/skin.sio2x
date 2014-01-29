@@ -2,7 +2,7 @@
 <window id="2006">
     <defaultcontrol always="true">-</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <backgroundcolor>background</backgroundcolor>
+    <backgroundcolor>FF000000</backgroundcolor>
     <onload condition="system.hasaddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
     <controls>
         <control type="group">
@@ -103,7 +103,7 @@
                         </control>
                     </control>
                     <control type="group" description="Main Labels">
-                        <posx>739</posx>
+                        <left>739</left>
                         <control type="image" description="Info BG">
                             <posx>-35</posx>
                             <top>515</top>
@@ -120,37 +120,35 @@
                             <top>525</top>
                             <width>900</width>
                             <scroll>true</scroll>
-                            <align>left</align>
+                            <align>center</align>
                             <font>size42B</font>
                             <textcolor>black</textcolor>
-
                             <animation effect="fade" time="200">VisibleChange</animation>
                             <label>$INFO[MusicPlayer.Title]</label>
                         </control>
                         <control type="label" description="Artist">
-                            <posx>0</posx>
                             <top>585</top>
                             <width>900</width>
                             <label>$INFO[MusicPlayer.Artist]</label>
                             <scroll>true</scroll>
-                            <align>left</align>
+                            <align>center</align>
                             <font>size38</font>
-                            <textcolor>3</textcolor>
+                            <textcolor>gray</textcolor>
                         </control>
                         <control type="label" description="Album">
                             <top>636</top>
                             <width>900</width>
                             <label>$INFO[MusicPlayer.Album]</label>
-                            <align>left</align>
+                            <align>center</align>
                             <font>size38</font>
-                            <textcolor>3</textcolor>
+                            <textcolor>gray</textcolor>
                         </control>
                         <control type="label" description="Track position">
                             <posx>0</posx>
                             <top>690</top>
                             <width>900</width>
-                            <align>left</align>
-                            <textcolor></textcolor>
+                            <align>center</align>
+                            <textcolor>gray</textcolor>
                             <animation effect="fade" time="200">VisibleChange</animation>
                             <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
                             <font>size26</font>
@@ -262,44 +260,44 @@
                             <animation effect="fade" time="200">Hidden</animation>
                         </control>
                         <control type="label" description="Title label">
-                            <posx>0</posx>
+                            <posx>-900</posx>
                             <top>525</top>
                             <width>900</width>
                             <scroll>true</scroll>
-                            <align>right</align>
+                            <align>center</align>
                             <font>size42B</font>
                             <textcolor>black</textcolor>
                             <animation effect="fade" time="200">VisibleChange</animation>
                             <label>$INFO[MusicPlayer.Title]</label>
                         </control>
                         <control type="label" description="Artist">
-                            <posx>0</posx>
+                            <posx>-900</posx>
                             <top>585</top>
                             <width>900</width>
                             <label>$INFO[MusicPlayer.Artist]</label>
                             <scroll>true</scroll>
-                            <align>right</align>
+                            <align>center</align>
                             <font>size38</font>
-                            <textcolor>3</textcolor>
+                            <textcolor>gray</textcolor>
                         </control>
                         <control type="label" description="Album">
+                            <posx>-900</posx>
                             <top>636</top>
                             <width>900</width>
                             <label>$INFO[MusicPlayer.Album]</label>
-                            <align>right</align>
+                            <align>center</align>
                             <font>size38</font>
-                            <textcolor>3</textcolor>
+                            <textcolor>gray</textcolor>
                         </control>
                         <control type="label" description="Track position">
-                            <posx>0</posx>
+                            <posx>-900</posx>
                             <top>690</top>
                             <width>900</width>
-                            <align>right</align>
-                            <textcolor></textcolor>
+                            <align>center</align>
+                            <textcolor>gray</textcolor>
                             <animation effect="fade" time="200">VisibleChange</animation>
                             <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
                             <font>size26</font>
-
                         </control>
                     </control>
                     <control type="group">

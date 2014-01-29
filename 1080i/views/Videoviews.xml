@@ -21,7 +21,7 @@
                 <pagecontrol>60</pagecontrol>
                 <viewtype label="Sio2View">Sio2View</viewtype>
                 <focusposition>2</focusposition>
-                <movement>3</movement>
+                <movement>4</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime>250</scrolltime>
                 <itemlayout height="140">
@@ -177,8 +177,8 @@
                 </focusedlayout>
             </control>
             <control type="grouplist">
-                <top>25</top>
-                <right>650</right>
+                <top>20</top>
+                <centerleft>670</centerleft>
                 <width>1140</width>
                 <align>center</align>
                 <orientation>horizontal</orientation>
@@ -201,7 +201,7 @@
             </control>
             <control type="textbox">
                 <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
-                <right>650</right>
+                <centerleft>670</centerleft>
                 <top>70</top>
                 <width>1140</width>
                 <height>55</height>
@@ -212,72 +212,58 @@
             </control>
             <control type="grouplist" description="detailedinfos">
                 <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
-                <right>840</right>
-                <top>170</top>
+                <centerleft>530</centerleft>
+                <top>155</top>
                 <height>600</height>
-                <width>1000</width>
-                <itemgap>10</itemgap>
+                <width>900</width>
+                <itemgap>13</itemgap>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Duration)</visible>
                     <width>800</width>
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[180]: [COLOR Silver][B]$INFO[ListItem.Duration] $LOCALIZE[12391][/B][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Genre)</visible>
                     <width>800</width>
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[515]: [COLOR Silver][B]$INFO[ListItem.Genre][/B][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Year)</visible>
                     <width>800</width>
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[562]: [COLOR Silver][B]$INFO[ListItem.Year][/B][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.OriginalTitle) + !StringCompare(ListItem.OriginalTitle,ListItem.label)</visible>
                     <width>800</width>
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[20376]: [COLOR Silver][B]$INFO[ListItem.OriginalTitle][/B][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Director)</visible>
                     <width>800</width>
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[20339]: [COLOR Silver][B]$INFO[ListItem.Director][/B][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Country)</visible>
                     <width>800</width>
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[21875]: [COLOR Silver][B]$INFO[ListItem.Country][/B][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Studio)</visible>
                     <width>800</width>
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <scroll>false</scroll>
                     <label>$LOCALIZE[20388]: [COLOR Silver][B]$INFO[ListItem.Studio][/B][/COLOR]</label>
                 </control>
@@ -287,7 +273,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[576]: [COLOR Silver][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
                 </control>
                 <control type="label">
@@ -296,7 +281,6 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
                 </control>
                 <control type="label">
@@ -305,16 +289,15 @@
                     <height>20</height>
                     <font>Size20</font>
                     <textcolor>gray</textcolor>
-                    <align>right</align>
                     <label>$LOCALIZE[31087]: [COLOR Silver][B]$INFO[ListItem.PercentPlayed] %[/B][/COLOR]</label>
                 </control>
             </control>
             <control type="grouplist">
                 <top>470</top>
-                <right>940</right>
+                <centerleft>535</centerleft>
                 <height>80</height>
-                <width>600</width>
-                <align>right</align>
+                <width>610</width>
+                <align>center</align>
                 <visible>!IsEmpty(ListItem.RatingAndVotes) + !SubString(ListItem.path,videodb://movies/sets/)</visible>
                 <control type="image">
                     <width>600</width>
@@ -332,13 +315,13 @@
             </control>
             <control type="grouplist" description="flags">
                 <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
-                <posx>130</posx>
+                <centerleft>535</centerleft>
                 <top>565</top>
                 <height>600</height>
-                <width>810</width>
+                <width>800</width>
+                <align>center</align>
                 <itemgap>10</itemgap>
                 <orientation>horizontal</orientation>
-                <align>right</align>
                 <control type="image">
                     <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2770" tween="sine">Conditional</animation>
                     <height>50</height>
@@ -403,7 +386,7 @@
                     <colordiffuse>88FFFFFF</colordiffuse>
                 </control>
                 <control type="textbox" description="plots">
-                    <posx>60</posx>
+                    <centerleft>670</centerleft>
                     <top>630</top>
                     <width>1240</width>
                     <height>480</height>
@@ -596,25 +579,25 @@
                     </control>
                 </control>
             </control>
-<!--GLOBALSTUFF-->
+            <!--GLOBALSTUFF-->
             <control type="image">
                 <posx>1340</posx>
                 <height>1080</height>
                 <width>1</width>
                 <texture>lines/LineV.png</texture>
             </control>
-            <control type="image" description="sfumatura sotto lista">
-                <animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,6)" end="0,-140">Conditional</animation>
-                <animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,4)" end="0,-140">Conditional</animation>
-                <animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,2)" end="0,-140">Conditional</animation>
-                <animation effect="slide" condition="IntegerGreaterThan(Container.NumItems,6) + !Container.HasNext" end="0,-140" time="220" reversible="true">Conditional</animation>
-                <top>1080</top>
-                <left>1340</left>
-                <height>60</height>
-                <width>580</width>
-                <texture diffuse="images/ombra.png" flipy="true">lines/LineL.png</texture>
-                <colordiffuse>88FFFFFF</colordiffuse>
-            </control>
+            <!--<control type="image" description="sfumatura sotto lista">-->
+            <!--<animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,6)" end="0,-140">Conditional</animation>-->
+            <!--<animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,4)" end="0,-140">Conditional</animation>-->
+            <!--<animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,2)" end="0,-140">Conditional</animation>-->
+            <!--<animation effect="slide" condition="IntegerGreaterThan(Container.NumItems,6) + !Container.HasNext" end="0,-140" time="220" reversible="true">Conditional</animation>-->
+            <!--<top>1080</top>-->
+            <!--<left>1340</left>-->
+            <!--<height>60</height>-->
+            <!--<width>580</width>-->
+            <!--<texture diffuse="images/ombra.png" flipy="true">lines/LineL.png</texture>-->
+            <!--<colordiffuse>88FFFFFF</colordiffuse>-->
+            <!--</control>-->
             <control type="group">
                 <top>85</top>
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
@@ -1716,20 +1699,20 @@
             </control>
         </control>
         <!--<control type="label">-->
-            <!--&lt;!&ndash;<visible>Container.Scrolling</visible>&ndash;&gt;-->
-            <!--<animation effect="slide" end="-1700,-1000" condition="Control.IsVisible(53)">Conditional</animation>-->
-            <!--<animation effect="slide" end="-580,0" condition="Control.IsVisible(52)">Conditional</animation>-->
-            <!--<description>Page Count Label</description>-->
-            <!--<posx>40r</posx>-->
-            <!--<top>50r</top>-->
-            <!--<width>500</width>-->
-            <!--<height>20</height>-->
-            <!--<font>font12</font>-->
-            <!--<textcolor>gray</textcolor>-->
-            <!--<scroll>false</scroll>-->
-            <!--<align>right</align>-->
-            <!--<aligny>center</aligny>-->
-            <!--<label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>-->
+        <!--&lt;!&ndash;<visible>Container.Scrolling</visible>&ndash;&gt;-->
+        <!--<animation effect="slide" end="-1700,-1000" condition="Control.IsVisible(53)">Conditional</animation>-->
+        <!--<animation effect="slide" end="-580,0" condition="Control.IsVisible(52)">Conditional</animation>-->
+        <!--<description>Page Count Label</description>-->
+        <!--<posx>40r</posx>-->
+        <!--<top>50r</top>-->
+        <!--<width>500</width>-->
+        <!--<height>20</height>-->
+        <!--<font>font12</font>-->
+        <!--<textcolor>gray</textcolor>-->
+        <!--<scroll>false</scroll>-->
+        <!--<align>right</align>-->
+        <!--<aligny>center</aligny>-->
+        <!--<label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>-->
         <!--</control>-->
     </include>
 </includes>

@@ -17,7 +17,7 @@
             <width>750</width>
             <height>500</height>
             <aspectratio>stretch</aspectratio>
-            <texture border="50">MusicOSD/Back.png</texture>
+            <texture border="50" colordiffuse="88FFFFFF">MusicOSD/Back.png</texture>
         </control>
         <control type="group" id="101">
             <posx>200</posx>
