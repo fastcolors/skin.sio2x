@@ -21,6 +21,7 @@
                     <height>60</height>
                     <font>size33B</font>
                     <textcolor>white</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>$LOCALIZE[142] $INFO[System.Time]</label>
                 </control>
                 <control type="label">
@@ -29,6 +30,7 @@
                     <width>495</width>
                     <height>30</height>
                     <textcolor>white</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>[B]$INFO[Player.Time][/B]</label>
                     <font>size26</font>
                 </control>
@@ -40,6 +42,7 @@
                     <align>right</align>
                     <font>size33B</font>
                     <textcolor>white</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>$LOCALIZE[31005]: $INFO[Player.FinishTime]</label>
                 </control>
                 <control type="label">
@@ -49,6 +52,7 @@
                     <width>195</width>
                     <align>right</align>
                     <textcolor>white</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>[B]- $INFO[Player.TimeRemaining][/B]</label>
                     <font>size26</font>
                 </control>
@@ -62,6 +66,7 @@
                     <aligny>center</aligny>
                     <font>size26</font>
                     <textcolor>white</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>$INFO[VideoPlayer.NextTitle,[COLOR=gray]$LOCALIZE[209]:  [/COLOR]]</label>
                 </control>
             </control>
@@ -74,6 +79,7 @@
                     <align>center</align>
                     <font>size36B</font>
                     <textcolor>white</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <animation effect="fade" time="200">VisibleChange</animation>
                     <label>$INFO[Player.SeekOffset]</label>
                 </control>
