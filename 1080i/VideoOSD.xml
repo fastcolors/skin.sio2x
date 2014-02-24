@@ -41,9 +41,6 @@
                         <onclick>SetFocus(100,2)</onclick>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                         <onclick>ActivateWindow(SubtitleSearch)</onclick>
-                        <!--altclick>Close</altclick>
-                        <altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
-                        <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture-->
                     </control>
                     <control type="button" id="703">
                         <width>590</width>
