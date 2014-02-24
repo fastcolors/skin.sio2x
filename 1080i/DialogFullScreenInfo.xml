@@ -96,26 +96,43 @@
                 <align>center</align>
                 <orientation>horizontal</orientation>
                 <control type="image">
+                    <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
                     <height>50</height>
                     <width>130</width>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[VideoPlayer.VideoAspect,badges/video/,.png]</texture>
+                </control>
+                <control type="image">
+                    <height>50</height>
+                    <width>130</width>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
                     <texture>$INFO[VideoPlayer.VideoResolution,badges/video/,.png]</texture>
                 </control>
                 <control type="image">
                     <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
                     <height>50</height>
                     <width>130</width>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
                     <texture>$INFO[VideoPlayer.VideoCodec,badges/video/,.png]</texture>
+                </control>
+                <control type="image">
+                    <visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+                    <height>50</height>
+                    <width>130</width>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[VideoPlayer.AudioCodec,badges/audio/,.png]</texture>
                 </control>
                 <control type="image">
                     <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
                     <height>50</height>
                     <width>130</width>
-                    <texture>$INFO[VideoPlayer.AudioChannels,badges/channels,.png]</texture>
-                </control>
-                <control type="image">
-                    <height>50</height>
-                    <width>130</width>
-                    <texture>$INFO[VideoPlayer.AudioCodec,badges/audio/,.png]</texture>
+                    <bordersize>3</bordersize>
+                    <aspectratio>keep</aspectratio>
+                    <texture>$INFO[VideoPlayer.AudioChannels,badges/,.png]</texture>
                 </control>
             </control>
         </control>
