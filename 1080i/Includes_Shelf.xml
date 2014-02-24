@@ -15,9 +15,12 @@
         <textcolor>black</textcolor>
     </include>
     <include name="MoviesShortcutsCommons">
+        <animation effect="slide" start="0,0" end="-1920,0" time="400" reversible="true" condition="Container(311).Position(6) | Container(311).Position(7) | Container(311).Position(8) | Container(311).Position(9) | Container(311).Position(10) | Container(311).Position(11)">Conditional</animation>
+        <animation effect="slide" start="0,0" end="-3840,0" time="400" reversible="true" condition="Container(311).Position(12) | Container(311).Position(13) | Container(311).Position(14) | Container(311).Position(15) | Container(311).Position(16) | Container(311).Position(17)">Conditional</animation>
+        <animation effect="slide" start="0,0" end="-5760,0" time="400" reversible="true" condition="Container(311).Position(18) | Container(311).Position(19) | Container(311).Position(20) | Container(311).Position(21) | Container(311).Position(22) | Container(311).Position(23)">Conditional</animation>
         <include>ShelfFade</include>
         <top>50</top>
-        <width>1920</width>
+        <width>7680</width>
         <height>450</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
@@ -243,7 +246,7 @@
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
         <top>70</top>
-        <width>1920</width>
+        <width>3840</width>
         <height>450</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
@@ -480,11 +483,11 @@
             <texture>images/dockfocus.png</texture>
             <animation effect="fade" time="220">VisibleChange</animation>
             <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(1)" effect="slide" start="0,0" end="320,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(2)" effect="slide" start="0,0" end="640,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(3)" effect="slide" start="0,0" end="960,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(4)" effect="slide" start="0,0" end="1280,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(5)" effect="slide" start="0,0" end="1600,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(311).Position(1) | Container(311).Position(7) | Container(311).Position(13)" effect="slide" start="0,0" end="320,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(311).Position(2) | Container(311).Position(8) | Container(311).Position(14)" effect="slide" start="0,0" end="640,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(311).Position(3) | Container(311).Position(9) | Container(311).Position(15)" effect="slide" start="0,0" end="960,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(311).Position(4) | Container(311).Position(10) | Container(311).Position(16)" effect="slide" start="0,0" end="1280,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(311).Position(5) | Container(311).Position(11) | Container(311).Position(17)" effect="slide" start="0,0" end="1600,0" time="220" easing="inout" reversible="true">Conditional</animation>
         </control>
     </include>
     <include name="tvshelslider">
@@ -506,32 +509,32 @@
     <include name="Movies_RA">
         <control type="group">
             <control type="label" description="Top Label">
-                <animation effect="slide" end="320,0" time="400" condition="!Container(311).HasPrevious + [!Skin.HasSetting(Intruder) | Player.HasVideo]">Conditional</animation>
+                <animation effect="slide" end="320,0" time="400" condition="[Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)] + [!Skin.HasSetting(Intruder) | Player.HasVideo]">Conditional</animation>
                 <visible>Control.IsVisible(311)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
                 <label>[B] $LOCALIZE[20386] [/B]</label>
             </control>
             <control type="label" description="Inverted">
-                <animation effect="slide" end="-320,0" time="400" condition="Container(311).HasPrevious + !Skin.HasSetting(Intruder)">Conditional</animation>
+                <animation effect="slide" end="-320,0" time="400" condition="![Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)] + !Skin.HasSetting(Intruder)">Conditional</animation>
                 <visible>Control.IsVisible(311) + !Skin.HasSetting(intruder) + !Player.HasVideo</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
                 <label>[B] $LOCALIZE[31007] [/B]</label>
             </control>
             <control type="label" description="Now Playing">
-                <animation effect="slide" end="-320,0" time="400" condition="Container(311).HasPrevious">Conditional</animation>
+                <animation effect="slide" end="-320,0" time="400" condition="![Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)]">Conditional</animation>
                 <visible>Control.IsVisible(311) + Player.HasVideo</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
                 <label>[B] $LOCALIZE[13350] [/B]</label>
             </control>
-            <control type="list" id="311" description="TOP Shortcuts">
+            <control type="list" id="311" description="Movies Shelf Shortcuts">
                 <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Control.HasFocus(311)]</visible>
                 <onup>9009</onup>
                 <ondown>9000</ondown>
-                <onleft>noop</onleft>
-                <onright>noop</onright>
+                <onleft>311</onleft>
+                <onright>311</onright>
                 <include>MoviesShortcutsCommons</include>
                 <content>
                     <item id="0" description="Movies">
@@ -740,39 +743,39 @@
                         <onclick condition="Skin.HasSetting(scelta)">RunScript(script.cinema.option,$ESCINFO[Window.Property(RecentMovie.17.DBID)])</onclick>
                         <onclick condition="!Skin.HasSetting(scelta)">PlayMedia($ESCINFO[Window.Property(RecentMovie.17.File)])</onclick>
                     </item>
-                    <item id="18" description="Shortcut18">
-                        <visible>!IsEmpty(Window.Property(RecentMovie.18.Path))</visible>
-                        <label>$INFO[Window.Property(RecentMovie.18.Title)]</label>
-                        <label2>$INFO[Window.Property(RecentMovie.18.Year)]</label2>
-                        <thumb>$INFO[Window.Property(RecentMovie.18.Art(poster))]</thumb>
-                        <property name="duration">$INFO[Window.Property(RecentMovie.18.RunTime)]</property>
-                        <property name="Genre">$INFO[Window.Property(RecentMovie.18.Genre)]</property>
-                        <property name="MPAA">$INFO[Window.Property(RecentMovie.18.MPAA)]</property>
-                        <onclick condition="Skin.HasSetting(scelta)">RunScript(script.cinema.option,$ESCINFO[Window.Property(RecentMovie.18.DBID)])</onclick>
-                        <onclick condition="!Skin.HasSetting(scelta)">PlayMedia($ESCINFO[Window.Property(RecentMovie.18.File)])</onclick>
-                    </item>
-                    <item id="19" description="Shortcut19">
-                        <visible>!IsEmpty(Window.Property(RecentMovie.19.Path))</visible>
-                        <label>$INFO[Window.Property(RecentMovie.19.Title)]</label>
-                        <label2>$INFO[Window.Property(RecentMovie.19.Year)]</label2>
-                        <thumb>$INFO[Window.Property(RecentMovie.19.Art(poster))]</thumb>
-                        <property name="duration">$INFO[Window.Property(RecentMovie.19.RunTime)]</property>
-                        <property name="Genre">$INFO[Window.Property(RecentMovie.19.Genre)]</property>
-                        <property name="MPAA">$INFO[Window.Property(RecentMovie.19.MPAA)]</property>
-                        <onclick condition="Skin.HasSetting(scelta)">RunScript(script.cinema.option,$ESCINFO[Window.Property(RecentMovie.19.DBID)])</onclick>
-                        <onclick condition="!Skin.HasSetting(scelta)">PlayMedia($ESCINFO[Window.Property(RecentMovie.19.File)])</onclick>
-                    </item>
-                    <item id="20" description="Shortcut20">
-                        <visible>!IsEmpty(Window.Property(RecentMovie.20.Path))</visible>
-                        <label>$INFO[Window.Property(RecentMovie.20.Title)]</label>
-                        <label2>$INFO[Window.Property(RecentMovie.20.Year)]</label2>
-                        <thumb>$INFO[Window.Property(RecentMovie.20.Art(poster))]</thumb>
-                        <property name="duration">$INFO[Window.Property(RecentMovie.20.RunTime)]</property>
-                        <property name="Genre">$INFO[Window.Property(RecentMovie.20.Genre)]</property>
-                        <property name="MPAA">$INFO[Window.Property(RecentMovie.20.MPAA)]</property>
-                        <onclick condition="Skin.HasSetting(scelta)">RunScript(script.cinema.option,$ESCINFO[Window.Property(RecentMovie.20.DBID)])</onclick>
-                        <onclick condition="!Skin.HasSetting(scelta)">PlayMedia($ESCINFO[Window.Property(RecentMovie.20.File)])</onclick>
-                    </item>
+                    <!--<item id="18" description="Shortcut18">-->
+                        <!--<visible>!IsEmpty(Window.Property(RecentMovie.18.Path))</visible>-->
+                        <!--<label>$INFO[Window.Property(RecentMovie.18.Title)]</label>-->
+                        <!--<label2>$INFO[Window.Property(RecentMovie.18.Year)]</label2>-->
+                        <!--<thumb>$INFO[Window.Property(RecentMovie.18.Art(poster))]</thumb>-->
+                        <!--<property name="duration">$INFO[Window.Property(RecentMovie.18.RunTime)]</property>-->
+                        <!--<property name="Genre">$INFO[Window.Property(RecentMovie.18.Genre)]</property>-->
+                        <!--<property name="MPAA">$INFO[Window.Property(RecentMovie.18.MPAA)]</property>-->
+                        <!--<onclick condition="Skin.HasSetting(scelta)">RunScript(script.cinema.option,$ESCINFO[Window.Property(RecentMovie.18.DBID)])</onclick>-->
+                        <!--<onclick condition="!Skin.HasSetting(scelta)">PlayMedia($ESCINFO[Window.Property(RecentMovie.18.File)])</onclick>-->
+                    <!--</item>-->
+                    <!--<item id="19" description="Shortcut19">-->
+                        <!--<visible>!IsEmpty(Window.Property(RecentMovie.19.Path))</visible>-->
+                        <!--<label>$INFO[Window.Property(RecentMovie.19.Title)]</label>-->
+                        <!--<label2>$INFO[Window.Property(RecentMovie.19.Year)]</label2>-->
+                        <!--<thumb>$INFO[Window.Property(RecentMovie.19.Art(poster))]</thumb>-->
+                        <!--<property name="duration">$INFO[Window.Property(RecentMovie.19.RunTime)]</property>-->
+                        <!--<property name="Genre">$INFO[Window.Property(RecentMovie.19.Genre)]</property>-->
+                        <!--<property name="MPAA">$INFO[Window.Property(RecentMovie.19.MPAA)]</property>-->
+                        <!--<onclick condition="Skin.HasSetting(scelta)">RunScript(script.cinema.option,$ESCINFO[Window.Property(RecentMovie.19.DBID)])</onclick>-->
+                        <!--<onclick condition="!Skin.HasSetting(scelta)">PlayMedia($ESCINFO[Window.Property(RecentMovie.19.File)])</onclick>-->
+                    <!--</item>-->
+                    <!--<item id="20" description="Shortcut20">-->
+                        <!--<visible>!IsEmpty(Window.Property(RecentMovie.20.Path))</visible>-->
+                        <!--<label>$INFO[Window.Property(RecentMovie.20.Title)]</label>-->
+                        <!--<label2>$INFO[Window.Property(RecentMovie.20.Year)]</label2>-->
+                        <!--<thumb>$INFO[Window.Property(RecentMovie.20.Art(poster))]</thumb>-->
+                        <!--<property name="duration">$INFO[Window.Property(RecentMovie.20.RunTime)]</property>-->
+                        <!--<property name="Genre">$INFO[Window.Property(RecentMovie.20.Genre)]</property>-->
+                        <!--<property name="MPAA">$INFO[Window.Property(RecentMovie.20.MPAA)]</property>-->
+                        <!--<onclick condition="Skin.HasSetting(scelta)">RunScript(script.cinema.option,$ESCINFO[Window.Property(RecentMovie.20.DBID)])</onclick>-->
+                        <!--<onclick condition="!Skin.HasSetting(scelta)">PlayMedia($ESCINFO[Window.Property(RecentMovie.20.File)])</onclick>-->
+                    <!--</item>-->
                 </content>
             </control>
             <include>movshelslider</include>
@@ -781,21 +784,21 @@
     <include name="Movies_WL">
         <control type="group">
             <control type="label" description="Top Label">
-                <animation effect="slide" end="320,0" time="400" condition="[!Container(311).HasPrevious + !Skin.HasSetting(Intruder)] | [!Container(311).HasPrevious + Player.HasVideo]">Conditional</animation>
+                <animation effect="slide" end="320,0" time="400" condition="[Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)] + [!Skin.HasSetting(Intruder) | Player.HasVideo]">Conditional</animation>
                 <visible>Control.IsVisible(311)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
                 <label>[B] $LOCALIZE[31048] $LOCALIZE[342] [/B]</label>
             </control>
             <control type="label" description="Inverted">
-                <animation effect="slide" end="-320,0" time="400" condition="Container(311).HasPrevious + !Skin.HasSetting(Intruder)">Conditional</animation>
+                <animation effect="slide" end="-320,0" time="400" condition="![Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)] + [!Skin.HasSetting(Intruder) | Player.HasVideo]">Conditional</animation>
                 <visible>Control.IsVisible(311) + !Skin.HasSetting(intruder) + !Player.HasVideo</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
                 <label>[B] $LOCALIZE[31006] [/B]</label>
             </control>
             <control type="label" description="Now Playing">
-                <animation effect="slide" end="-320,0" time="400" condition="Container(311).HasPrevious">Conditional</animation>
+                <animation effect="slide" end="-320,0" time="400" condition="![Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)] + [!Skin.HasSetting(Intruder) | Player.HasVideo]">Conditional</animation>
                 <visible>Control.IsVisible(311) + Player.HasVideo</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
@@ -937,6 +940,17 @@
                         <property name="MPAA">$INFO[Window.Property(RecommendedMovie.10.MPAA)]</property>
                         <onclick condition="Skin.HasSetting(scelta)">RunScript(script.cinema.option,$ESCINFO[Window.Property(RecommendedMovie.10.DBID)])</onclick>
                         <onclick condition="!Skin.HasSetting(scelta)">PlayMedia($ESCINFO[Window.Property(RecommendedMovie.10.File)])</onclick>
+                    </item>
+                    <item id="11" description="Movies">
+                        <visible>!IsEmpty(Window.Property(RecommendedMovie.11.Title))</visible>
+                        <label>$INFO[Window.Property(RecommendedMovie.11.Title)]</label>
+                        <label2>$INFO[Window.Property(RecommendedMovie.11.Year)]</label2>
+                        <thumb>$INFO[Window.Property(RecommendedMovie.11.Art(poster))]</thumb>
+                        <property name="duration">$INFO[Window.Property(RecommendedMovie.11.RunTime)]</property>
+                        <property name="Genre">$INFO[Window.Property(RecommendedMovie.11.Genre)]</property>
+                        <property name="MPAA">$INFO[Window.Property(RecommendedMovie.11.MPAA)]</property>
+                        <onclick condition="Skin.HasSetting(scelta)">RunScript(script.cinema.option,$ESCINFO[Window.Property(RecommendedMovie.11.DBID)])</onclick>
+                        <onclick condition="!Skin.HasSetting(scelta)">PlayMedia($ESCINFO[Window.Property(RecommendedMovie.11.File)])</onclick>
                     </item>
                 </content>
             </control>
@@ -1212,6 +1226,7 @@
             <animation condition="StringCompare(Container(313).NumItems,4)" effect="slide" end="192">Conditional</animation-->
             <control type="panel" id="313" description="TOP Shortcuts">
                 <visible>[Library.HasContent(musicvideos) | Library.HasContent(music) | Skin.HasSetting(MusicShelf_Custom)] + [Container(9000).HasFocus(342) | Control.HasFocus(313)]</visible>
+                <animation effect="slide" start="0,0" end="-1920,0" time="400" condition="Container(313).Position(5) | Container(313).Position(6) | Container(313).Position(7) | Container(313).Position(8) | Container(313).Position(9)">Conditional</animation>
                 <onup>noop</onup>
                 <ondown>9000</ondown>
                 <onleft>noop</onleft>
@@ -1309,7 +1324,7 @@
                         <thumb>$INFO[Window.Property(LatestAlbum.10.Thumb)]</thumb>
                         <property name="ItemType">$INFO[Window.Property(LatestAlbum.10.Artist)]</property>
                     </item>
-                    <item id="1" description="Music Videos">
+                    <item id="11" description="Music Videos">
                         <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.1.Path))</visible>
                         <label>$INFO[Window(Home).Property(LatestMusicVideo.1.Title)]</label>
@@ -1319,7 +1334,7 @@
                         <thumb>$INFO[Window(Home).Property(LatestMusicVideo.1.Thumb)]</thumb>
                         <property name="ItemType">$LOCALIZE[20390]</property>
                     </item>
-                    <item id="2" description="Shortcut2">
+                    <item id="12" description="Shortcut2">
                         <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.2.Path))</visible>
                         <label>$INFO[Window(Home).Property(LatestMusicVideo.2.Title)]</label>
@@ -1329,7 +1344,7 @@
                         <thumb>$INFO[Window(Home).Property(LatestMusicVideo.2.Thumb)]</thumb>
                         <property name="ItemType">$LOCALIZE[20390]</property>
                     </item>
-                    <item id="3" description="Shortcut3">
+                    <item id="13" description="Shortcut3">
                         <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.3.Path))</visible>
                         <label>$INFO[Window(Home).Property(LatestMusicVideo.3.Title)]</label>
@@ -1339,7 +1354,7 @@
                         <thumb>$INFO[Window(Home).Property(LatestMusicVideo.3.Thumb)]</thumb>
                         <property name="ItemType">$LOCALIZE[20390]</property>
                     </item>
-                    <item id="4" description="Shortcut4">
+                    <item id="14" description="Shortcut4">
                         <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.4.Path))</visible>
                         <label>$INFO[Window(Home).Property(LatestMusicVideo.4.Title)]</label>
@@ -1349,7 +1364,7 @@
                         <thumb>$INFO[Window(Home).Property(LatestMusicVideo.4.Thumb)]</thumb>
                         <property name="ItemType">$LOCALIZE[20390]</property>
                     </item>
-                    <item id="5" description="Shortcut5">
+                    <item id="15" description="Shortcut5">
                         <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.5.Path))</visible>
                         <label>$INFO[Window(Home).Property(LatestMusicVideo.5.Title)]</label>
@@ -1359,7 +1374,7 @@
                         <thumb>$INFO[Window(Home).Property(LatestMusicVideo.5.Thumb)]</thumb>
                         <property name="ItemType">$LOCALIZE[20390]</property>
                     </item>
-                    <item id="6" description="Music">
+                    <item id="16" description="Music">
                         <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.6.Path))</visible>
                         <label>$INFO[Window(Home).Property(LatestMusicVideo.6.Title)]</label>
@@ -1369,7 +1384,7 @@
                         <thumb>$INFO[Window(Home).Property(LatestMusicVideo.6.Thumb)]</thumb>
                         <property name="ItemType">$LOCALIZE[20390]</property>
                     </item>
-                    <item id="7" description="Shortcut7">
+                    <item id="17" description="Shortcut7">
                         <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.7.Path))</visible>
                         <label>$INFO[Window(Home).Property(LatestMusicVideo.7.Title)]</label>
@@ -1379,7 +1394,7 @@
                         <thumb>$INFO[Window(Home).Property(LatestMusicVideo.7.Thumb)]</thumb>
                         <property name="ItemType">$LOCALIZE[20390]</property>
                     </item>
-                    <item id="8" description="Shortcut8">
+                    <item id="18" description="Shortcut8">
                         <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.8.Path))</visible>
                         <label>$INFO[Window(Home).Property(LatestMusicVideo.8.Title)]</label>
@@ -1389,7 +1404,7 @@
                         <thumb>$INFO[Window(Home).Property(LatestMusicVideo.8.Thumb)]</thumb>
                         <property name="ItemType">$LOCALIZE[20390]</property>
                     </item>
-                    <item id="9" description="Shortcut9">
+                    <item id="19" description="Shortcut9">
                         <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Path))</visible>
                         <label>$INFO[Window(Home).Property(LatestMusicVideo.9.Title)]</label>
@@ -1399,7 +1414,7 @@
                         <thumb>$INFO[Window(Home).Property(LatestMusicVideo.9.Thumb)]</thumb>
                         <property name="ItemType">$LOCALIZE[20390]</property>
                     </item>
-                    <item id="10" description="Shortcut10">
+                    <item id="20" description="Shortcut10">
                         <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.10.Path))</visible>
                         <label>$INFO[Window(Home).Property(LatestMusicVideo.10.Title)]</label>
@@ -1409,7 +1424,7 @@
                         <thumb>$INFO[Window(Home).Property(LatestMusicVideo.10.Thumb)]</thumb>
                         <property name="ItemType">$LOCALIZE[20390]</property>
                     </item>
-                    <item id="1" description="Addons">
+                    <item id="21" description="Addons">
                         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Skin.String(ShelfMusic.1.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfMusic.1.Label))]</label>
@@ -1417,7 +1432,7 @@
                         <onclick>RunAddon($INFO[Skin.String(ShelfMusic.1.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[24000]</property>
                     </item>
-                    <item id="2" description="Addons">
+                    <item id="22" description="Addons">
                         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Skin.String(ShelfMusic.2.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfMusic.2.Label))]</label>
@@ -1425,7 +1440,7 @@
                         <onclick>RunAddon($INFO[Skin.String(ShelfMusic.2.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[24000]</property>
                     </item>
-                    <item id="3" description="Addons">
+                    <item id="23" description="Addons">
                         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Skin.String(ShelfMusic.3.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfMusic.3.Label))]</label>
@@ -1433,7 +1448,7 @@
                         <onclick>RunAddon($INFO[Skin.String(ShelfMusic.3.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[24000]</property>
                     </item>
-                    <item id="4" description="Addons">
+                    <item id="24" description="Addons">
                         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Skin.String(ShelfMusic.4.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfMusic.4.Label))]</label>
@@ -1441,7 +1456,7 @@
                         <onclick>RunAddon($INFO[Skin.String(ShelfMusic.4.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[24000]</property>
                     </item>
-                    <item id="5" description="Addons">
+                    <item id="25" description="Addons">
                         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Skin.String(ShelfMusic.5.Label))</visible>
                         <label>$INFO[system.addontitle(Skin.String(ShelfMusic.5.Label))]</label>
@@ -1449,7 +1464,7 @@
                         <onclick>RunAddon($INFO[Skin.String(ShelfMusic.5.Label)])</onclick>
                         <property name="ItemType">$LOCALIZE[24000]</property>
                     </item>
-                    <item id="6" description="Fav">
+                    <item id="26" description="Fav">
                         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Skin.String(ShelfMusic.6.Path))</visible>
                         <label>$INFO[Skin.String(ShelfMusic.6.Label)]</label>
@@ -1457,7 +1472,7 @@
                         <onclick>$INFO[Skin.String(ShelfMusic.6.Path)]</onclick>
                         <property name="ItemType">$LOCALIZE[1036]</property>
                     </item>
-                    <item id="7" description="Fav">
+                    <item id="27" description="Fav">
                         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Skin.String(ShelfMusic.7.Path))</visible>
                         <label>$INFO[Skin.String(ShelfMusic.7.Label)]</label>
@@ -1465,7 +1480,7 @@
                         <onclick>$INFO[Skin.String(ShelfMusic.7.Path)]</onclick>
                         <property name="ItemType">$LOCALIZE[1036]</property>
                     </item>
-                    <item id="8" description="Fav">
+                    <item id="28" description="Fav">
                         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Skin.String(ShelfMusic.8.Path))</visible>
                         <label>$INFO[Skin.String(ShelfMusic.8.Label)]</label>
@@ -1473,7 +1488,7 @@
                         <onclick>$INFO[Skin.String(ShelfMusic.8.Path)]</onclick>
                         <property name="ItemType">$LOCALIZE[1036]</property>
                     </item>
-                    <item id="9" description="Fav">
+                    <item id="29" description="Fav">
                         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Skin.String(ShelfMusic.9.Path))</visible>
                         <label>$INFO[Skin.String(ShelfMusic.9.Label)]</label>
@@ -1481,7 +1496,7 @@
                         <onclick>$INFO[Skin.String(ShelfMusic.9.Path)]</onclick>
                         <property name="ItemType">$LOCALIZE[1036]</property>
                     </item>
-                    <item id="10" description="Fav">
+                    <item id="30" description="Fav">
                         <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
                         <visible>!IsEmpty(Skin.String(ShelfMusic.10.Path))</visible>
                         <label>$INFO[Skin.String(ShelfMusic.10.Label)]</label>
@@ -1500,11 +1515,11 @@
                 <texture>images/dockfocus.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(313).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(313).Position(1)" effect="slide" start="0,0" end="384,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(313).Position(2)" effect="slide" start="0,0" end="768,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(313).Position(3)" effect="slide" start="0,0" end="1152,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(313).Position(4)" effect="slide" start="0,0" end="1536,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(313).Position(0) | Container(313).Position(5)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(313).Position(1) | Container(313).Position(6)" effect="slide" start="0,0" end="384,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(313).Position(2) | Container(313).Position(7)" effect="slide" start="0,0" end="768,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(313).Position(3) | Container(313).Position(8)" effect="slide" start="0,0" end="1152,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(313).Position(4) | Container(313).Position(9)" effect="slide" start="0,0" end="1536,0" time="220" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>

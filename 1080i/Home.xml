@@ -11,7 +11,7 @@
         <control type="group">
             <include>OpenClose</include>
             <control type="button" id="9009">
-                <animation effect="slide" condition="[Control.IsVisible(311) + !Skin.HasSetting(Intruder) + !Container(311).HasPrevious] | [Control.IsVisible(311) + !Container(311).HasPrevious + Player.HasVideo]" end="320,0">Conditional</animation>
+                <animation effect="slide" condition="[Control.IsVisible(311) + !Skin.HasSetting(Intruder) + [Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)]] | [Control.IsVisible(311) + [Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)] + Player.HasVideo]" end="320,0">Conditional</animation>
                 <animation effect="slide" condition="Control.IsVisible(312) + !Skin.HasSetting(IntruderTV) + !Container(312).HasPrevious" end="480,0">Conditional</animation>
                 <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
                 <posx></posx>
@@ -227,7 +227,7 @@
             </control>
             <control type="image" description="MOVIELINE">
                 <include>ShelfFade</include>
-                <animation effect="slide" end="325,0" time="400" condition="!Container(311).HasPrevious + [!Skin.HasSetting(Intruder) | Player.HasVideo]">Conditional</animation>
+                <animation effect="slide" end="325,0" time="400" condition="[Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)] + [!Skin.HasSetting(Intruder) | Player.HasVideo]">Conditional</animation>
                 <visible>Container(9000).HasFocus(340) + [!Skin.HasSetting(Intruder) | Player.HasVideo]</visible>
                 <visible>Library.HasContent(Movies)</visible>
                 <left>-5</left>
