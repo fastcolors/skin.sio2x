@@ -3,7 +3,6 @@
     <default type="label">
         <posx>0</posx>
         <top>0</top>
-        <label>-</label>
         <height>75</height>
         <align>left</align>
         <aligny>center</aligny>
@@ -21,7 +20,6 @@
         <posx>0</posx>
         <top>0</top>
         <height>75</height>
-        <label>-</label>
         <align>left</align>
         <aligny>center</aligny>
         <font>size33</font>
@@ -35,7 +33,6 @@
         <scrollsuffix> •  • </scrollsuffix>
     </default>
     <default type="textbox">
-        <label>-</label>
         <font>size24</font>
         <textcolor>black</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -48,11 +45,8 @@
     <default type="image">
         <posx>0</posx>
         <top>0</top>
-        <width>-</width>
-        <height>-</height>
         <align>center</align>
         <aligny>center</aligny>
-        <texture>-</texture>
         <aspectratio>stretch</aspectratio>
     </default>
     <default type="button">
@@ -63,7 +57,6 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>size33</font>
-        <label>-</label>
         <textoffsetx>20</textoffsetx>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -81,7 +74,6 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>size33</font>
-        <label>-</label>
         <textoffsetx>20</textoffsetx>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -99,7 +91,6 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>size33</font>
-        <label>-</label>
         <textoffsetx>20</textoffsetx>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -118,7 +109,6 @@
         <align>left</align>
         <aligny>center</aligny>
         <font>size33</font>
-        <label>-</label>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
         <selectedcolor>black</selectedcolor>
@@ -157,9 +147,8 @@
         <posx>0</posx>
         <top>0</top>
         <width>450</width>
-        <height>75</height>
-        <label>-</label>
-        <font>size33</font>
+        <height>75</height> 
+	<font>size33</font>
         <textureup>images/ArrowUpNF.png</textureup>
         <textureupfocus>images/ArrowUpFO.png</textureupfocus>
         <texturedown>images/ArrowDownNF.png</texturedown>
