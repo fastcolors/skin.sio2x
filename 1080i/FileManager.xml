@@ -7,7 +7,6 @@
     <onunload condition="!Skin.HasSetting(FirstRun)">Skin.SetBool(FirstRun)</onunload>
     <controls>
         <include>BlackBackground</include>
-        <include>WindowsTopInfos</include>
         <control type="label" description="Heading">
             <include>Heading</include>
             <label>7</label>
