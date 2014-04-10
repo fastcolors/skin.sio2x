@@ -603,8 +603,9 @@
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
                 <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
                 <control type="image">
-                    <left>-8r</left>
+                    <left>1912</left>
                     <height>910</height>
+                    <width>120</width>
                     <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
                 </control>
                 <control type="scrollbar" id="60">

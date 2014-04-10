@@ -125,7 +125,7 @@
                 <selected>Window.IsVisible(VideosSettings)</selected>
             </control>
             <control type="radiobutton" id="9779">
-                <label>4</label>
+                <label>2</label>
                 <onclick>ReplaceWindowAndFocus(MusicSettings,500,9779)</onclick>
                 <selected>Window.IsVisible(MusicSettings)</selected>
             </control>
