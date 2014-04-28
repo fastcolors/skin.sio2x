@@ -453,6 +453,7 @@
         <scroll>false</scroll>
         <font>size30</font>
         <textcolor>White</textcolor>
+        <shadowcolor>-</shadowcolor>
     </include>
     <include name="52Label2">
         <posx>42r</posx>
@@ -1157,6 +1158,7 @@
     </include>
     <include name="listline">
         <control type="image">
+            <top>80</top>
             <width>900</width>
             <height>1</height>
             <texture>lines/LineL.png</texture>

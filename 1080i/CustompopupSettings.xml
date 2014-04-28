@@ -28,6 +28,12 @@
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(SkinSettings)</onclick>
                 </control>
+                <control type="button" id="701">
+                    <include>DialogButt</include>
+                    <label>13200</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(Profiles)</onclick>
+                </control>
             </control>
         </control>
     </controls>
