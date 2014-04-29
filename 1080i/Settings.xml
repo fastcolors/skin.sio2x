@@ -7,6 +7,13 @@
         <include>BlackBackground</include>
         <include>WindowsTopInfos</include>
         <include>Linemiddle</include>
+         <control type="image" description="Line">
+            <posx>150</posx>
+            <top>540</top>
+            <height>1</height>
+            <width>660</width>
+            <texture>lines/Line.png</texture>
+        </control>
         <control type="group">
             <control type="list" id="575">
                 <top>80</top>
@@ -15,8 +22,10 @@
                 <height>1000</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
-                <onup>500</onup>
-                <ondown>500</ondown>
+                <!--<onup>SetFocus(576,2)</onup>-->
+                <!--<ondown>SetFocus(576,0)</ondown>-->
+                <onup>575</onup>
+                <ondown>575</ondown>
                 <pagecontrol>60</pagecontrol>
                 <viewtype label="500">500</viewtype>
                 <preloaditems>4</preloaditems>
@@ -36,6 +45,7 @@
                 </itemlayout>
                 <focusedlayout width="500" height="75">
                     <control type="image">
+                        <visible>Control.HasFocus(575)</visible>
                         <width>960</width>
                         <height>75</height>
                         <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
@@ -45,7 +55,7 @@
                         <height>75</height>
                         <width>450</width>
                         <scroll>false</scroll>
-                        <font>size33</font>
+                        <font>size38</font>
                         <textcolor>black</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -72,10 +82,6 @@
                        <label>1</label>
                        <onclick>activatewindow(PicturesSettings)</onclick>
                     </item>
-                    <item id="3" description="Addons">
-                        <label>24001</label>
-                        <onclick>activatewindow(AddonBrowser,root)</onclick>
-                    </item>
                     <item id="8" description="Weather">
                        <label>8</label>
                        <onclick>activatewindow(WeatherSettings)</onclick>
@@ -88,17 +94,13 @@
                        <label>13000</label>
                        <onclick>activatewindow(SystemSettings)</onclick>
                     </item>
-                    <!--<item id="4" description="Profiles">-->
-                        <!--<label>13200</label>-->
-                        <!--<onclick>ActivateWindow(Profiles)</onclick>-->
-                    <!--</item>-->
-                    <!--<item id="5" description="File manager">-->
-                        <!--<label>10003</label>-->
-                        <!--<onclick>ActivateWindow(filemanager)</onclick>-->
-                    <!--</item>-->
                      <item id="2" description="Skin Settings">
                         <label>20077</label>
                         <onclick>activatewindow(SkinSettings)</onclick>
+                    </item>
+                    <item id="13" description="Addons">
+                        <label>24001</label>
+                        <onclick>activatewindow(AddonBrowser,root)</onclick>
                     </item>
                     <item id="6" description="Sys Info">
                         <label>$LOCALIZE[138]</label>
@@ -111,30 +113,80 @@
                     </item>
                 </content>
             </control>
+              <!--<control type="list" id="576">-->
+                <!--<top>780</top>-->
+                <!--<left>960</left>-->
+                <!--<width>960</width>-->
+                <!--<height>1000</height>-->
+                <!--<onleft>noop</onleft>-->
+                <!--<onright>noop</onright>-->
+                <!--<onup>SetFocus(575,10)</onup>-->
+                <!--<ondown>SetFocus(575,0)</ondown>-->
+                <!--<pagecontrol>60</pagecontrol>-->
+                <!--<viewtype label="500">500</viewtype>-->
+                <!--<preloaditems>4</preloaditems>-->
+                <!--<scrolltime tween="sine" easing="inout">280</scrolltime>-->
+                <!--<itemlayout width="500" height="75">-->
+                    <!--<control type="label" description="Main Label">-->
+                        <!--<left>30</left>-->
+                        <!--<height>75</height>-->
+                        <!--<width>450</width>-->
+                        <!--<aligny>center</aligny>-->
+                        <!--<scroll>false</scroll>-->
+                        <!--<font>size33</font>-->
+                        <!--<textcolor>White</textcolor>-->
+                        <!--<shadowcolor>-</shadowcolor>-->
+                        <!--<label>$INFO[ListItem.Label]</label>-->
+                    <!--</control>-->
+                <!--</itemlayout>-->
+                <!--<focusedlayout width="500" height="75">-->
+                    <!--<control type="image">-->
+                        <!--<visible>Control.HasFocus(576)</visible>-->
+                        <!--<width>960</width>-->
+                        <!--<height>75</height>-->
+                        <!--<texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>-->
+                    <!--</control>-->
+                    <!--<control type="label" description="Main Label">-->
+                        <!--<left>30</left>-->
+                        <!--<height>75</height>-->
+                        <!--<width>450</width>-->
+                        <!--<scroll>false</scroll>-->
+                        <!--<font>size33</font>-->
+                        <!--<textcolor>black</textcolor>-->
+                        <!--<shadowcolor>-</shadowcolor>-->
+                        <!--<label>$INFO[ListItem.Label]</label>-->
+                    <!--</control>-->
+                <!--</focusedlayout>-->
+                <!--<content>-->
+                    <!--<item id="3" description="Addons">-->
+                        <!--<label>24001</label>-->
+                        <!--<onclick>activatewindow(AddonBrowser,root)</onclick>-->
+                    <!--</item>-->
+                    <!--<item id="6" description="Sys Info">-->
+                        <!--<label>$LOCALIZE[138]</label>-->
+                        <!--<onclick>activatewindow(systeminfo)</onclick>-->
+                    <!--</item>-->
+                    <!--<item id="7" description="Maintenance">-->
+                        <!--<visible>System.HasAddon(service.clean.up)</visible>-->
+                        <!--<label>31069</label>-->
+                        <!--<onclick>ActivateWindow(1717)</onclick>-->
+                    <!--</item>-->
+                <!--</content>-->
+            <!--</control>-->
         </control>
         <control type="image" description="Logo">
-            <visible>!Container(500).HasFocus(2)</visible>
             <animation effect="fade" time="100">VisibleChange</animation>
             <centerleft>480</centerleft>
-            <top>100</top>
-            <width>500</width>
-            <height>500</height>
-            <aspectratio align="center">keep</aspectratio>
-            <texture background="true">images/XBMCLogo.png</texture>
-        </control>
-        <control type="image" description="Logo">
-            <visible>Container(500).HasFocus(2)</visible>
-            <animation effect="fade" time="100">VisibleChange</animation>
-            <left>960</left>
             <top>80</top>
             <width>500</width>
             <height>500</height>
             <aspectratio>keep</aspectratio>
-            <texture background="true">images/Sio2Logo.png</texture>
+            <texture colordiffuse="FF000000">$VAR[settingsmainico]</texture>
         </control>
         <control type="textbox" description="infos">
-            <left>880</left>
-            <top>550</top>
+            <visible>Control.HasFocus(575)</visible>
+            <centerleft>480</centerleft>
+            <top>600</top>
             <width>660</width>
             <height>500</height>
             <font>size33</font>
@@ -142,12 +194,6 @@
             <aligny>top</aligny>
             <align>center</align>
             <label>$VAR[settingsmain]</label>
-        </control>
-        <control type="image">
-            <posx>500</posx>
-            <height>1080</height>
-            <width>1</width>
-            <texture>images/lineV.png</texture>
         </control>
     </controls>
 </window>

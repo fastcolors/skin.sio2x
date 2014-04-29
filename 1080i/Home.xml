@@ -336,7 +336,7 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="label" description="Battery">
-                <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,99) + !Skin.HasSetting(hideconnection)</visible>
+                <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,20) + !Skin.HasSetting(hideconnection)</visible>
                 <posx>35r</posx>
                 <posy>20</posy>
                 <width min="30" max="500">auto</width>
