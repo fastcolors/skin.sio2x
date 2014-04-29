@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="4">
-    <defaultcontrol always="true">53</defaultcontrol>
+    <defaultcontrol always="true">575</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <controls>
         <include>BlackBackground</include>
         <include>WindowsTopInfos</include>
-         <control type="image">
-            <top>80</top>
-            <height>1</height>
-            <width>1920</width>
-            <texture>lines/Line.png</texture>
-        </control>
-        <control type="image">
-            <top>80</top>
-            <left>500</left>
-            <width>1</width>
-            <height>1080</height>
-            <texture>lines/LineV.png</texture>
-        </control>
+        <include>Linemiddle</include>
         <control type="group">
-            <control type="list" id="53">
+            <control type="list" id="575">
                 <top>80</top>
-                <width>500</width>
+                <left>960</left>
+                <width>960</width>
                 <height>1000</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
@@ -32,11 +21,10 @@
                 <viewtype label="500">500</viewtype>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
-                <itemlayout width="500" height="81">
+                <itemlayout width="500" height="75">
                     <control type="label" description="Main Label">
-                        <left>450</left>
-                        <align>right</align>
-                        <height>80</height>
+                        <left>30</left>
+                        <height>75</height>
                         <width>450</width>
                         <aligny>center</aligny>
                         <scroll>false</scroll>
@@ -45,18 +33,16 @@
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <include>listline</include>
                 </itemlayout>
-                <focusedlayout width="500" height="81">
+                <focusedlayout width="500" height="75">
                     <control type="image">
-                        <width>500</width>
-                        <height>81</height>
-                        <texture flipx="true" colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+                        <width>960</width>
+                        <height>75</height>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
                     </control>
                     <control type="label" description="Main Label">
-                        <left>450</left>
-                        <align>right</align>
-                        <height>80</height>
+                        <left>30</left>
+                        <height>75</height>
                         <width>450</width>
                         <scroll>false</scroll>
                         <font>size33</font>
@@ -64,17 +50,12 @@
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <include>listline</include>
                 </focusedlayout>
                 <content>
                     <item id="1" description="Appearance">
                         <label>480</label>
                         <onclick>activatewindow(AppearanceSettings)</onclick>
                     </item>
-                    <!--<item id="2" description="Skin Settings">-->
-                        <!--<label>20077</label>-->
-                        <!--<onclick>activatewindow(SkinSettings)</onclick>-->
-                    <!--</item>-->
                     <item id="3" description="Videos">
                        <label>3</label>
                        <onclick>activatewindow(VideosSettings)</onclick>
@@ -115,6 +96,10 @@
                         <!--<label>10003</label>-->
                         <!--<onclick>ActivateWindow(filemanager)</onclick>-->
                     <!--</item>-->
+                     <item id="2" description="Skin Settings">
+                        <label>20077</label>
+                        <onclick>activatewindow(SkinSettings)</onclick>
+                    </item>
                     <item id="6" description="Sys Info">
                         <label>$LOCALIZE[138]</label>
                         <onclick>activatewindow(systeminfo)</onclick>
@@ -130,7 +115,7 @@
         <control type="image" description="Logo">
             <visible>!Container(500).HasFocus(2)</visible>
             <animation effect="fade" time="100">VisibleChange</animation>
-            <left>960</left>
+            <centerleft>480</centerleft>
             <top>100</top>
             <width>500</width>
             <height>500</height>

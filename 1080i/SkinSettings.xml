@@ -11,7 +11,7 @@
             <posx>960</posx>
             <top>80</top>
             <control type="grouplist" id="575">
-                <width>900</width>
+                <width>960</width>
                 <height>980</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>

@@ -7,34 +7,35 @@
     <controls>
         <include>BlackBackground</include>
         <include>WindowsTopInfos</include>
+        <include>Linemiddle</include>
         <control type="togglebutton" id="4" description="Toggle Login Screen">
-            <posx>80</posx>
-            <top>100</top>
+            <posx>960</posx>
+            <top>80</top>
             <height>81</height>
-            <width>800</width>
+            <width>960</width>
             <label>$LOCALIZE[20096]:  $LOCALIZE[1223]</label>
             <altlabel>$LOCALIZE[20096]:  $LOCALIZE[305]</altlabel>
-            <align>center</align>
-            <onright>2</onright>
-            <onleft>2</onleft>
-            <onup>2</onup>
+            <align>left</align>
+            <onright>-</onright>
+            <onleft>-</onleft>
+            <onup>-</onup>
             <ondown>2</ondown>
             <font>size36</font>
-            <textoffsetx>20</textoffsetx>
+            <textoffsetx>90</textoffsetx>
+            <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
         </control>
-
-        <control type="group" description="List">
+        <control type="group" description="List" id="575">
             <posx>960</posx>
-            <top>100</top>
+            <top>160</top>
             <control type="list" id="2">
                 <posx>0</posx>
                 <top>0</top>
                 <width>900</width>
                 <height>730</height>
-                <onleft>4</onleft>
+                <onleft>noop</onleft>
                 <onright>noop</onright>
-                <onup>2</onup>
-                <ondown>2</ondown>
+                <onup>4</onup>
+                <ondown>-</ondown>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>280</scrolltime>
                 <itemlayout height="81">

@@ -32,18 +32,19 @@
             <label>-</label>
         </control>
         <control type="grouplist" id="3" description="TopMenu">
-            <top>80</top>
+            <top>81</top>
             <width>500</width>
             <height>1000</height>
             <onup>20</onup>
             <onright>5</onright>
             <onleft>500</onleft>
+            <itemgap>0</itemgap>
         </control>
         <control type="grouplist" id="5" description="Stage">
             <posx>500</posx>
-            <top>80</top>
+            <top>81</top>
             <width>1380</width>
-            <height>955</height>
+            <height>972</height>
             <onright>60</onright>
             <onup>20</onup>
             <ondown>5</ondown>
@@ -51,10 +52,11 @@
             <onleft>3</onleft>
             <pagecontrol>60</pagecontrol>
             <orientation>vertical</orientation>
+            <itemgap>0</itemgap>
         </control>
         <control type="button" id="7" description="Button">
             <width>300</width>
-            <height>75</height>
+            <height>81</height>
             <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
             <invalidcolor>invalid</invalidcolor>
             <font>size33</font>
@@ -62,7 +64,7 @@
         </control>
         <control type="radiobutton" id="8" description="Radio Button">
             <width>300</width>
-            <height>75</height>
+            <height>81</height>
             <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
             <radioposx>0</radioposx>
             <font>size33</font>
@@ -70,14 +72,14 @@
         </control>
         <control type="spincontrolex" id="9" description="Spin control">
             <width>1260</width>
-            <height>75</height>
+            <height>81</height>
             <align>left</align>
             <font>size33</font>
             <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
         </control>
         <control type="button" id="10" description="Category Button">
             <width>500</width>
-            <height>75</height>
+            <height>81</height>
             <align>right</align>
             <aligny>center</aligny>
             <font>size33</font>

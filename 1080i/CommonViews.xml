@@ -1158,7 +1158,6 @@
     </include>
     <include name="listline">
         <control type="image">
-            <top>80</top>
             <width>900</width>
             <height>1</height>
             <texture>lines/LineL.png</texture>

@@ -23,7 +23,7 @@
         <align>left</align>
         <aligny>center</aligny>
         <font>size33</font>
-        <textoffsetx>20</textoffsetx>
+        <textoffsetx>30</textoffsetx>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
         <selectedcolor>black</selectedcolor>
@@ -57,7 +57,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>size33</font>
-        <textoffsetx>20</textoffsetx>
+        <textoffsetx>30</textoffsetx>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
         <selectedcolor>black</selectedcolor>
@@ -74,7 +74,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>size33</font>
-        <textoffsetx>20</textoffsetx>
+        <textoffsetx>30</textoffsetx>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
         <selectedcolor>black</selectedcolor>
@@ -91,7 +91,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>size33</font>
-        <textoffsetx>20</textoffsetx>
+        <textoffsetx>30</textoffsetx>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
         <selectedcolor>black</selectedcolor>
@@ -118,7 +118,7 @@
         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
         <textureradiofocus aspectratio="keep">images/RadioON.png</textureradiofocus>
         <textureradionofocus aspectratio="keep">images/RadioOFF.png</textureradionofocus>
-        <textoffsetx>20</textoffsetx>
+        <textoffsetx>30</textoffsetx>
         <!--<radioposx>262</radioposx>-->
         <pulseonselect>false</pulseonselect>
     </default>
@@ -137,7 +137,7 @@
         <focusedcolor>black</focusedcolor>
         <selectedcolor>black</selectedcolor>
         <disabledcolor>Disabled</disabledcolor>
-        <textoffsetx>20</textoffsetx>
+        <textoffsetx>30</textoffsetx>
         <align>left</align>
         <aligny>center</aligny>
         <reverse>yes</reverse>
@@ -160,7 +160,7 @@
         <focusedcolor>black</focusedcolor>
         <selectedcolor>black</selectedcolor>
         <disabledcolor>Disabled</disabledcolor>
-        <textoffsetx>20</textoffsetx>
+        <textoffsetx>30</textoffsetx>
         <align>left</align>
         <aligny>center</aligny>
         <reverse>yes</reverse>
