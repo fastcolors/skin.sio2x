@@ -8,16 +8,15 @@
         <!--<import addon="script.populate.set" version="0.0.1"/>-->
         <!--<import addon="script.globalsearch" version="2.0.8"/>-->
         <!--<import addon="plugin.3d.content" version="0.0.1"/>-->
-
     </requires>
-   <extension
-    point="xbmc.gui.skin"
-    defaultthemename="Textures.xbt"
-    debugging="false">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-  </extension>
+    <extension
+            point="xbmc.gui.skin"
+            defaultthemename="Textures.xbt"
+            debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+    </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-	<description>Sio2-X</description>
+        <description>Sio2-X</description>
     </extension>
 </addon>
