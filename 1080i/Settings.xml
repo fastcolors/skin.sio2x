@@ -113,66 +113,6 @@
                     </item>
                 </content>
             </control>
-              <!--<control type="list" id="576">-->
-                <!--<top>780</top>-->
-                <!--<left>960</left>-->
-                <!--<width>960</width>-->
-                <!--<height>1000</height>-->
-                <!--<onleft>noop</onleft>-->
-                <!--<onright>noop</onright>-->
-                <!--<onup>SetFocus(575,10)</onup>-->
-                <!--<ondown>SetFocus(575,0)</ondown>-->
-                <!--<pagecontrol>60</pagecontrol>-->
-                <!--<viewtype label="500">500</viewtype>-->
-                <!--<preloaditems>4</preloaditems>-->
-                <!--<scrolltime tween="sine" easing="inout">280</scrolltime>-->
-                <!--<itemlayout width="500" height="75">-->
-                    <!--<control type="label" description="Main Label">-->
-                        <!--<left>30</left>-->
-                        <!--<height>75</height>-->
-                        <!--<width>450</width>-->
-                        <!--<aligny>center</aligny>-->
-                        <!--<scroll>false</scroll>-->
-                        <!--<font>size33</font>-->
-                        <!--<textcolor>White</textcolor>-->
-                        <!--<shadowcolor>-</shadowcolor>-->
-                        <!--<label>$INFO[ListItem.Label]</label>-->
-                    <!--</control>-->
-                <!--</itemlayout>-->
-                <!--<focusedlayout width="500" height="75">-->
-                    <!--<control type="image">-->
-                        <!--<visible>Control.HasFocus(576)</visible>-->
-                        <!--<width>960</width>-->
-                        <!--<height>75</height>-->
-                        <!--<texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>-->
-                    <!--</control>-->
-                    <!--<control type="label" description="Main Label">-->
-                        <!--<left>30</left>-->
-                        <!--<height>75</height>-->
-                        <!--<width>450</width>-->
-                        <!--<scroll>false</scroll>-->
-                        <!--<font>size33</font>-->
-                        <!--<textcolor>black</textcolor>-->
-                        <!--<shadowcolor>-</shadowcolor>-->
-                        <!--<label>$INFO[ListItem.Label]</label>-->
-                    <!--</control>-->
-                <!--</focusedlayout>-->
-                <!--<content>-->
-                    <!--<item id="3" description="Addons">-->
-                        <!--<label>24001</label>-->
-                        <!--<onclick>activatewindow(AddonBrowser,root)</onclick>-->
-                    <!--</item>-->
-                    <!--<item id="6" description="Sys Info">-->
-                        <!--<label>$LOCALIZE[138]</label>-->
-                        <!--<onclick>activatewindow(systeminfo)</onclick>-->
-                    <!--</item>-->
-                    <!--<item id="7" description="Maintenance">-->
-                        <!--<visible>System.HasAddon(service.clean.up)</visible>-->
-                        <!--<label>31069</label>-->
-                        <!--<onclick>ActivateWindow(1717)</onclick>-->
-                    <!--</item>-->
-                <!--</content>-->
-            <!--</control>-->
         </control>
         <control type="image" description="Logo">
             <animation effect="fade" time="100">VisibleChange</animation>

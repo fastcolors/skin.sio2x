@@ -44,8 +44,14 @@
                 </control>
             </control>
         </control>
-        <!--<control type="image" id="1">-->
-            <!--ALWAYS VISIBLE CONTROL OVERLAY-->
-        <!--</control>-->
+        <control type="image" id="1">
+            <visible>Player.Paused</visible>
+            <centertop>540</centertop>
+            <centerleft>960</centerleft>
+            <width>600</width>
+            <height>600</height>
+            <texture>Seekbar/OSDPauseFO.png</texture>
+            <colordiffuse>AAFFFFFF</colordiffuse>
+        </control>
     </controls>
 </window>

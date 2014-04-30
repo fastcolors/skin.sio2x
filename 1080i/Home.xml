@@ -203,14 +203,14 @@
                 <control type="rss" description="RSS Feed">
                     <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
                     <include>OpenClose</include>
-                    <top>507</top>
+                    <top>502</top>
                     <width>1920</width>
                     <height>33</height>
                     <font>size22</font>
                     <urlset>1</urlset>
                     <shadowcolor>-</shadowcolor>
                     <titlecolor>darkred</titlecolor>
-                    <headlinecolor>gray</headlinecolor>
+                    <headlinecolor>FF666666</headlinecolor>
                     <textcolor>gray</textcolor>
                 </control>
             </control>

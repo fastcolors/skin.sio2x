@@ -38,6 +38,7 @@
                     <selected>!Skin.HasSetting(ViewsMenuOff)</selected>
                 </control>
                 <control type="radiobutton" id="4">
+                    <visible>System.HasAddon(script.cinema.experience)</visible>
                     <label>$LOCALIZE[31088]</label>
                     <onclick>Skin.ToggleSetting(scelta)</onclick>
                     <selected>Skin.HasSetting(scelta)</selected>
