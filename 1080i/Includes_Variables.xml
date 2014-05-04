@@ -147,12 +147,12 @@
         <value>images/dvdbox.png</value>
     </variable>
     <variable name="fanart">
-        <value condition="StringCompare(ListItem.Label,..) + Skin.HasSetting(CustomBg)">$INFO[Skin.String(CustomBgHome)]</value>
+        <value condition="StringCompare(ListItem.Label,..) + !IsEmpty(Skin.String(CustomBgHome)">$INFO[Skin.String(CustomBgHome)]</value>
         <value condition="IsEmpty(ListItem.Art(fanart)) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
     <variable name="bgimg">
-        <value condition="Skin.HasSetting(CustomBg) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
+        <value condition="!IsEmpty(Skin.String(CustomBgHome) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value>special://skin/backgrounds/light_texture.jpg</value>
     </variable>
@@ -160,10 +160,7 @@
         <value condition="SubString(Control.GetLabel(412),jpg) | SubString(Control.GetLabel(412),png)">$INFO[Control.GetLabel(412)]</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>
-    <variable name="CustomBgHome">
-        <value condition="Skin.HasSetting(CustomBg)">$LOCALIZE[16041]</value>
-        <value>$LOCALIZE[16039]</value>
-    </variable>
+
     <variable name="diffuseselect">
         <value condition="StringCompare(ListItem.MPAA,R) | StringCompare(ListItem.MPAA,TV-MA) | SubString(ListItem.MPAA,18)">88FF2200</value>
         <value condition="SubString(ListItem.MPAA,PG) | StringCompare(ListItem.MPAA,G) | StringCompare(ListItem.MPAA,U) | StringCompare(ListItem.MPAA,T)">770CF704</value>
