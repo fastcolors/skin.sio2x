@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="movies">
-    <name>3d</name>
+    <name>3D</name>
     <match>all</match>
     <rule field="filename" operator="contains">
         <value>3D</value>

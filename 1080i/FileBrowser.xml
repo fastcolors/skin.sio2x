@@ -26,7 +26,6 @@
                         <scrolltime tween="sine" easing="inout">280</scrolltime>
                         <itemlayout width="862" height="81">
                             <include>listline</include>
-                            <include>ArrowNF</include>
                             <control type="label" description="Main Label">
                                 <include>52MainLabel</include>
                                 <label>$INFO[ListItem.Label]</label>
@@ -35,7 +34,6 @@
                         <focusedlayout width="862" height="81">
                             <include>listline</include>
                             <include>SmallSelector</include>
-                            <include>ArrowFO</include>
                             <control type="label" description="Main Label">
                                 <textcolor>black</textcolor>
                                 <include>52MainLabel</include>

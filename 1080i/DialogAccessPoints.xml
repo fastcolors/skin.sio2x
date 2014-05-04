@@ -23,7 +23,6 @@
                     <pagecontrol>60</pagecontrol>
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
                     <itemlayout width="802" height="81">
-                        <include>ArrowNF</include>
                         <control type="label" description="Main Label">
                             <visible>!ListItem.IsFolder</visible>
                             <width>765</width>
@@ -45,7 +44,6 @@
                             <texture>images/white.png</texture>
                             <colordiffuse>$VAR[diffuseselect]</colordiffuse>
                         </control>
-                        <include>ArrowFO</include>
                         <control type="label" description="Main Label">
                             <visible>!ListItem.IsFolder</visible>
                             <width>765</width>

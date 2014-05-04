@@ -680,7 +680,6 @@
                     <itemlayout width="880" height="81">
                         <include>Watched_Marks</include>
                         <include>HD_Badge</include>
-                        <include>ArrowNF</include>
                         <control type="label" description="Main Label">
                             <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
                             <include>52MainLabel</include>
@@ -707,7 +706,6 @@
                         </control>
                         <include>Watched_Marks</include>
                         <include>HD_Badge</include>
-                        <include>ArrowFO</include>
                         <control type="label" description="Main Label">
                             <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
                             <textcolor>black</textcolor>
