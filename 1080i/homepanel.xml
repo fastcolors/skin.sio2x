@@ -85,7 +85,7 @@
             <thumb>icons/3d.png</thumb>
             <label>3D Movies</label>
             <property name="color">icons/purple.png</property>
-            <onclick>ActivateWindow(1999)</onclick>
+            <onclick>ActivateWindow(Videos,"special://skin/resources/3d.xsp", return)</onclick>
         </item>
         <item id="601" description="Custom Fvourite">
             <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
