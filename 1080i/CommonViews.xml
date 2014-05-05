@@ -4,15 +4,17 @@
         <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="250" reversible="true">Conditional</animation>
     </include>
     <include name="Keyboardbuttons">
-        <width>152</width>
-        <height>40</height>
-        <texturenofocus>keyb/plain.png</texturenofocus>
-        <texturefocus>keyb/selected.png</texturefocus>
-        <alttexturenofocus>keyb/plainalt.png</alttexturenofocus>
-        <alttexturefocus>keyb/selectedalt.png</alttexturefocus>
+        <width>130</width>
+        <height>50</height>
+        <texturenofocus border="3">keyb/plain.png</texturenofocus>
+        <texturefocus border="3">keyb/selectedalt.png</texturefocus>
+        <alttexturenofocus border="3">keyb/plainalt.png</alttexturenofocus>
+        <alttexturefocus border="3">keyb/selectedalt.png</alttexturefocus>
         <align>center</align>
         <aligny>center</aligny>
-        <font>size27</font>
+        <textoffsetx>0</textoffsetx>
+		<focusedcolor>black</focusedcolor>
+        <font>size33B</font>
     </include>
     <!--PANEL FOR BIG LIST-->
     <include name="left_Panel">
@@ -818,15 +820,6 @@
     <include name="TitleCommons">
         <font>size39B</font>
         <textcolor>White</textcolor>
-    </include>
-    <include name="Keyboard">
-        <texturefocus border="8">images/Buttonselect.png</texturefocus>
-        <align>center</align>
-        <aligny>center</aligny>
-        <textoffsetx>0</textoffsetx>
-        <width>75</width>
-        <height>75</height>
-        <font>size42B</font>
     </include>
     <include name="DetailsVideoInfoCommons">
         <posx>0</posx>

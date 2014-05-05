@@ -483,7 +483,6 @@
                     <align>center</align>
                 </control>
             </control>
-
         </focusedlayout>
     </include>
     <include name="movshelslider">
@@ -519,7 +518,7 @@
             <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1440,0" time="220" easing="inout" reversible="true">Conditional</animation>
         </control>
     </include>
-    <include name="Movies_RA">
+    <include name="Movies">
         <control type="group">
             <control type="label" description="Top Label">
                 <visible>Control.IsVisible(311)</visible>
@@ -534,27 +533,7 @@
                 <onleft>311</onleft>
                 <onright>311</onright>
                 <include>MoviesShortcutsCommons</include>
-                <content>videodb://recentlyaddedmovies/</content>
-            </control>
-            <include>movshelslider</include>
-        </control>
-    </include>
-    <include name="Movies_WL">
-        <control type="group">
-            <control type="label" description="Top Label">
-                <visible>Control.IsVisible(311)</visible>
-                <include>ShelfFade</include>
-                <include>ShelfTitle</include>
-                <label>[B] $LOCALIZE[31096] [/B]</label>
-            </control>
-            <control type="panel" id="311" description="TOP Shortcuts">
-                <visible>[Library.HasContent(Movies) | Skin.HasSetting(MoviesShelf_Custom)] + [Container(9000).HasFocus(340) | Control.HasFocus(311)]</visible>
-                <onup>9009</onup>
-                <ondown>9000</ondown>
-                <onleft>311</onleft>
-                <onright>311</onright>
-                <include>MoviesShortcutsCommons</include>
-                <content>special://skin/resources/laststarted.xsp</content>
+                <content>$VAR[shelfmovies]</content>
             </control>
             <include>movshelslider</include>
         </control>

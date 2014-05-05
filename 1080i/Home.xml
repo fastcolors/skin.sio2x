@@ -227,8 +227,8 @@
             <include condition="true">EPG_shelf</include>
             <control type="group" id="700" description="Shelf items">
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-                <include condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
-                <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include>
+                <include>Movies</include>
+                <!--<include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include>-->
                 <include condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RA</include>
                 <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
                 <include>Music_RA</include>

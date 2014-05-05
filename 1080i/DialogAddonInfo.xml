@@ -108,10 +108,10 @@
         </control>
         <control type="group" description="Options">
             <control type="grouplist" id="300">
-                <top>1000</top>
+                <top>1002</top>
                 <width>auto</width>
                 <align>center</align>
-                <height>80</height>
+                <height>72</height>
                 <itemgap>9</itemgap>
                 <onleft>noop</onleft>
                 <onright>noop</onright>

@@ -174,4 +174,9 @@
         <value condition="StringCompare(Container(311).ListItem.MPAA,PG-13) | StringCompare(Container(311).ListItem.MPAA,12) | StringCompare(Container(311).ListItem.MPAA,15)">CCFF8800</value>
         <value>775555FF</value>
     </variable>
+
+    <variable name="shelfmovies">
+        <value condition="Skin.HasSetting(MoviesShelfWL)">special://skin/resources/laststarted.xsp</value>
+        <value>videodb://recentlyaddedmovies/</value>
+    </variable>
 </includes>
