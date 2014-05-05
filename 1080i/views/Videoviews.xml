@@ -630,9 +630,7 @@
                     <width>920</width>
                     <height>890</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
                     <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">-</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
                     <pagecontrol>60</pagecontrol>
