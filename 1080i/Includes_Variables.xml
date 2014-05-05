@@ -147,12 +147,12 @@
         <value>images/dvdbox.png</value>
     </variable>
     <variable name="fanart">
-        <value condition="StringCompare(ListItem.Label,..) + !IsEmpty(Skin.String(CustomBgHome)">$INFO[Skin.String(CustomBgHome)]</value>
+        <value condition="StringCompare(ListItem.Label,..) + !IsEmpty(Skin.String(CustomBgHome))">$INFO[Skin.String(CustomBgHome)]</value>
         <value condition="IsEmpty(ListItem.Art(fanart)) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
     <variable name="bgimg">
-        <value condition="!IsEmpty(Skin.String(CustomBgHome) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
+        <value condition="!IsEmpty(Skin.String(CustomBgHome)) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value>special://skin/backgrounds/light_texture.jpg</value>
     </variable>
@@ -169,9 +169,9 @@
     </variable>
 
     <variable name="diffuseselectshelf">
-        <value condition="StringCompare(Container(311).ListItem.Property(MPAA),R)">CCFF0000</value>
-        <value condition="StringCompare(Container(311).ListItem.Property(MPAA),PG) | StringCompare(Container(311).ListItem.Property(MPAA),G) | StringCompare(Container(311).ListItem.Property(MPAA),U) | StringCompare(Container(311).ListItem.Property(MPAA),T)">CC00FF00</value>
-        <value condition="StringCompare(Container(311).ListItem.Property(MPAA),PG-13) | StringCompare(Container(311).ListItem.Property(MPAA),12) | StringCompare(Container(311).ListItem.Property(MPAA),15)">CCFF8800</value>
-        <value>CC000000</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,R) | SubString(Container(311).ListItem.MPAA,18)">CCFF0000</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,PG) | StringCompare(Container(311).ListItem.MPAA,G) | StringCompare(Container(311).ListItem.MPAA,U) | StringCompare(Container(311).ListItem.MPAA,T)">CC00FF00</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,PG-13) | StringCompare(Container(311).ListItem.MPAA,12) | StringCompare(Container(311).ListItem.MPAA,15)">CCFF8800</value>
+        <value>775555FF</value>
     </variable>
 </includes>

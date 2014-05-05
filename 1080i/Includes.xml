@@ -9,7 +9,7 @@
     <include file="PVRviews.xml" />
     <include file="views/Programviews.xml" />
     <include file="Includes_Home.xml" />
-    <include file="Includes_Shelf.xml" />
+    <include file="Shelf_Elements.xml" />
     <include name="VisibleFade">
         <animation effect="fade" start="0" end="100" time="200">visiblechange</animation>
     </include>

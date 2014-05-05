@@ -485,18 +485,6 @@
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
                         </item>
-                        <item id="1007" description="Watchlist">
-                            <visible>!Skin.HasSetting(hidewl)</visible>
-                            <thumb>icons/watchlist.png</thumb>
-                            <label>Watchlist</label>
-                            <onclick>Skin.ToggleSetting(hidewl)</onclick>
-                        </item>
-                        <item id="1007" description="Watchlist">
-                            <visible>Skin.HasSetting(hidewl)</visible>
-                            <thumb>help/Off.png</thumb>
-                            <label>Watchlist</label>
-                            <onclick>Skin.ToggleSetting(hidewl)</onclick>
-                        </item>
                         <item id="1008" description="Programs">
                             <visible>!Skin.HasSetting(hideprog)</visible>
                             <thumb>icons/program.png</thumb>
@@ -521,19 +509,6 @@
                             <label>20094</label>
                             <onclick>Skin.ToggleSetting(hideSources)</onclick>
                         </item>
-                        <!--<item id="1009" description="RSS">
-                          <visible>!Skin.HasSetting(hiderss)</visible>
-                          <thumb>icons/RSS.png</thumb>
-                          <label>RSS</label>
-                          <onclick>Skin.ToggleSetting(hiderss)</onclick>
-                        </item>
-                        <item id="1009" description="RSS">
-                          <visible>Skin.HasSetting(hiderss)</visible>
-                          <thumb>help/Off.png</thumb>
-                          <label>RSS</label>
-                          <onclick>Skin.ToggleSetting(hiderss)</onclick>
-                        </item>-->
-
                         <item id="1012" description="Browser">
                             <visible>!Skin.HasSetting(hidebro)</visible>
                             <thumb>icons/browser.png</thumb>
@@ -570,13 +545,6 @@
                 <selected>Skin.HasSetting(MoviesShelfWL)</selected>
                 <enable>!Skin.HasSetting(hidemovie)</enable>
                 <onclick>Skin.ToggleSetting(MoviesShelfWL)</onclick>
-            </control>
-            <control type="radiobutton" id="104" description="Intruder">
-                <include>SettingsSubmenuButtons</include>
-                <label>$LOCALIZE[31045]</label>
-                <selected>!Skin.HasSetting(intruder)</selected>
-                <enable>!Skin.HasSetting(hidemovie)</enable>
-                <onclick>Skin.ToggleSetting(intruder)</onclick>
             </control>
         </control>
         <control type="grouplist" id="520" description="TV">
