@@ -60,8 +60,7 @@
                 <texture>lines/LineV.png</texture>
             </control>
             <control type="group" description="Thumbs">
-                <!--<animation effect="rotatey" start="0" end="-9" center="260," time="0" reversible="false" condition="true">Conditional</animation>-->
-                <control type="group" description="Squares">
+                 <control type="group">
                     <control type="image" description="Thumb">
                         <centerleft>480</centerleft>
                         <centertop>225</centertop>
