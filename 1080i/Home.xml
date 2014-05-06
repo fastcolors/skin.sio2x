@@ -10,7 +10,6 @@
         <control type="group">
             <include>OpenClose</include>
             <control type="button" id="9009">
-                <animation effect="slide" condition="Control.IsVisible(312) + !Skin.HasSetting(IntruderTV) + !Container(312).HasPrevious" end="480,0">Conditional</animation>
                 <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
                 <top>26</top>
                 <width>34</width>
@@ -18,11 +17,14 @@
                 <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
                 <onclick  condition="Control.IsVisible(311)">Skin.ToggleSetting(MoviesShelfWL)</onclick>
                 <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,custom)</onclick>
+                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),Custom)">Skin.SetString(musicshelf,top)</onclick>
+                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),top)">Skin.SetString(musicshelf,)</onclick>
+                <onclick  condition="Control.IsVisible(315)">noop</onclick>
                 <colordiffuse>FF000000</colordiffuse>
-                <onclick>ReplaceWindow(0)</onclick>
+                <onclick condition="Control.IsVisible(312)">ReplaceWindow(0)</onclick>
                 <onup>noop</onup>
-                <ondown condition="Control.IsVisible(311)">311</ondown>
-                <ondown condition="Control.IsVisible(312)">312</ondown>
+                <ondown>700</ondown>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
             </control>
