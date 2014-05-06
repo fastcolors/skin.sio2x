@@ -877,7 +877,7 @@
         <height>54</height>
         <align>left</align>
         <font>size30</font>
-        <disabledcolor></disabledcolor>
+        <disabledcolor>Disabled</disabledcolor>
     </include>
     <include name="Help_Panel">
         <animation effect="fade" time="200">VisibleChange</animation>

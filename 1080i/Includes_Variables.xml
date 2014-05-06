@@ -188,7 +188,7 @@
 
     <variable name="musicshelfcontent">
         <value condition="StringCompare(Skin.String(musicshelf),custom)">addons://sources/audio/</value>
-        <value condition="StringCompare(Skin.String(Musicshelf),top)">musicdb://top100/songs/</value>
-        <value>musicdb://recentlyaddedalbums/</value>
+        <value condition="StringCompare(Skin.String(Musicshelf),top) + Library.HasContent(Music)">musicdb://top100/songs/</value>
+        <value condition="Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
     </variable>
 </includes>

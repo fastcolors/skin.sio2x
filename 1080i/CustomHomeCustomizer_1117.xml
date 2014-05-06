@@ -576,108 +576,115 @@
                 <onclick>Skin.ToggleSetting(intruderTV)</onclick>
             </control>
         </control>
-        <control type="group" id="520">
+        <control type="group" id="520" description="Music">
             <visible>Container(50).HasFocus(1003)</visible>
             <top>30</top>
             <posx>40</posx>
-            <control type="label">
-                <top>40</top>
-                <posx>800</posx>
-                <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
-                <width>1000</width>
-                <textcolor>gray</textcolor>
-                <font>Size22</font>
-                <label>Scroll Right to Add > 5 Addons > 5 Favourites</label>
-            </control>
-            <control type="radiobutton" id="300" description="Auto">
-                <visible>Library.HasContent(Music) | Library.HasContent(MusicVideos)</visible>
+            <control type="radiobutton" id="300" description="Recent">
                 <include>SettingsSubmenuButtons</include>
                 <onup>50</onup>
                 <ondown>303</ondown>
                 <label>359</label>
-                <selected>!Skin.HasSetting(MusicShelf_Custom)</selected>
-                <enable>!Skin.HasSetting(hidemusic)</enable>
+                <selected>StringCompare(Skin.String(musicshelf),)</selected>
+                <enable>!Skin.HasSetting(hidemusic) + [Library.HasContent(Music) | Library.HasContent(MusicVideos)]</enable>
                 <onclick>Skin.Reset(MusicShelf_Custom)</onclick>
+                <onclick condition="!StringCompare(Skin.String(Musicshelf),)">Skin.SetString(musicshelf,)</onclick>
+                <onclick condition="StringCompare(Skin.String(Musicshelf),)">Skin.SetString(musicshelf,off)</onclick>
             </control>
             <control type="radiobutton" id="303" description="Custom">
                 <top>55</top>
                 <onup>300</onup>
-                <ondown>52</ondown>
+                <ondown>304</ondown>
                 <include>SettingsSubmenuButtons</include>
                 <label>31051</label>
-                <onclick>Skin.ToggleSetting(MusicShelf_Custom)</onclick>
-                <selected>Skin.HasSetting(MusicShelf_Custom)</selected>
+                <selected>StringCompare(Skin.String(Musicshelf),custom)</selected>
                 <enable>!Skin.HasSetting(hidemusic)</enable>
+                <onclick>Skin.ToggleSetting(MusicShelf_Custom)</onclick>
+                <onclick condition="Skin.HasSetting(MusicShelf_Custom)">Skin.Reset(MusicShelf_Custom)</onclick>
+                <onclick condition="!StringCompare(Skin.String(musicshelf),custom)">Skin.SetString(musicshelf,custom)</onclick>
+                <onclick condition="StringCompare(Skin.String(musicshelf),custom)">Skin.SetString(musicshelf,off)</onclick>
+            </control>
+            <control type="radiobutton" id="304" description="100">
+                <top>110</top>
+                <include>SettingsSubmenuButtons</include>
+                <onup>303</onup>
+                <ondown>52</ondown>
+                <label>359</label>
+                <selected>StringCompare(Skin.String(musicshelf),top)</selected>
+                <enable>!Skin.HasSetting(hidemusic) + [Library.HasContent(Music) | Library.HasContent(MusicVideos)]</enable>
+                <onclick>Skin.Reset(MusicShelf_Custom)</onclick>
+                <onclick condition="!StringCompare(Skin.String(musicshelf),top)">Skin.SetString(musicshelf,top)</onclick>
+                <onclick condition="StringCompare(Skin.String(musicshelf),top)">Skin.SetString(musicshelf,off)</onclick>
             </control>
         </control>
-        <control type="panel" id="52">
-            <enable>!Skin.HasSetting(hidemusic)</enable>
-            <visible>Container(50).HasFocus(1003)</visible>
-            <visible>Skin.HasSetting(MusicShelf_Custom)</visible>
-            <include>CustomizerList</include>
-            <content>
-                <item id="1" description="ADDONS">
-                    <label>$INFO[system.addonTitle(Skin.String(ShelfMusic.1.Label))]</label>
-                    <label2>addon</label2>
-                    <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.1.Label))]</thumb>
-                    <onclick>Skin.SetAddon(ShelfMusic.1.Label,xbmc.python.pluginsource)</onclick>
-                </item>
-                <item id="2" description="ADDONS">
-                    <label>$INFO[system.addonTitle(Skin.String(ShelfMusic.2.Label))]</label>
-                    <label2>addon</label2>
-                    <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.2.Label))]</thumb>
-                    <onclick>Skin.SetAddon(ShelfMusic.2.Label,xbmc.python.pluginsource)</onclick>
-                </item>
-                <item id="3" description="ADDONS">
-                    <label>$INFO[system.addonTitle(Skin.String(ShelfMusic.3.Label))]</label>
-                    <label2>addon</label2>
-                    <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.3.Label))]</thumb>
-                    <onclick>Skin.SetAddon(ShelfMusic.3.Label,xbmc.python.pluginsource)</onclick>
-                </item>
-                <item id="4" description="ADDONS">
-                    <label>$INFO[system.addonTitle(Skin.String(ShelfMusic.4.Label))]</label>
-                    <label2>addon</label2>
-                    <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.4.Label))]</thumb>
-                    <onclick>Skin.SetAddon(ShelfMusic.4.Label,xbmc.python.pluginsource)</onclick>
-                </item>
-                <item id="5" description="ADDONS">
-                    <label>$INFO[system.addonTitle(Skin.String(ShelfMusic.5.Label))]</label>
-                    <label2>addon</label2>
-                    <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.5.Label))]</thumb>
-                    <onclick>Skin.SetAddon(ShelfMusic.5.Label,xbmc.python.pluginsource)</onclick>
-                </item>
-                <item id="6" description="fav">
-                    <label>$INFO[Skin.String(ShelfMusic.6.Label)]</label>
-                    <label2>favourite</label2>
-                    <thumb>$INFO[Skin.String(ShelfMusic.6.Icon)]</thumb>
-                    <onclick>RunScript(script.favourites,property=ShelfMusic.6)</onclick>
-                </item>
-                <item id="7" description="fav">
-                    <label>$INFO[Skin.String(ShelfPictures.7.Label)]</label>
-                    <label2>favourite</label2>
-                    <thumb>$INFO[Skin.String(ShelfMusic.7.Icon)]</thumb>
-                    <onclick>RunScript(script.favourites,property=ShelfMusic.7)</onclick>
-                </item>
-                <item id="8" description="fav">
-                    <label>$INFO[Skin.String(ShelfPictures.8.Label)]</label>
-                    <label2>favourite</label2>
-                    <thumb>$INFO[Skin.String(ShelfMusic.8.Icon)]</thumb>
-                    <onclick>RunScript(script.favourites,property=ShelfMusic.8)</onclick>
-                </item>
-                <item id="9" description="fav">
-                    <label>$INFO[Skin.String(ShelfPictures.9.Label)]</label>
-                    <label2>favourite</label2>
-                    <thumb>$INFO[Skin.String(ShelfMusic.9.Icon)]</thumb>
-                    <onclick>RunScript(script.favourites,property=ShelfMusic.9)</onclick>
-                </item>
-                <item id="10" description="fav">
-                    <label>$INFO[Skin.String(ShelfPictures.10.Label)]</label>
-                    <label2>favourite</label2>
-                    <thumb>$INFO[Skin.String(ShelfMusic.10.Icon)]</thumb>
-                    <onclick>RunScript(script.favourites,property=ShelfMusic.10)</onclick>
-                </item>
-            </content>
-        </control>
+        <!--<control type="panel" id="52">-->
+            <!--<enable>!Skin.HasSetting(hidemusic)</enable>-->
+            <!--<visible>Container(50).HasFocus(1003)</visible>-->
+            <!--<visible>Skin.HasSetting(MusicShelf_Custom)</visible>-->
+            <!--<include>CustomizerList</include>-->
+            <!--<content>-->
+                <!--<item id="1" description="ADDONS">-->
+                    <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.1.Label))]</label>-->
+                    <!--<label2>addon</label2>-->
+                    <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.1.Label))]</thumb>-->
+                    <!--<onclick>Skin.SetAddon(ShelfMusic.1.Label,xbmc.python.pluginsource)</onclick>-->
+                <!--</item>-->
+                <!--<item id="2" description="ADDONS">-->
+                    <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.2.Label))]</label>-->
+                    <!--<label2>addon</label2>-->
+                    <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.2.Label))]</thumb>-->
+                    <!--<onclick>Skin.SetAddon(ShelfMusic.2.Label,xbmc.python.pluginsource)</onclick>-->
+                <!--</item>-->
+                <!--<item id="3" description="ADDONS">-->
+                    <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.3.Label))]</label>-->
+                    <!--<label2>addon</label2>-->
+                    <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.3.Label))]</thumb>-->
+                    <!--<onclick>Skin.SetAddon(ShelfMusic.3.Label,xbmc.python.pluginsource)</onclick>-->
+                <!--</item>-->
+                <!--<item id="4" description="ADDONS">-->
+                    <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.4.Label))]</label>-->
+                    <!--<label2>addon</label2>-->
+                    <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.4.Label))]</thumb>-->
+                    <!--<onclick>Skin.SetAddon(ShelfMusic.4.Label,xbmc.python.pluginsource)</onclick>-->
+                <!--</item>-->
+                <!--<item id="5" description="ADDONS">-->
+                    <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.5.Label))]</label>-->
+                    <!--<label2>addon</label2>-->
+                    <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.5.Label))]</thumb>-->
+                    <!--<onclick>Skin.SetAddon(ShelfMusic.5.Label,xbmc.python.pluginsource)</onclick>-->
+                <!--</item>-->
+                <!--<item id="6" description="fav">-->
+                    <!--<label>$INFO[Skin.String(ShelfMusic.6.Label)]</label>-->
+                    <!--<label2>favourite</label2>-->
+                    <!--<thumb>$INFO[Skin.String(ShelfMusic.6.Icon)]</thumb>-->
+                    <!--<onclick>RunScript(script.favourites,property=ShelfMusic.6)</onclick>-->
+                <!--</item>-->
+                <!--<item id="7" description="fav">-->
+                    <!--<label>$INFO[Skin.String(ShelfPictures.7.Label)]</label>-->
+                    <!--<label2>favourite</label2>-->
+                    <!--<thumb>$INFO[Skin.String(ShelfMusic.7.Icon)]</thumb>-->
+                    <!--<onclick>RunScript(script.favourites,property=ShelfMusic.7)</onclick>-->
+                <!--</item>-->
+                <!--<item id="8" description="fav">-->
+                    <!--<label>$INFO[Skin.String(ShelfPictures.8.Label)]</label>-->
+                    <!--<label2>favourite</label2>-->
+                    <!--<thumb>$INFO[Skin.String(ShelfMusic.8.Icon)]</thumb>-->
+                    <!--<onclick>RunScript(script.favourites,property=ShelfMusic.8)</onclick>-->
+                <!--</item>-->
+                <!--<item id="9" description="fav">-->
+                    <!--<label>$INFO[Skin.String(ShelfPictures.9.Label)]</label>-->
+                    <!--<label2>favourite</label2>-->
+                    <!--<thumb>$INFO[Skin.String(ShelfMusic.9.Icon)]</thumb>-->
+                    <!--<onclick>RunScript(script.favourites,property=ShelfMusic.9)</onclick>-->
+                <!--</item>-->
+                <!--<item id="10" description="fav">-->
+                    <!--<label>$INFO[Skin.String(ShelfPictures.10.Label)]</label>-->
+                    <!--<label2>favourite</label2>-->
+                    <!--<thumb>$INFO[Skin.String(ShelfMusic.10.Icon)]</thumb>-->
+                    <!--<onclick>RunScript(script.favourites,property=ShelfMusic.10)</onclick>-->
+                <!--</item>-->
+            <!--</content>-->
+        <!--</control>-->
         <control type="group" id="520" description="PICTURES">
             <visible>Container(50).HasFocus(1004)</visible>
             <top>30</top>
