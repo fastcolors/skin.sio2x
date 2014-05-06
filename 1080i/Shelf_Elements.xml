@@ -806,7 +806,7 @@
             <!--<animation condition="StringCompare(Container(313).NumItems,4)" effect="slide" end="192">Conditional</animation&ndash;&gt;-->
             <control type="panel" id="313" description="TOP Shortcuts">
                 <visible>Library.HasContent(Music) | Library.HasContent(MusicVideos) | Skin.HasSetting(MusicShelf_Custom)</visible>
-                <visible>[Container(9000).HasFocus(342) | Control.HasFocus(313)]</visible>
+                <visible>[Container(9000).HasFocus(342) | Control.HasFocus(313)] + !StringCompare(Skin.String(musicshelf),mushoff)</visible>
                 <include>SquareShortcutsCommons</include>
                 <content target="music">$VAR[musicshelfcontent]</content>
             </control>

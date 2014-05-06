@@ -181,14 +181,14 @@
     </variable>
 
      <variable name="musicshelftitle">
-        <value condition="StringCompare(Skin.String(MusicShelf),custom)">[B] custom [/B]</value>
-        <value condition="StringCompare(Skin.String(MusicShelf),top)">[B] top [/B]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),custom)">[B] custom [/B]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),top)">[B] top [/B]</value>
         <value>[B] recent[/B]</value>
     </variable>
 
     <variable name="musicshelfcontent">
         <value condition="StringCompare(Skin.String(musicshelf),custom)">addons://sources/audio/</value>
-        <value condition="StringCompare(Skin.String(Musicshelf),top) + Library.HasContent(Music)">musicdb://top100/songs/</value>
+        <value condition="StringCompare(Skin.String(musicshelf),top) + Library.HasContent(Music)">musicdb://top100/songs/</value>
         <value condition="Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
     </variable>
 </includes>

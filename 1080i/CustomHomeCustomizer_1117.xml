@@ -588,8 +588,8 @@
                 <selected>StringCompare(Skin.String(musicshelf),)</selected>
                 <enable>!Skin.HasSetting(hidemusic) + [Library.HasContent(Music) | Library.HasContent(MusicVideos)]</enable>
                 <onclick>Skin.Reset(MusicShelf_Custom)</onclick>
-                <onclick condition="!StringCompare(Skin.String(Musicshelf),)">Skin.SetString(musicshelf,)</onclick>
-                <onclick condition="StringCompare(Skin.String(Musicshelf),)">Skin.SetString(musicshelf,off)</onclick>
+                <onclick condition="!StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,)</onclick>
+                <onclick condition="StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,mushoff)</onclick>
             </control>
             <control type="radiobutton" id="303" description="Custom">
                 <top>55</top>
@@ -602,7 +602,7 @@
                 <onclick>Skin.ToggleSetting(MusicShelf_Custom)</onclick>
                 <onclick condition="Skin.HasSetting(MusicShelf_Custom)">Skin.Reset(MusicShelf_Custom)</onclick>
                 <onclick condition="!StringCompare(Skin.String(musicshelf),custom)">Skin.SetString(musicshelf,custom)</onclick>
-                <onclick condition="StringCompare(Skin.String(musicshelf),custom)">Skin.SetString(musicshelf,off)</onclick>
+                <onclick condition="StringCompare(Skin.String(musicshelf),custom)">Skin.SetString(musicshelf,mushoff)</onclick>
             </control>
             <control type="radiobutton" id="304" description="100">
                 <top>110</top>
@@ -614,7 +614,7 @@
                 <enable>!Skin.HasSetting(hidemusic) + [Library.HasContent(Music) | Library.HasContent(MusicVideos)]</enable>
                 <onclick>Skin.Reset(MusicShelf_Custom)</onclick>
                 <onclick condition="!StringCompare(Skin.String(musicshelf),top)">Skin.SetString(musicshelf,top)</onclick>
-                <onclick condition="StringCompare(Skin.String(musicshelf),top)">Skin.SetString(musicshelf,off)</onclick>
+                <onclick condition="StringCompare(Skin.String(musicshelf),top)">Skin.SetString(musicshelf,mushoff)</onclick>
             </control>
         </control>
         <!--<control type="panel" id="52">-->
