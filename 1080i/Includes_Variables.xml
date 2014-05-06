@@ -181,14 +181,18 @@
     </variable>
 
      <variable name="musicshelftitle">
-        <value condition="StringCompare(Skin.String(musicshelf),custom)">[B] custom [/B]</value>
-        <value condition="StringCompare(Skin.String(musicshelf),top)">[B] top [/B]</value>
-        <value>[B] recent[/B]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),custom)">[B] $LOCALIZE[1038][/B]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),top)">[B] $LOCALIZE[10504][/B]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),topalbum)">[B] $LOCALIZE[10505][/B]</value>
+        <!--<value condition="StringCompare(Skin.String(musicshelf),playlists)">[B] $LOCALIZE[20011][/B]</value>-->
+        <value>[B] $LOCALIZE[359][/B]</value>
     </variable>
 
     <variable name="musicshelfcontent">
         <value condition="StringCompare(Skin.String(musicshelf),custom)">addons://sources/audio/</value>
         <value condition="StringCompare(Skin.String(musicshelf),top) + Library.HasContent(Music)">musicdb://top100/songs/</value>
+        <value condition="StringCompare(Skin.String(musicshelf),topalbum) + Library.HasContent(Music)">musicdb://top100/albums/</value>
+        <!--<value condition="StringCompare(Skin.String(musicshelf),playlists) + Library.HasContent(Music)">special://musicplaylists/</value>-->
         <value condition="Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
     </variable>
 </includes>

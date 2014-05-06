@@ -17,13 +17,16 @@
                 <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
                 <onclick  condition="Control.IsVisible(311)">Skin.ToggleSetting(MoviesShelfWL)</onclick>
                 <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
-                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,custom)</onclick>
-                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),Custom) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,top)</onclick>
-                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),top) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>
+                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,top)</onclick>
+                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),top) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,custom)</onclick>
+                <!--<onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),topalbum) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,custom)</onclick>-->
+                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),custom) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>
+                <!--<onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),playlists) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>-->
                 <onclick  condition="Control.IsVisible(315)">noop</onclick>
                 <colordiffuse>FF000000</colordiffuse>
                 <onclick condition="Control.IsVisible(312)">ReplaceWindow(0)</onclick>
                 <onup>noop</onup>
+                <!--<ondown condition="!IntegerGreaterThan(Container(313).NumItems,0)">noop</ondown>-->
                 <ondown>700</ondown>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
