@@ -832,7 +832,7 @@
             <visible>Control.IsVisible(315)</visible>
             <include>ShelfTitle</include>
             <include>ShelfFade</include>
-            <label>[B]$LOCALIZE[111][/B]</label>
+            <label>[B] $LOCALIZE[111][/B]</label>
         </control>
         <control type="group">
             <control type="panel" id="315" description="TOP Shortcuts">
@@ -1008,7 +1008,7 @@
                 <visible>Control.IsVisible(317)</visible>
                 <include>ShelfTitle</include>
                 <include>ShelfFade</include>
-                <label>[B]$INFO[Container(317).ListItem.Property(ItemType)][/B]</label>
+                <label>[B] $INFO[Container(317).ListItem.Property(ItemType)][/B]</label>
             </control>
             <control type="panel" id="317" description="TOP Shortcuts">
                 <visible>Container(9000).HasFocus(355) | Control.HasFocus(317)</visible>
