@@ -4,15 +4,17 @@
         <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="250" reversible="true">Conditional</animation>
     </include>
     <include name="Keyboardbuttons">
-        <width>152</width>
-        <height>40</height>
-        <texturenofocus>keyb/plain.png</texturenofocus>
-        <texturefocus>keyb/selected.png</texturefocus>
-        <alttexturenofocus>keyb/plainalt.png</alttexturenofocus>
-        <alttexturefocus>keyb/selectedalt.png</alttexturefocus>
+        <width>130</width>
+        <height>50</height>
+        <texturenofocus border="3">keyb/plain.png</texturenofocus>
+        <texturefocus border="3">keyb/selectedalt.png</texturefocus>
+        <alttexturenofocus border="3">keyb/plainalt.png</alttexturenofocus>
+        <alttexturefocus border="3">keyb/selectedalt.png</alttexturefocus>
         <align>center</align>
         <aligny>center</aligny>
-        <font>size27</font>
+        <textoffsetx>0</textoffsetx>
+        <focusedcolor>black</focusedcolor>
+        <font>size33B</font>
     </include>
     <!--PANEL FOR BIG LIST-->
     <include name="left_Panel">
@@ -288,16 +290,15 @@
             <visible>Container.content(Songs)</visible>
             <animation effect="fade" time="400">Visible</animation>
             <animation effect="fade" time="0">Hidden</animation>
-            <control type="group" description="Music Square">
-                <posx>225</posx>
+
+            <control type="image" description="Thumb">
+                <centerleft>480</centerleft>
                 <top>90</top>
-                <control type="image" description="Thumb">
-                    <width>600</width>
-                    <height>600</height>
-                    <include>Icon_Fade</include>
-                    <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Icon]</texture>
-                    <aspectratio aligny="bottom">keep</aspectratio>
-                </control>
+                <width>600</width>
+                <height>600</height>
+                <include>Icon_Fade</include>
+                <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Icon]</texture>
+                <aspectratio aligny="bottom">keep</aspectratio>
             </control>
         </control>
     </include>
@@ -368,8 +369,8 @@
     <include name="MusicInfo">
         <control type="group" description="Songs and Music Videos">
             <visible>!ListItem.IsFolder</visible>
-            <posx>120</posx>
-            <top>57</top>
+            <left>120</left>
+            <top>50</top>
             <control type="group">
                 <top>765</top>
                 <control type="label" description="Title">
@@ -395,15 +396,7 @@
                     <height>1</height>
                     <width>780</width>
                     <aspectratio>stretch</aspectratio>
-                    <texture>lines/LineR.png</texture>
-                </control>
-                <control type="image" description="Separator">
-                    <posx>0</posx>
-                    <top>180</top>
-                    <height>1</height>
-                    <width>760</width>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>lines/LineL.png</texture>
+                    <texture colordiffuse="FF000000">lines/Line1.png</texture>
                 </control>
                 <control type="grouplist" description="Labels">
                     <posx>20</posx>
@@ -819,15 +812,6 @@
         <font>size39B</font>
         <textcolor>White</textcolor>
     </include>
-    <include name="Keyboard">
-        <texturefocus border="8">images/Buttonselect.png</texturefocus>
-        <align>center</align>
-        <aligny>center</aligny>
-        <textoffsetx>0</textoffsetx>
-        <width>75</width>
-        <height>75</height>
-        <font>size42B</font>
-    </include>
     <include name="DetailsVideoInfoCommons">
         <posx>0</posx>
         <width>270</width>
@@ -884,7 +868,7 @@
         <height>54</height>
         <align>left</align>
         <font>size30</font>
-        <disabledcolor></disabledcolor>
+        <disabledcolor>Disabled</disabledcolor>
     </include>
     <include name="Help_Panel">
         <animation effect="fade" time="200">VisibleChange</animation>

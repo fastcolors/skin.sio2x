@@ -4,28 +4,30 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.favourites)</onload>
-    <onload>SetProperty(SkinWidgets_RandomItems_Update,true)</onload>
-    <!--include>OpenClose</include-->
+    <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
         <control type="group">
             <include>OpenClose</include>
             <control type="button" id="9009">
-                <animation effect="slide" condition="[Control.IsVisible(311) + !Skin.HasSetting(Intruder) + [Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)]] | [Control.IsVisible(311) + [Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)] + Player.HasVideo]" end="320,0">Conditional</animation>
-                <animation effect="slide" condition="Control.IsVisible(312) + !Skin.HasSetting(IntruderTV) + !Container(312).HasPrevious" end="480,0">Conditional</animation>
                 <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
-                <posx></posx>
                 <top>26</top>
                 <width>34</width>
                 <height>34</height>
                 <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
                 <onclick  condition="Control.IsVisible(311)">Skin.ToggleSetting(MoviesShelfWL)</onclick>
                 <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,top)</onclick>
+                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),top) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,custom)</onclick>
+                <!--<onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),topalbum) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,custom)</onclick>-->
+                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),custom) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>
+                <!--<onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),playlists) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>-->
+                <onclick  condition="Control.IsVisible(315)">noop</onclick>
                 <colordiffuse>FF000000</colordiffuse>
-                <onclick>ReplaceWindow(0)</onclick>
+                <onclick condition="Control.IsVisible(312)">ReplaceWindow(0)</onclick>
                 <onup>noop</onup>
-                <ondown condition="Control.IsVisible(311)">311</ondown>
-                <ondown condition="Control.IsVisible(312)">312</ondown>
+                <!--<ondown condition="!IntegerGreaterThan(Container(313).NumItems,0)">noop</ondown>-->
+                <ondown>700</ondown>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
             </control>
@@ -225,23 +227,13 @@
                 <height>450</height>
                 <texture>lines/LineV.png</texture>
             </control>
-            <control type="image" description="MOVIELINE">
-                <include>ShelfFade</include>
-                <animation effect="slide" end="325,0" time="400" condition="[Container(311).Position(0) | Container(311).Position(1) | Container(311).Position(2) | Container(311).Position(3) | Container(311).Position(4) | Container(311).Position(5)] + [!Skin.HasSetting(Intruder) | Player.HasVideo]">Conditional</animation>
-                <visible>Container(9000).HasFocus(340) + [!Skin.HasSetting(Intruder) | Player.HasVideo]</visible>
-                <visible>Library.HasContent(Movies)</visible>
-                <left>-5</left>
-                <top>30</top>
-                <width>1</width>
-                <height>450</height>
-                <texture>lines/LineV.png</texture>
-            </control>
+
             <include>weather_shelf</include>
             <include condition="true">EPG_shelf</include>
             <control type="group" id="700" description="Shelf items">
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-                <include condition="!Skin.HasSetting(MoviesShelfWL)">Movies_RA</include>
-                <include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include>
+                <include>Movies</include>
+                <!--<include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include>-->
                 <include condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RA</include>
                 <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
                 <include>Music_RA</include>
@@ -250,7 +242,7 @@
                 <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
                 <include>Favsshelf</include>
                 <control type="image" description="Logo">
-                    <visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Library.HasContent(Music)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | Control.IsVisible(317) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>
+                    <visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | Control.IsVisible(317) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>
                     <include>ShelfFade</include>
                     <width>1920</width>
                     <height>500</height>

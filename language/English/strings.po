@@ -402,3 +402,7 @@ msgstr "Core Settings. Enable or disable use of specific audio/video hardware an
 msgctxt "#31095"
 msgid "Skin Specific Options"
 msgstr "Skin Specific Options"
+
+msgctxt "#31096"
+msgid "Started Movies"
+msgstr "Started Movies"

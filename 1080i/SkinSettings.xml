@@ -76,12 +76,9 @@
                 </control>
                 <control type="radiobutton" id="11">
                     <label>$LOCALIZE[31028]</label>
-                    <onclick condition="!Skin.HasSetting(CustomBg)">Skin.SetFile(CustomBgHome,.jpg|.png,special://skin/backgrounds)</onclick>
-                    <onclick condition="Skin.HasSetting(CustomBg)">Skin.Reset(CustomBgHome)</onclick>
-                    <onclick>Skin.ToggleSetting(CustomBg)</onclick>
-                    <onclick condition="Skin.HasSetting(CustomBg)">Skin.Reset(colormenu)</onclick>
-                    <onclick condition="!Skin.HasSetting(CustomBg)">Skin.ToggleSetting(colormenu)</onclick>
-                    <selected>Skin.HasSetting(CustomBg)</selected>
+                    <onclick condition="IsEmpty(Skin.String(CustomBgHome))">Skin.SetFile(CustomBgHome,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(CustomBgHome))">Skin.Reset(CustomBgHome)</onclick>
+                    <selected>!IsEmpty(Skin.String(CustomBgHome))</selected>
                 </control>
                 <control type="radiobutton" id="12">
                     <label>$LOCALIZE[31030]</label>

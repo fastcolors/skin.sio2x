@@ -147,12 +147,12 @@
         <value>images/dvdbox.png</value>
     </variable>
     <variable name="fanart">
-        <value condition="StringCompare(ListItem.Label,..) + Skin.HasSetting(CustomBg)">$INFO[Skin.String(CustomBgHome)]</value>
+        <value condition="StringCompare(ListItem.Label,..) + !IsEmpty(Skin.String(CustomBgHome))">$INFO[Skin.String(CustomBgHome)]</value>
         <value condition="IsEmpty(ListItem.Art(fanart)) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
     <variable name="bgimg">
-        <value condition="Skin.HasSetting(CustomBg) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
+        <value condition="!IsEmpty(Skin.String(CustomBgHome)) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value>special://skin/backgrounds/light_texture.jpg</value>
     </variable>
@@ -160,10 +160,7 @@
         <value condition="SubString(Control.GetLabel(412),jpg) | SubString(Control.GetLabel(412),png)">$INFO[Control.GetLabel(412)]</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>
-    <variable name="CustomBgHome">
-        <value condition="Skin.HasSetting(CustomBg)">$LOCALIZE[16041]</value>
-        <value>$LOCALIZE[16039]</value>
-    </variable>
+
     <variable name="diffuseselect">
         <value condition="StringCompare(ListItem.MPAA,R) | StringCompare(ListItem.MPAA,TV-MA) | SubString(ListItem.MPAA,18)">88FF2200</value>
         <value condition="SubString(ListItem.MPAA,PG) | StringCompare(ListItem.MPAA,G) | StringCompare(ListItem.MPAA,U) | StringCompare(ListItem.MPAA,T)">770CF704</value>
@@ -172,9 +169,30 @@
     </variable>
 
     <variable name="diffuseselectshelf">
-        <value condition="StringCompare(Container(311).ListItem.Property(MPAA),R)">CCFF0000</value>
-        <value condition="StringCompare(Container(311).ListItem.Property(MPAA),PG) | StringCompare(Container(311).ListItem.Property(MPAA),G) | StringCompare(Container(311).ListItem.Property(MPAA),U) | StringCompare(Container(311).ListItem.Property(MPAA),T)">CC00FF00</value>
-        <value condition="StringCompare(Container(311).ListItem.Property(MPAA),PG-13) | StringCompare(Container(311).ListItem.Property(MPAA),12) | StringCompare(Container(311).ListItem.Property(MPAA),15)">CCFF8800</value>
-        <value>CC000000</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,R) | SubString(Container(311).ListItem.MPAA,18)">CCFF0000</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,PG) | StringCompare(Container(311).ListItem.MPAA,G) | StringCompare(Container(311).ListItem.MPAA,U) | StringCompare(Container(311).ListItem.MPAA,T)">CC00FF00</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,PG-13) | StringCompare(Container(311).ListItem.MPAA,12) | StringCompare(Container(311).ListItem.MPAA,15)">CCFF8800</value>
+        <value>775555FF</value>
+    </variable>
+
+    <variable name="shelfmovies">
+        <value condition="Skin.HasSetting(MoviesShelfWL)">special://skin/resources/laststarted.xsp</value>
+        <value>videodb://recentlyaddedmovies/</value>
+    </variable>
+
+     <variable name="musicshelftitle">
+        <value condition="StringCompare(Skin.String(musicshelf),custom)">[B] $LOCALIZE[1038][/B]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),top)">[B] $LOCALIZE[10504][/B]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),topalbum)">[B] $LOCALIZE[10505][/B]</value>
+        <!--<value condition="StringCompare(Skin.String(musicshelf),playlists)">[B] $LOCALIZE[20011][/B]</value>-->
+        <value>[B] $LOCALIZE[359][/B]</value>
+    </variable>
+
+    <variable name="musicshelfcontent">
+        <value condition="StringCompare(Skin.String(musicshelf),custom)">addons://sources/audio/</value>
+        <value condition="StringCompare(Skin.String(musicshelf),top) + Library.HasContent(Music)">musicdb://top100/songs/</value>
+        <value condition="StringCompare(Skin.String(musicshelf),topalbum) + Library.HasContent(Music)">musicdb://top100/albums/</value>
+        <!--<value condition="StringCompare(Skin.String(musicshelf),playlists) + Library.HasContent(Music)">special://musicplaylists/</value>-->
+        <value condition="Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
     </variable>
 </includes>

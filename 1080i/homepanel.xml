@@ -85,7 +85,7 @@
             <thumb>icons/3d.png</thumb>
             <label>3D Movies</label>
             <property name="color">icons/purple.png</property>
-            <onclick>ActivateWindow(1999)</onclick>
+            <onclick>ActivateWindow(Videos,"special://skin/resources/3d.xsp", return)</onclick>
         </item>
         <item id="601" description="Custom Fvourite">
             <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
@@ -158,7 +158,7 @@
             <thumb>$INFO[Skin.String(HomeAddon.4.Icon)]</thumb>
             <label2>$INFO[system.addonicon(Skin.String(HomeAddon.4.label))]</label2>
             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.4.Label))]</label>
-            <property name="color">icons/blue.png</property>
+            <property name="color">icons/darkblue.png</property>
             <onclick>RunAddon($INFO[Skin.String(HomeAddon.4.Label)])</onclick>
         </item>
         <item id="405" description="Custom addon">
@@ -219,13 +219,13 @@
             <property name="color">icons/progcolor.png</property>
             <onclick>RunAddon($INFO[Skin.String(HomeAddon.12.Label)])</onclick>
         </item>
-        <item id="346">
-            <visible>!Skin.HasSetting(hidewl)</visible>
-            <thumb>icons/watchlist.png</thumb>
-            <label>WatchList</label>
-            <property name="color">icons/dvdcolor.png</property>
-            <onclick>ActivateWindow(1113)</onclick>
-        </item>
+        <!--<item id="346"> THIS IS EMPTY WINDOW 1113 IS FREE-->
+            <!--<visible></visible>-->
+            <!--<thumb>icons/watchlist.png</thumb>-->
+            <!--<label></label>-->
+            <!--<property name="color">icons/dvdcolor.png</property>-->
+            <!--<onclick>ActivateWindow(1113)</onclick>-->
+        <!--</item>-->
         <item id="350">
             <visible>!Skin.HasSetting(hideprog)</visible>
             <thumb>icons/program.png</thumb>
