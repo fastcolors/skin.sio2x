@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2006">
     <defaultcontrol always="true">-</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+    <allowoverlay>yes</allowoverlay>
     <backgroundcolor>FF000000</backgroundcolor>
     <onload condition="system.hasaddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
     <controls>
@@ -47,7 +47,7 @@
                     <effect type="fade" start="0" end="70" time="0" reversible="false" />
                 </animation>
             </control>
-            <control type="group" description="INFO grouped">
+            <control type="group" description="INFO grouped" id="1111">
                 <visible>[Player.ShowInfo | Window.IsActive(MusicOSD) | !Visualisation.Enabled] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
                 <animation effect="fade" time="500">Visible</animation>
                 <animation effect="fade" time="200">Hidden</animation>
@@ -433,5 +433,15 @@
                 </control>
             </control>
         </control>
+        <control type="image">
+            <visible>Control.IsVisible(1111)</visible>
+    <description>Rating image</description>
+    <centerleft>960</centerleft>
+    <top>900</top>
+    <width>140</width>
+    <height>27</height>
+    <aspectratio align="right">keep</aspectratio>
+    <texture>$INFO[Player.StarRating]</texture>
+</control>
     </controls>
 </window>

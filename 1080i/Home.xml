@@ -4,7 +4,7 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.favourites)</onload>
-    <!--include>OpenClose</include-->
+    <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
         <control type="group">
