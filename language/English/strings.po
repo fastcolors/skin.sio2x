@@ -406,3 +406,7 @@ msgstr "Skin Specific Options"
 msgctxt "#31096"
 msgid "Started Movies"
 msgstr "Started Movies"
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Local subtitle available"

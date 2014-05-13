@@ -65,15 +65,6 @@
             <control type="group">
                 <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
                 <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
-                <control type="image">
-                    <visible>Control.HasFocus(311)</visible>
-                    <animation effect="fade" start="100" end="0" time="20">unFocus</animation>
-                    <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
-                    <posx>-50</posx>
-                    <width>420</width>
-                    <height>420</height>
-                    <texture>images/spotlight.png</texture>
-                </control>
                 <control type="group">
                     <animation effect="fade" start="100" end="0" time="100">Focus</animation>
                     <animation effect="fade" start="0" end="100" time="150">unFocus</animation>
@@ -200,15 +191,6 @@
             <control type="group">
                 <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
                 <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
-                <control type="image">
-                    <visible>Control.HasFocus(319)</visible>
-                    <animation effect="fade" start="100" end="0" time="20">unFocus</animation>
-                    <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
-                    <posx>-50</posx>
-                    <width>420</width>
-                    <height>420</height>
-                    <texture>images/spotlight.png</texture>
-                </control>
                 <control type="group">
                     <control type="image">
                         <animation effect="fade" start="100" end="0" time="100">Focus</animation>
@@ -289,8 +271,8 @@
                 </control>
                 <control type="image">
                     <visible>Control.IsVisible(313) + !Skin.HasSetting(MusicShelf_Custom)</visible>
-                    <posx>26</posx>
-                    <top>42</top>
+                    <posx>28</posx>
+                    <top>44</top>
                     <width>328</width>
                     <height>328</height>
                     <texture background="true">images/cellophane.png</texture>
@@ -302,15 +284,6 @@
             <control type="group">
                 <animation center="192,30" effect="zoom" start="90" end="100" time="200">Focus</animation>
                 <animation center="192,30" effect="zoom" start="100" end="90" time="100">unFocus</animation>
-                <control type="image">
-                    <visible>Control.HasFocus(313) | Control.HasFocus(314) | Control.HasFocus(315)</visible>
-                    <animation effect="fade" start="100" end="0" time="20">unFocus</animation>
-                    <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
-                    <posx>-90</posx>
-                    <width>564</width>
-                    <height>420</height>
-                    <texture>images/spotlight.png</texture>
-                </control>
                 <control type="image" description="Reflection">
                     <posx>30</posx>
                     <top>370</top>
@@ -329,8 +302,8 @@
                 </control>
                 <control type="image">
                     <visible>Control.IsVisible(313) + !Skin.HasSetting(MusicShelf_Custom)</visible>
-                    <posx>26</posx>
-                    <top>42</top>
+                    <posx>28</posx>
+                    <top>44</top>
                     <width>328</width>
                     <height>328</height>
                     <texture background="true">images/cellophane.png</texture>
@@ -338,13 +311,13 @@
                 </control>
                 <control type="label" description="Artist or Type">
                     <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-                    <top>15</top>
+                    <top>8</top>
                     <posx>192</posx>
                     <width>384</width>
                     <height>30</height>
                     <font>size24B</font>
                     <textcolor>black</textcolor>
-                    <label>$INFO[ListItem.Property(ItemType)]</label>
+                    <label>$INFO[ListItem.Property(ItemType)]$INFO[ListItem.Artist]</label>
                     <align>center</align>
                 </control>
                 <control type="textbox" description="Album">
@@ -353,18 +326,11 @@
                     <width>384</width>
                     <height>62</height>
                     <font>size24B</font>
-                    <textcolor>white</textcolor>
+                    <textcolor>black</textcolor>
                     <autoscroll>false</autoscroll>
                     <label>$INFO[ListItem.Label]</label>
                     <align>center</align>
                 </control>
-                <!--<control type="image">
-                <posx>20</posx>
-              <top>40</top>
-              <width>317</width>
-              <height>317</height>
-              <texture border="10">images/generalslider.png</texture>
-              </control>-->
             </control>
         </focusedlayout>
     </include>
@@ -423,16 +389,6 @@
             <control type="group">
                 <animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>
                 <animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>
-                <control type="image">
-                    <visible>Control.HasFocus(312)</visible>
-                    <animation effect="fade" start="100" end="0" time="20">unFocus</animation>
-                    <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
-                    <left>-80</left>
-                    <top>-90</top>
-                    <width>660</width>
-                    <height>540</height>
-                    <texture>images/spotlight.png</texture>
-                </control>
                 <control type="image" description="Reflection">
                     <left>43</left>
                     <top>330</top>
@@ -511,10 +467,10 @@
         <control type="image">
             <visible>Control.HasFocus(312)</visible>
             <posx>190</posx>
-            <top>504</top>
+            <top>494</top>
             <width>100</width>
-            <height>33</height>
-            <texture>images/dockfocus.png</texture>
+            <height>10</height>
+            <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
             <aspectratio>stretch</aspectratio>
             <animation effect="fade" time="220">VisibleChange</animation>
             <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
@@ -813,10 +769,10 @@
             <control type="image">
                 <visible>Control.HasFocus(313)</visible>
                 <posx>142</posx>
-                <top>504</top>
+                <top>494</top>
                 <width>100</width>
-                <height>33</height>
-                <texture>images/dockfocus.png</texture>
+                <height>10</height>
+                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <animation effect="fade" time="220">VisibleChange</animation>
                 <animation condition="Container(313).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
@@ -988,10 +944,10 @@
             <control type="image">
                 <visible>Control.HasFocus(315)</visible>
                 <posx>142</posx>
-                <top>504</top>
+                <top>494</top>
                 <width>100</width>
-                <height>33</height>
-                <texture>images/dockfocus.png</texture>
+                <height>10</height>
+                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <animation effect="fade" time="220">VisibleChange</animation>
                 <animation condition="Container(315).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
@@ -1128,10 +1084,10 @@
             <control type="image">
                 <visible>Control.HasFocus(317)</visible>
                 <posx>110</posx>
-                <top>504</top>
+                <top>494</top>
                 <width>100</width>
-                <height>33</height>
-                <texture>images/dockfocus.png</texture>
+                <height>10</height>
+                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <animation effect="fade" time="220">VisibleChange</animation>
                 <animation condition="Container(317).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
@@ -1282,10 +1238,10 @@
             <control type="image">
                 <visible>Control.HasFocus(314)</visible>
                 <posx>142</posx>
-                <top>504</top>
+                <top>494</top>
                 <width>100</width>
-                <height>33</height>
-                <texture>images/dockfocus.png</texture>
+                <height>10</height>
+                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <animation effect="fade" time="220">VisibleChange</animation>
                 <animation condition="Container(314).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
@@ -1544,10 +1500,10 @@
             <control type="image">
                 <visible>Control.HasFocus(319)</visible>
                 <posx>110</posx>
-                <top>504</top>
+                <top>494</top>
                 <width>100</width>
-                <height>33</height>
-                <texture>images/dockfocus.png</texture>
+                <height>10</height>
+                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <animation effect="fade" time="220">VisibleChange</animation>
                 <animation condition="Container(319).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
