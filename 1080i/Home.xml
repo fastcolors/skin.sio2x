@@ -188,19 +188,28 @@
             </control>
             <control type="group" description="Furniture">
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-                <control type="image" description="Stage">
-                    <width>1920</width>
-                    <height>1080</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>images/HomeBG.png</texture>
-                </control>
+                <!--<control type="image" description="Stage">-->
+                    <!--<width>1920</width>-->
+                    <!--<height>1080</height>-->
+                    <!--<aspectratio>stretch</aspectratio>-->
+                    <!--<texture>images/HomeBG.png</texture>-->
+                    <!--<colordiffuse>colorselect</colordiffuse>-->
+                <!--</control>-->
                 <control type="image" description="Line">
                     <posx>-90</posx>
                     <top>503</top>
                     <width>2100</width>
                     <height>1</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture>lines/Line1.png</texture>
+                    <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
+                </control>
+                 <control type="image" description="Line">
+                    <posx>-90</posx>
+                    <top>538</top>
+                    <width>2100</width>
+                    <height>1</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
                 </control>
                 <control type="rss" description="RSS Feed">
                     <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
@@ -229,11 +238,11 @@
             </control>
 
             <include>weather_shelf</include>
+            <!--todo EPGonSHELF!!!-->
             <include condition="true">EPG_shelf</include>
             <control type="group" id="700" description="Shelf items">
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
                 <include>Movies</include>
-                <!--<include condition="Skin.HasSetting(MoviesShelfWL)">Movies_WL</include>-->
                 <include condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RA</include>
                 <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
                 <include>Music_RA</include>

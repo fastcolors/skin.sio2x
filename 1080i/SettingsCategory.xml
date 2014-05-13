@@ -2,7 +2,7 @@
 <window id="12">
     <defaultcontrol always="true">500</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <backgroundcolor>0xffffffff</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <controls>
         <include>BlackBackground</include>
         <control type="image">

@@ -169,7 +169,8 @@
     </variable>
 
     <variable name="diffuseselectshelf">
-        <value condition="StringCompare(Container(311).ListItem.MPAA,R) | SubString(Container(311).ListItem.MPAA,18)">CCFF0000</value>
+        <value condition="!Control.IsVisible(311)">00000000</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,R) | SubString(Container(311).ListItem.MPAA,18) | StringCompare(Container(312).ListItem.MPAA,TV-MA)">CCFF0000</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,PG) | StringCompare(Container(311).ListItem.MPAA,G) | StringCompare(Container(311).ListItem.MPAA,U) | StringCompare(Container(311).ListItem.MPAA,T)">CC00FF00</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,PG-13) | StringCompare(Container(311).ListItem.MPAA,12) | StringCompare(Container(311).ListItem.MPAA,15)">CCFF8800</value>
         <value>775555FF</value>

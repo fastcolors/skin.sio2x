@@ -111,14 +111,14 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
-                    <animation effect="fade" start="70" end="0" time="100">unFocus</animation>
-                    <animation effect="fade" start="0" end="70" time="150" delay="80">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+                    <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
                     <visible>Control.HasFocus(311)</visible>
                     <posx>35</posx>
                     <top>22</top>
                     <width>254</width>
                     <height>381</height>
-                    <texture colordiffuse="$VAR[diffuseselectshelf]" border="2">images/shelfmovieselect.png</texture>
+                    <texture colordiffuse="$VAR[diffuseselectshelf]">images/darkgrey.png</texture>
                 </control>
                 <control type="textbox">
                     <visible>ControlGroup(700).HasFocus()</visible>
@@ -494,10 +494,10 @@
         <control type="image">
             <visible>Control.HasFocus(311)</visible>
             <posx>110</posx>
-            <top>504</top>
+            <top>494</top>
             <width>100</width>
-            <height>33</height>
-            <texture>images/dockfocus.png</texture>
+            <height>10</height>
+            <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
             <animation effect="fade" time="220">VisibleChange</animation>
             <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
             <animation condition="Container(311).Position(1) | Container(311).Position(7) | Container(311).Position(13)" effect="slide" start="0,0" end="320,0" time="220" easing="inout" reversible="true">Conditional</animation>

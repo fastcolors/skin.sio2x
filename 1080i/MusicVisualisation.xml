@@ -163,7 +163,7 @@
                                 <align>left</align>
                                 <label>[B]$INFO[Player.Time][/B]</label>
                                 <font>size26</font>
-                                <textcolor>2</textcolor>
+                                <textcolor>gray</textcolor>
                             </control>
                             <control type="progress" description="Progress Bar">
                                 <posx>122</posx>
@@ -186,7 +186,7 @@
                                 <align>right</align>
                                 <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
                                 <font>size26</font>
-                                <textcolor>2</textcolor>
+                                <textcolor>gray</textcolor>
                             </control>
                             <control type="label">
                                 <posx>777</posx>

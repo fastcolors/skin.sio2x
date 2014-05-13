@@ -414,10 +414,16 @@
                             <onclick>Skin.Reset(HomeAddon.6.Icon)</onclick>
                         </item>
                         <item id="501" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
+                            <visible>!IsEmpty(Skin.String(HomeAddon.7.Label)) + IsEmpty(Skin.String(HomeAddon.7.Icon))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.7.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.7.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.7.Label,xbmc.python.script)</onclick>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="501" description="ScriptCustom">
+                            <visible>!IsEmpty(Skin.String(HomeAddon.7.Label)) + !IsEmpty(Skin.String(HomeAddon.7.Icon))</visible>
+                            <thumb>$INFO[Skin.String(HomeAddon.7.Icon)]</thumb>
+                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.7.Label))]</label>
+                            <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="501" description="ScriptCustom">
                             <visible>IsEmpty(Skin.String(HomeAddon.7.Label))</visible>
@@ -426,10 +432,16 @@
                             <onclick>Skin.SetAddon(HomeAddon.7.Label,xbmc.python.script)</onclick>
                         </item>
                         <item id="502" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
+                            <visible>!IsEmpty(Skin.String(HomeAddon.8.Label)) + IsEmpty(Skin.String(HomeAddon.8.Icon))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.8.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.8.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="502" description="ScriptCustom">
+                            <visible>!IsEmpty(Skin.String(HomeAddon.8.Label)) + !IsEmpty(Skin.String(HomeAddon.8.Icon))</visible>
+                            <thumb>$INFO[Skin.String(HomeAddon.8.Icon)]</thumb>
+                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.8.Label))]</label>
+                            <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="502" description="ScriptCustom">
                             <visible>IsEmpty(Skin.String(HomeAddon.8.Label))</visible>
@@ -437,11 +449,18 @@
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
                         </item>
+
                         <item id="503" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
+                            <visible>!IsEmpty(Skin.String(HomeAddon.9.Label)) + IsEmpty(Skin.String(HomeAddon.9.Icon))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.9.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.9.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="503" description="ScriptCustom">
+                            <visible>!IsEmpty(Skin.String(HomeAddon.9.Label)) + !IsEmpty(Skin.String(HomeAddon.9.Icon))</visible>
+                            <thumb>$INFO[Skin.String(HomeAddon.9.Icon)]</thumb>
+                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.9.Label))]</label>
+                            <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="503" description="ScriptCustom">
                             <visible>IsEmpty(Skin.String(HomeAddon.9.Label))</visible>
@@ -449,11 +468,19 @@
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
                         </item>
+
+
                         <item id="504" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
+                            <visible>!IsEmpty(Skin.String(HomeAddon.10.Label)) + IsEmpty(Skin.String(HomeAddon.10.Icon))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.10.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.10.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="504" description="ScriptCustom">
+                            <visible>!IsEmpty(Skin.String(HomeAddon.10.Label)) + !IsEmpty(Skin.String(HomeAddon.10.Icon))</visible>
+                            <thumb>$INFO[Skin.String(HomeAddon.10.Icon)]</thumb>
+                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.10.Label))]</label>
+                            <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="504" description="ScriptCustom">
                             <visible>IsEmpty(Skin.String(HomeAddon.10.Label))</visible>
@@ -461,11 +488,19 @@
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
                         </item>
+
+
                         <item id="505" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
+                            <visible>!IsEmpty(Skin.String(HomeAddon.11.Label)) + IsEmpty(Skin.String(HomeAddon.11.Icon))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.11.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.11.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="505" description="ScriptCustom">
+                            <visible>!IsEmpty(Skin.String(HomeAddon.11.Label)) + !IsEmpty(Skin.String(HomeAddon.11.Icon))</visible>
+                            <thumb>$INFO[Skin.String(HomeAddon.11.Icon)]</thumb>
+                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.11.Label))]</label>
+                            <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="505" description="ScriptCustom">
                             <visible>IsEmpty(Skin.String(HomeAddon.11.Label))</visible>
@@ -473,11 +508,19 @@
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
                         </item>
+
+
                         <item id="506" description="ScriptCustom">
-                            <visible>!IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
+                            <visible>!IsEmpty(Skin.String(HomeAddon.12.Label)) + IsEmpty(Skin.String(HomeAddon.12.Icon))</visible>
                             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.12.Label))]</thumb>
                             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
-                            <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="506" description="ScriptCustom">
+                            <visible>!IsEmpty(Skin.String(HomeAddon.12.Label)) + !IsEmpty(Skin.String(HomeAddon.12.Icon))</visible>
+                            <thumb>$INFO[Skin.String(HomeAddon.12.Icon)]</thumb>
+                            <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
+                            <onclick>SetFocus(9000)</onclick>
                         </item>
                         <item id="506" description="ScriptCustom">
                             <visible>IsEmpty(Skin.String(HomeAddon.12.Label))</visible>
@@ -485,6 +528,7 @@
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
                         </item>
+
                         <item id="1008" description="Programs">
                             <visible>!Skin.HasSetting(hideprog)</visible>
                             <thumb>icons/program.png</thumb>
@@ -618,72 +662,72 @@
             </control>
         </control>
         <!--<control type="panel" id="52">-->
-            <!--<enable>!Skin.HasSetting(hidemusic)</enable>-->
-            <!--<visible>Container(50).HasFocus(1003)</visible>-->
-            <!--<visible>Skin.HasSetting(MusicShelf_Custom)</visible>-->
-            <!--<include>CustomizerList</include>-->
-            <!--<content>-->
-                <!--<item id="1" description="ADDONS">-->
-                    <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.1.Label))]</label>-->
-                    <!--<label2>addon</label2>-->
-                    <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.1.Label))]</thumb>-->
-                    <!--<onclick>Skin.SetAddon(ShelfMusic.1.Label,xbmc.python.pluginsource)</onclick>-->
-                <!--</item>-->
-                <!--<item id="2" description="ADDONS">-->
-                    <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.2.Label))]</label>-->
-                    <!--<label2>addon</label2>-->
-                    <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.2.Label))]</thumb>-->
-                    <!--<onclick>Skin.SetAddon(ShelfMusic.2.Label,xbmc.python.pluginsource)</onclick>-->
-                <!--</item>-->
-                <!--<item id="3" description="ADDONS">-->
-                    <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.3.Label))]</label>-->
-                    <!--<label2>addon</label2>-->
-                    <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.3.Label))]</thumb>-->
-                    <!--<onclick>Skin.SetAddon(ShelfMusic.3.Label,xbmc.python.pluginsource)</onclick>-->
-                <!--</item>-->
-                <!--<item id="4" description="ADDONS">-->
-                    <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.4.Label))]</label>-->
-                    <!--<label2>addon</label2>-->
-                    <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.4.Label))]</thumb>-->
-                    <!--<onclick>Skin.SetAddon(ShelfMusic.4.Label,xbmc.python.pluginsource)</onclick>-->
-                <!--</item>-->
-                <!--<item id="5" description="ADDONS">-->
-                    <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.5.Label))]</label>-->
-                    <!--<label2>addon</label2>-->
-                    <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.5.Label))]</thumb>-->
-                    <!--<onclick>Skin.SetAddon(ShelfMusic.5.Label,xbmc.python.pluginsource)</onclick>-->
-                <!--</item>-->
-                <!--<item id="6" description="fav">-->
-                    <!--<label>$INFO[Skin.String(ShelfMusic.6.Label)]</label>-->
-                    <!--<label2>favourite</label2>-->
-                    <!--<thumb>$INFO[Skin.String(ShelfMusic.6.Icon)]</thumb>-->
-                    <!--<onclick>RunScript(script.favourites,property=ShelfMusic.6)</onclick>-->
-                <!--</item>-->
-                <!--<item id="7" description="fav">-->
-                    <!--<label>$INFO[Skin.String(ShelfPictures.7.Label)]</label>-->
-                    <!--<label2>favourite</label2>-->
-                    <!--<thumb>$INFO[Skin.String(ShelfMusic.7.Icon)]</thumb>-->
-                    <!--<onclick>RunScript(script.favourites,property=ShelfMusic.7)</onclick>-->
-                <!--</item>-->
-                <!--<item id="8" description="fav">-->
-                    <!--<label>$INFO[Skin.String(ShelfPictures.8.Label)]</label>-->
-                    <!--<label2>favourite</label2>-->
-                    <!--<thumb>$INFO[Skin.String(ShelfMusic.8.Icon)]</thumb>-->
-                    <!--<onclick>RunScript(script.favourites,property=ShelfMusic.8)</onclick>-->
-                <!--</item>-->
-                <!--<item id="9" description="fav">-->
-                    <!--<label>$INFO[Skin.String(ShelfPictures.9.Label)]</label>-->
-                    <!--<label2>favourite</label2>-->
-                    <!--<thumb>$INFO[Skin.String(ShelfMusic.9.Icon)]</thumb>-->
-                    <!--<onclick>RunScript(script.favourites,property=ShelfMusic.9)</onclick>-->
-                <!--</item>-->
-                <!--<item id="10" description="fav">-->
-                    <!--<label>$INFO[Skin.String(ShelfPictures.10.Label)]</label>-->
-                    <!--<label2>favourite</label2>-->
-                    <!--<thumb>$INFO[Skin.String(ShelfMusic.10.Icon)]</thumb>-->
-                    <!--<onclick>RunScript(script.favourites,property=ShelfMusic.10)</onclick>-->
-                <!--</item>-->
-            <!--</content>-->
+        <!--<enable>!Skin.HasSetting(hidemusic)</enable>-->
+        <!--<visible>Container(50).HasFocus(1003)</visible>-->
+        <!--<visible>Skin.HasSetting(MusicShelf_Custom)</visible>-->
+        <!--<include>CustomizerList</include>-->
+        <!--<content>-->
+        <!--<item id="1" description="ADDONS">-->
+        <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.1.Label))]</label>-->
+        <!--<label2>addon</label2>-->
+        <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.1.Label))]</thumb>-->
+        <!--<onclick>Skin.SetAddon(ShelfMusic.1.Label,xbmc.python.pluginsource)</onclick>-->
+        <!--</item>-->
+        <!--<item id="2" description="ADDONS">-->
+        <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.2.Label))]</label>-->
+        <!--<label2>addon</label2>-->
+        <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.2.Label))]</thumb>-->
+        <!--<onclick>Skin.SetAddon(ShelfMusic.2.Label,xbmc.python.pluginsource)</onclick>-->
+        <!--</item>-->
+        <!--<item id="3" description="ADDONS">-->
+        <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.3.Label))]</label>-->
+        <!--<label2>addon</label2>-->
+        <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.3.Label))]</thumb>-->
+        <!--<onclick>Skin.SetAddon(ShelfMusic.3.Label,xbmc.python.pluginsource)</onclick>-->
+        <!--</item>-->
+        <!--<item id="4" description="ADDONS">-->
+        <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.4.Label))]</label>-->
+        <!--<label2>addon</label2>-->
+        <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.4.Label))]</thumb>-->
+        <!--<onclick>Skin.SetAddon(ShelfMusic.4.Label,xbmc.python.pluginsource)</onclick>-->
+        <!--</item>-->
+        <!--<item id="5" description="ADDONS">-->
+        <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.5.Label))]</label>-->
+        <!--<label2>addon</label2>-->
+        <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.5.Label))]</thumb>-->
+        <!--<onclick>Skin.SetAddon(ShelfMusic.5.Label,xbmc.python.pluginsource)</onclick>-->
+        <!--</item>-->
+        <!--<item id="6" description="fav">-->
+        <!--<label>$INFO[Skin.String(ShelfMusic.6.Label)]</label>-->
+        <!--<label2>favourite</label2>-->
+        <!--<thumb>$INFO[Skin.String(ShelfMusic.6.Icon)]</thumb>-->
+        <!--<onclick>RunScript(script.favourites,property=ShelfMusic.6)</onclick>-->
+        <!--</item>-->
+        <!--<item id="7" description="fav">-->
+        <!--<label>$INFO[Skin.String(ShelfPictures.7.Label)]</label>-->
+        <!--<label2>favourite</label2>-->
+        <!--<thumb>$INFO[Skin.String(ShelfMusic.7.Icon)]</thumb>-->
+        <!--<onclick>RunScript(script.favourites,property=ShelfMusic.7)</onclick>-->
+        <!--</item>-->
+        <!--<item id="8" description="fav">-->
+        <!--<label>$INFO[Skin.String(ShelfPictures.8.Label)]</label>-->
+        <!--<label2>favourite</label2>-->
+        <!--<thumb>$INFO[Skin.String(ShelfMusic.8.Icon)]</thumb>-->
+        <!--<onclick>RunScript(script.favourites,property=ShelfMusic.8)</onclick>-->
+        <!--</item>-->
+        <!--<item id="9" description="fav">-->
+        <!--<label>$INFO[Skin.String(ShelfPictures.9.Label)]</label>-->
+        <!--<label2>favourite</label2>-->
+        <!--<thumb>$INFO[Skin.String(ShelfMusic.9.Icon)]</thumb>-->
+        <!--<onclick>RunScript(script.favourites,property=ShelfMusic.9)</onclick>-->
+        <!--</item>-->
+        <!--<item id="10" description="fav">-->
+        <!--<label>$INFO[Skin.String(ShelfPictures.10.Label)]</label>-->
+        <!--<label2>favourite</label2>-->
+        <!--<thumb>$INFO[Skin.String(ShelfMusic.10.Icon)]</thumb>-->
+        <!--<onclick>RunScript(script.favourites,property=ShelfMusic.10)</onclick>-->
+        <!--</item>-->
+        <!--</content>-->
         <!--</control>-->
         <control type="group" id="520" description="PICTURES">
             <visible>Container(50).HasFocus(1004)</visible>
@@ -1118,6 +1162,12 @@
                         <onclick condition="Container(50).Hasfocus(404)">Skin.SetFile(HomeAddon.4.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
                         <onclick condition="Container(50).Hasfocus(405)">Skin.SetFile(HomeAddon.5.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
                         <onclick condition="Container(50).Hasfocus(406)">Skin.SetFile(HomeAddon.6.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                        <onclick condition="Container(50).Hasfocus(501)">Skin.SetFile(HomeAddon.7.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                        <onclick condition="Container(50).Hasfocus(502)">Skin.SetFile(HomeAddon.8.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                        <onclick condition="Container(50).Hasfocus(503)">Skin.SetFile(HomeAddon.9.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                        <onclick condition="Container(50).Hasfocus(504)">Skin.SetFile(HomeAddon.10.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                        <onclick condition="Container(50).Hasfocus(505)">Skin.SetFile(HomeAddon.11.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                        <onclick condition="Container(50).Hasfocus(506)">Skin.SetFile(HomeAddon.12.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
                         <onclick>SetFocus(50)</onclick>
                     </control>
                     <control type="button" id="667">
@@ -1141,6 +1191,18 @@
                         <onclick condition="Container(50).Hasfocus(405)">Skin.Reset(HomeAddon.5.Icon)</onclick>
                         <onclick condition="Container(50).Hasfocus(406)">Skin.SetAddon(HomeAddon.6.Label,xbmc.python.pluginsource)</onclick>
                         <onclick condition="Container(50).Hasfocus(406)">Skin.Reset(HomeAddon.6.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(501)">Skin.SetAddon(HomeAddon.7.Label,xbmc.python.script)</onclick>
+                        <onclick condition="Container(50).Hasfocus(501)">Skin.Reset(HomeAddon.7.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(502)">Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
+                        <onclick condition="Container(50).Hasfocus(502)">Skin.Reset(HomeAddon.8.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(503)">Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
+                        <onclick condition="Container(50).Hasfocus(503)">Skin.Reset(HomeAddon.9.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(504)">Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
+                        <onclick condition="Container(50).Hasfocus(504)">Skin.Reset(HomeAddon.10.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(505)">Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
+                        <onclick condition="Container(50).Hasfocus(505)">Skin.Reset(HomeAddon.11.Icon)</onclick>
+                        <onclick condition="Container(50).Hasfocus(506)">Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
+                        <onclick condition="Container(50).Hasfocus(506)">Skin.Reset(HomeAddon.12.Icon)</onclick>
                         <onclick>SetFocus(50)</onclick>
                     </control>
                 </control>
