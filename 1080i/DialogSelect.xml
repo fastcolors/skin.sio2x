@@ -134,7 +134,7 @@
                         <control type="image">
                             <width>802</width>
                             <height>111</height>
-                            <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                            <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                         </control>
                         <control type="image">
                             <height>111</height>
@@ -193,7 +193,7 @@
                 <height>110</height>
                 <width>960</width>
                 <font>size36</font>
-                <texturefocus colordiffuse="$VAR[diffuseselect]">images/White.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[diffuseselect]">images/white.png</texturefocus>
                 <label>-</label>
                 <onleft>3</onleft>
                 <onright>3</onright>

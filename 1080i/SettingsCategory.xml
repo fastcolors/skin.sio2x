@@ -108,7 +108,7 @@
                 <width>350</width>
                 <height>80</height>
                 <font>size26</font>
-                <texturefocus colordiffuse="$VAR[diffuseselect]">images/White.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[diffuseselect]">images/white.png</texturefocus>
                 <onclick>SettingsLevelChange</onclick>
                 <ondown>5</ondown>
             </control>

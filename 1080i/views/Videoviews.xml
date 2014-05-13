@@ -871,7 +871,7 @@
                                     <top>9</top>
                                     <width>228</width>
                                     <height>323</height>
-                                    <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                                    <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                                     <aspectratio>stretch</aspectratio>
                                 </control>
                                 <control type="image">
@@ -881,7 +881,7 @@
                                     <top>9</top>
                                     <width>228</width>
                                     <height>323</height>
-                                    <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                                    <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                                     <aspectratio>stretch</aspectratio>
                                 </control>
                                 <control type="image">
@@ -1499,7 +1499,7 @@
                             <top>72</top>
                             <height>365</height>
                             <width>246</width>
-                            <texture background="true" colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                            <texture background="true" colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                             <colordiffuse>AAFFFFFF</colordiffuse>
                             <aspectratio>stretch</aspectratio>
                         </control>

@@ -157,7 +157,7 @@
                         <top>40</top>
                         <width>1920</width>
                         <height>250</height>
-                        <texture border="2">images/White.png</texture>
+                        <texture border="2">images/white.png</texture>
                         <colordiffuse>99FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
@@ -269,7 +269,7 @@
                             <control type="image">
                                 <width>600</width>
                                 <height>250</height>
-                                <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                                 <visible>Control.HasFocus(111)</visible>
                             </control>
                             <control type="image">
@@ -386,7 +386,7 @@
                         <top>40</top>
                         <width>1920</width>
                         <height>250</height>
-                        <texture border="2">images/White.png</texture>
+                        <texture border="2">images/white.png</texture>
                         <colordiffuse>99FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
@@ -465,7 +465,7 @@
                             <control type="image">
                                 <width>600</width>
                                 <height>250</height>
-                                <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                                 <visible>Control.HasFocus(121)</visible>
                             </control>
                             <control type="image">
@@ -662,7 +662,7 @@
                         <top>40</top>
                         <width>1920</width>
                         <height>250</height>
-                        <texture border="2">images/White.png</texture>
+                        <texture border="2">images/white.png</texture>
                         <colordiffuse>99FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
@@ -767,7 +767,7 @@
                             <control type="image">
                                 <width>600</width>
                                 <height>250</height>
-                                <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                                 <visible>Control.HasFocus(141)</visible>
                             </control>
                             <control type="image">
@@ -877,7 +877,7 @@
                         <top>40</top>
                         <width>1920</width>
                         <height>250</height>
-                        <texture border="2">images/White.png</texture>
+                        <texture border="2">images/white.png</texture>
                         <colordiffuse>99FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
@@ -957,7 +957,7 @@
                             <control type="image">
                                 <width>600</width>
                                 <height>250</height>
-                                <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                                 <visible>Control.HasFocus(151)</visible>
                             </control>
                             <control type="image">
@@ -1042,7 +1042,7 @@
                         <top>40</top>
                         <width>1920</width>
                         <height>250</height>
-                        <texture border="2">images/White.png</texture>
+                        <texture border="2">images/white.png</texture>
                         <colordiffuse>99FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
@@ -1111,7 +1111,7 @@
                             <control type="image">
                                 <width>600</width>
                                 <height>250</height>
-                                <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                                 <visible>Control.HasFocus(161)</visible>
                             </control>
                             <control type="image">
@@ -1187,7 +1187,7 @@
                         <top>40</top>
                         <width>1920</width>
                         <height>250</height>
-                        <texture border="2">images/White.png</texture>
+                        <texture border="2">images/white.png</texture>
                         <colordiffuse>99FFFFFF</colordiffuse>
                     </control>
                     <control type="image">
@@ -1265,7 +1265,7 @@
                             <control type="image">
                                 <width>600</width>
                                 <height>250</height>
-                                <texture colordiffuse="$VAR[diffuseselect]">images/White.png</texture>
+                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                                 <visible>Control.HasFocus(171)</visible>
                             </control>
                             <control type="image">
@@ -1350,7 +1350,7 @@
                         <top>40</top>
                         <width>1800</width>
                         <height>250</height>
-                        <texture border="2">images/White.png</texture>
+                        <texture border="2">images/white.png</texture>
                         <colordiffuse>99FFFFFF</colordiffuse>
                     </control>
                     <control type="image">

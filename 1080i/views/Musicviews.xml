@@ -589,7 +589,7 @@
                             <top>8</top>
                             <height>284</height>
                             <width>284</width>
-                            <texture background="true">images/White.png</texture>
+                            <texture background="true">images/white.png</texture>
                             <aspectratio>stretch</aspectratio>
                             <colordiffuse>FFFFFFFF</colordiffuse>
                         </control>
