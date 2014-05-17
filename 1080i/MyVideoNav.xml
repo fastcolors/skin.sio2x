@@ -110,7 +110,9 @@
                 </control>
                 <control type="radiobutton" id="600" description="sio2">
                     <include>DialogButt</include>
-                    <enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+
+
                     <onclick>Container.SetViewMode(52)</onclick>
                     <selected>Control.IsVisible(52)</selected>
                     <label>SiO2</label>
@@ -136,7 +138,7 @@
                     <label>$LOCALIZE[536]</label>
                 </control>
                 <control type="radiobutton" id="605" description="Fanart">
-                    <enable>!Container.Content(files) + !Container.Content(episodes) + !IsEmpty(Container.FolderPath)</enable>
+                    <enable>Container.content(movies) | container.content(seasons) | container.content(tvshows)</enable>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(500)</onclick>
                     <selected>Control.IsVisible(500)</selected>

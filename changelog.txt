@@ -1,3 +1,8 @@
+2.0.8
+* Subtitle now showing filename for better search
+* 'local subtitles available' string now showing correctely
+* added CDart support
+
 2.0.5
 * New Font
 * Cosmetics

@@ -5,5 +5,5 @@
     <rule field="filename" operator="contains">
         <value>3D</value>
     </rule>
-    <order direction="ascending">sorttitle</order>
+    <order direction="descending">dateadded</order>
 </smartplaylist>

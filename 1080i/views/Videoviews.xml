@@ -6,7 +6,7 @@
             <visible>Control.IsVisible(52)</visible>
             <!--<include>BlackBackground</include>-->
             <control type="fixedlist" id="52">
-                <visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>
+                <!--<visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>-->
                 <posx>60</posx>
                 <top>100</top>
                 <width>1920</width>

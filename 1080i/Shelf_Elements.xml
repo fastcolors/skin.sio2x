@@ -32,7 +32,7 @@
                     <top>409</top>
                     <width>250</width>
                     <height>375</height>
-                    <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+                    <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -48,7 +48,7 @@
                     <top>25</top>
                     <width>250</width>
                     <height>375</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -73,7 +73,7 @@
                         <top>409</top>
                         <width>250</width>
                         <height>375</height>
-                        <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+                        <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
@@ -90,7 +90,7 @@
                     <top>25</top>
                     <width>250</width>
                     <height>375</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
@@ -292,6 +292,16 @@
                     <texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
+                <!--<control type="image">-->
+          <!--<visible>Control.IsVisible(313)+!Skin.HasSetting(RecordOff) + !Skin.HasSetting(MusicShelf_Custom)</visible>-->
+          <!--<animation effect="slide" end="60,0" time="400" delay="100">Focus</animation>-->
+          <!--<posx>30</posx>-->
+          <!--<posy>46</posy>-->
+          <!--<width>324</width>-->
+          <!--<height>324</height>-->
+          <!--<texture>images/record.png</texture>-->
+          <!--<aspectratio>keep</aspectratio>-->
+        <!--</control>-->
                 <control type="image">
                     <posx>30</posx>
                     <top>46</top>
@@ -488,7 +498,8 @@
                 <label>[B] $LOCALIZE[20386] [/B]</label>
             </control>
             <control type="list" id="311" description="Movies Shelf Shortcuts">
-                <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Control.HasFocus(311)]</visible>
+                <!--todo visibility condition-->
+                <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Container(9000).HasFocus(357) | Control.HasFocus(311) | [Container(9000).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.List))] | [Container(9000).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.List))] | Container(9000).HasFocus(603) | Container(9000).HasFocus(604) | Container(9000).HasFocus(605) | Container(9000).HasFocus(606)]</visible>
                 <onup>9009</onup>
                 <ondown>9000</ondown>
                 <onleft>311</onleft>

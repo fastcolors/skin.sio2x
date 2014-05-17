@@ -161,6 +161,32 @@
                             <label>$LOCALIZE[2]</label>
                             <onclick>Skin.ToggleSetting(hidemusic)</onclick>
                         </item>
+                        <item id="607" description="HomeFav">
+                            <visible>!IsEmpty(Skin.String(HomeFav.7.Label))</visible>
+                            <label>$INFO[Skin.String(HomeFav.7.Label)]</label>
+                            <label2>+ $LOCALIZE[1036]</label2>
+                            <thumb>$INFO[Skin.String(HomeFav.7.Icon)]</thumb>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="607" description="HomeFav">
+                            <visible>IsEmpty(Skin.String(HomeFav.7.Label))</visible>
+                            <thumb>DefaultFavourite.png</thumb>
+                            <label>+ $LOCALIZE[1036]</label>
+                            <onclick>RunScript(script.favourites,property=HomeFav.7)</onclick>
+                        </item>
+                        <item id="608" description="HomeFav">
+                            <visible>!IsEmpty(Skin.String(HomeFav.8.Label))</visible>
+                            <label>$INFO[Skin.String(HomeFav.8.Label)]</label>
+                            <label2>+ $LOCALIZE[1036]</label2>
+                            <thumb>$INFO[Skin.String(HomeFav.8.Icon)]</thumb>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="608" description="HomeFav">
+                            <visible>IsEmpty(Skin.String(HomeFav.8.Label))</visible>
+                            <thumb>DefaultFavourite.png</thumb>
+                            <label>+ $LOCALIZE[1036]</label>
+                            <onclick>RunScript(script.favourites,property=HomeFav.8)</onclick>
+                        </item>
                         <item id="1005" description="Addons">
                             <visible>!Skin.HasSetting(hideaddon)</visible>
                             <thumb>icons/addons.png</thumb>
@@ -1124,7 +1150,7 @@
             </control>
         </control>
         <control type="group" description="Options">
-            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus()</visible>
             <control type="image">
                 <posx>525</posx>
                 <top>200</top>
@@ -1143,70 +1169,102 @@
                 <font>size36</font>
                 <textcolor>White</textcolor>
             </control>
-            <control type="group">
-                <control type="grouplist" id="9000">
-                    <include>DialogGLs</include>
-                    <defaultcontrol always="true">701</defaultcontrol>
-                    <control type="button" id="666">
-                        <include>DialogButt</include>
-                        <label>$LOCALIZE[31056]</label>
-                        <onclick condition="Container(50).Hasfocus(601)">Skin.SetFile(HomeFav.1.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(602)">Skin.SetFile(HomeFav.2.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(603)">Skin.SetFile(HomeFav.3.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(604)">Skin.SetFile(HomeFav.4.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(605)">Skin.SetFile(HomeFav.5.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(606)">Skin.SetFile(HomeFav.6.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(401)">Skin.SetFile(HomeAddon.1.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(402)">Skin.SetFile(HomeAddon.2.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(403)">Skin.SetFile(HomeAddon.3.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(404)">Skin.SetFile(HomeAddon.4.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(405)">Skin.SetFile(HomeAddon.5.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(406)">Skin.SetFile(HomeAddon.6.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(501)">Skin.SetFile(HomeAddon.7.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(502)">Skin.SetFile(HomeAddon.8.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(503)">Skin.SetFile(HomeAddon.9.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(504)">Skin.SetFile(HomeAddon.10.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(505)">Skin.SetFile(HomeAddon.11.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick condition="Container(50).Hasfocus(506)">Skin.SetFile(HomeAddon.12.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                        <onclick>SetFocus(50)</onclick>
-                    </control>
-                    <control type="button" id="667">
-                        <include>DialogButt</include>
-                        <label>$LOCALIZE[31057]</label>
-                        <onclick condition="Container(50).Hasfocus(601)">RunScript(script.favourites,property=HomeFav.1)</onclick>
-                        <onclick condition="Container(50).Hasfocus(602)">RunScript(script.favourites,property=HomeFav.2)</onclick>
-                        <onclick condition="Container(50).Hasfocus(603)">RunScript(script.favourites,property=HomeFav.3)</onclick>
-                        <onclick condition="Container(50).Hasfocus(604)">RunScript(script.favourites,property=HomeFav.4)</onclick>
-                        <onclick condition="Container(50).Hasfocus(605)">RunScript(script.favourites,property=HomeFav.5)</onclick>
-                        <onclick condition="Container(50).Hasfocus(606)">RunScript(script.favourites,property=HomeFav.6)</onclick>
-                        <onclick condition="Container(50).Hasfocus(401)">Skin.SetAddon(HomeAddon.1.Label,xbmc.python.pluginsource)</onclick>
-                        <onclick condition="Container(50).Hasfocus(401)">Skin.Reset(HomeAddon.1.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(402)">Skin.SetAddon(HomeAddon.2.Label,xbmc.python.pluginsource)</onclick>
-                        <onclick condition="Container(50).Hasfocus(402)">Skin.Reset(HomeAddon.2.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(403)">Skin.SetAddon(HomeAddon.3.Label,xbmc.python.pluginsource)</onclick>
-                        <onclick condition="Container(50).Hasfocus(403)">Skin.Reset(HomeAddon.3.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(404)">Skin.SetAddon(HomeAddon.4.Label,xbmc.python.pluginsource)</onclick>
-                        <onclick condition="Container(50).Hasfocus(404)">Skin.Reset(HomeAddon.4.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(405)">Skin.SetAddon(HomeAddon.5.Label,xbmc.python.pluginsource)</onclick>
-                        <onclick condition="Container(50).Hasfocus(405)">Skin.Reset(HomeAddon.5.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(406)">Skin.SetAddon(HomeAddon.6.Label,xbmc.python.pluginsource)</onclick>
-                        <onclick condition="Container(50).Hasfocus(406)">Skin.Reset(HomeAddon.6.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(501)">Skin.SetAddon(HomeAddon.7.Label,xbmc.python.script)</onclick>
-                        <onclick condition="Container(50).Hasfocus(501)">Skin.Reset(HomeAddon.7.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(502)">Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
-                        <onclick condition="Container(50).Hasfocus(502)">Skin.Reset(HomeAddon.8.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(503)">Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
-                        <onclick condition="Container(50).Hasfocus(503)">Skin.Reset(HomeAddon.9.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(504)">Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
-                        <onclick condition="Container(50).Hasfocus(504)">Skin.Reset(HomeAddon.10.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(505)">Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
-                        <onclick condition="Container(50).Hasfocus(505)">Skin.Reset(HomeAddon.11.Icon)</onclick>
-                        <onclick condition="Container(50).Hasfocus(506)">Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
-                        <onclick condition="Container(50).Hasfocus(506)">Skin.Reset(HomeAddon.12.Icon)</onclick>
-                        <onclick>SetFocus(50)</onclick>
-                    </control>
+            <control type="grouplist" id="9000">
+                <visible>!ControlGroup(9001).HasFocus()</visible>
+                <include>DialogGLs</include>
+                <control type="button" id="666">
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[31056]</label>
+                    <onclick condition="Container(50).Hasfocus(601)">Skin.SetFile(HomeFav.1.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(602)">Skin.SetFile(HomeFav.2.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(603)">Skin.SetFile(HomeFav.3.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(604)">Skin.SetFile(HomeFav.4.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(605)">Skin.SetFile(HomeFav.5.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(606)">Skin.SetFile(HomeFav.6.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(401)">Skin.SetFile(HomeAddon.1.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(402)">Skin.SetFile(HomeAddon.2.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(403)">Skin.SetFile(HomeAddon.3.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(404)">Skin.SetFile(HomeAddon.4.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(405)">Skin.SetFile(HomeAddon.5.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(406)">Skin.SetFile(HomeAddon.6.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(501)">Skin.SetFile(HomeAddon.7.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(502)">Skin.SetFile(HomeAddon.8.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(503)">Skin.SetFile(HomeAddon.9.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(504)">Skin.SetFile(HomeAddon.10.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(505)">Skin.SetFile(HomeAddon.11.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(506)">Skin.SetFile(HomeAddon.12.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick>SetFocus(50)</onclick>
+                </control>
+                <control type="button" id="667">
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[31057]</label>
+                    <onclick condition="Container(50).Hasfocus(601)">RunScript(script.favourites,property=HomeFav.1)</onclick>
+                    <onclick condition="Container(50).Hasfocus(602)">RunScript(script.favourites,property=HomeFav.2)</onclick>
+                    <onclick condition="Container(50).Hasfocus(603)">RunScript(script.favourites,property=HomeFav.3)</onclick>
+                    <onclick condition="Container(50).Hasfocus(604)">RunScript(script.favourites,property=HomeFav.4)</onclick>
+                    <onclick condition="Container(50).Hasfocus(605)">RunScript(script.favourites,property=HomeFav.5)</onclick>
+                    <onclick condition="Container(50).Hasfocus(606)">RunScript(script.favourites,property=HomeFav.6)</onclick>
+                    <onclick condition="Container(50).Hasfocus(401)">Skin.SetAddon(HomeAddon.1.Label,xbmc.python.pluginsource)</onclick>
+                    <onclick condition="Container(50).Hasfocus(401)">Skin.Reset(HomeAddon.1.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(402)">Skin.SetAddon(HomeAddon.2.Label,xbmc.python.pluginsource)</onclick>
+                    <onclick condition="Container(50).Hasfocus(402)">Skin.Reset(HomeAddon.2.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(403)">Skin.SetAddon(HomeAddon.3.Label,xbmc.python.pluginsource)</onclick>
+                    <onclick condition="Container(50).Hasfocus(403)">Skin.Reset(HomeAddon.3.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(404)">Skin.SetAddon(HomeAddon.4.Label,xbmc.python.pluginsource)</onclick>
+                    <onclick condition="Container(50).Hasfocus(404)">Skin.Reset(HomeAddon.4.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(405)">Skin.SetAddon(HomeAddon.5.Label,xbmc.python.pluginsource)</onclick>
+                    <onclick condition="Container(50).Hasfocus(405)">Skin.Reset(HomeAddon.5.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(406)">Skin.SetAddon(HomeAddon.6.Label,xbmc.python.pluginsource)</onclick>
+                    <onclick condition="Container(50).Hasfocus(406)">Skin.Reset(HomeAddon.6.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(501)">Skin.SetAddon(HomeAddon.7.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(50).Hasfocus(501)">Skin.Reset(HomeAddon.7.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(502)">Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(50).Hasfocus(502)">Skin.Reset(HomeAddon.8.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(503)">Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(50).Hasfocus(503)">Skin.Reset(HomeAddon.9.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(504)">Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(50).Hasfocus(504)">Skin.Reset(HomeAddon.10.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(505)">Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(50).Hasfocus(505)">Skin.Reset(HomeAddon.11.Icon)</onclick>
+                    <onclick condition="Container(50).Hasfocus(506)">Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
+                    <onclick condition="Container(50).Hasfocus(506)">Skin.Reset(HomeAddon.12.Icon)</onclick>
+                    <onclick>SetFocus(50)</onclick>
                 </control>
             </control>
+            <control type="grouplist" id="9001">
+                <visible>!ControlGroup(9000).HasFocus()</visible>
+                <!--todo clicks-->
+                <include>DialogGLs</include>
+                <control type="button" id="668">
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[31056]</label>
+                    <onclick condition="Container(50).Hasfocus(801)">Skin.SetFile(homeplisticon1,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(802)">Skin.SetFile(homeplisticon2,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(803)">Skin.SetFile(homeplisticon3,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(804)">Skin.SetFile(homeplisticon4,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(805)">Skin.SetFile(homeplisticon5,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(806)">Skin.SetFile(homeplisticon6,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick>SetFocus(50)</onclick>
+                </control>
+                <control type="button" id="669">
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[10035]</label>
+                    <onclick condition="Container(50).HasFocus(801)">Skin.Reset(homeplaylist1)</onclick>
+                    <onclick condition="Container(50).HasFocus(801)">Skin.Reset(homeplisticon1)</onclick>
+                     <onclick condition="Container(50).HasFocus(802)">Skin.Reset(homeplaylist2)</onclick>
+                    <onclick condition="Container(50).HasFocus(802)">Skin.Reset(homeplisticon2)</onclick>
+                     <onclick condition="Container(50).HasFocus(803)">Skin.Reset(homeplaylist3)</onclick>
+                    <onclick condition="Container(50).HasFocus(803)">Skin.Reset(homeplisticon3)</onclick>
+                     <onclick condition="Container(50).HasFocus(804)">Skin.Reset(homeplaylist4)</onclick>
+                    <onclick condition="Container(50).HasFocus(804)">Skin.Reset(homeplisticon4)</onclick>
+                     <onclick condition="Container(50).HasFocus(805)">Skin.Reset(homeplaylist5)</onclick>
+                    <onclick condition="Container(50).HasFocus(805)">Skin.Reset(homeplisticon5)</onclick>
+                     <onclick condition="Container(50).HasFocus(806)">Skin.Reset(homeplaylist6)</onclick>
+                    <onclick condition="Container(50).HasFocus(806)">Skin.Reset(homeplisticon6)</onclick>
+                    <onclick>SetFocus(50)</onclick>
+                </control>
+            </control>
+
         </control>
         <control type="group" id="520" description="WEATHER">
             <top>60</top>

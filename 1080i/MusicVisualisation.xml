@@ -75,13 +75,14 @@
                         <top>225</top>
                         <posx>220</posx>
                         <control type="image" description="Record">
+                            <animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
                             <posx>298</posx>
                             <top>0</top>
                             <height>600</height>
                             <width>600</width>
                             <fadetime>300</fadetime>
                             <aspectratio aligny="bottom">stretch</aspectratio>
-                            <texture flipy="true">images/record.png</texture>
+                            <texture fallback="images/record.png" background="true">$INFO[Player.Folderpath]/cdart.png</texture>
                         </control>
                         <control type="image" description="MusicAlbum">
                             <posx>0</posx>
@@ -90,7 +91,7 @@
                             <width>600</width>
                             <fadetime>300</fadetime>
                             <aspectratio aligny="top">stretch</aspectratio>
-                            <texture flipy="true" diffuse="images/Reflection1.png">$INFO[MusicPlayer.Cover]</texture>
+                            <texture flipy="true" diffuse="images/Reflection1.png" background="true">$INFO[MusicPlayer.Cover]</texture>
                         </control>
                         <control type="image" description="MusicAlbum">
                             <posx>0</posx>
@@ -99,7 +100,7 @@
                             <width>600</width>
                             <fadetime>300</fadetime>
                             <aspectratio aligny="bottom">stretch</aspectratio>
-                            <texture diffuse="images/Diffuse.png">$INFO[MusicPlayer.Cover]</texture>
+                            <texture diffuse="images/Diffuse.png" background="true">$INFO[MusicPlayer.Cover]</texture>
                         </control>
                     </control>
                     <control type="group" description="Main Labels">
@@ -219,13 +220,14 @@
                         <top>225</top>
                         <posx>1110</posx>
                         <control type="image" description="Record">
+                            <animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
                             <posx>-298</posx>
                             <top>0</top>
                             <height>600</height>
                             <width>600</width>
                             <fadetime>300</fadetime>
                             <aspectratio aligny="bottom">stretch</aspectratio>
-                            <texture>images/record.png</texture>
+                            <texture fallback="images/record.png" background="true">$INFO[Player.Folderpath]/cdart.png</texture>
                         </control>
                         <control type="image" description="MusicAlbum">
                             <posx>0</posx>
@@ -234,7 +236,7 @@
                             <width>600</width>
                             <fadetime>300</fadetime>
                             <aspectratio aligny="top">stretch</aspectratio>
-                            <texture flipy="true" diffuse="images/Reflection1.png">$INFO[MusicPlayer.Cover]</texture>
+                            <texture flipy="true" diffuse="images/Reflection1.png" background="true">$INFO[MusicPlayer.Cover]</texture>
                         </control>
                         <control type="image" description="MusicAlbum">
                             <posx>0</posx>
@@ -243,7 +245,7 @@
                             <width>600</width>
                             <fadetime>300</fadetime>
                             <aspectratio aligny="bottom">stretch</aspectratio>
-                            <texture diffuse="images/Diffuse.png">$INFO[MusicPlayer.Cover]</texture>
+                            <texture diffuse="images/Diffuse.png" background="true">$INFO[MusicPlayer.Cover]</texture>
                         </control>
                     </control>
                     <control type="group" description="Main Labels">
@@ -435,13 +437,13 @@
         </control>
         <control type="image">
             <visible>Control.IsVisible(1111)</visible>
-    <description>Rating image</description>
-    <centerleft>960</centerleft>
-    <top>900</top>
-    <width>140</width>
-    <height>27</height>
-    <aspectratio align="right">keep</aspectratio>
-    <texture>$INFO[Player.StarRating]</texture>
-</control>
+            <description>Rating image</description>
+            <centerleft>960</centerleft>
+            <top>900</top>
+            <width>140</width>
+            <height>27</height>
+            <aspectratio align="right">keep</aspectratio>
+            <texture>$INFO[Player.StarRating]</texture>
+        </control>
     </controls>
 </window>

@@ -28,7 +28,7 @@
                 <height>70</height>
                 <aspectratio align="center">keep</aspectratio>
             </control>
-            <control type="label" id="100" description="Header Label">
+            <control type="label" description="Header Label">
                 <posx>260</posx>
                 <top>220</top>
                 <width>1400</width>
@@ -37,6 +37,7 @@
                 <textcolor>black</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
+                <label>$INFO[Player.Filename]</label>
             </control>
             <control type="image" description="linetop">
                 <centerleft>960</centerleft>
@@ -75,7 +76,6 @@
                     <texture>DefaultIconInfo.png</texture>
                 </control>
                 <control type="label" description="Local subtitle available">
-
                     <width min="10">auto</width>
                     <height>50</height>
                     <label>$LOCALIZE[31413]</label>
@@ -127,7 +127,7 @@
                         <width>60</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>icon_sync.png</texture>
+                        <texture colordiffuse="FF000000">icon_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="label">
@@ -186,7 +186,7 @@
                         <width>60</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>icon_sync.png</texture>
+                        <texture colordiffuse="FF000000">icon_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="label">
