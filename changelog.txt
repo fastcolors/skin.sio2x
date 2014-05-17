@@ -1,3 +1,8 @@
+2.0.9
+* New Methods for shelf Items
+* 2 new favourites in home menu which are able to fill shelf items
+* All Favourites fill shelf items if they are nodes or Playlists (requires modded script.favourites)
+
 2.0.8
 * Subtitle now showing filename for better search
 * 'local subtitles available' string now showing correctely
