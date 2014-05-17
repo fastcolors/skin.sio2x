@@ -1181,6 +1181,8 @@
                     <onclick condition="Container(50).Hasfocus(604)">Skin.SetFile(HomeFav.4.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
                     <onclick condition="Container(50).Hasfocus(605)">Skin.SetFile(HomeFav.5.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
                     <onclick condition="Container(50).Hasfocus(606)">Skin.SetFile(HomeFav.6.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(607)">Skin.SetFile(HomeFav.7.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(608)">Skin.SetFile(HomeFav.8.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
                     <onclick condition="Container(50).Hasfocus(401)">Skin.SetFile(HomeAddon.1.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
                     <onclick condition="Container(50).Hasfocus(402)">Skin.SetFile(HomeAddon.2.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
                     <onclick condition="Container(50).Hasfocus(403)">Skin.SetFile(HomeAddon.3.Icon,.png|.jpg|.jpeg,special://skin/icons)</onclick>
@@ -1204,6 +1206,8 @@
                     <onclick condition="Container(50).Hasfocus(604)">RunScript(script.favourites,property=HomeFav.4)</onclick>
                     <onclick condition="Container(50).Hasfocus(605)">RunScript(script.favourites,property=HomeFav.5)</onclick>
                     <onclick condition="Container(50).Hasfocus(606)">RunScript(script.favourites,property=HomeFav.6)</onclick>
+                    <onclick condition="Container(50).Hasfocus(607)">RunScript(script.favourites,property=HomeFav.7)</onclick>
+                    <onclick condition="Container(50).Hasfocus(608)">RunScript(script.favourites,property=HomeFav.8)</onclick>
                     <onclick condition="Container(50).Hasfocus(401)">Skin.SetAddon(HomeAddon.1.Label,xbmc.python.pluginsource)</onclick>
                     <onclick condition="Container(50).Hasfocus(401)">Skin.Reset(HomeAddon.1.Icon)</onclick>
                     <onclick condition="Container(50).Hasfocus(402)">Skin.SetAddon(HomeAddon.2.Label,xbmc.python.pluginsource)</onclick>

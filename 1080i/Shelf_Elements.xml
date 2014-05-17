@@ -499,7 +499,7 @@
             </control>
             <control type="list" id="311" description="Movies Shelf Shortcuts">
                 <!--todo visibility condition-->
-                <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Container(9000).HasFocus(357) | Control.HasFocus(311) | [Container(9000).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.List))] | [Container(9000).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.List))] | Container(9000).HasFocus(603) | Container(9000).HasFocus(604) | Container(9000).HasFocus(605) | Container(9000).HasFocus(606)]</visible>
+                <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Container(9000).HasFocus(357) | Control.HasFocus(311) | [Container(9000).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.List))] | [Container(9000).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.List))] | [Container(9000).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.List))] | [Container(9000).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.List))] | [Container(9000).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.List))] | [Container(9000).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.List))] | [Container(9000).HasFocus(607) + !IsEmpty(Skin.String(HomeFav.7.List))] | [Container(9000).HasFocus(608) + !IsEmpty(Skin.String(HomeFav.8.List))]]</visible>
                 <onup>9009</onup>
                 <ondown>9000</ondown>
                 <onleft>311</onleft>
