@@ -55,10 +55,6 @@ msgid "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons w
 " only become colored when Focused"
 msgstr "Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will only become colored when Focused"
 
-msgctxt "#31009"
-msgid "Recently Added Episodes"
-msgstr "Recently Added Episodes"
-
 msgctxt "#31010"
 msgid "Open playlist"
 msgstr "Open playlist"

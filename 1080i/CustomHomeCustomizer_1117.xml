@@ -1235,40 +1235,6 @@
                     <onclick>SetFocus(50)</onclick>
                 </control>
             </control>
-            <control type="grouplist" id="9001">
-                <visible>!ControlGroup(9000).HasFocus()</visible>
-                <!--todo clicks-->
-                <include>DialogGLs</include>
-                <control type="button" id="668">
-                    <include>DialogButt</include>
-                    <label>$LOCALIZE[31056]</label>
-                    <onclick condition="Container(50).Hasfocus(801)">Skin.SetFile(homeplisticon1,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(802)">Skin.SetFile(homeplisticon2,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(803)">Skin.SetFile(homeplisticon3,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(804)">Skin.SetFile(homeplisticon4,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(805)">Skin.SetFile(homeplisticon5,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(806)">Skin.SetFile(homeplisticon6,.png|.jpg|.jpeg,special://skin/icons)</onclick>
-                    <onclick>SetFocus(50)</onclick>
-                </control>
-                <control type="button" id="669">
-                    <include>DialogButt</include>
-                    <label>$LOCALIZE[10035]</label>
-                    <onclick condition="Container(50).HasFocus(801)">Skin.Reset(homeplaylist1)</onclick>
-                    <onclick condition="Container(50).HasFocus(801)">Skin.Reset(homeplisticon1)</onclick>
-                     <onclick condition="Container(50).HasFocus(802)">Skin.Reset(homeplaylist2)</onclick>
-                    <onclick condition="Container(50).HasFocus(802)">Skin.Reset(homeplisticon2)</onclick>
-                     <onclick condition="Container(50).HasFocus(803)">Skin.Reset(homeplaylist3)</onclick>
-                    <onclick condition="Container(50).HasFocus(803)">Skin.Reset(homeplisticon3)</onclick>
-                     <onclick condition="Container(50).HasFocus(804)">Skin.Reset(homeplaylist4)</onclick>
-                    <onclick condition="Container(50).HasFocus(804)">Skin.Reset(homeplisticon4)</onclick>
-                     <onclick condition="Container(50).HasFocus(805)">Skin.Reset(homeplaylist5)</onclick>
-                    <onclick condition="Container(50).HasFocus(805)">Skin.Reset(homeplisticon5)</onclick>
-                     <onclick condition="Container(50).HasFocus(806)">Skin.Reset(homeplaylist6)</onclick>
-                    <onclick condition="Container(50).HasFocus(806)">Skin.Reset(homeplisticon6)</onclick>
-                    <onclick>SetFocus(50)</onclick>
-                </control>
-            </control>
-
         </control>
         <control type="group" id="520" description="WEATHER">
             <top>60</top>

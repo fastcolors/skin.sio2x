@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="ShelfFade">
-        <animation effect="fade" end="100" delay="200" time="220">Visible</animation>
+        <animation effect="fade" end="100" delay="200" time="250">Visible</animation>
         <animation effect="fade" end="0" time="100">Hidden</animation>
     </include>
     <include name="ShelfTitle">
@@ -348,17 +348,17 @@
         <include>ShelfFade</include>
         <top>82</top>
         <width>1920</width>
-        <height>402</height>
+        <height>452</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <itemlayout condition="Library.HasContent(TVShows)" height="357" width="480">
             <control type="group">
                 <animation effect="zoom" condition="true" start="100" end="90" center="240,180">Conditional</animation>
                 <control type="image" description="Reflection">
-                    <left>43</left>
-                    <top>330</top>
-                    <width>393</width>
-                    <height>220</height>
+                    <left>23</left>
+                    <top>370</top>
+                    <width>433</width>
+                    <height>242</height>
                     <texture background="true" diffuse="images/ReflectionShelfEP.png" flipy="true">$INFO[ListItem.Thumb]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
@@ -400,10 +400,12 @@
                 <animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>
                 <animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>
                 <control type="image" description="Reflection">
-                    <left>43</left>
-                    <top>330</top>
-                    <width>393</width>
-                    <height>220</height>
+                    <animation effect="fade"  start="100" end="0" time="200" reversible="true">Focus</animation>
+                    <animation effect="fade"  start="0" end="100" time="200" reversible="true">unFocus</animation>
+                    <left>23</left>
+                    <top>370</top>
+                    <width>433</width>
+                    <height>242</height>
                     <texture background="true" diffuse="images/ReflectionShelfEP.png" flipy="true">$INFO[ListItem.Thumb]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
@@ -495,10 +497,9 @@
                 <visible>Control.IsVisible(311)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
-                <label>[B] $LOCALIZE[20386] [/B]</label>
+                <label>[B] $VAR[shelflabel] [/B]</label>
             </control>
             <control type="list" id="311" description="Movies Shelf Shortcuts">
-                <!--todo visibility condition-->
                 <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Container(9000).HasFocus(357) | Control.HasFocus(311) | [Container(9000).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.List))] | [Container(9000).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.List))] | [Container(9000).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.List))] | [Container(9000).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.List))] | [Container(9000).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.List))] | [Container(9000).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.List))] | [Container(9000).HasFocus(607) + !IsEmpty(Skin.String(HomeFav.7.List))] | [Container(9000).HasFocus(608) + !IsEmpty(Skin.String(HomeFav.8.List))]]</visible>
                 <onup>9009</onup>
                 <ondown>9000</ondown>
@@ -518,7 +519,7 @@
                 <visible>Control.IsVisible(312)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
-                <label>[B] $LOCALIZE[31009] [/B]</label>
+                <label>[B] $VAR[shelflabel] [/B]</label>
             </control>
             <control type="label" description="Inverted">
                 <animation effect="slide" end="-480,0" time="400" condition="Container(312).HasPrevious + !Skin.HasSetting(IntruderTV)">Conditional</animation>
@@ -637,7 +638,7 @@
                 <visible>Control.IsVisible(312)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
-                <label>[B] $LOCALIZE[31048] [/B]</label>
+                <label>[B] $VAR[shelflabel] [/B]</label>
             </control>
             <control type="label" description="Inverted">
                 <animation effect="slide" end="-480,0" time="400" condition="Container(312).HasPrevious + !Skin.HasSetting(IntruderTV)">Conditional</animation>

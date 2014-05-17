@@ -178,7 +178,7 @@
 
     <!--todo variables for shelf-->
     <variable name="shelfmovies">
-        <value condition="Skin.HasSetting(MoviesShelfWL)">special://skin/resources/laststarted.xsp</value>
+        <value condition="Container(9000).HasFocus(340) + Skin.HasSetting(MoviesShelfWL)">special://skin/resources/laststarted.xsp</value>
         <value condition="Container(9000).HasFocus(601)">$INFO[Skin.String(HomeFav.1.List)]</value>
         <value condition="Container(9000).HasFocus(602)">$INFO[Skin.String(HomeFav.2.List)]</value>
         <value condition="Container(9000).HasFocus(603)">$INFO[Skin.String(HomeFav.3.List)]</value>
@@ -188,7 +188,8 @@
         <value condition="Container(9000).HasFocus(607)">$INFO[Skin.String(HomeFav.7.List)]</value>
         <value condition="Container(9000).HasFocus(608)">$INFO[Skin.String(HomeFav.8.List)]</value>
         <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
-        <value>videodb://recentlyaddedmovies/</value>
+        <value condition="Container(9000).HasFocus(340)">videodb://recentlyaddedmovies/</value>
+        <value>-</value>
     </variable>
 
      <variable name="musicshelftitle">
@@ -205,5 +206,13 @@
         <value condition="StringCompare(Skin.String(musicshelf),topalbum) + Library.HasContent(Music)">musicdb://top100/albums/</value>
         <!--<value condition="StringCompare(Skin.String(musicshelf),playlists) + Library.HasContent(Music)">special://musicplaylists/</value>-->
         <value condition="Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
+    </variable>
+
+    <variable name="shelflabel">
+        <value condition="Control.IsVisible(311) + Container(9000).HasFocus(607)">$INFO[Skin.String(Homefav.7.Label)]</value>
+        <value condition="Control.IsVisible(311) + Skin.HasSetting(MoviesShelfWL)">$LOCALIZE[31048]</value>
+        <value condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[31048]</value>
+        <value condition="Control.IsVisible(312)">$LOCALIZE[20387]</value>
+        <value>$LOCALIZE[20386]</value>
     </variable>
 </includes>
