@@ -34,6 +34,13 @@
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(AddonBrowser,root)</onclick>
                 </control>
+                 <control type="button" id="704" description="Addons">
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[653]</label>
+                    <onclick>Close</onclick>
+                    <onclick>UpdateLibrary(video)</onclick>
+                    <!--<onclick>UpdateLibrary(music)</onclick>-->
+                </control>
             </control>
         </control>
     </controls>
