@@ -37,12 +37,12 @@
                     <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
                     <selected>!Skin.HasSetting(ViewsMenuOff)</selected>
                 </control>
-                <control type="radiobutton" id="4">
-                    <visible>System.HasAddon(script.cinema.experience)</visible>
-                    <label>$LOCALIZE[31088]</label>
-                    <onclick>Skin.ToggleSetting(scelta)</onclick>
-                    <selected>Skin.HasSetting(scelta)</selected>
-                </control>
+                <!--<control type="radiobutton" id="4">-->
+                    <!--<visible>System.HasAddon(script.cinema.experience)</visible>-->
+                    <!--<label>$LOCALIZE[31088]</label>-->
+                    <!--<onclick>Skin.ToggleSetting(scelta)</onclick>-->
+                    <!--<selected>Skin.HasSetting(scelta)</selected>-->
+                <!--</control>-->
                 <control type="radiobutton" id="5">
                     <label>$LOCALIZE[31033]</label>
                     <onclick>Skin.ToggleSetting(colormenu)</onclick>
