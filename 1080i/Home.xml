@@ -246,6 +246,7 @@
                 <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
                 <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
                 <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
+                <include condition="System.HasAddon(script.tv.show.next.aired)">TV_NA</include>
                 <include>Movies</include>
                 <include>Music_RA</include>
                 <include>Favsshelf</include>

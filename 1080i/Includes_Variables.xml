@@ -192,7 +192,7 @@
         <value>-</value>
     </variable>
 
-     <variable name="musicshelftitle">
+    <variable name="musicshelftitle">
         <value condition="StringCompare(Skin.String(musicshelf),custom)">[B] $LOCALIZE[1038][/B]</value>
         <value condition="StringCompare(Skin.String(musicshelf),top)">[B] $LOCALIZE[10504][/B]</value>
         <value condition="StringCompare(Skin.String(musicshelf),topalbum)">[B] $LOCALIZE[10505][/B]</value>
@@ -214,5 +214,18 @@
         <value condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[31048]</value>
         <value condition="Control.IsVisible(312)">$LOCALIZE[20387]</value>
         <value>$LOCALIZE[20386]</value>
+    </variable>
+
+    <variable name="nextairedfanart">
+        <value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(201)">$INFO[Container(201).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(202)">$INFO[Container(202).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(203)">$INFO[Container(203).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(204)">$INFO[Container(204).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+
+        <value>$VAR[bgimg]</value>
+
     </variable>
 </includes>

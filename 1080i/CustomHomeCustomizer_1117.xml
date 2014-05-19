@@ -250,14 +250,27 @@
                         <item id="357">
                             <visible>!Skin.HasSetting(3dmovs)</visible>
                             <thumb>help/Off.png</thumb>
-                            <label>3D Movies</label>
+                            <label>3D $LOCALIZE[342]</label>
                             <onclick>Skin.ToggleSetting(3dmovs)</onclick>
                         </item>
                         <item id="357">
                             <visible>Skin.HasSetting(3dmovs)</visible>
                             <thumb>icons/3d.png</thumb>
-                            <label>3D Movies</label>
+                            <label>3D $LOCALIZE[342]</label>
                             <onclick>Skin.ToggleSetting(3dmovs)</onclick>
+                        </item>
+                        <!--todo label-->
+                         <item id="358">
+                            <visible>Skin.HasSetting(nextair) | !System.HasAddon(script.tv.show.next.aired) | !Library.HasContent(TVShows)</visible>
+                            <thumb>help/Off.png</thumb>
+                            <label>NEXT AIRED</label>
+                            <onclick>Skin.ToggleSetting(nextair)</onclick>
+                        </item>
+                        <item id="358">
+                            <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
+                            <thumb>icons/nextaired.png</thumb>
+                            <label>NEXT AIRED</label>
+                            <onclick>Skin.ToggleSetting(nextair)</onclick>
                         </item>
                         <item id="1014">
                             <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>

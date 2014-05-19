@@ -97,9 +97,17 @@
         <item id="357">
             <visible>Skin.HasSetting(3dmovs)</visible>
             <thumb>icons/3d.png</thumb>
-            <label>3D Movies</label>
+            <label>3D $LOCALIZE[342]</label>
             <property name="color">icons/purple.png</property>
             <onclick>ActivateWindow(Videos,"special://skin/resources/3d.xsp", return)</onclick>
+        </item>
+        <item id="358">
+            <!--todo label-->
+             <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
+            <thumb>icons/nextaired.png</thumb>
+            <label>NEXT AIRED</label>
+            <property name="color">icons/red.png</property>
+            <onclick>RunAddon(script.tv.show.next.aired)</onclick>
         </item>
         <item id="601" description="Custom Fvourite">
             <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>

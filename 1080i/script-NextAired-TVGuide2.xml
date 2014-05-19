@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <allowoverlay>no</allowoverlay>
+    <backgroundcolor>background</backgroundcolor>
+    <defaultcontrol always="true">201</defaultcontrol>
+    <controls>
+        <control type="group">
+            <visible>IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
+            <include>BlackBackground</include>
+        </control>
+        <control type="group">
+            <animation effect="fade" time="250">WindowOpen</animation>
+            <animation effect="fade" time="250">WindowClose</animation>
+            <control type="image">
+                <visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
+                <width>1920</width>
+                <height>1080</height>
+                <aspectratio>scale</aspectratio>
+                <texture background="true" colordiffuse="55FFFFFF">$VAR[nextairedfanart]</texture>
+                <fadetime>400</fadetime>
+                <animation effect="fade" time="600">Visible</animation>
+                <animation effect="fade" time="600">Hidden</animation>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(200)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(200).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>Size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>Size20</font>
+                    <label>$INFO[Container(200).ListItem.Property(Genre)]</label>
+                </control>
+
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(200).ListItem.Property(Network)]</label>
+                    <font>Size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(201)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(201).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>Size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>Size20</font>
+                    <label>$INFO[Container(201).ListItem.Property(Genre)]</label>
+                </control>
+
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(201).ListItem.Property(Network)]</label>
+                    <font>Size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(202)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(202).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>Size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>Size20</font>
+                    <label>$INFO[Container(202).ListItem.Property(Genre)]</label>
+                </control>
+
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(202).ListItem.Property(Network)]</label>
+                    <font>Size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(203)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(203).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>Size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>Size20</font>
+                    <label>$INFO[Container(203).ListItem.Property(Genre)]</label>
+                </control>
+
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(203).ListItem.Property(Network)]</label>
+                    <font>Size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(204)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(204).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>Size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>Size20</font>
+                    <label>$INFO[Container(204).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(204).ListItem.Property(Network)]</label>
+                    <font>Size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(205)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(205).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>Size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>Size20</font>
+                    <label>$INFO[Container(205).ListItem.Property(Genre)]</label>
+                </control>
+
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(205).ListItem.Property(Network)]</label>
+                    <font>Size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(206)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(206).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>Size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>Size20</font>
+                    <label>$INFO[Container(206).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(206).ListItem.Property(Network)]</label>
+                    <font>Size18</font>
+                </control>
+            </control>
+        </control>
+        <control type="grouplist" id="2000">
+            <posx>78</posx>
+            <posy>120</posy>
+            <width>1764</width>
+            <height>960</height>
+            <orientation>horizontal</orientation>
+            <itemgap>2</itemgap>
+            <scrolltime>400</scrolltime>
+            <control type="group">
+                <description>Tuesday</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.200.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.YesterdayText)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="200">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>9000</onleft>
+                    <onright>202</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="group">
+                <description>Today</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.201.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.TodayText)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="201">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>9000</onleft>
+                    <onright>202</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="group">
+                <description>Today+1</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.202.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.TomorrowText)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="202">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>201</onleft>
+                    <onright>203</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="group">
+                <description>Today+2</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.203.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.203.Weekday)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="203">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>202</onleft>
+                    <onright>204</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="group">
+                <description>Today+3</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.204.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.204.Weekday)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="204">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>203</onleft>
+                    <onright>205</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="group">
+                <description>Today+4</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.205.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.205.Weekday)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="205">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>204</onleft>
+                    <onright>206</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="group">
+                <description>Today+5</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.206.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.206.Weekday)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="206">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>205</onleft>
+                    <onright>207</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+
+            </control>
+            <control type="group">
+                <description>Today+6</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.207.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.207.Weekday)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="207">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>206</onleft>
+                    <onright>208</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+
+            </control>
+            <control type="group">
+                <description>Today+7</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.208.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.208.Wday)], $INFO[Window(Home).Property(NextAired.208.Date)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="208">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>207</onleft>
+                    <onright>209</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+
+            </control>
+            <control type="group">
+                <description>Sunday</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.209.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.209.Wday)], $INFO[Window(Home).Property(NextAired.209.Date)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="209">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>208</onleft>
+                    <onright>210</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="group">
+                <description>Sunday</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.210.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.210.Wday)], $INFO[Window(Home).Property(NextAired.210.Date)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="210">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>209</onleft>
+                    <onright>211</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="group">
+                <description>Sunday</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.211.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.211.Wday)], $INFO[Window(Home).Property(NextAired.211.Date)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="211">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>210</onleft>
+                    <onright>212</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="group">
+                <description>Sunday</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.212.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.212.Wday)], $INFO[Window(Home).Property(NextAired.212.Date)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="212">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>211</onleft>
+                    <onright>213</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+
+            </control>
+            <control type="group">
+                <description>Sunday</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.213.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.213.Wday)], $INFO[Window(Home).Property(NextAired.213.Date)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="213">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>212</onleft>
+                    <onright>214</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+
+            </control>
+            <control type="group">
+                <description>Sunday</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.214.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.214.Wday)], $INFO[Window(Home).Property(NextAired.214.Date)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="214">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>213</onleft>
+                    <onright>215</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+
+            </control>
+            <control type="group">
+                <description>Sunday</description>
+                <visible>!StringCompare(Window(Home).Property(NextAired.215.Wday),)</visible>
+                <width>250</width>
+                <height>960</height>
+                <control type="image">
+                    <description>Bg</description>
+                    <width>250</width>
+                    <height>70</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture background="true">images/Black.png</texture>
+                </control>
+                <control type="label">
+                    <width>250</width>
+                    <height>70</height>
+                    <label>$INFO[Window(Home).Property(NextAired.215.Wday)], $INFO[Window(Home).Property(NextAired.215.Date)]</label>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>white</textcolor>
+                </control>
+                <control type="panel" id="215">
+                    <top>80</top>
+                    <width>250</width>
+                    <height>960</height>
+                    <scrolltime>200</scrolltime>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>214</onleft>
+                    <onright>noop</onright>
+                    <itemlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="310" width="250">
+                        <control type="image">
+                            <description>Poster</description>
+                            <centerleft>125</centerleft>
+                            <width>250</width>
+                            <height>300</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture colordiffuse="FF555555" background="true">$INFO[ListItem.Property(Art(poster))]</texture>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>125</centerleft>
+                            <width>200</width>
+                            <height>300</height>
+                            <label>[CR][COLOR=FF00C8FA]$INFO[ListItem.Property(ShortTime)][CR]$INFO[ListItem.Property(NextDay)][/COLOR][CR]$INFO[ListItem.Property(NextNumber)][CR]$INFO[ListItem.Property(NextTitle)][CR][COLOR=FF888888]$INFO[ListItem.Property(Runtime),, $LOCALIZE[12391]][/COLOR]</label>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
+
+            </control>
+        </control>
+
+            <control type="group">
+                <visible allowhiddenfocus="true">Control.HasFocus(8)</visible>
+                <animation effect="slide" start="-400,0" end="0,0" time="600">VisibleChange</animation>
+                <control type="image">
+                    <left>-50</left>
+                    <top>900</top>
+                    <width>300</width>
+                    <height>150</height>
+                    <texture border="50">MusicOSD/Back.png</texture>
+                </control>
+                <control type="grouplist" id="9000">
+                    <top>935</top>
+                    <width>250</width>
+                    <height>150</height>
+                    <onleft>noop</onleft>
+                    <onright>201</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <itemgap>0</itemgap>
+                    <control type="button" id="8">
+                        <description>Settings</description>
+                        <height>80</height>
+                        <width>220</width>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>5</label>
+                    </control>
+                </control>
+            </control>
+        <control type="grouplist">
+            <visible>!Skin.HasSetting(HideClock)</visible>
+            <top>18</top>
+            <right>40</right>
+            <orientation>horizontal</orientation>
+            <itemgap>16</itemgap>
+            <align>right</align>
+            <control type="image" description="WebLink">
+                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                <width>30</width>
+                <height>48</height>
+                <texture>wireless.png</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="label" description="Battery">
+                <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,20) + !Skin.HasSetting(hideconnection)</visible>
+                <posx>35r</posx>
+                <posy>20</posy>
+                <width min="30" max="500">auto</width>
+                <height>45</height>
+                <font>size30</font>
+                <textcolor>White</textcolor>
+                <label>$INFO[System.BatteryLevel] Batt.</label>
+            </control>
+            <control type="label" description="Clock">
+                <visible>!Skin.HasSetting(HideClock)</visible>
+                <width min="30" max="500">auto</width>
+                <height>45</height>
+                <font>size28</font>
+                <label>[B]$INFO[System.Time][/B]</label>
+            </control>
+        </control>
+
+    </controls>
+</window>

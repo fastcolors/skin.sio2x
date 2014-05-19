@@ -1,3 +1,9 @@
+2.0.10
+* Added Update Library option in Submenu for Media Sources
+* New Picture view, now showing infos for pictures and a big preview.
+* More Icons available for customization of home menu
+* Next Aired Script Support (limited to poster view)
+
 2.0.9
 * New Methods for shelf Items
 * 2 new favourites in home menu which are able to fill shelf items

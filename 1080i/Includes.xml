@@ -173,6 +173,7 @@
             <aligny>bottom</aligny>
             <orientation>horizontal</orientation>
             <control type="label" id="7777" description="Heading">
+                <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
                 <width>auto</width>
                 <height>75</height>
                 <font>Size42</font>
@@ -181,6 +182,7 @@
             </control>
             <control type="label" description="Number of files">
                 <visible>!StringCompare(Container.NumItems,0)</visible>
+                <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
                 <width min="60" max="120">auto</width>
                 <height>81</height>
                 <font>size26</font>
