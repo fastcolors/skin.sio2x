@@ -3,20 +3,9 @@
     <defaultcontrol always="true">300</defaultcontrol>
     <include>OpenClose</include>
     <allowoverlay>no</allowoverlay>
-    <backgroundcolor>0xffffffff</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <controls>
-        <control type="image" description="Default BG">
-            <width>1920</width>
-            <height>1080</height>
-            <texture>images/white.png</texture>
-            <colordiffuse>FFFFFFFF</colordiffuse>
-        </control>
-        <control type="image" description="Default BG">
-            <width>1920</width>
-            <height>1080</height>
-            <texture background="true">$VAR[bgimg]</texture>
-            <colordiffuse>33FFFFFF</colordiffuse>
-        </control>
+        <include>BlackBackground</include>
         <include>WindowsTopInfos</include>
         <control type="group">
             <control type="group" description="Thumbs">

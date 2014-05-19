@@ -3,81 +3,86 @@
     <defaultcontrol always="true">5</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
-    <include>DialogOpenClose</include>
+    <animation effect="slide" start="0,-1000" end="0,0" time="600">WindowOpen</animation>
+    <animation effect="slide" start="0,0" end="0,-1000" time="600">WindowClose</animation>
     <controls>
         <control type="image">
-            <posx>260</posx>
-            <top>-80</top>
-            <width>1400</width>
+            <centerleft>960</centerleft>
+            <top>-200</top>
+            <width>1920</width>
             <height>1240</height>
-            <texture border="150">images/Dialog.png</texture>
+            <texture border="150" colordiffuse="EEFFFFFF">images/Dialog.png</texture>
         </control>
         <control type="label" description="Heading">
             <posx>0</posx>
-            <top>60</top>
+            <top>10</top>
             <width>1920</width>
+            <height>40</height>
             <label>13406</label>
             <font>size39B</font>
             <align>center</align>
         </control>
-        <control type="group">
-            <posx>495</posx>
-            <top>60</top>
+        <control type="image">
+            <top>55</top>
+            <centerleft>960</centerleft>
+            <width>1600</width>
+            <height>1</height>
+            <texture>Lines/line.png</texture>
+        </control>
             <control type="list" id="5">
-                <posx>-30</posx>
-                <top>120</top>
-                <width>930</width>
-                <height>770</height>
+                <centerleft>960</centerleft>
+                <top>56</top>
+                <width>1600</width>
+                <height>840</height>
                 <onleft>noop</onleft>
-                <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-                <onright condition="!Skin.HasSetting(Scrollbars_Active)">9000</onright>
+                <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
                 <onup>noop</onup>
                 <ondown>noop</ondown>
                 <pagecontrol>60</pagecontrol>
                 <itemlayout height="70">
                     <control type="label">
-                        <posx>30</posx>
+                        <left>30</left>
                         <height>70</height>
-                        <width>405</width>
+                        <width>600</width>
                         <scroll>false</scroll>
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>900</posx>
+                        <left>1570</left>
                         <height>70</height>
-                        <width>435</width>
+                        <width>900</width>
                         <align>right</align>
                         <scroll>false</scroll>
-                        <font>size26</font>
                         <info>ListItem.Label2</info>
                     </control>
                 </itemlayout>
                 <focusedlayout height="70">
                     <control type="image">
                         <height>70</height>
-                        <width>930</width>
-                        <texture border="8">images/Buttonselect.png</texture>
+                        <width>1600</width>
+                        <texture border="8">images/Buttonselect1.png</texture>
                     </control>
-                    <control type="label">
-                        <posx>30</posx>
+                     <control type="label">
+                        <left>30</left>
                         <height>70</height>
-                        <width>405</width>
+                        <width>600</width>
+                        <scroll>false</scroll>
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>900</posx>
+                        <left>1570</left>
                         <height>70</height>
-                        <width>435</width>
+                        <width>900</width>
                         <align>right</align>
-                        <font>size26</font>
+                        <scroll>false</scroll>
                         <info>ListItem.Label2</info>
                     </control>
                 </focusedlayout>
             </control>
-        </control>
         <control type="scrollbar" id="60">
-            <posx>1446</posx>
-            <top>180</top>
+            <posx>1760</posx>
+            <top>60</top>
             <height>770</height>
             <onleft>5</onleft>
             <onright>noop</onright>

@@ -5,109 +5,129 @@
     <backgroundcolor>0xffffffff</backgroundcolor>
     <controls>
         <include>BlackBackground</include>
+        <control type="image">
+            <centertop>430</centertop>
+            <centerleft>590</centerleft>
+            <width>1050</width>
+            <height>700</height>
+            <aspectratio>stretch</aspectratio>
+            <info>ListItem.FileNameAndPath</info>
+            <fadetime>500</fadetime>
+        </control>
         <control type="group">
             <visible>Control.IsVisible(53)</visible>
-            <control type="group" description="Container and frame">
-                <control type="panel" id="53" description="icons">
+            <control type="group" description="List">
+                <control type="fixedlist" id="53" description="icons">
                     <viewtype label="536">Icons</viewtype>
-                    <posx>60</posx>
-                    <top>140</top>
-                    <width>1800</width>
-                    <height>897</height>
-                    <orientation>vertical</orientation>
-                    <onup>noop</onup>
-                    <ondown>noop</ondown>
-                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <left>0</left>
+                    <top>790</top>
+                    <width>1920</width>
+                    <height>300</height>
+                    <orientation>horizontal</orientation>
+                    <focusposition>4</focusposition>
+                    <onup condition="!Skin.HasSetting(ViewsMenuOff)">9000</onup>
+                    <ondown condition="!Skin.HasSetting(Scrollbars_Passive)">60</ondown>
+                    <onleft>53</onleft>
+                    <onright>53</onright>
                     <preloaditems>4</preloaditems>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>400</scrolltime>
-                    <itemlayout height="345" width="300">
-                        <control type="image">
-                            <visible>!StringCompare(ListItem.Label,..)</visible>
-                            <posx>9</posx>
-                            <top>11</top>
-                            <width>281</width>
-                            <height>281</height>
-                            <texture diffuse="images/diffusepic.png" background="true" fallback="PhotoFolder.png">$INFO[ListItem.Thumb]</texture>
-                            <aspectratio scalediffuse="false">scale</aspectratio>
-                        </control>
-                        <control type="image">
-                            <visible>StringCompare(ListItem.Label,..)</visible>
-                            <posx>9</posx>
-                            <top>11</top>
-                            <width>281</width>
-                            <height>281</height>
-                            <texture diffuse="images/diffusepic.png" >$INFO[ListItem.Icon]</texture>
-                            <aspectratio scalediffuse="false">scale</aspectratio>
+                    <itemlayout height="300" width="210">
+                        <control type="group">
+                            <control type="image">
+                                <visible>!StringCompare(ListItem.Label,..)</visible>
+                                <posx>5</posx>
+                                <top>35</top>
+                                <width>200</width>
+                                <height>200</height>
+                                <texture diffuse="images/diffusepic.png" background="true" fallback="PhotoFolder.png">$INFO[ListItem.Thumb]</texture>
+                                <aspectratio scalediffuse="false">scale</aspectratio>
+                            </control>
+                            <control type="image">
+                                <visible>StringCompare(ListItem.Label,..)</visible>
+                                <posx>5</posx>
+                                <top>35</top>
+                                <width>200</width>
+                                <height>200</height>
+                                <texture diffuse="images/diffusepic.png" >$INFO[ListItem.Icon]</texture>
+                                <aspectratio scalediffuse="false">scale</aspectratio>
+                            </control>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="345" width="300">
-                        <control type="image">
-                            <visible>!StringCompare(ListItem.Label,..)</visible>
-                            <posx>9</posx>
-                            <top>11</top>
-                            <width>281</width>
-                            <height>281</height>
-                            <texture diffuse="images/diffusepic.png" background="true" fallback="PhotoFolder.png">$INFO[ListItem.Thumb]</texture>
-                            <aspectratio scalediffuse="false">scale</aspectratio>
-                        </control>
-                        <control type="image">
-                            <visible>StringCompare(ListItem.Label,..)</visible>
-                            <posx>9</posx>
-                            <top>11</top>
-                            <width>281</width>
-                            <height>281</height>
-                            <texture diffuse="images/diffusepic.png" >$INFO[ListItem.Icon]</texture>
-                            <aspectratio scalediffuse="false">scale</aspectratio>
-                        </control>
-                        <control type="label">
-                            <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-                            <posx>150</posx>
-                            <top>290</top>
-                            <width>270</width>
-                            <height>45</height>
-                            <font>size22</font>
-                            <textcolor>White</textcolor>
+                    <focusedlayout height="300" width="240">
+                        <control type="group">
+                            <animation effect="zoom" start="90" end="100" center="120,300" time="300" reversible="false">Focus</animation>
 
-                            <align>center</align>
-                            <label>[B]$INFO[ListItem.Label][/B]</label>
-                        </control>
-                        <control type="image" description="selection">
-                            <animation effect="fade" start="0" end="100" time="500" delay="50" reversible="false">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                            <posx>9</posx>
-                            <top>11</top>
-                            <width>281</width>
-                            <height>281</height>
-                            <texture>images/picselection.png</texture>
+                            <control type="image">
+                                <visible>!StringCompare(ListItem.Label,..)</visible>
+
+                                <posx>5</posx>
+                                <top>5</top>
+                                <width>230</width>
+                                <height>230</height>
+                                <texture diffuse="images/diffusepic.png" background="true" fallback="PhotoFolder.png">$INFO[ListItem.Thumb]</texture>
+                                <aspectratio scalediffuse="false">scale</aspectratio>
+                            </control>
+                            <control type="image">
+                                <visible>StringCompare(ListItem.Label,..)</visible>
+                                <posx>5</posx>
+                                <top>5</top>
+                                <width>230</width>
+                                <height>230</height>
+                                <texture diffuse="images/diffusepic.png" >$INFO[ListItem.Icon]</texture>
+                                <aspectratio scalediffuse="false">scale</aspectratio>
+                            </control>
+
                         </control>
                     </focusedlayout>
                 </control>
             </control>
-            <control type="image" description="Line Split">
-                <posx>82</posx>
-                <top>134</top>
-                <width>1748</width>
+            <control type="image" description="selection">
+                <centerleft>960</centerleft>
+                <top>795</top>
+                <width>230</width>
+                <height>230</height>
+                <texture colordiffuse="FFFFDD55">images/picselection.png</texture>
+            </control>
+            <control type="image" description="Line Split left">
+                <right>0</right>
+                <top>805</top>
+                <width>780</width>
+                <height>1</height>
+                <texture flipx="true">lines/LineL.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image" description="Line Split right">
+                <top>805</top>
+                <width>780</width>
                 <height>1</height>
                 <texture>lines/LineL.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="label" description="Media details">
-                <posx>82</posx>
-                <top>87</top>
-                <width>1200</width>
-                <textcolor>Silver</textcolor>
-                <include>Genre51Commons</include>
-                <label>$INFO[ListItem.label][COLOR=gray]$VAR[TopLabel,  ][/COLOR]</label>
-            </control>
             <control type="scrollbar" id="60">
-                <posx>45r</posx>
-                <top>144</top>
-                <height>900</height>
-                <onleft>53</onleft>
-                <onright>9000</onright>
+                <animation effect="fade" delay="200" time="300">VisibleChange</animation>
+                <posx>198</posx>
+                <top>1038</top>
+                <width>1525</width>
+                <height>9</height>
+                <onup>53</onup>
+                <ondown>noop</ondown>
+                <orientation>horizontal</orientation>
+                <texturesliderbackground border="6">Scrollbar/HScrollbarBG.png</texturesliderbackground>
+                <texturesliderbar border="6">Scrollbar/HScrollerNF.png</texturesliderbar>
+                <texturesliderbarfocus border="6">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
+                <showonepage>false</showonepage>
             </control>
+        </control>
+        <control type="label" description="Media details">
+            <centerleft>960</centerleft>
+            <top>720</top>
+            <height>30</height>
+            <width>1200</width>
+            <shadowcolor>-</shadowcolor>
+            <font>Size22</font>
+            <align>center</align>
+            <label>$INFO[ListItem.label]</label>
         </control>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
@@ -162,5 +182,154 @@
             </control>
         </control>
         <include>WindowsTopInfos</include>
+        <control type="grouplist">
+            <visible>!ListItem.IsFolder</visible>
+            <top>80</top>
+            <left>1160</left>
+            <width>600</width>
+            <height>700</height>
+            <itemgap>0</itemgap>
+            <align>left</align>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21826] :[/COLOR] [B]$INFO[ListItem.PictureAperture][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21863] :[/COLOR] [B]$INFO[ListItem.PictureAuthor][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21867] :[/COLOR] [B]$INFO[ListItem.PictureByline][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21868] :[/COLOR] [B]$INFO[ListItem.PictureBylineTitle][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21823] :[/COLOR] [B]$INFO[ListItem.PictureCamModel][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21822] :[/COLOR] [B]$INFO[ListItem.PictureCamMake][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21862] :[/COLOR] [B]$INFO[ListItem.PictureCaption][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21866] :[/COLOR] [B]$INFO[ListItem.PictureCategory][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21839] :[/COLOR][B]$INFO[ListItem.PictureCCDWidth][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21807] :[/COLOR] [B]$INFO[ListItem.PictureColour][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21834] :[/COLOR] [B]$INFO[ListItem.PictureWhiteBalance][/B]</label>
+            </control>
+
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21805] :[/COLOR] [B]$INFO[ListItem.PictureResolution][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21808] :[/COLOR] [B]$INFO[ListItem.PictureProcess][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21836] :[/COLOR] [B]$INFO[ListItem.PictureMeteringMode][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21873] / $LOCALIZE[21875] :[/COLOR] [B]$INFO[ListItem.PictureCity]$INFO[ListItem.PictureCountry, / ][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21840] :[/COLOR] [B]$INFO[ListItem.PictureGPSLat][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21841] :[/COLOR] [B]$INFO[ListItem.PictureGPSLon][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21842] :[/COLOR] [B]$INFO[ListItem.PictureGPSAlt][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21833] :[/COLOR] [B]$INFO[ListItem.PictureFlashUsed][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21830] :[/COLOR] [B]$INFO[ListItem.PictureExpTime][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21829] :[/COLOR] [B]$INFO[ListItem.PictureExposure][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21820] :[/COLOR] [B]$INFO[ListItem.PictureLongDatetime][/B]</label>
+            </control>
+            <control type="label">
+                <height>30</height>
+                <width>700</width>
+                <font>Size22</font>
+                <label>[COLOR=gray]$LOCALIZE[21806] :[/COLOR] [B]$INFO[ListItem.PictureComment][/B]</label>
+                <scroll>false</scroll>
+            </control>
+        </control>
     </controls>
 </window>
