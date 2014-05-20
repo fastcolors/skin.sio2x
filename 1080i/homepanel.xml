@@ -102,10 +102,9 @@
             <onclick>ActivateWindow(Videos,"special://skin/resources/3d.xsp", return)</onclick>
         </item>
         <item id="358">
-            <!--todo label-->
              <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
             <thumb>icons/nextaired.png</thumb>
-            <label>NEXT AIRED</label>
+            <label>$ADDON[script.tv.show.next.aired 32019]</label>
             <property name="color">icons/red.png</property>
             <onclick>RunAddon(script.tv.show.next.aired)</onclick>
         </item>

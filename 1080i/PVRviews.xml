@@ -509,21 +509,21 @@
                         <posx>10</posx>
                         <width>34</width>
                         <height>29</height>
-                        <font>font12</font>
+                        <font>Size26</font>
                         <aligny>center</aligny>
                         <selectedcolor>red</selectedcolor>
                         <align>left</align>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </rulerlayout>
-                <channellayout height="52" width="380">
+                <channellayout height="52" width="400">
                     <animation effect="fade" start="110" time="200">UnFocus</animation>
                     <control type="label">
                         <posx>40</posx>
                         <top>0</top>
                         <width>40</width>
                         <height>52</height>
-                        <font>font12</font>
+                        <font>Size28</font>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>gray</textcolor>
@@ -533,21 +533,21 @@
                     <control type="label" id="1">
                         <posx>60</posx>
                         <top>0</top>
-                        <width>300</width>
+                        <width>360</width>
                         <height>52</height>
-                        <font>Size26</font>
+                        <font>Size28</font>
                         <aligny>center</aligny>
                         <selectedcolor>red</selectedcolor>
                         <align>left</align>
                         <scroll>false</scroll>
-                        <label>$INFO[ListItem.ChannelName]</label>
+                        <label>[B]$INFO[ListItem.ChannelName][/B]</label>
                     </control>
                 </channellayout>
-                <focusedchannellayout height="52" width="380">
+                <focusedchannellayout height="52" width="400">
                     <animation effect="fade" start="110" time="200">OnFocus</animation>
                     <control type="image" id="1">
                         <posx>45</posx>
-                        <width>330</width>
+                        <width>350</width>
                         <height>52</height>
                         <texture border="20">pvr/pvrbuttonFO.png</texture>
                         <colordiffuse>66FFFFFF</colordiffuse>
@@ -557,7 +557,7 @@
                         <top>0</top>
                         <width>40</width>
                         <height>52</height>
-                        <font>font12</font>
+                        <font>Size28</font>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>gray</textcolor>
@@ -566,13 +566,13 @@
                     </control>
                     <control type="label" id="1">
                         <posx>60</posx>
-                        <width>300</width>
+                        <width>360</width>
                         <height>52</height>
-                        <font>Size26</font>
+                        <font>Size28</font>
                         <aligny>center</aligny>
                         <selectedcolor>red</selectedcolor>
                         <align>left</align>
-                        <label>$INFO[ListItem.ChannelName]</label>
+                        <label>[B]$INFO[ListItem.ChannelName][/B]</label>
                     </control>
                 </focusedchannellayout>
                 <itemlayout height="52">
@@ -587,7 +587,7 @@
                         <posx>10</posx>
                         <width>-20</width>
                         <height>52</height>
-                        <font>font12</font>
+                        <font>Size28</font>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -600,7 +600,7 @@
                         <posx>25</posx>
                         <width>-35</width>
                         <height>52</height>
-                        <font>font12</font>
+                        <font>Size28</font>
                         <aligny>center</aligny>
                         <textcolor>red</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -642,7 +642,7 @@
                         <posx>10</posx>
                         <width>-20</width>
                         <height>52</height>
-                        <font>font12</font>
+                        <font>Size28</font>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -654,7 +654,7 @@
                         <posx>25</posx>
                         <width>-35</width>
                         <height>52</height>
-                        <font>font12</font>
+                        <font>Size28</font>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -711,7 +711,7 @@
                     <control type="image">
                         <posx>0</posx>
                         <top>100</top>
-                        <width>1160</width>
+                        <width>1120</width>
                         <height>1</height>
                         <texture>lines/Line.png</texture>
                         <aspectratio>stretch</aspectratio>
@@ -719,7 +719,7 @@
                     <control type="image">
                         <posx>0</posx>
                         <top>380</top>
-                        <width>1160</width>
+                        <width>1120</width>
                         <height>1</height>
                         <texture>lines/Line.png</texture>
                         <aspectratio>stretch</aspectratio>

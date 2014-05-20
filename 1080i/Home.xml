@@ -237,7 +237,6 @@
                 <texture>lines/LineV.png</texture>
             </control>
             <include>weather_shelf</include>
-            <!--todo EPGonSHELF!!!-->
             <include condition="true">EPG_shelf</include>
             <control type="group" id="700" description="Shelf items">
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>

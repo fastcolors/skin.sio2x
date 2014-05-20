@@ -164,7 +164,7 @@
             <animation condition="Control.IsVisible(53)" effect="slide" end="-480,-40">Conditional</animation>
             <animation condition="Control.IsVisible(55)" effect="slide" end="-1250,-40">Conditional</animation>
             <animation condition="Control.IsVisible(500)" effect="slide" end="-1250,-40">Conditional</animation>
-            <animation condition="Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]" effect="slide" end="-1250,0">Conditional</animation>
+            <animation condition="Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]" effect="slide" end="-480,-40">Conditional</animation>
             <top>40</top>
             <centerleft>1440</centerleft>
             <width>560</width>

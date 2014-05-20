@@ -294,7 +294,7 @@
                     <onup>200</onup>
                     <ondown>200</ondown>
                     <onleft>9000</onleft>
-                    <onright>202</onright>
+                    <onright>201</onright>
                     <itemlayout height="310" width="250">
                         <control type="image">
                             <description>Poster</description>
@@ -352,7 +352,7 @@
                     <scrolltime>200</scrolltime>
                     <onup>200</onup>
                     <ondown>200</ondown>
-                    <onleft>9000</onleft>
+                    <onleft>200</onleft>
                     <onright>202</onright>
                     <itemlayout height="310" width="250">
                         <control type="image">
@@ -1234,7 +1234,7 @@
                     <width>250</width>
                     <height>150</height>
                     <onleft>noop</onleft>
-                    <onright>201</onright>
+                    <onright>200</onright>
                     <onup>9000</onup>
                     <ondown>9000</ondown>
                     <itemgap>0</itemgap>

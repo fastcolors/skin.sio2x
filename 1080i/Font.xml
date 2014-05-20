@@ -23,12 +23,6 @@
             <size>21</size>
         </font>
         <font>
-            <name>Size26B</name>
-            <filename>Default.ttf</filename>
-            <size>26</size>
-            <style>bold</style>
-        </font>
-        <font>
             <name>special13</name>
             <filename>Default.ttf</filename>
             <size>21</size>
@@ -194,6 +188,11 @@
         </font>
         <font>
             <name>size26</name>
+            <filename>Strong.ttf</filename>
+            <size>26</size>
+        </font>
+        <font>
+            <name>size26B</name>
             <filename>Strong.ttf</filename>
             <size>26</size>
         </font>

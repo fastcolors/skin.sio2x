@@ -176,7 +176,6 @@
         <value>775555FF</value>
     </variable>
 
-    <!--todo variables for shelf-->
     <variable name="shelfmovies">
         <value condition="Container(9000).HasFocus(340) + Skin.HasSetting(MoviesShelfWL)">special://skin/resources/laststarted.xsp</value>
         <value condition="Container(9000).HasFocus(601)">$INFO[Skin.String(HomeFav.1.List)]</value>
@@ -209,7 +208,10 @@
     </variable>
 
     <variable name="shelflabel">
-        <value condition="Control.IsVisible(311) + Container(9000).HasFocus(607)">$INFO[Skin.String(Homefav.7.Label)]</value>
+        <value condition="Container(9000).HasFocus(607)">$INFO[Skin.String(Homefav.7.Label)]</value>
+        <value condition="Container(9000).HasFocus(608)">$INFO[Skin.String(Homefav.8.Label)]</value>
+        <value condition="Container(9000).HasFocus(358)">$ADDON[script.tv.show.next.aired 32101]</value>
+        <value condition="Container(9000).HasFocus(355)">$LOCALIZE[19017]</value>
         <value condition="Control.IsVisible(311) + Skin.HasSetting(MoviesShelfWL)">$LOCALIZE[31048]</value>
         <value condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[31048]</value>
         <value condition="Control.IsVisible(312)">$LOCALIZE[20387]</value>
@@ -224,8 +226,15 @@
         <value condition="Control.HasFocus(204)">$INFO[Container(204).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(205)">$INFO[Container(205).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(206)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
-
+        <value condition="Control.HasFocus(207)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(208)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(209)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(210)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(201)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(202)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(203)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(204)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+        <value condition="Control.HasFocus(205)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
         <value>$VAR[bgimg]</value>
-
     </variable>
 </includes>

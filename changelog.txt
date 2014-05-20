@@ -3,6 +3,9 @@
 * New Picture view, now showing infos for pictures and a big preview.
 * More Icons available for customization of home menu
 * Next Aired Script Support (limited to poster view)
+* Bigger Fonts for TimeLine View (PVR)
+* Cosmetic fixes in PVR
+* TV(PVR) Recordings now shown on shelf when LiveTV icon is selected
 
 2.0.9
 * New Methods for shelf Items
@@ -25,7 +28,6 @@
 * All white
 * Fix for Icon & filebrowser
 * Now possible to change Home Background Image
-*
 
 1.0.1
 * Global Search now required on install - and as a new Button on Home.

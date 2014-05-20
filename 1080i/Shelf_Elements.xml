@@ -293,15 +293,15 @@
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
                 <!--<control type="image">-->
-          <!--<visible>Control.IsVisible(313)+!Skin.HasSetting(RecordOff) + !Skin.HasSetting(MusicShelf_Custom)</visible>-->
-          <!--<animation effect="slide" end="60,0" time="400" delay="100">Focus</animation>-->
-          <!--<posx>30</posx>-->
-          <!--<posy>46</posy>-->
-          <!--<width>324</width>-->
-          <!--<height>324</height>-->
-          <!--<texture>images/record.png</texture>-->
-          <!--<aspectratio>keep</aspectratio>-->
-        <!--</control>-->
+                <!--<visible>Control.IsVisible(313)+!Skin.HasSetting(RecordOff) + !Skin.HasSetting(MusicShelf_Custom)</visible>-->
+                <!--<animation effect="slide" end="60,0" time="400" delay="100">Focus</animation>-->
+                <!--<posx>30</posx>-->
+                <!--<posy>46</posy>-->
+                <!--<width>324</width>-->
+                <!--<height>324</height>-->
+                <!--<texture>images/record.png</texture>-->
+                <!--<aspectratio>keep</aspectratio>-->
+                <!--</control>-->
                 <control type="image">
                     <posx>30</posx>
                     <top>46</top>
@@ -459,99 +459,229 @@
         </focusedlayout>
     </include>
     <include name="EpisodeNextCommons">
+        <animation effect="slide" start="0,0" end="-1920,0" time="400" reversible="true" condition="Container(311).Position(6) | Container(311).Position(7) | Container(311).Position(8) | Container(311).Position(9) | Container(311).Position(10) | Container(311).Position(11)">Conditional</animation>
+        <animation effect="slide" start="0,0" end="-3840,0" time="400" reversible="true" condition="Container(311).Position(12) | Container(311).Position(13) | Container(311).Position(14) | Container(311).Position(15) | Container(311).Position(16) | Container(311).Position(17)">Conditional</animation>
+        <animation effect="slide" start="0,0" end="-5760,0" time="400" reversible="true" condition="Container(311).Position(18) | Container(311).Position(19) | Container(311).Position(20) | Container(311).Position(21) | Container(311).Position(22) | Container(311).Position(23)">Conditional</animation>
+        <animation effect="slide" start="0,0" end="-7680,0" time="400" reversible="true" condition="Container(311).Position(24) | Container(311).Position(25) | Container(311).Position(26) | Container(311).Position(27) | Container(311).Position(28) | Container(311).Position(29)">Conditional</animation>
         <include>ShelfFade</include>
-        <top>82</top>
-        <width>1920</width>
-        <height>452</height>
+        <top>50</top>
+        <width>8000</width>
+        <height>450</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout condition="Library.HasContent(TVShows)" height="357" width="480">
+        <itemlayout height="350" width="320">
+            <control type="group">
+                <control type="image" description="Reflection">
+                    <posx>35</posx>
+                    <top>409</top>
+                    <width>250</width>
+                    <height>375</height>
+                    <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+                    <aspectratio>scale</aspectratio>
+                </control>
                 <control type="image">
-                    <left>23</left>
-                    <top>128</top>
-                    <width>433</width>
-                    <height>242</height>
-                    <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
+                    <posx>31</posx>
+                    <top>400</top>
+                    <width>262</width>
+                    <height>389</height>
+                    <texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>
+                    <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="group">
-                    <control type="image">
-                        <left>23</left>
-                        <top>35</top>
-                        <width>433</width>
-                        <height>93</height>
-                        <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.label2]</texture>
-                    </control>
+                <control type="image">
+                    <posx>35</posx>
+                    <top>25</top>
+                    <width>250</width>
+                    <height>375</height>
+                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                    <aspectratio>scale</aspectratio>
                 </control>
-                <control type="group">
-                    <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
-                    <control type="label">
-                        <posx>240</posx>
-                        <top>310</top>
-                        <width>375</width>
-                        <height>36</height>
-                        <font>size26</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>
-                        <align>center</align>
-                    </control>
+                <control type="image">
+                    <posx>31</posx>
+                    <top>18</top>
+                    <width>262</width>
+                    <height>389</height>
+                    <texture border="10" background="true">$VAR[dvdbox]</texture>
+                    <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="label">
-                    <posx>240</posx>
-                    <top>0</top>
-                    <width>450</width>
-                    <height>30</height>
-                    <font>size26</font>
-                    <textcolor>black</textcolor>
-                    <label>[B]$INFO[ListItem.Label][/B]</label>
+                <control type="image">
+                    <posx>35</posx>
+                    <top>130</top>
+                    <width>251</width>
+                    <height>270</height>
+                    <texture diffuse="images/ombra.png">images/Black.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="textbox">
+                    <posx>38</posx>
+                    <top>238</top>
+                    <width>244</width>
+                    <height>160</height>
+                    <font>size22</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <autoscroll>false</autoscroll>
+                    <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
                     <align>center</align>
                 </control>
+            </control>
         </itemlayout>
-        <focusedlayout condition="Library.HasContent(TVShows)" height="357" width="480">
-                <control type="image">
-                    <left>23</left>
-                    <top>128</top>
-                    <width>433</width>
-                    <height>242</height>
-                    <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                </control>
+        <focusedlayout height="420" width="320">
+            <control type="group">
+                <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
+                <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
                 <control type="group">
+                    <animation effect="fade" start="100" end="0" time="100">Focus</animation>
+                    <animation effect="fade" start="0" end="100" time="150">unFocus</animation>
+                    <control type="image" description="Reflection">
+                        <posx>35</posx>
+                        <top>409</top>
+                        <width>250</width>
+                        <height>375</height>
+                        <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
                     <control type="image">
-                        <left>23</left>
-                        <top>35</top>
-                        <width>433</width>
-                        <height>93</height>
-                        <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.label2]</texture>
+                        <posx>31</posx>
+                        <top>400</top>
+                        <width>262</width>
+                        <height>389</height>
+                        <texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>
+                        <aspectratio>stretch</aspectratio>
                     </control>
                 </control>
-                <control type="group">
-                    <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
-                    <control type="label">
-                        <posx>240</posx>
-                        <top>310</top>
-                        <width>375</width>
-                        <height>36</height>
-                        <font>size26</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>
-                        <align>center</align>
-                    </control>
+                <control type="image">
+                    <posx>35</posx>
+                    <top>25</top>
+                    <width>250</width>
+                    <height>375</height>
+                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                    <aspectratio>scale</aspectratio>
                 </control>
-                <control type="label">
-                    <posx>240</posx>
-                    <top>0</top>
-                    <width>450</width>
-                    <height>30</height>
-                    <font>size26</font>
-                    <textcolor>black</textcolor>
-                    <label>[B]$INFO[ListItem.Label][/B]</label>
+                <control type="image">
+                    <posx>31</posx>
+                    <top>18</top>
+                    <width>262</width>
+                    <height>389</height>
+                    <texture border="10" background="true">$VAR[dvdbox]</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image">
+                    <posx>35</posx>
+                    <top>130</top>
+                    <width>251</width>
+                    <height>270</height>
+                    <texture diffuse="images/ombra.png">images/Black.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="textbox">
+                    <posx>38</posx>
+                    <top>238</top>
+                    <width>244</width>
+                    <height>160</height>
+                    <font>size22</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <autoscroll>false</autoscroll>
+                    <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
                     <align>center</align>
                 </control>
+            </control>
         </focusedlayout>
     </include>
+    <!--<include name="EpisodeNextCommons">-->
+    <!--<include>ShelfFade</include>-->
+    <!--<top>82</top>-->
+    <!--<width>1920</width>-->
+    <!--<height>452</height>-->
+    <!--<orientation>horizontal</orientation>-->
+    <!--<scrolltime>400</scrolltime>-->
+    <!--<itemlayout condition="Library.HasContent(TVShows)" height="357" width="480">-->
+    <!--<control type="image">-->
+    <!--<left>23</left>-->
+    <!--<top>128</top>-->
+    <!--<width>433</width>-->
+    <!--<height>242</height>-->
+    <!--<texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>-->
+    <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
+    <!--</control>-->
+    <!--<control type="group">-->
+    <!--<control type="image">-->
+    <!--<left>23</left>-->
+    <!--<top>35</top>-->
+    <!--<width>433</width>-->
+    <!--<height>93</height>-->
+    <!--<texture diffuse="images/EpisodesTop.png">$INFO[ListItem.label2]</texture>-->
+    <!--</control>-->
+    <!--</control>-->
+    <!--<control type="group">-->
+    <!--<visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>-->
+    <!--<control type="label">-->
+    <!--<posx>240</posx>-->
+    <!--<top>310</top>-->
+    <!--<width>375</width>-->
+    <!--<height>36</height>-->
+    <!--<font>size26</font>-->
+    <!--<textcolor>white</textcolor>-->
+    <!--<shadowcolor>black</shadowcolor>-->
+    <!--<label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>-->
+    <!--<align>center</align>-->
+    <!--</control>-->
+    <!--</control>-->
+    <!--<control type="label">-->
+    <!--<posx>240</posx>-->
+    <!--<top>0</top>-->
+    <!--<width>450</width>-->
+    <!--<height>30</height>-->
+    <!--<font>size26</font>-->
+    <!--<textcolor>black</textcolor>-->
+    <!--<label>[B]$INFO[ListItem.Label][/B]</label>-->
+    <!--<align>center</align>-->
+    <!--</control>-->
+    <!--</itemlayout>-->
+    <!--<focusedlayout condition="Library.HasContent(TVShows)" height="357" width="480">-->
+    <!--<control type="image">-->
+    <!--<left>23</left>-->
+    <!--<top>128</top>-->
+    <!--<width>433</width>-->
+    <!--<height>242</height>-->
+    <!--<texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>-->
+    <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
+    <!--</control>-->
+    <!--<control type="group">-->
+    <!--<control type="image">-->
+    <!--<left>23</left>-->
+    <!--<top>35</top>-->
+    <!--<width>433</width>-->
+    <!--<height>93</height>-->
+    <!--<texture diffuse="images/EpisodesTop.png">$INFO[ListItem.label2]</texture>-->
+    <!--</control>-->
+    <!--</control>-->
+    <!--<control type="group">-->
+    <!--<visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>-->
+    <!--<control type="label">-->
+    <!--<posx>240</posx>-->
+    <!--<top>310</top>-->
+    <!--<width>375</width>-->
+    <!--<height>36</height>-->
+    <!--<font>size26</font>-->
+    <!--<textcolor>white</textcolor>-->
+    <!--<shadowcolor>black</shadowcolor>-->
+    <!--<label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>-->
+    <!--<align>center</align>-->
+    <!--</control>-->
+    <!--</control>-->
+    <!--<control type="label">-->
+    <!--<posx>240</posx>-->
+    <!--<top>0</top>-->
+    <!--<width>450</width>-->
+    <!--<height>30</height>-->
+    <!--<font>size26</font>-->
+    <!--<textcolor>black</textcolor>-->
+    <!--<label>[B]$INFO[ListItem.Label][/B]</label>-->
+    <!--<align>center</align>-->
+    <!--</control>-->
+    <!--</focusedlayout>-->
+    <!--</include>-->
     <include name="movshelslider">
         <control type="image">
             <visible>Control.HasFocus(311)</visible>
@@ -856,9 +986,8 @@
             <include>tvshelslider</include>
         </control>
     </include>
-     <include name="TV_NA">
+    <include name="TV_NA">
         <control type="group">
-            <!--todo label-->
             <visible>Library.HasContent(TVShows)</visible>
             <control type="label" description="Top Label">
                 <visible>Control.IsVisible(312)</visible>
@@ -877,7 +1006,7 @@
                     <item id="1" description="Episodes1">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.1.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.1.NextTitle)]</label>
-                        <label2>$INFO[Window(Home).Property(NextAired.1.Art(banner))]</label2>
+                        <label2>$INFO[Window(Home).Property(NextAired.1.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.1.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.1.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.1.NextDay)]</property>
                         <thumb>$INFO[Window(Home).Property(NextAired.1.Thumb)]</thumb>
                         <onclick>noop</onclick>
@@ -885,7 +1014,7 @@
                     <item id="2" description="Episodes2">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.2.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.2.NextTitle)]</label>
-                        <label2>$INFO[Window(Home).Property(NextAired.2.Art(banner))]</label2>
+                        <label2>$INFO[Window(Home).Property(NextAired.2.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.2.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.2.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.2.NextDay)]</property>
                         <thumb>$INFO[Window(Home).Property(NextAired.2.Thumb)]</thumb>
                         <onclick>noop</onclick>
@@ -893,7 +1022,7 @@
                     <item id="3" description="Episodes3">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.3.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.3.NextTitle)]</label>
-                        <label2>$INFO[Window(Home).Property(NextAired.3.Art(banner))]</label2>
+                        <label2>$INFO[Window(Home).Property(NextAired.3.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.3.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.3.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.3.NextDay)]</property>
                         <thumb>$INFO[Window(Home).Property(NextAired.3.Thumb)]</thumb>
                         <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.3.File)])</onclick>
@@ -901,7 +1030,7 @@
                     <item id="4" description="Episodes4">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.4.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.4.NextTitle)]</label>
-                        <label2>$INFO[Window(Home).Property(NextAired.4.Art(banner))]</label2>
+                        <label2>$INFO[Window(Home).Property(NextAired.4.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.4.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.4.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.4.NextDay)]</property>
                         <thumb>$INFO[Window(Home).Property(NextAired.4.Thumb)]</thumb>
                         <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.4.File)])</onclick>
@@ -909,7 +1038,7 @@
                     <item id="5" description="Episodes5">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.5.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.5.NextTitle)]</label>
-                        <label2>$INFO[Window(Home).Property(NextAired.5.Art(banner))]</label2>
+                        <label2>$INFO[Window(Home).Property(NextAired.5.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.5.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.5.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.5.NextDay)]</property>
                         <thumb>$INFO[Window(Home).Property(NextAired.5.Thumb)]</thumb>
                         <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.5.File)])</onclick>
@@ -917,7 +1046,7 @@
                     <item id="6" description="Episodes6">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.6.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.6.NextTitle)]</label>
-                        <label2>$INFO[Window(Home).Property(NextAired.6.Art(banner))]</label2>
+                        <label2>$INFO[Window(Home).Property(NextAired.6.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.6.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.6.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.6.NextDay)]</property>
                         <thumb>$INFO[Window(Home).Property(NextAired.6.Thumb)]</thumb>
                         <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.6.File)])</onclick>
@@ -925,7 +1054,7 @@
                     <item id="7" description="Episodes7">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.7.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.7.NextTitle)]</label>
-                        <label2>$INFO[Window(Home).Property(NextAired.7.Art(banner))]</label2>
+                        <label2>$INFO[Window(Home).Property(NextAired.7.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.7.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.7.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.7.NextDay)]</property>
                         <thumb>$INFO[Window(Home).Property(NextAired.7.Thumb)]</thumb>
                         <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.7.File)])</onclick>
@@ -933,7 +1062,7 @@
                     <item id="8" description="Episodes8">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.8.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.8.NextTitle)]</label>
-                        <label2>$INFO[Window(Home).Property(NextAired.8.Art(banner))]</label2>
+                        <label2>$INFO[Window(Home).Property(NextAired.8.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.8.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.8.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.8.NextDay)]</property>
                         <thumb>$INFO[Window(Home).Property(NextAired.8.Thumb)]</thumb>
                         <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.8.File)])</onclick>
@@ -941,7 +1070,7 @@
                     <item id="9" description="Episodes9">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.9.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.9.NextTitle)]</label>
-                        <label2>$INFO[Window(Home).Property(NextAired.9.Art(banner))]</label2>
+                        <label2>$INFO[Window(Home).Property(NextAired.9.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.9.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.9.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.9.NextDay)]</property>
                         <thumb>$INFO[Window(Home).Property(NextAired.9.Thumb)]</thumb>
                         <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.9.File)])</onclick>
@@ -949,7 +1078,7 @@
                     <item id="10" description="Episodes10">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.10.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.10.NextTitle)]</label>
-                        <label2>$INFO[Window(Home).Property(NextAired.10.Art(banner))]</label2>
+                        <label2>$INFO[Window(Home).Property(NextAired.10.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.10.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.10.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.10.NextDay)]</property>
                         <thumb>$INFO[Window(Home).Property(NextAired.10.Thumb)]</thumb>
                         <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.10.File)])</onclick>
@@ -1739,17 +1868,22 @@
     </include>
     <include name="EPG_shelf">
         <control type="group">
-            <top>30</top>
-            <visible>[Container(9000).HasFocus(355)]</visible>
-            <include>ShelfFade</include>
-            <control type="label">
-                <posx>83</posx>
-                <top>10</top>
-                <width>1754</width>
-                <height>40</height>
-                <align>center</align>
-                <label>[B]EPG TEST 1[/B]</label>
+            <control type="label" description="Top Label">
+                <visible>Control.IsVisible(311)</visible>
+                <include>ShelfFade</include>
+                <include>ShelfTitle</include>
+                <label>[B] $VAR[shelflabel] [/B]</label>
             </control>
+            <control type="list" id="311" description="EPG Shelf">
+                <visible>Container(9000).HasFocus(355)</visible>
+                <onup>9009</onup>
+                <ondown>9000</ondown>
+                <onleft>311</onleft>
+                <onright>311</onright>
+                <include>EpisodeNextCommons</include>
+                <content>pvr://recordings/</content>
+            </control>
+            <include>movshelslider</include>
         </control>
     </include>
 </includes>
