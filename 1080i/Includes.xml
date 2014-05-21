@@ -6,7 +6,7 @@
     <include file="CommonViews.xml" />
     <include file="views/Videoviews.xml" />
     <include file="views/Musicviews.xml" />
-    <include file="PVRviews.xml" />
+    <include file="views/PVRviews.xml" />
     <include file="views/Programviews.xml" />
     <include file="Includes_Home.xml" />
     <include file="Shelf_Elements.xml" />

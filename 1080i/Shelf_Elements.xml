@@ -723,14 +723,14 @@
                 <include>ShelfTitle</include>
                 <label>[B] $VAR[shelflabel] [/B]</label>
             </control>
-            <control type="list" id="311" description="Movies Shelf Shortcuts">
+            <control type="panel" id="311" description="Movies Shelf Shortcuts">
                 <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Container(9000).HasFocus(357) | Control.HasFocus(311) | [Container(9000).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.List))] | [Container(9000).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.List))] | [Container(9000).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.List))] | [Container(9000).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.List))] | [Container(9000).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.List))] | [Container(9000).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.List))] | [Container(9000).HasFocus(607) + !IsEmpty(Skin.String(HomeFav.7.List))] | [Container(9000).HasFocus(608) + !IsEmpty(Skin.String(HomeFav.8.List))]]</visible>
                 <onup>9009</onup>
                 <ondown>9000</ondown>
                 <onleft>311</onleft>
                 <onright>311</onright>
                 <include>MoviesShortcutsCommons</include>
-                <content>$VAR[shelfmovies]</content>
+                <content target="video">$VAR[shelfmovies]</content>
             </control>
             <include>movshelslider</include>
         </control>
@@ -987,16 +987,14 @@
         </control>
     </include>
     <include name="TV_NA">
-        <control type="group">
-            <visible>Library.HasContent(TVShows)</visible>
+    <control type="group">
+            <visible>Container(9000).HasFocus(358)</visible>
             <control type="label" description="Top Label">
-                <visible>Control.IsVisible(312)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
                 <label>[B] $VAR[shelflabel] [/B]</label>
             </control>
-            <control type="panel" id="312" description="TOP Shortcuts">
-                <visible>Container(9000).HasFocus(358)</visible>
+            <control type="panel" id="318" description="TOP Shortcuts">
                 <onup>9009</onup>
                 <ondown>9000</ondown>
                 <onleft>312</onleft>
@@ -1881,7 +1879,7 @@
                 <onleft>311</onleft>
                 <onright>311</onright>
                 <include>EpisodeNextCommons</include>
-                <content>pvr://recordings/</content>
+                <content>pvr://recordings</content>
             </control>
             <include>movshelslider</include>
         </control>

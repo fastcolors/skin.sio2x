@@ -15,13 +15,17 @@
                 <width>34</width>
                 <height>34</height>
                 <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
-                <onclick  condition="Control.IsVisible(311)">Skin.ToggleSetting(MoviesShelfWL)</onclick>
+                <!--MOVIES-->
+                <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">Skin.SetString(moviesshelf,)</onclick>
+                <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL) + Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,TR)</onclick>
+                <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL) + !Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,)</onclick>
+                <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+                <!--TVSHOWS-->
                 <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+                <!--MUSIC-->
                 <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,top)</onclick>
                 <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),top) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,custom)</onclick>
-                <!--<onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),topalbum) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,custom)</onclick>-->
                 <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),custom) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>
-                <!--<onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),playlists) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>-->
                 <onclick  condition="Control.IsVisible(315)">noop</onclick>
                 <colordiffuse>FF000000</colordiffuse>
                 <onclick condition="Control.IsVisible(312)">ReplaceWindow(0)</onclick>
@@ -236,10 +240,11 @@
                 <height>450</height>
                 <texture>lines/LineV.png</texture>
             </control>
-            <include>weather_shelf</include>
-            <include condition="true">EPG_shelf</include>
+
             <control type="group" id="700" description="Shelf items">
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+                <include>weather_shelf</include>
+                <include condition="true">EPG_shelf</include>
                 <include condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RA</include>
                 <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
                 <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
@@ -251,7 +256,7 @@
                 <include>Favsshelf</include>
                 <control type="image" description="Logo">
                     <!--<visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | Control.IsVisible(317) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>-->
-                    <visible>![Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(319) | Control.IsVisible(313) | Control.IsVisible(315) | Control.IsVisible(314) | Control.IsVisible(317) | Container(9000).HasFocus(345)]</visible>
+                    <visible>![Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(318) | Control.IsVisible(319) | Control.IsVisible(313) | Control.IsVisible(315) | Control.IsVisible(314) | Control.IsVisible(317) | Container(9000).HasFocus(345)]</visible>
                     <include>ShelfFade</include>
                     <width>1920</width>
                     <height>500</height>

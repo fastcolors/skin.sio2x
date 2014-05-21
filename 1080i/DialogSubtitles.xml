@@ -153,7 +153,7 @@
                     <control type="image">
                         <width>1358</width>
                         <height>54</height>
-                        <texture>images/Buttonselect1.png</texture>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/Buttonselect1.png</texture>
                         <visible>Control.HasFocus(120)</visible>
                     </control>
                     <control type="image">
@@ -280,7 +280,7 @@
                         <top>0</top>
                         <width>380</width>
                         <height>57</height>
-                         <texture>images/Buttonselect2.png</texture>
+                         <texture colordiffuse="$VAR[diffuseselect]">images/Buttonselect2.png</texture>
                         <visible>Control.HasFocus(150)</visible>
                     </control>
                     <control type="label">

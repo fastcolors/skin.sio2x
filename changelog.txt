@@ -1,3 +1,8 @@
+2.1.0
+* Added Option to show Apple trailers Folders on shelf as a 3rd option >Recent >InProgress >Trailers
+* Fix for selection color in subtitles Dialog
+* Fix for scrollbar not selectable in Banner TVShow view
+
 2.0.10
 * Added Update Library option in Submenu for Media Sources
 * New Picture view, now showing infos for pictures and a big preview.
