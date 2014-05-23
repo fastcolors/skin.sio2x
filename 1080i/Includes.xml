@@ -33,6 +33,7 @@
             <top>0</top>
             <width>1920</width>
             <height>1080</height>
+            <fadetime>200</fadetime>
             <texture background="true">$VAR[bgimg]</texture>
             <aspectratio align="left">scale</aspectratio>
             <colordiffuse>33FFFFFF</colordiffuse>
@@ -43,6 +44,7 @@
             <top>0</top>
             <width>1920</width>
             <height>1080</height>
+            <fadetime>200</fadetime>
             <texture background="true">$VAR[bgimg]</texture>
             <colordiffuse>77FFFFFF</colordiffuse>
         </control>
