@@ -46,7 +46,7 @@
                         <top>10</top>
                         <width>340</width>
                         <height>92</height>
-                        <font>Size24B</font>
+                        <font>size24B</font>
                         <textcolor>gray</textcolor>
                         <align>right</align>
                         <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
@@ -125,7 +125,7 @@
                         <top>10</top>
                         <width>340</width>
                         <height>92</height>
-                        <font>Size24B</font>
+                        <font>size24B</font>
                         <textcolor>gray</textcolor>
                         <align>right</align>
                         <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
@@ -185,7 +185,7 @@
                 <control type="label">
                     <width min="60" max="1080">auto</width>
                     <height>45</height>
-                    <font>Size42B</font>
+                    <font>size42B</font>
                     <align>center</align>
                     <label>$INFO[ListItem.label]</label>
                 </control>
@@ -193,7 +193,7 @@
                     <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
                     <width min="60">auto</width>
                     <height>50</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <textcolor>gray</textcolor>
                     <align>center</align>
                     <label>$INFO[Container(990).NumItems,(,)]</label>
@@ -205,7 +205,7 @@
                 <top>70</top>
                 <width>1140</width>
                 <height>55</height>
-                <font>Size20</font>
+                <font>size20</font>
                 <align>center</align>
                 <autoscroll>false</autoscroll>
                 <label>• • $INFO[ListItem.Tagline]$INFO[ListItem.Property(Addon.Summary)] • •</label>
@@ -220,49 +220,49 @@
                 <control type="label">
                     <width>800</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[180]: [COLOR Silver][B]$INFO[ListItem.Duration] $LOCALIZE[12391][/B][/COLOR]</label>
                 </control>
                 <control type="label">
                     <width>800</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[515]: [COLOR Silver][B]$INFO[ListItem.Genre][/B][/COLOR]</label>
                 </control>
                 <control type="label">
                     <width>800</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[562]: [COLOR Silver][B]$INFO[ListItem.Year][/B][/COLOR]</label>
                 </control>
                 <control type="label">
                     <width>800</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[20376]: [COLOR Silver][B]$INFO[ListItem.OriginalTitle][/B][/COLOR]</label>
                 </control>
                 <control type="label">
                     <width>800</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[20339]: [COLOR Silver][B]$INFO[ListItem.Director][/B][/COLOR]</label>
                 </control>
                 <control type="label">
                     <width>800</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[21875]: [COLOR Silver][B]$INFO[ListItem.Country][/B][/COLOR]</label>
                 </control>
                 <control type="label">
                     <width>800</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <scroll>false</scroll>
                     <label>$LOCALIZE[20388]: [COLOR Silver][B]$INFO[ListItem.Studio][/B][/COLOR]</label>
@@ -271,7 +271,7 @@
                     <visible>!IsEmpty(ListItem.PlayCount)</visible>
                     <width>800</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[576]: [COLOR Silver][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
                 </control>
@@ -279,7 +279,7 @@
                     <visible>!IsEmpty(ListItem.LastPlayed)</visible>
                     <width>800</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
                 </control>
@@ -287,7 +287,7 @@
                     <visible>!IsEmpty(ListItem.PercentPlayed) + !Container.Content(Addons)</visible>
                     <width>800</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[31087]: [COLOR Silver][B]$INFO[ListItem.PercentPlayed] %[/B][/COLOR]</label>
                 </control>
@@ -308,7 +308,7 @@
                 <control type="label">
                     <width>600</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <align>center</align>
                     <label>[B]$INFO[ListItem.RatingAndVotes][/B]</label>
                 </control>
@@ -446,7 +446,7 @@
                             <width>297</width>
                             <height>60</height>
                             <align>center</align>
-                            <font>Size20</font>
+                            <font>size20</font>
                             <label>$INFO[ListItem.Title]</label>
                         </control>
                     </itemlayout>
@@ -471,7 +471,7 @@
                                 <top>10</top>
                                 <width>290</width>
                                 <height>400</height>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <align>center</align>
                                 <label>[B][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]:[CR]$INFO[ListItem.Year][CR][CR]$LOCALIZE[563] $INFO[ListItem.Rating][CR][CR]$LOCALIZE[20339]:[CR]$INFO[ListItem.Director][CR][CR]$LOCALIZE[20074]:[CR]$INFO[ListItem.MPAA][/B]</label>
                             </control>
@@ -481,7 +481,7 @@
                             <width>297</width>
                             <height>60</height>
                             <align>center</align>
-                            <font>Size20</font>
+                            <font>size20</font>
                             <label>$INFO[ListItem.Title]</label>
                         </control>
                     </focusedlayout>
@@ -1069,7 +1069,7 @@
                     <width>680</width>
                     <height>50</height>
                     <align>center</align>
-                    <font>Size38</font>
+                    <font>size38</font>
                     <label>$INFO[ListItem.Title]</label>
                 </control>
                 <control type="label" description="Media details">
@@ -1077,7 +1077,7 @@
                     <width>700</width>
                     <height>50</height>
                     <align>center</align>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <label>$VAR[TopLabel]</label>
                 </control>
                 <control type="grouplist">
@@ -1161,7 +1161,7 @@
                     <width>680</width>
                     <height>50</height>
                     <align>center</align>
-                    <font>Size38</font>
+                    <font>size38</font>
                     <label>$INFO[ListItem.Title]</label>
                 </control>
                 <control type="label" description="Media details">
@@ -1169,7 +1169,7 @@
                     <width>700</width>
                     <height>50</height>
                     <align>center</align>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <label>$VAR[TopLabel]</label>
                 </control>
                 <control type="grouplist">

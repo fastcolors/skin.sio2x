@@ -21,7 +21,7 @@
                     <top>20</top>
                     <width>300</width>
                     <height>20</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <textcolor>white</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -33,7 +33,7 @@
                     <top>20</top>
                     <width>600</width>
                     <height>20</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <textcolor>white</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -45,7 +45,7 @@
                     <top>20</top>
                     <width>140</width>
                     <height>20</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <textcolor>white</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -94,7 +94,7 @@
                             <top>0</top>
                             <width>640</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -167,7 +167,7 @@
                             <top>0</top>
                             <width>640</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>White</textcolor>

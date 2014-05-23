@@ -38,7 +38,7 @@
             <top>30</top>
             <width>1600</width>
             <height>30</height>
-            <font>Size36</font>
+            <font>size36</font>
             <textcolor>black</textcolor>
             <label>$LOCALIZE[19199] - $LOCALIZE[19023]/$LOCALIZE[19024]</label>
             <align>center</align>
@@ -108,7 +108,7 @@
                     <description>channel options Header</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size36B</font>
+                    <font>size36B</font>
                     <label>$LOCALIZE[33063]</label>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -118,7 +118,7 @@
                     <description>Channel activated</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <align>left</align>
                     <aligny>center</aligny>
                     <label>19074</label>
@@ -127,14 +127,14 @@
                     <description>Channel name</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <label>19201</label>
                 </control>
                 <control type="button" id ="9">
                     <description>Channel logo Button</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <label>19202</label>
                 </control>
                 <control type="image" id ="10">
@@ -148,7 +148,7 @@
                     <description>EPG activated</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <align>left</align>
                     <aligny>center</aligny>
                     <pulseonselect>no</pulseonselect>
@@ -158,14 +158,14 @@
                     <description>EPG source</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <label>19200</label>
                 </control>
                 <control type="radiobutton" id ="14">
                     <description>Parental locked</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <align>left</align>
                     <aligny>center</aligny>
                     <pulseonselect>no</pulseonselect>
@@ -175,7 +175,7 @@
                     <description>Group Manager Button</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <align>center</align>
                     <label>19205</label>
                 </control>
@@ -183,7 +183,7 @@
                     <description>TV/Radio Button</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <align>center</align>
                     <label>$LOCALIZE[19023] / $LOCALIZE[19024]</label>
                 </control>
@@ -191,7 +191,7 @@
                     <description>Edit channel Button</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <align>center</align>
                     <label>19203</label>
                 </control>
@@ -199,7 +199,7 @@
                     <description>Delete channel Button</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <align>center</align>
                     <label>19211</label>
                 </control>
@@ -207,7 +207,7 @@
                     <description>New channel Button</description>
                     <width>740</width>
                     <height>60</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <align>center</align>
                     <label>19204</label>
                 </control>
@@ -225,7 +225,7 @@
                 <width>200</width>
                 <height>60</height>
                 <label>186</label>
-                <font>Size26</font>
+                <font>size26</font>
                 <align>center</align>
                 <aligny>center</aligny>
             </control>
@@ -234,7 +234,7 @@
                 <width>300</width>
                 <height>60</height>
                 <label>14070</label>
-                <font>Size26</font>
+                <font>size26</font>
                 <align>center</align>
                 <aligny>center</aligny>
             </control>
@@ -243,7 +243,7 @@
                 <width>200</width>
                 <height>60</height>
                 <label>222</label>
-                <font>Size26</font>
+                <font>size26</font>
                 <align>center</align>
                 <aligny>center</aligny>
 

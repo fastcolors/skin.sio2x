@@ -28,7 +28,7 @@
                 <width>1520</width>
                 <height>60</height>
                 <label>Show Name</label>
-                <font>Size42B</font>
+                <font>size42B</font>
                 <align>center</align>
                 <textcolor>Yellow</textcolor>
             </control>
@@ -38,7 +38,7 @@
                 <width>1520</width>
                 <height>60</height>
                 <label>Show Title</label>
-                <font>Size30</font>
+                <font>size30</font>
                 <align>center</align>
                 <textcolor>gray</textcolor>
             </control>
@@ -50,7 +50,7 @@
             <width>1100</width>
             <height>290</height>
             <label>Show Description</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>left</align>
             <aligny>top</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -72,7 +72,7 @@
             <width>270</width>
             <height>26</height>
             <label>Time 1</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -84,7 +84,7 @@
             <width>270</width>
             <height>26</height>
             <label>Time 2</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -96,7 +96,7 @@
             <width>270</width>
             <height>26</height>
             <label>Time 2</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -168,7 +168,7 @@
             <width>250</width>
             <height>70</height>
             <label>Channel</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -180,7 +180,7 @@
             <width>30</width>
             <height>70</height>
             <label>1</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>right</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -203,7 +203,7 @@
             <width>250</width>
             <height>70</height>
             <label>Channel</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -215,7 +215,7 @@
             <width>30</width>
             <height>70</height>
             <label>2</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>right</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -238,7 +238,7 @@
             <width>250</width>
             <height>70</height>
             <label>Channel</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -250,7 +250,7 @@
             <width>30</width>
             <height>70</height>
             <label>3</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>right</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -273,7 +273,7 @@
             <width>250</width>
             <height>70</height>
             <label>Channel</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -285,7 +285,7 @@
             <width>30</width>
             <height>70</height>
             <label>4</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>right</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -308,7 +308,7 @@
             <width>250</width>
             <height>70</height>
             <label>Channel</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -320,7 +320,7 @@
             <width>30</width>
             <height>70</height>
             <label>5</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>right</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -343,7 +343,7 @@
             <width>250</width>
             <height>70</height>
             <label>Channel</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>
@@ -355,7 +355,7 @@
             <width>30</width>
             <height>70</height>
             <label>6</label>
-            <font>Size24</font>
+            <font>size24</font>
             <align>right</align>
             <aligny>center</aligny>
             <textcolor>FFFFFFFF</textcolor>

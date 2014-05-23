@@ -21,7 +21,7 @@
             <align>center</align>
             <label>Select a Star to Rate:</label>
             <textcolor>White</textcolor>
-            <font>Size24</font>
+            <font>size24</font>
         </control>
         <control type="image" id="142">
             <description>rating</description>

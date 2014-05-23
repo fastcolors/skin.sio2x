@@ -19,7 +19,7 @@
         </control>
         <control type="label" id="1001" description="Profile Directory">
             <top>60</top>
-            <font>Size21</font>
+            <font>size21</font>
             <include>Heading</include>
         </control>
         <control type="group">

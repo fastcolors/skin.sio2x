@@ -771,7 +771,7 @@
                 <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
                 <width>1000</width>
                 <textcolor>gray</textcolor>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>Scroll Right to Add > 5 Addons > 5 Scripts > 3 Favourites</label>
             </control>
             <control type="radiobutton" id="303" description="Custom">
@@ -873,7 +873,7 @@
                 <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
                 <width>1000</width>
                 <textcolor>gray</textcolor>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>Scroll Right to Add > 10 Addons > 5 Scripts > 3 Favourites</label>
             </control>
             <control type="radiobutton" id="303" description="Custom">
@@ -1010,7 +1010,7 @@
                 <posx>20</posx>
                 <width>1000</width>
                 <textcolor>gray</textcolor>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>Scroll Right to Add > 10 Addons > 5 Scripts</label>
             </control>
         </control>
@@ -1138,7 +1138,7 @@
                 <posx>20</posx>
                 <width>1000</width>
                 <textcolor>gray</textcolor>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>31034</label>
             </control>
         </control>
@@ -1151,7 +1151,7 @@
                 <posx>20</posx>
                 <width>1000</width>
                 <textcolor>gray</textcolor>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>31035</label>
             </control>
         </control>
@@ -1253,7 +1253,7 @@
                 <height>60</height>
                 <align>center</align>
                 <textcolor>gray</textcolor>
-                <font>Size26</font>
+                <font>size26</font>
                 <label>Current Location:</label>
             </control>
             <control type="label">
@@ -1262,7 +1262,7 @@
                 <width>900</width>
                 <height>60</height>
                 <align>center</align>
-                <font>Size60B</font>
+                <font>size60B</font>
                 <label>$INFO[Weather.Location]</label>
             </control>
             <control type="button" id="100">
@@ -1288,7 +1288,7 @@
                 <height>300</height>
                 <align>center</align>
                 <textcolor>gray</textcolor>
-                <font>Size26</font>
+                <font>size26</font>
                 <label>$LOCALIZE[31015]</label>
             </control>
         </control>

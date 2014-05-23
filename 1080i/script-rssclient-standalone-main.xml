@@ -30,7 +30,7 @@
                         <height>60</height>
                         <aligny>top</aligny>
                         <align>center</align>
-                        <font>Size42B</font>
+                        <font>size42B</font>
                         <label>$INFO[ListItem.Label]</label>
                         <wrapmultiline>true</wrapmultiline>
                         <textcolor>gray</textcolor>
@@ -63,7 +63,7 @@
                         <height>60</height>
                         <aligny>top</aligny>
                         <align>center</align>
-                        <font>Size42B</font>
+                        <font>size42B</font>
                         <label>$INFO[ListItem.Label]</label>
                         <wrapmultiline>true</wrapmultiline>
                         <textcolor>white</textcolor>

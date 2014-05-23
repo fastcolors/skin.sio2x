@@ -71,7 +71,7 @@
                         <top>55</top>
                         <width>460</width>
                         <height>60</height>
-                        <font>Size26</font>
+                        <font>size26</font>
                         <label>19146</label>
                         <align>center</align>
                         <aligny>center</aligny>
@@ -83,7 +83,7 @@
                         <top>55</top>
                         <width>460</width>
                         <height>60</height>
-                        <font>Size26</font>
+                        <font>size26</font>
                         <label>19146</label>
                         <align>center</align>
                         <aligny>center</aligny>
@@ -143,7 +143,7 @@
                         <top>55</top>
                         <width>460</width>
                         <height>60</height>
-                        <font>Size26</font>
+                        <font>size26</font>
                         <align>center</align>
                         <aligny>center</aligny>
                         <textcolor></textcolor>
@@ -155,7 +155,7 @@
                         <top>55</top>
                         <width>460</width>
                         <height>60</height>
-                        <font>Size26</font>
+                        <font>size26</font>
                         <align>center</align>
                         <aligny>center</aligny>
                         <textcolor>black</textcolor>
@@ -227,7 +227,7 @@
                         <top>55</top>
                         <width>460</width>
                         <height>60</height>
-                        <font>Size26</font>
+                        <font>size26</font>
                         <align>center</align>
                         <aligny>center</aligny>
                         <textcolor></textcolor>
@@ -239,7 +239,7 @@
                         <top>55</top>
                         <width>460</width>
                         <height>60</height>
-                        <font>Size26</font>
+                        <font>size26</font>
                         <align>center</align>
                         <aligny>center</aligny>
                         <textcolor>black</textcolor>

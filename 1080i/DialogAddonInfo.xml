@@ -28,7 +28,7 @@
                     <width>1125</width>
                     <height>60</height>
                     <textcolor>black</textcolor>
-                    <font>Size42b</font>
+                    <font>size42b</font>
                     <align>left</align>
                     <autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
                     <info>ListItem.Property(Addon.Name)</info>

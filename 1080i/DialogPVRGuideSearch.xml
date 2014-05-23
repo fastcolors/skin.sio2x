@@ -331,7 +331,7 @@
                 <height>60</height>
                 <align>center</align>
                 <aligny>center</aligny>
-                <font>Size26</font>
+                <font>size26</font>
                 <label>409</label>
                 <onleft>26</onleft>
                 <onright>25</onright>
@@ -345,7 +345,7 @@
                 <height>60</height>
                 <align>center</align>
                 <aligny>center</aligny>
-                <font>Size26</font>
+                <font>size26</font>
                 <label>222</label>
                 <onleft>28</onleft>
                 <onright>26</onright>
@@ -359,7 +359,7 @@
                 <height>60</height>
                 <align>center</align>
                 <aligny>center</aligny>
-                <font>Size26</font>
+                <font>size26</font>
                 <label>137</label>
                 <onleft>25</onleft>
                 <onright>28</onright>

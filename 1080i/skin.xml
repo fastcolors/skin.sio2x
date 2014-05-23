@@ -61,7 +61,7 @@
             <aligny>bottom</aligny>
             <label></label>
             <textcolor>FFFFFFFF</textcolor>
-            <font>Size24</font>
+            <font>size24</font>
         </control>
         <control type="label" id="119">
             <description>date</description>
@@ -71,7 +71,7 @@
             <height>40</height>
             <label>label</label>
             <textcolor>White</textcolor>
-            <font>Size22</font>
+            <font>size22</font>
         </control>
         <control type="label" id="107">
             <description>version</description>
@@ -82,7 +82,7 @@
             <label>version</label>
             <align>right</align>
             <textcolor>White</textcolor>
-            <font>Size22</font>
+            <font>size22</font>
         </control>
         <control type="label" id="207">
             <description>version</description>
@@ -90,7 +90,7 @@
             <height>40</height>
             <label>720p</label>
             <textcolor>White</textcolor>
-            <font>Size22</font>
+            <font>size22</font>
             <visible>False</visible>
         </control>
         <control type="label" id="108">
@@ -130,7 +130,7 @@
             <height>30</height>
             <label>-</label>
             <align>right</align>
-            <font>Size21</font>
+            <font>size21</font>
             <textcolor></textcolor>
         </control>
         <control type="label" id="111">
@@ -205,7 +205,7 @@
             <top>800</top>
             <width>800</width>
             <height>200</height>
-            <font>Size24</font>
+            <font>size24</font>
             <align>justify</align>
             <autoscroll delay="3000" time="2000" repeat="10000">true</autoscroll>
             <textcolor>White</textcolor>
@@ -217,7 +217,7 @@
             <top>100</top>
             <width>820</width>
             <height>200</height>
-            <font>Size24</font>
+            <font>size24</font>
             <align>justify</align>
             <onup>123</onup>
             <ondown>123</ondown>
@@ -259,7 +259,7 @@
                         <top>60</top>
                         <width>560</width>
                         <height>250</height>
-                        <font>Size22</font>
+                        <font>size22</font>
                         <aligny>top</aligny>
                         <textcolor></textcolor>
                         <label>$INFO[ListItem.Label2]</label>
@@ -293,7 +293,7 @@
                         <top>60</top>
                         <width>560</width>
                         <height>250</height>
-                        <font>Size22</font>
+                        <font>size22</font>
                         <aligny>top</aligny>
                         <textcolor></textcolor>
                         <label>$INFO[ListItem.Label2]</label>
@@ -338,7 +338,7 @@
                         <top>60</top>
                         <width>560</width>
                         <height>250</height>
-                        <font>Size24</font>
+                        <font>size24</font>
                         <aligny>top</aligny>
                         <textcolor></textcolor>
                         <label>$INFO[ListItem.Label2]</label>
@@ -372,7 +372,7 @@
                         <top>60</top>
                         <width>560</width>
                         <height>250</height>
-                        <font>Size24</font>
+                        <font>size24</font>
                         <aligny>top</aligny>
                         <textcolor></textcolor>
                         <label>$INFO[ListItem.Label2]</label>
@@ -465,7 +465,7 @@
                         <posx>225</posx>
                         <width>450</width>
                         <height>60</height>
-                        <font>Size30</font>
+                        <font>size30</font>
                         <aligny>center</aligny>
                         <textcolor>Silver</textcolor>
                         <align>center</align>
@@ -487,7 +487,7 @@
                         <posx>225</posx>
                         <width>450</width>
                         <height>60</height>
-                        <font>Size30</font>
+                        <font>size30</font>
                         <aligny>center</aligny>
                         <selectedcolor>FFe2ff43</selectedcolor>
                         <textcolor>FFDDDDDD</textcolor>
@@ -526,7 +526,7 @@
                         <posx>225</posx>
                         <width>450</width>
                         <height>60</height>
-                        <font>Size30</font>
+                        <font>size30</font>
                         <aligny>center</aligny>
                         <textcolor>Silver</textcolor>
                         <align>center</align>
@@ -548,7 +548,7 @@
                         <posx>225</posx>
                         <width>450</width>
                         <height>60</height>
-                        <font>Size30</font>
+                        <font>size30</font>
                         <aligny>center</aligny>
                         <selectedcolor>FFe2ff43</selectedcolor>
                         <textcolor>FFDDDDDD</textcolor>
@@ -563,7 +563,7 @@
             <posx>1100</posx>
             <top>580</top>
             <subtype>page</subtype>
-            <font>Size22</font>
+            <font>size22</font>
             <textcolor>White</textcolor>
             <onleft>124</onleft>
             <onright>124</onright>

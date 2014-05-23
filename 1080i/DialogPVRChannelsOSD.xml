@@ -65,7 +65,7 @@
                     <top>20</top>
                     <width>250</width>
                     <height>20</height>
-                    <font>Size26B</font>
+                    <font>size26B</font>
                     <textcolor>white</textcolor>
                     <align>right</align>
                     <aligny>center</aligny>
@@ -101,7 +101,7 @@
                             <posx>200</posx>
                             <width>400</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>right</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -113,7 +113,7 @@
                             <top>0</top>
                             <width>600</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -125,7 +125,7 @@
                             <top>0</top>
                             <width>640</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -145,7 +145,7 @@
                             <posx>1540</posx>
                             <width>250</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -166,7 +166,7 @@
                             <posx>1540</posx>
                             <width>250</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <textcolor>White</textcolor>
@@ -186,7 +186,7 @@
                             <posx>200</posx>
                             <width>400</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>right</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -198,7 +198,7 @@
                             <top>0</top>
                             <width>600</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -210,7 +210,7 @@
                             <top>0</top>
                             <width>640</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -241,7 +241,7 @@
                             <posx>1540</posx>
                             <width>250</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -262,7 +262,7 @@
                             <posx>1540</posx>
                             <width>250</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <textcolor>White</textcolor>

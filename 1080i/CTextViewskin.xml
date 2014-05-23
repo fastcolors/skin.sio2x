@@ -10,7 +10,7 @@
             <top>50</top>
             <width>640</width>
             <height>460</height>
-            <font>Size30</font>
+            <font>size30</font>
             <align>justify</align>
             <onright>131</onright>
             <onup>130</onup>
@@ -26,7 +26,7 @@
             <posx>600</posx>
             <top>520</top>
             <subtype>page</subtype>
-            <font>Size30</font>
+            <font>size30</font>
             <textcolor>White</textcolor>
             <onleft>130</onleft>
             <onright>130</onright>

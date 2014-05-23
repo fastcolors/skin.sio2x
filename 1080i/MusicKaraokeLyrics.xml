@@ -35,7 +35,7 @@
                 <top>5</top>
                 <width>470</width>
                 <height>25</height>
-                <font>Size26</font>
+                <font>size26</font>
                 <textcolor>blue</textcolor>
                 <label>[COLOR=blue]$LOCALIZE[209] :[/COLOR] [COLOR=selected]$INFO[MusicPlayer.offset(1).Title][/COLOR]</label>
                 <align>center</align>

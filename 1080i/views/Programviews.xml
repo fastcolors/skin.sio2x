@@ -50,7 +50,7 @@
                         <top>20</top>
                         <width>340</width>
                         <height>140</height>
-                        <font>Size24B</font>
+                        <font>size24B</font>
                         <textcolor>Silver</textcolor>
                         <align>right</align>
                         <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
@@ -83,7 +83,7 @@
                         <top>20</top>
                         <width>340</width>
                         <height>140</height>
-                        <font>Size24B</font>
+                        <font>size24B</font>
                         <align>right</align>
                         <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
                     </control>
@@ -100,7 +100,7 @@
                 <top>42</top>
                 <width>1140</width>
                 <height>80</height>
-                <font>Size42B</font>
+                <font>size42B</font>
                 <align>center</align>
                 <label>$INFO[ListItem.label]</label>
             </control>
@@ -109,7 +109,7 @@
                 <top>110</top>
                 <width>860</width>
                 <height>50</height>
-                <font>Size30</font>
+                <font>size30</font>
                 <align>center</align>
                 <label>$LOCALIZE[19114] : [COLOR=red]$INFO[ListItem.Property(Addon.Version)][/COLOR]</label>
             </control>
@@ -177,7 +177,7 @@
                     <posx>1330</posx>
                     <top>980</top>
                     <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
-                    <font>Size42B</font>
+                    <font>size42B</font>
                     <width>1280</width>
                     <height>80</height>
                     <align>right</align>
@@ -720,7 +720,7 @@
             <top>50r</top>
             <width>500</width>
             <height>20</height>
-            <font>font12</font>
+            <font>size21</font>
             <textcolor>gray</textcolor>
             <scroll>false</scroll>
             <align>right</align>

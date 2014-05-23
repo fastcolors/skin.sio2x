@@ -355,7 +355,7 @@
                         <top>20</top>
                         <width>500</width>
                         <height>15</height>
-                        <font>Size33</font>
+                        <font>size33</font>
                         <label>36501</label>
                         <align>center</align>
                         <aligny>center</aligny>
@@ -364,7 +364,7 @@
                 <control type="radiobutton" id="503">
                     <height>40</height>
                     <width>500</width>
-                    <font>Size33</font>
+                    <font>size33</font>
                     <label>Enable</label>
                     <onclick>ToggleStereoMode</onclick>
                     <selected>IntegerGreaterThan(System.StereoscopicMode,0)</selected>
@@ -374,7 +374,7 @@
                     <height>40</height>
                     <width>500</width>
                     <align>left</align>
-                    <font>Size33</font>
+                    <font>size33</font>
                     <textoffsetx>30</textoffsetx>
                     <pulseonselect>false</pulseonselect>
                     <label>3D Mode Selection</label>
@@ -383,7 +383,7 @@
                 <control type="radiobutton" id="501">
                     <height>40</height>
                     <width>500</width>
-                    <font>Size33</font>
+                    <font>size33</font>
                     <label>Force 2D</label>
                     <onclick>StereoModeToMono</onclick>
                     <selected>StringCompare(System.StereoscopicMode,7)</selected>

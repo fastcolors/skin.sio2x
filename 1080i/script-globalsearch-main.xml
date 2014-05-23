@@ -209,7 +209,7 @@
                                 <height>12</height>
                                 <scroll>false</scroll>
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
@@ -218,7 +218,7 @@
                                 <width>410</width>
                                 <height>12</height>
                                 <label>$INFO[ListItem.Property(Year),, - ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
-                                <font>Size20</font>
+                                <font>size20</font>
                                 <aligny>center</aligny>
                                 <visible>!SubString(ListItem.Property(Duration),min)</visible>
                             </control>
@@ -294,7 +294,7 @@
                                 <height>12</height>
                                 <scroll>false</scroll>
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
@@ -303,7 +303,7 @@
                                 <width>410</width>
                                 <height>12</height>
                                 <label>$INFO[ListItem.Property(Year),, - ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
-                                <font>Size20</font>
+                                <font>size20</font>
                                 <aligny>center</aligny>
                                 <visible>!SubString(ListItem.Property(Duration),min)</visible>
                             </control>
@@ -438,7 +438,7 @@
                                 <height>12</height>
                                 <scroll>false</scroll>
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
@@ -490,7 +490,7 @@
                                 <height>12</height>
                                 <scroll>false</scroll>
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
@@ -712,7 +712,7 @@
                                 <top>120</top>
                                 <width>150</width>
                                 <height>30</height>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <align>center</align>
                                 <label>S $INFO[ListItem.Property(Season)] • E $INFO[ListItem.Property(Episode)]</label>
                             </control>
@@ -721,7 +721,7 @@
                                 <top>150</top>
                                 <width>150</width>
                                 <height>30</height>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Property(Duration)] min.</label>
                             </control>
@@ -732,7 +732,7 @@
                                 <height>12</height>
                                 <scroll>false</scroll>
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
@@ -790,7 +790,7 @@
                                 <top>120</top>
                                 <width>150</width>
                                 <height>30</height>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <align>center</align>
                                 <label>S $INFO[ListItem.Property(Season)] • E $INFO[ListItem.Property(Episode)]</label>
                             </control>
@@ -799,7 +799,7 @@
                                 <top>150</top>
                                 <width>150</width>
                                 <height>30</height>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Property(Duration)] min.</label>
                             </control>
@@ -810,7 +810,7 @@
                                 <height>12</height>
                                 <scroll>false</scroll>
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
-                                <font>Size22</font>
+                                <font>size22</font>
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">

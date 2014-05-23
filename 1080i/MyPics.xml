@@ -125,7 +125,7 @@
             <height>30</height>
             <width>1200</width>
             <shadowcolor>-</shadowcolor>
-            <font>Size22</font>
+            <font>size22</font>
             <align>center</align>
             <label>$INFO[ListItem.label]</label>
         </control>
@@ -193,140 +193,140 @@
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21826] :[/COLOR] [B]$INFO[ListItem.PictureAperture][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21863] :[/COLOR] [B]$INFO[ListItem.PictureAuthor][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21867] :[/COLOR] [B]$INFO[ListItem.PictureByline][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21868] :[/COLOR] [B]$INFO[ListItem.PictureBylineTitle][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21823] :[/COLOR] [B]$INFO[ListItem.PictureCamModel][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21822] :[/COLOR] [B]$INFO[ListItem.PictureCamMake][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21862] :[/COLOR] [B]$INFO[ListItem.PictureCaption][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21866] :[/COLOR] [B]$INFO[ListItem.PictureCategory][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21839] :[/COLOR][B]$INFO[ListItem.PictureCCDWidth][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21807] :[/COLOR] [B]$INFO[ListItem.PictureColour][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21834] :[/COLOR] [B]$INFO[ListItem.PictureWhiteBalance][/B]</label>
             </control>
 
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21805] :[/COLOR] [B]$INFO[ListItem.PictureResolution][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21808] :[/COLOR] [B]$INFO[ListItem.PictureProcess][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21836] :[/COLOR] [B]$INFO[ListItem.PictureMeteringMode][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21873] / $LOCALIZE[21875] :[/COLOR] [B]$INFO[ListItem.PictureCity]$INFO[ListItem.PictureCountry, / ][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21840] :[/COLOR] [B]$INFO[ListItem.PictureGPSLat][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21841] :[/COLOR] [B]$INFO[ListItem.PictureGPSLon][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21842] :[/COLOR] [B]$INFO[ListItem.PictureGPSAlt][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21833] :[/COLOR] [B]$INFO[ListItem.PictureFlashUsed][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21830] :[/COLOR] [B]$INFO[ListItem.PictureExpTime][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21829] :[/COLOR] [B]$INFO[ListItem.PictureExposure][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21820] :[/COLOR] [B]$INFO[ListItem.PictureLongDatetime][/B]</label>
             </control>
             <control type="label">
                 <height>30</height>
                 <width>700</width>
-                <font>Size22</font>
+                <font>size22</font>
                 <label>[COLOR=gray]$LOCALIZE[21806] :[/COLOR] [B]$INFO[ListItem.PictureComment][/B]</label>
                 <scroll>false</scroll>
             </control>

@@ -207,7 +207,7 @@
                         <top>10</top>
                         <width>340</width>
                         <height>92</height>
-                        <font>Size24B</font>
+                        <font>size24B</font>
                         <textcolor>gray</textcolor>
                         <align>right</align>
                         <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
@@ -256,7 +256,7 @@
                         <top>10</top>
                         <width>340</width>
                         <height>92</height>
-                        <font>Size24B</font>
+                        <font>size24B</font>
                         <textcolor>gray</textcolor>
                         <align>right</align>
                         <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
@@ -289,7 +289,7 @@
                 <top>20</top>
                 <width>1340</width>
                 <height>45</height>
-                <font>Size42B</font>
+                <font>size42B</font>
                 <align>center</align>
                 <label>$INFO[ListItem.label]</label>
             </control>
@@ -298,7 +298,7 @@
                 <top>70</top>
                 <width>1140</width>
                 <height>55</height>
-                <font>Size20</font>
+                <font>size20</font>
                 <align>center</align>
                 <autoscroll>false</autoscroll>
                 <label>• • $INFO[ListItem.Tagline] • •</label>
@@ -314,7 +314,7 @@
                     <visible>!Container.Content(Albums) + !IsEmpty(ListItem.Property(Artist_Born))</visible>
                     <width>700</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[21893]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Born)][/B][/COLOR]</label>
                 </control>
@@ -322,7 +322,7 @@
                     <visible>!Container.Content(Albums) + !IsEmpty(ListItem.Property(Artist_Died))</visible>
                     <width>700</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[21897]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Died)][/B][/COLOR]</label>
                 </control>
@@ -330,7 +330,7 @@
                     <visible>!Container.Content(Albums) + !IsEmpty(ListItem.Property(Artist_Formed))</visible>
                     <width>700</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[21894]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Formed)][/B][/COLOR]</label>
                 </control>
@@ -338,7 +338,7 @@
                     <visible>!Container.Content(Albums) + !IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
                     <width>700</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[21896]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Disbanded)][/B][/COLOR]</label>
                 </control>
@@ -346,7 +346,7 @@
                     <visible>!Container.Content(Artists) + !IsEmpty(ListItem.Year)</visible>
                     <width>700</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[345]: [COLOR Silver][B]$INFO[ListItem.Year][/B][/COLOR]</label>
                 </control>
@@ -354,7 +354,7 @@
                     <visible>!IsEmpty(ListItem.Property(Artist_Style)) + !IsEmpty(ListItem.Property(Album_Style))</visible>
                     <width>700</width>
                     <height>80</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <autoscroll>false</autoscroll>
                     <label>$LOCALIZE[515] / $LOCALIZE[176]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Style)]$INFO[ListItem.Property(Album_Style)][/B][/COLOR]</label>
@@ -363,7 +363,7 @@
                     <visible>!IsEmpty(ListItem.Property(Artist_Mood)) + !IsEmpty(ListItem.Property(Album_Mood))</visible>
                     <width>700</width>
                     <height>80</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <autoscroll>false</autoscroll>
                     <label>$LOCALIZE[175]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Mood)]$INFO[ListItem.Property(Album_Mood)][/B][/COLOR]</label>
@@ -372,7 +372,7 @@
                     <visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
                     <width>700</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[21899]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Label)][/B][/COLOR]</label>
                 </control>
@@ -380,7 +380,7 @@
                     <visible>!IsEmpty(ListItem.Property(Artist_Instrument))</visible>
                     <width>700</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[21892]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Instrument)][/B][/COLOR]</label>
                 </control>
@@ -388,7 +388,7 @@
                     <visible>!IsEmpty(ListItem.Property(Album_Type))</visible>
                     <width>700</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[564]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Type)][/B][/COLOR]</label>
                 </control>
@@ -396,7 +396,7 @@
                     <visible>!IsEmpty(ListItem.Property(Album_Theme))</visible>
                     <width>700</width>
                     <height>60</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[21895]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Theme)][/B][/COLOR]</label>
                 </control>
@@ -404,7 +404,7 @@
                     <visible>!IsEmpty(ListItem.PlayCount)</visible>
                     <width>700</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[576]: [COLOR Silver][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
                 </control>
@@ -412,7 +412,7 @@
                     <visible>!IsEmpty(ListItem.PlayCount)</visible>
                     <width>700</width>
                     <height>20</height>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
                 </control>

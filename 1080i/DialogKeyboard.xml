@@ -23,7 +23,7 @@
 				<left>600</left>
 				<top>130</top>
 				<width>720</width>
-				<font>Size33</font>
+				<font>size33</font>
                 <align>center</align>
 			</control>
 			<control type="image">

@@ -178,7 +178,7 @@
                 <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
                 <width>auto</width>
                 <height>75</height>
-                <font>Size42</font>
+                <font>size42</font>
                 <scroll>false</scroll>
                 <label>$VAR[RootLabel]</label>
             </control>
@@ -361,7 +361,7 @@
             <height>25</height>
             <align>center</align>
             <aligny>center</aligny>
-            <font>Size26</font>
+            <font>size26</font>
             <textcolor>gray</textcolor>
             <label>$LOCALIZE[142] $INFO[ListItem.StartTime]</label>
         </control>

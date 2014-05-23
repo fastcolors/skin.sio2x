@@ -31,7 +31,7 @@
                     <height>40</height>
                     <label>$INFO[Container(200).ListItem.Label]</label>
                     <align>center</align>
-                    <font>Size33B</font>
+                    <font>size33B</font>
                 </control>
                 <control type="label">
                     <description>Episode genre</description>
@@ -40,7 +40,7 @@
                     <width>1920</width>
                     <height>40</height>
                     <align>center</align>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <label>$INFO[Container(200).ListItem.Property(Genre)]</label>
                 </control>
 
@@ -52,7 +52,7 @@
                     <height>25</height>
                     <align>center</align>
                     <label>$INFO[Container(200).ListItem.Property(Network)]</label>
-                    <font>Size18</font>
+                    <font>size18</font>
                 </control>
             </control>
             <control type="group">
@@ -65,7 +65,7 @@
                     <height>40</height>
                     <label>$INFO[Container(201).ListItem.Label]</label>
                     <align>center</align>
-                    <font>Size33B</font>
+                    <font>size33B</font>
                 </control>
                 <control type="label">
                     <description>Episode genre</description>
@@ -74,7 +74,7 @@
                     <width>1920</width>
                     <height>40</height>
                     <align>center</align>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <label>$INFO[Container(201).ListItem.Property(Genre)]</label>
                 </control>
 
@@ -86,7 +86,7 @@
                     <height>25</height>
                     <align>center</align>
                     <label>$INFO[Container(201).ListItem.Property(Network)]</label>
-                    <font>Size18</font>
+                    <font>size18</font>
                 </control>
             </control>
             <control type="group">
@@ -99,7 +99,7 @@
                     <height>40</height>
                     <label>$INFO[Container(202).ListItem.Label]</label>
                     <align>center</align>
-                    <font>Size33B</font>
+                    <font>size33B</font>
                 </control>
                 <control type="label">
                     <description>Episode genre</description>
@@ -108,7 +108,7 @@
                     <width>1920</width>
                     <height>40</height>
                     <align>center</align>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <label>$INFO[Container(202).ListItem.Property(Genre)]</label>
                 </control>
 
@@ -120,7 +120,7 @@
                     <height>25</height>
                     <align>center</align>
                     <label>$INFO[Container(202).ListItem.Property(Network)]</label>
-                    <font>Size18</font>
+                    <font>size18</font>
                 </control>
             </control>
             <control type="group">
@@ -133,7 +133,7 @@
                     <height>40</height>
                     <label>$INFO[Container(203).ListItem.Label]</label>
                     <align>center</align>
-                    <font>Size33B</font>
+                    <font>size33B</font>
                 </control>
                 <control type="label">
                     <description>Episode genre</description>
@@ -142,7 +142,7 @@
                     <width>1920</width>
                     <height>40</height>
                     <align>center</align>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <label>$INFO[Container(203).ListItem.Property(Genre)]</label>
                 </control>
 
@@ -154,7 +154,7 @@
                     <height>25</height>
                     <align>center</align>
                     <label>$INFO[Container(203).ListItem.Property(Network)]</label>
-                    <font>Size18</font>
+                    <font>size18</font>
                 </control>
             </control>
             <control type="group">
@@ -167,7 +167,7 @@
                     <height>40</height>
                     <label>$INFO[Container(204).ListItem.Label]</label>
                     <align>center</align>
-                    <font>Size33B</font>
+                    <font>size33B</font>
                 </control>
                 <control type="label">
                     <description>Episode genre</description>
@@ -176,7 +176,7 @@
                     <width>1920</width>
                     <height>40</height>
                     <align>center</align>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <label>$INFO[Container(204).ListItem.Property(Genre)]</label>
                 </control>
                 <control type="label">
@@ -187,7 +187,7 @@
                     <height>25</height>
                     <align>center</align>
                     <label>$INFO[Container(204).ListItem.Property(Network)]</label>
-                    <font>Size18</font>
+                    <font>size18</font>
                 </control>
             </control>
             <control type="group">
@@ -200,7 +200,7 @@
                     <height>40</height>
                     <label>$INFO[Container(205).ListItem.Label]</label>
                     <align>center</align>
-                    <font>Size33B</font>
+                    <font>size33B</font>
                 </control>
                 <control type="label">
                     <description>Episode genre</description>
@@ -209,7 +209,7 @@
                     <width>1920</width>
                     <height>40</height>
                     <align>center</align>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <label>$INFO[Container(205).ListItem.Property(Genre)]</label>
                 </control>
 
@@ -221,7 +221,7 @@
                     <height>25</height>
                     <align>center</align>
                     <label>$INFO[Container(205).ListItem.Property(Network)]</label>
-                    <font>Size18</font>
+                    <font>size18</font>
                 </control>
             </control>
             <control type="group">
@@ -234,7 +234,7 @@
                     <height>40</height>
                     <label>$INFO[Container(206).ListItem.Label]</label>
                     <align>center</align>
-                    <font>Size33B</font>
+                    <font>size33B</font>
                 </control>
                 <control type="label">
                     <description>Episode genre</description>
@@ -243,7 +243,7 @@
                     <width>1920</width>
                     <height>40</height>
                     <align>center</align>
-                    <font>Size20</font>
+                    <font>size20</font>
                     <label>$INFO[Container(206).ListItem.Property(Genre)]</label>
                 </control>
                 <control type="label">
@@ -254,7 +254,7 @@
                     <height>25</height>
                     <align>center</align>
                     <label>$INFO[Container(206).ListItem.Property(Network)]</label>
-                    <font>Size18</font>
+                    <font>size18</font>
                 </control>
             </control>
         </control>

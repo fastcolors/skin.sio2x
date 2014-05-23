@@ -22,7 +22,7 @@
                 <label>587</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <font>Size42B</font>
+                <font>size42B</font>
                 <textcolor>White</textcolor>
             </control>
             <!--<control type="button">

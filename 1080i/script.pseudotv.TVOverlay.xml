@@ -47,7 +47,7 @@
                     <width min="40" max="700">auto</width>
                     <height>60</height>
                     <label>Show Name</label>
-                    <font>Size33B</font>
+                    <font>size33B</font>
                     <align>left</align>
                     <textcolor>Yellow</textcolor>
                 </control>
@@ -56,7 +56,7 @@
                     <width min="10" max="50">auto</width>
                     <height>60</height>
                     <label>•</label>
-                    <font>Size24</font>
+                    <font>size24</font>
                     <align>left</align>
                     <textcolor>White</textcolor>
                 </control>
@@ -65,7 +65,7 @@
                     <width min="40" max="700">auto</width>
                     <height>60</height>
                     <label>Show Title</label>
-                    <font>Size24</font>
+                    <font>size24</font>
                     <align>left</align>
                     <textcolor>gray</textcolor>
                 </control>
@@ -79,7 +79,7 @@
                 <aligny>top</aligny>
                 <label>Show Description</label>
                 <textcolor>FFFFFFFF</textcolor>
-                <font>Size24</font>
+                <font>size24</font>
                 <wrapmultiline>true</wrapmultiline>
             </control>
             <control type="image" id="506">
