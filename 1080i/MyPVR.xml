@@ -80,7 +80,7 @@
         <control type="group" id="50">
             <include>OpenClose</include>
             <include>EPGTimelineView</include>
-            --><!-- view id = 10 -->
+            <!-- view id = 10 -->
             <include>LiveTVChannelView</include>
             <!-- view id = 11 -->
             <include>LiveRadioChannelView</include>

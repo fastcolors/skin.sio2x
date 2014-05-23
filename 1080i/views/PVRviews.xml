@@ -500,7 +500,7 @@
                 <progresstexture border="5">pvr/EpgProgressIndicator.png</progresstexture>
                 <onleft>31</onleft>
                 <onright>31</onright>
-                <onup>10</onup>
+                <onup>9000</onup>
                 <ondown>10</ondown>
                 <rulerlayout height="35">
                     <control type="label" id="2">
