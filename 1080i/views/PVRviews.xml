@@ -195,7 +195,7 @@
                 <control type="label">
                     <width>760</width>
                     <height>30</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <textcolor>gray</textcolor>
                     <align>center</align>
                     <visible>Container(12).ListItem.HasEpg</visible>
@@ -507,7 +507,7 @@
                         <posx>10</posx>
                         <width>34</width>
                         <height>29</height>
-                        <font>Size26</font>
+                        <font>font12</font>
                         <aligny>center</aligny>
                         <selectedcolor>red</selectedcolor>
                         <align>left</align>
@@ -521,7 +521,7 @@
                         <top>0</top>
                         <width>40</width>
                         <height>52</height>
-                        <font>Size28</font>
+                        <font>font12</font>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>gray</textcolor>
@@ -533,7 +533,7 @@
                         <top>0</top>
                         <width>360</width>
                         <height>52</height>
-                        <font>Size28</font>
+                        <font>font12</font>
                         <aligny>center</aligny>
                         <selectedcolor>red</selectedcolor>
                         <align>left</align>
@@ -555,7 +555,7 @@
                         <top>0</top>
                         <width>40</width>
                         <height>52</height>
-                        <font>Size28</font>
+                        <font>font12</font>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>gray</textcolor>
@@ -566,7 +566,7 @@
                         <posx>60</posx>
                         <width>360</width>
                         <height>52</height>
-                        <font>Size28</font>
+                        <font>font12</font>
                         <aligny>center</aligny>
                         <selectedcolor>red</selectedcolor>
                         <align>left</align>
@@ -585,7 +585,7 @@
                         <posx>10</posx>
                         <width>-20</width>
                         <height>52</height>
-                        <font>Size28</font>
+                        <font>font12</font>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -598,7 +598,7 @@
                         <posx>25</posx>
                         <width>-35</width>
                         <height>52</height>
-                        <font>Size28</font>
+                        <font>font12</font>
                         <aligny>center</aligny>
                         <textcolor>red</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -640,7 +640,7 @@
                         <posx>10</posx>
                         <width>-20</width>
                         <height>52</height>
-                        <font>Size28</font>
+                        <font>font12</font>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -652,7 +652,7 @@
                         <posx>25</posx>
                         <width>-35</width>
                         <height>52</height>
-                        <font>Size28</font>
+                        <font>font12</font>
                         <aligny>center</aligny>
                         <textcolor>white</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -768,7 +768,7 @@
                         <description>Channel header label</description>
                         <width>340</width>
                         <height>40</height>
-                        <font>Size26</font>
+                        <font>size26</font>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19029</label>
@@ -777,7 +777,7 @@
                         <description>Date header label</description>
                         <width>540</width>
                         <height>40</height>
-                        <font>Size26</font>
+                        <font>size26</font>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>DATE</label>
@@ -786,7 +786,7 @@
                         <description>Title header label</description>
                         <width>440</width>
                         <height>40</height>
-                        <font>Size26</font>
+                        <font>size26</font>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>369</label>
@@ -795,7 +795,7 @@
                         <description>Status header label</description>
                         <width>280</width>
                         <height>40</height>
-                        <font>Size26</font>
+                        <font>size26</font>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>126</label>
@@ -823,7 +823,7 @@
                             <posx>40</posx>
                             <width>340</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -834,7 +834,7 @@
                             <posx>640</posx>
                             <width>480</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -845,7 +845,7 @@
                             <posx>1140</posx>
                             <width>440</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -856,7 +856,7 @@
                             <posx>1720</posx>
                             <width>280</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>right</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -875,7 +875,7 @@
                             <posx>40</posx>
                             <width>340</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -886,7 +886,7 @@
                             <posx>640</posx>
                             <width>480</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -897,7 +897,7 @@
                             <posx>1140</posx>
                             <width>440</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -908,7 +908,7 @@
                             <posx>1720</posx>
                             <width>280</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>right</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -1079,7 +1079,7 @@
                     <top>20</top>
                     <width>300</width>
                     <height>20</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1091,7 +1091,7 @@
                     <top>20</top>
                     <width>600</width>
                     <height>20</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1103,7 +1103,7 @@
                     <top>20</top>
                     <width>140</width>
                     <height>20</height>
-                    <font>Size26</font>
+                    <font>size26</font>
                     <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1151,7 +1151,7 @@
                             <top>0</top>
                             <width>640</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -1223,7 +1223,7 @@
                             <top>0</top>
                             <width>640</width>
                             <height>40</height>
-                            <font>Size26</font>
+                            <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>White</textcolor>
