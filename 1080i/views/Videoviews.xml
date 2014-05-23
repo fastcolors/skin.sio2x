@@ -753,7 +753,7 @@
                     <pagecontrol>60</pagecontrol>
                     <scrolltime tween="sine" easing="inout">300</scrolltime>
                     <preloaditems>2</preloaditems>
-                    <itemlayout condition="![Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets) | Container.Content(Episodes)]" height="360" width="360">
+                    <itemlayout condition="Container.Content(Addons)" height="360" width="360">
                         <control type="image">
                             <posx>45</posx>
                             <top>9</top>
@@ -773,7 +773,7 @@
                             <label>[B]$INFO[ListItem.Label][/B]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout condition="![Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets) | Container.Content(Episodes)]" height="360" width="360">
+                    <focusedlayout condition="Container.Content(Addons)" height="360" width="360">
                         <control type="image">
                             <posx>45</posx>
                             <top>9</top>
@@ -806,7 +806,7 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="300" width="200">
+                    <itemlayout condition="!Container.Content(Addons)" height="300" width="200">
                         <control type="image">
                             <posx>35</posx>
                             <top>24</top>
@@ -858,7 +858,7 @@
                             <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
                         </control>
                     </itemlayout>
-                    <focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(Sets)" height="300" width="200">
+                    <focusedlayout condition="!Container.Content(Addons)" height="300" width="200">
                         <control type="group">
                             <animation effect="zoom" center="140,35" end="130" time="200" reversible="true">Focus</animation>
                             <animation effect="zoom" center="140,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
@@ -1269,7 +1269,7 @@
                     <visible>container.content(tvshows)</visible>
                     <visible>!IsEmpty(Container.FolderPath)</visible>
                     <viewtype label="539">Banners</viewtype>
-                    <posx>60</posx>
+                    <centerleft>1720</centerleft>
                     <top>140</top>
                     <width>1800</width>
                     <height>928</height>
@@ -1286,7 +1286,7 @@
                     <scrolltime>300</scrolltime>
                     <itemlayout condition="container.content(tvshows)" height="200" width="1800">
                         <control type="image">
-                            <posx>521</posx>
+                            <posx>50</posx>
                             <top>80</top>
                             <width>758</width>
                             <height>140</height>
@@ -1295,7 +1295,7 @@
                         </control>
                         <control type="image">
                             <visible>StringCompare(ListItem.Label,..)</visible>
-                            <posx>521</posx>
+                            <posx>50</posx>
                             <top>80</top>
                             <width>758</width>
                             <height>140</height>
@@ -1304,7 +1304,7 @@
                         </control>
                         <control type="image">
                             <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                            <posx>1200</posx>
+                            <posx>729</posx>
                             <top>130</top>
                             <height>45</height>
                             <width>150</width>
@@ -1313,7 +1313,7 @@
                         </control>
                         <control type="label" description="Label2">
                             <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                            <posx>1275</posx>
+                            <posx>804</posx>
                             <top>125</top>
                             <height>45</height>
                             <width>150</width>
@@ -1328,7 +1328,7 @@
                         <control type="image">
                             <visible>!StringCompare(ListItem.Label,..)</visible>
                             <top>125</top>
-                            <posx>490</posx>
+                            <posx>19</posx>
                             <width>50</width>
                             <height>50</height>
                             <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
@@ -1336,11 +1336,19 @@
                     </itemlayout>
                     <focusedlayout condition="container.content(tvshows)" height="200" width="1800">
                         <control type="group">
-                            <animation effect="zoom" end="150" center="880,150" time="350">Focus</animation>
-                            <animation effect="zoom" start="150" end="100" center="880,150" time="350">unFocus</animation>
+                            <animation effect="zoom" end="140" center="409,150" time="350">Focus</animation>
+                            <animation effect="zoom" start="140" end="100" center="409,150" time="250">unFocus</animation>
+                            <control type="image">
+                                <posx>39</posx>
+                                <top>0</top>
+                                <width>780</width>
+                                <height>300</height>
+                                <texture background="true" colordiffuse="$VAR[diffuseselect]">images/DiffuseBanner.png</texture>
+                                <aspectratio>keep</aspectratio>
+                            </control>
                             <control type="image">
                                 <visible>StringCompare(ListItem.Label,..)</visible>
-                                <posx>521</posx>
+                                <posx>50</posx>
                                 <top>80</top>
                                 <width>758</width>
                                 <height>140</height>
@@ -1348,24 +1356,17 @@
                                 <aspectratio>keep</aspectratio>
                             </control>
                             <control type="image">
-                                <posx>521</posx>
+                                <posx>50</posx>
                                 <top>80</top>
                                 <width>758</width>
                                 <height>140</height>
                                 <texture background="true" diffuse="images/DiffuseBanner.png">$INFO[ListItem.Art(banner)]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
-                            <control type="image">
-                                <posx>521</posx>
-                                <top>79</top>
-                                <width>758</width>
-                                <height>142</height>
-                                <texture background="true">images/BannerOverlay.png</texture>
-                                <aspectratio>keep</aspectratio>
-                            </control>
+
                             <control type="image">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <posx>1200</posx>
+                                <posx>729</posx>
                                 <top>130</top>
                                 <height>45</height>
                                 <width>150</width>
@@ -1374,7 +1375,7 @@
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <posx>1275</posx>
+                                <posx>804</posx>
                                 <top>125</top>
                                 <height>45</height>
                                 <width>150</width>
@@ -1383,12 +1384,13 @@
                                 <align>center</align>
                                 <scroll>false</scroll>
                                 <textcolor>white</textcolor>
+                                <shadowcolor>-</shadowcolor>
                                 <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
                             </control>
                             <control type="image">
                                 <visible>!StringCompare(ListItem.Label,..)</visible>
                                 <top>125</top>
-                                <posx>490</posx>
+                                <posx>19</posx>
                                 <width>50</width>
                                 <height>50</height>
                                 <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
@@ -1413,14 +1415,54 @@
                 <include>Genre51Commons</include>
                 <label>$INFO[ListItem.Label]  [COLOR=gray]$VAR[TopLabel][/COLOR]</label>
             </control>
-            <control type="image" description="Rating">
-                <visible>!IsEmpty(ListItem.Rating)</visible>
-                <posx>240r</posx>
-                <top>90</top>
-                <height>24</height>
-                <width>135</width>
-                <aspectratio align="right">keep</aspectratio>
-                <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+            <control type="grouplist">
+                <animation effect="fade" time="300" reversible="false" delay="200">VisibleChange</animation>
+                <visible>!Container(55).OnNext + !Container(55).OnPrevious + !StringCompare(ListItem.Label,..)</visible>
+                <top>150</top>
+                <left>129</left>
+                <itemgap>0</itemgap>
+                <control type="image" description="Rating">
+                    <visible>!IsEmpty(ListItem.Rating)</visible>
+                    <height>48</height>
+                    <width>270</width>
+                    <aspectratio align="right">keep</aspectratio>
+                    <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+                </control>
+                <control type="label" description="Show status">
+                    <width>650</width>
+                    <height>60</height>
+                    <textcolor>Silver</textcolor>
+                    <include>Genre51Commons</include>
+                    <label>STATUS: $INFO[Window(Home).Property(NextAired.Status)]</label>
+                </control>
+                <control type="label" description="Next Episode">
+                    <visible>!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+                    <width>650</width>
+                    <height>60</height>
+                    <textcolor>Silver</textcolor>
+                    <include>Genre51Commons</include>
+                    <label>NEXT AIRTIME: $INFO[Window(Home).Property(NextAired.NextDay)]</label>
+                </control>
+                <control type="image">
+                    <height>1</height>
+                    <width>500</width>
+                    <texture>Lines/line.png</texture>
+                </control>
+                <control type="textbox" description="Plot">
+                    <top>300</top>
+                    <width>500</width>
+                    <height>500</height>
+                    <font>size30</font>
+                    <textcolor>Silver</textcolor>
+                    <align>justify</align>
+                    <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
+                    <label>$VAR[Plots]</label>
+                </control>
+                <control type="image">
+                    <height>1</height>
+                    <width>500</width>
+                    <texture>Lines/line.png</texture>
+                </control>
             </control>
             <control type="image" description="Bottom fade">
                 <top>870</top>

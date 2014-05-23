@@ -3,6 +3,7 @@
     <defaultcontrol always="true">52</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
+    <onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
 
     <views>52,51,50,53,55,500</views>
     <!--
@@ -111,15 +112,13 @@
                 <control type="radiobutton" id="600" description="sio2">
                     <include>DialogButt</include>
                     <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
-
-
                     <onclick>Container.SetViewMode(52)</onclick>
                     <selected>Control.IsVisible(52)</selected>
                     <label>SiO2</label>
                 </control>
                 <control type="radiobutton" id="601" description="View Big List">
                     <include>DialogButt</include>
-                    <enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>
+                    <enable>!IsEmpty(Container.FolderPath)</enable>
                     <onclick>Container.SetViewMode(50)</onclick>
                     <selected>Control.IsVisible(50)</selected>
                     <label>$LOCALIZE[537]</label>
@@ -131,7 +130,7 @@
                     <label>$LOCALIZE[535]</label>
                 </control>
                 <control type="radiobutton" id="603" description="Icons">
-                    <enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>
+                    <enable>!IsEmpty(Container.FolderPath)</enable>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(53)</onclick>
                     <selected>Control.IsVisible(53)</selected>

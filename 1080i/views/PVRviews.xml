@@ -768,7 +768,7 @@
                         <description>Channel header label</description>
                         <width>340</width>
                         <height>40</height>
-                        <font>Size26_title</font>
+                        <font>Size26</font>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19029</label>
@@ -777,7 +777,7 @@
                         <description>Date header label</description>
                         <width>540</width>
                         <height>40</height>
-                        <font>Size26_title</font>
+                        <font>Size26</font>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>DATE</label>
@@ -786,7 +786,7 @@
                         <description>Title header label</description>
                         <width>440</width>
                         <height>40</height>
-                        <font>Size26_title</font>
+                        <font>Size26</font>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>369</label>
@@ -795,7 +795,7 @@
                         <description>Status header label</description>
                         <width>280</width>
                         <height>40</height>
-                        <font>Size26_title</font>
+                        <font>Size26</font>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>126</label>

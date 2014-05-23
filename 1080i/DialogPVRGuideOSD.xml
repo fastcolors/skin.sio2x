@@ -21,9 +21,8 @@
                     <top>20</top>
                     <width>300</width>
                     <height>20</height>
-                    <font>Size26_title</font>
+                    <font>Size26</font>
                     <textcolor>white</textcolor>
-
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>21820</label>
@@ -34,7 +33,7 @@
                     <top>20</top>
                     <width>600</width>
                     <height>20</height>
-                    <font>Size26_title</font>
+                    <font>Size26</font>
                     <textcolor>white</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -46,7 +45,7 @@
                     <top>20</top>
                     <width>140</width>
                     <height>20</height>
-                    <font>Size26_title</font>
+                    <font>Size26</font>
                     <textcolor>white</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
