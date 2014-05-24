@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol>32</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <backgroundcolor>0xffffffff</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>

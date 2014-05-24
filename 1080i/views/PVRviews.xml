@@ -195,7 +195,7 @@
                 <control type="label">
                     <width>760</width>
                     <height>30</height>
-                    <font>size26</font>
+                    <font>Size26</font>
                     <textcolor>gray</textcolor>
                     <align>center</align>
                     <visible>Container(12).ListItem.HasEpg</visible>
@@ -383,6 +383,7 @@
                     <scrolltime>250</scrolltime>
                     <itemlayout width="802" height="111">
                         <include>Watched_Marks</include>
+                        <include>HD_BadgeLW</include>
                         <control type="group">
                             <control type="label" description="Main Label">
                                 <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
@@ -419,6 +420,7 @@
                             <colordiffuse>445555FF</colordiffuse>
                         </control>
                         <include>Watched_Marks</include>
+                        <include>HD_BadgeLW</include>
                         <control type="group">
                             <control type="label" description="Main Label">
                                 <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
@@ -514,7 +516,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </rulerlayout>
-                <channellayout height="52" width="400">
+                <channellayout height="52" width="380">
                     <animation effect="fade" start="110" time="200">UnFocus</animation>
                     <control type="label">
                         <posx>40</posx>
@@ -531,21 +533,21 @@
                     <control type="label" id="1">
                         <posx>60</posx>
                         <top>0</top>
-                        <width>360</width>
+                        <width>300</width>
                         <height>52</height>
-                        <font>font12</font>
+                        <font>Size26</font>
                         <aligny>center</aligny>
                         <selectedcolor>red</selectedcolor>
                         <align>left</align>
                         <scroll>false</scroll>
-                        <label>[B]$INFO[ListItem.ChannelName][/B]</label>
+                        <label>$INFO[ListItem.ChannelName]</label>
                     </control>
                 </channellayout>
-                <focusedchannellayout height="52" width="400">
+                <focusedchannellayout height="52" width="380">
                     <animation effect="fade" start="110" time="200">OnFocus</animation>
                     <control type="image" id="1">
                         <posx>45</posx>
-                        <width>350</width>
+                        <width>330</width>
                         <height>52</height>
                         <texture border="20">pvr/pvrbuttonFO.png</texture>
                         <colordiffuse>66FFFFFF</colordiffuse>
@@ -564,13 +566,13 @@
                     </control>
                     <control type="label" id="1">
                         <posx>60</posx>
-                        <width>360</width>
+                        <width>300</width>
                         <height>52</height>
-                        <font>font12</font>
+                        <font>Size26</font>
                         <aligny>center</aligny>
                         <selectedcolor>red</selectedcolor>
                         <align>left</align>
-                        <label>[B]$INFO[ListItem.ChannelName][/B]</label>
+                        <label>$INFO[ListItem.ChannelName]</label>
                     </control>
                 </focusedchannellayout>
                 <itemlayout height="52">
@@ -709,7 +711,7 @@
                     <control type="image">
                         <posx>0</posx>
                         <top>100</top>
-                        <width>1120</width>
+                        <width>1160</width>
                         <height>1</height>
                         <texture>lines/Line.png</texture>
                         <aspectratio>stretch</aspectratio>
@@ -717,7 +719,7 @@
                     <control type="image">
                         <posx>0</posx>
                         <top>380</top>
-                        <width>1120</width>
+                        <width>1160</width>
                         <height>1</height>
                         <texture>lines/Line.png</texture>
                         <aspectratio>stretch</aspectratio>
@@ -768,7 +770,7 @@
                         <description>Channel header label</description>
                         <width>340</width>
                         <height>40</height>
-                        <font>size26</font>
+                        <font>Size26_title</font>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19029</label>
@@ -777,7 +779,7 @@
                         <description>Date header label</description>
                         <width>540</width>
                         <height>40</height>
-                        <font>size26</font>
+                        <font>Size26_title</font>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>DATE</label>
@@ -786,7 +788,7 @@
                         <description>Title header label</description>
                         <width>440</width>
                         <height>40</height>
-                        <font>size26</font>
+                        <font>Size26_title</font>
                         <align>center</align>
                         <aligny>center</aligny>
                         <label>369</label>
@@ -795,7 +797,7 @@
                         <description>Status header label</description>
                         <width>280</width>
                         <height>40</height>
-                        <font>size26</font>
+                        <font>Size26_title</font>
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>126</label>
@@ -823,7 +825,7 @@
                             <posx>40</posx>
                             <width>340</width>
                             <height>40</height>
-                            <font>size26</font>
+                            <font>Size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -834,7 +836,7 @@
                             <posx>640</posx>
                             <width>480</width>
                             <height>40</height>
-                            <font>size26</font>
+                            <font>Size26</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -845,7 +847,7 @@
                             <posx>1140</posx>
                             <width>440</width>
                             <height>40</height>
-                            <font>size26</font>
+                            <font>Size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -856,7 +858,7 @@
                             <posx>1720</posx>
                             <width>280</width>
                             <height>40</height>
-                            <font>size26</font>
+                            <font>Size26</font>
                             <align>right</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -875,7 +877,7 @@
                             <posx>40</posx>
                             <width>340</width>
                             <height>40</height>
-                            <font>size26</font>
+                            <font>Size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -886,7 +888,7 @@
                             <posx>640</posx>
                             <width>480</width>
                             <height>40</height>
-                            <font>size26</font>
+                            <font>Size26</font>
                             <align>center</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -897,7 +899,7 @@
                             <posx>1140</posx>
                             <width>440</width>
                             <height>40</height>
-                            <font>size26</font>
+                            <font>Size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -908,7 +910,7 @@
                             <posx>1720</posx>
                             <width>280</width>
                             <height>40</height>
-                            <font>size26</font>
+                            <font>Size26</font>
                             <align>right</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -1079,7 +1081,7 @@
                     <top>20</top>
                     <width>300</width>
                     <height>20</height>
-                    <font>size26</font>
+                    <font>Size26</font>
                     <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1091,7 +1093,7 @@
                     <top>20</top>
                     <width>600</width>
                     <height>20</height>
-                    <font>size26</font>
+                    <font>Size26</font>
                     <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1103,7 +1105,7 @@
                     <top>20</top>
                     <width>140</width>
                     <height>20</height>
-                    <font>size26</font>
+                    <font>Size26</font>
                     <textcolor>black</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -1151,7 +1153,7 @@
                             <top>0</top>
                             <width>640</width>
                             <height>40</height>
-                            <font>size26</font>
+                            <font>Size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
@@ -1223,7 +1225,7 @@
                             <top>0</top>
                             <width>640</width>
                             <height>40</height>
-                            <font>size26</font>
+                            <font>Size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>White</textcolor>
