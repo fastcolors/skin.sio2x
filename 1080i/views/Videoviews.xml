@@ -744,9 +744,9 @@
                     <width>1920</width>
                     <height>1020</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
                     <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">-</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
                     <onup>53</onup>
                     <ondown>53</ondown>
                     <viewtype label="536">Grid</viewtype>
@@ -806,14 +806,14 @@
                             </control>
                         </control>
                     </focusedlayout>
-                    <itemlayout condition="!Container.Content(Addons)" height="300" width="200">
+                    <itemlayout condition="!Container.Content(Addons) + !Container.Content(Episodes)" height="300" width="200">
                         <control type="image">
                             <posx>35</posx>
                             <top>24</top>
                             <width>197</width>
                             <height>294</height>
                             <texture background="true">$VAR[Locandine]</texture>
-                            <aspectratio>scale</aspectratio>
+                            <aspectratio>keep</aspectratio>
                         </control>
                         <control type="group">
                             <visible>container.content(TVshows) | container.content(seasons)</visible>
@@ -858,7 +858,7 @@
                             <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
                         </control>
                     </itemlayout>
-                    <focusedlayout condition="!Container.Content(Addons)" height="300" width="200">
+                    <focusedlayout condition="!Container.Content(Addons) + !Container.Content(Episodes)" height="300" width="200">
                         <control type="group">
                             <animation effect="zoom" center="140,35" end="130" time="200" reversible="true">Focus</animation>
                             <animation effect="zoom" center="140,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
@@ -890,7 +890,7 @@
                                     <width>197</width>
                                     <height>294</height>
                                     <texture background="true">$VAR[Locandine]</texture>
-                                    <aspectratio>scale</aspectratio>
+                                    <aspectratio>keep</aspectratio>
                                 </control>
                                 <control type="group">
                                     <visible>container.content(TVshows) | container.content(seasons)</visible>
