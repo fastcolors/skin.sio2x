@@ -229,7 +229,7 @@
         <value condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[31048]</value>
         <value condition="Control.IsVisible(312)">$LOCALIZE[20387]</value>
         <value condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">$LOCALIZE[31048]</value>
-        <value condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[20410]</value>
+        <value condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[31015]</value>
         <value>$LOCALIZE[20386]</value>
     </variable>
 

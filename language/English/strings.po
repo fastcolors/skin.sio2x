@@ -76,8 +76,8 @@ msgid "Current Playlist"
 msgstr "Current Playlist"
 
 msgctxt "#31015"
-msgid "-"
-msgstr "-"
+msgid "Trailers"
+msgstr "Trailers"
 
 msgctxt "#31016"
 msgid "Last Updated"
@@ -85,7 +85,7 @@ msgstr "Last Updated"
 
 msgctxt "#31017"
 msgid "-description for item 3-"
-msgstr "-"
+msgstr "-description for item 3-"
 
 msgctxt "#31018"
 msgid "Choose Addon for Lyrics Search & Download"

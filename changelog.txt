@@ -1,3 +1,10 @@
+2.1.2
+* Extended and improved Iconview
+* Some Code Cleanup.
+
+2.1.1
+* Fixes for broken EPG
+
 2.1.0
 * Added Option to show Apple trailers Folders on shelf as a 3rd option >Recent >InProgress >Trailers
 * Fix for selection color in subtitles Dialog

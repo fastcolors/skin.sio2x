@@ -616,7 +616,7 @@
             <visible>Container(50).HasFocus(1001)</visible>
             <control type="radiobutton" id="103" description="Movie Watchlist">
                 <include>SettingsSubmenuButtons</include>
-                <label>$LOCALIZE[20410]</label>
+                <label>$LOCALIZE[31015]</label>
                 <selected>Skin.HasSetting(trailershelf)</selected>
                 <enable>!Skin.HasSetting(hidemovie) + System.HasAddon(plugin.video.itunes_trailers)</enable>
                 <onclick>Skin.ToggleSetting(trailershelf)</onclick>
