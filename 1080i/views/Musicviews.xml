@@ -151,13 +151,12 @@
                     <label>$INFO[ListItem.Property(Album_Label)]</label>
                 </control>
                 <control type="image" description="Stars">
-                    <left>225</left>
-                    <top>120</top>
-                    <visible>!IsEmpty(ListItem.Rating)</visible>
-                    <height>40</height>
-                    <width>250</width>
+                    <centerleft>350</centerleft>
+                    <top>90</top>
+                    <height>30</height>
+                    <width>150</width>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+                    <texture colordiffuse="FF000000">$INFO[ListItem.StarRating]</texture>
                 </control>
             </control>
             <control type="group">
@@ -202,24 +201,13 @@
                     <label>$INFO[ListItem.Property(Album_Label)]</label>
                 </control>
                 <control type="image" description="Stars">
-                    <left>225</left>
-                    <top>120</top>
-                    <visible>!IsEmpty(ListItem.Rating)</visible>
-                    <height>40</height>
-                    <width>250</width>
+                    <centerleft>350</centerleft>
+                    <top>90</top>
+                    <height>30</height>
+                    <width>150</width>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+                    <texture colordiffuse="FF000000">$INFO[ListItem.StarRating]</texture>
                 </control>
-            </control>
-            <control type="image" description="Stars">
-                <visible>Container.Content(Episodes)</visible>
-                <right>300</right>
-                <top>10</top>
-                <visible>!IsEmpty(ListItem.Rating)</visible>
-                <height>50</height>
-                <width>300</width>
-                <aspectratio>keep</aspectratio>
-                <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
             </control>
             <control type="group">
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
