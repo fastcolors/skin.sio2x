@@ -15,13 +15,13 @@
         <textcolor>black</textcolor>
     </include>
     <include name="MoviesShortcutsCommons">
-        <animation effect="slide" start="0,0" end="-1920,0" time="400" reversible="true" condition="Container(311).Position(6) | Container(311).Position(7) | Container(311).Position(8) | Container(311).Position(9) | Container(311).Position(10) | Container(311).Position(11)">Conditional</animation>
-        <animation effect="slide" start="0,0" end="-3840,0" time="400" reversible="true" condition="Container(311).Position(12) | Container(311).Position(13) | Container(311).Position(14) | Container(311).Position(15) | Container(311).Position(16) | Container(311).Position(17)">Conditional</animation>
-        <animation effect="slide" start="0,0" end="-5760,0" time="400" reversible="true" condition="Container(311).Position(18) | Container(311).Position(19) | Container(311).Position(20) | Container(311).Position(21) | Container(311).Position(22) | Container(311).Position(23)">Conditional</animation>
-        <animation effect="slide" start="0,0" end="-7680,0" time="400" reversible="true" condition="Container(311).Position(24) | Container(311).Position(25) | Container(311).Position(26) | Container(311).Position(27) | Container(311).Position(28) | Container(311).Position(29)">Conditional</animation>
+        <!--<animation effect="slide" start="0,0" end="-1920,0" time="400" reversible="true" condition="Container(311).Position(6) | Container(311).Position(7) | Container(311).Position(8) | Container(311).Position(9) | Container(311).Position(10) | Container(311).Position(11)">Conditional</animation>-->
+        <!--<animation effect="slide" start="0,0" end="-3840,0" time="400" reversible="true" condition="Container(311).Position(12) | Container(311).Position(13) | Container(311).Position(14) | Container(311).Position(15) | Container(311).Position(16) | Container(311).Position(17)">Conditional</animation>-->
+        <!--<animation effect="slide" start="0,0" end="-5760,0" time="400" reversible="true" condition="Container(311).Position(18) | Container(311).Position(19) | Container(311).Position(20) | Container(311).Position(21) | Container(311).Position(22) | Container(311).Position(23)">Conditional</animation>-->
+        <!--<animation effect="slide" start="0,0" end="-7680,0" time="400" reversible="true" condition="Container(311).Position(24) | Container(311).Position(25) | Container(311).Position(26) | Container(311).Position(27) | Container(311).Position(28) | Container(311).Position(29)">Conditional</animation>-->
         <include>ShelfFade</include>
         <top>50</top>
-        <width>8000</width>
+        <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
@@ -131,13 +131,13 @@
 
     </include>
     <include name="FavShortcutsCommons">
-        <animation effect="slide" start="0,0" end="-1920,0" time="400" reversible="true" condition="Container(319).Position(6) | Container(319).Position(7) | Container(319).Position(8) | Container(319).Position(9) | Container(319).Position(10) | Container(319).Position(11)">Conditional</animation>
-        <animation effect="slide" start="0,0" end="-3840,0" time="400" reversible="true" condition="Container(319).Position(12) | Container(319).Position(13) | Container(319).Position(14) | Container(319).Position(15) | Container(319).Position(16) | Container(319).Position(17)">Conditional</animation>
-        <animation effect="slide" start="0,0" end="-5760,0" time="400" reversible="true" condition="Container(319).Position(18) | Container(319).Position(19) | Container(319).Position(20) | Container(319).Position(21) | Container(319).Position(22) | Container(319).Position(23)">Conditional</animation>
-        <animation effect="slide" start="0,0" end="-7680,0" time="400" reversible="true" condition="Container(319).Position(24) | Container(319).Position(25) | Container(319).Position(26) | Container(319).Position(27) | Container(319).Position(28) | Container(319).Position(29)">Conditional</animation>
+        <!--<animation effect="slide" start="0,0" end="-1920,0" time="400" reversible="true" condition="Container(319).Position(6) | Container(319).Position(7) | Container(319).Position(8) | Container(319).Position(9) | Container(319).Position(10) | Container(319).Position(11)">Conditional</animation>-->
+        <!--<animation effect="slide" start="0,0" end="-3840,0" time="400" reversible="true" condition="Container(319).Position(12) | Container(319).Position(13) | Container(319).Position(14) | Container(319).Position(15) | Container(319).Position(16) | Container(319).Position(17)">Conditional</animation>-->
+        <!--<animation effect="slide" start="0,0" end="-5760,0" time="400" reversible="true" condition="Container(319).Position(18) | Container(319).Position(19) | Container(319).Position(20) | Container(319).Position(21) | Container(319).Position(22) | Container(319).Position(23)">Conditional</animation>-->
+        <!--<animation effect="slide" start="0,0" end="-7680,0" time="400" reversible="true" condition="Container(319).Position(24) | Container(319).Position(25) | Container(319).Position(26) | Container(319).Position(27) | Container(319).Position(28) | Container(319).Position(29)">Conditional</animation>-->
         <include>ShelfFade</include>
         <top>50</top>
-        <width>8000</width>
+        <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
@@ -459,13 +459,13 @@
         </focusedlayout>
     </include>
     <include name="EpisodeNextCommons">
-        <animation effect="slide" start="0,0" end="-1920,0" time="400" reversible="true" condition="Container(311).Position(6) | Container(311).Position(7) | Container(311).Position(8) | Container(311).Position(9) | Container(311).Position(10) | Container(311).Position(11)">Conditional</animation>
-        <animation effect="slide" start="0,0" end="-3840,0" time="400" reversible="true" condition="Container(311).Position(12) | Container(311).Position(13) | Container(311).Position(14) | Container(311).Position(15) | Container(311).Position(16) | Container(311).Position(17)">Conditional</animation>
-        <animation effect="slide" start="0,0" end="-5760,0" time="400" reversible="true" condition="Container(311).Position(18) | Container(311).Position(19) | Container(311).Position(20) | Container(311).Position(21) | Container(311).Position(22) | Container(311).Position(23)">Conditional</animation>
-        <animation effect="slide" start="0,0" end="-7680,0" time="400" reversible="true" condition="Container(311).Position(24) | Container(311).Position(25) | Container(311).Position(26) | Container(311).Position(27) | Container(311).Position(28) | Container(311).Position(29)">Conditional</animation>
+        <!--<animation effect="slide" start="0,0" end="-1920,0" time="400" reversible="true" condition="Container(311).Position(6) | Container(311).Position(7) | Container(311).Position(8) | Container(311).Position(9) | Container(311).Position(10) | Container(311).Position(11)">Conditional</animation>-->
+        <!--<animation effect="slide" start="0,0" end="-3840,0" time="400" reversible="true" condition="Container(311).Position(12) | Container(311).Position(13) | Container(311).Position(14) | Container(311).Position(15) | Container(311).Position(16) | Container(311).Position(17)">Conditional</animation>-->
+        <!--<animation effect="slide" start="0,0" end="-5760,0" time="400" reversible="true" condition="Container(311).Position(18) | Container(311).Position(19) | Container(311).Position(20) | Container(311).Position(21) | Container(311).Position(22) | Container(311).Position(23)">Conditional</animation>-->
+        <!--<animation effect="slide" start="0,0" end="-7680,0" time="400" reversible="true" condition="Container(311).Position(24) | Container(311).Position(25) | Container(311).Position(26) | Container(311).Position(27) | Container(311).Position(28) | Container(311).Position(29)">Conditional</animation>-->
         <include>ShelfFade</include>
         <top>50</top>
-        <width>8000</width>
+        <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
@@ -588,100 +588,6 @@
             </control>
         </focusedlayout>
     </include>
-    <!--<include name="EpisodeNextCommons">-->
-    <!--<include>ShelfFade</include>-->
-    <!--<top>82</top>-->
-    <!--<width>1920</width>-->
-    <!--<height>452</height>-->
-    <!--<orientation>horizontal</orientation>-->
-    <!--<scrolltime>400</scrolltime>-->
-    <!--<itemlayout condition="Library.HasContent(TVShows)" height="357" width="480">-->
-    <!--<control type="image">-->
-    <!--<left>23</left>-->
-    <!--<top>128</top>-->
-    <!--<width>433</width>-->
-    <!--<height>242</height>-->
-    <!--<texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>-->
-    <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
-    <!--</control>-->
-    <!--<control type="group">-->
-    <!--<control type="image">-->
-    <!--<left>23</left>-->
-    <!--<top>35</top>-->
-    <!--<width>433</width>-->
-    <!--<height>93</height>-->
-    <!--<texture diffuse="images/EpisodesTop.png">$INFO[ListItem.label2]</texture>-->
-    <!--</control>-->
-    <!--</control>-->
-    <!--<control type="group">-->
-    <!--<visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>-->
-    <!--<control type="label">-->
-    <!--<posx>240</posx>-->
-    <!--<top>310</top>-->
-    <!--<width>375</width>-->
-    <!--<height>36</height>-->
-    <!--<font>size26</font>-->
-    <!--<textcolor>white</textcolor>-->
-    <!--<shadowcolor>black</shadowcolor>-->
-    <!--<label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>-->
-    <!--<align>center</align>-->
-    <!--</control>-->
-    <!--</control>-->
-    <!--<control type="label">-->
-    <!--<posx>240</posx>-->
-    <!--<top>0</top>-->
-    <!--<width>450</width>-->
-    <!--<height>30</height>-->
-    <!--<font>size26</font>-->
-    <!--<textcolor>black</textcolor>-->
-    <!--<label>[B]$INFO[ListItem.Label][/B]</label>-->
-    <!--<align>center</align>-->
-    <!--</control>-->
-    <!--</itemlayout>-->
-    <!--<focusedlayout condition="Library.HasContent(TVShows)" height="357" width="480">-->
-    <!--<control type="image">-->
-    <!--<left>23</left>-->
-    <!--<top>128</top>-->
-    <!--<width>433</width>-->
-    <!--<height>242</height>-->
-    <!--<texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>-->
-    <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
-    <!--</control>-->
-    <!--<control type="group">-->
-    <!--<control type="image">-->
-    <!--<left>23</left>-->
-    <!--<top>35</top>-->
-    <!--<width>433</width>-->
-    <!--<height>93</height>-->
-    <!--<texture diffuse="images/EpisodesTop.png">$INFO[ListItem.label2]</texture>-->
-    <!--</control>-->
-    <!--</control>-->
-    <!--<control type="group">-->
-    <!--<visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>-->
-    <!--<control type="label">-->
-    <!--<posx>240</posx>-->
-    <!--<top>310</top>-->
-    <!--<width>375</width>-->
-    <!--<height>36</height>-->
-    <!--<font>size26</font>-->
-    <!--<textcolor>white</textcolor>-->
-    <!--<shadowcolor>black</shadowcolor>-->
-    <!--<label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>-->
-    <!--<align>center</align>-->
-    <!--</control>-->
-    <!--</control>-->
-    <!--<control type="label">-->
-    <!--<posx>240</posx>-->
-    <!--<top>0</top>-->
-    <!--<width>450</width>-->
-    <!--<height>30</height>-->
-    <!--<font>size26</font>-->
-    <!--<textcolor>black</textcolor>-->
-    <!--<label>[B]$INFO[ListItem.Label][/B]</label>-->
-    <!--<align>center</align>-->
-    <!--</control>-->
-    <!--</focusedlayout>-->
-    <!--</include>-->
     <include name="movshelslider">
         <control type="image">
             <visible>Control.HasFocus(311)</visible>
