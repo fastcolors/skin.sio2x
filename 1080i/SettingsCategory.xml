@@ -101,7 +101,8 @@
                 <width>auto</width>
                 <height>80</height>
                 <font>size26</font>
-                <label>DF Settings LeVeL : </label>
+                <!--todo settings level label-->
+                <label>Settings LeVeL : </label>
             </control>
             <control type="button" id="20">
                 <description>Setting level button</description>
@@ -132,7 +133,6 @@
                 <label>$INFO[Control.GetLabel(6)]</label>
                 <align>justify</align>
             </control>
-
         </control>
     </controls>
 </window>

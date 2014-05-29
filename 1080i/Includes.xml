@@ -4,7 +4,14 @@
     <include file="Includes_Variables.xml" />
     <include file="Defaults.xml" />
     <include file="CommonViews.xml" />
-    <include file="views/Videoviews.xml" />
+    <!--VIDEOVIEWS-->
+    <include file="views/fatlist.xml" />
+    <include file="views/plainlist.xml" />
+    <include file="views/banners.xml" />
+    <include file="views/fanart.xml" />
+    <include file="views/icons.xml" />
+    <include file="views/sio2.xml" />
+    <!--VIDEOVIEWS-->
     <include file="views/Musicviews.xml" />
     <include file="views/PVRviews.xml" />
     <include file="views/Programviews.xml" />
@@ -18,8 +25,7 @@
     </include>
     <include name="BlackBackground">
         <control type="group">
-            <visible>![[Container.Content(Addons) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(movies)] + [Control.IsVisible(51) | Control.IsVisible(53)]]</visible>
-        <control type="image" description="Default BG">
+          <control type="image" description="Default BG">
             <left>0</left>
             <top>0</top>
             <width>1920</width>

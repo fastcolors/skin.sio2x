@@ -301,7 +301,7 @@
                 <font>size20</font>
                 <align>center</align>
                 <autoscroll>false</autoscroll>
-                <label>• • $INFO[ListItem.Tagline] • •</label>
+                <label>• •  $INFO[ListItem.Year,(,)] • $INFO[ListItem.Property(Album_Label)] • •</label>
             </control>
             <!--INFOS-->
             <control type="grouplist" description="Infos">
@@ -342,14 +342,6 @@
                     <textcolor>gray</textcolor>
                     <label>$LOCALIZE[21896]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Disbanded)][/B][/COLOR]</label>
                 </control>
-                <control type="label">
-                    <visible>!Container.Content(Artists) + !IsEmpty(ListItem.Year)</visible>
-                    <width>700</width>
-                    <height>20</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[345]: [COLOR Silver][B]$INFO[ListItem.Year][/B][/COLOR]</label>
-                </control>
                 <control type="textbox">
                     <visible>!IsEmpty(ListItem.Property(Artist_Style)) + !IsEmpty(ListItem.Property(Album_Style))</visible>
                     <width>700</width>
@@ -368,15 +360,7 @@
                     <autoscroll>false</autoscroll>
                     <label>$LOCALIZE[175]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Mood)]$INFO[ListItem.Property(Album_Mood)][/B][/COLOR]</label>
                 </control>
-                <control type="label">
-                    <visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
-                    <width>700</width>
-                    <height>20</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[21899]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Label)][/B][/COLOR]</label>
-                </control>
-                <control type="label">
+                <control type="instrument">
                     <visible>!IsEmpty(ListItem.Property(Artist_Instrument))</visible>
                     <width>700</width>
                     <height>20</height>
@@ -417,6 +401,32 @@
                     <label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
                 </control>
             </control>
+            <!--<control type="list">-->
+                <!--<left>85</left>-->
+                    <!--<top>100</top>-->
+                    <!--<width>500</width>-->
+                    <!--<height>450</height>-->
+                    <!--<onup>noop</onup>-->
+                    <!--<ondown>noop</ondown>-->
+                    <!--<onright>52</onright>-->
+                    <!--<itemlayout width="500" height="30">-->
+                        <!--<control type="label">-->
+                            <!--<height>50</height>-->
+                            <!--<width>500</width>-->
+                            <!--<font>size20</font>-->
+                            <!--<label>$INFO[ListItem.Label]</label>-->
+                        <!--</control>-->
+                    <!--</itemlayout>-->
+                    <!--<focusedlayout width="500" height="30">-->
+                        <!--<control type="label">-->
+                            <!--<height>50</height>-->
+                            <!--<width>500</width>-->
+                            <!--<font>size20</font>-->
+                            <!--<label>$INFO[ListItem.Label]</label>-->
+                        <!--</control>-->
+                    <!--</focusedlayout>-->
+                    <!--<content>musicdb://albums/10</content>-->
+                <!--</control>-->
             <control type="textbox" description="plots">
                 <left>60</left>
                 <top>550</top>

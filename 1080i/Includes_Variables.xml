@@ -24,10 +24,12 @@
         <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
         <value>$LOCALIZE[13113]</value>
     </variable>
+
     <variable name="WatchStatus" description="status">
         <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay/]</value>
         <value>$INFO[ListItem.Overlay]</value>
     </variable>
+
     <variable name="RootLabel" description="Windows Name and Items details">
         <value condition="Container.content(movies) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342]</value>
         <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
@@ -65,6 +67,7 @@
         <value condition="Container.Content(Seasons) | Container.Content(TVShows)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]$INFO[ListItem.MPAA, • ]</value>
         <value>$INFO[ListItem.Label2]</value>
     </variable>
+
     <!--variable name="MPAAS">
      <value condition="substring(ListItem.MPAA,TV)">$INFO[ListItem.MPAA]</value>
      <value condition="substring(ListItem.MPAA,PG-13)">PG-13</value>
@@ -75,6 +78,7 @@
      <value condition="substring(ListItem.MPAA,G)">G</value>
      <value>NA</value>
    </variable-->
+
     <variable name="Plots">
         <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
         <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
@@ -84,10 +88,12 @@
         <value condition="Container.Content(artists) + !IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
         <value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
     </variable>
+
     <variable name="pvrosd" description="pvrOSDchoiche">
         <value condition="Skin.HasSetting(osdch)">$LOCALIZE[19069]</value>
         <value >$LOCALIZE[19019]</value>
     </variable>
+
     <variable name="helptext">
         <value condition="Controlgroup(575).HasFocus(1)">$LOCALIZE[31018]</value>
         <value condition="Controlgroup(575).HasFocus(2)">$LOCALIZE[21383]</value>
@@ -106,6 +112,7 @@
         <!--<value condition="Controlgroup(575).HasFocus(20)">$LOCALIZE[31089]</value>-->
         <!--<value condition="Controlgroup(575).HasFocus(13)"></value>-->
     </variable>
+
     <variable name="settingsmain">
         <value condition="Container(575).HasFocus(1)">$LOCALIZE[31079]</value>
         <value condition="Container(575).HasFocus(3)">$LOCALIZE[31077]</value>
@@ -117,6 +124,7 @@
         <value condition="Container(575).HasFocus(14)">$LOCALIZE[31090]</value>
         <value condition="Container(575).HasFocus(2)">$LOCALIZE[31095]</value>
     </variable>
+
     <variable name="settingsmainico">
         <value condition="Container(575).HasFocus(1)">help/appearence.png</value>
         <value condition="Container(575).HasFocus(3)">icons/movies.png</value>
@@ -131,11 +139,13 @@
         <value condition="Container(575).HasFocus(6)">help/infos.png</value>
         <value condition="Container(575).HasFocus(7)">help/Warning.png</value>
     </variable>
+
     <variable name="nowplay">
         <value condition="Pvr.IsPlayingTV">$INFO[]</value>
         <value condition="IsEmpty(Player.Art(tvshow.poster))">$INFO[VideoPlayer.Cover]</value>
         <value>$INFO[Player.Art(tvshow.poster)]</value>
     </variable>
+
     <variable name="Locandine">
         <value condition="Container.Content(episodes) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
@@ -146,16 +156,19 @@
         <value condition="ListItem.IsStereoscopic">images/dvdbox3d.png</value>
         <value>images/dvdbox.png</value>
     </variable>
+
     <variable name="fanart">
         <value condition="StringCompare(ListItem.Label,..) + !IsEmpty(Skin.String(CustomBgHome))">$INFO[Skin.String(CustomBgHome)]</value>
         <value condition="IsEmpty(ListItem.Art(fanart)) | Container.Content(Albums) | Container.Content(episodes)">$INFO[ListItem.Icon]</value>
         <value>$INFO[ListItem.Art(fanart)]</value>
     </variable>
+
     <variable name="bgimg">
         <value condition="!IsEmpty(Skin.String(CustomBgHome)) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value>special://skin/backgrounds/light_texture.jpg</value>
     </variable>
+
     <variable name="filebrowserthumb">
         <value condition="SubString(Control.GetLabel(412),jpg) | SubString(Control.GetLabel(412),png)">$INFO[Control.GetLabel(412)]</value>
         <value>$INFO[ListItem.Icon]</value>

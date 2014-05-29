@@ -4,7 +4,6 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
-
     <views>52,51,50,53,55,500</views>
     <!--
    52 Sio2
@@ -17,7 +16,14 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <include>Videoviews</include>
+        <!--VIEWS-->
+        <include>sio2view</include>
+        <include>plainlist</include>
+        <include>fatlist</include>
+        <include>fanart</include>
+        <include>icons</include>
+        <include>banners</include>
+        <!--VIEWSEND-->
         <include>WindowsTopInfos</include>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !Window.IsVisible(traktContextMenu.xml)</visible>

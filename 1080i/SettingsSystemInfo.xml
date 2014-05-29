@@ -60,11 +60,11 @@
                 </control>
             </control>
             <control type="grouplist" description="Stage">
-                <posx>250</posx>
-                <top>200</top>
+                <centerleft>960</centerleft>
+                <top>170</top>
                 <width>1420</width>
                 <height>860</height>
-                <itemgap>9</itemgap>
+                <itemgap>10</itemgap>
                 <control type="label" id="21">
                     <description>CPU Text</description>
                     <width>1420</width>
@@ -74,10 +74,10 @@
                 <control type="progress" id="22" description="CPU BAR">
                     <width>1420</width>
                     <height>15</height>
-                    <texturebg border="0,5,5,0">MusicOSD/ProgressBG.png</texturebg>
-                    <midtexture border="0,5,0,5">MusicOSD/ProgressM.png</midtexture>
-                    <righttexture border="0,5,6,5">MusicOSD/ProgressR.png</righttexture>
-                    <lefttexture border="6,5,0,5">MusicOSD/ProgressL.png</lefttexture>
+                    <texturebg border="6,0,6,0">progress/ProgressBG.png</texturebg>
+                    <midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
+                    <righttexture border="1,1,6,1">progress/ProgressR.png</righttexture>
+                    <lefttexture border="6,1,1,1">progress/ProgressL.png</lefttexture>
                     <overlaytexture>-</overlaytexture>
                     <info>System.CPUUsage</info>
                 </control>
@@ -91,10 +91,10 @@
                     <description>Memory BAR</description>
                     <height>15</height>
                     <width>1420</width>
-                    <texturebg border="0,5,5,0">MusicOSD/ProgressBG.png</texturebg>
-                    <midtexture border="0,5,0,5">MusicOSD/ProgressM.png</midtexture>
-                    <righttexture border="0,5,6,5">MusicOSD/ProgressR.png</righttexture>
-                    <lefttexture border="6,5,0,5">MusicOSD/ProgressL.png</lefttexture>
+                   <texturebg border="6,0,6,0">progress/ProgressBG.png</texturebg>
+                    <midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
+                    <righttexture border="1,1,6,1">progress/ProgressR.png</righttexture>
+                    <lefttexture border="6,1,1,1">progress/ProgressL.png</lefttexture>
                     <overlaytexture>-</overlaytexture>
                     <info>system.memory(used)</info>
                 </control>
@@ -163,6 +163,37 @@
                     <align>center</align>
                     <font>size27</font>
                 </control>
+            </control>
+        </control>
+        <control type="grouplist">
+            <top>18</top>
+            <right>40</right>
+            <orientation>horizontal</orientation>
+            <itemgap>16</itemgap>
+            <align>right</align>
+            <control type="image" description="WebLink">
+                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                <width>30</width>
+                <height>48</height>
+                <texture>wireless.png</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="label" description="Battery">
+                <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,20) + !Skin.HasSetting(hideconnection)</visible>
+                <posx>35r</posx>
+                <posy>20</posy>
+                <width min="30" max="500">auto</width>
+                <height>45</height>
+                <font>size30</font>
+                <textcolor>White</textcolor>
+                <label>$INFO[System.BatteryLevel] Batt.</label>
+            </control>
+            <control type="label" description="Clock">
+                <visible>!Skin.HasSetting(HideClock)</visible>
+                <width min="30" max="500">auto</width>
+                <height>45</height>
+                <font>size28</font>
+                <label>$INFO[System.Time]</label>
             </control>
         </control>
     </controls>
