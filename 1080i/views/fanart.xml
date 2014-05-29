@@ -13,9 +13,9 @@
             <control type="fixedlist" id="500" description="Shortcuts">
                 <visible>Container.content(movies) | container.content(seasons) | container.content(tvshows)</visible>
                 <onup condition="!Skin.HasSetting(ViewsMenuOff)">9000</onup>
-                <onup condition="Skin.HasSetting(ViewsMenuOff)">-</onup>
+                <onup condition="Skin.HasSetting(ViewsMenuOff)">noop</onup>
                 <ondown condition="!Skin.HasSetting(Scrollbars_Passive)">60</ondown>
-                <ondown condition="Skin.HasSetting(Scrollbars_Passive)">-</ondown>
+                <ondown condition="Skin.HasSetting(Scrollbars_Passive)">noop</ondown>
                 <onleft>500</onleft>
                 <onright>500</onright>
                 <viewtype label="$LOCALIZE[20445]">Fanart</viewtype>

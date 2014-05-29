@@ -19,7 +19,7 @@
                     <ondown>noop</ondown>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">-</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
                     <preloaditems>4</preloaditems>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>300</scrolltime>

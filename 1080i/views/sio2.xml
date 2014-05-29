@@ -11,9 +11,9 @@
                 <height>979</height>
                 <onleft condition="SubString(ListItem.path,videodb://movies/sets/)">990</onleft>
                 <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
+                <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
                 <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                <onright condition="Skin.HasSetting(Scrollbars_Passive)">-</onright>
+                <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
                 <onup>52</onup>
                 <ondown>52</ondown>
                 <pagecontrol>60</pagecontrol>

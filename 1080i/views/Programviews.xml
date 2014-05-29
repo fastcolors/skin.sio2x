@@ -6,8 +6,6 @@
             <visible>Control.IsVisible(52)</visible>
             <control type="image">
                 <include>Fanart_Fade</include>
-                <posx></posx>
-                <top></top>
                 <width>1920</width>
                 <height>1080</height>
                 <info>ListItem.Art(fanart)</info>
@@ -25,9 +23,9 @@
                 <width>1820</width>
                 <height>810</height>
                 <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                <onleft condition="Skin.HasSetting(ViewsMenuOff)">-</onleft>
+                <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
                 <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                <onright condition="Skin.HasSetting(Scrollbars_Passive)">-</onright>
+                <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
                 <pagecontrol>60</pagecontrol>
