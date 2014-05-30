@@ -7,11 +7,19 @@
     <controls>
         <include>BlackBackground</include>
         <control type="label" id="1" description="Header label">
-            <include>HeadingR</include>
+            <left>960</left>
+            <top>30</top>
+            <width>960</width>
+            <height>60</height>
+            <align>center</align>
+            <aligny>bottom</aligny>
+            <textcolor>black</textcolor>
+            <font>size42</font>
             <label>13406</label>
         </control>
         <control type="group" description="Group 3 Plain list">
             <control type="image">
+                <visible>Control.IsVisible(3)</visible>
                 <left>230</left>
                 <centery>540</centery>
                 <width>500</width>
@@ -28,10 +36,10 @@
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="group">
-                <posx>1020</posx>
+                <left>960</left>
                 <top>150</top>
                 <control type="list" id="3">
-                    <width>802</width>
+                    <width>900</width>
                     <height>888</height>
                     <onleft>5</onleft>
                     <onright>60</onright>
@@ -39,7 +47,7 @@
                     <ondown>3</ondown>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
-                    <itemlayout width="802" height="81">
+                    <itemlayout width="900" height="81">
                         <control type="label" description="Main Label">
                             <visible>!ListItem.IsFolder</visible>
                             <width>765</width>
@@ -54,7 +62,7 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="802" height="81">
+                    <focusedlayout width="900" height="81">
                         <control type="image">
                             <width>802</width>
                             <height>81</height>
@@ -78,115 +86,74 @@
                 </control>
             </control>
         </control>
-        <control type="group" description="Group 6 Thumbs">
-            <control type="group" description="Slider and List">
-                <posx>1020</posx>
-                <top>140</top>
-                <control type="list" id="6">
-                    <width>802</width>
-                    <height>886</height>
+        <control type="group" description="Available Addons">
+            <visible>Control.IsVisible(6)</visible>
+            <control type="group">
+                <left>960</left>
+                <top>100</top>
+                <include>LargeListItemCount</include>
+                <control type="fixedlist" id="6">
+                    <width>920</width>
+                    <height>890</height>
                     <onleft>5</onleft>
                     <onright>60</onright>
                     <onup>6</onup>
                     <ondown>6</ondown>
                     <pagecontrol>60</pagecontrol>
-                    <movement>3</movement>
                     <scrolltime>250</scrolltime>
-                    <itemlayout width="802" height="111">
-                        <control type="image">
-                            <height>111</height>
-                            <width>111</width>
-                            <bordersize>6</bordersize>
-                            <texture>$INFO[ListItem.Icon]</texture>
-                            <aspectratio>keep</aspectratio>
-                        </control>
+                    <focusposition>3</focusposition>
+                    <movement>4</movement>
+                    <preloaditems>4</preloaditems>
+                    <itemlayout width="890" height="111">
                         <control type="group">
-                            <visible>!IsEmpty(ListItem.Property(Addon.Summary))</visible>
+                            <animation condition="IsEmpty(ListItem.Label2)" effect="slide" end="0,18" time="0" reversible="true">Conditional</animation>
                             <control type="label" description="Main Label">
+                                <posx>45</posx>
+                                <width>725</width>
                                 <include>BigListTitle</include>
-                                <label>$INFO[ListItem.Label] - $INFO[ListItem.Label2]</label>
-                            </control>
-                            <control type="label" description="Label2">
-                                <width>640</width>
-                                <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Property(Addon.Summary)]</label>
+                                <label>$INFO[ListItem.label]</label>
                             </control>
                         </control>
-                        <control type="group">
-                            <visible>IsEmpty(ListItem.Property(Addon.Summary))</visible>
-                            <control type="label" description="Main Label">
-                                <include>BigListTitle</include>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label" description="Label2">
-                                <width>640</width>
-                                <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Label2]</label>
-                            </control>
+                        <control type="label" description="Label2">
+                            <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
+                            <posx>45</posx>
+                            <include>BigListDetails</include>
+                            <label>$INFO[ListItem.label2]</label>
                         </control>
-                        <control type="image">
-                            <width>802</width>
-                            <height>1</height>
-                            <texture>lines/Line.png</texture>
-                        </control>
+                        <include>listline</include>
                     </itemlayout>
-                    <focusedlayout width="802" height="111">
-                        <control type="image">
-                            <width>802</width>
-                            <height>111</height>
-                            <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
-                        </control>
-                        <control type="image">
-                            <height>111</height>
-                            <width>111</width>
-                            <bordersize>6</bordersize>
-                            <texture>$INFO[ListItem.Icon]</texture>
-                            <aspectratio>keep</aspectratio>
-                        </control>
+                    <focusedlayout width="890" height="111">
+                        <include>LargeSelector</include>
                         <control type="group">
-                            <visible>!IsEmpty(ListItem.Property(Addon.Summary))</visible>
+                            <animation condition="IsEmpty(ListItem.Label2)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                             <control type="label" description="Main Label">
+                                <posx>45</posx>
+                                <width>725</width>
                                 <include>BigListTitleFO</include>
-                                <label>$INFO[ListItem.Label] - $INFO[ListItem.Label2]</label>
-                            </control>
-                            <control type="label" description="Label2">
-                                <width>640</width>
-                                <include>BigListDetailsFO</include>
-                                <label>$INFO[ListItem.Property(Addon.Summary)]</label>
+                                <label>$INFO[ListItem.label]</label>
                             </control>
                         </control>
-                        <control type="group">
-                            <visible>IsEmpty(ListItem.Property(Addon.Summary))</visible>
-                            <control type="label" description="Main Label">
-                                <include>BigListTitleFO</include>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label" description="Label2">
-                                <width>640</width>
-                                <include>BigListDetailsFO</include>
-                                <label>$INFO[ListItem.Label2]</label>
-                            </control>
+                        <control type="label" description="Label2">
+                            <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
+                            <posx>45</posx>
+                            <width>630</width>
+                            <include>BigListDetailsFO</include>
+                            <label>$INFO[ListItem.label2]</label>
                         </control>
-                        <control type="image">
-                            <width>802</width>
-                            <height>1</height>
-                            <texture>lines/Line.png</texture>
-                        </control>
+                        <include>listline</include>
                     </focusedlayout>
                 </control>
             </control>
         </control>
-        <control type="group" description="Thumbs">
-            <posx>270</posx>
-            <top>315</top>
             <control type="image" description="Item Thumb">
-                <width>450</width>
-                <height>450</height>
+                <centerleft>480</centerleft>
+                <centertop>480</centertop>
+                <width>700</width>
+                <height>700</height>
                 <fadetime>200</fadetime>
                 <texture>$INFO[Container(6).ListItem.Icon]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
-        </control>
         <control type="group" description="Button 5">
             <control type="button" id="5" description="decision button">
                 <top>970</top>
@@ -224,10 +191,19 @@
             <texture>lines/Line.png</texture>
         </control>
         <control type="scrollbar" id="60">
+            <visible>Control.IsVisible(3)</visible>
             <posx>39r</posx>
             <top>135</top>
             <height>870</height>
             <onleft>3</onleft>
+            <onright>noop</onright>
+        </control>
+        <control type="scrollbar" id="60">
+            <visible>Control.IsVisible(6)</visible>
+            <posx>39r</posx>
+            <top>135</top>
+            <height>870</height>
+            <onleft>6</onleft>
             <onright>noop</onright>
         </control>
     </controls>

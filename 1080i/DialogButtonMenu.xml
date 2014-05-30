@@ -94,7 +94,7 @@
                 <texturefocus>BM_LogOffFO.png</texturefocus>
                 <colordiffuse>FFFFFFFF</colordiffuse>
                 <onclick>Activatewindow(29)</onclick>
-                <label>13013</label>
+                <label>20126</label>
             </control>
             <control type="button" id="6" description="TimerOff">
                 <enable>!System.Platform.ATV2 + !System.Platform.IOS</enable>

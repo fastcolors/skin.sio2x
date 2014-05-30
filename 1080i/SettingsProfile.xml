@@ -25,7 +25,7 @@
             <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
         </control>
         <control type="group" description="List" id="575">
-            <posx>960</posx>
+            <left>960</left>
             <top>160</top>
             <control type="list" id="2">
                 <posx>0</posx>
@@ -39,12 +39,6 @@
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>280</scrolltime>
                 <itemlayout height="81">
-                    <control type="image">
-                        <width>80</width>
-                        <height>80</height>
-                        <aspectratio>keep</aspectratio>
-                        <info>ListItem.Icon</info>
-                    </control>
                     <control type="label" description="Main Label">
                         <posx>90</posx>
                         <height>81</height>
@@ -54,16 +48,9 @@
                         <textcolor>White</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <include>listline</include>
                 </itemlayout>
                 <focusedlayout height="81">
                     <include>SmallSelector</include>
-                    <control type="image">
-                        <width>80</width>
-                        <height>80</height>
-                        <aspectratio>keep</aspectratio>
-                        <info>ListItem.Icon</info>
-                    </control>
                     <control type="label" description="Main Label">
                         <posx>90</posx>
                         <height>81</height>
@@ -73,18 +60,25 @@
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <include>listline</include>
                 </focusedlayout>
             </control>
         </control>
         <include>User</include>
         <control type="image">
-            <posx>180</posx>
-            <top>200</top>
+            <centerleft>480</centerleft>
+            <centertop>540</centertop>
             <width>600</width>
-            <height>700</height>
-            <texture fallback="def_user.png">$INFO[Container(2).ListItem.Icon]</texture>
-            <aspectratio>keep</aspectratio>
+            <height>600</height>
+            <aspectratio scalediffuse="false">scale</aspectratio>
+            <texture background="true" diffuse="images/logindiffuse.png" fallback="def_user.png">$INFO[Container(2).ListItem.Icon]</texture>
+        </control>
+        <control type="image">
+            <centerleft>480</centerleft>
+            <centertop>540</centertop>
+            <width>652</width>
+            <height>652</height>
+            <aspectratio>stretch</aspectratio>
+            <texture>images/LoginSlider.png</texture>
         </control>
         <control type="image">
             <top>100</top>
@@ -92,20 +86,6 @@
             <width>1</width>
             <height>1080</height>
             <texture>images/lineV.png</texture>
-        </control>
-        <control type="image">
-            <posx>80</posx>
-            <top>100</top>
-            <width>800</width>
-            <height>1</height>
-            <texture>images/line.png</texture>
-        </control>
-        <control type="image">
-            <posx>80</posx>
-            <top>181</top>
-            <width>800</width>
-            <height>1</height>
-            <texture>images/line.png</texture>
         </control>
     </controls>
 </window>

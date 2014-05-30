@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-        <includes>
-<include name="sio2view">
-<control type="group" description="sio2view">
+<includes>
+    <include name="sio2view">
+        <control type="group" description="sio2view">
             <visible>Control.IsVisible(52)</visible>
             <control type="fixedlist" id="52">
                 <!--<visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>-->
@@ -603,4 +603,4 @@
             </control>
         </control>
     </include>
-    </includes>
+</includes>
