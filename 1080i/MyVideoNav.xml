@@ -136,7 +136,6 @@
                     <label>$LOCALIZE[535]</label>
                 </control>
                 <control type="radiobutton" id="603" description="Icons">
-                    <enable>!IsEmpty(Container.FolderPath)</enable>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(53)</onclick>
                     <selected>Control.IsVisible(53)</selected>
