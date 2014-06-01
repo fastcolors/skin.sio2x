@@ -1,0 +1,15 @@
+<colors>
+	<color name="background">FF000000</color>
+	<color name="White">FFFFFFFF</color>
+    <color name="black">FFFFFFFF</color>
+    <color name="shelffont">FFFFFFFF</color>
+    <color name="shelfshadow">FF000000</color>
+    <color name="white">FF000000</color>
+	<color name="gray">FFEEEEEE</color>
+	<color name="Red">FFFF0000</color>
+	<color name="Blue">FF2261B4</color>
+	<color name="Silver">FFA0A0A0</color>
+	<color name="Disabled">FF676767</color>
+	<color name="Yellow">FFFA9600</color>
+	<color name="invalid">FFFF0000</color>
+</colors>

@@ -175,7 +175,6 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label" description="label">
-                        <animation effect="fade" start="80" end="100" time="300=" delay="300">Focus</animation>
                         <posx>150</posx>
                         <top>220</top>
                         <width>300</width>
