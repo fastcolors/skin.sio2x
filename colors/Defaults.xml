@@ -2,7 +2,7 @@
 	<color name="background">FFEEEEEE</color>
 	<color name="White">FF222222</color>
     <color name="shelffont">FFFFFFFF</color>
-    <color name="shelfshadow">FFFFFFFF</color>
+    <color name="shelfshadow">FF000000</color>
 	<color name="gray">FF555555</color>
 	<color name="Red">FFFF0000</color>
 	<color name="Blue">FF2261B4</color>

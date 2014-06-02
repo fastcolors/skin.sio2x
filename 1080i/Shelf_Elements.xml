@@ -894,17 +894,18 @@
     </include>
     <include name="TV_NA">
     <control type="group">
-            <visible>Container(9000).HasFocus(358)</visible>
             <control type="label" description="Top Label">
+                <visible>Control.IsVisible(311)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
                 <label>[B] $VAR[shelflabel] [/B]</label>
             </control>
-            <control type="panel" id="318" description="TOP Shortcuts">
+            <control type="panel" id="311" description="TOP Shortcuts">
+                <visible>Container(9000).HasFocus(358)</visible>
                 <onup>9009</onup>
                 <ondown>9000</ondown>
-                <onleft>312</onleft>
-                <onright>312</onright>
+                <onleft>311</onleft>
+                <onright>311</onright>
                 <include>EpisodeNextCommons</include>
                 <content>
                     <item id="1" description="Episodes1">

@@ -1,6 +1,8 @@
 2.1.2
 * Extended and improved Iconview
 * Some Code Cleanup.
+* Introduction of Black Theme
+* fixes here and there
 
 2.1.1
 * Fixes for broken EPG
