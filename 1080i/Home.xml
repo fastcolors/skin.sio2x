@@ -14,7 +14,7 @@
                 <top>26</top>
                 <width>34</width>
                 <height>34</height>
-                <texturefocus aspectratio="keep">images/hometoggle.png</texturefocus>
+                <texturefocus aspectratio="keep" colordiffuse="black">images/hometoggle.png</texturefocus>
                 <!--MOVIES-->
                 <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">Skin.SetString(moviesshelf,)</onclick>
                 <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL) + Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,TR)</onclick>
@@ -27,7 +27,7 @@
                 <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),top) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,custom)</onclick>
                 <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),custom) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>
                 <onclick  condition="Control.IsVisible(315)">noop</onclick>
-                <colordiffuse>FF000000</colordiffuse>
+                <colordiffuse>black</colordiffuse>
                 <onclick condition="Control.IsVisible(312)">ReplaceWindow(0)</onclick>
                 <onup>noop</onup>
                 <!--<ondown condition="!IntegerGreaterThan(Container(313).NumItems,0)">noop</ondown>-->
@@ -173,6 +173,7 @@
                         <height>168</height>
                         <texture>images/atvslider.png</texture>
                         <aspectratio>stretch</aspectratio>
+                        <colordiffuse>black</colordiffuse>
                     </control>
                     <control type="label" description="label">
                         <posx>150</posx>
@@ -191,14 +192,7 @@
             </control>
             <control type="group" description="Furniture">
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-                <!--<control type="image" description="Stage">-->
-                <!--<width>1920</width>-->
-                <!--<height>1080</height>-->
-                <!--<aspectratio>stretch</aspectratio>-->
-                <!--<texture>images/HomeBG.png</texture>-->
-                <!--<colordiffuse>colorselect</colordiffuse>-->
-                <!--</control>-->
-                <control type="image" description="Line">
+                 <control type="image" description="Line">
                     <posx>-90</posx>
                     <top>503</top>
                     <width>2100</width>

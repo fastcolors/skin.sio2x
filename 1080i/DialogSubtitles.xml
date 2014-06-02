@@ -127,7 +127,7 @@
                         <width>60</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="FF000000">icon_sync.png</texture>
+                        <texture colordiffuse="black">icon_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="label">
@@ -186,7 +186,7 @@
                         <width>60</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="FF000000">icon_sync.png</texture>
+                        <texture colordiffuse="black">icon_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="label">

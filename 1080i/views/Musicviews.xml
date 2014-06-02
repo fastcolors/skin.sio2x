@@ -106,7 +106,7 @@
                 <top>60</top>
                 <width>1500</width>
                 <height>1</height>
-                <texture>lines/Line.png</texture>
+                <texture colordiffuse="black">lines/Line.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="group">
@@ -156,7 +156,7 @@
                     <height>30</height>
                     <width>150</width>
                     <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="FF000000">$INFO[ListItem.StarRating]</texture>
+                    <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
                 </control>
             </control>
             <control type="group">
@@ -206,7 +206,7 @@
                     <height>30</height>
                     <width>150</width>
                     <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="FF000000">$INFO[ListItem.StarRating]</texture>
+                    <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
                 </control>
             </control>
             <control type="group">
@@ -281,14 +281,14 @@
                         <top>90</top>
                         <width>120</width>
                         <height>55</height>
-                        <texture colordiffuse="FF000000">$INFO[ListItem.StarRating]</texture>
+                        <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
                         <posx>1280</posx>
                         <width>500</width>
                         <height>1</height>
-                        <texture>lines/LineL.png</texture>
+                        <texture colordiffuse="black">lines/LineL.png</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="140">
@@ -330,14 +330,14 @@
                         <top>90</top>
                         <width>120</width>
                         <height>55</height>
-                        <texture colordiffuse="FF000000">$INFO[ListItem.StarRating]</texture>
+                        <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
                         <posx>1280</posx>
                         <width>500</width>
                         <height>1</height>
-                        <texture>lines/LineL.png</texture>
+                        <texture colordiffuse="black">lines/LineL.png</texture>
                     </control>
                 </focusedlayout>
             </control>
@@ -505,13 +505,13 @@
                 <top>-100</top>
                 <height>1280</height>
                 <width>1</width>
-                <texture>lines/LineV.png</texture>
+                <texture colordiffuse="black">lines/LineV.png</texture>
             </control>
             <control type="image">
                 <top>550</top>
                 <height>1</height>
                 <width>1340</width>
-                <texture>lines/LineR.png</texture>
+                <texture colordiffuse="black">lines/LineR.png</texture>
             </control>
             <control type="group">
                 <control type="image">
@@ -531,18 +531,6 @@
                     <aspectratio align="left">scale</aspectratio>
                 </control>
             </control>
-            <!--<control type="image" description="sfumatura sotto lista">-->
-            <!--<animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,6)" end="0,-140">Conditional</animation>-->
-            <!--<animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,4)" end="0,-140">Conditional</animation>-->
-            <!--<animation effect="slide" condition="!IntegerGreaterThan(Container.NumItems,2)" end="0,-140">Conditional</animation>-->
-            <!--<animation effect="slide" condition="IntegerGreaterThan(Container.NumItems,6) + !Container.HasNext" end="0,-140" time="220" reversible="true">Conditional</animation>-->
-            <!--<top>1080</top>-->
-            <!--<left>1340</left>-->
-            <!--<height>60</height>-->
-            <!--<width>580</width>-->
-            <!--<texture diffuse="images/ombra.png" flipy="true">lines/LineL.png</texture>-->
-            <!--<colordiffuse>88FFFFFF</colordiffuse>-->
-            <!--</control>-->
             <control type="group">
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
                 <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>

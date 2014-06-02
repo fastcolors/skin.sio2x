@@ -34,7 +34,18 @@
                 <colordiffuse>white</colordiffuse>
             </control>
             <control type="image" description="Default BG">
-                <visible>!Window.IsActive(Home.xml)</visible>
+                <visible>!Window.IsActive(Home.xml) + Skin.HasTheme(Black)</visible>
+                <left>0</left>
+                <top>0</top>
+                <width>1920</width>
+                <height>1080</height>
+                <fadetime>200</fadetime>
+                <texture background="true">$VAR[bgimg]</texture>
+                <aspectratio align="left">scale</aspectratio>
+                <colordiffuse>55FFFFFF</colordiffuse>
+            </control>
+            <control type="image" description="Default BG">
+                <visible>!Window.IsActive(Home.xml) + !Skin.HasTheme(Black)</visible>
                 <left>0</left>
                 <top>0</top>
                 <width>1920</width>
@@ -209,7 +220,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>giant</font>
-                <textcolor>white</textcolor>
+                <textcolor>shelffont</textcolor>
                 <label>$INFO[ListItem.SortLetter]</label>
             </control>
         </control>
@@ -459,7 +470,7 @@
                 <top>879</top>
                 <width>960</width>
                 <height>1</height>
-                <texture>lines/Line.png</texture>
+                <texture colordiffuse="black">lines/Line.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
         </control>

@@ -84,14 +84,14 @@
                         <top>90</top>
                         <width>120</width>
                         <height>55</height>
-                        <texture colordiffuse="FF000000">$INFO[ListItem.StarRating]</texture>
+                        <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
                         <posx>1280</posx>
                         <width>500</width>
                         <height>1</height>
-                        <texture>lines/LineL.png</texture>
+                        <texture colordiffuse="black">lines/LineL.png</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="140">
@@ -163,14 +163,14 @@
                         <top>90</top>
                         <width>120</width>
                         <height>55</height>
-                        <texture colordiffuse="FF000000">$INFO[ListItem.StarRating]</texture>
+                        <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
                         <posx>1280</posx>
                         <width>500</width>
                         <height>1</height>
-                        <texture>lines/LineL.png</texture>
+                        <texture colordiffuse="black">lines/LineL.png</texture>
                     </control>
                 </focusedlayout>
             </control>
@@ -581,7 +581,7 @@
                 <posx>1340</posx>
                 <height>1080</height>
                 <width>1</width>
-                <texture>lines/LineV.png</texture>
+                <texture colordiffuse="black">lines/LineV.png</texture>
             </control>
             <control type="group">
                 <top>85</top>

@@ -121,7 +121,8 @@
             <width>500</width>
             <height>500</height>
             <aspectratio>keep</aspectratio>
-            <texture colordiffuse="FF000000">$VAR[settingsmainico]</texture>
+            <texture>$VAR[settingsmainico]</texture>
+            <colordiffuse>black</colordiffuse>
         </control>
         <control type="textbox" description="infos">
             <visible>Control.HasFocus(575)</visible>

@@ -2,7 +2,7 @@
 <window id="2006">
     <defaultcontrol always="true">-</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <backgroundcolor>FF000000</backgroundcolor>
+    <backgroundcolor>black</backgroundcolor>
     <onload condition="system.hasaddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
     <controls>
         <control type="group">

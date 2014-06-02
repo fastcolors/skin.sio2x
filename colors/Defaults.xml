@@ -10,4 +10,5 @@
 	<color name="Disabled">FF676767</color>
 	<color name="Yellow">FFFA9600</color>
 	<color name="invalid">FFFF0000</color>
+    <color name="searchband">99FFFFFF</color>
 </colors>

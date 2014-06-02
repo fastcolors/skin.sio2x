@@ -53,14 +53,14 @@
                             <width>150</width>
                             <colordiffuse>black</colordiffuse>
                             <aspectratio align="left">keep</aspectratio>
-                            <texture>$INFO[ListItem.StarRating]</texture>
+                            <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
                         </control>
                         <control type="image" description="Separator">
                             <posx>0</posx>
                             <height>1</height>
                             <width>780</width>
                             <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="FF000000">lines/Line1.png</texture>
+                            <texture colordiffuse="black">lines/Line1.png</texture>
                         </control>
                         <control type="grouplist" description="Labels">
                             <posx>20</posx>

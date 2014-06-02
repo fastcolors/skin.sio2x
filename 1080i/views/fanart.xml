@@ -124,7 +124,7 @@
                     <top>515</top>
                     <width>1300</width>
                     <height>1</height>
-                    <texture>lines/LineL.png</texture>
+                    <texture colordiffuse="black">lines/LineL.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="group">
@@ -134,13 +134,13 @@
                         <posx>550</posx>
                         <width>620</width>
                         <height>1</height>
-                        <texture>lines/LineSH.png</texture>
+                        <texture colordiffuse="black">lines/LineSH.png</texture>
                     </control>
                     <control type="image" description="lineplot">
                         <top>80</top>
                         <width>1724</width>
                         <height>1</height>
-                        <texture>lines/LineSH.png</texture>
+                        <texture colordiffuse="black">lines/LineSH.png</texture>
                     </control>
                     <control type="textbox" description="Plot">
                         <top>80</top>
@@ -157,7 +157,7 @@
                         <top>410</top>
                         <width>1724</width>
                         <height>1</height>
-                        <texture>lines/LineSH.png</texture>
+                        <texture colordiffuse="black">lines/LineSH.png</texture>
                     </control>
                     <control type="label">
                         <top>440</top>
@@ -233,27 +233,11 @@
                 <onup>500</onup>
                 <ondown>500</ondown>
                 <orientation>horizontal</orientation>
-                <texturesliderbackground border="6">Scrollbar/HScrollbarBG.png</texturesliderbackground>
-                <texturesliderbar border="6">Scrollbar/HScrollerNF.png</texturesliderbar>
-                <texturesliderbarfocus border="6">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
+                <texturesliderbackground border="4">Scrollbar/HScrollbarBG.png</texturesliderbackground>
+                <texturesliderbar border="4">Scrollbar/HScrollerNF.png</texturesliderbar>
+                <texturesliderbarfocus border="4">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
                 <showonepage>false</showonepage>
             </control>
         </control>
-        <!--<control type="label">-->
-        <!--&lt;!&ndash;<visible>Container.Scrolling</visible>&ndash;&gt;-->
-        <!--<animation effect="slide" end="-1700,-1000" condition="Control.IsVisible(53)">Conditional</animation>-->
-        <!--<animation effect="slide" end="-580,0" condition="Control.IsVisible(52)">Conditional</animation>-->
-        <!--<description>Page Count Label</description>-->
-        <!--<posx>40r</posx>-->
-        <!--<top>50r</top>-->
-        <!--<width>500</width>-->
-        <!--<height>20</height>-->
-        <!--<font>font12</font>-->
-        <!--<textcolor>gray</textcolor>-->
-        <!--<scroll>false</scroll>-->
-        <!--<align>right</align>-->
-        <!--<aligny>center</aligny>-->
-        <!--<label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>-->
-        <!--</control>-->
     </include>
 </includes>

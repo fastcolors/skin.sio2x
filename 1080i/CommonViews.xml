@@ -389,14 +389,14 @@
                     <width>150</width>
                     <colordiffuse>black</colordiffuse>
                     <aspectratio align="left">keep</aspectratio>
-                    <texture>$INFO[ListItem.StarRating]</texture>
+                    <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
                 </control>
                 <control type="image" description="Separator">
                     <posx>0</posx>
                     <height>1</height>
                     <width>780</width>
                     <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="FF000000">lines/Line1.png</texture>
+                    <texture colordiffuse="black">lines/Line1.png</texture>
                 </control>
                 <control type="grouplist" description="Labels">
                     <posx>20</posx>
@@ -436,7 +436,7 @@
         <height>24</height>
         <width>135</width>
         <aspectratio align="right">keep</aspectratio>
-        <texture>$INFO[ListItem.StarRating]</texture>
+        <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
     </include>
     <include name="52MainLabel">
         <posx>45</posx>
@@ -846,7 +846,7 @@
                     <width>150</width>
                     <colordiffuse>Silver</colordiffuse>
                     <aspectratio align="left">keep</aspectratio>
-                    <texture>$INFO[ListItem.StarRating]</texture>
+                    <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
                 </control>
                 <control type="image">
                     <visible>Container.content(songs) + !IsEmpty(ListItem.FileExtension)</visible>
@@ -1121,7 +1121,7 @@
             <top>-300</top>
             <width>1</width>
             <height>1680</height>
-            <texture>lines/LineV.png</texture>
+            <texture colordiffuse="black">lines/LineV.png</texture>
         </control>
     </include>
     <include name="SmallSelector">
@@ -1144,7 +1144,7 @@
         <control type="image">
             <width>900</width>
             <height>1</height>
-            <texture>lines/LineL.png</texture>
+            <texture colordiffuse="black">lines/LineL.png</texture>
         </control>
     </include>
 </includes>

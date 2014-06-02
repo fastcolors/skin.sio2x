@@ -517,8 +517,8 @@
                     <width>244</width>
                     <height>160</height>
                     <font>size22</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
+                    <textcolor>shelffont</textcolor>
+                    <shadowcolor>shelfshadow</shadowcolor>
                     <autoscroll>false</autoscroll>
                     <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
                     <align>center</align>
@@ -579,8 +579,8 @@
                     <width>244</width>
                     <height>160</height>
                     <font>size22</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
+                    <textcolor>shelffont</textcolor>
+                    <shadowcolor>shelfshadow</shadowcolor>
                     <autoscroll>false</autoscroll>
                     <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
                     <align>center</align>

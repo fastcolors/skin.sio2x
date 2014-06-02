@@ -102,7 +102,6 @@
                                 <texture background="true" diffuse="images/DiffuseBanner.png">$INFO[ListItem.Art(banner)]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
-
                             <control type="image">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                                 <posx>729</posx>
@@ -143,7 +142,7 @@
                 <top>140</top>
                 <width>1674</width>
                 <height>1</height>
-                <texture>lines/LineL.png</texture>
+                <texture colordiffuse="black">lines/LineL.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" description="Media details">
@@ -185,7 +184,7 @@
                 <control type="image">
                     <height>1</height>
                     <width>500</width>
-                    <texture>Lines/line.png</texture>
+                    <texture colordiffuse="black">Lines/line.png</texture>
                 </control>
                 <control type="textbox" description="Plot">
                     <top>300</top>
@@ -200,7 +199,7 @@
                 <control type="image">
                     <height>1</height>
                     <width>500</width>
-                    <texture>Lines/line.png</texture>
+                    <texture colordiffuse="black">Lines/line.png</texture>
                 </control>
             </control>
             <control type="image" description="Bottom fade">

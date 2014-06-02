@@ -12,7 +12,7 @@
             <height>200</height>
             <aspectratio>keep</aspectratio>
             <texture></texture>
-            <!--<colordiffuse>FF000000</colordiffuse>-->
+            <!--<colordiffuse>black</colordiffuse>-->
             <animation effect="fade" start="40" end="40" condition="True">Conditional</animation>
         </control>
         <control type="group" id="102">

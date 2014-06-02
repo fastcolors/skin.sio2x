@@ -296,8 +296,7 @@
                 <top>60</top>
                 <width>1500</width>
                 <height>1</height>
-                <texture>lines/Line.png</texture>
-                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="black">lines/Line.png</texture>
             </control>
             <control type="group">
                 <visible>!Container.Content(episodes)</visible>
