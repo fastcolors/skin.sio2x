@@ -21,7 +21,6 @@
                 <align>center</align>
                 <font>size36</font>
                 <textcolor>White</textcolor>
-
                 <animation effect="fade" time="200">VisibleChange</animation>
             </control>
             <control type="slider" id="11" description="Slider">

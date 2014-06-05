@@ -42,7 +42,7 @@
                         <top>3</top>
                         <width>330</width>
                         <height>210</height>
-                        <bordertexture border="1">images/ThumbBorder2.png</bordertexture>
+                        <bordertexture colordiffuse="black">images/white.png</bordertexture>
                         <bordersize>4</bordersize>
                         <aspectratio>scale</aspectratio>
                         <info>ListItem.Icon</info>
@@ -63,7 +63,7 @@
                         <top>3</top>
                         <width>330</width>
                         <height>210</height>
-                        <bordertexture border="1">images/ThumbBorder3.png</bordertexture>
+                        <bordertexture colordiffuse="black">images/white.png</bordertexture>
                         <bordersize>4</bordersize>
                         <info>ListItem.Icon</info>
                         <aspectratio>scale</aspectratio>

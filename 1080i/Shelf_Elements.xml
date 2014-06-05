@@ -292,16 +292,6 @@
                     <texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
-                <!--<control type="image">-->
-                <!--<visible>Control.IsVisible(313)+!Skin.HasSetting(RecordOff) + !Skin.HasSetting(MusicShelf_Custom)</visible>-->
-                <!--<animation effect="slide" end="60,0" time="400" delay="100">Focus</animation>-->
-                <!--<posx>30</posx>-->
-                <!--<posy>46</posy>-->
-                <!--<width>324</width>-->
-                <!--<height>324</height>-->
-                <!--<texture>images/record.png</texture>-->
-                <!--<aspectratio>keep</aspectratio>-->
-                <!--</control>-->
                 <control type="image">
                     <posx>30</posx>
                     <top>46</top>
@@ -387,8 +377,8 @@
                         <width>375</width>
                         <height>36</height>
                         <font>size26</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
+                        <textcolor>shelffont</textcolor>
+                        <shadowcolor>shelfshadow</shadowcolor>
                         <label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>
                         <align>center</align>
                     </control>
@@ -434,8 +424,8 @@
                         <width>375</width>
                         <height>36</height>
                         <font>size26</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
+                        <textcolor>shelffont</textcolor>
+                        <shadowcolor>shelfshadow</shadowcolor>
                         <label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>
                         <align>center</align>
                     </control>
@@ -893,7 +883,7 @@
         </control>
     </include>
     <include name="TV_NA">
-    <control type="group">
+        <control type="group">
             <control type="label" description="Top Label">
                 <visible>Control.IsVisible(311)</visible>
                 <include>ShelfFade</include>

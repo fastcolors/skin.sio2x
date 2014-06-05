@@ -37,11 +37,11 @@
                 <posx>22</posx>
                 <top>75</top>
                 <width>755</width>
-                <height>8</height>
-                <texturebg>progress/ProgressBG.png</texturebg>
-                <midtexture>progress/ProgressM.png</midtexture>
-                <righttexture>progress/ProgressR.png</righttexture>
-                <lefttexture>progress/ProgressL.png</lefttexture>
+                <height>9</height>
+                <texturebg border="4">progress/ProgressBG.png</texturebg>
+                <midtexture border="4">progress/ProgressM.png</midtexture>
+                <righttexture border="4">progress/ProgressR.png</righttexture>
+                <lefttexture border="4">progress/ProgressL.png</lefttexture>
             </control>
         </control>
     </controls>

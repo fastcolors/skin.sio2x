@@ -81,12 +81,11 @@
             </control>
         </control>
         <control type="image">
-            <posx>0</posx>
             <top>1002</top>
             <height>72</height>
             <width>1920</width>
             <aspectratio>stretch</aspectratio>
-            <texture>images/BlackT.png</texture>
+            <texture colordiffuse="white">images/BlackT.png</texture>
         </control>
         <control type="image" description="Line bott">
             <top>1002</top>

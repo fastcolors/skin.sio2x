@@ -158,33 +158,35 @@
     </include>
 
     <include name="WindowsTopInfos">
-        <control type="group">
-            <control type="image">
-                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
-                <posx>55r</posx>
-                <width>30</width>
-                <height>75</height>
-                <texture>wireless.png</texture>
-            </control>
-            <control type="image">
-                <visible>!System.InternetState + !Skin.HasSetting(hideconnection)</visible>
-                <posx>55r</posx>
-                <width>30</width>
-                <height>75</height>
-                <texture>wireless.png</texture>
-                <colordiffuse>44FFFFFF</colordiffuse>
-            </control>
+        <control type="grouplist">
+            <right>25</right>
+            <align>right</align>
+            <orientation>horizontal</orientation>
+            <itemgap>5</itemgap>
             <control type="label" description="Clock">
                 <visible>!Skin.HasSetting(HideClock)</visible>
-                <posx>60r</posx>
                 <width>195</width>
-                <height>75</height>
+                <height>69</height>
                 <align>right</align>
                 <aligny>center</aligny>
                 <font>size30</font>
                 <textcolor>White</textcolor>
                 <label>$INFO[System.Time]</label>
             </control>
+            <control type="image">
+                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                <width>30</width>
+                <height>75</height>
+                <texture colordiffuse="black">wireless.png</texture>
+            </control>
+            <control type="image">
+                <visible>!System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                <width>30</width>
+                <height>75</height>
+                <texture>wireless.png</texture>
+                <colordiffuse>44FFFFFF</colordiffuse>
+            </control>
+
         </control>
         <!--VIEWTOPINFOS-->
         <control type="grouplist">

@@ -457,32 +457,6 @@
                     <label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
                 </control>
             </control>
-            <!--<control type="list">-->
-            <!--<left>85</left>-->
-            <!--<top>100</top>-->
-            <!--<width>500</width>-->
-            <!--<height>450</height>-->
-            <!--<onup>noop</onup>-->
-            <!--<ondown>noop</ondown>-->
-            <!--<onright>52</onright>-->
-            <!--<itemlayout width="500" height="30">-->
-            <!--<control type="label">-->
-            <!--<height>50</height>-->
-            <!--<width>500</width>-->
-            <!--<font>size20</font>-->
-            <!--<label>$INFO[ListItem.Label]</label>-->
-            <!--</control>-->
-            <!--</itemlayout>-->
-            <!--<focusedlayout width="500" height="30">-->
-            <!--<control type="label">-->
-            <!--<height>50</height>-->
-            <!--<width>500</width>-->
-            <!--<font>size20</font>-->
-            <!--<label>$INFO[ListItem.Label]</label>-->
-            <!--</control>-->
-            <!--</focusedlayout>-->
-            <!--<content>musicdb://albums/10</content>-->
-            <!--</control>-->
             <control type="textbox" description="plots">
                 <left>60</left>
                 <top>550</top>
@@ -550,7 +524,7 @@
             </control>
         </control>
         <!-- FANART -->
-        <control type="group" description="Musiclay">
+        <control type="group" description="Fanart">
             <top>40</top>
             <visible>Control.IsVisible(500)</visible>
             <include>VisibleFade</include>
@@ -673,18 +647,6 @@
                 <showonepage>false</showonepage>
             </control>
         </control>
-        <!--<control type="label">-->
-        <!--<description>Page Count Label</description>-->
-        <!--<posx>40r</posx>-->
-        <!--<top>50r</top>-->
-        <!--<width>500</width>-->
-        <!--<height>20</height>-->
-        <!--<font>font12</font>-->
-        <!--<textcolor>gray</textcolor>-->
-        <!--<scroll>false</scroll>-->
-        <!--<align>right</align>-->
-        <!--<aligny>center</aligny>-->
-        <!--<label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>-->
-        <!--</control>-->
+
     </include>
 </includes>
