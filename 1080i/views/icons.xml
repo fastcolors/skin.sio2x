@@ -395,7 +395,7 @@
                     <centerleft>350</centerleft>
                     <width>600</width>
                     <height>400</height>
-                    <texture background="true">$VAR[bgimg]</texture>
+                    <texture>$VAR[bgimg]</texture>
                     <aspectratio>keep</aspectratio>
                     <fadetime>200</fadetime>
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>
@@ -499,7 +499,7 @@
                     <centerleft>350</centerleft>
                     <width>600</width>
                     <height>400</height>
-                    <texture background="true">$VAR[bgimg]</texture>
+                    <texture>$VAR[bgimg]</texture>
                     <aspectratio>keep</aspectratio>
                     <fadetime>200</fadetime>
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>

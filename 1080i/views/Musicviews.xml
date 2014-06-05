@@ -124,8 +124,9 @@
                     <height>168</height>
                     <texture border="30" colordiffuse="$VAR[diffuseselect]">images/ProgressBG.png</texture>
                 </control>
+                <control type="group">
+                <animation condition="IsEmpty(ListItem.Property(Album_Label))" effect="slide" end="0,15">Conditional</animation>
                 <control type="label" description="Title">
-                    <animation condition="IsEmpty(ListItem.Label2)" effect="slide" end="0,20">Conditional</animation>
                     <left>10</left>
                     <top>4</top>
                     <width>680</width>
@@ -142,14 +143,6 @@
                     <font>size26</font>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
-                <control type="label">
-                    <top>125</top>
-                    <height>20</height>
-                    <width>700</width>
-                    <font>size22</font>
-                    <align>center</align>
-                    <label>$INFO[ListItem.Property(Album_Label)]</label>
-                </control>
                 <control type="image" description="Stars">
                     <centerleft>350</centerleft>
                     <top>90</top>
@@ -157,6 +150,15 @@
                     <width>150</width>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
+                </control>
+                </control>
+                <control type="label">
+                    <top>125</top>
+                    <height>20</height>
+                    <width>700</width>
+                    <font>size22</font>
+                    <align>center</align>
+                    <label>$INFO[ListItem.Property(Album_Label)]</label>
                 </control>
             </control>
             <control type="group">
@@ -174,8 +176,9 @@
                     <height>168</height>
                     <texture border="30" flipx="true"  colordiffuse="$VAR[diffuseselect]">images/ProgressBG.png</texture>
                 </control>
+                <control type="group">
+                <animation condition="IsEmpty(ListItem.Property(Album_Label))" effect="slide" end="0,15">Conditional</animation>
                 <control type="label" description="Title">
-                    <animation condition="IsEmpty(ListItem.Label2)" effect="slide" end="0,20">Conditional</animation>
                     <left>10</left>
                     <top>4</top>
                     <width>680</width>
@@ -192,14 +195,6 @@
                     <font>size26</font>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
-                <control type="label">
-                    <top>125</top>
-                    <height>20</height>
-                    <width>700</width>
-                    <font>size22</font>
-                    <align>center</align>
-                    <label>$INFO[ListItem.Property(Album_Label)]</label>
-                </control>
                 <control type="image" description="Stars">
                     <centerleft>350</centerleft>
                     <top>90</top>
@@ -207,6 +202,15 @@
                     <width>150</width>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
+                </control>
+                </control>
+                <control type="label">
+                    <top>125</top>
+                    <height>20</height>
+                    <width>700</width>
+                    <font>size22</font>
+                    <align>center</align>
+                    <label>$INFO[ListItem.Property(Album_Label)]</label>
                 </control>
             </control>
             <control type="group">

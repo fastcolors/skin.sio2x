@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.sio2x" version="2.1.2" name="SiO2-X" provider-name="FastColors">
+<addon id="skin.sio2x" version="2.1.3" name="SiO2-X" provider-name="FastColors">
     <requires>
         <import addon="xbmc.gui" version="5.0.1"/>
         <import addon="service.skin.widgets" version="0.0.27"/>

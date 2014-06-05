@@ -136,23 +136,23 @@
             <visible>Control.HasFocus(4)</visible>
             <centerleft>585</centerleft>
             <centertop>290</centertop>
-            <width>230</width>
-            <height>230</height>
+            <width>255</width>
+            <height>255</height>
             <texture fallback="DefaultAddonNone.png">$INFO[Container(4).ListItem.Icon]</texture>
             <aspectratio aligny="top">scale</aspectratio>
-            <bordertexture>-</bordertexture>
-            <bordersize>1</bordersize>
+            <bordertexture colordiffuse="black">images/white.png</bordertexture>
+            <bordersize>2</bordersize>
         </control>
         <control type="image" description="Addon Icon">
             <visible>!Control.HasFocus(4)</visible>
             <centerleft>585</centerleft>
             <centertop>290</centertop>
-            <width>230</width>
-            <height>230</height>
+            <width>255</width>
+            <height>255</height>
             <texture fallback="DefaultAddonNone.png">$INFO[ListItem.Icon]</texture>
             <aspectratio aligny="top">scale</aspectratio>
-            <bordertexture>-</bordertexture>
-            <bordersize>1</bordersize>
+            <bordertexture colordiffuse="black">images/white.png</bordertexture>
+            <bordersize>2</bordersize>
         </control>
         <control type="image" description="topSplitter">
             <centerleft>960</centerleft>
