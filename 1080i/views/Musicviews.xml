@@ -4,14 +4,9 @@
         <!--LIST-->
         <control type="group" description="Base Music List">
             <visible>Control.IsVisible(50)</visible>
-            <include>BlackBackground</include>
-            <control type="group">
-                <visible>![Container.content(musicvideos) | Container.content(songs]</visible>
-                <include>left_Panel_square</include>
-            </control>
+            <include>left_Panel_music</include>
             <control type="group">
                 <visible>Container.content(musicvideos) | Container.content(songs)</visible>
-                <include>left_Panel_square</include>
                 <include>MusicInfo</include>
             </control>
             <control type="group" description="BigList">

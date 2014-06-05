@@ -634,7 +634,6 @@
     <include name="TV_RA">
         <control type="group">
             <visible>Library.HasContent(TVShows)</visible>
-            <visible>!Container(9000).HasFocus(358)</visible>
             <control type="label" description="Top Label">
                 <animation effect="slide" end="480,0" time="400" condition="!Container(312).HasPrevious + !Skin.HasSetting(IntruderTV)">Conditional</animation>
                 <visible>Control.IsVisible(312)</visible>
@@ -754,7 +753,6 @@
     <include name="TV_WL">
         <control type="group">
             <visible>Library.HasContent(TVShows)</visible>
-            <visible>!Container(9000).HasFocus(358)</visible>
             <control type="label" description="Top Label">
                 <animation effect="slide" end="480,0" time="400" condition="!Container(312).HasPrevious + !Skin.HasSetting(IntruderTV)">Conditional</animation>
                 <visible>Control.IsVisible(312)</visible>

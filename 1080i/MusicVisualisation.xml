@@ -2,7 +2,7 @@
 <window id="2006">
     <defaultcontrol always="true">-</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <backgroundcolor>black</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <onload condition="system.hasaddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
     <controls>
         <control type="group">
@@ -311,8 +311,8 @@
                             <width>123</width>
                             <align>left</align>
                             <label>[B]$INFO[Player.Time][/B]</label>
+                            <textcolor>gray</textcolor>
                             <font>size26</font>
-                            <textcolor>2</textcolor>
                         </control>
                         <control type="progress" description="Progress Bar">
                             <posx>357</posx>
@@ -335,7 +335,7 @@
                             <align>right</align>
                             <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
                             <font>size26</font>
-                            <textcolor>2</textcolor>
+                            <textcolor>gray</textcolor>
                         </control>
                         <control type="label">
                             <posx>777</posx>
@@ -363,7 +363,7 @@
                 <width>1920</width>
                 <height>60</height>
                 <texture>images/white.png</texture>
-                <colordiffuse>AAFFFFFF</colordiffuse>
+                <colordiffuse>white</colordiffuse>
             </control>
             <control type="label" description="row 1 sys label">
                 <posx>45</posx>

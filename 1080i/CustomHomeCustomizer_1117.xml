@@ -100,7 +100,7 @@
                             <top>48</top>
                             <height>168</height>
                             <width>260</width>
-                            <texture>images/atvslider.png</texture>
+                            <texture colordiffuse="black">images/atvslider.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label" description="Main Label">

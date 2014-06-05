@@ -128,7 +128,6 @@
                     </control>
                     <include>LargeListSlider</include>
                 </control>
-                <include>ListFade</include>
                 <control type="scrollbar" id="60">
                     <posx>51r</posx>
                     <top>135</top>

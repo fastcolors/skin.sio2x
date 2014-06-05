@@ -21,8 +21,8 @@
     </variable>
 
     <variable name="Fanartdisplaystatus" description="Label2 for music playing FA">
-        <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
-        <value>$LOCALIZE[13113]</value>
+        <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[20445] : $LOCALIZE[449]</value>
+        <value>$LOCALIZE[20445] : $LOCALIZE[13113]</value>
     </variable>
 
     <variable name="WatchStatus" description="status">

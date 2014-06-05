@@ -206,7 +206,7 @@
                     <aspectratio align="left">scale</aspectratio>
                 </control>
             </control>
-                        <control type="group">
+            <control type="group">
                 <top>85</top>
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
                 <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
@@ -226,97 +226,37 @@
             </control>
 
         </control>
-        <!--BIG LIST-->
-        <control type="group">
+        <!--LIST-->
+        <control type="group" description="Base Addons List">
             <visible>Control.IsVisible(50)</visible>
-            <control type="group">
-                <include>Left_Panel_Addons</include>
-            </control>
-            <control type="group" description="Slider and List">
-                <include>LargeListItemCount</include>
-                <posx>1020</posx>
+            <include>Left_Panel_Addons</include>
+            <control type="group" description="BigList">
+                <posx>960</posx>
                 <top>131</top>
                 <control type="fixedlist" id="50">
-                    <posx>0</posx>
-                    <top>0</top>
-                    <width>802</width>
+                    <width>920</width>
                     <height>888</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
                     <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
                     <pagecontrol>60</pagecontrol>
-                    <viewtype label="537">Big list</viewtype>
+                    <viewtype label="50">Big list</viewtype>
                     <focusposition>3</focusposition>
                     <movement>4</movement>
                     <preloaditems>4</preloaditems>
-                    <scrolltime tween="sine" easing="inout">280</scrolltime>
-                    <include>LargeListAddonsLayout</include>
+                    <scrolltime>250</scrolltime>
+                    <include>LargeListLayout</include>
                 </control>
-                <include>LargeListSlider</include>
             </control>
-            <include>ListFade</include>
+            <include>Linemiddle</include>
             <control type="scrollbar" id="60">
                 <posx>51r</posx>
                 <top>135</top>
                 <height>870</height>
                 <onleft>50</onleft>
-                <onright>noop</onright>
-            </control>
-        </control>
-        <!--LIST-->
-        <control type="group" description="51 List base">
-            <visible>Control.IsVisible(51)</visible>
-            <include>Left_Panel_Addons</include>
-            <control type="group" description="Slider and List">
-                <include>SlimListItemCount</include>
-                <posx>1020</posx>
-                <top>131</top>
-                <include>SlimListSlider</include>
-                <control type="fixedlist" id="51">
-                    <posx>0</posx>
-                    <top>0</top>
-                    <width>802</width>
-                    <height>891</height>
-                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-                    <onup>52</onup>
-                    <ondown>52</ondown>
-                    <pagecontrol>60</pagecontrol>
-                    <viewtype label="ATV2List">ATV2List</viewtype>
-                    <focusposition>5</focusposition>
-                    <movement>5</movement>
-                    <preloaditems>4</preloaditems>
-                    <scrolltime tween="sine" easing="inout">280</scrolltime>
-                    <itemlayout width="802" height="81">
-                        <control type="label" description="Main Label">
-                            <width max="609">auto</width>
-                            <include>52MainLabel</include>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout width="802" height="81">
-                        <control type="image">
-                            <animation effect="fade" end="0" time="30">UnFocus</animation>
-                            <width>820</width>
-                            <height>81</height>
-                            <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
-                        </control>
-                        <control type="label" description="Main Label">
-                            <width max="609">auto</width>
-                            <textcolor>black</textcolor>
-                            <include>52MainLabel</include>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                    </focusedlayout>
-                </control>
-            </control>
-            <include>ListFade</include>
-            <control type="scrollbar" id="60">
-                <posx>51r</posx>
-                <top>147</top>
-                <height>882</height>
-                <onleft>52</onleft>
                 <onright>noop</onright>
             </control>
         </control>
@@ -354,29 +294,29 @@
                         <control type="group">
                             <animation effect="zoom" center="140,35" end="130" time="200" reversible="true">Focus</animation>
                             <animation effect="zoom" center="140,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
-                                <include>Scrollanim</include>
-                                <control type="image">
-                                    <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                                    <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                    <posx>19</posx>
-                                    <top>9</top>
-                                    <width>256</width>
-                                    <height>256</height>
-                                    <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
-                                    <aspectratio>stretch</aspectratio>
-                                </control>
-                                <control type="image">
-                                    <posx>35</posx>
-                                    <top>24</top>
-                                    <width>225</width>
-                                    <height>225</height>
-                                    <texture fallback="DefaultAddon.png" background="true">$VAR[Locandine]</texture>
-                                    <aspectratio>scale</aspectratio>
-                                </control>
+                            <include>Scrollanim</include>
+                            <control type="image">
+                                <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                                <posx>19</posx>
+                                <top>9</top>
+                                <width>256</width>
+                                <height>256</height>
+                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
+                                <aspectratio>stretch</aspectratio>
+                            </control>
+                            <control type="image">
+                                <posx>35</posx>
+                                <top>24</top>
+                                <width>225</width>
+                                <height>225</height>
+                                <texture fallback="DefaultAddon.png" background="true">$VAR[Locandine]</texture>
+                                <aspectratio>scale</aspectratio>
+                            </control>
                         </control>
                     </focusedlayout>
                 </control>
-                </control>
+            </control>
             <control type="image" description="Line Split">
                 <centerleft>960</centerleft>
                 <top>60</top>
@@ -427,7 +367,7 @@
                     <texture background="true">$VAR[bgimg]</texture>
                     <aspectratio>keep</aspectratio>
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>
-                     <bordersize>5</bordersize>
+                    <bordersize>5</bordersize>
                 </control>
             </control>
             <control type="group">
@@ -465,18 +405,18 @@
                     <font>size26</font>
                     <label>$VAR[TopLabel]</label>
                 </control>
-                 <control type="image">
+                <control type="image">
                     <top>140</top>
                     <centerleft>350</centerleft>
                     <width>600</width>
                     <height>400</height>
-                     <aspectratio>keep</aspectratio>
+                    <aspectratio>keep</aspectratio>
                     <texture background="true">$VAR[bgimg]</texture>
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>
-                     <bordersize>5</bordersize>
+                    <bordersize>5</bordersize>
                 </control>
-                </control>
-             <control type="group">
+            </control>
+            <control type="group">
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
                 <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
                 <control type="image">
@@ -493,11 +433,10 @@
                     <onright>noop</onright>
                 </control>
             </control>
-            </control>
+        </control>
         <!--FANART-->
         <control type="group">
             <visible>Control.IsVisible(500)</visible>
-            <include>BlackBackground</include>
             <control type="fixedlist" id="500" description="Fanart">
                 <onup>9000</onup>
                 <ondown condition="!Skin.HasSetting(Scrollbars_Passive)">60</ondown>
@@ -512,7 +451,7 @@
                 <orientation>horizontal</orientation>
                 <scrolltime>400</scrolltime>
                 <focusposition>3</focusposition>
-                <movement>2</movement>
+                <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <pagecontrol>60</pagecontrol>
                 <itemlayout height="357" width="354">
@@ -525,10 +464,10 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image" description="Thumb">
-                        <posx>27</posx>
-                        <top>27</top>
-                        <width>303</width>
-                        <height>303</height>
+                        <posx>25</posx>
+                        <top>25</top>
+                        <width>304</width>
+                        <height>304</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
@@ -538,8 +477,10 @@
                         <control type="image" description="Thumb">
                             <posx>7</posx>
                             <top>7</top>
-                            <width>333</width>
-                            <height>333</height>
+                            <width>340</width>
+                            <height>340</height>
+                            <bordertexture colordiffuse="$VAR[diffuseselect]">images/white.png</bordertexture>
+                            <bordersize>20</bordersize>
                             <texture background="true">$INFO[ListItem.Icon]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
@@ -550,28 +491,27 @@
                 <control type="label" description="Item Title">
                     <centerleft>960</centerleft>
                     <top>602</top>
-                    <font>size33B</font>
+                    <font>size39B</font>
                     <textcolor>black</textcolor>
                     <width>1760</width>
                     <align>center</align>
                     <include>Genre51Commons</include>
-                    <label>$INFO[ListItem.Label] [COLOR=]$INFO[ListItem.Label2, • ][/COLOR]</label>
+                    <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label" description="Item Title">
+                    <visible>!StringCompare(ListItem.Label,..)</visible>
                     <centerleft>960</centerleft>
                     <top>35</top>
-                    <font>size33B</font>
                     <textcolor>black</textcolor>
-                    <width>1360</width>
+                    <width>1260</width>
                     <height>45</height>
-                    <font>size39B</font>
                     <align>center</align>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Property(Addon.Creator)] • $LOCALIZE[24051] [COLOR=red]$INFO[ListItem.Label2][/COLOR]</label>
                 </control>
                 <control type="image" description="Line Split">
                     <centerleft>960</centerleft>
-                    <top>657</top>
-                    <width>1890</width>
+                    <top>90</top>
+                    <width>1920</width>
                     <height>1</height>
                     <texture colordiffuse="black">lines/Line.png</texture>
                     <aspectratio>stretch</aspectratio>
@@ -579,7 +519,15 @@
                 <control type="image" description="Line Split">
                     <centerleft>960</centerleft>
                     <top>590</top>
-                    <width>1890</width>
+                    <width>1920</width>
+                    <height>1</height>
+                    <texture colordiffuse="black">lines/Line.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image" description="Line Split">
+                    <centerleft>960</centerleft>
+                    <top>657</top>
+                    <width>1920</width>
                     <height>1</height>
                     <texture colordiffuse="black">lines/Line.png</texture>
                     <aspectratio>stretch</aspectratio>
@@ -587,8 +535,8 @@
                 <control type="textbox">
                     <top>90</top>
                     <centerleft>960</centerleft>
-                    <width>1360</width>
-                    <height>510</height>
+                    <width>1760</width>
+                    <height>500</height>
                     <align>justify</align>
                     <autoscroll delay="3000" time="5000" repeat="10000"></autoscroll>
                     <label>$VAR[Plots]</label>
@@ -691,7 +639,7 @@
                 </content>
             </control>
 
-        <control type="scrollbar" id="60">
+            <control type="scrollbar" id="60">
                 <animation effect="fade" delay="200" time="300">VisibleChange</animation>
                 <posx>198</posx>
                 <top>1045</top>

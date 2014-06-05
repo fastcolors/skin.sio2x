@@ -8,7 +8,7 @@
         <control type="group">
             <control type="group" description="50">
                 <visible>Control.IsVisible(50)</visible>
-                <include>left_Panel_square</include>
+                <include>left_Panel_music</include>
                 <include>MusicInfo</include>
                 <control type="group" description="Slider and List">
                     <include>LargeListItemCount</include>

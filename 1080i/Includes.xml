@@ -186,7 +186,6 @@
                 <texture>wireless.png</texture>
                 <colordiffuse>44FFFFFF</colordiffuse>
             </control>
-
         </control>
         <!--VIEWTOPINFOS-->
         <control type="grouplist">
@@ -236,7 +235,7 @@
                 <label>$INFO[ListItem.SortLetter]</label>
             </control>
         </control>
-        <!--DA FARE-->
+        <!--todo ---->
         <control type="group" description="Player Info">
             <visible>!Control.HasFocus(340) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
             <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>

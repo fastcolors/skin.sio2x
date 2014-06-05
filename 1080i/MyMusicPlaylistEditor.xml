@@ -46,28 +46,6 @@
                 <align>center</align>
                 <label>-</label>
             </control>
-            <control type="image" description="Slider 50">
-                <visible>Control.IsVisible(50)</visible>
-                <posx>60</posx>
-                <top>99</top>
-                <width>600</width>
-                <height>69</height>
-                <texture border="8">images/Buttonselect.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation condition="!Control.HasFocus(50)" effect="fade" start="100" end="0" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,0" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,60" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,120" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,180" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="0,240" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,300" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,360" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(7)" effect="slide" start="0,0" end="0,420" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(8)" effect="slide" start="0,0" end="0,480" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(9)" effect="slide" start="0,0" end="0,540" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(10)" effect="slide" start="0,0" end="0,600" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(50).Position(11)" effect="slide" start="0,0" end="0,660" time="180" reversible="true">Conditional</animation>
-            </control>
             <control type="fixedlist" id="50">
                 <posx>60</posx>
                 <top>93</top>
@@ -93,6 +71,7 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="60" width="600">
+                    <include>SmallSelector</include>
                     <control type="label">
                         <posx>15</posx>
                         <width>570</width>

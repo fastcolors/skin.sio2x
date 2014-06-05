@@ -331,7 +331,7 @@
                 <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
                 <width>30</width>
                 <height>48</height>
-                <texture>wireless.png</texture>
+                <texture colordiffuse="black">wireless.png</texture>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="label" description="Battery">

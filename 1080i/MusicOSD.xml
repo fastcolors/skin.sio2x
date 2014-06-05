@@ -163,8 +163,7 @@
                 </control>
                 <control type="button" id="556" description="Fanart">
                     <include>ButtonMenu</include>
-                    <label>$LOCALIZE[20445]</label>
-                    <label2>[COLOR=2]$VAR[Fanartdisplaystatus][/COLOR]</label2>
+                    <label>$VAR[Fanartdisplaystatus]</label>
                     <onclick>Skin.ToggleSetting(MusicPlayingFanart)</onclick>
                 </control>
                 <control type="button" id="500">
