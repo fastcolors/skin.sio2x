@@ -60,7 +60,7 @@
                             <scroll>true</scroll>
                             <align>center</align>
                             <scroll>false</scroll>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor></shadowcolor>
                             <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
                         </control>
@@ -121,7 +121,7 @@
                                 <scroll>true</scroll>
                                 <align>center</align>
                                 <scroll>false</scroll>
-                                <textcolor>white</textcolor>
+                                <textcolor>FFFFFFFF</textcolor>
                                 <shadowcolor>-</shadowcolor>
                                 <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
                             </control>

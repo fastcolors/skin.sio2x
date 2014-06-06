@@ -60,13 +60,13 @@
                             <texture>Badges/Badgecount.png</texture>
                         </control>
                         <control type="label">
-                            <top>4</top>
+                            <top>3</top>
                             <left>30</left>
                             <height>40</height>
                             <width>50</width>
                             <font>size21</font>
                             <align>center</align>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
                         </control>
@@ -139,13 +139,13 @@
                             <texture>Badges/Badgecount.png</texture>
                         </control>
                         <control type="label">
-                            <top>4</top>
+                            <top>3</top>
                             <left>30</left>
                             <height>40</height>
                             <width min="20" max="50">auto</width>
                             <font>size21</font>
                             <align>center</align>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
                         </control>

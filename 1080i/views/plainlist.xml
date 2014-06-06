@@ -3,7 +3,7 @@
     <include name="plainlist">
 <control type="group" description="List">
             <visible>Control.IsVisible(51)</visible>
-            <include>left_Panel_plain</include>
+            <include>left_Panel</include>
             <include>Linemiddle</include>
             <control type="group" description="Slider and List">
                 <include>SlimListItemCount</include>
