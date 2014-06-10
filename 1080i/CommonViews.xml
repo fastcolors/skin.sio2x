@@ -13,7 +13,6 @@
         <align>center</align>
         <aligny>center</aligny>
         <textoffsetx>0</textoffsetx>
-        <focusedcolor>black</focusedcolor>
         <font>size33B</font>
     </include>
     <!--PANEL FOR BIG LIST-->

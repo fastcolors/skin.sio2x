@@ -159,65 +159,154 @@
 
     <include name="WindowsTopInfos">
         <control type="grouplist">
-            <right>25</right>
+            <right>15</right>
             <align>right</align>
             <orientation>horizontal</orientation>
             <itemgap>5</itemgap>
             <control type="label" description="Clock">
                 <visible>!Skin.HasSetting(HideClock)</visible>
                 <width>195</width>
-                <height>69</height>
+                <height>40</height>
                 <align>right</align>
                 <aligny>center</aligny>
-                <font>size30</font>
+                <font>size21</font>
                 <textcolor>White</textcolor>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="image">
                 <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
-                <width>30</width>
-                <height>75</height>
+                <width>25</width>
+                <height>42</height>
                 <texture colordiffuse="black">wireless.png</texture>
+                <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
                 <visible>!System.InternetState + !Skin.HasSetting(hideconnection)</visible>
                 <width>30</width>
-                <height>75</height>
+                <height>42</height>
                 <texture>wireless.png</texture>
                 <colordiffuse>44FFFFFF</colordiffuse>
             </control>
         </control>
         <!--VIEWTOPINFOS-->
-        <control type="grouplist">
-            <animation condition="Control.IsVisible(575)" effect="slide" end="0,-30">Conditional</animation>
-            <animation condition="Control.IsVisible(52)" effect="slide" end="220,0">Conditional</animation>
-            <animation condition="Control.IsVisible(53)" effect="slide" end="-480,-40">Conditional</animation>
-            <animation condition="Control.IsVisible(55)" effect="slide" end="-1250,-40">Conditional</animation>
-            <animation condition="Control.IsVisible(500)" effect="slide" end="-1250,-40">Conditional</animation>
-            <animation condition="Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]" effect="slide" end="-480,-40">Conditional</animation>
+        <control type="grouplist" description="LIST + BIGLIST">
+            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+            <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
             <top>40</top>
             <centerleft>1440</centerleft>
-            <width>560</width>
-            <height>75</height>
+            <width>880</width>
+            <height>60</height>
             <align>center</align>
-            <aligny>bottom</aligny>
             <orientation>horizontal</orientation>
             <control type="label" id="7777" description="Heading">
-                <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
                 <width>auto</width>
-                <height>75</height>
+                <height>60</height>
                 <font>size42</font>
                 <scroll>false</scroll>
                 <label>$VAR[RootLabel]</label>
             </control>
             <control type="label" description="Number of files">
-                <visible>!StringCompare(Container.NumItems,0)</visible>
-                <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
-                <width min="60" max="120">auto</width>
-                <height>81</height>
-                <font>size26</font>
+                <width>auto</width>
+                <height>70</height>
+                <font>size22</font>
                 <textcolor>gray</textcolor>
-                <label>$INFO[Container.NumItems,  (,)]</label>
+                <label>$INFO[Container.NumItems, (,)]</label>
+            </control>
+        </control>
+        <control type="grouplist" description="sio2">
+            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+            <visible>Control.IsVisible(52)</visible>
+            <top>40</top>
+            <centerleft>1630</centerleft>
+            <width>580</width>
+            <height>60</height>
+            <align>center</align>
+            <orientation>horizontal</orientation>
+            <control type="label" id="7777" description="Heading">
+                <width>auto</width>
+                <height>60</height>
+                <font>size42</font>
+                <scroll>false</scroll>
+                <label>$VAR[RootLabel]</label>
+            </control>
+            <control type="label" description="Number of files">
+                <width>auto</width>
+                <height>70</height>
+                <font>size22</font>
+                <textcolor>gray</textcolor>
+                <label>$INFO[Container.NumItems, (,)]</label>
+            </control>
+        </control>
+        <control type="grouplist" description="ukn">
+            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+            <visible>Control.IsVisible(575)</visible>
+            <top>15</top>
+            <centerleft>1440</centerleft>
+            <width>580</width>
+            <height>60</height>
+            <align>center</align>
+            <orientation>horizontal</orientation>
+            <control type="label" id="7777" description="Heading">
+                <width>auto</width>
+                <height>60</height>
+                <font>size42</font>
+                <scroll>false</scroll>
+                <label>$VAR[RootLabel]</label>
+            </control>
+            <control type="label" description="Number of files">
+                <width>auto</width>
+                <height>70</height>
+                <font>size22</font>
+                <textcolor>gray</textcolor>
+                <label>$INFO[Container.NumItems, (,)]</label>
+            </control>
+        </control>
+        <control type="grouplist" description="centered">
+            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+            <visible>Control.IsVisible(53) | [Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]]</visible>
+            <top>0</top>
+            <centerleft>960</centerleft>
+            <width>580</width>
+            <height>60</height>
+            <align>center</align>
+            <orientation>horizontal</orientation>
+            <control type="label" id="7777" description="Heading">
+                <width>auto</width>
+                <height>60</height>
+                <font>size42</font>
+                <scroll>false</scroll>
+                <label>$VAR[RootLabel]</label>
+            </control>
+            <control type="label" description="Number of files">
+                <width>auto</width>
+                <height>70</height>
+                <font>size22</font>
+                <textcolor>gray</textcolor>
+                <label>$INFO[Container.NumItems, (,)]</label>
+            </control>
+        </control>
+        <control type="grouplist" description="leftsided">
+            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+            <visible>Control.IsVisible(55) | Control.IsVisible(500)</visible>
+            <top>0</top>
+            <left>30</left>
+            <width>580</width>
+            <height>60</height>
+            <align>left</align>
+            <orientation>horizontal</orientation>
+            <control type="label" id="7777" description="Heading">
+                <width>auto</width>
+                <height>60</height>
+                <font>size42</font>
+                <scroll>false</scroll>
+                <label>$VAR[RootLabel]</label>
+            </control>
+            <control type="label" description="Number of files">
+                <width>auto</width>
+                <height>70</height>
+                <font>size22</font>
+                <textcolor>gray</textcolor>
+                <label>$INFO[Container.NumItems, (,)]</label>
             </control>
         </control>
         <!--SCROLLLETTER-->
@@ -235,7 +324,6 @@
                 <label>$INFO[ListItem.SortLetter]</label>
             </control>
         </control>
-        <!--todo ---->
         <control type="group" description="Player Info">
             <visible>!Control.HasFocus(340) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
             <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>

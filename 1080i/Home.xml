@@ -319,21 +319,13 @@
             <align>right</align>
             <label>$INFO[System.AddonVersion(skin.sio2x)]</label>
         </control>
-
         <control type="grouplist">
             <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Skin.HasSetting(HideClock)</visible>
-            <top>18</top>
-            <right>40</right>
+            <top>13</top>
+            <right>30</right>
             <orientation>horizontal</orientation>
             <itemgap>16</itemgap>
             <align>right</align>
-            <control type="image" description="WebLink">
-                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
-                <width>30</width>
-                <height>48</height>
-                <texture colordiffuse="black">wireless.png</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
             <control type="label" description="Battery">
                 <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,20) + !Skin.HasSetting(hideconnection)</visible>
                 <posx>35r</posx>
@@ -350,6 +342,13 @@
                 <height>45</height>
                 <font>size28</font>
                 <label>[B]$INFO[System.Time] $INFO[System.Date][/B]</label>
+            </control>
+            <control type="image" description="WebLink">
+                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                <width>30</width>
+                <height>48</height>
+                <texture colordiffuse="black">wireless.png</texture>
+                <aspectratio>scale</aspectratio>
             </control>
         </control>
     </controls>

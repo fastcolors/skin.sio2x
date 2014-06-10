@@ -11,7 +11,7 @@
                     <centerleft>1720</centerleft>
                     <top>140</top>
                     <width>1800</width>
-                    <height>928</height>
+                    <height>940</height>
                     <orientation>vertical</orientation>
                     <focusposition>1</focusposition>
                     <preloaditems>2</preloaditems>
@@ -201,13 +201,6 @@
                     <width>500</width>
                     <texture colordiffuse="black">Lines/line.png</texture>
                 </control>
-            </control>
-            <control type="image" description="Bottom fade">
-                <top>870</top>
-                <width>1920</width>
-                <height>210</height>
-                <texture>images/DefaultGradient.png</texture>
-                <aspectratio>stretch</aspectratio>
             </control>
             <control type="scrollbar" id="60">
                 <posx>45r</posx>

@@ -87,13 +87,6 @@
             <property name="color">icons/teak.png</property>
             <onclick>ActivateWindow(MyWeather)</onclick>
         </item>
-        <item id="356">
-            <visible>!Skin.HasSetting(sear)</visible>
-            <thumb>icons/search.png</thumb>
-            <label>137</label>
-            <property name="color">icons/lightblue.png</property>
-            <onclick>RunAddon(script.globalsearch)</onclick>
-        </item>
         <item id="357">
             <visible>Skin.HasSetting(3dmovs)</visible>
             <thumb>icons/3d.png</thumb>
@@ -107,6 +100,13 @@
             <label>$ADDON[script.tv.show.next.aired 32019]</label>
             <property name="color">icons/red.png</property>
             <onclick>RunAddon(script.tv.show.next.aired)</onclick>
+        </item>
+        <item id="356">
+            <visible>!Skin.HasSetting(sear)</visible>
+            <thumb>icons/search.png</thumb>
+            <label>137</label>
+            <property name="color">icons/lightblue.png</property>
+            <onclick>RunAddon(script.globalsearch)</onclick>
         </item>
         <item id="601" description="Custom Fvourite">
             <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>

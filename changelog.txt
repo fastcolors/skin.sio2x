@@ -2,6 +2,7 @@
 * Revamped Icon Wall view all over now showing fanart
 * Code Cleaning
 * Fixes for black theme
+* Fix for addons sio2 view
 
 2.1.2
 * Extended and improved Iconview
