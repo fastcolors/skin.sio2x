@@ -1,3 +1,8 @@
+2.1.5
+* Now Possible to hide settings (forces quit to show menu and it's possible to enter settings from there)
+* Cosmetic Fixes
+* Fix a bug where hiding clock would hide internet connection from Home
+
 2.1.4
 * smaller clock in windows
 * Headings cosmetics
