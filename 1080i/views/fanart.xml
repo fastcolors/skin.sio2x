@@ -42,7 +42,7 @@
                         <top>80</top>
                         <height>350</height>
                         <width>230</width>
-                        <texture background="true">$VAR[Locandine]</texture>
+                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[Locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image" description="WatchStatus">

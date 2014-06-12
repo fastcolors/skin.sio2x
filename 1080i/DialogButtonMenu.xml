@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="buttonMenu">
-    <defaultcontrol>9000</defaultcontrol>
+    <defaultcontrol always="true">1</defaultcontrol>
     <include>DialogOpenClose</include>
     <controls>
         <control type="image" description="BG">
@@ -8,7 +8,7 @@
             <animation effect="fade" start="50" end="0" time="50">WindowClose</animation>
             <width>1920</width>
             <height>1080</height>
-            <texture>images/BlackT.png</texture>
+            <texture colordiffuse="white">images/BlackT.png</texture>
         </control>
         <control type="image" description="Dialog">
             <posx>350</posx>
@@ -34,9 +34,8 @@
                 <width>126</width>
                 <height>126</height>
                 <font>-</font>
-                <texturenofocus>BM_QuitNF.png</texturenofocus>
+                <texturenofocus colordiffuse="77FFFFFF">BM_QuitNF.png</texturenofocus>
                 <texturefocus>BM_QuitFO.png</texturefocus>
-                <colordiffuse>FFFFFFFF</colordiffuse>
                 <onclick>XBMC.Quit()</onclick>
                 <label>13009</label>
             </control>
@@ -48,9 +47,8 @@
                 <width>126</width>
                 <height>126</height>
                 <font>-</font>
-                <texturenofocus>BM_ShutdownNF.png</texturenofocus>
+                <texturenofocus colordiffuse="77FFFFFF">BM_ShutdownNF.png</texturenofocus>
                 <texturefocus>BM_ShutdownFO.png</texturefocus>
-                <colordiffuse>FFFFFFFF</colordiffuse>
                 <onclick>XBMC.Powerdown()</onclick>
                 <label>13005</label>
             </control>
@@ -62,9 +60,8 @@
                 <width>126</width>
                 <height>126</height>
                 <font>-</font>
-                <texturenofocus>BM_SleepNF.png</texturenofocus>
+                <texturenofocus colordiffuse="77FFFFFF">BM_SleepNF.png</texturenofocus>
                 <texturefocus>BM_SleepFO.png</texturefocus>
-                <colordiffuse>FFFFFFFF</colordiffuse>
                 <onclick>XBMC.Suspend()</onclick>
                 <label>13011</label>
             </control>
@@ -76,9 +73,8 @@
                 <width>126</width>
                 <height>126</height>
                 <font>-</font>
-                <texturenofocus>BM_RestartNF.png</texturenofocus>
+                <texturenofocus colordiffuse="77FFFFFF">BM_RestartNF.png</texturenofocus>
                 <texturefocus>BM_RestartFO.png</texturefocus>
-                <colordiffuse>FFFFFFFF</colordiffuse>
                 <onclick>XBMC.Reset()</onclick>
                 <label>13013</label>
             </control>
@@ -90,9 +86,8 @@
                 <width>126</width>
                 <height>126</height>
                 <font>-</font>
-                <texturenofocus>BM_LogOffNF.png</texturenofocus>
+                <texturenofocus colordiffuse="77FFFFFF">BM_LogOffNF.png</texturenofocus>
                 <texturefocus>BM_LogOffFO.png</texturefocus>
-                <colordiffuse>FFFFFFFF</colordiffuse>
                 <onclick>Activatewindow(29)</onclick>
                 <label>20126</label>
             </control>
@@ -104,22 +99,50 @@
                 <width>126</width>
                 <height>126</height>
                 <font>-</font>
-                <texturenofocus>BM_TimeroffNF.png</texturenofocus>
+                <texturenofocus  colordiffuse="77FFFFFF">BM_TimeroffNF.png</texturenofocus>
                 <texturefocus>BM_TimeroffFO.png</texturefocus>
-                <colordiffuse>FFFFFFFF</colordiffuse>
                 <onclick>AlarmClock(Timer,Quit())</onclick>
                 <label>Timer</label>
             </control>
+            <control type="button" id="7" description="TimerOff">
+                <visible>Skin.HasSetting(hidesett)</visible>
+                <animation type="Conditional" condition="!Control.IsEnabled(7)">
+                    <effect type="fade" start="100" end="30" time="0" reversible="true" />
+                </animation>
+                <width>126</width>
+                <height>126</height>
+                <font>-</font>
+                <texturenofocus colordiffuse="77FFFFFF">BM_settingsNF.png</texturenofocus>
+                <texturefocus>BM_settingsFO.png</texturefocus>
+                <onclick>ActivateWindow(Settings)</onclick>
+                <label>5</label>
+            </control>
         </control>
-        <control type="group">
-            <posx>660</posx>
-            <top>565</top>
             <control type="label" id="3100">
+                <top>565</top>
+                <centerleft>960</centerleft>
                 <width>600</width>
                 <align>center</align>
                 <font>size39B</font>
                 <label>13009</label>
             </control>
+        <control type="group">
+             <visible>Skin.HasSetting(hidesett)</visible>
+        <control type="image">
+            <left>1350</left>
+            <top>600</top>
+            <width>45</width>
+            <height>45</height>
+            <texture>images/ArrowNF.png</texture>
+        </control>
+            <control type="image">
+                <visible>Control.HasFocus(6)</visible>
+            <left>1350</left>
+            <top>600</top>
+            <width>45</width>
+            <height>45</height>
+            <texture>images/ArrowFO.png</texture>
+        </control>
         </control>
     </controls>
 </window>

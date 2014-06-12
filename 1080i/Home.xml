@@ -7,6 +7,7 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
+
         <control type="group">
             <include>OpenClose</include>
             <control type="button" id="9009">
@@ -88,13 +89,6 @@
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
-                    <!--<control type="image" description="OVERLAY">
-                      <posx>20</posx>
-                      <top>48</top>
-                      <width>260</width>
-                      <height>168</height>
-                      <texture>icons/overlay.png</texture>
-                    </control>-->
                     <control type="label" description="LABEL">
                         <posx>150</posx>
                         <top>220</top>
@@ -192,7 +186,7 @@
             </control>
             <control type="group" description="Furniture">
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-                 <control type="image" description="Line">
+                <control type="image" description="Line">
                     <posx>-90</posx>
                     <top>503</top>
                     <width>2100</width>
@@ -233,7 +227,6 @@
                 <height>450</height>
                 <texture>lines/LineV.png</texture>
             </control>
-
             <control type="group" id="700" description="Shelf items">
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
                 <include>weather_shelf</include>
@@ -320,7 +313,7 @@
             <label>$INFO[System.AddonVersion(skin.sio2x)]</label>
         </control>
         <control type="grouplist">
-            <visible>[Container(9000).Row(0) | Container(9000).Row(1)] + !Skin.HasSetting(HideClock)</visible>
+            <visible>[Container(9000).Row(0) | Container(9000).Row(1)]</visible>
             <top>13</top>
             <right>30</right>
             <orientation>horizontal</orientation>
@@ -351,5 +344,23 @@
                 <aspectratio>scale</aspectratio>
             </control>
         </control>
+        <control type="image" description="Current weather OVERLAY">
+            <height>1080</height>
+            <width>1920</width>
+            <aspectratio>stretch</aspectratio>
+            <texture>$INFO[Window(Weather).Property(Current.FanartCode),weatherhome/,.png]</texture>
+        </control>
+        <!--<control type="image" description="Current weather OVERLAY">-->
+        <!--<height>1080</height>-->
+        <!--<width>1920</width>-->
+        <!--<aspectratio>stretch</aspectratio>-->
+        <!--<texture>weatherhome/36.png</texture>-->
+        <!--</control>-->
+        <!--<control type="multiimage">-->
+        <!--<height>1080</height>-->
+        <!--<width>1920</width>-->
+        <!--<imagepath>weatherhome/</imagepath>-->
+        <!--<timeperimage>1600</timeperimage>-->
+        <!--</control>-->
     </controls>
 </window>

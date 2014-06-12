@@ -603,6 +603,18 @@
                             <label>7</label>
                             <onclick>Skin.ToggleSetting(hidebro)</onclick>
                         </item>
+                        <item id="1013" description="Settings">
+                            <visible>!Skin.HasSetting(hidesett)</visible>
+                            <thumb>icons/settings.png</thumb>
+                            <label>5</label>
+                            <onclick>Skin.ToggleSetting(hidesett)</onclick>
+                        </item>
+                        <item id="1013" description="Settings">
+                            <visible>Skin.HasSetting(hidesett)</visible>
+                            <thumb>help/Off.png</thumb>
+                            <label>5</label>
+                            <onclick>Skin.ToggleSetting(hidesett)</onclick>
+                        </item>
                     </content>
                 </control>
             </control>

@@ -320,6 +320,7 @@
             <onclick>ActivateWindow(1112)</onclick>
         </item>
         <item id="348">
+            <visible>!Skin.HasSetting(hidesett)</visible>
             <thumb>icons/settings.png</thumb>
             <label>5</label>
             <property name="color">icons/bluegray.png</property>
@@ -333,7 +334,7 @@
             <onclick condition="Player.HasMedia">Fullscreen</onclick>
         </item>
         <item id="349">
-            <visible>!Player.HasMedia + Skin.HasSetting(quitter)</visible>
+            <visible>!Player.HasMedia + Skin.HasSetting(quitter) + !Skin.HasSetting(hidesett)</visible>
             <thumb>icons/quits.png</thumb>
             <label>351</label>
             <property name="color">icons/darkblue.png</property>
@@ -344,7 +345,14 @@
             <onclick condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</onclick>
         </item>
         <item id="349">
-            <visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>
+            <visible>!Player.HasMedia + !Skin.HasSetting(quitter) + !Skin.HasSetting(hidesett)</visible>
+            <thumb>icons/quits.png</thumb>
+            <label>351</label>
+            <property name="color">icons/darkblue.png</property>
+            <onclick>ActivateWindow(shutdownmenu)</onclick>
+        </item>
+        <item id="349">
+            <visible>!Player.HasMedia + Skin.HasSetting(hidesett)</visible>
             <thumb>icons/quits.png</thumb>
             <label>351</label>
             <property name="color">icons/darkblue.png</property>
