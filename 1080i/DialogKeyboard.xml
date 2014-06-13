@@ -32,7 +32,7 @@
 				<width>1500</width>
 				<height>60</height>
 				<aspectratio>stretch</aspectratio>
-				<texture colordiffuse="DDFFFFFF" border="10">images/textedit.png</texture>
+				<texture colordiffuse="black" border="10">images/textedit.png</texture>
 			</control>
 			<control type="label" id="310">
 				<description>Edit Text</description>

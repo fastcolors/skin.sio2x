@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2005">
     <defaultcontrol>-</defaultcontrol>
-    <onunload>Dialog.close(all,true)</onunload>
+    <!--<onunload>Dialog.close(all,true)</onunload>-->
     <controls>
         <control type="group" >
             <visible>!Window.IsActive(DialogFullscreenInfo.xml)</visible>
