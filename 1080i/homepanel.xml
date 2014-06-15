@@ -269,7 +269,7 @@
             <onclick>RunAddon($INFO[Skin.String(HomeAddon.11.Label)])</onclick>
         </item>
         <item id="506" description="Custom script">
-            <visible>!IsEmpty(Skin.String(HomeAddon.7.Label)) + IsEmpty(Skin.String(HomeAddon.7.Icon))</visible>
+            <visible>!IsEmpty(Skin.String(HomeAddon.12.Label)) + IsEmpty(Skin.String(HomeAddon.12.Icon))</visible>
             <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.12.label))]</thumb>
             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
             <property name="color">icons/progcolor.png</property>
