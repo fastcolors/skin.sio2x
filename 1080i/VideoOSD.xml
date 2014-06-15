@@ -128,12 +128,12 @@
                         <visible>!ControlGroup(101).HasFocus()</visible>
                         <posx>1610</posx>
                         <top>600</top>
-                        <control type="image" description="CoverReal">
-                            <height>300</height>
-                            <width>220</width>
-                            <aspectratio>keep</aspectratio>
-                            <texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>
-                        </control>
+                        <!--<control type="image" description="CoverReal">-->
+                            <!--<height>300</height>-->
+                            <!--<width>220</width>-->
+                            <!--<aspectratio>keep</aspectratio>-->
+                            <!--<texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>-->
+                        <!--</control>-->
                         <control type="image" description="CoverReal">
                             <height>300</height>
                             <width>220</width>

@@ -12,7 +12,6 @@
             <height>200</height>
             <aspectratio>keep</aspectratio>
             <texture></texture>
-            <!--<colordiffuse>black</colordiffuse>-->
             <animation effect="fade" start="40" end="40" condition="True">Conditional</animation>
         </control>
         <control type="group" id="102">
@@ -20,14 +19,14 @@
             <control type="image">
                 <description>Info Background</description>
                 <posx>60</posx>
-                <top>700</top>
+                <top>480</top>
                 <width>1800</width>
-                <height>230</height>
-                <texture border="50">pstvInfoWindow.png</texture>
+                <height>450</height>
+                <texture border="80">pstvInfoWindow.png</texture>
             </control>
             <control type="grouplist">
                 <posx>120</posx>
-                <top>700</top>
+                <top>500</top>
                 <width>1680</width>
                 <height>60</height>
                 <orientation>horizontal</orientation>
@@ -35,11 +34,12 @@
                 <control type="label" id="502">
                     <description>Show Name Label</description>
                     <height>60</height>
-                    <width min="40" max="470">auto</width>
+                    <width>auto</width>
                     <scroll>true</scroll>
                     <font>size24</font>
+                    <aligny>bottom</aligny>
                     <textcolor>White</textcolor>
-
+                    <!--todo localize-->
                     <label>Now watching</label>
                 </control>
                 <control type="label" id="503">
@@ -49,6 +49,7 @@
                     <label>Show Name</label>
                     <font>size33B</font>
                     <align>left</align>
+                    <aligny>bottom</aligny>
                     <textcolor>Yellow</textcolor>
                 </control>
                 <control type="label">
@@ -58,6 +59,7 @@
                     <label>•</label>
                     <font>size24</font>
                     <align>left</align>
+                    <aligny>bottom</aligny>
                     <textcolor>White</textcolor>
                 </control>
                 <control type="label" id="504">
@@ -67,6 +69,7 @@
                     <label>Show Title</label>
                     <font>size24</font>
                     <align>left</align>
+                    <aligny>bottom</aligny>
                     <textcolor>gray</textcolor>
                 </control>
             </control>
@@ -77,19 +80,96 @@
                 <height>110</height>
                 <align>left</align>
                 <aligny>top</aligny>
+                <font>-</font>
                 <label>Show Description</label>
                 <textcolor>FFFFFFFF</textcolor>
                 <font>size24</font>
                 <wrapmultiline>true</wrapmultiline>
             </control>
+             <control type="textbox">
+                <centerleft>850</centerleft>
+                <top>560</top>
+                <width>1400</width>
+                <height>325</height>
+                <align>justify</align>
+                <aligny>top</aligny>
+                <label>$INFO[control.GetLabel(505)]</label>
+                <textcolor>FFFFFFFF</textcolor>
+                <font>size24</font>
+            </control>
             <control type="image" id="506">
                 <description>Channel Logo</description>
                 <posx>1700</posx>
-                <top>720</top>
+                <top>520</top>
                 <width>130</width>
                 <height>75</height>
                 <aspectratio>scale</aspectratio>
             </control>
+        <control type="group" description="Cover">
+                        <camera x="1720" y="720"/>
+                        <animation effect="fade" start="0" end="100" time="600">VisibleChange</animation>
+                        <animation effect="rotatey" end="20" center="1720,0" reversible="false" condition="true">Conditional</animation>
+                        <!--<visible>!ControlGroup(101).HasFocus()</visible>-->
+                        <posx>1610</posx>
+                        <top>520</top>
+                        <!--<control type="image" description="CoverReal">-->
+                            <!--<height>300</height>-->
+                            <!--<width>220</width>-->
+                            <!--<aspectratio>keep</aspectratio>-->
+                            <!--<texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>-->
+                        <!--</control>-->
+                        <control type="image" description="CoverReal">
+                            <height>300</height>
+                            <width>220</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture diffuse="images/Diffuse.png">$INFO[Player.Art(poster)]</texture>
+                        </control>
+                        <control type="image" description="CoverRef">
+                            <top>300</top>
+                            <height>300</height>
+                            <width>220</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(poster)]</texture>
+                        </control>
+                        <control type="image" description="CoverReal">
+                            <height>300</height>
+                            <width>220</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture diffuse="images/Diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
+                        </control>
+                        <control type="image" description="CoverRef">
+                            <top>300</top>
+                            <height>300</height>
+                            <width>220</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(tvshow.poster)]</texture>
+                        </control>
+                        <control type="label" description="Episode">
+                            <visible>VideoPlayer.Content(Episodes)</visible>
+                            <posx>190</posx>
+                            <top>290</top>
+                            <height>60</height>
+                            <width>220</width>
+                            <scroll>false</scroll>
+                            <font>size24</font>
+                            <align>right</align>
+                            <textcolor>black</textcolor>
+                            <label>[B]S $INFO[VideoPlayer.Season] E $INFO[VideoPlayer.Episode][/B]</label>
+                        </control>
+                        <control type="label" description="Channel">
+                            <visible>Pvr.IsPlayingTV</visible>
+                            <posx>190</posx>
+                            <top>290</top>
+                            <height>60</height>
+                            <width>220</width>
+                            <scroll>false</scroll>
+                            <font>size24</font>
+                            <align>right</align>
+                            <textcolor>Black</textcolor>
+                            <label>($INFO[VideoPlayer.ChannelNumber]) - $INFO[VideoPlayer.ChannelName]</label>
+                        </control>
+                    </control>
+
         </control>
     </controls>
 </window>

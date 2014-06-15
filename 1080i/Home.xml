@@ -345,6 +345,7 @@
             </control>
         </control>
         <control type="image" description="Current weather OVERLAY">
+            <visible>Skin.HasSetting(wehoov)</visible>
             <height>1080</height>
             <width>1920</width>
             <aspectratio>stretch</aspectratio>
