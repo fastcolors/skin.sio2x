@@ -229,7 +229,6 @@
         <!--SIO2-->
         <control type="group" description="sio2view">
             <visible>Control.IsVisible(52)</visible>
-            <include>BlackBackground</include>
             <control type="fixedlist" id="52">
                 <posx>60</posx>
                 <top>100</top>

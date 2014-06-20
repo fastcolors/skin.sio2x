@@ -206,7 +206,7 @@
                             <visible>!IsEmpty(ListItem.Mpaa)</visible>
                             <height>32</height>
                             <width>32</width>
-                            <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
+                            <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
                         </control>
                     </itemlayout>
                     <focusedlayout height="300" width="200">
@@ -283,7 +283,7 @@
                                     <visible>!IsEmpty(ListItem.Mpaa)</visible>
                                     <height>32</height>
                                     <width>32</width>
-                                    <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
+                                    <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
                                 </control>
                             </control>
                         </control>

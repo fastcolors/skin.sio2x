@@ -227,7 +227,7 @@
                 <include>Icon_Fade</include>
                 <bordertexture colordiffuse="black">images/white.png</bordertexture>
                 <bordersize>2</bordersize>
-                <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+                <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image" description="AlbumCover">

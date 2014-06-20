@@ -6,14 +6,6 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <!--control type="image" description="Fanart">
-          <visible>!IsEmpty(ListItem.Property(fanart_image))</visible>
-          <include>VisibleFade</include>
-          <include>Dimensions_Fullscreen</include>
-          <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
-          <aspectratio>scale</aspectratio>
-          <colordiffuse>30FFFFFF</colordiffuse>
-        </control-->
         <control type="group" description="rotate Poster">
             <camera x="265" y="330" />
             <animation condition="true" effect="rotatey" center="265,0" end="-20">conditional</animation>
@@ -380,17 +372,21 @@
                     <height>320</height>
                     <width>205</width>
                     <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture background="true" diffuse="images/diffuserndinfo.png" fallback="defaultsilo.png">$INFO[ListItem.Thumb]</texture>
+                    <texture background="true" fallback="defaultsilo.png">$INFO[ListItem.Thumb]</texture>
+                    <bordersize>5</bordersize>
+                    <bordertexture>images/White.png</bordertexture>
                 </control>
             </itemlayout>
             <focusedlayout width="250" height="400">
                 <control type="image" description="Thumb">
-                    <posx>15</posx>
-                    <top>15</top>
-                    <height>320</height>
-                    <width>205</width>
+                    <posx>0</posx>
+                    <top>0</top>
+                    <height>350</height>
+                    <width>235</width>
                     <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture background="true" diffuse="images/diffuserounded.png" fallback="defaultsilo.png">$INFO[ListItem.Thumb]</texture>
+                    <texture background="true" fallback="defaultsilo.png">$INFO[ListItem.Thumb]</texture>
+                    <bordersize>5</bordersize>
+                    <bordertexture>images/White.png</bordertexture>
                 </control>
             </focusedlayout>
         </control>
