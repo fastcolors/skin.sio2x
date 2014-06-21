@@ -343,7 +343,7 @@
                     <label>$INFO[Window(Home).Property(NextAired.201.Weekday)]</label>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>white</textcolor>
+                    <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="panel" id="201">
                     <top>80</top>
@@ -402,7 +402,7 @@
                     <label>$INFO[Window(Home).Property(NextAired.202.Weekday)]</label>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>white</textcolor>
+                    <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="panel" id="202">
                     <top>80</top>
@@ -461,7 +461,7 @@
                     <label>$INFO[Window(Home).Property(NextAired.203.Weekday)]</label>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>white</textcolor>
+                    <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="panel" id="203">
                     <top>80</top>
@@ -520,7 +520,7 @@
                     <label>$INFO[Window(Home).Property(NextAired.204.Weekday)]</label>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>white</textcolor>
+                    <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="panel" id="204">
                     <top>80</top>
@@ -580,7 +580,7 @@
                     <label>$INFO[Window(Home).Property(NextAired.205.Weekday)]</label>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>white</textcolor>
+                    <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="panel" id="205">
                     <top>80</top>
@@ -639,7 +639,7 @@
                     <label>$INFO[Window(Home).Property(NextAired.206.Weekday)]</label>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>white</textcolor>
+                    <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="panel" id="206">
                     <top>80</top>
@@ -748,7 +748,7 @@
                 <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
                 <width>30</width>
                 <height>48</height>
-                <texture>wireless.png</texture>
+                <texture colordiffuse="black">wireless.png</texture>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="label" description="Battery">
@@ -758,7 +758,6 @@
                 <width min="30" max="500">auto</width>
                 <height>45</height>
                 <font>size30</font>
-                <textcolor>White</textcolor>
                 <label>$INFO[System.BatteryLevel] Batt.</label>
             </control>
             <control type="label" description="Clock">

@@ -645,14 +645,14 @@
             <control type="radiobutton" id="200" description="TV Auto">
                 <include>SettingsSubmenuButtons</include>
                 <label>20387</label>
-                <selected>!Skin.HasSetting(TVShelf_Watchlist)</selected>
+                <selected>Skin.HasSetting(TVShelf_Watchlist)</selected>
                 <enable>!Skin.HasSetting(hidetv)</enable>
                 <onclick>Skin.Reset(TVShelf_Watchlist)</onclick>
             </control>
             <control type="radiobutton" id="203" description="TV Watchlist">
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[31048] $LOCALIZE[20364]</label>
-                <selected>Skin.HasSetting(TVShelf_Watchlist)</selected>
+                <selected>!Skin.HasSetting(TVShelf_Watchlist)</selected>
                 <enable>!Skin.HasSetting(hidetv)</enable>
                 <onclick>Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
             </control>
@@ -660,7 +660,7 @@
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[31045]</label>
                 <selected>!Skin.HasSetting(intruderTV)</selected>
-                <enable>!Skin.HasSetting(hidetv)</enable>
+                <enable>!Skin.HasSetting(hidetv) + !Skin.HasSetting(TVShelf_Watchlist)</enable>
                 <onclick>Skin.ToggleSetting(intruderTV)</onclick>
             </control>
         </control>

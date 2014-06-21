@@ -189,11 +189,34 @@
     </variable>
 
     <variable name="diffuseselectshelf">
-        <value condition="!Control.IsVisible(311)">black</value>
-        <value condition="StringCompare(Container(311).ListItem.MPAA,R) | SubString(Container(311).ListItem.MPAA,18) | StringCompare(Container(312).ListItem.MPAA,TV-MA)">CCFF0000</value>
-        <value condition="StringCompare(Container(311).ListItem.MPAA,PG) | StringCompare(Container(311).ListItem.MPAA,G) | StringCompare(Container(311).ListItem.MPAA,U) | StringCompare(Container(311).ListItem.MPAA,T)">CC00FF00</value>
-        <value condition="StringCompare(Container(311).ListItem.MPAA,PG-13) | StringCompare(Container(311).ListItem.MPAA,12) | StringCompare(Container(311).ListItem.MPAA,15)">CCFF8800</value>
-        <value>775555FF</value>
+        <!--<value condition="!Control.IsVisible(311) + !Control.IsVisible(312)">black</value>-->
+        <!--movies-->
+        <!--red-->
+        <value condition="SubString(Container(311).ListItem.MPAA,R,Right)">CCFF0000</value>
+        <value condition="SubString(Container(311).ListItem.MPAA,18)">CCFF0000</value>
+        <!--green-->
+        <value condition="StringCompare(Container(311).ListItem.MPAA,PG)">CC00FF00</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,G)">CC00FF00</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,U)">CC00FF00</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,T)">CC00FF00</value>
+        <!--orange-->
+        <value condition="StringCompare(Container(311).ListItem.MPAA,PG-13)">CCFF8800</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,12)">CCFF8800</value>
+        <value condition="StringCompare(Container(311).ListItem.MPAA,15)">CCFF8800</value>
+        <!--tv-->
+        <!--red-->
+        <value condition="[Control.IsVisible(312) + StringCompare(Container(312).ListItem.MPAA,TV-MA)]">CCFF0000</value>
+        <value condition="[Control.IsVisible(312) + StringCompare(Container(222).ListItem.MPAA,TV-MA)]">CCFF0000</value>
+        <value condition="[Control.IsVisible(312) + StringCompare(Container(223).ListItem.MPAA,TV-MA)]">CCFF0000</value>
+        <!--green-->
+        <value condition="[Control.IsVisible(312) + SubString(Container(312).ListItem.MPAA,G,Right)]">CC00FF00</value>
+        <value condition="[Control.IsVisible(312) + SubString(Container(222).ListItem.MPAA,G,Right)]">CC00FF00</value>
+        <value condition="[Control.IsVisible(312) + SubString(Container(223).ListItem.MPAA,G,Right)]">CC00FF00</value>
+        <!--orange-->
+        <value condition="[Control.IsVisible(312) + SubString(Container(312).ListItem.MPAA,14)]">CCFF8800</value>
+        <value condition="[Control.IsVisible(312) + SubString(Container(222).ListItem.MPAA,14)]">CCFF8800</value>
+        <value condition="[Control.IsVisible(312) + SubString(Container(223).ListItem.MPAA,14)]">CCFF8800</value>
+        <value>black</value>
     </variable>
 
     <variable name="shelfmovies">
@@ -233,8 +256,8 @@
         <value condition="Container(9000).HasFocus(608)">$INFO[Skin.String(Homefav.8.Label)]</value>
         <value condition="Container(9000).HasFocus(358)">$ADDON[script.tv.show.next.aired 32101]</value>
         <value condition="Container(9000).HasFocus(355)">$LOCALIZE[19017]</value>
-        <value condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[31048]</value>
-        <value condition="Control.IsVisible(312)">$LOCALIZE[20387]</value>
+        <value condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[20387]</value>
+        <value condition="Control.IsVisible(312)">$LOCALIZE[31048]</value>
         <value condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">$LOCALIZE[31048]</value>
         <value condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[31015]</value>
         <value>$LOCALIZE[20386]</value>

@@ -7,7 +7,6 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-
         <control type="group">
             <include>OpenClose</include>
             <control type="button" id="9009">
@@ -151,13 +150,6 @@
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
-                    <!-- <control type="image" description="THMBSOVERLAY">
-                       <posx>20</posx>
-                       <top>48</top>
-                       <width>260</width>
-                       <height>168</height>
-                       <texture>icons/overlay.png</texture>
-                     </control>-->
                     <control type="image">
                         <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
                         <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
@@ -218,8 +210,8 @@
             </control>
             <control type="image" description="TVLINE">
                 <include>ShelfFade</include>
-                <animation effect="slide" end="485,0" time="400" condition="!Container(312).HasPrevious + !Skin.HasSetting(IntruderTV)">Conditional</animation>
-                <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV)</visible>
+                <animation effect="slide" end="485,0" time="400" condition="!Control.HasFocus(223) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
+                <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV) + !Skin.HasSetting(TVShelf_Watchlist)</visible>
                 <visible>Library.HasContent(TVShows)</visible>
                 <left>-5</left>
                 <top>30</top>
@@ -231,8 +223,8 @@
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
                 <include>weather_shelf</include>
                 <include condition="true">EPG_shelf</include>
-                <include condition="!Skin.HasSetting(TVShelf_Watchlist)">TV_RA</include>
-                <include condition="Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
+                <include condition="Library.HasContent(TVShows) + Skin.HasSetting(TVShelf_Watchlist)">TV_RA</include>
+                <include condition="Library.HasContent(TVShows) + !Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
                 <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
                 <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
                 <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
