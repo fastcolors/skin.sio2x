@@ -611,7 +611,6 @@
         </control>
     </include>
     <include name="Movies">
-        <control type="group">
             <control type="label" description="Top Label">
                 <visible>Control.IsVisible(311)</visible>
                 <include>ShelfFade</include>
@@ -628,7 +627,6 @@
                 <content target="video">$VAR[shelfmovies]</content>
             </control>
             <include>movshelslider</include>
-        </control>
     </include>
     <include name="TV_RA">
         <control type="group">
@@ -650,41 +648,36 @@
             </control>
             <include>tvshelslider</include>
         </control>
-    </include>
-    <include name="TV_WL">
-        <control type="group">
-            <visible>Library.HasContent(TVShows)</visible>
+        </include>
+        <include name="TV_WL">
             <control type="label" description="Top Label">
-                <animation effect="slide" end="480,0" time="400" condition="!Control.HasFocus(223) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
+                <animation effect="slide" end="480,0" time="400" condition="!Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
                 <visible>Control.IsVisible(312)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
                 <label>[B] $VAR[shelflabel] [/B]</label>
             </control>
             <control type="label" description="Inverted">
-                <animation effect="slide" end="-480,0" time="400" condition="Control.HasFocus(223) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
+                <animation effect="slide" end="-480,0" time="400" condition="Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
                 <visible>Control.IsVisible(312) + !Skin.HasSetting(intruderTV)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
                 <label>[B] $LOCALIZE[31006] [/B]</label>
             </control>
-            <control type="group" id="312">
-                <visible>Container(9000).HasFocus(341)</visible>
-                <onup>9009</onup>
-                <ondown>9000</ondown>
                 <control type="panel" id="222" description="TOP Shortcuts">
-                    <visible>!Skin.HasSetting(IntruderTV)</visible>
-                    <animation effect="slide" condition="Control.HasFocus(223)" end="-480,0" time="400" reversible="true">Conditional</animation>
+                    <visible>!Skin.HasSetting(IntruderTV) + Container(9000).HasFocus(341)</visible>
+                    <animation effect="slide" condition="Control.HasFocus(312)" end="-480,0" time="400" reversible="true">Conditional</animation>
                     <onup>9009</onup>
                     <ondown>9000</ondown>
                     <onleft>noop</onleft>
-                    <onright>SetFocus(223,0)</onright>
+                    <onright>SetFocus(312,0)</onright>
                     <width>480</width>
                     <include>EpisodeShortcutsCommons</include>
                     <content target="video">plugin://service.library.data.provider?type=recentepisodes&limit=1&reload=$INFO[Window.Property(recentepisodes)]</content>
                 </control>
-                <control type="list" id="223" description="TOP Shortcuts">
-                    <animation effect="slide" condition="!Control.HasFocus(223) + !Skin.HasSetting(IntruderTV)" end="480,0" time="400" reversible="true">Conditional</animation>
+                <control type="panel" id="312" description="TOP Shortcuts">
+                    <visible>Container(9000).HasFocus(341)</visible>
+                    <animation effect="slide" condition="!Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)" end="480,0" time="400" reversible="true">Conditional</animation>
                     <onup>9009</onup>
                     <ondown>9000</ondown>
                     <onleft>222</onleft>
@@ -693,8 +686,6 @@
                     <content target="video">plugin://service.library.data.provider?type=recommendedepisodes&limit=16&reload=$INFO[Window.Property(recommendedepisodes)]</content>
                 </control>
                 <include>tvshelslider</include>
-            </control>
-        </control>
     </include>
     <include name="TV_NA">
         <control type="group">

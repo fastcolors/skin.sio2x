@@ -117,8 +117,8 @@
                         <width>840</width>
                         <scroll>true</scroll>
                         <font>size33B</font>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>gray</shadowcolor>
+                        <textcolor>shelffont</textcolor>
+                        <shadowcolor>-</shadowcolor>
                         <label>[B]$INFO[VideoPlayer.Title][/B]</label>
                     </control>
                     <control type="group" description="Cover">

@@ -197,10 +197,10 @@
                 <control type="rss" description="RSS Feed">
                     <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
                     <include>OpenClose</include>
-                    <top>502</top>
+                    <top>501</top>
                     <width>1920</width>
                     <height>33</height>
-                    <font>size22</font>
+                    <font>size24</font>
                     <urlset>1</urlset>
                     <shadowcolor>-</shadowcolor>
                     <titlecolor>darkred</titlecolor>

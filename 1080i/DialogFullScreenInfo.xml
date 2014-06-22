@@ -9,14 +9,14 @@
             <onclick>close</onclick>
         </control>
         <control type="image" description="Background">
-            <posx>60</posx>
-            <top>650</top>
-            <width>1800</width>
-            <height>300</height>
+            <centerleft>960</centerleft>
+            <top>640</top>
+            <width>1820</width>
+            <height>320</height>
             <texture border="50">Seekbar/OSDBackground.png</texture>
         </control>
         <control type="image" description="Background">
-            <posx>60</posx>
+            <centerleft>960</centerleft>
             <top>650</top>
             <width>1800</width>
             <height>300</height>
@@ -143,6 +143,8 @@
             <width>250</width>
             <aspectratio>scale</aspectratio>
             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(fanart)]</texture>
+            <bordertexture colordiffuse="black">images/white.png</bordertexture>
+            <bordersize>4</bordersize>
         </control>
         <control type="group">
             <top>10</top>

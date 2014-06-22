@@ -4,30 +4,31 @@
     <allowoverlay>yes</allowoverlay>
     <controls>
         <control type="group">
-            <posx>1020</posx>
+            <left>1020</left>
             <animation effect="slide" tween="circle" start="1050,0" end="0,0" time="400" easing="Out">windowopen</animation>
             <animation effect="slide" tween="back" start="0,0" end="1050,0" time="400" easing="In">windowclose</animation>
             <animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
             <control type="image" description="background image">
-                <posx>-50</posx>
+                <top>-10</top>
                 <width>1050</width>
-                <height>1080</height>
-                <texture>images/white.png</texture>
-                <colordiffuse>CCFFFFFF</colordiffuse>
+                <height>1100</height>
+                <texture border="50">sidepanel/Back.png</texture>
+                <!--<colordiffuse>white</colordiffuse>-->
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" id="2" description="Title">
-                <posx>45</posx>
-                <width>780</width>
+                <left>40</left>
+                <width>820</width>
                 <font>size36B</font>
                 <align>center</align>
             </control>
             <control type="grouplist" id="5" description="Settings">
-                <posx>15</posx>
-                <top>110</top>
+                <left>15</left>
+                <centertop>540</centertop>
                 <width>840</width>
-                <height>880</height>
-                <itemgap>12</itemgap>
+                <height>900</height>
+                <align>center</align>
+                <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <pagecontrol>60</pagecontrol>
                 <onup>5</onup>
@@ -36,6 +37,7 @@
             <control type="button" id="7">
                 <description>Default Button</description>
                 <texturenofocus>-</texturenofocus>
+                <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                 <font>size33</font>
                 <align>left</align>
                 <aligny>center</aligny>
@@ -44,6 +46,7 @@
             <control type="radiobutton" id="8">
                 <description>Default RadioButton</description>
                 <texturenofocus>-</texturenofocus>
+                <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                 <align>left</align>
                 <font>size33</font>
                 <height>70</height>
@@ -52,6 +55,7 @@
             <control type="spincontrolex" id="9">
                 <description>Default spincontrolex</description>
                 <texturenofocus>-</texturenofocus>
+                <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                 <align>left</align>
                 <font>size33</font>
                 <height>70</height>
@@ -61,6 +65,7 @@
             <control type="sliderex" id="10">
                 <description>Default Slider</description>
                 <texturenofocus>-</texturenofocus>
+                <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                 <align>left</align>
                 <font>size33</font>
                 <aligny>center</aligny>
