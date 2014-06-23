@@ -1473,18 +1473,6 @@
                 <onright>319</onright>
                 <include>FavShortcutsCommons</include>
                 <content>
-                    <item id="0" description="Movies">
-                        <visible>Player.HasVideo + IsEmpty(Player.Art(tvshow.poster))</visible>
-                        <label>$INFO[VideoPlayer.Title]</label>
-                        <thumb>$INFO[VideoPlayer.Cover]</thumb>
-                        <onclick>fullscreen</onclick>
-                    </item>
-                    <item id="0" description="Movies">
-                        <visible>Player.HasVideo + !IsEmpty(Player.Art(tvshow.poster))</visible>
-                        <label>$INFO[VideoPlayer.Title]</label>
-                        <thumb>$INFO[Player.Art(tvshow.poster)]</thumb>
-                        <onclick>fullscreen</onclick>
-                    </item>
                     <item id="1" description="Favss">
                         <visible>IntegerGreaterThan(Window.Property(favourite.count),0)</visible>
                         <label>$INFO[Window.Property(favourite.1.name)]</label>

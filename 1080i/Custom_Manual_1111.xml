@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1111">
+    <defaultcontrol always="true">50</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <backgroundcolor>background</backgroundcolor>
+    <include>OpenClose</include>
+    <controls>
+         <include>BlackBackground</include>
+        <control type="panel" id="50">
+            <top>80</top>
+            <width>1920</width>
+            <height>1000</height>
+            <scrolltime>400</scrolltime>
+            <viewtype label="536">icon</viewtype>
+            <pagecontrol>60</pagecontrol>
+            <itemlayout width="480" height="330">
+                <control type="image">
+                    <centerleft>240</centerleft>
+                    <centertop>110</centertop>
+                    <width>300</width>
+                    <height>200</height>
+                    <texture>$INFO[ListItem.Thumb]</texture>
+                </control>
+                <control type="textbox">
+                    <left>20</left>
+                    <top>210</top>
+                    <width>440</width>
+                    <height>120</height>
+                    <align>center</align>
+                    <font>size22</font>
+                    <label>$INFO[ListItem.Title]</label>
+                </control>
+            </itemlayout>
+            <focusedlayout width="480" height="330">
+                <control type="image">
+                    <centerleft>240</centerleft>
+                     <centertop>110</centertop>
+                    <width>310</width>
+                    <height>210</height>
+                    <texture>$INFO[ListItem.Thumb]</texture>
+                    <bordersize>5</bordersize>
+                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                </control>
+                <control type="textbox">
+                    <left>20</left>
+                    <top>210</top>
+                    <width>440</width>
+                    <height>120</height>
+                    <align>center</align>
+                    <font>size22</font>
+                    <label>$INFO[ListItem.Title]</label>
+                </control>
+            </focusedlayout>
+            <!--<content target="video">plugin://plugin.video.youtube/?path=%2froot%2fplaylists&amp;playlist=PLMirwvR7lLgxNT9-3Zf2IIcazc-Qjcrlo&amp;user_feed=playlist</content>-->
+            <content target="video">videodb://recentlyaddedmovies/</content>
+        </control>
+        <include>WindowsTopInfos</include>
+        <control type="image">
+            <top>80</top>
+            <width>1920</width>
+            <height>1</height>
+            <texture colordiffuse="black">lines/Line.png</texture>
+        </control>
+    </controls>
+
+</window>

@@ -214,6 +214,7 @@
         <value condition="Container(9000).HasFocus(341) + SubString(Container(312).ListItem.MPAA,14)">CCFF8800</value>
         <value condition="Container(9000).HasFocus(341) + SubString(Container(222).ListItem.MPAA,14)">CCFF8800</value>
         <value condition="Container(9000).HasFocus(341) + SubString(Container(223).ListItem.MPAA,14)">CCFF8800</value>
+        <!--general-->
         <value>AA5555FF</value>
     </variable>
 

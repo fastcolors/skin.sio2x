@@ -92,6 +92,14 @@
                     <onclick>Skin.ToggleSetting(hideconnection)</onclick>
                     <selected>!Skin.HasSetting(hideconnection)</selected>
                 </control>
+                <control type="button" id="14">
+                    <width>auto</width>
+                    <align>left</align>
+                    <label>MANUAL</label>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <onclick>ActivateWindow(1111)</onclick>
+                    <!--<onclick>ActivateWindow(10025,&quot;&quot;,return)</onclick>-->
+                </control>
                 <control type="button" id="15">
                     <label>31036</label>
                     <width>auto</width>
