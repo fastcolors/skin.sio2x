@@ -48,7 +48,6 @@
                         <font>size26</font>
                         <aligny>center</aligny>
                         <textcolor>White</textcolor>
-                        <selectedcolor>Yellow</selectedcolor>
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">

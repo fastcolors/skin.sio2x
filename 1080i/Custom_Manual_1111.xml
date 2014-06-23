@@ -5,61 +5,140 @@
     <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>
-         <include>BlackBackground</include>
-        <control type="panel" id="50">
-            <top>80</top>
-            <width>1920</width>
-            <height>1000</height>
-            <scrolltime>400</scrolltime>
-            <viewtype label="536">icon</viewtype>
-            <pagecontrol>60</pagecontrol>
-            <itemlayout width="480" height="330">
+        <include>BlackBackground</include>
+        <control type="group" description="BigList">
+            <control type="group" description="ICON + PLOT">
+                <top>100</top>
+                <animation effect="fade" time="400">Visible</animation>
+                <animation effect="fade" time="0">Hidden</animation>
+                <control type="group">
+                    <control type="image" description="Thumb">
+                        <centerleft>480</centerleft>
+                        <width>756</width>
+                        <height>470</height>
+                        <include>Icon_Fade</include>
+                        <texture background="true">$INFO[Container(50).ListItem.Thumb]</texture>
+                        <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                        <bordersize>4</bordersize>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                </control>
+                <control type="image" description="Stars">
+                    <visible>!IsEmpty(ListItem.Rating)</visible>
+                    <centerleft>480</centerleft>
+                    <top>485</top>
+                    <height>24</height>
+                    <width>135</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
+                </control>
                 <control type="image">
-                    <centerleft>240</centerleft>
-                    <centertop>110</centertop>
-                    <width>300</width>
-                    <height>200</height>
-                    <texture>$INFO[ListItem.Thumb]</texture>
+                    <centerleft>480</centerleft>
+                    <top>570</top>
+                    <width>756</width>
+                    <height>1</height>
+                    <texture>lines/Line1.png</texture>
                 </control>
-                <control type="textbox">
-                    <left>20</left>
-                    <top>210</top>
-                    <width>440</width>
-                    <height>120</height>
-                    <align>center</align>
-                    <font>size22</font>
-                    <label>$INFO[ListItem.Title]</label>
+                <control type="textbox" description="plot">
+                    <centerleft>480</centerleft>
+                    <top>570</top>
+                    <width>880</width>
+                    <height>350</height>
+                    <align>justify</align>
+                    <font>size26B</font>
+                    <label>$INFO[Container(50).ListItem.Plot]</label>
                 </control>
-            </itemlayout>
-            <focusedlayout width="480" height="330">
                 <control type="image">
-                    <centerleft>240</centerleft>
-                     <centertop>110</centertop>
-                    <width>310</width>
-                    <height>210</height>
-                    <texture>$INFO[ListItem.Thumb]</texture>
-                    <bordersize>5</bordersize>
-                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <centerleft>480</centerleft>
+                    <top>920</top>
+                    <width>756</width>
+                    <height>1</height>
+                    <texture>lines/Line1.png</texture>
                 </control>
-                <control type="textbox">
-                    <left>20</left>
-                    <top>210</top>
-                    <width>440</width>
-                    <height>120</height>
-                    <align>center</align>
-                    <font>size22</font>
-                    <label>$INFO[ListItem.Title]</label>
+            </control>
+            <control type="group">
+                <include>LargeListItemCount</include>
+                <posx>960</posx>
+                <top>125</top>
+                <control type="fixedlist" id="50">
+                    <width>920</width>
+                    <height>890</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
+                    <pagecontrol>60</pagecontrol>
+                    <viewtype label="537">Big List</viewtype>
+                    <focusposition>3</focusposition>
+                    <movement>4</movement>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>250</scrolltime>
+                    <include>LargeListLayout</include>
+                    <content target="video">plugin://plugin.video.youtube/?path=%2froot%2fplaylists&amp;playlist=PLFOkL3b4owDkHcSzeB6UIr_iQzO3kTRh2&amp;user_feed=playlist</content>
                 </control>
-            </focusedlayout>
-            <!--<content target="video">plugin://plugin.video.youtube/?path=%2froot%2fplaylists&amp;playlist=PLMirwvR7lLgxNT9-3Zf2IIcazc-Qjcrlo&amp;user_feed=playlist</content>-->
-            <content target="video">videodb://recentlyaddedmovies/</content>
+            </control>
+            <include>Linemiddle</include>
+            <control type="scrollbar" id="60">
+                <posx>39r</posx>
+                <top>135</top>
+                <height>870</height>
+                <onleft>51</onleft>
+                <onright>noop</onright>
+            </control>
         </control>
-        <include>WindowsTopInfos</include>
-        <control type="image">
-            <top>80</top>
-            <width>1920</width>
-            <height>1</height>
-            <texture colordiffuse="black">lines/Line.png</texture>
+        <control type="grouplist">
+            <right>15</right>
+            <align>right</align>
+            <orientation>horizontal</orientation>
+            <itemgap>5</itemgap>
+            <control type="label" description="Clock">
+                <visible>!Skin.HasSetting(HideClock)</visible>
+                <width>195</width>
+                <height>40</height>
+                <align>right</align>
+                <aligny>center</aligny>
+                <font>size21</font>
+                <textcolor>White</textcolor>
+                <label>$INFO[System.Time]</label>
+            </control>
+            <control type="image">
+                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                <width>25</width>
+                <height>42</height>
+                <texture colordiffuse="black">wireless.png</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <visible>!System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                <width>30</width>
+                <height>42</height>
+                <texture>wireless.png</texture>
+                <colordiffuse>44FFFFFF</colordiffuse>
+            </control>
+        </control>
+        <control type="grouplist" description="LIST + BIGLIST">
+            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+            <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
+            <top>20</top>
+            <left>960</left>
+            <width>960</width>
+            <height>60</height>
+            <align>center</align>
+            <orientation>horizontal</orientation>
+            <control type="label" id="7777" description="Heading">
+                <width>auto</width>
+                <height>60</height>
+                <font>size42</font>
+                <scroll>false</scroll>
+                <label>VIDEOGUIDES</label>
+            </control>
+            <control type="label" description="Number of files">
+                <width>auto</width>
+                <height>70</height>
+                <font>size22</font>
+                <textcolor>gray</textcolor>
+                <label>$INFO[Container(50).NumItems, (,)]</label>
+            </control>
         </control>
     </controls>
 

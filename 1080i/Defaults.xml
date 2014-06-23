@@ -9,7 +9,7 @@
         <font>size33</font>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
-        <selectedcolor>black</selectedcolor>
+        <selectedcolor>yellow</selectedcolor>
         <disabledcolor>Disabled</disabledcolor>
         <shadowcolor>white</shadowcolor>
         <scroll>true</scroll>
@@ -26,7 +26,7 @@
         <textoffsetx>30</textoffsetx>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
-        <selectedcolor>black</selectedcolor>
+        <selectedcolor>yellow</selectedcolor>
         <disabledcolor>Disabled</disabledcolor>
         <scrollout>false</scrollout>
         <pauseatend>3000</pauseatend>
@@ -36,7 +36,7 @@
         <font>size24</font>
         <textcolor>black</textcolor>
         <focusedcolor>black</focusedcolor>
-        <selectedcolor>black</selectedcolor>
+        <selectedcolor>yellow</selectedcolor>
         <disabledcolor>Disabled</disabledcolor>
         <pagecontrol>61</pagecontrol>
         <pulseonselect></pulseonselect>
@@ -60,7 +60,7 @@
         <textoffsetx>30</textoffsetx>
         <textcolor>White</textcolor>
         <focusedcolor>black</focusedcolor>
-        <selectedcolor>black</selectedcolor>
+        <selectedcolor>yellow</selectedcolor>
         <disabledcolor>Disabled</disabledcolor>
         <invalidcolor>invalid</invalidcolor>
         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
@@ -80,7 +80,8 @@
         <selectedcolor>black</selectedcolor>
         <disabledcolor>Disabled</disabledcolor>
         <invalidcolor>invalid</invalidcolor>
-        <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+        <texturefocus border="8">images/textedit.png</texturefocus>
+        <texturenofocus border="8" colordiffuse="99FFFFFF">images/textedit.png</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="togglebutton">
@@ -147,8 +148,8 @@
         <posx>0</posx>
         <top>0</top>
         <width>450</width>
-        <height>75</height> 
-	<font>size33</font>
+        <height>75</height>
+        <font>size33</font>
         <textureup>images/ArrowUpNF.png</textureup>
         <textureupfocus>images/ArrowUpFO.png</textureupfocus>
         <texturedown>images/ArrowDownNF.png</texturedown>
