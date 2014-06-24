@@ -257,6 +257,303 @@
                     <font>size18</font>
                 </control>
             </control>
+            <control type="group">
+                <visible>Control.HasFocus(207)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(207).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>size20</font>
+                    <label>$INFO[Container(207).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(207).ListItem.Property(Network)]</label>
+                    <font>size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(208)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(208).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>size20</font>
+                    <label>$INFO[Container(208).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(208).ListItem.Property(Network)]</label>
+                    <font>size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(209)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(209).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>size20</font>
+                    <label>$INFO[Container(209).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(209).ListItem.Property(Network)]</label>
+                    <font>size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(210)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(210).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>size20</font>
+                    <label>$INFO[Container(210).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(210).ListItem.Property(Network)]</label>
+                    <font>size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(211)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(211).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>size20</font>
+                    <label>$INFO[Container(211).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(211).ListItem.Property(Network)]</label>
+                    <font>size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(212)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(212).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>size20</font>
+                    <label>$INFO[Container(212).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(212).ListItem.Property(Network)]</label>
+                    <font>size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(213)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(213).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>size20</font>
+                    <label>$INFO[Container(213).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(213).ListItem.Property(Network)]</label>
+                    <font>size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(214)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(214).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>size20</font>
+                    <label>$INFO[Container(214).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(214).ListItem.Property(Network)]</label>
+                    <font>size18</font>
+                </control>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(215)</visible>
+                <control type="label">
+                    <description>Episode title</description>
+                    <centerleft>960</centerleft>
+                    <posy>10</posy>
+                    <width>1040</width>
+                    <height>40</height>
+                    <label>$INFO[Container(215).ListItem.Label]</label>
+                    <align>center</align>
+                    <font>size33B</font>
+                </control>
+                <control type="label">
+                    <description>Episode genre</description>
+                    <centerleft>960</centerleft>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>40</height>
+                    <align>center</align>
+                    <font>size20</font>
+                    <label>$INFO[Container(215).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <description>Episode network</description>
+                    <centerleft>960</centerleft>
+                    <top>85</top>
+                    <width>1000</width>
+                    <height>25</height>
+                    <align>center</align>
+                    <label>$INFO[Container(215).ListItem.Property(Network)]</label>
+                    <font>size18</font>
+                </control>
+            </control>
         </control>
         <control type="grouplist" id="2000">
             <posx>78</posx>

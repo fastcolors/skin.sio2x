@@ -55,7 +55,7 @@
                         <height>75</height>
                         <width>450</width>
                         <scroll>false</scroll>
-                        <font>size38</font>
+                        <font>size33</font>
                         <textcolor>black</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
