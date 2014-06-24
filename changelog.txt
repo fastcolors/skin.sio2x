@@ -1,3 +1,12 @@
+2.1.7
+* Cosmetic Fixes
+* Fix for selected color in skin
+* Introduction of VideoGuides in settings (still alpha)
+* drop Skin Service and switched to library.data.provider (few changes on shelf display)
+
+2.1.6
+* Fixes
+
 2.1.5
 * Now Possible to hide settings (forces quit to show menu and it's possible to enter settings from there)
 * Cosmetic Fixes

@@ -210,7 +210,7 @@
             </control>
             <control type="image" description="TVLINE">
                 <include>ShelfFade</include>
-                <animation effect="slide" end="485,0" time="400" condition="!Control.HasFocus(223) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
+                <animation effect="slide" end="485,0" time="400" condition="!Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
                 <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV) + !Skin.HasSetting(TVShelf_Watchlist)</visible>
                 <visible>Library.HasContent(TVShows)</visible>
                 <left>-5</left>
@@ -313,14 +313,19 @@
             <align>right</align>
             <control type="label" description="Battery">
                 <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,20) + !Skin.HasSetting(hideconnection)</visible>
-                <posx>35r</posx>
-                <posy>20</posy>
                 <width min="30" max="500">auto</width>
                 <height>45</height>
                 <font>size30</font>
                 <textcolor>White</textcolor>
                 <label>$INFO[System.BatteryLevel] Batt.</label>
             </control>
+            <!--<control type="label" description="IP">-->
+                <!--<width min="30" max="500">auto</width>-->
+                <!--<height>45</height>-->
+                <!--<font>size30</font>-->
+                <!--<textcolor>White</textcolor>-->
+                <!--<label> $INFO[Network.IPAddress] </label>-->
+            <!--</control>-->
             <control type="label" description="Clock">
                 <visible>!Skin.HasSetting(HideClock)</visible>
                 <width min="30" max="500">auto</width>
@@ -336,24 +341,5 @@
                 <aspectratio>scale</aspectratio>
             </control>
         </control>
-        <!--<control type="image" description="Current weather OVERLAY">-->
-            <!--<visible>Skin.HasSetting(wehoov)</visible>-->
-            <!--<height>1080</height>-->
-            <!--<width>1920</width>-->
-            <!--<aspectratio>stretch</aspectratio>-->
-            <!--<texture>$INFO[Window(Weather).Property(Current.FanartCode),weatherhome/,.png]</texture>-->
-        <!--</control>-->
-        <!--<control type="image" description="Current weather OVERLAY">-->
-        <!--<height>1080</height>-->
-        <!--<width>1920</width>-->
-        <!--<aspectratio>stretch</aspectratio>-->
-        <!--<texture>weatherhome/36.png</texture>-->
-        <!--</control>-->
-        <!--<control type="multiimage">-->
-        <!--<height>1080</height>-->
-        <!--<width>1920</width>-->
-        <!--<imagepath>weatherhome/</imagepath>-->
-        <!--<timeperimage>1600</timeperimage>-->
-        <!--</control>-->
     </controls>
 </window>
