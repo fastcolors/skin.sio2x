@@ -233,7 +233,7 @@
                             <label>3D $LOCALIZE[342]</label>
                             <onclick>Skin.ToggleSetting(3dmovs)</onclick>
                         </item>
-                         <item id="358">
+                        <item id="358">
                             <visible>Skin.HasSetting(nextair) | !System.HasAddon(script.tv.show.next.aired) | !Library.HasContent(TVShows)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>$ADDON[script.tv.show.next.aired 32019]</label>
@@ -626,7 +626,21 @@
             <onright>50</onright>
             <visible>Library.HasContent(Movies)</visible>
             <visible>Container(50).HasFocus(1001)</visible>
-            <control type="radiobutton" id="103" description="Movie Watchlist">
+            <control type="radiobutton" id="100" description="Auto">
+                <include>SettingsSubmenuButtons</include>
+                <label>20386</label>
+                <selected>!Skin.HasSetting(MoviesShelfWL)</selected>
+                <enable>!Skin.HasSetting(hidemovie)</enable>
+                <onclick>Skin.ToggleSetting(MoviesShelfWL)</onclick>
+            </control>
+            <control type="radiobutton" id="102" description="Movie Watchlist">
+                <include>SettingsSubmenuButtons</include>
+                <label>$LOCALIZE[31048] $LOCALIZE[342]</label>
+                <selected>Skin.HasSetting(MoviesShelfWL)</selected>
+                <enable>!Skin.HasSetting(hidemovie)</enable>
+                <onclick>Skin.ToggleSetting(MoviesShelfWL)</onclick>
+            </control>
+            <control type="radiobutton" id="103" description="Trailers">
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[31015]</label>
                 <selected>Skin.HasSetting(trailershelf)</selected>
