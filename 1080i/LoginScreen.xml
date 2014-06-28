@@ -65,10 +65,8 @@
             </control>
         </control>
         <control type="group" description="Labels and button">
-            <posx>0</posx>
             <top>696</top>
             <control type="label" description="label 1">
-                <posx>0</posx>
                 <top>30</top>
                 <height>45</height>
                 <width>1920</width>
@@ -78,7 +76,6 @@
                 <label>[B]$INFO[ListItem.Label][/B]</label>
             </control>
             <control type="label" description="Label 2">
-                <posx>0</posx>
                 <top>69</top>
                 <width>1920</width>
                 <font>size27</font>
@@ -104,6 +101,42 @@
                 <label>$LOCALIZE[13009]</label>
             </control>
         </control>
-        <include>WindowsTopInfos</include>
+        <control type="grouplist">
+            <right>15</right>
+            <align>right</align>
+            <orientation>horizontal</orientation>
+            <itemgap>5</itemgap>
+            <control type="label" description="Clock">
+                <visible>!Skin.HasSetting(HideClock)</visible>
+                <width>auto</width>
+                <height>40</height>
+                <align>right</align>
+                <aligny>center</aligny>
+                <font>size21</font>
+                <textcolor>White</textcolor>
+                <label>$INFO[System.Time]</label>
+            </control>
+            <control type="image">
+                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                <width>25</width>
+                <height>42</height>
+                <texture colordiffuse="black">wireless.png</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <visible>!System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                <width>30</width>
+                <height>42</height>
+                <texture>wireless.png</texture>
+                <colordiffuse>44FFFFFF</colordiffuse>
+            </control>
+        </control>
+        <control type="grouplist" description="sio2">
+            <top>40</top>
+            <centerleft>960</centerleft>
+            <width>1920</width>
+            <align>center</align>
+            <include>windowtitle</include>
+        </control>
     </controls>
 </window>

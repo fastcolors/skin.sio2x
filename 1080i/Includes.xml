@@ -151,10 +151,29 @@
         <font>size42</font>
     </include>
     <include name="Dimensions_Fullscreen">
-        <posx>0</posx>
+        <left>0</left>
         <top>0</top>
         <width>1920</width>
         <height>1080</height>
+    </include>
+    <include name="windowtitle">
+        <height>60</height>
+        <align>center</align>
+        <orientation>horizontal</orientation>
+        <control type="label" id="7777" description="Heading">
+            <width>auto</width>
+            <height>60</height>
+            <font>size42</font>
+            <scroll>false</scroll>
+            <label>$VAR[RootLabel]</label>
+        </control>
+        <control type="label" description="Number of files">
+            <width>auto</width>
+            <height>70</height>
+            <font>size22</font>
+            <textcolor>gray</textcolor>
+            <label>$INFO[Container.NumItems, (,)]</label>
+        </control>
     </include>
     <include name="WindowsTopInfos">
         <control type="grouplist">
@@ -194,47 +213,15 @@
             <top>40</top>
             <centerleft>1440</centerleft>
             <width>880</width>
-            <height>60</height>
-            <align>center</align>
-            <orientation>horizontal</orientation>
-            <control type="label" id="7777" description="Heading">
-                <width>auto</width>
-                <height>60</height>
-                <font>size42</font>
-                <scroll>false</scroll>
-                <label>$VAR[RootLabel]</label>
-            </control>
-            <control type="label" description="Number of files">
-                <width>auto</width>
-                <height>70</height>
-                <font>size22</font>
-                <textcolor>gray</textcolor>
-                <label>$INFO[Container.NumItems, (,)]</label>
-            </control>
+            <include>windowtitle</include>
         </control>
         <control type="grouplist" description="sio2">
-            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+            <visible>!Window.IsActive(DialogPictureInfo.xml) + !Window.IsActive(LoginScreen.xml)</visible>
             <visible>Control.IsVisible(52)</visible>
             <top>40</top>
             <centerleft>1630</centerleft>
             <width>580</width>
-            <height>60</height>
-            <align>center</align>
-            <orientation>horizontal</orientation>
-            <control type="label" id="7777" description="Heading">
-                <width>auto</width>
-                <height>60</height>
-                <font>size42</font>
-                <scroll>false</scroll>
-                <label>$VAR[RootLabel]</label>
-            </control>
-            <control type="label" description="Number of files">
-                <width>auto</width>
-                <height>70</height>
-                <font>size22</font>
-                <textcolor>gray</textcolor>
-                <label>$INFO[Container.NumItems, (,)]</label>
-            </control>
+            <include>windowtitle</include>
         </control>
         <control type="grouplist" description="ukn">
             <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
@@ -242,23 +229,8 @@
             <top>15</top>
             <centerleft>1440</centerleft>
             <width>580</width>
-            <height>60</height>
             <align>center</align>
-            <orientation>horizontal</orientation>
-            <control type="label" id="7777" description="Heading">
-                <width>auto</width>
-                <height>60</height>
-                <font>size42</font>
-                <scroll>false</scroll>
-                <label>$VAR[RootLabel]</label>
-            </control>
-            <control type="label" description="Number of files">
-                <width>auto</width>
-                <height>70</height>
-                <font>size22</font>
-                <textcolor>gray</textcolor>
-                <label>$INFO[Container.NumItems, (,)]</label>
-            </control>
+            <include>windowtitle</include>
         </control>
         <control type="grouplist" description="centered">
             <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
@@ -266,23 +238,8 @@
             <top>0</top>
             <centerleft>960</centerleft>
             <width>580</width>
-            <height>60</height>
             <align>center</align>
-            <orientation>horizontal</orientation>
-            <control type="label" id="7777" description="Heading">
-                <width>auto</width>
-                <height>60</height>
-                <font>size42</font>
-                <scroll>false</scroll>
-                <label>$VAR[RootLabel]</label>
-            </control>
-            <control type="label" description="Number of files">
-                <width>auto</width>
-                <height>70</height>
-                <font>size22</font>
-                <textcolor>gray</textcolor>
-                <label>$INFO[Container.NumItems, (,)]</label>
-            </control>
+            <include>windowtitle</include>
         </control>
         <control type="grouplist" description="leftsided">
             <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
@@ -290,23 +247,8 @@
             <top>0</top>
             <left>30</left>
             <width>580</width>
-            <height>60</height>
             <align>left</align>
-            <orientation>horizontal</orientation>
-            <control type="label" id="7777" description="Heading">
-                <width>auto</width>
-                <height>60</height>
-                <font>size42</font>
-                <scroll>false</scroll>
-                <label>$VAR[RootLabel]</label>
-            </control>
-            <control type="label" description="Number of files">
-                <width>auto</width>
-                <height>70</height>
-                <font>size22</font>
-                <textcolor>gray</textcolor>
-                <label>$INFO[Container.NumItems, (,)]</label>
-            </control>
+            <include>windowtitle</include>
         </control>
         <!--SCROLLLETTER-->
         <control type="group" description="Scroll letter">
