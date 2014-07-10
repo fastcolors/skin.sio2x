@@ -19,14 +19,23 @@
     <include name="left_Panel">
         <control type="group" description="ICON no PLOT">
             <visible>IsEmpty(ListItem.Plot) | Control.IsVisible(51)</visible>
-            <animation effect="fade" time="400">Visible</animation>
-            <animation effect="fade" time="0">Hidden</animation>
             <control type="image" description="Thumb">
+                <visible>StringCompare(ListItem.Label,..)</visible>
                 <centerleft>480</centerleft>
                 <centertop>540</centertop>
                 <width>800</width>
                 <height>900</height>
-                <include>Icon_Fade</include>
+                <fadetime>200</fadetime>
+                <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
+                <aspectratio aligny="center">keep</aspectratio>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <centerleft>480</centerleft>
+                <centertop>540</centertop>
+                <width>800</width>
+                <height>900</height>
+                <fadetime>200</fadetime>
                 <bordertexture colordiffuse="black">images/white.png</bordertexture>
                 <bordersize>4</bordersize>
                 <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
@@ -40,22 +49,21 @@
                 <height>100</height>
                 <width>100</width>
                 <aspectratio>keep</aspectratio>
+                <fadetime>200</fadetime>
                 <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
             </control>
         </control>
         <control type="group" description="ICON + PLOT">
             <top>100</top>
             <visible>!IsEmpty(ListItem.Plot) + !Control.IsVisible(51)</visible>
-            <animation effect="fade" time="400">Visible</animation>
-            <animation effect="fade" time="0">Hidden</animation>
             <control type="group">
                 <visible>!Container.Content(episodes)</visible>
                 <control type="image" description="Thumb">
                     <centerleft>480</centerleft>
                     <width>756</width>
                     <height>470</height>
-                    <include>Icon_Fade</include>
                     <texture background="true">$VAR[Locandine]</texture>
+                    <fadetime>200</fadetime>
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>
                     <bordersize>4</bordersize>
                     <aspectratio>keep</aspectratio>
@@ -67,7 +75,6 @@
                     <centerleft>480</centerleft>
                     <width>756</width>
                     <height>470</height>
-                    <include>Icon_Fade</include>
                     <texture background="true">$INFO[ListItem.Icon]</texture>
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>
                     <bordersize>4</bordersize>
@@ -279,8 +286,8 @@
                 <width>660</width>
                 <height>660</height>
                 <include>Icon_Fade</include>
-                <bordertexture colordiffuse="black">images/white.png</bordertexture>
-                <bordersize>2</bordersize>
+                <!--<bordertexture colordiffuse="black">images/white.png</bordertexture>-->
+                <!--<bordersize>2</bordersize>-->
                 <texture background="true">$INFO[ListItem.Icon]</texture>
                 <aspectratio aligny="center">keep</aspectratio>
             </control>
@@ -839,7 +846,7 @@
         <disabledcolor>Disabled</disabledcolor>
     </include>
     <include name="Help_Panel">
-        <animation effect="fade" time="200">VisibleChange</animation>
+        <!--<animation effect="fade" time="200">VisibleChange</animation>-->
         <width>460</width>
         <height>380</height>
         <aspectratio align="center" aligny="bottom">keep</aspectratio>

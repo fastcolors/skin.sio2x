@@ -39,7 +39,7 @@
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
                 <width>1800</width>
                 <height>1080</height>
-                <top>536</top>
+                <top>526</top>
                 <posx>60</posx>
                 <onleft>9000</onleft>
                 <onright>9000</onright>

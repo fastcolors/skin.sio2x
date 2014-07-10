@@ -13,6 +13,7 @@
   -->
     <include>OpenClose</include>
     <controls>
+        <include>BlackBackground</include>
         <include>Musicviews</include>
         <include>WindowsTopInfos</include>
         <control type="group" description="Side menu 9000 group">
@@ -94,7 +95,7 @@
                 </control>
                 <control type="radiobutton" id="600" description="sio2">
                     <include>DialogButt</include>
-                    <enable>!Container.Content(files) + !Container.Content(songs) + !IsEmpty(Container.FolderPath)</enable>
+                    <enable>!Container.Content(songs) + !IsEmpty(Container.FolderPath)</enable>
                     <onclick>Container.SetViewMode(52)</onclick>
                     <selected>Control.IsVisible(52)</selected>
                     <label>SiO2</label>
@@ -115,6 +116,5 @@
                 </control>
             </control>
         </control>
-
     </controls>
 </window>

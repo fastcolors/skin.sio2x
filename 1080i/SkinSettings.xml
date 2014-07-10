@@ -38,10 +38,10 @@
                     <selected>!Skin.HasSetting(ViewsMenuOff)</selected>
                 </control>
                 <!--<control type="radiobutton" id="4">-->
-                    <!--<visible>System.HasAddon(script.cinema.experience)</visible>-->
-                    <!--<label>$LOCALIZE[31088]</label>-->
-                    <!--<onclick>Skin.ToggleSetting(scelta)</onclick>-->
-                    <!--<selected>Skin.HasSetting(scelta)</selected>-->
+                <!--<visible>System.HasAddon(script.cinema.experience)</visible>-->
+                <!--<label>$LOCALIZE[31088]</label>-->
+                <!--<onclick>Skin.ToggleSetting(scelta)</onclick>-->
+                <!--<selected>Skin.HasSetting(scelta)</selected>-->
                 <!--</control>-->
                 <control type="radiobutton" id="5">
                     <label>$LOCALIZE[31033]</label>
@@ -127,15 +127,15 @@
             </control>
             <control type="image" description="ColorMenu">
                 <centerleft>460</centerleft>
-                <visible>Controlgroup(575).HasFocus(5)</visible>
+                <visible>Controlgroup(575).HasFocus(5) + !Skin.HasSetting(colormenu)</visible>
                 <include>Help_Panel</include>
-                <texture>help/colormenu.png</texture>
+                <texture>icons/DarkOrange.png</texture>
             </control>
             <control type="image" description="ColorMenuOff">
                 <centerleft>460</centerleft>
                 <visible>Controlgroup(575).HasFocus(5) + Skin.HasSetting(colormenu)</visible>
                 <include>Help_Panel</include>
-                <texture>help/off.png</texture>
+                <texture>icons/base.png</texture>
             </control>
             <control type="image" description="Logo">
                 <centerleft>460</centerleft>
@@ -219,6 +219,8 @@
                 <centerleft>460</centerleft>
                 <visible>Controlgroup(575).HasFocus(11)</visible>
                 <include>Help_Panel</include>
+                <bordersize>4</bordersize>
+                <bordertexture colordiffuse="black">images/white.png</bordertexture>
                 <texture>$VAR[bgimg]</texture>
             </control>
             <control type="image" description="icon shelf">
@@ -229,14 +231,14 @@
             </control>
         </control>
         <control type="image" description="Line">
-            <posx>150</posx>
+            <centerleft>480</centerleft>
             <top>540</top>
             <height>1</height>
-            <width>660</width>
-            <texture>lines/Line.png</texture>
+            <width>900</width>
+            <texture colordiffuse="black">lines/Line1.png</texture>
         </control>
         <control type="textbox" description="HelpDetails">
-            <posx>170</posx>
+            <centerleft>480</centerleft>
             <top>560</top>
             <width>660</width>
             <height>380</height>
