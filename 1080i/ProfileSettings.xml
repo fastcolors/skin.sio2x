@@ -6,10 +6,10 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <control type="label" id="1000" description="Profile Name">
+        <control type="label" id="102" description="Profile Name">
             <include>Heading</include>
         </control>
-        <control type="image" id="2">
+        <control type="image" id="101">
             <centerleft>480</centerleft>
             <centertop>540</centertop>
             <width>600</width>
@@ -25,7 +25,7 @@
             <aspectratio>stretch</aspectratio>
             <texture>images/LoginSlider.png</texture>
         </control>
-        <control type="label" id="1001" description="Profile Directory">
+        <control type="label" id="103" description="Profile Directory">
             <top>60</top>
             <font>size21</font>
             <include>Heading</include>

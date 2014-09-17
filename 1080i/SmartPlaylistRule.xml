@@ -72,7 +72,7 @@
                     <label>$INFO[Control.GetLabel(16)]</label>
                 </control>
             </control>
-            <control type="button" id="17">
+            <control type="edit" id="17">
                 <description>Value Button</description>
                 <posx>15</posx>
                 <top>234</top>

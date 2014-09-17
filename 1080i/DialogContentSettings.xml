@@ -28,7 +28,7 @@
                 <width>700</width>
                 <label>$LOCALIZE[20344] :</label>
             </control>
-             <control type="spincontrolex" id="3" description="Content Type">
+             <control type="spincontrolex" id="20" description="Content Type">
                 <width>700</width>
                 <height>80</height>
                 <align>left</align>
@@ -42,7 +42,7 @@
         <!--<align>left</align>-->
         <!--<label>$INFO[Control.GetLabel(3)]</label>-->
         <!--</control>-->
-        <control type="list" id="4" description="Scraper list">
+        <control type="list" id="21" description="Scraper list">
             <left>960</left>
             <top>140</top>
             <width>740</width>
@@ -97,7 +97,7 @@
             <align>left</align>
             <radioleft>1020</radioleft>
         </control>
-        <control type="button" id="6" description="Settings">
+        <control type="button" id="22" description="Settings">
             <centerleft>960</centerleft>
             <top>872</top>
             <width>1480</width>

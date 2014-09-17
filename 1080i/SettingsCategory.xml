@@ -85,6 +85,14 @@
             <font>size33</font>
             <texturefocus flipx="true" colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
         </control>
+        <control type="sliderex" id="13">
+			<description>Default Slider</description>
+            <height>81</height>
+			 <align>right</align>
+            <aligny>center</aligny>
+            <font>size33</font>
+			<texturefocus flipx="true" colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+		</control>
         <control type="scrollbar" id="60">
             <left>30r</left>
             <top>90</top>

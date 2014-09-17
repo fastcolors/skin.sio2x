@@ -17,7 +17,7 @@
                     <posx>960</posx>
                     <control type="list" id="450">
                         <width>900</width>
-                        <height>830</height>
+                        <height>938</height>
                         <onleft>9000</onleft>
                         <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
                         <onup>450</onup>

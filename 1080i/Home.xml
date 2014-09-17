@@ -89,7 +89,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label" description="LABEL">
-                        <posx>150</posx>
+                        <centerleft>150</centerleft>
                         <top>220</top>
                         <width>300</width>
                         <height>24</height>
@@ -162,7 +162,7 @@
                         <colordiffuse>black</colordiffuse>
                     </control>
                     <control type="label" description="label">
-                        <posx>150</posx>
+                        <centerleft>150</centerleft>
                         <top>220</top>
                         <width>300</width>
                         <height>24</height>
