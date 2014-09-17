@@ -108,6 +108,7 @@
                             <height>150</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="70">Seekbar/OSDBackground.png</texture>
+                            <colordiffuse>CCFFFFFF</colordiffuse>
                         </control>
                     </control>
                     <control type="label" description="Title">
