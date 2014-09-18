@@ -45,6 +45,10 @@
             </control>
         </control>
         <control type="image" id="1">
+            <animation type="Conditional" condition="Player.Paused" reversible="false">
+                <effect type="slide" start="0,0" end="0,-470" time="800" delay="1500"/>
+                <effect type="zoom" center="960,540" start="100" end="35" time="800" delay="1500"/>
+            </animation>
             <visible>Player.Paused</visible>
             <centertop>540</centertop>
             <centerleft>960</centerleft>
