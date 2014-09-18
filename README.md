@@ -1,4 +1,4 @@
 skin.sio2x
 ==========
 
-XBMC Skin
+Kodi (formerly XBMC) Skin
