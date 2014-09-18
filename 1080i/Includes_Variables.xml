@@ -235,20 +235,43 @@
         <value>-</value>
     </variable>
 
+    <variable name="shelfTV">
+        <value condition="Skin.HasSetting(TVShelf_Watchlist)">videodb://recentlyaddedepisodes/</value>
+        <value>plugin://service.library.data.provider?type=recommendedepisodes&limit=16&reload=$INFO[Window.Property(recommendedepisodes)]</value>
+    </variable>
+
+     <variable name="shelfinverted">
+        <value condition="Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[31048]</value>
+        <value>$LOCALIZE[31006]</value>
+    </variable>
+
     <variable name="musicshelftitle">
         <value condition="StringCompare(Skin.String(musicshelf),custom)">[B] $LOCALIZE[1038][/B]</value>
-        <value condition="StringCompare(Skin.String(musicshelf),top)">[B] $LOCALIZE[10504][/B]</value>
-        <value condition="StringCompare(Skin.String(musicshelf),topalbum)">[B] $LOCALIZE[10505][/B]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),albums)">[B] $LOCALIZE[132][/B]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),artists)">[B] $LOCALIZE[133][/B]</value>
         <!--<value condition="StringCompare(Skin.String(musicshelf),playlists)">[B] $LOCALIZE[20011][/B]</value>-->
         <value>[B] $LOCALIZE[359][/B]</value>
     </variable>
 
     <variable name="musicshelfcontent">
         <value condition="StringCompare(Skin.String(musicshelf),custom)">addons://sources/audio/</value>
-        <value condition="StringCompare(Skin.String(musicshelf),top) + Library.HasContent(Music)">musicdb://top100/songs/</value>
-        <value condition="StringCompare(Skin.String(musicshelf),topalbum) + Library.HasContent(Music)">musicdb://top100/albums/</value>
+        <value condition="StringCompare(Skin.String(musicshelf),artists) + Library.HasContent(Music)">musicdb://artists</value>
+        <value condition="StringCompare(Skin.String(musicshelf),albums) + Library.HasContent(Music)">musicdb://albums</value>
         <!--<value condition="StringCompare(Skin.String(musicshelf),playlists) + Library.HasContent(Music)">special://musicplaylists/</value>-->
         <value condition="Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
+    </variable>
+
+     <variable name="addonsshelftitle">
+        <value condition="StringCompare(Skin.String(addonsshelf),1)"> $LOCALIZE[1038] </value>
+        <value condition="StringCompare(Skin.String(addonsshelf),2)"> $LOCALIZE[1043] </value>
+        <value> $LOCALIZE[1037] </value>=
+    </variable>ù
+
+
+    <variable name="addonsshelfcontent">
+        <value condition="StringCompare(Skin.String(addonsshelf),1)">addons://sources/audio/</value>
+        <value condition="StringCompare(Skin.String(addonsshelf),2)">addons://sources/executable/</value>
+        <value>addons://sources/video/</value>
     </variable>
 
     <variable name="shelflabel">
@@ -262,6 +285,7 @@
         <value condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[31015]</value>
         <value>$LOCALIZE[20386]</value>
     </variable>
+
 
     <variable name="nextairedfanart">
         <value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Fanart)]</value>
