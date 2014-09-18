@@ -235,7 +235,7 @@
         <control type="grouplist" description="centered">
             <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
             <visible>Control.IsVisible(53) | [Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]]</visible>
-            <top>0</top>
+            <top>30</top>
             <centerleft>960</centerleft>
             <width>580</width>
             <align>center</align>
@@ -535,6 +535,152 @@
                 <width>480 </width>
                 <label>222</label>
                 <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+            </control>
+        </control>
+    </include>
+    <include name="PVRsidemenu">
+        <control type="group" description="Side menu 9000 group">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !Window.IsVisible(traktContextMenu.xml)</visible>
+            <include>9000slide</include>
+            <control type="image" description="List back">
+                <top>-10</top>
+                <posx>1430</posx>
+                <width>550</width>
+                <height>1100</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">sidepanel/Back.png</texture>
+            </control>
+            <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs</include>
+                <control type="button" id="607">
+                    <enable>false</enable>
+                    <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>•• $LOCALIZE[33063] ••</label>
+                </control>
+                <control type="button" id="31">
+                    <description>TV Guide</description>
+                    <include>DialogButt</include>
+                    <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">noop</onclick>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+                    <label>22020</label>
+                </control>
+                <control type="button" id="32">
+                    <description>TV Channels</description>
+                    <include>DialogButt</include>
+                    <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">noop</onclick>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+                    <label>19023</label>
+                </control>
+                <control type="button" id="34">
+                    <description>Recordings</description>
+                    <include>DialogButt</include>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+                    <label>19163</label>
+                </control>
+                <control type="button" id="35">
+                    <description>Timers</description>
+                    <include>DialogButt</include>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+                    <label>19040</label>
+                </control>
+                <control type="button" id="36">
+                    <description>Search</description>
+                    <include>DialogButt</include>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+                    <label>137</label>
+                </control>
+                <control type="button" id="28">
+                    <description>Channel Groups</description>
+                    <left>0</left>
+                    <right>40</right>
+                    <textwidth>235</textwidth>
+                    <include>DialogButt</include>
+                    <label>-</label>
+                </control>
+                <control type="radiobutton" id="5">
+                    <description>Group recording items by folder structure</description>
+                    <left>0</left>
+                    <right>40</right>
+                    <textwidth>235</textwidth>
+                    <include>ButtonCommonValues</include>
+                    <label>19270</label>
+                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+                </control>
+                <control type="button" id="3">
+                    <description>Sort by button</description>
+                    <include>DialogButt</include>
+                    <label>103</label>
+                </control>
+                <control type="togglebutton" id="4">
+                    <description>Sort asc</description>
+                    <include>DialogButt</include>
+                    <alttexturefocus border="5">button-focus.png</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                    <label>31051</label>
+                    <altlabel>31050</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                </control>
+                <control type="button" id="599">
+                    <enable>false</enable>
+                    <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>•• $LOCALIZE[582] ••</label>
+                </control>
+                <control type="radiobutton" id="600" description="EPG">
+                    <visible>Window.IsActive(MyPVRGuide.xml)</visible>
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(10)</onclick>
+                    <selected>Control.IsVisible(10)</selected>
+                    <label>EPG</label>
+                </control>
+                <!--<control type="radiobutton" id="601" description="LiveChannel">-->
+                    <!--<include>DialogButt</include>-->
+                    <!--&lt;!&ndash;<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
+                    <!--<onclick>Container.SetViewMode(13)</onclick>-->
+                    <!--<selected>Control.IsVisible(13) + !Control.IsVisible(10)</selected>-->
+                    <!--<label>LiveChannels</label>-->
+                <!--</control>-->
+                <control type="radiobutton" id="602" description="Now">
+                    <visible>Window.IsActive(MyPVRGuide.xml)</visible>
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(11)</onclick>
+                    <selected>Control.IsVisible(11) + !Control.IsVisible(10)</selected>
+                    <label>Now</label>
+                </control>
+                <control type="radiobutton" id="603" description="Next">
+                    <visible>Window.IsActive(MyPVRGuide.xml)</visible>
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(12)</onclick>
+                    <selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>
+                    <label>Next</label>
+                </control>
+                 <control type="radiobutton" id="602" description="Now">
+                    <visible>Window.IsActive(MyPVRChannels.xml)</visible>
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(11)</onclick>
+                    <selected>Control.IsVisible(11) + !Control.IsVisible(10)</selected>
+                    <label>Big List</label>
+                </control>
+                <control type="radiobutton" id="603" description="Next">
+                    <visible>Window.IsActive(MyPVRChannels.xml)</visible>
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(12)</onclick>
+                    <selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>
+                    <label>Small List</label>
+                </control>
+
             </control>
         </control>
     </include>

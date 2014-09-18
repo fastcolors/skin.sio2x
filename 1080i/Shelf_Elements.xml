@@ -5,7 +5,7 @@
         <animation effect="fade" end="0" time="100">Hidden</animation>
     </include>
     <include name="ShelfTitle">
-        <posx>30</posx>
+        <left>50</left>
         <top>20</top>
         <height>45</height>
         <width>750</width>
@@ -592,7 +592,7 @@
     </include>
     <include name="Movies">
         <control type="label" description="Top Label">
-            <visible>Control.IsVisible(311)</visible>
+            <visible>Control.IsVisible(311) + Container(9000).HasFocus(340)</visible>
             <include>ShelfFade</include>
             <include>ShelfTitle</include>
             <label>[B] $VAR[shelflabel] [/B]</label>
@@ -659,11 +659,11 @@
     </include>
     <include name="TV_NA">
         <control type="group">
-            <control type="label" description="Top Label">
-                <visible>Control.IsVisible(311)</visible>
-                <include>ShelfFade</include>
-                <include>ShelfTitle</include>
-                <label>[B] $VAR[shelflabel] [/B]</label>
+        <control type="label" description="Top Label">
+            <visible>Control.IsVisible(311) + Container(9000).HasFocus(358)</visible>
+            <include>ShelfFade</include>
+            <include>ShelfTitle</include>
+            <label>[B] $VAR[shelflabel] [/B]</label>
             </control>
             <control type="panel" id="311" description="TOP Shortcuts">
                 <visible>Container(9000).HasFocus(358)</visible>
@@ -1353,7 +1353,7 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label" description="temps">
-                         <centerleft>125</centerleft>
+                        <centerleft>125</centerleft>
                         <top>200</top>
                         <height>100</height>
                         <width>250</width>
@@ -1372,7 +1372,7 @@
                 </itemlayout>
                 <focusedlayout width="250">
                     <control type="label">
-                         <centerleft>125</centerleft>
+                        <centerleft>125</centerleft>
                         <top>160</top>
                         <height>45</height>
                         <width>250</width>
@@ -1382,7 +1382,7 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label" description="temps">
-                         <centerleft>125</centerleft>
+                        <centerleft>125</centerleft>
                         <top>200</top>
                         <height>100</height>
                         <width>250</width>
@@ -1556,7 +1556,7 @@
     <include name="EPG_shelf">
         <control type="group">
             <control type="label" description="Top Label">
-                <visible>Control.IsVisible(311)</visible>
+                <visible>Container(9000).HasFocus(355) + Control.IsVisible(311)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
                 <label>[B] $VAR[shelflabel] [/B]</label>

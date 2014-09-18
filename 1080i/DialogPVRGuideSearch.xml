@@ -62,7 +62,8 @@
             <width>1180</width>
             <height>50</height>
             <font>size33</font>
-            <textcolor>white</textcolor>
+            <textcolor>black</textcolor>
+            <focusedcolor>black</focusedcolor>
 
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
@@ -121,8 +122,8 @@
                 <width>600</width>
                 <height>50</height>
                 <font>size26</font>
-                <textcolor>white</textcolor>
-                <focusedcolor>white</focusedcolor>
+                <textcolor>black</textcolor>
+                <focusedcolor>black</focusedcolor>
 
                 <label>19128</label>
                 <onright>16</onright>
@@ -137,8 +138,8 @@
                 <width>600</width>
                 <height>50</height>
                 <font>size26</font>
-                <textcolor>white</textcolor>
-                <focusedcolor>white</focusedcolor>
+               <textcolor>black</textcolor>
+                <focusedcolor>black</focusedcolor>
 
                 <label>19129</label>
                 <onright>17</onright>
@@ -243,8 +244,8 @@
                 <width>600</width>
                 <height>50</height>
                 <font>size26</font>
-                <textcolor>white</textcolor>
-                <focusedcolor>white</focusedcolor>
+                <textcolor>black</textcolor>
+                <focusedcolor>black</focusedcolor>
 
                 <label>19126</label>
                 <onright>14</onright>

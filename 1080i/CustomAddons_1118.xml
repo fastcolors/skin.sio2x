@@ -20,21 +20,27 @@
                     <include>DialogButt</include>
                     <label>1037</label>
                     <onclick>Close</onclick>
-                    <onclick>ActivateWindow(Videos,Addons)</onclick>
+                    <onclick>ActivateWindow(Videos,Addons,return)</onclick>
                 </control>
                 <control type="button" id="700">
                     <include>DialogButt</include>
                     <label>1038</label>
                     <onclick>Close</onclick>
-                    <onclick>ActivateWindow(Music,Addons)</onclick>
+                    <onclick>ActivateWindow(Music,Addons,return)</onclick>
                 </control>
                 <control type="button" id="701">
+                    <include>DialogButt</include>
+                    <label>1043</label>
+                    <onclick>Close</onclick>
+                    <onclick>ActivateWindow(Programs,Addons,return)</onclick>
+                </control>
+                <control type="button" id="800">
                     <include>DialogButt</include>
                     <label>31037</label>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(AddonBrowser,root)</onclick>
                 </control>
-                <control type="button" id="702">
+                <control type="button" id="801">
                     <include>DialogButt</include>
                     <label>31040</label>
                     <onclick>Close</onclick>

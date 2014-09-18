@@ -60,7 +60,6 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label" description="Main Label">
-                            <posx>150</posx>
                             <top>220</top>
                             <width>300</width>
                             <height>24</height>
@@ -104,7 +103,6 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="label" description="Main Label">
-                            <posx>150</posx>
                             <top>220</top>
                             <width>300</width>
                             <height>24</height>
@@ -566,19 +564,18 @@
                             <label>+ $LOCALIZE[24009]</label>
                             <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
                         </item>
-
-                        <item id="1008" description="Programs">
-                            <visible>!Skin.HasSetting(hideprog)</visible>
-                            <thumb>icons/program.png</thumb>
-                            <label>$LOCALIZE[0]</label>
-                            <onclick>Skin.ToggleSetting(hideprog)</onclick>
-                        </item>
-                        <item id="1008" description="Programs">
-                            <visible>Skin.HasSetting(hideprog)</visible>
-                            <thumb>help/Off.png</thumb>
-                            <label>$LOCALIZE[0]</label>
-                            <onclick>Skin.ToggleSetting(hideprog)</onclick>
-                        </item>
+                        <!--<item id="1008" description="Programs">-->
+                            <!--<visible>!Skin.HasSetting(hideprog)</visible>-->
+                            <!--<thumb>icons/program.png</thumb>-->
+                            <!--<label>$LOCALIZE[0]</label>-->
+                            <!--<onclick>Skin.ToggleSetting(hideprog)</onclick>-->
+                        <!--</item>-->
+                        <!--<item id="1008" description="Programs">-->
+                            <!--<visible>Skin.HasSetting(hideprog)</visible>-->
+                            <!--<thumb>help/Off.png</thumb>-->
+                            <!--<label>$LOCALIZE[0]</label>-->
+                            <!--<onclick>Skin.ToggleSetting(hideprog)</onclick>-->
+                        <!--</item>-->
                         <item id="1011" description="Sources">
                             <visible>!Skin.HasSetting(hideSources)</visible>
                             <thumb>icons/Sources.png</thumb>

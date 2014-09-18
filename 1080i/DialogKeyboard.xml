@@ -40,6 +40,8 @@
                 <top>199</top>
                 <width>960</width>
                 <height>60</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
                 <align>center</align>
                 <textcolor>black</textcolor>
             </control>

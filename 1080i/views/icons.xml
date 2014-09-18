@@ -6,9 +6,9 @@
             <control type="group">
                 <control type="panel" id="53">
                     <left>30</left>
-                    <top>60</top>
+                    <top>100</top>
                     <width>1920</width>
-                    <height>1000</height>
+                    <height>990</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
                     <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
@@ -170,8 +170,8 @@
                             <visible>container.content(TVshows) | container.content(seasons)</visible>
                             <control type="image">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <left>123</left>
-                                <top>276</top>
+                                <left>143</left>
+                                <top>310</top>
                                 <height>45</height>
                                 <width>150</width>
                                 <aspectratio>keep</aspectratio>
@@ -179,8 +179,8 @@
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <posx>197</posx>
-                                <top>270</top>
+                                <centerleft>218</centerleft>
+                                <top>305</top>
                                 <height>45</height>
                                 <width>150</width>
                                 <font>size24</font>
@@ -193,8 +193,8 @@
                         </control>
                         <control type="image" description="WatchStatus">
                             <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
-                            <posx>30</posx>
-                            <top>290</top>
+                            <left>31</left>
+                            <top>327</top>
                             <height>32</height>
                             <width>60</width>
                             <aspectratio align="left">keep</aspectratio>
@@ -247,8 +247,8 @@
                                     <visible>container.content(TVshows) | container.content(seasons)</visible>
                                     <control type="image">
                                         <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                        <posx>123</posx>
-                                        <top>276</top>
+                                        <left>143</left>
+                                        <top>310</top>
                                         <height>45</height>
                                         <width>150</width>
                                         <aspectratio>keep</aspectratio>
@@ -256,8 +256,8 @@
                                     </control>
                                     <control type="label" description="Label2">
                                         <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                        <posx>197</posx>
-                                        <top>270</top>
+                                        <centerleft>218</centerleft>
+                                        <top>305</top>
                                         <height>45</height>
                                         <width>150</width>
                                         <font>size24</font>
@@ -270,8 +270,8 @@
                                 </control>
                                 <control type="image" description="WatchStatus">
                                     <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
-                                    <posx>30</posx>
-                                    <top>290</top>
+                                    <left>31</left>
+                                    <top>327</top>
                                     <height>32</height>
                                     <width>60</width>
                                     <aspectratio align="left">keep</aspectratio>
@@ -293,7 +293,7 @@
             </control>
             <control type="image" description="Line Split">
                 <centerleft>960</centerleft>
-                <top>60</top>
+                <top>99</top>
                 <width>1500</width>
                 <height>1</height>
                 <texture colordiffuse="black">lines/Line.png</texture>

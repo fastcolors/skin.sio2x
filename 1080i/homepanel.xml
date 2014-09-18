@@ -63,14 +63,14 @@
             <thumb>icons/LiveTV.png</thumb>
             <label>31059</label>
             <property name="color">icons/green3.png</property>
-            <onclick>ActivateWindowAndFocus(1718)</onclick>
+            <onclick>ActivateWindow(TVGuide)</onclick>
             <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
         <item id="355">
             <thumb>icons/LiveTVrec.png</thumb>
             <label>$INFO[Pvr.NowRecordingTitle]</label>
             <property name="color">icons/green3.png</property>
-            <onclick>ActivateWindow(1718)</onclick>
+            <onclick>ActivateWindow(TVGuide)</onclick>
             <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
          <item id="344">
@@ -289,13 +289,13 @@
         <!--<property name="color">icons/dvdcolor.png</property>-->
         <!--<onclick>ActivateWindow(1113)</onclick>-->
         <!--</item>-->
-        <item id="350">
-            <visible>!Skin.HasSetting(hideprog)</visible>
-            <thumb>icons/program.png</thumb>
-            <label>0</label>
-            <property name="color">icons/progcolor.png</property>
-            <onclick>ActivateWindow(Programs,Addons)</onclick>
-        </item>
+        <!--<item id="350">-->
+            <!--<visible>!Skin.HasSetting(hideprog)</visible>-->
+            <!--<thumb>icons/program.png</thumb>-->
+            <!--<label>0</label>-->
+            <!--<property name="color">icons/progcolor.png</property>-->
+            <!--<onclick>ActivateWindow(Programs,Addons)</onclick>-->
+        <!--</item>-->
         <item id="347">
             <visible>!Skin.HasSetting(hideSources)</visible>
             <thumb>icons/sources.png</thumb>
@@ -325,6 +325,14 @@
             <label>5</label>
             <property name="color">icons/bluegray.png</property>
             <onclick>ActivateWindow(1120)</onclick>
+        </item>
+        <!--todo label-->
+         <item id="3490">
+            <visible>!Skin.HasSetting(hidevidhelp)</visible>
+            <thumb>icons/qmark.png</thumb>
+            <label>VIDEOGUIDES</label>
+            <property name="color">icons/teak.png</property>
+            <onclick>ActivateWindow(1111)</onclick>
         </item>
         <item id="349">
             <visible>Player.HasMedia</visible>

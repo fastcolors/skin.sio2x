@@ -10,10 +10,14 @@
         <control type="group">
             <include>OpenClose</include>
             <control type="button" id="9009">
-                <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
+                <!--todo hide when not in use-->
+                <!--<visible>Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(315)</visible>-->
+                <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
                 <top>26</top>
+                <left>10</left>
                 <width>34</width>
                 <height>34</height>
+                <texturenofocus aspectratio="keep" colordiffuse="blue">images/hometoggle.png</texturenofocus>
                 <texturefocus aspectratio="keep" colordiffuse="black">images/hometoggle.png</texturefocus>
                 <!--MOVIES-->
                 <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">Skin.SetString(moviesshelf,)</onclick>
@@ -29,7 +33,8 @@
                 <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),custom) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>
                 <!--ADDONS-->
                 <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),1)">Skin.SetString(addonsshelf,2)</onclick>
-                <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),2)">Skin.SetString(addonsshelf,)</onclick>
+                <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),2)">Skin.SetString(addonsshelf,3)</onclick>
+                <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),3)">Skin.SetString(addonsshelf,)</onclick>
                 <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),)">Skin.SetString(addonsshelf,1)</onclick>
                 <colordiffuse>black</colordiffuse>
                 <onup>noop</onup>
@@ -214,12 +219,12 @@
             <control type="image" description="TVLINE">
                 <include>ShelfFade</include>
                 <animation effect="slide" end="485,0" time="400" condition="!Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
-                <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV) + !Skin.HasSetting(TVShelf_Watchlist)</visible>
+                <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV)</visible>
                 <visible>Library.HasContent(TVShows)</visible>
                 <left>-5</left>
-                <top>30</top>
-                <width>1</width>
-                <height>450</height>
+                <top>160</top>
+                <width>2</width>
+                <height>250</height>
                 <texture>lines/LineV.png</texture>
             </control>
             <control type="group" id="700" description="Shelf items">
