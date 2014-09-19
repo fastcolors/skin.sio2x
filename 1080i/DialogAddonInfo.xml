@@ -130,9 +130,8 @@
                     <label>$LOCALIZE[24048]</label>
                     <width>250</width>
                 </control>
-                <!--todo label-->
                 <control type="button" id="12" description="run">
-                    <label>RUN</label>
+                    <label>335</label>
                     <width>250</width>
                 </control>
             </control>

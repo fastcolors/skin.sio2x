@@ -39,8 +39,7 @@
                     <font>size24</font>
                     <aligny>bottom</aligny>
                     <textcolor>White</textcolor>
-                    <!--todo localize-->
-                    <label>Now watching</label>
+                    <label>$LOCALIZE[31020]</label>
                 </control>
                 <control type="label" id="503">
                     <description>Show Name Label</description>

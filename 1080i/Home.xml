@@ -10,14 +10,13 @@
         <control type="group">
             <include>OpenClose</include>
             <control type="button" id="9009">
-                <!--todo hide when not in use-->
-                <!--<visible>Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(315)</visible>-->
+                <visible>[Control.IsVisible(311) + [Container(9000).HasFocus(340)]] | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(315)</visible>
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
                 <top>26</top>
                 <left>10</left>
                 <width>34</width>
                 <height>34</height>
-                <texturenofocus aspectratio="keep" colordiffuse="blue">images/hometoggle.png</texturenofocus>
+                <texturenofocus aspectratio="keep" colordiffuse="darkgray">images/hometoggle.png</texturenofocus>
                 <texturefocus aspectratio="keep" colordiffuse="black">images/hometoggle.png</texturefocus>
                 <!--MOVIES-->
                 <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">Skin.SetString(moviesshelf,)</onclick>
@@ -90,9 +89,9 @@
                     </control>
                     <control type="image" description="THMBS weather">
                         <posx>20</posx>
-                        <top>48</top>
+                        <top>54</top>
                         <width>260</width>
-                        <height>168</height>
+                        <height>158</height>
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -152,9 +151,9 @@
                     </control>
                     <control type="image" description="THMBS WEATHER">
                         <posx>20</posx>
-                        <top>48</top>
+                        <top>54</top>
                         <width>260</width>
-                        <height>168</height>
+                        <height>158</height>
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>

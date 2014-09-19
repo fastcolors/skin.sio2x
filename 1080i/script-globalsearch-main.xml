@@ -372,7 +372,7 @@
                             <width>100</width>
                             <font>size30</font>
                             <align>center</align>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>-</label>
                         </control>
@@ -535,7 +535,7 @@
                             <width>100</width>
                             <font>size30</font>
                             <align>center</align>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>-</label>
                         </control>
@@ -648,7 +648,7 @@
                             <width>100</width>
                             <font>size30</font>
                             <align>center</align>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>-</label>
                         </control>
@@ -708,7 +708,7 @@
                                 <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                             </control>
                             <control type="label">
-                                <posx>85</posx>
+                                <centerleft>85</centerleft>
                                 <top>120</top>
                                 <width>150</width>
                                 <height>30</height>
@@ -717,7 +717,7 @@
                                 <label>S $INFO[ListItem.Property(Season)] • E $INFO[ListItem.Property(Episode)]</label>
                             </control>
                             <control type="label">
-                                <posx>85</posx>
+                                <centerleft>85</centerleft>
                                 <top>150</top>
                                 <width>150</width>
                                 <height>30</height>
@@ -786,7 +786,7 @@
                                 <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                             </control>
                             <control type="label">
-                                <posx>85</posx>
+                                <centerleft>85</centerleft>
                                 <top>120</top>
                                 <width>150</width>
                                 <height>30</height>
@@ -795,7 +795,7 @@
                                 <label>S $INFO[ListItem.Property(Season)] • E $INFO[ListItem.Property(Episode)]</label>
                             </control>
                             <control type="label">
-                                <posx>85</posx>
+                                <centerleft>85</centerleft>
                                 <top>150</top>
                                 <width>150</width>
                                 <height>30</height>
@@ -863,7 +863,7 @@
                             <width>100</width>
                             <font>size30</font>
                             <align>center</align>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>-</label>
                         </control>
@@ -1028,7 +1028,7 @@
                             <width>100</width>
                             <font>size30</font>
                             <align>center</align>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>-</label>
                         </control>
@@ -1173,7 +1173,7 @@
                             <width>100</width>
                             <font>size30</font>
                             <align>center</align>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>-</label>
                         </control>
@@ -1334,7 +1334,7 @@
                             <width>100</width>
                             <font>size30</font>
                             <align>center</align>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>-</label>
                         </control>
@@ -1342,13 +1342,11 @@
                 </control>
                 <!--SONGS-->
                 <control type="group" id="189">
-                    <posx>0</posx>
-                    <top>0</top>
                     <width>1800</width>
-                    <height>155</height>
+                    <height>306</height>
                     <control type="image">
                         <top>40</top>
-                        <width>1800</width>
+                        <width>1920</width>
                         <height>250</height>
                         <texture border="2">images/white.png</texture>
                         <colordiffuse>searchband</colordiffuse>
@@ -1368,8 +1366,8 @@
                         <texture>images/lineR.png</texture>
                     </control>
                     <control type="list" id="181">
-                        <posx>10</posx>
-                        <top>25</top>
+                       <posx>60</posx>
+                        <top>40</top>
                         <width>1800</width>
                         <height>250</height>
                         <onleft>181</onleft>
@@ -1381,34 +1379,33 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout width="600" height="250">
                             <control type="image">
-                                <posx>4</posx>
-                                <top>7</top>
-                                <width>100</width>
-                                <height>100</height>
+                                <posx>10</posx>
+                                <top>10</top>
+                                <width>190</width>
+                                <height>190</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
-                            <control type="label">
-                                <posx>110</posx>
+                             <control type="label">
+                                <posx>210</posx>
                                 <top>10</top>
-                                <width>280</width>
+                                <width>370</width>
                                 <height>12</height>
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
                                 <font>size21</font>
-                                <textcolor>FF4DBAFF</textcolor>
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>110</posx>
+                                <posx>210</posx>
                                 <top>40</top>
-                                <width>280</width>
+                                <width>370</width>
                                 <height>12</height>
                                 <label>$INFO[ListItem.Property(Artist)]</label>
                                 <font>size21</font>
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>110</posx>
-                                <top>52</top>
+                                <posx>210</posx>
+                                <top>70</top>
                                 <width>280</width>
                                 <height>12</height>
                                 <label>$INFO[ListItem.Property(Genre)]</label>
@@ -1416,8 +1413,8 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>110</posx>
-                                <top>72</top>
+                                <posx>210</posx>
+                                <top>100</top>
                                 <width>280</width>
                                 <height>12</height>
                                 <label>$INFO[ListItem.Property(Duration)]</label>
@@ -1426,44 +1423,40 @@
                             </control>
                         </itemlayout>
                         <focusedlayout width="600" height="250">
-                            <control type="image">
-                                <posx>0</posx>
-                                <top>2</top>
+                           <control type="image">
                                 <width>600</width>
                                 <height>250</height>
-                                <texture border="2">blue.png</texture>
-                                <colordiffuse>9FFFFFFF</colordiffuse>
+                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                                 <visible>Control.HasFocus(181)</visible>
                             </control>
                             <control type="image">
-                                <posx>4</posx>
-                                <top>7</top>
-                                <width>100</width>
-                                <height>100</height>
+                                <posx>10</posx>
+                                <top>10</top>
+                                <width>190</width>
+                                <height>190</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <posx>110</posx>
+                                <posx>210</posx>
                                 <top>10</top>
-                                <width>280</width>
+                                <width>370</width>
                                 <height>12</height>
                                 <label>[B]$INFO[ListItem.Label][/B]</label>
                                 <font>size21</font>
-                                <textcolor>FF4DBAFF</textcolor>
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>110</posx>
-                                <top>28</top>
-                                <width>280</width>
+                                <posx>210</posx>
+                                <top>40</top>
+                                <width>370</width>
                                 <height>12</height>
                                 <label>$INFO[ListItem.Property(Artist)]</label>
                                 <font>size21</font>
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>110</posx>
-                                <top>52</top>
+                                <posx>210</posx>
+                                <top>70</top>
                                 <width>280</width>
                                 <height>12</height>
                                 <label>$INFO[ListItem.Property(Genre)]</label>
@@ -1471,8 +1464,8 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>110</posx>
-                                <top>72</top>
+                                <posx>210</posx>
+                                <top>100</top>
                                 <width>280</width>
                                 <height>12</height>
                                 <label>$INFO[ListItem.Property(Duration)]</label>
@@ -1488,7 +1481,7 @@
                             <width min="10" max="700">auto</width>
                             <height>42</height>
                             <font>size42</font>
-                            <label>[B]$LOCALIZE[133][/B]</label>
+                            <label>[B]$LOCALIZE[134][/B]</label>
                             <font>size28</font>
                         </control>
                         <control type="image">
@@ -1502,7 +1495,7 @@
                             <width>100</width>
                             <font>size30</font>
                             <align>center</align>
-                            <textcolor>white</textcolor>
+                            <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>-</label>
                         </control>

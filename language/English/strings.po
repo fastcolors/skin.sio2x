@@ -96,8 +96,8 @@ msgid "Enable or Disable Clock On top right of All Pages (not while watching Mov
 msgstr "Enable or Disable Clock On top right of All Pages (not while watching Movies).[CR]Home Menu Will show Time and date."
 
 msgctxt "#31020"
-msgid "-"
-msgstr "-"
+msgid "Now Watching"
+msgstr "Now Watching"
 
 msgctxt "#31021"
 msgid "Memory Used:"

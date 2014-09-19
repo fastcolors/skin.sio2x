@@ -235,12 +235,11 @@
             </control>
         </control>
 
-        <!--todo label-->
         <control type="label">
             <centerleft>960</centerleft>
             <width>800</width>
             <align>center</align>
-            <label>Timers</label>
+            <label>$LOCALIZE[19040]</label>
         </control>
 
         <include>PVRsidemenu</include>

@@ -6,7 +6,7 @@
     <controls>
         <include>BlackBackground</include>
         <control type="image">
-            <top>80</top>
+            <top>0</top>
             <left>500</left>
             <width>1</width>
             <height>1080</height>
@@ -102,24 +102,26 @@
         </control>
         <control type="grouplist">
             <left>0</left>
-            <align>right</align>
+            <align>left</align>
             <orientation>Horizontal</orientation>
-            <control type="label">
-                <left>1320</left>
-                <width>auto</width>
+            <control type="image">
+                <width>80</width>
                 <height>80</height>
-                <font>size26</font>
-                <!--todo settings level label-->
-                <label>Settings LeVeL : </label>
+                <texture aspectratio="keep" colordiffuse="black">BM_settingsNF.png</texture>
+            </control>
+            <control type="label">
+                <width>20</width>
+                <height>80</height>
+                <label>:</label>
             </control>
             <control type="button" id="20">
                 <description>Setting level button</description>
-                <width>350</width>
+                <width>390</width>
                 <height>80</height>
                 <font>size26</font>
                 <texturefocus colordiffuse="$VAR[diffuseselect]">images/white.png</texturefocus>
                 <onclick>SettingsLevelChange</onclick>
-                <ondown>5</ondown>
+                <ondown>3</ondown>
             </control>
         </control>
         <control type="group">
