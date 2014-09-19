@@ -57,39 +57,39 @@
                 <itemlayout height="220" width="300">
                     <control type="image" description="THMBSBASE">
                         <visible>Skin.HasSetting(colormenu)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>icons/base.png</texture>
                     </control>
                     <control type="image" description="THMBSBASECOLOR">
                         <visible>!Skin.HasSetting(colormenu)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>$INFO[ListItem.Property(color)]</texture>
                     </control>
                     <control type="image" description="THMBSICONS">
                         <visible>!IsEmpty(Listitem.thumb)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                     </control>
                     <control type="image" description="THMBSICONS">
                         <visible>IsEmpty(Listitem.thumb)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                     </control>
                     <control type="image" description="THMBS weather">
-                        <posx>20</posx>
-                        <top>54</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>158</height>
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
@@ -109,16 +109,16 @@
                 <focusedlayout height="220" width="300">
                     <control type="image" description="THMBSBASE">
                         <visible>!Skin.HasSetting(colormenu)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>$INFO[ListItem.Property(color)]</texture>
                     </control>
                     <control type="image" description="THMBSBASE">
                         <visible>Skin.HasSetting(colormenu)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>icons/base.png</texture>
@@ -127,31 +127,31 @@
                         <visible>Skin.HasSetting(colormenu)</visible>
                         <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
                         <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>$INFO[ListItem.Property(color)]</texture>
                     </control>
                     <control type="image" description="THMBSICONS">
                         <visible>!IsEmpty(Listitem.thumb)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                     </control>
                     <control type="image" description="THMBSICONS">
                         <visible>IsEmpty(Listitem.thumb)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                     </control>
                     <control type="image" description="THMBS WEATHER">
-                        <posx>20</posx>
-                        <top>54</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>158</height>
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
@@ -160,12 +160,12 @@
                     <control type="image">
                         <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
                         <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>132</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>images/atvslider.png</texture>
-                        <aspectratio>stretch</aspectratio>
+                        <aspectratio>keep</aspectratio>
                         <colordiffuse>black</colordiffuse>
                     </control>
                     <control type="label" description="label">
