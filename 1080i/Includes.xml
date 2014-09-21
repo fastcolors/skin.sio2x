@@ -35,8 +35,6 @@
             </control>
             <control type="image" description="Default BG">
                 <visible>Skin.HasTheme(Black) + IsEmpty(ListItem.Art(fanart))</visible>
-                <left>0</left>
-                <top>0</top>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
@@ -45,9 +43,7 @@
                 <colordiffuse>BBFFFFFF</colordiffuse>
             </control>
             <control type="image" description="Default BG">
-                <visible>!Window.IsActive(Home.xml) + !Skin.HasTheme(Black)</visible>
-                <left>0</left>
-                <top>0</top>
+                <visible>[!Window.IsActive(Home.xml) + !Skin.HasTheme(Black)] | [Skin.HasTheme(Black) + !IsEmpty(ListItem.Art(fanart))]</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
@@ -57,23 +53,11 @@
             </control>
             <control type="image" description="Default BG">
                 <visible>Window.IsActive(Home.xml) + !Skin.HasTheme(Black)</visible>
-                <left>0</left>
-                <top>0</top>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
                 <texture background="true">$VAR[bgimg]</texture>
                 <colordiffuse>77FFFFFF</colordiffuse>
-            </control>
-            <control type="image" description="Default BG">
-                <visible>Skin.HasTheme(Black) + !IsEmpty(ListItem.Art(fanart))</visible>
-                <left>0</left>
-                <top>0</top>
-                <width>1920</width>
-                <height>1080</height>
-                <fadetime>200</fadetime>
-                <texture background="true">$VAR[bgimg]</texture>
-                <colordiffuse>55FFFFFF</colordiffuse>
             </control>
         </control>
     </include>

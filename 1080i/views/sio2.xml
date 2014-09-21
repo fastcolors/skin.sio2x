@@ -181,7 +181,7 @@
                 <align>center</align>
                 <orientation>horizontal</orientation>
                 <control type="label">
-                    <width min="60" max="1080">auto</width>
+                    <width>auto</width>
                     <height>45</height>
                     <font>size42B</font>
                     <align>center</align>
@@ -189,7 +189,7 @@
                 </control>
                 <control type="label">
                     <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
-                    <width min="60">auto</width>
+                    <width>auto</width>
                     <height>50</height>
                     <font>size26</font>
                     <textcolor>gray</textcolor>
