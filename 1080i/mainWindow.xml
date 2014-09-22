@@ -11,13 +11,13 @@
             <left>500</left>
             <width>1</width>
             <height>1000</height>
-            <texture>lines/LineV.png</texture>
+            <texture colordiffuse="black">lines/LineV.png</texture>
         </control>
         <control type="image">
             <top>80</top>
             <height>1</height>
             <width>1920</width>
-            <texture>lines/Line.png</texture>
+            <texture colordiffuse="black">lines/Line.png</texture>
         </control>
         <control type="label">
             <width>1920</width>
@@ -314,8 +314,6 @@
                     </control>
                 </focusedlayout>
             </control>
-
-
             <!-- Network Menu Content -->
             <control type="list" id="1200">
                 <width>1380</width>
@@ -412,7 +410,7 @@
                         <height>60</height>
                         <aspectratio>keep</aspectratio>
                         <visible>StringCompare(ListItem.Property(State), online)</visible>
-                        <texture>openelec/connected.png</texture>
+                        <texture colordiffuse="black">openelec/connected.png</texture>
                     </control>
                     <!-- Favorite Symbol (bottom right) -->
                     <control type="image">
@@ -421,8 +419,8 @@
                         <width>50</width>
                         <height>50</height>
                         <aspectratio>keep</aspectratio>
-                        <!--<visible>StringCompare(ListItem.Property(Favorite), 1)</visible>-->
-                        <texture>openelec/Favorite.png</texture>
+                        <visible>StringCompare(ListItem.Property(Favorite), 1)</visible>
+                        <texture colordiffuse="black">openelec/Favorite.png</texture>
                     </control>
                     <!-- Secure Symbol (bottom right) -->
                     <control type="image">
@@ -431,8 +429,8 @@
                         <width>50</width>
                         <height>50</height>
                         <aspectratio>keep</aspectratio>
-                        <!--<visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible>-->
-                        <texture>openelec/Key.png</texture>
+                        <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible>
+                        <texture colordiffuse="black">openelec/Key.png</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="162">
@@ -448,7 +446,7 @@
                         <height>162</height>
                         <aspectratio>keep</aspectratio>
                         <visible>StringCompare(ListItem.Property(netType), ethernet)</visible>
-                        <texture>openelec/eth.png</texture>
+                        <texture colordiffuse="black">openelec/eth.png</texture>
                     </control>
                     <!-- Icon wifi -->
                     <control type="image">
@@ -456,7 +454,7 @@
                         <height>162</height>
                         <aspectratio>keep</aspectratio>
                         <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
-                        <texture>openelec/wlan.png</texture>
+                        <texture colordiffuse="black">openelec/wlan.png</texture>
                     </control>
                     <!-- Icon vpn -->
                     <control type="image">
@@ -464,7 +462,7 @@
                         <height>162</height>
                         <aspectratio>keep</aspectratio>
                         <visible>StringCompare(ListItem.Property(netType), vpn)</visible>
-                        <texture>openelec/vpn.png</texture>
+                        <texture colordiffuse="black">openelec/vpn.png</texture>
                     </control>
                     <!-- Connection Name -->
                     <control type="label">
@@ -528,7 +526,7 @@
                         <height>60</height>
                         <aspectratio>keep</aspectratio>
                         <visible>StringCompare(ListItem.Property(State), online)</visible>
-                        <texture>openelec/connected.png</texture>
+                        <texture colordiffuse="black">openelec/connected.png</texture>
                     </control>
                     <!-- Favorite Symbol (bottom right) -->
                     <control type="image">
@@ -537,8 +535,8 @@
                         <width>50</width>
                         <height>50</height>
                         <aspectratio>keep</aspectratio>
-                        <!--<visible>StringCompare(ListItem.Property(Favorite), 1)</visible>-->
-                        <texture>openelec/Favorite.png</texture>
+                        <visible>StringCompare(ListItem.Property(Favorite), 1)</visible>
+                        <texture colordiffuse="black">openelec/Favorite.png</texture>
                     </control>
                     <!-- Secure Symbol (bottom right) -->
                     <control type="image">
@@ -547,8 +545,8 @@
                         <width>50</width>
                         <height>50</height>
                         <aspectratio>keep</aspectratio>
-                        <!--<visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible>-->
-                        <texture>openelec/Key.png</texture>
+                        <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible>
+                        <texture colordiffuse="black">openelec/Key.png</texture>
                     </control>
                 </focusedlayout>
             </control>
@@ -580,7 +578,7 @@
                         <height>48</height>
                         <aspectratio>keep</aspectratio>
                         <visible>StringCompare(ListItem.Property(Icon), default)</visible>
-                        <texture>bt.png</texture>
+                        <texture colordiffuse="black">bt.png</texture>
                     </control>
                     <!-- modem -->
                     <control type="image">
@@ -731,7 +729,7 @@
                         <height>20</height>
                         <aspectratio>keep</aspectratio>
                         <visible>StringCompare(ListItem.Property(Paired), 1)</visible>
-                        <texture>Favorite.png</texture>
+                        <texture colordiffuse="black">Favorite.png</texture>
                     </control>
                     <!-- Trusted Symbol (bottom right) -->
                     <control type="image">
@@ -741,7 +739,7 @@
                         <height>20</height>
                         <aspectratio>keep</aspectratio>
                         <visible>IntegerGreaterThan(ListItem.Property(Trusted), 0)</visible>
-                        <texture>Key.png</texture>
+                        <texture colordiffuse="black">Key.png</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="81">
@@ -771,7 +769,7 @@
                         <height>48</height>
                         <aspectratio>keep</aspectratio>
                         <visible>StringCompare(ListItem.Property(Icon), default)</visible>
-                        <texture>bt.png</texture>
+                        <texture colordiffuse="black">bt.png</texture>
                     </control>
                     <!-- modem -->
                     <control type="image">
@@ -922,7 +920,7 @@
                         <height>20</height>
                         <aspectratio>keep</aspectratio>
                         <visible>StringCompare(ListItem.Property(Paired), 1)</visible>
-                        <texture>Favorite.png</texture>
+                        <texture colordiffuse="black">Favorite.png</texture>
                     </control>
                     <!-- Trusted Symbol (bottom right) -->
                     <control type="image">
@@ -932,7 +930,7 @@
                         <height>20</height>
                         <aspectratio>keep</aspectratio>
                         <visible>IntegerGreaterThan(ListItem.Property(Trusted), 0)</visible>
-                        <texture>Key.png</texture>
+                        <texture colordiffuse="black">Key.png</texture>
                     </control>
                 </focusedlayout>
             </control>

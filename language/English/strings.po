@@ -403,6 +403,10 @@ msgctxt "#31096"
 msgid "Started Movies"
 msgstr "Started Movies"
 
+msgctxt "#31097"
+msgid "Manage your OpenELEC system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]Change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH."
+msgstr "Manage your OpenELEC system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]Change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH."
+
 msgctxt "#31413"
 msgid "Local subtitle available"
 msgstr "Local subtitle available"

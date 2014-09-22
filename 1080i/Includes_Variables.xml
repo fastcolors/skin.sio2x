@@ -126,6 +126,7 @@
         <value condition="Container(575).HasFocus(10)">$LOCALIZE[31094]</value>
         <value condition="Container(575).HasFocus(14)">$LOCALIZE[31090]</value>
         <value condition="Container(575).HasFocus(2)">$LOCALIZE[31095]</value>
+        <value condition="Container(575).HasFocus(15)">$LOCALIZE[31097]</value>
     </variable>
 
     <variable name="settingsmainico">
@@ -141,6 +142,7 @@
         <value condition="Container(575).HasFocus(13)">icons/addons.png</value>
         <value condition="Container(575).HasFocus(6)">help/infos.png</value>
         <value condition="Container(575).HasFocus(7)">help/Warning.png</value>
+        <value condition="Container(575).HasFocus(15)">help/openelec.png</value>
     </variable>
 
     <variable name="nowplay">

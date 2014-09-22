@@ -132,7 +132,7 @@
         <control type="textbox" description="infos">
             <visible>Control.HasFocus(575)</visible>
             <centerleft>480</centerleft>
-            <top>600</top>
+            <top>580</top>
             <width>660</width>
             <height>500</height>
             <font>size33</font>
