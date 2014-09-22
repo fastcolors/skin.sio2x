@@ -1,5 +1,7 @@
 3.0.1
 * Black Theme now default
+* openELEC setting configuration now integrated
+* minor cosmetics
 
 3.0.0
 * Helix Support
