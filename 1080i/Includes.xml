@@ -43,7 +43,7 @@
                 <colordiffuse>BBFFFFFF</colordiffuse>
             </control>
             <control type="image" description="Default BG">
-                <visible>[!Window.IsActive(Home.xml) + !Skin.HasTheme(Black)] | [Skin.HasTheme(Black) + !IsEmpty(ListItem.Art(fanart))]</visible>
+                <visible>[!Window.IsActive(Home.xml) + !Skin.HasTheme(Black)] | [Skin.HasTheme(Black) + !IsEmpty(ListItem.Art(fanart))] | Window.IsActive(5533)</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>

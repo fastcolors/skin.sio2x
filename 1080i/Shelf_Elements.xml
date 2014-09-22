@@ -270,6 +270,25 @@
                     <texture background="true">images/cellophane.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
+                <control type="label" description="Artist or Type">
+                    <top>8</top>
+                    <width>384</width>
+                    <height>30</height>
+                    <font>size24B</font>
+                    <textcolor>black</textcolor>
+                    <label>$INFO[ListItem.Property(ItemType)]$INFO[ListItem.Artist]</label>
+                    <align>center</align>
+                </control>
+                <control type="textbox" description="Title">
+                    <top>370</top>
+                    <width>384</width>
+                    <height>62</height>
+                    <font>size24B</font>
+                    <textcolor>black</textcolor>
+                    <autoscroll>false</autoscroll>
+                    <label>$INFO[ListItem.Label]</label>
+                    <align>center</align>
+                </control>
             </control>
         </itemlayout>
         <focusedlayout height="357" width="384">
@@ -302,7 +321,6 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="label" description="Artist or Type">
-                    <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                     <top>8</top>
                     <width>384</width>
                     <height>30</height>
@@ -312,7 +330,6 @@
                     <align>center</align>
                 </control>
                 <control type="textbox" description="Album">
-                    <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                     <top>370</top>
                     <width>384</width>
                     <height>62</height>
@@ -421,7 +438,7 @@
                 <control type="label">
                     <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
                     <animation effect="fade" start="100" end="0" time="50">unFocus</animation>
-                    <width>450</width>
+                    <width>480</width>
                     <height>30</height>
                     <font>size26</font>
                     <textcolor>black</textcolor>

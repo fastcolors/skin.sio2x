@@ -193,8 +193,6 @@
         <textoffsetx>20</textoffsetx>
     </default>
     <default type="scrollbar">
-        <left>0</left>
-        <top>0</top>
         <width>9</width>
         <orientation>vertical</orientation>
         <texturesliderbackground border="4">Scrollbar/ScrollbarBG.png</texturesliderbackground>

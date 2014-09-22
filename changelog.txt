@@ -1,3 +1,12 @@
+3.0.1
+* Black Theme now default
+
+3.0.0
+* Helix Support
+* New Shelf ways - Addons now automatically filled from video-music-program-pictures
+* New Slider on HomeScreen
+* No more Programs Icon on Home
+
 2.1.7
 * Cosmetic Fixes
 * Fix for selected color in skin

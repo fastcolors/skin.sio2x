@@ -102,6 +102,11 @@
                         <label>24001</label>
                         <onclick>activatewindow(AddonBrowser,root)</onclick>
                     </item>
+                    <item id="15" description="openELEC">
+                        <visible>System.HasAddon(service.openelec.settings)</visible>
+                        <label>$ADDON[service.openelec.settings 600]</label>
+                        <onclick>RunAddon(service.openelec.settings)</onclick>
+                    </item>
                     <item id="6" description="Sys Info">
                         <label>$LOCALIZE[138]</label>
                         <onclick>activatewindow(systeminfo)</onclick>
