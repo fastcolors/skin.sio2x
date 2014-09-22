@@ -16,8 +16,8 @@
             <top>60</top>
             <centerleft>960</centerleft>
             <align>center</align>
-            <onup>29</onup>
-            <ondown>4</ondown>
+            <onup>noop</onup>
+            <ondown>21</ondown>
             <onleft>noop</onleft>
             <onright>noop</onright>
             <orientation>horizontal</orientation>
@@ -34,22 +34,14 @@
                 <align>left</align>
             </control>
         </control>
-        <!--<control type="label" description="Content Type Label">-->
-        <!--<left>100</left>-->
-        <!--<textoffsetx>20</textoffsetx>-->
-        <!--<width>760</width>-->
-        <!--<height>62</height>-->
-        <!--<align>left</align>-->
-        <!--<label>$INFO[Control.GetLabel(3)]</label>-->
-        <!--</control>-->
         <control type="list" id="21" description="Scraper list">
             <left>960</left>
             <top>140</top>
             <width>740</width>
             <height>300</height>
-            <onup>3</onup>
-            <onleft>5</onleft>
-            <onright>3</onright>
+            <onup>20</onup>
+            <onleft>noop</onleft>
+            <onright>noop</onright>
             <ondown>5</ondown>
             <itemlayout height="75" width="740">
                 <control type="label">
@@ -62,7 +54,7 @@
             </itemlayout>
             <focusedlayout height="75" width="740">
                 <control type="image">
-                    <visible>Control.HasFocus(4)</visible>
+                    <visible>Control.HasFocus(21)</visible>
                     <top>0</top>
                     <width>810</width>
                     <height>75</height>
@@ -83,8 +75,8 @@
             <width>1480</width>
             <height>431</height>
             <itemgap>3</itemgap>
-            <onup>4</onup>
-            <ondown>6</ondown>
+            <onup>21</onup>
+            <ondown>22</ondown>
             <onleft>noop</onleft>
             <onright>noop</onright>
         </control>
@@ -105,8 +97,8 @@
             <align>center</align>
             <label>$LOCALIZE[5]</label>
             <onup>5</onup>
-            <onleft>28</onleft>
-            <onright>29</onright>
+            <onleft>noop</onleft>
+            <onright>noop</onright>
             <ondown>28</ondown>
         </control>
         <control type="grouplist">
@@ -120,7 +112,7 @@
                 <label>222</label>
                 <onleft>28</onleft>
                 <onright>noop</onright>
-                <onup>6</onup>
+                <onup>22</onup>
                 <ondown>3</ondown>
             </control>
             <control type="button" id="28" description="OK">
@@ -128,7 +120,7 @@
                 <label>186</label>
                 <onleft>noop</onleft>
                 <onright>29</onright>
-                <onup>6</onup>
+                <onup>22</onup>
                 <ondown>3</ondown>
             </control>
         </control>

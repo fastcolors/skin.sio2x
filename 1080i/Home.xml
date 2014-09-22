@@ -230,13 +230,13 @@
                 <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
                 <include>weather_shelf</include>
                 <include>EPG_shelf</include>
-                <include>TV</include>
+                <include condition="Library.HasContent(TVShows)">TV</include>
                 <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
                 <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
                 <include condition="!Skin.HasSetting(AddonsShelf_Custom)">Addons_Auto</include>
                 <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
                 <include condition="System.HasAddon(script.tv.show.next.aired)">TV_NA</include>
-                <include>Movies</include>
+                <include condition="Library.HasContent(Movies)">Movies</include>
                 <include>Music</include>
                 <include>Favsshelf</include>
                 <control type="image" description="Logo">
