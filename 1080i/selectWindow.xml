@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--openelec-->
 <window id="5535">
     <defaultcontrol always="true">2000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
@@ -43,7 +44,7 @@
                             <height>60</height>
                             <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                         </control>
-                       <control type="label">
+                        <control type="label">
                             <left>20</left>
                             <width>400</width>
                             <height>60</height>

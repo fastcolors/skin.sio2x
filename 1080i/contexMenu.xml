@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--openelec-->
 <window id="5537">
     <defaultcontrol>4323</defaultcontrol>
     <backgroundcolor>background</backgroundcolor>
     <include>DialogOpenClose</include>
-    <coordinates>
-        <system>1</system>
-        <origin x="560" y="20" />
-    </coordinates>
     <controls>
         <control type="group" id="1998">
             <control type="image" id="1999" description="Background image">
-                <height>1260</height>
-                <width>780</width>
-                <texture border="150">images/Dialog.png</texture>
+                <centerleft>960</centerleft>
+                <top>500</top>
+                <height>400</height>
+                <width>600</width>
+                <texture border="100">sidepanel/Back.png</texture>
             </control>
             <control type="list" id="4323">
-                <posx>150</posx>
-                <top>150</top>
-                <width>480</width>
-                <height max="960">auto</height>
+                <centerleft>960</centerleft>
+                <top>540</top>
+                <width>500</width>
+                <height>180</height>
                 <pagecontrol>-</pagecontrol>
-                <scrolltime>300</scrolltime>
-                <visible>true</visible>
                 <itemlayout height="60">
                     <control type="label">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>304</width>
+                        <width>500</width>
                         <height>60</height>
                         <align>center</align>
                         <aligny>center</aligny>
@@ -36,16 +31,12 @@
                 </itemlayout>
                 <focusedlayout height="60">
                     <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>304</width>
+                        <width>500</width>
                         <height>60</height>
                         <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
                     </control>
                     <control type="label">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>304</width>
+                        <width>500</width>
                         <height>60</height>
                         <align>center</align>
                         <aligny>center</aligny>

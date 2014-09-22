@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--openelec-->
 <window id="5533">
     <!--todo wtf is passkey-->
     <defaultcontrol always="true">2000</defaultcontrol>
@@ -85,5 +86,5 @@
                 </control>
             </control>
         </control>
-	</controls>
+    </controls>
 </window>
