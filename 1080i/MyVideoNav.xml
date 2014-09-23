@@ -76,12 +76,16 @@
                     <include>DialogButt</include>
                     <label>137</label>
                 </control>
-                <control type="button" id="698" description="Browse files">
-                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
-                    <include>DialogButt</include>
-                    <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
-                    <onclick>ActivateWindow(Videos,files)</onclick>
-                </control>
+                <!--todo fix file browsing-->
+                <!--<control type="radiobutton" id="698" description="Browse files">-->
+                    <!--<texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>-->
+                    <!--<include>DialogButt</include>-->
+                    <!--<label>$LOCALIZE[1024] $LOCALIZE[744]</label>-->
+                    <!--<selected>Container.Content(files)</selected>-->
+                    <!--<onclick>close</onclick>-->
+                    <!--<onclick>ReplaceWindow(Videos,files)</onclick>-->
+                    <!--&lt;!&ndash;<altclick>ReplaceWindow(Videos,MovieTitles,return)</altclick>&ndash;&gt;-->
+                <!--</control>-->
                 <control type="button" id="1501">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <include>DialogButt</include>

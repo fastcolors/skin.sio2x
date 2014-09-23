@@ -368,8 +368,8 @@ msgid "Percent Played"
 msgstr "Percent Played"
 
 msgctxt "#31088"
-msgid "Shelf Cinema Experience"
-msgstr "Shelf Cinema Experience"
+msgid "Cinema"
+msgstr "Cinema"
 
 msgctxt "#31089"
 msgid "Returns all Skin's specifics Settings to defaults. Doesn't change any of the XBMC general settings."

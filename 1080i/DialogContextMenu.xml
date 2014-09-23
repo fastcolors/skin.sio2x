@@ -24,8 +24,7 @@
                 <visible>System.HasAddon(script.cinema.experience) + Container.Content(movies)</visible>
                 <width>480</width>
                 <height>60</height>
-                <!--todo label-->
-                <label>Cinema</label>
+                <label>$LOCALIZE[31088]</label>
                 <onclick>XBMC.RunScript(script.cinema.experience)</onclick>
             </control>
         </control>
