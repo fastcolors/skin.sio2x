@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <!--todo lo slide a volte parte e rimane l'icona della directory-->
     <include name="sio2view">
         <control type="group" description="sio2view">
             <visible>Control.IsVisible(52)</visible>

@@ -34,7 +34,7 @@
                 <colordiffuse>white</colordiffuse>
             </control>
             <control type="image" description="Default BG">
-                <visible>Skin.HasTheme(Black) + IsEmpty(ListItem.Art(fanart))</visible>
+                <visible>!Skin.HasTheme(White) + IsEmpty(ListItem.Art(fanart))</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
@@ -43,7 +43,7 @@
                 <colordiffuse>BBFFFFFF</colordiffuse>
             </control>
             <control type="image" description="Default BG">
-                <visible>[!Window.IsActive(Home.xml) + !Skin.HasTheme(Black)] | [Skin.HasTheme(Black) + !IsEmpty(ListItem.Art(fanart))] | Window.IsActive(5533)</visible>
+                <visible>[!Window.IsActive(Home.xml) + Skin.HasTheme(White)] | !IsEmpty(ListItem.Art(fanart)) | Window.IsActive(5533)</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
@@ -52,7 +52,7 @@
                 <colordiffuse>33FFFFFF</colordiffuse>
             </control>
             <control type="image" description="Default BG">
-                <visible>Window.IsActive(Home.xml) + !Skin.HasTheme(Black)</visible>
+                <visible>Window.IsActive(Home.xml) + Skin.HasTheme(White)</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
