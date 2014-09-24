@@ -18,11 +18,39 @@
             <aspectratio>stretch</aspectratio>
             <texture border="150">images/Dialog.png</texture>
         </control>
+        <control type="grouplist">
+            <centerleft>960</centerleft>
+            <top>160</top>
+            <align>center</align>
+            <orientation>horizontal</orientation>
+            <itemgap>15</itemgap>
+            <control type="image" description="Logo">
+                <width>100</width>
+                <height>100</height>
+                <aspectratio>keep</aspectratio>
+                <texture>images/sio2logo.png</texture>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>100</height>
+                <aligny>center</aligny>
+                <textcolor>red</textcolor>
+                <font>Size60B</font>
+                <label>NEWS</label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>120</height>
+                <textcolor>Silver</textcolor>
+                <font>Size30</font>
+                <label>$INFO[System.AddonVersion(skin.sio2x)]</label>
+            </control>
+        </control>
         <control type="textbox">
             <centerleft>960</centerleft>
-            <top>200</top>
+            <top>300</top>
             <width>1400</width>
-            <height>620</height>
+            <height>515</height>
             <align>justify</align>
             <label>$LOCALIZE[31414]</label>
         </control>
