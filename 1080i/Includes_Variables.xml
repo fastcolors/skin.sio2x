@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <variable name="QuitLabel" description="Label for skin settings Quit function item">
+    <variable name="quitlabel" description="Label for skin settings Quit function item">
         <value condition="StringCompare(Skin.String(shutdown),quit)">$LOCALIZE[13009]</value>
         <value condition="StringCompare(Skin.String(shutdown),powerdown)">$LOCALIZE[13005]</value>
         <value condition="StringCompare(Skin.String(shutdown),hibernate)">$LOCALIZE[13010]</value>
         <value condition="StringCompare(Skin.String(shutdown),suspend)">$LOCALIZE[13011]</value>
         <value condition="StringCompare(Skin.String(shutdown),reboot)">$LOCALIZE[13013]</value>
+        <value>$LOCALIZE[31050]</value>
     </variable>
 
     <variable name="ShelfLogo">
@@ -263,7 +264,7 @@
         <value condition="StringCompare(Skin.String(addonsshelf),1)"> $LOCALIZE[1038] </value>
         <value condition="StringCompare(Skin.String(addonsshelf),2)"> $LOCALIZE[1043] </value>
         <value condition="StringCompare(Skin.String(addonsshelf),3)"> $LOCALIZE[1039] </value>
-        <value> $LOCALIZE[1037] </value>=
+        <value> $LOCALIZE[1037] </value>
     </variable>
 
     <variable name="addonsshelfcontent">
@@ -304,5 +305,14 @@
         <value condition="Control.HasFocus(214)">$INFO[Container(214).ListItem.Property(Fanart)]</value>
         <value condition="Control.HasFocus(215)">$INFO[Container(215).ListItem.Property(Fanart)]</value>
         <value>$VAR[bgimg]</value>
+    </variable>
+
+    <variable name="quiticon">
+        <value condition="StringCompare(Skin.String(shutdown),quit)">icons/quit.png</value>
+        <value condition="StringCompare(Skin.String(shutdown),powerdown)">icons/powerdown.png</value>
+        <value condition="StringCompare(Skin.String(shutdown),hibernate)">icons/hibernate.png</value>
+        <value condition="StringCompare(Skin.String(shutdown),suspend)">icons/suspend.png</value>
+        <value condition="StringCompare(Skin.String(shutdown),reboot)">icons/reboot.png</value>
+        <value>icons/quits.png</value>
     </variable>
 </includes>

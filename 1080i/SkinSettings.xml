@@ -59,7 +59,7 @@
                     <width>auto</width>
                     <align>left</align>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
-                    <label>$LOCALIZE[31049] $VAR[QuitLabel]</label>
+                    <label>$LOCALIZE[31049] $VAR[quitlabel]</label>
                     <onclick>ActivateWindow(1114)</onclick>
                 </control>
                 <control type="radiobutton" id="9">

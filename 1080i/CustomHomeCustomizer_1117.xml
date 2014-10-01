@@ -612,6 +612,18 @@
                             <label>5</label>
                             <onclick>Skin.ToggleSetting(hidesett)</onclick>
                         </item>
+                         <item id="1014" description="vidhelp">
+                            <visible>!Skin.HasSetting(hidevidhelp)</visible>
+                            <thumb>icons/qmark.png</thumb>
+                            <label>$LOCALIZE[10043]</label>
+                            <onclick>Skin.ToggleSetting(hidevidhelp)</onclick>
+                        </item>
+                        <item id="1014" description="vidhelp">
+                            <visible>Skin.HasSetting(hidevidhelp)</visible>
+                            <thumb>help/Off.png</thumb>
+                            <label>$LOCALIZE[10043]</label>
+                            <onclick>Skin.ToggleSetting(hidevidhelp)</onclick>
+                        </item>
                     </content>
                 </control>
             </control>

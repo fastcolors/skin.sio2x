@@ -61,6 +61,7 @@
             <height>81</height>
             <align>center</align>
             <orientation>horizontal</orientation>
+            <!--todo labels-->
             <control type="button" id="6789">
                 <width>450</width>
                 <height>81</height>

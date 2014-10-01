@@ -6,7 +6,7 @@
         <!--DIALOG BASE-->
         <control type="group">
             <control type="image">
-                <posx>410</posx>
+                <centerleft>960</centerleft>
                 <top>200</top>
                 <width>1100</width>
                 <height>680</height>
@@ -15,7 +15,7 @@
 
             <control type="label" id="10011"> <!--DIALOG TITLE-->
                 <description>Title</description>
-                <left>660</left>
+                <centerleft>960</centerleft>
                 <top>360</top>
                 <width>600</width>
                 <height>30</height>
@@ -26,7 +26,7 @@
 
             <control type="label" id="10012"> <!--MEDIA TITLE-->
                 <description>Title</description>
-                <left>660</left>
+               <centerleft>960</centerleft>
                 <top>400</top>
                 <width>600</width>
                 <height>24</height>
@@ -38,7 +38,7 @@
 
             <control type="label" id="10013"> <!--RATING TITLE-->
                 <description>Title</description>
-                <left>660</left>
+                <centerleft>960</centerleft>
                 <top>430</top>
                 <width>600</width>
                 <height>24</height>
