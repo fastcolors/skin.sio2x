@@ -61,19 +61,18 @@
             <height>81</height>
             <align>center</align>
             <orientation>horizontal</orientation>
-            <!--todo labels-->
             <control type="button" id="6789">
-                <width>450</width>
+                <width>550</width>
                 <height>81</height>
                 <onclick>close</onclick>
                 <onclick>Skin.ToggleSetting(splashoff)</onclick>
-                <label>OK. got it.</label>
+                <label>$LOCALIZE[31415]</label>
             </control>
             <control type="button" id="2">
-                <width>450</width>
+                <width>550</width>
                 <height>81</height>
                 <onclick>close</onclick>
-                <label>Show Again next time.</label>
+                <label>$LOCALIZE[31416]</label>
             </control>
         </control>
     </controls>

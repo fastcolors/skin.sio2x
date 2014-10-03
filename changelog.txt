@@ -1,8 +1,12 @@
+3.0.4
+
 3.0.3
 * Context Menu changes (file browsing jump disabled for now)
 * Added setting to disable VideoHelp Icon from homepage
 * Spotify Icons Added - (thanks to rridder)
 * Quit Icon now shows choice made in settings (icon and name change according to selection)
+* Fix to sio2 view
+* HEVC - H265 icon added
 
 3.0.2
 * Hotfix for Sources Dialog

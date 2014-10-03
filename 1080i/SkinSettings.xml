@@ -95,7 +95,7 @@
                 <control type="button" id="14">
                     <width>auto</width>
                     <align>left</align>
-                    <label>VIDEOGUIDES</label>
+                    <label>$LOCALIZE[31417]</label>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <onclick>ActivateWindow(1111)</onclick>
                 </control>
@@ -113,110 +113,107 @@
         <control type="group" description="Left panel">
             <top>80</top>
             <control type="image" description="Network">
-                <centerleft>460</centerleft>
+                <centerleft>480</centerleft>
                 <visible>Controlgroup(575).HasFocus(13)</visible>
                 <include>Help_Panel</include>
                 <colordiffuse>silver</colordiffuse>
                 <texture colordiffuse="black">help/wireless.png</texture>
             </control>
             <control type="image" description="NetworkOFF">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(13) + Skin.HasSetting(hideconnection)</visible>
                 <include>Help_Panel</include>
                 <texture>help/off.png</texture>
             </control>
             <control type="image" description="ColorMenu">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(5) + !Skin.HasSetting(colormenu)</visible>
                 <include>Help_Panel</include>
                 <texture>icons/DarkOrange.png</texture>
             </control>
             <control type="image" description="ColorMenuOff">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(5) + Skin.HasSetting(colormenu)</visible>
                 <include>Help_Panel</include>
                 <texture>icons/base.png</texture>
             </control>
             <control type="image" description="Logo">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(1)</visible>
                 <include>Help_Panel</include>
                 <texture>DefaultAddon.png</texture>
             </control>
             <control type="image" description="ScrollBars">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(2)</visible>
                 <include>Help_Panel</include>
                 <texture>help/scrollbars.png</texture>
             </control>
             <control type="image" description="ScrollBars">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(2) + Skin.HasSetting(Scrollbars_Passive)</visible>
                 <include>Help_Panel</include>
                 <texture>help/off.png</texture>
             </control>
             <control type="image" description="Menuviews">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(3)</visible>
                 <include>Help_Panel</include>
                 <texture>help/optionsmenu.png</texture>
             </control>
             <control type="image" description="Menuviews">
-                <centerleft>460</centerleft>
                 <visible>Controlgroup(575).HasFocus(3) + Skin.HasSetting(ViewsMenuOff)</visible>
                 <include>Help_Panel</include>
                 <texture>help/off.png</texture>
             </control>
-            <control type="image" description="shelf cinema">
-                <centerleft>460</centerleft>
-                <visible>Controlgroup(575).HasFocus(4)</visible>
-                <include>Help_Panel</include>
-                <texture>help/shelf.png</texture>
-            </control>
+            <!--SHELF CINEMA-->
+            <!--<control type="image" description="shelf cinema">-->
+                <!--<visible>Controlgroup(575).HasFocus(4)</visible>-->
+                <!--<include>Help_Panel</include>-->
+                <!--<texture>help/shelf.png</texture>-->
+            <!--</control>-->
             <control type="image" description="HomePageCustomizer">
-                <centerleft>460</centerleft>
                 <visible>Controlgroup(575).HasFocus(6)</visible>
                 <include>Help_Panel</include>
                 <texture>help/homemenu.png</texture>
             </control>
             <control type="image" description="HomePageCustomizer">
-                <centerleft>460</centerleft>
                 <visible>Controlgroup(575).HasFocus(6)</visible>
                 <include>Help_Panel</include>
                 <texture>help/homemenu.png</texture>
             </control>
             <control type="image" description="quits">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(8)</visible>
                 <include>Help_Panel</include>
                 <texture colordiffuse="black">help/menu$INFO[Skin.String(shutdown)].png</texture>
             </control>
             <control type="image" description="clock">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(9)</visible>
                 <include>Help_Panel</include>
                 <texture>help/clock.png</texture>
             </control>
             <control type="image" description="clock">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(9) + Skin.HasSetting(HideClock)</visible>
                 <include>Help_Panel</include>
                 <texture>help/off.png</texture>
             </control>
             <control type="image" description="reset">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(15)</visible>
                 <include>Help_Panel</include>
                 <texture colordiffuse="black">help/warning.png</texture>
             </control>
             <control type="image" description="MUSIC">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(10)</visible>
                 <include>Help_Panel</include>
                 <texture colordiffuse="black">icons/music.png</texture>
             </control>
             <control type="image" description="custom BKGRND">
-                <centerleft>460</centerleft>
+
                 <visible>Controlgroup(575).HasFocus(11)</visible>
                 <include>Help_Panel</include>
                 <bordersize>4</bordersize>
@@ -224,10 +221,14 @@
                 <texture>$VAR[bgimg]</texture>
             </control>
             <control type="image" description="icon shelf">
-                <centerleft>460</centerleft>
                 <visible>Controlgroup(575).HasFocus(12)</visible>
                 <include>Help_Panel</include>
                 <texture>$VAR[ShelfLogo]</texture>
+            </control>
+            <control type="image" description="icon shelf">
+                <visible>Controlgroup(575).HasFocus(14)</visible>
+                <include>Help_Panel</include>
+                <texture>icons/qmark.png</texture>
             </control>
         </control>
         <control type="image" description="Line">
@@ -246,7 +247,7 @@
             <align>justify</align>
             <label>$VAR[helptext]</label>
         </control>
-        <control type="label" description="HelpDetails">
+        <control type="label" description="custom shelfimage path">
             <include>VisibleFade</include>
             <visible>Controlgroup(575).HasFocus(12) + Skin.HasSetting(CustomImage)</visible>
             <top>500</top>
@@ -257,7 +258,7 @@
             <textcolor>black</textcolor>
             <label>$VAR[ShelfLogo]</label>
         </control>
-        <control type="label" description="HelpDetails">
+        <control type="label" description="custom background path">
             <include>VisibleFade</include>
             <visible>Controlgroup(575).HasFocus(11) + Skin.HasSetting(CustomBg)</visible>
             <top>500</top>

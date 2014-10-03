@@ -846,10 +846,10 @@
         <disabledcolor>Disabled</disabledcolor>
     </include>
     <include name="Help_Panel">
-        <!--<animation effect="fade" time="200">VisibleChange</animation>-->
-        <width>460</width>
-        <height>380</height>
-        <aspectratio align="center" aligny="bottom">keep</aspectratio>
+        <centerleft>480</centerleft>
+        <width>540</width>
+        <height>420</height>
+        <aspectratio align="center">keep</aspectratio>
     </include>
     <include name="CustomizerList">
         <include>ShelfFade</include>

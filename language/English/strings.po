@@ -84,8 +84,8 @@ msgid "Last Updated"
 msgstr "Last Updated"
 
 msgctxt "#31017"
-msgid "-description for item 3-"
-msgstr "-description for item 3-"
+msgid "Enable or disable the panel for changing views, filter, search and other options"
+msgstr "Enable or disable the panel for changing views, filter, search and other options"
 
 msgctxt "#31018"
 msgid "Choose Addon for Lyrics Search & Download"
@@ -414,3 +414,19 @@ msgstr "Local subtitle available"
 msgctxt "#31414"
 msgid "TEST"
 msgstr "TEST"
+
+msgctxt "#31415"
+msgid "Don't Show Anymore"
+msgstr "Don't Show Anymore"
+
+msgctxt "#31416"
+msgid "Show Again"
+msgstr "Show Again"
+
+msgctxt "#31417"
+msgid "VideoGuides"
+msgstr "VideoGuides"
+
+msgctxt "#31418"
+msgid "Opens a list of video files made to help,but also to learn how to maximize Your SiO2-X experience"
+msgstr "Opens a list of video files made to help,but also to learn how to maximize Your SiO2-X experience"

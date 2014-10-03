@@ -7,12 +7,12 @@
         <include>BlackBackground</include>
         <include>WindowsTopInfos</include>
         <include>Linemiddle</include>
-         <control type="image" description="Line">
-            <posx>150</posx>
+          <control type="image" description="Line">
+            <centerleft>480</centerleft>
             <top>540</top>
             <height>1</height>
-            <width>660</width>
-            <texture>lines/Line.png</texture>
+            <width>900</width>
+            <texture colordiffuse="black">lines/Line1.png</texture>
         </control>
         <control type="group">
             <control type="list" id="575">
@@ -129,16 +129,13 @@
             <texture>$VAR[settingsmainico]</texture>
             <colordiffuse>black</colordiffuse>
         </control>
-        <control type="textbox" description="infos">
-            <visible>Control.HasFocus(575)</visible>
+        <control type="textbox" description="HelpDetails">
             <centerleft>480</centerleft>
-            <top>580</top>
+            <top>560</top>
             <width>660</width>
-            <height>500</height>
+            <height>380</height>
             <font>size33</font>
-            <scroll>false</scroll>
-            <aligny>top</aligny>
-            <align>center</align>
+            <align>justify</align>
             <label>$VAR[settingsmain]</label>
         </control>
     </controls>
