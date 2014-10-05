@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="banners">
-<control type="group" description="BANNERS">
+        <control type="group" description="BANNERS">
             <visible>Control.IsVisible(55)</visible>
             <control type="group" description="Container and frame">
                 <control type="fixedlist" id="55" description="bannerlist">
@@ -52,7 +52,7 @@
                         </control>
                         <control type="label" description="Label2">
                             <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                            <posx>804</posx>
+                            <centerleft>804</centerleft>
                             <top>125</top>
                             <height>45</height>
                             <width>150</width>
@@ -113,7 +113,7 @@
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <posx>804</posx>
+                                <centerleft>804</centerleft>
                                 <top>125</top>
                                 <height>45</height>
                                 <width>150</width>
@@ -139,7 +139,7 @@
             </control>
             <control type="image" description="Line Split">
                 <posx>129</posx>
-                <top>140</top>
+                <top>139</top>
                 <width>1674</width>
                 <height>1</height>
                 <texture colordiffuse="black">lines/LineL.png</texture>
@@ -149,18 +149,18 @@
                 <posx>129</posx>
                 <top>90</top>
                 <width>1350</width>
-                <textcolor>Silver</textcolor>
+                <textcolor>Yellow</textcolor>
                 <include>Genre51Commons</include>
-                <label>$INFO[ListItem.Label]  [COLOR=gray]$VAR[TopLabel][/COLOR]</label>
+                <label>[B]$INFO[ListItem.Label][/B]  [COLOR=gray]$VAR[TopLabel][/COLOR]</label>
             </control>
             <control type="grouplist">
-                <animation effect="fade" time="300" reversible="false" delay="200">VisibleChange</animation>
-                <visible>!Container(55).OnNext + !Container(55).OnPrevious + !StringCompare(ListItem.Label,..)</visible>
+                <!--<animation effect="fade" time="150" reversible="false">VisibleChange</animation>-->
+                <!--<visible>!Container(55).OnNext + !Container(55).OnPrevious + !StringCompare(ListItem.Label,..)</visible>-->
                 <top>150</top>
                 <left>129</left>
                 <itemgap>0</itemgap>
                 <control type="image" description="Rating">
-                    <visible>!IsEmpty(ListItem.Rating)</visible>
+                    <!--<visible>!IsEmpty(ListItem.Rating)</visible>-->
                     <height>48</height>
                     <width>270</width>
                     <aspectratio align="right">keep</aspectratio>
@@ -174,7 +174,7 @@
                     <label>STATUS: $INFO[Window(Home).Property(NextAired.Status)]</label>
                 </control>
                 <control type="label" description="Next Episode">
-                    <visible>!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+                    <!--<visible>!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>-->
                     <width>650</width>
                     <height>60</height>
                     <textcolor>Silver</textcolor>
@@ -189,7 +189,7 @@
                 <control type="textbox" description="Plot">
                     <top>300</top>
                     <width>500</width>
-                    <height>500</height>
+                    <height>650</height>
                     <font>size30</font>
                     <textcolor>Silver</textcolor>
                     <align>justify</align>
@@ -210,5 +210,5 @@
                 <onright>9000</onright>
             </control>
         </control>
-        </include>
-        </includes>
+    </include>
+</includes>

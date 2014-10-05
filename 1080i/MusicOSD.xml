@@ -4,12 +4,10 @@
     <include>OpenClose</include>
     <controls>
         <control type="progress" id="23" description="Progress Bar">
-            <visible>true</visible>
             <posx>84</posx>
             <top>-750</top>
             <width>747</width>
             <info>Player.Progress</info>
-            <visible>true</visible>
         </control>
         <control type="image">
             <posx>190</posx>

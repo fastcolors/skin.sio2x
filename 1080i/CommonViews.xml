@@ -838,11 +838,11 @@
         </control>
     </include>
     <include name="SettingsSubmenuButtons">
-        <width>720</width>
+        <width>1400</width>
         <textoffsetx>22</textoffsetx>
-        <height>54</height>
+        <height>81</height>
         <align>left</align>
-        <font>size30</font>
+        <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
         <disabledcolor>Disabled</disabledcolor>
     </include>
     <include name="Help_Panel">
@@ -863,7 +863,7 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="357" width="354">
             <control type="label">
-                <posx>178</posx>
+                <centerleft>178</centerleft>
                 <top>178</top>
                 <width>345</width>
                 <height>30</height>
@@ -900,7 +900,7 @@
         </itemlayout>
         <focusedlayout height="357" width="354">
             <control type="label">
-                <posx>178</posx>
+                <centerleft>178</centerleft>
                 <top>178</top>
                 <width>345</width>
                 <height>30</height>

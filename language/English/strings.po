@@ -152,12 +152,12 @@ msgid "Always Colored Menu Icons"
 msgstr "Always Colored Menu Icons"
 
 msgctxt "#31034"
-msgid "Click to Add Favourite to Home Page"
-msgstr "Click to Add Favourite to Home Page"
+msgid "Click to Add Custom Item to Home Page"
+msgstr "Click to Add Custom Item to Home Page"
 
 msgctxt "#31035"
-msgid "Click to Pick Icon, Change Favourite or Remove Favourite"
-msgstr "Click to Pick Icon, Change Favourite or Remove Favourite"
+msgid "Click to Pick Icon, Change or Remove Item"
+msgstr "Click to Pick Icon, Change or Remove Item"
 
 msgctxt "#31036"
 msgid "Reset ALL skin settings to default"

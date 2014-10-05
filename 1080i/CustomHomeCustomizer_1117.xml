@@ -4,13 +4,14 @@
     <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>
+        <include>BlackBackground</include>
         <control type="label" description="Heading">
-            <posx>60r</posx>
-            <top>40</top>
+            <centerleft>960</centerleft>
+            <top>20</top>
             <width>720</width>
-            <height>55</height>
+            <height>45</height>
             <font>size42B</font>
-            <align>right</align>
+            <align>center</align>
             <textcolor>White</textcolor>
             <label>31052</label>
         </control>
@@ -117,10 +118,10 @@
                             <label>$LOCALIZE[24001]</label>
                             <onclick>Skin.ToggleSetting(hidevaddons)</onclick>
                         </item>
-                        <item id="1013" description="Movies">
+                        <item id="1013" description="VAddons -OFF">
                             <visible>Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
                             <thumb>help/Off.png</thumb>
-                            <label>$LOCALIZE[20342]</label>
+                            <label>$LOCALIZE[24001]</label>
                             <onclick>Skin.ToggleSetting(hidevaddons)</onclick>
                         </item>
                         <item id="1001" description="Movies">
@@ -129,7 +130,7 @@
                             <label>$LOCALIZE[20342]</label>
                             <onclick>Skin.ToggleSetting(hidemovie)</onclick>
                         </item>
-                        <item id="1001" description="Movies">
+                        <item id="1001" description="Movies -OFF">
                             <visible>Skin.HasSetting(hidemovie)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>$LOCALIZE[20342]</label>
@@ -141,7 +142,7 @@
                             <label>$LOCALIZE[20343]</label>
                             <onclick>Skin.ToggleSetting(hidetv)</onclick>
                         </item>
-                        <item id="1002" description="TV">
+                        <item id="1002" description="TV -OFF">
                             <visible>Skin.HasSetting(hidetv)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>$LOCALIZE[20343]</label>
@@ -153,7 +154,7 @@
                             <label>$LOCALIZE[2]</label>
                             <onclick>Skin.ToggleSetting(hidemusic)</onclick>
                         </item>
-                        <item id="1003" description="Music">
+                        <item id="1003" description="Music -OFF">
                             <visible>Skin.HasSetting(hidemusic)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>$LOCALIZE[2]</label>
@@ -165,7 +166,7 @@
                             <label>$LOCALIZE[24001]</label>
                             <onclick>Skin.ToggleSetting(hideaddon)</onclick>
                         </item>
-                        <item id="1005" description="Addons">
+                        <item id="1005" description="Addons -OFF">
                             <visible>Skin.HasSetting(hideaddon)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>$LOCALIZE[24001]</label>
@@ -177,7 +178,7 @@
                             <label>$LOCALIZE[1]</label>
                             <onclick>Skin.ToggleSetting(hidepic)</onclick>
                         </item>
-                        <item id="1004" description="Photos">
+                        <item id="1004" description="Photos -OFF">
                             <visible>Skin.HasSetting(hidepic)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>$LOCALIZE[1]</label>
@@ -189,7 +190,7 @@
                             <label>$LOCALIZE[8]</label>
                             <onclick>Skin.ToggleSetting(hidewtr)</onclick>
                         </item>
-                        <item id="1006" description="Weather">
+                        <item id="1006" description="Weather -OFF">
                             <visible>Skin.HasSetting(hidewtr)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>$LOCALIZE[8]</label>
@@ -201,43 +202,43 @@
                             <label>$LOCALIZE[1036]</label>
                             <onclick>Skin.ToggleSetting(hidefav)</onclick>
                         </item>
-                        <item id="1010" description="Favourites">
+                        <item id="1010" description="Favourites -OFF">
                             <visible>Skin.HasSetting(hidefav)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>$LOCALIZE[1036]</label>
                             <onclick>Skin.ToggleSetting(hidefav)</onclick>
                         </item>
-                        <item id="356">
+                        <item id="356" description="search">
                             <visible>Skin.HasSetting(sear)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>137</label>
                             <onclick>Skin.ToggleSetting(sear)</onclick>
                         </item>
-                        <item id="356">
+                        <item id="356" description="search -OFF">
                             <visible>!Skin.HasSetting(sear)</visible>
                             <thumb>icons/search.png</thumb>
                             <label>137</label>
                             <onclick>Skin.ToggleSetting(sear)</onclick>
                         </item>
-                        <item id="357">
+                        <item id="357" description="3d movies">
                             <visible>!Skin.HasSetting(3dmovs)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>3D $LOCALIZE[342]</label>
                             <onclick>Skin.ToggleSetting(3dmovs)</onclick>
                         </item>
-                        <item id="357">
+                        <item id="357" description="3d movies -OFF">
                             <visible>Skin.HasSetting(3dmovs)</visible>
                             <thumb>icons/3d.png</thumb>
                             <label>3D $LOCALIZE[342]</label>
                             <onclick>Skin.ToggleSetting(3dmovs)</onclick>
                         </item>
-                        <item id="358">
+                        <item id="358" description="next aired">
                             <visible>Skin.HasSetting(nextair) | !System.HasAddon(script.tv.show.next.aired) | !Library.HasContent(TVShows)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>$ADDON[script.tv.show.next.aired 32019]</label>
                             <onclick>Skin.ToggleSetting(nextair)</onclick>
                         </item>
-                        <item id="358">
+                        <item id="358" description="nest aired -OFF">
                             <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
                             <thumb>icons/nextaired.png</thumb>
                             <label>NEXT AIRED</label>
@@ -565,16 +566,16 @@
                             <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
                         </item>
                         <!--<item id="1008" description="Programs">-->
-                            <!--<visible>!Skin.HasSetting(hideprog)</visible>-->
-                            <!--<thumb>icons/program.png</thumb>-->
-                            <!--<label>$LOCALIZE[0]</label>-->
-                            <!--<onclick>Skin.ToggleSetting(hideprog)</onclick>-->
+                        <!--<visible>!Skin.HasSetting(hideprog)</visible>-->
+                        <!--<thumb>icons/program.png</thumb>-->
+                        <!--<label>$LOCALIZE[0]</label>-->
+                        <!--<onclick>Skin.ToggleSetting(hideprog)</onclick>-->
                         <!--</item>-->
                         <!--<item id="1008" description="Programs">-->
-                            <!--<visible>Skin.HasSetting(hideprog)</visible>-->
-                            <!--<thumb>help/Off.png</thumb>-->
-                            <!--<label>$LOCALIZE[0]</label>-->
-                            <!--<onclick>Skin.ToggleSetting(hideprog)</onclick>-->
+                        <!--<visible>Skin.HasSetting(hideprog)</visible>-->
+                        <!--<thumb>help/Off.png</thumb>-->
+                        <!--<label>$LOCALIZE[0]</label>-->
+                        <!--<onclick>Skin.ToggleSetting(hideprog)</onclick>-->
                         <!--</item>-->
                         <item id="1011" description="Sources">
                             <visible>!Skin.HasSetting(hideSources)</visible>
@@ -600,19 +601,19 @@
                             <label>7</label>
                             <onclick>Skin.ToggleSetting(hidebro)</onclick>
                         </item>
-                        <item id="1013" description="Settings">
+                        <item id="1113" description="Settings">
                             <visible>!Skin.HasSetting(hidesett)</visible>
                             <thumb>icons/settings.png</thumb>
                             <label>5</label>
                             <onclick>Skin.ToggleSetting(hidesett)</onclick>
                         </item>
-                        <item id="1013" description="Settings">
+                        <item id="1113" description="Settings">
                             <visible>Skin.HasSetting(hidesett)</visible>
                             <thumb>help/Off.png</thumb>
                             <label>5</label>
                             <onclick>Skin.ToggleSetting(hidesett)</onclick>
                         </item>
-                         <item id="1014" description="vidhelp">
+                        <item id="1014" description="vidhelp">
                             <visible>!Skin.HasSetting(hidevidhelp)</visible>
                             <thumb>icons/qmark.png</thumb>
                             <label>$LOCALIZE[10043]</label>
@@ -629,8 +630,8 @@
             </control>
         </control>
         <control type="grouplist" id="520" description="MOVIES">
-            <top>60</top>
-            <posx>60</posx>
+            <top>120</top>
+            <left>260</left>
             <ondown>50</ondown>
             <onright>50</onright>
             <visible>Library.HasContent(Movies)</visible>
@@ -659,8 +660,8 @@
             </control>
         </control>
         <control type="grouplist" id="520" description="TV">
-            <top>60</top>
-            <posx>60</posx>
+            <top>120</top>
+            <left>260</left>
             <ondown>50</ondown>
             <onright>50</onright>
             <visible>Library.HasContent(TVShows)</visible>
@@ -687,10 +688,12 @@
                 <onclick>Skin.ToggleSetting(intruderTV)</onclick>
             </control>
         </control>
-        <control type="group" id="520" description="Music">
+        <control type="grouplist" id="520" description="Music">
             <visible>Container(50).HasFocus(1003)</visible>
-            <top>30</top>
-            <posx>40</posx>
+            <top>120</top>
+            <left>260</left>
+            <ondown>50</ondown>
+            <onright>50</onright>
             <control type="radiobutton" id="300" description="Recent">
                 <include>SettingsSubmenuButtons</include>
                 <onup>50</onup>
@@ -703,7 +706,6 @@
                 <onclick condition="StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,mushoff)</onclick>
             </control>
             <control type="radiobutton" id="303" description="Custom">
-                <top>55</top>
                 <onup>300</onup>
                 <ondown>304</ondown>
                 <include>SettingsSubmenuButtons</include>
@@ -716,7 +718,6 @@
                 <onclick condition="StringCompare(Skin.String(musicshelf),custom)">Skin.SetString(musicshelf,mushoff)</onclick>
             </control>
             <control type="radiobutton" id="304" description="100">
-                <top>110</top>
                 <include>SettingsSubmenuButtons</include>
                 <onup>303</onup>
                 <ondown>52</ondown>
@@ -728,78 +729,10 @@
                 <onclick condition="StringCompare(Skin.String(musicshelf),top)">Skin.SetString(musicshelf,mushoff)</onclick>
             </control>
         </control>
-        <!--<control type="panel" id="52">-->
-        <!--<enable>!Skin.HasSetting(hidemusic)</enable>-->
-        <!--<visible>Container(50).HasFocus(1003)</visible>-->
-        <!--<visible>Skin.HasSetting(MusicShelf_Custom)</visible>-->
-        <!--<include>CustomizerList</include>-->
-        <!--<content>-->
-        <!--<item id="1" description="ADDONS">-->
-        <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.1.Label))]</label>-->
-        <!--<label2>addon</label2>-->
-        <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.1.Label))]</thumb>-->
-        <!--<onclick>Skin.SetAddon(ShelfMusic.1.Label,xbmc.python.pluginsource)</onclick>-->
-        <!--</item>-->
-        <!--<item id="2" description="ADDONS">-->
-        <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.2.Label))]</label>-->
-        <!--<label2>addon</label2>-->
-        <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.2.Label))]</thumb>-->
-        <!--<onclick>Skin.SetAddon(ShelfMusic.2.Label,xbmc.python.pluginsource)</onclick>-->
-        <!--</item>-->
-        <!--<item id="3" description="ADDONS">-->
-        <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.3.Label))]</label>-->
-        <!--<label2>addon</label2>-->
-        <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.3.Label))]</thumb>-->
-        <!--<onclick>Skin.SetAddon(ShelfMusic.3.Label,xbmc.python.pluginsource)</onclick>-->
-        <!--</item>-->
-        <!--<item id="4" description="ADDONS">-->
-        <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.4.Label))]</label>-->
-        <!--<label2>addon</label2>-->
-        <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.4.Label))]</thumb>-->
-        <!--<onclick>Skin.SetAddon(ShelfMusic.4.Label,xbmc.python.pluginsource)</onclick>-->
-        <!--</item>-->
-        <!--<item id="5" description="ADDONS">-->
-        <!--<label>$INFO[system.addonTitle(Skin.String(ShelfMusic.5.Label))]</label>-->
-        <!--<label2>addon</label2>-->
-        <!--<thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.5.Label))]</thumb>-->
-        <!--<onclick>Skin.SetAddon(ShelfMusic.5.Label,xbmc.python.pluginsource)</onclick>-->
-        <!--</item>-->
-        <!--<item id="6" description="fav">-->
-        <!--<label>$INFO[Skin.String(ShelfMusic.6.Label)]</label>-->
-        <!--<label2>favourite</label2>-->
-        <!--<thumb>$INFO[Skin.String(ShelfMusic.6.Icon)]</thumb>-->
-        <!--<onclick>RunScript(script.favourites,property=ShelfMusic.6)</onclick>-->
-        <!--</item>-->
-        <!--<item id="7" description="fav">-->
-        <!--<label>$INFO[Skin.String(ShelfPictures.7.Label)]</label>-->
-        <!--<label2>favourite</label2>-->
-        <!--<thumb>$INFO[Skin.String(ShelfMusic.7.Icon)]</thumb>-->
-        <!--<onclick>RunScript(script.favourites,property=ShelfMusic.7)</onclick>-->
-        <!--</item>-->
-        <!--<item id="8" description="fav">-->
-        <!--<label>$INFO[Skin.String(ShelfPictures.8.Label)]</label>-->
-        <!--<label2>favourite</label2>-->
-        <!--<thumb>$INFO[Skin.String(ShelfMusic.8.Icon)]</thumb>-->
-        <!--<onclick>RunScript(script.favourites,property=ShelfMusic.8)</onclick>-->
-        <!--</item>-->
-        <!--<item id="9" description="fav">-->
-        <!--<label>$INFO[Skin.String(ShelfPictures.9.Label)]</label>-->
-        <!--<label2>favourite</label2>-->
-        <!--<thumb>$INFO[Skin.String(ShelfMusic.9.Icon)]</thumb>-->
-        <!--<onclick>RunScript(script.favourites,property=ShelfMusic.9)</onclick>-->
-        <!--</item>-->
-        <!--<item id="10" description="fav">-->
-        <!--<label>$INFO[Skin.String(ShelfPictures.10.Label)]</label>-->
-        <!--<label2>favourite</label2>-->
-        <!--<thumb>$INFO[Skin.String(ShelfMusic.10.Icon)]</thumb>-->
-        <!--<onclick>RunScript(script.favourites,property=ShelfMusic.10)</onclick>-->
-        <!--</item>-->
-        <!--</content>-->
-        <!--</control>-->
         <control type="group" id="520" description="PICTURES">
             <visible>Container(50).HasFocus(1004)</visible>
-            <top>30</top>
-            <posx>40</posx>
+            <top>120</top>
+            <left>260</left>
             <control type="label">
                 <top>40</top>
                 <posx>20</posx>
@@ -900,8 +833,8 @@
         </control>
         <control type="group" id="520" description="ADDONS">
             <visible>Container(50).HasFocus(1005)</visible>
-            <top>30</top>
-            <posx>40</posx>
+            <top>120</top>
+            <left>260</left>
             <control type="label">
                 <top>40</top>
                 <posx>20</posx>
@@ -1164,31 +1097,30 @@
                 </item>
             </content>
         </control>
-        <control type="group" description="Add Favs">
-            <visible>[Container(50).HasFocus(601) + IsEmpty(Skin.String(HomeFav.1.Label))] | [Container(50).HasFocus(602) + IsEmpty(Skin.String(HomeFav.2.Label))] | [Container(50).HasFocus(603) + IsEmpty(Skin.String(HomeFav.3.Label))] | [Container(50).HasFocus(604) + IsEmpty(Skin.String(HomeFav.4.Label))] | [Container(50).HasFocus(605) + IsEmpty(Skin.String(HomeFav.5.Label))] | [Container(50).HasFocus(606) + IsEmpty(Skin.String(HomeFav.6.Label))]</visible>
-            <top>30</top>
-            <posx>40</posx>
-            <control type="label">
-                <top>40</top>
-                <posx>20</posx>
-                <width>1000</width>
-                <textcolor>gray</textcolor>
-                <font>size22</font>
-                <label>31034</label>
-            </control>
+        <control type="label" description="ADD STUFF TO MAIN PAGE">
+            <visible>[Container(50).HasFocus(601) + IsEmpty(Skin.String(HomeFav.1.Label))] | [Container(50).HasFocus(602) + IsEmpty(Skin.String(HomeFav.2.Label))] | [Container(50).HasFocus(603) + IsEmpty(Skin.String(HomeFav.3.Label))] | [Container(50).HasFocus(604) + IsEmpty(Skin.String(HomeFav.4.Label))] | [Container(50).HasFocus(605) + IsEmpty(Skin.String(HomeFav.5.Label))] | [Container(50).HasFocus(606) + IsEmpty(Skin.String(HomeFav.6.Label))] | [Container(50).HasFocus(607) + IsEmpty(Skin.String(HomeFav.7.Label))]
+                | [Container(50).HasFocus(608) + IsEmpty(Skin.String(HomeFav.8.Label))] | [Container(50).HasFocus(401) + IsEmpty(Skin.String(HomeAddon.1.Label))] | [Container(50).HasFocus(402) + IsEmpty(Skin.String(HomeAddon.2.Label))] | [Container(50).HasFocus(403) + IsEmpty(Skin.String(HomeAddon.3.Label))] | [Container(50).HasFocus(404) + IsEmpty(Skin.String(HomeAddon.4.Label))] | [Container(50).HasFocus(405) + IsEmpty(Skin.String(HomeAddon.5.Label))]
+                | [Container(50).HasFocus(406) + IsEmpty(Skin.String(HomeAddon.6.Label))] | [Container(50).HasFocus(501) + IsEmpty(Skin.String(HomeAddon.7.Label))] | [Container(50).HasFocus(502) + IsEmpty(Skin.String(HomeAddon.8.Label))] | [Container(50).HasFocus(503) + IsEmpty(Skin.String(HomeAddon.9.Label))] | [Container(50).HasFocus(504) + IsEmpty(Skin.String(HomeAddon.10.Label))] | [Container(50).HasFocus(505) + IsEmpty(Skin.String(HomeAddon.11.Label))] | [Container(50).HasFocus(506) + IsEmpty(Skin.String(HomeAddon.12.Label))]
+            </visible>
+            <top>200</top>
+            <centerleft>960</centerleft>
+            <width>1000</width>
+            <textcolor>gray</textcolor>
+            <font>size30</font>
+            <align>center</align>
+            <label>31034</label>
         </control>
-        <control type="group" description="Change Icon or remove">
-            <visible>[Container(50).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.Label))] | [Container(50).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.Label))] | [Container(50).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.Label))] | [Container(50).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.Label))] | [Container(50).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.Label))] | [Container(50).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.Label))]</visible>
-            <top>30</top>
-            <posx>40</posx>
-            <control type="label">
-                <top>40</top>
-                <posx>20</posx>
-                <width>1000</width>
-                <textcolor>gray</textcolor>
-                <font>size22</font>
-                <label>31035</label>
-            </control>
+        <control type="label" description="Change Icon or remove">
+            <visible>[Container(50).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.Label))] | [Container(50).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.Label))] | [Container(50).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.Label))] | [Container(50).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.Label))] | [Container(50).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.Label))] | [Container(50).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.Label))] | [Container(50).HasFocus(607) + !IsEmpty(Skin.String(HomeFav.7.Label))]
+                | [Container(50).HasFocus(608) + !IsEmpty(Skin.String(HomeFav.8.Label))] | [Container(50).HasFocus(401) + !IsEmpty(Skin.String(HomeAddon.1.Label))] | [Container(50).HasFocus(402) + !IsEmpty(Skin.String(HomeAddon.2.Label))] | [Container(50).HasFocus(403) + !IsEmpty(Skin.String(HomeAddon.3.Label))] | [Container(50).HasFocus(404) + !IsEmpty(Skin.String(HomeAddon.4.Label))] | [Container(50).HasFocus(405) + !IsEmpty(Skin.String(HomeAddon.5.Label))]
+                | [Container(50).HasFocus(406) + !IsEmpty(Skin.String(HomeAddon.6.Label))] | [Container(50).HasFocus(501) + !IsEmpty(Skin.String(HomeAddon.7.Label))] | [Container(50).HasFocus(502) + !IsEmpty(Skin.String(HomeAddon.8.Label))] | [Container(50).HasFocus(503) + !IsEmpty(Skin.String(HomeAddon.9.Label))] | [Container(50).HasFocus(504) + !IsEmpty(Skin.String(HomeAddon.10.Label))] | [Container(50).HasFocus(505) + !IsEmpty(Skin.String(HomeAddon.11.Label))] | [Container(50).HasFocus(506) + !IsEmpty(Skin.String(HomeAddon.12.Label))]
+            </visible>
+            <top>200</top>
+            <centerleft>960</centerleft>
+            <width>1000</width>
+            <textcolor>gray</textcolor>
+            <font>size30</font>
+            <label>31035</label>
         </control>
         <control type="group" description="Options">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus()</visible>
@@ -1305,18 +1237,20 @@
                 <posx>750</posx>
                 <top>250</top>
                 <width>300</width>
-                <height>60</height>
+                <height>81</height>
                 <align>center</align>
+                <!--todo label-->
                 <label>SETTINGS</label>
                 <enable>!Skin.HasSetting(hidewtr)</enable>
                 <onclick>activatewindow(weathersettings)</onclick>
             </control>
         </control>
-        <control type="group" id="521" description="WEATHER">
+        <control type="group" id="521" description="SEARCH">
             <top>60</top>
             <posx>60</posx>
             <visible>Container(50).HasFocus(356)</visible>
             <control type="textbox">
+                <!--todo label-->
                 <posx>450</posx>
                 <top>100</top>
                 <width>900</width>
@@ -1324,7 +1258,7 @@
                 <align>center</align>
                 <textcolor>gray</textcolor>
                 <font>size26</font>
-                <label>$LOCALIZE[31015]</label>
+                <label>- SEARCH THE LIBRARIES -</label>
             </control>
         </control>
     </controls>

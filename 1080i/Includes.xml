@@ -11,6 +11,7 @@
     <include file="views/fanart.xml" />
     <include file="views/icons.xml" />
     <include file="views/sio2.xml" />
+    <include file="views/sio2_adv.xml" />
     <!--VIDEOVIEWS-->
     <include file="views/Musicviews.xml" />
     <include file="views/PVRviews.xml" />
