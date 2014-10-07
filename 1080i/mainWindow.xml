@@ -699,7 +699,7 @@
                         <font>font24_title</font>
                         <textcolor>blue</textcolor>
                         <info>ListItem.Label</info>
-                        <visible>true</visible>
+
                     </control>
                     <!-- Connection Address -->
                     <control type="label">
@@ -890,7 +890,7 @@
                         <font>font24_title</font>
                         <textcolor>blue</textcolor>
                         <info>ListItem.Label</info>
-                        <visible>true</visible>
+
                     </control>
                     <!-- Connection Address -->
                     <control type="label">

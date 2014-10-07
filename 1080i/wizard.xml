@@ -182,7 +182,7 @@
                         <top>440</top>
                         <width>230</width>
                         <height>40</height>
-                        <visible>true</visible>
+
                         <colordiffuse>FFFFFFFF</colordiffuse>
                         <texturefocus>button-focus.png</texturefocus>
                         <texturenofocus>button-nofocus.png</texturenofocus>
@@ -198,7 +198,7 @@
                         <top>440</top>
                         <width>230</width>
                         <height>40</height>
-                        <visible>true</visible>
+
                         <colordiffuse>FFFFFFFF</colordiffuse>
                         <texturefocus>button-focus.png</texturefocus>
                         <texturenofocus>button-nofocus.png</texturenofocus>
@@ -303,7 +303,7 @@
                                 <font>font24_title</font>
                                 <textcolor>blue</textcolor>
                                 <info>ListItem.Label</info>
-                                <visible>true</visible>
+
                             </control>
                             <!-- Connection Address -->
                             <control type="label">
@@ -396,7 +396,7 @@
                                 <font>font24_title</font>
                                 <textcolor>blue</textcolor>
                                 <info>ListItem.Label</info>
-                                <visible>true</visible>
+
                             </control>
                             <!-- Connection Address -->
                             <control type="label">
@@ -463,7 +463,6 @@
                 <top>575</top>
                 <width>230</width>
                 <height>40</height>
-                <visible>true</visible>
                 <colordiffuse>FFFFFFFF</colordiffuse>
                 <texturefocus>button-focus.png</texturefocus>
                 <texturenofocus>button-nofocus.png</texturenofocus>

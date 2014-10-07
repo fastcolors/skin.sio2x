@@ -15,7 +15,7 @@
                     <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
                     <onup>53</onup>
                     <ondown>53</ondown>
-                    <viewtype label="536">Grid</viewtype>
+                    <viewtype label="53">Grid</viewtype>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime tween="sine" easing="inout">300</scrolltime>
                     <preloaditems>2</preloaditems>
@@ -120,7 +120,7 @@
                     </focusedlayout>
                     <!--EPISODESEND-->
                     <!--ADDONS-->
-                    <itemlayout condition="Container.Content(Addons) | ![Container.Content(movies) | Container.Content(tags) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(Addons) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]" height="228" width="228">
+                    <itemlayout condition="Container.Content(Addons)" height="228" width="228">
                         <control type="image">
                             <posx>35</posx>
                             <top>24</top>
@@ -130,7 +130,7 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                     </itemlayout>
-                    <focusedlayout condition="Container.Content(Addons) | ![Container.Content(movies) | Container.Content(tags) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(Addons) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]" height="228" width="228">
+                    <focusedlayout condition="Container.Content(Addons)" height="228" width="228">
                         <control type="group">
                             <animation effect="zoom" center="140,35" end="130" time="200" reversible="true">Focus</animation>
                             <animation effect="zoom" center="140,35" start="130" end="100" time="100" reversible="true">unFocus</animation>

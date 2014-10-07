@@ -44,7 +44,7 @@
                 <posx>200</posx>
                 <top>200</top>
                 <width>500</width>
-                <visible>true</visible>
+
                 <texturefocus></texturefocus>
                 <texturenofocus></texturenofocus>
                 <label>-</label>

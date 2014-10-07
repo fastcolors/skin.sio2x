@@ -147,14 +147,14 @@
         <orientation>horizontal</orientation>
         <control type="label" id="7777" description="Heading">
             <width>auto</width>
-            <height>60</height>
-            <font>size42</font>
+            <height>40</height>
+            <font>size42B</font>
             <scroll>false</scroll>
             <label>$VAR[RootLabel]</label>
         </control>
         <control type="label" description="Number of files">
             <width>auto</width>
-            <height>70</height>
+            <height>53</height>
             <font>size22</font>
             <textcolor>gray</textcolor>
             <label>$INFO[Container.NumItems, (,)]</label>
@@ -204,8 +204,20 @@
             <visible>!Window.IsActive(DialogPictureInfo.xml) + !Window.IsActive(LoginScreen.xml)</visible>
             <visible>Control.IsVisible(52)</visible>
             <top>40</top>
-            <centerleft>1630</centerleft>
-            <width>580</width>
+            <left>1360</left>
+            <width>560</width>
+            <align>left</align>
+            <include>windowtitle</include>
+        </control>
+        <control type="grouplist" description="sio2 advanced">
+            <visible>!Window.IsActive(DialogPictureInfo.xml) + !Window.IsActive(LoginScreen.xml)</visible>
+            <visible>Control.IsVisible(54)</visible>
+            <orientation>vertical</orientation>
+            <top>35</top>
+            <left>1538</left>
+            <width>352</width>
+            <height>100</height>
+            <itemgap>0</itemgap>
             <include>windowtitle</include>
         </control>
         <control type="grouplist" description="ukn">
@@ -538,12 +550,34 @@
             <control type="grouplist" id="9000">
                 <left>1450</left>
                 <include>DialogGLs</include>
-                <control type="button" id="607">
+                 <control type="button" id="1">
                     <enable>false</enable>
                     <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
                     <include>DialogButt</include>
                     <label>•• $LOCALIZE[33063] ••</label>
                 </control>
+                <control type="button" id="3">
+                    <description>Sort by button</description>
+                    <include>DialogButt</include>
+                    <label>103</label>
+                </control>
+                <control type="togglebutton" id="4">
+                    <description>Sort asc</description>
+                    <include>DialogButt</include>
+                    <label>584</label>
+                    <altlabel>585</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                </control>
+                <control type="radiobutton" id="5">
+                    <description>Group recording items by folder structure</description>
+                    <left>0</left>
+                    <right>40</right>
+                    <textwidth>235</textwidth>
+                    <include>DialogButt</include>
+                    <label>19270</label>
+                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+                </control>
+
                 <control type="button" id="31">
                     <description>TV Guide</description>
                     <include>DialogButt</include>
@@ -589,29 +623,6 @@
                     <include>DialogButt</include>
                     <label>-</label>
                 </control>
-                <control type="radiobutton" id="5">
-                    <description>Group recording items by folder structure</description>
-                    <left>0</left>
-                    <right>40</right>
-                    <textwidth>235</textwidth>
-                    <include>ButtonCommonValues</include>
-                    <label>19270</label>
-                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
-                </control>
-                <control type="button" id="3">
-                    <description>Sort by button</description>
-                    <include>DialogButt</include>
-                    <label>103</label>
-                </control>
-                <control type="togglebutton" id="4">
-                    <description>Sort asc</description>
-                    <include>DialogButt</include>
-                    <alttexturefocus border="5">button-focus.png</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
-                    <label>31051</label>
-                    <altlabel>31050</altlabel>
-                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
-                </control>
                 <control type="button" id="599">
                     <enable>false</enable>
                     <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
@@ -649,7 +660,7 @@
                     <selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>
                     <label>Next</label>
                 </control>
-                 <control type="radiobutton" id="602" description="Now">
+                 <control type="radiobutton" id="604" description="BIG LIST">
                     <visible>Window.IsActive(MyPVRChannels.xml)</visible>
                     <include>DialogButt</include>
                     <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
@@ -657,7 +668,7 @@
                     <selected>Control.IsVisible(11) + !Control.IsVisible(10)</selected>
                     <label>Big List</label>
                 </control>
-                <control type="radiobutton" id="603" description="Next">
+                <control type="radiobutton" id="605" description="SMALL LIST">
                     <visible>Window.IsActive(MyPVRChannels.xml)</visible>
                     <include>DialogButt</include>
                     <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->

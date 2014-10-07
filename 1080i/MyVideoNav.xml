@@ -26,7 +26,10 @@
         <include>icons</include>
         <include>banners</include>
         <!--VIEWSEND-->
-        <include>WindowsTopInfos</include>
+        <control type="group">
+            <!--<visible>!Control.IsVisible(54)</visible>-->
+            <include>WindowsTopInfos</include>
+        </control>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !Window.IsVisible(traktContextMenu.xml)</visible>
             <include>9000slide</include>
@@ -79,15 +82,6 @@
                     <label>137</label>
                 </control>
                 <!--todo fix file browsing-->
-                <control type="button" id="698">
-                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
-                    <include>DialogButt</include>
-                    <label>$INFO[ListItem.Label]</label>
-                    <!--<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mediatype=tvshow, medianame=$ESCINFO[ListItem.TVShowTitle])</onclick>-->
-                    <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mediatype=movie, medianame=$INFO[ListItem.Label])</onclick>
-                    <!--<onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mediatype=musicvideos, medianame=$INFO[ListItem.Title],mediapath=$INFO[ListItem.Path])</onclick>-->
-                    <!--<visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)]+system.hasaddon(script.artwork.downloader)</visible>-->
-                </control>
                 <!--<control type="radiobutton" id="698" description="Browse files">-->
                 <!--<texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>-->
                 <!--<include>DialogButt</include>-->
@@ -130,19 +124,21 @@
                     <include>DialogButt</include>
                     <label>•• $LOCALIZE[582] ••</label>
                 </control>
+                <!--todo label-->
                 <control type="radiobutton" id="600" description="sio2">
                     <include>DialogButt</include>
                     <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
                     <onclick>Container.SetViewMode(52)</onclick>
                     <selected>Control.IsVisible(52)</selected>
-                    <label>SiO2</label>
+                    <label>SiO2 View</label>
                 </control>
+                <!--todo label-->
                 <control type="radiobutton" id="601" description="sio2 Advanced">
                     <include>DialogButt</include>
-                    <visible>!Container.Content(addons) + !IsEmpty(Container.FolderPath)</visible>
-                    <onclick>Container.SetViewMode(54)</onclick>
+                    <visible>Container.Content(movies)</visible>
+                    <onclick>Container.SetViewMode(54)</onclick>+
                     <selected>Control.IsVisible(54)</selected>
-                    <label>SiO2 Advanced</label>
+                    <label>SiO2-X View</label>
                 </control>
                 <control type="radiobutton" id="602" description="View Big List">
                     <include>DialogButt</include>

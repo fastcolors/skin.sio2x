@@ -318,7 +318,6 @@
                 <texture>images/Dialogpull.png</texture>
             </control>
         </control>
-
         <!-- 3D -->
         <control type="group">
             <visible>VideoPlayer.IsStereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
@@ -333,7 +332,6 @@
                 <texture border="150">images/Dialog.png</texture>
             </control>
             <control type="grouplist" id="500">
-
                 <posx>710</posx>
                 <top>300</top>
                 <width>500</width>
@@ -345,9 +343,7 @@
                 <onup>noop</onup>
                 <ondown>noop</ondown>
                 <orientation>vertical</orientation>
-
                 <include>VisibleFadeEffect</include>
-
                 <control type="group">
                     <description>WindowsTopInfos</description>
                     <width>500</width>
@@ -393,5 +389,13 @@
             </control>
         </control>
         <!-- 3D -->
+        <control type="slider" id="401">
+            <description>Slider</description>
+            <posx>257</posx>
+            <top>933</top>
+            <width>1416</width>
+            <height>68</height>
+            <action>seek</action>
+        </control>
     </controls>
 </window>

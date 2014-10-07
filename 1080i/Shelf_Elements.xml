@@ -676,11 +676,11 @@
     </include>
     <include name="TV_NA">
         <control type="group">
-        <control type="label" description="Top Label">
-            <visible>Control.IsVisible(311) + Container(9000).HasFocus(358)</visible>
-            <include>ShelfFade</include>
-            <include>ShelfTitle</include>
-            <label>[B] $VAR[shelflabel] [/B]</label>
+            <control type="label" description="Top Label">
+                <visible>Control.IsVisible(311) + Container(9000).HasFocus(358)</visible>
+                <include>ShelfFade</include>
+                <include>ShelfTitle</include>
+                <label>[B] $VAR[shelflabel] [/B]</label>
             </control>
             <control type="panel" id="311" description="TOP Shortcuts">
                 <visible>Container(9000).HasFocus(358)</visible>
@@ -829,15 +829,15 @@
         </control>
         <control type="group">
             <control type="panel" id="315" description="TOP Shortcuts">
-                <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + !StringCompare(Skin.String(addonsshelf),1)</visible>
+                <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)]</visible>
                 <include>SquareShortcutsCommons</include>
                 <content target="video">$VAR[addonsshelfcontent]</content>
             </control>
-             <control type="panel" id="315" description="TOP Shortcuts">
-                <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + StringCompare(Skin.String(addonsshelf),1)</visible>
-                <include>SquareShortcutsCommons</include>
-                <content target="music">$VAR[addonsshelfcontent]</content>
-            </control>
+            <!--<control type="panel" id="315" description="TOP Shortcuts">-->
+            <!--<visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + StringCompare(Skin.String(addonsshelf),1)</visible>-->
+            <!--<include>SquareShortcutsCommons</include>-->
+            <!--<content target="music">$VAR[addonsshelfcontent]</content>-->
+            <!--</control>-->
             <control type="image">
                 <visible>Control.HasFocus(315)</visible>
                 <posx>142</posx>

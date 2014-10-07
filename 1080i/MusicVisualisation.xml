@@ -13,12 +13,12 @@
                 <height>1080</height>
             </control>
             <control type="progress" id="23" description="Progress Bar">
-                <visible>true</visible>
+
                 <posx>84</posx>
                 <top>-750</top>
                 <width>747</width>
                 <info>Player.Progress</info>
-                <visible>true</visible>
+
             </control>
             <control type="multiimage" description="Slideshow">
                 <visible>Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
@@ -177,7 +177,7 @@
                                 <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
                                 <overlaytexture>-</overlaytexture>
                                 <info>Player.Progress</info>
-                                <visible>true</visible>
+
                             </control>
                             <control type="label">
                                 <posx>930</posx>
@@ -325,7 +325,7 @@
                             <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
                             <overlaytexture>-</overlaytexture>
                             <info>Player.Progress</info>
-                            <visible>true</visible>
+
                         </control>
                         <control type="label">
                             <posx>1166</posx>

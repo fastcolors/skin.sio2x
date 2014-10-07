@@ -43,7 +43,7 @@
                     <textcolor>white</textcolor>
                     <label></label>
                     <align>center</align>
-                    <visible>true</visible>
+
                 </control>
                 <control type="label" id="1701">
                     <left>10</left>
@@ -54,7 +54,7 @@
                     <textcolor>blue</textcolor>
                     <label></label>
                     <align>center</align>
-                    <visible>true</visible>
+
                 </control>
                 <control type="label" id="1702">
                     <left>10</left>
@@ -65,7 +65,7 @@
                     <textcolor>blue</textcolor>
                     <label></label>
                     <align>center</align>
-                    <visible>true</visible>
+
                 </control>
                 <control type="label" id="1703">
                     <left>10</left>
@@ -76,7 +76,7 @@
                     <textcolor>blue</textcolor>
                     <label></label>
                     <align>center</align>
-                    <visible>true</visible>
+
                 </control>
                 <control type="progress" id="1704">
                     <left>10</left>

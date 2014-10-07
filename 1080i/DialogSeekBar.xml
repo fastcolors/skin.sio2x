@@ -92,7 +92,6 @@
                     <texture>Seekbar/Barback.png</texture>
                 </control>
                 <control type="progress" description="Cache Progress">
-                    <visible>true</visible>
                     <!--Player.Caching-->
                     <posx>257</posx>
                     <top>1</top>
@@ -113,8 +112,8 @@
                     <texturebg>Seekbar/BG.png</texturebg>
                     <midtexture border="2">Seekbar/M.png</midtexture>
                     <info>Player.Progress</info>
-                    <visible>true</visible>
                 </control>
+
             </control>
             <control type="group" description="Icons on Seekbar">
                 <top>934</top>

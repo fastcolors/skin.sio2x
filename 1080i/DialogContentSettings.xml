@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="132">
-    <defaultcontrol always="true">3</defaultcontrol>
+    <defaultcontrol always="true">20</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <include>DialogOpenCloseVisible</include>
@@ -113,7 +113,7 @@
                 <onleft>28</onleft>
                 <onright>noop</onright>
                 <onup>22</onup>
-                <ondown>3</ondown>
+                <ondown>20</ondown>
             </control>
             <control type="button" id="28" description="OK">
                 <width>750</width>
@@ -121,22 +121,22 @@
                 <onleft>noop</onleft>
                 <onright>29</onright>
                 <onup>22</onup>
-                <ondown>3</ondown>
+                <ondown>20</ondown>
             </control>
         </control>
         <control type="image" description="Addon Icon">
-            <visible>Control.HasFocus(4)</visible>
+            <visible>Control.HasFocus(21)</visible>
             <centerleft>585</centerleft>
             <centertop>290</centertop>
             <width>255</width>
             <height>255</height>
-            <texture fallback="DefaultAddonNone.png">$INFO[Container(4).ListItem.Icon]</texture>
+            <texture fallback="DefaultAddonNone.png">$INFO[Container(21).ListItem.Icon]</texture>
             <aspectratio aligny="top">scale</aspectratio>
             <bordertexture colordiffuse="black">images/white.png</bordertexture>
             <bordersize>2</bordersize>
         </control>
         <control type="image" description="Addon Icon">
-            <visible>!Control.HasFocus(4)</visible>
+            <visible>!Control.HasFocus(21)</visible>
             <centerleft>585</centerleft>
             <centertop>290</centertop>
             <width>255</width>

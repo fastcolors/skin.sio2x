@@ -265,12 +265,11 @@
             <visible>Control.IsVisible(53)</visible>
             <control type="group" description="Container and frame">
                 <control type="panel" id="53" description="Panel">
-                    <viewtype label="536">Icons</viewtype>
-                    <left>13</left>
-                    <top>60</top>
+                    <viewtype label="53">Icons</viewtype>
+                    <left>30</left>
+                    <top>100</top>
                     <width>1920</width>
-                    <height>1020</height>
-                    <orientation>vertical</orientation>
+                    <height>990</height>
                     <onup>noop</onup>
                     <ondown>noop</ondown>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
@@ -319,7 +318,7 @@
             </control>
             <control type="image" description="Line Split">
                 <centerleft>960</centerleft>
-                <top>60</top>
+                <top>100</top>
                 <width>1500</width>
                 <height>1</height>
                 <texture colordiffuse="black">lines/Line.png</texture>

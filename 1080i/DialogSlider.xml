@@ -42,7 +42,6 @@
                 <align>center</align>
                 <font>size27</font>
                 <textcolor>White</textcolor>
-
                 <animation effect="fade" time="200">VisibleChange</animation>
             </control>
         </control>

@@ -8,7 +8,7 @@
             <description>video preview window</description>
             <width>1920</width>
             <height>1080</height>
-            <visible>true</visible>
+
         </control>
         <control type="image" id="102">
             <width>1920</width>
@@ -147,7 +147,7 @@
         </control>
         <control type="scrollbar" id="60">
             <description>Scroll Bar list 1</description>
-            <visible>true</visible>
+
             <posx>1210</posx>
             <top>100</top>
             <width>15</width>
@@ -165,7 +165,7 @@
         </control>
         <control type="scrollbar" id="61">
             <description>Scroll Bar list 2</description>
-            <visible>true</visible>
+
             <posx>1210</posx>
             <top>220</top>
             <width>15</width>
@@ -183,7 +183,7 @@
         </control>
         <control type="scrollbar" id="62">
             <description>Scroll Bar list 3</description>
-            <visible>true</visible>
+
             <posx>1210</posx>
             <top>100</top>
             <width>15</width>

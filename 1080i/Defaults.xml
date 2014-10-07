@@ -168,7 +168,7 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="slider" description="Seek Slider">
-        <visible>true</visible>
+
         <width>711</width>
         <height>36</height>
     </default>

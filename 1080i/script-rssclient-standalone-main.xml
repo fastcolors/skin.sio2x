@@ -12,7 +12,7 @@
             <top>150</top>
             <width>2920</width>
             <height>800</height>
-            <visible>true</visible>
+
             <onup>30051</onup>
             <ondown>30052</ondown>
             <onleft>noop</onleft>

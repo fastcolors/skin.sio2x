@@ -45,10 +45,10 @@
             <visible>Control.IsVisible(53)</visible>
             <control type="group" description="Container and frame">
                 <control type="panel" id="53" description="Panel">
-                    <left>12</left>
-                    <top>60</top>
+                    <left>30</left>
+                    <top>100</top>
                     <width>1920</width>
-                    <height>1020</height>
+                    <height>990</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
                     <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
@@ -98,7 +98,7 @@
             </control>
             <control type="image" description="Line Split">
                 <centerleft>960</centerleft>
-                <top>60</top>
+                <top>100</top>
                 <width>1500</width>
                 <height>1</height>
                 <texture colordiffuse="black">lines/Line.png</texture>

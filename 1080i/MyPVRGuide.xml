@@ -694,11 +694,6 @@
                     <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container(16).CurrentPage]/$INFO[Container(16).NumPages][/COLOR])</label>
                 </control>
             </control>
-
-
-
-
-
             <control type="group" description="NEXT">
                 <visible>Control.IsVisible(12)</visible>
                 <include>VisibleFade</include>
@@ -798,15 +793,7 @@
                     <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container(16).CurrentPage]/$INFO[Container(16).NumPages][/COLOR])</label>
                 </control>
             </control>
-
-
-
         </control>
-
-
-
-
-
         <control type="label">
             <visible>Control.IsVisible(10)</visible>
             <centerleft>960</centerleft>
@@ -822,7 +809,6 @@
             <align>center</align>
             <label>$INFO[Control.GetLabel(29)] • $INFO[Control.GetLabel(30)]</label>
         </control>
-
         <include>PVRsidemenu</include>
     </controls>
 </window>
