@@ -1468,12 +1468,12 @@
                 </content>
             </control>
             <control type="label">
-                <posx>1200</posx>
+                <right>60</right>
                 <top>430</top>
                 <width>600</width>
                 <height>30</height>
                 <font>XS</font>
-                <textcolor>gray</textcolor>
+                <textcolor>darkgray</textcolor>
                 <shadowcolor></shadowcolor>
                 <label>HomePage WeatherIcons by MerlinTheRed - http://goo.gl/VLuPi</label>
             </control>

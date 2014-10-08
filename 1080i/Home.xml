@@ -203,7 +203,7 @@
                     <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
                 </control>
                 <control type="rss" description="RSS Feed">
-                    <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+                    <visible>system.getbool(lookandfeel.enablerssfeeds) + !Control.HasFocus(311)</visible>
                     <include>OpenClose</include>
                     <top>501</top>
                     <width>1920</width>
@@ -214,6 +214,15 @@
                     <titlecolor>darkred</titlecolor>
                     <headlinecolor>FF666666</headlinecolor>
                     <textcolor>gray</textcolor>
+                </control>
+                <control type="label" description="Plot">
+                    <visible>Control.HasFocus(311)</visible>
+                    <top>501</top>
+                    <width>1920</width>
+                    <height>33</height>
+                    <font>size24</font>
+                    <label>  PLOT: $INFO[Container(311).ListItem.Plot]</label>
+                    <textcolor>FF666666</textcolor>
                 </control>
             </control>
             <control type="image" description="TVLINE">
