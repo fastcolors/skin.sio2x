@@ -660,7 +660,7 @@
                             <control type="label" description="Label2">
                                 <posx>45</posx>
                                 <width>720</width>
-                                <include>BigListDetailsFO</include>
+                                <include>BigListDetails</include>
                                 <label>[B]$INFO[ListItem.ChannelName][/B] - $INFO[ListItem.Date]</label>
                             </control>
                             <include>statusbiglist</include>
@@ -759,7 +759,7 @@
                             <control type="label" description="Label2">
                                 <posx>45</posx>
                                 <width>720</width>
-                                <include>BigListDetailsFO</include>
+                                <include>BigListDetails</include>
                                 <label>[B]$INFO[ListItem.ChannelName][/B] - $INFO[ListItem.Date]</label>
                             </control>
                             <include>statusbiglist</include>

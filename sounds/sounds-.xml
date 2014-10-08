@@ -35,23 +35,23 @@
     <actions>
         <action>
             <name>left</name>
-            <file>move.wav</file>
+            <file>click.wav</file>
         </action>
         <action>
             <name>right</name>
-            <file>move.wav</file>
+            <file>click.wav</file>
         </action>
         <action>
             <name>up</name>
-            <file>move.wav</file>
+            <file>click.wav</file>
         </action>
         <action>
             <name>down</name>
-            <file>move.wav</file>
+            <file>click.wav</file>
         </action>
         <action>
             <name>Select</name>
-            <file>click.aif</file>
+            <file>click.wav</file>
         </action>
         <action>
             <name>ParentDir</name>
@@ -69,7 +69,7 @@
     <windows>
         <window>
             <name>InfoDialog</name>
-            <activate>notify.aif</activate>
+            <activate>notify.wav</activate>
         </window>
         <window>
             <name>1116</name>

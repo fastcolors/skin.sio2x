@@ -4,6 +4,9 @@
 * Fix for misplaced Title on ADDONS & MUSIC Icon View
 * SeekBar can be controlled via Mouse during playback
 * Fixed wrong label in PVR side menu "Sort Order"
+* Playlist Editor Restyling
+* Fixed PartyPlaylist view
+* New Sounds
 
 3.0.3
 * Context Menu changes (file browsing jump disabled for now)

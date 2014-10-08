@@ -8,9 +8,19 @@
         <control type="group">
             <control type="group" description="50">
                 <visible>Control.IsVisible(50)</visible>
-                <include>left_Panel_music</include>
+               <control type="image" description="AlbumCover">
+                <centerleft>480</centerleft>
+                <centertop>380</centertop>
+                <width>640</width>
+                <height>640</height>
+                <include>Icon_Fade</include>
+                <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                <bordersize>2</bordersize>
+                <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
                 <include>MusicInfo</include>
-                <control type="group" description="Slider and List">
+                <control type="group" description="List">
                     <include>LargeListItemCount</include>
                     <posx>960</posx>
                     <top>131</top>
@@ -35,17 +45,17 @@
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                                 <aspectratio>scale</aspectratio>
                             </control>
-                            <control type="textbox" description="Main Label">
+                            <control type="label" description="Main Label">
                                 <posx>128</posx>
                                 <height>111</height>
                                 <width>700</width>
                                 <font>size30</font>
-                                <autoscroll>false</autoscroll>
-                                <textcolor>2</textcolor>
+                                <selectedcolor>Yellow</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label" description="Label2">
                                 <posx>100r</posx>
+                                <selectedcolor>-</selectedcolor>
                                 <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
@@ -59,7 +69,7 @@
                                 <texture>images/NowPlayingNF.png</texture>
                             </control>
                             <control type="image">
-                                <width>920</width>
+                                <width>900</width>
                                 <height>1</height>
                                 <texture>lines/Line.png</texture>
                             </control>
@@ -78,17 +88,17 @@
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                                 <aspectratio>scale</aspectratio>
                             </control>
-                            <control type="textbox" description="Main Label">
+                            <control type="label" description="Main Label">
                                 <posx>128</posx>
                                 <height>111</height>
                                 <width>700</width>
                                 <font>size30</font>
-                                <autoscroll>false</autoscroll>
-                                <textcolor>black</textcolor>
+                                <selectedcolor>Yellow</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label" description="Label2">
                                 <posx>100r</posx>
+                                <selectedcolor>black</selectedcolor>
                                 <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
@@ -99,7 +109,7 @@
                                 <height>60</height>
                                 <width>36</width>
                                 <aspectratio>keep</aspectratio>
-                                <texture>images/NowPlayingFO.png</texture>
+                                <texture>images/NowPlayingNF.png</texture>
                             </control>
                             <control type="image">
                                 <width>900</width>

@@ -460,16 +460,7 @@
         <height>33</height>
         <width>350</width>
         <font>size27</font>
-        <textcolor>gray</textcolor>
         <scroll>false</scroll>
-    </include>
-    <include name="BigListDetailsFO">
-        <posx>128</posx>
-        <top>63</top>
-        <height>33</height>
-        <width>350</width>
-        <font>size27</font>
-        <textcolor>black</textcolor>
     </include>
     <include name="Watched_Marks">
         <control type="image">
@@ -657,7 +648,7 @@
             </control>
             <control type="label" description="Label2">
                 <width>600</width>
-                <include>BigListDetailsFO</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
             <control type="image">
@@ -721,14 +712,14 @@
                 <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
                 <posx>45</posx>
                 <width>630</width>
-                <include>BigListDetailsFO</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
             </control>
             <control type="label" description="Label2">
                 <visible>container.content(episodes) | Container.Content(songs)</visible>
                 <posx>45</posx>
                 <align>left</align>
-                <include>BigListDetailsFO</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
             </control>
             <control type="label" description="Label2">
@@ -736,7 +727,7 @@
                 <posx>0r</posx>
                 <width>480</width>
                 <align>right</align>
-                <include>BigListDetailsFO</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Premiered]</label>
             </control>
             <include>listline</include>

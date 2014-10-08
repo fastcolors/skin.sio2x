@@ -145,7 +145,7 @@
                             </control>
                             <control type="label" description="Label2">
                                 <width>640</width>
-                                <include>BigListDetailsFO</include>
+                                <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Property(Addon.Summary)]</label>
                             </control>
                         </control>
@@ -157,7 +157,7 @@
                             </control>
                             <control type="label" description="Label2">
                                 <width>640</width>
-                                <include>BigListDetailsFO</include>
+                                <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                         </control>

@@ -11,7 +11,7 @@
                 <top>500</top>
                 <height>400</height>
                 <width>600</width>
-                <texture border="100">sidepanel/Back.png</texture>
+                <texture border="150">sidepanel/Back.png</texture>
             </control>
             <control type="list" id="4323">
                 <centerleft>960</centerleft>

@@ -237,8 +237,8 @@
         <height>450</height>
         <onup>9009</onup>
         <ondown>9000</ondown>
-        <onleft>noop</onleft>
-        <onright>noop</onright>
+        <onleft>ActivateWindow(1116)</onleft>
+        <onright>ActivateWindow(1116)</onright>
         <focusposition>2</focusposition>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>

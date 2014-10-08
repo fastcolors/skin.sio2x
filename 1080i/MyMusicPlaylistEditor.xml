@@ -7,103 +7,171 @@
     <views>50</views>
     <controls>
         <include>BlackBackground</include>
-        <control type="label">
-            <include>HeadingL</include>
-            <label>10503</label>
+
+        <control type="image">
+            <top>160</top>
+            <height>1</height>
+            <width>1920</width>
+            <texture>lines/Line.png</texture>
         </control>
         <control type="label" description="Clock">
             <visible>!Skin.HasSetting(hideClock)</visible>
-            <posx>33r</posx>
-            <top>3</top>
+            <right>20</right>
+            <top>5</top>
             <width>195</width>
-            <height>75</height>
+            <height>45</height>
             <align>right</align>
             <aligny>center</aligny>
-            <font>size33B</font>
+            <font>size20</font>
             <textcolor>White</textcolor>
             <label>$INFO[System.Time]</label>
         </control>
-        <control type="group">
-            <description>Left panel</description>
-            <posx>20</posx>
-            <top>78</top>
+        <control type="group" description="LEFT PANEL">
             <control type="label">
-                <posx>15</posx>
-                <top>15</top>
-                <width>615</width>
+                <left>20</left>
+                <top>80</top>
+                <width>690</width>
                 <height>45</height>
-                <font>size42B</font>
-                <align>center</align>
                 <label>31013</label>
             </control>
             <control type="label" id="12">
-                <posx>15</posx>
-                <top>55</top>
-                <width>615</width>
-                <height>45</height>
+                <left>20</left>
+                <top>120</top>
+                <width>690</width>
+                <height>25</height>
                 <font>size22</font>
-                <textcolor>2</textcolor>
-                <align>center</align>
                 <label>-</label>
             </control>
             <control type="fixedlist" id="50">
-                <posx>60</posx>
-                <top>93</top>
-                <width>600</width>
-                <height>828</height>
+                <left>40</left>
+                <top>160</top>
+                <width>690</width>
+                <height>920</height>
                 <onleft>151</onleft>
                 <onright>8999</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
                 <viewtype>list</viewtype>
                 <scrolltime>200</scrolltime>
-                <focusposition>5</focusposition>
+                <focusposition>6</focusposition>
                 <movement>6</movement>
                 <pagecontrol>151</pagecontrol>
-                <itemlayout height="60" width="600">
+                <itemlayout height="60">
                     <control type="label">
                         <posx>15</posx>
-                        <width>570</width>
-                        <font>size33</font>
+                        <width>690</width>
+                        <font>size26</font>
                         <align>left</align>
                         <scroll>false</scroll>
                         <info>ListItem.Label</info>
                     </control>
                 </itemlayout>
-                <focusedlayout height="60" width="600">
-                    <include>SmallSelector</include>
+                <focusedlayout height="60">
+                    <control type="image">
+                        <visible>Control.HasFocus(50)</visible>
+                        <animation effect="fade" end="0" time="30">UnFocus</animation>
+                        <width>920</width>
+                        <height>81</height>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+                    </control>
                     <control type="label">
                         <posx>15</posx>
-                        <width>570</width>
-                        <font>size33</font>
+                        <width>690</width>
+                        <font>size26</font>
                         <align>left</align>
                         <info>ListItem.Label</info>
                     </control>
                 </focusedlayout>
             </control>
         </control>
+
+        <control type="group" description="Right panel">
+            <control type="label">
+                <right>20</right>
+                <top>80</top>
+                <align>right</align>
+                <width>690</width>
+                <height>45</height>
+                <label>31014</label>
+            </control>
+            <control type="label" id="101">
+                <right>20</right>
+                <top>120</top>
+                <width>690</width>
+                <height>25</height>
+                <font>size22</font>
+                <align>right</align>
+                <label>-</label>
+            </control>
+            <control type="fixedlist" id="100">
+                <visible>!IsEmpty(Container(100).ListItem.Label)</visible>
+                <right>40</right>
+                <top>160</top>
+                <width>690</width>
+                <height>920</height>
+                <onleft>8999</onleft>
+                <onright>150</onright>
+                <onup>100</onup>
+                <ondown>100</ondown>
+                <pagecontrol>150</pagecontrol>
+                <viewtype label="">list</viewtype>
+                <scrolltime>200</scrolltime>
+                <focusposition>6</focusposition>
+                <movement>6</movement>
+                <itemlayout height="60" width="690">
+                    <control type="label">
+                        <right>15</right>
+                        <width>690</width>
+                        <align>right</align>
+                        <font>Size26</font>
+                        <scroll>false</scroll>
+                        <info>ListItem.Label</info>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="60" width="690">
+                    <control type="image">
+                        <visible>Control.HasFocus(100)</visible>
+                        <animation effect="fade" end="0" time="30">UnFocus</animation>
+                        <width>920</width>
+                        <height>81</height>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+                    </control>
+                    <control type="label">
+                        <right>15</right>
+                        <width>690</width>
+                        <font>Size26</font>
+                        <align>right</align>
+                        <info>ListItem.Label</info>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+        <control type="scrollbar" id="151">
+            <left>10</left>
+            <top>190</top>
+            <height>780</height>
+            <width>9</width>
+            <onleft>noop</onleft>
+            <onright>50</onright>
+            <showonepage>true</showonepage>
+            <animation type="Conditional" condition="!Control.HasFocus(151) + !Container.Scrolling">
+                <effect type="fade" start="100" end="40" time="200" />
+            </animation>
+        </control>
+        <control type="scrollbar" id="150">
+            <right>10</right>
+            <top>190</top>
+            <height>780</height>
+            <width>8</width>
+            <onleft>100</onleft>
+            <onright>noop</onright>
+            <showonepage>true</showonepage>
+            <animation type="Conditional" condition="!Control.HasFocus(150) + !Container.Scrolling">
+                <effect type="fade" start="100" end="40" time="200" />
+            </animation>
+        </control>
         <control type="group">
             <description>Middle Panel</description>
-            <control type="image">
-                <height>1080</height>
-                <width>960</width>
-                <texture>$INFO[Container(50).ListItem.Art(fanart)]</texture>
-                <colordiffuse>33FFFFFF</colordiffuse>
-            </control>
-            <control type="image">
-                <posx>960</posx>
-                <height>1080</height>
-                <width>960</width>
-                <texture>$INFO[Container(100).ListItem.Art(fanart)]</texture>
-                <colordiffuse>33FFFFFF</colordiffuse>
-            </control>
-            <control type="image">
-                <top>-450</top>
-                <posx>958</posx>
-                <height>1980</height>
-                <width>4</width>
-                <texture>lines/LineV.png</texture>
-            </control>
             <control type="image">
                 <top>40</top>
                 <posx>720</posx>
@@ -148,11 +216,10 @@
                 </control>
             </control>
             <control type="group">
-                <posx>750</posx>
-                <top>68</top>
+                <top>98</top>
                 <visible>Control.HasFocus(100)</visible>
                 <control type="image">
-                    <posx>30</posx>
+                    <centerleft>960</centerleft>
                     <top>45</top>
                     <width>360</width>
                     <height>360</height>
@@ -161,13 +228,13 @@
                     <bordersize>2</bordersize>
                 </control>
                 <control type="textbox">
-                    <posx>15</posx>
+                    <centerleft>960</centerleft>
                     <top>450</top>
                     <width>420</width>
                     <height>420</height>
                     <font>size26</font>
                     <align>center</align>
-                    <label>$INFO[Container(100).ListItem.Artist,[COLOR=]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Duration,[COLOR=]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
+                    <label>$INFO[Container(100).ListItem.Artist,[COLOR=gray]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=gray]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Duration,[COLOR=gray]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=gray]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
                 </control>
             </control>
             <control type="image" description="separator Bottom">
@@ -203,108 +270,13 @@
                 </control>
             </control>
         </control>
-        <control type="group" description="Right panel">
-            <posx>1240</posx>
-            <top>78</top>
-            <control type="label">
-                <posx>15</posx>
-                <top>15</top>
-                <width>615</width>
-                <height>45</height>
-                <font>size42B</font>
-                <align>center</align>
-                <label>31014</label>
-            </control>
-            <control type="label" id="101">
-                <posx>15</posx>
-                <top>55</top>
-                <width>615</width>
-                <height>45</height>
-                <font>size22</font>
-                <textcolor>2</textcolor>
-                <align>center</align>
-                <label>-</label>
-            </control>
-            <control type="image" description="Slider 100">
-                <visible>!IsEmpty(Container(100).ListItem.Label) + Control.IsVisible(100)</visible>
-                <posx>0</posx>
-                <top>96</top>
-                <width>600</width>
-                <height>69</height>
-                <texture border="8">images/Buttonselect.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation condition="!Control.HasFocus(100)" effect="fade" start="100" end="0" time="180" reversible="true">Conditional</animation>
-                <!--FADE-->
-                <animation condition="Container(100).Position(0)" effect="slide" start="0,0" end="0,0" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(1)" effect="slide" start="0,0" end="0,60" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(2)" effect="slide" start="0,0" end="0,120" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(3)" effect="slide" start="0,0" end="0,180" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(4)" effect="slide" start="0,0" end="0,240" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(5)" effect="slide" start="0,0" end="0,300" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(6)" effect="slide" start="0,0" end="0,360" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(7)" effect="slide" start="0,0" end="0,420" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(8)" effect="slide" start="0,0" end="0,480" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(9)" effect="slide" start="0,0" end="0,540" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(10)" effect="slide" start="0,0" end="0,600" time="180" reversible="true">Conditional</animation>
-                <animation condition="Container(100).Position(11)" effect="slide" start="0,0" end="0,660" time="180" reversible="true">Conditional</animation>
-            </control>
-            <control type="fixedlist" id="100">
-                <visible>!IsEmpty(Container(100).ListItem.Label)</visible>
-                <posx>-15</posx>
-                <top>93</top>
-                <width>630</width>
-                <height>828</height>
-                <onleft>8999</onleft>
-                <onright>150</onright>
-                <onup>100</onup>
-                <ondown>100</ondown>
-                <pagecontrol>150</pagecontrol>
-                <viewtype label="">list</viewtype>
-                <scrolltime>200</scrolltime>
-                <focusposition>5</focusposition>
-                <movement>6</movement>
-                <itemlayout height="60" width="600">
-                    <control type="label">
-                        <posx>0r</posx>
-                        <width>570</width>
-                        <font>size33</font>
-                        <align>right</align>
-                        <scroll>false</scroll>
-                        <info>ListItem.Label</info>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="60" width="600">
-                    <control type="label">
-                        <posx>0r</posx>
-                        <width>570</width>
-                        <font>size33</font>
-                        <align>right</align>
-                        <info>ListItem.Label</info>
-                    </control>
-                </focusedlayout>
-            </control>
-        </control>
-        <control type="scrollbar" id="151">
-            <posx>15</posx>
-            <top>190</top>
-            <height>780</height>
-            <width>30</width>
-            <onleft>noop</onleft>
-            <onright>50</onright>
-            <animation type="Conditional" condition="!Control.HasFocus(151) + !Container.Scrolling">
-                <effect type="fade" start="100" end="40" time="200" />
-            </animation>
-        </control>
-        <control type="scrollbar" id="150">
-            <posx>45r</posx>
-            <top>190</top>
-            <height>780</height>
-            <width>30</width>
-            <onleft>100</onleft>
-            <onright>noop</onright>
-            <animation type="Conditional" condition="!Control.HasFocus(150) + !Container.Scrolling">
-                <effect type="fade" start="100" end="40" time="200" />
-            </animation>
+        <control type="label">
+            <centerleft>960</centerleft>
+            <width>960</width>
+            <height>40</height>
+            <top>70</top>
+            <align>center</align>
+            <label>10503</label>
         </control>
     </controls>
 </window>

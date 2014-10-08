@@ -189,7 +189,7 @@
                                 <description>Label 2 Title</description>
                                 <posx>45</posx>
                                 <width>640</width>
-                                <include>BigListDetailsFO</include>
+                                <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Title]</label>
                             </control>
                             <include>statusbiglist</include>

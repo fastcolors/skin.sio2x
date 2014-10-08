@@ -80,7 +80,7 @@
                             <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
                             <posx>45</posx>
                             <width>630</width>
-                            <include>BigListDetailsFO</include>
+                            <include>BigListDetails</include>
                             <label>$INFO[ListItem.label2]</label>
                         </control>
                     </focusedlayout>
@@ -137,7 +137,7 @@
                             <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
                             <posx>45</posx>
                             <width>630</width>
-                            <include>BigListDetailsFO</include>
+                            <include>BigListDetails</include>
                             <label>$INFO[ListItem.label2]</label>
                         </control>
                     </focusedlayout>

@@ -15,8 +15,8 @@
                     <orientation>vertical</orientation>
                     <focusposition>1</focusposition>
                     <preloaditems>2</preloaditems>
-                    <onup>noop</onup>
-                    <ondown>noop</ondown>
+                    <onup>ActivateWindow(1116)</onup>
+                    <ondown>ActivateWindow(1116)</ondown>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
                     <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
