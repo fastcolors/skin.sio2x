@@ -52,11 +52,11 @@
                     <!--fila 1-->
                     <orientation>horizontal</orientation>
                     <itemgap>0</itemgap>
-                    <control type="button" id="8">
-                        <description>BACKSPACE button</description>
+                    <control type="button" id="309">
+                        <description>LAYOUT button</description>
                         <width>300</width>
                         <include>Keyboardbuttons</include>
-                        <label>20181</label>
+                        <label>20177</label>
                         <onup>312</onup>
                         <ondown>304</ondown>
                     </control>
@@ -143,7 +143,7 @@
                         <width>300</width>
                         <include>Keyboardbuttons</include>
                         <label>20180</label>
-                        <onup>8</onup>
+                        <onup>309</onup>
                         <ondown>303</ondown>
                     </control>
                     <control type="button" id="120">
@@ -387,9 +387,21 @@
                         <onup>163</onup>
                         <ondown></ondown>
                     </control>
+                     <control type="button" id="8">
+                        <description>SPACE button</description>
+                        <width>320</width>
+                        <include>Keyboardbuttons</include>
+                        <label>20181</label>
+                        <textoffsetx>0</textoffsetx>
+                        <focusedcolor>black</focusedcolor>
+                        <onleft>307</onleft>
+                        <onright>305</onright>
+                        <onup>163</onup>
+                        <ondown></ondown>
+                    </control>
                     <control type="button" id="305">
                         <description>PREVIOUS button</description>
-                        <width>320</width>
+                        <width>160</width>
                         <include>Keyboardbuttons</include>
                         <label>&lt;</label>
                         <focusedcolor>black</focusedcolor>
@@ -400,7 +412,7 @@
                     </control>
                     <control type="button" id="306">
                         <description>NEXT button</description>
-                        <width>320</width>
+                        <width>160</width>
                         <include>Keyboardbuttons</include>
                         <label>&gt;</label>
                         <focusedcolor>black</focusedcolor>

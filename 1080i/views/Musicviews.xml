@@ -355,7 +355,7 @@
                 <font>size20</font>
                 <align>center</align>
                 <autoscroll>false</autoscroll>
-                <label>• •  $INFO[ListItem.Year,(,)] • $INFO[ListItem.Property(Album_Label)] • •</label>
+                <label>• • $INFO[ListItem.Year,(,)] • $INFO[ListItem.Property(Album_Label)] • •</label>
             </control>
             <!--INFOS-->
             <control type="grouplist" description="Infos">
@@ -397,7 +397,7 @@
                     <label>$LOCALIZE[21896]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Disbanded)][/B][/COLOR]</label>
                 </control>
                 <control type="textbox">
-                    <visible>!IsEmpty(ListItem.Property(Artist_Style)) + !IsEmpty(ListItem.Property(Album_Style))</visible>
+                    <!--<visible>!IsEmpty(ListItem.Property(Artist_Style)) + !IsEmpty(ListItem.Property(Album_Style))</visible>-->
                     <width>700</width>
                     <height>80</height>
                     <font>size20</font>
@@ -406,7 +406,7 @@
                     <label>$LOCALIZE[515] / $LOCALIZE[176]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Style)]$INFO[ListItem.Property(Album_Style)][/B][/COLOR]</label>
                 </control>
                 <control type="textbox">
-                    <visible>!IsEmpty(ListItem.Property(Artist_Mood)) + !IsEmpty(ListItem.Property(Album_Mood))</visible>
+                    <!--<visible>!IsEmpty(ListItem.Property(Artist_Mood)) + !IsEmpty(ListItem.Property(Album_Mood))</visible>-->
                     <width>700</width>
                     <height>80</height>
                     <font>size20</font>
@@ -415,7 +415,7 @@
                     <label>$LOCALIZE[175]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Mood)]$INFO[ListItem.Property(Album_Mood)][/B][/COLOR]</label>
                 </control>
                 <control type="instrument">
-                    <visible>!IsEmpty(ListItem.Property(Artist_Instrument))</visible>
+                    <!--<visible>!IsEmpty(ListItem.Property(Artist_Instrument))</visible>-->
                     <width>700</width>
                     <height>20</height>
                     <font>size20</font>
@@ -423,7 +423,7 @@
                     <label>$LOCALIZE[21892]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Instrument)][/B][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Property(Album_Type))</visible>
+                    <!--<visible>!IsEmpty(ListItem.Property(Album_Type))</visible>-->
                     <width>700</width>
                     <height>20</height>
                     <font>size20</font>
@@ -431,7 +431,7 @@
                     <label>$LOCALIZE[564]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Type)][/B][/COLOR]</label>
                 </control>
                 <control type="textbox">
-                    <visible>!IsEmpty(ListItem.Property(Album_Theme))</visible>
+                    <!--<visible>!IsEmpty(ListItem.Property(Album_Theme))</visible>-->
                     <width>700</width>
                     <height>60</height>
                     <font>size20</font>
@@ -439,7 +439,7 @@
                     <label>$LOCALIZE[21895]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Theme)][/B][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.PlayCount)</visible>
+                    <!--<visible>!IsEmpty(ListItem.PlayCount)</visible>-->
                     <width>700</width>
                     <height>20</height>
                     <font>size20</font>
@@ -447,7 +447,7 @@
                     <label>$LOCALIZE[576]: [COLOR Silver][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.PlayCount)</visible>
+                    <!--<visible>!IsEmpty(ListItem.PlayCount)</visible>-->
                     <width>700</width>
                     <height>20</height>
                     <font>size20</font>

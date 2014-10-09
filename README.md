@@ -12,6 +12,8 @@ Kodi (formerly XBMC) Skin
 * Playlist Editor Restyling
 * Fixed PartyPlaylist view
 * New Sounds
+* Fix for Helix Keyboard (adedd LAYOUT button)
+* Cosmetic on Network Share Dialog.
 
 3.0.3
 * Context Menu changes (file browsing jump disabled for now)

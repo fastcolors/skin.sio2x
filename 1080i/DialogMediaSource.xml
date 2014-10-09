@@ -2,7 +2,7 @@
 <window id="129">
     <defaultcontrol always="true">11</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <backgroundcolor>0xffffffff</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <controls>
         <include>BlackBackground</include>
         <control type="group" description="Right panel">

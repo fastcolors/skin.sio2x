@@ -5,7 +5,12 @@
     <backgroundcolor>0xffffffff</backgroundcolor>
     <include>OpenClose</include>
     <controls>
-        <include>BlackBackground</include>
+        <control type="image" id="999" description="Background image">
+            <centerleft>960</centerleft>
+            <height>1000</height>
+            <width>1400</width>
+            <texture border="150">images/Dialog.png</texture>
+        </control>
         <control type="group">
             <top>150</top>
             <control type="label" id="2" description="Heading">
