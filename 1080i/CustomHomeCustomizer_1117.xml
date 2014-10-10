@@ -1239,8 +1239,7 @@
                 <width>300</width>
                 <height>81</height>
                 <align>center</align>
-                <!--todo label-->
-                <label>SETTINGS</label>
+                <label>5</label>
                 <enable>!Skin.HasSetting(hidewtr)</enable>
                 <onclick>activatewindow(weathersettings)</onclick>
             </control>
@@ -1250,7 +1249,7 @@
             <posx>60</posx>
             <visible>Container(50).HasFocus(356)</visible>
             <control type="textbox">
-                <!--todo label-->
+                <!--todo label maybe-->
                 <posx>450</posx>
                 <top>100</top>
                 <width>900</width>
@@ -1258,7 +1257,7 @@
                 <align>center</align>
                 <textcolor>gray</textcolor>
                 <font>size26</font>
-                <label>- SEARCH THE LIBRARIES -</label>
+                <label></label>
             </control>
         </control>
     </controls>

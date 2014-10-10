@@ -66,6 +66,13 @@
                         <onclick>back</onclick>
                         <selected>StringCompare(Skin.String(MusicLink),Songs)</selected>
                     </control>
+                    <control type="radiobutton" id="705" description="Songs">
+                        <width>525</width>
+                        <label>$LOCALIZE[589]</label>
+                        <onclick>Skin.SetString(MusicLink,Playlist)</onclick>
+                        <onclick>back</onclick>
+                        <selected>StringCompare(Skin.String(MusicLink),Playlist)</selected>
+                    </control>
                 </control>
             </control>
         </control>

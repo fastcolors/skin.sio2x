@@ -19,6 +19,14 @@
                 <onup>575</onup>
                 <ondown>575</ondown>
                 <pagecontrol>60</pagecontrol>
+                <control type="button" id="6">
+                    <description>HOME PAGE CUSTOMIZER</description>
+                    <width>auto</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <label>$LOCALIZE[31052]</label>
+                    <onclick>ActivateWindow(1117)</onclick>
+                </control>
                 <control type="button" id="1">
                     <width>auto</width>
                     <align>left</align>
@@ -47,13 +55,6 @@
                     <label>$LOCALIZE[31033]</label>
                     <onclick>Skin.ToggleSetting(colormenu)</onclick>
                     <selected>!Skin.HasSetting(colormenu)</selected>
-                </control>
-                <control type="button" id="6">
-                    <width>auto</width>
-                    <align>left</align>
-                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
-                    <label>$LOCALIZE[31052]</label>
-                    <onclick>ActivateWindow(1117)</onclick>
                 </control>
                 <control type="button" id="8">
                     <width>auto</width>
@@ -92,12 +93,14 @@
                     <onclick>Skin.ToggleSetting(hideconnection)</onclick>
                     <selected>!Skin.HasSetting(hideconnection)</selected>
                 </control>
-                <control type="button" id="14">
+                <control type="radiobutton" id="14">
+                    <description>NO3D Option</description>
                     <width>auto</width>
                     <align>left</align>
-                    <label>$LOCALIZE[31417]</label>
+                    <label>$LOCALIZE[31421]</label>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
-                    <onclick>ActivateWindow(1111)</onclick>
+                    <onclick>Skin.ToggleSetting(no3d)</onclick>
+                    <selected>!Skin.HasSetting(no3d)</selected>
                 </control>
                 <control type="button" id="15">
                     <label>31036</label>
@@ -228,7 +231,7 @@
             <control type="image" description="icon shelf">
                 <visible>Controlgroup(575).HasFocus(14)</visible>
                 <include>Help_Panel</include>
-                <texture>icons/qmark.png</texture>
+                <texture>icons/3D.png</texture>
             </control>
         </control>
         <control type="image" description="Line">

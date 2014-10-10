@@ -7,7 +7,7 @@
         <include>BlackBackground</include>
         <include>WindowsTopInfos</include>
         <include>Linemiddle</include>
-          <control type="image" description="Line">
+        <control type="image" description="Line">
             <centerleft>480</centerleft>
             <top>540</top>
             <height>1</height>
@@ -67,34 +67,34 @@
                         <onclick>activatewindow(AppearanceSettings)</onclick>
                     </item>
                     <item id="3" description="Videos">
-                       <label>3</label>
-                       <onclick>activatewindow(VideosSettings)</onclick>
+                        <label>3</label>
+                        <onclick>activatewindow(VideosSettings)</onclick>
                     </item>
                     <item id="4" description="Music">
-                       <label>2</label>
-                       <onclick>activatewindow(MusicSettings)</onclick>
+                        <label>2</label>
+                        <onclick>activatewindow(MusicSettings)</onclick>
                     </item>
                     <item id="14" description="LiveTV">
-                       <label>31059</label>
-                       <onclick>activatewindow(PVRSettings)</onclick>
+                        <label>31059</label>
+                        <onclick>activatewindow(PVRSettings)</onclick>
                     </item>
                     <item id="5" description="Pictures">
-                       <label>1</label>
-                       <onclick>activatewindow(PicturesSettings)</onclick>
+                        <label>1</label>
+                        <onclick>activatewindow(PicturesSettings)</onclick>
                     </item>
                     <item id="8" description="Weather">
-                       <label>8</label>
-                       <onclick>activatewindow(WeatherSettings)</onclick>
+                        <label>8</label>
+                        <onclick>activatewindow(WeatherSettings)</onclick>
                     </item>
                     <item id="9" description="Services">
-                       <label>14036</label>
-                       <onclick>Activatewindow(servicesettings)</onclick>
+                        <label>14036</label>
+                        <onclick>Activatewindow(servicesettings)</onclick>
                     </item>
                     <item id="10" description="System">
-                       <label>13000</label>
-                       <onclick>activatewindow(SystemSettings)</onclick>
+                        <label>13000</label>
+                        <onclick>activatewindow(SystemSettings)</onclick>
                     </item>
-                     <item id="2" description="Skin Settings">
+                    <item id="2" description="Skin Settings">
                         <label>20077</label>
                         <onclick>activatewindow(SkinSettings)</onclick>
                     </item>
@@ -115,6 +115,10 @@
                         <visible>System.HasAddon(service.clean.up)</visible>
                         <label>31069</label>
                         <onclick>ActivateWindow(1717)</onclick>
+                    </item>
+                    <item id="16">
+                        <label>$LOCALIZE[31417]</label>
+                        <onclick>ActivateWindow(1111)</onclick>
                     </item>
                 </content>
             </control>

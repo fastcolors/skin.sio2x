@@ -51,7 +51,7 @@
         </action>
         <action>
             <name>Select</name>
-            <file>click.aif</file>
+            <file>click_.aif</file>
         </action>
         <action>
             <name>ParentDir</name>
@@ -73,7 +73,7 @@
         </window>
         <window>
             <name>1116</name>
-            <activate>error.aiff</activate>
+            <activate>error.aif</activate>
         </window>
     </windows>
 </sounds>

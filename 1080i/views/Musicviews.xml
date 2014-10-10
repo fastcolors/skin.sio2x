@@ -120,32 +120,32 @@
                     <texture border="30" colordiffuse="$VAR[diffuseselect]">images/ProgressBG.png</texture>
                 </control>
                 <control type="group">
-                <animation condition="IsEmpty(ListItem.Property(Album_Label))" effect="slide" end="0,15">Conditional</animation>
-                <control type="label" description="Title">
-                    <left>10</left>
-                    <top>4</top>
-                    <width>680</width>
-                    <height>50</height>
-                    <align>center</align>
-                    <font>size38</font>
-                    <label>$INFO[ListItem.Label]</label>
-                </control>
-                <control type="label" description="Media details">
-                    <top>45</top>
-                    <width>700</width>
-                    <height>50</height>
-                    <align>center</align>
-                    <font>size26</font>
-                    <label>$INFO[ListItem.Label2]</label>
-                </control>
-                <control type="image" description="Stars">
-                    <centerleft>350</centerleft>
-                    <top>90</top>
-                    <height>30</height>
-                    <width>150</width>
-                    <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
-                </control>
+                    <animation condition="IsEmpty(ListItem.Property(Album_Label))" effect="slide" end="0,15">Conditional</animation>
+                    <control type="label" description="Title">
+                        <left>10</left>
+                        <top>4</top>
+                        <width>680</width>
+                        <height>50</height>
+                        <align>center</align>
+                        <font>size38</font>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label" description="Media details">
+                        <top>45</top>
+                        <width>700</width>
+                        <height>50</height>
+                        <align>center</align>
+                        <font>size26</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                    <control type="image" description="Stars">
+                        <centerleft>350</centerleft>
+                        <top>90</top>
+                        <height>30</height>
+                        <width>150</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
+                    </control>
                 </control>
                 <control type="label">
                     <top>125</top>
@@ -172,32 +172,32 @@
                     <texture border="30" flipx="true"  colordiffuse="$VAR[diffuseselect]">images/ProgressBG.png</texture>
                 </control>
                 <control type="group">
-                <animation condition="IsEmpty(ListItem.Property(Album_Label))" effect="slide" end="0,15">Conditional</animation>
-                <control type="label" description="Title">
-                    <left>10</left>
-                    <top>4</top>
-                    <width>680</width>
-                    <height>50</height>
-                    <align>center</align>
-                    <font>size38</font>
-                    <label>$INFO[ListItem.Label]</label>
-                </control>
-                <control type="label" description="Media details">
-                    <top>45</top>
-                    <width>700</width>
-                    <height>50</height>
-                    <align>center</align>
-                    <font>size26</font>
-                    <label>$INFO[ListItem.Label2]</label>
-                </control>
-                <control type="image" description="Stars">
-                    <centerleft>350</centerleft>
-                    <top>90</top>
-                    <height>30</height>
-                    <width>150</width>
-                    <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
-                </control>
+                    <animation condition="IsEmpty(ListItem.Property(Album_Label))" effect="slide" end="0,15">Conditional</animation>
+                    <control type="label" description="Title">
+                        <left>10</left>
+                        <top>4</top>
+                        <width>680</width>
+                        <height>50</height>
+                        <align>center</align>
+                        <font>size38</font>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label" description="Media details">
+                        <top>45</top>
+                        <width>700</width>
+                        <height>50</height>
+                        <align>center</align>
+                        <font>size26</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                    <control type="image" description="Stars">
+                        <centerleft>350</centerleft>
+                        <top>90</top>
+                        <height>30</height>
+                        <width>150</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
+                    </control>
                 </control>
                 <control type="label">
                     <top>125</top>
@@ -261,10 +261,10 @@
                         <top>10</top>
                         <width>340</width>
                         <height>92</height>
-                        <font>size24B</font>
+                        <font>size24</font>
                         <textcolor>gray</textcolor>
                         <align>right</align>
-                        <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
+                        <label>[B][UPPERCASE]$INFO[ListItem.label][/UPPERCASE][/B][CR][COLOR=FF888888]$INFO[ListItem.Property(Addon.Version)]$INFO[ListItem.Property(Artist_Genre)][/COLOR]</label>
                     </control>
                     <control type="image">
                         <posx>1670</posx>
@@ -310,10 +310,10 @@
                         <top>10</top>
                         <width>340</width>
                         <height>92</height>
-                        <font>size24B</font>
+                        <font>size24</font>
                         <textcolor>gray</textcolor>
                         <align>right</align>
-                        <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
+                        <label>[B][UPPERCASE]$INFO[ListItem.label][/UPPERCASE][/B][CR][COLOR=FF888888]$INFO[ListItem.Property(Addon.Version)]$INFO[ListItem.Property(Artist_Genre)][/COLOR]</label>
                     </control>
                     <control type="image">
                         <posx>1670</posx>
@@ -347,131 +347,234 @@
                 <align>center</align>
                 <label>$INFO[ListItem.label]</label>
             </control>
-            <control type="textbox">
-                <left>100</left>
-                <top>70</top>
-                <width>1140</width>
-                <height>55</height>
-                <font>size20</font>
-                <align>center</align>
-                <autoscroll>false</autoscroll>
-                <label>• • $INFO[ListItem.Year,(,)] • $INFO[ListItem.Property(Album_Label)] • •</label>
-            </control>
-            <!--INFOS-->
-            <control type="grouplist" description="Infos">
-                <centerleft>530</centerleft>
-                <top>155</top>
-                <height>600</height>
-                <width>900</width>
-                <itemgap>10</itemgap>
-                <control type="label">
-                    <visible>!Container.Content(Albums) + !IsEmpty(ListItem.Property(Artist_Born))</visible>
-                    <width>700</width>
-                    <height>20</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[21893]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Born)][/B][/COLOR]</label>
-                </control>
-                <control type="label">
-                    <visible>!Container.Content(Albums) + !IsEmpty(ListItem.Property(Artist_Died))</visible>
-                    <width>700</width>
-                    <height>20</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[21897]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Died)][/B][/COLOR]</label>
-                </control>
-                <control type="label">
-                    <visible>!Container.Content(Albums) + !IsEmpty(ListItem.Property(Artist_Formed))</visible>
-                    <width>700</width>
-                    <height>20</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[21894]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Formed)][/B][/COLOR]</label>
-                </control>
-                <control type="label">
-                    <visible>!Container.Content(Albums) + !IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
-                    <width>700</width>
-                    <height>20</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[21896]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Disbanded)][/B][/COLOR]</label>
-                </control>
+            <!--ALBUMS-->
+            <control type="group">
+                <visible>Container.Content(Albums)</visible>
                 <control type="textbox">
-                    <!--<visible>!IsEmpty(ListItem.Property(Artist_Style)) + !IsEmpty(ListItem.Property(Album_Style))</visible>-->
-                    <width>700</width>
-                    <height>80</height>
+                    <centerleft>670</centerleft>
+                    <top>70</top>
+                    <width>1140</width>
+                    <height>55</height>
                     <font>size20</font>
-                    <textcolor>gray</textcolor>
+                    <align>center</align>
                     <autoscroll>false</autoscroll>
-                    <label>$LOCALIZE[515] / $LOCALIZE[176]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Style)]$INFO[ListItem.Property(Album_Style)][/B][/COLOR]</label>
+                    <label>• • $INFO[ListItem.Year,(,)] • $INFO[ListItem.Property(Album_Label)] • •</label>
                 </control>
+                <control type="grouplist" description="Infos">
+                    <left>60</left>
+                    <top>155</top>
+                    <height>600</height>
+                    <width>850</width>
+                    <itemgap>10</itemgap>
+                    <control type="textbox">
+                        <width>700</width>
+                        <height>80</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <autoscroll>false</autoscroll>
+                        <label>$LOCALIZE[515] / $LOCALIZE[176]: [COLOR=black][B]$INFO[ListItem.Property(Album_Style)][/B][/COLOR]</label>
+                    </control>
+                    <control type="textbox">
+                        <width>800</width>
+                        <height>80</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <autoscroll>false</autoscroll>
+                        <label>$LOCALIZE[175]: [COLOR=black][B]$INFO[ListItem.Property(Album_Mood)][/B][/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <width>800</width>
+                        <height>20</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <label>$LOCALIZE[564]: [COLOR=black][B]$INFO[ListItem.Property(Album_Type)][/B][/COLOR]</label>
+                    </control>
+                    <control type="textbox">
+                        <width>800</width>
+                        <height>60</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <label>$LOCALIZE[21895]: [COLOR=black][B]$INFO[ListItem.Property(Album_Theme)][/B][/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <width>800</width>
+                        <height>20</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <label>$LOCALIZE[576]: [COLOR=black][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <width>800</width>
+                        <height>20</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <label>$LOCALIZE[568]: [COLOR=black][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
+                    </control>
+                </control>
+                <control type="textbox" description="plots">
+                    <left>60</left>
+                    <top>550</top>
+                    <width>1230</width>
+                    <height>510</height>
+                    <align>justify</align>
+                    <label>$VAR[Plots]</label>
+                    <autoscroll delay="20000" time="6000" repeat="30000"></autoscroll>
+                </control>
+                <control type="image">
+                    <right>630</right>
+                    <centertop>335</centertop>
+                    <height>380</height>
+                    <width>380</width>
+                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordersize>4</bordersize>
+                    <texture>$VAR[Locandine]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+            <!--ALBUMS END-->
+            <!--ARTISTS-->
+            <control type="group">
+                <visible>Container.Content(Artists)</visible>
                 <control type="textbox">
-                    <!--<visible>!IsEmpty(ListItem.Property(Artist_Mood)) + !IsEmpty(ListItem.Property(Album_Mood))</visible>-->
-                    <width>700</width>
-                    <height>80</height>
+                    <centerleft>670</centerleft>
+                    <top>70</top>
+                    <width>1140</width>
+                    <height>55</height>
                     <font>size20</font>
-                    <textcolor>gray</textcolor>
+                    <align>center</align>
                     <autoscroll>false</autoscroll>
-                    <label>$LOCALIZE[175]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Mood)]$INFO[ListItem.Property(Album_Mood)][/B][/COLOR]</label>
+                    <label>• •  $INFO[Container(990).NumItems] Album • •</label>
                 </control>
-                <control type="instrument">
-                    <!--<visible>!IsEmpty(ListItem.Property(Artist_Instrument))</visible>-->
-                    <width>700</width>
-                    <height>20</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[21892]: [COLOR Silver][B]$INFO[ListItem.Property(Artist_Instrument)][/B][/COLOR]</label>
+                <control type="grouplist" description="Infos">
+                    <left>510</left>
+                    <top>135</top>
+                    <height>600</height>
+                    <width>900</width>
+                    <itemgap>10</itemgap>
+                    <control type="label">
+                        <width>700</width>
+                        <height>20</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <label>$LOCALIZE[21894]: [COLOR=black][B]$INFO[ListItem.Property(Artist_Formed)][/B][/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <width>700</width>
+                        <height>20</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <label>$LOCALIZE[21896]: [COLOR=black][B]$INFO[ListItem.Property(Artist_Disbanded)][/B][/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <width>700</width>
+                        <height>80</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <label>$LOCALIZE[515] / $LOCALIZE[176]: [COLOR=black][B]$INFO[ListItem.Property(Artist_Genre)][/B][/COLOR]</label>
+                    </control>
+                    <control type="textbox">
+                        <visible>!IsEmpty(ListItem.Property(Artist_Mood))</visible>
+                        <width>700</width>
+                        <height>80</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <autoscroll>false</autoscroll>
+                        <label>$LOCALIZE[175]: [COLOR=black][B]$INFO[ListItem.Property(Artist_Mood)][/B][/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <width>700</width>
+                        <height>20</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <label>$LOCALIZE[564]: [COLOR=black][B]$INFO[ListItem.Property(Artist_Type)][/B][/COLOR]</label>
+                    </control>
+                    <control type="textbox">
+                        <width>700</width>
+                        <height>60</height>
+                        <font>size20</font>
+                        <textcolor>Silver</textcolor>
+                        <label>$LOCALIZE[21895]: [COLOR=black][B]$INFO[ListItem.Property(Artist_Theme)][/B][/COLOR]</label>
+                    </control>
                 </control>
-                <control type="label">
-                    <!--<visible>!IsEmpty(ListItem.Property(Album_Type))</visible>-->
-                    <width>700</width>
-                    <height>20</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[564]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Type)][/B][/COLOR]</label>
+                <control type="textbox" description="plots">
+                    <left>60</left>
+                    <top>550</top>
+                    <width>1230</width>
+                    <height>510</height>
+                    <align>justify</align>
+                    <label>$VAR[Plots]</label>
+                    <autoscroll delay="20000" time="6000" repeat="30000"></autoscroll>
                 </control>
-                <control type="textbox">
-                    <!--<visible>!IsEmpty(ListItem.Property(Album_Theme))</visible>-->
-                    <width>700</width>
-                    <height>60</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[21895]: [COLOR Silver][B]$INFO[ListItem.Property(Album_Theme)][/B][/COLOR]</label>
+                <control type="image">
+                    <left>60</left>
+                    <centertop>335</centertop>
+                    <height>420</height>
+                    <width>420</width>
+                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordersize>4</bordersize>
+                    <texture diffuse="images/Diffuse.png">$VAR[Locandine]</texture>
+                    <aspectratio>keep</aspectratio>
                 </control>
-                <control type="label">
-                    <!--<visible>!IsEmpty(ListItem.PlayCount)</visible>-->
-                    <width>700</width>
-                    <height>20</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[576]: [COLOR Silver][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
-                </control>
-                <control type="label">
-                    <!--<visible>!IsEmpty(ListItem.PlayCount)</visible>-->
-                    <width>700</width>
-                    <height>20</height>
-                    <font>size20</font>
-                    <textcolor>gray</textcolor>
-                    <label>$LOCALIZE[568]: [COLOR Silver][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
+                <control type="group" description="albums_infos">
+                    <control type="panel" id="990">
+                        <itemlayout width="300" height="100">
+                        </itemlayout>
+                        <focusedlayout width="300" height="100">
+                        </focusedlayout>
+                        <content>$INFO[ListItem.DBID,musicdb://artists/,] </content>
+                    </control>
                 </control>
             </control>
-            <control type="textbox" description="plots">
-                <left>60</left>
-                <top>550</top>
-                <width>1230</width>
-                <height>510</height>
-                <align>justify</align>
-                <label>$VAR[Plots]</label>
-                <autoscroll delay="20000" time="6000" repeat="30000"></autoscroll>
+            <!--ARTISTS END-->
+            <!--ADDONS-->
+            <control type="group" description="nonsetinfos">
+                <visible>Container.Content(Addons)</visible>
+                <control type="image" description="sfumatura plot">
+                    <top>630</top>
+                    <height>30</height>
+                    <width>1341</width>
+                    <texture diffuse="images/ombra.png" flipy="true">lines/LineR.png</texture>
+                    <colordiffuse>white</colordiffuse>
+                </control>
+                <control type="textbox" description="plots">
+                    <posx>60</posx>
+                    <top>630</top>
+                    <width>1240</width>
+                    <height>480</height>
+                    <align>justify</align>
+                    <font>size30</font>
+                    <shadowcolor>white</shadowcolor>
+                    <label>[B]$VAR[Plots][/B]</label>
+                </control>
+                <control type="textbox" description="disclaimer">
+                    <left>570</left>
+                    <top>160</top>
+                    <width>700</width>
+                    <height>150</height>
+                    <font>size21</font>
+                    <shadowcolor>white</shadowcolor>
+                    <label>[COLOR=red][B]$INFO[ListItem.Property(Addon.Disclaimer)][/B][/COLOR]</label>
+                </control>
+                <control type="textbox" description="infos">
+                    <left>570</left>
+                    <top>340</top>
+                    <width>700</width>
+                    <height>300</height>
+                    <font>size21</font>
+                    <shadowcolor>white</shadowcolor>
+                    <label>[B]Author:   $INFO[ListItem.Property(Addon.Creator)][CR]Type:   $INFO[ListItem.Property(Addon.Type)][/B]</label>
+                </control>
+                <control type="image" description="icon">
+                    <left>80</left>
+                    <centertop>380</centertop>
+                    <height>440</height>
+                    <width>440</width>
+                    <texture>$VAR[Locandine]</texture>
+                    <aspectratio>scale</aspectratio>
+                </control>
             </control>
-            <control type="image">
-                <left>850</left>
-                <top>120</top>
-                <height>380</height>
-                <width>420</width>
-                <texture diffuse="images/Diffuse.png">$VAR[Locandine]</texture>
-                <aspectratio>keep</aspectratio>
-            </control>
+            <!--ADDONS-END-->
+            <!--GENERAL STUFF-->
             <control type="image">
                 <posx>1340</posx>
                 <top>-100</top>
@@ -485,16 +588,23 @@
                 <width>1340</width>
                 <texture colordiffuse="black">lines/LineR.png</texture>
             </control>
+            <control type="image">
+                <visible>!Container.Content(Addons)</visible>
+                <top>120</top>
+                <height>1</height>
+                <width>1341</width>
+                <texture>lines/LineR.png</texture>
+            </control>
             <control type="group">
                 <control type="image">
-                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Property(Album_Description)) + IsEmpty(ListItem.Property(Artist_Description))]</visible>
+                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Property(Album_Description)) + IsEmpty(ListItem.Property(Addon.Description)) + IsEmpty(ListItem.Property(Artist_Description))]</visible>
                     <animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>
                     <width>1340</width>
                     <height>1080</height>
-                    <texture>images/white.png</texture>
+                    <texture colordiffuse="white">images/white.png</texture>
                 </control>
                 <control type="image">
-                    <visible>[Container(52).OnNext | Container(52).OnPrevious] | [IsEmpty(ListItem.Property(Album_Description)) + IsEmpty(ListItem.Property(Artist_Description))]</visible>
+                    <visible>[Container(52).OnNext | Container(52).OnPrevious] | [IsEmpty(ListItem.Property(Album_Description)) + IsEmpty(ListItem.Property(Addon.Description)) + IsEmpty(ListItem.Property(Artist_Description))]</visible>
                     <fadetime>200</fadetime>
                     <animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>
                     <width>1340</width>
@@ -520,6 +630,7 @@
                     <onright>noop</onright>
                 </control>
             </control>
+            <!--GENERAL STUFF ENDS-->
         </control>
         <!-- FANART -->
         <control type="group" description="Fanart">

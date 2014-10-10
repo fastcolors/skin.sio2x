@@ -128,8 +128,8 @@ msgid "Last Added"
 msgstr "Last Added"
 
 msgctxt "#31028"
-msgid "Custom Home Background"
-msgstr "Custom Home Background"
+msgid "Custom Background"
+msgstr "Custom Background"
 
 msgctxt "#31029"
 msgid "Adds a custom Background to Home Screen. This will automatically switch On the setting for Always Colored Icons on Home screen. This can be manually switched Off from this page."
@@ -430,3 +430,15 @@ msgstr "VideoGuides"
 msgctxt "#31418"
 msgid "Opens a list of video files made to help,but also to learn how to maximize Your SiO2-X experience"
 msgstr "Opens a list of video files made to help,but also to learn how to maximize Your SiO2-X experience"
+
+msgctxt "#31419"
+msgid "Started Movies"
+msgstr "Started Movies"
+
+msgctxt "#31420"
+msgid "Show or Hide 3D movies from Regular Library List. If Off, when Library is accessed from Home Icon, it won't show any 3D content. Works only if files are named following Kodi/XBMC rules for 3D automatic identification -- i.e. Must Contain the word 3D"
+msgstr "Show or Hide 3D movies from Regular Library List. If Off, when Library is accessed from Home Icon, it won't show any 3D content. Works only if files are named following Kodi/XBMC rules for 3D automatic identification -- i.e. Must Contain the word 3D"
+
+msgctxt "#31421"
+msgid "3D Content in Movies List"
+msgstr "3D Content in Movies List"

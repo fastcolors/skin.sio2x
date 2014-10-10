@@ -19,7 +19,7 @@
                 <width>34</width>
                 <height>34</height>
                 <texturenofocus aspectratio="keep" colordiffuse="darkgray">images/hometoggle.png</texturenofocus>
-                <texturefocus aspectratio="keep" colordiffuse="black">images/hometoggle.png</texturefocus>
+                <texturefocus aspectratio="keep" colordiffuse="red">images/hometoggle.png</texturefocus>
                 <!--MOVIES-->
                 <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">Skin.SetString(moviesshelf,)</onclick>
                 <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL) + Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,TR)</onclick>
@@ -217,9 +217,9 @@
                 </control>
                 <control type="label" description="Plot">
                     <visible>Control.HasFocus(311)</visible>
-                    <top>501</top>
+                    <top>514</top>
                     <width>1920</width>
-                    <height>33</height>
+                    <height>10</height>
                     <font>size24</font>
                     <label>  PLOT: $INFO[Container(311).ListItem.Plot]</label>
                     <textcolor>FF666666</textcolor>
@@ -319,7 +319,18 @@
             <font>XS</font>
             <textcolor>lightblue</textcolor>
             <align>right</align>
-            <label>$INFO[System.AddonVersion(skin.sio2x)]</label>
+            <info>System.AddonVersion(skin.sio2x)</info>
+        </control>
+        <control type="label">
+            <description>SKIN VERSION</description>
+            <right>90</right>
+            <top>1060</top>
+            <width>130</width>
+            <height>20</height>
+            <font>XS</font>
+            <textcolor>lightblue</textcolor>
+            <align>right</align>
+           <info>Network.IPAddress</info>
         </control>
         <control type="grouplist">
             <visible>[Container(9000).Row(0) | Container(9000).Row(1)]</visible>
@@ -329,20 +340,13 @@
             <itemgap>16</itemgap>
             <align>right</align>
             <control type="label" description="Battery">
-                <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,20) + !Skin.HasSetting(hideconnection)</visible>
+                <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,10) + !Skin.HasSetting(hideconnection)</visible>
                 <width min="30" max="500">auto</width>
                 <height>45</height>
                 <font>size30</font>
-                <textcolor>White</textcolor>
+                <textcolor>red</textcolor>
                 <label>$INFO[System.BatteryLevel] Batt.</label>
             </control>
-            <!--<control type="label" description="IP">-->
-                <!--<width min="30" max="500">auto</width>-->
-                <!--<height>45</height>-->
-                <!--<font>size30</font>-->
-                <!--<textcolor>White</textcolor>-->
-                <!--<label> $INFO[Network.IPAddress] </label>-->
-            <!--</control>-->
             <control type="label" description="Clock">
                 <visible>!Skin.HasSetting(HideClock)</visible>
                 <width min="30" max="500">auto</width>

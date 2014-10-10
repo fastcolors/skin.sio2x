@@ -12,8 +12,9 @@
             <thumb>icons/movies.png</thumb>
             <label>342</label>
             <property name="color">icons/lightblue.png</property>
-            <onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
-            <onclick condition="!Library.HasContent(Movies)">ActivateWindow(Videos,root)</onclick>
+            <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp", return)</onclick>
+            <onclick condition="Library.HasContent(Movies) + !Skin.HasSetting(no3d)">ActivateWindow(Videos,MovieTitles,return)</onclick>
+            <onclick condition="!Library.HasContent(Movies) + !Skin.HasSetting(no3d)">ActivateWindow(Videos,root)</onclick>
         </item>
         <item id="341">
             <visible>!Skin.HasSetting(hidetv)</visible>
@@ -40,9 +41,10 @@
         <item id="342">
             <visible>!Skin.HasSetting(hidemusic)</visible>
             <thumb>icons/music.png</thumb>
-            <label>2</label>
+            <label>$VAR[musiclabel]</label>
             <property name="color">icons/Orange.png</property>
-            <onclick>ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
+            <onclick condition="StringCompare(Skin.String(MusicLink),Playlist)">PlayerControl(Partymode(music))</onclick>
+            <onclick condition="!StringCompare(Skin.String(MusicLink),Playlist)">ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
             <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
         </item>
         <item id="343">

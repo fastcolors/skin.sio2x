@@ -7,8 +7,12 @@
 * Playlist Editor Restyling
 * Fixed PartyPlaylist view
 * New Sounds
-* Fix for Helix Keyboard (adedd LAYOUT button)
+* Fix for Helix Keyboard (added LAYOUT button)
 * Cosmetic on Network Share Dialog.
+* Music Icon Label now changes according to redirection selected in home customizer
+* Music Icon can now start Party Mode
+* Cosmetics on Smart Playlist Editor
+* Added an option to hide 3D content from main library
 
 3.0.3
 * Context Menu changes (file browsing jump disabled for now)

@@ -124,7 +124,7 @@
                     <include>DialogButt</include>
                     <label>•• $LOCALIZE[582] ••</label>
                 </control>
-                <!--todo label-->
+                <!--todo label ?-->
                 <control type="radiobutton" id="600" description="sio2">
                     <include>DialogButt</include>
                     <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
@@ -132,7 +132,7 @@
                     <selected>Control.IsVisible(52)</selected>
                     <label>SiO2 View</label>
                 </control>
-                <!--todo label-->
+                <!--todo label ?-->
                 <control type="radiobutton" id="601" description="sio2 Advanced">
                     <include>DialogButt</include>
                     <visible>Container.Content(movies)</visible>

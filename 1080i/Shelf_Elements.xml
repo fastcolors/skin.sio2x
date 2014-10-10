@@ -97,6 +97,7 @@
                     <texture border="10" background="true">$VAR[dvdbox]</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
+
                 <control type="image">
                     <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
                     <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
@@ -124,7 +125,6 @@
                 </control>
             </control>
         </focusedlayout>
-
     </include>
     <include name="FavShortcutsCommons">
         <include>ShelfFade</include>
