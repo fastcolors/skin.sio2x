@@ -203,7 +203,8 @@
                     <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
                 </control>
                 <control type="rss" description="RSS Feed">
-                    <visible>system.getbool(lookandfeel.enablerssfeeds) + !Control.HasFocus(311)</visible>
+                    <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+                    <!--<visible>system.getbool(lookandfeel.enablerssfeeds) + !Control.HasFocus(311)</visible>-->
                     <include>OpenClose</include>
                     <top>501</top>
                     <width>1920</width>
@@ -215,15 +216,16 @@
                     <headlinecolor>FF666666</headlinecolor>
                     <textcolor>gray</textcolor>
                 </control>
-                <control type="label" description="Plot">
-                    <visible>Control.HasFocus(311)</visible>
-                    <top>514</top>
-                    <width>1920</width>
-                    <height>10</height>
-                    <font>size24</font>
-                    <label>  PLOT: $INFO[Container(311).ListItem.Plot]</label>
-                    <textcolor>FF666666</textcolor>
-                </control>
+                <!--todo get plot or trailer-->
+                <!--<control type="label" description="Plot">-->
+                    <!--<visible>Control.HasFocus(311)</visible>-->
+                    <!--<top>514</top>-->
+                    <!--<width>1920</width>-->
+                    <!--<height>10</height>-->
+                    <!--<font>size24</font>-->
+                    <!--<label>  PLOT: $INFO[Container(311).ListItem.Plot]</label>-->
+                    <!--<textcolor>FF666666</textcolor>-->
+                <!--</control>-->
             </control>
             <control type="image" description="TVLINE">
                 <include>ShelfFade</include>
@@ -311,6 +313,17 @@
             </control>
         </control>
         <control type="label">
+            <description>IP ADDRESS</description>
+            <right>90</right>
+            <top>1060</top>
+            <width>130</width>
+            <height>20</height>
+            <font>XS</font>
+            <textcolor>lightblue</textcolor>
+            <align>right</align>
+           <info>Network.IPAddress</info>
+        </control>
+         <control type="label">
             <description>SKIN VERSION</description>
             <right>10</right>
             <top>1060</top>
@@ -320,17 +333,6 @@
             <textcolor>lightblue</textcolor>
             <align>right</align>
             <info>System.AddonVersion(skin.sio2x)</info>
-        </control>
-        <control type="label">
-            <description>SKIN VERSION</description>
-            <right>90</right>
-            <top>1060</top>
-            <width>130</width>
-            <height>20</height>
-            <font>XS</font>
-            <textcolor>lightblue</textcolor>
-            <align>right</align>
-           <info>Network.IPAddress</info>
         </control>
         <control type="grouplist">
             <visible>[Container(9000).Row(0) | Container(9000).Row(1)]</visible>
