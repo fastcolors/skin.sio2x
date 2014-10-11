@@ -121,7 +121,7 @@
     </include>
     <include name="FavShortcutsCommons">
         <include>ShelfFade</include>
-        <top>65</top>
+        <top>45</top>
         <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
@@ -225,7 +225,7 @@
     </include>
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
-        <top>85</top>
+        <top>65</top>
         <width>1920</width>
         <height>450</height>
         <onup>9009</onup>
@@ -337,7 +337,7 @@
     </include>
     <include name="EpisodeShortcutsCommons">
         <include>ShelfFade</include>
-        <top>97</top>
+        <top>70</top>
         <width>1920</width>
         <height>452</height>
         <orientation>horizontal</orientation>
@@ -443,7 +443,7 @@
     </include>
     <include name="EpisodeNextCommons">
         <include>ShelfFade</include>
-        <top>65</top>
+        <top>45</top>
         <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
