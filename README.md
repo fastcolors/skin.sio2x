@@ -2,6 +2,11 @@ skin.sio2x
 ==========
 
 Kodi (formerly XBMC) Skin
+3.0.5
+* Fix for Addon Browser not showing all the infos correctly
+* Splash Screen
+* Added the ability to play movie trailers from shelf (if links are scraped)
+* Cosmetics here and there
 
 3.0.4
 * Fix for Unwatched number being off center in Banner View for TVShows
