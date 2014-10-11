@@ -30,7 +30,7 @@
                 <align>center</align>
                 <autoscroll>false</autoscroll>
             </control>
-            <control type="progress" description="Progressbar">
+            <control type="progress" id="20">
                 <posx>0</posx>
                 <top>261</top>
                 <width>960</width>
@@ -39,7 +39,6 @@
                 <midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
                 <righttexture border="1,1,5,1">progress/ProgressR.png</righttexture>
                 <lefttexture border="5,1,1,1">progress/ProgressL.png</lefttexture>
-                <info>System.Progressbar</info>
             </control>
             <control type="button" id="10" description="Cancel">
                 <posx>330</posx>
