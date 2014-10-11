@@ -9,7 +9,7 @@
             <posx>960</posx>
             <top>131</top>
             <control type="list" id="50">
-                <width>902</width>
+                <width>970</width>
                 <height>891</height>
                 <onleft>9000</onleft>
                 <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
@@ -22,48 +22,29 @@
                 <movement>5</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
-                <itemlayout width="900" height="81">
+                <itemlayout width="970" height="81">
                     <control type="label" description="Main Label">
-                        <width max="720">auto</width>
+                        <width>930</width>
+                        <posx>30</posx>
+                        <wrapmultiline>true</wrapmultiline>
                         <include>52MainLabel</include>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label" description="Label2">
-                        <visible>!ListItem.IsFolder</visible>
-                        <posx>45r</posx>
-                        <height>81</height>
-                        <width>300</width>
-                        <align>right</align>
-                        <font>size27</font>
-                        <scroll>false</scroll>
-                        <textcolor>gray</textcolor>
-                        <label>$INFO[ListItem.Label2]</label>
+                        <label>$INFO[ListItem.Label][CR][COLOR=Silver]$INFO[ListItem.Label2][/COLOR]</label>
                     </control>
                     <include>listline</include>
                 </itemlayout>
-                <focusedlayout width="900" height="81">
+                <focusedlayout width="970" height="81">
                     <control type="image">
                         <animation effect="fade" end="0" time="30">UnFocus</animation>
-                        <width>920</width>
+                        <width>930</width>
                         <height>81</height>
                         <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
                     </control>
                     <control type="label" description="Main Label">
-                        <width max="720">auto</width>
-                        <textcolor>black</textcolor>
+                        <width>930</width>
+                        <posx>30</posx>
+                        <wrapmultiline>true</wrapmultiline>
                         <include>52MainLabel</include>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label" description="Label2">
-                        <visible>!ListItem.IsFolder</visible>
-                        <animation effect="fade" time="300" start="50" end="100" delay="100">Focus</animation>
-                        <posx>45r</posx>
-                        <height>81</height>
-                        <width>300</width>
-                        <align>right</align>
-                        <font>size27</font>
-                        <textcolor>black</textcolor>
-                        <label>$INFO[ListItem.Label2]</label>
+                        <label>$INFO[ListItem.Label][CR][COLOR=Silver]$INFO[ListItem.Label2][/COLOR]</label>
                     </control>
                     <include>listline</include>
                 </focusedlayout>

@@ -28,7 +28,7 @@
                         <top>10</top>
                         <width>94</width>
                         <height>120</height>
-                        <texture background="true">$VAR[Locandine]</texture>
+                        <texture background="true">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
@@ -107,7 +107,7 @@
                         <top>10</top>
                         <width>94</width>
                         <height>120</height>
-                        <texture background="true">$VAR[Locandine]</texture>
+                        <texture background="true">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
@@ -399,7 +399,7 @@
                     <control type="image">
                         <height>440</height>
                         <width>294</width>
-                        <texture>$VAR[Locandine]</texture>
+                        <texture>$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
@@ -530,7 +530,7 @@
                     <centertop>380</centertop>
                     <height>440</height>
                     <width>440</width>
-                    <texture>$VAR[Locandine]</texture>
+                    <texture>$VAR[locandine]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
             </control>

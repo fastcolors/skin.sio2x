@@ -680,4 +680,18 @@
             </control>
         </control>
     </include>
+    <include name="ShelfTitle">
+        <top>16</top>
+        <left>50</left>
+        <height>34</height>
+        <width>750</width>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>size27</font>
+        <textcolor>black</textcolor>
+    </include>
+    <include name="ShelfFade">
+        <animation effect="fade" end="100" time="250" delay="250">Visible</animation>
+        <animation effect="fade" end="0" time="100">Hidden</animation>
+    </include>
 </includes>

@@ -436,7 +436,7 @@
 
                         <height>440</height>
                         <width>294</width>
-                        <texture>$VAR[Locandine]</texture>
+                        <texture>$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">

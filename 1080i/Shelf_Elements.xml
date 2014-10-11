@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <include name="ShelfFade">
-        <animation effect="fade" end="100" delay="200" time="250">Visible</animation>
-        <animation effect="fade" end="0" time="100">Hidden</animation>
-    </include>
-    <include name="ShelfTitle">
-        <left>50</left>
-        <top>20</top>
-        <height>45</height>
-        <width>750</width>
-        <align>left</align>
-        <aligny>center</aligny>
-        <font>size27</font>
-        <textcolor>black</textcolor>
-    </include>
     <include name="MoviesShortcutsCommons">
         <include>ShelfFade</include>
-        <top>50</top>
+        <top>45</top>
         <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
@@ -24,7 +10,7 @@
         <itemlayout height="350" width="320">
             <control type="group">
                 <control type="image" description="Reflection">
-                    <posx>35</posx>
+                    <centerleft>160</centerleft>
                     <top>409</top>
                     <width>250</width>
                     <height>375</height>
@@ -32,7 +18,7 @@
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>31</posx>
+                    <centerleft>160</centerleft>
                     <top>400</top>
                     <width>262</width>
                     <height>389</height>
@@ -40,7 +26,7 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>35</posx>
+                    <centerleft>160</centerleft>
                     <top>25</top>
                     <width>250</width>
                     <height>375</height>
@@ -48,7 +34,7 @@
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>31</posx>
+                    <centerleft>160</centerleft>
                     <top>18</top>
                     <width>262</width>
                     <height>389</height>
@@ -65,7 +51,7 @@
                     <animation effect="fade" start="100" end="0" time="100">Focus</animation>
                     <animation effect="fade" start="0" end="100" time="150">unFocus</animation>
                     <control type="image" description="Reflection">
-                        <posx>35</posx>
+                        <centerleft>160</centerleft>
                         <top>409</top>
                         <width>250</width>
                         <height>375</height>
@@ -73,7 +59,7 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>31</posx>
+                        <centerleft>160</centerleft>
                         <top>400</top>
                         <width>262</width>
                         <height>389</height>
@@ -82,7 +68,7 @@
                     </control>
                 </control>
                 <control type="image">
-                    <posx>35</posx>
+                    <centerleft>160</centerleft>
                     <top>25</top>
                     <width>250</width>
                     <height>375</height>
@@ -90,29 +76,27 @@
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>31</posx>
+                    <centerleft>160</centerleft>
                     <top>18</top>
                     <width>262</width>
                     <height>389</height>
                     <texture border="10" background="true">$VAR[dvdbox]</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
-
-                <control type="image">
+                <control type="group">
                     <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
                     <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
-                    <visible>Control.HasFocus(311)</visible>
-                    <posx>35</posx>
+                <control type="image">
+                    <!--<visible>Control.HasFocus(311)</visible>-->
+                    <centerleft>160</centerleft>
                     <top>22</top>
                     <width>254</width>
                     <height>381</height>
                     <texture colordiffuse="$VAR[diffuseselectshelf]">images/darkgrey.png</texture>
                 </control>
                 <control type="textbox">
-                    <visible>ControlGroup(700).HasFocus()</visible>
-                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
-                    <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
-                    <posx>38</posx>
+                    <!--<visible>ControlGroup(700).HasFocus()</visible>-->
+                    <centerleft>160</centerleft>
                     <top>28</top>
                     <width>244</width>
                     <height>369</height>
@@ -123,12 +107,21 @@
                     <label>[B]$INFO[ListItem.Label][/B][CR][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]: $INFO[ListItem.Year][CR][CR]$INFO[ListItem.Genre][CR][CR]$INFO[ListItem.MPAA]</label>
                     <align>center</align>
                 </control>
+                <control type="image">
+                    <visible>!IsEmpty(ListItem.Trailer)</visible>
+                    <top>360</top>
+                    <right>40</right>
+                    <width>40</width>
+                    <height>40</height>
+                    <texture>info/trailer.png</texture>
+                </control>
+                    </control>
             </control>
         </focusedlayout>
     </include>
     <include name="FavShortcutsCommons">
         <include>ShelfFade</include>
-        <top>50</top>
+        <top>65</top>
         <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
@@ -232,7 +225,7 @@
     </include>
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
-        <top>70</top>
+        <top>85</top>
         <width>1920</width>
         <height>450</height>
         <onup>9009</onup>
@@ -344,7 +337,7 @@
     </include>
     <include name="EpisodeShortcutsCommons">
         <include>ShelfFade</include>
-        <top>82</top>
+        <top>97</top>
         <width>1920</width>
         <height>452</height>
         <orientation>horizontal</orientation>
@@ -450,7 +443,7 @@
     </include>
     <include name="EpisodeNextCommons">
         <include>ShelfFade</include>
-        <top>50</top>
+        <top>65</top>
         <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
@@ -578,7 +571,7 @@
         <control type="image">
             <visible>Control.HasFocus(311)</visible>
             <posx>110</posx>
-            <top>494</top>
+            <top>489</top>
             <width>100</width>
             <height>10</height>
             <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
@@ -595,7 +588,7 @@
         <control type="image">
             <visible>Control.HasFocus(312) | Control.HasFocus(222) | Control.HasFocus(223)</visible>
             <posx>190</posx>
-            <top>494</top>
+            <top>489</top>
             <width>100</width>
             <height>10</height>
             <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
@@ -609,14 +602,15 @@
     </include>
     <include name="Movies">
         <control type="label" description="Top Label">
-            <visible>Control.IsVisible(311) + Container(9000).HasFocus(340)</visible>
+            <visible>Control.IsVisible(311)</visible>
             <include>ShelfFade</include>
             <include>ShelfTitle</include>
-            <label>[B] $VAR[shelflabel] [/B]</label>
+            <label> $VAR[shelflabel] </label>
         </control>
         <control type="panel" id="311" description="Movies Shelf Shortcuts">
             <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Container(9000).HasFocus(357) | Control.HasFocus(311) | [Container(9000).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.List))] | [Container(9000).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.List))] | [Container(9000).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.List))] | [Container(9000).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.List))] | [Container(9000).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.List))] | [Container(9000).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.List))] | [Container(9000).HasFocus(607) + !IsEmpty(Skin.String(HomeFav.7.List))] | [Container(9000).HasFocus(608) + !IsEmpty(Skin.String(HomeFav.8.List))]]</visible>
-            <onup>9009</onup>
+            <onup condition="IsEmpty(Container(311).ListItem.Trailer)">9009</onup>
+            <onup condition="!IsEmpty(Container(311).ListItem.Trailer)">9010</onup>
             <ondown>9000</ondown>
             <onleft>311</onleft>
             <onright>311</onright>
@@ -631,14 +625,14 @@
             <visible>Control.IsVisible(312)</visible>
             <include>ShelfFade</include>
             <include>ShelfTitle</include>
-            <label>[B] $VAR[shelflabel] [/B]</label>
+            <label> $VAR[shelflabel] </label>
         </control>
         <control type="label" description="Inverted">
             <animation effect="slide" end="-480,0" time="400" condition="Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
             <visible>Control.IsVisible(312) + !Skin.HasSetting(intruderTV)</visible>
             <include>ShelfFade</include>
             <include>ShelfTitle</include>
-            <label>[B] $VAR[shelfinverted] [/B]</label>
+            <label> $VAR[shelfinverted] </label>
         </control>
         <control type="panel" id="222" description="TOP Shortcuts">
             <visible>!Skin.HasSetting(IntruderTV) + Container(9000).HasFocus(341) + !Skin.HasSetting(TVShelf_Watchlist)</visible>
@@ -649,7 +643,7 @@
             <onright>SetFocus(312,0)</onright>
             <width>480</width>
             <include>EpisodeShortcutsCommons</include>
-            <content target="video">plugin://service.library.data.provider?type=recentepisodes&limit=1&reload=$INFO[Window.Property(recentepisodes)]</content>
+            <content target="video" limit="1">videodb://recentlyaddedepisodes/</content>
         </control>
         <control type="panel" id="222" description="TOP Shortcuts">
             <visible>!Skin.HasSetting(IntruderTV) + Container(9000).HasFocus(341) + Skin.HasSetting(TVShelf_Watchlist)</visible>
@@ -660,12 +654,12 @@
             <onright>SetFocus(312,0)</onright>
             <width>480</width>
             <include>EpisodeShortcutsCommons</include>
-            <content target="video">plugin://service.library.data.provider?type=recommendedepisodes&limit=1&reload=$INFO[Window.Property(recommendedepisodes)]</content>
+            <content target="video" limit="1">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]</content>
         </control>
         <control type="panel" id="312" description="TOP Shortcuts">
             <visible>Container(9000).HasFocus(341)</visible>
             <animation effect="slide" condition="!Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)" end="480,0" time="400" reversible="true">Conditional</animation>
-            <onup>9009</onup>
+            <onup>9010</onup>
             <ondown>9000</ondown>
             <onleft>222</onleft>
             <onright>noop</onright>
@@ -680,11 +674,11 @@
                 <visible>Control.IsVisible(311) + Container(9000).HasFocus(358)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
-                <label>[B] $VAR[shelflabel] [/B]</label>
+                <label> $VAR[shelflabel] </label>
             </control>
             <control type="panel" id="311" description="TOP Shortcuts">
                 <visible>Container(9000).HasFocus(358)</visible>
-                <onup>9009</onup>
+                <onup>noop</onup>
                 <ondown>9000</ondown>
                 <onleft>311</onleft>
                 <onright>311</onright>
@@ -806,7 +800,7 @@
             <control type="image">
                 <visible>Control.HasFocus(313)</visible>
                 <posx>142</posx>
-                <top>494</top>
+                <top>489</top>
                 <width>100</width>
                 <height>10</height>
                 <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
@@ -829,19 +823,19 @@
         </control>
         <control type="group">
             <control type="panel" id="315" description="TOP Shortcuts">
-                <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)]</visible>
+                <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + !StringCompare(Skin.String(addonsshelf),1)</visible>
                 <include>SquareShortcutsCommons</include>
                 <content target="video">$VAR[addonsshelfcontent]</content>
             </control>
-            <!--<control type="panel" id="315" description="TOP Shortcuts">-->
-            <!--<visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + StringCompare(Skin.String(addonsshelf),1)</visible>-->
-            <!--<include>SquareShortcutsCommons</include>-->
-            <!--<content target="music">$VAR[addonsshelfcontent]</content>-->
-            <!--</control>-->
+            <control type="panel" id="315" description="TOP Shortcuts">
+                <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + StringCompare(Skin.String(addonsshelf),1)</visible>
+                <include>SquareShortcutsCommons</include>
+                <content target="music">$VAR[addonsshelfcontent]</content>
+            </control>
             <control type="image">
                 <visible>Control.HasFocus(315)</visible>
                 <posx>142</posx>
-                <top>494</top>
+                <top>489</top>
                 <width>100</width>
                 <height>10</height>
                 <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
@@ -860,7 +854,7 @@
             <visible>Control.IsVisible(315)</visible>
             <include>ShelfTitle</include>
             <include>ShelfFade</include>
-            <label>[B] $LOCALIZE[111][/B]</label>
+            <label> $LOCALIZE[111]</label>
         </control>
         <control type="group">
             <control type="panel" id="315" description="TOP Shortcuts">
@@ -1016,7 +1010,7 @@
             <control type="image">
                 <visible>Control.HasFocus(315)</visible>
                 <posx>142</posx>
-                <top>494</top>
+                <top>489</top>
                 <width>100</width>
                 <height>10</height>
                 <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
@@ -1036,7 +1030,7 @@
                 <visible>Control.IsVisible(317)</visible>
                 <include>ShelfTitle</include>
                 <include>ShelfFade</include>
-                <label>[B] $INFO[Container(317).ListItem.Property(ItemType)][/B]</label>
+                <label> $INFO[Container(317).ListItem.Property(ItemType)]</label>
             </control>
             <control type="panel" id="317" description="TOP Shortcuts">
                 <visible>Container(9000).HasFocus(355) | Control.HasFocus(317)</visible>
@@ -1156,7 +1150,7 @@
             <control type="image">
                 <visible>Control.HasFocus(317)</visible>
                 <posx>110</posx>
-                <top>494</top>
+                <top>489</top>
                 <width>100</width>
                 <height>10</height>
                 <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
@@ -1176,7 +1170,7 @@
             <visible>Control.IsVisible(314)</visible>
             <include>ShelfTitle</include>
             <include>ShelfFade</include>
-            <label>[B]$LOCALIZE[111][/B]</label>
+            <label> $LOCALIZE[111]</label>
         </control>
         <control type="group"><control type="panel" id="314" description="TOP Shortcuts">
             <visible>Container(9000).HasFocus(344) | Control.HasFocus(314)</visible>
@@ -1310,7 +1304,7 @@
             <control type="image">
                 <visible>Control.HasFocus(314)</visible>
                 <posx>142</posx>
-                <top>494</top>
+                <top>489</top>
                 <width>100</width>
                 <height>10</height>
                 <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
@@ -1485,7 +1479,7 @@
                 <visible>Control.IsVisible(319)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
-                <label>[B] $LOCALIZE[1036] [/B]</label>
+                <label> $LOCALIZE[1036]</label>
             </control>
             <control type="panel" id="319" description="TOP Shortcuts">
                 <visible>IntegerGreaterThan(Window.Property(favourite.count),0) + [Container(9000).HasFocus(352) | Control.HasFocus(319)] + Container(9000).Row(0)</visible>
@@ -1560,7 +1554,7 @@
             <control type="image">
                 <visible>Control.HasFocus(319)</visible>
                 <posx>110</posx>
-                <top>494</top>
+                <top>489</top>
                 <width>100</width>
                 <height>10</height>
                 <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
@@ -1581,11 +1575,11 @@
                 <visible>Container(9000).HasFocus(355) + Control.IsVisible(311)</visible>
                 <include>ShelfFade</include>
                 <include>ShelfTitle</include>
-                <label>[B] $VAR[shelflabel] [/B]</label>
+                <label> $VAR[shelflabel]</label>
             </control>
             <control type="list" id="311" description="EPG Shelf">
                 <visible>Container(9000).HasFocus(355)</visible>
-                <onup>9009</onup>
+                <onup>noop</onup>
                 <ondown>9000</ondown>
                 <onleft>311</onleft>
                 <onright>311</onright>

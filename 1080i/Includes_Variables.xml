@@ -157,13 +157,14 @@
         <value condition="Container(575).HasFocus(16)">icons/qmark.png</value>
     </variable>
 
+    <!--todo nowplay back in first???-->
     <variable name="nowplay">
         <value condition="Pvr.IsPlayingTV">$INFO[]</value>
         <value condition="IsEmpty(Player.Art(tvshow.poster))">$INFO[VideoPlayer.Cover]</value>
         <value>$INFO[Player.Art(tvshow.poster)]</value>
     </variable>
 
-    <variable name="Locandine">
+    <variable name="locandine">
         <value condition="Container.Content(episodes) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <!--<value condition="StringCompare(ListItem.Label,..)">DefaultFolderBack.png</value>-->
@@ -256,11 +257,11 @@
     </variable>
 
     <variable name="musicshelftitle">
-        <value condition="StringCompare(Skin.String(musicshelf),custom)">[B] $LOCALIZE[1038][/B]</value>
-        <value condition="StringCompare(Skin.String(musicshelf),albums)">[B] $LOCALIZE[132][/B]</value>
-        <value condition="StringCompare(Skin.String(musicshelf),artists)">[B] $LOCALIZE[133][/B]</value>
-        <!--<value condition="StringCompare(Skin.String(musicshelf),playlists)">[B] $LOCALIZE[20011][/B]</value>-->
-        <value>[B] $LOCALIZE[359][/B]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),custom)"> $LOCALIZE[1038]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),albums)"> $LOCALIZE[132]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),artists)"> $LOCALIZE[133]</value>
+        <!--<value condition="StringCompare(Skin.String(musicshelf),playlists)"> $LOCALIZE[20011]</value>-->
+        <value> $LOCALIZE[359]</value>
     </variable>
 
     <variable name="musicshelfcontent">
@@ -286,17 +287,14 @@
     </variable>
 
     <variable name="shelflabel">
-        <value condition="Container(9000).HasFocus(607)">$INFO[Skin.String(Homefav.7.Label)]</value>
-        <value condition="Container(9000).HasFocus(608)">$INFO[Skin.String(Homefav.8.Label)]</value>
-        <value condition="Container(9000).HasFocus(358)">$ADDON[script.tv.show.next.aired 32101]</value>
         <value condition="Container(9000).HasFocus(355)">$LOCALIZE[19017]</value>
         <value condition="Control.IsVisible(312) + Skin.HasSetting(TVShelf_Watchlist)">$LOCALIZE[20387]</value>
         <value condition="Control.IsVisible(312)">$LOCALIZE[31048]</value>
-        <value condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">$LOCALIZE[31419]</value>
-        <value condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[31015]</value>
-        <value>$LOCALIZE[20386]</value>
+        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">$LOCALIZE[31419]</value>
+        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[31015]</value>
+        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),)">$LOCALIZE[20386]</value>
+        <value>$INFO[Control.GetLabel(9000)]</value>
     </variable>
-
 
     <variable name="nextairedfanart">
         <value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Fanart)]</value>

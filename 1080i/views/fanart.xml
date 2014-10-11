@@ -34,7 +34,7 @@
                         <top>440</top>
                         <height>350</height>
                         <width>230</width>
-                        <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[Locandine]</texture>
+                        <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image" description="Thumb">
@@ -42,7 +42,7 @@
                         <top>80</top>
                         <height>350</height>
                         <width>230</width>
-                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[Locandine]</texture>
+                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image" description="WatchStatus">
@@ -72,7 +72,7 @@
                             <top>80</top>
                             <height>350</height>
                             <width>230</width>
-                            <texture background="true" fallback="DefaultVideoCover.png">$VAR[Locandine]</texture>
+                            <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="image" description="WatchStatus">

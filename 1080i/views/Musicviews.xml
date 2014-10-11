@@ -65,7 +65,7 @@
                             <top>24</top>
                             <width>225</width>
                             <height>225</height>
-                            <texture background="true">$VAR[Locandine]</texture>
+                            <texture background="true">$VAR[locandine]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                     </itemlayout>
@@ -89,7 +89,7 @@
                                 <top>24</top>
                                 <width>225</width>
                                 <height>225</height>
-                                <texture background="true">$VAR[Locandine]</texture>
+                                <texture background="true">$VAR[locandine]</texture>
                                 <aspectratio>scale</aspectratio>
                             </control>
                         </control>
@@ -253,7 +253,7 @@
                         <top>10</top>
                         <width>108</width>
                         <height>108</height>
-                        <texture>$VAR[Locandine]</texture>
+                        <texture>$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="textbox">
@@ -302,7 +302,7 @@
                         <top>10</top>
                         <width>108</width>
                         <height>108</height>
-                        <texture>$VAR[Locandine]</texture>
+                        <texture>$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="textbox">
@@ -372,7 +372,7 @@
                         <font>size20</font>
                         <textcolor>Silver</textcolor>
                         <autoscroll>false</autoscroll>
-                        <label>$LOCALIZE[515] / $LOCALIZE[176]: [COLOR=black][B]$INFO[ListItem.Property(Album_Style)][/B][/COLOR]</label>
+                        <label>$LOCALIZE[515] / $LOCALIZE[176]: [COLOR=black][B]$INFO[ListItem.Property(Album_Genre)][/B][/COLOR]</label>
                     </control>
                     <control type="textbox">
                         <width>800</width>
@@ -427,7 +427,7 @@
                     <width>380</width>
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>
                     <bordersize>4</bordersize>
-                    <texture>$VAR[Locandine]</texture>
+                    <texture>$VAR[locandine]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
             </control>
@@ -512,7 +512,7 @@
                     <width>420</width>
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>
                     <bordersize>4</bordersize>
-                    <texture diffuse="images/Diffuse.png">$VAR[Locandine]</texture>
+                    <texture diffuse="images/Diffuse.png">$VAR[locandine]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="group" description="albums_infos">
@@ -569,7 +569,7 @@
                     <centertop>380</centertop>
                     <height>440</height>
                     <width>440</width>
-                    <texture>$VAR[Locandine]</texture>
+                    <texture>$VAR[locandine]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
             </control>
