@@ -34,7 +34,7 @@
                         <width>348</width>
                         <height>135</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Art(clearlogo)]</texture>
+                        <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
                     </control>
                     <control type="image">
                         <left>-6</left>
@@ -81,7 +81,7 @@
                         <width>348</width>
                         <height>135</height>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Art(clearlogo)]</texture>
+                        <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
                     </control>
                     <control type="image">
                         <left>-6</left>

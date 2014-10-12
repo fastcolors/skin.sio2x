@@ -12,7 +12,7 @@
             <thumb>icons/movies.png</thumb>
             <label>342</label>
             <property name="color">icons/lightblue.png</property>
-            <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp", return)</onclick>
+            <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp",return)</onclick>
             <onclick condition="Library.HasContent(Movies) + !Skin.HasSetting(no3d)">ActivateWindow(Videos,MovieTitles,return)</onclick>
             <onclick condition="!Library.HasContent(Movies) + !=Skin.HasSetting(no3d)">ActivateWindow(Videos,root)</onclick>
         </item>

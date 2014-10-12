@@ -118,6 +118,13 @@
                     <altlabel>13353</altlabel>
                     <usealttexture>library.isscanningvideo</usealttexture>
                 </control>
+                <!--todo label-->
+                <control type="button" id="598">
+                    <visible>Container.Content(movies)</visible>
+                    <include>DialogButt</include>
+                    <label>ARTWORKTEST</label>
+                    <onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, silent=true, clearlogo,discart)</onclick>
+                </control>
                 <control type="button" id="599">
                     <enable>false</enable>
                     <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
