@@ -55,7 +55,7 @@
         <value condition="Window.IsActive(DialogSongInfo.xml) + container.content(songs)">$LOCALIZE[658]</value>
         <value condition="Window.IsActive(DialogAddonInfo.xml)">$LOCALIZE[24003]</value>
         <value condition="Window.IsActive(MyPics.xml)">$LOCALIZE[1]</value>
-        <value condition="Window.IsActive(1717)">$LOCALIZE[31069]</value>
+        <value condition="Window.IsActive(1717)">$ADDON[service.clean.up 32009]</value>
         <value condition="IsEmpty(Container.FolderName)">$INFO[System.CurrentWindow]</value>
         <value>$INFO[Container.FolderName]</value>
     </variable>

@@ -340,17 +340,17 @@
                 </control>
             </control>
         </control>
-        <control type="label">
-            <description>IP ADDRESS</description>
-            <right>90</right>
-            <top>1060</top>
-            <width>130</width>
-            <height>20</height>
-            <font>XS</font>
-            <textcolor>lightblue</textcolor>
-            <align>right</align>
-            <info>Network.IPAddress</info>
-        </control>
+        <!--<control type="label">-->
+            <!--<description>IP ADDRESS</description>-->
+            <!--<right>90</right>-->
+            <!--<top>1060</top>-->
+            <!--<width>130</width>-->
+            <!--<height>20</height>-->
+            <!--<font>XS</font>-->
+            <!--<textcolor>lightblue</textcolor>-->
+            <!--<align>right</align>-->
+            <!--<info>Network.IPAddress</info>-->
+        <!--</control>-->
         <control type="label">
             <description>SKIN VERSION</description>
             <right>10</right>

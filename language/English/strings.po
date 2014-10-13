@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: SiO2x
 # Addon id: skin.SiO2x
-# Addon version: 2.0.0
+# Addon version: 3.0.5
 # Addon Provider: FastColors
 # Translators:
 msgid ""
@@ -120,12 +120,12 @@ msgid "Playlist Options"
 msgstr "Playlist Options"
 
 msgctxt "#31026"
-msgid "Arial based"
-msgstr "Arial based"
+msgid "x"
+msgstr "x"
 
 msgctxt "#31027"
-msgid "Last Added"
-msgstr "Last Added"
+msgid "x"
+msgstr "x"
 
 msgctxt "#31028"
 msgid "Custom Background"
@@ -275,93 +275,17 @@ msgctxt "#31064"
 msgid "Fullscreen"
 msgstr "Fullscreen"
 
-msgctxt "#31065"
-msgid "Delete Cache"
-msgstr "Delete Cache"
-
-msgctxt "#31066"
-msgid "Delete Thumbnails"
-msgstr "Delete Thumbnails"
-
-msgctxt "#31067"
-msgid "Remove Downloaded Zip Packages"
-msgstr "Remove Downloaded Zip Packages"
-
-msgctxt "#31068"
-msgid "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors."
-msgstr "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors."
-
-msgctxt "#31069"
-msgid "Maintenance Tools"
-msgstr "Maintenance Tools"
-
-msgctxt "#31070"
-msgid "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS."
-msgstr "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS."
-
-msgctxt "#31071"
-msgid "Delete MetaHandler Cache"
-msgstr "Delete MetaHandler Cache"
-
-msgctxt "#31072"
-msgid "All Done, Please Restart XBMC"
-msgstr "All Done, Please Restart XBMC"
-
-msgctxt "#31073"
-msgid "All Done."
-msgstr "All Done."
-
-msgctxt "#31074"
-msgid "Are You Sure?"
-msgstr "Are You Sure?"
-
-msgctxt "#31075"
-msgid "Remove cache.db for XBMC and most Addons"
-msgstr "Remove cache.db for XBMC and most Addons"
-
-msgctxt "#31076"
-msgid "Remove Corrupted Metadata"
-msgstr "Remove Corrupted Metadata"
-
 msgctxt "#31077"
 msgid "Settings for the handling of your media library, the playback of your videos, subtitles and software controlled video hardware"
 msgstr "Settings for the handling of your media library, the playback of your videos, subtitles and software controlled video hardware"
-
-msgctxt "#31078"
-msgid "restart XBMC for changes to take effect"
-msgstr "restart XBMC for changes to take effect"
 
 msgctxt "#31079"
 msgid "Change the look and feel of the XBMC interface, or change the skin alltogheter"
 msgstr "Change the look and feel of the XBMC interface, or change the skin alltogheter"
 
-msgctxt "#31080"
-msgid "Delete AdvancedSettings"
-msgstr "Delete AdvancedSettings"
-
-msgctxt "#31081"
-msgid "Remove Addons"
-msgstr "Remove Addons"
-
 msgctxt "#31082"
 msgid "Video Guides"
 msgstr "Video Guides"
-
-msgctxt "#31083"
-msgid "Maintenance"
-msgstr "Maintenance"
-
-msgctxt "#31084"
-msgid "Remove Video Database"
-msgstr "Remove Video Database"
-
-msgctxt "#31085"
-msgid "Remove Music Database"
-msgstr "Remove Music Database"
-
-msgctxt "#31086"
-msgid "This option will activate a popup when selecting a movie from shelf, giving the opportunity to use the Cinema Experience Addon.[CR]Notice that with this option activated, in case You choose not to play through Cinema Experience, the Movie will automatically resume from last stop point. (if previuosly started)"
-msgstr "This option will activate a popup when selecting a movie from shelf, giving the opportunity to use the Cinema Experience Addon.[CR]Notice that with this option activated, in case You choose not to play through Cinema Experience, the Movie will automatically resume from last stop point. (if previuosly started)"
 
 msgctxt "#31087"
 msgid "Percent Played"

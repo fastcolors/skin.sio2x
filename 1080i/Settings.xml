@@ -113,7 +113,7 @@
                     </item>
                     <item id="7" description="Maintenance">
                         <visible>System.HasAddon(service.clean.up)</visible>
-                        <label>31069</label>
+                        <label>$ADDON[service.clean.up 32009]</label>
                         <onclick>ActivateWindow(1717)</onclick>
                     </item>
                     <item id="16">

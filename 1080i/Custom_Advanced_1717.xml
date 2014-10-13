@@ -46,7 +46,6 @@
                     <include>SmallSelector</include>
                     <control type="label" description="Main Label">
                         <textcolor>black</textcolor>
-
                         <include>52MainLabel</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -77,27 +76,27 @@
                       <icon>DefaultIconWarning.png</icon>
                     </item-->
                     <item id="2" description="Thumbnails">
-                        <label>31066</label>
+                        <label>$ADDON[service.clean.up 32001]</label>
                         <onclick>RunScript(service.clean.up,thumbs)</onclick>
                         <icon>DefaultIconWarning.png</icon>
                     </item>
                     <item id="3" description="packages">
-                        <label>31067</label>
+                        <label>$ADDON[service.clean.up 32002]</label>
                         <onclick>RunScript(service.clean.up,packages)</onclick>
                         <icon>DefaultIconWarning.png</icon>
                     </item>
                     <item id="6" description="advanced settings">
-                        <label>31080</label>
+                        <label>$ADDON[service.clean.up 32003]</label>
                         <onclick>RunScript(service.clean.up,advanced)</onclick>
                         <icon>DefaultIconWarning.png</icon>
                     </item>
                     <item id="8" description="videodb">
-                        <label>31084</label>
+                        <label>$ADDON[service.clean.up 32004]</label>
                         <onclick>RunScript(service.clean.up,videodb)</onclick>
                         <icon>DefaultIconWarning.png</icon>
                     </item>
                     <item id="9" description="Musicdb">
-                        <label>31085</label>
+                        <label>$ADDON[service.clean.up 32005]</label>
                         <onclick>RunScript(service.clean.up,musicdb)</onclick>
                         <icon>DefaultIconWarning.png</icon>
                     </item>
@@ -131,7 +130,7 @@
             <height>480</height>
             <font>size28</font>
             <align>justify</align>
-            <label>31070</label>
+            <label>$ADDON[service.clean.up 32006]</label>
         </control>
     </controls>
 </window>

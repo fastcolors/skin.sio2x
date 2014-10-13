@@ -16,8 +16,10 @@
                     <top>170</top>
                     <width>495</width>
                     <height>495</height>
-                    <aspectratio align="right" aligny="top">keep</aspectratio>
+                    <aspectratio align="right">keep</aspectratio>
                     <texture fallback="DefaultAddon.png">$INFO[ListItem.Thumb]</texture>
+                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordersize>4</bordersize>
                 </control>
             </control>
             <control type="group" description="top">
@@ -88,7 +90,7 @@
             <texture colordiffuse="white">images/BlackT.png</texture>
         </control>
         <control type="image" description="Line bott">
-            <top>1002</top>
+            <top>1007</top>
             <width>1920</width>
             <height>1</height>
             <aspectratio>stretch</aspectratio>
@@ -96,41 +98,48 @@
         </control>
         <control type="group" description="Options">
             <control type="grouplist" id="300">
-                <top>1002</top>
+                <top>1008</top>
                 <width>auto</width>
                 <align>center</align>
                 <height>72</height>
                 <itemgap>9</itemgap>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
-                <onup></onup>
+                <onup>noop</onup>
                 <ondown>9001</ondown>
                 <orientation>horizontal</orientation>
-                <control type="button" id="6" description="Install">
+                <control type="button" id="6" description="Install/Uninstall">
+                    <font>Size30</font>
                     <label>24038</label>
                     <width>250</width>
                 </control>
                 <control type="button" id="7" description="Disable">
+                    <font>Size30</font>
                     <label>24021</label>
                     <width>250</width>
                 </control>
                 <control type="button" id="8" description="update">
+                    <font>Size30</font>
                     <label>24069</label>
                     <width>250</width>
                 </control>
                 <control type="button" id="9" description="settings">
+                    <font>Size30</font>
                     <label>5</label>
-                    <width>250</width>
+                    <width>300</width>
                 </control>
                 <control type="button" id="10" description="changelog">
+                    <font>Size30</font>
                     <label>24054</label>
                     <width>250</width>
                 </control>
                 <control type="button" id="11" description="rollback">
+                    <font>Size30</font>
                     <label>$LOCALIZE[24048]</label>
                     <width>250</width>
                 </control>
                 <control type="button" id="12" description="run">
+                    <font>Size30</font>
                     <label>335</label>
                     <width>250</width>
                 </control>
