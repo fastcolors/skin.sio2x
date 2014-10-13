@@ -172,8 +172,8 @@ msgid "min"
 msgstr "min"
 
 msgctxt "#31039"
-msgid "Enable or disable the icon for network connection and battery percentage info (only shown if battery lower than 20%"
-msgstr "Enable or disable the icon for network connection and battery percentage info (only shown if battery lower than 20%"
+msgid "Enable or disable the icon for network connection and battery percentage info (only shown if battery lower than 20%)"
+msgstr "Enable or disable the icon for network connection and battery percentage info (only shown if battery lower than 20%)"
 
 msgctxt "#31040"
 msgid "Shelf items"
@@ -276,12 +276,12 @@ msgid "Fullscreen"
 msgstr "Fullscreen"
 
 msgctxt "#31077"
-msgid "Settings for the handling of your media library, the playback of your videos, subtitles and software controlled video hardware"
-msgstr "Settings for the handling of your media library, the playback of your videos, subtitles and software controlled video hardware"
+msgid "Settings for the handling of your Video library, playback, subtitles, rendering and hardware acceleration"
+msgstr "Settings for the handling of your Video library, playback, subtitles, rendering and hardware acceleration"
 
 msgctxt "#31079"
-msgid "Change the look and feel of the XBMC interface, or change the skin alltogheter"
-msgstr "Change the look and feel of the XBMC interface, or change the skin alltogheter"
+msgid "Change the look and feel of the XBMC interface"
+msgstr "Change the look and feel of the XBMC interface"
 
 msgctxt "#31082"
 msgid "Video Guides"
@@ -346,10 +346,6 @@ msgstr "Don't Show Anymore"
 msgctxt "#31416"
 msgid "Show Again"
 msgstr "Show Again"
-
-msgctxt "#31417"
-msgid "VideoGuides"
-msgstr "VideoGuides"
 
 msgctxt "#31418"
 msgid "Opens a list of video files made to help,but also to learn how to maximize Your SiO2-X experience"

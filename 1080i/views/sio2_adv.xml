@@ -25,7 +25,7 @@
                 <pagecontrol>60</pagecontrol>
                 <viewtype label="Sio2View">Sio2View</viewtype>
                 <focusposition>2</focusposition>
-                <movement>5</movement>
+                <movement>4</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime>250</scrolltime>
                 <itemlayout height="135">

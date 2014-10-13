@@ -117,7 +117,7 @@
                         <onclick>ActivateWindow(1717)</onclick>
                     </item>
                     <item id="16">
-                        <label>$LOCALIZE[31417]</label>
+                        <label>$LOCALIZE[31082]</label>
                         <onclick>ActivateWindow(1111)</onclick>
                     </item>
                 </content>
