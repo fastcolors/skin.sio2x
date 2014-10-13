@@ -108,13 +108,10 @@
                 </content>
             </control>
         </control>
-        <control type="group" description="Left panel">
-            <posx>270</posx>
+        <control type="image" description="reset">
             <top>60</top>
-            <control type="image" description="reset">
-                <include>Help_Panel</include>
-                <texture>help/Warning.png</texture>
-            </control>
+            <include>Help_Panel</include>
+            <texture>help/Warning.png</texture>
         </control>
         <control type="image" description="Line">
             <posx>150</posx>

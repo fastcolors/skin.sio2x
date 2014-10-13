@@ -113,7 +113,6 @@
         <value condition="Controlgroup(575).HasFocus(4)">$LOCALIZE[31086]</value>
         <value condition="Controlgroup(575).HasFocus(5)">$LOCALIZE[31008]</value>
         <value condition="Controlgroup(575).HasFocus(6)">$LOCALIZE[31046]</value>
-        <!--<value condition="Controlgroup(575).HasFocus(7)"></value>-->
         <value condition="Controlgroup(575).HasFocus(8)">$LOCALIZE[31022]</value>
         <value condition="Controlgroup(575).HasFocus(9)">$LOCALIZE[31019]</value>
         <value condition="Controlgroup(575).HasFocus(10)">$LOCALIZE[31003]</value>
@@ -131,6 +130,7 @@
         <value condition="Container(575).HasFocus(3)">$LOCALIZE[31077]</value>
         <value condition="Container(575).HasFocus(4)">$LOCALIZE[31063]</value>
         <value condition="Container(575).HasFocus(5)">$LOCALIZE[31091]</value>
+        <value condition="Container(575).HasFocus(7)">$ADDON[service.clean.up 32010]</value>
         <value condition="Container(575).HasFocus(8)">$LOCALIZE[31092]</value>
         <value condition="Container(575).HasFocus(9)">$LOCALIZE[31093]</value>
         <value condition="Container(575).HasFocus(10)">$LOCALIZE[31094]</value>

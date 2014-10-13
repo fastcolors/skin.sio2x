@@ -123,19 +123,16 @@
                 <texture colordiffuse="black">help/wireless.png</texture>
             </control>
             <control type="image" description="NetworkOFF">
-
                 <visible>Controlgroup(575).HasFocus(13) + Skin.HasSetting(hideconnection)</visible>
                 <include>Help_Panel</include>
                 <texture>help/off.png</texture>
             </control>
             <control type="image" description="ColorMenu">
-
                 <visible>Controlgroup(575).HasFocus(5) + !Skin.HasSetting(colormenu)</visible>
                 <include>Help_Panel</include>
                 <texture>icons/DarkOrange.png</texture>
             </control>
             <control type="image" description="ColorMenuOff">
-
                 <visible>Controlgroup(575).HasFocus(5) + Skin.HasSetting(colormenu)</visible>
                 <include>Help_Panel</include>
                 <texture>icons/base.png</texture>
