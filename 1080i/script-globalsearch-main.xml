@@ -11,7 +11,6 @@
         <effect type="fade" start="100" end="0" time="300" />
     </animation>
     <controls>
-
         <control type="group" id="100">
             <include>BlackBackground</include>
             <control type="image">
@@ -182,7 +181,7 @@
                         <onleft>111</onleft>
                         <onright>111</onright>
                         <onup>198</onup>
-                        <ondown>121</ondown>
+                        <ondown>211</ondown>
                         <orientation>horizontal</orientation>
                         <viewtype label="535">list</viewtype>
                         <preloaditems>2</preloaditems>
@@ -378,6 +377,235 @@
                         </control>
                     </control>
                 </control>
+                 <!--ACTORS-->
+                <control type="group" id="219">
+                    <width>1920</width>
+                    <height>306</height>
+                    <control type="image">
+                        <top>40</top>
+                        <width>1920</width>
+                        <height>250</height>
+                        <texture border="2">images/white.png</texture>
+                        <colordiffuse>searchband</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <top>40</top>
+                        <width>1920</width>
+                        <height>1</height>
+                        <texture>images/lineL.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <top>290</top>
+                        <width>1920</width>
+                        <height>1</height>
+                        <texture>images/lineR.png</texture>
+                    </control>
+                    <control type="list" id="211">
+                        <posx>60</posx>
+                        <top>40</top>
+                        <width>1800</width>
+                        <height>250</height>
+                        <onleft>211</onleft>
+                        <onright>211</onright>
+                        <onup>111</onup>
+                        <ondown>121</ondown>
+                        <orientation>horizontal</orientation>
+                        <viewtype label="535">list</viewtype>
+                        <preloaditems>2</preloaditems>
+                        <itemlayout width="600" height="250">
+                            <control type="image">
+                                <posx>10</posx>
+                                <top>10</top>
+                                <width>150</width>
+                                <height>230</height>
+                                <texture background="true">$INFO[ListItem.Icon]</texture>
+                            </control>
+                            <control type="image">
+                                <posx>6</posx>
+                                <top>214</top>
+                                <width>30</width>
+                                <height>30</height>
+                                <texture>OverlayUnwatched.png</texture>
+                                <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                            </control>
+                            <control type="label">
+                                <posx>170</posx>
+                                <top>10</top>
+                                <width>410</width>
+                                <height>12</height>
+                                <scroll>false</scroll>
+                                <label>[B]$INFO[ListItem.Label][/B]</label>
+                                <font>size22</font>
+                                <aligny>center</aligny>
+                            </control>
+                            <control type="label">
+                                <posx>170</posx>
+                                <top>40</top>
+                                <width>410</width>
+                                <height>12</height>
+                                <label>$INFO[ListItem.Property(Year),, - ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
+                                <font>size20</font>
+                                <aligny>center</aligny>
+                                <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                            </control>
+                            <control type="label">
+                                <posx>170</posx>
+                                <top>40</top>
+                                <width>410</width>
+                                <height>12</height>
+                                <label>$INFO[ListItem.Property(Year),, - ]$INFO[ListItem.Property(Duration)]</label>
+                                <font>size21</font>
+                                <aligny>center</aligny>
+                                <visible>SubString(ListItem.Property(Duration),min)</visible>
+                            </control>
+                            <control type="textbox">
+                                <autoscroll>false</autoscroll>
+                                <posx>170</posx>
+                                <top>60</top>
+                                <width>410</width>
+                                <height>170</height>
+                                <label>$INFO[ListItem.Property(Tagline)]</label>
+                                <font>size21</font>
+                                <align>justify</align>
+                            </control>
+                            <control type="textbox">
+                                <visible>IsEmpty(ListItem.Property(TagLine))</visible>
+                                <autoscroll>false</autoscroll>
+                                <posx>170</posx>
+                                <top>60</top>
+                                <width>410</width>
+                                <height>170</height>
+                                <label>$INFO[ListItem.Property(PlotOutline)]</label>
+                                <font>size21</font>
+                                <align>justify</align>
+                            </control>
+                            <control type="textbox">
+                                <visible>IsEmpty(ListItem.Property(TagLine)) + IsEmpty(ListItem.Property(PlotOutline))</visible>
+                                <autoscroll>false</autoscroll>
+                                <posx>170</posx>
+                                <top>60</top>
+                                <width>410</width>
+                                <height>170</height>
+                                <label>$INFO[ListItem.Property(Plot)]</label>
+                                <font>size21</font>
+                                <align>justify</align>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout width="600" height="250">
+                            <control type="image">
+                                <width>600</width>
+                                <height>250</height>
+                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
+                                <visible>Control.HasFocus(211)</visible>
+                            </control>
+                            <control type="image">
+                                <posx>10</posx>
+                                <top>10</top>
+                                <width>150</width>
+                                <height>230</height>
+                                <texture background="true">$INFO[ListItem.Icon]</texture>
+                            </control>
+                            <control type="image">
+                                <posx>6</posx>
+                                <top>214</top>
+                                <width>30</width>
+                                <height>30</height>
+                                <texture>OverlayUnwatched.png</texture>
+                                <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                            </control>
+                            <control type="label">
+                                <posx>170</posx>
+                                <top>10</top>
+                                <width>410</width>
+                                <height>12</height>
+                                <scroll>false</scroll>
+                                <label>[B]$INFO[ListItem.Label][/B]</label>
+                                <font>size22</font>
+                                <aligny>center</aligny>
+                            </control>
+                            <control type="label">
+                                <posx>170</posx>
+                                <top>40</top>
+                                <width>410</width>
+                                <height>12</height>
+                                <label>$INFO[ListItem.Property(Year),, - ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
+                                <font>size20</font>
+                                <aligny>center</aligny>
+                                <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                            </control>
+                            <control type="label">
+                                <posx>170</posx>
+                                <top>40</top>
+                                <width>410</width>
+                                <height>12</height>
+                                <label>$INFO[ListItem.Property(Year),, - ]$INFO[ListItem.Property(Duration)]</label>
+                                <font>size21</font>
+                                <aligny>center</aligny>
+                                <visible>SubString(ListItem.Property(Duration),min)</visible>
+                            </control>
+                            <control type="textbox">
+                                <autoscroll>false</autoscroll>
+                                <posx>170</posx>
+                                <top>60</top>
+                                <width>410</width>
+                                <height>170</height>
+                                <label>$INFO[ListItem.Property(Tagline)]</label>
+                                <font>size21</font>
+                                <align>justify</align>
+                            </control>
+                            <control type="textbox">
+                                <autoscroll>false</autoscroll>
+                                <posx>170</posx>
+                                <top>60</top>
+                                <width>410</width>
+                                <height>170</height>
+                                <label>$INFO[ListItem.Property(PlotOutline)]</label>
+                                <font>size21</font>
+                                <visible>IsEmpty(ListItem.Property(TagLine))</visible>
+                                <align>justify</align>
+                            </control>
+                            <control type="textbox">
+                                <autoscroll>false</autoscroll>
+                                <posx>170</posx>
+                                <top>60</top>
+                                <width>410</width>
+                                <height>170</height>
+                                <label>$INFO[ListItem.Property(Plot)]</label>
+                                <font>size21</font>
+                                <align>justify</align>
+                                <visible>IsEmpty(ListItem.Property(TagLine)) + IsEmpty(ListItem.Property(PlotOutline))</visible>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                    <control type="group">
+                        <posx>100</posx>
+                        <control type="label">
+                            <posx>100</posx>
+                            <width min="10" max="700">auto</width>
+                            <height>42</height>
+                            <font>size42</font>
+                            <label>[B]$LOCALIZE[342][/B]</label>
+                            <font>size28</font>
+                        </control>
+                        <control type="image">
+                            <height>55</height>
+                            <width>100</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>badges/Badgecount.png</texture>
+                        </control>
+                        <control type="label" id="210">
+                            <height>44</height>
+                            <width>100</width>
+                            <font>size30</font>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>-</label>
+                        </control>
+                    </control>
+                </control>
                 <!--TVSHOWS-->
                 <control type="group" id="129">
                     <width>1920</width>
@@ -410,7 +638,7 @@
                         <height>250</height>
                         <onleft>121</onleft>
                         <onright>121</onright>
-                        <onup>111</onup>
+                        <onup>211</onup>
                         <ondown>131</ondown>
                         <orientation>horizontal</orientation>
                         <viewtype label="535">list</viewtype>

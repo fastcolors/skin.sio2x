@@ -57,12 +57,19 @@
                     <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
                     <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
                 </control>
-                <control type="radiobutton" id="98" description="Filter">
-                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                <!--<control type="button" id="19">-->
+                <!--<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>-->
+                <!--<description>Filter</description>-->
+                <!--<include>DialogButt</include>-->
+                <!--<label>587</label>-->
+                <!--</control>-->
+                <control type="radiobutton" id="98">
                     <enable>Container.CanFilterAdvanced</enable>
                     <include>DialogButt</include>
-                    <onclick>Filter</onclick>
                     <label>587</label>
+                    <selected>Container.Filtered</selected>
+                    <onclick>left</onclick>
+                    <onclick>Filter</onclick>
                 </control>
                 <control type="button" id="3" description="Sort">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -77,20 +84,18 @@
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
                 <control type="button" id="8" description="search">
+                    <visible>!System.HasAddon(script.globalsearch)</visible>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <include>DialogButt</include>
                     <label>137</label>
                 </control>
-                <!--todo fix file browsing-->
-                <!--<control type="radiobutton" id="698" description="Browse files">-->
-                <!--<texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>-->
-                <!--<include>DialogButt</include>-->
-                <!--<label>$LOCALIZE[1024] $LOCALIZE[744]</label>-->
-                <!--<selected>Container.Content(files)</selected>-->
-                <!--<onclick>close</onclick>-->
-                <!--<onclick>ReplaceWindow(Videos,files)</onclick>-->
-                <!--&lt;!&ndash;<altclick>ReplaceWindow(Videos,MovieTitles,return)</altclick>&ndash;&gt;-->
-                <!--</control>-->
+                <control type="button" id="90" description="search">
+                    <visible>System.HasAddon(script.globalsearch)</visible>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <onclick>RunAddon(script.globalsearch)</onclick>
+                    <label>137</label>
+                </control>
                 <control type="button" id="1501">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <include>DialogButt</include>
@@ -122,8 +127,9 @@
                 <control type="button" id="598">
                     <visible>Container.Content(movies)</visible>
                     <include>DialogButt</include>
-                    <label>ARTWORKTEST</label>
+                    <label>$LOCALIZE[31026]</label>
                     <onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, silent=true, clearlogo,discart)</onclick>
+                    <onclick>left</onclick>
                 </control>
                 <control type="button" id="599">
                     <enable>false</enable>
@@ -146,7 +152,7 @@
                     <onclick>Container.SetViewMode(54)</onclick>
                     <!--<onclick condition="!Skin.HasSetting(splashoff)">ActivateWindow(1113)</onclick>-->
                     <onclick>ActivateWindow(1113)</onclick>
-                    <onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, silent=true, clearlogo,discart)</onclick>
+                    <!--<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, silent=true, clearlogo,discart)</onclick>-->
                     <selected>Control.IsVisible(54)</selected>
                     <label>SiO2-X View</label>
                 </control>

@@ -49,17 +49,18 @@
                     <altlabel>585</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
+                <control type="button" id="8" description="search">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>137</label>
+                    <onclick>left</onclick>
+                </control>
                 <control type="togglebutton" id="16" description="PartyMode">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
                     <include>DialogButt</include>
                     <label>$LOCALIZE[589]: $LOCALIZE[1223]</label>
                     <altlabel>$LOCALIZE[589]: $LOCALIZE[305]</altlabel>
-                </control>
-                <control type="button" id="8" description="Search">
-                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
-                    <include>DialogButt</include>
-                    <label>137</label>
                 </control>
                 <control type="button" id="698" description="Files">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
