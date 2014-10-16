@@ -120,8 +120,8 @@ msgid "Playlist Options"
 msgstr "Playlist Options"
 
 msgctxt "#31026"
-msgid "Get Artwork - sio2x view"
-msgstr "Get Artwork - sio2x view"
+msgid "Get Extra Artwork"
+msgstr "Get Extra Artwork"
 
 msgctxt "#31027"
 msgid "x"

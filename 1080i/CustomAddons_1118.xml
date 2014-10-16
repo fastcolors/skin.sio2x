@@ -32,7 +32,8 @@
                     <include>DialogButt</include>
                     <label>1043</label>
                     <onclick>Close</onclick>
-                    <onclick>ActivateWindow(Programs,Addons,return)</onclick>
+                    <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+                    <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
                 </control>
                 <control type="button" id="800">
                     <include>DialogButt</include>

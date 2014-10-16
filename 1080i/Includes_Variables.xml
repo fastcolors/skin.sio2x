@@ -324,4 +324,5 @@
         <value condition="StringCompare(Skin.String(shutdown),reboot)">icons/reboot.png</value>
         <value>icons/quits.png</value>
     </variable>
+
 </includes>
