@@ -344,8 +344,8 @@ msgid "Don't Show Anymore"
 msgstr "Don't Show Anymore"
 
 msgctxt "#31416"
-msgid "Show Again"
-msgstr "Show Again"
+msgid "Show Again next time"
+msgstr "Show Again next time"
 
 msgctxt "#31418"
 msgid "Opens a list of video files made to help,but also to learn how to maximize Your SiO2-X experience"

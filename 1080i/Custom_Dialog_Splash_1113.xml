@@ -51,8 +51,9 @@
             <top>300</top>
             <width>1400</width>
             <height>515</height>
-            <align>justify</align>
-            <label>$LOCALIZE[31414]</label>
+            <font>Size33</font>
+            <align>center</align>
+            <label>IN ORDER TO FULLY ENJOY THIS VIEW DOWNLOAD ADDON "ARTWORK DOWNOLADER" FROM OFFICIAL REPO AND SCAN LOGO AND CDART INTO LIBRARY.</label>
         </control>
         <control type="grouplist">
             <centerleft>960</centerleft>
