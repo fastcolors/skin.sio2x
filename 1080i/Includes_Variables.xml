@@ -178,6 +178,12 @@
         <value>special://skin/backgrounds/light_texture.jpg</value>
     </variable>
 
+    <variable name="background_diffuse">
+        <value condition="[!Window.IsActive(Home.xml) + Skin.HasTheme(White)] | !IsEmpty(ListItem.Art(fanart)) | Window.IsActive(5533)">33FFFFFF</value>
+        <value condition="Window.IsActive(Home.xml) + Skin.HasTheme(White) + IsEmpty(Skin.String(CustomBgHome))">88FFFFFF</value>
+        <value>FFFFFFFF</value>
+    </variable>
+
     <variable name="filebrowserthumb">
         <value condition="SubString(Control.GetLabel(412),jpg) | SubString(Control.GetLabel(412),png)">$INFO[Control.GetLabel(412)]</value>
         <value>$INFO[ListItem.Icon]</value>

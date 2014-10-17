@@ -25,56 +25,40 @@
     </include>
     <include name="BlackBackground">
         <control type="group">
+            <!--<control type="image" description="Default BG">-->
+            <!--<left>0</left>-->
+            <!--<top>0</top>-->
+            <!--<width>1920</width>-->
+            <!--<height>1080</height>-->
+            <!--<texture>images/white.png</texture>-->
+            <!--<colordiffuse>white</colordiffuse>-->
+            <!--</control>-->
             <control type="image" description="Default BG">
-                <left>0</left>
-                <top>0</top>
-                <width>1920</width>
-                <height>1080</height>
-                <texture>images/white.png</texture>
-                <colordiffuse>white</colordiffuse>
-            </control>
-            <control type="image" description="Default BG">
-                <visible>Skin.HasTheme(Black) + IsEmpty(ListItem.Art(fanart))</visible>
-                <left>0</left>
-                <top>0</top>
+                <!--<visible>!Skin.HasTheme(White) + IsEmpty(ListItem.Art(fanart))</visible>-->
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
-                <texture background="true">$VAR[bgimg]</texture>
+                <texture background="true" colordiffuse="$VAR[background_diffuse]">$VAR[bgimg]</texture>
                 <aspectratio align="left">scale</aspectratio>
-                <colordiffuse>BBFFFFFF</colordiffuse>
+                <!--<colordiffuse>BBFFFFFF</colordiffuse>-->
             </control>
-            <control type="image" description="Default BG">
-                <visible>!Window.IsActive(Home.xml) + !Skin.HasTheme(Black)</visible>
-                <left>0</left>
-                <top>0</top>
-                <width>1920</width>
-                <height>1080</height>
-                <fadetime>200</fadetime>
-                <texture background="true">$VAR[bgimg]</texture>
-                <aspectratio align="left">scale</aspectratio>
-                <colordiffuse>33FFFFFF</colordiffuse>
-            </control>
-            <control type="image" description="Default BG">
-                <visible>Window.IsActive(Home.xml) + !Skin.HasTheme(Black)</visible>
-                <left>0</left>
-                <top>0</top>
-                <width>1920</width>
-                <height>1080</height>
-                <fadetime>200</fadetime>
-                <texture background="true">$VAR[bgimg]</texture>
-                <colordiffuse>77FFFFFF</colordiffuse>
-            </control>
-            <control type="image" description="Default BG">
-                <visible>Skin.HasTheme(Black) + !IsEmpty(ListItem.Art(fanart))</visible>
-                <left>0</left>
-                <top>0</top>
-                <width>1920</width>
-                <height>1080</height>
-                <fadetime>200</fadetime>
-                <texture background="true">$VAR[bgimg]</texture>
-                <colordiffuse>55FFFFFF</colordiffuse>
-            </control>
+            <!--<control type="image" description="Default BG">-->
+            <!--<visible>[!Window.IsActive(Home.xml) + Skin.HasTheme(White)] | !IsEmpty(ListItem.Art(fanart)) | Window.IsActive(5533)</visible>-->
+            <!--<width>1920</width>-->
+            <!--<height>1080</height>-->
+            <!--<fadetime>200</fadetime>-->
+            <!--<texture background="true">$VAR[bgimg]</texture>-->
+            <!--<aspectratio align="left">scale</aspectratio>-->
+            <!--<colordiffuse>33FFFFFF</colordiffuse>-->
+            <!--</control>-->
+            <!--<control type="image" description="Default BG">-->
+            <!--<visible>Window.IsActive(Home.xml) + Skin.HasTheme(White)</visible>-->
+            <!--<width>1920</width>-->
+            <!--<height>1080</height>-->
+            <!--<fadetime>200</fadetime>-->
+            <!--<texture background="true">$VAR[bgimg]</texture>-->
+            <!--<colordiffuse>77FFFFFF</colordiffuse>-->
+            <!--</control>-->
         </control>
     </include>
     <include name="OpenClose">
