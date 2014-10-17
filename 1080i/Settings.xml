@@ -112,6 +112,7 @@
                         <onclick>activatewindow(systeminfo)</onclick>
                     </item>
                     <item id="7" description="Maintenance">
+                        <visible>!System.HasAddon(service.openelec.settings)</visible>
                         <visible>System.HasAddon(service.clean.up)</visible>
                         <label>$ADDON[service.clean.up 32009]</label>
                         <onclick>ActivateWindow(1717)</onclick>
