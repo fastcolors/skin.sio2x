@@ -56,7 +56,7 @@
                 <orientation>vertical</orientation>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
                 <itemlayout height="220" width="300">
-                    <control type="image" description="THMBSBASE">
+                    <control type="image" description="Always Colored Base">
                         <visible>Skin.HasSetting(colormenu)</visible>
                         <centerleft>150</centerleft>
                         <centertop>110</centertop>
@@ -64,7 +64,7 @@
                         <height>168</height>
                         <texture>icons/base.png</texture>
                     </control>
-                    <control type="image" description="THMBSBASECOLOR">
+                    <control type="image" description="Gray Base">
                         <visible>!Skin.HasSetting(colormenu)</visible>
                         <centerleft>150</centerleft>
                         <centertop>110</centertop>
@@ -72,7 +72,7 @@
                         <height>168</height>
                         <texture>$INFO[ListItem.Property(color)]</texture>
                     </control>
-                    <control type="image" description="THMBSICONS">
+                    <control type="image" description="Thumb">
                         <visible>!IsEmpty(Listitem.thumb)</visible>
                         <centerleft>150</centerleft>
                         <centertop>110</centertop>
@@ -80,7 +80,7 @@
                         <height>168</height>
                         <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                     </control>
-                    <control type="image" description="THMBSICONS">
+                    <control type="image" description="Thumb">
                         <visible>IsEmpty(Listitem.thumb)</visible>
                         <centerleft>150</centerleft>
                         <centertop>110</centertop>
@@ -96,7 +96,7 @@
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
-                    <control type="label" description="LABEL">
+                    <control type="label">
                         <centerleft>150</centerleft>
                         <top>198</top>
                         <width>300</width>
@@ -108,7 +108,7 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="220" width="300">
-                    <control type="image" description="THMBSBASE">
+                    <control type="image" description="Always Colored Base">
                         <visible>!Skin.HasSetting(colormenu)</visible>
                         <centerleft>150</centerleft>
                         <centertop>110</centertop>
@@ -116,15 +116,15 @@
                         <height>168</height>
                         <texture>$INFO[ListItem.Property(color)]</texture>
                     </control>
-                    <control type="image" description="THMBSBASE">
+                    <control type="image" description="Gray Base">
                         <visible>Skin.HasSetting(colormenu)</visible>
                         <centerleft>150</centerleft>
-                        <centertop>132</centertop>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>icons/base.png</texture>
                     </control>
-                    <control type="image" description="THMBSBASE">
+                    <control type="image" description="Coloring Icon">
                         <visible>Skin.HasSetting(colormenu)</visible>
                         <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
                         <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
@@ -134,7 +134,7 @@
                         <height>168</height>
                         <texture>$INFO[ListItem.Property(color)]</texture>
                     </control>
-                    <control type="image" description="THMBSICONS">
+                    <control type="image" description="Thumb">
                         <visible>!IsEmpty(Listitem.thumb)</visible>
                         <centerleft>150</centerleft>
                         <centertop>110</centertop>
@@ -142,7 +142,7 @@
                         <height>168</height>
                         <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                     </control>
-                    <control type="image" description="THMBSICONS">
+                    <control type="image" description="Thumb">
                         <visible>IsEmpty(Listitem.thumb)</visible>
                         <centerleft>150</centerleft>
                         <centertop>110</centertop>
@@ -168,7 +168,7 @@
                         <texture>images/atvslider.png</texture>
                         <colordiffuse>black</colordiffuse>
                     </control>
-                    <control type="label" description="label">
+                    <control type="label">
                         <centerleft>150</centerleft>
                         <top>198</top>
                         <width>300</width>
