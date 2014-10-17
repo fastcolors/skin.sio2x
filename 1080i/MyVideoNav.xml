@@ -123,6 +123,7 @@
                     <label>653</label>
                     <altlabel>13353</altlabel>
                     <usealttexture>library.isscanningvideo</usealttexture>
+                    <onclick>left</onclick>
                 </control>
                 <!--todo label-->
                 <control type="button" id="598">

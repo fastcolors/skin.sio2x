@@ -642,6 +642,7 @@
             <onleft>noop</onleft>
             <onright>SetFocus(312,0)</onright>
             <width>480</width>
+            <onleft>ActivateWindow(1116)</onleft>
             <include>EpisodeShortcutsCommons</include>
             <content target="video" limit="1">videodb://recentlyaddedepisodes/</content>
         </control>
@@ -653,6 +654,7 @@
             <onleft>noop</onleft>
             <onright>SetFocus(312,0)</onright>
             <width>480</width>
+            <onleft>ActivateWindow(1116)</onleft>
             <include>EpisodeShortcutsCommons</include>
             <content target="video" limit="1">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]</content>
         </control>
@@ -663,6 +665,8 @@
             <ondown>9000</ondown>
             <onleft>222</onleft>
             <onright>noop</onright>
+            <onleft>ActivateWindow(1116)</onleft>
+            <onright>ActivateWindow(1116)</onright>
             <include>EpisodeShortcutsCommons</include>
             <content target="video">$VAR[shelfTV]</content>
         </control>
@@ -1464,12 +1468,23 @@
             <control type="label">
                 <right>60</right>
                 <top>430</top>
-                <width>600</width>
+                <width>1500</width>
                 <height>30</height>
                 <font>XS</font>
+                <align>right</align>
                 <textcolor>darkgray</textcolor>
                 <shadowcolor></shadowcolor>
                 <label>HomePage WeatherIcons by MerlinTheRed - http://goo.gl/VLuPi</label>
+            </control>
+            <control type="label">
+                <left>100</left>
+                <top>390</top>
+                <width>1500</width>
+                <height>30</height>
+                <font>XS</font>
+                <textcolor>FF000000</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>$LOCALIZE[24029]: $INFO[Weather.plugin]</label>
             </control>
         </control>
     </include>
