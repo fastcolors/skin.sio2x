@@ -257,7 +257,7 @@
                 <aspectratio aligny="bottom">keep</aspectratio>
                 <texture>$VAR[ShelfLogo]</texture>
             </control>
-        </control>
+
         <control type="group">
             <description>TRAILERS</description>
             <top>360</top>
@@ -287,8 +287,9 @@
                 <onright>Control.Move(311,1)</onright>
                 <onright>311</onright>
                 <onup>9009</onup>
-                <ondown>700</ondown>
+                <ondown>311</ondown>
             </control>
+        </control>
         </control>
         <control type="group" description="Player Info">
             <visible>Player.HasAudio</visible>

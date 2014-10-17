@@ -184,6 +184,7 @@
 
     <variable name="bgimg">
         <value condition="!IsEmpty(Skin.String(CustomBgHome)) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
+        <!--<value condition="!IsEmpty(Container(311).ListItem.Art(fanart)) + ControlGroup(700).HasFocus() + Skin.HasSetting(fanarthome)">$INFO[Container(311).ListItem.Art(fanart)]</value>-->
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="Skin.HasTheme(White)">special://skin/backgrounds/light_texture.jpg</value>
         <value>special://skin/backgrounds/dark_texture.jpg</value>
