@@ -195,25 +195,21 @@
                 <texture>help/clock.png</texture>
             </control>
             <control type="image" description="clock">
-
                 <visible>Controlgroup(575).HasFocus(9) + Skin.HasSetting(HideClock)</visible>
                 <include>Help_Panel</include>
                 <texture>help/off.png</texture>
             </control>
             <control type="image" description="reset">
-
                 <visible>Controlgroup(575).HasFocus(15)</visible>
                 <include>Help_Panel</include>
                 <texture colordiffuse="black">help/warning.png</texture>
             </control>
             <control type="image" description="MUSIC">
-
                 <visible>Controlgroup(575).HasFocus(10)</visible>
                 <include>Help_Panel</include>
                 <texture colordiffuse="black">icons/music.png</texture>
             </control>
             <control type="image" description="custom BKGRND">
-
                 <visible>Controlgroup(575).HasFocus(11)</visible>
                 <include>Help_Panel</include>
                 <bordersize>4</bordersize>
@@ -225,7 +221,7 @@
                 <include>Help_Panel</include>
                 <texture>$VAR[ShelfLogo]</texture>
             </control>
-            <control type="image" description="icon shelf">
+            <control type="image" description="3d">
                 <visible>Controlgroup(575).HasFocus(14)</visible>
                 <include>Help_Panel</include>
                 <texture>icons/3D.png</texture>

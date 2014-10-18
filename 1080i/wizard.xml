@@ -303,7 +303,6 @@
                                 <font>font24_title</font>
                                 <textcolor>blue</textcolor>
                                 <info>ListItem.Label</info>
-
                             </control>
                             <!-- Connection Address -->
                             <control type="label">

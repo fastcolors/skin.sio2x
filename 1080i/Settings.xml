@@ -30,10 +30,10 @@
                 <viewtype label="500">500</viewtype>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
-                <itemlayout width="500" height="75">
+                <itemlayout width="500" height="70">
                     <control type="label" description="Main Label">
                         <left>30</left>
-                        <height>75</height>
+                        <height>70</height>
                         <width>450</width>
                         <aligny>center</aligny>
                         <scroll>false</scroll>
@@ -43,16 +43,16 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="500" height="75">
+                <focusedlayout width="500" height="70">
                     <control type="image">
                         <visible>Control.HasFocus(575)</visible>
                         <width>960</width>
-                        <height>75</height>
+                        <height>70</height>
                         <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
                     </control>
                     <control type="label" description="Main Label">
                         <left>30</left>
-                        <height>75</height>
+                        <height>70</height>
                         <width>450</width>
                         <scroll>false</scroll>
                         <font>size33</font>
@@ -112,8 +112,8 @@
                         <onclick>activatewindow(systeminfo)</onclick>
                     </item>
                     <item id="7" description="Maintenance">
-                        <visible>!System.HasAddon(service.openelec.settings)</visible>
                         <visible>System.HasAddon(service.clean.up)</visible>
+                        <visible>!System.HasAddon(service.openelec.settings)</visible>
                         <label>$ADDON[service.clean.up 32009]</label>
                         <onclick>ActivateWindow(1717)</onclick>
                     </item>

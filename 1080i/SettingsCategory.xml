@@ -93,13 +93,24 @@
             <font>size33</font>
 			<texturefocus flipx="true" colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
 		</control>
-        <control type="scrollbar" id="60">
-            <left>30r</left>
-            <top>90</top>
-            <height>950</height>
-            <onleft>5</onleft>
-            <onright>noop</onright>
-        </control>
+        <control type="group">
+                <top>85</top>
+                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <control type="image">
+                    <left>1912</left>
+                    <height>910</height>
+                    <width>120</width>
+                    <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
+                </control>
+                <control type="scrollbar" id="60">
+                    <left>-37r</left>
+                    <top>30</top>
+                    <height>850</height>
+                    <onleft>5</onleft>
+                    <onright>noop</onright>
+                </control>
+            </control>
         <control type="grouplist">
             <left>0</left>
             <align>left</align>

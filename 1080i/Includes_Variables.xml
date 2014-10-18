@@ -9,10 +9,12 @@
         <value>$LOCALIZE[31050]</value>
     </variable>
 
+    <!--todo label-->
     <variable name="musiclabel" description="Label for skin settings Music function item">
         <value condition="StringCompare(Skin.String(MusicLink),Artists)">$LOCALIZE[133]</value>
         <value condition="StringCompare(Skin.String(MusicLink),Albums)">$LOCALIZE[132]</value>
-        <value condition="StringCompare(Skin.String(Skin.String(MusicLink),songs)">$LOCALIZE[134]</value>
+        <value condition="StringCompare(Skin.String(MusicLink),Songs)">$LOCALIZE[134]</value>
+        <value condition="StringCompare(Skin.String(MusicLink),Genre)">$LOCALIZE[135]</value>
         <value condition="StringCompare(Skin.String(MusicLink),Playlist)">Party Mode</value>
         <value>$LOCALIZE[2]</value>
     </variable>
@@ -222,7 +224,7 @@
         <!--red-->
         <value condition="Container(9000).HasFocus(341) + SubString(Container(312).ListItem.MPAA,TV-MA)">CCFF0000</value>
         <!--green-->
-        <value condition="Container(9000).HasFocus(341) + SubString(Container(312).ListItem.MPAA,G,Right]">CC00FF00</value>
+        <value condition="Container(9000).HasFocus(341) + SubString(Container(312).ListItem.MPAA,G,Right)">CC00FF00</value>
         <!--orange-->
         <value condition="Container(9000).HasFocus(341) + SubString(Container(312).ListItem.MPAA,14)">CCFF8800</value>
         <value condition="Container(9000).HasFocus(341) + SubString(Container(222).ListItem.MPAA,14)">CCFF8800</value>

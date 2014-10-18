@@ -8,7 +8,6 @@
             <description>video preview window</description>
             <width>1920</width>
             <height>1080</height>
-
         </control>
         <control type="image" id="102">
             <width>1920</width>
