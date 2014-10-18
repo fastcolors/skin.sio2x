@@ -9,22 +9,22 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="350" width="320">
             <control type="group">
-                <control type="image" description="Reflection">
-                    <centerleft>160</centerleft>
-                    <top>409</top>
-                    <width>250</width>
-                    <height>375</height>
-                    <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
-                    <aspectratio>scale</aspectratio>
-                </control>
-                <control type="image">
-                    <centerleft>160</centerleft>
-                    <top>400</top>
-                    <width>262</width>
-                    <height>389</height>
-                    <texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
+                <!--<control type="image" description="Reflection">-->
+                <!--<centerleft>160</centerleft>-->
+                <!--<top>409</top>-->
+                <!--<width>250</width>-->
+                <!--<height>375</height>-->
+                <!--<texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>-->
+                <!--<aspectratio>scale</aspectratio>-->
+                <!--</control>-->
+                <!--<control type="image">-->
+                <!--<centerleft>160</centerleft>-->
+                <!--<top>400</top>-->
+                <!--<width>262</width>-->
+                <!--<height>389</height>-->
+                <!--<texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>-->
+                <!--<aspectratio>stretch</aspectratio>-->
+                <!--</control>-->
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>25</top>
@@ -47,26 +47,26 @@
             <control type="group">
                 <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
                 <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
-                <control type="group">
-                    <animation effect="fade" start="100" end="0" time="100">Focus</animation>
-                    <animation effect="fade" start="0" end="100" time="150">unFocus</animation>
-                    <control type="image" description="Reflection">
-                        <centerleft>160</centerleft>
-                        <top>409</top>
-                        <width>250</width>
-                        <height>375</height>
-                        <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
-                    <control type="image">
-                        <centerleft>160</centerleft>
-                        <top>400</top>
-                        <width>262</width>
-                        <height>389</height>
-                        <texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                </control>
+                <!--<control type="group">-->
+                <!--<animation effect="fade" start="100" end="0" time="100">Focus</animation>-->
+                <!--<animation effect="fade" start="0" end="100" time="150">unFocus</animation>-->
+                <!--<control type="image" description="Reflection">-->
+                <!--<centerleft>160</centerleft>-->
+                <!--<top>409</top>-->
+                <!--<width>250</width>-->
+                <!--<height>375</height>-->
+                <!--<texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>-->
+                <!--<aspectratio>scale</aspectratio>-->
+                <!--</control>-->
+                <!--<control type="image">-->
+                <!--<centerleft>160</centerleft>-->
+                <!--<top>400</top>-->
+                <!--<width>262</width>-->
+                <!--<height>389</height>-->
+                <!--<texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>-->
+                <!--<aspectratio>stretch</aspectratio>-->
+                <!--</control>-->
+                <!--</control>-->
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>25</top>
@@ -130,13 +130,6 @@
             <control type="group">
                 <control type="group">
                     <control type="image">
-                        <posx>31</posx>
-                        <top>400</top>
-                        <width>262</width>
-                        <height>389</height>
-                        <texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>
-                    </control>
-                    <control type="image">
                         <posx>40</posx>
                         <top>145</top>
                         <width>240</width>
@@ -176,39 +169,28 @@
             <control type="group">
                 <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
                 <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
-                <control type="group">
-                    <control type="image">
-                        <animation effect="fade" start="100" end="0" time="100">Focus</animation>
-                        <animation effect="fade" start="0" end="100" time="100">unFocus</animation>
-                        <posx>31</posx>
-                        <top>400</top>
-                        <width>262</width>
-                        <height>389</height>
-                        <texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>
-                    </control>
-                    <control type="image">
-                        <posx>40</posx>
-                        <top>145</top>
-                        <width>240</width>
-                        <height>240</height>
-                        <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                    <control type="image">
-                        <posx>35</posx>
-                        <top>25</top>
-                        <width>250</width>
-                        <height>375</height>
-                        <texture>images/addonscover.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>31</posx>
-                        <top>18</top>
-                        <width>262</width>
-                        <height>389</height>
-                        <texture border="10" background="true">$VAR[dvdbox]</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
+                <control type="image">
+                    <posx>40</posx>
+                    <top>145</top>
+                    <width>240</width>
+                    <height>240</height>
+                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image">
+                    <posx>35</posx>
+                    <top>25</top>
+                    <width>250</width>
+                    <height>375</height>
+                    <texture>images/addonscover.png</texture>
+                </control>
+                <control type="image">
+                    <posx>31</posx>
+                    <top>18</top>
+                    <width>262</width>
+                    <height>389</height>
+                    <texture border="10" background="true">$VAR[dvdbox]</texture>
+                    <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="textbox">
                     <posx>38</posx>
@@ -238,14 +220,14 @@
         <itemlayout height="357" width="384">
             <control type="group">
                 <animation condition="true" center="192,30" effect="zoom" end="90">Conditional</animation>
-                <control type="image" description="Reflection">
-                    <posx>30</posx>
-                    <top>370</top>
-                    <width>324</width>
-                    <height>324</height>
-                    <texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                </control>
+                <!--<control type="image" description="Reflection">-->
+                <!--<posx>30</posx>-->
+                <!--<top>370</top>-->
+                <!--<width>324</width>-->
+                <!--<height>324</height>-->
+                <!--<texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
+                <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
+                <!--</control>-->
                 <control type="image">
                     <posx>30</posx>
                     <top>46</top>
@@ -288,14 +270,14 @@
             <control type="group">
                 <animation center="192,30" effect="zoom" start="90" end="100" time="200">Focus</animation>
                 <animation center="192,30" effect="zoom" start="100" end="90" time="100">unFocus</animation>
-                <control type="image" description="Reflection">
-                    <posx>30</posx>
-                    <top>370</top>
-                    <width>324</width>
-                    <height>324</height>
-                    <texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                </control>
+                <!--<control type="image" description="Reflection">-->
+                <!--<posx>30</posx>-->
+                <!--<top>370</top>-->
+                <!--<width>324</width>-->
+                <!--<height>324</height>-->
+                <!--<texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
+                <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
+                <!--</control>-->
                 <control type="image">
                     <posx>30</posx>
                     <top>46</top>
@@ -345,14 +327,14 @@
         <itemlayout height="357" width="480">
             <control type="group">
                 <animation effect="zoom" condition="true" start="100" end="90" center="240,180">Conditional</animation>
-                <control type="image" description="Reflection">
-                    <left>23</left>
-                    <top>370</top>
-                    <width>433</width>
-                    <height>242</height>
-                    <texture background="true" diffuse="images/ReflectionShelfEP.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                </control>
+                <!--<control type="image" description="Reflection">-->
+                <!--<left>23</left>-->
+                <!--<top>370</top>-->
+                <!--<width>433</width>-->
+                <!--<height>242</height>-->
+                <!--<texture background="true" diffuse="images/ReflectionShelfEP.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
+                <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
+                <!--</control>-->
                 <control type="image">
                     <left>23</left>
                     <top>128</top>
@@ -371,7 +353,7 @@
                     </control>
                 </control>
                 <control type="label">
-                    <top>330</top>
+                    <top>370</top>
                     <left>40</left>
                     <width>400</width>
                     <height>36</height>
@@ -379,6 +361,14 @@
                     <textcolor>shelffont</textcolor>
                     <shadowcolor>shelfshadow</shadowcolor>
                     <label>[B][UPPERCASE]S $INFO[ListItem.Season] • E $INFO[ListItem.Episode][/UPPERCASE][/B]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <width>480</width>
+                    <height>30</height>
+                    <font>size26</font>
+                    <textcolor>black</textcolor>
+                    <label>[B]$INFO[ListItem.Title][/B]</label>
                     <align>center</align>
                 </control>
             </control>
@@ -387,16 +377,16 @@
             <control type="group">
                 <animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>
                 <animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>
-                <control type="image" description="Reflection">
-                    <animation effect="fade"  start="100" end="0" time="200" reversible="true">Focus</animation>
-                    <animation effect="fade"  start="0" end="100" time="200" reversible="true">unFocus</animation>
-                    <left>23</left>
-                    <top>370</top>
-                    <width>433</width>
-                    <height>242</height>
-                    <texture background="true" diffuse="images/ReflectionShelfEP.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                </control>
+                <!--<control type="image" description="Reflection">-->
+                <!--<animation effect="fade"  start="100" end="0" time="200" reversible="true">Focus</animation>-->
+                <!--<animation effect="fade"  start="0" end="100" time="200" reversible="true">unFocus</animation>-->
+                <!--<left>23</left>-->
+                <!--<top>370</top>-->
+                <!--<width>433</width>-->
+                <!--<height>242</height>-->
+                <!--<texture background="true" diffuse="images/ReflectionShelfEP.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
+                <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
+                <!--</control>-->
                 <control type="image">
                     <left>23</left>
                     <top>128</top>
@@ -415,7 +405,7 @@
                     </control>
                 </control>
                 <control type="label">
-                    <top>330</top>
+                    <top>370</top>
                     <left>40</left>
                     <width>400</width>
                     <height>36</height>
@@ -425,12 +415,7 @@
                     <label>[B][UPPERCASE]S $INFO[ListItem.Season] • E $INFO[ListItem.Episode][/UPPERCASE][/B]</label>
                     <align>center</align>
                 </control>
-            </control>
-            <control type="group">
-                <visible>ControlGroup(700).HasFocus()</visible>
                 <control type="label">
-                    <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-                    <animation effect="fade" start="100" end="0" time="50">unFocus</animation>
                     <width>480</width>
                     <height>30</height>
                     <font>size26</font>
@@ -449,121 +434,115 @@
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <itemlayout height="350" width="320">
-            <control type="group">
-                <control type="image" description="Reflection">
-                    <posx>35</posx>
-                    <top>409</top>
-                    <width>250</width>
-                    <height>375</height>
-                    <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio>scale</aspectratio>
-                </control>
-                <control type="image">
-                    <posx>31</posx>
-                    <top>400</top>
-                    <width>262</width>
-                    <height>389</height>
-                    <texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-                <control type="image">
-                    <posx>35</posx>
-                    <top>25</top>
-                    <width>250</width>
-                    <height>375</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio>scale</aspectratio>
-                </control>
-                <control type="image">
-                    <posx>31</posx>
-                    <top>18</top>
-                    <width>262</width>
-                    <height>389</height>
-                    <texture border="10" background="true">$VAR[dvdbox]</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-                <control type="image">
-                    <posx>35</posx>
-                    <top>130</top>
-                    <width>251</width>
-                    <height>270</height>
-                    <texture diffuse="images/ombra.png">images/Black.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-                <control type="textbox">
-                    <posx>38</posx>
-                    <top>238</top>
-                    <width>244</width>
-                    <height>160</height>
-                    <font>size22</font>
-                    <textcolor>shelffont</textcolor>
-                    <shadowcolor>shelfshadow</shadowcolor>
-                    <autoscroll>false</autoscroll>
-                    <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
-                    <align>center</align>
-                </control>
+            <!--<control type="image" description="Reflection">-->
+            <!--<posx>35</posx>-->
+            <!--<top>409</top>-->
+            <!--<width>250</width>-->
+            <!--<height>375</height>-->
+            <!--<texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
+            <!--<aspectratio>scale</aspectratio>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<posx>31</posx>-->
+            <!--<top>400</top>-->
+            <!--<width>262</width>-->
+            <!--<height>389</height>-->
+            <!--<texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>-->
+            <!--<aspectratio>stretch</aspectratio>-->
+            <!--</control>-->
+            <control type="image">
+                <centerleft>160</centerleft>
+                <top>25</top>
+                <width>275</width>
+                <height>412</height>
+                <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <centerleft>160</centerleft>
+                <top>18</top>
+                <width>288</width>
+                <height>427</height>
+                <texture border="10" background="true">$VAR[dvdbox]</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <centerleft>160</centerleft>
+                <top>107</top>
+                <width>275</width>
+                <height>330</height>
+                <texture diffuse="images/ombra.png">images/Black.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="textbox">
+                <centerleft>160</centerleft>
+                <top>245</top>
+                <width>260</width>
+                <height>170</height>
+                <font>size22</font>
+                <textcolor>shelffont</textcolor>
+                <shadowcolor>shelfshadow</shadowcolor>
+                <autoscroll>false</autoscroll>
+                <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
+                <align>center</align>
             </control>
         </itemlayout>
         <focusedlayout height="420" width="320">
-            <control type="group">
-                <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
-                <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
-                <control type="group">
-                    <animation effect="fade" start="100" end="0" time="100">Focus</animation>
-                    <animation effect="fade" start="0" end="100" time="150">unFocus</animation>
-                    <control type="image" description="Reflection">
-                        <posx>35</posx>
-                        <top>409</top>
-                        <width>250</width>
-                        <height>375</height>
-                        <texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
-                    <control type="image">
-                        <posx>31</posx>
-                        <top>400</top>
-                        <width>262</width>
-                        <height>389</height>
-                        <texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                </control>
-                <control type="image">
-                    <posx>35</posx>
-                    <top>25</top>
-                    <width>250</width>
-                    <height>375</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio>scale</aspectratio>
-                </control>
-                <control type="image">
-                    <posx>31</posx>
-                    <top>18</top>
-                    <width>262</width>
-                    <height>389</height>
-                    <texture border="10" background="true">$VAR[dvdbox]</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-                <control type="image">
-                    <posx>35</posx>
-                    <top>130</top>
-                    <width>251</width>
-                    <height>270</height>
-                    <texture diffuse="images/ombra.png">images/Black.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-                <control type="textbox">
-                    <posx>38</posx>
-                    <top>238</top>
-                    <width>244</width>
-                    <height>160</height>
-                    <font>size22</font>
-                    <textcolor>shelffont</textcolor>
-                    <shadowcolor>shelfshadow</shadowcolor>
-                    <autoscroll>false</autoscroll>
-                    <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
-                    <align>center</align>
-                </control>
+            <!--<control type="group">-->
+            <!--<animation effect="fade" start="100" end="0" time="100">Focus</animation>-->
+            <!--<animation effect="fade" start="0" end="100" time="150">unFocus</animation>-->
+            <!--<control type="image" description="Reflection">-->
+            <!--<posx>35</posx>-->
+            <!--<top>409</top>-->
+            <!--<width>250</width>-->
+            <!--<height>375</height>-->
+            <!--<texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
+            <!--<aspectratio>scale</aspectratio>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<posx>31</posx>-->
+            <!--<top>400</top>-->
+            <!--<width>262</width>-->
+            <!--<height>389</height>-->
+            <!--<texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>-->
+            <!--<aspectratio>stretch</aspectratio>-->
+            <!--</control>-->
+            <!--</control>-->
+            <control type="image">
+                <centerleft>160</centerleft>
+                <top>25</top>
+                <width>275</width>
+                <height>412</height>
+                <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <centerleft>160</centerleft>
+                <top>18</top>
+                <width>288</width>
+                <height>427</height>
+                <texture border="10" background="true">$VAR[dvdbox]</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <centerleft>160</centerleft>
+                <top>107</top>
+                <width>275</width>
+                <height>330</height>
+                <texture diffuse="images/ombra.png">images/Black.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="textbox">
+                <centerleft>160</centerleft>
+                <top>245</top>
+                <width>260</width>
+                <height>170</height>
+                <font>size22</font>
+                <textcolor>shelffont</textcolor>
+                <shadowcolor>shelfshadow</shadowcolor>
+                <autoscroll>false</autoscroll>
+                <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
+                <align>center</align>
             </control>
         </focusedlayout>
     </include>
