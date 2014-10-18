@@ -25,9 +25,9 @@
                 <itemlayout height="140">
                     <control type="image">
                         <posx>1730</posx>
-                        <top>10</top>
                         <width>94</width>
-                        <height>120</height>
+                        <top>1</top>
+                        <height>138</height>
                         <texture background="true">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
@@ -104,9 +104,9 @@
                     </control>
                     <control type="image">
                         <posx>1730</posx>
-                        <top>10</top>
                         <width>94</width>
-                        <height>120</height>
+                        <top>1</top>
+                        <height>138</height>
                         <texture background="true">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
@@ -185,7 +185,7 @@
                     <height>45</height>
                     <font>size42B</font>
                     <align>center</align>
-                    <label>$INFO[ListItem.label]</label>
+                    <label>[UPPERCASE]$INFO[ListItem.label][/UPPERCASE]</label>
                 </control>
                 <control type="label">
                     <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
@@ -582,24 +582,7 @@
                 <width>1</width>
                 <texture colordiffuse="black">lines/LineV.png</texture>
             </control>
-            <control type="group">
-                <top>85</top>
-                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
-                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
-                <control type="image">
-                    <left>1912</left>
-                    <height>910</height>
-                    <width>120</width>
-                    <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
-                </control>
-                <control type="scrollbar" id="60">
-                    <left>-37r</left>
-                    <top>30</top>
-                    <height>850</height>
-                    <onleft>50</onleft>
-                    <onright>noop</onright>
-                </control>
-            </control>
+            <include>60slider</include>
         </control>
     </include>
 </includes>

@@ -204,8 +204,8 @@
             <visible>Control.IsVisible(54)</visible>
             <orientation>vertical</orientation>
             <top>35</top>
-            <left>1538</left>
-            <width>352</width>
+            <left>1433</left>
+            <width>487</width>
             <height>100</height>
             <itemgap>0</itemgap>
             <include>windowtitle</include>
@@ -231,7 +231,7 @@
         <control type="grouplist" description="leftsided">
             <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
             <visible>Control.IsVisible(55) | Control.IsVisible(500)</visible>
-            <top>0</top>
+            <top>10</top>
             <left>30</left>
             <width>580</width>
             <align>left</align>
@@ -683,5 +683,25 @@
     <include name="ShelfFade">
         <animation effect="fade" end="100" time="250" delay="250">Visible</animation>
         <animation effect="fade" end="0" time="100">Hidden</animation>
+    </include>
+    <include name="60slider">
+        <control type="group">
+                <top>85</top>
+                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <control type="image">
+                    <left>1925</left>
+                    <height>910</height>
+                    <width>100</width>
+                    <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
+                </control>
+                <control type="scrollbar" id="60">
+                    <left>-37r</left>
+                    <top>30</top>
+                    <height>850</height>
+                    <onleft>50</onleft>
+                    <onright>noop</onright>
+                </control>
+            </control>
     </include>
 </includes>

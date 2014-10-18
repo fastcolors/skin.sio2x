@@ -23,7 +23,7 @@
                     <preloaditems>4</preloaditems>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>300</scrolltime>
-                    <itemlayout condition="container.content(tvshows)" height="200" width="1800">
+                    <itemlayout condition="container.content(tvshows)" height="180" width="1800">
                         <control type="image">
                             <posx>50</posx>
                             <top>80</top>
@@ -73,7 +73,7 @@
                             <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
                         </control>
                     </itemlayout>
-                    <focusedlayout condition="container.content(tvshows)" height="200" width="1800">
+                    <focusedlayout condition="container.content(tvshows)" height="180" width="1800">
                         <control type="group">
                             <animation effect="zoom" end="140" center="409,150" time="350">Focus</animation>
                             <animation effect="zoom" start="140" end="100" center="409,150" time="250">unFocus</animation>
