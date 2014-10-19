@@ -21,16 +21,16 @@
                 <pagecontrol>60</pagecontrol>
                 <control type="button" id="6">
                     <description>HOME PAGE CUSTOMIZER</description>
-                    <height>70</height>
-                    <width>auto</width>
+                    <height>settingsheight</height>
                     <align>left</align>
+                    <width>960</width>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <label>$LOCALIZE[31052]</label>
                     <onclick>ActivateWindow(1117)</onclick>
                 </control>
                 <control type="button" id="1">
-                    <height>70</height>
-                    <width>auto</width>
+                    <height>settingsheight</height>
+                    <width>960</width>
                     <align>left</align>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <label>31062</label>
@@ -38,13 +38,13 @@
                     <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
                 </control>
                 <control type="radiobutton" id="2">
-                    <height>70</height>
+                    <height>settingsheight</height>
                     <label>$LOCALIZE[31041]</label>
                     <onclick>Skin.ToggleSetting(Scrollbars_Passive)</onclick>
                     <selected>!Skin.HasSetting(Scrollbars_Passive)</selected>
                 </control>
                 <control type="radiobutton" id="3">
-                    <height>70</height>
+                    <height>settingsheight</height>
                     <label>$LOCALIZE[31044]</label>
                     <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
                     <selected>!Skin.HasSetting(ViewsMenuOff)</selected>
@@ -56,41 +56,41 @@
                 <!--<selected>Skin.HasSetting(scelta)</selected>-->
                 <!--</control>-->
                 <control type="radiobutton" id="5">
-                    <height>70</height>
+                    <height>settingsheight</height>
                     <label>$LOCALIZE[31033]</label>
                     <onclick>Skin.ToggleSetting(colormenu)</onclick>
                     <selected>!Skin.HasSetting(colormenu)</selected>
                 </control>
                 <control type="button" id="8">
-                    <height>70</height>
-                    <width>auto</width>
+                    <height>settingsheight</height>
+                    <width>960</width>
                     <align>left</align>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <label>$LOCALIZE[31049] $VAR[quitlabel]</label>
                     <onclick>ActivateWindow(1114)</onclick>
                 </control>
                 <control type="radiobutton" id="9">
-                    <height>70</height>
+                    <height>settingsheight</height>
                     <label>$LOCALIZE[31047]</label>
                     <onclick>Skin.ToggleSetting(HideClock)</onclick>
                     <selected>!Skin.HasSetting(HideClock)</selected>
                 </control>
                 <control type="button" id="10">
-                    <width>auto</width>
+                    <width>960</width>
                     <align>left</align>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <label>$LOCALIZE[31053] :   $INFO[Skin.String(MusicLink)]</label>
                     <onclick>ActivateWindow(1121)</onclick>
                 </control>
                 <control type="radiobutton" id="11">
-                    <height>70</height>
+                    <height>settingsheight</height>
                     <label>$LOCALIZE[31028]</label>
                     <onclick condition="IsEmpty(Skin.String(CustomBgHome))">Skin.SetFile(CustomBgHome,.jpg|.png,special://skin/backgrounds)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(CustomBgHome))">Skin.Reset(CustomBgHome)</onclick>
                     <selected>!IsEmpty(Skin.String(CustomBgHome))</selected>
                 </control>
                 <control type="radiobutton" id="12">
-                    <height>70</height>
+                    <height>settingsheight</height>
                     <label>$LOCALIZE[31030]</label>
                     <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetImage(ShelfCustomImage)</onclick>
                     <onclick condition="Skin.HasSetting(CustomImage)">Skin.Reset(CustomImage)</onclick>
@@ -98,32 +98,36 @@
                     <selected>Skin.HasSetting(CustomImage)</selected>
                 </control>
                 <control type="radiobutton" id="13">
-                    <height>70</height>
+                    <height>settingsheight</height>
                     <label>31061</label>
                     <onclick>Skin.ToggleSetting(hideconnection)</onclick>
                     <selected>!Skin.HasSetting(hideconnection)</selected>
                 </control>
                 <control type="radiobutton" id="14">
-                    <height>70</height>
+                    <height>settingsheight</height>
                     <description>NO3D Option</description>
-                    <width>auto</width>
                     <align>left</align>
                     <label>$LOCALIZE[31421]</label>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <onclick>Skin.ToggleSetting(no3d)</onclick>
                     <selected>!Skin.HasSetting(no3d)</selected>
                 </control>
-                <!--todo label-->
-                 <control type="radiobutton" id="16">
-                     <height>70</height>
-                    <label>icon hide slide</label>
+                <control type="radiobutton" id="16">
+                    <height>settingsheight</height>
+                    <label>$LOCALIZE[31067]</label>
                     <onclick>Skin.ToggleSetting(noslideicon)</onclick>
-                    <selected>Skin.HasSetting(noslideicon)</selected>
+                    <selected>!Skin.HasSetting(noslideicon)</selected>
+                </control>
+                <control type="radiobutton" id="17">
+                    <height>settingsheight</height>
+                    <label>$LOCALIZE[31027]</label>
+                    <onclick>Skin.ToggleSetting(unwatchedbadge)</onclick>
+                    <selected>!Skin.HasSetting(unwatchedbadge)</selected>
                 </control>
                 <control type="button" id="15">
-                    <height>70</height>
+                    <height>settingsheight</height>
                     <label>31036</label>
-                    <width>auto</width>
+                    <width>960</width>
                     <align>left</align>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <onclick>Skin.ResetSettings</onclick>
@@ -182,12 +186,6 @@
                 <include>Help_Panel</include>
                 <texture>help/off.png</texture>
             </control>
-            <!--SHELF CINEMA-->
-            <!--<control type="image" description="shelf cinema">-->
-                <!--<visible>Controlgroup(575).HasFocus(4)</visible>-->
-                <!--<include>Help_Panel</include>-->
-                <!--<texture>help/shelf.png</texture>-->
-            <!--</control>-->
             <control type="image" description="HomePageCustomizer">
                 <visible>Controlgroup(575).HasFocus(6)</visible>
                 <include>Help_Panel</include>
@@ -199,13 +197,11 @@
                 <texture>help/homemenu.png</texture>
             </control>
             <control type="image" description="quits">
-
                 <visible>Controlgroup(575).HasFocus(8)</visible>
                 <include>Help_Panel</include>
-                <texture colordiffuse="black">help/menu$INFO[Skin.String(shutdown)].png</texture>
+                <texture colordiffuse="black">$VAR[quiticon]</texture>
             </control>
             <control type="image" description="clock">
-
                 <visible>Controlgroup(575).HasFocus(9)</visible>
                 <include>Help_Panel</include>
                 <texture>help/clock.png</texture>
@@ -241,6 +237,30 @@
                 <visible>Controlgroup(575).HasFocus(14)</visible>
                 <include>Help_Panel</include>
                 <texture>icons/3D.png</texture>
+            </control>
+            <control type="image" description="3d">
+                <visible>Controlgroup(575).HasFocus(17)</visible>
+                <include>Help_Panel</include>
+                <texture>help/badge.png</texture>
+            </control>
+            <control type="group">
+                <visible>Controlgroup(575).HasFocus(17) + !Skin.HasSetting(unwatchedbadge)</visible>
+                <centerleft>630</centerleft>
+                    <centertop>126</centertop>
+                <width>65</width>
+                <height>65</height>
+                <control type="image" description="3d">
+                    <width>65</width>
+                    <height>65</height>
+                    <texture>Badges/Badgecount.png</texture>
+                </control>
+                <control type="label">
+                    <height>62</height>
+                    <font>Size28</font>
+                    <align>center</align>
+                    <shadowcolor>-</shadowcolor>
+                    <label>$NUMBER[222]</label>
+                </control>
             </control>
         </control>
         <control type="image" description="Line">

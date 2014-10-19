@@ -22,6 +22,7 @@
             <thumb>icons/movies.png</thumb>
             <label>342</label>
             <property name="color">icons/lightblue.png</property>
+            <property name="unwatched">$INFO[Window(Home).Property(Movies.UnWatched)]</property>
             <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp",return)</onclick>
             <onclick condition="!Skin.HasSetting(no3d)">ActivateWindow(Videos,MovieTitles,return)</onclick>
         </item>
@@ -31,6 +32,7 @@
             <thumb>icons/tvshows.png</thumb>
             <label>20343</label>
             <property name="color">icons/purple.png</property>
+            <property name="unwatched">$INFO[Window(Home).Property(Episodes.UnWatched)]</property>
             <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
         </item>
         <!--SHELF POPULATING CUSTOM FAVOURITES-->
@@ -112,7 +114,7 @@
             <visible>Skin.HasSetting(3dmovs)</visible>
             <thumb>icons/3d.png</thumb>
             <label>3D $LOCALIZE[342]</label>
-            <property name="color">icons/purple.png</property>
+            <property name="color">icons/bluegray.png</property>
             <onclick>ActivateWindow(Videos,"special://skin/resources/3d.xsp", return)</onclick>
         </item>
         <!--NEXT AIRED ADDON-->

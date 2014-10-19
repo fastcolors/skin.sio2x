@@ -15,7 +15,7 @@
         <value condition="StringCompare(Skin.String(MusicLink),Albums)">$LOCALIZE[132]</value>
         <value condition="StringCompare(Skin.String(MusicLink),Songs)">$LOCALIZE[134]</value>
         <value condition="StringCompare(Skin.String(MusicLink),Genre)">$LOCALIZE[135]</value>
-        <value condition="StringCompare(Skin.String(MusicLink),Playlist)">Party Mode</value>
+        <value condition="StringCompare(Skin.String(MusicLink),Playlist)">$LOCALIZE[589]</value>
         <value>$LOCALIZE[2]</value>
     </variable>
 
@@ -123,8 +123,8 @@
         <value condition="Controlgroup(575).HasFocus(13)">$LOCALIZE[31039]</value>
         <value condition="Controlgroup(575).HasFocus(14)">$LOCALIZE[31420]</value>
         <value condition="Controlgroup(575).HasFocus(15)">$LOCALIZE[31089]</value>
-
-        <!--<value condition="Controlgroup(575).HasFocus(13)"></value>-->
+        <value condition="Controlgroup(575).HasFocus(16)">$LOCALIZE[31066]</value>
+        <value condition="Controlgroup(575).HasFocus(17)">$LOCALIZE[31065]</value>
     </variable>
 
     <variable name="settingsmain">
@@ -236,6 +236,7 @@
     <variable name="shelfmovies">
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),TR)">plugin://plugin.video.itunes_trailers/</value>
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">special://skin/resources/laststarted.xsp</value>
+        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),RND)">plugin://service.library.data.provider?type=randommovies&limit=6</value>
         <value condition="Container(9000).HasFocus(601)">$INFO[Skin.String(HomeFav.1.List)]</value>
         <value condition="Container(9000).HasFocus(602)">$INFO[Skin.String(HomeFav.2.List)]</value>
         <value condition="Container(9000).HasFocus(603)">$INFO[Skin.String(HomeFav.3.List)]</value>
@@ -295,6 +296,7 @@
         <value condition="Control.IsVisible(312)">$LOCALIZE[31048]</value>
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">$LOCALIZE[31419]</value>
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[31015]</value>
+        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),RND)">$LOCALIZE[31068]</value>
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),)">$LOCALIZE[20386]</value>
         <value>$INFO[Control.GetLabel(9000)]</value>
     </variable>

@@ -833,7 +833,7 @@
     <include name="SettingsSubmenuButtons">
         <width>1400</width>
         <textoffsetx>22</textoffsetx>
-        <height>81</height>
+        <height>70</height>
         <align>left</align>
         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
         <disabledcolor>Disabled</disabledcolor>

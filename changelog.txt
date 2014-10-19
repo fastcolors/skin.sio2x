@@ -1,4 +1,11 @@
 3.0.7
+* <posx> completely removed from code now onlt <left>
+* cosmetics on icons
+* new badge for unwatched episodes count on home
+* new badge for unwatched movies count on home
+* Option to hide the aforementioned badges from home
+* Option to hide infos in Icon view
+* Option for Random Movies on Shelf
 
 3.0.6 - 3.0.5
 * Fix for Addon Browser not showing all the infos correctly

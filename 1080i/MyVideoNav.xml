@@ -125,7 +125,6 @@
                     <usealttexture>library.isscanningvideo</usealttexture>
                     <onclick>left</onclick>
                 </control>
-                <!--todo label-->
                 <control type="button" id="598">
                     <visible>Container.Content(movies)</visible>
                     <include>DialogButt</include>

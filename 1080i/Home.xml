@@ -20,10 +20,12 @@
             <texturenofocus aspectratio="keep" colordiffuse="darkgray">images/hometoggle.png</texturenofocus>
             <texturefocus aspectratio="keep" colordiffuse="$VAR[diffuseselectshelf]">images/hometoggle.png</texturefocus>
             <!--MOVIES-->
-            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">Skin.SetString(moviesshelf,)</onclick>
-            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL) + Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,TR)</onclick>
-            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL) + !Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,)</onclick>
+
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND) + Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,TR)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND) + !Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">Skin.SetString(moviesshelf,)</onclick>
             <!--TVSHOWS-->
             <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
             <!--MUSIC-->
@@ -96,6 +98,16 @@
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
+                    <!--<control type="label">-->
+                    <!--<centerleft>150</centerleft>-->
+                    <!--<top>198</top>-->
+                    <!--<width>300</width>-->
+                    <!--<height>24</height>-->
+                    <!--<font>size24</font>-->
+                    <!--<align>center</align>-->
+                    <!--<textcolor>White</textcolor>-->
+                    <!--<label>[B]$INFO[ListItem.label][/B]</label>-->
+                    <!--</control>-->
                     <control type="label">
                         <centerleft>150</centerleft>
                         <top>198</top>
@@ -105,6 +117,30 @@
                         <align>center</align>
                         <textcolor>White</textcolor>
                         <label>[B]$INFO[ListItem.label][/B]</label>
+                    </control>
+                    <control type="group">
+                        <visible>!Skin.HasSetting(unwatchedbadge)</visible>
+                        <visible>IntegerGreaterThan(ListItem.Property(unwatched),0)</visible>
+                        <animation effect="zoom" center="260,47" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
+                        <top>20</top>
+                        <control type="image">
+                            <centerleft>260</centerleft>
+                            <height>55</height>
+                            <width>55</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>Badges/Badgecount.png</texture>
+                        </control>
+                        <control type="label">
+                            <top>6</top>
+                            <centerleft>260</centerleft>
+                            <height>40</height>
+                            <width>50</width>
+                            <font>size21</font>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Property(unwatched)]</label>
+                        </control>
                     </control>
                 </itemlayout>
                 <focusedlayout height="220" width="300">
@@ -178,6 +214,30 @@
                         <textcolor>black</textcolor>
                         <label>[B]$INFO[ListItem.label][/B]</label>
                     </control>
+                    <control type="group">
+                        <visible>!Skin.HasSetting(unwatchedbadge)</visible>
+                        <visible>IntegerGreaterThan(ListItem.Property(unwatched),0)</visible>
+                        <animation effect="zoom" center="260,47" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
+                        <top>20</top>
+                        <control type="image">
+                            <centerleft>260</centerleft>
+                            <height>55</height>
+                            <width>55</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>Badges/Badgecount.png</texture>
+                        </control>
+                        <control type="label">
+                            <top>6</top>
+                            <centerleft>260</centerleft>
+                            <height>40</height>
+                            <width>50</width>
+                            <font>size21</font>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Property(unwatched)]</label>
+                        </control>
+                    </control>
                 </focusedlayout>
                 <content>
                     <include>homepanel</include>
@@ -201,7 +261,6 @@
             </control>
             <control type="rss" description="RSS Feed">
                 <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                <!--<visible>system.getbool(lookandfeel.enablerssfeeds) + !Control.HasFocus(311)</visible>-->
                 <include>OpenClose</include>
                 <top>15</top>
                 <width>1920</width>
@@ -213,16 +272,6 @@
                 <headlinecolor>FF666666</headlinecolor>
                 <textcolor>gray</textcolor>
             </control>
-            <!--todo get plot or trailer-->
-            <!--<control type="label" description="Plot">-->
-            <!--<visible>Control.HasFocus(311)</visible>-->
-            <!--<top>514</top>-->
-            <!--<width>1920</width>-->
-            <!--<height>10</height>-->
-            <!--<font>size24</font>-->
-            <!--<label>  PLOT: $INFO[Container(311).ListItem.Plot]</label>-->
-            <!--<textcolor>FF666666</textcolor>-->
-            <!--</control>-->
         </control>
         <control type="image" description="TVLINE">
             <include>ShelfFade</include>
@@ -257,39 +306,38 @@
                 <aspectratio aligny="bottom">keep</aspectratio>
                 <texture>$VAR[ShelfLogo]</texture>
             </control>
-
-        <control type="group">
-            <description>TRAILERS</description>
-            <top>360</top>
-            <width>258</width>
-            <include>ShelfFade</include>
-            <animation effect="fade" time="220">VisibleChange</animation>
-            <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(1) | Container(311).Position(7) | Container(311).Position(13)" effect="slide" start="0,0" end="320,0" time="0" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(2) | Container(311).Position(8) | Container(311).Position(14)" effect="slide" start="0,0" end="640,0" time="0" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(3) | Container(311).Position(9) | Container(311).Position(15)" effect="slide" start="0,0" end="960,0" time="0" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(4) | Container(311).Position(10) | Container(311).Position(16)" effect="slide" start="0,0" end="1280,0" time="0" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(5) | Container(311).Position(11) | Container(311).Position(17)" effect="slide" start="0,0" end="1600,0" time="0" easing="inout" reversible="true">Conditional</animation>
-            <control type="button" id="9010">
-                <animation effect="fade" start="0" end="100" time="200">Focus</animation>
-                <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9010) | IsEmpty(Container(311).ListItem.Trailer)">Conditional</animation>
-                <!--<animation effect="fade" start="100" end="0" time="100" condition="IsEmpty(Container(311).ListItem.Trailer)">Conditional</animation>-->
-                <visible>Container(9000).HasFocus(340) | Control.HasFocus(9010)</visible>
-                <centerleft>160</centerleft>
-                <width>125</width>
-                <height>125</height>
-                <label></label>
-                <texturefocus aspectratio="scale">info/trailerFO.png</texturefocus>
-                <onclick>PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
-                <!--<enable>!IsEmpty(Container(311).ListItem.Trailer)</enable>-->
-                <onleft>Control.Move(311,-1)</onleft>
-                <onleft>311</onleft>
-                <onright>Control.Move(311,1)</onright>
-                <onright>311</onright>
-                <onup>9009</onup>
-                <ondown>311</ondown>
+            <control type="group">
+                <description>TRAILERS</description>
+                <top>360</top>
+                <width>320</width>
+                <include>ShelfFade</include>
+                <animation effect="fade" time="220">VisibleChange</animation>
+                <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(1) | Container(311).Position(7) | Container(311).Position(13)" effect="slide" start="0,0" end="320,0" time="0" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(2) | Container(311).Position(8) | Container(311).Position(14)" effect="slide" start="0,0" end="640,0" time="0" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(3) | Container(311).Position(9) | Container(311).Position(15)" effect="slide" start="0,0" end="960,0" time="0" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(4) | Container(311).Position(10) | Container(311).Position(16)" effect="slide" start="0,0" end="1280,0" time="0" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(5) | Container(311).Position(11) | Container(311).Position(17)" effect="slide" start="0,0" end="1600,0" time="0" easing="inout" reversible="true">Conditional</animation>
+                <control type="button" id="9010">
+                    <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9010) | IsEmpty(Container(311).ListItem.Trailer)">Conditional</animation>
+                    <!--<animation effect="fade" start="100" end="0" time="100" condition="IsEmpty(Container(311).ListItem.Trailer)">Conditional</animation>-->
+                    <visible>Container(9000).HasFocus(340) | Control.HasFocus(9010)</visible>
+                    <left>98</left>
+                    <width>125</width>
+                    <height>125</height>
+                    <label></label>
+                    <texturefocus aspectratio="scale">info/trailerFO.png</texturefocus>
+                    <onclick>PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
+                    <!--<enable>!IsEmpty(Container(311).ListItem.Trailer)</enable>-->
+                    <onleft>Control.Move(311,-1)</onleft>
+                    <onleft>311</onleft>
+                    <onright>Control.Move(311,1)</onright>
+                    <onright>311</onright>
+                    <onup>9009</onup>
+                    <ondown>311</ondown>
+                </control>
             </control>
-        </control>
         </control>
         <control type="group" description="Player Info">
             <visible>Player.HasAudio</visible>

@@ -124,8 +124,8 @@ msgid "Get Extra Artwork"
 msgstr "Get Extra Artwork"
 
 msgctxt "#31027"
-msgid "x"
-msgstr "x"
+msgid "Movies/TVShows Badge"
+msgstr "Movies/TVShows Badge"
 
 msgctxt "#31028"
 msgid "Custom Background"
@@ -274,6 +274,22 @@ msgstr "Settings for the handling of your audio library, playback of your songs 
 msgctxt "#31064"
 msgid "Fullscreen"
 msgstr "Fullscreen"
+
+msgctxt "#31065"
+msgid "Enable/Disable notification badge showing the number of unwatched Movies and TVShows on Home Icons"
+msgstr "Enable/Disable notification badge showing the number of unwatched Movies and TVShows on Home Icons"
+
+msgctxt "#31066"
+msgid "Enable/Disable Sliding Info Window in Icon View"
+msgstr "Enable/Disable Sliding Info Window in Icon View"
+
+msgctxt "#31067"
+msgid "Infos in Icon view"
+msgstr "Infos in Icon view"
+
+msgctxt "#31068"
+msgid "Random Movies"
+msgstr "Random Movies"
 
 msgctxt "#31077"
 msgid "Settings for the handling of your Video library, playback, subtitles, rendering and hardware acceleration"
