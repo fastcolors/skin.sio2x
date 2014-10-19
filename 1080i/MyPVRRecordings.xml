@@ -21,21 +21,21 @@
             <include>Icon_Fade</include>
             <control type="image">
                 <visible>!Player.HasMedia</visible>
-                <posx>120</posx>
+                <left>120</left>
                 <top>80</top>
                 <width>760</width>
                 <height>495</height>
                 <texture>pvr/tvset.png</texture>
             </control>
             <control type="videowindow">
-                <posx>120</posx>
+                <left>120</left>
                 <top>80</top>
                 <width>760</width>
                 <height>495</height>
                 <visible>Player.HasVideo</visible>
             </control>
             <control type="visualisation">
-                <posx>120</posx>
+                <left>120</left>
                 <top>80</top>
                 <width>760</width>
                 <height>495</height>
@@ -50,7 +50,7 @@
             <include>left_Panel_livetv</include>
             <control type="group">
                 <include>LargeListItemCount</include>
-                <posx>1020</posx>
+                <left>1020</left>
                 <top>131</top>
                 <control type="fixedlist" id="13">
                     <width>802</width>
@@ -72,21 +72,21 @@
                         <control type="group">
                             <control type="label" description="Main Label">
                                 <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-                                <posx>63</posx>
+                                <left>63</left>
                                 <width>717</width>
                                 <include>BigListTitle</include>
                                 <label>$INFO[ListItem.label]</label>
                             </control>
                             <control type="label" description="Main Label">
                                 <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-                                <posx>63</posx>
+                                <left>63</left>
                                 <width>630</width>
                                 <include>BigListTitle</include>
                                 <label>$INFO[ListItem.label]</label>
                             </control>
                         </control>
                         <control type="label" description="Label2">
-                            <posx>45</posx>
+                            <left>45</left>
                             <include>BigListDetails</include>
                             <label>$INFO[ListItem.Date]</label>
                         </control>
@@ -109,21 +109,21 @@
                         <control type="group">
                             <control type="label" description="Main Label">
                                 <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-                                <posx>63</posx>
+                                <left>63</left>
                                 <width>717</width>
                                 <include>BigListTitle</include>
                                 <label>$INFO[ListItem.label]</label>
                             </control>
                             <control type="label" description="Main Label">
                                 <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-                                <posx>63</posx>
+                                <left>63</left>
                                 <width>630</width>
                                 <include>BigListTitle</include>
                                 <label>$INFO[ListItem.label]</label>
                             </control>
                         </control>
                         <control type="label" description="Label2">
-                            <posx>45</posx>
+                            <left>45</left>
                             <include>BigListDetails</include>
                             <label>$INFO[ListItem.Date]</label>
                         </control>
@@ -136,13 +136,13 @@
                 </control>
             </control>
             <control type="image">
-                <posx>1020</posx>
+                <left>1020</left>
                 <width>1</width>
                 <height>1080</height>
                 <texture>lines/LineV.png</texture>
             </control>
             <control type="scrollbar" id="60">
-                <posx>39r</posx>
+                <left>39r</left>
                 <top>135</top>
                 <height>870</height>
                 <onleft>13</onleft>
@@ -150,7 +150,7 @@
             </control>
             <control type="label">
                 <description>Page Count Label</description>
-                <posx>40r</posx>
+                <left>40r</left>
                 <top>53r</top>
                 <width>500</width>
                 <height>20</height>

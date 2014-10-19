@@ -106,7 +106,7 @@
 
         <!-- Other Content (right)-->
         <control type="group">
-            <posx>500</posx>
+            <left>500</left>
             <top>81</top>
             <width>1380</width>
             <height>972</height>

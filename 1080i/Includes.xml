@@ -94,7 +94,7 @@
         <animation effect="fade" time="100">Hidden</animation>
     </include>
     <include name="HiddenButton">
-        <posx>-30</posx>
+        <left>-30</left>
         <top>-30</top>
         <width>1</width>
         <height>1</height>
@@ -103,7 +103,7 @@
         <texturefocus>-</texturefocus>
     </include>
     <include name="Heading">
-        <posx>330</posx>
+        <left>330</left>
         <top>0</top>
         <align>center</align>
         <aligny>center</aligny>
@@ -256,7 +256,7 @@
             <visible>!Control.HasFocus(340) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
             <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
             <include>VisibleFade</include>
-            <posx>15</posx>
+            <left>15</left>
             <top>960</top>
             <control type="image" description="Playing BG">
                 <width>390</width>
@@ -265,7 +265,7 @@
             </control>
             <control type="group">
                 <control type="image">
-                    <posx>15</posx>
+                    <left>15</left>
                     <top>15</top>
                     <width>75</width>
                     <height>75</height>
@@ -273,7 +273,7 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>15</posx>
+                    <left>15</left>
                     <top>15</top>
                     <width>75</width>
                     <height>75</height>
@@ -281,7 +281,7 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>9</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -291,7 +291,7 @@
                     <label>$INFO[MusicPlayer.Title]</label>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>36</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -300,7 +300,7 @@
                     <label>$INFO[MusicPlayer.Artist]</label>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>60</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -309,7 +309,7 @@
                     <label>$INFO[MusicPlayer.Album]</label>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>9</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -319,7 +319,7 @@
                     <label>$INFO[VideoPlayer.Title]</label>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>36</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -328,7 +328,7 @@
                     <label>$INFO[VideoPlayer.Artist]</label>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>60</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -352,7 +352,7 @@
     <include name="PVRinfos">
         <control type="image">
             <description>background image</description>
-            <posx>-170</posx>
+            <left>-170</left>
             <top>-150</top>
             <width>1460</width>
             <height>800</height>
@@ -366,7 +366,7 @@
             <texture>lines/Line.png</texture>
         </control>
         <control type="image">
-            <posx>0</posx>
+            <left>0</left>
             <top>370</top>
             <width>1160</width>
             <height>1</height>
@@ -374,7 +374,7 @@
         </control>
         <control type="label">
             <description>header label</description>
-            <posx>20</posx>
+            <left>20</left>
             <top>0</top>
             <width>1100</width>
             <height>30</height>
@@ -386,7 +386,7 @@
         </control>
         <control type="label">
             <description>Title label</description>
-            <posx>20</posx>
+            <left>20</left>
             <top>40</top>
             <width>1100</width>
             <height>30</height>
@@ -399,7 +399,7 @@
         </control>
         <control type="label">
             <description>Start time</description>
-            <posx>20</posx>
+            <left>20</left>
             <top>75</top>
             <width>1100</width>
             <height>25</height>
@@ -411,7 +411,7 @@
         </control>
         <control type="textbox" id="400">
             <description>Plot value</description>
-            <posx>20</posx>
+            <left>20</left>
             <top>110</top>
             <width>1080</width>
             <height>260</height>
@@ -422,7 +422,7 @@
         </control>
         <control type="label">
             <description>Duration</description>
-            <posx>60</posx>
+            <left>60</left>
             <top>390</top>
             <width>1000</width>
             <height>25</height>
@@ -433,7 +433,7 @@
         </control>
         <control type="label">
             <description>Duration</description>
-            <posx>60</posx>
+            <left>60</left>
             <top>420</top>
             <width>1000</width>
             <height>25</height>
@@ -447,7 +447,7 @@
         <control type="group">
             <control type="image">
                 <top>1000</top>
-                <posx>10</posx>
+                <left>10</left>
                 <width>80</width>
                 <height>80</height>
                 <aspectratio scalediffuse="false">scale</aspectratio>
@@ -455,7 +455,7 @@
             </control>
             <control type="label">
                 <top>1000</top>
-                <posx>100</posx>
+                <left>100</left>
                 <width>1800</width>
                 <height>80</height>
                 <label>$LOCALIZE[20125] : $INFO[System.ProfileName]</label>
@@ -464,7 +464,7 @@
     </include>
     <include name="profilecontent">
         <control type="group">
-            <posx>960</posx>
+            <left>960</left>
             <top>120</top>
             <control type="grouplist" id="5">
                 <description>Control Area</description>
@@ -531,7 +531,7 @@
             <include>9000slide</include>
             <control type="image" description="List back">
                 <top>-10</top>
-                <posx>1430</posx>
+                <left>1430</left>
                 <width>550</width>
                 <height>1100</height>
                 <aspectratio>stretch</aspectratio>

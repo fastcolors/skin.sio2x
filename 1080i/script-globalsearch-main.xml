@@ -102,7 +102,7 @@
                 <visible>Control.HasFocus(181)</visible>
             </control>
             <control type="label" id="190">
-                <posx>960</posx>
+                <left>960</left>
                 <top>56</top>
                 <width>450</width>
                 <height>25</height>
@@ -111,7 +111,7 @@
                 <align>right</align>
             </control>
             <control type="label" id="191">
-                <posx>960</posx>
+                <left>960</left>
                 <top>56</top>
                 <width>450</width>
                 <height>25</height>
@@ -120,7 +120,7 @@
                 <align>left</align>
             </control>
             <control type="label" id="199">
-                <posx>710</posx>
+                <left>710</left>
                 <top>530</top>
                 <width>500</width>
                 <height>20</height>
@@ -130,7 +130,7 @@
                 <aligny>center</aligny>
             </control>
             <control type="button" id="198">
-                <posx>40</posx>
+                <left>40</left>
                 <top>30</top>
                 <width>300</width>
                 <height>42</height>
@@ -160,21 +160,21 @@
                         <colordiffuse>searchband</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>40</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineL.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>290</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineR.png</texture>
                     </control>
                     <control type="list" id="111">
-                        <posx>60</posx>
+                        <left>60</left>
                         <top>40</top>
                         <width>1800</width>
                         <height>250</height>
@@ -187,14 +187,14 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout width="600" height="250">
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>150</width>
                                 <height>230</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>6</posx>
+                                <left>6</left>
                                 <top>214</top>
                                 <width>30</width>
                                 <height>30</height>
@@ -202,7 +202,7 @@
                                 <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>10</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -212,7 +212,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -222,7 +222,7 @@
                                 <visible>!SubString(ListItem.Property(Duration),min)</visible>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -233,7 +233,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -244,7 +244,7 @@
                             <control type="textbox">
                                 <visible>IsEmpty(ListItem.Property(TagLine))</visible>
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -255,7 +255,7 @@
                             <control type="textbox">
                                 <visible>IsEmpty(ListItem.Property(TagLine)) + IsEmpty(ListItem.Property(PlotOutline))</visible>
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -272,14 +272,14 @@
                                 <visible>Control.HasFocus(111)</visible>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>150</width>
                                 <height>230</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>6</posx>
+                                <left>6</left>
                                 <top>214</top>
                                 <width>30</width>
                                 <height>30</height>
@@ -287,7 +287,7 @@
                                 <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>10</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -297,7 +297,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -307,7 +307,7 @@
                                 <visible>!SubString(ListItem.Property(Duration),min)</visible>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -318,7 +318,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -328,7 +328,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -339,7 +339,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -351,9 +351,9 @@
                         </focusedlayout>
                     </control>
                     <control type="group">
-                        <posx>100</posx>
+                        <left>100</left>
                         <control type="label">
-                            <posx>100</posx>
+                            <left>100</left>
                             <width min="10" max="700">auto</width>
                             <height>42</height>
                             <font>size42</font>
@@ -389,21 +389,21 @@
                         <colordiffuse>searchband</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>40</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineL.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>290</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineR.png</texture>
                     </control>
                     <control type="list" id="211">
-                        <posx>60</posx>
+                        <left>60</left>
                         <top>40</top>
                         <width>1800</width>
                         <height>250</height>
@@ -416,14 +416,14 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout width="600" height="250">
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>150</width>
                                 <height>230</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>6</posx>
+                                <left>6</left>
                                 <top>214</top>
                                 <width>30</width>
                                 <height>30</height>
@@ -431,7 +431,7 @@
                                 <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>10</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -441,7 +441,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -451,7 +451,7 @@
                                 <visible>!SubString(ListItem.Property(Duration),min)</visible>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -462,7 +462,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -473,7 +473,7 @@
                             <control type="textbox">
                                 <visible>IsEmpty(ListItem.Property(TagLine))</visible>
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -484,7 +484,7 @@
                             <control type="textbox">
                                 <visible>IsEmpty(ListItem.Property(TagLine)) + IsEmpty(ListItem.Property(PlotOutline))</visible>
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -501,14 +501,14 @@
                                 <visible>Control.HasFocus(211)</visible>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>150</width>
                                 <height>230</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>6</posx>
+                                <left>6</left>
                                 <top>214</top>
                                 <width>30</width>
                                 <height>30</height>
@@ -516,7 +516,7 @@
                                 <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>10</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -526,7 +526,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -536,7 +536,7 @@
                                 <visible>!SubString(ListItem.Property(Duration),min)</visible>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -547,7 +547,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -557,7 +557,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -568,7 +568,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -580,9 +580,9 @@
                         </focusedlayout>
                     </control>
                     <control type="group">
-                        <posx>100</posx>
+                        <left>100</left>
                         <control type="label">
-                            <posx>100</posx>
+                            <left>100</left>
                             <width min="10" max="700">auto</width>
                             <height>42</height>
                             <font>size42</font>
@@ -618,21 +618,21 @@
                         <colordiffuse>searchband</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>40</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineL.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>290</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineR.png</texture>
                     </control>
                     <control type="list" id="121">
-                        <posx>60</posx>
+                        <left>60</left>
                         <top>40</top>
                         <width>1800</width>
                         <height>250</height>
@@ -645,14 +645,14 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout width="600" height="250">
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>150</width>
                                 <height>230</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>6</posx>
+                                <left>6</left>
                                 <top>214</top>
                                 <width>30</width>
                                 <height>30</height>
@@ -660,7 +660,7 @@
                                 <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>10</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -670,7 +670,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -680,7 +680,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -697,14 +697,14 @@
                                 <visible>Control.HasFocus(121)</visible>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>150</width>
                                 <height>230</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>6</posx>
+                                <left>6</left>
                                 <top>214</top>
                                 <width>30</width>
                                 <height>30</height>
@@ -712,7 +712,7 @@
                                 <visible>!IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>10</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -722,7 +722,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -732,7 +732,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -743,9 +743,9 @@
                         </focusedlayout>
                     </control>
                     <control type="group">
-                        <posx>100</posx>
+                        <left>100</left>
                         <control type="label">
-                            <posx>100</posx>
+                            <left>100</left>
                             <width min="10" max="700">auto</width>
                             <height>42</height>
                             <font>size42</font>
@@ -771,14 +771,14 @@
                 </control>
                 <!--SEASONS-->
                 <control type="group" id="139">
-                    <posx>0</posx>
+                    <left>0</left>
                     <top>0</top>
                     <width>1800</width>
                     <height>900</height>
                     <control type="panel" id="131">
                         <onup>121</onup>
                         <ondown>141</ondown>
-                        <posx>60</posx>
+                        <left>60</left>
                         <top>40</top>
                         <width>1800</width>
                         <height>900</height>
@@ -786,7 +786,7 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout height="380" width="257">
                             <control type="image">
-                                <posx>35</posx>
+                                <left>35</left>
                                 <top>24</top>
                                 <width>197</width>
                                 <height>294</height>
@@ -794,7 +794,7 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="image">
-                                <posx>30</posx>
+                                <left>30</left>
                                 <top>290</top>
                                 <height>32</height>
                                 <width>60</width>
@@ -819,7 +819,7 @@
                                 <control type="image">
                                     <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                                     <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                    <posx>19</posx>
+                                    <left>19</left>
                                     <top>9</top>
                                     <width>228</width>
                                     <height>323</height>
@@ -828,7 +828,7 @@
                                 </control>
                             </control>
                             <control type="image">
-                                <posx>35</posx>
+                                <left>35</left>
                                 <top>24</top>
                                 <width>197</width>
                                 <height>294</height>
@@ -836,7 +836,7 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="image">
-                                <posx>30</posx>
+                                <left>30</left>
                                 <top>290</top>
                                 <height>32</height>
                                 <width>60</width>
@@ -856,9 +856,9 @@
                         </focusedlayout>
                     </control>
                     <control type="group">
-                        <posx>100</posx>
+                        <left>100</left>
                         <control type="label">
-                            <posx>100</posx>
+                            <left>100</left>
                             <width min="10" max="700">auto</width>
                             <height>42</height>
                             <font>size42</font>
@@ -894,21 +894,21 @@
                         <colordiffuse>searchband</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>40</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineL.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>290</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineR.png</texture>
                     </control>
                     <control type="list" id="141">
-                        <posx>60</posx>
+                        <left>60</left>
                         <top>40</top>
                         <width>1800</width>
                         <height>250</height>
@@ -921,14 +921,14 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout width="600" height="250">
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>150</width>
                                 <height>100</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>6</posx>
+                                <left>6</left>
                                 <top>84</top>
                                 <width>30</width>
                                 <height>30</height>
@@ -954,7 +954,7 @@
                                 <label>$INFO[ListItem.Property(Duration)] min.</label>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>10</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -964,7 +964,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -974,7 +974,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -983,7 +983,7 @@
                                 <align>justify</align>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>210</top>
                                 <width>150</width>
                                 <height>20</height>
@@ -999,14 +999,14 @@
                                 <visible>Control.HasFocus(141)</visible>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>150</width>
                                 <height>100</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>6</posx>
+                                <left>6</left>
                                 <top>84</top>
                                 <width>30</width>
                                 <height>30</height>
@@ -1032,7 +1032,7 @@
                                 <label>$INFO[ListItem.Property(Duration)] min.</label>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>10</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -1042,7 +1042,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -1052,7 +1052,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -1061,7 +1061,7 @@
                                 <align>justify</align>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>210</top>
                                 <width>150</width>
                                 <height>20</height>
@@ -1071,9 +1071,9 @@
                         </focusedlayout>
                     </control>
                     <control type="group">
-                        <posx>100</posx>
+                        <left>100</left>
                         <control type="label">
-                            <posx>100</posx>
+                            <left>100</left>
                             <width min="10" max="700">auto</width>
                             <height>42</height>
                             <font>size42</font>
@@ -1109,21 +1109,21 @@
                         <colordiffuse>searchband</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>40</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineL.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>290</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineR.png</texture>
                     </control>
                     <control type="list" id="151">
-                        <posx>60</posx>
+                        <left>60</left>
                         <top>40</top>
                         <width>1800</width>
                         <height>250</height>
@@ -1136,14 +1136,14 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout width="600" height="250">
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>190</width>
                                 <height>190</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <posx>105</posx>
+                                <left>105</left>
                                 <top>210</top>
                                 <width>190</width>
                                 <height>20</height>
@@ -1152,7 +1152,7 @@
                                 <label>$INFO[ListItem.Property(Year)]</label>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>10</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1162,7 +1162,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>40</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1172,7 +1172,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>60</top>
                                 <width>370</width>
                                 <height>170</height>
@@ -1189,14 +1189,14 @@
                                 <visible>Control.HasFocus(151)</visible>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>190</width>
                                 <height>190</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <posx>105</posx>
+                                <left>105</left>
                                 <top>210</top>
                                 <width>190</width>
                                 <height>20</height>
@@ -1205,7 +1205,7 @@
                                 <label>$INFO[ListItem.Property(Year)]</label>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>10</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1215,7 +1215,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>40</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1225,7 +1225,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>60</top>
                                 <width>370</width>
                                 <height>170</height>
@@ -1236,9 +1236,9 @@
                         </focusedlayout>
                     </control>
                     <control type="group">
-                        <posx>100</posx>
+                        <left>100</left>
                         <control type="label">
-                            <posx>100</posx>
+                            <left>100</left>
                             <width min="10" max="700">auto</width>
                             <height>42</height>
                             <font>size42</font>
@@ -1286,7 +1286,7 @@
                         <texture>images/lineR.png</texture>
                     </control>
                     <control type="list" id="161">
-                        <posx>60</posx>
+                        <left>60</left>
                         <top>40</top>
                         <width>1800</width>
                         <height>250</height>
@@ -1299,14 +1299,14 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout width="600" height="250">
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>150</width>
                                 <height>150</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>10</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -1316,7 +1316,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -1326,7 +1326,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -1343,14 +1343,14 @@
                                 <visible>Control.HasFocus(161)</visible>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>150</width>
                                 <height>150</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>10</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -1360,7 +1360,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>40</top>
                                 <width>410</width>
                                 <height>12</height>
@@ -1370,7 +1370,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>170</posx>
+                                <left>170</left>
                                 <top>60</top>
                                 <width>410</width>
                                 <height>170</height>
@@ -1381,9 +1381,9 @@
                         </focusedlayout>
                     </control>
                     <control type="group">
-                        <posx>100</posx>
+                        <left>100</left>
                         <control type="label">
-                            <posx>100</posx>
+                            <left>100</left>
                             <width min="10" max="700">auto</width>
                             <height>42</height>
                             <font>size42</font>
@@ -1419,21 +1419,21 @@
                         <colordiffuse>searchband</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>40</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineL.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>290</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineR.png</texture>
                     </control>
                     <control type="list" id="171">
-                        <posx>60</posx>
+                        <left>60</left>
                         <top>40</top>
                         <width>1800</width>
                         <height>250</height>
@@ -1446,14 +1446,14 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout width="600" height="250">
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>190</width>
                                 <height>190</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>210</top>
                                 <width>190</width>
                                 <height>20</height>
@@ -1461,7 +1461,7 @@
                                 <aspectratio>keep</aspectratio>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>10</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1470,7 +1470,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>40</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1480,7 +1480,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>60</top>
                                 <width>370</width>
                                 <height>170</height>
@@ -1497,14 +1497,14 @@
                                 <visible>Control.HasFocus(171)</visible>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>190</width>
                                 <height>190</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>210</top>
                                 <width>190</width>
                                 <height>20</height>
@@ -1512,7 +1512,7 @@
                                 <aspectratio>keep</aspectratio>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>10</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1521,7 +1521,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>40</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1531,7 +1531,7 @@
                             </control>
                             <control type="textbox">
                                 <autoscroll>false</autoscroll>
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>60</top>
                                 <width>370</width>
                                 <height>170</height>
@@ -1542,9 +1542,9 @@
                         </focusedlayout>
                     </control>
                     <control type="group">
-                        <posx>100</posx>
+                        <left>100</left>
                         <control type="label">
-                            <posx>100</posx>
+                            <left>100</left>
                             <width min="10" max="700">auto</width>
                             <height>42</height>
                             <font>size42</font>
@@ -1580,21 +1580,21 @@
                         <colordiffuse>searchband</colordiffuse>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>40</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineL.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>290</top>
                         <width>1920</width>
                         <height>1</height>
                         <texture>images/lineR.png</texture>
                     </control>
                     <control type="list" id="181">
-                       <posx>60</posx>
+                       <left>60</left>
                         <top>40</top>
                         <width>1800</width>
                         <height>250</height>
@@ -1607,14 +1607,14 @@
                         <preloaditems>2</preloaditems>
                         <itemlayout width="600" height="250">
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>190</width>
                                 <height>190</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                              <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>10</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1623,7 +1623,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>40</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1632,7 +1632,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>70</top>
                                 <width>280</width>
                                 <height>12</height>
@@ -1641,7 +1641,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>100</top>
                                 <width>280</width>
                                 <height>12</height>
@@ -1658,14 +1658,14 @@
                                 <visible>Control.HasFocus(181)</visible>
                             </control>
                             <control type="image">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <top>10</top>
                                 <width>190</width>
                                 <height>190</height>
                                 <texture background="true">$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>10</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1674,7 +1674,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>40</top>
                                 <width>370</width>
                                 <height>12</height>
@@ -1683,7 +1683,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>70</top>
                                 <width>280</width>
                                 <height>12</height>
@@ -1692,7 +1692,7 @@
                                 <aligny>center</aligny>
                             </control>
                             <control type="label">
-                                <posx>210</posx>
+                                <left>210</left>
                                 <top>100</top>
                                 <width>280</width>
                                 <height>12</height>
@@ -1703,9 +1703,9 @@
                         </focusedlayout>
                     </control>
                     <control type="group">
-                        <posx>100</posx>
+                        <left>100</left>
                         <control type="label">
-                            <posx>100</posx>
+                            <left>100</left>
                             <width min="10" max="700">auto</width>
                             <height>42</height>
                             <font>size42</font>

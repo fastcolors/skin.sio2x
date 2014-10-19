@@ -2,7 +2,7 @@
 <window>
     <controls>
         <control type="group">
-            <posx>685</posx>
+            <left>685</left>
             <top>250</top>
             <control type="image" id="2">
                 <width>550</width>

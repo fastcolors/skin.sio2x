@@ -12,7 +12,7 @@
             <colordiffuse>AAFFFFFF</colordiffuse>
         </control>
         <control type="image" description="Dialog">
-            <posx>-60</posx>
+            <left>-60</left>
             <top>-60</top>
             <width>2040</width>
             <height>1150</height>
@@ -20,39 +20,39 @@
             <texture border="150">images/Dialog.png</texture>
         </control>
         <control type="image">
-            <posx>595</posx>
+            <left>595</left>
             <top>100</top>
             <width>2</width>
             <height>750</height>
             <texture>lines/LineV.png</texture>
         </control>
         <control type="image">
-            <posx>1064</posx>
+            <left>1064</left>
             <top>100</top>
             <width>2</width>
             <height>750</height>
             <texture>lines/LineV.png</texture>
         </control>
         <control type="image">
-            <posx>1534</posx>
+            <left>1534</left>
             <top>100</top>
             <width>2</width>
             <height>750</height>
             <texture>lines/LineV.png</texture>
         </control>
         <control type="image">
-            <posx>120</posx>
+            <left>120</left>
             <top>190</top>
             <width>1680</width>
             <height>1</height>
             <texture>lines/Line.png</texture>
         </control>
         <control type="group">
-            <posx>15</posx>
+            <left>15</left>
             <control type="group">
                 <control type="label">
                     <description>WindowsTopInfos</description>
-                    <posx>90</posx>
+                    <left>90</left>
                     <top>90</top>
                     <width>1740</width>
                     <height>40</height>
@@ -63,7 +63,7 @@
                 </control>
                 <control type="group">
                     <description>Group list</description>
-                    <posx>120</posx>
+                    <left>120</left>
                     <top>80</top>
                     <control type="label">
                         <description>name label</description>
@@ -101,7 +101,7 @@
                         <scrolltime>200</scrolltime>
                         <itemlayout height="60">
                             <control type="label">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <width>460</width>
                                 <height>60</height>
                                 <font>size26</font>
@@ -120,7 +120,7 @@
                                 <visible>Control.HasFocus(13)</visible>
                             </control>
                             <control type="label">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <width>460</width>
                                 <height>60</height>
                                 <font>size26</font>
@@ -135,7 +135,7 @@
                 </control>
                 <control type="group">
                     <description>Channels list</description>
-                    <posx>590</posx>
+                    <left>590</left>
                     <top>80</top>
                     <control type="label">
                         <description>name label</description>
@@ -173,7 +173,7 @@
                         <scrolltime>200</scrolltime>
                         <itemlayout height="60">
                             <control type="label">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <width>450</width>
                                 <height>60</height>
                                 <font>size26</font>
@@ -185,7 +185,7 @@
                             <control type="image">
                                 <width>40</width>
                                 <height>40</height>
-                                <posx>470</posx>
+                                <left>470</left>
                                 <top>10</top>
                                 <texture fallback="images/ThumbBorder3.png" border="3">$INFO[ListItem.Icon]</texture>
                             </control>
@@ -198,7 +198,7 @@
                                 <visible>Control.HasFocus(11)</visible>
                             </control>
                             <control type="label">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <width>450</width>
                                 <height>60</height>
                                 <font>size26</font>
@@ -210,7 +210,7 @@
                             <control type="image">
                                 <width>40</width>
                                 <height>40</height>
-                                <posx>470</posx>
+                                <left>470</left>
                                 <top>10</top>
                                 <texture fallback="images/ThumbBorder3.png" border="3">$INFO[ListItem.Icon]</texture>
                             </control>
@@ -219,7 +219,7 @@
                 </control>
                 <control type="group">
                     <description>Grouped Channels list</description>
-                    <posx>1060</posx>
+                    <left>1060</left>
                     <top>80</top>
                     <control type="label">
                         <description>name label</description>
@@ -257,7 +257,7 @@
                         <scrolltime>200</scrolltime>
                         <itemlayout height="60">
                             <control type="label">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <width>450</width>
                                 <height>60</height>
                                 <font>size26</font>
@@ -270,7 +270,7 @@
                             <control type="image">
                                 <width>40</width>
                                 <height>40</height>
-                                <posx>470</posx>
+                                <left>470</left>
                                 <top>10</top>
                                 <texture fallback="images/ThumbBorder3.png" border="3">$INFO[ListItem.Icon]</texture>
                             </control>
@@ -283,7 +283,7 @@
                                 <visible>Control.HasFocus(12)</visible>
                             </control>
                             <control type="label">
-                                <posx>10</posx>
+                                <left>10</left>
                                 <width>450</width>
                                 <height>60</height>
                                 <font>size26</font>
@@ -295,7 +295,7 @@
                             <control type="image">
                                 <width>40</width>
                                 <height>40</height>
-                                <posx>470</posx>
+                                <left>470</left>
                                 <top>10</top>
                                 <texture fallback="images/ThumbBorder3.png" border="3">$INFO[ListItem.Icon]</texture>
                             </control>
@@ -305,14 +305,14 @@
             </control>
         </control>
         <control type="image">
-            <posx>135</posx>
+            <left>135</left>
             <top>800</top>
             <width>1590</width>
             <height>80</height>
             <texture>images/bottomshader.png</texture>
         </control>
         <control type="grouplist" id="9000">
-            <posx>1560</posx>
+            <left>1560</left>
             <top>300</top>
             <width>230</width>
             <height>400</height>
@@ -356,7 +356,7 @@
         <align>center</align>
         <control type="label">
             <description>Selected Group label</description>
-            <posx>170</posx>
+            <left>170</left>
             <top>860</top>
             <width>1580</width>
             <align>center</align>

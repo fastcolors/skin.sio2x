@@ -9,10 +9,10 @@
         <include>WindowsTopInfos</include>
         <control type="group">
             <control type="group" description="Thumbs">
-                <posx>0</posx>
+                <left>0</left>
                 <top>6</top>
                 <control type="image" description="Icon">
-                    <posx>1350</posx>
+                    <left>1350</left>
                     <top>170</top>
                     <width>495</width>
                     <height>495</height>
@@ -23,7 +23,7 @@
                 </control>
             </control>
             <control type="group" description="top">
-                <posx>90</posx>
+                <left>90</left>
                 <top>170</top>
                 <control type="label" description="Item Label">
                     <top>0</top>
@@ -72,7 +72,7 @@
                     <label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
                 </control>
                 <control type="textbox" description="Plot">
-                    <posx>0</posx>
+                    <left>0</left>
                     <top>330</top>
                     <width>1200</width>
                     <height>336</height>

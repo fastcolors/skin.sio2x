@@ -4,7 +4,7 @@
     <animation effect="fade" start="100" end="0" time="400" reversible="false">WindowClose</animation>
     <controls>
         <control type="group">
-            <posx>855</posx>
+            <left>855</left>
             <top>666</top>
             <control type="group">
                 <visible>player.passthrough</visible>
@@ -26,7 +26,7 @@
                     <texture>images/Speaker.png</texture>
                 </control>
                 <control type="progress" id="1" description="Progress control">
-                    <posx>12</posx>
+                    <left>12</left>
                     <top>150</top>
                     <width>184</width>
                     <height>9</height>

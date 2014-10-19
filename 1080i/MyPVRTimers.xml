@@ -23,11 +23,11 @@
                 <visible>Control.IsVisible(14)</visible>
                 <include>VisibleFade</include>
                 <control type="group">
-                    <posx>80</posx>
+                    <left>80</left>
                     <top>80</top>
                     <control type="grouplist">
                         <orientation>horizontal</orientation>
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>20</top>
                         <width>1760</width>
                         <height>40</height>
@@ -71,7 +71,7 @@
                         </control>
                     </control>
                     <control type="list" id="14">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>60</top>
                         <width>1760</width>
                         <height>480</height>
@@ -89,7 +89,7 @@
                                 <colordiffuse>90FFFFFF</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>40</posx>
+                                <left>40</left>
                                 <width>340</width>
                                 <height>40</height>
                                 <font>Size26</font>
@@ -100,7 +100,7 @@
                                 <info>ListItem.ChannelName</info>
                             </control>
                             <control type="label">
-                                <posx>640</posx>
+                                <left>640</left>
                                 <width>480</width>
                                 <height>40</height>
                                 <font>Size26</font>
@@ -111,7 +111,7 @@
                                 <info>ListItem.Date</info>
                             </control>
                             <control type="label">
-                                <posx>1140</posx>
+                                <left>1140</left>
                                 <width>440</width>
                                 <height>40</height>
                                 <font>Size26</font>
@@ -122,7 +122,7 @@
                                 <info>ListItem.label</info>
                             </control>
                             <control type="label">
-                                <posx>1720</posx>
+                                <left>1720</left>
                                 <width>280</width>
                                 <height>40</height>
                                 <font>Size26</font>
@@ -141,7 +141,7 @@
                                 <colordiffuse>90777777</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>40</posx>
+                                <left>40</left>
                                 <width>340</width>
                                 <height>40</height>
                                 <font>Size26</font>
@@ -152,7 +152,7 @@
                                 <info>ListItem.ChannelName</info>
                             </control>
                             <control type="label">
-                                <posx>640</posx>
+                                <left>640</left>
                                 <width>480</width>
                                 <height>40</height>
                                 <font>Size26</font>
@@ -163,7 +163,7 @@
                                 <info>ListItem.Date</info>
                             </control>
                             <control type="label">
-                                <posx>1140</posx>
+                                <left>1140</left>
                                 <width>440</width>
                                 <height>40</height>
                                 <font>Size26</font>
@@ -174,7 +174,7 @@
                                 <info>ListItem.label</info>
                             </control>
                             <control type="label">
-                                <posx>1720</posx>
+                                <left>1720</left>
                                 <width>280</width>
                                 <height>40</height>
                                 <font>Size26</font>
@@ -186,7 +186,7 @@
                             </control>
                             <control type="textbox">
                                 <description>Plot Value for TVShow</description>
-                                <posx>60</posx>
+                                <left>60</left>
                                 <top>40</top>
                                 <width>1600</width>
                                 <height>70</height>
@@ -198,7 +198,7 @@
                         </focusedlayout>
                     </control>
                     <control type="scrollbar" id="60">
-                        <posx>1900</posx>
+                        <left>1900</left>
                         <top>0</top>
                         <width>8</width>
                         <height>480</height>
@@ -210,7 +210,7 @@
                 </control>
                 <control type="label">
                     <description>Next timer date</description>
-                    <posx>210</posx>
+                    <left>210</left>
                     <top>1000</top>
                     <width>1500</width>
                     <height>60</height>
@@ -221,7 +221,7 @@
                 </control>
                 <control type="label">
                     <description>Page Count Label</description>
-                    <posx>40r</posx>
+                    <left>40r</left>
                     <top>53r</top>
                     <width>500</width>
                     <height>20</height>

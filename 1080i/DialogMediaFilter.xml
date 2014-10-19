@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">5</defaultcontrol>
-    <posx>240</posx>
+    <left>240</left>
     <top>100</top>
     <include>DialogOpenClose</include>
     <controls>
         <control type="image">
-            <posx>270</posx>
+            <left>270</left>
             <width>1360</width>
             <height>1080</height>
             <texture border="150">images/Dialog.png</texture>
         </control>
         <control type="group">
-            <posx>450</posx>
+            <left>450</left>
             <top>150</top>
             <control type="label" id="2">
                 <description>header label</description>
@@ -27,7 +27,7 @@
             </control>
             <!--<control type="button">
                   <description>Close Window button</description>
-                  <posx>10</posx>
+                  <left>10</left>
                   <top>15</top>
                   <width>64</width>
                   <height>32</height>
@@ -54,7 +54,7 @@
                 <onright>6</onright>
             </control>
             <control type="scrollbar" id="6">
-                <posx>220</posx>
+                <left>220</left>
                 <top>0</top>
                 <width>22</width>
                 <height>390</height>
@@ -105,7 +105,7 @@
                 <textcolor>White</textcolor>
             </control>
             <control type="group" id="9001">
-                <posx>305</posx>
+                <left>305</left>
                 <top>720</top>
                 <control type="button" id="28">
                     <description>Ok Button</description>
@@ -121,7 +121,7 @@
                 </control>
                 <control type="button" id="27">
                     <description>Clear Button</description>
-                    <posx>210</posx>
+                    <left>210</left>
                     <width>200</width>
                     <height>60</height>
                     <align>center</align>

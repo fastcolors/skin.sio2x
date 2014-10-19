@@ -9,7 +9,7 @@
             <top>75</top>
             <control type="fixedlist" id="52">
                 <animation effect="slide" start="0,0" end="-225,0" time="0" condition="StringCompare(Container(52).NumItems,2)">conditional</animation>
-                <posx>285</posx>
+                <left>285</left>
                 <top>249</top>
                 <width>1350</width>
                 <height>450</height>
@@ -24,7 +24,7 @@
                 <orientation>horizontal</orientation>
                 <itemlayout width="450" height="450">
                     <control type="image">
-                        <posx>75</posx>
+                        <left>75</left>
                         <top>0</top>
                         <width>300</width>
                         <height>300</height>
@@ -34,7 +34,7 @@
                 </itemlayout>
                 <focusedlayout width="450" height="450">
                     <control type="image">
-                        <posx>75</posx>
+                        <left>75</left>
                         <top>0</top>
                         <width>300</width>
                         <height>300</height>
@@ -46,7 +46,7 @@
             <control type="image">
                 <visible>Control.HasFocus(52)</visible>
                 <animation effect="fade" time="300">VisibleChange</animation>
-                <posx>797</posx>
+                <left>797</left>
                 <top>236</top>
                 <width>326</width>
                 <height>326</height>
@@ -84,7 +84,7 @@
                 <label>$INFO[ListItem.Label2]</label>
             </control>
             <control type="button" id="11" description="Quit xbmc">
-                <posx>915</posx>
+                <left>915</left>
                 <top>255</top>
                 <width>90</width>
                 <height>90</height>

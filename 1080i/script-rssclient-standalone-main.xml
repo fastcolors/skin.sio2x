@@ -8,7 +8,7 @@
             <texture>images/Black.png</texture>
         </control>
         <control type="fixedlist" id="30050">
-            <posx>30</posx>
+            <left>30</left>
             <top>150</top>
             <width>2920</width>
             <height>800</height>
@@ -25,7 +25,7 @@
                 <control type="group">
                     <animation condition="true" effect="zoom" end="29" center=",200" reversible="false">Conditional</animation>
                     <control type="label">
-                        <posx>600</posx>
+                        <left>600</left>
                         <width>1180</width>
                         <height>60</height>
                         <aligny>top</aligny>
@@ -36,7 +36,7 @@
                         <textcolor>gray</textcolor>
                     </control>
                     <control type="label" description="ItemDate">
-                        <posx>600</posx>
+                        <left>600</left>
                         <top>50</top>
                         <width>1180</width>
                         <height>30</height>
@@ -58,7 +58,7 @@
                     <!--<animation effect="fade" start="0" end="100" time="350" delay="250">Visible</animation>-->
                     <animation condition="Control.isVisible(30050)" effect="fade" start="0" end="100" time="250" delay="100" reversible="false">Conditional</animation>
                     <control type="label">
-                        <posx>600</posx>
+                        <left>600</left>
                         <width>1180</width>
                         <height>60</height>
                         <aligny>top</aligny>
@@ -69,7 +69,7 @@
                         <textcolor>white</textcolor>
                     </control>
                     <control type="label" description="ItemDate">
-                        <posx>600</posx>
+                        <left>600</left>
                         <top>50</top>
                         <width>1180</width>
                         <height>30</height>
@@ -85,7 +85,7 @@
                         <texture>images/line.png</texture>
                     </control>
                     <control type="textbox">
-                        <posx>10</posx>
+                        <left>10</left>
                         <top>80</top>
                         <width>1180</width>
                         <height>702</height>
@@ -96,7 +96,7 @@
                         <textcolor>white</textcolor>
                     </control>
                     <control type="textbox">
-                        <posx>310</posx>
+                        <left>310</left>
                         <top>80</top>
                         <width>880</width>
                         <height>702</height>
@@ -116,7 +116,7 @@
                 <control type="group" description="Imagefeed">
                     <visible>!StringCompare(ListItem.Property(image),)</visible>
                     <control type="image" id="30011">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>100</top>
                         <width>250</width>
                         <height>250</height>
@@ -125,7 +125,7 @@
                         <visible>!ListItem.Property(slideshowable)</visible>
                     </control>
                     <control type="multiimage">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>100</top>
                         <width>250</width>
                         <height>250</height>
@@ -143,7 +143,7 @@
         </control>
         <control type="group" id="30052" description="Bottom buttons">
             <control type="grouplist">
-                <posx>200</posx>
+                <left>200</left>
                 <top>980</top>
                 <width>1520</width>
                 <height>250</height>
@@ -182,7 +182,7 @@
             <texture>images/line.png</texture>
         </control>
         <control type="list" id="30051" description="topmenu">
-            <posx>60</posx>
+            <left>60</left>
             <top>50</top>
             <width>1800</width>
             <height>780</height>
@@ -195,7 +195,7 @@
             <orientation>horizontal</orientation>
             <itemlayout height="60" width="450">
                 <control type="label">
-                    <posx>225</posx>
+                    <left>225</left>
                     <top>0</top>
                     <width>400</width>
                     <height>60</height>
@@ -207,7 +207,7 @@
             </itemlayout>
             <focusedlayout height="60" width="450">
                 <control type="image">
-                    <posx>0</posx>
+                    <left>0</left>
                     <top>0</top>
                     <width>435</width>
                     <height>61</height>
@@ -216,7 +216,7 @@
                     <include>VisibleFade</include>
                 </control>
                 <control type="label">
-                    <posx>225</posx>
+                    <left>225</left>
                     <top>0</top>
                     <width>400</width>
                     <height>60</height>
@@ -228,7 +228,7 @@
             </focusedlayout>
         </control>
         <control type="group" id="30005" description="options">
-            <posx>0</posx>
+            <left>0</left>
             <top>-300</top>
             <animation effect="slide" start="0,0" end="0,300" time="400" >Focus</animation>
             <animation effect="slide" start="0,300" end="0,0" time="400" >Unfocus</animation>

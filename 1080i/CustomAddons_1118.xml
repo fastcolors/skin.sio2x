@@ -7,7 +7,7 @@
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
-                <posx>540</posx>
+                <left>540</left>
                 <top>250</top>
                 <width>840</width>
                 <height>580</height>

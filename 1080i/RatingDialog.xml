@@ -65,7 +65,7 @@
         </control>
         <!--SIMPLE -->
         <control type="group" id="10014">
-            <posx>700</posx>
+            <left>700</left>
             <top>500</top>
             <control type="button" id="10030">
                 <description>Love Button</description>
@@ -82,7 +82,7 @@
 
             <control type="button" id="10031">
                 <description>Hate Button</description>
-                <posx>270</posx>
+                <left>270</left>
                 <width>250</width>
                 <height>150</height>
                 <label></label>
@@ -96,7 +96,7 @@
         </control>
         <!--ADVANCED-->
         <control type="group" id="10015">
-            <posx>690</posx>
+            <left>690</left>
             <top>550</top>
             <control type="button" id="11030">
                 <description>1 Button</description>
@@ -116,7 +116,7 @@
 
             <control type="button" id="11031">
                 <description>2 Button</description>
-                <posx>55</posx>
+                <left>55</left>
                 <width>50</width>
                 <height>50</height>
                 <label></label>
@@ -134,7 +134,7 @@
 
             <control type="image">
                 <description>2 Button Placeholder</description>
-                <posx>55</posx>
+                <left>55</left>
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/2_b.png</texture>
@@ -143,7 +143,7 @@
 
             <control type="button" id="11032">
                 <description>3 Button</description>
-                <posx>110</posx>
+                <left>110</left>
                 <width>50</width>
                 <height>50</height>
                 <label></label>
@@ -161,7 +161,7 @@
 
             <control type="image">
                 <description>3 Button Placeholder</description>
-                <posx>110</posx>
+                <left>110</left>
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/3_b.png</texture>
@@ -170,7 +170,7 @@
 
             <control type="button" id="11033">
                 <description>4 Button</description>
-                <posx>165</posx>
+                <left>165</left>
                 <width>50</width>
                 <height>50</height>
                 <label></label>
@@ -188,7 +188,7 @@
 
             <control type="image">
                 <description>4 Button Placeholder</description>
-                <posx>165</posx>
+                <left>165</left>
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/4_b.png</texture>
@@ -197,7 +197,7 @@
 
             <control type="button" id="11034">
                 <description>5 Button</description>
-                <posx>220</posx>
+                <left>220</left>
                 <width>50</width>
                 <height>50</height>
                 <label></label>
@@ -215,7 +215,7 @@
 
             <control type="image">
                 <description>5 Button Placeholder</description>
-                <posx>220</posx>
+                <left>220</left>
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/5_b.png</texture>
@@ -224,7 +224,7 @@
 
             <control type="button" id="11035">
                 <description>6 Button</description>
-                <posx>275</posx>
+                <left>275</left>
                 <width>50</width>
                 <height>50</height>
                 <label></label>
@@ -242,7 +242,7 @@
 
             <control type="image">
                 <description>6 Button Placeholder</description>
-                <posx>275</posx>
+                <left>275</left>
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/6_b.png</texture>
@@ -251,7 +251,7 @@
 
             <control type="button" id="11036">
                 <description>7 Button</description>
-                <posx>330</posx>
+                <left>330</left>
                 <width>50</width>
                 <height>50</height>
                 <label></label>
@@ -269,7 +269,7 @@
 
             <control type="image">
                 <description>7 Button Placeholder</description>
-                <posx>330</posx>
+                <left>330</left>
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/7_b.png</texture>
@@ -278,7 +278,7 @@
 
             <control type="button" id="11037">
                 <description>8 Button</description>
-                <posx>385</posx>
+                <left>385</left>
                 <width>50</width>
                 <height>50</height>
                 <label></label>
@@ -296,7 +296,7 @@
 
             <control type="image">
                 <description>8 Button Placeholder</description>
-                <posx>385</posx>
+                <left>385</left>
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/8_b.png</texture>
@@ -305,7 +305,7 @@
 
             <control type="button" id="11038">
                 <description>9 Button</description>
-                <posx>440</posx>
+                <left>440</left>
                 <width>50</width>
                 <height>50</height>
                 <label></label>
@@ -323,7 +323,7 @@
 
             <control type="image">
                 <description>9 Button Placeholder</description>
-                <posx>440</posx>
+                <left>440</left>
                 <top>130</top>
                 <width>50</width>
                 <height>50</height>
@@ -333,7 +333,7 @@
 
             <control type="button" id="11039">
                 <description>10 Button</description>
-                <posx>495</posx>
+                <left>495</left>
                 <width>50</width>
                 <height>50</height>
                 <label></label>
@@ -351,7 +351,7 @@
 
             <control type="image">
                 <description>10 Button Placeholder</description>
-                <posx>495</posx>
+                <left>495</left>
                 <width>50</width>
                 <height>50</height>
                 <texture>trakt/10_b.png</texture>

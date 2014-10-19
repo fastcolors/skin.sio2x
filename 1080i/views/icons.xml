@@ -22,7 +22,7 @@
                     <!--EPISODES-->
                     <itemlayout condition="Container.Content(Episodes)" height="375" width="450">
                         <control type="image">
-                            <posx>45</posx>
+                            <left>45</left>
                             <top>24</top>
                             <width>360</width>
                             <height>255</height>
@@ -31,7 +31,7 @@
                         </control>
                         <control type="image">
                             <visible>container.content(episodes)</visible>
-                            <posx>45</posx>
+                            <left>45</left>
                             <top>24</top>
                             <width>360</width>
                             <height>255</height>
@@ -40,16 +40,26 @@
                         </control>
                         <control type="image">
                             <visible>![container.content(episodes)]</visible>
-                            <posx>45</posx>
+                            <left>45</left>
                             <top>24</top>
                             <width>360</width>
                             <height>255</height>
                             <texture background="true">$INFO[ListItem.Icon]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
+                        <control type="label">
+                            <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+                            <centerleft>225</centerleft>
+                            <top>290</top>
+                            <width>420</width>
+                            <height>45</height>
+                            <font>size27</font>
+                            <textcolor>black</textcolor>
+                            <align>center</align>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                        </control>
                         <control type="image" description="WatchStatus">
-                            <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
-                            <posx>40</posx>
+                            <left>40</left>
                             <top>251</top>
                             <height>32</height>
                             <width>60</width>
@@ -59,7 +69,7 @@
                     </itemlayout>
                     <focusedlayout condition="Container.Content(Episodes)" height="375" width="450">
                         <control type="image">
-                            <posx>45</posx>
+                            <left>45</left>
                             <top>24</top>
                             <width>360</width>
                             <height>255</height>
@@ -68,7 +78,7 @@
                         </control>
                         <control type="image">
                             <visible>container.content(episodes)</visible>
-                            <posx>45</posx>
+                            <left>45</left>
                             <top>24</top>
                             <width>360</width>
                             <height>255</height>
@@ -77,7 +87,7 @@
                         </control>
                         <control type="image">
                             <visible>![container.content(episodes)]</visible>
-                            <posx>45</posx>
+                            <left>45</left>
                             <top>24</top>
                             <width>360</width>
                             <height>255</height>
@@ -86,8 +96,8 @@
                         </control>
                         <control type="label">
                             <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-                            <posx>225</posx>
-                            <top>300</top>
+                            <centerleft>225</centerleft>
+                            <top>290</top>
                             <width>420</width>
                             <height>45</height>
                             <font>size27</font>
@@ -96,8 +106,7 @@
                             <label>[B]$INFO[ListItem.Label][/B]</label>
                         </control>
                         <control type="image" description="WatchStatus">
-                            <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
-                            <posx>40</posx>
+                            <left>40</left>
                             <top>251</top>
                             <height>32</height>
                             <width>60</width>
@@ -109,7 +118,7 @@
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                                 <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                <posx>30</posx>
+                                <left>30</left>
                                 <top>11</top>
                                 <width>386</width>
                                 <height>280</height>
@@ -122,7 +131,7 @@
                     <!--ADDONS-->
                     <itemlayout condition="Container.Content(Addons)" height="228" width="228">
                         <control type="image">
-                            <posx>35</posx>
+                            <left>35</left>
                             <top>24</top>
                             <width>225</width>
                             <height>225</height>
@@ -138,7 +147,7 @@
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                                 <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                <posx>19</posx>
+                                <left>19</left>
                                 <top>9</top>
                                 <width>256</width>
                                 <height>256</height>
@@ -146,7 +155,7 @@
                                 <aspectratio>stretch</aspectratio>
                             </control>
                             <control type="image">
-                                <posx>35</posx>
+                                <left>35</left>
                                 <top>24</top>
                                 <width>225</width>
                                 <height>225</height>
@@ -159,38 +168,13 @@
                     <!--GENRAL-->
                     <itemlayout height="337" width="225">
                         <control type="image">
-                            <posx>35</posx>
+                            <left>35</left>
                             <top>24</top>
                             <width>222</width>
                             <height>331</height>
                             <texture background="true">$VAR[locandine]</texture>
                             <colordiffuse>FFAAAAAA</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                        </control>
-                        <control type="group">
-                            <visible>container.content(TVshows) | container.content(seasons)</visible>
-                            <control type="image">
-                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <left>143</left>
-                                <top>310</top>
-                                <height>45</height>
-                                <width>150</width>
-                                <aspectratio>keep</aspectratio>
-                                <texture>badges/BadgeCount.png</texture>
-                            </control>
-                            <control type="label" description="Label2">
-                                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <centerleft>218</centerleft>
-                                <top>305</top>
-                                <height>45</height>
-                                <width>150</width>
-                                <font>size24</font>
-                                <scroll>true</scroll>
-                                <align>center</align>
-                                <scroll>false</scroll>
-                                <textcolor>FFFFFFFF</textcolor>
-                                <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
-                            </control>
                         </control>
                         <control type="image" description="WatchStatus">
                             <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
@@ -219,7 +203,7 @@
                                 <control type="image">
                                     <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                                     <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                    <posx>19</posx>
+                                    <left>19</left>
                                     <top>9</top>
                                     <width>253</width>
                                     <height>360</height>
@@ -229,7 +213,7 @@
                                 <control type="image">
                                     <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                                     <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                    <posx>19</posx>
+                                    <left>19</left>
                                     <top>9</top>
                                     <width>253</width>
                                     <height>360</height>
@@ -237,37 +221,12 @@
                                     <aspectratio>stretch</aspectratio>
                                 </control>
                                 <control type="image">
-                                    <posx>35</posx>
+                                    <left>35</left>
                                     <top>24</top>
                                     <width>222</width>
                                     <height>331</height>
                                     <texture background="true">$VAR[locandine]</texture>
                                     <aspectratio>scale</aspectratio>
-                                </control>
-                                <control type="group">
-                                    <visible>container.content(TVshows) | container.content(seasons)</visible>
-                                    <control type="image">
-                                        <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                        <left>143</left>
-                                        <top>310</top>
-                                        <height>45</height>
-                                        <width>150</width>
-                                        <aspectratio>keep</aspectratio>
-                                        <texture>badges/BadgeCount.png</texture>
-                                    </control>
-                                    <control type="label" description="Label2">
-                                        <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                        <centerleft>218</centerleft>
-                                        <top>305</top>
-                                        <height>45</height>
-                                        <width>150</width>
-                                        <font>size24</font>
-                                        <scroll>true</scroll>
-                                        <align>center</align>
-                                        <scroll>false</scroll>
-                                        <textcolor>FFFFFFFF</textcolor>
-                                        <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
-                                    </control>
                                 </control>
                                 <control type="image" description="WatchStatus">
                                     <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
@@ -300,10 +259,10 @@
                 <texture colordiffuse="black">lines/Line.png</texture>
             </control>
             <control type="group">
-                <visible>!Container.Content(episodes)</visible>
+                <visible>!Container.Content(episodes) + !Skin.HasSetting(noslideicon)</visible>
                 <visible>[Container(53).Column(0) + !StringCompare(ListItem.Label,..)] | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3)</visible>
                 <visible>![Container(53).OnNext | Container(53).OnPrevious]</visible>
-                <posx>1230</posx>
+                <left>1230</left>
                 <top>450</top>
                 <animation effect="slide" start="710,0" end="0,0" time="450" delay="1000">visible</animation>
                 <animation effect="slide" start="0,0" end="710,0" time="300" delay="0" reversible="false">hidden</animation>
@@ -404,11 +363,37 @@
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>
                     <bordersize>5</bordersize>
                 </control>
+                <control type="group">
+                    <visible>container.content(TVshows) | container.content(seasons)</visible>
+                    <control type="image">
+                        <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                        <centerleft>60</centerleft>
+                        <centertop>200</centertop>
+                        <height>65</height>
+                        <width>65</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>badges/BadgeCount.png</texture>
+                    </control>
+                    <control type="label" description="Label2">
+                        <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                        <centerleft>60</centerleft>
+                        <centertop>199</centertop>
+                        <height>60</height>
+                        <width>65</width>
+                        <font>size24</font>
+                        <align>center</align>
+                        <scroll>false</scroll>
+                        <textcolor>FFFFFFFF</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
+                    </control>
+                </control>
             </control>
             <control type="group">
+                <visible>!Skin.HasSetting(noslideicon)</visible>
                 <visible>Container(53).Column(4) | Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7)</visible>
                 <visible>![Container(53).OnNext | Container(53).OnPrevious]</visible>
-                <posx>-10</posx>
+                <left>-10</left>
                 <top>450</top>
                 <animation effect="slide" start="-710,0" end="0,0" time="450" delay="1000" reversible="true">visible</animation>
                 <animation effect="slide" start="0,0" end="-710,0" time="300" delay="0" reversible="false">hidden</animation>
@@ -508,6 +493,31 @@
                     <fadetime>200</fadetime>
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>
                     <bordersize>5</bordersize>
+                </control>
+                <control type="group">
+                    <visible>container.content(TVshows) | container.content(seasons)</visible>
+                    <control type="image">
+                        <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                        <centerleft>640</centerleft>
+                        <centertop>200</centertop>
+                        <height>65</height>
+                        <width>65</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>badges/BadgeCount.png</texture>
+                    </control>
+                    <control type="label" description="Label2">
+                        <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                        <centerleft>640</centerleft>
+                        <centertop>199</centertop>
+                        <height>60</height>
+                        <width>65</width>
+                        <font>size24</font>
+                        <align>center</align>
+                        <scroll>false</scroll>
+                        <textcolor>FFFFFFFF</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
+                    </control>
                 </control>
             </control>
             <control type="image" description="Stars">

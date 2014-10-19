@@ -95,7 +95,7 @@
                 </control>
                 <control type="button" id="28">
                     <description>OK Button</description>
-                    <posx>315</posx>
+                    <left>315</left>
                     <width>300</width>
                     <height>60</height>
                     <align>center</align>
@@ -105,7 +105,7 @@
                 </control>
                 <control type="button" id="50">
                     <description>Defaults Button</description>
-                    <posx>630</posx>
+                    <left>630</left>
                     <width>300</width>
                     <height>60</height>
                     <align>center</align>

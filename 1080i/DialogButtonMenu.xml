@@ -11,7 +11,7 @@
             <texture colordiffuse="white">images/BlackT.png</texture>
         </control>
         <control type="image" description="Dialog">
-            <posx>350</posx>
+            <left>350</left>
             <top>290</top>
             <width>1220</width>
             <height>500</height>
@@ -19,7 +19,7 @@
             <texture border="150">images/Dialog.png</texture>
         </control>
         <control type="grouplist" id="9000">
-            <posx>500</posx>
+            <left>500</left>
             <top>450</top>
             <width>920</width>
             <height>126</height>

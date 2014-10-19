@@ -6,7 +6,7 @@
     <controls>
         <control type="textbox" id="130">
             <description>Text box</description>
-            <posx>40</posx>
+            <left>40</left>
             <top>50</top>
             <width>640</width>
             <height>460</height>
@@ -16,14 +16,14 @@
             <onup>130</onup>
             <ondown>130</ondown>
             <pagecontrol>132</pagecontrol>
-            <spinposx>0</spinposx>
+            <spinleft>0</spinleft>
             <spintop>0</spintop>
             <pulseonselect></pulseonselect>
             <textcolor>White</textcolor>
         </control>
         <control type="spincontrol" id="132">
             <description>Next page button</description>
-            <posx>600</posx>
+            <left>600</left>
             <top>520</top>
             <subtype>page</subtype>
             <font>size30</font>

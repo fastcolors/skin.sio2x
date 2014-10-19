@@ -41,7 +41,7 @@
             <itemgap>0</itemgap>
         </control>
         <control type="grouplist" id="5" description="Stage">
-            <posx>500</posx>
+            <left>500</left>
             <top>81</top>
             <width>1380</width>
             <height>972</height>
@@ -66,7 +66,7 @@
             <width>300</width>
             <height>81</height>
             <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
-            <radioposx>0</radioposx>
+            <radioleft>0</radioleft>
             <font>size33</font>
             <align>left</align>
         </control>

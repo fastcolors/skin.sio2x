@@ -14,7 +14,7 @@
                 <texture border="50">sidepanel/Back.png</texture>
             </control>
             <control type="group">
-                <posx>960</posx>
+                <left>960</left>
                 <top>0</top>
                 <control type="list" id="450">
                     <width>960</width>
@@ -29,7 +29,7 @@
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
                     <itemlayout width="890" height="70">
                         <control type="label" description="Main Label">
-                            <posx>45</posx>
+                            <left>45</left>
                             <width>725</width>
                             <include>BigListTitle</include>
                             <label>$INFO[ListItem.label]</label>
@@ -44,7 +44,7 @@
                             <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
                         </control>
                         <control type="label" description="Main Label">
-                            <posx>45</posx>
+                            <left>45</left>
                             <width>725</width>
                             <include>BigListTitleFO</include>
                             <label>$INFO[ListItem.label]</label>
@@ -73,7 +73,7 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <posx>51r</posx>
+                <left>51r</left>
                 <top>10</top>
                 <height>430</height>
                 <onleft>450</onleft>

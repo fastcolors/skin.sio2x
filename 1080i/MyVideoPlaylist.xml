@@ -13,7 +13,7 @@
                     <animation effect="fade" time="400">Visible</animation>
                     <animation effect="fade" time="0">Hidden</animation>
                     <control type="image" description="Thumb Reflection">
-                        <posx>180</posx>
+                        <left>180</left>
                         <top>720</top>
                         <width>621</width>
                         <height>720</height>
@@ -22,7 +22,7 @@
                         <aspectratio aligny="top">keep</aspectratio>
                     </control>
                     <control type="image" description="Thumb">
-                        <posx>180</posx>
+                        <left>180</left>
                         <top>0</top>
                         <width>621</width>
                         <height>720</height>
@@ -33,10 +33,10 @@
                 </control>
                 <control type="group" description="Slider and List">
                     <include>LargeListItemCount</include>
-                    <posx>1020</posx>
+                    <left>1020</left>
                     <top>131</top>
                     <control type="fixedlist" id="50">
-                        <posx>0</posx>
+                        <left>0</left>
                         <top>0</top>
                         <width>802</width>
                         <height>888</height>
@@ -53,7 +53,7 @@
                         <scrolltime tween="sine" easing="inout">280</scrolltime>
                         <itemlayout width="802" height="111">
                             <control type="image" description="KEEP">
-                                <posx>0</posx>
+                                <left>0</left>
                                 <top>0</top>
                                 <height>111</height>
                                 <width>166</width>
@@ -63,7 +63,7 @@
                             </control>
                             <control type="label" description="Main Label">
                                 <visible>!IsEmpty(ListItem.Artist) | !IsEmpty(ListItem.Label2)</visible>
-                                <posx>195</posx>
+                                <left>195</left>
                                 <width>570</width>
                                 <include>50Title</include>
                                 <label>$INFO[ListItem.Label]</label>
@@ -71,26 +71,26 @@
                             <control type="label" description="Main Label">
                                 <visible>IsEmpty(ListItem.Artist) + IsEmpty(ListItem.Label2)</visible>
                                 <top>27</top>
-                                <posx>195</posx>
+                                <left>195</left>
                                 <width>570</width>
                                 <include>50Title</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label" description="Label2">
-                                <posx>195</posx>
+                                <left>195</left>
                                 <include>50details</include>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IsEmpty(ListItem.Artist)</visible>
-                                <posx>195</posx>
+                                <left>195</left>
                                 <include>50details</include>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                         </itemlayout>
                         <focusedlayout width="802" height="111">
                             <control type="image" description="KEEP">
-                                <posx>0</posx>
+                                <left>0</left>
                                 <top>0</top>
                                 <height>111</height>
                                 <width>166</width>
@@ -100,7 +100,7 @@
                             </control>
                             <control type="label" description="Main Label">
                                 <visible>!IsEmpty(ListItem.Artist) | !IsEmpty(ListItem.Label2)</visible>
-                                <posx>195</posx>
+                                <left>195</left>
                                 <width>570</width>
                                 <include>50TitleFO</include>
                                 <label>$INFO[ListItem.Label]</label>
@@ -108,19 +108,19 @@
                             <control type="label" description="Main Label">
                                 <visible>IsEmpty(ListItem.Artist) + IsEmpty(ListItem.Label2)</visible>
                                 <top>27</top>
-                                <posx>195</posx>
+                                <left>195</left>
                                 <width>570</width>
                                 <include>50TitleFO</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label" description="Label2">
-                                <posx>195</posx>
+                                <left>195</left>
                                 <include>50detailsFO</include>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IsEmpty(ListItem.Artist)</visible>
-                                <posx>195</posx>
+                                <left>195</left>
                                 <include>50detailsFO</include>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
@@ -129,7 +129,7 @@
                     <include>LargeListSlider</include>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>51r</posx>
+                    <left>51r</left>
                     <top>135</top>
                     <height>870</height>
                     <onleft>50</onleft>
@@ -140,7 +140,7 @@
                 <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
                 <include>DialogOpenCloseVisible</include>
                 <control type="image" description="List back">
-                    <posx>459</posx>
+                    <left>459</left>
                     <top>168</top>
                     <width>1002</width>
                     <height>762</height>
@@ -151,7 +151,7 @@
                     <include>DialogGLs</include>
                     <control type="radiobutton" id="20" description="Shuffle">
                         <include>DialogButt</include>
-                        <radioposx>530</radioposx>
+                        <radioleft>530</radioleft>
                         <label>191</label>
                     </control>
                     <control type="button" id="21" description="Save">

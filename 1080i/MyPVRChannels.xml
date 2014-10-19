@@ -20,21 +20,21 @@
             <include>Icon_Fade</include>
             <control type="image">
                 <visible>!Player.HasMedia</visible>
-                <posx>120</posx>
+                <left>120</left>
                 <top>80</top>
                 <width>760</width>
                 <height>495</height>
                 <texture>pvr/tvset.png</texture>
             </control>
             <control type="videowindow">
-                <posx>120</posx>
+                <left>120</left>
                 <top>80</top>
                 <width>760</width>
                 <height>495</height>
                 <visible>Player.HasVideo</visible>
             </control>
             <control type="visualisation">
-                <posx>120</posx>
+                <left>120</left>
                 <top>80</top>
                 <width>760</width>
                 <height>495</height>
@@ -51,7 +51,7 @@
                 <include>VisibleFade</include>
                 <control type="grouplist">
                     <top>600</top>
-                    <posx>120</posx>
+                    <left>120</left>
                     <itemgap>15</itemgap>
                     <control type="label">
                         <width>790</width>
@@ -74,7 +74,7 @@
                     </control>
                     <control type="progress">
                         <description>Progressbar</description>
-                        <posx>100</posx>
+                        <left>100</left>
                         <width>760</width>
                         <height>8</height>
                         <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
@@ -94,7 +94,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <posx>1020</posx>
+                    <left>1020</left>
                     <top>131</top>
                     <include>LargeListItemCount</include>
                     <control type="fixedlist" id="11">
@@ -119,7 +119,7 @@
                             </control>
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-                                <posx>40</posx>
+                                <left>40</left>
                                 <width>40</width>
                                 <height>75</height>
                                 <font>font12</font>
@@ -131,7 +131,7 @@
                             </control>
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-                                <posx>45</posx>
+                                <left>45</left>
                                 <width>650</width>
                                 <selectedcolor>red</selectedcolor>
                                 <align>left</align>
@@ -142,7 +142,7 @@
                             </control>
                             <control type="label">
                                 <description>Label 2 Title</description>
-                                <posx>45</posx>
+                                <left>45</left>
                                 <width>640</width>
                                 <include>BigListDetails</include>
                                 <info>ListItem.Title</info>
@@ -164,7 +164,7 @@
                             </control>
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-                                <posx>40</posx>
+                                <left>40</left>
                                 <width>40</width>
                                 <height>75</height>
                                 <font>font12</font>
@@ -176,7 +176,7 @@
                             </control>
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
-                                <posx>45</posx>
+                                <left>45</left>
                                 <width>650</width>
                                 <selectedcolor>red</selectedcolor>
                                 <align>left</align>
@@ -187,7 +187,7 @@
                             </control>
                             <control type="label">
                                 <description>Label 2 Title</description>
-                                <posx>45</posx>
+                                <left>45</left>
                                 <width>640</width>
                                 <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Title]</label>
@@ -197,13 +197,13 @@
                     </control>
                 </control>
                 <control type="image">
-                    <posx>1020</posx>
+                    <left>1020</left>
                     <width>1</width>
                     <height>1080</height>
                     <texture>lines/LineV.png</texture>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>39r</posx>
+                    <left>39r</left>
                     <top>135</top>
                     <height>870</height>
                     <onleft>11</onleft>
@@ -211,7 +211,7 @@
                 </control>
                 <control type="label">
                     <description>Page Count Label</description>
-                    <posx>40r</posx>
+                    <left>40r</left>
                     <top>50r</top>
                     <width>500</width>
                     <height>20</height>
@@ -233,7 +233,7 @@
                 <include>VisibleFade</include>
                 <control type="grouplist">
                     <top>600</top>
-                    <posx>120</posx>
+                    <left>120</left>
                     <itemgap>15</itemgap>
                     <control type="label">
                         <width>760</width>
@@ -256,7 +256,7 @@
                     </control>
                     <control type="progress">
                         <description>Progressbar</description>
-                        <posx>100</posx>
+                        <left>100</left>
                         <width>760</width>
                         <height>8</height>
                         <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
@@ -276,7 +276,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <posx>1020</posx>
+                    <left>1020</left>
                     <top>131</top>
                     <control type="fixedlist" id="12">
                         <include>SlimListItemCount</include>
@@ -295,7 +295,7 @@
                         <scrolltime>250</scrolltime>
                         <itemlayout width="802" height="81">
                             <control type="label">
-                                <posx>60</posx>
+                                <left>60</left>
                                 <width>60</width>
                                 <height>81</height>
                                 <font>font12</font>
@@ -306,18 +306,18 @@
                                 <info>ListItem.ChannelNumber</info>
                             </control>
                             <control type="label">
-                                <posx>70</posx>
+                                <left>70</left>
                                 <include>52MainLabel</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="image">
-                                <posx>720</posx>
+                                <left>720</left>
                                 <width>81</width>
                                 <height>81</height>
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>5</posx>
+                                <left>5</left>
                                 <width>30</width>
                                 <height>30</height>
                                 <texture>pvr/Rec.png</texture>
@@ -337,7 +337,7 @@
                                 <colordiffuse>445555FF</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>60</posx>
+                                <left>60</left>
                                 <width>60</width>
                                 <height>81</height>
                                 <font>font12</font>
@@ -347,19 +347,19 @@
                                 <info>ListItem.ChannelNumber</info>
                             </control>
                             <control type="label">
-                                <posx>70</posx>
+                                <left>70</left>
                                 <textcolor>black</textcolor>
                                 <include>52MainLabel</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="image">
-                                <posx>720</posx>
+                                <left>720</left>
                                 <width>81</width>
                                 <height>81</height>
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <posx>5</posx>
+                                <left>5</left>
                                 <width>30</width>
                                 <height>30</height>
                                 <texture>pvr/Rec.png</texture>
@@ -374,7 +374,7 @@
                     </control>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>39r</posx>
+                    <left>39r</left>
                     <top>135</top>
                     <height>870</height>
                     <onleft>11</onleft>
@@ -382,7 +382,7 @@
                 </control>
                 <control type="label">
                     <description>Page Count Label</description>
-                    <posx>40r</posx>
+                    <left>40r</left>
                     <top>50r</top>
                     <width>500</width>
                     <height>20</height>
@@ -394,7 +394,7 @@
                     <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container(12).CurrentPage]/$INFO[Container(12).NumPages][/COLOR])</label>
                 </control>
                 <control type="image">
-                    <posx>1020</posx>
+                    <left>1020</left>
                     <width>1</width>
                     <height>1080</height>
                     <texture>lines/LineV.png</texture>

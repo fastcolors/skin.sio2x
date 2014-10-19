@@ -5,20 +5,20 @@
     <animation effect="fade" time="300">WindowClose</animation>
     <coordinates>
         <system>1</system>
-        <posx>0</posx>
+        <left>0</left>
         <top>0</top>
     </coordinates>
     <controls>
         <!-- assume the context menu contains 1 button. code the size/position of all controls based on that -->
         <control type="image" id="999" description="List back">
-            <posx>540</posx>
+            <left>540</left>
             <top>340</top>
             <width>840</width>
             <height>400</height>
             <texture border="150">images/Dialog.png</texture>
         </control>
         <control type="button" id="1001">
-            <posx>710</posx>
+            <left>710</left>
             <top>500</top>
             <width>500</width>
             <align>center</align>
@@ -28,7 +28,7 @@
             <ondown>1002</ondown>
         </control>
         <control type="button" id="1002">
-            <posx>710</posx>
+            <left>710</left>
             <top>500</top>
             <width>500</width>
             <align>center</align>
@@ -38,7 +38,7 @@
             <ondown>1003</ondown>
         </control>
         <control type="button" id="1003">
-            <posx>710</posx>
+            <left>710</left>
             <top>500</top>
             <width>500</width>
             <align>center</align>

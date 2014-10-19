@@ -7,7 +7,7 @@
         <include>BlackBackground</include>
         <control type="group" description="Right panel">
             <control type="label" id="2" description="Heading">
-                <posx>0</posx>
+                <left>0</left>
                 <top>30</top>
                 <width>1920</width>
                 <font>size39B</font>
@@ -79,7 +79,7 @@
                 <ondown>12</ondown>
                 <itemlayout height="80">
                     <control type="label">
-                        <posx>20</posx>
+                        <left>20</left>
                         <aligny>center</aligny>
                         <height>75</height>
                         <width>1445</width>
@@ -95,7 +95,7 @@
                         <!--<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(10)">Conditional</animation>-->
                     </control>
                     <control type="label" description="Path label">
-                        <posx>20</posx>
+                        <left>20</left>
                         <aligny>center</aligny>
                         <height>75</height>
                         <width>1445</width>

@@ -6,7 +6,7 @@
     <controls>
         <control type="image" id="140">
             <description>bg</description>
-            <posx>118</posx>
+            <left>118</left>
             <top>120</top>
             <width>520</width>
             <height>360</height>
@@ -14,7 +14,7 @@
         </control>
         <control type="label" id="141">
             <description>label_title</description>
-            <posx>230</posx>
+            <left>230</left>
             <top>220</top>
             <width>290</width>
             <height>32</height>
@@ -25,7 +25,7 @@
         </control>
         <control type="image" id="142">
             <description>rating</description>
-            <posx>238</posx>
+            <left>238</left>
             <top>270</top>
             <width>280</width>
             <height>40</height>
@@ -99,7 +99,7 @@
             </control>
         </control>
         <control type="grouplist">
-            <posx>255</posx>
+            <left>255</left>
             <top>340</top>
             <width>240</width>
             <onup>143</onup>

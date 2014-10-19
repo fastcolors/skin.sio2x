@@ -130,7 +130,7 @@
             <control type="group">
                 <control type="group">
                     <control type="image">
-                        <posx>40</posx>
+                        <left>40</left>
                         <top>145</top>
                         <width>240</width>
                         <height>240</height>
@@ -138,14 +138,14 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>35</posx>
+                        <left>35</left>
                         <top>25</top>
                         <width>250</width>
                         <height>375</height>
                         <texture>images/addonscover.png</texture>
                     </control>
                     <control type="image">
-                        <posx>31</posx>
+                        <left>31</left>
                         <top>18</top>
                         <width>262</width>
                         <height>389</height>
@@ -154,7 +154,7 @@
                     </control>
                 </control>
                 <control type="textbox">
-                    <posx>38</posx>
+                    <left>38</left>
                     <top>30</top>
                     <width>244</width>
                     <height>369</height>
@@ -170,7 +170,7 @@
                 <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
                 <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
                 <control type="image">
-                    <posx>40</posx>
+                    <left>40</left>
                     <top>145</top>
                     <width>240</width>
                     <height>240</height>
@@ -178,14 +178,14 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>35</posx>
+                    <left>35</left>
                     <top>25</top>
                     <width>250</width>
                     <height>375</height>
                     <texture>images/addonscover.png</texture>
                 </control>
                 <control type="image">
-                    <posx>31</posx>
+                    <left>31</left>
                     <top>18</top>
                     <width>262</width>
                     <height>389</height>
@@ -193,7 +193,7 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="textbox">
-                    <posx>38</posx>
+                    <left>38</left>
                     <top>30</top>
                     <width>244</width>
                     <height>369</height>
@@ -221,7 +221,7 @@
             <control type="group">
                 <animation condition="true" center="192,30" effect="zoom" end="90">Conditional</animation>
                 <!--<control type="image" description="Reflection">-->
-                <!--<posx>30</posx>-->
+                <!--<left>30</left>-->
                 <!--<top>370</top>-->
                 <!--<width>324</width>-->
                 <!--<height>324</height>-->
@@ -229,7 +229,7 @@
                 <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
                 <!--</control>-->
                 <control type="image">
-                    <posx>30</posx>
+                    <left>30</left>
                     <top>46</top>
                     <width>324</width>
                     <height>324</height>
@@ -238,7 +238,7 @@
                 </control>
                 <control type="image">
                     <visible>Control.IsVisible(313) + !Skin.HasSetting(MusicShelf_Custom)</visible>
-                    <posx>28</posx>
+                    <left>28</left>
                     <top>44</top>
                     <width>328</width>
                     <height>328</height>
@@ -271,7 +271,7 @@
                 <animation center="192,30" effect="zoom" start="90" end="100" time="200">Focus</animation>
                 <animation center="192,30" effect="zoom" start="100" end="90" time="100">unFocus</animation>
                 <!--<control type="image" description="Reflection">-->
-                <!--<posx>30</posx>-->
+                <!--<left>30</left>-->
                 <!--<top>370</top>-->
                 <!--<width>324</width>-->
                 <!--<height>324</height>-->
@@ -279,7 +279,7 @@
                 <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
                 <!--</control>-->
                 <control type="image">
-                    <posx>30</posx>
+                    <left>30</left>
                     <top>46</top>
                     <width>324</width>
                     <height>324</height>
@@ -288,7 +288,7 @@
                 </control>
                 <control type="image">
                     <visible>Control.IsVisible(313) + !Skin.HasSetting(MusicShelf_Custom)</visible>
-                    <posx>28</posx>
+                    <left>28</left>
                     <top>44</top>
                     <width>328</width>
                     <height>328</height>
@@ -435,7 +435,7 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="350" width="320">
             <!--<control type="image" description="Reflection">-->
-            <!--<posx>35</posx>-->
+            <!--<left>35</left>-->
             <!--<top>409</top>-->
             <!--<width>250</width>-->
             <!--<height>375</height>-->
@@ -443,7 +443,7 @@
             <!--<aspectratio>scale</aspectratio>-->
             <!--</control>-->
             <!--<control type="image">-->
-            <!--<posx>31</posx>-->
+            <!--<left>31</left>-->
             <!--<top>400</top>-->
             <!--<width>262</width>-->
             <!--<height>389</height>-->
@@ -492,7 +492,7 @@
             <!--<animation effect="fade" start="100" end="0" time="100">Focus</animation>-->
             <!--<animation effect="fade" start="0" end="100" time="150">unFocus</animation>-->
             <!--<control type="image" description="Reflection">-->
-            <!--<posx>35</posx>-->
+            <!--<left>35</left>-->
             <!--<top>409</top>-->
             <!--<width>250</width>-->
             <!--<height>375</height>-->
@@ -500,7 +500,7 @@
             <!--<aspectratio>scale</aspectratio>-->
             <!--</control>-->
             <!--<control type="image">-->
-            <!--<posx>31</posx>-->
+            <!--<left>31</left>-->
             <!--<top>400</top>-->
             <!--<width>262</width>-->
             <!--<height>389</height>-->
@@ -549,7 +549,7 @@
     <include name="movshelslider">
         <control type="image">
             <visible>Control.HasFocus(311)</visible>
-            <posx>110</posx>
+            <left>110</left>
             <top>489</top>
             <width>100</width>
             <height>10</height>
@@ -566,7 +566,7 @@
     <include name="tvshelslider">
         <control type="image">
             <visible>Control.HasFocus(312) | Control.HasFocus(222) | Control.HasFocus(223)</visible>
-            <posx>190</posx>
+            <left>190</left>
             <top>489</top>
             <width>100</width>
             <height>10</height>
@@ -782,7 +782,7 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(313)</visible>
-                <posx>142</posx>
+                <left>142</left>
                 <top>489</top>
                 <width>100</width>
                 <height>10</height>
@@ -817,7 +817,7 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(315)</visible>
-                <posx>142</posx>
+                <left>142</left>
                 <top>489</top>
                 <width>100</width>
                 <height>10</height>
@@ -992,7 +992,7 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(315)</visible>
-                <posx>142</posx>
+                <left>142</left>
                 <top>489</top>
                 <width>100</width>
                 <height>10</height>
@@ -1132,7 +1132,7 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(317)</visible>
-                <posx>110</posx>
+                <left>110</left>
                 <top>489</top>
                 <width>100</width>
                 <height>10</height>
@@ -1286,7 +1286,7 @@
         </control>
             <control type="image">
                 <visible>Control.HasFocus(314)</visible>
-                <posx>142</posx>
+                <left>142</left>
                 <top>489</top>
                 <width>100</width>
                 <height>10</height>
@@ -1307,7 +1307,7 @@
             <visible>[Container(9000).HasFocus(345)]</visible>
             <include>ShelfFade</include>
             <control type="label">
-                <posx>83</posx>
+                <left>83</left>
                 <top>10</top>
                 <width>1754</width>
                 <height>40</height>
@@ -1315,7 +1315,7 @@
                 <label>[B]$INFO[Weather.Location][/B]</label>
             </control>
             <control type="image">
-                <posx>75</posx>
+                <left>75</left>
                 <top>62</top>
                 <width>1770</width>
                 <height>366</height>
@@ -1323,7 +1323,7 @@
                 <texture background="true">images/weathersingle.png</texture>
             </control>
             <control type="image">
-                <posx>75</posx>
+                <left>75</left>
                 <top>420</top>
                 <width>1770</width>
                 <height>350</height>
@@ -1336,7 +1336,7 @@
                 <onleft>9000</onleft>
                 <onright>9000</onright>
                 <orientation>horizontal</orientation>
-                <posx>85</posx>
+                <left>85</left>
                 <top>80</top>
                 <width>1760</width>
                 <height>418</height>
@@ -1547,7 +1547,7 @@
             </control>
             <control type="image">
                 <visible>Control.HasFocus(319)</visible>
-                <posx>110</posx>
+                <left>110</left>
                 <top>489</top>
                 <width>100</width>
                 <height>10</height>

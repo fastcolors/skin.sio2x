@@ -62,28 +62,28 @@
                     </control>
                     <control type="button" id="100">
                         <description>'1' button</description>
-                        <posx>300</posx>
+                        <left>300</left>
                         <include>Keyboardbuttons</include>
                         <onup>32</onup>
                         <ondown>120</ondown>
                     </control>
                     <control type="button" id="101">
                         <description>'2' button</description>
-                        <posx>430</posx>
+                        <left>430</left>
                         <include>Keyboardbuttons</include>
                         <onup>32</onup>
                         <ondown>121</ondown>
                     </control>
                     <control type="button" id="102">
                         <description>'3' button</description>
-                        <posx>560</posx>
+                        <left>560</left>
                         <include>Keyboardbuttons</include>
                         <onup>32</onup>
                         <ondown>122</ondown>
                     </control>
                     <control type="button" id="103">
                         <description>'4' button</description>
-                        <posx>690</posx>
+                        <left>690</left>
                         <posy>0</posy>
                         <include>Keyboardbuttons</include>
                         <onup>32</onup>
@@ -91,7 +91,7 @@
                     </control>
                     <control type="button" id="104">
                         <description>'5' button</description>
-                        <posx>820</posx>
+                        <left>820</left>
                         <posy>0</posy>
                         <include>Keyboardbuttons</include>
                         <onup>32</onup>
@@ -99,35 +99,35 @@
                     </control>
                     <control type="button" id="105">
                         <description>'6' button</description>
-                        <posx>950</posx>
+                        <left>950</left>
                         <include>Keyboardbuttons</include>
                         <onup>32</onup>
                         <ondown>125</ondown>
                     </control>
                     <control type="button" id="106">
                         <description>'7' button</description>
-                        <posx>1080</posx>
+                        <left>1080</left>
                         <include>Keyboardbuttons</include>
                         <onup>305</onup>
                         <ondown>126</ondown>
                     </control>
                     <control type="button" id="107">
                         <description>'8' button</description>
-                        <posx>1210</posx>
+                        <left>1210</left>
                         <include>Keyboardbuttons</include>
                         <onup>305</onup>
                         <ondown>127</ondown>
                     </control>
                     <control type="button" id="108">
                         <description>'9' button</description>
-                        <posx>1340</posx>
+                        <left>1340</left>
                         <include>Keyboardbuttons</include>
                         <onup>306</onup>
                         <ondown>128</ondown>
                     </control>
                     <control type="button" id="109">
                         <description>'0' button</description>
-                        <posx>1470</posx>
+                        <left>1470</left>
                         <include>Keyboardbuttons</include>
                         <onup>306</onup>
                         <ondown>129</ondown>
@@ -138,7 +138,7 @@
                     <orientation>horizontal</orientation>
                     <itemgap>0</itemgap>
                     <control type="radiobutton" id="304">
-                        <posx>0</posx>
+                        <left>0</left>
                         <posy>50</posy>
                         <width>300</width>
                         <include>Keyboardbuttons</include>
@@ -147,14 +147,14 @@
                         <ondown>303</ondown>
                     </control>
                     <control type="button" id="120">
-                        <posx>300</posx>
+                        <left>300</left>
                         <posy>50</posy>
                         <include>Keyboardbuttons</include>
                         <onup>100</onup>
                         <ondown>140</ondown>
                     </control>
                     <control type="button" id="121">
-                        <posx>430</posx>
+                        <left>430</left>
                         <posy>50</posy>
                         <include>Keyboardbuttons</include>
                         <onup>101</onup>
@@ -162,7 +162,7 @@
                     </control>
                     <control type="button" id="122">
                         <description>'C' button</description>
-                        <posx>560</posx>
+                        <left>560</left>
                         <posy>50</posy>
                         <include>Keyboardbuttons</include>
                         <onup>102</onup>
@@ -170,7 +170,7 @@
                     </control>
                     <control type="button" id="123">
                         <description>'D' button</description>
-                        <posx>690</posx>
+                        <left>690</left>
                         <posy>50</posy>
                         <include>Keyboardbuttons</include>
                         <onup>103</onup>
@@ -178,7 +178,7 @@
                     </control>
                     <control type="button" id="124">
                         <description>'E' button</description>
-                        <posx>820</posx>
+                        <left>820</left>
                         <posy>50</posy>
                         <include>Keyboardbuttons</include>
                         <onup>104</onup>
@@ -186,35 +186,35 @@
                     </control>
                     <control type="button" id="125">
                         <description>'F' button</description>
-                        <posx>950</posx>
+                        <left>950</left>
                         <posy>50</posy>
                         <include>Keyboardbuttons</include>
                         <onup>105</onup>
                         <ondown>145</ondown>
                     </control>
                     <control type="button" id="126">
-                        <posx>1080</posx>
+                        <left>1080</left>
                         <posy>50</posy>
                         <include>Keyboardbuttons</include>
                         <onup>106</onup>
                         <ondown>146</ondown>
                     </control>
                     <control type="button" id="127">
-                        <posx>1210</posx>
+                        <left>1210</left>
                         <posy>50</posy>
                         <include>Keyboardbuttons</include>
                         <onup>107</onup>
                         <ondown>147</ondown>
                     </control>
                     <control type="button" id="128">
-                        <posx>1340</posx>
+                        <left>1340</left>
                         <posy>50</posy>
                         <include>Keyboardbuttons</include>
                         <onup>108</onup>
                         <ondown>148</ondown>
                     </control>
                     <control type="button" id="129">
-                        <posx>1470</posx>
+                        <left>1470</left>
                         <posy>50</posy>
                         <include>Keyboardbuttons</include>
                         <onup>109</onup>
@@ -227,7 +227,7 @@
                     <itemgap>0</itemgap>
                     <control type="radiobutton" id="303">
                         <description>CAPS LOCK button</description>
-                        <posx>0</posx>
+                        <left>0</left>
                         <posy>100</posy>
                         <width>300</width>
                         <include>Keyboardbuttons</include>
@@ -293,7 +293,7 @@
 
                     <control type="radiobutton" id="302">
                         <description>SHIFT button</description>
-                        <posx>0</posx>
+                        <left>0</left>
                         <posy>150</posy>
                         <width>300</width>
                         <include>Keyboardbuttons</include>

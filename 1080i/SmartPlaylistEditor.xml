@@ -90,13 +90,13 @@
                     <ondown>16</ondown>
                     <itemlayout width="840" height="63">
                         <control type="image">
-                            <posx>0</posx>
+                            <left>0</left>
                             <top>0</top>
                             <width>840</width>
                             <height>63</height>
                         </control>
                         <control type="label">
-                            <posx>30</posx>
+                            <left>30</left>
                             <top>0</top>
                             <width>780</width>
                             <height>63</height>
@@ -105,7 +105,7 @@
                     </itemlayout>
                     <focusedlayout width="840" height="63">
                         <control type="image">
-                            <posx>0</posx>
+                            <left>0</left>
                             <top>0</top>
                             <width>840</width>
                             <height>63</height>
@@ -113,7 +113,7 @@
                             <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(10)">Conditional</animation>
                         </control>
                         <control type="label">
-                            <posx>30</posx>
+                            <left>30</left>
                             <top>0</top>
                             <height>63</height>
                             <width>780</width>
@@ -124,7 +124,7 @@
                 <control type="group" id="8999">
                     <control type="button" id="13">
                         <description>Add Rule Button</description>
-                        <posx>840</posx>
+                        <left>840</left>
                         <top>381</top>
                         <width>255</width>
                         <height>63</height>
@@ -137,7 +137,7 @@
                     </control>
                     <control type="button" id="14">
                         <description>Remove Rule Button</description>
-                        <posx>840</posx>
+                        <left>840</left>
                         <top>459</top>
                         <width>255</width>
                         <height>63</height>
@@ -150,7 +150,7 @@
                     </control>
                     <control type="button" id="15">
                         <description>Edit Rule Button</description>
-                        <posx>840</posx>
+                        <left>840</left>
                         <top>537</top>
                         <width>255</width>
                         <height>63</height>

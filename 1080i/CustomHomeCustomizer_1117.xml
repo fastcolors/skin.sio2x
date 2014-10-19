@@ -27,7 +27,7 @@
                     <width>1800</width>
                     <height>600</height>
                     <top>518</top>
-                    <posx>60</posx>
+                    <left>60</left>
                     <onleft>50</onleft>
                     <onright>50</onright>
                     <onup>520</onup>
@@ -35,7 +35,7 @@
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
                     <itemlayout height="230" width="300">
                         <control type="image" description="THMBSBASE">
-                            <posx>20</posx>
+                            <left>20</left>
                             <top>48</top>
                             <width>260</width>
                             <height>168</height>
@@ -44,7 +44,7 @@
                         </control>
                         <control type="Image" description="THUMB">
                             <visible>!IsEmpty(Listitem.thumb)</visible>
-                            <posx>20</posx>
+                            <left>20</left>
                             <top>48</top>
                             <height>168</height>
                             <width>260</width>
@@ -53,7 +53,7 @@
                         </control>
                         <control type="Image" description="THUMB">
                             <visible>IsEmpty(Listitem.thumb)</visible>
-                            <posx>20</posx>
+                            <left>20</left>
                             <top>48</top>
                             <height>168</height>
                             <width>260</width>
@@ -70,7 +70,7 @@
                     </itemlayout>
                     <focusedlayout  height="230" width="370">
                         <control type="image" description="THMBSBASE">
-                            <posx>20</posx>
+                            <left>20</left>
                             <top>48</top>
                             <width>260</width>
                             <height>168</height>
@@ -79,7 +79,7 @@
                         </control>
                         <control type="Image" description="THUMB">
                             <visible>!IsEmpty(Listitem.thumb)</visible>
-                            <posx>20</posx>
+                            <left>20</left>
                             <top>48</top>
                             <height>168</height>
                             <width>260</width>
@@ -88,7 +88,7 @@
                         </control>
                         <control type="Image" description="THUMB">
                             <visible>IsEmpty(Listitem.thumb)</visible>
-                            <posx>20</posx>
+                            <left>20</left>
                             <top>48</top>
                             <height>168</height>
                             <width>260</width>
@@ -96,7 +96,7 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image" description="Selection Overlay">
-                            <posx>20</posx>
+                            <left>20</left>
                             <top>48</top>
                             <height>168</height>
                             <width>260</width>
@@ -735,7 +735,7 @@
             <left>260</left>
             <control type="label">
                 <top>40</top>
-                <posx>20</posx>
+                <left>20</left>
                 <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
                 <width>1000</width>
                 <textcolor>gray</textcolor>
@@ -837,7 +837,7 @@
             <left>260</left>
             <control type="label">
                 <top>40</top>
-                <posx>20</posx>
+                <left>20</left>
                 <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
                 <width>1000</width>
                 <textcolor>gray</textcolor>
@@ -972,10 +972,10 @@
         <control type="group" description="VADDONS">
             <visible>Container(50).HasFocus(1013)</visible>
             <top>30</top>
-            <posx>40</posx>
+            <left>40</left>
             <control type="label">
                 <top>40</top>
-                <posx>20</posx>
+                <left>20</left>
                 <width>1000</width>
                 <textcolor>gray</textcolor>
                 <font>size22</font>
@@ -1125,14 +1125,14 @@
         <control type="group" description="Options">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus()</visible>
             <control type="image">
-                <posx>525</posx>
+                <left>525</left>
                 <top>200</top>
                 <width>870</width>
                 <height>560</height>
                 <texture border="150">images/Dialog.png</texture>
             </control>
             <control type="label" description="Dialog heading">
-                <posx>550</posx>
+                <left>550</left>
                 <top>360</top>
                 <width>820</width>
                 <height>52</height>
@@ -1211,10 +1211,10 @@
         </control>
         <control type="group" id="520" description="WEATHER">
             <top>60</top>
-            <posx>60</posx>
+            <left>60</left>
             <visible>Container(50).HasFocus(1006)</visible>
             <control type="label">
-                <posx>450</posx>
+                <left>450</left>
                 <top>80</top>
                 <width>900</width>
                 <height>60</height>
@@ -1224,7 +1224,7 @@
                 <label>Current Location:</label>
             </control>
             <control type="label">
-                <posx>450</posx>
+                <left>450</left>
                 <top>150</top>
                 <width>900</width>
                 <height>60</height>
@@ -1234,7 +1234,7 @@
             </control>
             <control type="button" id="100">
                 <ondown>50</ondown>
-                <posx>750</posx>
+                <left>750</left>
                 <top>250</top>
                 <width>300</width>
                 <height>81</height>
@@ -1246,11 +1246,11 @@
         </control>
         <control type="group" id="521" description="SEARCH">
             <top>60</top>
-            <posx>60</posx>
+            <left>60</left>
             <visible>Container(50).HasFocus(356)</visible>
             <control type="textbox">
                 <!--todo label maybe-->
-                <posx>450</posx>
+                <left>450</left>
                 <top>100</top>
                 <width>900</width>
                 <height>300</height>

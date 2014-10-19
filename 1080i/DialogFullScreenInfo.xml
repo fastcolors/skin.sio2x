@@ -25,7 +25,7 @@
         <control type="group">
             <control type="image">
                 <top>540</top>
-                <posx>1580</posx>
+                <left>1580</left>
                 <width>250</width>
                 <height>350</height>
                 <texture>$INFO[Player.Art(poster)]$INFO[Player.Art(tvshow.poster)]</texture>
@@ -77,7 +77,7 @@
                     <label>$INFO[VideoPlayer.Title]</label>
                 </control>
                 <control type="textbox">
-                    <posx>400</posx>
+                    <left>400</left>
                     <top>100</top>
                     <width>1120</width>
                     <height>170</height>
@@ -88,7 +88,7 @@
                 </control>
             </control>
             <control type="grouplist">
-                <posx>60</posx>
+                <left>60</left>
                 <width>1800</width>
                 <top>590</top>
                 <height>60</height>
@@ -137,7 +137,7 @@
             </control>
         </control>
         <control type="image">
-            <posx>110</posx>
+            <left>110</left>
             <top>700</top>
             <height>200</height>
             <width>250</width>
@@ -149,7 +149,7 @@
         <control type="group">
             <top>10</top>
             <control type="label" description="Clock">
-                <posx>60</posx>
+                <left>60</left>
                 <width>695</width>
                 <height>60</height>
                 <font>size33B</font>
@@ -157,7 +157,7 @@
                 <label>$LOCALIZE[142] $INFO[System.Time]</label>
             </control>
             <control type="label">
-                <posx>60</posx>
+                <left>60</left>
                 <top>55</top>
                 <width>495</width>
                 <height>30</height>
@@ -165,7 +165,7 @@
                 <font>size26</font>
             </control>
             <control type="label" description="End time">
-                <posx>60r</posx>
+                <left>60r</left>
                 <width>695</width>
                 <height>60</height>
                 <align>right</align>
@@ -174,7 +174,7 @@
                 <label>$LOCALIZE[31005]: $INFO[Player.FinishTime]</label>
             </control>
             <control type="label">
-                <posx>60r</posx>
+                <left>60r</left>
                 <top>55</top>
                 <height>30</height>
                 <width>195</width>

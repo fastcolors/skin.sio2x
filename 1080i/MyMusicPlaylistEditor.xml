@@ -58,7 +58,7 @@
                 <pagecontrol>151</pagecontrol>
                 <itemlayout height="60">
                     <control type="label">
-                        <posx>15</posx>
+                        <left>15</left>
                         <width>690</width>
                         <font>size26</font>
                         <align>left</align>
@@ -75,7 +75,7 @@
                         <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
                     </control>
                     <control type="label">
-                        <posx>15</posx>
+                        <left>15</left>
                         <width>690</width>
                         <font>size26</font>
                         <align>left</align>
@@ -174,18 +174,18 @@
             <description>Middle Panel</description>
             <control type="image">
                 <top>40</top>
-                <posx>720</posx>
+                <left>720</left>
                 <height>1000</height>
                 <width>480</width>
                 <texture border="30">musicOSD/back.png</texture>
             </control>
             <control type="group">
-                <posx>750</posx>
+                <left>750</left>
                 <top>68</top>
                 <visible>Control.HasFocus(50)</visible>
                 <control type="image">
                     <visible>!ListItem.IsFolder</visible>
-                    <posx>30</posx>
+                    <left>30</left>
                     <top>45</top>
                     <width>360</width>
                     <height>360</height>
@@ -196,7 +196,7 @@
                 </control>
                 <control type="image">
                     <visible>ListItem.IsFolder</visible>
-                    <posx>30</posx>
+                    <left>30</left>
                     <top>45</top>
                     <width>360</width>
                     <height>360</height>
@@ -206,7 +206,7 @@
                     <bordersize>2</bordersize>
                 </control>
                 <control type="textbox">
-                    <posx>15</posx>
+                    <left>15</left>
                     <top>450</top>
                     <width>420</width>
                     <height>420</height>
@@ -239,14 +239,14 @@
             </control>
             <control type="image" description="separator Bottom">
                 <top>-24</top>
-                <posx>15</posx>
+                <left>15</left>
                 <width>390</width>
                 <height>1</height>
                 <texture>lines/Line.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="grouplist" id="8999">
-                <posx>750</posx>
+                <left>750</left>
                 <top>753</top>
                 <onleft>50</onleft>
                 <onright>100</onright>

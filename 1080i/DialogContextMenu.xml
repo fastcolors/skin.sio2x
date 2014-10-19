@@ -30,7 +30,7 @@
             </control>
         </control>
         <control type="button" id="1000" description="Buttons">
-            <posx>150</posx>
+            <left>150</left>
             <top></top>
             <width>480</width>
             <height>60</height>

@@ -10,7 +10,7 @@
                 <include>MusicInfo</include>
             </control>
             <control type="group" description="BigList">
-                <posx>960</posx>
+                <left>960</left>
                 <top>131</top>
                 <control type="fixedlist" id="50">
                     <!--visible>!Container.content(songs)</visible-->
@@ -33,7 +33,7 @@
             </control>
             <include>Linemiddle</include>
             <control type="scrollbar" id="60">
-                <posx>51r</posx>
+                <left>51r</left>
                 <top>135</top>
                 <height>870</height>
                 <onleft>50</onleft>
@@ -61,7 +61,7 @@
                     <preloaditems>2</preloaditems>
                     <itemlayout height="228" width="228">
                         <control type="image">
-                            <posx>35</posx>
+                            <left>35</left>
                             <top>24</top>
                             <width>225</width>
                             <height>225</height>
@@ -77,7 +77,7 @@
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                                 <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                <posx>19</posx>
+                                <left>19</left>
                                 <top>9</top>
                                 <width>256</width>
                                 <height>256</height>
@@ -85,7 +85,7 @@
                                 <aspectratio>stretch</aspectratio>
                             </control>
                             <control type="image">
-                                <posx>35</posx>
+                                <left>35</left>
                                 <top>24</top>
                                 <width>225</width>
                                 <height>225</height>
@@ -106,7 +106,7 @@
             </control>
             <control type="group">
                 <visible>[Container(53).Column(0) + !StringCompare(ListItem.Label,..)] | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3)</visible>
-                <posx>1230</posx>
+                <left>1230</left>
                 <top>450</top>
                 <animation effect="slide" start="710,0" end="0,0" time="450" delay="200">visiblechange</animation>
                 <control type="image" description="Dialog BG">
@@ -158,7 +158,7 @@
             </control>
             <control type="group">
                 <visible>Container(53).Column(4)| Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7)</visible>
-                <posx>-10</posx>
+                <left>-10</left>
                 <top>450</top>
                 <animation effect="slide" start="-710,0" end="0,0" time="450" delay="200">visiblechange</animation>
                 <control type="image" description="Dialog BG">
@@ -212,13 +212,13 @@
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
                 <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
                 <control type="image">
-                    <posx>-8r</posx>
+                    <left>-8r</left>
                     <top>90</top>
                     <height>910</height>
                     <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>-37r</posx>
+                    <left>-37r</left>
                     <top>120</top>
                     <height>850</height>
                     <onleft>50</onleft>
@@ -230,7 +230,7 @@
         <control type="group" description="sio2view">
             <visible>Control.IsVisible(52)</visible>
             <control type="fixedlist" id="52">
-                <posx>60</posx>
+                <left>60</left>
                 <top>100</top>
                 <width>1920</width>
                 <height>979</height>
@@ -249,7 +249,7 @@
                 <scrolltime>250</scrolltime>
                 <itemlayout height="140">
                     <control type="image">
-                        <posx>1710</posx>
+                        <left>1710</left>
                         <top>10</top>
                         <width>108</width>
                         <height>108</height>
@@ -257,7 +257,7 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="textbox">
-                        <posx>1360</posx>
+                        <left>1360</left>
                         <top>10</top>
                         <width>340</width>
                         <height>92</height>
@@ -267,7 +267,7 @@
                         <label>[B][UPPERCASE]$INFO[ListItem.label][/UPPERCASE][/B][CR][COLOR=FF888888]$INFO[ListItem.Property(Addon.Version)]$INFO[ListItem.Property(Artist_Genre)][/COLOR]</label>
                     </control>
                     <control type="image">
-                        <posx>1670</posx>
+                        <left>1670</left>
                         <top>90</top>
                         <width>40</width>
                         <height>55</height>
@@ -275,7 +275,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>1290</posx>
+                        <left>1290</left>
                         <top>90</top>
                         <width>120</width>
                         <height>55</height>
@@ -283,7 +283,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>1280</posx>
+                        <left>1280</left>
                         <width>500</width>
                         <height>1</height>
                         <texture colordiffuse="black">lines/LineL.png</texture>
@@ -292,13 +292,13 @@
                 <focusedlayout height="140">
                     <control type="image">
                         <animation effect="fade" end="0" time="30">UnFocus</animation>
-                        <posx>1280</posx>
+                        <left>1280</left>
                         <width>560</width>
                         <height>140</height>
                         <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
                     </control>
                     <control type="image">
-                        <posx>1710</posx>
+                        <left>1710</left>
                         <top>10</top>
                         <width>108</width>
                         <height>108</height>
@@ -306,7 +306,7 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="textbox">
-                        <posx>1360</posx>
+                        <left>1360</left>
                         <top>10</top>
                         <width>340</width>
                         <height>92</height>
@@ -316,7 +316,7 @@
                         <label>[B][UPPERCASE]$INFO[ListItem.label][/UPPERCASE][/B][CR][COLOR=FF888888]$INFO[ListItem.Property(Addon.Version)]$INFO[ListItem.Property(Artist_Genre)][/COLOR]</label>
                     </control>
                     <control type="image">
-                        <posx>1670</posx>
+                        <left>1670</left>
                         <top>90</top>
                         <width>40</width>
                         <height>55</height>
@@ -324,7 +324,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>1290</posx>
+                        <left>1290</left>
                         <top>90</top>
                         <width>120</width>
                         <height>55</height>
@@ -332,7 +332,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>1280</posx>
+                        <left>1280</left>
                         <width>500</width>
                         <height>1</height>
                         <texture colordiffuse="black">lines/LineL.png</texture>
@@ -537,7 +537,7 @@
                     <colordiffuse>white</colordiffuse>
                 </control>
                 <control type="textbox" description="plots">
-                    <posx>60</posx>
+                    <left>60</left>
                     <top>630</top>
                     <width>1240</width>
                     <height>480</height>
@@ -576,7 +576,7 @@
             <!--ADDONS-END-->
             <!--GENERAL STUFF-->
             <control type="image">
-                <posx>1340</posx>
+                <left>1340</left>
                 <top>-100</top>
                 <height>1280</height>
                 <width>1</width>
@@ -617,13 +617,13 @@
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
                 <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
                 <control type="image">
-                    <posx>-8r</posx>
+                    <left>-8r</left>
                     <top>90</top>
                     <height>910</height>
                     <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>-37r</posx>
+                    <left>-37r</left>
                     <top>120</top>
                     <height>850</height>
                     <onleft>50</onleft>
@@ -644,7 +644,7 @@
                 <font>size42B</font>
             </control>
             <control type="image" description="fanart">
-                <posx>50</posx>
+                <left>50</left>
                 <top>80</top>
                 <width>1080</width>
                 <height>500</height>
@@ -652,7 +652,7 @@
                 <aspectratio aligny="top">scale</aspectratio>
             </control>
             <control type="textbox" id="807">
-                <posx>1160</posx>
+                <left>1160</left>
                 <top>80</top>
                 <width>700</width>
                 <height>580</height>
@@ -661,14 +661,14 @@
                 <label>$INFO[ListItem.Property(Album_Description)] $INFO[ListItem.Property(Artist_Description)]</label>
             </control>
             <control type="image">
-                <posx>1130</posx>
+                <left>1130</left>
                 <top>80</top>
                 <width>800</width>
                 <height>1</height>
                 <texture>lines/LineL.png</texture>
             </control>
             <control type="image">
-                <posx>560</posx>
+                <left>560</left>
                 <top>660</top>
                 <width>1360</width>
                 <height>1</height>
@@ -682,7 +682,7 @@
                 <ondown>noop</ondown>
                 <onleft>500</onleft>
                 <onright>500</onright>
-                <posx>70</posx>
+                <left>70</left>
                 <top>60</top>
                 <width>1800</width>
                 <height>1000</height>
@@ -698,7 +698,7 @@
                     <control type="group">
                         <top>620</top>
                         <control type="image" description="THUMBNAIL">
-                            <posx>10</posx>
+                            <left>10</left>
                             <top>10</top>
                             <height>280</height>
                             <width>280</width>
@@ -713,7 +713,7 @@
                         <animation effect="zoom" start="150" end="100" center="10,910" time="60">unFocus</animation>
                         <top>620</top>
                         <control type="image" description="white">
-                            <posx>1</posx>
+                            <left>1</left>
                             <top>1</top>
                             <height>298</height>
                             <width>298</width>
@@ -722,7 +722,7 @@
                         </control>
                         <control type="image" description="White">
                             <animation effect ="fade" start="100" end="0" time="10">unFocus</animation>
-                            <posx>8</posx>
+                            <left>8</left>
                             <top>8</top>
                             <height>284</height>
                             <width>284</width>
@@ -731,7 +731,7 @@
                             <colordiffuse>FFFFFFFF</colordiffuse>
                         </control>
                         <control type="image" description="THUMBNAIL">
-                            <posx>10</posx>
+                            <left>10</left>
                             <top>10</top>
                             <height>280</height>
                             <width>280</width>
@@ -743,7 +743,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <animation effect="fade" delay="200" time="300">VisibleChange</animation>
-                <posx>198</posx>
+                <left>198</left>
                 <top>998</top>
                 <width>1525</width>
                 <height>9</height>

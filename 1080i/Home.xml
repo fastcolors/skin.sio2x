@@ -48,7 +48,7 @@
                 <width>1800</width>
                 <height>1080</height>
                 <top>52</top>
-                <posx>60</posx>
+                <left>60</left>
                 <onleft>9000</onleft>
                 <onright>9000</onright>
                 <onup>700</onup>
@@ -184,7 +184,7 @@
                 </content>
             </control>
             <control type="image" description="Line">
-                <posx>-90</posx>
+                <left>-90</left>
                 <top>18</top>
                 <width>2100</width>
                 <height>1</height>
@@ -192,7 +192,7 @@
                 <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
             </control>
             <control type="image" description="Line">
-                <posx>-90</posx>
+                <left>-90</left>
                 <top>52</top>
                 <width>2100</width>
                 <height>1</height>
@@ -203,9 +203,9 @@
                 <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
                 <!--<visible>system.getbool(lookandfeel.enablerssfeeds) + !Control.HasFocus(311)</visible>-->
                 <include>OpenClose</include>
-                <top>16</top>
+                <top>15</top>
                 <width>1920</width>
-                <height>33</height>
+                <height>34</height>
                 <font>size24</font>
                 <urlset>1</urlset>
                 <shadowcolor>-</shadowcolor>
@@ -295,7 +295,7 @@
             <visible>Player.HasAudio</visible>
             <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
             <animation effect="slide" tween="Sine" easing="Out" start="430,0" end="0,0" time="600" delay="200">VisibleChange</animation>
-            <posx>1500</posx>
+            <left>1500</left>
             <top>450</top>
             <control type="image" description="Playing BG">
                 <width>430</width>
@@ -304,7 +304,7 @@
             </control>
             <control type="group">
                 <control type="image">
-                    <posx>18</posx>
+                    <left>18</left>
                     <top>15</top>
                     <width>75</width>
                     <height>75</height>
@@ -312,7 +312,7 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="label">
-                    <posx>110</posx>
+                    <left>110</left>
                     <top>9</top>
                     <aligny>center</aligny>
                     <width>300</width>
@@ -322,7 +322,7 @@
                     <label>$INFO[MusicPlayer.Title]</label>
                 </control>
                 <control type="label">
-                    <posx>110</posx>
+                    <left>110</left>
                     <top>36</top>
                     <aligny>center</aligny>
                     <width>300</width>
@@ -331,7 +331,7 @@
                     <label>$INFO[MusicPlayer.Artist]</label>
                 </control>
                 <control type="label">
-                    <posx>110</posx>
+                    <left>110</left>
                     <top>60</top>
                     <aligny>center</aligny>
                     <width>300</width>

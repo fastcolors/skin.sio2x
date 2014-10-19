@@ -23,7 +23,7 @@
             <control type="group">
                 <control type="list" id="450">
                     <top>185</top>
-                    <posx>960</posx>
+                    <left>960</left>
                     <width>740</width>
                     <height>800</height>
                     <onleft>9000</onleft>
@@ -107,13 +107,13 @@
             </control>
             <control type="radiobutton" id="416" description="Horizontal Flip">
                 <width>400</width>
-                <radioposx>300</radioposx>
+                <radioleft>300</radioleft>
                <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
                 <label>$LOCALIZE[749]</label>
             </control>
         </control>
         <control type="label" id="412" description="Main Label">
-            <posx>30</posx>
+            <left>30</left>
             <top>1029</top>
             <height>45</height>
             <width>1050</width>
@@ -131,7 +131,7 @@
             <texture>lines/LineV.png</texture>
         </control>
         <control type="scrollbar" id="60">
-            <posx>151r</posx>
+            <left>151r</left>
             <top>147</top>
             <height>780</height>
             <onleft>450</onleft>

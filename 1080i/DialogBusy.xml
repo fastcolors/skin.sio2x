@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="136">
     <coordinates>
-        <posx>0</posx>
+        <left>0</left>
         <top>0</top>
     </coordinates>
     <include>OpenClose</include>
     <controls>
         <control type="image" description="Busy BG">
-            <posx>0</posx>
+            <left>0</left>
             <top>0</top>
             <width>1920</width>
             <height>1080</height>
@@ -15,7 +15,7 @@
             <aspectratio>stretch</aspectratio>
         </control>
         <control type="group">
-            <posx>832</posx>
+            <left>832</left>
             <top>412</top>
             <control type="multiimage" description="Busy animation">
                 <width>256</width>
@@ -28,7 +28,7 @@
             </control>
         </control>
         <control type="progress" id="10">
-            <posx>735</posx>
+            <left>735</left>
             <top>650</top>
             <width>450</width>
             <height>9</height>

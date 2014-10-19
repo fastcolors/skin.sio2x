@@ -4,7 +4,7 @@
     <backgroundcolor>background</backgroundcolor>
     <controls>
         <control type="list" id="100">
-            <posx>-10</posx>
+            <left>-10</left>
             <top>-10</top>
             <width>1</width>
             <height>1</height>
@@ -28,7 +28,7 @@
                 <texture>$INFO[Container(100).ListItem.Property(Fanart)]</texture>
             </control>
             <control type="label" description="title">
-                <posx>600</posx>
+                <left>600</left>
                 <top>50</top>
                 <width>1200</width>
                 <height>50</height>
@@ -38,7 +38,7 @@
             </control>
             <control type="label">
                 <visible>Control.IsVisible(110)</visible>
-                <posx>600</posx>
+                <left>600</left>
                 <top>96</top>
                 <width>1000</width>
                 <height>45</height>
@@ -47,7 +47,7 @@
             </control>
             <control type="label">
                 <visible>Control.IsVisible(120)</visible>
-                <posx>600</posx>
+                <left>600</left>
                 <top>96</top>
                 <width>1000</width>
                 <height>45</height>
@@ -56,7 +56,7 @@
             </control>
             <control type="label">
                 <visible>Control.IsVisible(150) | Control.IsVisible(170) | Control.IsVisible(180)</visible>
-                <posx>600</posx>
+                <left>600</left>
                 <top>96</top>
                 <width>1000</width>
                 <height>45</height>
@@ -65,7 +65,7 @@
             </control>
             <control type="label">
                 <visible>Control.IsVisible(140)</visible>
-                <posx>600</posx>
+                <left>600</left>
                 <top>96</top>
                 <width>1000</width>
                 <height>45</height>
@@ -75,7 +75,7 @@
             <control type="image">
                 <camera x="265" y="330" />
                 <animation condition="true" effect="rotatey" center="265,0" end="-20">conditional</animation>
-                <posx>60</posx>
+                <left>60</left>
                 <top>60</top>
                 <width>500</width>
                 <height>600</height>
@@ -84,14 +84,14 @@
             </control>
             <control type="group" id="101">
                 <control type="list" id="110">
-                    <posx>150</posx>
+                    <left>150</left>
                     <top>750</top>
                     <width>1770</width>
                     <height>504</height>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -101,7 +101,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -112,7 +112,7 @@
                     </itemlayout>
                     <focusedlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -122,7 +122,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -207,14 +207,14 @@
                     </content>
                 </control>
                 <control type="list" id="120">
-                    <posx>150</posx>
+                    <left>150</left>
                     <top>750</top>
                     <width>1770</width>
                     <height>504</height>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -224,7 +224,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -235,7 +235,7 @@
                     </itemlayout>
                     <focusedlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -245,7 +245,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -312,14 +312,14 @@
                     </content>
                 </control>
                 <control type="list" id="130">
-                    <posx>150</posx>
+                    <left>150</left>
                     <top>750</top>
                     <width>1770</width>
                     <height>504</height>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -329,7 +329,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -340,7 +340,7 @@
                     </itemlayout>
                     <focusedlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -350,7 +350,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -387,14 +387,14 @@
                     </content>
                 </control>
                 <control type="list" id="140">
-                    <posx>150</posx>
+                    <left>150</left>
                     <top>750</top>
                     <width>1770</width>
                     <height>504</height>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -404,7 +404,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -415,7 +415,7 @@
                     </itemlayout>
                     <focusedlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -425,7 +425,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -498,14 +498,14 @@
                     </content>
                 </control>
                 <control type="list" id="150">
-                    <posx>150</posx>
+                    <left>150</left>
                     <top>750</top>
                     <width>1770</width>
                     <height>504</height>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -515,7 +515,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -526,7 +526,7 @@
                     </itemlayout>
                     <focusedlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -536,7 +536,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -603,14 +603,14 @@
                     </content>
                 </control>
                 <control type="list" id="160">
-                    <posx>150</posx>
+                    <left>150</left>
                     <top>750</top>
                     <width>1770</width>
                     <height>504</height>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -620,7 +620,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -631,7 +631,7 @@
                     </itemlayout>
                     <focusedlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -641,7 +641,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -708,14 +708,14 @@
                     </content>
                 </control>
                 <control type="list" id="170">
-                    <posx>150</posx>
+                    <left>150</left>
                     <top>750</top>
                     <width>1770</width>
                     <height>504</height>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -725,7 +725,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -736,7 +736,7 @@
                     </itemlayout>
                     <focusedlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -746,7 +746,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -819,14 +819,14 @@
                     </content>
                 </control>
                 <control type="list" id="180">
-                    <posx>150</posx>
+                    <left>150</left>
                     <top>750</top>
                     <width>1770</width>
                     <height>504</height>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -836,7 +836,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -847,7 +847,7 @@
                     </itemlayout>
                     <focusedlayout height="26">
                         <control type="label">
-                            <posx>230</posx>
+                            <left>230</left>
                             <top>0</top>
                             <width>230</width>
                             <height>45</height>
@@ -857,7 +857,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>251</posx>
+                            <left>251</left>
                             <top>0</top>
                             <width>1649</width>
                             <height>45</height>
@@ -931,7 +931,7 @@
                 </control>
             </control>
             <control type="group">
-                <posx>600</posx>
+                <left>600</left>
                 <control type="image" description="Line">
                     <top>140</top>
                     <height>1</height>
@@ -981,7 +981,7 @@
                 </control>
             </control>
             <control type="grouplist" id="190">
-                <posx>600</posx>
+                <left>600</left>
                 <top>490</top>
                 <width>1200</width>
                 <ondown>50</ondown>
@@ -1030,7 +1030,7 @@
                 </control>
             </control>
             <control type="grouplist" description="Flags">
-                <posx>600</posx>
+                <left>600</left>
                 <top>420</top>
                 <width>1200</width>
                 <height>50</height>

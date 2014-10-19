@@ -448,7 +448,7 @@
                     <label>[B]$VAR[Plots][/B]</label>
                 </control>
                 <control type="group" description="icon+overlay">
-                    <posx>50</posx>
+                    <left>50</left>
                     <top>160</top>
                     <control type="image">
                         <animation effect="rotate" end="-360" center="auto" time="9000" loop="true" reversible="false" condition="true">Conditional</animation>
@@ -474,7 +474,7 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>120</posx>
+                        <left>120</left>
                         <top>390</top>
                         <width>60</width>
                         <height>60</height>
@@ -496,7 +496,7 @@
                     <onright>54</onright>
                     <itemlayout width="297" height="480">
                         <control type="image">
-                            <posx>15</posx>
+                            <left>15</left>
                             <top>10</top>
                             <height>400</height>
                             <width>267</width>
@@ -513,7 +513,7 @@
                     </itemlayout>
                     <focusedlayout width="297" height="480">
                         <control type="image">
-                            <posx>15</posx>
+                            <left>15</left>
                             <top>10</top>
                             <height>400</height>
                             <width>267</width>
@@ -523,7 +523,7 @@
                             <animation effect="fade" start="0" end="100" time="250">Focus</animation>
                             <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
                             <control type="image">
-                                <posx>5</posx>
+                                <left>5</left>
                                 <width>288</width>
                                 <height>420</height>
                                 <texture border="9">images/SetsOver.png</texture>
@@ -588,7 +588,7 @@
                     </control>
                     <control type="image">
                         <fadetime>200</fadetime>
-                        <posx>60</posx>
+                        <left>60</left>
                         <top>880</top>
                         <width>160</width>
                         <height>160</height>

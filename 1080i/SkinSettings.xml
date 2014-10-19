@@ -8,11 +8,11 @@
         <include>BlackBackground</include>
         <include>WindowsTopInfos</include>
         <control type="group">
-            <posx>960</posx>
+            <left>960</left>
             <top>80</top>
             <control type="grouplist" id="575">
                 <width>960</width>
-                <height>980</height>
+                <height>990</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
                 <itemgap>0</itemgap>
@@ -21,6 +21,7 @@
                 <pagecontrol>60</pagecontrol>
                 <control type="button" id="6">
                     <description>HOME PAGE CUSTOMIZER</description>
+                    <height>70</height>
                     <width>auto</width>
                     <align>left</align>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -28,6 +29,7 @@
                     <onclick>ActivateWindow(1117)</onclick>
                 </control>
                 <control type="button" id="1">
+                    <height>70</height>
                     <width>auto</width>
                     <align>left</align>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -36,11 +38,13 @@
                     <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
                 </control>
                 <control type="radiobutton" id="2">
+                    <height>70</height>
                     <label>$LOCALIZE[31041]</label>
                     <onclick>Skin.ToggleSetting(Scrollbars_Passive)</onclick>
                     <selected>!Skin.HasSetting(Scrollbars_Passive)</selected>
                 </control>
                 <control type="radiobutton" id="3">
+                    <height>70</height>
                     <label>$LOCALIZE[31044]</label>
                     <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
                     <selected>!Skin.HasSetting(ViewsMenuOff)</selected>
@@ -52,11 +56,13 @@
                 <!--<selected>Skin.HasSetting(scelta)</selected>-->
                 <!--</control>-->
                 <control type="radiobutton" id="5">
+                    <height>70</height>
                     <label>$LOCALIZE[31033]</label>
                     <onclick>Skin.ToggleSetting(colormenu)</onclick>
                     <selected>!Skin.HasSetting(colormenu)</selected>
                 </control>
                 <control type="button" id="8">
+                    <height>70</height>
                     <width>auto</width>
                     <align>left</align>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -64,6 +70,7 @@
                     <onclick>ActivateWindow(1114)</onclick>
                 </control>
                 <control type="radiobutton" id="9">
+                    <height>70</height>
                     <label>$LOCALIZE[31047]</label>
                     <onclick>Skin.ToggleSetting(HideClock)</onclick>
                     <selected>!Skin.HasSetting(HideClock)</selected>
@@ -76,12 +83,14 @@
                     <onclick>ActivateWindow(1121)</onclick>
                 </control>
                 <control type="radiobutton" id="11">
+                    <height>70</height>
                     <label>$LOCALIZE[31028]</label>
                     <onclick condition="IsEmpty(Skin.String(CustomBgHome))">Skin.SetFile(CustomBgHome,.jpg|.png,special://skin/backgrounds)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(CustomBgHome))">Skin.Reset(CustomBgHome)</onclick>
                     <selected>!IsEmpty(Skin.String(CustomBgHome))</selected>
                 </control>
                 <control type="radiobutton" id="12">
+                    <height>70</height>
                     <label>$LOCALIZE[31030]</label>
                     <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetImage(ShelfCustomImage)</onclick>
                     <onclick condition="Skin.HasSetting(CustomImage)">Skin.Reset(CustomImage)</onclick>
@@ -89,11 +98,13 @@
                     <selected>Skin.HasSetting(CustomImage)</selected>
                 </control>
                 <control type="radiobutton" id="13">
+                    <height>70</height>
                     <label>31061</label>
                     <onclick>Skin.ToggleSetting(hideconnection)</onclick>
                     <selected>!Skin.HasSetting(hideconnection)</selected>
                 </control>
                 <control type="radiobutton" id="14">
+                    <height>70</height>
                     <description>NO3D Option</description>
                     <width>auto</width>
                     <align>left</align>
@@ -102,7 +113,15 @@
                     <onclick>Skin.ToggleSetting(no3d)</onclick>
                     <selected>!Skin.HasSetting(no3d)</selected>
                 </control>
+                <!--todo label-->
+                 <control type="radiobutton" id="16">
+                     <height>70</height>
+                    <label>icon hide slide</label>
+                    <onclick>Skin.ToggleSetting(noslideicon)</onclick>
+                    <selected>Skin.HasSetting(noslideicon)</selected>
+                </control>
                 <control type="button" id="15">
+                    <height>70</height>
                     <label>31036</label>
                     <width>auto</width>
                     <align>left</align>
@@ -144,19 +163,16 @@
                 <texture>DefaultAddon.png</texture>
             </control>
             <control type="image" description="ScrollBars">
-
                 <visible>Controlgroup(575).HasFocus(2)</visible>
                 <include>Help_Panel</include>
                 <texture>help/scrollbars.png</texture>
             </control>
             <control type="image" description="ScrollBars">
-
                 <visible>Controlgroup(575).HasFocus(2) + Skin.HasSetting(Scrollbars_Passive)</visible>
                 <include>Help_Panel</include>
                 <texture>help/off.png</texture>
             </control>
             <control type="image" description="Menuviews">
-
                 <visible>Controlgroup(575).HasFocus(3)</visible>
                 <include>Help_Panel</include>
                 <texture>help/optionsmenu.png</texture>

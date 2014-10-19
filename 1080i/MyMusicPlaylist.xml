@@ -22,7 +22,7 @@
                 <include>MusicInfo</include>
                 <control type="group" description="List">
                     <include>LargeListItemCount</include>
-                    <posx>960</posx>
+                    <left>960</left>
                     <top>131</top>
                     <control type="fixedlist" id="50">
                         <width>960</width>
@@ -46,7 +46,7 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="label" description="Main Label">
-                                <posx>128</posx>
+                                <left>128</left>
                                 <height>111</height>
                                 <width>700</width>
                                 <font>size30</font>
@@ -54,7 +54,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label" description="Label2">
-                                <posx>100r</posx>
+                                <left>100r</left>
                                 <selectedcolor>-</selectedcolor>
                                 <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Label2]</label>
@@ -62,7 +62,7 @@
                             <control type="image" description="playing">
                                 <visible>Player.HasAudio</visible>
                                 <visible>StringCompare(ListItem.Title,MusicPlayer.Title)</visible>
-                                <posx>65r</posx>
+                                <left>65r</left>
                                 <height>60</height>
                                 <width>36</width>
                                 <aspectratio>keep</aspectratio>
@@ -89,7 +89,7 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="label" description="Main Label">
-                                <posx>128</posx>
+                                <left>128</left>
                                 <height>111</height>
                                 <width>700</width>
                                 <font>size30</font>
@@ -97,7 +97,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label" description="Label2">
-                                <posx>100r</posx>
+                                <left>100r</left>
                                 <selectedcolor>black</selectedcolor>
                                 <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Label2]</label>
@@ -105,7 +105,7 @@
                             <control type="image" description="playing">
                                 <visible>Player.HasAudio</visible>
                                 <visible>StringCompare(ListItem.Title,MusicPlayer.Title)</visible>
-                                <posx>65r</posx>
+                                <left>65r</left>
                                 <height>60</height>
                                 <width>36</width>
                                 <aspectratio>keep</aspectratio>
@@ -120,7 +120,7 @@
                     </control>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>51r</posx>
+                    <left>51r</left>
                     <top>135</top>
                     <height>870</height>
                     <onleft>50</onleft>
@@ -128,7 +128,7 @@
                 </control>
             </control>
             <control type="image">
-                <posx>960</posx>
+                <left>960</left>
                 <width>1</width>
                 <height>1080</height>
                 <texture>lines/LineV.png</texture>
@@ -137,7 +137,7 @@
                 <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
                 <include>DialogOpenCloseVisible</include>
                 <control type="image" description="List back">
-                    <posx>459</posx>
+                    <left>459</left>
                     <top>168</top>
                     <width>1002</width>
                     <height>762</height>
@@ -147,7 +147,7 @@
                 <control type="grouplist" id="9000">
                     <include>DialogGLs</include>
                     <control type="radiobutton" id="20" description="Shuffle">
-                        <radioposx>630</radioposx>
+                        <radioleft>630</radioleft>
                         <include>DialogButt</include>
                         <label>191</label>
                     </control>

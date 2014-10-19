@@ -35,7 +35,7 @@
             <include>9000slide</include>
             <control type="image" description="List back">
                 <top>-10</top>
-                <posx>1430</posx>
+                <left>1430</left>
                 <width>550</width>
                 <height>1100</height>
                 <aspectratio>stretch</aspectratio>

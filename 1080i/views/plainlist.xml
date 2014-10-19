@@ -7,7 +7,7 @@
             <include>Linemiddle</include>
             <control type="group" description="Slider and List">
                 <include>SlimListItemCount</include>
-                <posx>960</posx>
+                <left>960</left>
                 <top>120</top>
                 <control type="fixedlist" id="51">
                     <width>940</width>
@@ -77,7 +77,7 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <posx>39r</posx>
+                <left>39r</left>
                 <top>135</top>
                 <height>870</height>
                 <onright>noop</onright>
