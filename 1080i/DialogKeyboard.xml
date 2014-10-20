@@ -38,7 +38,7 @@
                 <description>Edit Text</description>
                 <centerleft>960</centerleft>
                 <top>199</top>
-                <width>960</width>
+                <width>1500</width>
                 <height>60</height>
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>

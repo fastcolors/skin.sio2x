@@ -50,8 +50,8 @@
         <aspectratio>stretch</aspectratio>
     </default>
     <default type="button">
-        <left>0</left>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <width>390</width>
         <height>75</height>
         <align>center</align>
@@ -67,8 +67,7 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="edit">
-        <left>0</left>
-        <top>0</top>
+        <!--<top>0</top>-->
         <width>390</width>
         <height>75</height>
         <align>center</align>
@@ -85,8 +84,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="togglebutton">
-        <left>0</left>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <width>450</width>
         <height>75</height>
         <align>center</align>
@@ -104,8 +103,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="radiobutton">
-        <left>0</left>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <height>75</height>
         <align>left</align>
         <aligny>center</aligny>
@@ -124,8 +123,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrol">
-        <left>0</left>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <textureup>images/ArrowUpNF.png</textureup>
         <textureupfocus>images/ArrowUpFO.png</textureupfocus>
         <texturedown>images/ArrowDownNF.png</texturedown>
@@ -145,8 +144,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrolex">
-        <left>0</left>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <width>450</width>
         <height>75</height>
         <font>size33</font>
@@ -168,7 +167,6 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="slider" description="Seek Slider">
-
         <width>711</width>
         <height>36</height>
     </default>
