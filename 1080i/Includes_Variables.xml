@@ -169,7 +169,8 @@
     <variable name="locandine">
         <value condition="Container.Content(episodes) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-        <!--<value condition="StringCompare(ListItem.Label,..)">DefaultFolderBack.png</value>-->
+        <value condition="StringCompare(ListItem.Label,..)">DefaultFolderBack.png</value>
+        <value condition="Container.Content(genres)">$VAR[genrefix]</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>
 
@@ -328,6 +329,22 @@
         <value condition="StringCompare(Skin.String(shutdown),suspend)">icons/suspend.png</value>
         <value condition="StringCompare(Skin.String(shutdown),reboot)">icons/reboot.png</value>
         <value>icons/quits.png</value>
+    </variable>
+
+    <variable name="genrefix">
+        <value condition="StringCompare(ListItem.Label,Action) | StringCompare(ListItem.Label,Azione)">special://skin/resources/moviegenres/Action.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Storia) | StringCompare(ListItem.Label,History)">special://skin/resources/moviegenres/History.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Avventura) | StringCompare(ListItem.Label,Adventure)">special://skin/resources/moviegenres/Adventure.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Family) | StringCompare(ListItem.Label,Famiglia)">special://skin/resources/moviegenres/Family.jpg</value>
+        <value condition="StringCompare(ListItem.Label,War) | StringCompare(ListItem.Label,Guerra)">special://skin/resources/moviegenres/War.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Musica) | StringCompare(ListItem.Label,Music)">special://skin/resources/moviegenres/War.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Dramma) | StringCompare(ListItem.Label,Drama)">special://skin/resources/moviegenres/Drama.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Comedy) | StringCompare(ListItem.Label,Commedia) | StringCompare(ListItem.Label,Comedia)">special://skin/resources/moviegenres/Comedy.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Animation) | StringCompare(ListItem.Label,Animazione)">special://skin/resources/moviegenres/Animation.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Mystery) | StringCompare(ListItem.Label,Mistero)">special://skin/resources/moviegenres/Mystery.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Fantascienza) | StringCompare(ListItem.Label,Ciencia ficción) | StringCompare(ListItem.Label,Science Fiction)">special://skin/resources/moviegenres/Science Fiction.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Documentario) | StringCompare(ListItem.Label,Documentary)">special://skin/resources/moviegenres/Documentary.jpg</value>
+        <value>$INFO[ListItem.Label,special://skin/resources/moviegenres/,.jpg]</value>
     </variable>
 
 </includes>

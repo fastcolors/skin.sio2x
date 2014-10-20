@@ -171,6 +171,7 @@
                     <label>$LOCALIZE[535]</label>
                 </control>
                 <control type="radiobutton" id="604=" description="Icons">
+                    <!--<enable>Container.content(movies) | container.content(seasons) | container.content(tvshows)</enable>-->
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(53)</onclick>
                     <selected>Control.IsVisible(53)</selected>

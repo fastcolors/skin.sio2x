@@ -172,7 +172,7 @@
                             <top>24</top>
                             <width>222</width>
                             <height>331</height>
-                            <texture background="true">$VAR[locandine]</texture>
+                            <texture background="true" fallback="DefaultGenreIcon.jpg">$VAR[locandine]</texture>
                             <colordiffuse>FFAAAAAA</colordiffuse>
                             <aspectratio>scale</aspectratio>
                         </control>
@@ -192,6 +192,16 @@
                             <height>32</height>
                             <width>32</width>
                             <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
+                        </control>
+                        <control type="textbox">
+                            <visible>![Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !StringCompare(ListItem.Label,..)</visible>
+                            <width>225</width>
+                            <height>100</height>
+                            <font>Size28</font>
+                            <info>ListItem.Label</info>
+                            <centerleft>147</centerleft>
+                            <align>center</align>
+                             <bottom>-30</bottom>
                         </control>
                     </itemlayout>
                     <focusedlayout height="337" width="225">
@@ -225,7 +235,7 @@
                                     <top>24</top>
                                     <width>222</width>
                                     <height>331</height>
-                                    <texture background="true">$VAR[locandine]</texture>
+                                    <texture background="true" fallback="DefaultGenreIcon.jpg">$VAR[locandine]</texture>
                                     <aspectratio>scale</aspectratio>
                                 </control>
                                 <control type="image" description="WatchStatus">
@@ -245,6 +255,16 @@
                                     <width>32</width>
                                     <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
                                 </control>
+                                <control type="textbox">
+                                    <visible>![Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !StringCompare(ListItem.Label,..)</visible>
+                                    <width>225</width>
+                                    <height>100</height>
+                                    <font>Size28</font>
+                                    <info>ListItem.Label</info>
+                                    <centerleft>147</centerleft>
+                                    <align>center</align>
+                                    <bottom>-30</bottom>
+                                </control>
                             </control>
                         </control>
                     </focusedlayout>
@@ -259,7 +279,7 @@
                 <texture colordiffuse="black">lines/Line.png</texture>
             </control>
             <control type="group">
-                <visible>!Container.Content(episodes) + !Skin.HasSetting(noslideicon)</visible>
+                <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(noslideicon)</visible>
                 <visible>[Container(53).Column(0) + !StringCompare(ListItem.Label,..)] | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3)</visible>
                 <visible>![Container(53).OnNext | Container(53).OnPrevious]</visible>
                 <left>1230</left>
@@ -390,7 +410,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>!Skin.HasSetting(noslideicon)</visible>
+                <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(noslideicon)</visible>
                 <visible>Container(53).Column(4) | Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7)</visible>
                 <visible>![Container(53).OnNext | Container(53).OnPrevious]</visible>
                 <left>-10</left>
