@@ -556,7 +556,7 @@
                 </control>
                 <control type="group">
                     <!--<visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + [IsEmpty(ListItem.Property(Addon.Description))] + !SubString(ListItem.path,videodb://movies/sets/)]</visible>-->
-                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Property(Addon.Description)) + !SubString(ListItem.path,videodb://movies/sets/) + IsEmpty(ListItem.Art(fanart)]</visible>
+                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Property(Addon.Description)) + !SubString(ListItem.path,videodb://movies/sets/) + IsEmpty(ListItem.Art(fanart))]</visible>
                     <animation effect="slide" end="-1340,0" time="500" delay="1500" reversible="false">Hidden</animation>
                     <fadetime>200</fadetime>
                     <control type="image">

@@ -132,7 +132,7 @@
             <control type="group" description="EPISODES BLADE">
                 <visible>Container.Content(episodes)</visible>
                 <control type="image">
-                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart)]</visible>
+                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart))]</visible>
                     <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
                     <width>1340</width>
                     <height>1080</height>
@@ -182,7 +182,7 @@
             <control type="group">
                 <visible>!Container.Content(episodes)</visible>
                 <control type="image">
-                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart)]</visible>
+                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart))]</visible>
                     <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
                     <width>1340</width>
                     <height>1080</height>
