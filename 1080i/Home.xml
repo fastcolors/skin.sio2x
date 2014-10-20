@@ -139,7 +139,7 @@
                             <align>center</align>
                             <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.Property(unwatched)]</label>
+                            <label>[B]$INFO[ListItem.Property(unwatched)][/B]</label>
                         </control>
                     </control>
                 </itemlayout>
@@ -235,7 +235,7 @@
                             <align>center</align>
                             <textcolor>FFFFFFFF</textcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.Property(unwatched)]</label>
+                            <label>[B]$INFO[ListItem.Property(unwatched)][/B]</label>
                         </control>
                     </control>
                 </focusedlayout>
