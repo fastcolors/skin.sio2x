@@ -28,14 +28,24 @@
         </item>
         <!--TV SHOWS-->
         <item id="341">
-            <visible>Library.HasContent(TVShows)</visible>
+            <visible>!Skin.HasSetting(hidetv) + Library.HasContent(TVShows)</visible>
             <thumb>icons/tvshows.png</thumb>
             <label>20343</label>
             <property name="color">icons/purple.png</property>
             <property name="unwatched">$INFO[Window(Home).Property(Episodes.UnWatched)]</property>
             <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
         </item>
-        <!--SHELF POPULATING CUSTOM FAVOURITES-->
+        <!--MUSIC-->
+        <item id="342">
+            <visible>!Skin.HasSetting(hidemusic)</visible>
+            <thumb>icons/music.png</thumb>
+            <label>$VAR[musiclabel]</label>
+            <property name="color">icons/Orange.png</property>
+            <onclick condition="StringCompare(Skin.String(MusicLink),Playlist)">PlayerControl(Partymode(music))</onclick>
+            <onclick condition="!StringCompare(Skin.String(MusicLink),Playlist)">ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
+            <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
+        </item>
+         <!--SHELF POPULATING CUSTOM FAVOURITES-->
         <item id="607" description="Custom Fvourite">
             <visible>!IsEmpty(Skin.String(HomeFav.7.Label))</visible>
             <thumb>$INFO[Skin.String(HomeFav.7.Icon)]</thumb>
@@ -49,16 +59,6 @@
             <label>$INFO[Skin.String(HomeFav.8.Label)]</label>
             <property name="color">icons/lightblue.png</property>
             <onclick>$INFO[Skin.String(HomeFav.8.Path)]</onclick>
-        </item>
-        <!--MUSIC-->
-        <item id="342">
-            <visible>!Skin.HasSetting(hidemusic)</visible>
-            <thumb>icons/music.png</thumb>
-            <label>$VAR[musiclabel]</label>
-            <property name="color">icons/Orange.png</property>
-            <onclick condition="StringCompare(Skin.String(MusicLink),Playlist)">PlayerControl(Partymode(music))</onclick>
-            <onclick condition="!StringCompare(Skin.String(MusicLink),Playlist)">ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
-            <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
         </item>
         <!--ADDONS-->
         <item id="343">

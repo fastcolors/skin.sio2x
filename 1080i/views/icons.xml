@@ -173,7 +173,7 @@
                             <width>222</width>
                             <height>331</height>
                             <texture background="true" fallback="DefaultGenreIcon.jpg">$VAR[locandine]</texture>
-                            <colordiffuse>FFAAAAAA</colordiffuse>
+                            <colordiffuse>FFEEEEEE</colordiffuse>
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="image" description="WatchStatus">
