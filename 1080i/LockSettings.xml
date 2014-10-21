@@ -6,9 +6,8 @@
     <backgroundcolor>0xffffffff</backgroundcolor>
     <controls>
         <include>BlackBackground</include>
-        <control type="label" description="Header Label">
+        <control type="label" id="2" description="Header Label">
             <include>HeadingR</include>
-            <label>20043</label>
         </control>
         <include>profilecontent</include>
         <include>Linemiddle</include>

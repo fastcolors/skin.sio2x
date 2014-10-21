@@ -36,7 +36,7 @@
                         <control type="group">
                             <control type="image">
                                 <visible>!StringCompare(ListItem.Label,..)</visible>
-                                <posx>5</posx>
+                                <left>5</left>
                                 <top>35</top>
                                 <width>200</width>
                                 <height>200</height>
@@ -45,7 +45,7 @@
                             </control>
                             <control type="image">
                                 <visible>StringCompare(ListItem.Label,..)</visible>
-                                <posx>5</posx>
+                                <left>5</left>
                                 <top>35</top>
                                 <width>200</width>
                                 <height>200</height>
@@ -61,7 +61,7 @@
                             <control type="image">
                                 <visible>!StringCompare(ListItem.Label,..)</visible>
 
-                                <posx>5</posx>
+                                <left>5</left>
                                 <top>5</top>
                                 <width>230</width>
                                 <height>230</height>
@@ -70,7 +70,7 @@
                             </control>
                             <control type="image">
                                 <visible>StringCompare(ListItem.Label,..)</visible>
-                                <posx>5</posx>
+                                <left>5</left>
                                 <top>5</top>
                                 <width>230</width>
                                 <height>230</height>
@@ -106,7 +106,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <animation effect="fade" delay="200" time="300">VisibleChange</animation>
-                <posx>198</posx>
+                <left>198</left>
                 <top>1038</top>
                 <width>1525</width>
                 <height>9</height>
@@ -134,7 +134,7 @@
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
-                <posx>540</posx>
+                <left>540</left>
                 <top>200</top>
                 <width>840</width>
                 <height>680</height>

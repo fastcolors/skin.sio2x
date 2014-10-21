@@ -6,6 +6,7 @@
     <views>50,52,53,500</views>
     <!--
   52 Sio2
+  55 Sio2_Adv
   50 Big List
   missing 50 List
   53 Icons
@@ -21,7 +22,7 @@
             <include>9000slide</include>
             <control type="image" description="List back">
                 <top>-10</top>
-                <posx>1430</posx>
+                <left>1430</left>
                 <width>550</width>
                 <height>1100</height>
                 <aspectratio>stretch</aspectratio>
@@ -48,17 +49,18 @@
                     <altlabel>585</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
+                <control type="button" id="8" description="search">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>137</label>
+                    <onclick>left</onclick>
+                </control>
                 <control type="togglebutton" id="16" description="PartyMode">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
                     <include>DialogButt</include>
                     <label>$LOCALIZE[589]: $LOCALIZE[1223]</label>
                     <altlabel>$LOCALIZE[589]: $LOCALIZE[305]</altlabel>
-                </control>
-                <control type="button" id="8" description="Search">
-                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
-                    <include>DialogButt</include>
-                    <label>137</label>
                 </control>
                 <control type="button" id="698" description="Files">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>

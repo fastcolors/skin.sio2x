@@ -1,28 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="homepanel">
+        <!--VADDONS IF BOTH MOVIE AND TVSHOWS HIDDEN-->
         <item id="355">
             <visible>Skin.HasSetting(hidemovie) + Skin.HasSetting(hidetv)  + !Skin.HasSetting(hidevaddons)</visible>
             <thumb>icons/vaddons.png</thumb>
             <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
             <onclick>noop</onclick>
         </item>
+        <!--SOURCES IF NO LIBRARY-->
+        <item id="339">
+            <visible>!Skin.HasSetting(hideSources) + ![Library.HasContent(Movies) | Library.HasContent(TVShows)]</visible>
+            <thumb>icons/sources.png</thumb>
+            <label>20094</label>
+            <property name="color">icons/darkblue.png</property>
+            <onclick>activatewindow(1115)</onclick>
+        </item>
+        <!--MOVIES-->
         <item id="340">
-            <visible>!Skin.HasSetting(hidemovie)</visible>
+            <visible>!Skin.HasSetting(hidemovie) + Library.HasContent(Movies)</visible>
             <thumb>icons/movies.png</thumb>
             <label>342</label>
             <property name="color">icons/lightblue.png</property>
-            <onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
-            <onclick condition="!Library.HasContent(Movies)">ActivateWindow(Videos,root)</onclick>
+            <property name="unwatched">$INFO[Window(Home).Property(Movies.UnWatched)]</property>
+            <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp",return)</onclick>
+            <onclick condition="!Skin.HasSetting(no3d)">ActivateWindow(Videos,MovieTitles,return)</onclick>
         </item>
+        <!--TV SHOWS-->
         <item id="341">
-            <visible>!Skin.HasSetting(hidetv)</visible>
+            <visible>Library.HasContent(TVShows)</visible>
             <thumb>icons/tvshows.png</thumb>
             <label>20343</label>
             <property name="color">icons/purple.png</property>
-            <onclick condition="Library.HasContent(TVShows)">ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
-            <onclick condition="!Library.HasContent(TVShows)">ActivateWindow(Videos,root)</onclick>
+            <property name="unwatched">$INFO[Window(Home).Property(Episodes.UnWatched)]</property>
+            <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
         </item>
+        <!--SHELF POPULATING CUSTOM FAVOURITES-->
         <item id="607" description="Custom Fvourite">
             <visible>!IsEmpty(Skin.String(HomeFav.7.Label))</visible>
             <thumb>$INFO[Skin.String(HomeFav.7.Icon)]</thumb>
@@ -37,14 +50,17 @@
             <property name="color">icons/lightblue.png</property>
             <onclick>$INFO[Skin.String(HomeFav.8.Path)]</onclick>
         </item>
+        <!--MUSIC-->
         <item id="342">
             <visible>!Skin.HasSetting(hidemusic)</visible>
             <thumb>icons/music.png</thumb>
-            <label>2</label>
+            <label>$VAR[musiclabel]</label>
             <property name="color">icons/Orange.png</property>
-            <onclick>ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
+            <onclick condition="StringCompare(Skin.String(MusicLink),Playlist)">PlayerControl(Partymode(music))</onclick>
+            <onclick condition="!StringCompare(Skin.String(MusicLink),Playlist)">ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
             <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
         </item>
+        <!--ADDONS-->
         <item id="343">
             <visible>!Skin.HasSetting(hideaddon)</visible>
             <thumb>icons/addons.png</thumb>
@@ -52,6 +68,7 @@
             <property name="color">icons/Green.png</property>
             <onclick>ActivateWindow(1118)</onclick>
         </item>
+        <!--FAVOURITES-->
         <item id="352">
             <visible>!Skin.HasSetting(hidefav)</visible>
             <thumb>icons/favs.png</thumb>
@@ -59,48 +76,56 @@
             <property name="color">icons/red.png</property>
             <onclick>ActivateWindow(134)</onclick>
         </item>
+        <!--LIVE TV-->
         <item id="355">
             <thumb>icons/LiveTV.png</thumb>
             <label>31059</label>
             <property name="color">icons/green3.png</property>
-            <onclick>ActivateWindowAndFocus(1718)</onclick>
+            <onclick>ActivateWindow(TVGuide)</onclick>
             <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
+        <!--LIVE TV RECORDING-->
         <item id="355">
             <thumb>icons/LiveTVrec.png</thumb>
             <label>$INFO[Pvr.NowRecordingTitle]</label>
             <property name="color">icons/green3.png</property>
-            <onclick>ActivateWindow(1718)</onclick>
+            <onclick>ActivateWindow(TVGuide)</onclick>
             <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
-         <item id="344">
+        <!--PICTURES-->
+        <item id="344">
             <visible>!Skin.HasSetting(hidepic)</visible>
             <thumb>icons/photos.png</thumb>
             <label>1</label>
             <property name="color">icons/darkblue.png</property>
             <onclick>ActivateWindow(2)</onclick>
         </item>
+        <!--WEATHER-->
         <item id="345">
             <visible>!Skin.HasSetting(hidewtr)</visible>
             <property name="weatherthumb">$INFO[Window(weather).Property(Current.FanartCode),weathershelf/,.png]</property>
             <label>$INFO[Weather.Temperature]</label>
             <property name="color">icons/teak.png</property>
-            <onclick>ActivateWindow(MyWeather)</onclick>
+            <onclick condition="IsEmpty(Weather.plugin)">activatewindow(WeatherSettings)</onclick>
+            <onclick condition="!IsEmpty(Weather.plugin)">ActivateWindow(MyWeather)</onclick>
         </item>
+        <!--3D MOVIES-->
         <item id="357">
             <visible>Skin.HasSetting(3dmovs)</visible>
             <thumb>icons/3d.png</thumb>
             <label>3D $LOCALIZE[342]</label>
-            <property name="color">icons/purple.png</property>
+            <property name="color">icons/bluegray.png</property>
             <onclick>ActivateWindow(Videos,"special://skin/resources/3d.xsp", return)</onclick>
         </item>
+        <!--NEXT AIRED ADDON-->
         <item id="358">
-             <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
+            <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
             <thumb>icons/nextaired.png</thumb>
             <label>$ADDON[script.tv.show.next.aired 32019]</label>
             <property name="color">icons/red.png</property>
             <onclick>RunAddon(script.tv.show.next.aired)</onclick>
         </item>
+        <!--GLOBAL SEARCH ADDON-->
         <item id="356">
             <visible>!Skin.HasSetting(sear)</visible>
             <thumb>icons/search.png</thumb>
@@ -108,6 +133,7 @@
             <property name="color">icons/lightblue.png</property>
             <onclick>RunAddon(script.globalsearch)</onclick>
         </item>
+        <!--CUSTOM-->
         <item id="601" description="Custom Fvourite">
             <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
             <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
@@ -282,27 +308,15 @@
             <property name="color">icons/progcolor.png</property>
             <onclick>RunAddon($INFO[Skin.String(HomeAddon.12.Label)])</onclick>
         </item>
-        <!--<item id="346"> THIS IS EMPTY WINDOW 1113 IS FREE-->
-        <!--<visible></visible>-->
-        <!--<thumb>icons/watchlist.png</thumb>-->
-        <!--<label></label>-->
-        <!--<property name="color">icons/dvdcolor.png</property>-->
-        <!--<onclick>ActivateWindow(1113)</onclick>-->
-        <!--</item>-->
-        <item id="350">
-            <visible>!Skin.HasSetting(hideprog)</visible>
-            <thumb>icons/program.png</thumb>
-            <label>0</label>
-            <property name="color">icons/progcolor.png</property>
-            <onclick>ActivateWindow(Programs,Addons)</onclick>
-        </item>
+        <!--SOURCES-->
         <item id="347">
-            <visible>!Skin.HasSetting(hideSources)</visible>
+            <visible>!Skin.HasSetting(hideSources) + [Library.HasContent(Movies) | Library.HasContent(TVShows)]</visible>
             <thumb>icons/sources.png</thumb>
             <label>20094</label>
             <property name="color">icons/darkblue.png</property>
             <onclick>activatewindow(1115)</onclick>
         </item>
+        <!--FILE BROWSER-->
         <item id="353">
             <visible>!Skin.HasSetting(hidebro)</visible>
             <thumb>icons/browser.png</thumb>
@@ -310,6 +324,7 @@
             <property name="color">icons/lightyellow.png</property>
             <onclick>ActivateWindow(3)</onclick>
         </item>
+        <!--DVD-->
         <item id="354">
             <visible>![System.Platform.ios | System.Platform.atv2]</visible>
             <visible>!Skin.HasSetting(XBMC3)</visible>
@@ -319,6 +334,7 @@
             <property name="color">icons/dvdcolor.png</property>
             <onclick>ActivateWindow(1112)</onclick>
         </item>
+        <!--SETTINGS-->
         <item id="348">
             <visible>!Skin.HasSetting(hidesett)</visible>
             <thumb>icons/settings.png</thumb>
@@ -326,6 +342,15 @@
             <property name="color">icons/bluegray.png</property>
             <onclick>ActivateWindow(1120)</onclick>
         </item>
+        <!--VIDEO GUIDES-->
+        <item id="3490">
+            <visible>!Skin.HasSetting(hidevidhelp)</visible>
+            <thumb>icons/qmark.png</thumb>
+            <label>$LOCALIZE[10043]</label>
+            <property name="color">icons/teak.png</property>
+            <onclick>ActivateWindow(1111)</onclick>
+        </item>
+        <!--FULLSCREEN-->
         <item id="349">
             <visible>Player.HasMedia</visible>
             <thumb>icons/full.png</thumb>
@@ -333,23 +358,18 @@
             <property name="color">icons/green3.png</property>
             <onclick condition="Player.HasMedia">Fullscreen</onclick>
         </item>
+        <!--QUIT-->
         <item id="349">
-            <visible>!Player.HasMedia + Skin.HasSetting(quitter) + !Skin.HasSetting(hidesett)</visible>
-            <thumb>icons/quits.png</thumb>
-            <label>351</label>
+            <visible>!Player.HasMedia + !Skin.HasSetting(hidesett)</visible>
+            <thumb>$VAR[quiticon]</thumb>
+            <label>$VAR[quitlabel]</label>
             <property name="color">icons/darkblue.png</property>
             <onclick condition="StringCompare(Skin.String(shutdown),quit)">XBMC.quit()</onclick>
             <onclick condition="StringCompare(Skin.String(shutdown),powerdown)">XBMC.powerdown()</onclick>
             <onclick condition="StringCompare(Skin.String(shutdown),hibernate)">XBMC.hibernate()</onclick>
             <onclick condition="StringCompare(Skin.String(shutdown),suspend)">XBMC.suspend()</onclick>
             <onclick condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</onclick>
-        </item>
-        <item id="349">
-            <visible>!Player.HasMedia + !Skin.HasSetting(quitter) + !Skin.HasSetting(hidesett)</visible>
-            <thumb>icons/quits.png</thumb>
-            <label>351</label>
-            <property name="color">icons/darkblue.png</property>
-            <onclick>ActivateWindow(shutdownmenu)</onclick>
+            <onclick condition="!Skin.HasSetting(quitter)">ActivateWindow(shutdownmenu)</onclick>
         </item>
         <item id="349">
             <visible>!Player.HasMedia + Skin.HasSetting(hidesett)</visible>

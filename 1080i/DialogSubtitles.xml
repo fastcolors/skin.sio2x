@@ -14,7 +14,7 @@
                 <colordiffuse>CCFFFFFF</colordiffuse>
             </control>
             <control type="image">
-                <posx>1557</posx>
+                <left>1557</left>
                 <top>160</top>
                 <width>98</width>
                 <height>45</height>
@@ -22,14 +22,14 @@
             </control>
             <control type="image" id="110">
                 <description>Service Logo</description>
-                <posx>460</posx>
+                <left>460</left>
                 <top>140</top>
                 <width>1000</width>
                 <height>70</height>
                 <aspectratio align="center">keep</aspectratio>
             </control>
             <control type="label" description="Header Label">
-                <posx>260</posx>
+                <left>260</left>
                 <top>220</top>
                 <width>1400</width>
                 <height>60</height>
@@ -97,14 +97,14 @@
                 <scrolltime>200</scrolltime>
                 <itemlayout width="1360" height="54">
                     <control type="image">
-                        <posx>10</posx>
+                        <left>10</left>
                         <width>33</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
                         <texture>flags/$INFO[ListItem.Thumb].png</texture>
                     </control>
                     <control type="label">
-                        <posx>54</posx>
+                        <left>54</left>
                         <width>135</width>
                         <height>54</height>
                         <font>size27</font>
@@ -115,7 +115,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="image">
-                        <posx>202</posx>
+                        <left>202</left>
                         <width>24</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
@@ -123,7 +123,7 @@
                         <visible>ListItem.property(hearing_imp)</visible>
                     </control>
                     <control type="image">
-                        <posx>242</posx>
+                        <left>242</left>
                         <width>60</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
@@ -131,7 +131,7 @@
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <width>900</width>
                         <height>54</height>
                         <font>size27</font>
@@ -142,7 +142,7 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="image">
-                        <posx>1230</posx>
+                        <left>1230</left>
                         <width>120</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
@@ -157,14 +157,14 @@
                         <visible>Control.HasFocus(120)</visible>
                     </control>
                     <control type="image">
-                        <posx>10</posx>
+                        <left>10</left>
                         <width>33</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
                         <texture>flags/$INFO[ListItem.Thumb].png</texture>
                     </control>
                     <control type="label">
-                        <posx>54</posx>
+                        <left>54</left>
                         <width>135</width>
                         <height>54</height>
                         <font>size27</font>
@@ -174,7 +174,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="image">
-                        <posx>202</posx>
+                        <left>202</left>
                         <width>24</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
@@ -182,7 +182,7 @@
                         <visible>ListItem.property(hearing_imp)</visible>
                     </control>
                     <control type="image">
-                        <posx>242</posx>
+                        <left>242</left>
                         <width>60</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
@@ -190,7 +190,7 @@
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="label">
-                        <posx>315</posx>
+                        <left>315</left>
                         <width>900</width>
                         <height>54</height>
                         <font>size27</font>
@@ -200,7 +200,7 @@
                         <info>ListItem.Label2</info>
                     </control>
                     <control type="image">
-                        <posx>1230</posx>
+                        <left>1230</left>
                         <width>120</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
@@ -209,7 +209,7 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
-                <posx>262</posx>
+                <left>262</left>
                 <top>303</top>
                 <height>522</height>
                 <onleft>noop</onleft>
@@ -264,8 +264,6 @@
                 <scrolltime>200</scrolltime>
                 <itemlayout width="380" height="54">
                     <control type="label">
-                        <left>190</left>
-                        <top>0</top>
                         <width>350</width>
                         <height>57</height>
                         <font>size27</font>
@@ -284,8 +282,6 @@
                         <visible>Control.HasFocus(150)</visible>
                     </control>
                     <control type="label">
-                        <left>190</left>
-                        <top>0</top>
                         <width>350</width>
                         <height>57</height>
                         <font>size27</font>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <allowoverlay>no</allowoverlay>
+    <include>OpenClose</include>
+    <controls>
+        <control type="image">
+            <description>background image</description>
+            <width>1920</width>
+            <height>1080</height>
+            <colordiffuse>CCFFFFFF</colordiffuse>
+            <texture border="150">images/Dialog.png</texture>
+        </control>
+        <!-- media infos -->
+        <control type="group">
+            <!--<control type="image">-->
+            <!--<description>Cover Image</description>-->
+            <!--<top>750</top>-->
+            <!--<left>150</left>-->
+            <!--<width>128</width>-->
+            <!--<height>128</height>-->
+            <!--<texture>$INFO[MusicPlayer.Cover]</texture>-->
+            <!--<aspectratio>stretch</aspectratio>-->
+            <!--</control>-->
+            <control type="image">
+                <description>Cover Image</description>
+                <animation effect="rotate" end="-360" center="auto" time="9000" loop="true" reversible="false" condition="true">Conditional</animation>
+                <top>750</top>
+                <right>150</right>
+                <width>128</width>
+                <height>128</height>
+                <texture fallback="images/fallbackdisc.png">$INFO[Player.Folderpath]/cdart.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label">
+                <description>Lyrics label</description>
+                <centerleft>960</centerleft>
+                <top>1000</top>
+                <width>400</width>
+                <height>40</height>
+                <font>font13</font>
+                <label>$ADDON[script.cu.lrclyrics 32199]</label>
+                <align>center</align>
+            </control>
+            <control type="grouplist">
+                <centerleft>960</centerleft>
+                <top>70</top>
+                <width>1600</width>
+                <height>60</height>
+                <orientation>horizontal</orientation>
+                <align>center</align>
+                <aligny>center</aligny>
+                <itemgap>10</itemgap>
+                <control type="label">
+                    <description>Duration Label</description>
+                    <width>auto</width>
+                    <height>55</height>
+                    <label>  ($INFO[MusicPlayer.Duration]) </label>
+                    <font>font13</font>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="label">
+                    <description>Artist label</description>
+                    <width>auto</width>
+                    <height>40</height>
+                    <font>Size42B</font>
+                    <label>$INFO[MusicPlayer.Title]</label>
+                    <align>center</align>
+                    <textcolor>Yellow</textcolor>
+                </control>
+                <control type="label">
+                    <description>Artist label</description>
+                    <width>auto</width>
+                    <height>50</height>
+                    <font>Size20</font>
+                    <label> • $INFO[MusicPlayer.Artist] </label>
+                    <align>center</align>
+                    <textcolor>Silver</textcolor>
+                </control>
+                <control type="image">
+                    <description>Song Rating Image</description>
+                    <height>50</height>
+                    <width>100</width>
+                    <texture>$INFO[Player.StarRating]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+            </control>
+            <control type="label">
+                <description>Time Label</description>
+                <top>150</top>
+                <left>120</left>
+                <width>180</width>
+                <height>20</height>
+                <label>$INFO[MusicPlayer.Time]</label>
+                <font>Size24</font>
+                <align>right</align>
+                <aligny>center</aligny>
+                <textcolor>FFFFFFFF</textcolor>
+            </control>
+            <control type="progress">
+                <description>Progressbar</description>
+                <centerleft>960</centerleft>
+                <top>155</top>
+                <width>1300</width>
+                <height>14</height>
+                <texturebg border="6">MusicOSD/ProgressBG.png</texturebg>
+                <midtexture border="6">MusicOSD/ProgressM.png</midtexture>
+                <righttexture border="6">MusicOSD/ProgressR.png</righttexture>
+                <lefttexture border="6">MusicOSD/ProgressL.png</lefttexture>
+                <overlaytexture>-</overlaytexture>
+                <info>Player.Progress</info>
+            </control>
+            <control type="slider">
+                <description>Slider</description>
+                <centerleft>960</centerleft>
+                <top>155</top>
+                <width>1300</width>
+                <height>14</height>
+                <action>seek</action>
+            </control>
+        </control>
+        <control type="group" id="999">
+            <left>1830</left>
+            <top>150</top>
+            <control type="image">
+                <width>300</width>
+                <height>750</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50" colordiffuse="88FFFFFF">MusicOSD/Back.png</texture>
+            </control>
+            <control type="list" id="9000">
+                <top>10</top>
+                <onleft>110</onleft>
+                <width>100</width>
+                <height>1000</height>
+                <itemlayout width="90" height="90">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>90</width>
+                        <height>98</height>
+                        <texture>$INFO[ListItem.thumb]</texture>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="90" height="90">
+                    <control type="image">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>90</width>
+                        <height>98</height>
+                        <texture>$INFO[ListItem.label]</texture>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item id="2">
+                        <visible>!Playlist.IsRepeatOne + !Playlist.IsRepeat</visible>
+                        <thumb>MusicOSD/OSDRepeatNF.png</thumb>
+                        <label>MusicOSD/OSDRepeatFO.png</label>
+                        <onclick>XBMC.PlayerControl(Repeat)</onclick>
+                    </item>
+                    <item id="2">
+                        <thumb>MusicOSD/OSDRepeatOneNF.png</thumb>
+                        <label>MusicOSD/OSDRepeatOneFO.png</label>
+                        <onclick>XBMC.PlayerControl(Repeat)</onclick>
+                        <visible>Playlist.IsRepeatOne</visible>
+                    </item>
+                    <item id="2">
+                        <thumb>MusicOSD/OSDRepeatAllNF.png</thumb>
+                        <label>MusicOSD/OSDRepeatAllFO.png</label>
+                        <onclick>XBMC.PlayerControl(Repeat)</onclick>
+                        <visible>Playlist.IsRepeat</visible>
+                    </item>
+                    <item id="3">
+                        <thumb>Seekbar/OSDPreviousNF.png</thumb>
+                        <label>Seekbar/OSDPreviousFO.png</label>
+                        <onclick>Playlist.PlayOffset(-1)</onclick>
+                    </item>
+                    <item id="4">
+                        <thumb>Seekbar/OSDRWNF.png</thumb>
+                        <label>Seekbar/OSDRWFO.png</label>
+                        <onclick>PlayerControl(Rewind)</onclick>
+                    </item>
+                    <item id="5">
+                        <visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
+                        <thumb>Seekbar/OSDPauseNF.png</thumb>
+                        <label>Seekbar/OSDPauseFO.png</label>
+                        <onclick>PlayerControl(Play)</onclick>
+                    </item>
+                    <item id="5">
+                        <visible>Player.Paused | Player.Forwarding | Player.Rewinding</visible>
+                        <thumb>Seekbar/OSDPlayNF.png</thumb>
+                        <label>Seekbar/OSDPlayFO.png</label>
+                        <onclick>PlayerControl(Play)</onclick>
+                    </item>
+                    <item id="6">
+                        <thumb>Seekbar/OSDStopNF.png</thumb>
+                        <label>Seekbar/OSDStopFO.png</label>
+                        <onclick>PlayerControl(Stop)</onclick>
+                    </item>
+                    <item id="7">
+                        <thumb>Seekbar/OSDFWNF.png</thumb>
+                        <label>Seekbar/OSDFWFO.png</label>
+                        <onclick>PlayerControl(Forward)</onclick>
+                    </item>
+                    <item id="8">
+                        <thumb>Seekbar/OSDNextNF.png</thumb>
+                        <label>Seekbar/OSDNextFO.png</label>
+                        <onclick>Playlist.PlayOffset(1)</onclick>
+                    </item>
+                    <item id="9">
+                        <visible>Playlist.IsRandom</visible>
+                        <thumb>MusicOSD/OSDRandomOnNF.png</thumb>
+                        <label>MusicOSD/OSDRandomOnFO.png</label>
+                        <onclick>PlayerControl(Random)</onclick>
+                    </item>
+                    <item id="9">
+                        <visible>!Playlist.IsRandom</visible>
+                        <thumb>MusicOSD/OSDRandomOffNF.png</thumb>
+                        <label>MusicOSD/OSDRandomOffFO.png</label>
+                        <onclick>PlayerControl(Random)</onclick>
+                    </item>
+                </content>
+            </control>
+        </control>
+        <control type="image">
+            <centerleft>960</centerleft>
+            <width>1600</width>
+            <height>1</height>
+            <top>190</top>
+            <texture>lines/Line.png</texture>
+        </control>
+        <control type="image">
+            <centerleft>960</centerleft>
+            <width>1600</width>
+            <height>1</height>
+            <top>890</top>
+            <texture>lines/Line.png</texture>
+        </control>
+        <!-- ** Required ** Do not change <id> or <type> -->
+        <control type="list" id="110">
+            <centerleft>960</centerleft>
+            <top>190</top>
+            <width>1400</width>
+            <height>700</height>
+            <onleft>noop</onleft>
+            <onright>999</onright>
+            <onleft>noop</onleft>
+            <ondown>noop</ondown>
+            <viewtype label="535">list</viewtype>
+            <pagecontrol>111</pagecontrol>
+            <scrolltime>200</scrolltime>
+            <itemlayout height="40">
+                <control type="label">
+                    <width>1400</width>
+                    <height>40</height>
+                    <info>ListItem.Label</info>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+            </itemlayout>
+            <focusedlayout height="40">
+                <control type="image">
+                    <width>1400</width>
+                    <height>40</height>
+                    <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
+                    <visible>Control.HasFocus(110)</visible>
+                </control>
+                <control type="label">
+                    <width>1400</width>
+                    <height>40</height>
+                    <info>ListItem.Label</info>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <textcolor>Yellow</textcolor>
+                </control>
+            </focusedlayout>
+        </control>
+        <!-- ** Required ** Do not change <id> or <type> -->
+        <control type="list" id="120">
+            <left>234</left>
+            <posy>270</posy>
+            <width>812</width>
+            <height>290</height>
+            <onleft>121</onleft>
+            <onright>121</onright>
+            <onup>120</onup>
+            <ondown>120</ondown>
+            <viewtype label="535">list</viewtype>
+            <pagecontrol>121</pagecontrol>
+            <scrolltime>200</scrolltime>
+            <itemlayout height="29">
+                <control type="label">
+                    <left>10</left>
+                    <posy>3</posy>
+                    <width>796</width>
+                    <height>22</height>
+                    <info>ListItem.Label</info>
+                    <font>font13</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <textcolor>FFFFFFFF</textcolor>
+                </control>
+            </itemlayout>
+            <focusedlayout height="29">
+                <control type="image">
+                    <left>0</left>
+                    <posy>0</posy>
+                    <width>812</width>
+                    <height>29</height>
+                    <texture>default-list-focus.png</texture>
+                    <visible>Control.HasFocus(120)</visible>
+                </control>
+                <control type="label">
+                    <left>10</left>
+                    <posy>3</posy>
+                    <width>796</width>
+                    <height>22</height>
+                    <info>ListItem.Label</info>
+                    <font>font13</font>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <textcolor>FFEB9E17</textcolor>
+                </control>
+            </focusedlayout>
+        </control>
+        <control type="grouplist" description="INFOS">
+            <right>180</right>
+            <top>900</top>
+            <width>900</width>
+            <height>50</height>
+            <align>right</align>
+            <orientation>horizontal</orientation>
+            <control type="label">
+                <description>Playlist Pos No</description>
+                <width>auto</width>
+                <height>32</height>
+                <label>PlayList Position $INFO[MusicPlayer.Playlistposition]$INFO[MusicPlayer.Playlistlength,/] • </label>
+                <font>font13</font>
+                <align>right</align>
+                <visible>!MusicPartyMode.Enabled</visible>
+            </control>
+            <control type="label">
+                <description>PartyMode Enabled</description>
+                <width>auto</width>
+                <height>32</height>
+                <label>$LOCALIZE[589] • </label>
+                <font>font13</font>
+                <align>right</align>
+                <visible>MusicPartyMode.Enabled</visible>
+            </control>
+            <control type="image">
+                <description>list</description>
+                <left>816</left>
+                <posy>60</posy>
+                <width>32</width>
+                <height>32</height>
+                <texture>default-lyricslist.png</texture>
+                <visible>!IsEmpty(Window(Home).Property(culrc.haslist))</visible>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>32</height>
+                <label> • </label>
+                <font>Size20</font>
+                <align>right</align>
+                <disabledcolor>60FFFFFF</disabledcolor>
+                <visible>!IsEmpty(Window(Home).Property(culrc.haslist))</visible>
+            </control>
+            <control type="label">
+                <description>Scraper Label</description>
+                <width>auto</width>
+                <height>32</height>
+                <label> Scraper : </label>
+                <font>Size20</font>
+                <align>right</align>
+                <disabledcolor>60FFFFFF</disabledcolor>
+            </control>
+            <control type="label" id="200">
+                <description>Scraper Label</description>
+                <width>auto</width>
+                <height>32</height>
+                <label>-</label>
+                <font>Size20</font>
+                <align>left</align>
+                <disabledcolor>60FFFFFF</disabledcolor>
+            </control>
+        </control>
+    </controls>
+</window>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <default type="label">
-        <posx>0</posx>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <height>75</height>
         <align>left</align>
         <aligny>center</aligny>
@@ -17,8 +17,8 @@
         <scrollsuffix> • </scrollsuffix>
     </default>
     <default type="fadelabel">
-        <posx>0</posx>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <height>75</height>
         <align>left</align>
         <aligny>center</aligny>
@@ -43,15 +43,15 @@
         <autoscroll delay="10000" time="3000" repeat="10000"></autoscroll>
     </default>
     <default type="image">
-        <!--<posx>0</posx>-->
+        <!--<left>0</left>-->
         <!--<top>0</top>-->
         <align>center</align>
         <aligny>center</aligny>
         <aspectratio>stretch</aspectratio>
     </default>
     <default type="button">
-        <posx>0</posx>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <width>390</width>
         <height>75</height>
         <align>center</align>
@@ -67,8 +67,7 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="edit">
-        <posx>0</posx>
-        <top>0</top>
+        <!--<top>0</top>-->
         <width>390</width>
         <height>75</height>
         <align>center</align>
@@ -85,8 +84,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="togglebutton">
-        <posx>0</posx>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <width>450</width>
         <height>75</height>
         <align>center</align>
@@ -104,8 +103,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="radiobutton">
-        <posx>0</posx>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <height>75</height>
         <align>left</align>
         <aligny>center</aligny>
@@ -120,12 +119,12 @@
         <textureradiofocus aspectratio="keep">images/RadioON.png</textureradiofocus>
         <textureradionofocus aspectratio="keep">images/RadioOFF.png</textureradionofocus>
         <textoffsetx>30</textoffsetx>
-        <!--<radioposx>262</radioposx>-->
+        <!--<radioleft>262</radioleft>-->
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrol">
-        <posx>0</posx>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <textureup>images/ArrowUpNF.png</textureup>
         <textureupfocus>images/ArrowUpFO.png</textureupfocus>
         <texturedown>images/ArrowDownNF.png</texturedown>
@@ -145,8 +144,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrolex">
-        <posx>0</posx>
-        <top>0</top>
+        <!--<left>0</left>-->
+        <!--<top>0</top>-->
         <width>450</width>
         <height>75</height>
         <font>size33</font>
@@ -168,12 +167,11 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="slider" description="Seek Slider">
-        <visible>true</visible>
         <width>711</width>
         <height>36</height>
     </default>
     <default type="sliderex" description="Default Slider">
-        <posx>795</posx>
+        <left>795</left>
         <top>225</top>
         <height>75</height>
         <width>450</width>
@@ -193,8 +191,6 @@
         <textoffsetx>20</textoffsetx>
     </default>
     <default type="scrollbar">
-        <left>0</left>
-        <top>0</top>
         <width>9</width>
         <orientation>vertical</orientation>
         <texturesliderbackground border="4">Scrollbar/ScrollbarBG.png</texturesliderbackground>
@@ -203,4 +199,5 @@
         <pulseonselect>false</pulseonselect>
         <showonepage>false</showonepage>
     </default>
+    <constant name="settingsheight">65</constant>
 </includes>

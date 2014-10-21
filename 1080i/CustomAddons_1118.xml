@@ -7,7 +7,7 @@
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
-                <posx>540</posx>
+                <left>540</left>
                 <top>250</top>
                 <width>840</width>
                 <height>580</height>
@@ -20,21 +20,28 @@
                     <include>DialogButt</include>
                     <label>1037</label>
                     <onclick>Close</onclick>
-                    <onclick>ActivateWindow(Videos,Addons)</onclick>
+                    <onclick>ActivateWindow(Videos,Addons,return)</onclick>
                 </control>
                 <control type="button" id="700">
                     <include>DialogButt</include>
                     <label>1038</label>
                     <onclick>Close</onclick>
-                    <onclick>ActivateWindow(Music,Addons)</onclick>
+                    <onclick>ActivateWindow(Music,Addons,return)</onclick>
                 </control>
                 <control type="button" id="701">
+                    <include>DialogButt</include>
+                    <label>1043</label>
+                    <onclick>Close</onclick>
+                    <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+                    <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
+                </control>
+                <control type="button" id="800">
                     <include>DialogButt</include>
                     <label>31037</label>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(AddonBrowser,root)</onclick>
                 </control>
-                <control type="button" id="702">
+                <control type="button" id="801">
                     <include>DialogButt</include>
                     <label>31040</label>
                     <onclick>Close</onclick>

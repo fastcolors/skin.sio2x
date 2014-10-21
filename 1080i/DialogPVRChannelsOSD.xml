@@ -13,7 +13,7 @@
             <description>TV Guide Channel</description>
             <include>VisibleFade</include>
             <control type="label">
-                <posx>80</posx>
+                <left>80</left>
                 <top>310</top>
                 <height>40</height>
                 <width>500</width>
@@ -21,11 +21,11 @@
                 <label>$INFO[VideoPlayer.ChannelGroup]</label>
             </control>
             <control type="group">
-                <posx>80</posx>
+                <left>80</left>
                 <top>340</top>
                 <control type="label">
                     <description>Date Time label</description>
-                    <posx>200</posx>
+                    <left>200</left>
                     <top>20</top>
                     <width>120</width>
                     <height>20</height>
@@ -37,7 +37,7 @@
                 </control>
                 <control type="label">
                     <description>Channel</description>
-                    <posx>220</posx>
+                    <left>220</left>
                     <top>20</top>
                     <width>600</width>
                     <height>20</height>
@@ -49,7 +49,7 @@
                 </control>
                 <control type="label">
                     <description>Title</description>
-                    <posx>840</posx>
+                    <left>840</left>
                     <top>20</top>
                     <width>600</width>
                     <height>20</height>
@@ -61,7 +61,7 @@
                 </control>
                 <control type="label">
                     <description>Status header label</description>
-                    <posx>1580</posx>
+                    <left>1580</left>
                     <top>20</top>
                     <width>250</width>
                     <height>20</height>
@@ -73,14 +73,14 @@
                 </control>
                 <control type="image">
                     <description>separator image</description>
-                    <posx>60</posx>
+                    <left>60</left>
                     <top>57</top>
                     <width>1760</width>
                     <height>2</height>
                     <texture>images/line.png</texture>
                 </control>
                 <control type="list" id="11">
-                    <posx>0</posx>
+                    <left>0</left>
                     <top>60</top>
                     <width>1760</width>
                     <height>480</height>
@@ -98,7 +98,7 @@
                             <colordiffuse>90FFFFFF</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>200</posx>
+                            <left>200</left>
                             <width>400</width>
                             <height>40</height>
                             <font>size26</font>
@@ -109,7 +109,7 @@
                             <info>ListItem.StartTime</info>
                         </control>
                         <control type="label">
-                            <posx>220</posx>
+                            <left>220</left>
                             <top>0</top>
                             <width>600</width>
                             <height>40</height>
@@ -121,7 +121,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>840</posx>
+                            <left>840</left>
                             <top>0</top>
                             <width>640</width>
                             <height>40</height>
@@ -133,7 +133,7 @@
                             <info>ListItem.Title</info>
                         </control>
                         <control type="image">
-                            <posx>1710</posx>
+                            <left>1710</left>
                             <top>6</top>
                             <width>30</width>
                             <height>30</height>
@@ -142,7 +142,7 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="label">
-                            <posx>1540</posx>
+                            <left>1540</left>
                             <width>250</width>
                             <height>40</height>
                             <font>size26</font>
@@ -154,7 +154,7 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="image">
-                            <posx>1710</posx>
+                            <left>1710</left>
                             <top>6</top>
                             <width>30</width>
                             <height>30</height>
@@ -163,7 +163,7 @@
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
                         <control type="label">
-                            <posx>1540</posx>
+                            <left>1540</left>
                             <width>250</width>
                             <height>40</height>
                             <font>size26</font>
@@ -183,7 +183,7 @@
                             <colordiffuse>90777777</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>200</posx>
+                            <left>200</left>
                             <width>400</width>
                             <height>40</height>
                             <font>size26</font>
@@ -194,7 +194,7 @@
                             <info>ListItem.StartTime</info>
                         </control>
                         <control type="label">
-                            <posx>220</posx>
+                            <left>220</left>
                             <top>0</top>
                             <width>600</width>
                             <height>40</height>
@@ -206,7 +206,7 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>840</posx>
+                            <left>840</left>
                             <top>0</top>
                             <width>640</width>
                             <height>40</height>
@@ -219,7 +219,7 @@
                         </control>
                         <control type="textbox">
                             <description>Plot Value for TVShow</description>
-                            <posx>60</posx>
+                            <left>60</left>
                             <top>40</top>
                             <width>1600</width>
                             <height>70</height>
@@ -229,7 +229,7 @@
                             <label>$INFO[ListItem.Plot]</label>
                         </control>
                         <control type="image">
-                            <posx>1710</posx>
+                            <left>1710</left>
                             <top>6</top>
                             <width>30</width>
                             <height>30</height>
@@ -238,7 +238,7 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="label">
-                            <posx>1540</posx>
+                            <left>1540</left>
                             <width>250</width>
                             <height>40</height>
                             <font>size26</font>
@@ -250,7 +250,7 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="image">
-                            <posx>1710</posx>
+                            <left>1710</left>
                             <top>6</top>
                             <width>30</width>
                             <height>30</height>
@@ -259,7 +259,7 @@
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
                         <control type="label">
-                            <posx>1540</posx>
+                            <left>1540</left>
                             <width>250</width>
                             <height>40</height>
                             <font>size26</font>
@@ -273,7 +273,7 @@
                     </focusedlayout>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>1780</posx>
+                    <left>1780</left>
                     <top>60</top>
                     <height>480</height>
                     <onleft>11</onleft>

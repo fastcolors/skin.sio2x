@@ -1,7 +1,7 @@
 # XBMC Media Center language file
 # Addon Name: SiO2x
 # Addon id: skin.SiO2x
-# Addon version: 2.0.0
+# Addon version: 3.0.5
 # Addon Provider: FastColors
 # Translators:
 msgid ""
@@ -84,8 +84,8 @@ msgid "Last Updated"
 msgstr "Last Updated"
 
 msgctxt "#31017"
-msgid "-description for item 3-"
-msgstr "-description for item 3-"
+msgid "Enable or disable the panel for changing views, filter, search and other options"
+msgstr "Enable or disable the panel for changing views, filter, search and other options"
 
 msgctxt "#31018"
 msgid "Choose Addon for Lyrics Search & Download"
@@ -96,8 +96,8 @@ msgid "Enable or Disable Clock On top right of All Pages (not while watching Mov
 msgstr "Enable or Disable Clock On top right of All Pages (not while watching Movies).[CR]Home Menu Will show Time and date."
 
 msgctxt "#31020"
-msgid "-"
-msgstr "-"
+msgid "Now Watching"
+msgstr "Now Watching"
 
 msgctxt "#31021"
 msgid "Memory Used:"
@@ -120,16 +120,16 @@ msgid "Playlist Options"
 msgstr "Playlist Options"
 
 msgctxt "#31026"
-msgid "Arial based"
-msgstr "Arial based"
+msgid "Get Extra Artwork"
+msgstr "Get Extra Artwork"
 
 msgctxt "#31027"
-msgid "Last Added"
-msgstr "Last Added"
+msgid "Movies/TVShows Badge"
+msgstr "Movies/TVShows Badge"
 
 msgctxt "#31028"
-msgid "Custom Home Background"
-msgstr "Custom Home Background"
+msgid "Custom Background"
+msgstr "Custom Background"
 
 msgctxt "#31029"
 msgid "Adds a custom Background to Home Screen. This will automatically switch On the setting for Always Colored Icons on Home screen. This can be manually switched Off from this page."
@@ -152,12 +152,12 @@ msgid "Always Colored Menu Icons"
 msgstr "Always Colored Menu Icons"
 
 msgctxt "#31034"
-msgid "Click to Add Favourite to Home Page"
-msgstr "Click to Add Favourite to Home Page"
+msgid "Click to Add Custom Item to Home Page"
+msgstr "Click to Add Custom Item to Home Page"
 
 msgctxt "#31035"
-msgid "Click to Pick Icon, Change Favourite or Remove Favourite"
-msgstr "Click to Pick Icon, Change Favourite or Remove Favourite"
+msgid "Click to Pick Icon, Change or Remove Item"
+msgstr "Click to Pick Icon, Change or Remove Item"
 
 msgctxt "#31036"
 msgid "Reset ALL skin settings to default"
@@ -172,8 +172,8 @@ msgid "min"
 msgstr "min"
 
 msgctxt "#31039"
-msgid "Enable or disable the icon for network connection and battery percentage info (only shown if battery lower than 20%"
-msgstr "Enable or disable the icon for network connection and battery percentage info (only shown if battery lower than 20%"
+msgid "Enable or disable the icon for network connection and battery percentage info (only shown if battery lower than 20%)"
+msgstr "Enable or disable the icon for network connection and battery percentage info (only shown if battery lower than 20%)"
 
 msgctxt "#31040"
 msgid "Shelf items"
@@ -212,12 +212,12 @@ msgid "Recommended"
 msgstr "Recommended"
 
 msgctxt "#31049"
-msgid "Select Power icon function - Now Set to:"
-msgstr "Select Power icon function - Now Set to:"
+msgid "Power icon - Now Set to:"
+msgstr "Power icon - Now Set to:"
 
 msgctxt "#31050"
-msgid "Choose from menu"
-msgstr "Choose from menu"
+msgid "Quit Menu"
+msgstr "Quit menu"
 
 msgctxt "#31051"
 msgid "Custom Shelf Shortcuts"
@@ -276,100 +276,40 @@ msgid "Fullscreen"
 msgstr "Fullscreen"
 
 msgctxt "#31065"
-msgid "Delete Cache"
-msgstr "Delete Cache"
+msgid "Enable/Disable notification badge showing the number of unwatched Movies and TVShows on Home Icons"
+msgstr "Enable/Disable notification badge showing the number of unwatched Movies and TVShows on Home Icons"
 
 msgctxt "#31066"
-msgid "Delete Thumbnails"
-msgstr "Delete Thumbnails"
+msgid "Enable/Disable Sliding Info Window in Icon View"
+msgstr "Enable/Disable Sliding Info Window in Icon View"
 
 msgctxt "#31067"
-msgid "Remove Downloaded Zip Packages"
-msgstr "Remove Downloaded Zip Packages"
+msgid "Infos in Icon view"
+msgstr "Infos in Icon view"
 
 msgctxt "#31068"
-msgid "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors."
-msgstr "Advanced Maintenance Tools, used to clean up after XBMC. Or to fix some annoying issues. To be used carefully.[CR][CR]Brought to You by Mikey1234 and Fastcolors."
-
-msgctxt "#31069"
-msgid "Maintenance Tools"
-msgstr "Maintenance Tools"
-
-msgctxt "#31070"
-msgid "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS."
-msgstr "[COLOR FFFF0000]USE THESE TOOLS ONLY IF YOU KNOW WHAT YOU'RE DOING AND AT YOUR OWN RISK!!![/COLOR] WE DON'T TAKE ANY RESPONSABILITY FOR THE POSSIBLE OUTCOME. [COLOR FFFF0000]MAY RESULT IN THE MALFUNCTIONING OF XBMC.[/COLOR][CR] [CR]PROUDLY BROUGHT TO YOU BY MIKEY1234 and FASTCOLORS."
-
-msgctxt "#31071"
-msgid "Delete MetaHandler Cache"
-msgstr "Delete MetaHandler Cache"
-
-msgctxt "#31072"
-msgid "All Done, Please Restart XBMC"
-msgstr "All Done, Please Restart XBMC"
-
-msgctxt "#31073"
-msgid "All Done."
-msgstr "All Done."
-
-msgctxt "#31074"
-msgid "Are You Sure?"
-msgstr "Are You Sure?"
-
-msgctxt "#31075"
-msgid "Remove cache.db for XBMC and most Addons"
-msgstr "Remove cache.db for XBMC and most Addons"
-
-msgctxt "#31076"
-msgid "Remove Corrupted Metadata"
-msgstr "Remove Corrupted Metadata"
+msgid "Random Movies"
+msgstr "Random Movies"
 
 msgctxt "#31077"
-msgid "Settings for the handling of your media library, the playback of your videos, subtitles and software controlled video hardware"
-msgstr "Settings for the handling of your media library, the playback of your videos, subtitles and software controlled video hardware"
-
-msgctxt "#31078"
-msgid "restart XBMC for changes to take effect"
-msgstr "restart XBMC for changes to take effect"
+msgid "Settings for the handling of your Video library, playback, subtitles, rendering and hardware acceleration"
+msgstr "Settings for the handling of your Video library, playback, subtitles, rendering and hardware acceleration"
 
 msgctxt "#31079"
-msgid "Change the look and feel of the XBMC interface, or change the skin alltogheter"
-msgstr "Change the look and feel of the XBMC interface, or change the skin alltogheter"
-
-msgctxt "#31080"
-msgid "Delete AdvancedSettings"
-msgstr "Delete AdvancedSettings"
-
-msgctxt "#31081"
-msgid "Remove Addons"
-msgstr "Remove Addons"
+msgid "Change the look and feel of the XBMC interface"
+msgstr "Change the look and feel of the XBMC interface"
 
 msgctxt "#31082"
 msgid "Video Guides"
 msgstr "Video Guides"
-
-msgctxt "#31083"
-msgid "Maintenance"
-msgstr "Maintenance"
-
-msgctxt "#31084"
-msgid "Remove Video Database"
-msgstr "Remove Video Database"
-
-msgctxt "#31085"
-msgid "Remove Music Database"
-msgstr "Remove Music Database"
-
-msgctxt "#31086"
-msgid "This option will activate a popup when selecting a movie from shelf, giving the opportunity to use the Cinema Experience Addon.[CR]Notice that with this option activated, in case You choose not to play through Cinema Experience, the Movie will automatically resume from last stop point. (if previuosly started)"
-msgstr "This option will activate a popup when selecting a movie from shelf, giving the opportunity to use the Cinema Experience Addon.[CR]Notice that with this option activated, in case You choose not to play through Cinema Experience, the Movie will automatically resume from last stop point. (if previuosly started)"
 
 msgctxt "#31087"
 msgid "Percent Played"
 msgstr "Percent Played"
 
 msgctxt "#31088"
-msgid "Shelf Cinema Experience"
-msgstr "Shelf Cinema Experience"
+msgid "Cinema"
+msgstr "Cinema"
 
 msgctxt "#31089"
 msgid "Returns all Skin's specifics Settings to defaults. Doesn't change any of the XBMC general settings."
@@ -403,6 +343,38 @@ msgctxt "#31096"
 msgid "Started Movies"
 msgstr "Started Movies"
 
+msgctxt "#31097"
+msgid "Manage your OpenELEC system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]Change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH."
+msgstr "Manage your OpenELEC system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]Change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH."
+
 msgctxt "#31413"
 msgid "Local subtitle available"
 msgstr "Local subtitle available"
+
+msgctxt "#31414"
+msgid "TEST"
+msgstr "TEST"
+
+msgctxt "#31415"
+msgid "Don't Show Anymore"
+msgstr "Don't Show Anymore"
+
+msgctxt "#31416"
+msgid "Show Again next time"
+msgstr "Show Again next time"
+
+msgctxt "#31418"
+msgid "Opens a list of video files made to help,but also to learn how to maximize Your SiO2-X experience"
+msgstr "Opens a list of video files made to help,but also to learn how to maximize Your SiO2-X experience"
+
+msgctxt "#31419"
+msgid "Started Movies"
+msgstr "Started Movies"
+
+msgctxt "#31420"
+msgid "Show or Hide 3D movies from Regular Library List. If Off, when Library is accessed from Home Icon, it won't show any 3D content. Works only if files are named following Kodi/XBMC rules for 3D automatic identification -- i.e. Must Contain the word 3D"
+msgstr "Show or Hide 3D movies from Regular Library List. If Off, when Library is accessed from Home Icon, it won't show any 3D content. Works only if files are named following Kodi/XBMC rules for 3D automatic identification -- i.e. Must Contain the word 3D"
+
+msgctxt "#31421"
+msgid "3D Content in Movies List"
+msgstr "3D Content in Movies List"

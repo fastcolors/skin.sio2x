@@ -5,7 +5,7 @@
     <controls>
         <control type="image">
             <description>background image</description>
-            <posx>230</posx>
+            <left>230</left>
             <top>0</top>
             <width>1460</width>
             <height>1080</height>
@@ -14,7 +14,7 @@
         </control>
         <control type="label" id="2">
             <description>header label</description>
-            <posx>110</posx>
+            <left>110</left>
             <top>150</top>
             <width>1700</width>
             <height>50</height>
@@ -23,7 +23,7 @@
         </control>
         <control type="grouplist" id="5">
             <description>control area</description>
-            <posx>510</posx>
+            <left>510</left>
             <top>250</top>
             <width>900</width>
             <height>550</height>
@@ -34,7 +34,7 @@
             <onright>9001</onright>
         </control>
         <control type="grouplist" id="9001">
-            <posx>200</posx>
+            <left>200</left>
             <top>850</top>
             <width>1520</width>
             <align>center</align>

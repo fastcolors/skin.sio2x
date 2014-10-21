@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--openelec-->
+<window id="5535">
+    <defaultcontrol always="true">2000</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <backgroundcolor>background</backgroundcolor>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="group">
+            <control type="image" id="1999" description="Background image">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <height>720</height>
+                <width>1200</width>
+                <texture border="150">images/Dialog.png</texture>
+            </control>
+            <control type="group">
+                <control type="list" id="2000">
+                    <centerleft>960</centerleft>
+                    <centertop>540</centertop>
+                    <width>900</width>
+                    <height>420</height>
+                    <onright>121</onright>
+                    <pagecontrol>121</pagecontrol>
+                    <scrolltime>300</scrolltime>
+                    <itemlayout height="60" width="900">
+                        <control type="label">
+                            <left>20</left>
+                            <width>400</width>
+                            <height>60</height>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <right>30</right>
+                            <width>560</width>
+                            <height>60</height>
+                            <align>right</align>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="60" width="900">
+                        <control type="image">
+                            <width>890</width>
+                            <height>60</height>
+                            <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
+                        </control>
+                        <control type="label">
+                            <left>20</left>
+                            <width>400</width>
+                            <height>60</height>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <right>30</right>
+                            <width>560</width>
+                            <height>60</height>
+                            <align>right</align>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="scrollbar" id="121">
+                <description>scroll bar indicator for lists</description>
+                <left>1400</left>
+                <centertop>540</centertop>
+                <width>9</width>
+                <height>400</height>
+                <onleft>2000</onleft>
+                <orientation>vertical</orientation>
+                <showonepage>false</showonepage>
+            </control>
+        </control>
+    </controls>
+</window>

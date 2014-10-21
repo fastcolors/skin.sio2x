@@ -11,6 +11,7 @@
     <include file="views/fanart.xml" />
     <include file="views/icons.xml" />
     <include file="views/sio2.xml" />
+    <include file="views/sio2_adv.xml" />
     <!--VIDEOVIEWS-->
     <include file="views/Musicviews.xml" />
     <include file="views/PVRviews.xml" />
@@ -26,37 +27,36 @@
     <include name="BlackBackground">
         <control type="group">
             <control type="image" description="Default BG">
-            <width>1920</width>
-            <height>1080</height>
-            <texture>images/white.png</texture>
-            <colordiffuse>white</colordiffuse>
+                <width>1920</width>
+                <height>1080</height>
+                <texture>images/white.png</texture>
+                <colordiffuse>white</colordiffuse>
             </control>
             <control type="image" description="Default BG">
-                <!--<visible>!Skin.HasTheme(White) + IsEmpty(ListItem.Art(fanart))</visible>-->
+                <visible>!Window.IsActive(Home.xml) + IsEmpty(ListItem.Art(fanart))</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
-                <texture background="true" colordiffuse="$VAR[background_diffuse]">$VAR[bgimg]</texture>
+                <texture background="true">$VAR[bgimg]</texture>
                 <aspectratio align="left">scale</aspectratio>
-                <!--<colordiffuse>BBFFFFFF</colordiffuse>-->
+                <colordiffuse>AFFFFFFF</colordiffuse>
             </control>
-            <!--<control type="image" description="Default BG">-->
-            <!--<visible>[!Window.IsActive(Home.xml) + Skin.HasTheme(White)] | !IsEmpty(ListItem.Art(fanart)) | Window.IsActive(5533)</visible>-->
-            <!--<width>1920</width>-->
-            <!--<height>1080</height>-->
-            <!--<fadetime>200</fadetime>-->
-            <!--<texture background="true">$VAR[bgimg]</texture>-->
-            <!--<aspectratio align="left">scale</aspectratio>-->
-            <!--<colordiffuse>33FFFFFF</colordiffuse>-->
-            <!--</control>-->
-            <!--<control type="image" description="Default BG">-->
-            <!--<visible>Window.IsActive(Home.xml) + Skin.HasTheme(White)</visible>-->
-            <!--<width>1920</width>-->
-            <!--<height>1080</height>-->
-            <!--<fadetime>200</fadetime>-->
-            <!--<texture background="true">$VAR[bgimg]</texture>-->
-            <!--<colordiffuse>77FFFFFF</colordiffuse>-->
-            <!--</control>-->
+            <control type="image" description="Default BG">
+                <visible>!Window.IsActive(Home.xml) + !IsEmpty(ListItem.Art(fanart))</visible>
+                <width>1920</width>
+                <height>1080</height>
+                <fadetime>200</fadetime>
+                <texture background="true">$VAR[bgimg]</texture>
+                <aspectratio align="left">scale</aspectratio>
+                <colordiffuse>33FFFFFF</colordiffuse>
+            </control>
+            <control type="image" description="Default BG">
+                <visible>Window.IsActive(Home.xml)</visible>
+                <width>1920</width>
+                <height>1080</height>
+                <fadetime>200</fadetime>
+                <texture background="true">$VAR[bgimg]</texture>
+            </control>
         </control>
     </include>
     <include name="OpenClose">
@@ -94,7 +94,7 @@
         <animation effect="fade" time="100">Hidden</animation>
     </include>
     <include name="HiddenButton">
-        <posx>-30</posx>
+        <left>-30</left>
         <top>-30</top>
         <width>1</width>
         <height>1</height>
@@ -103,7 +103,7 @@
         <texturefocus>-</texturefocus>
     </include>
     <include name="Heading">
-        <posx>330</posx>
+        <left>330</left>
         <top>0</top>
         <align>center</align>
         <aligny>center</aligny>
@@ -144,14 +144,14 @@
         <orientation>horizontal</orientation>
         <control type="label" id="7777" description="Heading">
             <width>auto</width>
-            <height>60</height>
-            <font>size42</font>
+            <height>40</height>
+            <font>size42B</font>
             <scroll>false</scroll>
             <label>$VAR[RootLabel]</label>
         </control>
         <control type="label" description="Number of files">
             <width>auto</width>
-            <height>70</height>
+            <height>53</height>
             <font>size22</font>
             <textcolor>gray</textcolor>
             <label>$INFO[Container.NumItems, (,)]</label>
@@ -180,13 +180,6 @@
                 <texture colordiffuse="black">wireless.png</texture>
                 <aspectratio>scale</aspectratio>
             </control>
-            <control type="image">
-                <visible>!System.InternetState + !Skin.HasSetting(hideconnection)</visible>
-                <width>30</width>
-                <height>42</height>
-                <texture>wireless.png</texture>
-                <colordiffuse>44FFFFFF</colordiffuse>
-            </control>
         </control>
         <!--VIEWTOPINFOS-->
         <control type="grouplist" description="LIST + BIGLIST">
@@ -201,8 +194,20 @@
             <visible>!Window.IsActive(DialogPictureInfo.xml) + !Window.IsActive(LoginScreen.xml)</visible>
             <visible>Control.IsVisible(52)</visible>
             <top>40</top>
-            <centerleft>1630</centerleft>
-            <width>580</width>
+            <left>1360</left>
+            <width>560</width>
+            <align>left</align>
+            <include>windowtitle</include>
+        </control>
+        <control type="grouplist" description="sio2 advanced">
+            <visible>!Window.IsActive(DialogPictureInfo.xml) + !Window.IsActive(LoginScreen.xml)</visible>
+            <visible>Control.IsVisible(54)</visible>
+            <orientation>vertical</orientation>
+            <top>35</top>
+            <left>1433</left>
+            <width>487</width>
+            <height>100</height>
+            <itemgap>0</itemgap>
             <include>windowtitle</include>
         </control>
         <control type="grouplist" description="ukn">
@@ -217,7 +222,7 @@
         <control type="grouplist" description="centered">
             <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
             <visible>Control.IsVisible(53) | [Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]]</visible>
-            <top>0</top>
+            <top>30</top>
             <centerleft>960</centerleft>
             <width>580</width>
             <align>center</align>
@@ -226,7 +231,7 @@
         <control type="grouplist" description="leftsided">
             <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
             <visible>Control.IsVisible(55) | Control.IsVisible(500)</visible>
-            <top>0</top>
+            <top>10</top>
             <left>30</left>
             <width>580</width>
             <align>left</align>
@@ -251,7 +256,7 @@
             <visible>!Control.HasFocus(340) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
             <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
             <include>VisibleFade</include>
-            <posx>15</posx>
+            <left>15</left>
             <top>960</top>
             <control type="image" description="Playing BG">
                 <width>390</width>
@@ -260,7 +265,7 @@
             </control>
             <control type="group">
                 <control type="image">
-                    <posx>15</posx>
+                    <left>15</left>
                     <top>15</top>
                     <width>75</width>
                     <height>75</height>
@@ -268,7 +273,7 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>15</posx>
+                    <left>15</left>
                     <top>15</top>
                     <width>75</width>
                     <height>75</height>
@@ -276,7 +281,7 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>9</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -286,7 +291,7 @@
                     <label>$INFO[MusicPlayer.Title]</label>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>36</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -295,7 +300,7 @@
                     <label>$INFO[MusicPlayer.Artist]</label>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>60</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -304,7 +309,7 @@
                     <label>$INFO[MusicPlayer.Album]</label>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>9</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -314,7 +319,7 @@
                     <label>$INFO[VideoPlayer.Title]</label>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>36</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -323,7 +328,7 @@
                     <label>$INFO[VideoPlayer.Artist]</label>
                 </control>
                 <control type="label">
-                    <posx>105</posx>
+                    <left>105</left>
                     <top>60</top>
                     <aligny>center</aligny>
                     <width>261</width>
@@ -347,7 +352,7 @@
     <include name="PVRinfos">
         <control type="image">
             <description>background image</description>
-            <posx>-170</posx>
+            <left>-170</left>
             <top>-150</top>
             <width>1460</width>
             <height>800</height>
@@ -361,7 +366,7 @@
             <texture>lines/Line.png</texture>
         </control>
         <control type="image">
-            <posx>0</posx>
+            <left>0</left>
             <top>370</top>
             <width>1160</width>
             <height>1</height>
@@ -369,7 +374,7 @@
         </control>
         <control type="label">
             <description>header label</description>
-            <posx>20</posx>
+            <left>20</left>
             <top>0</top>
             <width>1100</width>
             <height>30</height>
@@ -381,7 +386,7 @@
         </control>
         <control type="label">
             <description>Title label</description>
-            <posx>20</posx>
+            <left>20</left>
             <top>40</top>
             <width>1100</width>
             <height>30</height>
@@ -394,7 +399,7 @@
         </control>
         <control type="label">
             <description>Start time</description>
-            <posx>20</posx>
+            <left>20</left>
             <top>75</top>
             <width>1100</width>
             <height>25</height>
@@ -406,7 +411,7 @@
         </control>
         <control type="textbox" id="400">
             <description>Plot value</description>
-            <posx>20</posx>
+            <left>20</left>
             <top>110</top>
             <width>1080</width>
             <height>260</height>
@@ -417,7 +422,7 @@
         </control>
         <control type="label">
             <description>Duration</description>
-            <posx>60</posx>
+            <left>60</left>
             <top>390</top>
             <width>1000</width>
             <height>25</height>
@@ -428,7 +433,7 @@
         </control>
         <control type="label">
             <description>Duration</description>
-            <posx>60</posx>
+            <left>60</left>
             <top>420</top>
             <width>1000</width>
             <height>25</height>
@@ -442,7 +447,7 @@
         <control type="group">
             <control type="image">
                 <top>1000</top>
-                <posx>10</posx>
+                <left>10</left>
                 <width>80</width>
                 <height>80</height>
                 <aspectratio scalediffuse="false">scale</aspectratio>
@@ -450,7 +455,7 @@
             </control>
             <control type="label">
                 <top>1000</top>
-                <posx>100</posx>
+                <left>100</left>
                 <width>1800</width>
                 <height>80</height>
                 <label>$LOCALIZE[20125] : $INFO[System.ProfileName]</label>
@@ -459,7 +464,7 @@
     </include>
     <include name="profilecontent">
         <control type="group">
-            <posx>960</posx>
+            <left>960</left>
             <top>120</top>
             <control type="grouplist" id="5">
                 <description>Control Area</description>
@@ -519,5 +524,181 @@
                 <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
             </control>
         </control>
+    </include>
+    <include name="PVRsidemenu">
+        <control type="group" description="Side menu 9000 group">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !Window.IsVisible(traktContextMenu.xml)</visible>
+            <include>9000slide</include>
+            <control type="image" description="List back">
+                <top>-10</top>
+                <left>1430</left>
+                <width>550</width>
+                <height>1100</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">sidepanel/Back.png</texture>
+            </control>
+            <control type="grouplist" id="9000">
+                <left>1450</left>
+                <include>DialogGLs</include>
+                 <control type="button" id="1">
+                    <enable>false</enable>
+                    <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>•• $LOCALIZE[33063] ••</label>
+                </control>
+                <control type="button" id="3">
+                    <description>Sort by button</description>
+                    <include>DialogButt</include>
+                    <label>103</label>
+                </control>
+                <control type="togglebutton" id="4">
+                    <description>Sort asc</description>
+                    <include>DialogButt</include>
+                    <label>584</label>
+                    <altlabel>585</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                </control>
+                <control type="radiobutton" id="5">
+                    <description>Group recording items by folder structure</description>
+                    <left>0</left>
+                    <right>40</right>
+                    <include>DialogButt</include>
+                    <label>19270</label>
+                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+                </control>
+                <control type="button" id="31">
+                    <description>TV Guide</description>
+                    <include>DialogButt</include>
+                    <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">noop</onclick>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+                    <label>22020</label>
+                </control>
+                <control type="button" id="32">
+                    <description>TV Channels</description>
+                    <include>DialogButt</include>
+                    <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">noop</onclick>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+                    <label>19023</label>
+                </control>
+                <control type="button" id="34">
+                    <description>Recordings</description>
+                    <include>DialogButt</include>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+                    <label>19163</label>
+                </control>
+                <control type="button" id="35">
+                    <description>Timers</description>
+                    <include>DialogButt</include>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+                    <label>19040</label>
+                </control>
+                <control type="button" id="36">
+                    <description>Search</description>
+                    <include>DialogButt</include>
+                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+                    <label>137</label>
+                </control>
+                <control type="button" id="28">
+                    <description>Channel Groups</description>
+                    <left>0</left>
+                    <right>40</right>
+                    <include>DialogButt</include>
+                    <label>-</label>
+                </control>
+                <control type="button" id="599">
+                    <enable>false</enable>
+                    <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>•• $LOCALIZE[582] ••</label>
+                </control>
+                <control type="radiobutton" id="600" description="EPG">
+                    <visible>Window.IsActive(MyPVRGuide.xml)</visible>
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(10)</onclick>
+                    <selected>Control.IsVisible(10)</selected>
+                    <label>EPG</label>
+                </control>
+                <!--<control type="radiobutton" id="601" description="LiveChannel">-->
+                    <!--<include>DialogButt</include>-->
+                    <!--&lt;!&ndash;<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
+                    <!--<onclick>Container.SetViewMode(13)</onclick>-->
+                    <!--<selected>Control.IsVisible(13) + !Control.IsVisible(10)</selected>-->
+                    <!--<label>LiveChannels</label>-->
+                <!--</control>-->
+                <control type="radiobutton" id="602" description="Now">
+                    <visible>Window.IsActive(MyPVRGuide.xml)</visible>
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(11)</onclick>
+                    <selected>Control.IsVisible(11) + !Control.IsVisible(10)</selected>
+                    <label>Now</label>
+                </control>
+                <control type="radiobutton" id="603" description="Next">
+                    <visible>Window.IsActive(MyPVRGuide.xml)</visible>
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(12)</onclick>
+                    <selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>
+                    <label>Next</label>
+                </control>
+                 <control type="radiobutton" id="604" description="BIG LIST">
+                    <visible>Window.IsActive(MyPVRChannels.xml)</visible>
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(11)</onclick>
+                    <selected>Control.IsVisible(11) + !Control.IsVisible(10)</selected>
+                    <label>Big List</label>
+                </control>
+                <control type="radiobutton" id="605" description="SMALL LIST">
+                    <visible>Window.IsActive(MyPVRChannels.xml)</visible>
+                    <include>DialogButt</include>
+                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <onclick>Container.SetViewMode(12)</onclick>
+                    <selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>
+                    <label>Small List</label>
+                </control>
+
+            </control>
+        </control>
+    </include>
+    <include name="ShelfTitle">
+        <top>16</top>
+        <left>50</left>
+        <height>34</height>
+        <width>750</width>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>size27</font>
+        <textcolor>black</textcolor>
+    </include>
+    <include name="ShelfFade">
+        <animation effect="fade" end="100" time="250" delay="250">Visible</animation>
+        <animation effect="fade" end="0" time="100">Hidden</animation>
+    </include>
+    <include name="60slider">
+        <control type="group">
+                <top>85</top>
+                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <control type="image">
+                    <left>1925</left>
+                    <height>910</height>
+                    <width>100</width>
+                    <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
+                </control>
+                <control type="scrollbar" id="60">
+                    <left>-37r</left>
+                    <top>30</top>
+                    <height>850</height>
+                    <onleft>50</onleft>
+                    <onright>noop</onright>
+                </control>
+            </control>
     </include>
 </includes>

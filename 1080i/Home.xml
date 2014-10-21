@@ -1,46 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">9000</defaultcontrol>
+    <defaultcontrol always="false">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.favourites)</onload>
+    <!--<onload>ActivateWindow(1113)</onload>-->
+    <!--<onload condition="Window.Previous(startup) + !Skin.HasSetting(splashoff)">ActivateWindow(1113)</onload>-->
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <control type="group">
-            <include>OpenClose</include>
-            <control type="button" id="9009">
-                <visible allowhiddenfocus="true">Control.HasFocus(9009)</visible>
-                <top>26</top>
-                <width>34</width>
-                <height>34</height>
-                <texturefocus aspectratio="keep" colordiffuse="black">images/hometoggle.png</texturefocus>
-                <!--MOVIES-->
-                <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">Skin.SetString(moviesshelf,)</onclick>
-                <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL) + Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,TR)</onclick>
-                <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL) + !Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,)</onclick>
-                <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
-                <!--TVSHOWS-->
-                <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
-                <!--MUSIC-->
-                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,top)</onclick>
-                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),top) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,custom)</onclick>
-                <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),custom) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>
-                <onclick  condition="Control.IsVisible(315)">noop</onclick>
-                <colordiffuse>black</colordiffuse>
-                <onclick condition="Control.IsVisible(312)">ReplaceWindow(0)</onclick>
-                <onup>noop</onup>
-                <!--<ondown condition="!IntegerGreaterThan(Container(313).NumItems,0)">noop</ondown>-->
-                <ondown>700</ondown>
-                <onleft>noop</onleft>
-                <onright>noop</onright>
-            </control>
+        <control type="button" id="9009">
+            <include>ShelfFade</include>
+            <visible>[Control.IsVisible(311) + [Container(9000).HasFocus(340)]] | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(315)</visible>
+            <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+            <top>18</top>
+            <left>10</left>
+            <width>34</width>
+            <height>34</height>
+            <texturenofocus aspectratio="keep" colordiffuse="darkgray">images/hometoggle.png</texturenofocus>
+            <texturefocus aspectratio="keep" colordiffuse="$VAR[diffuseselectshelf]">images/hometoggle.png</texturefocus>
+            <!--MOVIES-->
+
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND) + Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,TR)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND) + !Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,)</onclick>
+            <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),TR)">Skin.SetString(moviesshelf,)</onclick>
+            <!--TVSHOWS-->
+            <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+            <!--MUSIC-->
+            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,artists)</onclick>
+            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),artists) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,albums)</onclick>
+            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),albums) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,custom)</onclick>
+            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),custom) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>
+            <!--ADDONS-->
+            <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),1)">Skin.SetString(addonsshelf,2)</onclick>
+            <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),2)">Skin.SetString(addonsshelf,3)</onclick>
+            <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),3)">Skin.SetString(addonsshelf,)</onclick>
+            <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),)">Skin.SetString(addonsshelf,1)</onclick>
+            <colordiffuse>black</colordiffuse>
+            <onup>noop</onup>
+            <!--<ondown condition="!IntegerGreaterThan(Container(313).NumItems,0)">noop</ondown>-->
+            <ondown>700</ondown>
+        </control>
+        <control type="group" description="Furniture">
+            <top>480</top>
+            <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
             <control type="panel" id="9000" description="ICONE">
-                <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
                 <width>1800</width>
                 <height>1080</height>
-                <top>526</top>
-                <posx>60</posx>
+                <top>52</top>
+                <left>60</left>
                 <onleft>9000</onleft>
                 <onright>9000</onright>
                 <onup>700</onup>
@@ -48,49 +58,59 @@
                 <orientation>vertical</orientation>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
                 <itemlayout height="220" width="300">
-                    <control type="image" description="THMBSBASE">
+                    <control type="image" description="Always Colored Base">
                         <visible>Skin.HasSetting(colormenu)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>icons/base.png</texture>
                     </control>
-                    <control type="image" description="THMBSBASECOLOR">
+                    <control type="image" description="Gray Base">
                         <visible>!Skin.HasSetting(colormenu)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>$INFO[ListItem.Property(color)]</texture>
                     </control>
-                    <control type="image" description="THMBSICONS">
+                    <control type="image" description="Thumb">
                         <visible>!IsEmpty(Listitem.thumb)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                     </control>
-                    <control type="image" description="THMBSICONS">
+                    <control type="image" description="Thumb">
                         <visible>IsEmpty(Listitem.thumb)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                     </control>
                     <control type="image" description="THMBS weather">
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
-                        <height>168</height>
+                        <height>158</height>
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
-                    <control type="label" description="LABEL">
-                        <posx>150</posx>
-                        <top>220</top>
+                    <!--<control type="label">-->
+                    <!--<centerleft>150</centerleft>-->
+                    <!--<top>198</top>-->
+                    <!--<width>300</width>-->
+                    <!--<height>24</height>-->
+                    <!--<font>size24</font>-->
+                    <!--<align>center</align>-->
+                    <!--<textcolor>White</textcolor>-->
+                    <!--<label>[B]$INFO[ListItem.label][/B]</label>-->
+                    <!--</control>-->
+                    <control type="label">
+                        <centerleft>150</centerleft>
+                        <top>198</top>
                         <width>300</width>
                         <height>24</height>
                         <font>size24</font>
@@ -98,72 +118,95 @@
                         <textcolor>White</textcolor>
                         <label>[B]$INFO[ListItem.label][/B]</label>
                     </control>
+                    <control type="group">
+                        <visible>!Skin.HasSetting(unwatchedbadge)</visible>
+                        <visible>IntegerGreaterThan(ListItem.Property(unwatched),0)</visible>
+                        <animation effect="zoom" center="260,47" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
+                        <top>20</top>
+                        <control type="image">
+                            <centerleft>260</centerleft>
+                            <height>55</height>
+                            <width>55</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>Badges/Badgecount.png</texture>
+                        </control>
+                        <control type="label">
+                            <top>6</top>
+                            <centerleft>260</centerleft>
+                            <height>40</height>
+                            <width>50</width>
+                            <font>size21</font>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>[B]$INFO[ListItem.Property(unwatched)][/B]</label>
+                        </control>
+                    </control>
                 </itemlayout>
                 <focusedlayout height="220" width="300">
-                    <control type="image" description="THMBSBASE">
+                    <control type="image" description="Always Colored Base">
                         <visible>!Skin.HasSetting(colormenu)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>$INFO[ListItem.Property(color)]</texture>
                     </control>
-                    <control type="image" description="THMBSBASE">
+                    <control type="image" description="Gray Base">
                         <visible>Skin.HasSetting(colormenu)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>icons/base.png</texture>
                     </control>
-                    <control type="image" description="THMBSBASE">
+                    <control type="image" description="Coloring Icon">
                         <visible>Skin.HasSetting(colormenu)</visible>
                         <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
                         <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>$INFO[ListItem.Property(color)]</texture>
                     </control>
-                    <control type="image" description="THMBSICONS">
+                    <control type="image" description="Thumb">
                         <visible>!IsEmpty(Listitem.thumb)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                     </control>
-                    <control type="image" description="THMBSICONS">
+                    <control type="image" description="Thumb">
                         <visible>IsEmpty(Listitem.thumb)</visible>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                     </control>
                     <control type="image" description="THMBS WEATHER">
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
-                        <height>168</height>
+                        <height>158</height>
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
                         <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
                         <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
-                        <posx>20</posx>
-                        <top>48</top>
+                        <centerleft>150</centerleft>
+                        <centertop>110</centertop>
                         <width>260</width>
                         <height>168</height>
                         <texture>images/atvslider.png</texture>
-                        <aspectratio>stretch</aspectratio>
                         <colordiffuse>black</colordiffuse>
                     </control>
-                    <control type="label" description="label">
-                        <posx>150</posx>
-                        <top>220</top>
+                    <control type="label">
+                        <centerleft>150</centerleft>
+                        <top>198</top>
                         <width>300</width>
                         <height>24</height>
                         <font>size24</font>
@@ -171,75 +214,128 @@
                         <textcolor>black</textcolor>
                         <label>[B]$INFO[ListItem.label][/B]</label>
                     </control>
+                    <control type="group">
+                        <visible>!Skin.HasSetting(unwatchedbadge)</visible>
+                        <visible>IntegerGreaterThan(ListItem.Property(unwatched),0)</visible>
+                        <animation effect="zoom" center="260,47" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
+                        <top>20</top>
+                        <control type="image">
+                            <centerleft>260</centerleft>
+                            <height>55</height>
+                            <width>55</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>Badges/Badgecount.png</texture>
+                        </control>
+                        <control type="label">
+                            <top>6</top>
+                            <centerleft>260</centerleft>
+                            <height>40</height>
+                            <width>50</width>
+                            <font>size21</font>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>[B]$INFO[ListItem.Property(unwatched)][/B]</label>
+                        </control>
+                    </control>
                 </focusedlayout>
                 <content>
                     <include>homepanel</include>
                 </content>
             </control>
-            <control type="group" description="Furniture">
-                <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-                <control type="image" description="Line">
-                    <posx>-90</posx>
-                    <top>503</top>
-                    <width>2100</width>
-                    <height>1</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
-                </control>
-                <control type="image" description="Line">
-                    <posx>-90</posx>
-                    <top>537</top>
-                    <width>2100</width>
-                    <height>1</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
-                </control>
-                <control type="rss" description="RSS Feed">
-                    <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                    <include>OpenClose</include>
-                    <top>501</top>
-                    <width>1920</width>
-                    <height>33</height>
-                    <font>size24</font>
-                    <urlset>1</urlset>
-                    <shadowcolor>-</shadowcolor>
-                    <titlecolor>darkred</titlecolor>
-                    <headlinecolor>FF666666</headlinecolor>
-                    <textcolor>gray</textcolor>
-                </control>
+            <control type="image" description="Line">
+                <left>-90</left>
+                <top>18</top>
+                <width>2100</width>
+                <height>1</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
             </control>
-            <control type="image" description="TVLINE">
+            <control type="image" description="Line">
+                <left>-90</left>
+                <top>52</top>
+                <width>2100</width>
+                <height>1</height>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
+            </control>
+            <control type="rss" description="RSS Feed">
+                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+                <include>OpenClose</include>
+                <top>15</top>
+                <width>1920</width>
+                <height>34</height>
+                <font>size24</font>
+                <urlset>1</urlset>
+                <shadowcolor>-</shadowcolor>
+                <titlecolor>darkred</titlecolor>
+                <headlinecolor>FF666666</headlinecolor>
+                <textcolor>gray</textcolor>
+            </control>
+        </control>
+        <control type="image" description="TVLINE">
+            <include>ShelfFade</include>
+            <animation effect="slide" end="485,0" time="400" condition="!Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
+            <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV)</visible>
+            <visible>Library.HasContent(TVShows)</visible>
+            <left>-5</left>
+            <top>160</top>
+            <width>2</width>
+            <height>250</height>
+            <texture>lines/LineV.png</texture>
+        </control>
+        <control type="group" id="700" description="Shelf items">
+            <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+            <include>weather_shelf</include>
+            <include>EPG_shelf</include>
+            <include condition="Library.HasContent(TVShows)">TV</include>
+            <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
+            <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
+            <include condition="!Skin.HasSetting(AddonsShelf_Custom)">Addons_Auto</include>
+            <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
+            <include condition="System.HasAddon(script.tv.show.next.aired)">TV_NA</include>
+            <include condition="Library.HasContent(Movies)">Movies</include>
+            <include>Music</include>
+            <include>Favsshelf</include>
+            <control type="image" description="Logo">
+                <!--<visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | Control.IsVisible(317) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>-->
+                <visible>![Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(319) | Control.IsVisible(313) | Control.IsVisible(315) | Control.IsVisible(314) | Container(9000).HasFocus(345)]</visible>
                 <include>ShelfFade</include>
-                <animation effect="slide" end="485,0" time="400" condition="!Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
-                <visible>Container(9000).HasFocus(341) + !Skin.HasSetting(IntruderTV) + !Skin.HasSetting(TVShelf_Watchlist)</visible>
-                <visible>Library.HasContent(TVShows)</visible>
-                <left>-5</left>
-                <top>30</top>
-                <width>1</width>
-                <height>450</height>
-                <texture>lines/LineV.png</texture>
+                <width>1920</width>
+                <height>500</height>
+                <aspectratio aligny="bottom">keep</aspectratio>
+                <texture>$VAR[ShelfLogo]</texture>
             </control>
-            <control type="group" id="700" description="Shelf items">
-                <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
-                <include>weather_shelf</include>
-                <include condition="true">EPG_shelf</include>
-                <include condition="Library.HasContent(TVShows) + Skin.HasSetting(TVShelf_Watchlist)">TV_RA</include>
-                <include condition="Library.HasContent(TVShows) + !Skin.HasSetting(TVShelf_Watchlist)">TV_WL</include>
-                <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
-                <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
-                <include condition="Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)">VAddons_Shortcuts</include>
-                <include condition="System.HasAddon(script.tv.show.next.aired)">TV_NA</include>
-                <include>Movies</include>
-                <include>Music_RA</include>
-                <include>Favsshelf</include>
-                <control type="image" description="Logo">
-                    <!--<visible>![[Container(9000).HasFocus(340) + Library.HasContent(Movies)] | [Container(9000).HasFocus(341) + Library.HasContent(TVShows)] | [Container(9000).HasFocus(342) + Control.IsVisible(313)] | [Container(9000).HasFocus(343) + Skin.HasSetting(AddonsShelf_Custom)] | [Container(9000).HasFocus(344) + Control.IsVisible(314)] | [Container(9000).HasFocus(349) + Player.HasMedia] | Container(9000).HasFocus(345) | Control.IsVisible(317) | [Container(9000).HasFocus(352) + Container(9000).Row(0) + IntegerGreaterThan(Window.Property(favourite.count),0)]]</visible>-->
-                    <visible>![Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(319) | Control.IsVisible(313) | Control.IsVisible(315) | Control.IsVisible(314) | Container(9000).HasFocus(345)]</visible>
-                    <include>ShelfFade</include>
-                    <width>1920</width>
-                    <height>500</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
-                    <texture>$VAR[ShelfLogo]</texture>
+            <control type="group">
+                <description>TRAILERS</description>
+                <top>360</top>
+                <width>320</width>
+                <include>ShelfFade</include>
+                <animation effect="fade" time="220">VisibleChange</animation>
+                <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(1) | Container(311).Position(7) | Container(311).Position(13)" effect="slide" start="0,0" end="320,0" time="0" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(2) | Container(311).Position(8) | Container(311).Position(14)" effect="slide" start="0,0" end="640,0" time="0" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(3) | Container(311).Position(9) | Container(311).Position(15)" effect="slide" start="0,0" end="960,0" time="0" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(4) | Container(311).Position(10) | Container(311).Position(16)" effect="slide" start="0,0" end="1280,0" time="0" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(5) | Container(311).Position(11) | Container(311).Position(17)" effect="slide" start="0,0" end="1600,0" time="0" easing="inout" reversible="true">Conditional</animation>
+                <control type="button" id="9010">
+                    <animation effect="fade" start="0" end="100" time="200">Focus</animation>
+                    <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(9010) | IsEmpty(Container(311).ListItem.Trailer)">Conditional</animation>
+                    <!--<animation effect="fade" start="100" end="0" time="100" condition="IsEmpty(Container(311).ListItem.Trailer)">Conditional</animation>-->
+                    <visible>Container(9000).HasFocus(340) | Control.HasFocus(9010)</visible>
+                    <left>98</left>
+                    <width>125</width>
+                    <height>125</height>
+                    <label></label>
+                    <texturefocus aspectratio="scale">info/trailerFO.png</texturefocus>
+                    <onclick>PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
+                    <!--<enable>!IsEmpty(Container(311).ListItem.Trailer)</enable>-->
+                    <onleft>Control.Move(311,-1)</onleft>
+                    <onleft>311</onleft>
+                    <onright>Control.Move(311,1)</onright>
+                    <onright>311</onright>
+                    <onup>9009</onup>
+                    <ondown>311</ondown>
                 </control>
             </control>
         </control>
@@ -247,8 +343,8 @@
             <visible>Player.HasAudio</visible>
             <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
             <animation effect="slide" tween="Sine" easing="Out" start="430,0" end="0,0" time="600" delay="200">VisibleChange</animation>
-            <posx>1500</posx>
-            <top>440</top>
+            <left>1500</left>
+            <top>450</top>
             <control type="image" description="Playing BG">
                 <width>430</width>
                 <height>105</height>
@@ -256,7 +352,7 @@
             </control>
             <control type="group">
                 <control type="image">
-                    <posx>18</posx>
+                    <left>18</left>
                     <top>15</top>
                     <width>75</width>
                     <height>75</height>
@@ -264,7 +360,7 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="label">
-                    <posx>110</posx>
+                    <left>110</left>
                     <top>9</top>
                     <aligny>center</aligny>
                     <width>300</width>
@@ -274,7 +370,7 @@
                     <label>$INFO[MusicPlayer.Title]</label>
                 </control>
                 <control type="label">
-                    <posx>110</posx>
+                    <left>110</left>
                     <top>36</top>
                     <aligny>center</aligny>
                     <width>300</width>
@@ -283,7 +379,7 @@
                     <label>$INFO[MusicPlayer.Artist]</label>
                 </control>
                 <control type="label">
-                    <posx>110</posx>
+                    <left>110</left>
                     <top>60</top>
                     <aligny>center</aligny>
                     <width>300</width>
@@ -293,6 +389,17 @@
                 </control>
             </control>
         </control>
+        <!--<control type="label">-->
+        <!--<description>IP ADDRESS</description>-->
+        <!--<right>90</right>-->
+        <!--<top>1060</top>-->
+        <!--<width>130</width>-->
+        <!--<height>20</height>-->
+        <!--<font>XS</font>-->
+        <!--<textcolor>lightblue</textcolor>-->
+        <!--<align>right</align>-->
+        <!--<info>Network.IPAddress</info>-->
+        <!--</control>-->
         <control type="label">
             <description>SKIN VERSION</description>
             <right>10</right>
@@ -302,7 +409,7 @@
             <font>XS</font>
             <textcolor>lightblue</textcolor>
             <align>right</align>
-            <label>$INFO[System.AddonVersion(skin.sio2x)]</label>
+            <info>System.AddonVersion(skin.sio2x)</info>
         </control>
         <control type="grouplist">
             <visible>[Container(9000).Row(0) | Container(9000).Row(1)]</visible>
@@ -312,20 +419,13 @@
             <itemgap>16</itemgap>
             <align>right</align>
             <control type="label" description="Battery">
-                <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,20) + !Skin.HasSetting(hideconnection)</visible>
+                <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,10) + !Skin.HasSetting(hideconnection)</visible>
                 <width min="30" max="500">auto</width>
                 <height>45</height>
                 <font>size30</font>
-                <textcolor>White</textcolor>
+                <textcolor>red</textcolor>
                 <label>$INFO[System.BatteryLevel] Batt.</label>
             </control>
-            <!--<control type="label" description="IP">-->
-                <!--<width min="30" max="500">auto</width>-->
-                <!--<height>45</height>-->
-                <!--<font>size30</font>-->
-                <!--<textcolor>White</textcolor>-->
-                <!--<label> $INFO[Network.IPAddress] </label>-->
-            <!--</control>-->
             <control type="label" description="Clock">
                 <visible>!Skin.HasSetting(HideClock)</visible>
                 <width min="30" max="500">auto</width>

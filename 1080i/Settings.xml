@@ -7,12 +7,12 @@
         <include>BlackBackground</include>
         <include>WindowsTopInfos</include>
         <include>Linemiddle</include>
-         <control type="image" description="Line">
-            <posx>150</posx>
+        <control type="image" description="Line">
+            <centerleft>480</centerleft>
             <top>540</top>
             <height>1</height>
-            <width>660</width>
-            <texture>lines/Line.png</texture>
+            <width>900</width>
+            <texture colordiffuse="black">lines/Line1.png</texture>
         </control>
         <control type="group">
             <control type="list" id="575">
@@ -30,10 +30,10 @@
                 <viewtype label="500">500</viewtype>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
-                <itemlayout width="500" height="75">
+                <itemlayout width="500" height="70">
                     <control type="label" description="Main Label">
                         <left>30</left>
-                        <height>75</height>
+                        <height>70</height>
                         <width>450</width>
                         <aligny>center</aligny>
                         <scroll>false</scroll>
@@ -43,16 +43,16 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="500" height="75">
+                <focusedlayout width="500" height="70">
                     <control type="image">
                         <visible>Control.HasFocus(575)</visible>
                         <width>960</width>
-                        <height>75</height>
+                        <height>70</height>
                         <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
                     </control>
                     <control type="label" description="Main Label">
                         <left>30</left>
-                        <height>75</height>
+                        <height>70</height>
                         <width>450</width>
                         <scroll>false</scroll>
                         <font>size33</font>
@@ -67,34 +67,34 @@
                         <onclick>activatewindow(AppearanceSettings)</onclick>
                     </item>
                     <item id="3" description="Videos">
-                       <label>3</label>
-                       <onclick>activatewindow(VideosSettings)</onclick>
+                        <label>3</label>
+                        <onclick>activatewindow(VideosSettings)</onclick>
                     </item>
                     <item id="4" description="Music">
-                       <label>2</label>
-                       <onclick>activatewindow(MusicSettings)</onclick>
+                        <label>2</label>
+                        <onclick>activatewindow(MusicSettings)</onclick>
                     </item>
                     <item id="14" description="LiveTV">
-                       <label>31059</label>
-                       <onclick>activatewindow(PVRSettings)</onclick>
+                        <label>31059</label>
+                        <onclick>activatewindow(PVRSettings)</onclick>
                     </item>
                     <item id="5" description="Pictures">
-                       <label>1</label>
-                       <onclick>activatewindow(PicturesSettings)</onclick>
+                        <label>1</label>
+                        <onclick>activatewindow(PicturesSettings)</onclick>
                     </item>
                     <item id="8" description="Weather">
-                       <label>8</label>
-                       <onclick>activatewindow(WeatherSettings)</onclick>
+                        <label>8</label>
+                        <onclick>activatewindow(WeatherSettings)</onclick>
                     </item>
                     <item id="9" description="Services">
-                       <label>14036</label>
-                       <onclick>Activatewindow(servicesettings)</onclick>
+                        <label>14036</label>
+                        <onclick>Activatewindow(servicesettings)</onclick>
                     </item>
                     <item id="10" description="System">
-                       <label>13000</label>
-                       <onclick>activatewindow(SystemSettings)</onclick>
+                        <label>13000</label>
+                        <onclick>activatewindow(SystemSettings)</onclick>
                     </item>
-                     <item id="2" description="Skin Settings">
+                    <item id="2" description="Skin Settings">
                         <label>20077</label>
                         <onclick>activatewindow(SkinSettings)</onclick>
                     </item>
@@ -102,14 +102,24 @@
                         <label>24001</label>
                         <onclick>activatewindow(AddonBrowser,root)</onclick>
                     </item>
+                    <item id="15" description="openELEC">
+                        <visible>System.HasAddon(service.openelec.settings)</visible>
+                        <label>$ADDON[service.openelec.settings 600]</label>
+                        <onclick>RunAddon(service.openelec.settings)</onclick>
+                    </item>
                     <item id="6" description="Sys Info">
                         <label>$LOCALIZE[138]</label>
                         <onclick>activatewindow(systeminfo)</onclick>
                     </item>
                     <item id="7" description="Maintenance">
                         <visible>System.HasAddon(service.clean.up)</visible>
-                        <label>31069</label>
+                        <visible>!System.HasAddon(service.openelec.settings)</visible>
+                        <label>$ADDON[service.clean.up 32009]</label>
                         <onclick>ActivateWindow(1717)</onclick>
+                    </item>
+                    <item id="16">
+                        <label>$LOCALIZE[31082]</label>
+                        <onclick>ActivateWindow(1111)</onclick>
                     </item>
                 </content>
             </control>
@@ -124,16 +134,13 @@
             <texture>$VAR[settingsmainico]</texture>
             <colordiffuse>black</colordiffuse>
         </control>
-        <control type="textbox" description="infos">
-            <visible>Control.HasFocus(575)</visible>
+        <control type="textbox" description="HelpDetails">
             <centerleft>480</centerleft>
-            <top>600</top>
+            <top>560</top>
             <width>660</width>
-            <height>500</height>
+            <height>380</height>
             <font>size33</font>
-            <scroll>false</scroll>
-            <aligny>top</aligny>
-            <align>center</align>
+            <align>justify</align>
             <label>$VAR[settingsmain]</label>
         </control>
     </controls>

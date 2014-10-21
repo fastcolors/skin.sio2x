@@ -5,7 +5,7 @@
         <control type="group" description="sio2view">
             <visible>Control.IsVisible(52)</visible>
             <control type="fixedlist" id="52">
-                <posx>60</posx>
+                <left>60</left>
                 <top>100</top>
                 <width>1920</width>
                 <height>979</height>
@@ -23,15 +23,15 @@
                 <scrolltime>250</scrolltime>
                 <itemlayout height="140">
                     <control type="image">
-                        <posx>1320</posx>
+                        <left>1320</left>
                         <centertop>70</centertop>
                         <width>460</width>
                         <height>100</height>
-                        <texture>$VAR[Locandine]</texture>
+                        <texture>$VAR[locandine]</texture>
                         <aspectratio align="right">keep</aspectratio>
                     </control>
                     <control type="textbox">
-                        <posx>1310</posx>
+                        <left>1310</left>
                         <top>20</top>
                         <width>340</width>
                         <height>140</height>
@@ -40,7 +40,7 @@
                         <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
                     </control>
                     <control type="image">
-                        <posx>1280</posx>
+                        <left>1280</left>
                         <width>440</width>
                         <height>1</height>
                         <texture colordiffuse="black">lines/LineL.png</texture>
@@ -49,21 +49,21 @@
                 <focusedlayout height="140">
                     <control type="image">
                         <animation effect="fade" end="0" time="30">UnFocus</animation>
-                        <posx>1280</posx>
+                        <left>1280</left>
                         <width>560</width>
                         <height>140</height>
                         <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
                     </control>
                     <control type="image">
-                        <posx>1320</posx>
+                        <left>1320</left>
                         <centertop>70</centertop>
                         <width>460</width>
                         <height>100</height>
-                        <texture>$VAR[Locandine]</texture>
+                        <texture>$VAR[locandine]</texture>
                         <aspectratio align="right">keep</aspectratio>
                     </control>
                     <control type="textbox">
-                        <posx>1310</posx>
+                        <left>1310</left>
                         <top>20</top>
                         <width>340</width>
                         <height>140</height>
@@ -72,7 +72,7 @@
                         <label>$INFO[ListItem.label][CR]$INFO[ListItem.Property(Addon.Version)]</label>
                     </control>
                     <control type="image">
-                        <posx>1280</posx>
+                        <left>1280</left>
                         <width>440</width>
                         <height>1</height>
                         <texture colordiffuse="black">lines/LineL.png</texture>
@@ -80,7 +80,7 @@
                 </focusedlayout>
             </control>
             <control type="label">
-                <posx>100</posx>
+                <left>100</left>
                 <top>42</top>
                 <width>1140</width>
                 <height>80</height>
@@ -89,7 +89,7 @@
                 <label>$INFO[ListItem.label]</label>
             </control>
             <control type="textbox">
-                <posx>240</posx>
+                <left>240</left>
                 <top>110</top>
                 <width>860</width>
                 <height>50</height>
@@ -98,7 +98,7 @@
                 <label>$LOCALIZE[19114] : [COLOR=red]$INFO[ListItem.Property(Addon.Version)][/COLOR]</label>
             </control>
             <control type="textbox" description="plots">
-                <posx>140</posx>
+                <left>140</left>
                 <top>600</top>
                 <width>1060</width>
                 <height>420</height>
@@ -117,7 +117,7 @@
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-                <posx>1340</posx>
+                <left>1340</left>
                 <top>-100</top>
                 <height>1280</height>
                 <width>1</width>
@@ -132,7 +132,7 @@
             <control type="group" description="EPISODES BLADE">
                 <visible>Container.Content(episodes)</visible>
                 <control type="image">
-                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart)]</visible>
+                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart))]</visible>
                     <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
                     <width>1340</width>
                     <height>1080</height>
@@ -151,7 +151,7 @@
                     <visible>Container(52).OnNext | Container(52).OnPrevious</visible>
                     <fadetime>200</fadetime>
                     <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
-                    <posx>720</posx>
+                    <left>720</left>
                     <top>820</top>
                     <width>600</width>
                     <height>80</height>
@@ -161,7 +161,7 @@
                 </control>
                 <control type="label">
                     <visible>Container(52).OnNext | Container(52).OnPrevious</visible>
-                    <posx>1330</posx>
+                    <left>1330</left>
                     <top>980</top>
                     <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
                     <font>size42B</font>
@@ -182,7 +182,7 @@
             <control type="group">
                 <visible>!Container.Content(episodes)</visible>
                 <control type="image">
-                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart)]</visible>
+                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart))]</visible>
                     <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
                     <width>1340</width>
                     <height>1080</height>
@@ -231,7 +231,7 @@
             <visible>Control.IsVisible(50)</visible>
             <include>Left_Panel_Addons</include>
             <control type="group" description="BigList">
-                <posx>960</posx>
+                <left>960</left>
                 <top>131</top>
                 <control type="fixedlist" id="50">
                     <width>920</width>
@@ -253,7 +253,7 @@
             </control>
             <include>Linemiddle</include>
             <control type="scrollbar" id="60">
-                <posx>51r</posx>
+                <left>51r</left>
                 <top>135</top>
                 <height>870</height>
                 <onleft>50</onleft>
@@ -265,12 +265,11 @@
             <visible>Control.IsVisible(53)</visible>
             <control type="group" description="Container and frame">
                 <control type="panel" id="53" description="Panel">
-                    <viewtype label="536">Icons</viewtype>
-                    <left>13</left>
-                    <top>60</top>
+                    <viewtype label="53">Icons</viewtype>
+                    <left>30</left>
+                    <top>100</top>
                     <width>1920</width>
-                    <height>1020</height>
-                    <orientation>vertical</orientation>
+                    <height>990</height>
                     <onup>noop</onup>
                     <ondown>noop</ondown>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
@@ -282,11 +281,11 @@
                     <scrolltime>400</scrolltime>
                     <itemlayout height="228" width="228">
                         <control type="image">
-                            <posx>35</posx>
+                            <left>35</left>
                             <top>24</top>
                             <width>225</width>
                             <height>225</height>
-                            <texture fallback="DefaultAddon.png" background="true">$VAR[Locandine]</texture>
+                            <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                     </itemlayout>
@@ -298,7 +297,7 @@
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                                 <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                <posx>19</posx>
+                                <left>19</left>
                                 <top>9</top>
                                 <width>256</width>
                                 <height>256</height>
@@ -306,11 +305,11 @@
                                 <aspectratio>stretch</aspectratio>
                             </control>
                             <control type="image">
-                                <posx>35</posx>
+                                <left>35</left>
                                 <top>24</top>
                                 <width>225</width>
                                 <height>225</height>
-                                <texture fallback="DefaultAddon.png" background="true">$VAR[Locandine]</texture>
+                                <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>
                                 <aspectratio>scale</aspectratio>
                             </control>
                         </control>
@@ -319,7 +318,7 @@
             </control>
             <control type="image" description="Line Split">
                 <centerleft>960</centerleft>
-                <top>60</top>
+                <top>100</top>
                 <width>1500</width>
                 <height>1</height>
                 <texture colordiffuse="black">lines/Line.png</texture>
@@ -327,7 +326,7 @@
             <control type="group">
                 <visible>!Container.Content(episodes)</visible>
                 <visible>[Container(53).Column(0) + !StringCompare(ListItem.Label,..)] | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3)</visible>
-                <posx>1230</posx>
+                <left>1230</left>
                 <top>450</top>
                 <animation effect="slide" start="710,0" end="0,0" time="450" delay="200">visiblechange</animation>
                 <control type="image" description="Dialog BG">
@@ -372,7 +371,7 @@
             </control>
             <control type="group">
                 <visible>Container(53).Column(4) | Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8)</visible>
-                <posx>-10</posx>
+                <left>-10</left>
                 <top>450</top>
                 <animation effect="slide" start="-710,0" end="0,0" time="450" delay="200">visiblechange</animation>
                 <control type="image" description="Dialog BG">
@@ -420,13 +419,13 @@
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
                 <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
                 <control type="image">
-                    <posx>-8r</posx>
+                    <left>-8r</left>
                     <top>90</top>
                     <height>910</height>
                     <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>-37r</posx>
+                    <left>-37r</left>
                     <top>120</top>
                     <height>850</height>
                     <onleft>53</onleft>
@@ -444,7 +443,7 @@
                 <onleft>500</onleft>
                 <onright>500</onright>
                 <viewtype label="$LOCALIZE[20445]">Fanart</viewtype>
-                <posx>-282</posx>
+                <left>-282</left>
                 <top>690</top>
                 <width>2484</width>
                 <height>402</height>
@@ -456,7 +455,7 @@
                 <pagecontrol>60</pagecontrol>
                 <itemlayout height="357" width="354">
                     <control type="image" description="Reflection">
-                        <posx>27</posx>
+                        <left>27</left>
                         <top>330</top>
                         <width>303</width>
                         <height>303</height>
@@ -464,7 +463,7 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image" description="Thumb">
-                        <posx>25</posx>
+                        <left>25</left>
                         <top>25</top>
                         <width>304</width>
                         <height>304</height>
@@ -475,7 +474,7 @@
                 <focusedlayout height="357" width="354">
                     <control type="group">
                         <control type="image" description="Thumb">
-                            <posx>7</posx>
+                            <left>7</left>
                             <top>7</top>
                             <width>340</width>
                             <height>340</height>
@@ -548,7 +547,7 @@
                 </control>
             </control>
             <control type="list" id="428">
-                <posx>20</posx>
+                <left>20</left>
                 <top>40</top>
                 <width>460</width>
                 <height>450</height>
@@ -557,7 +556,7 @@
                 <pagecontrol>-</pagecontrol>
                 <itemlayout height="42">
                     <control type="label">
-                        <posx>150</posx>
+                        <left>150</left>
                         <top>0</top>
                         <width>150</width>
                         <height>45</height>
@@ -569,7 +568,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>171</posx>
+                        <left>171</left>
                         <top>0</top>
                         <width>279</width>
                         <height>45</height>
@@ -582,7 +581,7 @@
                 </itemlayout>
                 <focusedlayout height="42">
                     <control type="label">
-                        <posx>150</posx>
+                        <left>150</left>
                         <top>0</top>
                         <width>150</width>
                         <height>45</height>
@@ -594,7 +593,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <posx>171</posx>
+                        <left>171</left>
                         <top>0</top>
                         <width>279</width>
                         <height>45</height>
@@ -641,7 +640,7 @@
 
             <control type="scrollbar" id="60">
                 <animation effect="fade" delay="200" time="300">VisibleChange</animation>
-                <posx>198</posx>
+                <left>198</left>
                 <top>1045</top>
                 <width>1525</width>
                 <height>9</height>

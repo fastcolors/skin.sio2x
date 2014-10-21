@@ -19,7 +19,7 @@
                 <onleft>500</onleft>
                 <onright>500</onright>
                 <viewtype label="$LOCALIZE[20445]">Fanart</viewtype>
-                <posx>-210</posx>
+                <left>-210</left>
                 <top>570</top>
                 <width>2200</width>
                 <height>700</height>
@@ -30,23 +30,23 @@
                 <pagecontrol>60</pagecontrol>
                 <itemlayout width="300" height="500">
                     <control type="image" description="Reflection">
-                        <posx>85</posx>
+                        <left>85</left>
                         <top>440</top>
                         <height>350</height>
                         <width>230</width>
-                        <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[Locandine]</texture>
+                        <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image" description="Thumb">
-                        <posx>85</posx>
+                        <left>85</left>
                         <top>80</top>
                         <height>350</height>
                         <width>230</width>
-                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[Locandine]</texture>
+                        <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image" description="WatchStatus">
-                        <posx>76</posx>
+                        <left>76</left>
                         <top>380</top>
                         <height>60</height>
                         <width>60</width>
@@ -59,7 +59,7 @@
                         <animation effect="zoom" end="150" center="178,430" time="300" tween="Quadratic" easing="in">Focus</animation>
                         <animation effect="zoom" start="150" end="100" center="178,430" time="120">unFocus</animation>
                         <control type="image" description="black">
-                            <posx>77</posx>
+                            <left>77</left>
                             <top>72</top>
                             <height>365</height>
                             <width>246</width>
@@ -68,15 +68,15 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image" description="THUMBNAIL">
-                            <posx>85</posx>
+                            <left>85</left>
                             <top>80</top>
                             <height>350</height>
                             <width>230</width>
-                            <texture background="true" fallback="DefaultVideoCover.png">$VAR[Locandine]</texture>
+                            <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="image" description="WatchStatus">
-                            <posx>76</posx>
+                            <left>76</left>
                             <top>380</top>
                             <height>60</height>
                             <width>60</width>
@@ -95,7 +95,7 @@
             </control>
             <control type="image" description="RightFade">
                 <include>VisibleFade</include>
-                <posx>1906</posx>
+                <left>1906</left>
                 <width>15</width>
                 <height>1080</height>
                 <texture flipx="true">images/DefaultGradientH.png</texture>
@@ -104,9 +104,9 @@
             <control type="group" description="Media Info">
                 <visible>!StringCompare(ListItem.label,..)</visible>
                 <top>40</top>
-                <posx>98</posx>
+                <left>98</left>
                 <control type="image" description="Stars rating">
-                    <posx>1590</posx>
+                    <left>1590</left>
                     <top>435</top>
                     <height>45</height>
                     <width>135</width>
@@ -120,7 +120,7 @@
                     <info>ListItem.Label</info>
                 </control>
                 <control type="image" description="Line Split">
-                    <posx>450</posx>
+                    <left>450</left>
                     <top>515</top>
                     <width>1300</width>
                     <height>1</height>
@@ -131,7 +131,7 @@
                     <!--<visible>!SubString(ListItem.Path,videodb://1/7)</visible>-->
                     <control type="image" description="lineplot">
                         <top>70</top>
-                        <posx>550</posx>
+                        <left>550</left>
                         <width>620</width>
                         <height>1</height>
                         <texture colordiffuse="black">lines/LineSH.png</texture>
@@ -226,7 +226,7 @@
             <include>Unwatched</include>
             <control type="scrollbar" id="60">
                 <animation effect="fade" delay="200" time="300">VisibleChange</animation>
-                <posx>198</posx>
+                <left>198</left>
                 <top>1038</top>
                 <width>1525</width>
                 <height>9</height>

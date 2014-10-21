@@ -7,7 +7,7 @@
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
             <control type="image" description="List back">
-                <posx>540</posx>
+                <left>540</left>
                 <top>270</top>
                 <width>840</width>
                 <height>540</height>
@@ -34,7 +34,8 @@
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(AddonBrowser,root)</onclick>
                 </control>
-                 <control type="button" id="704" description="Addons">
+                <control type="button" id="704" description="Update Library">
+                    <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
                     <include>DialogButt</include>
                     <label>$LOCALIZE[653]</label>
                     <onclick>Close</onclick>

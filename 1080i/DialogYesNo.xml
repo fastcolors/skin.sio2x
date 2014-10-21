@@ -12,7 +12,7 @@
             <texture border="150">images/Dialog.png</texture>
         </control>
         <control type="group">
-            <posx>480</posx>
+            <left>480</left>
             <top>380</top>
             <control type="image">
             <left>480</left>

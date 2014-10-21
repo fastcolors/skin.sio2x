@@ -7,7 +7,7 @@
         <control type="group">
             <control type="group" id="101" description="Options content">
                 <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
-                <posx>630</posx>
+                <left>630</left>
                 <top>865</top>
                 <animation type="Focus">
                     <effect type="slide" tween="Cubic" easing="out" start="0,0" end="0,-800" time="800"/>
@@ -16,7 +16,7 @@
                     <effect type="slide" tween="Cubic" easing="in" start="0,-800" end="0,0" time="500"/>
                 </animation>
                 <control type="image">
-                    <posx>550</posx>
+                    <left>550</left>
                     <top>200</top>
                     <width>680</width>
                     <height>520</height>
@@ -24,7 +24,7 @@
                     <texture border="50">sidepanel/Back.png</texture>
                 </control>
                 <control type="grouplist" id="101" description="OSD Options">
-                    <posx>600</posx>
+                    <left>600</left>
                     <top>246</top>
                     <width>640</width>
                     <height>640</height>
@@ -96,13 +96,13 @@
                 <visible>![Window.IsActive(DialogSelect.xml) | Window.IsActive(SliderDialog) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
                 <animation effect="fade" end="100" time="400">Visible</animation>
                 <animation effect="fade" end="0" time="100">Hidden</animation>
-                <posx>0</posx>
+                <left>0</left>
                 <top>0</top>
                 <control type="group">
                     <control type="group" description="Dialog Background">
                         <visible>Window.IsVisible(videoosd.xml) + Window.IsActive(dialogseekbar.xml)</visible>
                         <control type="image">
-                            <posx>35</posx>
+                            <left>35</left>
                             <top>873</top>
                             <width>1850</width>
                             <height>150</height>
@@ -112,7 +112,7 @@
                         </control>
                     </control>
                     <control type="label" description="Title">
-                        <posx>120</posx>
+                        <left>120</left>
                         <top>880</top>
                         <height>60</height>
                         <width>840</width>
@@ -127,7 +127,7 @@
                         <animation effect="fade" start="0" end="100" time="600">VisibleChange</animation>
                         <animation effect="rotatey" end="20" center="1720,0" reversible="false" condition="true">Conditional</animation>
                         <visible>!ControlGroup(101).HasFocus()</visible>
-                        <posx>1610</posx>
+                        <left>1610</left>
                         <top>600</top>
                         <!--<control type="image" description="CoverReal">-->
                             <!--<height>300</height>-->
@@ -163,7 +163,7 @@
                         </control>
                         <control type="label" description="Episode">
                             <visible>VideoPlayer.Content(Episodes)</visible>
-                            <posx>190</posx>
+                            <left>190</left>
                             <top>290</top>
                             <height>60</height>
                             <width>220</width>
@@ -175,7 +175,7 @@
                         </control>
                         <control type="label" description="Channel">
                             <visible>Pvr.IsPlayingTV</visible>
-                            <posx>190</posx>
+                            <left>190</left>
                             <top>290</top>
                             <height>60</height>
                             <width>220</width>
@@ -188,7 +188,7 @@
                     </control>
                 </control>
                 <control type="list" id="100">
-                    <posx>1000</posx>
+                    <left>1000</left>
                     <top>220r</top>
                     <onright>100</onright>
                     <onleft>100</onleft>
@@ -311,21 +311,20 @@
                 <animation type="Visible">
                     <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800"/>
                 </animation>
-                <posx>1500</posx>
+                <left>1500</left>
                 <top>1030</top>
                 <width>48</width>
                 <height>48</height>
                 <texture>images/Dialogpull.png</texture>
             </control>
         </control>
-
         <!-- 3D -->
         <control type="group">
             <visible>VideoPlayer.IsStereoscopic + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
             <visible allowhiddenfocus="true">ControlGroup(500).HasFocus</visible>
             <animation effect="fade" time="200">VisibleChange</animation>
             <control type="image">
-                <posx>510</posx>
+                <left>510</left>
                 <top>500</top>
                 <width>900</width>
                 <height>450</height>
@@ -333,8 +332,7 @@
                 <texture border="150">images/Dialog.png</texture>
             </control>
             <control type="grouplist" id="500">
-
-                <posx>710</posx>
+                <left>710</left>
                 <top>300</top>
                 <width>500</width>
                 <height>500</height>
@@ -345,9 +343,7 @@
                 <onup>noop</onup>
                 <ondown>noop</ondown>
                 <orientation>vertical</orientation>
-
                 <include>VisibleFadeEffect</include>
-
                 <control type="group">
                     <description>WindowsTopInfos</description>
                     <width>500</width>
@@ -393,5 +389,13 @@
             </control>
         </control>
         <!-- 3D -->
+        <control type="slider" id="401">
+            <description>Slider</description>
+            <left>257</left>
+            <top>933</top>
+            <width>1416</width>
+            <height>68</height>
+            <action>seek</action>
+        </control>
     </controls>
 </window>

@@ -56,14 +56,14 @@
                             <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
                         </control>
                         <control type="image" description="Separator">
-                            <posx>0</posx>
+                            <left>0</left>
                             <height>1</height>
                             <width>780</width>
                             <aspectratio>stretch</aspectratio>
                             <texture colordiffuse="black">lines/Line1.png</texture>
                         </control>
                         <control type="grouplist" description="Labels">
-                            <posx>20</posx>
+                            <left>20</left>
                             <top>18</top>
                             <width>808</width>
                             <orientation>vertical</orientation>
@@ -133,7 +133,7 @@
         </control>
         <control type="group" description="Options">
             <control type="grouplist" id="300">
-                <posx>15</posx>
+                <left>15</left>
                 <top>1000</top>
                 <width>1890</width>
                 <height>80</height>
@@ -187,7 +187,7 @@
                 <label>182</label>
             </control>
             <control type="list" id="50">
-                <posx>960</posx>
+                <left>960</left>
                 <top>111</top>
                 <width>920</width>
                 <height>890</height>
@@ -199,7 +199,7 @@
                 <scrolltime>250</scrolltime>
                 <itemlayout width="890" height="111">
                     <control type="label" description="Main Label">
-                        <posx>45</posx>
+                        <left>45</left>
                         <width>725</width>
                         <include>BigListTitle</include>
                         <label>$INFO[ListItem.label]</label>
@@ -209,7 +209,7 @@
                 <focusedlayout width="890" height="111">
                     <include>LargeSelector</include>
                     <control type="label" description="Main Label">
-                        <posx>45</posx>
+                        <left>45</left>
                         <width>725</width>
                         <include>BigListTitleFO</include>
                         <label>$INFO[ListItem.label]</label>

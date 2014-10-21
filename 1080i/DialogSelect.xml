@@ -53,7 +53,7 @@
                     <itemlayout width="890" height="111">
                         <control type="group">
                             <control type="label" description="Main Label">
-                                <posx>45</posx>
+                                <left>45</left>
                                 <width>725</width>
                                 <include>BigListTitle</include>
                                 <label>$INFO[ListItem.label]</label>
@@ -61,7 +61,7 @@
                         </control>
                         <control type="label" description="Label2">
                             <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
-                            <posx>45</posx>
+                            <left>45</left>
                             <include>BigListDetails</include>
                             <label>$INFO[ListItem.label2]</label>
                         </control>
@@ -70,7 +70,7 @@
                         <include>LargeSelector</include>
                         <control type="group">
                              <control type="label" description="Main Label">
-                                <posx>45</posx>
+                                <left>45</left>
                                 <width>725</width>
                                 <include>BigListTitleFO</include>
                                 <label>$INFO[ListItem.label]</label>
@@ -78,9 +78,9 @@
                         </control>
                         <control type="label" description="Label2">
                             <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
-                            <posx>45</posx>
+                            <left>45</left>
                             <width>630</width>
-                            <include>BigListDetailsFO</include>
+                            <include>BigListDetails</include>
                             <label>$INFO[ListItem.label2]</label>
                         </control>
                     </focusedlayout>
@@ -109,7 +109,7 @@
                         <control type="group">
                             <!--<animation condition="IsEmpty(ListItem.Label2)" effect="slide" end="0,18" time="0" reversible="true">Conditional</animation>-->
                             <control type="label" description="Main Label">
-                                <posx>45</posx>
+                                <left>45</left>
                                 <width>725</width>
                                 <include>BigListTitle</include>
                                 <label>$INFO[ListItem.label]</label>
@@ -117,7 +117,7 @@
                         </control>
                         <control type="label" description="Label2">
                             <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
-                            <posx>45</posx>
+                            <left>45</left>
                             <include>BigListDetails</include>
                             <label>$INFO[ListItem.label2]</label>
                         </control>
@@ -127,7 +127,7 @@
                         <control type="group">
                             <!--<animation condition="IsEmpty(ListItem.Label2)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>-->
                             <control type="label" description="Main Label">
-                                <posx>45</posx>
+                                <left>45</left>
                                 <width>725</width>
                                 <include>BigListTitleFO</include>
                                 <label>$INFO[ListItem.label]</label>
@@ -135,9 +135,9 @@
                         </control>
                         <control type="label" description="Label2">
                             <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
-                            <posx>45</posx>
+                            <left>45</left>
                             <width>630</width>
-                            <include>BigListDetailsFO</include>
+                            <include>BigListDetails</include>
                             <label>$INFO[ListItem.label2]</label>
                         </control>
                     </focusedlayout>
@@ -179,7 +179,7 @@
             </control>
         </control>
         <control type="image">
-            <posx>960</posx>
+            <left>960</left>
             <width>1</width>
             <height>1080</height>
             <texture>lines/LineV.png</texture>
@@ -200,7 +200,7 @@
         </control>
         <control type="scrollbar" id="60">
             <visible>Control.IsVisible(3)</visible>
-            <posx>39r</posx>
+            <left>39r</left>
             <top>135</top>
             <height>870</height>
             <onleft>3</onleft>
@@ -208,7 +208,7 @@
         </control>
         <control type="scrollbar" id="60">
             <visible>Control.IsVisible(6)</visible>
-            <posx>39r</posx>
+            <left>39r</left>
             <top>135</top>
             <height>870</height>
             <onleft>6</onleft>

@@ -6,10 +6,10 @@
             <include>left_Panel</include>
             <control type="group">
                 <include>LargeListItemCount</include>
-                <posx>960</posx>
+                <left>960</left>
                 <top>125</top>
                 <control type="fixedlist" id="50">
-                    <visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>
+                    <visible>!IsEmpty(Container.FolderPath)</visible>
                     <width>920</width>
                     <height>890</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
@@ -27,7 +27,7 @@
             </control>
             <include>Linemiddle</include>
             <control type="scrollbar" id="60">
-                <posx>39r</posx>
+                <left>39r</left>
                 <top>135</top>
                 <height>870</height>
                 <onleft>51</onleft>

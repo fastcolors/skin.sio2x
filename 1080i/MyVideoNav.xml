@@ -4,7 +4,7 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
-    <views>52,51,50,53,55,500</views>
+    <views>52,51,50,53,55,500,54</views>
     <!--
    52 Sio2
    50 Big List
@@ -12,25 +12,30 @@
    53 Icons
    500 Fanart
    55 Banners
+   54 sio2 advanced
    -->
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
         <!--VIEWS-->
         <include>sio2view</include>
+        <include>sio2advanced</include>
         <include>plainlist</include>
         <include>fatlist</include>
         <include>fanart</include>
         <include>icons</include>
         <include>banners</include>
         <!--VIEWSEND-->
-        <include>WindowsTopInfos</include>
+        <control type="group">
+            <!--<visible>!Control.IsVisible(54)</visible>-->
+            <include>WindowsTopInfos</include>
+        </control>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() + !Window.IsVisible(traktContextMenu.xml)</visible>
             <include>9000slide</include>
             <control type="image" description="List back">
                 <top>-10</top>
-                <posx>1430</posx>
+                <left>1430</left>
                 <width>550</width>
                 <height>1100</height>
                 <aspectratio>stretch</aspectratio>
@@ -52,12 +57,19 @@
                     <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
                     <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
                 </control>
-                <control type="radiobutton" id="98" description="Filter">
-                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                <!--<control type="button" id="19">-->
+                <!--<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>-->
+                <!--<description>Filter</description>-->
+                <!--<include>DialogButt</include>-->
+                <!--<label>587</label>-->
+                <!--</control>-->
+                <control type="radiobutton" id="98">
                     <enable>Container.CanFilterAdvanced</enable>
                     <include>DialogButt</include>
-                    <onclick>Filter</onclick>
                     <label>587</label>
+                    <selected>Container.Filtered</selected>
+                    <onclick>left</onclick>
+                    <onclick>Filter</onclick>
                 </control>
                 <control type="button" id="3" description="Sort">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -72,15 +84,17 @@
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
                 <control type="button" id="8" description="search">
+                    <visible>!System.HasAddon(script.globalsearch)</visible>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <include>DialogButt</include>
                     <label>137</label>
                 </control>
-                <control type="button" id="698" description="Browse files">
+                <control type="button" id="90" description="search">
+                    <visible>System.HasAddon(script.globalsearch)</visible>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <include>DialogButt</include>
-                    <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
-                    <onclick>ActivateWindow(Videos,files)</onclick>
+                    <onclick>RunAddon(script.globalsearch)</onclick>
+                    <label>137</label>
                 </control>
                 <control type="button" id="1501">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -88,6 +102,7 @@
                     <visible>System.HasAddon(script.trakt) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
                     <label>Trakt</label>
                     <onclick>XBMC.RunScript(script.trakt,action=contextmenu)</onclick>
+                    <onclick>left</onclick>
                 </control>
                 <control type="togglebutton" id="699" description="Playing">
                     <enable>Player.HasMedia</enable>
@@ -108,6 +123,14 @@
                     <label>653</label>
                     <altlabel>13353</altlabel>
                     <usealttexture>library.isscanningvideo</usealttexture>
+                    <onclick>left</onclick>
+                </control>
+                <control type="button" id="598">
+                    <visible>Container.Content(movies)</visible>
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[31026]</label>
+                    <onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, silent=true, clearlogo,discart)</onclick>
+                    <onclick>left</onclick>
                 </control>
                 <control type="button" id="599">
                     <enable>false</enable>
@@ -115,27 +138,40 @@
                     <include>DialogButt</include>
                     <label>•• $LOCALIZE[582] ••</label>
                 </control>
+                <!--todo label ?-->
                 <control type="radiobutton" id="600" description="sio2">
                     <include>DialogButt</include>
                     <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
                     <onclick>Container.SetViewMode(52)</onclick>
                     <selected>Control.IsVisible(52)</selected>
-                    <label>SiO2</label>
+                    <label>SiO2 View</label>
                 </control>
-                <control type="radiobutton" id="601" description="View Big List">
+                <!--todo label ?-->
+                <control type="radiobutton" id="601" description="sio2 Advanced">
+                    <include>DialogButt</include>
+                    <visible>Container.Content(movies)</visible>
+                    <onclick>Container.SetViewMode(54)</onclick>
+                    <onclick condition="!Skin.HasSetting(splashoff)">ActivateWindow(1113)</onclick>
+                    <!--<onclick>ActivateWindow(1113)</onclick>-->
+                    <!--<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, silent=true, clearlogo,discart)</onclick>-->
+                    <selected>Control.IsVisible(54)</selected>
+                    <label>SiO2-X View</label>
+                </control>
+                <control type="radiobutton" id="602" description="View Big List">
                     <include>DialogButt</include>
                     <enable>!IsEmpty(Container.FolderPath)</enable>
                     <onclick>Container.SetViewMode(50)</onclick>
                     <selected>Control.IsVisible(50)</selected>
                     <label>$LOCALIZE[537]</label>
                 </control>
-                <control type="radiobutton" id="602" description="List">
+                <control type="radiobutton" id="603" description="List">
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(51)</onclick>
                     <selected>Control.IsVisible(51)</selected>
                     <label>$LOCALIZE[535]</label>
                 </control>
-                <control type="radiobutton" id="603" description="Icons">
+                <control type="radiobutton" id="604=" description="Icons">
+                    <!--<enable>Container.content(movies) | container.content(seasons) | container.content(tvshows)</enable>-->
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(53)</onclick>
                     <selected>Control.IsVisible(53)</selected>
@@ -149,7 +185,7 @@
                     <label>$LOCALIZE[20445]</label>
                 </control>
                 <control type="radiobutton" id="606" description="Banners">
-                    <enable>Container.Content(tvshows)</enable>
+                    <visible>Container.Content(tvshows)</visible>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(55)</onclick>
                     <selected>Control.IsVisible(55)</selected>

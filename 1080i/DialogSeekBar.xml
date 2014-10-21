@@ -15,7 +15,7 @@
                 <animation effect="fade" start="0" end="70" time="400">Visible</animation>
                 <animation effect="fade" start="70" end="0" time="100">Hidden</animation>
                 <control type="label" description="Clock">
-                    <posx>60</posx>
+                    <left>60</left>
                     <top>-5</top>
                     <width>695</width>
                     <height>60</height>
@@ -25,7 +25,7 @@
                     <label>$LOCALIZE[142] $INFO[System.Time]</label>
                 </control>
                 <control type="label">
-                    <posx>60</posx>
+                    <left>60</left>
                     <top>50</top>
                     <width>495</width>
                     <height>30</height>
@@ -35,7 +35,7 @@
                     <font>size26</font>
                 </control>
                 <control type="label" description="End time">
-                    <posx>60r</posx>
+                    <left>60r</left>
                     <top>-5</top>
                     <width>695</width>
                     <height>60</height>
@@ -46,7 +46,7 @@
                     <label>$LOCALIZE[31005]: $INFO[Player.FinishTime]</label>
                 </control>
                 <control type="label">
-                    <posx>60r</posx>
+                    <left>60r</left>
                     <top>50</top>
                     <height>30</height>
                     <width>195</width>
@@ -58,7 +58,7 @@
                 </control>
                 <control type="label" description="Next item">
                     <visible>!IsEmpty(VideoPlayer.NextTitle)</visible>
-                    <posx>300</posx>
+                    <left>300</left>
                     <top>1</top>
                     <width>1320</width>
                     <height>60</height>
@@ -92,9 +92,8 @@
                     <texture>Seekbar/Barback.png</texture>
                 </control>
                 <control type="progress" description="Cache Progress">
-                    <visible>true</visible>
                     <!--Player.Caching-->
-                    <posx>257</posx>
+                    <left>257</left>
                     <top>1</top>
                     <width>1416</width>
                     <height>68</height>
@@ -105,7 +104,7 @@
                     <info>Player.ProgressCache</info>
                 </control>
                 <control type="progress" id="23" description="Progress Bar">
-                    <posx>257</posx>
+                    <left>257</left>
                     <top>1</top>
                     <width>1416</width>
                     <height>68</height>
@@ -113,95 +112,95 @@
                     <texturebg>Seekbar/BG.png</texturebg>
                     <midtexture border="2">Seekbar/M.png</midtexture>
                     <info>Player.Progress</info>
-                    <visible>true</visible>
                 </control>
+
             </control>
             <control type="group" description="Icons on Seekbar">
                 <top>934</top>
-                <posx>156</posx>
+                <left>156</left>
                 <control type="image" description="Buffer icon">
                     <visible>Player.Caching</visible>
-                    <posx>0</posx>
+                    <left>0</left>
                     <include>OSDbarIcons</include>
                     <texture border="2">busy/Busy.png</texture>
                     <animation effect="rotate" start="360" end="0" center="auto" time="1200" loop="true" pulse="true" condition="true">conditional</animation>
                 </control>
                 <control type="image" description="Pause">
                     <visible>Player.Paused + !Player.Caching</visible>
-                    <posx>10</posx>
+                    <left>10</left>
                     <include>OSDbarIcons</include>
                     <texture border="2">Seekbar/OSDPauseNf.png</texture>
                 </control>
                 <control type="image" description="Play">
                     <visible>player.playing</visible>
-                    <posx>10</posx>
+                    <left>10</left>
                     <include>OSDbarIcons</include>
                     <texture border="2">Seekbar/OSDPlayNF.png</texture>
                 </control>
                 <control type="image" description="FF">
-                    <posx>-10</posx>
+                    <left>-10</left>
                     <visible>player.forwarding2x | player.forwarding4x | player.forwarding8x | player.forwarding16x | player.forwarding32x</visible>
                     <include>OSDbarIcons</include>
                     <texture border="2">Seekbar/OSDPlayNF.png</texture>
                 </control>
                 <control type="image" description="FFFF">
                     <visible>player.forwarding4x | player.forwarding8x | player.forwarding16x | player.forwarding32x</visible>
-                    <posx>0</posx>
+                    <left>0</left>
                     <include>OSDbarIcons</include>
                     <texture border="2">Seekbar/OSDPlayNF.png</texture>
                 </control>
                 <control type="image" description="2FFFF">
                     <visible>player.forwarding8x | player.forwarding16x | player.forwarding32x</visible>
-                    <posx>10</posx>
+                    <left>10</left>
                     <include>OSDbarIcons</include>
                     <texture border="2">Seekbar/OSDPlayNF.png</texture>
                 </control>
                 <control type="image" description="4FFFF">
                     <visible>player.forwarding16x | player.forwarding32x</visible>
-                    <posx>20</posx>
+                    <left>20</left>
                     <include>OSDbarIcons</include>
                     <texture border="2">Seekbar/OSDPlayNF.png</texture>
                 </control>
                 <control type="image" description="8FFFF">
                     <visible>player.forwarding32x</visible>
-                    <posx>30</posx>
+                    <left>30</left>
                     <include>OSDbarIcons</include>
                     <texture border="2">Seekbar/OSDPlayNF.png</texture>
                 </control>
                 <control type="image" description="RF">
-                    <posx>-10</posx>
+                    <left>-10</left>
                     <visible>player.rewinding2x | player.rewinding4x | player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
                     <include>OSDbarIcons</include>
                     <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
                 </control>
                 <control type="image" description="RFFF">
                     <visible>player.rewinding4x | player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
-                    <posx>0</posx>
+                    <left>0</left>
                     <include>OSDbarIcons</include>
                     <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
                 </control>
                 <control type="image" description="2RFFF">
                     <visible>player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
-                    <posx>10</posx>
+                    <left>10</left>
                     <include>OSDbarIcons</include>
                     <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
                 </control>
                 <control type="image" description="4RFFF">
                     <visible>player.rewinding16x | player.rewinding32x</visible>
-                    <posx>20</posx>
+                    <left>20</left>
                     <include>OSDbarIcons</include>
                     <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
                 </control>
                 <control type="image" description="8RFFF">
                     <visible>player.rewinding32x</visible>
-                    <posx>30</posx>
+                    <left>30</left>
                     <include>OSDbarIcons</include>
                     <texture border="2" flipx="true">Seekbar/OSDPlayNF.png</texture>
                 </control>
             </control>
             <control type="image">
                 <visible>!PLayer.Paused</visible>
-                <posx>1500</posx>
+                <left>1500</left>
                 <top>750</top>
                 <width>100</width>
                 <height>100</height>

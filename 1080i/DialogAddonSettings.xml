@@ -68,7 +68,7 @@
             <font>size33</font>
         </control>
         <control type="grouplist" id="2" description="Stage">
-            <posx>300</posx>
+            <left>300</left>
             <top>165</top>
             <width>1320</width>
             <height>825</height>
@@ -101,7 +101,7 @@
             <width>900</width>
         </control>
         <control type="scrollbar" id="60">
-            <posx>45r</posx>
+            <left>45r</left>
             <top>165</top>
             <height>825</height>
             <onleft>2</onleft>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--openelec-->
+<window id="5537">
+    <defaultcontrol>4323</defaultcontrol>
+    <backgroundcolor>background</backgroundcolor>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="group" id="1998">
+            <control type="image" id="1999" description="Background image">
+                <centerleft>960</centerleft>
+                <top>500</top>
+                <height>400</height>
+                <width>600</width>
+                <texture border="150">sidepanel/Back.png</texture>
+            </control>
+            <control type="list" id="4323">
+                <centerleft>960</centerleft>
+                <top>540</top>
+                <width>500</width>
+                <height>180</height>
+                <pagecontrol>-</pagecontrol>
+                <itemlayout height="60">
+                    <control type="label">
+                        <width>500</width>
+                        <height>60</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                        <label>-</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="60">
+                    <control type="image">
+                        <width>500</width>
+                        <height>60</height>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
+                    </control>
+                    <control type="label">
+                        <width>500</width>
+                        <height>60</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <info>ListItem.Label</info>
+                        <label>-</label>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </controls>
+</window> 

@@ -26,7 +26,7 @@
                 <width>800</width>
                 <height>900</height>
                 <fadetime>200</fadetime>
-                <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
+                <texture diffuse="images/Diffuse.png" background="true">$VAR[locandine]</texture>
                 <aspectratio aligny="center">keep</aspectratio>
             </control>
             <control type="image" description="Thumb">
@@ -38,13 +38,13 @@
                 <fadetime>200</fadetime>
                 <bordertexture colordiffuse="black">images/white.png</bordertexture>
                 <bordersize>4</bordersize>
-                <texture diffuse="images/Diffuse.png" background="true">$VAR[Locandine]</texture>
+                <texture diffuse="images/Diffuse.png" background="true">$VAR[locandine]</texture>
                 <aspectratio aligny="center">keep</aspectratio>
             </control>
             <control type="image">
                 <visible>!IsEmpty(ListItem.Mpaa)</visible>
                 <!--<animation condition="!Container.Content(Episodes)" effect="slide" end="0,320">Conditional</animation>-->
-                <posx>640</posx>
+                <left>640</left>
                 <top>850</top>
                 <height>100</height>
                 <width>100</width>
@@ -62,7 +62,7 @@
                     <centerleft>480</centerleft>
                     <width>756</width>
                     <height>470</height>
-                    <texture background="true">$VAR[Locandine]</texture>
+                    <texture background="true">$VAR[locandine]</texture>
                     <fadetime>200</fadetime>
                     <bordertexture colordiffuse="black">images/white.png</bordertexture>
                     <bordersize>4</bordersize>
@@ -82,21 +82,23 @@
                 </control>
             </control>
             <control type="group" description="EPISODES BADGES">
-                <top>445</top>
+                <top>430</top>
                 <left>260</left>
                 <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
                 <animation effect="fade" time="160" delay="100">Visible</animation>
                 <animation effect="fade" end="0">Hidden</animation>
                 <control type="image">
-                    <height>55</height>
-                    <width>80</width>
+                    <centerleft>35</centerleft>
+                    <height>75</height>
+                    <width>75</width>
                     <aspectratio>keep</aspectratio>
                     <texture>badges/Badgecount.png</texture>
                 </control>
                 <control type="label" description="Label2">
-                    <height>40</height>
+                    <centerleft>35</centerleft>
+                    <height>72</height>
                     <width>80</width>
-                    <font>size30</font>
+                    <font>size28</font>
                     <align>center</align>
                     <textcolor>FFFFFFFF</textcolor>
                     <shadowcolor>-</shadowcolor>
@@ -194,7 +196,7 @@
     <include name="left_Panel_livetv">
         <control type="group" description="Thumbs with info">
             <top>80</top>
-            <posx>120</posx>
+            <left>120</left>
             <animation effect="fade" time="400">Visible</animation>
             <animation effect="fade" time="0">Hidden</animation>
             <include>Unwatched</include>
@@ -260,14 +262,14 @@
                 <label>$VAR[Plots]</label>
             </control>
             <control type="image">
-               <centerleft>480</centerleft>
+                <centerleft>480</centerleft>
                 <top>539</top>
                 <width>880</width>
                 <height>1</height>
                 <texture colordiffuse="black">lines/Line1.png</texture>
             </control>
-             <control type="image">
-               <centerleft>480</centerleft>
+            <control type="image">
+                <centerleft>480</centerleft>
                 <top>1020</top>
                 <width>880</width>
                 <height>1</height>
@@ -328,7 +330,7 @@
         </control>
     </include>
     <include name="FullscreenInfoLabel">
-        <posx>400</posx>
+        <left>400</left>
         <width>1120</width>
         <scroll>false</scroll>
         <align>center</align>
@@ -408,7 +410,7 @@
         <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
     </include>
     <include name="52MainLabel">
-        <posx>45</posx>
+        <left>45</left>
         <height>80</height>
         <width>630</width>
         <aligny>center</aligny>
@@ -418,7 +420,7 @@
         <shadowcolor>-</shadowcolor>
     </include>
     <include name="52Label2">
-        <posx>42r</posx>
+        <left>42r</left>
         <height>81</height>
         <width>120</width>
         <font>size27</font>
@@ -426,7 +428,7 @@
         <align>right</align>
     </include>
     <include name="52Label2FO">
-        <posx>42r</posx>
+        <left>42r</left>
         <height>81</height>
         <width>120</width>
         <font>size27</font>
@@ -435,7 +437,7 @@
         <align>right</align>
     </include>
     <include name="BigListTitle">
-        <posx>128</posx>
+        <left>128</left>
         <top>12</top>
         <height>50</height>
         <width>720</width>
@@ -445,7 +447,7 @@
         <textcolor>gray</textcolor>
     </include>
     <include name="BigListTitleFO">
-        <posx>128</posx>
+        <left>128</left>
         <top>12</top>
         <height>50</height>
         <width>720</width>
@@ -455,21 +457,12 @@
         <textcolor>black</textcolor>
     </include>
     <include name="BigListDetails">
-        <posx>128</posx>
+        <left>128</left>
         <top>63</top>
         <height>33</height>
         <width>350</width>
         <font>size27</font>
-        <textcolor>gray</textcolor>
         <scroll>false</scroll>
-    </include>
-    <include name="BigListDetailsFO">
-        <posx>128</posx>
-        <top>63</top>
-        <height>33</height>
-        <width>350</width>
-        <font>size27</font>
-        <textcolor>black</textcolor>
     </include>
     <include name="Watched_Marks">
         <control type="image">
@@ -483,7 +476,7 @@
     <include name="Watched_MarksLW">
         <control type="image">
             <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
-            <posx>8</posx>
+            <left>8</left>
             <height>111</height>
             <width>30</width>
             <texture>$VAR[WatchStatus,overlay/List/]</texture>
@@ -495,7 +488,7 @@
             <animation effect="slide" end="0,14" condition="!ListItem.IsStereoscopic">Conditional</animation>
             <visible>!IsEmpty(ListItem.VideoResolution)</visible>
             <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-            <posx>42r</posx>
+            <left>42r</left>
             <height>50</height>
             <width>42</width>
             <aspectratio>keep</aspectratio>
@@ -504,7 +497,7 @@
         <control type="image">
             <visible>ListItem.IsStereoscopic</visible>
             <top>33</top>
-            <posx>42r</posx>
+            <left>42r</left>
             <height>50</height>
             <width>42</width>
             <aspectratio>keep</aspectratio>
@@ -517,7 +510,7 @@
             <visible>!IsEmpty(ListItem.VideoResolution)</visible>
             <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
             <top>14</top>
-            <posx>42r</posx>
+            <left>42r</left>
             <height>50</height>
             <width>42</width>
             <aspectratio>keep</aspectratio>
@@ -526,7 +519,7 @@
         <control type="image">
             <visible>ListItem.IsStereoscopic</visible>
             <top>50</top>
-            <posx>42r</posx>
+            <left>42r</left>
             <height>50</height>
             <width>42</width>
             <aspectratio>keep</aspectratio>
@@ -535,7 +528,7 @@
         <control type="image">
             <visible>SubString(ListItem.path,videodb://movies/sets/) + !SubString(ListItem.Label,..)</visible>
             <top>28</top>
-            <posx>42r</posx>
+            <left>42r</left>
             <height>50</height>
             <width>42</width>
             <aspectratio>keep</aspectratio>
@@ -549,7 +542,7 @@
             <animation effect="fade" end="0">Hidden</animation>
             <control type="image">
                 <top>480</top>
-                <posx>140</posx>
+                <left>140</left>
                 <height>55</height>
                 <width>80</width>
                 <aspectratio>keep</aspectratio>
@@ -557,7 +550,7 @@
             </control>
             <control type="label" description="Label2">
                 <top>480</top>
-                <posx>140</posx>
+                <left>140</left>
                 <height>44</height>
                 <width>80</width>
                 <font>size30</font>
@@ -572,7 +565,7 @@
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
             <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
-            <posx>82r</posx>
+            <left>82r</left>
             <height>81</height>
             <width>45</width>
             <aspectratio align="right">keep</aspectratio>
@@ -583,7 +576,7 @@
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
             <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
-            <posx>82r</posx>
+            <left>82r</left>
             <height>81</height>
             <width>45</width>
             <aspectratio align="right">keep</aspectratio>
@@ -594,7 +587,7 @@
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
             <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
-            <posx>82r</posx>
+            <left>82r</left>
             <height>111</height>
             <width>45</width>
             <aspectratio align="right">keep</aspectratio>
@@ -605,7 +598,7 @@
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
             <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
-            <posx>82r</posx>
+            <left>82r</left>
             <height>111</height>
             <width>45</width>
             <aspectratio align="right">keep</aspectratio>
@@ -616,7 +609,7 @@
         <itemlayout condition="container.content(addons)" width="802" height="111">
             <control type="group">
                 <control type="image">
-                    <posx>9</posx>
+                    <left>9</left>
                     <top>9</top>
                     <height>93</height>
                     <width>93</width>
@@ -641,7 +634,7 @@
             <include>LargeSelector</include>
             <control type="group">
                 <control type="image">
-                    <posx>9</posx>
+                    <left>9</left>
                     <top>9</top>
                     <height>93</height>
                     <width>93</width>
@@ -657,7 +650,7 @@
             </control>
             <control type="label" description="Label2">
                 <width>600</width>
-                <include>BigListDetailsFO</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
             <control type="image">
@@ -674,7 +667,7 @@
             <control type="group">
                 <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year) + IsEmpty(ListItem.Artist)" effect="slide" end="0,18" time="0" reversible="true">Conditional</animation>
                 <control type="label" description="Main Label">
-                    <posx>45</posx>
+                    <left>45</left>
                     <width>725</width>
                     <include>BigListTitle</include>
                     <label>$INFO[ListItem.label]</label>
@@ -683,20 +676,20 @@
             <control type="group">
                 <control type="label" description="Label2">
                     <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
-                    <posx>45</posx>
+                    <left>45</left>
                     <include>BigListDetails</include>
                     <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
                 </control>
                 <control type="label" description="Label2">
                     <visible>container.content(episodes)</visible>
-                    <posx>0r</posx>
+                    <left>0r</left>
                     <align>right</align>
                     <include>BigListDetails</include>
                     <label>$INFO[ListItem.Premiered]</label>
                 </control>
                 <control type="label" description="Label2">
                     <visible>container.content(episodes) | Container.Content(songs)</visible>
-                    <posx>45</posx>
+                    <left>45</left>
                     <align>left</align>
                     <include>BigListDetails</include>
                     <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
@@ -711,7 +704,7 @@
             <control type="group">
                 <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year)  + IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
                 <control type="label" description="Main Label">
-                    <posx>45</posx>
+                    <left>45</left>
                     <width>725</width>
                     <include>BigListTitleFO</include>
                     <label>$INFO[ListItem.label]</label>
@@ -719,24 +712,24 @@
             </control>
             <control type="label" description="Label2">
                 <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
-                <posx>45</posx>
+                <left>45</left>
                 <width>630</width>
-                <include>BigListDetailsFO</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
             </control>
             <control type="label" description="Label2">
                 <visible>container.content(episodes) | Container.Content(songs)</visible>
-                <posx>45</posx>
+                <left>45</left>
                 <align>left</align>
-                <include>BigListDetailsFO</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
             </control>
             <control type="label" description="Label2">
                 <visible>container.content(episodes)</visible>
-                <posx>0r</posx>
+                <left>0r</left>
                 <width>480</width>
                 <align>right</align>
-                <include>BigListDetailsFO</include>
+                <include>BigListDetails</include>
                 <label>$INFO[ListItem.Premiered]</label>
             </control>
             <include>listline</include>
@@ -788,7 +781,7 @@
         <textcolor>White</textcolor>
     </include>
     <include name="DetailsVideoInfoCommons">
-        <posx>0</posx>
+        <left>0</left>
         <width>270</width>
         <height>38</height>
         <align>left</align>
@@ -807,7 +800,7 @@
     <include name="FlagsAudioInfo">
         <control type="group" description="Furniture">
             <control type="grouplist">
-                <posx>0</posx>
+                <left>0</left>
                 <width>690</width>
                 <height>36</height>
                 <itemgap>30</itemgap>
@@ -815,7 +808,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <control type="image" description="Rating">
-                    <posx>102</posx>
+                    <left>102</left>
                     <top>1035</top>
                     <height>36</height>
                     <width>150</width>
@@ -825,7 +818,7 @@
                 </control>
                 <control type="image">
                     <visible>Container.content(songs) + !IsEmpty(ListItem.FileExtension)</visible>
-                    <posx>777</posx>
+                    <left>777</left>
                     <top>1034</top>
                     <height>45</height>
                     <width>90</width>
@@ -838,24 +831,24 @@
         </control>
     </include>
     <include name="SettingsSubmenuButtons">
-        <width>720</width>
+        <width>1400</width>
         <textoffsetx>22</textoffsetx>
-        <height>54</height>
+        <height>70</height>
         <align>left</align>
-        <font>size30</font>
+        <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
         <disabledcolor>Disabled</disabledcolor>
     </include>
     <include name="Help_Panel">
-        <!--<animation effect="fade" time="200">VisibleChange</animation>-->
-        <width>460</width>
-        <height>380</height>
-        <aspectratio align="center" aligny="bottom">keep</aspectratio>
+        <centerleft>480</centerleft>
+        <width>540</width>
+        <height>420</height>
+        <aspectratio align="center">keep</aspectratio>
     </include>
     <include name="CustomizerList">
         <include>ShelfFade</include>
         <onup>303</onup>
         <ondown>50</ondown>
-        <posx>72</posx>
+        <left>72</left>
         <top>120</top>
         <width>1776</width>
         <height>402</height>
@@ -863,7 +856,7 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="357" width="354">
             <control type="label">
-                <posx>178</posx>
+                <centerleft>178</centerleft>
                 <top>178</top>
                 <width>345</width>
                 <height>30</height>
@@ -873,7 +866,7 @@
                 <align>center</align>
             </control>
             <control type="image" description="Reflection">
-                <posx>27</posx>
+                <left>27</left>
                 <top>330</top>
                 <width>303</width>
                 <height>303</height>
@@ -881,7 +874,7 @@
                 <aspectratio scalediffuse="false">scale</aspectratio>
             </control>
             <control type="image">
-                <posx>27</posx>
+                <left>27</left>
                 <top>27</top>
                 <width>303</width>
                 <height>303</height>
@@ -890,7 +883,7 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <posx>27</posx>
+                <left>27</left>
                 <top>27</top>
                 <width>303</width>
                 <height>303</height>
@@ -900,7 +893,7 @@
         </itemlayout>
         <focusedlayout height="357" width="354">
             <control type="label">
-                <posx>178</posx>
+                <centerleft>178</centerleft>
                 <top>178</top>
                 <width>345</width>
                 <height>30</height>
@@ -910,7 +903,7 @@
                 <align>center</align>
             </control>
             <control type="image">
-                <posx>27</posx>
+                <left>27</left>
                 <top>27</top>
                 <width>303</width>
                 <height>303</height>
@@ -919,7 +912,7 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <posx>27</posx>
+                <left>27</left>
                 <top>27</top>
                 <width>303</width>
                 <height>303</height>
@@ -927,14 +920,14 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <posx>17</posx>
+                <left>17</left>
                 <top>17</top>
                 <width>323</width>
                 <height>323</height>
                 <texture border="10">images/generalslider.png</texture>
             </control>
             <control type="label" description="title">
-                <posx>177</posx>
+                <left>177</left>
                 <top>310</top>
                 <width>360</width>
                 <align>center</align>
@@ -946,7 +939,7 @@
         <control type="group" description="Stage">
             <visible>IsEmpty(Container.FolderPath)</visible>
             <control type="image" description="Thumb">
-                <posx>262</posx>
+                <left>262</left>
                 <top>180</top>
                 <width>495</width>
                 <height>495</height>
@@ -955,7 +948,7 @@
                 <aspectratio scalediffuse="false">scale</aspectratio>
             </control>
             <control type="image">
-                <posx>165</posx>
+                <left>165</left>
                 <top>630</top>
                 <width>682</width>
                 <height>1</height>
@@ -963,7 +956,7 @@
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" description="Updates">
-                <posx>135</posx>
+                <left>135</left>
                 <top>675</top>
                 <width>750</width>
                 <height>81</height>
@@ -972,7 +965,7 @@
                 <label>$INFO[Control.GetLabel(5)]</label>
             </control>
             <control type="label" description="Notifications">
-                <posx>135</posx>
+                <left>135</left>
                 <top>765</top>
                 <width>750</width>
                 <height>81</height>
@@ -987,7 +980,7 @@
             <animation effect="fade" time="200">Visible</animation>
             <animation effect="fade" time="0">Hidden</animation>
             <control type="image" description="Thumb">
-                <posx>180</posx>
+                <left>180</left>
                 <top>0</top>
                 <width>621</width>
                 <height>621</height>
@@ -1001,7 +994,7 @@
             <animation effect="fade" time="200">Visible</animation>
             <animation effect="fade" time="10">Hidden</animation>
             <control type="group">
-                <posx>260</posx>
+                <left>260</left>
                 <top>80</top>
                 <control type="image" description="Thumb Reflection">
                     <top>500</top>
@@ -1024,10 +1017,10 @@
             <visible>!ListItem.IsFolder</visible>
             <animation effect="fade" delay="100" time="300">Visible</animation>
             <animation effect="fade" time="10">Hidden</animation>
-            <posx>110</posx>
+            <left>110</left>
             <top>27</top>
             <control type="grouplist">
-                <posx>20</posx>
+                <left>20</left>
                 <top>610</top>
                 <itemgap>0</itemgap>
                 <control type="label">
@@ -1066,7 +1059,7 @@
     </include>
     <include name="statusbiglist">
         <control type="image">
-            <posx>710</posx>
+            <left>710</left>
             <top>15</top>
             <width>81</width>
             <height>81</height>
@@ -1074,7 +1067,7 @@
             <visible>![ListItem.IsRecording | ListItem.HasTimer]</visible>
         </control>
         <control type="image" description="rec">
-            <posx>720</posx>
+            <left>720</left>
             <top>15</top>
             <height>81</height>
             <width>81</width>
@@ -1082,7 +1075,7 @@
             <visible>ListItem.IsRecording</visible>
         </control>
         <control type="image" description="timer">
-            <posx>720</posx>
+            <left>720</left>
             <top>15</top>
             <height>81</height>
             <width>81</width>
@@ -1092,7 +1085,7 @@
     </include>
     <include name="Linemiddle">
         <control type="image">
-            <posx>959</posx>
+            <left>959</left>
             <top>-300</top>
             <width>1</width>
             <height>1680</height>

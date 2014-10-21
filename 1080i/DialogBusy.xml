@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="136">
     <coordinates>
-        <posx>0</posx>
+        <left>0</left>
         <top>0</top>
     </coordinates>
     <include>OpenClose</include>
     <controls>
         <control type="image" description="Busy BG">
-            <posx>0</posx>
+            <left>0</left>
             <top>0</top>
             <width>1920</width>
             <height>1080</height>
@@ -15,7 +15,7 @@
             <aspectratio>stretch</aspectratio>
         </control>
         <control type="group">
-            <posx>832</posx>
+            <left>832</left>
             <top>412</top>
             <control type="multiimage" description="Busy animation">
                 <width>256</width>
@@ -28,14 +28,14 @@
             </control>
         </control>
         <control type="progress" id="10">
-            <posx>735</posx>
+            <left>735</left>
             <top>650</top>
             <width>450</width>
-            <height>8</height>
-            <texturebg>MusicOSD/ProgressBG.png</texturebg>
-            <midtexture>MusicOSD/ProgressM.png</midtexture>
-            <righttexture>MusicOSD/ProgressR.png</righttexture>
-            <lefttexture>MusicOSD/ProgressL.png</lefttexture>
+            <height>9</height>
+            <texturebg border="5,0,5,0">progress/ProgressBG.png</texturebg>
+            <midtexture border="0,1,0,1">progress/ProgressM.png</midtexture>
+            <righttexture border="1,1,5,1">progress/ProgressR.png</righttexture>
+            <lefttexture border="5,1,1,1">progress/ProgressL.png</lefttexture>
         </control>
     </controls>
 </window>

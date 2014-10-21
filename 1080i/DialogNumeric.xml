@@ -12,7 +12,7 @@
     </animation>
     <controls>
         <control type="image">
-            <posx>-80</posx>
+            <left>-80</left>
             <top>-80</top>
             <width>825</width>
             <height>1200</height>
@@ -20,7 +20,7 @@
         </control>
         <control type="label" id="1">
             <description>dialog Heading</description>
-            <posx>120</posx>
+            <left>120</left>
             <top>66</top>
             <width>414</width>
             <font>size30</font>
@@ -43,11 +43,11 @@
             <aligny>center</aligny>
         </control>
         <control type="group">
-            <posx>195</posx>
+            <left>195</left>
             <top>465</top>
             <control type="button" id="11">
                 <description>1 button</description>
-                <posx>0</posx>
+                <left>0</left>
                 <top>0</top>
                 <width>90</width>
                 <height>90</height>
@@ -61,7 +61,7 @@
             </control>
             <control type="button" id="12">
                 <description>2 button</description>
-                <posx>90</posx>
+                <left>90</left>
                 <top>0</top>
                 <width>90</width>
                 <height>90</height>
@@ -75,7 +75,7 @@
             </control>
             <control type="button" id="13">
                 <description>3 button</description>
-                <posx>180</posx>
+                <left>180</left>
                 <top>0</top>
                 <width>90</width>
                 <height>90</height>
@@ -89,7 +89,7 @@
             </control>
             <control type="button" id="14">
                 <description>4 button</description>
-                <posx>0</posx>
+                <left>0</left>
                 <top>90</top>
                 <width>90</width>
                 <height>90</height>
@@ -103,7 +103,7 @@
             </control>
             <control type="button" id="15">
                 <description>5 button</description>
-                <posx>90</posx>
+                <left>90</left>
                 <top>90</top>
                 <width>90</width>
                 <height>90</height>
@@ -117,7 +117,7 @@
             </control>
             <control type="button" id="16">
                 <description>6 button</description>
-                <posx>180</posx>
+                <left>180</left>
                 <top>90</top>
                 <width>90</width>
                 <height>90</height>
@@ -131,7 +131,7 @@
             </control>
             <control type="button" id="17">
                 <description>7 button</description>
-                <posx>0</posx>
+                <left>0</left>
                 <top>180</top>
                 <width>90</width>
                 <height>90</height>
@@ -145,7 +145,7 @@
             </control>
             <control type="button" id="18">
                 <description>8 button</description>
-                <posx>90</posx>
+                <left>90</left>
                 <top>180</top>
                 <width>90</width>
                 <height>90</height>
@@ -159,7 +159,7 @@
             </control>
             <control type="button" id="19">
                 <description>9 button</description>
-                <posx>180</posx>
+                <left>180</left>
                 <top>180</top>
                 <width>90</width>
                 <height>90</height>
@@ -173,7 +173,7 @@
             </control>
             <control type="button" id="20">
                 <description>prev button</description>
-                <posx>0</posx>
+                <left>0</left>
                 <top>270</top>
                 <width>90</width>
                 <height>90</height>
@@ -187,7 +187,7 @@
             </control>
             <control type="button" id="10">
                 <description>0 button</description>
-                <posx>90</posx>
+                <left>90</left>
                 <top>270</top>
                 <width>90</width>
                 <height>90</height>
@@ -201,7 +201,7 @@
             </control>
             <control type="button" id="22">
                 <description>next button</description>
-                <posx>180</posx>
+                <left>180</left>
                 <top>270</top>
                 <width>90</width>
                 <height>90</height>
@@ -216,7 +216,7 @@
         </control>
         <control type="button" id="23">
             <description>Backspace button</description>
-            <posx>165</posx>
+            <left>165</left>
             <top>345</top>
             <width>330</width>
             <align>center</align>
@@ -231,7 +231,7 @@
         </control>
         <control type="button" id="21">
             <description>Done button</description>
-            <posx>165</posx>
+            <left>165</left>
             <top>855</top>
             <width>330</width>
             <align>center</align>

@@ -14,7 +14,7 @@
             <texture border="150" colordiffuse="EEFFFFFF">images/Dialog.png</texture>
         </control>
         <control type="label" description="Heading">
-            <posx>0</posx>
+            <left>0</left>
             <top>10</top>
             <width>1920</width>
             <height>40</height>
@@ -81,7 +81,7 @@
                 </focusedlayout>
             </control>
         <control type="scrollbar" id="60">
-            <posx>1760</posx>
+            <left>1760</left>
             <top>60</top>
             <height>770</height>
             <onleft>5</onleft>

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="sio2advanced">
+        <control type="group" description="sio2advanced">
+            <visible>Control.IsVisible(54)</visible>
+            <control type="image">
+                <left>1432</left>
+                <height>1080</height>
+                <width>1</width>
+                <texture colordiffuse="black">lines/LineV.png</texture>
+            </control>
+            <control type="fixedlist" id="54">
+                <!--<visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>-->
+                <top>135</top>
+                <left>1433</left>
+                <width>502</width>
+                <height>945</height>
+                <onleft condition="SubString(ListItem.path,videodb://movies/sets/)">990</onleft>
+                <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                <onup>54</onup>
+                <ondown>54</ondown>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="Sio2View">Sio2View</viewtype>
+                <focusposition>2</focusposition>
+                <movement>4</movement>
+                <preloaditems>2</preloaditems>
+                <scrolltime>250</scrolltime>
+                <itemlayout height="135">
+                    <control type="image">
+                        <width>94</width>
+                        <top>1</top>
+                        <height>134</height>
+                        <texture background="true">$VAR[locandine]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+                     <control type="image">
+                         <left>94</left>
+                        <width>1</width>
+                        <height>135</height>
+                        <texture colordiffuse="black">lines/LineV.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>95</left>
+                        <width>348</width>
+                        <height>135</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+                    </control>
+                    <control type="image">
+                        <left>89</left>
+                        <top>101</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture>$VAR[WatchStatus,overlay/List/]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="textbox">
+                        <left>95</left>
+                        <visible>IsEmpty(ListItem.Art(clearlogo))</visible>
+                        <width>340</width>
+                        <height>135</height>
+                        <font>size33</font>
+                        <textcolor>gray</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                    <control type="image">
+                        <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+                        <left>435</left>
+                        <top>101</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture>badges/setsFO.png</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="image">
+                        <width>447</width>
+                        <height>1</height>
+                        <texture colordiffuse="black">lines/LineL.png</texture>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="135">
+                    <control type="image">
+                        <animation effect="fade" end="0" time="30">UnFocus</animation>
+                        <left>95</left>
+                        <width>392</width>
+                        <height>135</height>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/Buttonselect1.png</texture>
+                    </control>
+                    <!--SELECTIMG-->
+                    <control type="image">
+                        <width>94</width>
+                        <top>1</top>
+                        <height>134</height>
+                        <texture background="true">$VAR[locandine]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+                     <control type="image">
+                         <left>94</left>
+                        <width>1</width>
+                        <height>135</height>
+                        <texture colordiffuse="black">lines/LineV.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>95</left>
+                        <width>348</width>
+                        <height>135</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+                    </control>
+                    <control type="image">
+                        <left>89</left>
+                        <top>101</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture>$VAR[WatchStatus,overlay/List/]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="textbox">
+                        <left>95</left>
+                        <visible>IsEmpty(ListItem.Art(clearlogo))</visible>
+                        <width>340</width>
+                        <height>135</height>
+                        <font>size33</font>
+                        <textcolor>gray</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                    <control type="image">
+                        <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+                        <left>435</left>
+                        <top>101</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture>badges/setsFO.png</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="image">
+                        <width>447</width>
+                        <height>1</height>
+                        <texture colordiffuse="black">lines/LineL.png</texture>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="grouplist">
+                <top>20</top>
+                <centerleft>716</centerleft>
+                <width>1432</width>
+                <align>center</align>
+                <orientation>horizontal</orientation>
+                <control type="label">
+                    <width>auto</width>
+                    <height>45</height>
+                    <font>size42B</font>
+                    <align>center</align>
+                    <textcolor>Yellow</textcolor>
+                    <label>[UPPERCASE]$INFO[ListItem.label][/UPPERCASE]</label>
+                </control>
+                <control type="label">
+                    <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+                    <width>auto</width>
+                    <height>50</height>
+                    <font>size26</font>
+                    <textcolor>gray</textcolor>
+                    <align>center</align>
+                    <label>$INFO[Container(990).NumItems,(,)]</label>
+                </control>
+            </control>
+            <control type="textbox">
+                <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
+                <centerleft>716</centerleft>
+                <top>70</top>
+                <width>1140</width>
+                <height>55</height>
+                <font>size20</font>
+                <align>center</align>
+                <autoscroll>false</autoscroll>
+                <label>• • [B]$INFO[ListItem.Tagline]$INFO[ListItem.Property(Addon.Summary)][/B] • •</label>
+            </control>
+            <control type="grouplist" description="detailedinfos">
+                <visible>!SubString(ListItem.path,videodb://movies/sets/) + !Container.Content(Addons)</visible>
+                <left>496</left>
+                <top>155</top>
+                <height>600</height>
+                <width>300</width>
+                <itemgap>3</itemgap>
+                <control type="label">
+                    <align>right</align>
+                    <textcolor>Silver</textcolor>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>$LOCALIZE[180]:</label>
+                </control>
+                <control type="label">
+                    <align>right</align>
+                    <textcolor>Silver</textcolor>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>$LOCALIZE[515]:</label>
+                </control>
+                <control type="label">
+                    <align>right</align>
+                    <textcolor>Silver</textcolor>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>$LOCALIZE[562]:</label>
+                </control>
+                <control type="label">
+                    <align>right</align>
+                    <textcolor>Silver</textcolor>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>$LOCALIZE[20376]:</label>
+                </control>
+                <control type="label">
+                    <align>right</align>
+                    <textcolor>Silver</textcolor>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>$LOCALIZE[20339]:</label>
+                </control>
+                <control type="label">
+                    <align>right</align>
+                    <textcolor>Silver</textcolor>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>$LOCALIZE[21875]:</label>
+                </control>
+                <control type="textbox">
+                    <align>right</align>
+                    <textcolor>Silver</textcolor>
+                    <width>200</width>
+                    <height>60</height>
+                    <font>size20</font>
+                    <autoscroll>false</autoscroll>
+                    <!--<aligny>top</aligny>-->
+                    <label>$LOCALIZE[20388]:</label>
+                </control>
+                <control type="label">
+                    <visible>!IsEmpty(ListItem.PlayCount)</visible>
+                    <align>right</align>
+                    <textcolor>Silver</textcolor>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>$LOCALIZE[576]:</label>
+                </control>
+                <control type="label">
+                    <visible>!IsEmpty(ListItem.LastPlayed)</visible>
+                    <align>right</align>
+                    <textcolor>Silver</textcolor>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>$LOCALIZE[568]:</label>
+                </control>
+                <control type="label">
+                    <visible>!IsEmpty(ListItem.PercentPlayed) + !Container.Content(Addons)</visible>
+                    <align>right</align>
+                    <textcolor>Silver</textcolor>
+                    <width>200</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>$LOCALIZE[31087]:</label>
+                </control>
+            </control>
+            <control type="grouplist" description="detailedinfos">
+                <visible>!SubString(ListItem.path,videodb://movies/sets/) + !Container.Content(Addons)</visible>
+                <left>700</left>
+                <top>155</top>
+                <height>600</height>
+                <width>820</width>
+                <itemgap>3</itemgap>
+                <control type="label">
+                    <width>820</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>[B]$INFO[ListItem.Duration] $LOCALIZE[12391][/B]</label>
+                </control>
+                <control type="label">
+                    <width>820</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>[B]$INFO[ListItem.Genre][/B]</label>
+                </control>
+                <control type="label">
+                    <width>820</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>[B]$INFO[ListItem.Year][/B]</label>
+                </control>
+                <control type="label">
+                    <width>820</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>[B]$INFO[ListItem.OriginalTitle][/B]</label>
+                </control>
+                <control type="label">
+                    <width>820</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>[B]$INFO[ListItem.Director][/B]</label>
+                </control>
+                <control type="label">
+                    <width>820</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>[B]$INFO[ListItem.Country][/B]</label>
+                </control>
+                <control type="textbox">
+                    <width>820</width>
+                    <height>60</height>
+                    <font>size20</font>
+                    <autoscroll>false</autoscroll>
+                    <!--<aligny>top</aligny>-->
+                    <label>[B]$INFO[ListItem.Studio][/B]</label>
+                </control>
+                <control type="label">
+                    <visible>!IsEmpty(ListItem.PlayCount)</visible>
+                    <width>820</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>[B]$INFO[ListItem.PlayCount][/B]</label>
+                </control>
+                <control type="label">
+                    <visible>!IsEmpty(ListItem.LastPlayed)</visible>
+                    <width>820</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>[B]$INFO[ListItem.LastPlayed][/B]</label>
+                </control>
+                <control type="label">
+                    <visible>!IsEmpty(ListItem.PercentPlayed) + !Container.Content(Addons)</visible>
+                    <width>820</width>
+                    <height>30</height>
+                    <font>size20</font>
+                    <label>[B]$INFO[ListItem.PercentPlayed] %[/B]</label>
+                </control>
+            </control>
+            <control type="grouplist">
+                <top>530</top>
+                <left>400</left>
+                <height>80</height>
+                <width>610</width>
+                <align>left</align>
+                <visible>!IsEmpty(ListItem.RatingAndVotes) + !SubString(ListItem.path,videodb://movies/sets/)</visible>
+                <control type="image">
+                    <width>600</width>
+                    <height>40</height>
+                    <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>20</height>
+                    <font>size20</font>
+                    <align>center</align>
+                    <label>[B]$INFO[ListItem.RatingAndVotes][/B]</label>
+                </control>
+            </control>
+            <control type="grouplist" description="flags">
+                <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
+                <left>950</left>
+                <top>500</top>
+                <height>400</height>
+                <width>450</width>
+                <align>left</align>
+                <itemgap>20</itemgap>
+                <orientation>horizontal</orientation>
+                <control type="grouplist">
+                    <height>110</height>
+                    <width>130</width>
+                    <control type="image">
+                        <height>50</height>
+                        <width>130</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.VideoAspect,badges/video/,.png]</texture>
+                    </control>
+                    <control type="image">
+                        <height>50</height>
+                        <width>130</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
+                    </control>
+                </control>
+                <control type="grouplist">
+                    <height>110</height>
+                    <width>130</width>
+                    <control type="image">
+                        <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                        <height>50</height>
+                        <width>130</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
+                    </control>
+                    <control type="image">
+                        <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                        <height>50</height>
+                        <width>130</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+                    </control>
+                </control>
+                <control type="grouplist">
+                    <height>110</height>
+                    <width>130</width>
+                    <control type="image">
+                        <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                        <height>50</height>
+                        <width>130</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
+                    </control>
+                    <control type="image">
+                        <visible>!IsEmpty(ListItem.FileExtension)</visible>
+                        <height>50</height>
+                        <width>130</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>
+                    </control>
+                </control>
+            </control>
+            <!--NONSET-->
+            <control type="group" description="nonsetinfos">
+                <visible>!SubString(ListItem.path,videodb://movies/sets/) + !Container.Content(Addons)</visible>
+                <control type="image" description="sfumatura plot">
+                    <top>630</top>
+                    <height>40</height>
+                    <width>1432</width>
+                    <texture diffuse="images/ombra.png" flipy="true">lines/LineR.png</texture>
+                    <colordiffuse>white</colordiffuse>
+                </control>
+                <control type="textbox" description="plots">
+                    <centerleft>720</centerleft>
+                    <top>630</top>
+                    <width>1280</width>
+                    <height>480</height>
+                    <align>justify</align>
+                    <font>size30</font>
+                    <shadowcolor>white</shadowcolor>
+                    <label>[B]$VAR[Plots][/B]</label>
+                </control>
+                <control type="group" description="icon+overlay">
+                    <left>50</left>
+                    <top>160</top>
+                    <control type="image">
+                        <animation effect="rotate" end="-360" center="auto" time="9000" loop="true" reversible="false" condition="true">Conditional</animation>
+                        <left>150</left>
+                        <height>294</height>
+                        <width>294</width>
+                        <top>140</top>
+                        <texture fallback="images/fallbackdisc.png">$INFO[ListItem.Art(discart)]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="image">
+                        <height>440</height>
+                        <width>294</width>
+                        <texture>$VAR[locandine]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="image">
+                        <left>-6</left>
+                        <top>-7</top>
+                        <height>454</height>
+                        <width>308</width>
+                        <texture border="10" background="true">$VAR[dvdbox]</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="image">
+                        <left>120</left>
+                        <top>390</top>
+                        <width>60</width>
+                        <height>60</height>
+                        <info>ListItem.Overlay</info>
+                    </control>
+                </control>
+            </control>
+            <!--NONSET-END-->
+            <!--SETS-->
+            <control type="group" description="setinfos">
+                <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+                <control type="panel" id="990">
+                    <centerleft>716</centerleft>
+                    <top>100</top>
+                    <width>1188</width>
+                    <height>980</height>
+                    <onup>noop</onup>
+                    <ondown>noop</ondown>
+                    <onright>54</onright>
+                    <itemlayout width="297" height="480">
+                        <control type="image">
+                            <left>15</left>
+                            <top>10</top>
+                            <height>400</height>
+                            <width>267</width>
+                            <texture>$INFO[ListItem.Thumb]</texture>
+                        </control>
+                        <control type="textbox">
+                            <top>415</top>
+                            <width>297</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <font>size20</font>
+                            <label>$INFO[ListItem.Title]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="297" height="480">
+                        <control type="image">
+                            <left>15</left>
+                            <top>10</top>
+                            <height>400</height>
+                            <width>267</width>
+                            <texture>$INFO[ListItem.Thumb]</texture>
+                        </control>
+                        <control type="group">
+                            <animation effect="fade" start="0" end="100" time="250">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="150">unFocus</animation>
+                            <control type="image">
+                                <left>5</left>
+                                <width>288</width>
+                                <height>420</height>
+                                <texture border="9">images/SetsOver.png</texture>
+                            </control>
+                            <control type="textbox">
+                                <top>10</top>
+                                <width>290</width>
+                                <height>400</height>
+                                <font>size22</font>
+                                <align>center</align>
+                                <label>[B][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]:[CR]$INFO[ListItem.Year][CR][CR]$LOCALIZE[563] $INFO[ListItem.Rating][CR][CR]$LOCALIZE[20339]:[CR]$INFO[ListItem.Director][CR][CR]$LOCALIZE[20074]:[CR]$INFO[ListItem.MPAA][/B]</label>
+                            </control>
+                        </control>
+                        <control type="textbox">
+                            <top>415</top>
+                            <width>297</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <font>size20</font>
+                            <label>$INFO[ListItem.Title]</label>
+                        </control>
+                    </focusedlayout>
+                    <content>$INFO[ListItem.Path]</content>
+                </control>
+            </control>
+            <control type="image">
+                <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+                <top>90</top>
+                <height>1</height>
+                <width>1432</width>
+                <texture>lines/Line.png</texture>
+            </control>
+            <!--SETS-END-->
+            <control type="image">
+                <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
+                <top>135</top>
+                <height>1</height>
+                <width>1432</width>
+                <texture>lines/LineR.png</texture>
+            </control>
+            <!--SLIDERPANEL-->
+            <control type="group">
+                <control type="image">
+                    <!--<visible>Container(54).OnNext | Container(54).OnPrevious | [IsEmpty(ListItem.Plot) + [IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(ListItem.Art(fanart))]</visible>-->
+                    <visible>Container(54).OnNext | Container(54).OnPrevious | [IsEmpty(ListItem.Plot) + !SubString(ListItem.path,videodb://movies/sets/) + IsEmpty(ListItem.Art(fanart))]</visible>
+                    <animation effect="slide" end="-1433,0" time="500" delay="1500" reversible="false">Hidden</animation>
+                    <width>1432</width>
+                    <height>1080</height>
+                    <texture colordiffuse="white">images/white.png</texture>
+                </control>
+                <control type="group">
+                    <!--<visible>Container(54).OnNext | Container(54).OnPrevious | [IsEmpty(ListItem.Plot) + [IsEmpty(ListItem.Property(Addon.Description))] + !SubString(ListItem.path,videodb://movies/sets/)]</visible>-->
+                    <visible>Container(54).OnNext | Container(54).OnPrevious | [IsEmpty(ListItem.Plot) + !SubString(ListItem.path,videodb://movies/sets/) + IsEmpty(ListItem.Art(fanart)]</visible>
+                    <animation effect="slide" end="-1433,0" time="500" delay="1500" reversible="false">Hidden</animation>
+                    <fadetime>200</fadetime>
+                    <control type="image">
+                        <fadetime>200</fadetime>
+                        <width>1432</width>
+                        <height>1080</height>
+                        <texture background="true">$VAR[fanart]</texture>
+                        <aspectratio align="left">scale</aspectratio>
+                    </control>
+                    <control type="image">
+                        <fadetime>200</fadetime>
+                        <left>60</left>
+                        <top>880</top>
+                        <width>160</width>
+                        <height>160</height>
+                        <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                </control>
+            </control>
+            <!--GLOBALSTUFF-->
+            <include>60slider</include>
+        </control>
+    </include>
+</includes>
