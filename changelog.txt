@@ -3,6 +3,7 @@
 * Support for Genere Specific Icons
 * Added Danish (Rridder), French (Nerve) and Italian (Betty)
 * Fix for DialigPVRGroupManager.xml - now working ;)
+* Cosmetics on some PVR windows
 
 
 3.0.7
