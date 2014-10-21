@@ -28,7 +28,7 @@
         </item>
         <!--TV SHOWS-->
         <item id="341">
-            <visible>Library.HasContent(TVShows)</visible>
+            <visible>!Skin.HasSetting(hidetv) + Library.HasContent(TVShows)</visible>
             <thumb>icons/tvshows.png</thumb>
             <label>20343</label>
             <property name="color">icons/purple.png</property>
