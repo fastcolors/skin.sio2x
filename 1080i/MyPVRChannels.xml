@@ -43,8 +43,6 @@
         </control>
         <control type="group" id="50">
             <include>OpenClose</include>
-
-
             <control type="group">
                 <description>TV Channels group</description>
                 <visible>Control.IsVisible(11)</visible>
@@ -119,20 +117,19 @@
                             </control>
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-                                <left>40</left>
-                                <width>40</width>
+                                <width>45</width>
                                 <height>75</height>
-                                <font>font12</font>
-                                <align>right</align>
+                                <align>center</align>
                                 <aligny>center</aligny>
                                 <textcolor>gray</textcolor>
+                                <font>font12</font>
                                 <selectedcolor>gray</selectedcolor>
-                                <info>ListItem.ChannelNumber</info>
+                                <label>$INFO[ListItem.Channelnumber]</label>
                             </control>
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-                                <left>45</left>
-                                <width>650</width>
+                                <left>50</left>
+                                <width>900</width>
                                 <selectedcolor>red</selectedcolor>
                                 <align>left</align>
                                 <aligny>center</aligny>
@@ -143,7 +140,7 @@
                             <control type="label">
                                 <description>Label 2 Title</description>
                                 <left>45</left>
-                                <width>640</width>
+                                <width>900</width>
                                 <include>BigListDetails</include>
                                 <info>ListItem.Title</info>
                             </control>
@@ -164,33 +161,32 @@
                             </control>
                             <control type="label">
                                 <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
-                                <left>40</left>
-                                <width>40</width>
+                                <width>45</width>
                                 <height>75</height>
-                                <font>font12</font>
-                                <align>right</align>
+                                <align>center</align>
                                 <aligny>center</aligny>
                                 <textcolor>gray</textcolor>
+                                <font>font12</font>
                                 <selectedcolor>gray</selectedcolor>
-                                <info>ListItem.ChannelNumber</info>
+                                <label>$INFO[ListItem.Channelnumber]</label>
                             </control>
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional </animation>
-                                <left>45</left>
-                                <width>650</width>
+                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                                <left>50</left>
+                                <width>900</width>
                                 <selectedcolor>red</selectedcolor>
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <width>640</width>
-                                <include>BigListTitleFO</include>
-                                <label>$INFO[ListItem.Label]</label>
+                                <include>BigListTitle</include>
+                                <info>ListItem.Label</info>
                             </control>
                             <control type="label">
                                 <description>Label 2 Title</description>
                                 <left>45</left>
-                                <width>640</width>
+                                <width>900</width>
                                 <include>BigListDetails</include>
-                                <label>$INFO[ListItem.Title]</label>
+                                <info>ListItem.Title</info>
                             </control>
                             <include>statusbiglist</include>
                         </focusedlayout>
@@ -223,12 +219,8 @@
                     <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])</label>
                 </control>
             </control>
-
-
-
-
             <control type="group">
-                <description>Radio Channels group</description>
+                <description>small list</description>
                 <visible>Control.IsVisible(12)</visible>
                 <include>VisibleFade</include>
                 <control type="grouplist">
@@ -295,15 +287,14 @@
                         <scrolltime>250</scrolltime>
                         <itemlayout width="802" height="81">
                             <control type="label">
-                                <left>60</left>
                                 <width>60</width>
                                 <height>81</height>
                                 <font>font12</font>
-                                <align>right</align>
+                                <align>center</align>
                                 <aligny>center</aligny>
                                 <textcolor>gray</textcolor>
                                 <scroll>false</scroll>
-                                <info>ListItem.ChannelNumber</info>
+                                <info>ListItem.Channelnumber</info>
                             </control>
                             <control type="label">
                                 <left>70</left>
@@ -317,10 +308,11 @@
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <left>5</left>
+                                <right>70</right>
                                 <width>30</width>
-                                <height>30</height>
-                                <texture>pvr/Rec.png</texture>
+                                <height>81</height>
+                                <texture align="center">pvr/Rec.png</texture>
+                                <aspectratio>keep</aspectratio>
                                 <visible>ListItem.IsRecording</visible>
                             </control>
                             <control type="image">
@@ -337,18 +329,17 @@
                                 <colordiffuse>445555FF</colordiffuse>
                             </control>
                             <control type="label">
-                                <left>60</left>
                                 <width>60</width>
                                 <height>81</height>
                                 <font>font12</font>
-                                <align>right</align>
+                                <align>center</align>
                                 <aligny>center</aligny>
                                 <textcolor>gray</textcolor>
-                                <info>ListItem.ChannelNumber</info>
+                                <scroll>false</scroll>
+                                <info>ListItem.Channelnumber</info>
                             </control>
                             <control type="label">
                                 <left>70</left>
-                                <textcolor>black</textcolor>
                                 <include>52MainLabel</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
@@ -359,10 +350,11 @@
                                 <texture>$INFO[ListItem.Icon]</texture>
                             </control>
                             <control type="image">
-                                <left>5</left>
+                                <right>70</right>
                                 <width>30</width>
-                                <height>30</height>
-                                <texture>pvr/Rec.png</texture>
+                                <height>81</height>
+                                <texture align="center">pvr/Rec.png</texture>
+                                <aspectratio>keep</aspectratio>
                                 <visible>ListItem.IsRecording</visible>
                             </control>
                             <control type="image">

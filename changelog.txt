@@ -1,3 +1,10 @@
+3.0.8
+* Cosmetics Here & There
+* Support for Genere Specific Icons
+* Added Danish (Rridder), French (Nerve) and Italian (Betty)
+* Fix for DialigPVRGroupManager.xml - now working ;)
+
+
 3.0.7
 * <posx> completely removed from code now onlt <left>
 * cosmetics on icons

@@ -562,12 +562,10 @@
                     <description>Group recording items by folder structure</description>
                     <left>0</left>
                     <right>40</right>
-                    <textwidth>235</textwidth>
                     <include>DialogButt</include>
                     <label>19270</label>
                     <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
                 </control>
-
                 <control type="button" id="31">
                     <description>TV Guide</description>
                     <include>DialogButt</include>
@@ -609,7 +607,6 @@
                     <description>Channel Groups</description>
                     <left>0</left>
                     <right>40</right>
-                    <textwidth>235</textwidth>
                     <include>DialogButt</include>
                     <label>-</label>
                 </control>

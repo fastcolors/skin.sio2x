@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="12">
-    <defaultcontrol always="true">500</defaultcontrol>
+    <defaultcontrol always="true">3</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <controls>
