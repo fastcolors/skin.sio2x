@@ -47,6 +47,7 @@
                         <include>DialogButt</include>
                         <label>13395</label>
                         <onclick>SetFocus(100,2)</onclick>
+                        <onclick>close</onclick>
                         <onclick>ActivateWindow(OSDVideoSettings)</onclick>
                     </control>
                     <control type="button" id="704">
@@ -54,6 +55,7 @@
                         <include>DialogButt</include>
                         <label>$LOCALIZE[292] &amp; $LOCALIZE[287]</label>
                         <onclick>SetFocus(100,2)</onclick>
+                        <onclick>close</onclick>
                         <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                     </control>
                     <control type="button" id="705">
@@ -61,6 +63,7 @@
                         <include>DialogButt</include>
                         <label>298</label>
                         <onclick>SetFocus(100,2)</onclick>
+                        <onclick>close</onclick>
                         <onclick>ActivateWindow(VideoBookmarks)</onclick>
                     </control>
                     <control type="togglebutton" id="706" description="Info">
@@ -70,10 +73,10 @@
                         <onclick>SetFocus(100,2)</onclick>
                         <onclick>close</onclick>
                         <onclick>ActivateWindow(142)</onclick>
-                        <altclick>SetFocus(100,2)</altclick>
-                        <altclick>close</altclick>
-                        <altclick>Dialog.Close(142)</altclick>
-                        <usealttexture>Window.IsActive(142)</usealttexture>
+                        <!--<altclick>SetFocus(100,2)</altclick>-->
+                        <!--<altclick>close</altclick>-->
+                        <!--<altclick>Dialog.Close(142)</altclick>-->
+                        <!--<usealttexture>Window.IsActive(142)</usealttexture>-->
                     </control>
                     <control type="button" id="707">
                         <width>590</width>
@@ -141,26 +144,26 @@
                             <aspectratio>keep</aspectratio>
                             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(poster)]</texture>
                         </control>
-                        <control type="image" description="CoverRef">
-                            <top>300</top>
-                            <height>300</height>
-                            <width>220</width>
-                            <aspectratio>keep</aspectratio>
-                            <texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(poster)]</texture>
-                        </control>
+                        <!--<control type="image" description="CoverRef">-->
+                            <!--<top>300</top>-->
+                            <!--<height>300</height>-->
+                            <!--<width>220</width>-->
+                            <!--<aspectratio>keep</aspectratio>-->
+                            <!--<texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(poster)]</texture>-->
+                        <!--</control>-->
                         <control type="image" description="CoverReal">
                             <height>300</height>
                             <width>220</width>
                             <aspectratio>keep</aspectratio>
                             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
                         </control>
-                        <control type="image" description="CoverRef">
-                            <top>300</top>
-                            <height>300</height>
-                            <width>220</width>
-                            <aspectratio>keep</aspectratio>
-                            <texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(tvshow.poster)]</texture>
-                        </control>
+                        <!--<control type="image" description="CoverRef">-->
+                            <!--<top>300</top>-->
+                            <!--<height>300</height>-->
+                            <!--<width>220</width>-->
+                            <!--<aspectratio>keep</aspectratio>-->
+                            <!--<texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(tvshow.poster)]</texture>-->
+                        <!--</control>-->
                         <control type="label" description="Episode">
                             <visible>VideoPlayer.Content(Episodes)</visible>
                             <left>190</left>

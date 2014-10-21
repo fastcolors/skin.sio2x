@@ -330,10 +330,9 @@
         </control>
     </include>
     <include name="FullscreenInfoLabel">
-        <left>400</left>
-        <width>1120</width>
+        <left>320</left>
+        <width>1184</width>
         <scroll>false</scroll>
-        <align>center</align>
         <font>size42B</font>
         <textcolor>Yellow</textcolor>
     </include>

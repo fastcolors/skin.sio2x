@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="115">
+    <onload>Dialog.Close(142)</onload>
     <defaultcontrol always="true">901</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <zorder>5</zorder>
@@ -10,48 +11,57 @@
     <animation effect="fade" start="100" end="0" time="100">Hidden</animation>
     <controls>
         <control type="group">
-            <control type="group" description="Top Bar">
-                <visible>!Window.IsActive(142)</visible>
+            <control type="group" description="Top Timing">
                 <animation effect="fade" start="0" end="70" time="400">Visible</animation>
                 <animation effect="fade" start="70" end="0" time="100">Hidden</animation>
+                <control type="image">
+                    <left>-50</left>
+                    <top>-60</top>
+                    <height>180</height>
+                    <width>520</width>
+                    <texture border="50" colordiffuse="2F000000">images/diffuserounded.png</texture>
+                </control>
+                <control type="image">
+                    <right>-50</right>
+                    <top>-60</top>
+                    <height>180</height>
+                    <width>520</width>
+                    <texture border="50" colordiffuse="2F000000">images/diffuserounded.png</texture>
+                </control>
                 <control type="label" description="Clock">
                     <left>60</left>
-                    <top>-5</top>
+                    <top>10</top>
                     <width>695</width>
                     <height>60</height>
                     <font>size33B</font>
-                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$LOCALIZE[142] $INFO[System.Time]</label>
                 </control>
                 <control type="label">
                     <left>60</left>
-                    <top>50</top>
+                    <top>60</top>
                     <width>495</width>
                     <height>30</height>
-                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>[B]$INFO[Player.Time][/B]</label>
                     <font>size26</font>
                 </control>
                 <control type="label" description="End time">
-                    <left>60r</left>
-                    <top>-5</top>
+                    <right>60</right>
+                    <top>10</top>
                     <width>695</width>
                     <height>60</height>
                     <align>right</align>
                     <font>size33B</font>
-                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$LOCALIZE[31005]: $INFO[Player.FinishTime]</label>
                 </control>
                 <control type="label">
-                    <left>60r</left>
-                    <top>50</top>
+                    <right>60</right>
+                    <top>60</top>
                     <height>30</height>
                     <width>195</width>
                     <align>right</align>
-                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>[B]- $INFO[Player.TimeRemaining][/B]</label>
                     <font>size26</font>
@@ -65,7 +75,6 @@
                     <align>center</align>
                     <aligny>center</aligny>
                     <font>size26</font>
-                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[VideoPlayer.NextTitle,[COLOR=gray]$LOCALIZE[209]:  [/COLOR]]</label>
                 </control>
@@ -78,7 +87,6 @@
                     <width>1920</width>
                     <align>center</align>
                     <font>size36B</font>
-                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <animation effect="fade" time="200">VisibleChange</animation>
                     <label>$INFO[Player.SeekOffset]</label>
