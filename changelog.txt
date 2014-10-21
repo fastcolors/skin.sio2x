@@ -1,3 +1,49 @@
+2.2.0
+* Cosmetics Here & There
+* Support for Genere Specific Icons
+* Added Danish (Rridder), French (Nerve) and Italian (Betty)
+* Fix for DialigPVRGroupManager.xml - now working ;)
+* Cosmetics on some PVR windows
+* <posx> completely removed from code now onlt <left>
+* cosmetics on icons
+* new badge for unwatched episodes count on home
+* new badge for unwatched movies count on home
+* Option to hide the aforementioned badges from home
+* Option to hide infos in Icon view
+* Option for Random Movies on Shelf
+* Fix for Addon Browser not showing all the infos correctly
+* Splash Screen
+* Added the ability to play movie trailers from shelf (if links are scraped)
+* Cosmetics here and there
+* Now if video libraries are empty icon for media sources shows in first spot (unless hidden)
+* Fix for Unwatched number being off center in Banner View for TVShows
+* added new view for movies only SiO2-X (requires disc art & logo)
+* Fix for misplaced Title on ADDONS & MUSIC Icon View
+* SeekBar can be controlled via Mouse during playback
+* Fixed wrong label in PVR side menu "Sort Order"
+* Playlist Editor Restyling
+* Fixed PartyPlaylist view
+* New Sounds
+* Fix for Helix Keyboard (added LAYOUT button)
+* Cosmetic on Network Share Dialog.
+* Music Icon Label now changes according to redirection selected in home customizer
+* Music Icon can now start Party Mode
+* Cosmetics on Smart Playlist Editor
+* Added an option to hide 3D content from main library
+* Context Menu changes (file browsing jump disabled for now)
+* Added setting to disable VideoHelp Icon from homepage
+* Spotify Icons Added - (thanks to rridder)
+* Quit Icon now shows choice made in settings (icon and name change according to selection)
+* Fix to sio2 view
+* HEVC - H265 icon added
+* Hotfix for Sources Dialog* Black Theme now default
+* openELEC setting configuration now integrated
+* minor cosmetics
+* New Shelf ways - Addons now automatically filled from video-music-program-pictures
+* New Slider on HomeScreen
+* No more Programs Icon on Home
+
+
 2.1.7
 * Cosmetic Fixes
 * Fix for selected color in skin
