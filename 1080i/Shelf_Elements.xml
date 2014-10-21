@@ -354,7 +354,7 @@
                 </control>
                 <control type="label">
                     <top>370</top>
-                    <left>40</left>
+                    <left>240</left>
                     <width>400</width>
                     <height>36</height>
                     <font>size26</font>
@@ -364,6 +364,7 @@
                     <align>center</align>
                 </control>
                 <control type="label">
+                    <left>240</left>
                     <width>480</width>
                     <height>30</height>
                     <font>size26</font>
@@ -406,7 +407,7 @@
                 </control>
                 <control type="label">
                     <top>370</top>
-                    <left>40</left>
+                    <left>240</left>
                     <width>400</width>
                     <height>36</height>
                     <font>size26</font>
@@ -416,6 +417,7 @@
                     <align>center</align>
                 </control>
                 <control type="label">
+                    <left>240</left>
                     <width>480</width>
                     <height>30</height>
                     <font>size26</font>
