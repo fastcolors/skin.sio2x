@@ -81,7 +81,7 @@
             <thumb>icons/LiveTV.png</thumb>
             <label>31059</label>
             <property name="color">icons/green3.png</property>
-            <onclick>ActivateWindow(TVGuide)</onclick>
+            <onclick>ActivateWindow(1718)</onclick>
             <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
         <!--LIVE TV RECORDING-->

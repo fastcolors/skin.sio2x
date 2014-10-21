@@ -20,7 +20,6 @@
             <texturenofocus aspectratio="keep" colordiffuse="darkgray">images/hometoggle.png</texturenofocus>
             <texturefocus aspectratio="keep" colordiffuse="$VAR[diffuseselectshelf]">images/hometoggle.png</texturefocus>
             <!--MOVIES-->
-
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND) + Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,TR)</onclick>
@@ -109,7 +108,7 @@
                     <!--<label>[B]$INFO[ListItem.label][/B]</label>-->
                     <!--</control>-->
                     <control type="label">
-                        <centerleft>150</centerleft>
+                        <left>150</left>
                         <top>198</top>
                         <width>300</width>
                         <height>24</height>
@@ -132,7 +131,7 @@
                         </control>
                         <control type="label">
                             <top>6</top>
-                            <centerleft>260</centerleft>
+                            <left>260</left>
                             <height>40</height>
                             <width>50</width>
                             <font>size21</font>
@@ -205,7 +204,7 @@
                         <colordiffuse>black</colordiffuse>
                     </control>
                     <control type="label">
-                        <centerleft>150</centerleft>
+                        <left>150</left>
                         <top>198</top>
                         <width>300</width>
                         <height>24</height>
@@ -228,7 +227,7 @@
                         </control>
                         <control type="label">
                             <top>6</top>
-                            <centerleft>260</centerleft>
+                            <left>260</left>
                             <height>40</height>
                             <width>50</width>
                             <font>size21</font>

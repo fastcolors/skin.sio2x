@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-    <fontset id="Default">
+    <fontset id="Default" unicode="true">
         <!--Fonts for GeneralAddons-->
         <font>
             <name>font10</name>
@@ -159,7 +159,7 @@
             <style>bold</style>
         </font>
     </fontset>
-    <fontset id="Strong">
+    <fontset id="Strong" unicode="true">
         <font>
             <name>font13</name>
             <filename>Strong.ttf</filename>
