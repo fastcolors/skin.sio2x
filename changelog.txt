@@ -4,6 +4,7 @@
 * Added Danish (Rridder), French (Nerve) and Italian (Betty)
 * Fix for DialigPVRGroupManager.xml - now working ;)
 * Cosmetics on some PVR windows
+* Infos in full screen renewed, now showing a list of the cast.
 
 
 3.0.7
