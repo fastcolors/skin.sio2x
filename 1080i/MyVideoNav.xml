@@ -4,21 +4,22 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
-    <views>52,51,50,53,55,500,54</views>
+    <views>50,51,52,53,54,55,500</views>
     <!--
-   52 Sio2
    50 Big List
    51 List
+   52 Sio2
    53 Icons
-   500 Fanart
-   55 Banners
    54 sio2 advanced
+   55 Banners
+   500 Fanart
    -->
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
         <!--VIEWS-->
         <include>sio2view</include>
+        <include>sio2naked</include>
         <include>sio2advanced</include>
         <include>plainlist</include>
         <include>fatlist</include>
@@ -143,48 +144,68 @@
                     <include>DialogButt</include>
                     <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
                     <onclick>Container.SetViewMode(52)</onclick>
-                    <selected>Control.IsVisible(52)</selected>
+                    <onclick>Skin.Reset(naked)</onclick>
+                    <selected>Control.IsVisible(52) + !Skin.HasSetting(naked)</selected>
                     <label>SiO2 View</label>
                 </control>
+                 <control type="radiobutton" id="601" description="sio2 Naked">
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(52)</onclick>
+                    <onclick>Skin.Reset(naked)</onclick>
+                    <onclick>Skin.ToggleSetting(naked)</onclick>
+                    <selected>Control.IsVisible(52) +  Skin.HasSetting(naked)</selected>
+                    <label>SiO2 Naked</label>
+                </control>
                 <!--todo label ?-->
-                <control type="radiobutton" id="601" description="sio2 Advanced">
+                <control type="radiobutton" id="602" description="sio2x">
                     <include>DialogButt</include>
                     <visible>Container.Content(movies)</visible>
                     <onclick>Container.SetViewMode(54)</onclick>
                     <onclick condition="!Skin.HasSetting(splashoff)">ActivateWindow(1113)</onclick>
                     <!--<onclick>ActivateWindow(1113)</onclick>-->
                     <!--<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, silent=true, clearlogo,discart)</onclick>-->
+                    <onclick>Skin.Reset(nakedx)</onclick>
                     <selected>Control.IsVisible(54)</selected>
                     <label>SiO2-X View</label>
                 </control>
-                <control type="radiobutton" id="602" description="View Big List">
+                <!--todo label-->
+                <control type="radiobutton" id="603" description="sio2x Naked">
+                    <include>DialogButt</include>
+                    <visible>Container.Content(movies)</visible>
+                    <onclick>Container.SetViewMode(54)</onclick>
+                    <onclick>Skin.Reset(nakedx)</onclick>
+                    <onclick>Skin.ToggleSetting(nakedx)</onclick>
+                    <selected>Control.IsVisible(54) +  Skin.HasSetting(nakedx)</selected>
+                    <label>SiO2 Naked</label>
+                </control>
+                <control type="radiobutton" id="604" description="View Big List">
                     <include>DialogButt</include>
                     <enable>!IsEmpty(Container.FolderPath)</enable>
                     <onclick>Container.SetViewMode(50)</onclick>
                     <selected>Control.IsVisible(50)</selected>
                     <label>$LOCALIZE[537]</label>
                 </control>
-                <control type="radiobutton" id="603" description="List">
+                <control type="radiobutton" id="605" description="List">
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(51)</onclick>
                     <selected>Control.IsVisible(51)</selected>
                     <label>$LOCALIZE[535]</label>
                 </control>
-                <control type="radiobutton" id="604=" description="Icons">
+                <control type="radiobutton" id="606" description="Icons">
                     <!--<enable>Container.content(movies) | container.content(seasons) | container.content(tvshows)</enable>-->
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(53)</onclick>
                     <selected>Control.IsVisible(53)</selected>
                     <label>$LOCALIZE[536]</label>
                 </control>
-                <control type="radiobutton" id="605" description="Fanart">
+                <control type="radiobutton" id="607" description="Fanart">
                     <enable>Container.content(movies) | container.content(seasons) | container.content(tvshows)</enable>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(500)</onclick>
                     <selected>Control.IsVisible(500)</selected>
                     <label>$LOCALIZE[20445]</label>
                 </control>
-                <control type="radiobutton" id="606" description="Banners">
+                <control type="radiobutton" id="608" description="Banners">
                     <visible>Container.Content(tvshows)</visible>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(55)</onclick>

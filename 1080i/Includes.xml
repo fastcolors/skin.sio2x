@@ -12,9 +12,8 @@
     <include file="views/icons.xml" />
     <include file="views/sio2.xml" />
     <include file="views/sio2_adv.xml" />
-    <!--VIDEOVIEWS-->
+    <!--OTHERVIEWS-->
     <include file="views/Musicviews.xml" />
-    <include file="views/PVRviews.xml" />
     <include file="views/Programviews.xml" />
     <include file="Includes_Home.xml" />
     <include file="Shelf_Elements.xml" />
@@ -204,8 +203,8 @@
             <visible>Control.IsVisible(54)</visible>
             <orientation>vertical</orientation>
             <top>35</top>
-            <left>1433</left>
-            <width>487</width>
+            <left>1438</left>
+            <width>482</width>
             <height>100</height>
             <itemgap>0</itemgap>
             <include>windowtitle</include>

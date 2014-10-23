@@ -323,7 +323,7 @@
                 <itemgap>10</itemgap>
                 <orientation>horizontal</orientation>
                 <control type="image">
-                    <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2770" tween="sine">Conditional</animation>
+                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2770" tween="sine">Conditional</animation>-->
                     <height>50</height>
                     <width>130</width>
                     <bordersize>3</bordersize>
@@ -331,7 +331,7 @@
                     <texture>$INFO[ListItem.VideoAspect,badges/video/,.png]</texture>
                 </control>
                 <control type="image">
-                    <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2650" tween="sine">Conditional</animation>
+                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2650" tween="sine">Conditional</animation>-->
                     <height>50</height>
                     <width>130</width>
                     <bordersize>3</bordersize>
@@ -340,7 +340,7 @@
                 </control>
                 <control type="image">
                     <visible>!IsEmpty(ListItem.VideoCodec)</visible>
-                    <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2530" tween="sine">Conditional</animation>
+                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2530" tween="sine">Conditional</animation>-->
                     <height>50</height>
                     <width>130</width>
                     <bordersize>3</bordersize>
@@ -349,7 +349,7 @@
                 </control>
                 <control type="image">
                     <visible>!IsEmpty(ListItem.AudioCodec)</visible>
-                    <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2380" tween="sine">Conditional</animation>
+                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2380" tween="sine">Conditional</animation>-->
                     <height>50</height>
                     <width>130</width>
                     <bordersize>3</bordersize>
@@ -358,7 +358,7 @@
                 </control>
                 <control type="image">
                     <visible>!IsEmpty(ListItem.AudioChannels)</visible>
-                    <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2200" tween="sine">Conditional</animation>
+                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2200" tween="sine">Conditional</animation>-->
                     <height>50</height>
                     <width>130</width>
                     <bordersize>3</bordersize>
@@ -367,7 +367,7 @@
                 </control>
                 <control type="image">
                     <visible>!IsEmpty(ListItem.FileExtension)</visible>
-                    <animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2000" tween="sine">Conditional</animation>
+                    <!--<animation condition="![Container(52).OnNext | Container(52).OnPrevious]" effect="slide" start="-900" end="0" time="200" delay="2000" tween="sine">Conditional</animation>-->
                     <height>50</height>
                     <width>130</width>
                     <bordersize>3</bordersize>
@@ -546,6 +546,7 @@
             </control>
             <!--SLIDERPANEL-->
             <control type="group">
+                <visible>!Skin.HasSetting(naked) | StringCompare(ListItem.Label,..)</visible>
                 <control type="image">
                     <!--<visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + [IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(ListItem.Art(fanart))]</visible>-->
                     <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Property(Addon.Description)) + !SubString(ListItem.path,videodb://movies/sets/) + IsEmpty(ListItem.Art(fanart))]</visible>

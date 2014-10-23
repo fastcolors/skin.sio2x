@@ -4,10 +4,10 @@
         <control type="group" description="sio2advanced">
             <visible>Control.IsVisible(54)</visible>
             <control type="image">
-                <left>1432</left>
+                <right>487</right>
                 <height>1080</height>
                 <width>1</width>
-                <texture colordiffuse="black">lines/LineV.png</texture>
+                <texture colordiffuse="black" border="1">lines/LineV.png</texture>
             </control>
             <control type="fixedlist" id="54">
                 <!--<visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>-->
@@ -566,6 +566,7 @@
             </control>
             <!--SLIDERPANEL-->
             <control type="group">
+                <visible>!Skin.HasSetting(nakedx) | StringCompare(ListItem.Label,..)</visible>
                 <control type="image">
                     <!--<visible>Container(54).OnNext | Container(54).OnPrevious | [IsEmpty(ListItem.Plot) + [IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(ListItem.Art(fanart))]</visible>-->
                     <visible>Container(54).OnNext | Container(54).OnPrevious | [IsEmpty(ListItem.Plot) + !SubString(ListItem.path,videodb://movies/sets/) + IsEmpty(ListItem.Art(fanart))]</visible>

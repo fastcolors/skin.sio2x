@@ -3,13 +3,6 @@
     <include name="fanart">
         <control type="group" description="Fanart">
             <visible>Control.IsVisible(500)</visible>
-            <control type="image">
-                <include>Dimensions_Fullscreen</include>
-                <include>Fanart_Fade</include>
-                <texture background="true">$VAR[fanart]</texture>
-                <colordiffuse>55AAAABB</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
             <control type="fixedlist" id="500" description="Shortcuts">
                 <visible>Container.content(movies) | container.content(seasons) | container.content(tvshows)</visible>
                 <onup condition="!Skin.HasSetting(ViewsMenuOff)">9000</onup>
@@ -86,41 +79,27 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="image" description="LeftFade">
-                <include>VisibleFade</include>
-                <width>15</width>
-                <height>1080</height>
-                <texture>images/DefaultGradientH.png</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image" description="RightFade">
-                <include>VisibleFade</include>
-                <left>1906</left>
-                <width>15</width>
-                <height>1080</height>
-                <texture flipx="true">images/DefaultGradientH.png</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="group" description="Media Info">
                 <visible>!StringCompare(ListItem.label,..)</visible>
                 <top>40</top>
-                <left>98</left>
+                <!--<left>98</left>-->
                 <control type="image" description="Stars rating">
-                    <left>1590</left>
-                    <top>435</top>
+                    <centerleft>960</centerleft>
+                    <top>405</top>
                     <height>45</height>
-                    <width>135</width>
-                    <aspectratio aligny="center" align="right">keep</aspectratio>
-                    <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+                    <width>255</width>
+                    <aspectratio>keep</aspectratio>
+                    <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
                 </control>
                 <control type="label" description="Item Title">
+                    <centerleft>960</centerleft>
                     <font>size42B</font>
                     <align>center</align>
                     <width>1724</width>
                     <info>ListItem.Label</info>
                 </control>
                 <control type="image" description="Line Split">
-                    <left>450</left>
+                    <left>548</left>
                     <top>515</top>
                     <width>1300</width>
                     <height>1</height>
@@ -131,12 +110,13 @@
                     <!--<visible>!SubString(ListItem.Path,videodb://1/7)</visible>-->
                     <control type="image" description="lineplot">
                         <top>70</top>
-                        <left>550</left>
+                        <centerleft>960</centerleft>
                         <width>620</width>
                         <height>1</height>
                         <texture colordiffuse="black">lines/LineSH.png</texture>
                     </control>
                     <control type="image" description="lineplot">
+                        <centerleft>960</centerleft>
                         <top>80</top>
                         <width>1724</width>
                         <height>1</height>
@@ -144,6 +124,7 @@
                     </control>
                     <control type="textbox" description="Plot">
                         <top>80</top>
+                        <centerleft>960</centerleft>
                         <width>1724</width>
                         <height>330</height>
                         <font>size30</font>
@@ -154,12 +135,14 @@
                         <!--<label>$INFO[ListItem.Plot]</label>-->
                     </control>
                     <control type="image" description="lineplot">
+                        <centerleft>960</centerleft>
                         <top>410</top>
                         <width>1724</width>
                         <height>1</height>
                         <texture colordiffuse="black">lines/LineSH.png</texture>
                     </control>
                     <control type="label">
+                        <centerleft>960</centerleft>
                         <top>440</top>
                         <font>size27</font>
                         <height>40</height>
@@ -169,6 +152,7 @@
                     </control>
                     <control type="grouplist" description="Flags">
                         <top>540</top>
+                        <centerleft>960</centerleft>
                         <width min="90" max="1724">auto</width>
                         <height>150</height>
                         <itemgap>30</itemgap>
@@ -214,9 +198,10 @@
                         </control>
                     </control>
                     <control type="label" description="Genre">
+                        <centerleft>960</centerleft>
                         <top>470</top>
                         <font>size27</font>
-                        <width>1724</width>
+                        <width>924</width>
                         <height>50</height>
                         <align>center</align>
                         <label>[COLOR=gray]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
