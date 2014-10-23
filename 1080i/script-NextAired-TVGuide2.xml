@@ -77,7 +77,6 @@
                     <font>size20</font>
                     <label>$INFO[Container(201).ListItem.Property(Genre)]</label>
                 </control>
-
                 <control type="label">
                     <description>Episode network</description>
                     <centerleft>960</centerleft>
@@ -111,7 +110,6 @@
                     <font>size20</font>
                     <label>$INFO[Container(202).ListItem.Property(Genre)]</label>
                 </control>
-
                 <control type="label">
                     <description>Episode network</description>
                     <centerleft>960</centerleft>
@@ -581,7 +579,7 @@
                     <label>$INFO[Window(Home).Property(NextAired.YesterdayText)]</label>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>white</textcolor>
+                    <textcolor>FFFFFFFF</textcolor>
                 </control>
                 <control type="panel" id="200">
                     <top>80</top>
@@ -1546,36 +1544,27 @@
                 </control>
             </control>
         <control type="grouplist">
-            <visible>!Skin.HasSetting(HideClock)</visible>
-            <top>18</top>
-            <right>40</right>
-            <orientation>horizontal</orientation>
-            <itemgap>16</itemgap>
+            <right>15</right>
             <align>right</align>
-            <control type="image" description="WebLink">
+            <orientation>horizontal</orientation>
+            <itemgap>5</itemgap>
+            <control type="label" description="Clock">
+                <visible>!Skin.HasSetting(HideClock)</visible>
+                <width>195</width>
+                <height>40</height>
+                <align>right</align>
+                <aligny>center</aligny>
+                <font>size21</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <label>$INFO[System.Time]</label>
+            </control>
+            <control type="image">
                 <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
-                <width>30</width>
-                <height>48</height>
+                <width>25</width>
+                <height>42</height>
                 <texture colordiffuse="black">wireless.png</texture>
                 <aspectratio>scale</aspectratio>
             </control>
-            <control type="label" description="Battery">
-                <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,20) + !Skin.HasSetting(hideconnection)</visible>
-                <left>35r</left>
-                <posy>20</posy>
-                <width min="30" max="500">auto</width>
-                <height>45</height>
-                <font>size30</font>
-                <label>$INFO[System.BatteryLevel] Batt.</label>
-            </control>
-            <control type="label" description="Clock">
-                <visible>!Skin.HasSetting(HideClock)</visible>
-                <width min="30" max="500">auto</width>
-                <height>45</height>
-                <font>size28</font>
-                <label>[B]$INFO[System.Time][/B]</label>
-            </control>
         </control>
-
     </controls>
 </window>
