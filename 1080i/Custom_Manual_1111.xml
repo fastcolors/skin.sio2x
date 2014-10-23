@@ -6,83 +6,62 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <control type="group" description="BigList">
-            <control type="group" description="ICON + PLOT">
-                <top>100</top>
-                <animation effect="fade" time="400">Visible</animation>
-                <animation effect="fade" time="0">Hidden</animation>
-                <control type="group">
-                    <control type="image" description="Thumb">
-                        <centerleft>480</centerleft>
-                        <width>756</width>
-                        <height>470</height>
-                        <include>Icon_Fade</include>
-                        <texture background="true">$INFO[Container(50).ListItem.Thumb]</texture>
-                        <bordertexture colordiffuse="black">images/white.png</bordertexture>
-                        <bordersize>4</bordersize>
-                        <aspectratio>keep</aspectratio>
+        <control type="group">
+            <left>480</left>
+            <top>130</top>
+            <control type="list" id="50">
+                <width>1440</width>
+                <height>890</height>
+                <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                <onup>50</onup>
+                <ondown>50</ondown>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="537">Big List</viewtype>
+                <focusposition>3</focusposition>
+                <preloaditems>2</preloaditems>
+                <scrolltime>250</scrolltime>
+                <itemlayout width="1380" height="81">
+                    <control type="label" description="Main Label">
+                        <top>4</top>
+                        <width>1380</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
                     </control>
-                </control>
-                <control type="image" description="Stars">
-                    <visible>!IsEmpty(ListItem.Rating)</visible>
-                    <centerleft>480</centerleft>
-                    <top>485</top>
-                    <height>24</height>
-                    <width>135</width>
-                    <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
-                </control>
-                <control type="image">
-                    <centerleft>480</centerleft>
-                    <top>570</top>
-                    <width>756</width>
-                    <height>1</height>
-                    <texture>lines/Line1.png</texture>
-                </control>
-                <control type="textbox" description="plot">
-                    <centerleft>480</centerleft>
-                    <top>570</top>
-                    <width>880</width>
-                    <height>350</height>
-                    <align>justify</align>
-                    <font>size26B</font>
-                    <label>$INFO[Container(50).ListItem.Plot]</label>
-                </control>
-                <control type="image">
-                    <centerleft>480</centerleft>
-                    <top>920</top>
-                    <width>756</width>
-                    <height>1</height>
-                    <texture>lines/Line1.png</texture>
-                </control>
+                </itemlayout>
+                <focusedlayout width="1380" height="81">
+                    <control type="image">
+                        <animation effect="fade" end="0" time="30">UnFocus</animation>
+                        <width>1440</width>
+                        <height>81</height>
+                        <texture colordiffuse="$VAR[diffuseselect]" flipx="true">images/buttonselect1.png</texture>
+                    </control>
+                    <control type="label" description="Main Label">
+                        <top>4</top>
+                        <width>1380</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </focusedlayout>
+                <content target="video">special://skin/resources/guides.m3u</content>
             </control>
-            <control type="group">
-                <include>LargeListItemCount</include>
-                <left>960</left>
-                <top>125</top>
-                <control type="fixedlist" id="50">
-                    <width>920</width>
-                    <height>890</height>
-                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onup>50</onup>
-                    <ondown>50</ondown>
-                    <pagecontrol>60</pagecontrol>
-                    <viewtype label="537">Big List</viewtype>
-                    <focusposition>3</focusposition>
-                    <movement>4</movement>
-                    <preloaditems>4</preloaditems>
-                    <scrolltime>250</scrolltime>
-                    <include>LargeListLayout</include>
-                    <content target="video">plugin://plugin.video.youtube/?path=%2froot%2fplaylists&amp;playlist=PLFOkL3b4owDkHcSzeB6UIr_iQzO3kTRh2&amp;user_feed=playlist</content>
-                </control>
+        </control>
+        <control type="group">
+            <visible>Control.IsVisible(60)</visible>
+            <top>85</top>
+            <control type="image">
+                <left>1865</left>
+                <height>910</height>
+                <width>100</width>
+                <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
             </control>
-            <include>Linemiddle</include>
             <control type="scrollbar" id="60">
-                <left>39r</left>
-                <top>135</top>
-                <height>870</height>
-                <onleft>51</onleft>
+                <right>14</right>
+                <top>30</top>
+                <height>850</height>
+                <onleft>50</onleft>
                 <onright>noop</onright>
             </control>
         </control>
@@ -116,11 +95,9 @@
                 <colordiffuse>44FFFFFF</colordiffuse>
             </control>
         </control>
-        <control type="grouplist" description="LIST + BIGLIST">
-            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
-            <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
+        <control type="grouplist">
             <top>20</top>
-            <left>960</left>
+            <centerleft>960</centerleft>
             <width>960</width>
             <height>60</height>
             <align>center</align>
@@ -140,6 +117,13 @@
                 <label>$INFO[Container(50).NumItems, (,)]</label>
             </control>
         </control>
+        <control type="videowindow">
+            <description>My first video control</description>
+            <posx>80</posx>
+            <posy>60</posy>
+            <width>550</width>
+            <height>550</height>
+            <visible>true</visible>
+        </control>
     </controls>
-
 </window>

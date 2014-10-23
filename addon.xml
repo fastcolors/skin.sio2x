@@ -5,7 +5,7 @@
         <import addon="service.library.data.provider" version="0.0.4"/>
         <import addon="script.artwork.downloader" version="12.0.0"/>
         <import addon="script.favourites" version="3.2.5"/>
-        <!--<import addon="script.cinema.experience" version="3.0.3"/>-->
+        <import addon="script.cinema.experience" version="3.0.3"/>
         <import addon="script.globalsearch" version="2.0.8"/>
     </requires>
     <extension
