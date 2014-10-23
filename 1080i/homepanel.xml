@@ -123,6 +123,7 @@
             <thumb>icons/nextaired.png</thumb>
             <label>$ADDON[script.tv.show.next.aired 32019]</label>
             <property name="color">icons/red.png</property>
+            <property name="unwatched">$INFO[Window(Home).Property(NextAired.TodayTotal)]</property>
             <onclick>RunAddon(script.tv.show.next.aired)</onclick>
         </item>
         <!--GLOBAL SEARCH ADDON-->
