@@ -13,31 +13,28 @@
             </control>
             <control type="grouplist" id="0">
                 <left>60</left>
-                <top>90</top>
+                <top>60</top>
                 <width>1800</width>
                 <height>500</height>
                 <itemgap>10</itemgap>
                 <control type="label" id="10" description="row 1 sys label">
                     <width>1800</width>
-                    <height>50</height>
-                    <align>left</align>
+                    <height>60</height>
                     <font>size22</font>
-                    <aligny>center</aligny>
+                    <align>center</align>
                     <label>-</label>
                 </control>
                 <control type="label" id="11" description="row 2 sys label">
                     <width>1800</width>
-                    <height>50</height>
-                    <align>left</align>
-                    <aligny>center</aligny>
+                    <height>60</height>
+                    <align>center</align>
                     <font>size22</font>
                     <label>-</label>
                 </control>
                 <control type="label" id="12" description="row 3 sys label">
                     <width>1800</width>
                     <height>90</height>
-                    <align>left</align>
-                    <aligny>center</aligny>
+                    <align>center</align>
                     <font>size22</font>
                     <label>-</label>
                 </control>

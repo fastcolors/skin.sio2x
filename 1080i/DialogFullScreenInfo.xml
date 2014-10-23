@@ -23,7 +23,7 @@
             <texture border="50" colordiffuse="D2FFFFFF">Seekbar/OSDBackground.png</texture>
         </control>
         <control type="image">
-            <bottom>320</bottom>
+            <bottom>328</bottom>
             <right>1620</right>
             <width>180</width>
             <height>250</height>

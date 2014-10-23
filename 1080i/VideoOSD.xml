@@ -8,7 +8,7 @@
             <control type="group" id="101" description="Options content">
                 <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
                 <left>630</left>
-                <top>865</top>
+                <top>840</top>
                 <animation type="Focus">
                     <effect type="slide" tween="Cubic" easing="out" start="0,0" end="0,-800" time="800"/>
                 </animation>
@@ -16,24 +16,25 @@
                     <effect type="slide" tween="Cubic" easing="in" start="0,-800" end="0,0" time="500"/>
                 </animation>
                 <control type="image">
-                    <left>550</left>
-                    <top>200</top>
+                    <centerleft>890</centerleft>
+                    <centertop>441</centertop>
                     <width>680</width>
-                    <height>520</height>
+                    <height>482</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="50">sidepanel/Back.png</texture>
                 </control>
                 <control type="grouplist" id="101" description="OSD Options">
-                    <left>600</left>
-                    <top>246</top>
-                    <width>640</width>
-                    <height>640</height>
+                    <centerleft>890</centerleft>
+                    <centertop>441</centertop>
+                    <width>590</width>
+                    <height>482</height>
                     <itemgap>0</itemgap>
                     <onleft>100</onleft>
                     <onright>100</onright>
                     <onup>101</onup>
                     <ondown>101</ondown>
                     <scrolltime>240</scrolltime>
+                    <align>center</align>
                     <control type="togglebutton" id="701" description="Subtitles">
                         <width>590</width>
                         <include>DialogButt</include>
@@ -133,10 +134,10 @@
                         <left>1610</left>
                         <top>600</top>
                         <!--<control type="image" description="CoverReal">-->
-                            <!--<height>300</height>-->
-                            <!--<width>220</width>-->
-                            <!--<aspectratio>keep</aspectratio>-->
-                            <!--<texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>-->
+                        <!--<height>300</height>-->
+                        <!--<width>220</width>-->
+                        <!--<aspectratio>keep</aspectratio>-->
+                        <!--<texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>-->
                         <!--</control>-->
                         <control type="image" description="CoverReal">
                             <height>300</height>
@@ -145,11 +146,11 @@
                             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(poster)]</texture>
                         </control>
                         <!--<control type="image" description="CoverRef">-->
-                            <!--<top>300</top>-->
-                            <!--<height>300</height>-->
-                            <!--<width>220</width>-->
-                            <!--<aspectratio>keep</aspectratio>-->
-                            <!--<texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(poster)]</texture>-->
+                        <!--<top>300</top>-->
+                        <!--<height>300</height>-->
+                        <!--<width>220</width>-->
+                        <!--<aspectratio>keep</aspectratio>-->
+                        <!--<texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(poster)]</texture>-->
                         <!--</control>-->
                         <control type="image" description="CoverReal">
                             <height>300</height>
@@ -158,11 +159,11 @@
                             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
                         </control>
                         <!--<control type="image" description="CoverRef">-->
-                            <!--<top>300</top>-->
-                            <!--<height>300</height>-->
-                            <!--<width>220</width>-->
-                            <!--<aspectratio>keep</aspectratio>-->
-                            <!--<texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(tvshow.poster)]</texture>-->
+                        <!--<top>300</top>-->
+                        <!--<height>300</height>-->
+                        <!--<width>220</width>-->
+                        <!--<aspectratio>keep</aspectratio>-->
+                        <!--<texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(tvshow.poster)]</texture>-->
                         <!--</control>-->
                         <control type="label" description="Episode">
                             <visible>VideoPlayer.Content(Episodes)</visible>

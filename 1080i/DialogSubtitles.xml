@@ -13,11 +13,22 @@
                 <texture border="150">images/Dialog.png</texture>
                 <colordiffuse>CCFFFFFF</colordiffuse>
             </control>
+            <control type="label" description="Header Label">
+                <left>260</left>
+                <top>220</top>
+                <width>1400</width>
+                <height>60</height>
+                <font>size26</font>
+                <textcolor>black</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <info>Player.Filename</info>
+            </control>
             <control type="image">
-                <left>1557</left>
-                <top>160</top>
-                <width>98</width>
-                <height>45</height>
+                <centerright>310</centerright>
+                <centertop>200</centertop>
+                <width>95</width>
+                <height>95</height>
                 <texture>images/rightarrow.png</texture>
             </control>
             <control type="image" id="110">
@@ -28,17 +39,7 @@
                 <height>70</height>
                 <aspectratio align="center">keep</aspectratio>
             </control>
-            <control type="label" description="Header Label">
-                <left>260</left>
-                <top>220</top>
-                <width>1400</width>
-                <height>60</height>
-                <font>size26</font>
-                <textcolor>black</textcolor>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[Player.Filename]</label>
-            </control>
+
             <control type="image" description="linetop">
                 <centerleft>960</centerleft>
                 <top>280</top>
@@ -53,18 +54,45 @@
                 <height>1</height>
                 <texture>lines/Line.png</texture>
             </control>
+            <control type="image">
+                <animation effect="zoom" center="auto" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
+                <visible>IntegerGreaterThan(Container(120).NumItems,0)</visible>
+                <centerleft>310</centerleft>
+                <centertop>200</centertop>
+                <height>95</height>
+                <width>95</width>
+                <aspectratio>keep</aspectratio>
+                <texture>badges/BadgeCount.png</texture>
+            </control>
             <control type="label" id="140" description="# of Subtitles Found">
-                <left>310</left>
-                <top>855</top>
-                <width>1300</width>
-                <height>35</height>
+                <visible>false</visible>
+                <left>190</left>
+                <top>110</top>
+                <!--<width>85</width>-->
+                <!--<height>25</height>-->
+                <textcolor>-</textcolor>
+                <font>size33</font>
+                <scroll>false</scroll>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="label" description="# of Subtitles Found">
+                <animation effect="fade" center="auto" start="0" end="100" time="50" delay="300">Visible</animation>
+                <visible>IntegerGreaterThan(Container(120).NumItems,0)</visible>
+                <centerleft>310</centerleft>
+                <centertop>200</centertop>
+                <width max="90">auto</width>
+                <height>95</height>
                 <textcolor>White</textcolor>
                 <font>size33</font>
+                <scroll>false</scroll>
                 <align>center</align>
+                <aligny>center</aligny>
+                <info>Container(120).NumItems</info>
             </control>
             <control type="grouplist" id="130">
                 <left>310</left>
-                <top>895</top>
+                <top>870</top>
                 <width>1300</width>
                 <align>center</align>
                 <orientation>horizontal</orientation>
@@ -72,8 +100,7 @@
                 <control type="image">
                     <width>50</width>
                     <height>50</height>
-                    <colordiffuse>red</colordiffuse>
-                    <texture>DefaultIconInfo.png</texture>
+                    <texture>DefaultIconWarning.png</texture>
                 </control>
                 <control type="label" description="Local subtitle available">
                     <width min="10">auto</width>
@@ -278,7 +305,7 @@
                         <top>0</top>
                         <width>380</width>
                         <height>57</height>
-                         <texture colordiffuse="$VAR[diffuseselect]">images/Buttonselect2.png</texture>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/Buttonselect2.png</texture>
                         <visible>Control.HasFocus(150)</visible>
                     </control>
                     <control type="label">
