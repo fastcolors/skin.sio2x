@@ -1,0 +1,419 @@
+# XBMC Media Center language file
+# Addon Name: SiO2x
+# Addon id: skin.SiO2x
+# Addon version: 3.0.5
+# Addon Provider: FastColors
+# Translators:
+# Translators:
+# ridder <rein.ridder@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Skin.Sio2-X\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-10-22 14:45+0000\n"
+"Last-Translator: ridder <rein.ridder@gmail.com>\n"
+"Language-Team: Danish (http://www.transifex.com/projects/p/skinsio2-x/language/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31000"
+msgid "Page"
+msgstr "Side"
+
+msgctxt "#31001"
+msgid "Items"
+msgstr "Items"
+
+msgctxt "#31002"
+msgid "Karaoke Song"
+msgstr "Karaoke Sang"
+
+msgctxt "#31003"
+msgid "Choose Shortcut function for Music Icon : Albums  Artists Genres Songs"
+msgstr "Vælg genvej-funktion for Musik Ikon: Album Artists Genrer Songs"
+
+msgctxt "#31004"
+msgid "Visualization Presets"
+msgstr "Visualiseringsværktøjer Presets"
+
+msgctxt "#31005"
+msgid "End Time"
+msgstr "Slut Tid"
+
+msgctxt "#31006"
+msgid "Last Added"
+msgstr "Sidst tilføjet"
+
+msgctxt "#31007"
+msgid "Last Started"
+msgstr "Sidste Starte"
+
+msgctxt "#31008"
+msgid ""
+"Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will"
+" only become colored when Focused"
+msgstr "Aktiver / Deaktiver Altid farvede ikoner på startskærmen, når Deaktiveret Ikoner kun bliver farvet, når der fokuseres"
+
+msgctxt "#31010"
+msgid "Open playlist"
+msgstr "Åbn afspilningsliste"
+
+msgctxt "#31011"
+msgid "Save playlist"
+msgstr "Gem afspilningsliste"
+
+msgctxt "#31012"
+msgid "Clear playlist"
+msgstr "klar afspilningsliste"
+
+msgctxt "#31013"
+msgid "Available Audio"
+msgstr "Tilgængelige audio"
+
+msgctxt "#31014"
+msgid "Current Playlist"
+msgstr "Aktuel afspilningsliste"
+
+msgctxt "#31015"
+msgid "Trailers"
+msgstr "Trailers"
+
+msgctxt "#31016"
+msgid "Last Updated"
+msgstr "Senest Opdateret"
+
+msgctxt "#31017"
+msgid ""
+"Enable or disable the panel for changing views, filter, search and other "
+"options"
+msgstr "Aktivere eller deaktivere panelet til at ændre visninger, filter, søgning og andre muligheder"
+
+msgctxt "#31018"
+msgid "Choose Addon for Lyrics Search & Download"
+msgstr "Vælg Addon til Lyrics Search & Download"
+
+msgctxt "#31019"
+msgid ""
+"Enable or Disable Clock On top right of All Pages (not while watching "
+"Movies).[CR]Home Menu Will show Time and date."
+msgstr "Aktivere eller deaktivere ur til øverst til højre på alle sider (ikke mens du ser film). [CR] Hjem menu viser tid og dato."
+
+msgctxt "#31020"
+msgid "Now Watching"
+msgstr "Lige nu"
+
+msgctxt "#31021"
+msgid "Memory Used:"
+msgstr "Brugt RAM"
+
+msgctxt "#31022"
+msgid "Specify Action for Power Icon in Menu"
+msgstr "Angiv handling Power Ikon i menuen"
+
+msgctxt "#31023"
+msgid "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
+msgstr "Fanart billede[CR][CR]ikke tilgængelig[CR][CR] Klik på knappen for at indstille"
+
+msgctxt "#31024"
+msgid "Aired"
+msgstr "Aired"
+
+msgctxt "#31025"
+msgid "Playlist Options"
+msgstr "Afspilingsiste Indstillinger"
+
+msgctxt "#31026"
+msgid "Get Extra Artwork"
+msgstr "Få ekstra Artwork"
+
+msgctxt "#31027"
+msgid "Movies/TVShows Badge"
+msgstr "Movies/TVShows Badge"
+
+msgctxt "#31028"
+msgid "Custom Background"
+msgstr "Brugerdefineret Baggrund"
+
+msgctxt "#31029"
+msgid ""
+"Adds a custom Background to Home Screen. This will automatically switch On "
+"the setting for Always Colored Icons on Home screen. This can be manually "
+"switched Off from this page."
+msgstr "Tilføjer en brugerdefineret baggrund til startskærm. Dette vil automatisk tænd indstillingen for Always farvede ikoner på startskærmen. Dette kan manuelt afbrydes fra denne side."
+
+msgctxt "#31030"
+msgid "Custom Shelf Icon"
+msgstr "Brugerdefineret Shelf Ikon"
+
+msgctxt "#31031"
+msgid "Replace Default Icon on Shelf with a Picture of Your choice."
+msgstr "Erstat Standard Ikon på Shelf med et billede af din valg."
+
+msgctxt "#31032"
+msgid "Log Off"
+msgstr "Log Ud"
+
+msgctxt "#31033"
+msgid "Always Colored Menu Icons"
+msgstr "Altid Farvede Menu Icons"
+
+msgctxt "#31034"
+msgid "Click to Add Custom Item to Home Page"
+msgstr "Klik for at tilføje brugerdefinerede Vare til Home Page"
+
+msgctxt "#31035"
+msgid "Click to Pick Icon, Change or Remove Item"
+msgstr "Klik for at vælge ikon, ændre eller fjerne Item"
+
+msgctxt "#31036"
+msgid "Reset ALL skin settings to default"
+msgstr "Nulstille alle indstillinger skin til standard"
+
+msgctxt "#31037"
+msgid "Add-ons manager"
+msgstr "Add-ons manager"
+
+msgctxt "#31038"
+msgid "min"
+msgstr "min"
+
+msgctxt "#31039"
+msgid ""
+"Enable or disable the icon for network connection and battery percentage "
+"info (only shown if battery lower than 20%)"
+msgstr "Aktiver eller deaktiver ikonet for netværksforbindelse og batteri procent info (vises kun, hvis batteriet er lavere end 20%)"
+
+msgctxt "#31040"
+msgid "Shelf items"
+msgstr "Shelf items"
+
+msgctxt "#31041"
+msgid "Active  Scrollbars"
+msgstr "Aktive Scrollbars"
+
+msgctxt "#31042"
+msgid "Active"
+msgstr "Aktive"
+
+msgctxt "#31043"
+msgid "Passive"
+msgstr "Passiv"
+
+msgctxt "#31044"
+msgid "View options dialog"
+msgstr "Se Optioner Dialogboks"
+
+msgctxt "#31045"
+msgid "Recent/Recommended Inverted First Item"
+msgstr "Seneste / Anbefalet Inverted første Item"
+
+msgctxt "#31046"
+msgid ""
+"Customize What Is Displayed On Home Page. Enable or disable buttons and "
+"create links for addons or favourites."
+msgstr "Tilpas hvad der vises på hjemmesiden. Aktiver eller deaktiver knapperne og oprette links til addons eller favoritter."
+
+msgctxt "#31047"
+msgid "Show Clock"
+msgstr "Vis ur"
+
+msgctxt "#31048"
+msgid "Recommended"
+msgstr "Anbefalet"
+
+msgctxt "#31049"
+msgid "Power icon - Now Set to:"
+msgstr "Power ikon - nu sat til:"
+
+msgctxt "#31050"
+msgid "Quit Menu"
+msgstr "Afslut menuen"
+
+msgctxt "#31051"
+msgid "Custom Shelf Shortcuts"
+msgstr "Brugerdefineret Shelf Genveje"
+
+msgctxt "#31052"
+msgid "Home Page Customizer"
+msgstr "Forside Customizer"
+
+msgctxt "#31053"
+msgid "Link For Music Icon"
+msgstr "Link Til Musik Ikon"
+
+msgctxt "#31054"
+msgid ""
+"Enable Views Menu in order to change the way Items are presented to you."
+msgstr "Aktiver visning Menu for at ændre den måde Item præsenteres for dig."
+
+msgctxt "#31055"
+msgid "Fullscreen player"
+msgstr "Fuld skærm spiller"
+
+msgctxt "#31056"
+msgid "Change Icon"
+msgstr "Skift Icon"
+
+msgctxt "#31057"
+msgid "Replace Item"
+msgstr "Udskift Item"
+
+msgctxt "#31058"
+msgid "Show Network Connection Status (and Battery Level on home)"
+msgstr "Vis netværksforbindelse status (og batteri niveau på hjemmebane)"
+
+msgctxt "#31059"
+msgid "LiveTV"
+msgstr "LiveTv"
+
+msgctxt "#31060"
+msgid "Add"
+msgstr "Tilføje"
+
+msgctxt "#31061"
+msgid "Extra infos"
+msgstr "Ekstra info's"
+
+msgctxt "#31062"
+msgid "Select Lyrics Add-on"
+msgstr "Vælg Lyrics Add-on"
+
+msgctxt "#31063"
+msgid ""
+"Settings for the handling of your audio library, playback of your songs and "
+"karaoke"
+msgstr "Indstillinger for håndtering af din lyd bibliotek, afspilning af dine sange og karaoke"
+
+msgctxt "#31064"
+msgid "Fullscreen"
+msgstr "Fuldskærm"
+
+msgctxt "#31065"
+msgid ""
+"Enable/Disable notification badge showing the number of unwatched Movies and"
+" TVShows on Home Icons"
+msgstr "Aktiver / Deaktiver meddelelse badge, der viser antallet af usete film og TVShows på Hjem Ikoner"
+
+msgctxt "#31066"
+msgid "Enable/Disable Sliding Info Window in Icon View"
+msgstr "Aktiver / Deaktiver Sliding Info Vindue i Ikonvisning"
+
+msgctxt "#31067"
+msgid "Infos in Icon view"
+msgstr "Info i Ikonvisning"
+
+msgctxt "#31068"
+msgid "Random Movies"
+msgstr "Vilkårlige film"
+
+msgctxt "#31077"
+msgid ""
+"Settings for the handling of your Video library, playback, subtitles, "
+"rendering and hardware acceleration"
+msgstr "Indstillinger for håndtering af dit videobibliotek, afspilning, undertekster, rendering og hardwareacceleration"
+
+msgctxt "#31079"
+msgid "Change the look and feel of the XBMC interface"
+msgstr "Ændre udseendet og fornemmelsen af ​​XBMC-interface"
+
+msgctxt "#31082"
+msgid "Video Guides"
+msgstr "Video Guides"
+
+msgctxt "#31087"
+msgid "Percent Played"
+msgstr "procent Spillet"
+
+msgctxt "#31088"
+msgid "Cinema"
+msgstr "Biografen"
+
+msgctxt "#31089"
+msgid ""
+"Returns all Skin's specifics Settings to defaults. Doesn't change any of the"
+" XBMC general settings."
+msgstr "Returnerer alle Skins detaljerne til standardindstillingerne. Ændrer ikke nogen af ​​XBMC generelle indstillinger"
+
+msgctxt "#31090"
+msgid ""
+"Modify LiveTV/PVR setup, playback and recording options, Electronic Program "
+"Guide, Parental Control and Power Savings for Live TV"
+msgstr "Ændre LiveTV / PVR setup, afspilning og optagelse muligheder, Electronic Program Guide, forældrekontrol og strømbesparelser til Live TV"
+
+msgctxt "#31091"
+msgid "Pictures listings and slideshow options"
+msgstr "Billeder oversigter og diasshowindstillinger"
+
+msgctxt "#31092"
+msgid "Pick Weather provider and setup locations"
+msgstr "Pick Vejret udbyder og opsætning steder"
+
+msgctxt "#31093"
+msgid ""
+"Network related services. Choose device name and decide how/if XBMC can be "
+"controlled over the network. Also modify sharing options"
+msgstr "Netværk relaterede tjenester. Vælg enhedens navn og beslutte, hvordan / hvis XBMC kan styres over netværket. Modificere Også delingsmuligheder"
+
+msgctxt "#31094"
+msgid ""
+"Core Settings. Enable or disable use of specific audio/video hardware and "
+"modify its setup, control master lock and enable or disable debug logging"
+msgstr "Core indstillinger. Aktiver eller deaktiver brug af specifik audio / video hardware og ændre sin opsætning, kontrol mester lås og aktivere eller deaktivere fejlfindingslogger"
+
+msgctxt "#31095"
+msgid "Skin Specific Options"
+msgstr "Skin specifikke indstillinger"
+
+msgctxt "#31096"
+msgid "Started Movies"
+msgstr "Startede film"
+
+msgctxt "#31097"
+msgid ""
+"Manage your OpenELEC system's underlying operating system. From here you can"
+" manage the entire system so you don't have to worry about what runs under "
+"the hood.[CR][CR]Change your network connectivity, your keyboard layout and "
+"language and enable/disable remote access including Samba and SSH."
+msgstr "Administrer din OpenELEC systemets underliggende operativsystem. Herfra kan du styre hele systemet, så du ikke behøver at bekymre sig om hvad kører under kølerhjelmen. [CR][CR] Skift din netværksforbindelse, dit tastatur layout og sprog og aktivere / deaktivere fjernadgang herunder Samba og SSH."
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Lokale undertekster tilgængelig"
+
+msgctxt "#31414"
+msgid "TEST"
+msgstr "Test"
+
+msgctxt "#31415"
+msgid "Don't Show Anymore"
+msgstr "Vis ikke igen"
+
+msgctxt "#31416"
+msgid "Show Again next time"
+msgstr "Vis igen næste gang"
+
+msgctxt "#31418"
+msgid ""
+"Opens a list of video files made to help,but also to learn how to maximize "
+"Your SiO2-X experience"
+msgstr "Åbner en liste over videofiler lavet for at hjælpe, men også for at lære, hvordan du optimerer din SiO2-X oplevelse"
+
+msgctxt "#31419"
+msgid "Started Movies"
+msgstr "Startede film"
+
+msgctxt "#31420"
+msgid ""
+"Show or Hide 3D movies from Regular Library List. If Off, when Library is "
+"accessed from Home Icon, it won't show any 3D content. Works only if files "
+"are named following Kodi/XBMC rules for 3D automatic identification -- i.e. "
+"Must Contain the word 3D"
+msgstr "Vis eller Skjul 3D-film fra Regelmæssig Bibliotek List. Hvis deaktiveret, når biblioteket er adgang fra Home-ikon, vil det ikke vise nogen 3D-indhold. Virker kun, hvis filerne er navngivet efter Kodi / XBMC regler for 3D automatisk identifikation - altså skal indeholde ordet 3D"
+
+msgctxt "#31421"
+msgid "3D Content in Movies List"
+msgstr "3D-indhold i film liste"
