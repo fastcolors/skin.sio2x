@@ -1,14 +1,16 @@
 3.0.8
 * Cosmetics Here & There
-* Support for Genere Specific Icons
+* Support for Genre Specific Icons
 * Added Danish (Rridder), French (Nerve) and Italian (Betty)
-* Fix for DialigPVRGroupManager.xml - now working ;)
+* Fix for DialogPVRGroupManager.xml - now working ;)
 * Cosmetics on some PVR windows
 * Infos in full screen renewed, now showing a list of the cast.
-
+* Badge on Home screen indicating the number of TVShows airing today (on TV Guide Icon)
+* New Alternative Font (unfortunately still incomplete)
+* Testing System font pointing to XBMC native font (just realized is the same used in Skin)
 
 3.0.7
-* <posx> completely removed from code now onlt <left>
+* <posx> completely removed from code now only <left>
 * cosmetics on icons
 * new badge for unwatched episodes count on home
 * new badge for unwatched movies count on home

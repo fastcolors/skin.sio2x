@@ -263,7 +263,7 @@
                         <label>$ADDON[script.tv.show.next.aired 32019]</label>
                         <onclick>Skin.ToggleSetting(nextair)</onclick>
                     </item>
-                    <item id="358" description="nest aired -OFF">
+                    <item id="358" description="next aired -OFF">
                         <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
                         <thumb>icons/nextaired.png</thumb>
                         <label>$ADDON[script.tv.show.next.aired 32019]</label>

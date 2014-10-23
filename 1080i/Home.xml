@@ -131,9 +131,8 @@
                             <texture>Badges/Badgecount.png</texture>
                         </control>
                         <control type="label">
-                            <top>6</top>
                             <centerleft>260</centerleft>
-                            <height>40</height>
+                            <height>55</height>
                             <width>50</width>
                             <font>size21</font>
                             <align>center</align>
@@ -227,9 +226,8 @@
                             <texture>Badges/Badgecount.png</texture>
                         </control>
                         <control type="label">
-                            <top>6</top>
                             <centerleft>260</centerleft>
-                            <height>40</height>
+                            <height>55</height>
                             <width>50</width>
                             <font>size21</font>
                             <align>center</align>
