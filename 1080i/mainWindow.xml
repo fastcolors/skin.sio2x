@@ -78,6 +78,7 @@
             <scrolltime>300</scrolltime>
             <itemlayout height="81" width="500">
                 <control type="label">
+                    <left>500</left>
                     <width>480</width>
                     <height>81</height>
                     <align>right</align>
@@ -94,6 +95,7 @@
                     <animation effect="fade" end="50">unFocus</animation>
                 </control>
                 <control type="label">
+                    <left>500</left>
                     <width>480</width>
                     <height>81</height>
                     <align>right</align>

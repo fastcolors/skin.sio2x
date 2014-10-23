@@ -62,7 +62,7 @@
                         </control>
                         <control type="label">
                             <top>5</top>
-                            <centerleft>30</centerleft>
+                            <left>30</left>
                             <height>40</height>
                             <width>50</width>
                             <font>size21</font>
@@ -142,7 +142,7 @@
                         </control>
                         <control type="label">
                             <top>5</top>
-                            <centerleft>30</centerleft>
+                            <left>30</left>
                             <height>40</height>
                             <width>50</width>
                             <font>size21</font>
