@@ -74,7 +74,7 @@
                     <preloaditems>4</preloaditems>
                     <scrolltime>250</scrolltime>
                     <include>LargeListLayout</include>
-                    <content target="video">plugin://plugin.video.youtube/?path=%2froot%2fplaylists&amp;playlist=PLFOkL3b4owDkHcSzeB6UIr_iQzO3kTRh2&amp;user_feed=playlist</content>
+                    <content target="video">special://skin/resources/guides.m3u</content>
                 </control>
             </control>
             <include>Linemiddle</include>

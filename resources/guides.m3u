@@ -1,0 +1,13 @@
+#EXTM3U
+#EXTINF:-1, SiO2-X: Add Playlist to Homescreen shelf
+plugin://plugin.video.youtube/?action=play_video&videoid=pLF0TdgHDVM
+#EXTINF:-1, SiO2-X: Add Genres to Homescreen Shelf
+plugin://plugin.video.youtube/?action=play_video&videoid=_QcxcIzKrno
+#EXTINF:-1, TV Guide in SiO2-X
+plugin://plugin.video.youtube/?action=play_video&videoid=hAv5e0UHUxU
+#EXTINF:-1, SiO2-X: xbmctorrent integration
+plugin://plugin.video.youtube/?action=play_video&videoid=4d4F6iVoX88
+#EXTINF:-1, sio2 enable LiveTv
+plugin://plugin.video.youtube/?action=play_video&videoid=z6-fgzK_cBw
+#EXTINF:-1, SiO2-X: Sets
+plugin://plugin.video.youtube/?action=play_video&videoid=Fj8A_hbL1-w
