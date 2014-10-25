@@ -429,7 +429,7 @@
                 <width min="30" max="500">auto</width>
                 <height>45</height>
                 <font>size28</font>
-                <label>$INFO[System.Time] $INFO[System.Date]</label>
+                <label>$INFO[System.Date]  $INFO[System.Time]</label>
             </control>
             <control type="image" description="WebLink">
                 <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
