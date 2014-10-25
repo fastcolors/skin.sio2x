@@ -4,7 +4,7 @@
         <control type="group" description="Fanart">
             <visible>Control.IsVisible(500)</visible>
             <control type="fixedlist" id="500" description="Shortcuts">
-                <visible>Container.content(movies) | container.content(seasons) | container.content(tvshows)</visible>
+                <visible>Container.content(movies) | container.content(seasons) | container.content(musicvideos) | container.content(tvshows)</visible>
                 <onup condition="!Skin.HasSetting(ViewsMenuOff)">9000</onup>
                 <onup condition="Skin.HasSetting(ViewsMenuOff)">noop</onup>
                 <ondown condition="!Skin.HasSetting(Scrollbars_Passive)">60</ondown>
@@ -107,7 +107,6 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="group">
-                    <!--<visible>!SubString(ListItem.Path,videodb://1/7)</visible>-->
                     <control type="image" description="lineplot">
                         <top>70</top>
                         <centerleft>960</centerleft>

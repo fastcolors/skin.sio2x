@@ -13,7 +13,12 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <include>Musicviews</include>
+        <!--views-->
+        <include>listmusic</include>
+        <include>sio2music</include>
+        <include>iconmusic</include>
+        <include>fanartmusic</include>
+        <!--/views-->
         <include>WindowsTopInfos</include>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
@@ -115,7 +120,7 @@
                     <label>$LOCALIZE[536]</label>
                 </control>
                 <control type="radiobutton" id="605" description="Fanart">
-                    <enable>!Container.Content(files) + !Container.Content(songs) + !IsEmpty(Container.FolderPath)</enable>
+                    <visible>Container.content(musicvideos) | Container.content(Albums) | Container.content(Artists)</visible>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(500)</onclick>
                     <selected>Control.IsVisible(500)</selected>

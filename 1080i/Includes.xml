@@ -5,15 +5,18 @@
     <include file="Defaults.xml" />
     <include file="CommonViews.xml" />
     <!--VIDEOVIEWS-->
-    <include file="views/fatlist.xml" />
-    <include file="views/plainlist.xml" />
-    <include file="views/banners.xml" />
-    <include file="views/fanart.xml" />
-    <include file="views/icons.xml" />
-    <include file="views/sio2.xml" />
-    <include file="views/sio2_adv.xml" />
+    <include file="views/video_fatlist.xml" />
+    <include file="views/video_plainlist.xml" />
+    <include file="views/video_banners.xml" />
+    <include file="views/video_fanart.xml" />
+    <include file="views/video_icons.xml" />
+    <include file="views/video_sio2.xml" />
+    <include file="views/video_sio2x.xml" />
     <!--OTHERVIEWS-->
-    <include file="views/Musicviews.xml" />
+    <include file="views/music_fanart.xml" />
+    <include file="views/music_sio2.xml" />
+    <include file="views/music_list.xml" />
+    <include file="views/music_icons.xml" />
     <include file="views/Programviews.xml" />
     <include file="Shelf_Elements.xml" />
     <include name="VisibleFade">
