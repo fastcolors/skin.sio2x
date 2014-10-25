@@ -264,6 +264,7 @@
                 <scrolltime>200</scrolltime>
                 <itemlayout width="380" height="54">
                     <control type="label">
+                        <left>140</left>
                         <width>350</width>
                         <height>57</height>
                         <font>size27</font>
@@ -282,6 +283,7 @@
                         <visible>Control.HasFocus(150)</visible>
                     </control>
                     <control type="label">
+                        <left>140</left>
                         <width>350</width>
                         <height>57</height>
                         <font>size27</font>
