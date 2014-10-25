@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="plainlist">
-<control type="group" description="List">
+        <control type="group" description="List">
             <visible>Control.IsVisible(51)</visible>
             <include>left_Panel</include>
             <include>Linemiddle</include>
@@ -19,7 +19,7 @@
                     <onup>51</onup>
                     <ondown>51</ondown>
                     <pagecontrol>60</pagecontrol>
-                    <viewtype label="ATV2List">ATV2List</viewtype>
+                    <viewtype label="plain">Plain List</viewtype>
                     <focusposition>5</focusposition>
                     <movement>5</movement>
                     <preloaditems>4</preloaditems>
@@ -29,19 +29,14 @@
                         <include>HD_Badge</include>
                         <control type="label" description="Main Label">
                             <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
-                            <include>52MainLabel</include>
+                            <include>SmallListMainLabel</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label" description="Main Label">
                             <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
                             <width>711</width>
-                            <include>52MainLabel</include>
+                            <include>SmallListMainLabel</include>
                             <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        <control type="label" description="Label2">
-                            <visible>container.content(songs) | container.content(musicvideos)</visible>
-                            <include>52Label2</include>
-                            <label>$INFO[ListItem.Duration]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="880" height="81">
@@ -55,23 +50,14 @@
                         <include>HD_Badge</include>
                         <control type="label" description="Main Label">
                             <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
-                            <textcolor>black</textcolor>
-                            <textcolor>black</textcolor>
-                            <include>52MainLabel</include>
+                            <include>SmallListMainLabel</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label" description="Main Label">
                             <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
                             <width>711</width>
-                            <textcolor>black</textcolor>
-                            <textcolor>black</textcolor>
-                            <include>52MainLabel</include>
+                            <include>SmallListMainLabel</include>
                             <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        <control type="label" description="Label2">
-                            <visible>container.content(songs) | container.content(musicvideos)</visible>
-                            <include>52Label2FO</include>
-                            <label>$INFO[ListItem.Duration]</label>
                         </control>
                     </focusedlayout>
                 </control>
@@ -84,5 +70,5 @@
                 <onleft>51</onleft>
             </control>
         </control>
-         </include>
+    </include>
 </includes>

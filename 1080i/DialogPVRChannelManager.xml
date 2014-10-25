@@ -70,7 +70,7 @@
                 <itemlayout width="802" height="81">
                     <control type="label" description="Main Label">
                         <width>830</width>
-                        <include>52MainLabel</include>
+                        <include>SmallListMainLabel</include>
                         <label>$INFO[ListItem.Channelnumber] • $INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -86,7 +86,7 @@
                     <control type="label" description="Main Label">
                         <width>830</width>
                         <textcolor>black</textcolor>
-                        <include>52MainLabel</include>
+                        <include>SmallListMainLabel</include>
                         <label>$INFO[ListItem.Channelnumber] • $INFO[ListItem.Label]</label>
                     </control>
                 </focusedlayout>

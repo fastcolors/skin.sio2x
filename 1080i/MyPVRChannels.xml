@@ -298,7 +298,7 @@
                             </control>
                             <control type="label">
                                 <left>70</left>
-                                <include>52MainLabel</include>
+                                <include>SmallListMainLabel</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="image">
@@ -340,7 +340,7 @@
                             </control>
                             <control type="label">
                                 <left>70</left>
-                                <include>52MainLabel</include>
+                                <iSmallListMainLabelinLabel</include>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="image">

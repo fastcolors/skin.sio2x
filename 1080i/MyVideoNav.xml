@@ -148,14 +148,6 @@
                     <selected>Control.IsVisible(52) + !Skin.HasSetting(naked)</selected>
                     <label>SiO2 View</label>
                 </control>
-                 <control type="radiobutton" id="601" description="sio2 Naked">
-                    <include>DialogButt</include>
-                    <onclick>Container.SetViewMode(52)</onclick>
-                    <onclick>Skin.Reset(naked)</onclick>
-                    <onclick>Skin.ToggleSetting(naked)</onclick>
-                    <selected>Control.IsVisible(52) +  Skin.HasSetting(naked)</selected>
-                    <label>SiO2 Naked</label>
-                </control>
                 <!--todo label ?-->
                 <control type="radiobutton" id="602" description="sio2x">
                     <include>DialogButt</include>
@@ -167,16 +159,6 @@
                     <onclick>Skin.Reset(nakedx)</onclick>
                     <selected>Control.IsVisible(54)</selected>
                     <label>SiO2-X View</label>
-                </control>
-                <!--todo label-->
-                <control type="radiobutton" id="603" description="sio2x Naked">
-                    <include>DialogButt</include>
-                    <visible>Container.Content(movies)</visible>
-                    <onclick>Container.SetViewMode(54)</onclick>
-                    <onclick>Skin.Reset(nakedx)</onclick>
-                    <onclick>Skin.ToggleSetting(nakedx)</onclick>
-                    <selected>Control.IsVisible(54) +  Skin.HasSetting(nakedx)</selected>
-                    <label>SiO2 Naked</label>
                 </control>
                 <control type="radiobutton" id="604" description="View Big List">
                     <include>DialogButt</include>

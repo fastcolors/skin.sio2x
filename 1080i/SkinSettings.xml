@@ -124,7 +124,17 @@
                     <onclick>Skin.ToggleSetting(unwatchedbadge)</onclick>
                     <selected>!Skin.HasSetting(unwatchedbadge)</selected>
                 </control>
-                <control type="button" id="15">
+                <!--todo label-->
+                 <control type="radiobutton" id="18">
+                    <height>settingsheight</height>
+                    <label>Hide SiO2 - SiO2-x Views sliding Panel</label>
+                    <width>960</width>
+                    <align>left</align>
+                    <selected>Skin.hasSetting(naked)</selected>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <onclick>Skin.ToggleSetting(naked)</onclick>
+                </control>
+                 <control type="button" id="15">
                     <height>settingsheight</height>
                     <label>31036</label>
                     <width>960</width>

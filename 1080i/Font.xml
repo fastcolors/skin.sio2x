@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-    <fontset id="System">
+    <fontset id="Default">
         <!--Fonts for GeneralAddons-->
         <font>
             <name>font10</name>

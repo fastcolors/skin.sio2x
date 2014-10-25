@@ -11,7 +11,7 @@
         <include>BlackBackground</include>
         <control type="button" id="9009">
             <include>ShelfFade</include>
-            <visible>[Control.IsVisible(311) + [Container(9000).HasFocus(340)]] | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(315)</visible>
+            <visible>[Control.IsVisible(311) + [Container(9000).HasFocus(340) | [Container(9000).HasFocus(342) + StringCompare(Skin.String(musicshelf),videos)]]] | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(315)</visible>
             <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
             <top>18</top>
             <left>10</left>
@@ -20,7 +20,6 @@
             <texturenofocus aspectratio="keep" colordiffuse="darkgray">images/hometoggle.png</texturenofocus>
             <texturefocus aspectratio="keep" colordiffuse="$VAR[diffuseselectshelf]">images/hometoggle.png</texturefocus>
             <!--MOVIES-->
-
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND) + Skin.HasSetting(trailershelf)">Skin.SetString(moviesshelf,TR)</onclick>
@@ -32,7 +31,8 @@
             <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,artists)</onclick>
             <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),artists) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,albums)</onclick>
             <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),albums) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,custom)</onclick>
-            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),custom) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>
+            <onclick  condition="Control.IsVisible(313) + StringCompare(Skin.String(musicshelf),custom) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,videos)</onclick>
+            <onclick  condition="Container(9000).HasFocus(342) + StringCompare(Skin.String(musicshelf),videos) + [Library.HasContent(Music)]">Skin.SetString(musicshelf,)</onclick>
             <!--ADDONS-->
             <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),1)">Skin.SetString(addonsshelf,2)</onclick>
             <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),2)">Skin.SetString(addonsshelf,3)</onclick>
@@ -259,12 +259,12 @@
             </control>
             <control type="rss" description="RSS Feed">
                 <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                <include>OpenClose</include>
-                <top>15</top>
+                <centertop>30</centertop>
                 <width>1920</width>
                 <height>34</height>
                 <font>size24</font>
                 <urlset>1</urlset>
+                <aligny>center</aligny>
                 <shadowcolor>-</shadowcolor>
                 <titlecolor>darkred</titlecolor>
                 <headlinecolor>FF666666</headlinecolor>
@@ -429,7 +429,7 @@
                 <width min="30" max="500">auto</width>
                 <height>45</height>
                 <font>size28</font>
-                <label>[B]$INFO[System.Time] $INFO[System.Date][/B]</label>
+                <label>$INFO[System.Time] $INFO[System.Date]</label>
             </control>
             <control type="image" description="WebLink">
                 <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>

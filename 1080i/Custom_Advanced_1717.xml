@@ -24,7 +24,7 @@
                 <scrolltime>250</scrolltime>
                 <itemlayout width="802" height="81">
                     <control type="label" description="Main Label">
-                        <include>52MainLabel</include>
+                        <include>SmallListMainLabel</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image" description="Icon">
@@ -42,7 +42,7 @@
                     <include>SmallSelector</include>
                     <control type="label" description="Main Label">
                         <textcolor>black</textcolor>
-                        <include>52MainLabel</include>
+                        <include>SmallListMainLabel</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image" description="Icon">

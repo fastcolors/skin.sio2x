@@ -26,13 +26,13 @@
                         <control type="label" description="Main Label">
                             <visible>!ListItem.IsFolder</visible>
                             <width>765</width>
-                            <include>52MainLabel</include>
+                            <include>SmallListMainLabel</include>
                             <selectedcolor>Yellow</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label" description="Main Label">
                             <visible>ListItem.IsFolder</visible>
-                            <include>52MainLabel</include>
+                            <include>SmallListMainLabel</include>
                             <selectedcolor>Yellow</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
@@ -47,13 +47,13 @@
                         <control type="label" description="Main Label">
                             <visible>!ListItem.IsFolder</visible>
                             <width>765</width>
-                            <include>52MainLabel</include>
+                            <include>SmallListMainLabel</include>
                             <selectedcolor>Yellow</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label" description="Main Label">
                             <visible>ListItem.IsFolder</visible>
-                            <include>52MainLabel</include>
+                            <include>SmallListMainLabel</include>
                             <selectedcolor>Yellow</selectedcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>

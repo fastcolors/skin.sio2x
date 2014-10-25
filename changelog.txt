@@ -8,6 +8,7 @@
 * Badge on Home screen indicating the number of TVShows airing today (on TV Guide Icon)
 * New Alternative Font (unfortunately still incomplete)
 * Testing System font pointing to XBMC native font (just realized is the same used in Skin)
+* Music Videos on Shelf
 
 3.0.7
 * <posx> completely removed from code now only <left>

@@ -74,10 +74,19 @@
                     </control>
                     <control type="image">
                         <left>1670</left>
-                        <top>90</top>
-                        <width>40</width>
-                        <height>55</height>
+                        <top>104</top>
+                        <width>42</width>
+                        <height>26</height>
                         <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                     <control type="image">
+                         <visible>ListItem.IsStereoscopic</visible>
+                        <left>1624</left>
+                        <top>104</top>
+                        <width>42</width>
+                        <height>26</height>
+                        <texture>badges/3d.png</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
@@ -154,10 +163,19 @@
                     </control>
                     <control type="image">
                         <left>1670</left>
-                        <top>90</top>
-                        <width>40</width>
-                        <height>55</height>
+                        <top>104</top>
+                        <width>42</width>
+                        <height>26</height>
                         <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                     <control type="image">
+                         <visible>ListItem.IsStereoscopic</visible>
+                        <left>1624</left>
+                        <top>104</top>
+                        <width>42</width>
+                        <height>26</height>
+                        <texture>badges/3d.png</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">

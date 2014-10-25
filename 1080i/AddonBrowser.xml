@@ -27,7 +27,7 @@
                         <width>930</width>
                         <left>30</left>
                         <wrapmultiline>true</wrapmultiline>
-                        <include>52MainLabel</include>
+                        <include>SmallListMainLabel</include>
                         <label>$INFO[ListItem.Label][CR][COLOR=Silver]$INFO[ListItem.Label2][/COLOR]</label>
                     </control>
                     <include>listline</include>
@@ -43,7 +43,7 @@
                         <width>930</width>
                         <left>30</left>
                         <wrapmultiline>true</wrapmultiline>
-                        <include>52MainLabel</include>
+                        <include>SmallListMainLabel</include>
                         <label>$INFO[ListItem.Label][CR][COLOR=Silver]$INFO[ListItem.Label2][/COLOR]</label>
                     </control>
                     <include>listline</include>

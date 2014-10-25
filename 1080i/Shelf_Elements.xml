@@ -9,22 +9,6 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="350" width="320">
             <control type="group">
-                <!--<control type="image" description="Reflection">-->
-                <!--<centerleft>160</centerleft>-->
-                <!--<top>409</top>-->
-                <!--<width>250</width>-->
-                <!--<height>375</height>-->
-                <!--<texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>-->
-                <!--<aspectratio>scale</aspectratio>-->
-                <!--</control>-->
-                <!--<control type="image">-->
-                <!--<centerleft>160</centerleft>-->
-                <!--<top>400</top>-->
-                <!--<width>262</width>-->
-                <!--<height>389</height>-->
-                <!--<texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>-->
-                <!--<aspectratio>stretch</aspectratio>-->
-                <!--</control>-->
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>25</top>
@@ -47,26 +31,6 @@
             <control type="group">
                 <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
                 <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
-                <!--<control type="group">-->
-                <!--<animation effect="fade" start="100" end="0" time="100">Focus</animation>-->
-                <!--<animation effect="fade" start="0" end="100" time="150">unFocus</animation>-->
-                <!--<control type="image" description="Reflection">-->
-                <!--<centerleft>160</centerleft>-->
-                <!--<top>409</top>-->
-                <!--<width>250</width>-->
-                <!--<height>375</height>-->
-                <!--<texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>-->
-                <!--<aspectratio>scale</aspectratio>-->
-                <!--</control>-->
-                <!--<control type="image">-->
-                <!--<centerleft>160</centerleft>-->
-                <!--<top>400</top>-->
-                <!--<width>262</width>-->
-                <!--<height>389</height>-->
-                <!--<texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>-->
-                <!--<aspectratio>stretch</aspectratio>-->
-                <!--</control>-->
-                <!--</control>-->
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>25</top>
@@ -220,14 +184,6 @@
         <itemlayout height="357" width="384">
             <control type="group">
                 <animation condition="true" center="192,30" effect="zoom" end="90">Conditional</animation>
-                <!--<control type="image" description="Reflection">-->
-                <!--<left>30</left>-->
-                <!--<top>370</top>-->
-                <!--<width>324</width>-->
-                <!--<height>324</height>-->
-                <!--<texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
-                <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
-                <!--</control>-->
                 <control type="image">
                     <left>30</left>
                     <top>46</top>
@@ -270,14 +226,6 @@
             <control type="group">
                 <animation center="192,30" effect="zoom" start="90" end="100" time="200">Focus</animation>
                 <animation center="192,30" effect="zoom" start="100" end="90" time="100">unFocus</animation>
-                <!--<control type="image" description="Reflection">-->
-                <!--<left>30</left>-->
-                <!--<top>370</top>-->
-                <!--<width>324</width>-->
-                <!--<height>324</height>-->
-                <!--<texture fallback="DefaultAlbumcover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
-                <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
-                <!--</control>-->
                 <control type="image">
                     <left>30</left>
                     <top>46</top>
@@ -327,14 +275,6 @@
         <itemlayout height="357" width="480">
             <control type="group">
                 <animation effect="zoom" condition="true" start="100" end="90" center="240,180">Conditional</animation>
-                <!--<control type="image" description="Reflection">-->
-                <!--<left>23</left>-->
-                <!--<top>370</top>-->
-                <!--<width>433</width>-->
-                <!--<height>242</height>-->
-                <!--<texture background="true" diffuse="images/ReflectionShelfEP.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
-                <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
-                <!--</control>-->
                 <control type="image">
                     <left>23</left>
                     <top>128</top>
@@ -377,16 +317,6 @@
             <control type="group">
                 <animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>
                 <animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>
-                <!--<control type="image" description="Reflection">-->
-                <!--<animation effect="fade"  start="100" end="0" time="200" reversible="true">Focus</animation>-->
-                <!--<animation effect="fade"  start="0" end="100" time="200" reversible="true">unFocus</animation>-->
-                <!--<left>23</left>-->
-                <!--<top>370</top>-->
-                <!--<width>433</width>-->
-                <!--<height>242</height>-->
-                <!--<texture background="true" diffuse="images/ReflectionShelfEP.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
-                <!--<aspectratio scalediffuse="false">scale</aspectratio>-->
-                <!--</control>-->
                 <control type="image">
                     <left>23</left>
                     <top>128</top>
@@ -434,22 +364,6 @@
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <itemlayout height="350" width="320">
-            <!--<control type="image" description="Reflection">-->
-            <!--<left>35</left>-->
-            <!--<top>409</top>-->
-            <!--<width>250</width>-->
-            <!--<height>375</height>-->
-            <!--<texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
-            <!--<aspectratio>scale</aspectratio>-->
-            <!--</control>-->
-            <!--<control type="image">-->
-            <!--<left>31</left>-->
-            <!--<top>400</top>-->
-            <!--<width>262</width>-->
-            <!--<height>389</height>-->
-            <!--<texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>-->
-            <!--<aspectratio>stretch</aspectratio>-->
-            <!--</control>-->
             <control type="image">
                 <centerleft>160</centerleft>
                 <top>25</top>
@@ -488,26 +402,6 @@
             </control>
         </itemlayout>
         <focusedlayout height="420" width="320">
-            <!--<control type="group">-->
-            <!--<animation effect="fade" start="100" end="0" time="100">Focus</animation>-->
-            <!--<animation effect="fade" start="0" end="100" time="150">unFocus</animation>-->
-            <!--<control type="image" description="Reflection">-->
-            <!--<left>35</left>-->
-            <!--<top>409</top>-->
-            <!--<width>250</width>-->
-            <!--<height>375</height>-->
-            <!--<texture fallback="DefaultVideoCover.png" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>-->
-            <!--<aspectratio>scale</aspectratio>-->
-            <!--</control>-->
-            <!--<control type="image">-->
-            <!--<left>31</left>-->
-            <!--<top>400</top>-->
-            <!--<width>262</width>-->
-            <!--<height>389</height>-->
-            <!--<texture border="10" background="true" diffuse="images/ReflectionShelf.png" flipy="true">$VAR[dvdbox]</texture>-->
-            <!--<aspectratio>stretch</aspectratio>-->
-            <!--</control>-->
-            <!--</control>-->
             <control type="image">
                 <centerleft>160</centerleft>
                 <top>25</top>
@@ -565,7 +459,7 @@
     </include>
     <include name="tvshelslider">
         <control type="image">
-            <visible>Control.HasFocus(312) | Control.HasFocus(222) | Control.HasFocus(223)</visible>
+            <visible>Control.HasFocus(312) | Control.HasFocus(222)</visible>
             <left>190</left>
             <top>489</top>
             <width>100</width>
@@ -573,10 +467,10 @@
             <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
             <aspectratio>stretch</aspectratio>
             <animation effect="fade" time="220">VisibleChange</animation>
-            <animation condition="Container(312).Position(0) | Container(222).Position(0) | Container(223).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(1) | Container(223).Position(1)" effect="slide" start="0,0" end="480,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(2) | Container(223).Position(2)" effect="slide" start="0,0" end="960,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(3) | Container(223).Position(3)" effect="slide" start="0,0" end="1440,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(0) | Container(222).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="480,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="960,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1440,0" time="220" easing="inout" reversible="true">Conditional</animation>
         </control>
     </include>
     <include name="Movies">
@@ -775,7 +669,7 @@
             <!--<animation condition="StringCompare(Container(313).NumItems,3)" effect="slide" end="384">Conditional</animation>-->
             <!--<animation condition="StringCompare(Container(313).NumItems,4)" effect="slide" end="192">Conditional</animation&ndash;&gt;-->
             <control type="panel" id="313" description="TOP Shortcuts">
-                <visible>Library.HasContent(Music) | Library.HasContent(MusicVideos) | Skin.HasSetting(MusicShelf_Custom)</visible>
+                <visible>Library.HasContent(Music) | Skin.HasSetting(MusicShelf_Custom)</visible>
                 <visible>[Container(9000).HasFocus(342) | Control.HasFocus(313)] + !StringCompare(Skin.String(musicshelf),mushoff)</visible>
                 <include>SquareShortcutsCommons</include>
                 <content target="music">$VAR[musicshelfcontent]</content>

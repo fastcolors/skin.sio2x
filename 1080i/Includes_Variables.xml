@@ -52,6 +52,8 @@
         <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
         <value condition="Window.IsActive(MyMusicPlaylist.xml)">$LOCALIZE[20011]</value>
         <value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20159]</value>
+        <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(albums) + Control.IsVisible(50)">$LOCALIZE[182]</value>
+        <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(artists) + Control.IsVisible(50)">$LOCALIZE[21888]</value>
         <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(albums)">$LOCALIZE[13351]</value>
         <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(artists)">$LOCALIZE[21891]</value>
         <value condition="Window.IsActive(DialogSongInfo.xml) + container.content(songs)">$LOCALIZE[658]</value>
@@ -198,14 +200,18 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
 
+    <!--TODO colors fix-->
     <variable name="diffuseselect">
-        <value condition="StringCompare(ListItem.MPAA,R) | StringCompare(ListItem.MPAA,TV-MA) | SubString(ListItem.MPAA,18)">88FF2200</value>
-        <value condition="SubString(ListItem.MPAA,PG) | StringCompare(ListItem.MPAA,G) | StringCompare(ListItem.MPAA,U) | StringCompare(ListItem.MPAA,T)">770CF704</value>
-        <value condition="StringCompare(ListItem.MPAA,PG-13) | StringCompare(ListItem.MPAA,12) | StringCompare(ListItem.MPAA,15) | SubString(ListItem.MPAA,14)">88FF8800</value>
+        <!--red-->
+        <value condition="SubString(ListItem.MPAA,R,Right) | StringCompare(ListItem.MPAA,TV-MA) | SubString(ListItem.MPAA,18)">88FF2200</value>
+        <!--green-->
+        <value condition="SubString(ListItem.MPAA,PG,right) | StringCompare(ListItem.MPAA,G) | StringCompare(ListItem.MPAA,U) | StringCompare(ListItem.MPAA,T)">770CF704</value>
+        <!--orange-->
+        <value condition="Substring(ListItem.MPAA,PG-13) | StringCompare(ListItem.MPAA,12) | StringCompare(ListItem.MPAA,15) | SubString(ListItem.MPAA,14)">88FF8800</value>
+        <!--default-->
         <value>775555FF</value>
     </variable>
 
-    <!--TODO colors fix-->
     <variable name="diffuseselectshelf">
         <value condition="![Control.IsVisible(311) | Control.IsVisible(312)]">black</value>
         <!--movies-->
@@ -213,23 +219,24 @@
         <value condition="SubString(Container(311).ListItem.MPAA,R,Right)">CCFF0000</value>
         <value condition="SubString(Container(311).ListItem.MPAA,18)">CCFF0000</value>
         <!--green-->
-        <value condition="StringCompare(Container(311).ListItem.MPAA,PG)">CC00FF00</value>
+        <value condition="SubString(Container(311).ListItem.MPAA,PG,Right)">CC00FF00</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,G)">CC00FF00</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,U)">CC00FF00</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,T)">CC00FF00</value>
         <!--orange-->
-        <value condition="StringCompare(Container(311).ListItem.MPAA,PG-13)">CCFF8800</value>
+        <value condition="SubString(Container(311).ListItem.MPAA,PG-13)">CCFF8800</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,12)">CCFF8800</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,15)">CCFF8800</value>
         <!--tv-->
         <!--red-->
-        <value condition="Container(9000).HasFocus(341) + SubString(Container(312).ListItem.MPAA,TV-MA)">CCFF0000</value>
+        <value condition="Control.HasFocus(312) + SubString(Container(312).ListItem.MPAA,TV-MA)">CCFF0000</value>
+        <value condition="Control.HasFocus(222) + SubString(Container(222).ListItem.MPAA,TV-MA)">CCFF0000</value>
         <!--green-->
-        <value condition="Container(9000).HasFocus(341) + SubString(Container(312).ListItem.MPAA,G,Right)">CC00FF00</value>
+        <value condition="Control.HasFocus(312) + SubString(Container(312).ListItem.MPAA,G,Right)">CC00FF00</value>
+        <value condition="Control.HasFocus(222) + SubString(Container(222).ListItem.MPAA,G,Right)">CC00FF00</value>
         <!--orange-->
-        <value condition="Container(9000).HasFocus(341) + SubString(Container(312).ListItem.MPAA,14)">CCFF8800</value>
-        <value condition="Container(9000).HasFocus(341) + SubString(Container(222).ListItem.MPAA,14)">CCFF8800</value>
-        <value condition="Container(9000).HasFocus(341) + SubString(Container(223).ListItem.MPAA,14)">CCFF8800</value>
+        <value condition="Control.HasFocus(312) + SubString(Container(312).ListItem.MPAA,14)">CCFF8800</value>
+        <value condition="Control.HasFocus(222) + SubString(Container(222).ListItem.MPAA,14)">CCFF8800</value>
         <!--general-->
         <value>AA5555FF</value>
     </variable>
@@ -265,14 +272,17 @@
         <value condition="StringCompare(Skin.String(musicshelf),custom)"> $LOCALIZE[1038]</value>
         <value condition="StringCompare(Skin.String(musicshelf),albums)"> $LOCALIZE[132]</value>
         <value condition="StringCompare(Skin.String(musicshelf),artists)"> $LOCALIZE[133]</value>
+        <value condition="StringCompare(Skin.String(musicshelf),videos)"> $LOCALIZE[20389]</value>
+
         <!--<value condition="StringCompare(Skin.String(musicshelf),playlists)"> $LOCALIZE[20011]</value>-->
         <value> $LOCALIZE[359]</value>
     </variable>
 
     <variable name="musicshelfcontent">
-        <value condition="StringCompare(Skin.String(musicshelf),custom)">addons://sources/audio/</value>
+        <value condition="StringCompare(Skin.String(musicshelf),custom)">addons://sources/audio</value>
         <value condition="StringCompare(Skin.String(musicshelf),artists) + Library.HasContent(Music)">musicdb://artists</value>
         <value condition="StringCompare(Skin.String(musicshelf),albums) + Library.HasContent(Music)">musicdb://albums</value>
+        <value condition="StringCompare(Skin.String(musicshelf),videos) + Library.HasContent(Music)">videodb://recentlyaddedmusicvideos</value>
         <!--<value condition="StringCompare(Skin.String(musicshelf),playlists) + Library.HasContent(Music)">special://musicplaylists/</value>-->
         <value condition="Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>
     </variable>

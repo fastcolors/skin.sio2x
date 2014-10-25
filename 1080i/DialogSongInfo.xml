@@ -1,52 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="135">
+    <!--todo ALL DIALOG REMAKE-->
     <defaultcontrol always="true">300</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <backgroundcolor>0xffffffff</backgroundcolor>
+    <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <control type="group">
-                <control type="image" description="Thumb">
-                    <centerleft>480</centerleft>
-                <top>90</top>
-                    <width>600</width>
-                    <height>600</height>
-                    <include>Icon_Fade</include>
-                    <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Icon]</texture>
-                    <aspectratio aligny="bottom">keep</aspectratio>
-                </control>
-            <include>MusicInfo</include>
-            <control type="textbox" description="Plot">
-                <left>1000</left>
-                <top>60</top>
-                <width>870</width>
-                <height>900</height>
-                <font>size27</font>
-                <align>justify</align>
-                <autoscroll delay="6500" time="4000" repeat="10000"></autoscroll>
-                <label>$INFO[ListItem.Property(Album_Description)][CR]$INFO[ListItem.Property(Artist_Description)]</label>
-            </control>
+        <include>MusicInfo</include>
+        <control type="textbox" description="Plot">
+            <left>1000</left>
+            <top>60</top>
+            <width>870</width>
+            <height>900</height>
+            <font>size27</font>
+            <align>justify</align>
+            <autoscroll delay="6500" time="4000" repeat="10000"></autoscroll>
+            <label>$INFO[ListItem.Property(Album_Description)][CR]$INFO[ListItem.Property(Artist_Description)]</label>
         </control>
-        <!--<control type="label" description="Path">-->
-        <!--<centerleft>960</centerleft>-->
-        <!--<top>970</top>-->
-        <!--<width>1920</width>-->
-        <!--<height>27</height>-->
-        <!--<font>size22</font>-->
-        <!--<align>center</align>-->
-        <!--<textcolor>Silver</textcolor>-->
-        <!--<haspath>true</haspath>-->
-        <!--<scroll>true</scroll>-->
-        <!--<label>$INFO[ListItem.FilenameAndPath]</label>-->
-        <!--</control>-->
         <control type="image">
             <left>0</left>
             <top>1000</top>
             <height>80</height>
             <width>1920</width>
             <aspectratio>stretch</aspectratio>
-            <texture>images/BlackT.png</texture>
+            <texture colordiffuse="white">images/BlackT.png</texture>
         </control>
         <control type="image" description="Navbar">
             <left>0</left>
@@ -56,6 +34,7 @@
             <aspectratio>stretch</aspectratio>
             <texture>lines/Line.png</texture>
         </control>
+
         <control type="group" description="Options">
             <control type="grouplist" id="300">
                 <left>15</left>
@@ -67,18 +46,6 @@
                 <align>center</align>
                 <onup>50</onup>
                 <orientation>horizontal</orientation>
-                <control type="button" id="12" description="Album Info">
-                    <height>80</height>
-                    <width>280</width>
-                    <label>10523</label>
-                    <font>size28</font>
-                </control>
-                <control type="button" id="13" description="Get Thumb">
-                    <height>80</height>
-                    <width>280</width>
-                    <label>13405</label>
-                    <font>size28</font>
-                </control>
                 <control type="button" id="14" description="Decrease Rating">
                     <height>80</height>
                     <width>280</width>
@@ -91,6 +58,18 @@
                     <width>280</width>
                     <label>+ $LOCALIZE[563]</label>
                     <onclick>IncreaseRating</onclick>
+                    <font>size28</font>
+                </control>
+                <control type="button" id="12" description="Album Info">
+                    <height>80</height>
+                    <width>280</width>
+                    <label>10523</label>
+                    <font>size28</font>
+                </control>
+                <control type="button" id="13" description="Get Thumb">
+                    <height>80</height>
+                    <width>280</width>
+                    <label>13405</label>
                     <font>size28</font>
                 </control>
                 <control type="button" id="10" description="Save rating">

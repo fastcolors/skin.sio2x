@@ -199,5 +199,5 @@
         <pulseonselect>false</pulseonselect>
         <showonepage>false</showonepage>
     </default>
-    <constant name="settingsheight">65</constant>
+    <constant name="settingsheight">60</constant>
 </includes>

@@ -15,7 +15,6 @@
     <!--OTHERVIEWS-->
     <include file="views/Musicviews.xml" />
     <include file="views/Programviews.xml" />
-    <include file="Includes_Home.xml" />
     <include file="Shelf_Elements.xml" />
     <include name="VisibleFade">
         <animation effect="fade" start="0" end="100" time="200">visiblechange</animation>
@@ -144,7 +143,7 @@
         <control type="label" id="7777" description="Heading">
             <width>auto</width>
             <height>40</height>
-            <font>size42B</font>
+            <font>size42</font>
             <scroll>false</scroll>
             <label>$VAR[RootLabel]</label>
         </control>
@@ -182,7 +181,7 @@
         </control>
         <!--VIEWTOPINFOS-->
         <control type="grouplist" description="LIST + BIGLIST">
-            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+            <visible>!Window.IsActive(DialogAlbumInfo.xml)</visible>
             <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
             <top>40</top>
             <centerleft>1440</centerleft>
@@ -190,7 +189,7 @@
             <include>windowtitle</include>
         </control>
         <control type="grouplist" description="sio2">
-            <visible>!Window.IsActive(DialogPictureInfo.xml) + !Window.IsActive(LoginScreen.xml)</visible>
+            <visible>!Window.IsActive(DialogAlbumInfo.xml)</visible>
             <visible>Control.IsVisible(52)</visible>
             <top>40</top>
             <left>1360</left>
@@ -199,7 +198,6 @@
             <include>windowtitle</include>
         </control>
         <control type="grouplist" description="sio2 advanced">
-            <visible>!Window.IsActive(DialogPictureInfo.xml) + !Window.IsActive(LoginScreen.xml)</visible>
             <visible>Control.IsVisible(54)</visible>
             <orientation>vertical</orientation>
             <top>35</top>
@@ -209,8 +207,7 @@
             <itemgap>0</itemgap>
             <include>windowtitle</include>
         </control>
-        <control type="grouplist" description="ukn">
-            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+        <control type="grouplist" description="Settings">
             <visible>Control.IsVisible(575)</visible>
             <top>15</top>
             <centerleft>1440</centerleft>
@@ -219,7 +216,7 @@
             <include>windowtitle</include>
         </control>
         <control type="grouplist" description="centered">
-            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+            <visible>!Window.IsActive(DialogAlbumInfo.xml)</visible>
             <visible>Control.IsVisible(53) | [Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]]</visible>
             <top>30</top>
             <centerleft>960</centerleft>
@@ -228,7 +225,7 @@
             <include>windowtitle</include>
         </control>
         <control type="grouplist" description="leftsided">
-            <visible>!Window.IsActive(DialogPictureInfo.xml)</visible>
+            <visible>!Window.IsActive(DialogAlbumInfo.xml)</visible>
             <visible>Control.IsVisible(55) | Control.IsVisible(500)</visible>
             <top>10</top>
             <left>30</left>
@@ -539,7 +536,7 @@
             <control type="grouplist" id="9000">
                 <left>1450</left>
                 <include>DialogGLs</include>
-                 <control type="button" id="1">
+                <control type="button" id="1">
                     <enable>false</enable>
                     <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
                     <include>DialogButt</include>
@@ -624,11 +621,11 @@
                     <label>EPG</label>
                 </control>
                 <!--<control type="radiobutton" id="601" description="LiveChannel">-->
-                    <!--<include>DialogButt</include>-->
-                    <!--&lt;!&ndash;<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
-                    <!--<onclick>Container.SetViewMode(13)</onclick>-->
-                    <!--<selected>Control.IsVisible(13) + !Control.IsVisible(10)</selected>-->
-                    <!--<label>LiveChannels</label>-->
+                <!--<include>DialogButt</include>-->
+                <!--&lt;!&ndash;<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
+                <!--<onclick>Container.SetViewMode(13)</onclick>-->
+                <!--<selected>Control.IsVisible(13) + !Control.IsVisible(10)</selected>-->
+                <!--<label>LiveChannels</label>-->
                 <!--</control>-->
                 <control type="radiobutton" id="602" description="Now">
                     <visible>Window.IsActive(MyPVRGuide.xml)</visible>
@@ -646,7 +643,7 @@
                     <selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>
                     <label>Next</label>
                 </control>
-                 <control type="radiobutton" id="604" description="BIG LIST">
+                <control type="radiobutton" id="604" description="BIG LIST">
                     <visible>Window.IsActive(MyPVRChannels.xml)</visible>
                     <include>DialogButt</include>
                     <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
@@ -682,22 +679,22 @@
     </include>
     <include name="60slider">
         <control type="group">
-                <top>85</top>
-                <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
-                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
-                <control type="image">
-                    <left>1925</left>
-                    <height>910</height>
-                    <width>100</width>
-                    <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
-                </control>
-                <control type="scrollbar" id="60">
-                    <left>-37r</left>
-                    <top>30</top>
-                    <height>850</height>
-                    <onleft>50</onleft>
-                    <onright>noop</onright>
-                </control>
+            <top>85</top>
+            <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
+            <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+            <control type="image">
+                <left>1925</left>
+                <height>910</height>
+                <width>100</width>
+                <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
             </control>
+            <control type="scrollbar" id="60">
+                <left>-37r</left>
+                <top>30</top>
+                <height>850</height>
+                <onleft>50</onleft>
+                <onright>noop</onright>
+            </control>
+        </control>
     </include>
 </includes>

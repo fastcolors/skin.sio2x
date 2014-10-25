@@ -36,7 +36,7 @@
                         <include>listline</include>
                         <control type="label" description="Main Label">
                             <width>720</width>
-                            <include>52MainLabel</include>
+                            <include>SmallListMainLabel</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </itemlayout>
@@ -46,7 +46,7 @@
                         <control type="label" description="Main Label">
                             <width>720</width>
                             <textcolor>black</textcolor>
-                            <include>52MainLabel</include>
+                            <include>SmallListMainLabel</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>

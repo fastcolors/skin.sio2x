@@ -11,6 +11,11 @@
     </animation>
     <controls>
         <control type="image">
+            <width>1920</width>
+            <height>1080</height>
+            <texture colordiffuse="FF000000">images/white.png</texture>
+        </control>
+        <control type="image">
             <centerleft>960</centerleft>
             <centertop>540</centertop>
             <width>256</width>

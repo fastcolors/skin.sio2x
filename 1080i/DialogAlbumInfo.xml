@@ -1,122 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2001">
+    <!--todo FIX THIS DIALOG-->
     <defaultcontrol always="true">300</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <backgroundcolor>0xffffffff</backgroundcolor>
-    <coordinates>
-        <origin x="0" y="0" />
-    </coordinates>
+    <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <control type="group">
-            <include>BlackBackground</include>
-            <control type="group">
-                <control type="image" description="Thumb">
-                    <centerleft>480</centerleft>
-                    <top>90</top>
-                    <width>600</width>
-                    <height>600</height>
-                    <include>Icon_Fade</include>
-                    <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Icon]</texture>
-                    <aspectratio aligny="bottom">keep</aspectratio>
-                </control>
-                <control type="group" description="Songs and Music Videos">
-                    <left>120</left>
-                    <top>50</top>
-                    <control type="group">
-                        <top>765</top>
-                        <control type="label" description="Artist">
-                            <visible>IsEmpty(ListItem.Album)</visible>
-                            <top>-92</top>
-                            <font>size30</font>
-                            <textcolor>black</textcolor>
-                            <width>608</width>
-                            <height>36</height>
-                            <align>left</align>
-                            <scroll>false</scroll>
-                            <label>[B]$INFO[ListItem.Artist][/B]</label>
-                        </control>
-                        <control type="label" description="Album">
-                            <top>-92</top>
-                            <font>size30</font>
-                            <textcolor>black</textcolor>
-                            <width>608</width>
-                            <height>36</height>
-                            <align>left</align>
-                            <scroll>false</scroll>
-                            <label>[B]$INFO[ListItem.Album][/B]</label>
-                        </control>
-                        <control type="image" description="Rating">
-                            <top>-45</top>
-                            <height>27</height>
-                            <width>150</width>
-                            <colordiffuse>black</colordiffuse>
-                            <aspectratio align="left">keep</aspectratio>
-                            <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
-                        </control>
-                        <control type="image" description="Separator">
-                            <left>0</left>
-                            <height>1</height>
-                            <width>780</width>
-                            <aspectratio>stretch</aspectratio>
-                            <texture colordiffuse="black">lines/Line1.png</texture>
-                        </control>
-                        <control type="grouplist" description="Labels">
-                            <left>20</left>
-                            <top>18</top>
-                            <width>808</width>
-                            <orientation>vertical</orientation>
-                            <control type="label" description="Album">
-                                <visible>!IsEmpty(ListItem.Album)</visible>
-                                <font>size30</font>
-                                <width>750</width>
-                                <height>30</height>
-                                <scroll>false</scroll>
-                                <label>$LOCALIZE[557]:  [COLOR=black]$INFO[ListItem.Artist,, • ]$INFO[ListItem.Year][/COLOR]</label>
-                            </control>
-                            <control type="label" description="Born/Formed">
-                                <visible>IsEmpty(ListItem.Album)</visible>
-                                <font>size30</font>
-                                <width>750</width>
-                                <height>30</height>
-                                <scroll>false</scroll>
-                                <label>$LOCALIZE[21893]/$LOCALIZE[21894]:  [COLOR=black]$INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Formed)][/COLOR]</label>
-                            </control>
-                            <control type="label" description="Died/Disbanded">
-                                <visible>IsEmpty(ListItem.Album) + ![IsEmpty(ListItem.Property(Artist_Died)) + IsEmpty(ListItem.Property(Artist_Died))]</visible>
-                                <font>size30</font>
-                                <width>750</width>
-                                <height>30</height>
-                                <scroll>false</scroll>
-                                <label>$LOCALIZE[21897]/$LOCALIZE[21896]:  [COLOR=black]$INFO[ListItem.Property(Artist_Died)]$INFO[ListItem.Property(Artist_Disbanded)][/COLOR]</label>
-                            </control>
-                            <control type="label" description="Genre">
-                                <font>size30</font>
-                                <width>750</width>
-                                <height>30</height>
-                                <label>$LOCALIZE[515]:  [COLOR=black]$INFO[ListItem.Genre][/COLOR]</label>
-                            </control>
-                            <control type="label" description="RecordLabel">
-                                <visible>!IsEmpty(ListItem.Album)</visible>
-                                <font>size30</font>
-                                <width>750</width>
-                                <height>30</height>
-                                <label>$LOCALIZE[21899]:  [COLOR=black]$INFO[ListItem.Property(Album_Label)][/COLOR]</label>
-                            </control>
-                        </control>
-                    </control>
-                </control>
-                <control type="textbox" description="Plot" id="4">
-                    <left>1000</left>
-                    <top>60</top>
-                    <width>870</width>
-                    <height>900</height>
-                    <font>size27</font>
-                    <align>justify</align>
-                    <autoscroll delay="6500" time="4000" repeat="10000"></autoscroll>
-                </control>
-            </control>
+        <include>MusicInfo</include>
+        <control type="textbox" description="Plot" id="4">
+            <left>1000</left>
+            <top>100</top>
+            <width>870</width>
+            <height>900</height>
+            <font>size27</font>
+            <align>justify</align>
+            <autoscroll delay="6500" time="4000" repeat="10000"></autoscroll>
         </control>
         <control type="image">
             <top>1000</top>
@@ -127,6 +26,12 @@
         </control>
         <control type="image" description="Navbar">
             <top>1000</top>
+            <width>1920</width>
+            <height>1</height>
+            <texture colordiffuse="black">lines/Line.png</texture>
+        </control>
+        <control type="image" description="Navbar">
+            <top>100</top>
             <width>1920</width>
             <height>1</height>
             <texture colordiffuse="black">lines/Line.png</texture>
@@ -171,51 +76,81 @@
         </control>
         <control type="image" description="line">
             <left>959</left>
+            <top>101</top>
             <width>1</width>
-            <height>1000</height>
+            <height>898</height>
             <texture colordiffuse="black">lines/LineV.png</texture>
         </control>
-        <control type="group">
-            <control type="label">
-                <visible>Control.IsVisible(50) + Container.Content(Artists)</visible>
-                <include>HeadingR</include>
-                <label>21888</label>
-            </control>
-            <control type="label">
-                <visible>Control.IsVisible(50) + Container.Content(Albums)</visible>
-                <include>HeadingR</include>
-                <label>182</label>
-            </control>
-            <control type="list" id="50">
-                <left>960</left>
-                <top>111</top>
-                <width>920</width>
-                <height>890</height>
-                <onup>noop</onup>
-                <ondown>300</ondown>
-                <onleft>300</onleft>
-                <onright>300</onright>
-                <orientation>vertical</orientation>
-                <scrolltime>250</scrolltime>
-                <itemlayout width="890" height="111">
-                    <control type="label" description="Main Label">
-                        <left>45</left>
-                        <width>725</width>
-                        <include>BigListTitle</include>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                    <include>listline</include>
-                </itemlayout>
-                <focusedlayout width="890" height="111">
-                    <include>LargeSelector</include>
-                    <control type="label" description="Main Label">
-                        <left>45</left>
-                        <width>725</width>
-                        <include>BigListTitleFO</include>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                    <include>listline</include>
-                </focusedlayout>
+        <control type="label">
+            <visible>Control.IsVisible(50) + Container.Content(Artists)</visible>
+            <top>40</top>
+            <centerleft>1440</centerleft>
+            <width>880</width>
+            <font>size42B</font>
+            <scroll>false</scroll>
+            <align>center</align>
+            <aligny>center</aligny>
+            <label>21888</label>
+        </control>
+        <control type="label">
+            <visible>Control.IsVisible(50) + Container.Content(Albums)</visible>
+            <top>40</top>
+            <centerleft>1440</centerleft>
+            <width>880</width>
+            <font>size42B</font>
+            <scroll>false</scroll>
+            <align>center</align>
+            <alingy>center</alingy>
+            <label>182</label>
+        </control>
+        <control type="list" id="50">
+            <left>960</left>
+            <top>100</top>
+            <width>920</width>
+            <height>890</height>
+            <onup>noop</onup>
+            <ondown>300</ondown>
+            <onleft>300</onleft>
+            <onright>300</onright>
+            <orientation>vertical</orientation>
+            <scrolltime>250</scrolltime>
+            <itemlayout width="890" height="81">
+                <control type="label" description="Main Label">
+                    <left>45</left>
+                    <width>725</width>
+                    <include>BigListTitle</include>
+                    <label>$INFO[ListItem.label]</label>
+                </control>
+            </itemlayout>
+            <focusedlayout width="890" height="81">
+                <control type="image">
+                    <animation effect="fade" end="0" time="30">UnFocus</animation>
+                    <width>820</width>
+                    <height>81</height>
+                    <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+                </control>
+                <control type="label" description="Main Label">
+                    <left>45</left>
+                    <width>725</width>
+                    <include>BigListTitleFO</include>
+                    <label>$INFO[ListItem.label]</label>
+                </control>
+            </focusedlayout>
+        </control>
+        <control type="grouplist" description="centered">
+            <top>30</top>
+            <centerleft>960</centerleft>
+            <width>580</width>
+            <align>center</align>
+            <height>60</height>
+            <align>center</align>
+            <orientation>horizontal</orientation>
+            <control type="label" id="7777" description="Heading">
+                <width>auto</width>
+                <height>40</height>
+                <font>size42B</font>
+                <scroll>false</scroll>
+                <label>$VAR[RootLabel]</label>
             </control>
         </control>
     </controls>

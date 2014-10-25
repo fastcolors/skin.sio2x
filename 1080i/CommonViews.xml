@@ -221,80 +221,7 @@
             </control>
         </control>
     </include>
-    <include name="left_Panel_music">
-        <control type="group" description="Thumbs info">
-            <visible>![Container.Content(Songs)]</visible>
-            <visible>[!IsEmpty(ListItem.Property(Album_Description)) + Container.Content(Albums)] | [!IsEmpty(ListItem.Property(Artist_Description)) + Container.Content(artists)]</visible>
-            <animation effect="fade" time="400">Visible</animation>
-            <animation effect="fade" time="0">Hidden</animation>
-            <control type="image" description="Fanart">
-                <visible>Container.Content(artists)</visible>
-                <centerleft>480</centerleft>
-                <centertop>280</centertop>
-                <width>800</width>
-                <height>430</height>
-                <include>Icon_Fade</include>
-                <bordertexture colordiffuse="black">images/white.png</bordertexture>
-                <bordersize>2</bordersize>
-                <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
-                <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image" description="AlbumCover">
-                <visible>Container.Content(Albums)</visible>
-                <centerleft>480</centerleft>
-                <centertop>280</centertop>
-                <width>430</width>
-                <height>430</height>
-                <include>Icon_Fade</include>
-                <bordertexture colordiffuse="black">images/white.png</bordertexture>
-                <bordersize>2</bordersize>
-                <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
-                <aspectratio>keep</aspectratio>
-            </control>
-            <control type="textbox">
-                <centerleft>480</centerleft>
-                <top>540</top>
-                <width>800</width>
-                <height>480</height>
-                <align>justify</align>
-                <font>size26B</font>
-                <autoscroll delay="6000" time="5000" repeat="10000"></autoscroll>
-                <label>$VAR[Plots]</label>
-            </control>
-            <control type="image">
-                <centerleft>480</centerleft>
-                <top>539</top>
-                <width>880</width>
-                <height>1</height>
-                <texture colordiffuse="black">lines/Line1.png</texture>
-            </control>
-            <control type="image">
-                <centerleft>480</centerleft>
-                <top>1020</top>
-                <width>880</width>
-                <height>1</height>
-                <texture colordiffuse="black">lines/Line1.png</texture>
-            </control>
-        </control>
-        <control type="group" description="Thumbs no info">
-            <visible>IsEmpty(ListItem.Property(Artist_Description))</visible>
-            <visible>IsEmpty(ListItem.Property(Album_Description))</visible>
-            <animation effect="fade" delay="100" time="300">Visible</animation>
-            <animation effect="fade" time="0">Hidden</animation>
-            <control type="image" description="Thumb">
-                <animation effect="slide" end="0,-130" condition="Container.content(Songs)">Conditional</animation>
-                <centerleft>480</centerleft>
-                <centertop>540</centertop>
-                <width>660</width>
-                <height>660</height>
-                <include>Icon_Fade</include>
-                <!--<bordertexture colordiffuse="black">images/white.png</bordertexture>-->
-                <!--<bordersize>2</bordersize>-->
-                <texture background="true">$INFO[ListItem.Icon]</texture>
-                <aspectratio aligny="center">keep</aspectratio>
-            </control>
-        </control>
-    </include>
+
     <include name="SlimListItemCount">
         <animation effect="slide" start="0,0" end="0,-405" time="0" condition="StringCompare(Container.NumItems,1)">conditional</animation>
         <animation effect="slide" start="0,0" end="0,-324" time="0" condition="StringCompare(Container.NumItems,2)">conditional</animation>
@@ -337,78 +264,109 @@
         <textcolor>Yellow</textcolor>
     </include>
     <include name="MusicInfo">
-        <control type="group" description="Songs and Music Videos">
-            <visible>!ListItem.IsFolder</visible>
-            <control type="group">
-                <top>790</top>
-                <control type="label" description="Title">
-                    <centerleft>480</centerleft>
-                    <font>size30</font>
-                    <textcolor>black</textcolor>
-                    <width>880</width>
-                    <height>36</height>
-                    <align>left</align>
+        <control type="image" description="Thumb">
+            <centerleft>480</centerleft>
+            <centertop>450</centertop>
+            <width>600</width>
+            <height>600</height>
+            <include>Icon_Fade</include>
+            <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Icon]</texture>
+            <aspectratio aligny="bottom">keep</aspectratio>
+        </control>
+        <control type="group">
+            <visible>!StringCompare(ListItem.Label,..)</visible>
+            <left>120</left>
+            <top>770</top>
+            <control type="label" description="Artist">
+                <visible>!IsEmpty(ListItem.Artist) + IsEmpty(ListItem.Album)</visible>
+                <font>size36</font>
+                <width>720</width>
+                <height>36</height>
+                <align>center</align>
+                <scroll>false</scroll>
+                <textcolor>Yellow</textcolor>
+                <label>[B]$INFO[ListItem.Artist][/B]</label>
+            </control>
+            <control type="label" description="Album">
+                <visible>!IsEmpty(ListItem.Album)</visible>
+                <font>size36</font>
+                <width>720</width>
+                <height>36</height>
+                <align>center</align>
+                <scroll>false</scroll>
+                <textcolor>Yellow</textcolor>
+                <label>[B]$INFO[ListItem.Album] $INFO[ListItem.Year,(,)][/B]</label>
+            </control>
+            <control type="image" description="Rating">
+                <top>40</top>
+                <height>27</height>
+                <width>150</width>
+                <colordiffuse>black</colordiffuse>
+                <aspectratio align="left">keep</aspectratio>
+                <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
+            </control>
+            <control type="image" description="Separator">
+                <top>82</top>
+                <height>1</height>
+                <width>780</width>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="black">lines/Line1.png</texture>
+            </control>
+            <control type="grouplist" description="Labels">
+                <top>90</top>
+                <width>808</width>
+                <orientation>vertical</orientation>
+                <control type="label" description="Album">
+                    <visible>!IsEmpty(ListItem.Album)</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
                     <scroll>false</scroll>
-                    <label>[B]$INFO[ListItem.Title][/B]</label>
+                    <label>$LOCALIZE[557]: $INFO[ListItem.Artist]</label>
                 </control>
-                <control type="image" description="Rating">
-                    <left>40</left>
-                    <top>45</top>
-                    <height>27</height>
-                    <width>150</width>
-                    <colordiffuse>black</colordiffuse>
-                    <aspectratio align="left">keep</aspectratio>
-                    <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
+                <control type="label" description="Born/Formed">
+                    <visible>IsEmpty(ListItem.Album) + [!IsEmpty(ListItem.Property(Artist_Born)) | !IsEmpty(ListItem.Property(Artist_Formed))]</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
+                    <scroll>false</scroll>
+                    <label>$LOCALIZE[21893]/$LOCALIZE[21894]: $INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Formed)]</label>
                 </control>
-                <control type="image" description="Separator">
-                    <top>90</top>
-                    <centerleft>480</centerleft>
-                    <height>1</height>
-                    <width>880</width>
-                    <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="black">lines/Line1.png</texture>
+                <control type="label" description="Died/Disbanded">
+                    <visible>IsEmpty(ListItem.Album) + ![IsEmpty(ListItem.Property(Artist_Died)) + IsEmpty(ListItem.Property(Artist_Died))]</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
+                    <scroll>false</scroll>
+                    <label>$LOCALIZE[21897]/$LOCALIZE[21896]: $INFO[ListItem.Property(Artist_Died)]$INFO[ListItem.Property(Artist_Disbanded)]</label>
                 </control>
-                <control type="grouplist" description="Labels">
-                    <centerleft>480</centerleft>
-                    <top>110</top>
-                    <width>880</width>
-                    <orientation>vertical</orientation>
-                    <control type="label" description="Album">
-                        <font>size30</font>
-                        <width>880</width>
-                        <height>30</height>
-                        <scroll>false</scroll>
-                        <label>$LOCALIZE[558]:  [COLOR=black]$INFO[ListItem.Album][/COLOR]</label>
-                    </control>
-                    <control type="label" description="Genre">
-                        <font>size30</font>
-                        <width>880</width>
-                        <height>30</height>
-                        <label>$LOCALIZE[515]:  [COLOR=black]$INFO[ListItem.Genre][/COLOR]</label>
-                    </control>
-                    <control type="label" description="Type">
-                        <font>size30</font>
-                        <width>880</width>
-                        <height>30</height>
-                        <label>$LOCALIZE[564]:  [COLOR=black][UPPERCASE]$INFO[ListItem.FileExtension][/UPPERCASE][/COLOR]</label>
-                    </control>
-                    <control type="label" description="Duration">
-                        <font>size30</font>
-                        <width>880</width>
-                        <height>30</height>
-                        <label>$LOCALIZE[180]:  [COLOR=black]$INFO[ListItem.Duration][/COLOR]</label>
-                    </control>
+                <control type="label" description="Genre">
+                    <visible>!IsEmpty[ListItem.Genre]</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
+                    <label>$LOCALIZE[515]:  $INFO[ListItem.Genre]</label>
+                </control>
+                <control type="label" description="RecordLabel">
+                    <visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
+                    <label>$LOCALIZE[21899]: $INFO[ListItem.Property(Album_Label)]</label>
                 </control>
             </control>
         </control>
     </include>
-    <include name="MusicRating">
-        <height>24</height>
-        <width>135</width>
-        <aspectratio align="right">keep</aspectratio>
-        <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
-    </include>
-    <include name="52MainLabel">
+
+    <!--todo can this be removed?-->
+    <!--<include name="MusicRating">-->
+    <!--<height>24</height>-->
+    <!--<width>135</width>-->
+    <!--<aspectratio align="right">keep</aspectratio>-->
+    <!--<texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>-->
+    <!--</include>-->
+
+    <include name="SmallListMainLabel">
         <left>45</left>
         <height>80</height>
         <width>630</width>
@@ -418,23 +376,7 @@
         <textcolor>White</textcolor>
         <shadowcolor>-</shadowcolor>
     </include>
-    <include name="52Label2">
-        <left>42r</left>
-        <height>81</height>
-        <width>120</width>
-        <font>size27</font>
-        <scroll>false</scroll>
-        <align>right</align>
-    </include>
-    <include name="52Label2FO">
-        <left>42r</left>
-        <height>81</height>
-        <width>120</width>
-        <font>size27</font>
-        <scroll>false</scroll>
-        <textcolor>black</textcolor>
-        <align>right</align>
-    </include>
+
     <include name="BigListTitle">
         <left>128</left>
         <top>12</top>
@@ -445,6 +387,7 @@
         <scroll>false</scroll>
         <textcolor>gray</textcolor>
     </include>
+
     <include name="BigListTitleFO">
         <left>128</left>
         <top>12</top>
@@ -455,6 +398,7 @@
         <scroll>true</scroll>
         <textcolor>black</textcolor>
     </include>
+
     <include name="BigListDetails">
         <left>128</left>
         <top>63</top>
@@ -463,6 +407,7 @@
         <font>size27</font>
         <scroll>false</scroll>
     </include>
+
     <include name="Watched_Marks">
         <control type="image">
             <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
@@ -472,6 +417,7 @@
             <aspectratio>keep</aspectratio>
         </control>
     </include>
+
     <include name="Watched_MarksLW">
         <control type="image">
             <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
@@ -482,6 +428,7 @@
             <aspectratio>keep</aspectratio>
         </control>
     </include>
+
     <include name="HD_Badge">
         <control type="image">
             <animation effect="slide" end="0,14" condition="!ListItem.IsStereoscopic">Conditional</animation>
@@ -503,6 +450,7 @@
             <texture>badges/3d.png</texture>
         </control>
     </include>
+
     <include name="HD_Badge_LL">
         <control type="image">
             <animation effect="slide" end="0,14" condition="!ListItem.IsStereoscopic">Conditional</animation>
@@ -534,6 +482,7 @@
             <texture>badges/sets.png</texture>
         </control>
     </include>
+
     <include name="Unwatched">
         <control type="group">
             <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
@@ -560,6 +509,7 @@
             </control>
         </control>
     </include>
+
     <include name="Sets">
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
@@ -571,6 +521,7 @@
             <texture>badges/sets.png</texture>
         </control>
     </include>
+
     <include name="SetsFO">
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
@@ -582,6 +533,7 @@
             <texture>badges/setsFO.png</texture>
         </control>
     </include>
+
     <include name="SetsLW">
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
@@ -593,6 +545,7 @@
             <texture>badges/sets.png</texture>
         </control>
     </include>
+
     <include name="SetsFOLW">
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
@@ -604,6 +557,7 @@
             <texture>badges/setsFO.png</texture>
         </control>
     </include>
+
     <include name="LargeListAddonsLayout">
         <itemlayout condition="container.content(addons)" width="802" height="111">
             <control type="group">
@@ -659,6 +613,7 @@
             </control>
         </focusedlayout>
     </include>
+
     <include name="LargeListLayout">
         <itemlayout width="890" height="111">
             <include>Watched_MarksLW</include>
@@ -829,6 +784,7 @@
             </control>
         </control>
     </include>
+
     <include name="SettingsSubmenuButtons">
         <width>1400</width>
         <textoffsetx>22</textoffsetx>
@@ -837,12 +793,14 @@
         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
         <disabledcolor>Disabled</disabledcolor>
     </include>
+
     <include name="Help_Panel">
         <centerleft>480</centerleft>
         <width>540</width>
         <height>420</height>
         <aspectratio align="center">keep</aspectratio>
     </include>
+
     <include name="CustomizerList">
         <include>ShelfFade</include>
         <onup>303</onup>
@@ -934,6 +892,7 @@
             </control>
         </focusedlayout>
     </include>
+
     <include name="Left_Panel_Addons">
         <control type="group" description="Stage">
             <visible>IsEmpty(Container.FolderPath)</visible>
@@ -1085,9 +1044,8 @@
     <include name="Linemiddle">
         <control type="image">
             <left>959</left>
-            <top>-300</top>
             <width>1</width>
-            <height>1680</height>
+            <height>1080</height>
             <texture colordiffuse="black">lines/LineV.png</texture>
         </control>
     </include>

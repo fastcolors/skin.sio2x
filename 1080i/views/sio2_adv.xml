@@ -566,7 +566,7 @@
             </control>
             <!--SLIDERPANEL-->
             <control type="group">
-                <visible>!Skin.HasSetting(nakedx) | StringCompare(ListItem.Label,..)</visible>
+                <visible>!Skin.HasSetting(naked) | StringCompare(ListItem.Label,..)</visible>
                 <control type="image">
                     <!--<visible>Container(54).OnNext | Container(54).OnPrevious | [IsEmpty(ListItem.Plot) + [IsEmpty(ListItem.Property(Addon.Description))] + IsEmpty(ListItem.Art(fanart))]</visible>-->
                     <visible>Container(54).OnNext | Container(54).OnPrevious | [IsEmpty(ListItem.Plot) + !SubString(ListItem.path,videodb://movies/sets/) + IsEmpty(ListItem.Art(fanart))]</visible>
