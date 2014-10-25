@@ -194,7 +194,7 @@
                             <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
                         </control>
                         <control type="textbox">
-                            <visible>![Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !StringCompare(ListItem.Label,..)</visible>
+                           <visible>![Container.Content(musicvideos) | Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !StringCompare(ListItem.Label,..)</visible>
                             <width>225</width>
                             <height>100</height>
                             <font>Size28</font>
@@ -256,7 +256,7 @@
                                     <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
                                 </control>
                                 <control type="textbox">
-                                    <visible>![Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !StringCompare(ListItem.Label,..)</visible>
+                                    <visible>![Container.Content(musicvideos) | Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !StringCompare(ListItem.Label,..)</visible>
                                     <width>225</width>
                                     <height>100</height>
                                     <font>Size28</font>
