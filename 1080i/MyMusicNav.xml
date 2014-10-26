@@ -65,11 +65,21 @@
                     <label>$LOCALIZE[589]: $LOCALIZE[1223]</label>
                     <altlabel>$LOCALIZE[589]: $LOCALIZE[305]</altlabel>
                 </control>
+                <control type="togglebutton" id="697" description="Album/Artist">
+                    <visible>Container.Content(Albums) | Container.Content(Artists)</visible>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>$LOCALIZE[1024] $LOCALIZE[132]</label>
+                    <onclick>ReplaceWindow(502,Albums)</onclick>
+                    <altlabel>$LOCALIZE[1024] $LOCALIZE[133]</altlabel>
+                    <altclick>ReplaceWindow(502,Artists)</altclick>
+                    <usealttexture>Container.Content(Albums)</usealttexture>
+                </control>
                 <control type="button" id="698" description="Files">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <include>DialogButt</include>
                     <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
-                    <onclick>ActivateWindow(MusicFiles,root)</onclick>
+                    <onclick>ReplaceWindow(MusicFiles,root)</onclick>
                 </control>
                 <control type="togglebutton" id="699" description="Playing">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>

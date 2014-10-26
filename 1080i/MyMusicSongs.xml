@@ -7,14 +7,18 @@
     <!--
   52 Sio2
   50 Big List
-  missing 50 List
   53 Icons
   500 Fanart
   -->
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <include>Musicviews</include>
+         <!--views-->
+        <include>listmusic</include>
+        <include>sio2music</include>
+        <include>iconmusic</include>
+        <include>fanartmusic</include>
+        <!--/views-->
         <include>WindowsTopInfos</include>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
