@@ -127,7 +127,7 @@
                 <!--todo label-->
                  <control type="radiobutton" id="18">
                     <height>settingsheight</height>
-                    <label>Hide SiO2 - SiO2-x Views sliding Panel</label>
+                    <label>31069</label>
                     <width>960</width>
                     <align>left</align>
                     <selected>Skin.hasSetting(naked)</selected>
@@ -271,6 +271,13 @@
                     <shadowcolor>-</shadowcolor>
                     <label>$NUMBER[222]</label>
                 </control>
+            </control>
+            <control type="image" description="3d">
+                <visible>Controlgroup(575).HasFocus(18)</visible>
+                <include>Help_Panel</include>
+                <texture>help/sioslider.jpg</texture>
+                <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                <bordersize>4</bordersize>
             </control>
         </control>
         <control type="image" description="Line">

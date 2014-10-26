@@ -127,6 +127,7 @@
         <value condition="Controlgroup(575).HasFocus(15)">$LOCALIZE[31089]</value>
         <value condition="Controlgroup(575).HasFocus(16)">$LOCALIZE[31066]</value>
         <value condition="Controlgroup(575).HasFocus(17)">$LOCALIZE[31065]</value>
+        <value condition="Controlgroup(575).HasFocus(18)">$LOCALIZE[31070]</value>
     </variable>
 
     <variable name="settingsmain">
