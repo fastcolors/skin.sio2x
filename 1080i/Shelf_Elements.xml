@@ -171,7 +171,7 @@
     </include>
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
-        <top>65</top>
+        <top>55</top>
         <width>1920</width>
         <height>450</height>
         <onup>9009</onup>
@@ -459,7 +459,7 @@
     </include>
     <include name="tvshelslider">
         <control type="image">
-            <visible>Control.HasFocus(312) | Control.HasFocus(222)</visible>
+            <visible>Control.HasFocus(312)</visible>
             <left>190</left>
             <top>489</top>
             <width>100</width>
@@ -467,19 +467,13 @@
             <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
             <aspectratio>stretch</aspectratio>
             <animation effect="fade" time="220">VisibleChange</animation>
-            <animation condition="Container(312).Position(0) | Container(222).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
             <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="480,0" time="220" easing="inout" reversible="true">Conditional</animation>
             <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="960,0" time="220" easing="inout" reversible="true">Conditional</animation>
             <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1440,0" time="220" easing="inout" reversible="true">Conditional</animation>
         </control>
     </include>
     <include name="Movies">
-        <control type="label" description="Top Label">
-            <visible>Control.IsVisible(311)</visible>
-            <include>ShelfFade</include>
-            <include>ShelfTitle</include>
-            <label> $VAR[shelflabel] </label>
-        </control>
         <control type="panel" id="311" description="Movies Shelf Shortcuts">
             <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Container(9000).HasFocus(357) | Control.HasFocus(311) | [Container(9000).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.List))] | [Container(9000).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.List))] | [Container(9000).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.List))] | [Container(9000).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.List))] | [Container(9000).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.List))] | [Container(9000).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.List))] | [Container(9000).HasFocus(607) + !IsEmpty(Skin.String(HomeFav.7.List))] | [Container(9000).HasFocus(608) + !IsEmpty(Skin.String(HomeFav.8.List))]]</visible>
             <onup condition="IsEmpty(Container(311).ListItem.Trailer)">9009</onup>
@@ -493,50 +487,10 @@
         <include>movshelslider</include>
     </include>
     <include name="TV">
-        <control type="label" description="Top Label">
-            <animation effect="slide" end="480,0" time="400" condition="!Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
-            <visible>Control.IsVisible(312)</visible>
-            <include>ShelfFade</include>
-            <include>ShelfTitle</include>
-            <label> $VAR[shelflabel] </label>
-        </control>
-        <control type="label" description="Inverted">
-            <animation effect="slide" end="-480,0" time="400" condition="Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)">Conditional</animation>
-            <visible>Control.IsVisible(312) + !Skin.HasSetting(intruderTV)</visible>
-            <include>ShelfFade</include>
-            <include>ShelfTitle</include>
-            <label> $VAR[shelfinverted] </label>
-        </control>
-        <control type="panel" id="222" description="TOP Shortcuts">
-            <visible>!Skin.HasSetting(IntruderTV) + Container(9000).HasFocus(341) + !Skin.HasSetting(TVShelf_Watchlist)</visible>
-            <animation effect="slide" condition="Control.HasFocus(312)" end="-480,0" time="400" reversible="true">Conditional</animation>
-            <onup>9009</onup>
-            <ondown>9000</ondown>
-            <onleft>noop</onleft>
-            <onright>SetFocus(312,0)</onright>
-            <width>480</width>
-            <onleft>ActivateWindow(1116)</onleft>
-            <include>EpisodeShortcutsCommons</include>
-            <content target="video" limit="1">videodb://recentlyaddedepisodes/</content>
-        </control>
-        <control type="panel" id="222" description="TOP Shortcuts">
-            <visible>!Skin.HasSetting(IntruderTV) + Container(9000).HasFocus(341) + Skin.HasSetting(TVShelf_Watchlist)</visible>
-            <animation effect="slide" condition="Control.HasFocus(312)" end="-480,0" time="400" reversible="true">Conditional</animation>
-            <onup>9009</onup>
-            <ondown>9000</ondown>
-            <onleft>noop</onleft>
-            <onright>SetFocus(312,0)</onright>
-            <width>480</width>
-            <onleft>ActivateWindow(1116)</onleft>
-            <include>EpisodeShortcutsCommons</include>
-            <content target="video" limit="1">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]</content>
-        </control>
-        <control type="panel" id="312" description="TOP Shortcuts">
+         <control type="panel" id="312" description="TOP Shortcuts">
             <visible>Container(9000).HasFocus(341)</visible>
-            <animation effect="slide" condition="!Control.HasFocus(312) + !Skin.HasSetting(IntruderTV)" end="480,0" time="400" reversible="true">Conditional</animation>
             <onup>9010</onup>
             <ondown>9000</ondown>
-            <onleft>222</onleft>
             <onright>noop</onright>
             <onleft>ActivateWindow(1116)</onleft>
             <onright>ActivateWindow(1116)</onright>
@@ -547,12 +501,6 @@
     </include>
     <include name="TV_NA">
         <control type="group">
-            <control type="label" description="Top Label">
-                <visible>Control.IsVisible(311) + Container(9000).HasFocus(358)</visible>
-                <include>ShelfFade</include>
-                <include>ShelfTitle</include>
-                <label> $VAR[shelflabel] </label>
-            </control>
             <control type="panel" id="311" description="TOP Shortcuts">
                 <visible>Container(9000).HasFocus(358)</visible>
                 <onup>noop</onup>
@@ -657,17 +605,7 @@
         </control>
     </include>
     <include name="Music">
-        <control type="label" description="Top Label MUSIC">
-            <visible>Control.IsVisible(313)</visible>
-            <include>ShelfTitle</include>
-            <include>ShelfFade</include>
-            <label>$VAR[musicshelftitle]</label>
-        </control>
         <control type="group">
-            <!--<animation condition="StringCompare(Container(313).NumItems,1)" effect="slide" end="768">Conditional</animation>-->
-            <!--<animation condition="StringCompare(Container(313).NumItems,2)" effect="slide" end="576">Conditional</animation>-->
-            <!--<animation condition="StringCompare(Container(313).NumItems,3)" effect="slide" end="384">Conditional</animation>-->
-            <!--<animation condition="StringCompare(Container(313).NumItems,4)" effect="slide" end="192">Conditional</animation&ndash;&gt;-->
             <control type="panel" id="313" description="TOP Shortcuts">
                 <visible>Library.HasContent(Music) | Skin.HasSetting(MusicShelf_Custom)</visible>
                 <visible>[Container(9000).HasFocus(342) | Control.HasFocus(313)] + !StringCompare(Skin.String(musicshelf),mushoff)</visible>
@@ -692,12 +630,6 @@
         </control>
     </include>
     <include name="Addons_Auto">
-        <control type="label" description="Top Label Addons">
-            <visible>Control.IsVisible(315)</visible>
-            <include>ShelfTitle</include>
-            <include>ShelfFade</include>
-            <label>$VAR[addonsshelftitle]</label>
-        </control>
         <control type="group">
             <control type="panel" id="315" description="TOP Shortcuts">
                 <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + !StringCompare(Skin.String(addonsshelf),1)</visible>
@@ -727,12 +659,6 @@
         </control>
     </include>
     <include name="Addons_Shortcuts">
-        <control type="label" description="Top Label">
-            <visible>Control.IsVisible(315)</visible>
-            <include>ShelfTitle</include>
-            <include>ShelfFade</include>
-            <label> $LOCALIZE[111]</label>
-        </control>
         <control type="group">
             <control type="panel" id="315" description="TOP Shortcuts">
                 <visible>Container(9000).HasFocus(343) | Control.HasFocus(315)</visible>
@@ -1043,12 +969,6 @@
         </control>
     </include>
     <include name="Pictures_Shortcuts">
-        <control type="label" description="Top Label">
-            <visible>Control.IsVisible(314)</visible>
-            <include>ShelfTitle</include>
-            <include>ShelfFade</include>
-            <label> $LOCALIZE[111]</label>
-        </control>
         <control type="group"><control type="panel" id="314" description="TOP Shortcuts">
             <visible>Container(9000).HasFocus(344) | Control.HasFocus(314)</visible>
             <onup>noop</onup>

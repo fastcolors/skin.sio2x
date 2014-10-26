@@ -92,7 +92,6 @@
             <control type="group">
                 <left>960</left>
                 <top>81</top>
-                <include>LargeListItemCount</include>
                 <control type="list" id="6">
                     <width>920</width>
                     <height>888</height>
@@ -107,7 +106,6 @@
                     <preloaditems>4</preloaditems>
                     <itemlayout width="890" height="111">
                         <control type="group">
-                            <!--<animation condition="IsEmpty(ListItem.Label2)" effect="slide" end="0,18" time="0" reversible="true">Conditional</animation>-->
                             <control type="label" description="Main Label">
                                 <left>45</left>
                                 <width>725</width>
@@ -116,7 +114,7 @@
                             </control>
                         </control>
                         <control type="label" description="Label2">
-                            <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
+                            <!--<visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>-->
                             <left>45</left>
                             <include>BigListDetails</include>
                             <label>$INFO[ListItem.label2]</label>
@@ -125,7 +123,6 @@
                     <focusedlayout width="890" height="111">
                         <include>LargeSelector</include>
                         <control type="group">
-                            <!--<animation condition="IsEmpty(ListItem.Label2)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>-->
                             <control type="label" description="Main Label">
                                 <left>45</left>
                                 <width>725</width>
@@ -134,7 +131,7 @@
                             </control>
                         </control>
                         <control type="label" description="Label2">
-                            <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
+                            <!--<visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>-->
                             <left>45</left>
                             <width>630</width>
                             <include>BigListDetails</include>
@@ -174,7 +171,7 @@
                 <top>990</top>
                 <width>48</width>
                 <height>81</height>
-                <texture>images/loop.png</texture>
+                <texture colordiffuse="black">images/loop.png</texture>
                 <aspectratio>keep</aspectratio>
             </control>
         </control>

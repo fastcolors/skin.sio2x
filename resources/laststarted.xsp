@@ -3,6 +3,6 @@
     <name>laststarted</name>
     <match>all</match>
     <rule field="inprogress" operator="true" />
-    <limit>25</limit>
+    <limit>24</limit>
     <order direction="descending">lastplayed</order>
 </smartplaylist>

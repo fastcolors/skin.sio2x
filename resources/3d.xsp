@@ -2,6 +2,7 @@
 <smartplaylist type="movies">
     <name>3D</name>
     <match>all</match>
+    <limit>24</limit>
     <rule field="filename" operator="contains">
         <value>3D</value>
     </rule>

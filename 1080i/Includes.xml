@@ -35,6 +35,7 @@
             </control>
             <control type="image" description="Default BG">
                 <visible>!Window.IsActive(Home.xml) + IsEmpty(ListItem.Art(fanart))</visible>
+                <visible>![Container.Content(episodes) | Container.Content(seasons)]</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
@@ -43,7 +44,7 @@
                 <colordiffuse>AFFFFFFF</colordiffuse>
             </control>
             <control type="image" description="Default BG">
-                <visible>!Window.IsActive(Home.xml) + !IsEmpty(ListItem.Art(fanart))</visible>
+                <visible>![Window.IsActive(Home.xml) | !IsEmpty(ListItem.Art(fanart))] | Container.Content(episodes) | Container.Content(seasons)</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
