@@ -259,7 +259,7 @@
 
     <variable name="shelfTV">
         <value condition="Skin.HasSetting(TVShelf_Watchlist)">videodb://recentlyaddedepisodes/</value>
-        <value>plugin://service.library.data.provider?type=recommendedepisodes&limit=16&reload=$INFO[Window.Property(recommendedepisodes)]</value>
+        <value>plugin://service.sio2x.tvshelf</value>
     </variable>
 
     <variable name="musicshelfcontent">
