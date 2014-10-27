@@ -67,7 +67,7 @@
                         </control>
                         <control type="label" description="Label2">
                             <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                            <centerleft>60</centerleft>
+                            <left>60</left>
                             <top>60</top>
                             <height>42</height>
                             <width>150</width>
@@ -144,7 +144,7 @@
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                                <centerleft>60</centerleft>
+                                <left>60</left>
                                 <top>60</top>
                                 <height>42</height>
                                 <width>150</width>
