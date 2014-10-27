@@ -199,7 +199,6 @@
             <left>120</left>
             <animation effect="fade" time="400">Visible</animation>
             <animation effect="fade" time="0">Hidden</animation>
-            <include>Unwatched</include>
             <control type="image">
                 <top>550</top>
                 <width>756</width>
@@ -483,33 +482,6 @@
         </control>
     </include>
 
-    <include name="Unwatched">
-        <control type="group">
-            <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-            <animation effect="fade" time="160" delay="300">Visible</animation>
-            <animation effect="fade" end="0">Hidden</animation>
-            <control type="image">
-                <top>480</top>
-                <left>140</left>
-                <height>55</height>
-                <width>80</width>
-                <aspectratio>keep</aspectratio>
-                <texture>badges/Badgecount.png</texture>
-            </control>
-            <control type="label" description="Label2">
-                <top>480</top>
-                <left>140</left>
-                <height>44</height>
-                <width>80</width>
-                <font>size30</font>
-                <align>center</align>
-                <textcolor>FFFFFFFF</textcolor>
-                <shadowcolor>-</shadowcolor>
-                <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
-            </control>
-        </control>
-    </include>
-
     <include name="Sets">
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
@@ -705,16 +677,16 @@
     </include>
     <include name="DialogGLs">
         <centerleft>960</centerleft>
-        <top>8</top>
+        <centertop>540</centertop>
         <width>470</width>
-        <height>1064</height>
+        <height>1040</height>
         <itemgap>3</itemgap>
         <onleft>50</onleft>
         <onright>50</onright>
-        <onup>9000</onup>
-        <ondown>9000</ondown>
+        <onup>noop</onup>
+        <ondown>noop</ondown>
         <align>center</align>
-        <scrolltime>200</scrolltime>
+        <!--<scrolltime>200</scrolltime>-->
     </include>
     <include name="DialogButt">
         <width>470</width>

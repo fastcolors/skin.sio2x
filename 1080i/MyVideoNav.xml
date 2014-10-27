@@ -45,7 +45,7 @@
             <control type="grouplist" id="9000">
                 <left>1450</left>
                 <include>DialogGLs</include>
-                <control type="button" id="607">
+                <control type="button" id="0">
                     <enable>false</enable>
                     <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
                     <include>DialogButt</include>
@@ -151,7 +151,7 @@
                 <!--todo label ?-->
                 <control type="radiobutton" id="602" description="sio2x">
                     <include>DialogButt</include>
-                    <visible>Container.Content(movies)</visible>
+                    <enable>Container.Content(movies)</enable>
                     <onclick>Container.SetViewMode(54)</onclick>
                     <onclick condition="!Skin.HasSetting(splashoff)">ActivateWindow(1113)</onclick>
                     <!--<onclick>ActivateWindow(1113)</onclick>-->
@@ -181,7 +181,7 @@
                     <label>$LOCALIZE[536]</label>
                 </control>
                 <control type="radiobutton" id="607" description="Fanart">
-                    <visible>Container.Content(musicvideos) | Container.content(movies) | container.content(seasons) | container.content(tvshows)</visible>
+                    <enable>Container.Content(musicvideos) | Container.content(movies) | container.content(seasons) | container.content(tvshows)</enable>
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(500)</onclick>
                     <selected>Control.IsVisible(500)</selected>

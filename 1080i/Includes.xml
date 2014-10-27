@@ -4,6 +4,7 @@
     <include file="Includes_Variables.xml" />
     <include file="Defaults.xml" />
     <include file="CommonViews.xml" />
+    <include file="musicpage.xml" />
     <!--VIDEOVIEWS-->
     <include file="views/video_fatlist.xml" />
     <include file="views/video_plainlist.xml" />
