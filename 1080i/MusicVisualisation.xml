@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2006">
+    <!--todo end time out of box-->
     <defaultcontrol always="true">-</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
@@ -13,12 +14,10 @@
                 <height>1080</height>
             </control>
             <control type="progress" id="23" description="Progress Bar">
-
                 <left>84</left>
                 <top>-750</top>
                 <width>747</width>
                 <info>Player.Progress</info>
-
             </control>
             <control type="multiimage" description="Slideshow">
                 <visible>Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>

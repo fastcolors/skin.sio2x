@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="fatlist">
+        <!--todo label fix it's too left overlaps on blue dot-->
 <control type="group" description="BigList">
             <visible>Control.IsVisible(50)</visible>
             <include>left_Panel</include>
