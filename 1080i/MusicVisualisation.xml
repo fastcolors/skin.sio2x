@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2006">
-    <!--todo end time out of box-->
     <defaultcontrol always="true">-</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
@@ -156,8 +155,6 @@
                         <control type="group">
                             <top>756</top>
                             <control type="label">
-                                <left>0</left>
-                                <top>0</top>
                                 <height>30</height>
                                 <width>123</width>
                                 <align>left</align>
@@ -176,11 +173,9 @@
                                 <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
                                 <overlaytexture>-</overlaytexture>
                                 <info>Player.Progress</info>
-
                             </control>
                             <control type="label">
-                                <left>930</left>
-                                <top>0</top>
+                                <right>250</right>
                                 <height>30</height>
                                 <width>123</width>
                                 <align>right</align>
@@ -324,10 +319,9 @@
                             <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
                             <overlaytexture>-</overlaytexture>
                             <info>Player.Progress</info>
-
                         </control>
                         <control type="label">
-                            <left>1166</left>
+                            <right>750</right>
                             <top>0</top>
                             <height>30</height>
                             <width>123</width>
