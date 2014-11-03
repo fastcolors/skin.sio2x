@@ -177,10 +177,9 @@
                                 <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
                                 <overlaytexture>-</overlaytexture>
                                 <info>Player.Progress</info>
-
                             </control>
                             <control type="label">
-                                <left>930</left>
+                                 <right>250</right>
                                 <top>0</top>
                                 <height>30</height>
                                 <width>123</width>
@@ -328,10 +327,10 @@
 
                         </control>
                         <control type="label">
-                            <left>1166</left>
+                            <right>750</right>
                             <top>0</top>
                             <height>30</height>
-                            <width>123</width>
+                            <width>143</width>
                             <align>right</align>
                             <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
                             <font>size26</font>

@@ -1309,7 +1309,7 @@
             <visible>[Container(9000).HasFocus(345)]</visible>
             <include>ShelfFade</include>
             <control type="label">
-                <left>83</left>
+                <centerleft>960</centerleft>
                 <top>10</top>
                 <width>1754</width>
                 <height>40</height>
@@ -1344,7 +1344,7 @@
                 <height>418</height>
                 <itemlayout width="250">
                     <control type="label">
-                        <centerleft>125</centerleft>
+                        <left>125</left>
                         <top>160</top>
                         <height>45</height>
                         <width>250</width>
@@ -1354,7 +1354,7 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label" description="temps">
-                        <centerleft>125</centerleft>
+                        <left>125</left>
                         <top>200</top>
                         <height>100</height>
                         <width>250</width>
@@ -1373,7 +1373,7 @@
                 </itemlayout>
                 <focusedlayout width="250">
                     <control type="label">
-                        <centerleft>125</centerleft>
+                        <left>125</left>
                         <top>160</top>
                         <height>45</height>
                         <width>250</width>
@@ -1383,7 +1383,7 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label" description="temps">
-                        <centerleft>125</centerleft>
+                        <left>125</left>
                         <top>200</top>
                         <height>100</height>
                         <width>250</width>
