@@ -207,7 +207,7 @@
         <!--red-->
         <value condition="SubString(ListItem.MPAA,R,Right) | StringCompare(ListItem.MPAA,TV-MA) | SubString(ListItem.MPAA,18)">88FF2200</value>
         <!--green-->
-        <value condition="SubString(ListItem.MPAA,PG,right) | StringCompare(ListItem.MPAA,G) | StringCompare(ListItem.MPAA,U) | StringCompare(ListItem.MPAA,T)">770CF704</value>
+        <value condition="SubString(ListItem.MPAA,PG,right) | StringCompare(ListItem.MPAA,G) | StringCompare(ListItem.MPAA,U) | SubString(ListItem.MPAA,T,Right)">770CF704</value>
         <!--orange-->
         <value condition="Substring(ListItem.MPAA,PG-13) | StringCompare(ListItem.MPAA,12) | StringCompare(ListItem.MPAA,15) | SubString(ListItem.MPAA,14)">88FF8800</value>
         <!--default-->
@@ -224,7 +224,7 @@
         <value condition="SubString(Container(311).ListItem.MPAA,PG,Right)">CC00FF00</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,G)">CC00FF00</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,U)">CC00FF00</value>
-        <value condition="StringCompare(Container(311).ListItem.MPAA,T)">CC00FF00</value>
+        <value condition="SubString(Container(311).ListItem.MPAA,T,Right)">CC00FF00</value>
         <!--orange-->
         <value condition="SubString(Container(311).ListItem.MPAA,PG-13)">CCFF8800</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,12)">CCFF8800</value>

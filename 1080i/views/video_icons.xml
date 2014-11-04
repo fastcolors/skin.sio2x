@@ -5,9 +5,9 @@
             <visible>Control.IsVisible(53)</visible>
             <control type="group">
                 <control type="panel" id="53">
-                    <centerleft>960</centerleft>
+                    <left>30</left>
                     <top>100</top>
-                    <width>1800</width>
+                    <width>1860</width>
                     <height>990</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
@@ -20,7 +20,7 @@
                     <scrolltime tween="sine" easing="inout">300</scrolltime>
                     <preloaditems>2</preloaditems>
                     <!--EPISODES-->
-                    <itemlayout condition="Container.Content(Episodes)" height="374" width="450">
+                    <itemlayout condition="Container.Content(Episodes)" height="374" width="465">
                         <control type="image">
                             <centerleft>225</centerleft>
                             <centertop>150</centertop>
@@ -32,11 +32,11 @@
                             <colordiffuse>DDFFFFFF</colordiffuse>
                             <aspectratio>scale</aspectratio>
                         </control>
-                        <control type="label">
+                        <control type="textbox">
                             <centerleft>225</centerleft>
-                            <top>290</top>
+                            <top>280</top>
                             <width>420</width>
-                            <height>45</height>
+                            <height>70</height>
                             <font>size27</font>
                             <textcolor>black</textcolor>
                             <align>center</align>
@@ -60,7 +60,7 @@
                             <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
                         </control>
                     </itemlayout>
-                    <focusedlayout condition="Container.Content(Episodes)" height="374" width="450">
+                    <focusedlayout condition="Container.Content(Episodes)" height="374" width="465">
                         <control type="image">
                             <centerleft>225</centerleft>
                             <centertop>150</centertop>
@@ -79,11 +79,11 @@
                             <texture background="true">$INFO[ListItem.Icon]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
-                        <control type="label">
+                        <control type="textbox">
                             <centerleft>225</centerleft>
-                            <top>290</top>
+                            <top>280</top>
                             <width>420</width>
-                            <height>45</height>
+                            <height>70</height>
                             <font>size27</font>
                             <textcolor>black</textcolor>
                             <align>center</align>
@@ -109,20 +109,20 @@
                     </focusedlayout>
                     <!--EPISODESEND-->
                     <!--ADDONS-->
-                    <itemlayout condition="Container.Content(Addons)" height="228" width="228">
+                    <itemlayout condition="Container.Content(Addons)" height="240" width="225">
                         <control type="image">
-                            <left>35</left>
                             <top>24</top>
+                            <left>35</left>
                             <width>225</width>
                             <height>225</height>
                             <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                     </itemlayout>
-                    <focusedlayout condition="Container.Content(Addons)" height="228" width="228">
+                    <focusedlayout condition="Container.Content(Addons)" height="240" width="225">
                         <control type="group">
-                            <animation effect="zoom" center="140,35" end="130" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="140,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
+                            <animation effect="zoom" center="155,35" end="130" time="200" reversible="true">Focus</animation>
+                            <animation effect="zoom" center="155,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
                             <include>Scrollanim</include>
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
@@ -135,8 +135,8 @@
                                 <aspectratio>stretch</aspectratio>
                             </control>
                             <control type="image">
-                                <left>35</left>
                                 <top>24</top>
+                                <left>35</left>
                                 <width>225</width>
                                 <height>225</height>
                                 <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>

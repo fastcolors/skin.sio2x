@@ -68,7 +68,7 @@
                         <textcolor>shelffont</textcolor>
                         <shadowcolor>shelfshadow</shadowcolor>
                         <autoscroll>false</autoscroll>
-                        <label>[B]$INFO[ListItem.Label][/B][CR][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$LOCALIZE[345]: $INFO[ListItem.Year][CR][CR]$INFO[ListItem.Genre][CR][CR]$INFO[ListItem.MPAA]</label>
+                        <label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Year,(,)][CR][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$INFO[ListItem.Genre][CR][CR]$INFO[ListItem.MPAA]</label>
                         <align>center</align>
                     </control>
                     <control type="image">
@@ -374,14 +374,6 @@
             </control>
             <control type="image">
                 <centerleft>160</centerleft>
-                <top>18</top>
-                <width>288</width>
-                <height>427</height>
-                <texture border="10" background="true">$VAR[dvdbox]</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <centerleft>160</centerleft>
                 <top>107</top>
                 <width>275</width>
                 <height>330</height>
@@ -409,14 +401,6 @@
                 <height>412</height>
                 <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <centerleft>160</centerleft>
-                <top>18</top>
-                <width>288</width>
-                <height>427</height>
-                <texture border="10" background="true">$VAR[dvdbox]</texture>
-                <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
                 <centerleft>160</centerleft>

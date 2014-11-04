@@ -1,4 +1,9 @@
-3.0.8
+3.0.81
+* Cosmetics on Video Info
+* Fix for Iconview not being centered and getting cut off
+
+
+3.0.80
 * Cosmetics Here & There
 * Support for Genre Specific Icons
 * Added Danish (Rridder), French (Nerve) and Italian (Betty)
@@ -9,6 +14,9 @@
 * New Alternative Font (unfortunately still incomplete)
 * Testing System font pointing to XBMC native font (just realized is the same used in Skin)
 * Music Videos on Shelf
+* Drop support for NAVI-X
+* New Trakt.tv windows
+* fixes for biglist in music views
 
 3.0.7
 * <posx> completely removed from code now only <left>
