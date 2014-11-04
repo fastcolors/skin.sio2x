@@ -173,11 +173,11 @@
         <control type="group">
             <description>Middle Panel</description>
             <control type="image">
-                <top>40</top>
-                <left>720</left>
-                <height>1000</height>
-                <width>480</width>
-                <texture border="30">musicOSD/back.png</texture>
+                <top>30</top>
+                <centerleft>960</centerleft>
+                <height>1020</height>
+                <width>490</width>
+                <texture border="30">sidepanel/back.png</texture>
             </control>
             <control type="group">
                 <left>750</left>

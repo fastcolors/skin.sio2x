@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1122">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="group">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+            <include>DialogOpenCloseVisible</include>
+            <control type="image" description="List back">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>840</width>
+                <height>540</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="150">images/Dialog.png</texture>
+            </control>
+            <!--todo labels-->
+            <control type="grouplist" id="9000">
+                <include>DialogGLs</include>
+                <control type="button" id="0">
+                    <visible>Container.Content(movies)</visible>
+                    <include>DialogButt</include>
+                    <label>$ADDON[script.trakt 2030]</label>
+                    <onclick>Close</onclick>
+                    <onclick>RunScript(script.trakt,action=rate)</onclick>
+                </control>
+                 <control type="button" id="1">
+                    <visible>Container.Content(tvshows)</visible>
+                    <include>DialogButt</include>
+                    <label>$ADDON[script.trakt 2031]</label>
+                    <onclick>Close</onclick>
+                    <onclick>RunScript(script.trakt,action=rate)</onclick>
+                </control>
+                 <control type="button" id="2">
+                     <visible>Container.Content(episodes)</visible>
+                    <include>DialogButt</include>
+                    <label>$ADDON[script.trakt 2032]</label>
+                    <onclick>Close</onclick>
+                    <onclick>RunScript(script.trakt,action=rate)</onclick>
+                </control>
+                <control type="button" id="3">
+                    <include>DialogButt</include>
+                    <label>$ADDON[script.trakt 2040]</label>
+                    <onclick>Close</onclick>
+                    <onclick>RunScript(script.trakt,action=togglewatched)</onclick>
+                </control>
+                <control type="button" id="4">
+                    <include>DialogButt</include>
+                    <label>$ADDON[script.trakt 1400]</label>
+                    <onclick>Close</onclick>
+                    <onclick>RunScript(script.trakt)</onclick>
+                </control>
+                 <control type="button" id="5">
+                    <include>DialogButt</include>
+                    <label>$ADDON[script.trakt 2050]</label>
+                    <onclick>Close</onclick>
+                    <onclick>RunScript(script.trakt,action=managelists)</onclick>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

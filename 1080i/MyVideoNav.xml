@@ -102,8 +102,8 @@
                     <include>DialogButt</include>
                     <visible>System.HasAddon(script.trakt) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
                     <label>Trakt</label>
-                    <onclick>XBMC.RunScript(script.trakt,action=contextmenu)</onclick>
                     <onclick>left</onclick>
+                    <onclick>ActivateWindow(1122)</onclick>
                 </control>
                 <control type="togglebutton" id="699" description="Playing">
                     <enable>Player.HasMedia</enable>

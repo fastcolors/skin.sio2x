@@ -12,12 +12,6 @@
                 <width>1920</width>
                 <height>1080</height>
             </control>
-            <control type="progress" id="23" description="Progress Bar">
-                <left>84</left>
-                <top>-750</top>
-                <width>747</width>
-                <info>Player.Progress</info>
-            </control>
             <control type="multiimage" description="Slideshow">
                 <visible>Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
                 <include>Dimensions_Fullscreen</include>
@@ -50,28 +44,27 @@
                 <animation effect="fade" time="500">Visible</animation>
                 <animation effect="fade" time="200">Hidden</animation>
                 <control type="group" description="Info panel LEFT">
-                    <top>30</top>
-                    <animation type="Conditional" condition="!IntegerGreaterThan(Control.GetLabel(23),0)" reversible="false">
-                        <effect type="zoom" tween="quadratic" start="0" end="100" time="800" center="640,360" />
-                        <effect type="fade" start="0" end="100" time="800" center="640,360" />
-                    </animation>
-                    <animation type="Conditional" condition="StringCompare(Control.GetLabel(23),100)" reversible="false">
-                        <effect type="zoom" tween="quadratic" easing="in" start="100" end="260" time="300" center="640,360" />
-                        <effect type="fade" start="100" end="0" easing="out" time="300" />
-                    </animation>
-                    <animation type="Conditional" condition="IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)" reversible="false">
-                        <effect type="rotatey" tween="quadratic" start="0" end="180" time="1000" center="960,540" />
-                        <effect type="fade" start="100" end="0" time="400" center="640,360" />
-                    </animation>
-                    <animation type="Conditional" condition="![IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)]" reversible="false">
-                        <effect type="rotatey" tween="quadratic" start="180" end="0" time="1000" center="960,540" />
-                        <effect type="fade" start="0" end="100" delay="300" time="700" center="640,360" />
-                    </animation>
+                    <!--<animation type="Conditional" condition="!IntegerGreaterThan(Control.GetLabel(23),0)" reversible="false">-->
+                    <!--<effect type="zoom" tween="quadratic" start="0" end="100" time="800" center="640,360" />-->
+                    <!--<effect type="fade" start="0" end="100" time="800" center="640,360" />-->
+                    <!--</animation>-->
+                    <!--<animation type="Conditional" condition="StringCompare(Control.GetLabel(23),100)" reversible="false">-->
+                    <!--<effect type="zoom" tween="quadratic" easing="in" start="100" end="260" time="300" center="640,360" />-->
+                    <!--<effect type="fade" start="100" end="0" easing="out" time="300" />-->
+                    <!--</animation>-->
+                    <!--<animation type="Conditional" condition="IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)" reversible="false">-->
+                    <!--<effect type="rotatey" tween="quadratic" start="0" end="180" time="1000" center="960,540" />-->
+                    <!--<effect type="fade" start="100" end="0" time="400" center="640,360" />-->
+                    <!--</animation>-->
+                    <!--<animation type="Conditional" condition="![IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)]" reversible="false">-->
+                    <!--<effect type="rotatey" tween="quadratic" start="180" end="0" time="1000" center="960,540" />-->
+                    <!--<effect type="fade" start="0" end="100" delay="300" time="700" center="640,360" />-->
+                    <!--</animation>-->
                     <control type="group" description="Music Cover group">
                         <camera x="450" y="540" />
                         <animation effect="rotatey" start="0" end="-20" center="450,0" time="0" reversible="false" condition="true">Conditional</animation>
-                        <top>225</top>
-                        <left>220</left>
+                        <top>175</top>
+                        <left>120</left>
                         <control type="image" description="Record">
                             <animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
                             <left>298</left>
@@ -102,70 +95,96 @@
                         </control>
                     </control>
                     <control type="group" description="Main Labels">
-                        <left>739</left>
+                        <left>650</left>
                         <control type="image" description="Info BG">
-                            <left>-35</left>
-                            <top>515</top>
-                            <width>1000</width>
-                            <height>300</height>
+                            <centerleft>565</centerleft>
+                            <centertop>590</centertop>
+                            <width>1240</width>
+                            <height>440</height>
                             <fadetime>400</fadetime>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="50">MusicOSD/Back.png</texture>
+                            <texture border="50">sidepanel/Back.png</texture>
                             <animation effect="fade" time="300">Visible</animation>
                             <animation effect="fade" time="200">Hidden</animation>
+                        </control
+                        <control type="grouplist">
+                            <width>1160</width>
+                            <centerleft>565</centerleft>
+                            <top>405</top>
+                            <itemgap>0</itemgap>
+                            <control type="label" description="Title label">
+                                <height>60</height>
+                                <width>1160</width>
+                                <scroll>true</scroll>
+                                <align>center</align>
+                                <font>size42B</font>
+                                <textcolor>Yellow</textcolor>
+                                <animation effect="fade" time="200">VisibleChange</animation>
+                                <label>$INFO[MusicPlayer.Title]</label>
+                            </control>
+                            <control type="label" description="Artist">
+                                <width>1160</width>
+                                <height>50</height>
+                                <label>$INFO[MusicPlayer.Artist]</label>
+                                <scroll>true</scroll>
+                                <align>center</align>
+                                <font>size38</font>
+                                <textcolor>gray</textcolor>
+                            </control>
+                            <control type="label" description="Album">
+                                <width>1160</width>
+                                <height>50</height>
+                                <label>[COLOR=Silver]$LOCALIZE[558]: [/COLOR]$INFO[MusicPlayer.Album]</label>
+                                <align>center</align>
+                                <font>size38</font>
+                                <textcolor>gray</textcolor>
+                            </control>
+                            <control type="label" description="Album">
+                                <width>1160</width>
+                                <height>50</height>
+                                <label>[COLOR=Silver]$LOCALIZE[345]: [/COLOR]$INFO[MusicPlayer.Year]</label>
+                                <align>center</align>
+                                <font>size38</font>
+                                <textcolor>gray</textcolor>
+                            </control>
+                            <control type="label">
+
+                            </control>
+                            <control type="label" description="Track position">
+                                <width>1160</width>
+                                <height>50</height>
+                                <align>center</align>
+                                <textcolor>Silver</textcolor>
+                                <animation effect="fade" time="200">VisibleChange</animation>
+                                <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
+                                <font>size26</font>
+                            </control>
                         </control>
-                        <control type="label" description="Title label">
-                            <left>0</left>
-                            <top>525</top>
-                            <width>900</width>
-                            <scroll>true</scroll>
-                            <align>center</align>
-                            <font>size42B</font>
-                            <textcolor>black</textcolor>
-                            <animation effect="fade" time="200">VisibleChange</animation>
-                            <label>$INFO[MusicPlayer.Title]</label>
-                        </control>
-                        <control type="label" description="Artist">
-                            <top>585</top>
-                            <width>900</width>
-                            <label>$INFO[MusicPlayer.Artist]</label>
-                            <scroll>true</scroll>
-                            <align>center</align>
-                            <font>size38</font>
-                            <textcolor>gray</textcolor>
-                        </control>
-                        <control type="label" description="Album">
-                            <top>636</top>
-                            <width>900</width>
-                            <label>$INFO[MusicPlayer.Album]</label>
-                            <align>center</align>
-                            <font>size38</font>
-                            <textcolor>gray</textcolor>
-                        </control>
-                        <control type="label" description="Track position">
-                            <left>0</left>
-                            <top>690</top>
-                            <width>900</width>
-                            <align>center</align>
-                            <textcolor>gray</textcolor>
-                            <animation effect="fade" time="200">VisibleChange</animation>
-                            <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
-                            <font>size26</font>
+                        <control type="image">
+                            <visible>Control.IsVisible(1111)</visible>
+                            <description>Rating image</description>
+                            <right>150</right>
+                            <top>340</top>
+                            <width>140</width>
+                            <height>27</height>
+                            <aspectratio align="right">keep</aspectratio>
+                            <texture>$INFO[Player.StarRating]</texture>
                         </control>
                         <control type="group">
-                            <top>756</top>
+                            <top>736</top>
                             <control type="label">
+                                <left>-20</left>
                                 <height>30</height>
-                                <width>123</width>
+                                <width>150</width>
                                 <align>left</align>
                                 <label>[B]$INFO[Player.Time][/B]</label>
                                 <font>size26</font>
                                 <textcolor>gray</textcolor>
                             </control>
                             <control type="progress" description="Progress Bar">
-                                <left>122</left>
+                                <centerleft>560</centerleft>
                                 <top>11</top>
-                                <width>675</width>
+                                <width>800</width>
                                 <height>13</height>
                                 <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
                                 <midtexture border="6,0,6,0">MusicOSD/ProgressM.png</midtexture>
@@ -175,174 +194,163 @@
                                 <info>Player.Progress</info>
                             </control>
                             <control type="label">
-                                <right>250</right>
+                                <right>120</right>
                                 <height>30</height>
-                                <width>123</width>
+                                <width>150</width>
                                 <align>right</align>
                                 <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
                                 <font>size26</font>
                                 <textcolor>gray</textcolor>
                             </control>
-                            <control type="label">
-                                <left>777</left>
-                                <top>45</top>
-                                <height>30</height>
-                                <width>135</width>
-                                <align>left</align>
-                                <label>$INFO[Control.GetLabel(23)]</label>
-                                <font>size26</font>
-                                <textcolor>Red</textcolor>
-                                <visible>Skin.HasSetting(DebugInfo)</visible>
-                            </control>
                         </control>
                     </control>
                 </control>
-                <control type="group" description="Info panel RIGHT">
-                    <top>30</top>
-                    <visible>IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)</visible>
-                    <animation type="Visible" reversible="false">
-                        <effect type="rotatey" tween="quadratic" start="-180" end="0" time="1000" center="960," />
-                        <effect type="fade" start="0" end="100" delay="300" time="700" center="640,360" />
-                    </animation>
-                    <animation type="Hidden" reversible="false">
-                        <effect type="rotatey" tween="quadratic" start="0" end="-180" time="1000" center="960," />
-                        <effect type="fade" start="100" end="0" time="400" center="640,360" />
-                    </animation>
-                    <control type="group" description="Music Cover group">
-                        <camera x="1470" y="540" />
-                        <animation effect="rotatey" start="0" end="20" center="1470," time="0" reversible="false" condition="true">Conditional</animation>
-                        <top>225</top>
-                        <left>1110</left>
-                        <control type="image" description="Record">
-                            <animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
-                            <left>-298</left>
-                            <top>0</top>
-                            <height>600</height>
-                            <width>600</width>
-                            <fadetime>300</fadetime>
-                            <aspectratio aligny="bottom">stretch</aspectratio>
-                            <texture fallback="images/record.png" background="true">$INFO[Player.Folderpath]/cdart.png</texture>
-                        </control>
-                        <control type="image" description="MusicAlbum">
-                            <left>0</left>
-                            <top>600</top>
-                            <height>600</height>
-                            <width>600</width>
-                            <fadetime>300</fadetime>
-                            <aspectratio aligny="top">stretch</aspectratio>
-                            <texture flipy="true" diffuse="images/Reflection1.png" background="true">$INFO[MusicPlayer.Cover]</texture>
-                        </control>
-                        <control type="image" description="MusicAlbum">
-                            <left>0</left>
-                            <top>0</top>
-                            <height>600</height>
-                            <width>600</width>
-                            <fadetime>300</fadetime>
-                            <aspectratio aligny="bottom">stretch</aspectratio>
-                            <texture diffuse="images/Diffuse.png" background="true">$INFO[MusicPlayer.Cover]</texture>
-                        </control>
-                    </control>
-                    <control type="group" description="Main Labels">
-                        <left>1166</left>
-                        <control type="image" description="Info BG">
-                            <left>-965</left>
-                            <top>515</top>
-                            <width>1000</width>
-                            <height>300</height>
-                            <fadetime>400</fadetime>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="50">MusicOSD/Back.png</texture>
-                            <animation effect="fade" time="300">Visible</animation>
-                            <animation effect="fade" time="200">Hidden</animation>
-                        </control>
-                        <control type="label" description="Title label">
-                            <left>-900</left>
-                            <top>525</top>
-                            <width>900</width>
-                            <scroll>true</scroll>
-                            <align>center</align>
-                            <font>size42B</font>
-                            <textcolor>black</textcolor>
-                            <animation effect="fade" time="200">VisibleChange</animation>
-                            <label>$INFO[MusicPlayer.Title]</label>
-                        </control>
-                        <control type="label" description="Artist">
-                            <left>-900</left>
-                            <top>585</top>
-                            <width>900</width>
-                            <label>$INFO[MusicPlayer.Artist]</label>
-                            <scroll>true</scroll>
-                            <align>center</align>
-                            <font>size38</font>
-                            <textcolor>gray</textcolor>
-                        </control>
-                        <control type="label" description="Album">
-                            <left>-900</left>
-                            <top>636</top>
-                            <width>900</width>
-                            <label>$INFO[MusicPlayer.Album]</label>
-                            <align>center</align>
-                            <font>size38</font>
-                            <textcolor>gray</textcolor>
-                        </control>
-                        <control type="label" description="Track position">
-                            <left>-900</left>
-                            <top>690</top>
-                            <width>900</width>
-                            <align>center</align>
-                            <textcolor>gray</textcolor>
-                            <animation effect="fade" time="200">VisibleChange</animation>
-                            <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
-                            <font>size26</font>
-                        </control>
-                    </control>
-                    <control type="group">
-                        <top>756</top>
-                        <control type="label">
-                            <left>237</left>
-                            <top>0</top>
-                            <height>30</height>
-                            <width>123</width>
-                            <align>left</align>
-                            <label>[B]$INFO[Player.Time][/B]</label>
-                            <textcolor>gray</textcolor>
-                            <font>size26</font>
-                        </control>
-                        <control type="progress" description="Progress Bar">
-                            <left>357</left>
-                            <top>11</top>
-                            <width>675</width>
-                            <height>13</height>
-                            <texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>
-                            <midtexture border="6,0,6,0">MusicOSD/ProgressM.png</midtexture>
-                            <righttexture border="0,6,0,6">MusicOSD/ProgressR.png</righttexture>
-                            <lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>
-                            <overlaytexture>-</overlaytexture>
-                            <info>Player.Progress</info>
-                        </control>
-                        <control type="label">
-                            <right>750</right>
-                            <top>0</top>
-                            <height>30</height>
-                            <width>123</width>
-                            <align>right</align>
-                            <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
-                            <font>size26</font>
-                            <textcolor>gray</textcolor>
-                        </control>
-                        <control type="label">
-                            <left>777</left>
-                            <top>45</top>
-                            <height>30</height>
-                            <width>135</width>
-                            <align>left</align>
-                            <label>$INFO[Control.GetLabel(23)]</label>
-                            <font>size26</font>
-                            <textcolor>Red</textcolor>
-                            <visible>Skin.HasSetting(DebugInfo)</visible>
-                        </control>
-                    </control>
-                </control>
+                <!--<control type="group" description="Info panel RIGHT">-->
+                <!--<top>30</top>-->
+                <!--<visible>IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)</visible>-->
+                <!--<animation type="Visible" reversible="false">-->
+                <!--<effect type="rotatey" tween="quadratic" start="-180" end="0" time="1000" center="960," />-->
+                <!--<effect type="fade" start="0" end="100" delay="300" time="700" center="640,360" />-->
+                <!--</animation>-->
+                <!--<animation type="Hidden" reversible="false">-->
+                <!--<effect type="rotatey" tween="quadratic" start="0" end="-180" time="1000" center="960," />-->
+                <!--<effect type="fade" start="100" end="0" time="400" center="640,360" />-->
+                <!--</animation>-->
+                <!--<control type="group" description="Music Cover group">-->
+                <!--<camera x="1470" y="540" />-->
+                <!--<animation effect="rotatey" start="0" end="20" center="1470," time="0" reversible="false" condition="true">Conditional</animation>-->
+                <!--<top>225</top>-->
+                <!--<left>1110</left>-->
+                <!--<control type="image" description="Record">-->
+                <!--<animation effect="rotate" end="-360" center="auto" time="2800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>-->
+                <!--<left>-298</left>-->
+                <!--<top>0</top>-->
+                <!--<height>600</height>-->
+                <!--<width>600</width>-->
+                <!--<fadetime>300</fadetime>-->
+                <!--<aspectratio aligny="bottom">stretch</aspectratio>-->
+                <!--<texture fallback="images/record.png" background="true">$INFO[Player.Folderpath]/cdart.png</texture>-->
+                <!--</control>-->
+                <!--<control type="image" description="MusicAlbum">-->
+                <!--<left>0</left>-->
+                <!--<top>600</top>-->
+                <!--<height>600</height>-->
+                <!--<width>600</width>-->
+                <!--<fadetime>300</fadetime>-->
+                <!--<aspectratio aligny="top">stretch</aspectratio>-->
+                <!--<texture flipy="true" diffuse="images/Reflection1.png" background="true">$INFO[MusicPlayer.Cover]</texture>-->
+                <!--</control>-->
+                <!--<control type="image" description="MusicAlbum">-->
+                <!--<left>0</left>-->
+                <!--<top>0</top>-->
+                <!--<height>600</height>-->
+                <!--<width>600</width>-->
+                <!--<fadetime>300</fadetime>-->
+                <!--<aspectratio aligny="bottom">stretch</aspectratio>-->
+                <!--<texture diffuse="images/Diffuse.png" background="true">$INFO[MusicPlayer.Cover]</texture>-->
+                <!--</control>-->
+                <!--</control>-->
+                <!--<control type="group" description="Main Labels">-->
+                <!--<left>1166</left>-->
+                <!--<control type="image" description="Info BG">-->
+                <!--<left>-965</left>-->
+                <!--<top>515</top>-->
+                <!--<width>1000</width>-->
+                <!--<height>300</height>-->
+                <!--<fadetime>400</fadetime>-->
+                <!--<aspectratio>stretch</aspectratio>-->
+                <!--<texture border="50">MusicOSD/Back.png</texture>-->
+                <!--<animation effect="fade" time="300">Visible</animation>-->
+                <!--<animation effect="fade" time="200">Hidden</animation>-->
+                <!--</control>-->
+                <!--<control type="label" description="Title label">-->
+                <!--<left>-900</left>-->
+                <!--<top>525</top>-->
+                <!--<width>900</width>-->
+                <!--<scroll>true</scroll>-->
+                <!--<align>center</align>-->
+                <!--<font>size42B</font>-->
+                <!--<textcolor>black</textcolor>-->
+                <!--<animation effect="fade" time="200">VisibleChange</animation>-->
+                <!--<label>$INFO[MusicPlayer.Title]</label>-->
+                <!--</control>-->
+                <!--<control type="label" description="Artist">-->
+                <!--<left>-900</left>-->
+                <!--<top>585</top>-->
+                <!--<width>900</width>-->
+                <!--<label>$INFO[MusicPlayer.Artist]</label>-->
+                <!--<scroll>true</scroll>-->
+                <!--<align>center</align>-->
+                <!--<font>size38</font>-->
+                <!--<textcolor>gray</textcolor>-->
+                <!--</control>-->
+                <!--<control type="label" description="Album">-->
+                <!--<left>-900</left>-->
+                <!--<top>636</top>-->
+                <!--<width>900</width>-->
+                <!--<label>$INFO[MusicPlayer.Album]</label>-->
+                <!--<align>center</align>-->
+                <!--<font>size38</font>-->
+                <!--<textcolor>gray</textcolor>-->
+                <!--</control>-->
+                <!--<control type="label" description="Track position">-->
+                <!--<left>-900</left>-->
+                <!--<top>690</top>-->
+                <!--<width>900</width>-->
+                <!--<align>center</align>-->
+                <!--<textcolor>gray</textcolor>-->
+                <!--<animation effect="fade" time="200">VisibleChange</animation>-->
+                <!--<label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>-->
+                <!--<font>size26</font>-->
+                <!--</control>-->
+                <!--</control>-->
+                <!--<control type="group">-->
+                <!--<top>756</top>-->
+                <!--<control type="label">-->
+                <!--<left>237</left>-->
+                <!--<top>0</top>-->
+                <!--<height>30</height>-->
+                <!--<width>123</width>-->
+                <!--<align>left</align>-->
+                <!--<label>[B]$INFO[Player.Time][/B]</label>-->
+                <!--<textcolor>gray</textcolor>-->
+                <!--<font>size26</font>-->
+                <!--</control>-->
+                <!--<control type="progress" description="Progress Bar">-->
+                <!--<left>357</left>-->
+                <!--<top>11</top>-->
+                <!--<width>675</width>-->
+                <!--<height>13</height>-->
+                <!--<texturebg border="6,6,6,6">MusicOSD/ProgressBG.png</texturebg>-->
+                <!--<midtexture border="6,0,6,0">MusicOSD/ProgressM.png</midtexture>-->
+                <!--<righttexture border="0,6,0,6">MusicOSD/ProgressR.png</righttexture>-->
+                <!--<lefttexture border="0,6,0,6">MusicOSD/ProgressL.png</lefttexture>-->
+                <!--<overlaytexture>-</overlaytexture>-->
+                <!--<info>Player.Progress</info>-->
+                <!--</control>-->
+                <!--<control type="label">-->
+                <!--<right>750</right>-->
+                <!--<top>0</top>-->
+                <!--<height>30</height>-->
+                <!--<width>123</width>-->
+                <!--<align>right</align>-->
+                <!--<label>[B]$INFO[Player.TimeRemaining,-][/B]</label>-->
+                <!--<font>size26</font>-->
+                <!--<textcolor>gray</textcolor>-->
+                <!--</control>-->
+                <!--<control type="label">-->
+                <!--<left>777</left>-->
+                <!--<top>45</top>-->
+                <!--<height>30</height>-->
+                <!--<width>135</width>-->
+                <!--<align>left</align>-->
+                <!--<label>$INFO[Control.GetLabel(23)]</label>-->
+                <!--<font>size26</font>-->
+                <!--<textcolor>Red</textcolor>-->
+                <!--<visible>Skin.HasSetting(DebugInfo)</visible>-->
+                <!--</control>-->
+                <!--</control>-->
+                <!--</control>-->
             </control>
         </control>
         <control type="group" id="0">
@@ -428,15 +436,6 @@
                 </control>
             </control>
         </control>
-        <control type="image">
-            <visible>Control.IsVisible(1111)</visible>
-            <description>Rating image</description>
-            <centerleft>960</centerleft>
-            <top>900</top>
-            <width>140</width>
-            <height>27</height>
-            <aspectratio align="right">keep</aspectratio>
-            <texture>$INFO[Player.StarRating]</texture>
-        </control>
+
     </controls>
 </window>

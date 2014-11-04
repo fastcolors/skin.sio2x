@@ -8,17 +8,6 @@
         <control type="group">
             <control type="group" description="50">
                 <visible>Control.IsVisible(50)</visible>
-               <control type="image" description="AlbumCover">
-                <centerleft>480</centerleft>
-                <centertop>380</centertop>
-                <width>640</width>
-                <height>640</height>
-                <include>Icon_Fade</include>
-                <bordertexture colordiffuse="black">images/white.png</bordertexture>
-                <bordersize>2</bordersize>
-                <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
-                <aspectratio>keep</aspectratio>
-            </control>
                 <include>MusicInfo</include>
                 <control type="group" description="List">
                     <include>LargeListItemCount</include>
@@ -47,15 +36,18 @@
                             </control>
                             <control type="label" description="Main Label">
                                 <left>128</left>
-                                <height>111</height>
-                                <width>700</width>
-                                <font>size30</font>
-                                <selectedcolor>Yellow</selectedcolor>
-                                <label>$INFO[ListItem.Label]</label>
+                                <width>650</width>
+                                <incude>BigListTitle</incude>
+                                <label>$INFO[ListItem.Title]</label>
+                            </control>
+                            <control type="label" description="Main Label">
+                                <left>128</left>
+                                <width>650</width>
+                                <include>BigListDetails</include>
+                                <label>$INFO[ListItem.Artist]</label>
                             </control>
                             <control type="label" description="Label2">
                                 <left>100r</left>
-                                <selectedcolor>-</selectedcolor>
                                 <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
@@ -90,15 +82,18 @@
                             </control>
                             <control type="label" description="Main Label">
                                 <left>128</left>
-                                <height>111</height>
-                                <width>700</width>
-                                <font>size30</font>
-                                <selectedcolor>Yellow</selectedcolor>
-                                <label>$INFO[ListItem.Label]</label>
+                                <width>650</width>
+                                <incude>BigListTitleFO</incude>
+                                <label>$INFO[ListItem.Title]</label>
+                            </control>
+                            <control type="label" description="Main Label">
+                                <left>128</left>
+                                <width>650</width>
+                                <include>BigListDetails</include>
+                                <label>$INFO[ListItem.Artist]</label>
                             </control>
                             <control type="label" description="Label2">
                                 <left>100r</left>
-                                <selectedcolor>black</selectedcolor>
                                 <include>BigListDetails</include>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>

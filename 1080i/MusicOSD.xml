@@ -3,19 +3,13 @@
     <defaultcontrol always="true">101</defaultcontrol>
     <include>OpenClose</include>
     <controls>
-        <control type="progress" id="23" description="Progress Bar">
-            <left>84</left>
-            <top>-750</top>
-            <width>747</width>
-            <info>Player.Progress</info>
-        </control>
         <control type="image">
-            <left>190</left>
-            <top>90r</top>
-            <width>750</width>
+            <left>160</left>
+            <top>100r</top>
+            <width>800</width>
             <height>500</height>
             <aspectratio>stretch</aspectratio>
-            <texture border="50" colordiffuse="88FFFFFF">MusicOSD/Back.png</texture>
+            <texture border="50">sidepanel/Back.png</texture>
         </control>
         <control type="group" id="101">
             <left>200</left>

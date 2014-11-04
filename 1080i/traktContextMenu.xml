@@ -7,7 +7,7 @@
             <control type="image" id="2">
                 <width>550</width>
                 <height>500</height>
-                <texture border="60">MusicOSD/Back.png</texture>
+                <texture border="40">sidepanel/Back.png</texture>
             </control>
                 <control type="list" id="111">
                     <width>500</width>

@@ -45,7 +45,7 @@
                 <colordiffuse>AFFFFFFF</colordiffuse>
             </control>
             <control type="image" description="Default BG">
-                <visible>![Window.IsActive(Home.xml) | !IsEmpty(ListItem.Art(fanart))] | Container.Content(episodes) | Container.Content(seasons)</visible>
+                <visible>![Window.IsActive(Home.xml) | IsEmpty(ListItem.Art(fanart))] | Container.Content(episodes) | Container.Content(seasons)</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
@@ -253,92 +253,7 @@
                 <label>$INFO[ListItem.SortLetter]</label>
             </control>
         </control>
-        <control type="group" description="Player Info">
-            <visible>!Control.HasFocus(340) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml) | Window.IsActive(myPVR.xml)]</visible>
-            <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
-            <include>VisibleFade</include>
-            <left>15</left>
-            <top>960</top>
-            <control type="image" description="Playing BG">
-                <width>390</width>
-                <height>105</height>
-                <texture border="50">musicOSD/back.png</texture>
-            </control>
-            <control type="group">
-                <control type="image">
-                    <left>15</left>
-                    <top>15</top>
-                    <width>75</width>
-                    <height>75</height>
-                    <texture>$INFO[MusicPlayer.Cover]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="image">
-                    <left>15</left>
-                    <top>15</top>
-                    <width>75</width>
-                    <height>75</height>
-                    <texture>$INFO[VideoPlayer.Cover]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="label">
-                    <left>105</left>
-                    <top>9</top>
-                    <aligny>center</aligny>
-                    <width>261</width>
-                    <height>36</height>
-                    <font>size24</font>
-                    <textcolor>black</textcolor>
-                    <label>$INFO[MusicPlayer.Title]</label>
-                </control>
-                <control type="label">
-                    <left>105</left>
-                    <top>36</top>
-                    <aligny>center</aligny>
-                    <width>261</width>
-                    <height>36</height>
-                    <font>size21</font>
-                    <label>$INFO[MusicPlayer.Artist]</label>
-                </control>
-                <control type="label">
-                    <left>105</left>
-                    <top>60</top>
-                    <aligny>center</aligny>
-                    <width>261</width>
-                    <height>36</height>
-                    <font>size21</font>
-                    <label>$INFO[MusicPlayer.Album]</label>
-                </control>
-                <control type="label">
-                    <left>105</left>
-                    <top>9</top>
-                    <aligny>center</aligny>
-                    <width>261</width>
-                    <height>36</height>
-                    <font>size24</font>
-                    <textcolor>black</textcolor>
-                    <label>$INFO[VideoPlayer.Title]</label>
-                </control>
-                <control type="label">
-                    <left>105</left>
-                    <top>36</top>
-                    <aligny>center</aligny>
-                    <width>261</width>
-                    <height>36</height>
-                    <font>size21</font>
-                    <label>$INFO[VideoPlayer.Artist]</label>
-                </control>
-                <control type="label">
-                    <left>105</left>
-                    <top>60</top>
-                    <aligny>center</aligny>
-                    <width>261</width>
-                    <height>36</height>
-                    <font>size21</font>
-                    <label>$INFO[VideoPlayer.Album]</label>
-                </control>
-            </control>
-        </control>
+        <include>slidinginfo</include>
     </include>
     <include name="OSDbarIcons">
         <width>68</width>
@@ -702,4 +617,64 @@
             </control>
         </control>
     </include>
+    <include name="slidinginfo">
+        <control type="group">
+            <visible>Player.HasAudio</visible>
+            <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
+            <left>1230</left>
+            <top>965</top>
+            <animation effect="slide" start="710,0" end="0,0" time="450">Visiblechange</animation>
+            <control type="image" description="Dialog BG">
+                <left>0</left>
+                <top>0</top>
+                <width>700</width>
+                <height>108</height>
+                <texture border="30">images/ProgressBG.png</texture>
+            </control>
+            <control type="group">
+                <left>20</left>
+                <control type="image" description="File Icon">
+                    <top>14</top>
+                    <width>80</width>
+                    <height>80</height>
+                    <aspectratio align="left" aligny="center">keep</aspectratio>
+                    <texture>$INFO[MusicPlayer.Cover]</texture>
+                </control>
+                <control type="label" description="Heading">
+                    <top>3</top>
+                    <left>90</left>
+                    <width>610</width>
+                    <height>22</height>
+                    <font>size26</font>
+                    <align>left</align>
+                    <aligny>bottom</aligny>
+                    <textcolor>Yellow</textcolor>
+                    <scroll>true</scroll>
+                    <label>$INFO[MusicPlayer.Title,","]</label>
+                </control>
+                <control type="label" description="Artist">
+                    <left>90</left>
+                    <top>20</top>
+                    <width>auto</width>
+                    <height>70</height>
+                    <scroll>true</scroll>
+                    <font>size26</font>
+                    <align>left</align>
+                    <label>$INFO[MusicPlayer.Artist]</label>
+                </control>
+                <control type="label" description="album">
+                    <left>90</left>
+                    <top>50</top>
+                    <width>auto</width>
+                    <height>70</height>
+                    <scroll>true</scroll>
+                    <font>size20</font>
+                    <align>left</align>
+                    <textcolor>Silver</textcolor>
+                    <label>$INFO[MusicPlayer.Album,Album: (,)]</label>
+                </control>
+            </control>
+        </control>
+    </include>
+
 </includes>

@@ -341,56 +341,7 @@
                 </control>
             </control>
         </control>
-        <control type="group" description="Player Info">
-            <visible>Player.HasAudio</visible>
-            <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
-            <animation effect="slide" tween="Sine" easing="Out" start="430,0" end="0,0" time="600" delay="200">VisibleChange</animation>
-            <left>1500</left>
-            <top>450</top>
-            <control type="image" description="Playing BG">
-                <width>430</width>
-                <height>105</height>
-                <texture border="20">images/ProgressBG.png</texture>
-            </control>
-            <control type="group">
-                <control type="image">
-                    <left>18</left>
-                    <top>15</top>
-                    <width>75</width>
-                    <height>75</height>
-                    <texture>$INFO[MusicPlayer.Cover]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="label">
-                    <left>110</left>
-                    <top>9</top>
-                    <aligny>center</aligny>
-                    <width>300</width>
-                    <height>36</height>
-                    <font>size24</font>
-                    <textcolor>black</textcolor>
-                    <label>$INFO[MusicPlayer.Title]</label>
-                </control>
-                <control type="label">
-                    <left>110</left>
-                    <top>36</top>
-                    <aligny>center</aligny>
-                    <width>300</width>
-                    <height>36</height>
-                    <font>size21</font>
-                    <label>$INFO[MusicPlayer.Artist]</label>
-                </control>
-                <control type="label">
-                    <left>110</left>
-                    <top>60</top>
-                    <aligny>center</aligny>
-                    <width>300</width>
-                    <height>36</height>
-                    <font>size21</font>
-                    <label>$INFO[MusicPlayer.Album]</label>
-                </control>
-            </control>
-        </control>
+       <include>slidinginfo</include>
         <!--<control type="label">-->
         <!--<description>IP ADDRESS</description>-->
         <!--<right>90</right>-->

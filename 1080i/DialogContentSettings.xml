@@ -49,7 +49,7 @@
                     <width>750</width>
                     <height>75</height>
                     <info>ListItem.Label</info>
-                    <selectedcolor>yellow</selectedcolor>
+                    <selectedcolor>Yellow</selectedcolor>
                 </control>
             </itemlayout>
             <focusedlayout height="75" width="740">
@@ -65,7 +65,7 @@
                     <width>750</width>
                     <height>75</height>
                     <info>ListItem.Label</info>
-                    <selectedcolor>yellow</selectedcolor>
+                    <selectedcolor>Yellow</selectedcolor>
                 </control>
             </focusedlayout>
         </control>

@@ -3,9 +3,10 @@
     <include>OpenClose</include>
     <controls>
         <control type="image">
-            <left>210</left>
+            <centerleft>960</centerleft>
+            <centertop>475</centertop>
             <width>1500</width>
-            <height>1080</height>
+            <height>940</height>
             <texture border="150">images/Dialog.png</texture>
         </control>
         <control type="label" id="1">
@@ -13,90 +14,97 @@
             <left>460</left>
             <top>140</top>
             <width>1000</width>
-            <height>70</height>
+            <height>60</height>
+            <font>size24</font>
+            <textcolor>Silver</textcolor>
             <label>$ADDON[script.trakt 1650]</label>
             <align>center</align>
             <aligny>center</aligny>
         </control>
         <control type="image" description="linetop">
-            <left>360</left>
-            <top>220</top>
-            <width>1200</width>
+            <centerleft>960</centerleft>
+            <top>200</top>
+            <width>1300</width>
             <height>1</height>
-            <texture>lines/Line.png</texture>
+            <texture>lines/Line1.png</texture>
         </control>
         <control type="image" description="linetop2">
-            <left>360</left>
+            <centerleft>960</centerleft>
             <top>280</top>
             <width>1200</width>
             <height>1</height>
-            <texture>lines/Line.png</texture>
+            <texture>lines/Line1.png</texture>
         </control>
-        <control type="image" description="linebott">
-            <left>360</left>
-            <top>850</top>
+        <control type="image" description="linetop3">
+            <visible>Control.IsVisible(100)</visible>
+            <centerleft>960</centerleft>
+            <top>489</top>
             <width>1200</width>
             <height>1</height>
-            <texture>lines/Line.png</texture>
+            <texture>lines/Line1.png</texture>
+        </control>
+        <control type="image" description="linetop3">
+            <animation effect="slide" end="0,245" condition="!Control.IsVisible(100)">Conditional</animation>
+            <centerleft>960</centerleft>
+            <top>420</top>
+            <width>1200</width>
+            <height>1</height>
+            <texture>lines/Line1.png</texture>
+        </control>
+        <control type="image" description="linebott">
+            <centerleft>960</centerleft>
+            <top>749</top>
+            <width>1200</width>
+            <height>1</height>
+            <texture>lines/Line1.png</texture>
         </control>
         <control type="label" id="25">
             <description>Title</description>
-            <left>460</left>
-            <top>220</top>
+            <centerleft>960</centerleft>
+            <top>210</top>
             <width>1000</width>
-            <height>60</height>
+            <height>70</height>
             <label></label>
             <align>center</align>
             <aligny>center</aligny>
-            <font>font13</font>
         </control>
-        <!--control type="image" description="BG">
-          <left>450</left>
-          <top>280</top>
-          <width>1000</width>
-          <height>200</height>
-          <texture border="150">images/black.png</texture>
-        </control-->
         <control type="list" id="4">
-            <left>400</left>
+            <centerleft>960</centerleft>
             <top>281</top>
-            <width>560</width>
-            <height>150</height>
-            <onup>4</onup>
-            <ondown>4</ondown>
-            <onleft>61</onleft>
-            <onright>111</onright>
+            <width>1200</width>
+            <height>368</height>
+            <onup>noop</onup>
+            <ondown condition="Control.IsVisible(100)">100</ondown>
+            <ondown condition="!Control.IsVisible(100)">16</ondown>
             <pagecontrol>61</pagecontrol>
             <scrolltime>200</scrolltime>
-            <itemlayout height="46" width="540">
+            <itemlayout height="46" width="1200">
                 <control type="label" id="8">
-                    <left>260</left>
-                    <top>0</top>
-                    <width>520</width>
+                    <centerleft>600</centerleft>
+                    <width>1200</width>
                     <height>46</height>
-                    <font>size24</font>
-                    <selectedcolor>FFEB9E17</selectedcolor>
+                    <font>size26</font>
+                    <selectedcolor>Yellow</selectedcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <info>ListItem.Label</info>
                 </control>
             </itemlayout>
-            <focusedlayout height="46" width="540">
+            <focusedlayout height="46" width="1200">
                 <control type="image">
-                    <width>540</width>
+                    <width>1200</width>
                     <height>46</height>
-                    <texture flipx="true">images/buttonselect1.png</texture>
+                    <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
                     <visible>Control.HasFocus(4)</visible>
                     <animation effect="fade" time="300">Visible</animation>
                     <animation effect="fade" time="300">Hidden</animation>
                 </control>
                 <control type="label" id="8">
-                    <left>260</left>
-                    <top>0</top>
-                    <width>520</width>
+                    <centerleft>600</centerleft>
+                    <width>1200</width>
                     <height>46</height>
-                    <font>size24</font>
-                    <selectedcolor>FF666666</selectedcolor>
+                    <font>size26</font>
+                    <selectedcolor>Yellow</selectedcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <info>ListItem.Label</info>
@@ -105,190 +113,174 @@
         </control>
         <control type="scrollbar" id="61">
             <left>360</left>
-            <top>310</top>
-            <height>460</height>
+            <top>281</top>
+            <height>368</height>
             <onleft>noop</onleft>
             <onright>4</onright>
             <ondown>61</ondown>
             <onup>61</onup>
-            <showonepage>false</showonepage>
+            <showonepage>true</showonepage>
         </control>
         <control type="group" id="100">
-            <defaultcontrol>111</defaultcontrol>
-            <left>950</left>
-            <top>350</top>
-            <width>1000</width>
-            <height>480</height>
             <control type="label" id="110">
                 <description>Title</description>
-                <left>10</left>
-                <top>0</top>
-                <width>270</width>
+                <right>960</right>
+                <top>440</top>
+                <width>500</width>
                 <height>30</height>
+                <font>size26</font>
+                <textcolor>Silver</textcolor>
                 <label>$ADDON[script.trakt 1667]</label>
                 <align>center</align>
-                <aligny>center</aligny>
-            </control>
-            <control type="list" id="111">
-                <left>25</left>
-                <top>50</top>
-                <width>240</width>
-                <height>480</height>
-                <onup>4</onup>
-                <ondown>113</ondown>
-                <onleft>4</onleft>
-                <onright>141</onright>
-                <scrolltime>200</scrolltime>
-                <itemlayout height="50" width="240">
-                    <control type="label">
-                        <left>120</left>
-                        <top>0</top>
-                        <width>200</width>
-                        <height>50</height>
-                        <selectedcolor>red</selectedcolor>
-                        <font>size24</font>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <info>ListItem.Label</info>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="50" width="240">
-                    <control type="image">
-                        <width>240</width>
-                        <height>50</height>
-                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
-                        <visible>Control.HasFocus(111)</visible>
-                    </control>
-                    <control type="label">
-                        <left>120</left>
-                        <top>0</top>
-                        <width>200</width>
-                        <height>50</height>
-                        <selectedcolor>red</selectedcolor>
-                        <font>size24</font>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <info>ListItem.Label</info>
-                    </control>
-                </focusedlayout>
             </control>
             <control type="label" id="140">
                 <description>Title</description>
-                <left>290</left>
-                <top>0</top>
-                <width>270</width>
+                <left>960</left>
+                <top>440</top>
+                <width>500</width>
                 <height>30</height>
+                <font>size26</font>
+                <textcolor>Silver</textcolor>
                 <label>$ADDON[script.trakt 1668]</label>
                 <align>center</align>
-                <aligny>center</aligny>
             </control>
-            <control type="list" id="141">
-                <left>305</left>
-                <top>50</top>
-                <width>240</width>
-                <height>480</height>
-                <onup>4</onup>
-                <ondown>114</ondown>
-                <onleft>111</onleft>
-                <onright>113</onright>
-                <scrolltime>200</scrolltime>
-                <itemlayout height="46" width="240">
-                    <control type="label">
-                        <left>120</left>
-                        <top>0</top>
-                        <width>200</width>
-                        <height>46</height>
-                        <selectedcolor>red</selectedcolor>
-                        <font>size24</font>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <info>ListItem.Label</info>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="46" width="240">
-                    <control type="image">
-                        <width>240</width>
-                        <height>46</height>
-                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
-                        <visible>Control.HasFocus(141)</visible>
-                    </control>
-                    <control type="label">
-                        <left>120</left>
-                        <top>0</top>
-                        <width>200</width>
-                        <height>46</height>
-                        <selectedcolor>red</selectedcolor>
-                        <font>size24</font>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <info>ListItem.Label</info>
-                    </control>
-                </focusedlayout>
-            </control>
-            <control type="button" id="113">
-                <description>Manual button</description>
-                <left>10</left>
-                <top>280</top>
-                <width>270</width>
-                <height>46</height>
-                <font>size24</font>
-                <label>$ADDON[script.trakt 1669]</label>
+            <control type="grouplist">
+                <top>490</top>
+                <centerleft>960</centerleft>
                 <align>center</align>
-                <onleft>110</onleft>
-                <onright>114</onright>
+                <width>1200</width>
+                <orientation>horizontal</orientation>
+                <onup>4</onup>
+                <ondown>113</ondown>
+                <control type="list" id="111">
+                    <left>25</left>
+                    <top>50</top>
+                    <width>500</width>
+                    <height>480</height>
+                    <scrolltime>200</scrolltime>
+                    <itemlayout height="50" width="500">
+                        <control type="label">
+                            <centerleft>250</centerleft>
+                            <width>480</width>
+                            <height>50</height>
+                            <selectedcolor>Yellow</selectedcolor>
+                            <font>size26</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="50" width="500">
+                        <control type="image">
+                            <width>500</width>
+                            <height>50</height>
+                            <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
+                            <visible>Control.HasFocus(111)</visible>
+                        </control>
+                        <control type="label">
+                            <centerleft>250</centerleft>
+                            <width>480</width>
+                            <height>50</height>
+                            <selectedcolor>Yellow</selectedcolor>
+                            <font>size26</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="list" id="141">
+                    <left>305</left>
+                    <top>50</top>
+                    <width>500</width>
+                    <height>480</height>
+                    <scrolltime>200</scrolltime>
+                    <itemlayout height="50" width="500">
+                        <control type="label">
+                            <centerleft>250</centerleft>
+                            <width>480</width>
+                            <height>50</height>
+                            <selectedcolor>Yellow</selectedcolor>
+                            <font>size26</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="50" width="500">
+                        <control type="image">
+                            <width>500</width>
+                            <height>50</height>
+                            <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texture>
+                            <visible>Control.HasFocus(141)</visible>
+                        </control>
+                        <control type="label">
+                            <centerleft>250</centerleft>
+                            <width>480</width>
+                            <height>50</height>
+                            <selectedcolor>Yellow</selectedcolor>
+                            <font>size26</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="grouplist">
+                <top>690</top>
+                <centerleft>960</centerleft>
+                <width>1200</width>
+                <align>center</align>
+                <orientation>horizontal</orientation>
                 <onup>111</onup>
                 <ondown>16</ondown>
-            </control>
-            <control type="button" id="114">
-                <description>Manual button</description>
-                <left>290</left>
-                <top>280</top>
-                <width>270</width>
-                <height>46</height>
-                <label>$ADDON[script.trakt 1670]</label>
-                <align>center</align>
-                <onleft>113</onleft>
-                <font>size24</font>
-                <onright>noop</onright>
-                <onup>141</onup>
-                <ondown>16</ondown>
+                <control type="button" id="113">
+                    <width>500</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <label>$ADDON[script.trakt 1669]</label>
+                    <align>center</align>
+                </control>
+                <control type="button" id="114">
+                    <width>500</width>
+                    <height>60</height>
+                    <font>size26</font>
+                    <label>$ADDON[script.trakt 1670]</label>
+                    <align>center</align>
+                    <onleft>113</onleft>
+                </control>
             </control>
         </control>
-        <control type="grouplist" description="ok cancel">
-            <left>450</left>
-            <top>880</top>
-            <width>1000</width>
-            <onup>100</onup>
-            <itemgap>10</itemgap>
+        <control type="grouplist">
+            <centerleft>960</centerleft>
+            <top>750</top>
+            <width>1200</width>
+            <onup>113</onup>
+            <itemgap>0</itemgap>
             <orientation>horizontal</orientation>
             <align>center</align>
             <control type="button" id="15">
                 <description>add</description>
-                <width>200</width>
-                <height>40</height>
+                <width>350</width>
+                <height>60</height>
+                <font>size26</font>
                 <label>$ADDON[script.trakt 1651]</label>
-                <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
             </control>
             <control type="button" id="16">
                 <description>ok</description>
-                <width>200</width>
-                <height>40</height>
+                <width>350</width>
+                <height>60</height>
+                <font>size26</font>
                 <label>$ADDON[script.trakt 1652]</label>
             </control>
             <control type="button" id="17">
                 <description>cancel</description>
-                <width>200</width>
-                <height>40</height>
+                <width>350</width>
+                <height>60</height>
+                <font>size26</font>
                 <label>$ADDON[script.trakt 1653]</label>
             </control>
-        </control>
-        <control type="image">
-            <left>941</left>
-            <top>280</top>
-            <width>1</width>
-            <height>570</height>
-            <texture>images/black.png</texture>
-            <colordiffuse>60FFFFFF</colordiffuse>
         </control>
     </controls>
 </window>
