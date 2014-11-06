@@ -151,7 +151,7 @@
                     <description>Playlist</description>
                     <include>ButtonMenu</include>
                     <label>559</label>
-                    <onclick>Close</onclick>
+                    <onclick>left</onclick>
                     <onclick>ActivateWindow(MusicPlaylist)</onclick>
                 </control>
                 <control type="button" id="556" description="Fanart">
@@ -184,7 +184,7 @@
                     <description>Lyrics</description>
                     <include>ButtonMenu</include>
                     <label>24013</label>
-                    <onclick>Close</onclick>
+                    <onclick>left</onclick>
                     <onclick condition="IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
                 </control>

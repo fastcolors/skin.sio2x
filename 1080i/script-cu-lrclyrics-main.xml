@@ -120,15 +120,16 @@
             </control>
         </control>
         <control type="group" id="999">
-            <left>1830</left>
+            <left>1800</left>
             <top>150</top>
             <control type="image">
                 <width>300</width>
                 <height>750</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="50" colordiffuse="88FFFFFF">MusicOSD/Back.png</texture>
+                <texture border="50" colordiffuse="AAFFFFFF">sidepanel/Back.png</texture>
             </control>
             <control type="list" id="9000">
+                <left>30</left>
                 <top>10</top>
                 <onleft>110</onleft>
                 <width>100</width>

@@ -677,32 +677,31 @@
             </control>
         </control>
         <control type="group">
-            <control type="group">
-                <visible allowhiddenfocus="true">Control.HasFocus(8)</visible>
-                <control type="image">
-                    <left>-50</left>
-                    <top>900</top>
-                    <width>300</width>
-                    <height>150</height>
-                    <texture border="50">MusicOSD/Back.png</texture>
-                </control>
-                <control type="grouplist" id="9000">
-                    <top>935</top>
-                    <width>250</width>
-                    <height>150</height>
-                    <onleft>206</onleft>
-                    <onright>200</onright>
-                    <onup>9000</onup>
-                    <ondown>9000</ondown>
-                    <itemgap>0</itemgap>
-                    <control type="button" id="8">
-                        <description>Settings</description>
-                        <height>80</height>
-                        <width>220</width>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>5</label>
-                    </control>
+            <visible allowhiddenfocus="true">Control.HasFocus(8)</visible>
+            <animation effect="slide" start="-400,0" end="0,0" time="400">VisibleChange</animation>
+            <control type="image">
+                <left>-50</left>
+                <top>900</top>
+                <width>300</width>
+                <height>150</height>
+                <texture border="50">sidepanel/Back.png</texture>
+            </control>
+            <control type="grouplist" id="9000">
+                <top>935</top>
+                <width>250</width>
+                <height>150</height>
+                <onleft>noop</onleft>
+                <onright>200</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <itemgap>0</itemgap>
+                <control type="button" id="8">
+                    <description>Settings</description>
+                    <height>80</height>
+                    <width>220</width>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>5</label>
                 </control>
             </control>
         </control>
