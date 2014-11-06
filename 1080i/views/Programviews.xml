@@ -494,7 +494,10 @@
                     <textcolor>black</textcolor>
                     <width>1760</width>
                     <align>center</align>
-                    <include>Genre51Commons</include>
+                    <width>758</width>
+                    <height>40</height>
+                    <align>left</align>
+                    <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label" description="Item Title">

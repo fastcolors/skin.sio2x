@@ -4,8 +4,6 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.favourites)</onload>
-    <!--<onload>ActivateWindow(1113)</onload>-->
-    <!--<onload condition="Window.Previous(startup) + !Skin.HasSetting(splashoff)">ActivateWindow(1113)</onload>-->
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>

@@ -51,7 +51,6 @@
                     <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
                     <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
                     <control type="image">
-                        <!--<visible>Control.HasFocus(311)</visible>-->
                         <centerleft>160</centerleft>
                         <top>22</top>
                         <width>254</width>
@@ -59,7 +58,6 @@
                         <texture colordiffuse="$VAR[diffuseselectshelf]">images/darkgrey.png</texture>
                     </control>
                     <control type="textbox">
-                        <!--<visible>ControlGroup(700).HasFocus()</visible>-->
                         <centerleft>160</centerleft>
                         <top>28</top>
                         <width>244</width>
@@ -267,7 +265,7 @@
     </include>
     <include name="EpisodeShortcutsCommons">
         <include>ShelfFade</include>
-        <top>70</top>
+        <top>30</top>
         <width>1920</width>
         <height>452</height>
         <orientation>horizontal</orientation>
@@ -276,8 +274,15 @@
             <control type="group">
                 <animation effect="zoom" condition="true" start="100" end="90" center="240,180">Conditional</animation>
                 <control type="image">
+                    <left>19</left>
+                    <top>71</top>
+                    <width>441</width>
+                    <height>343</height>
+                    <texture border="20" colordiffuse="Silver">images/soapshelf.png</texture>
+                </control>
+                <control type="image">
                     <left>23</left>
-                    <top>128</top>
+                    <top>168</top>
                     <width>433</width>
                     <height>242</height>
                     <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
@@ -286,29 +291,28 @@
                 <control type="group">
                     <control type="image">
                         <left>23</left>
-                        <top>35</top>
+                        <top>75</top>
                         <width>433</width>
                         <height>93</height>
                         <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
                     </control>
                 </control>
                 <control type="label">
-                    <top>370</top>
+                    <top>30</top>
+                    <width>480</width>
+                    <height>40</height>
+                    <font>size26</font>
+                    <scroll>false</scroll>
+                    <label>[B]$INFO[ListItem.Title][/B]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <top>420</top>
                     <left>40</left>
                     <width>400</width>
                     <height>36</height>
                     <font>size26</font>
-                    <textcolor>shelffont</textcolor>
-                    <shadowcolor>shelfshadow</shadowcolor>
                     <label>[B][UPPERCASE]S $INFO[ListItem.Season] • E $INFO[ListItem.Episode][/UPPERCASE][/B]</label>
-                    <align>center</align>
-                </control>
-                <control type="label">
-                    <width>480</width>
-                    <height>30</height>
-                    <font>size26</font>
-                    <textcolor>black</textcolor>
-                    <label>[B]$INFO[ListItem.Title][/B]</label>
                     <align>center</align>
                 </control>
             </control>
@@ -318,8 +322,15 @@
                 <animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>
                 <animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>
                 <control type="image">
+                    <left>19</left>
+                    <top>71</top>
+                    <width>441</width>
+                    <height>343</height>
+                    <texture border="20" colordiffuse="$VAR[diffuseselectshelf]">images/soapshelf.png</texture>
+                </control>
+                <control type="image">
                     <left>23</left>
-                    <top>128</top>
+                    <top>168</top>
                     <width>433</width>
                     <height>242</height>
                     <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
@@ -328,29 +339,28 @@
                 <control type="group">
                     <control type="image">
                         <left>23</left>
-                        <top>35</top>
+                        <top>75</top>
                         <width>433</width>
                         <height>93</height>
                         <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
                     </control>
                 </control>
                 <control type="label">
-                    <top>370</top>
+                    <top>30</top>
+                    <width>480</width>
+                    <height>40</height>
+                    <font>size26</font>
+                    <scroll>false</scroll>
+                    <label>[B]$INFO[ListItem.Title][/B]</label>
+                    <align>center</align>
+                </control>
+                <control type="label">
+                    <top>420</top>
                     <left>40</left>
                     <width>400</width>
                     <height>36</height>
                     <font>size26</font>
-                    <textcolor>shelffont</textcolor>
-                    <shadowcolor>shelfshadow</shadowcolor>
                     <label>[B][UPPERCASE]S $INFO[ListItem.Season] • E $INFO[ListItem.Episode][/UPPERCASE][/B]</label>
-                    <align>center</align>
-                </control>
-                <control type="label">
-                    <width>480</width>
-                    <height>30</height>
-                    <font>size26</font>
-                    <textcolor>black</textcolor>
-                    <label>[B]$INFO[ListItem.Title][/B]</label>
                     <align>center</align>
                 </control>
             </control>
@@ -471,7 +481,7 @@
         <include>movshelslider</include>
     </include>
     <include name="TV">
-         <control type="panel" id="312" description="TOP Shortcuts">
+        <control type="panel" id="312" description="TOP Shortcuts">
             <visible>Container(9000).HasFocus(341)</visible>
             <onup>9010</onup>
             <ondown>9000</ondown>

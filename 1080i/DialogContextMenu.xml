@@ -6,18 +6,29 @@
     <include>DialogOpenClose</include>
     <coordinates>
         <system>1</system>
-        <origin x="0" y="0" />
+        <origin x="570" y="10">Control.IsVisible(1012)</origin>
+        <origin x="570" y="40">Control.IsVisible(1011)</origin>
+        <origin x="570" y="70">Control.IsVisible(1010)</origin>
+        <origin x="570" y="100">Control.IsVisible(1009)</origin>
+        <origin x="570" y="130">Control.IsVisible(1008)</origin>
+        <origin x="570" y="160">Control.IsVisible(1007)</origin>
+        <origin x="570" y="190">Control.IsVisible(1006)</origin>
+        <origin x="570" y="220">Control.IsVisible(1005)</origin>
+        <origin x="570" y="250">Control.IsVisible(1004)</origin>
+        <origin x="570" y="380">Control.IsVisible(1003)</origin>
+        <origin x="570" y="310">Control.IsVisible(1002)</origin>
+        <origin x="570" y="340" />
     </coordinates>
     <controls>
         <control type="image" id="999" description="Background image">
-            <centerleft>960</centerleft>
+            <top>0</top>
             <height>1260</height>
             <width>780</width>
             <texture border="150">images/Dialog.png</texture>
         </control>
         <control type="grouplist" id="996" description="Context menu container">
-            <centerleft>960</centerleft>
             <top>150</top>
+            <left>150</left>
             <width>480</width>
             <height max="960">auto</height>
             <itemgap>3</itemgap>
@@ -30,11 +41,8 @@
             </control>
         </control>
         <control type="button" id="1000" description="Buttons">
-            <left>150</left>
-            <top></top>
             <width>480</width>
             <height>60</height>
-            <focusedcolor>black</focusedcolor>
             <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
             <texturenofocus>-</texturenofocus>
         </control>

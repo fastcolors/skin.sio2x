@@ -130,7 +130,7 @@
                     <visible>Container.Content(movies)</visible>
                     <include>DialogButt</include>
                     <label>$LOCALIZE[31026]</label>
-                    <onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, silent=true, clearlogo,discart)</onclick>
+                    <onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, clearlogo, discart)</onclick>
                     <onclick>left</onclick>
                 </control>
                 <control type="button" id="599">

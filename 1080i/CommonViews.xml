@@ -20,7 +20,8 @@
         <control type="group" description="ICON no PLOT">
             <visible>IsEmpty(ListItem.Plot) | Control.IsVisible(51)</visible>
             <control type="image" description="Thumb">
-                <visible>StringCompare(ListItem.Label,..)</visible>
+                <!--<visible>ListItem.IsFolder + ![[Container.Content(sets) | Container.Content(Actors)] + !IsEmpty(ListItem.Thumb)]</visible>-->
+                <visible>IsEmpty(Container.FolderPath) | IsEmpty(ListItem.Thumb)</visible>
                 <centerleft>480</centerleft>
                 <centertop>540</centertop>
                 <width>800</width>
@@ -30,7 +31,8 @@
                 <aspectratio aligny="center">keep</aspectratio>
             </control>
             <control type="image" description="Thumb">
-                <visible>!StringCompare(ListItem.Label,..)</visible>
+                <!--<visible>!ListItem.IsFolder | [[Container.Content(sets) | Container.Content(Actors)] + !IsEmpty(ListItem.Thumb)]</visible>-->
+                <visible>!IsEmpty(Container.FolderPath) + !IsEmpty(ListItem.Thumb)</visible>
                 <centerleft>480</centerleft>
                 <centertop>540</centertop>
                 <width>800</width>
@@ -274,6 +276,7 @@
         </control>
         <control type="group">
             <visible>!StringCompare(ListItem.Label,..)</visible>
+            <visible>!IsEmpty(ListItem.Artist)</visible>
             <left>120</left>
             <top>770</top>
             <control type="label" description="Artist">
@@ -709,16 +712,6 @@
         <aligny>center</aligny>
         <font>size33</font>
     </include>
-    <include name="Genre51Commons">
-        <width>758</width>
-        <height>40</height>
-        <align>left</align>
-        <scroll>false</scroll>
-    </include>
-    <include name="TitleCommons">
-        <font>size39B</font>
-        <textcolor>White</textcolor>
-    </include>
     <include name="DetailsVideoInfoCommons">
         <left>0</left>
         <width>270</width>
@@ -883,7 +876,7 @@
             <visible>IsEmpty(Container.FolderPath)</visible>
             <control type="image" description="Thumb">
                 <left>262</left>
-                <top>180</top>
+                <top>140</top>
                 <width>495</width>
                 <height>495</height>
                 <include>Icon_Fade</include>
@@ -895,7 +888,7 @@
                 <top>630</top>
                 <width>682</width>
                 <height>1</height>
-                <texture>lines/Line.png</texture>
+                <texture colordiffuse="black">lines/Line.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" description="Updates">
@@ -928,7 +921,7 @@
                 <width>621</width>
                 <height>621</height>
                 <include>Icon_Fade</include>
-                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <texture background="false">$INFO[ListItem.Icon]</texture>
                 <aspectratio aligny="bottom">keep</aspectratio>
             </control>
         </control>
@@ -944,14 +937,14 @@
                     <width>500</width>
                     <height>500</height>
                     <include>Icon_Fade</include>
-                    <texture background="true" diffuse="images/Reflection0.png" flipy="true">$INFO[ListItem.Icon]</texture>
+                    <texture diffuse="images/Reflection0.png" flipy="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image" description="Thumb">
                     <width>500</width>
                     <height>500</height>
                     <include>Icon_Fade</include>
-                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <texture>$INFO[ListItem.Icon]</texture>
                     <aspectratio aligny="bottom">keep</aspectratio>
                 </control>
             </control>
@@ -970,11 +963,17 @@
                     <width>640</width>
                     <font>size33B</font>
                     <height>45</height>
-                    <include>Genre51Commons</include>
+                    <width>758</width>
+                    <height>40</height>
+                    <align>left</align>
+                    <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label" description="More Info">
-                    <include>Genre51Commons</include>
+                    <width>758</width>
+                    <height>40</height>
+                    <align>left</align>
+                    <scroll>false</scroll>
                     <label>$LOCALIZE[24051] [COLOR=red]$INFO[ListItem.Property(Addon.Version)] [/COLOR] $VAR[TopLabel, •]</label>
                 </control>
                 <control type="textbox">
@@ -986,7 +985,10 @@
                     <label>$VAR[Plots]</label>
                 </control>
                 <control type="label" description="Bottom Label">
-                    <include>Genre51Commons</include>
+                    <width>758</width>
+                    <height>40</height>
+                    <align>left</align>
+                    <scroll>false</scroll>
                     <label>$INFO[ListItem.Genre]</label>
                 </control>
                 <control type="label" description="Bottom Label">
@@ -994,7 +996,10 @@
                     <scroll>true</scroll>
                     <font>size21</font>
                     <textcolor>black</textcolor>
-                    <include>Genre51Commons</include>
+                    <width>758</width>
+                    <height>40</height>
+                    <align>left</align>
+                    <scroll>false</scroll>
                     <label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
                 </control>
             </control>

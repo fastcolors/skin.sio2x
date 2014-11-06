@@ -9,10 +9,12 @@
             <centertop>430</centertop>
             <centerleft>590</centerleft>
             <width>1050</width>
-            <height>700</height>
+            <height>690</height>
             <aspectratio>keep</aspectratio>
+            <bordersize>4</bordersize>
+            <bordertexture>images/white.png</bordertexture>
             <info>ListItem.FileNameAndPath</info>
-            <fadetime>500</fadetime>
+            <fadetime>400</fadetime>
         </control>
         <control type="group">
             <visible>Control.IsVisible(53)</visible>
@@ -34,34 +36,35 @@
                     <scrolltime>400</scrolltime>
                     <itemlayout height="300" width="210">
                         <control type="group">
+                            <animation condition="true" effect="zoom" start="100" end="90" center="120,300" reversible="false">Conditional</animation>
                             <control type="image">
                                 <visible>!StringCompare(ListItem.Label,..)</visible>
-                                <left>5</left>
-                                <top>35</top>
-                                <width>200</width>
-                                <height>200</height>
+                                <centerleft>120</centerleft>
+                                <top>5</top>
+                                <width>230</width>
+                                <height>230</height>
                                 <texture diffuse="images/diffusepic.png" background="true" fallback="PhotoFolder.png">$INFO[ListItem.Thumb]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                             </control>
                             <control type="image">
                                 <visible>StringCompare(ListItem.Label,..)</visible>
                                 <left>5</left>
-                                <top>35</top>
-                                <width>200</width>
-                                <height>200</height>
+                                <top>5</top>
+                                <width>230</width>
+                                <height>230</height>
                                 <texture diffuse="images/diffusepic.png" >$INFO[ListItem.Icon]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                             </control>
+
                         </control>
                     </itemlayout>
-                    <focusedlayout height="300" width="240">
+                    <focusedlayout height="300" width="210">
                         <control type="group">
-                            <animation effect="zoom" start="90" end="100" center="120,300" time="300" reversible="false">Focus</animation>
-
+                            <animation effect="zoom" start="90" end="100" center="120,300" time="400" reversible="false">Focus</animation>
+                            <animation effect="zoom" start="100" end="90" center="120,300" time="300" reversible="false">unFocus</animation>
                             <control type="image">
                                 <visible>!StringCompare(ListItem.Label,..)</visible>
-
-                                <left>5</left>
+                                <centerleft>120</centerleft>
                                 <top>5</top>
                                 <width>230</width>
                                 <height>230</height>
@@ -185,13 +188,14 @@
         <include>WindowsTopInfos</include>
         <control type="grouplist">
             <visible>!ListItem.IsFolder</visible>
+            <visible>!Container.Content(addons)</visible>
             <top>70</top>
             <left>1160</left>
             <width>600</width>
             <height>720</height>
             <itemgap>0</itemgap>
             <align>left</align>
-             <control type="label">
+            <control type="label">
                 <height>30</height>
                 <width>700</width>
                 <font>size22</font>

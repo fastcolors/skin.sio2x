@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="2901">
+<window>
     <defaultcontrol always="true">100</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
-    <zorder>2</zorder>
+    <!--<zorder>2</zorder>-->
     <controls>
         <control type="group">
             <control type="group" id="101" description="Options content">
-                <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
+                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | VideoPlayer.Content(LiveTV)]</visible>
                 <left>630</left>
                 <top>840</top>
                 <animation type="Focus">
@@ -39,7 +38,7 @@
                         <width>590</width>
                         <include>DialogButt</include>
                         <label>$LOCALIZE[33003] $LOCALIZE[287]</label>
-                        <onclick>SetFocus(100,2)</onclick>
+                        <onclick>left</onclick>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                         <onclick>ActivateWindow(SubtitleSearch)</onclick>
                     </control>
@@ -47,37 +46,33 @@
                         <width>590</width>
                         <include>DialogButt</include>
                         <label>13395</label>
-                        <onclick>SetFocus(100,2)</onclick>
-                        <onclick>close</onclick>
+                        <onclick>left</onclick>
+                        <!--<onclick>close</onclick>-->
                         <onclick>ActivateWindow(OSDVideoSettings)</onclick>
                     </control>
                     <control type="button" id="704">
                         <width>590</width>
                         <include>DialogButt</include>
                         <label>$LOCALIZE[292] &amp; $LOCALIZE[287]</label>
-                        <onclick>SetFocus(100,2)</onclick>
-                        <onclick>close</onclick>
+                        <onclick>left</onclick>
+                        <!--<onclick>close</onclick>-->
                         <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                     </control>
                     <control type="button" id="705">
                         <width>590</width>
                         <include>DialogButt</include>
                         <label>298</label>
-                        <onclick>SetFocus(100,2)</onclick>
-                        <onclick>close</onclick>
+                        <onclick>left</onclick>
+                        <!--<onclick>close</onclick>-->
                         <onclick>ActivateWindow(VideoBookmarks)</onclick>
                     </control>
                     <control type="togglebutton" id="706" description="Info">
                         <width>590</width>
                         <include>DialogButt</include>
                         <label>20176</label>
-                        <onclick>SetFocus(100,2)</onclick>
-                        <onclick>close</onclick>
+                        <onclick>left</onclick>
+                        <!--<onclick>close</onclick>-->
                         <onclick>ActivateWindow(142)</onclick>
-                        <!--<altclick>SetFocus(100,2)</altclick>-->
-                        <!--<altclick>close</altclick>-->
-                        <!--<altclick>Dialog.Close(142)</altclick>-->
-                        <!--<usealttexture>Window.IsActive(142)</usealttexture>-->
                     </control>
                     <control type="button" id="707">
                         <width>590</width>
@@ -311,7 +306,6 @@
             </control>
             <control type="image">
                 <visible>!ControlGroup(101).HasFocus()</visible>
-                <visible>!Window.IsVisible(10123) + !Window.IsVisible(10124) + !Window.IsVisible(10125)</visible>
                 <animation type="Visible">
                     <effect type="fade" tween="circle" easing="in" start="0" end="100" time="800"/>
                 </animation>

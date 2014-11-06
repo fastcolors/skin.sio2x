@@ -1,7 +1,7 @@
 3.0.81
 * Cosmetics on Video Info
 * Fix for Iconview not being centered and getting cut off
-
+* Borders on TvShows on shelf
 
 3.0.80
 * Cosmetics Here & There

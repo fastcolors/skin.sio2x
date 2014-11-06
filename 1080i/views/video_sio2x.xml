@@ -279,43 +279,43 @@
                 <width>820</width>
                 <itemgap>3</itemgap>
                 <control type="label">
-                    <width>820</width>
+                    <width>780</width>
                     <height>30</height>
                     <font>size20</font>
                     <label>[B]$INFO[ListItem.Duration] $LOCALIZE[12391][/B]</label>
                 </control>
                 <control type="label">
-                    <width>820</width>
+                    <width>780</width>
                     <height>30</height>
                     <font>size20</font>
                     <label>[B]$INFO[ListItem.Genre][/B]</label>
                 </control>
                 <control type="label">
-                    <width>820</width>
+                    <width>780</width>
                     <height>30</height>
                     <font>size20</font>
                     <label>[B]$INFO[ListItem.Year][/B]</label>
                 </control>
                 <control type="label">
-                    <width>820</width>
+                    <width>780</width>
                     <height>30</height>
                     <font>size20</font>
                     <label>[B]$INFO[ListItem.OriginalTitle][/B]</label>
                 </control>
                 <control type="label">
-                    <width>820</width>
+                    <width>780</width>
                     <height>30</height>
                     <font>size20</font>
                     <label>[B]$INFO[ListItem.Director][/B]</label>
                 </control>
                 <control type="label">
-                    <width>820</width>
+                    <width>780</width>
                     <height>30</height>
                     <font>size20</font>
                     <label>[B]$INFO[ListItem.Country][/B]</label>
                 </control>
                 <control type="textbox">
-                    <width>820</width>
+                    <width>780</width>
                     <height>60</height>
                     <font>size20</font>
                     <autoscroll>false</autoscroll>
@@ -324,21 +324,21 @@
                 </control>
                 <control type="label">
                     <visible>!IsEmpty(ListItem.PlayCount)</visible>
-                    <width>820</width>
+                    <width>780</width>
                     <height>30</height>
                     <font>size20</font>
                     <label>[B]$INFO[ListItem.PlayCount][/B]</label>
                 </control>
                 <control type="label">
                     <visible>!IsEmpty(ListItem.LastPlayed)</visible>
-                    <width>820</width>
+                    <width>780</width>
                     <height>30</height>
                     <font>size20</font>
                     <label>[B]$INFO[ListItem.LastPlayed][/B]</label>
                 </control>
                 <control type="label">
                     <visible>!IsEmpty(ListItem.PercentPlayed) + !Container.Content(Addons)</visible>
-                    <width>820</width>
+                    <width>780</width>
                     <height>30</height>
                     <font>size20</font>
                     <label>[B]$INFO[ListItem.PercentPlayed] %[/B]</label>

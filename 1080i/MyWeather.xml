@@ -313,10 +313,10 @@
             <!--<imagepath>weather/</imagepath>-->
             <!--<timeperimage>600</timeperimage>-->
         <!--</control>-->
-        <!--<control type="multiimage">
-        <width>320</width>
-        <height>200</height>
-        <imagepath>$INFO[Window.Property(MapPath)]</imagepath>
-        </control>-->
+        <!--<control type="multiimage">-->
+        <!--<width>320</width>-->
+        <!--<height>200</height>-->
+        <!--<imagepath>$INFO[Window.Property(MapPath)]</imagepath>-->
+        <!--</control>-->
     </controls>
 </window>

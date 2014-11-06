@@ -26,7 +26,6 @@
         <value condition="System.Date(04-15,04-16)">holidays/leonardo.png</value>
         <value condition="System.Date(10-31,11-01)">holidays/halloween.png</value>
         <value condition="System.Date(12-25,12-26)">holidays/xmas.png</value>
-        <value condition="System.Date(07-13,07-14)">holidays/finale.png</value>
         <value condition="Skin.HasSetting(CustomImage)">$INFO[Skin.String(ShelfCustomImage)]</value>
         <value>$INFO[Window(Weather).Property(Current.ConditionIcon)]</value>
         <!--value>images/XBMCHomeLogo.png</value-->

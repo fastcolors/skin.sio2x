@@ -182,7 +182,10 @@
                 <top>90</top>
                 <width>1350</width>
                 <textcolor>Yellow</textcolor>
-                <include>Genre51Commons</include>
+                <width>758</width>
+                <height>40</height>
+                <align>left</align>
+                <scroll>false</scroll>
                 <label>[B]$INFO[ListItem.Label][/B]  [COLOR=gray]$VAR[TopLabel][/COLOR]</label>
             </control>
             <control type="grouplist">
@@ -192,8 +195,7 @@
                 <left>129</left>
                 <itemgap>0</itemgap>
                 <control type="image" description="Rating">
-                    <!--<visible>!IsEmpty(ListItem.Rating)</visible>-->
-                    <height>48</height>
+                    <height>60</height>
                     <width>270</width>
                     <aspectratio align="right">keep</aspectratio>
                     <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
@@ -202,16 +204,21 @@
                     <width>650</width>
                     <height>60</height>
                     <textcolor>Silver</textcolor>
-                    <include>Genre51Commons</include>
-                    <label>STATUS: $INFO[Window(Home).Property(NextAired.Status)]</label>
+                    <width>758</width>
+                    <height>40</height>
+                    <align>left</align>
+                    <scroll>false</scroll>
+                    <label>STATUS: [COLOR=black]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]</label>
                 </control>
                 <control type="label" description="Next Episode">
-                    <!--<visible>!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>-->
                     <width>650</width>
                     <height>60</height>
                     <textcolor>Silver</textcolor>
-                    <include>Genre51Commons</include>
-                    <label>NEXT AIRTIME: $INFO[Window(Home).Property(NextAired.NextDay)]</label>
+                    <width>758</width>
+                    <height>40</height>
+                    <align>left</align>
+                    <scroll>false</scroll>
+                    <label>NEXT AIRTIME: [COLOR=black]$INFO[Window(Home).Property(NextAired.NextDay)][/COLOR]</label>
                 </control>
                 <control type="image">
                     <height>1</height>
@@ -223,7 +230,6 @@
                     <width>500</width>
                     <height>650</height>
                     <font>size30</font>
-                    <textcolor>Silver</textcolor>
                     <align>justify</align>
                     <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
                     <label>$VAR[Plots]</label>
