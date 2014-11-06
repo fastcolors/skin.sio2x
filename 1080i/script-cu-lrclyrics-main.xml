@@ -12,15 +12,6 @@
         </control>
         <!-- media infos -->
         <control type="group">
-            <!--<control type="image">-->
-            <!--<description>Cover Image</description>-->
-            <!--<top>750</top>-->
-            <!--<left>150</left>-->
-            <!--<width>128</width>-->
-            <!--<height>128</height>-->
-            <!--<texture>$INFO[MusicPlayer.Cover]</texture>-->
-            <!--<aspectratio>stretch</aspectratio>-->
-            <!--</control>-->
             <control type="image">
                 <description>Cover Image</description>
                 <animation effect="rotate" end="-360" center="auto" time="9000" loop="true" reversible="false" condition="true">Conditional</animation>

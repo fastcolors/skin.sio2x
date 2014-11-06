@@ -96,16 +96,6 @@
                         <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
-                    <!--<control type="label">-->
-                    <!--<centerleft>150</centerleft>-->
-                    <!--<top>198</top>-->
-                    <!--<width>300</width>-->
-                    <!--<height>24</height>-->
-                    <!--<font>size24</font>-->
-                    <!--<align>center</align>-->
-                    <!--<textcolor>White</textcolor>-->
-                    <!--<label>[B]$INFO[ListItem.label][/B]</label>-->
-                    <!--</control>-->
                     <control type="label">
                         <centerleft>150</centerleft>
                         <top>198</top>

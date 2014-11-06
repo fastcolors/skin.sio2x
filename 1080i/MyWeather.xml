@@ -141,9 +141,9 @@
             <onleft>150</onleft>
             <onright>150</onright>
             <orientation>horizontal</orientation>
-            <itemlayout width="250">
+            <itemlayout width="214">
                 <control type="label">
-                    <centerleft>125</centerleft>
+                    <centerleft>107</centerleft>
                     <top>0</top>
                     <height>120</height>
                     <width>220</width>
@@ -154,7 +154,7 @@
                     <label>$INFO[ListItem.label]</label>
                 </control>
                 <control type="label" description="temps">
-                   <centerleft>125</centerleft>
+                   <centerleft>107</centerleft>
                     <top>300</top>
                     <height>100</height>
                     <width>220</width>
@@ -163,11 +163,11 @@
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.label2]</label>
                 </control>
-                <control type="label" description="Conditions">
-                    <centerleft>125</centerleft>
+                <control type="textbox" description="Conditions">
+                    <centerleft>107</centerleft>
                     <top>400</top>
-                    <height>45</height>
-                    <width>220</width>
+                    <height>65</height>
+                    <width>200</width>
                     <font>size21</font>
                     <align>center</align>
                     <textcolor>shelffont</textcolor>
@@ -175,23 +175,22 @@
                     <label>$INFO[ListItem.Property(Conditions)]</label>
                 </control>
                 <control type="image" description="Dayicon">
-                    <left>25</left>
                     <top>122</top>
                     <height>220</height>
-                    <width>220</width>
+                    <width>210</width>
                     <texture>$INFO[ListItem.thumb]</texture>
                     <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <left>250</left>
+                    <left>214</left>
                     <width>3</width>
                     <height>482</height>
                     <texture>lines/LineV.png</texture>
                 </control>
             </itemlayout>
-            <focusedlayout width="250">
+            <focusedlayout width="214">
                 <control type="label">
-                   <centerleft>125</centerleft>
+                   <centerleft>107</centerleft>
                     <top>0</top>
                     <height>120</height>
                     <width>220</width>
@@ -203,7 +202,7 @@
                     <visible>!Control.HasFocus(150)</visible>
                 </control>
                 <control type="label">
-                    <centerleft>125</centerleft>
+                    <centerleft>107</centerleft>
                     <top>0</top>
                     <height>120</height>
                     <width>220</width>
@@ -214,7 +213,7 @@
                     <visible>Control.HasFocus(150)</visible>
                 </control>
                 <control type="label" description="temps">
-                    <centerleft>125</centerleft>
+                    <centerleft>107</centerleft>
                     <top>300</top>
                     <height>100</height>
                     <width>220</width>
@@ -223,11 +222,11 @@
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.label2]</label>
                 </control>
-                <control type="label" description="Conditions">
-                    <centerleft>125</centerleft>
+                <control type="textbox" description="Conditions">
+                    <centerleft>107</centerleft>
                     <top>400</top>
-                    <height>45</height>
-                    <width>220</width>
+                    <height>65</height>
+                    <width>200</width>
                     <font>size21</font>
                     <align>center</align>
                     <textcolor>shelffont</textcolor>
@@ -235,15 +234,14 @@
                     <label>$INFO[ListItem.Property(Conditions)]</label>
                 </control>
                 <control type="image" description="Dayicon">
-                    <left>25</left>
                     <top>122</top>
                     <height>220</height>
-                    <width>220</width>
+                    <width>210</width>
                     <texture>$INFO[ListItem.thumb]</texture>
                     <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="image">
-                    <left>250</left>
+                    <left>214</left>
                     <width>3</width>
                     <height>482</height>
                     <texture>lines/LineV.png</texture>
@@ -307,16 +305,16 @@
             <aspectratio>stretch</aspectratio>
             <texture>$INFO[Window.Property(Current.FanartCode),weather/,.png]</texture>
         </control>
-        <!--<control type="multiimage">-->
-            <!--<height>1080</height>-->
-            <!--<width>1920</width>-->
-            <!--<imagepath>weather/</imagepath>-->
-            <!--<timeperimage>600</timeperimage>-->
-        <!--</control>-->
-        <!--<control type="multiimage">-->
-        <!--<width>320</width>-->
-        <!--<height>200</height>-->
-        <!--<imagepath>$INFO[Window.Property(MapPath)]</imagepath>-->
-        <!--</control>-->
+        <control type="multiimage">
+            <height>1080</height>
+            <width>1920</width>
+            <imagepath>weather/</imagepath>
+            <timeperimage>600</timeperimage>
+        </control>
+        <control type="multiimage">
+        <width>320</width>
+        <height>200</height>
+        <imagepath>$INFO[Window.Property(MapPath)]</imagepath>
+        </control>
     </controls>
 </window>

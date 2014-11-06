@@ -164,16 +164,6 @@
                 <onup>3</onup>
                 <ondown>3</ondown>
             </control>
-            <control type="image" description="loopnf">
-                <visible>Control.IsVisible(5)</visible>
-                <animation effect="fade" end="50" condition="!Control.HasFocus(5)" reversible="false">Conditional</animation>
-                <left>1010</left>
-                <top>990</top>
-                <width>48</width>
-                <height>81</height>
-                <texture colordiffuse="black">images/loop.png</texture>
-                <aspectratio>keep</aspectratio>
-            </control>
         </control>
         <control type="image">
             <left>960</left>
