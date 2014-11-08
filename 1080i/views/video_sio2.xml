@@ -423,11 +423,9 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image">
-                        <left>-6</left>
-                        <top>-7</top>
-                        <height>454</height>
-                        <width>308</width>
-                        <texture border="10" background="true">$VAR[dvdbox]</texture>
+                        <height>440</height>
+                        <width>294</width>
+                        <texture border="4">$VAR[dvdbox]</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -591,7 +589,7 @@
                         <top>880</top>
                         <width>160</width>
                         <height>160</height>
-                        <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
+                        <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                 </control>

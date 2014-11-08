@@ -5,7 +5,7 @@
             <visible>Control.IsVisible(53)</visible>
             <control type="group">
                 <control type="panel" id="53">
-                    <left>30</left>
+                    <centerleft>960</centerleft>
                     <top>100</top>
                     <width>1860</width>
                     <height>990</height>
@@ -97,7 +97,7 @@
                             <aspectratio align="left">keep</aspectratio>
                             <texture>$VAR[WatchStatus]</texture>
                         </control>
-                         <control type="image" description="Stars">
+                        <control type="image" description="Stars">
                             <centerleft>225</centerleft>
                             <bottom>105</bottom>
                             <visible>!IsEmpty(ListItem.Rating)</visible>
@@ -146,7 +146,7 @@
                     </focusedlayout>
                     <!--ADDONSEND-->
                     <!--GENRAL-->
-                    <itemlayout height="337" width="225">
+                    <itemlayout height="333" width="225">
                         <control type="image">
                             <left>35</left>
                             <top>24</top>
@@ -154,7 +154,7 @@
                             <height>331</height>
                             <texture background="true" fallback="DefaultGenreIcon.jpg">$VAR[locandine]</texture>
                             <colordiffuse>FFEEEEEE</colordiffuse>
-                            <aspectratio>scale</aspectratio>
+                            <aspectratio scalediffse="false">scale</aspectratio>
                         </control>
                         <control type="image" description="WatchStatus">
                             <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
@@ -184,39 +184,38 @@
                             <bottom>-30</bottom>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="337" width="225">
+                    <focusedlayout height="333" width="225">
                         <control type="group">
                             <animation effect="zoom" center="155,35" end="130" time="200" reversible="true">Focus</animation>
                             <animation effect="zoom" center="155,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
                             <control type="group" description="Selection">
                                 <include>Scrollanim</include>
-                                <control type="image">
+                                <control type="group">
                                     <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                                     <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                    <left>19</left>
-                                    <top>9</top>
-                                    <width>253</width>
-                                    <height>360</height>
-                                    <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
-                                    <aspectratio>stretch</aspectratio>
-                                </control>
-                                <control type="image">
-                                    <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                                    <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                    <left>19</left>
-                                    <top>9</top>
-                                    <width>253</width>
-                                    <height>360</height>
-                                    <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
-                                    <aspectratio>stretch</aspectratio>
+                                    <control type="image">
+                                        <left>19</left>
+                                        <top>9</top>
+                                        <width>253</width>
+                                        <height>360</height>
+                                        <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
+                                        <aspectratio>stretch</aspectratio>
+                                    </control>
+                                    <control type="image">
+                                        <left>19</left>
+                                        <top>9</top>
+                                        <width>253</width>
+                                        <height>360</height>
+                                        <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
+                                        <aspectratio>stretch</aspectratio>
+                                    </control>
                                 </control>
                                 <control type="image">
                                     <left>35</left>
                                     <top>24</top>
                                     <width>222</width>
                                     <height>331</height>
-                                    <texture background="true" fallback="DefaultGenreIcon.jpg">$VAR[locandine]</texture>
-                                    <aspectratio>scale</aspectratio>
+                                    <texture background="true" fallback="DefaultGenreIcon.jpg">$VAR[locandine]</texture>                                    <aspectratio>scale</aspectratio>
                                 </control>
                                 <control type="image" description="WatchStatus">
                                     <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>

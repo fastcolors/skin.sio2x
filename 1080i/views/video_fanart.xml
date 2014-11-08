@@ -30,6 +30,13 @@
                         <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
+                    <control type="image" description="box">
+                        <left>85</left>
+                        <top>80</top>
+                        <height>350</height>
+                        <width>230</width>
+                        <texture border="4">$VAR[dvdbox]</texture>
+                    </control>
                     <control type="image" description="WatchStatus">
                         <left>76</left>
                         <top>380</top>
@@ -85,6 +92,13 @@
                             <texture background="true" fallback="DefaultVideoCover.png">$VAR[locandine]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
+                        <control type="image" description="box">
+                            <left>85</left>
+                            <top>80</top>
+                            <height>350</height>
+                            <width>230</width>
+                            <texture border="4">$VAR[dvdbox]</texture>
+                        </control>
                         <control type="image" description="WatchStatus">
                             <left>76</left>
                             <top>380</top>
@@ -93,7 +107,6 @@
                             <aspectratio align="left">keep</aspectratio>
                             <texture>$VAR[WatchStatus]</texture>
                         </control>
-
                         <control type="group">
                             <visible>container.content(TVshows) | container.content(seasons)</visible>
                             <control type="image">

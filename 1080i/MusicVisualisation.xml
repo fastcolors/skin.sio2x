@@ -120,7 +120,7 @@
                             <control type="label" description="Album">
                                 <width>1160</width>
                                 <height>50</height>
-                                <label>[COLOR=Silver]$LOCALIZE[558]: [/COLOR]$INFO[MusicPlayer.Album]</label>
+                                <label>[COLOR=dimgray]$LOCALIZE[558]: [/COLOR]$INFO[MusicPlayer.Album]</label>
                                 <align>center</align>
                                 <font>size38</font>
                                 <textcolor>gray</textcolor>
@@ -128,7 +128,7 @@
                             <control type="label" description="Album">
                                 <width>1160</width>
                                 <height>50</height>
-                                <label>[COLOR=Silver]$LOCALIZE[345]: [/COLOR]$INFO[MusicPlayer.Year]</label>
+                                <label>[COLOR=dimgray]$LOCALIZE[345]: [/COLOR]$INFO[MusicPlayer.Year]</label>
                                 <align>center</align>
                                 <font>size38</font>
                                 <textcolor>gray</textcolor>
@@ -140,7 +140,7 @@
                                 <width>1160</width>
                                 <height>50</height>
                                 <align>center</align>
-                                <textcolor>Silver</textcolor>
+                                <textcolor>dimgray</textcolor>
                                 <animation effect="fade" time="200">VisibleChange</animation>
                                 <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
                                 <font>size26</font>

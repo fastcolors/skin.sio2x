@@ -1,4 +1,9 @@
-3.0.81
+3.1.1
+* Fix for MPAA not showing correcty on Sio2 / Sio2x views
+* Moved Skin version label to bottom fo home (z order)
+* Cosmetics for Icons (no more dvd boxes) - Better view of Favourites on Shelf.
+
+3.0.81 / 3.1.0
 * Cosmetics on Video Info
 * Fix for Iconview not being centered and getting cut off
 * Borders on TvShows on shelf

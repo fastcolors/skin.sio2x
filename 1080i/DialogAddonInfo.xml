@@ -50,7 +50,7 @@
                     <height>45</height>
                     <font>size33</font>
                     <align>left</align>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                     <label>$INFO[ListItem.Property(Addon.Creator)]</label>
                 </control>
                 <control type="label" description="Version">
@@ -59,7 +59,7 @@
                     <height>45</height>
                     <font>size33</font>
                     <align>left</align>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                     <label>$LOCALIZE[24051] [COLOR=red] [B]$INFO[ListItem.Property(Addon.Version)][/B] [/COLOR]</label>
                 </control>
                 <control type="label" description="Disclaimer">

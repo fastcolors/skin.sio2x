@@ -39,7 +39,6 @@
                     <include>DialogButt</include>
                     <label>$LOCALIZE[653]</label>
                     <onclick>Close</onclick>
-                    <onclick>CleanLibrary(video)</onclick>
                     <onclick>UpdateLibrary(video)</onclick>
                 </control>
                 <!--<control type="button" id="705" description="Update Library">-->

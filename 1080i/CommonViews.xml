@@ -979,7 +979,7 @@
                 <control type="textbox">
                     <height>210</height>
                     <width>758</width>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                     <align>justify</align>
                     <autoscroll delay="8000" time="4300" repeat="10000"></autoscroll>
                     <label>$VAR[Plots]</label>

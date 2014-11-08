@@ -41,7 +41,7 @@
             <control type="label">
                 <width>auto</width>
                 <height>120</height>
-                <textcolor>Silver</textcolor>
+                <textcolor>dimgray</textcolor>
                 <font>Size30</font>
                 <label>$INFO[System.AddonVersion(skin.sio2x)]</label>
             </control>

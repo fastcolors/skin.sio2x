@@ -78,20 +78,19 @@
     </variable>
 
     <variable name="MPAAS">
-        <value condition="substring(ListItem.MPAA,TV)">$INFO[ListItem.MPAA]</value>
-        <value condition="substring(ListItem.MPAA,PG-13)">PG-13</value>
-        <value condition="substring(ListItem.MPAA,Rated R)">R</value>
-        <value condition="StringCompare(ListItem.MPAA,R)">R</value>
-        <value condition="substring(ListItem.MPAA,PG)">PG</value>
-        <value condition="substring(ListItem.MPAA,NC-17)">NC-17</value>
-        <value condition="substring(ListItem.MPAA,G)">G</value>
-        <value condition="substring(ListItem.MPAA,12e)">12e</value>
-        <value condition="substring(ListItem.MPAA,12)">12</value>
+        <value condition="SubString(ListItem.MPAA,TV)">$INFO[ListItem.MPAA]</value>
+        <value condition="SubString(ListItem.MPAA,PG-13)">PG-13</value>
+        <value condition="SubString(ListItem.MPAA,R,Right)">R</value>
+        <value condition="SubString(ListItem.MPAA,PG)">PG</value>
+        <value condition="SubString(ListItem.MPAA,NC-17)">NC-17</value>
+        <value condition="SubString(ListItem.MPAA,G)">G</value>
+        <value condition="SubString(ListItem.MPAA,12e)">12e</value>
+        <value condition="SubString(ListItem.MPAA,12)">12</value>
         <value condition="substring(ListItem.MPAA,15)">15</value>
         <value condition="substring(ListItem.MPAA,R18)">R18</value>
         <value condition="substring(ListItem.MPAA,18)">18</value>
         <value condition="substring(ListItem.MPAA,U)">U</value>
-        <value>NA</value>
+        <value>$INFO[ListItem.MPAA]</value>
     </variable>
 
     <variable name="Plots">
@@ -214,7 +213,7 @@
     </variable>
 
     <variable name="diffuseselectshelf">
-        <value condition="![Control.IsVisible(311) | Control.IsVisible(312)]">black</value>
+        <value condition="![Control.IsVisible(311) | Control.IsVisible(312)]">reverse</value>
         <!--movies-->
         <!--red-->
         <value condition="SubString(Container(311).ListItem.MPAA,R,Right)">CCFF0000</value>
@@ -236,7 +235,7 @@
         <!--orange-->
         <value condition="Control.HasFocus(312) + SubString(Container(312).ListItem.MPAA,14)">CCFF8800</value>
         <!--general-->
-        <value>AA5555FF</value>
+        <value>CC5555FF</value>
     </variable>
 
     <variable name="shelfmovies">

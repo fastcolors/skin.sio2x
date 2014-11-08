@@ -9,43 +9,35 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="350" width="320">
             <control type="group">
+                <animation condition="true" center="160,22" effect="zoom" end="90">Conditional</animation>
                 <control type="image">
                     <centerleft>160</centerleft>
-                    <top>25</top>
-                    <width>250</width>
-                    <height>375</height>
+                    <top>22</top>
+                    <width>279</width>
+                    <height>420</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
                     <centerleft>160</centerleft>
-                    <top>18</top>
-                    <width>262</width>
-                    <height>389</height>
-                    <texture border="10" background="true">$VAR[dvdbox]</texture>
-                    <aspectratio>stretch</aspectratio>
+                    <top>22</top>
+                    <width>279</width>
+                    <height>420</height>
+                    <texture>$VAR[dvdbox]</texture>
                 </control>
             </control>
         </itemlayout>
         <focusedlayout height="420" width="320">
             <control type="group">
-                <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
-                <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
+                <animation center="160,22" effect="zoom" start="90" end="100" time="200">Focus</animation>
+                <animation center="160,22" effect="zoom" start="100" end="90" time="100">unFocus</animation>
                 <control type="image">
                     <centerleft>160</centerleft>
-                    <top>25</top>
-                    <width>250</width>
-                    <height>375</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+                    <top>22</top>
+                    <width>279</width>
+                    <height>420</height>
+                    <texture fallback="DefaultVideoCover.png" diffuse="images/diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>scale</aspectratio>
-                </control>
-                <control type="image">
-                    <centerleft>160</centerleft>
-                    <top>18</top>
-                    <width>262</width>
-                    <height>389</height>
-                    <texture border="10" background="true">$VAR[dvdbox]</texture>
-                    <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="group">
                     <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
@@ -53,16 +45,23 @@
                     <control type="image">
                         <centerleft>160</centerleft>
                         <top>22</top>
-                        <width>254</width>
-                        <height>381</height>
+                        <width>279</width>
+                        <height>420</height>
                         <texture colordiffuse="$VAR[diffuseselectshelf]">images/darkgrey.png</texture>
+                    </control>
+                    <control type="image">
+                        <centerleft>160</centerleft>
+                        <top>22</top>
+                        <width>279</width>
+                        <height>420</height>
+                        <texture>$VAR[dvdbox]</texture>
                     </control>
                     <control type="textbox">
                         <centerleft>160</centerleft>
                         <top>28</top>
-                        <width>244</width>
-                        <height>369</height>
-                        <font>size22</font>
+                        <width>268</width>
+                        <height>405</height>
+                        <font>size26</font>
                         <textcolor>shelffont</textcolor>
                         <shadowcolor>shelfshadow</shadowcolor>
                         <autoscroll>false</autoscroll>
@@ -71,10 +70,10 @@
                     </control>
                     <control type="image">
                         <visible>!IsEmpty(ListItem.Trailer)</visible>
-                        <top>360</top>
-                        <right>40</right>
-                        <width>40</width>
-                        <height>40</height>
+                        <top>386</top>
+                        <right>34</right>
+                        <width>44</width>
+                        <height>44</height>
                         <texture>info/trailer.png</texture>
                     </control>
                 </control>
@@ -92,22 +91,25 @@
             <control type="group">
                 <control type="group">
                     <control type="image">
-                        <left>40</left>
+                        <centerleft>160</centerleft>
+                        <top>18</top>
+                        <width>262</width>
+                        <height>389</height>
+                        <texture colordiffuse="white">images/transparent.png</texture>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="image">
+                        <centerleft>160</centerleft>
                         <top>145</top>
                         <width>240</width>
                         <height>240</height>
                         <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
-                        <aspectratio>stretch</aspectratio>
+                        <bordertexture border="4">images/dvdbox.png</bordertexture>
+                        <bordersize>1</bordersize>
+                        <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
-                        <left>35</left>
-                        <top>25</top>
-                        <width>250</width>
-                        <height>375</height>
-                        <texture>images/addonscover.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>31</left>
+                        <centerleft>160</centerleft>
                         <top>18</top>
                         <width>262</width>
                         <height>389</height>
@@ -116,13 +118,13 @@
                     </control>
                 </control>
                 <control type="textbox">
-                    <left>38</left>
-                    <top>30</top>
+                    <centerleft>160</centerleft>
+                    <top>28</top>
                     <width>244</width>
-                    <height>369</height>
+                    <height>117</height>
                     <font>size22</font>
-                    <textcolor>Silver</textcolor>
-                    <label>[B]$INFO[ListItem.Property(ItemType)][/B][CR][CR][B]$INFO[ListItem.Label][/B]</label>
+                    <textcolor>dimgray</textcolor>
+                    <label>[B]$INFO[ListItem.Label][/B]</label>
                     <align>center</align>
                 </control>
             </control>
@@ -132,22 +134,25 @@
                 <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
                 <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
                 <control type="image">
-                    <left>40</left>
+                    <centerleft>160</centerleft>
+                    <top>18</top>
+                    <width>262</width>
+                    <height>389</height>
+                    <texture colordiffuse="main">images/transparent.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image">
+                    <centerleft>160</centerleft>
                     <top>145</top>
                     <width>240</width>
                     <height>240</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio>stretch</aspectratio>
+                    <bordertexture>images/transparent.png</bordertexture>
+                    <bordersize>1</bordersize>
+                    <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
-                    <left>35</left>
-                    <top>25</top>
-                    <width>250</width>
-                    <height>375</height>
-                    <texture>images/addonscover.png</texture>
-                </control>
-                <control type="image">
-                    <left>31</left>
+                    <centerleft>160</centerleft>
                     <top>18</top>
                     <width>262</width>
                     <height>389</height>
@@ -155,13 +160,13 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="textbox">
-                    <left>38</left>
-                    <top>30</top>
+                    <centerleft>160</centerleft>
+                    <top>28</top>
                     <width>244</width>
-                    <height>369</height>
+                    <height>117</height>
                     <font>size22</font>
                     <textcolor>black</textcolor>
-                    <label>[B]$INFO[ListItem.Property(ItemType)][/B][CR][CR][B]$INFO[ListItem.Label][/B]</label>
+                    <label>[B]$INFO[ListItem.Label][/B]</label>
                     <align>center</align>
                 </control>
             </control>
@@ -191,13 +196,11 @@
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
-                    <visible>Control.IsVisible(313) + !Skin.HasSetting(MusicShelf_Custom)</visible>
-                    <left>28</left>
-                    <top>44</top>
-                    <width>328</width>
-                    <height>328</height>
-                    <texture background="true">images/cellophane.png</texture>
-                    <aspectratio>stretch</aspectratio>
+                    <left>30</left>
+                    <top>46</top>
+                    <width>324</width>
+                    <height>324</height>
+                    <texture border="4">$VAR[dvdbox]</texture>
                 </control>
                 <control type="label" description="Artist or Type">
                     <top>8</top>
@@ -233,13 +236,11 @@
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
-                    <visible>Control.IsVisible(313) + !Skin.HasSetting(MusicShelf_Custom)</visible>
-                    <left>28</left>
-                    <top>44</top>
-                    <width>328</width>
-                    <height>328</height>
-                    <texture background="true">images/cellophane.png</texture>
-                    <aspectratio>stretch</aspectratio>
+                    <left>30</left>
+                    <top>46</top>
+                    <width>324</width>
+                    <height>324</height>
+                    <texture border="4">$VAR[dvdbox]</texture>
                 </control>
                 <control type="label" description="Artist or Type">
                     <top>8</top>
@@ -274,13 +275,6 @@
             <control type="group">
                 <animation effect="zoom" condition="true" start="100" end="90" center="240,180">Conditional</animation>
                 <control type="image">
-                    <left>19</left>
-                    <top>71</top>
-                    <width>441</width>
-                    <height>343</height>
-                    <texture border="20" colordiffuse="Silver">images/soapshelf.png</texture>
-                </control>
-                <control type="image">
                     <left>23</left>
                     <top>168</top>
                     <width>433</width>
@@ -288,14 +282,19 @@
                     <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
-                <control type="group">
-                    <control type="image">
-                        <left>23</left>
-                        <top>75</top>
-                        <width>433</width>
-                        <height>93</height>
-                        <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
-                    </control>
+                <control type="image">
+                    <left>23</left>
+                    <top>75</top>
+                    <width>433</width>
+                    <height>93</height>
+                    <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
+                </control>
+                <control type="image">
+                    <left>21</left>
+                    <top>73</top>
+                    <width>437</width>
+                    <height>339</height>
+                    <texture border="20" colordiffuse="7AFFFFFF">images/soapshelf.png</texture>
                 </control>
                 <control type="label">
                     <top>30</top>
@@ -322,13 +321,6 @@
                 <animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>
                 <animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>
                 <control type="image">
-                    <left>19</left>
-                    <top>71</top>
-                    <width>441</width>
-                    <height>343</height>
-                    <texture border="20" colordiffuse="$VAR[diffuseselectshelf]">images/soapshelf.png</texture>
-                </control>
-                <control type="image">
                     <left>23</left>
                     <top>168</top>
                     <width>433</width>
@@ -336,14 +328,19 @@
                     <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
-                <control type="group">
-                    <control type="image">
-                        <left>23</left>
-                        <top>75</top>
-                        <width>433</width>
-                        <height>93</height>
-                        <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
-                    </control>
+                <control type="image">
+                    <left>23</left>
+                    <top>75</top>
+                    <width>433</width>
+                    <height>93</height>
+                    <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
+                </control>
+                <control type="image">
+                    <left>21</left>
+                    <top>73</top>
+                    <width>437</width>
+                    <height>339</height>
+                    <texture border="20" colordiffuse="$VAR[diffuseselectshelf]">images/soapshelf.png</texture>
                 </control>
                 <control type="label">
                     <top>30</top>

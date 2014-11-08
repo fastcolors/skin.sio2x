@@ -7,6 +7,17 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
+        <control type="label">
+            <description>SKIN VERSION</description>
+            <right>10</right>
+            <top>1060</top>
+            <width>80</width>
+            <height>20</height>
+            <font>XS</font>
+            <textcolor>lightblue</textcolor>
+            <align>right</align>
+            <info>System.AddonVersion(skin.sio2x)</info>
+        </control>
         <control type="button" id="9009">
             <include>ShelfFade</include>
             <visible>[Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(315)] + Container(9000).Row(0)</visible>
@@ -341,17 +352,6 @@
         <!--<align>right</align>-->
         <!--<info>Network.IPAddress</info>-->
         <!--</control>-->
-        <control type="label">
-            <description>SKIN VERSION</description>
-            <right>10</right>
-            <top>1060</top>
-            <width>80</width>
-            <height>20</height>
-            <font>XS</font>
-            <textcolor>lightblue</textcolor>
-            <align>right</align>
-            <info>System.AddonVersion(skin.sio2x)</info>
-        </control>
         <control type="grouplist">
             <visible>[Container(9000).Row(0) | Container(9000).Row(1)]</visible>
             <top>13</top>
