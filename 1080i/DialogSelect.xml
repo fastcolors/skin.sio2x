@@ -13,7 +13,7 @@
             <height>60</height>
             <align>center</align>
             <aligny>bottom</aligny>
-            <textcolor>black</textcolor>
+            <textcolor>main</textcolor>
             <font>size42</font>
             <label>13406</label>
         </control>

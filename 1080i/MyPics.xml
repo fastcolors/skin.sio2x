@@ -158,13 +158,13 @@
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
                 <control type="button" id="6" description="Slideshow">
-                    <disabledcolor>Disabled</disabledcolor>
+                    <disabledcolor>dimgray</disabledcolor>
                     <include>DialogButt</include>
                     <label>108</label>
                     <visible>!ListItem.IsFolder</visible>
                 </control>
                 <control type="button" id="7" description="Recursive slideshow">
-                    <disabledcolor>Disabled</disabledcolor>
+                    <disabledcolor>dimgray</disabledcolor>
                     <include>DialogButt</include>
                     <label>13318</label>
                     <visible>ListItem.IsFolder</visible>

@@ -29,7 +29,7 @@
                 <label>-</label>
                 <font>size30B</font>
                 <haspath>true</haspath>
-                <textcolor>Yellow</textcolor>
+                <textcolor>orange</textcolor>
             </control>
             <control type="list" id="20" description="Left File List">
                 <top>126</top>
@@ -47,7 +47,7 @@
                         <height>60</height>
                         <font>size26</font>
                         <aligny>center</aligny>
-                        <textcolor>White</textcolor>
+                        <textcolor>maindim</textcolor>
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
@@ -57,7 +57,7 @@
                         <font>size27</font>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <textcolor>Silver</textcolor>
+                        <textcolor>dimgray</textcolor>
                         <info>ListItem.Label2</info>
                     </control>
                 </itemlayout>
@@ -75,7 +75,7 @@
                         <height>60</height>
                         <font>size26</font>
                         <aligny>center</aligny>
-                        <textcolor>White</textcolor>
+                        <textcolor>maindim</textcolor>
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
@@ -85,7 +85,7 @@
                         <font>size27</font>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <textcolor>Silver</textcolor>
+                        <textcolor>dimgray</textcolor>
                         <info>ListItem.Label2</info>
                     </control>
                 </focusedlayout>
@@ -111,7 +111,7 @@
                 <label>-</label>
                 <font>size30B</font>
                 <haspath>true</haspath>
-                <textcolor>Yellow</textcolor>
+                <textcolor>orange</textcolor>
             </control>
             <control type="list" id="21" description="Right File List">
                 <right>-20</right>
@@ -131,7 +131,7 @@
                         <font>size26</font>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <textcolor>White</textcolor>
+                        <textcolor>maindim</textcolor>
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
@@ -139,7 +139,7 @@
                         <width>150</width>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>Silver</textcolor>
+                        <textcolor>dimgray</textcolor>
                         <info>ListItem.Label2</info>
                     </control>
                 </itemlayout>
@@ -158,7 +158,7 @@
                         <font>size26</font>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <textcolor>White</textcolor>
+                        <textcolor>maindim</textcolor>
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
@@ -166,7 +166,7 @@
                         <width>150</width>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>Silver</textcolor>
+                        <textcolor>dimgray</textcolor>
                         <info>ListItem.Label2</info>
                     </control>
                 </focusedlayout>

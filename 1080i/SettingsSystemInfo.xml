@@ -185,7 +185,7 @@
                 <width min="30" max="500">auto</width>
                 <height>45</height>
                 <font>size30</font>
-                <textcolor>White</textcolor>
+                <textcolor>maindim</textcolor>
                 <label>$INFO[System.BatteryLevel] Batt.</label>
             </control>
             <control type="label" description="Clock">

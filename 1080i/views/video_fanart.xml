@@ -75,7 +75,7 @@
                     <control type="group">
                         <animation effect="zoom" end="150" center="178,430" time="300" tween="Quadratic" easing="in">Focus</animation>
                         <animation effect="zoom" start="150" end="100" center="178,430" time="120">unFocus</animation>
-                        <control type="image" description="black">
+                        <control type="image" description="main">
                             <left>77</left>
                             <top>72</top>
                             <height>365</height>
@@ -145,7 +145,7 @@
                     <height>45</height>
                     <width>255</width>
                     <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
+                    <texture colordiffuse="main">$INFO[ListItem.Rating,badges/,.png]</texture>
                 </control>
                 <control type="label" description="Item Title">
                     <centerleft>960</centerleft>
@@ -159,7 +159,7 @@
                     <top>515</top>
                     <width>1300</width>
                     <height>1</height>
-                    <texture colordiffuse="black">lines/LineL.png</texture>
+                    <texture colordiffuse="main">lines/LineL.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="group">
@@ -168,14 +168,14 @@
                         <centerleft>960</centerleft>
                         <width>620</width>
                         <height>1</height>
-                        <texture colordiffuse="black">lines/LineSH.png</texture>
+                        <texture colordiffuse="main">lines/LineSH.png</texture>
                     </control>
                     <control type="image" description="lineplot">
                         <centerleft>960</centerleft>
                         <top>80</top>
                         <width>1724</width>
                         <height>1</height>
-                        <texture colordiffuse="black">lines/LineSH.png</texture>
+                        <texture colordiffuse="main">lines/LineSH.png</texture>
                     </control>
                     <control type="textbox" description="Plot">
                         <top>80</top>
@@ -183,7 +183,7 @@
                         <width>1724</width>
                         <height>330</height>
                         <font>size30</font>
-                        <textcolor>Silver</textcolor>
+                        <textcolor>dimgray</textcolor>
                         <align>justify</align>
                         <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
                         <label>$VAR[Plots]</label>
@@ -194,7 +194,7 @@
                         <top>410</top>
                         <width>1724</width>
                         <height>1</height>
-                        <texture colordiffuse="black">lines/LineSH.png</texture>
+                        <texture colordiffuse="main">lines/LineSH.png</texture>
                     </control>
                     <control type="label">
                         <centerleft>960</centerleft>

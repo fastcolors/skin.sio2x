@@ -134,7 +134,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>size39B</font>
-                <textcolor>White</textcolor>
+                <textcolor>maindim</textcolor>
             </control>
             <control type="grouplist" id="100" description="Music OSD Options">
                 <left>1298</left>

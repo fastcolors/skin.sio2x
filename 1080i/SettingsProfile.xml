@@ -45,7 +45,7 @@
                         <width>900</width>
                         <aligny>center</aligny>
                         <font>size36</font>
-                        <textcolor>White</textcolor>
+                        <textcolor>maindim</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -57,7 +57,7 @@
                         <width>900</width>
                         <aligny>center</aligny>
                         <font>size36</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>main</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </focusedlayout>

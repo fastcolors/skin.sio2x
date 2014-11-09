@@ -7,11 +7,11 @@
         <align>left</align>
         <aligny>center</aligny>
         <font>size33</font>
-        <textcolor>White</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <selectedcolor>Yellow</selectedcolor>
-        <disabledcolor>Disabled</disabledcolor>
-        <shadowcolor>white</shadowcolor>
+        <textcolor>main</textcolor>
+        <focusedcolor>main</focusedcolor>
+        <selectedcolor>orange</selectedcolor>
+        <disabledcolor>dimgray</disabledcolor>
+        <shadowcolor>inverted</shadowcolor>
         <scroll>true</scroll>
         <scrollspeed>50</scrollspeed>
         <scrollsuffix> • </scrollsuffix>
@@ -24,95 +24,86 @@
         <aligny>center</aligny>
         <font>size33</font>
         <textoffsetx>30</textoffsetx>
-        <textcolor>White</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <selectedcolor>Yellow</selectedcolor>
-        <disabledcolor>Disabled</disabledcolor>
+        <textcolor>main</textcolor>
+        <focusedcolor>main</focusedcolor>
+        <selectedcolor>orange</selectedcolor>
+        <disabledcolor>dimgray</disabledcolor>
         <scrollout>false</scrollout>
         <pauseatend>3000</pauseatend>
         <scrollsuffix> •  • </scrollsuffix>
     </default>
     <default type="textbox">
         <font>size24</font>
-        <textcolor>black</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <selectedcolor>Yellow</selectedcolor>
-        <disabledcolor>Disabled</disabledcolor>
+        <textcolor>main</textcolor>
+        <focusedcolor>main</focusedcolor>
+        <selectedcolor>orange</selectedcolor>
+        <disabledcolor>dimgray</disabledcolor>
         <pagecontrol>61</pagecontrol>
-        <pulseonselect></pulseonselect>
-        <autoscroll delay="10000" time="3000" repeat="10000"></autoscroll>
+        <pulseonselect>false</pulseonselect>
+        <autoscroll delay="10000" time="3000" repeat="10000">true</autoscroll>
     </default>
     <default type="image">
-        <!--<left>0</left>-->
-        <!--<top>0</top>-->
         <align>center</align>
         <aligny>center</aligny>
         <aspectratio>stretch</aspectratio>
     </default>
     <default type="button">
-        <!--<left>0</left>-->
-        <!--<top>0</top>-->
         <width>390</width>
         <height>75</height>
         <align>center</align>
         <aligny>center</aligny>
         <font>size33</font>
         <textoffsetx>30</textoffsetx>
-        <textcolor>White</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <selectedcolor>Yellow</selectedcolor>
-        <disabledcolor>Disabled</disabledcolor>
-        <invalidcolor>invalid</invalidcolor>
+        <textcolor>maindim</textcolor>
+        <focusedcolor>main</focusedcolor>
+        <selectedcolor>orange</selectedcolor>
+        <disabledcolor>dimgray</disabledcolor>
+        <invalidcolor>red</invalidcolor>
         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="edit">
-        <!--<top>0</top>-->
         <width>390</width>
         <height>75</height>
         <align>center</align>
         <aligny>center</aligny>
         <font>size33</font>
         <textoffsetx>30</textoffsetx>
-        <textcolor>White</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <selectedcolor>black</selectedcolor>
-        <disabledcolor>Disabled</disabledcolor>
-        <invalidcolor>invalid</invalidcolor>
+        <textcolor>maindim</textcolor>
+        <focusedcolor>main</focusedcolor>
+        <selectedcolor>main</selectedcolor>
+        <disabledcolor>dimgray</disabledcolor>
+        <invalidcolor>red</invalidcolor>
         <texturefocus border="8">images/textedit.png</texturefocus>
         <texturenofocus border="8" colordiffuse="99FFFFFF">images/textedit.png</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="togglebutton">
-        <!--<left>0</left>-->
-        <!--<top>0</top>-->
         <width>450</width>
         <height>75</height>
         <align>center</align>
         <aligny>center</aligny>
         <font>size33</font>
         <textoffsetx>30</textoffsetx>
-        <textcolor>White</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <selectedcolor>black</selectedcolor>
-        <altselectedcolor>Yellow</altselectedcolor>
-        <disabledcolor>Disabled</disabledcolor>
+        <textcolor>maindim</textcolor>
+        <focusedcolor>main</focusedcolor>
+        <selectedcolor>main</selectedcolor>
+        <altselectedcolor>orange</altselectedcolor>
+        <disabledcolor>dimgray</disabledcolor>
         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
         <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</alttexturefocus>
         <aligny>center</aligny>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="radiobutton">
-        <!--<left>0</left>-->
-        <!--<top>0</top>-->
         <height>75</height>
         <align>left</align>
         <aligny>center</aligny>
         <font>size33</font>
-        <textcolor>White</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <selectedcolor>black</selectedcolor>
-        <disabledcolor>Disabled</disabledcolor>
+        <textcolor>maindim</textcolor>
+        <focusedcolor>main</focusedcolor>
+        <selectedcolor>main</selectedcolor>
+        <disabledcolor>dimgray</disabledcolor>
         <radiowidth>46</radiowidth>
         <radioheight>46</radioheight>
         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -123,8 +114,6 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrol">
-        <!--<left>0</left>-->
-        <!--<top>0</top>-->
         <textureup>images/ArrowUpNF.png</textureup>
         <textureupfocus>images/ArrowUpFO.png</textureupfocus>
         <texturedown>images/ArrowDownNF.png</texturedown>
@@ -133,10 +122,10 @@
         <spinwidth>18</spinwidth>
         <spinheight>18</spinheight>
         <font>size33</font>
-        <textcolor>White</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <selectedcolor>black</selectedcolor>
-        <disabledcolor>Disabled</disabledcolor>
+        <textcolor>maindim</textcolor>
+        <focusedcolor>main</focusedcolor>
+        <selectedcolor>main</selectedcolor>
+        <disabledcolor>dimgray</disabledcolor>
         <textoffsetx>30</textoffsetx>
         <align>left</align>
         <aligny>center</aligny>
@@ -144,8 +133,6 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrolex">
-        <!--<left>0</left>-->
-        <!--<top>0</top>-->
         <width>450</width>
         <height>75</height>
         <font>size33</font>
@@ -156,10 +143,10 @@
         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
         <spinwidth>18</spinwidth>
         <spinheight>18</spinheight>
-        <textcolor>White</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <selectedcolor>black</selectedcolor>
-        <disabledcolor>Disabled</disabledcolor>
+        <textcolor>maindim</textcolor>
+        <focusedcolor>main</focusedcolor>
+        <selectedcolor>main</selectedcolor>
+        <disabledcolor>dimgray</disabledcolor>
         <textoffsetx>30</textoffsetx>
         <align>left</align>
         <aligny>center</aligny>
@@ -184,10 +171,10 @@
         <texturenofocus>-</texturenofocus>
         <font>size33</font>
         <aligny>center</aligny>
-        <textcolor>White</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <selectedcolor>black</selectedcolor>
-        <disabledcolor>Disabled</disabledcolor>
+        <textcolor>maindim</textcolor>
+        <focusedcolor>main</focusedcolor>
+        <selectedcolor>main</selectedcolor>
+        <disabledcolor>dimgray</disabledcolor>
         <textoffsetx>20</textoffsetx>
     </default>
     <default type="scrollbar">

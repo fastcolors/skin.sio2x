@@ -807,7 +807,7 @@
                                 <width>270</width>
                                 <height>56</height>
                                 <font>size21</font>
-                                <textcolor>black</textcolor>
+                                <textcolor>main</textcolor>
                                 <align>center</align>
                                 <label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Property(TvShowTitle)]</label>
                             </control>
@@ -849,7 +849,7 @@
                                 <width>270</width>
                                 <height>56</height>
                                 <font>size21</font>
-                                <textcolor>black</textcolor>
+                                <textcolor>main</textcolor>
                                 <align>center</align>
                                 <label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Property(TvShowTitle)]</label>
                             </control>

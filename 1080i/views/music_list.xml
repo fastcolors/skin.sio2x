@@ -15,7 +15,7 @@
                     <width>800</width>
                     <height>430</height>
                     <include>Icon_Fade</include>
-                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
                     <bordersize>2</bordersize>
                     <texture diffuse="images/Diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
                     <aspectratio>keep</aspectratio>
@@ -26,7 +26,7 @@
                     <width>800</width>
                     <height>90</height>
                     <align>center</align>
-                    <textcolor>Yellow</textcolor>
+                    <textcolor>orange</textcolor>
                     <scroll>false</scroll>
                     <font>size36</font>
                     <label>$INFO[ListItem.Label]</label>
@@ -46,14 +46,14 @@
                     <top>589</top>
                     <width>880</width>
                     <height>1</height>
-                    <texture colordiffuse="black">lines/Line1.png</texture>
+                    <texture colordiffuse="main">lines/Line1.png</texture>
                 </control>
                 <control type="image">
                     <centerleft>480</centerleft>
                     <top>1020</top>
                     <width>880</width>
                     <height>1</height>
-                    <texture colordiffuse="black">lines/Line1.png</texture>
+                    <texture colordiffuse="main">lines/Line1.png</texture>
                 </control>
             </control>
             <control type="group" description="Thumbnails without info">

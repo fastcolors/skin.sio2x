@@ -38,7 +38,7 @@
                 <width>800</width>
                 <height>900</height>
                 <fadetime>200</fadetime>
-                <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                <bordertexture colordiffuse="main">images/white.png</bordertexture>
                 <bordersize>4</bordersize>
                 <texture diffuse="images/Diffuse.png" background="true">$VAR[locandine]</texture>
                 <aspectratio aligny="center">keep</aspectratio>
@@ -66,7 +66,7 @@
                     <height>470</height>
                     <texture background="true">$VAR[locandine]</texture>
                     <fadetime>200</fadetime>
-                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
                     <bordersize>4</bordersize>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -78,7 +78,7 @@
                     <width>756</width>
                     <height>470</height>
                     <texture background="true">$INFO[ListItem.Icon]</texture>
-                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
                     <bordersize>4</bordersize>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -168,7 +168,7 @@
                 <height>24</height>
                 <width>135</width>
                 <aspectratio>keep</aspectratio>
-                <texture colordiffuse="black">$INFO[ListItem.Rating,badges/,.png]</texture>
+                <texture colordiffuse="main">$INFO[ListItem.Rating,badges/,.png]</texture>
             </control>
             <control type="image">
                 <centerleft>480</centerleft>
@@ -262,7 +262,7 @@
         <width>1184</width>
         <scroll>false</scroll>
         <font>size42B</font>
-        <textcolor>Yellow</textcolor>
+        <textcolor>orange</textcolor>
     </include>
     <include name="MusicInfo">
         <control type="image" description="Thumb">
@@ -286,7 +286,7 @@
                 <height>36</height>
                 <align>center</align>
                 <scroll>false</scroll>
-                <textcolor>Yellow</textcolor>
+                <textcolor>orange</textcolor>
                 <label>[B]$INFO[ListItem.Artist][/B]</label>
             </control>
             <control type="label" description="Album">
@@ -296,23 +296,23 @@
                 <height>36</height>
                 <align>center</align>
                 <scroll>false</scroll>
-                <textcolor>Yellow</textcolor>
+                <textcolor>orange</textcolor>
                 <label>[B]$INFO[ListItem.Album] $INFO[ListItem.Year,(,)][/B]</label>
             </control>
             <control type="image" description="Rating">
                 <top>40</top>
                 <height>27</height>
                 <width>150</width>
-                <colordiffuse>black</colordiffuse>
+                <colordiffuse>main</colordiffuse>
                 <aspectratio align="left">keep</aspectratio>
-                <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
+                <texture colordiffuse="main">$INFO[ListItem.StarRating]</texture>
             </control>
             <control type="image" description="Separator">
                 <top>82</top>
                 <height>1</height>
                 <width>780</width>
                 <aspectratio>stretch</aspectratio>
-                <texture colordiffuse="black">lines/Line1.png</texture>
+                <texture colordiffuse="main">lines/Line1.png</texture>
             </control>
             <control type="grouplist" description="Labels">
                 <top>90</top>
@@ -365,7 +365,7 @@
     <!--<height>24</height>-->
     <!--<width>135</width>-->
     <!--<aspectratio align="right">keep</aspectratio>-->
-    <!--<texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>-->
+    <!--<texture colordiffuse="main">$INFO[ListItem.StarRating]</texture>-->
     <!--</include>-->
 
     <include name="SmallListMainLabel">
@@ -375,7 +375,7 @@
         <aligny>center</aligny>
         <scroll>false</scroll>
         <font>size30</font>
-        <textcolor>White</textcolor>
+        <textcolor>maindim</textcolor>
         <shadowcolor>-</shadowcolor>
     </include>
 
@@ -723,7 +723,7 @@
     <include name="Genre52Commons">
         <top>-24</top>
         <font>size27</font>
-        <textcolor>Silver</textcolor>
+        <textcolor>dimgray</textcolor>
         <width>762</width>
         <height>36</height>
         <align>left</align>
@@ -744,9 +744,9 @@
                     <top>1035</top>
                     <height>36</height>
                     <width>150</width>
-                    <colordiffuse>Silver</colordiffuse>
+                    <colordiffuse>dimgray</colordiffuse>
                     <aspectratio align="left">keep</aspectratio>
-                    <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
+                    <texture colordiffuse="main">$INFO[ListItem.StarRating]</texture>
                 </control>
                 <control type="image">
                     <visible>Container.content(songs) + !IsEmpty(ListItem.FileExtension)</visible>
@@ -756,7 +756,7 @@
                     <width>90</width>
                     <bordersize>3</bordersize>
                     <aspectratio>keep</aspectratio>
-                    <colordiffuse>Silver</colordiffuse>
+                    <colordiffuse>dimgray</colordiffuse>
                     <texture>$INFO[ListItem.FileExtension,badges/audio/,.png]</texture>
                 </control>
             </control>
@@ -769,7 +769,7 @@
         <height>70</height>
         <align>left</align>
         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
-        <disabledcolor>Disabled</disabledcolor>
+        <disabledcolor>dimgray</disabledcolor>
     </include>
 
     <include name="Help_Panel">
@@ -796,7 +796,7 @@
                 <width>345</width>
                 <height>30</height>
                 <font>size26</font>
-                <textcolor>black</textcolor>
+                <textcolor>main</textcolor>
                 <label>+ $INFO[ListItem.label2]</label>
                 <align>center</align>
             </control>
@@ -833,7 +833,7 @@
                 <width>345</width>
                 <height>30</height>
                 <font>size26</font>
-                <textcolor>black</textcolor>
+                <textcolor>main</textcolor>
                 <label>+ $INFO[ListItem.Label2]</label>
                 <align>center</align>
             </control>
@@ -888,7 +888,7 @@
                 <top>630</top>
                 <width>682</width>
                 <height>1</height>
-                <texture colordiffuse="black">lines/Line.png</texture>
+                <texture colordiffuse="main">lines/Line.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" description="Updates">
@@ -995,7 +995,7 @@
                     <visible>container.content(addons)</visible>
                     <scroll>true</scroll>
                     <font>size21</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>main</textcolor>
                     <width>758</width>
                     <height>40</height>
                     <align>left</align>
@@ -1036,7 +1036,7 @@
             <left>959</left>
             <width>1</width>
             <height>1080</height>
-            <texture colordiffuse="black">lines/LineV.png</texture>
+            <texture colordiffuse="main">lines/LineV.png</texture>
         </control>
     </include>
     <include name="SmallSelector">
@@ -1059,7 +1059,7 @@
         <control type="image">
             <width>900</width>
             <height>1</height>
-            <texture colordiffuse="black">lines/LineL.png</texture>
+            <texture colordiffuse="main">lines/LineL.png</texture>
         </control>
     </include>
 </includes>

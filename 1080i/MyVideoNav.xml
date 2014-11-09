@@ -130,6 +130,7 @@
                     <visible>Container.Content(movies)</visible>
                     <include>DialogButt</include>
                     <label>$LOCALIZE[31026]</label>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, clearlogo, discart)</onclick>
                     <onclick>left</onclick>
                 </control>

@@ -18,7 +18,7 @@
                     <height>495</height>
                     <aspectratio align="right">keep</aspectratio>
                     <texture fallback="DefaultAddon.png">$INFO[ListItem.Thumb]</texture>
-                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
                     <bordersize>4</bordersize>
                 </control>
             </control>
@@ -29,7 +29,7 @@
                     <top>0</top>
                     <width>1125</width>
                     <height>60</height>
-                    <textcolor>black</textcolor>
+                    <textcolor>main</textcolor>
                     <font>size42b</font>
                     <align>left</align>
                     <autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
@@ -87,7 +87,7 @@
             <height>72</height>
             <width>1920</width>
             <aspectratio>stretch</aspectratio>
-            <texture colordiffuse="white">images/BlackT.png</texture>
+            <texture colordiffuse="inverted">images/transparent.png</texture>
         </control>
         <control type="image" description="Line bott">
             <top>1007</top>

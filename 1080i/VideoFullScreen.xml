@@ -9,7 +9,7 @@
                 <width>1920</width>
                 <height>300</height>
                 <texture>images/white.png</texture>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>inverted</colordiffuse>
             </control>
             <control type="grouplist" id="0">
                 <left>60</left>

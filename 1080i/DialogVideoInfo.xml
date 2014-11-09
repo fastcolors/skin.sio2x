@@ -391,13 +391,13 @@
                 <centerleft>520</centerleft>
                 <height>100</height>
                 <width>870</width>
-                <texture colordiffuse="white" border="30">images/diffuserounded.png</texture>
+                <texture colordiffuse="inverted" border="30">images/diffuserounded.png</texture>
             </control>
             <control type="label" description="Media details">
                 <centerleft>520</centerleft>
                 <width>800</width>
                 <align>center</align>
-                <textcolor>Silver</textcolor>
+                <textcolor>dimgray</textcolor>
                 <font>size26</font>
                 <label>$INFO[Container(50).ListItem.Label]</label>
             </control>

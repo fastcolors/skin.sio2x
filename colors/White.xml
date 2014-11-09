@@ -1,16 +1,8 @@
 <colors>
 	<color name="background">FFEEEEEE</color>
-	<color name="White">FF222222</color>
-    <color name="black">FF000000</color>
-    <color name="shelffont">FFFFFFFF</color>
-    <color name="shelfshadow">FF000000</color>
-    <color name="white">FFFFFFFF</color>
+	<color name="maindim">FF222222</color>
+    <color name="main">FF000000</color>
+    <color name="inverted">FFFFFFFF</color>
 	<color name="gray">FF555555</color>
-	<color name="Red">FFFF0000</color>
-	<color name="Blue">FF2261B4</color>
-	<color name="Silver">FF303030</color>
-	<color name="Disabled">FF676767</color>
-	<color name="Yellow">FFFA9600</color>
-	<color name="invalid">FFFF0000</color>
     <color name="searchband">99FFFFFF</color>
 </colors>

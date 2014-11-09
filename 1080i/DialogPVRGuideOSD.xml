@@ -22,7 +22,7 @@
                     <width>300</width>
                     <height>20</height>
                     <font>size26</font>
-                    <textcolor>white</textcolor>
+                    <textcolor>inverted</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>21820</label>
@@ -34,7 +34,7 @@
                     <width>600</width>
                     <height>20</height>
                     <font>size26</font>
-                    <textcolor>white</textcolor>
+                    <textcolor>inverted</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>369</label>
@@ -46,7 +46,7 @@
                     <width>140</width>
                     <height>20</height>
                     <font>size26</font>
-                    <textcolor>white</textcolor>
+                    <textcolor>inverted</textcolor>
                     <align>center</align>
                     <aligny>center</aligny>
                     <label>126</label>
@@ -86,7 +86,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
-                            <selectedcolor>Yellow</selectedcolor>
+                            <selectedcolor>orange</selectedcolor>
                             <info>ListItem.Date</info>
                         </control>
                         <control type="label">
@@ -98,7 +98,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
-                            <selectedcolor>Yellow</selectedcolor>
+                            <selectedcolor>orange</selectedcolor>
                             <info>ListItem.Label</info>
                         </control>
                         <control type="image">
@@ -118,7 +118,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>gray</textcolor>
-                            <selectedcolor>Yellow</selectedcolor>
+                            <selectedcolor>orange</selectedcolor>
                             <label>19043</label>
                             <visible>ListItem.IsRecording</visible>
                         </control>
@@ -137,8 +137,8 @@
                             <font>font10</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>White</textcolor>
-                            <selectedcolor>Yellow</selectedcolor>
+                            <textcolor>maindim</textcolor>
+                            <selectedcolor>orange</selectedcolor>
                             <label>31510</label>
                             <visible>ListItem.HasTimer</visible>
                         </control>
@@ -158,8 +158,8 @@
                             <font>font12</font>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <textcolor>White</textcolor>
-                            <selectedcolor>Yellow</selectedcolor>
+                            <textcolor>maindim</textcolor>
+                            <selectedcolor>orange</selectedcolor>
                             <info>ListItem.Date</info>
                         </control>
                         <control type="label">
@@ -170,8 +170,8 @@
                             <font>size26</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>White</textcolor>
-                            <selectedcolor>Yellow</selectedcolor>
+                            <textcolor>maindim</textcolor>
+                            <selectedcolor>orange</selectedcolor>
                             <info>ListItem.Label</info>
                         </control>
                         <control type="textbox">
@@ -182,7 +182,7 @@
                             <height>70</height>
                             <font>font12</font>
                             <align>justify</align>
-                            <textcolor>White</textcolor>
+                            <textcolor>maindim</textcolor>
                             <label>$INFO[ListItem.Plot]</label>
                         </control>
                         <control type="image">
@@ -201,8 +201,8 @@
                             <font>font10</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>White</textcolor>
-                            <selectedcolor>Yellow</selectedcolor>
+                            <textcolor>maindim</textcolor>
+                            <selectedcolor>orange</selectedcolor>
                             <label>19043</label>
                             <visible>ListItem.IsRecording</visible>
                         </control>
@@ -221,8 +221,8 @@
                             <font>font10</font>
                             <align>left</align>
                             <aligny>center</aligny>
-                            <textcolor>White</textcolor>
-                            <selectedcolor>Yellow</selectedcolor>
+                            <textcolor>maindim</textcolor>
+                            <selectedcolor>orange</selectedcolor>
                             <label>31510</label>
                             <visible>ListItem.HasTimer</visible>
                         </control>

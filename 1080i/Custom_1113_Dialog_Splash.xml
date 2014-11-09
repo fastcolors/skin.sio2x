@@ -8,7 +8,7 @@
             <animation effect="fade" start="50" end="0" time="50">WindowClose</animation>
             <width>1920</width>
             <height>1080</height>
-            <texture colordiffuse="white">images/White.png</texture>
+            <texture colordiffuse="inverted">images/White.png</texture>
         </control>
         <control type="image" description="Dialog">
             <centerleft>960</centerleft>

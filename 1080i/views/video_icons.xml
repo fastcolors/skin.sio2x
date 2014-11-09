@@ -38,7 +38,7 @@
                             <width>420</width>
                             <height>70</height>
                             <font>size27</font>
-                            <textcolor>black</textcolor>
+                            <textcolor>main</textcolor>
                             <align>center</align>
                             <label>[B]$INFO[ListItem.Label][/B]</label>
                         </control>
@@ -85,7 +85,7 @@
                             <width>420</width>
                             <height>70</height>
                             <font>size27</font>
-                            <textcolor>black</textcolor>
+                            <textcolor>main</textcolor>
                             <align>center</align>
                             <label>[B]$INFO[ListItem.Label][/B]</label>
                         </control>
@@ -255,7 +255,7 @@
                 <top>99</top>
                 <width>1500</width>
                 <height>1</height>
-                <texture colordiffuse="black">lines/Line.png</texture>
+                <texture colordiffuse="main">lines/Line.png</texture>
             </control>
             <control type="group">
                 <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !Skin.HasSetting(noslideicon)</visible>
@@ -359,7 +359,7 @@
                     <texture>$VAR[bgimg]</texture>
                     <aspectratio>keep</aspectratio>
                     <fadetime>200</fadetime>
-                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
                     <bordersize>5</bordersize>
                 </control>
                 <control type="group">
@@ -490,7 +490,7 @@
                     <texture>$VAR[bgimg]</texture>
                     <aspectratio>keep</aspectratio>
                     <fadetime>200</fadetime>
-                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
                     <bordersize>5</bordersize>
                 </control>
                 <control type="group">

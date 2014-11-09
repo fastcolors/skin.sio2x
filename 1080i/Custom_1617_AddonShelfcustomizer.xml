@@ -12,7 +12,7 @@
             <align>center</align>
             <aligny>bottom</aligny>
             <font>size42B</font>
-            <textcolor>White</textcolor>
+            <textcolor>maindim</textcolor>
             <label>Shelf Addons</label>
         </control>
         <control type="group">
@@ -32,7 +32,7 @@
                     <height>190</height>
                     <width>320</width>
                     <texture>icons/addons.png</texture>
-                    <colordiffuse>black</colordiffuse>
+                    <colordiffuse>main</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image" description="Selection Overlay">

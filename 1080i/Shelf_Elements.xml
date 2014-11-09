@@ -62,8 +62,8 @@
                         <width>268</width>
                         <height>405</height>
                         <font>size26</font>
-                        <textcolor>shelffont</textcolor>
-                        <shadowcolor>shelfshadow</shadowcolor>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
                         <autoscroll>false</autoscroll>
                         <label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Year,(,)][CR][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$INFO[ListItem.Genre][CR][CR]$INFO[ListItem.MPAA]</label>
                         <align>center</align>
@@ -95,7 +95,7 @@
                         <top>18</top>
                         <width>262</width>
                         <height>389</height>
-                        <texture colordiffuse="white">images/transparent.png</texture>
+                        <texture colordiffuse="inverted">images/transparent.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -123,7 +123,7 @@
                     <width>244</width>
                     <height>117</height>
                     <font>size22</font>
-                    <textcolor>dimgray</textcolor>
+                    <textcolor>maindim</textcolor>
                     <label>[B]$INFO[ListItem.Label][/B]</label>
                     <align>center</align>
                 </control>
@@ -131,14 +131,14 @@
         </itemlayout>
         <focusedlayout height="420" width="320" condition="Control.IsVisible(319)">
             <control type="group">
-                <animation center="160,25" effect="zoom" start="100" end="110" time="200">Focus</animation>
-                <animation center="160,25" effect="zoom" start="110" end="100" time="100">unFocus</animation>
+                <animation center="160,25" effect="zoom" start="100" end="108" time="200">Focus</animation>
+                <animation center="160,25" effect="zoom" start="108" end="100" time="100">unFocus</animation>
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>18</top>
                     <width>262</width>
                     <height>389</height>
-                    <texture colordiffuse="main">images/transparent.png</texture>
+                    <texture colordiffuse="inverted">images/transparent.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
@@ -147,7 +147,7 @@
                     <width>240</width>
                     <height>240</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Thumb]</texture>
-                    <bordertexture>images/transparent.png</bordertexture>
+                    <bordertexture border="4">images/dvdbox.png</bordertexture>
                     <bordersize>1</bordersize>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -165,7 +165,7 @@
                     <width>244</width>
                     <height>117</height>
                     <font>size22</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>main</textcolor>
                     <label>[B]$INFO[ListItem.Label][/B]</label>
                     <align>center</align>
                 </control>
@@ -207,7 +207,7 @@
                     <width>384</width>
                     <height>30</height>
                     <font>size24B</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>darkgray</textcolor>
                     <label>$INFO[ListItem.Property(ItemType)]$INFO[ListItem.Artist]</label>
                     <align>center</align>
                 </control>
@@ -216,7 +216,7 @@
                     <width>384</width>
                     <height>62</height>
                     <font>size24B</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>darkgray</textcolor>
                     <autoscroll>false</autoscroll>
                     <label>$INFO[ListItem.Label]</label>
                     <align>center</align>
@@ -247,7 +247,6 @@
                     <width>384</width>
                     <height>30</height>
                     <font>size24B</font>
-                    <textcolor>black</textcolor>
                     <label>$INFO[ListItem.Property(ItemType)]$INFO[ListItem.Artist]</label>
                     <align>center</align>
                 </control>
@@ -256,7 +255,6 @@
                     <width>384</width>
                     <height>62</height>
                     <font>size24B</font>
-                    <textcolor>black</textcolor>
                     <autoscroll>false</autoscroll>
                     <label>$INFO[ListItem.Label]</label>
                     <align>center</align>
@@ -302,6 +300,7 @@
                     <height>40</height>
                     <font>size26</font>
                     <scroll>false</scroll>
+                    <textcolor>darkgray</textcolor>
                     <label>[B]$INFO[ListItem.Title][/B]</label>
                     <align>center</align>
                 </control>
@@ -311,6 +310,7 @@
                     <width>400</width>
                     <height>36</height>
                     <font>size26</font>
+                    <textcolor>darkgray</textcolor>
                     <label>[B][UPPERCASE]S $INFO[ListItem.Season] • E $INFO[ListItem.Episode][/UPPERCASE][/B]</label>
                     <align>center</align>
                 </control>
@@ -393,8 +393,8 @@
                 <width>260</width>
                 <height>170</height>
                 <font>size22</font>
-                <textcolor>shelffont</textcolor>
-                <shadowcolor>shelfshadow</shadowcolor>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
                 <autoscroll>false</autoscroll>
                 <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
                 <align>center</align>
@@ -423,8 +423,8 @@
                 <width>260</width>
                 <height>170</height>
                 <font>size22</font>
-                <textcolor>shelffont</textcolor>
-                <shadowcolor>shelfshadow</shadowcolor>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
                 <autoscroll>false</autoscroll>
                 <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
                 <align>center</align>

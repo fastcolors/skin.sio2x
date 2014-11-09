@@ -30,7 +30,7 @@
                     <description>Song Name Label</description>
                     <width>615</width>
                     <align>center</align>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                     <scroll>true</scroll>
                 </control>
             </control>

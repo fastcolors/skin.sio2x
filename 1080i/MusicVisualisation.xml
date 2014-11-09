@@ -104,7 +104,7 @@
                                 <scroll>true</scroll>
                                 <align>center</align>
                                 <font>size42B</font>
-                                <textcolor>Yellow</textcolor>
+                                <textcolor>orange</textcolor>
                                 <animation effect="fade" time="200">VisibleChange</animation>
                                 <label>$INFO[MusicPlayer.Title]</label>
                             </control>
@@ -204,7 +204,7 @@
                 <width>1920</width>
                 <height>60</height>
                 <texture>images/white.png</texture>
-                <colordiffuse>white</colordiffuse>
+                <colordiffuse>inverted</colordiffuse>
             </control>
             <control type="label" description="row 1 sys label">
                 <left>45</left>
@@ -238,7 +238,7 @@
                     <width>750</width>
                     <label>$LOCALIZE[210]</label>
                     <font>size22</font>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                 </control>
                 <control type="label" description="Previous">
                     <left>30</left>
@@ -253,7 +253,7 @@
                     <height>36</height>
                     <width>750</width>
                     <font>size22</font>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                     <label>$INFO[MusicPlayer.offset(-1).Artist]</label>
                 </control>
             </control>
@@ -266,7 +266,7 @@
                     <align>right</align>
                     <label>$LOCALIZE[209]</label>
                     <font>size22</font>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                 </control>
                 <control type="label" description="Next">
                     <right>30</right>
@@ -283,7 +283,7 @@
                     <width>750</width>
                     <align>right</align>
                     <font>size22</font>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                     <label>$INFO[MusicPlayer.offset(1).Artist]</label>
                 </control>
             </control>

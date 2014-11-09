@@ -32,7 +32,7 @@
                 <width>1500</width>
                 <height>60</height>
                 <aspectratio>stretch</aspectratio>
-                <texture colordiffuse="black" border="10">images/textedit.png</texture>
+                <texture colordiffuse="main" border="10">images/textedit.png</texture>
             </control>
             <control type="edit" id="312">
                 <description>Edit Text</description>
@@ -43,7 +43,7 @@
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <align>center</align>
-                <textcolor>black</textcolor>
+                <textcolor>main</textcolor>
             </control>
             <control type="group">
                 <left>160</left>
@@ -321,7 +321,7 @@
                         <onup>143</onup>
                         <ondown>32</ondown>
                         <textoffsetx>0</textoffsetx>
-                        <focusedcolor>black</focusedcolor>
+                        <focusedcolor>main</focusedcolor>
                     </control>
                     <control type="button" id="164">
                         <include>Keyboardbuttons</include>
@@ -373,7 +373,7 @@
                         <textoffsetx>0</textoffsetx>
                         <onup>160</onup>
                         <ondown></ondown>
-                        <focusedcolor>black</focusedcolor>
+                        <focusedcolor>main</focusedcolor>
                     </control>
                     <control type="button" id="32">
                         <description>SPACE button</description>
@@ -381,7 +381,7 @@
                         <include>Keyboardbuttons</include>
                         <label>20182</label>
                         <textoffsetx>0</textoffsetx>
-                        <focusedcolor>black</focusedcolor>
+                        <focusedcolor>main</focusedcolor>
                         <onleft>307</onleft>
                         <onright>305</onright>
                         <onup>163</onup>
@@ -393,7 +393,7 @@
                         <include>Keyboardbuttons</include>
                         <label>20181</label>
                         <textoffsetx>0</textoffsetx>
-                        <focusedcolor>black</focusedcolor>
+                        <focusedcolor>main</focusedcolor>
                         <onleft>307</onleft>
                         <onright>305</onright>
                         <onup>163</onup>
@@ -404,7 +404,7 @@
                         <width>160</width>
                         <include>Keyboardbuttons</include>
                         <label>&lt;</label>
-                        <focusedcolor>black</focusedcolor>
+                        <focusedcolor>main</focusedcolor>
                         <onleft>32</onleft>
                         <onright>306</onright>
                         <onup>164</onup>
@@ -415,7 +415,7 @@
                         <width>160</width>
                         <include>Keyboardbuttons</include>
                         <label>&gt;</label>
-                        <focusedcolor>black</focusedcolor>
+                        <focusedcolor>main</focusedcolor>
                         <onleft>305</onleft>
                         <onright>307</onright>
                         <onup>166</onup>

@@ -19,7 +19,7 @@
                 <width>1400</width>
                 <height>60</height>
                 <font>size26</font>
-                <textcolor>black</textcolor>
+                <textcolor>main</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <info>Player.Filename</info>
@@ -83,7 +83,7 @@
                 <centertop>200</centertop>
                 <width max="90">auto</width>
                 <height>95</height>
-                <textcolor>White</textcolor>
+                <textcolor>maindim</textcolor>
                 <font>size33</font>
                 <scroll>false</scroll>
                 <align>center</align>
@@ -154,7 +154,7 @@
                         <width>60</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="black">icon_sync.png</texture>
+                        <texture colordiffuse="main">icon_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="label">
@@ -196,7 +196,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>black</textcolor>
+                        <textcolor>main</textcolor>
                         <align>left</align>
                         <info>ListItem.Label</info>
                     </control>
@@ -213,7 +213,7 @@
                         <width>60</width>
                         <height>54</height>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="black">icon_sync.png</texture>
+                        <texture colordiffuse="main">icon_sync.png</texture>
                         <visible>ListItem.property(sync)</visible>
                     </control>
                     <control type="label">
@@ -222,7 +222,7 @@
                         <height>54</height>
                         <font>size27</font>
                         <aligny>center</aligny>
-                        <textcolor>black</textcolor>
+                        <textcolor>main</textcolor>
                         <align>left</align>
                         <info>ListItem.Label2</info>
                     </control>
@@ -266,8 +266,8 @@
                 <ondown>150</ondown>
                 <label>$LOCALIZE[24120]</label>
                 <font>size27</font>
-                <textcolor>black</textcolor>
-                <focusedcolor>black</focusedcolor>
+                <textcolor>main</textcolor>
+                <focusedcolor>main</focusedcolor>
                 <align>center</align>
             </control>
             <control type="image">

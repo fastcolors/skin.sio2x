@@ -8,7 +8,7 @@
         <include>BlackBackground</include>
         <control type="image">
             <top>100</top>
-            <texture colordiffuse="black">lines/Line.png</texture>
+            <texture colordiffuse="main">lines/Line.png</texture>
             <width>1920</width>
             <height>1</height>
         </control>
@@ -119,14 +119,14 @@
                 <align>right</align>
                 <aligny>center</aligny>
                 <font>size21</font>
-                <textcolor>White</textcolor>
+                <textcolor>maindim</textcolor>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="image">
                 <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
                 <width>25</width>
                 <height>42</height>
-                <texture colordiffuse="black">wireless.png</texture>
+                <texture colordiffuse="main">wireless.png</texture>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">

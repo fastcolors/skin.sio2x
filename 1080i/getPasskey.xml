@@ -40,7 +40,7 @@
                     <width>540</width>
                     <height>30</height>
                     <font>font12</font>
-                    <textcolor>white</textcolor>
+                    <textcolor>inverted</textcolor>
                     <label></label>
                     <align>center</align>
 

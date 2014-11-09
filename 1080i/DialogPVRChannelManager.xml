@@ -39,7 +39,7 @@
             <width>1600</width>
             <height>30</height>
             <font>size36</font>
-            <textcolor>black</textcolor>
+            <textcolor>main</textcolor>
             <label>$LOCALIZE[19199] - $LOCALIZE[19023]/$LOCALIZE[19024]</label>
             <align>center</align>
             <aligny>center</aligny>
@@ -85,7 +85,7 @@
                     </control>
                     <control type="label" description="Main Label">
                         <width>830</width>
-                        <textcolor>black</textcolor>
+                        <textcolor>main</textcolor>
                         <include>SmallListMainLabel</include>
                         <label>$INFO[ListItem.Channelnumber] • $INFO[ListItem.Label]</label>
                     </control>
@@ -102,7 +102,7 @@
                     <label>$LOCALIZE[33063]</label>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>Yellow</textcolor>
+                    <textcolor>orange</textcolor>
                 </control>
         <control type="group" id="9002">
             <control type="grouplist">

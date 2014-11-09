@@ -43,7 +43,7 @@
                         <left>1280</left>
                         <width>440</width>
                         <height>1</height>
-                        <texture colordiffuse="black">lines/LineL.png</texture>
+                        <texture colordiffuse="main">lines/LineL.png</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="140">
@@ -75,7 +75,7 @@
                         <left>1280</left>
                         <width>440</width>
                         <height>1</height>
-                        <texture colordiffuse="black">lines/LineL.png</texture>
+                        <texture colordiffuse="main">lines/LineL.png</texture>
                     </control>
                 </focusedlayout>
             </control>
@@ -112,7 +112,7 @@
                 <height>400</height>
                 <width>1060</width>
                 <info>ListItem.Art(fanart)</info>
-                <bordertexture border="5" colordiffuse="black">images/white.png</bordertexture>
+                <bordertexture border="5" colordiffuse="main">images/white.png</bordertexture>
 
                 <aspectratio>keep</aspectratio>
             </control>
@@ -121,13 +121,13 @@
                 <top>-100</top>
                 <height>1280</height>
                 <width>1</width>
-                <texture colordiffuse="black">lines/LineV.png</texture>
+                <texture colordiffuse="main">lines/LineV.png</texture>
             </control>
             <control type="image">
                 <top>600</top>
                 <height>1</height>
                 <width>1340</width>
-                <texture colordiffuse="black">lines/LineR.png</texture>
+                <texture colordiffuse="main">lines/LineR.png</texture>
             </control>
             <control type="group" description="EPISODES BLADE">
                 <visible>Container.Content(episodes)</visible>
@@ -321,7 +321,7 @@
                 <top>100</top>
                 <width>1500</width>
                 <height>1</height>
-                <texture colordiffuse="black">lines/Line.png</texture>
+                <texture colordiffuse="main">lines/Line.png</texture>
             </control>
             <control type="group">
                 <visible>!Container.Content(episodes)</visible>
@@ -365,7 +365,7 @@
                     <height>400</height>
                     <texture background="true">$VAR[bgimg]</texture>
                     <aspectratio>keep</aspectratio>
-                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
                     <bordersize>5</bordersize>
                 </control>
             </control>
@@ -411,7 +411,7 @@
                     <height>400</height>
                     <aspectratio>keep</aspectratio>
                     <texture background="true">$VAR[bgimg]</texture>
-                    <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
                     <bordersize>5</bordersize>
                 </control>
             </control>
@@ -491,7 +491,7 @@
                     <centerleft>960</centerleft>
                     <top>602</top>
                     <font>size39B</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>main</textcolor>
                     <width>1760</width>
                     <align>center</align>
                     <width>758</width>
@@ -504,7 +504,7 @@
                     <visible>!StringCompare(ListItem.Label,..)</visible>
                     <centerleft>960</centerleft>
                     <top>35</top>
-                    <textcolor>black</textcolor>
+                    <textcolor>main</textcolor>
                     <width>1260</width>
                     <height>45</height>
                     <align>center</align>
@@ -515,7 +515,7 @@
                     <top>90</top>
                     <width>1920</width>
                     <height>1</height>
-                    <texture colordiffuse="black">lines/Line.png</texture>
+                    <texture colordiffuse="main">lines/Line.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image" description="Line Split">
@@ -523,7 +523,7 @@
                     <top>590</top>
                     <width>1920</width>
                     <height>1</height>
-                    <texture colordiffuse="black">lines/Line.png</texture>
+                    <texture colordiffuse="main">lines/Line.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image" description="Line Split">
@@ -531,7 +531,7 @@
                     <top>657</top>
                     <width>1920</width>
                     <height>1</height>
-                    <texture colordiffuse="black">lines/Line.png</texture>
+                    <texture colordiffuse="main">lines/Line.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="textbox">

@@ -28,7 +28,7 @@
             <width>180</width>
             <height>250</height>
             <texture>$INFO[Player.Art(poster)]$INFO[Player.Art(tvshow.poster)]</texture>
-            <bordertexture colordiffuse="black">images/white.png</bordertexture>
+            <bordertexture colordiffuse="main">images/white.png</bordertexture>
             <bordersize>4</bordersize>
             <aspectratio align="right">keep</aspectratio>
         </control>
@@ -45,7 +45,7 @@
                 <orientation>horizontal</orientation>
                 <control type="label" description="Main label">
                     <font>size42B</font>
-                    <textcolor>Yellow</textcolor>
+                    <textcolor>orange</textcolor>
                     <width max="1110">auto</width>
                     <visible>!VideoPlayer.Content(MusicVideos)</visible>
                     <label>$INFO[VideoPlayer.Title]</label>
@@ -53,7 +53,7 @@
                 <control type="label" description="year">
                     <font>size20</font>
                     <height>86</height>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                     <width>auto</width>
                     <visible>!VideoPlayer.Content(MusicVideos)</visible>
                     <label>$INFO[VideoPlayer.Year,(,)]</label>
@@ -63,7 +63,7 @@
                 <visible>VideoPlayer.Content(MusicVideos)</visible>
                 <font>size27</font>
                 <top>45</top>
-                <textcolor>Silver</textcolor>
+                <textcolor>dimgray</textcolor>
                 <include>FullscreenInfoLabel</include>
                 <label>$INFO[VideoPlayer.Album]</label>
             </control>
@@ -71,7 +71,7 @@
                 <visible>Player.ChapterCount</visible>
                 <font>size27</font>
                 <top>44</top>
-                <textcolor>Silver</textcolor>
+                <textcolor>dimgray</textcolor>
                 <include>FullscreenInfoLabel</include>
                 <label>$LOCALIZE[21396]$INFO[Player.Chapter, : ]$INFO[Player.ChapterCount, / ]</label>
             </control>
@@ -79,7 +79,7 @@
                 <visible>VideoPlayer.Content(Episodes)</visible>
                 <font>size27</font>
                 <top>44</top>
-                <textcolor>Silver</textcolor>
+                <textcolor>dimgray</textcolor>
                 <include>FullscreenInfoLabel</include>
                 <label>$INFO[VideoPlayer.TVShowTitle] - $LOCALIZE[20373] $INFO[VideoPlayer.Season], $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
             </control>
@@ -87,7 +87,7 @@
                 <visible>VideoPlayer.Content(Musicvideos)</visible>
                 <font>size27</font>
                 <top>44</top>
-                <textcolor>Silver</textcolor>
+                <textcolor>dimgray</textcolor>
                 <include>FullscreenInfoLabel</include>
                 <label>$INFO[VideoPlayer.Title]</label>
             </control>

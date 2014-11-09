@@ -18,7 +18,7 @@
             <label>$LOCALIZE[19142]</label>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>Yellow</textcolor>
+            <textcolor>orange</textcolor>
             <visible>!pvr.IsPlayingRadio</visible>
         </control>
         <control type="image">
@@ -62,8 +62,8 @@
             <width>1180</width>
             <height>50</height>
             <font>size33</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>black</focusedcolor>
+            <textcolor>main</textcolor>
+            <focusedcolor>main</focusedcolor>
 
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
@@ -122,8 +122,8 @@
                 <width>600</width>
                 <height>50</height>
                 <font>size26</font>
-                <textcolor>black</textcolor>
-                <focusedcolor>black</focusedcolor>
+                <textcolor>main</textcolor>
+                <focusedcolor>main</focusedcolor>
 
                 <label>19128</label>
                 <onright>16</onright>
@@ -138,8 +138,8 @@
                 <width>600</width>
                 <height>50</height>
                 <font>size26</font>
-               <textcolor>black</textcolor>
-                <focusedcolor>black</focusedcolor>
+               <textcolor>main</textcolor>
+                <focusedcolor>main</focusedcolor>
 
                 <label>19129</label>
                 <onright>17</onright>
@@ -244,8 +244,8 @@
                 <width>600</width>
                 <height>50</height>
                 <font>size26</font>
-                <textcolor>black</textcolor>
-                <focusedcolor>black</focusedcolor>
+                <textcolor>main</textcolor>
+                <focusedcolor>main</focusedcolor>
 
                 <label>19126</label>
                 <onright>14</onright>

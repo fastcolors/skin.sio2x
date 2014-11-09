@@ -81,7 +81,7 @@
                         <animation effect="zoom" start="100" end="150" center="10,910" time="250" tween="Quadratic" easing="in">Focus</animation>
                         <animation effect="zoom" start="150" end="100" center="10,910" time="60">unFocus</animation>
                         <top>620</top>
-                        <control type="image" description="white">
+                        <control type="image" description="inverted">
                             <left>1</left>
                             <top>1</top>
                             <height>298</height>
@@ -89,7 +89,7 @@
                             <texture background="true">images/white.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <control type="image" description="White">
+                        <control type="image" description="maindim">
                             <animation effect ="fade" start="100" end="0" time="10">unFocus</animation>
                             <left>8</left>
                             <top>8</top>

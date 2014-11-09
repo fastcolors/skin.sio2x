@@ -95,7 +95,7 @@
         <control type="label" id="7">
             <label>-</label>
             <font>size36</font>
-            <textcolor>Blue</textcolor>
+            <textcolor>dodgerblue</textcolor>
         </control>
         <control type="sliderex" id="8" description="Default Slider Control">
             <width>900</width>

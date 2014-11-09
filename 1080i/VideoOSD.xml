@@ -117,7 +117,7 @@
                         <width>840</width>
                         <scroll>true</scroll>
                         <font>size33B</font>
-                        <textcolor>shelffont</textcolor>
+                        <textcolor>white</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>[B]$INFO[VideoPlayer.Title][/B]</label>
                     </control>
@@ -169,7 +169,7 @@
                             <scroll>false</scroll>
                             <font>size24</font>
                             <align>right</align>
-                            <textcolor>black</textcolor>
+                            <textcolor>main</textcolor>
                             <label>[B]S $INFO[VideoPlayer.Season] E $INFO[VideoPlayer.Episode][/B]</label>
                         </control>
                         <control type="label" description="Channel">
@@ -181,7 +181,7 @@
                             <scroll>false</scroll>
                             <font>size24</font>
                             <align>right</align>
-                            <textcolor>Black</textcolor>
+                            <textcolor>main</textcolor>
                             <label>($INFO[VideoPlayer.ChannelNumber]) - $INFO[VideoPlayer.ChannelName]</label>
                         </control>
                     </control>

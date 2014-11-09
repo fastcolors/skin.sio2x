@@ -12,7 +12,7 @@
             <height>45</height>
             <font>size42B</font>
             <align>center</align>
-            <textcolor>White</textcolor>
+            <textcolor>maindim</textcolor>
             <label>31052</label>
         </control>
         <control type="group">
@@ -99,7 +99,7 @@
                         <top>48</top>
                         <height>168</height>
                         <width>260</width>
-                        <texture colordiffuse="black">images/atvslider.png</texture>
+                        <texture colordiffuse="main">images/atvslider.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label" description="Main Label">
@@ -1145,7 +1145,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>size36</font>
-                <textcolor>White</textcolor>
+                <textcolor>maindim</textcolor>
             </control>
             <control type="grouplist" id="9000">
                 <visible>!ControlGroup(9001).HasFocus()</visible>

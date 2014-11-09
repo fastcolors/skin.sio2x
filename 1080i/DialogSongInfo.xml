@@ -24,7 +24,7 @@
             <height>80</height>
             <width>1920</width>
             <aspectratio>stretch</aspectratio>
-            <texture colordiffuse="white">images/BlackT.png</texture>
+            <texture colordiffuse="inverted">images/transparent.png</texture>
         </control>
         <control type="image" description="Navbar">
             <left>0</left>

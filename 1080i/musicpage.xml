@@ -71,7 +71,8 @@
                         <altclick>ReplaceWindow(502,Artists)</altclick>
                         <usealttexture>Container.Content(Albums)</usealttexture>
                     </control>
-                    <control type="button" id="698" description="Files">
+                    <control type="button" id="5" description="Files">
+                        <visible>Window.IsActive(MyMusicNav.xml)</visible>
                         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                         <include>DialogButt</include>
                         <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
@@ -91,12 +92,15 @@
                     </control>
                     <control type="togglebutton" id="20">
                         <description>Update library</description>
+                        <visible>Window.IsActive(MyMusicNav.xml)</visible>
                         <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                         <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
                         <include>DialogButt</include>
                         <label>653</label>
+                        <onclick>UpdateLibrary(database,music)</onclick>
+                        <altclick></altclick>
                         <altlabel>13353</altlabel>
-                        <usealttexture>library.isscanningvideo</usealttexture>
+                        <usealttexture>library.IsScanningMusic</usealttexture>
                     </control>
                     <control type="button" id="599">
                         <enable>false</enable>

@@ -72,7 +72,7 @@
             <height>40</height>
             <font>size26</font>
             <textcolor>gray</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>inverted</focusedcolor>
             <align>left</align>
         </control>
         <control type="radiobutton" id="8">
@@ -80,14 +80,14 @@
             <height>40</height>
             <font>size26</font>
             <textcolor>gray</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>inverted</focusedcolor>
             <align>left</align>
         </control>
         <control type="spincontrolex" id="9">
             <description>Default spincontrolex</description>
             <height>40</height>
             <textcolor>gray</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>inverted</focusedcolor>
             <font>size26</font>
             <aligny>center</aligny>
             <reverse>yes</reverse>
@@ -97,7 +97,7 @@
             <height>200</height>
             <font>size26</font>
             <textcolor>gray</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>inverted</focusedcolor>
         </control>
         <control type="image" id="11">
             <description>Default Seperator</description>
@@ -110,7 +110,7 @@
             <height>100</height>
             <font>size26</font>
             <textcolor>gray</textcolor>
-            <focusedcolor>white</focusedcolor>
+            <focusedcolor>inverted</focusedcolor>
         </control>
     </controls>
 </window>

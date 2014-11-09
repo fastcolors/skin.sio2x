@@ -49,7 +49,7 @@
                     <width>750</width>
                     <height>75</height>
                     <info>ListItem.Label</info>
-                    <selectedcolor>Yellow</selectedcolor>
+                    <selectedcolor>orange</selectedcolor>
                 </control>
             </itemlayout>
             <focusedlayout height="75" width="740">
@@ -65,7 +65,7 @@
                     <width>750</width>
                     <height>75</height>
                     <info>ListItem.Label</info>
-                    <selectedcolor>Yellow</selectedcolor>
+                    <selectedcolor>orange</selectedcolor>
                 </control>
             </focusedlayout>
         </control>
@@ -132,7 +132,7 @@
             <height>255</height>
             <texture fallback="DefaultAddonNone.png">$INFO[Container(21).ListItem.Icon]</texture>
             <aspectratio aligny="top">scale</aspectratio>
-            <bordertexture colordiffuse="black">images/white.png</bordertexture>
+            <bordertexture colordiffuse="main">images/white.png</bordertexture>
             <bordersize>2</bordersize>
         </control>
         <control type="image" description="Addon Icon">
@@ -143,7 +143,7 @@
             <height>255</height>
             <texture fallback="DefaultAddonNone.png">$INFO[ListItem.Icon]</texture>
             <aspectratio aligny="top">scale</aspectratio>
-            <bordertexture colordiffuse="black">images/white.png</bordertexture>
+            <bordertexture colordiffuse="main">images/white.png</bordertexture>
             <bordersize>2</bordersize>
         </control>
         <control type="image" description="topSplitter">
@@ -151,42 +151,42 @@
             <top>140</top>
             <height>1</height>
             <width>1490</width>
-            <texture colordiffuse="black">lines/LineR.png</texture>
+            <texture colordiffuse="main">lines/LineR.png</texture>
         </control>
         <control type="image" description="midSplitter">
             <centerleft>960</centerleft>
             <top>440</top>
             <height>1</height>
             <width>1490</width>
-            <texture colordiffuse="black">lines/LineL.png</texture>
+            <texture colordiffuse="main">lines/LineL.png</texture>
         </control>
         <control type="image" description="lowSplitter">
             <centerleft>960</centerleft>
             <top>947</top>
             <height>1</height>
             <width>1490</width>
-            <texture colordiffuse="black">lines/Line.png</texture>
+            <texture colordiffuse="main">lines/Line.png</texture>
         </control>
         <control type="image" description="lowSplitter">
             <centerleft>960</centerleft>
             <top>872</top>
             <height>1</height>
             <width>1490</width>
-            <texture colordiffuse="black">lines/Line.png</texture>
+            <texture colordiffuse="main">lines/Line.png</texture>
         </control>
         <control type="image" description="topSplittermid">
             <centerleft>960</centerleft>
             <top>141</top>
             <height>300</height>
             <width>1</width>
-            <texture colordiffuse="black">lines/LineV.png</texture>
+            <texture colordiffuse="main">lines/LineV.png</texture>
         </control>
         <control type="image" description="lowSplittermid">
             <centerleft>960</centerleft>
             <top>947</top>
             <height>80</height>
             <width>1</width>
-            <texture colordiffuse="black">lines/LineV.png</texture>
+            <texture colordiffuse="main">lines/LineV.png</texture>
         </control>
     </controls>
 </window>

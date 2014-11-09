@@ -62,7 +62,7 @@
                 <top>100</top>
                 <width>1500</width>
                 <height>1</height>
-                <texture colordiffuse="black">lines/Line.png</texture>
+                <texture colordiffuse="main">lines/Line.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="group">
@@ -105,7 +105,7 @@
                         <height>30</height>
                         <width>150</width>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
+                        <texture colordiffuse="main">$INFO[ListItem.StarRating]</texture>
                     </control>
                 </control>
                 <control type="label">
@@ -157,7 +157,7 @@
                         <height>30</height>
                         <width>150</width>
                         <aspectratio>keep</aspectratio>
-                        <texture colordiffuse="black">$INFO[ListItem.StarRating]</texture>
+                        <texture colordiffuse="main">$INFO[ListItem.StarRating]</texture>
                     </control>
                 </control>
                 <control type="label">

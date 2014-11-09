@@ -43,7 +43,7 @@
                 <top>174</top>
                 <align>center</align>
                 <width>1110</width>
-                <textcolor>Silver</textcolor>
+                <textcolor>dimgray</textcolor>
                 <label>• $LOCALIZE[21433] •</label>
             </control>
             <control type="edit" id="12">
@@ -55,8 +55,8 @@
                 <font>size33</font>
                 <align>left</align>
                 <aligny>center</aligny>
-                <focusedcolor>White</focusedcolor>
-                <selectedcolor>White</selectedcolor>
+                <focusedcolor>maindim</focusedcolor>
+                <selectedcolor>maindim</selectedcolor>
                 <label>-</label>
                 <textoffsetx>20</textoffsetx>
                 <pulseonselect>false</pulseonselect>
@@ -71,7 +71,7 @@
                 <top>315</top>
                 <width>1110</width>
                 <align>center</align>
-                <textcolor>Silver</textcolor>
+                <textcolor>dimgray</textcolor>
                 <label>• $LOCALIZE[21434] •</label>
                 <height>63</height>
             </control>
@@ -169,7 +169,7 @@
                 <align>center</align>
                 <top>600</top>
                 <width>1110</width>
-                <textcolor>Silver</textcolor>
+                <textcolor>dimgray</textcolor>
                 <label>• $LOCALIZE[31025] •</label>
             </control>
 

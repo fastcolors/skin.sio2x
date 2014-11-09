@@ -227,7 +227,7 @@
             <onright>11</onright>
             <onup>21</onup>
             <ondown>21</ondown>
-            <texturenofocus colordiffuse="white">images/white.png</texturenofocus>
+            <texturenofocus colordiffuse="inverted">images/white.png</texturenofocus>
         </control>
         <control type="button" id="21">
             <description>Done button</description>
@@ -242,7 +242,7 @@
             <onright>17</onright>
             <onup>23</onup>
             <ondown>23</ondown>
-            <texturenofocus colordiffuse="white">images/white.png</texturenofocus>
+            <texturenofocus colordiffuse="inverted">images/white.png</texturenofocus>
         </control>
     </controls>
 </window>

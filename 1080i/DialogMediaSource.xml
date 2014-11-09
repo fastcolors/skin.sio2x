@@ -18,32 +18,32 @@
                 <top>110</top>
                 <height>1</height>
                 <width>1920</width>
-                <texture colordiffuse="black">Lines/line.png</texture>
+                <texture colordiffuse="main">Lines/line.png</texture>
             </control>
             <control type="image" description="line">
                 <top>185</top>
                 <height>1</height>
                 <width>1920</width>
-                <texture colordiffuse="black">Lines/line.png</texture>
+                <texture colordiffuse="main">Lines/line.png</texture>
             </control>
             <control type="image" description="line">
                 <top>1005</top>
                 <height>1</height>
                 <width>1920</width>
-                <texture colordiffuse="black">Lines/line.png</texture>
+                <texture colordiffuse="main">Lines/line.png</texture>
             </control>
             <control type="image" description="line">
                 <top>830</top>
                 <height>1</height>
                 <width>1920</width>
-                <texture colordiffuse="black">Lines/line.png</texture>
+                <texture colordiffuse="main">Lines/line.png</texture>
             </control>
             <control type="image" description="line">
                 <left>960</left>
                 <top>1007</top>
                 <height>74</height>
                 <width>1</width>
-                <texture colordiffuse="black">Lines/lineV.png</texture>
+                <texture colordiffuse="main">Lines/lineV.png</texture>
             </control>
             <control type="grouplist" id="9001">
                 <centerleft>960</centerleft>

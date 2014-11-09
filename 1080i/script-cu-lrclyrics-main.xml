@@ -57,7 +57,7 @@
                     <font>Size42B</font>
                     <label>$INFO[MusicPlayer.Title]</label>
                     <align>center</align>
-                    <textcolor>Yellow</textcolor>
+                    <textcolor>orange</textcolor>
                 </control>
                 <control type="label">
                     <description>Artist label</description>
@@ -66,7 +66,7 @@
                     <font>Size20</font>
                     <label> • $INFO[MusicPlayer.Artist] </label>
                     <align>center</align>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                 </control>
                 <control type="image">
                     <description>Song Rating Image</description>
@@ -263,7 +263,7 @@
                     <info>ListItem.Label</info>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <textcolor>Yellow</textcolor>
+                    <textcolor>orange</textcolor>
                 </control>
             </focusedlayout>
         </control>

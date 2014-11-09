@@ -152,8 +152,8 @@
                 <centerleft>480</centerleft>
                 <visible>Controlgroup(575).HasFocus(13)</visible>
                 <include>Help_Panel</include>
-                <colordiffuse>silver</colordiffuse>
-                <texture colordiffuse="black">help/wireless.png</texture>
+                <colordiffuse>dimgray</colordiffuse>
+                <texture colordiffuse="main">help/wireless.png</texture>
             </control>
             <control type="image" description="NetworkOFF">
                 <visible>Controlgroup(575).HasFocus(13) + Skin.HasSetting(hideconnection)</visible>
@@ -209,7 +209,7 @@
             <control type="image" description="quits">
                 <visible>Controlgroup(575).HasFocus(8)</visible>
                 <include>Help_Panel</include>
-                <texture colordiffuse="black">$VAR[quiticon]</texture>
+                <texture colordiffuse="main">$VAR[quiticon]</texture>
             </control>
             <control type="image" description="clock">
                 <visible>Controlgroup(575).HasFocus(9)</visible>
@@ -224,18 +224,18 @@
             <control type="image" description="reset">
                 <visible>Controlgroup(575).HasFocus(15)</visible>
                 <include>Help_Panel</include>
-                <texture colordiffuse="black">help/warning.png</texture>
+                <texture colordiffuse="main">help/warning.png</texture>
             </control>
             <control type="image" description="MUSIC">
                 <visible>Controlgroup(575).HasFocus(10)</visible>
                 <include>Help_Panel</include>
-                <texture colordiffuse="black">icons/music.png</texture>
+                <texture colordiffuse="main">icons/music.png</texture>
             </control>
             <control type="image" description="custom BKGRND">
                 <visible>Controlgroup(575).HasFocus(11)</visible>
                 <include>Help_Panel</include>
                 <bordersize>4</bordersize>
-                <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                <bordertexture colordiffuse="main">images/white.png</bordertexture>
                 <texture>$VAR[bgimg]</texture>
             </control>
             <control type="image" description="icon shelf">
@@ -276,7 +276,7 @@
                 <visible>Controlgroup(575).HasFocus(18)</visible>
                 <include>Help_Panel</include>
                 <texture>help/sioslider.jpg</texture>
-                <bordertexture colordiffuse="black">images/white.png</bordertexture>
+                <bordertexture colordiffuse="main">images/white.png</bordertexture>
                 <bordersize>4</bordersize>
             </control>
         </control>
@@ -285,7 +285,7 @@
             <top>540</top>
             <height>1</height>
             <width>900</width>
-            <texture colordiffuse="black">lines/Line1.png</texture>
+            <texture colordiffuse="main">lines/Line1.png</texture>
         </control>
         <control type="textbox" description="HelpDetails">
             <centerleft>480</centerleft>
@@ -304,7 +304,7 @@
             <height>25</height>
             <font>size21</font>
             <align>center</align>
-            <textcolor>black</textcolor>
+            <textcolor>main</textcolor>
             <label>$VAR[ShelfLogo]</label>
         </control>
         <control type="label" description="custom background path">
@@ -315,7 +315,7 @@
             <height>25</height>
             <font>size21</font>
             <align>center</align>
-            <textcolor>black</textcolor>
+            <textcolor>main</textcolor>
             <label>$VAR[bgimg]</label>
         </control>
     </controls>

@@ -45,7 +45,7 @@
                         <include>SmallSelector</include>
                         <control type="label" description="Main Label">
                             <width>720</width>
-                            <textcolor>black</textcolor>
+                            <textcolor>main</textcolor>
                             <include>SmallListMainLabel</include>
                             <label>$INFO[ListItem.Label]</label>
                         </control>

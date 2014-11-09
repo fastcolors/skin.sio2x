@@ -23,7 +23,7 @@
             <align>right</align>
             <aligny>center</aligny>
             <font>size20</font>
-            <textcolor>White</textcolor>
+            <textcolor>maindim</textcolor>
             <label>$INFO[System.Time]</label>
         </control>
         <control type="group" description="LEFT PANEL">

@@ -23,7 +23,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>size42B</font>
-                <textcolor>White</textcolor>
+                <textcolor>maindim</textcolor>
             </control>
             <!--<control type="button">
                   <description>Close Window button</description>
@@ -37,7 +37,7 @@
                   <onright>10</onright>
                   <onup>10</onup>
                   <ondown>10</ondown>
-                  <textcolor>White</textcolor>
+                  <textcolor>maindim</textcolor>
                   <visible>system.getbool(input.enablemouse)</visible>
               </control>-->
 
@@ -76,12 +76,12 @@
             <control type="radiobutton" id="8">
                 <description>Default RadioButton</description>
                 <height>60</height>
-                <textcolor>White</textcolor>
+                <textcolor>maindim</textcolor>
             </control>
             <control type="spincontrolex" id="9">
                 <description>Default SpinControlex</description>
                 <height>60</height>
-                <textcolor>White</textcolor>
+                <textcolor>maindim</textcolor>
                 <align>left</align>
                 <aligny>center</aligny>
                 <reverse>yes</reverse>
@@ -90,7 +90,7 @@
                 <description>Default Slider</description>
                 <height>60</height>
                 <disabledcolor>gray</disabledcolor>
-                <textcolor>White</textcolor>
+                <textcolor>maindim</textcolor>
                 <align>left</align>
                 <aligny>center</aligny>
                 <texturesliderbar>images/slider_bg.png</texturesliderbar>
@@ -102,7 +102,7 @@
             <control type="edit" id="12">
                 <description>Default Edit</description>
                 <height>60</height>
-                <textcolor>White</textcolor>
+                <textcolor>maindim</textcolor>
             </control>
             <control type="group" id="9001">
                 <left>305</left>

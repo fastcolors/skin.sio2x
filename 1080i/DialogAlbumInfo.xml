@@ -22,19 +22,19 @@
             <height>80</height>
             <width>1920</width>
             <aspectratio>stretch</aspectratio>
-            <texture colordiffuse="white">images/BlackT.png</texture>
+            <texture colordiffuse="inverted">images/transparent.png</texture>
         </control>
         <control type="image" description="Navbar">
             <top>1000</top>
             <width>1920</width>
             <height>1</height>
-            <texture colordiffuse="black">lines/Line.png</texture>
+            <texture colordiffuse="main">lines/Line.png</texture>
         </control>
         <control type="image" description="Navbar">
             <top>100</top>
             <width>1920</width>
             <height>1</height>
-            <texture colordiffuse="black">lines/Line.png</texture>
+            <texture colordiffuse="main">lines/Line.png</texture>
         </control>
         <control type="group" description="Options">
             <control type="grouplist" id="300">
@@ -79,7 +79,7 @@
             <top>101</top>
             <width>1</width>
             <height>898</height>
-            <texture colordiffuse="black">lines/LineV.png</texture>
+            <texture colordiffuse="main">lines/LineV.png</texture>
         </control>
         <control type="label">
             <visible>Control.IsVisible(50) + Container.Content(Artists)</visible>

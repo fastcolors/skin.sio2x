@@ -41,7 +41,7 @@
                 <focusedlayout width="802" height="81">
                     <include>SmallSelector</include>
                     <control type="label" description="Main Label">
-                        <textcolor>black</textcolor>
+                        <textcolor>main</textcolor>
                         <include>SmallListMainLabel</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>

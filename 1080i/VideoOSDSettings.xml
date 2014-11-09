@@ -12,7 +12,7 @@
                 <width>1050</width>
                 <height>1100</height>
                 <texture border="50">sidepanel/Back.png</texture>
-                <!--<colordiffuse>white</colordiffuse>-->
+                <!--<colordiffuse>inverted</colordiffuse>-->
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" id="2" description="Title">

@@ -78,8 +78,8 @@
                 </label>
                 <align>left</align>
                 <aligny>center</aligny>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
+                <textcolor>inverted</textcolor>
+                <shadowcolor>main</shadowcolor>
             </control>
             <control type="image">
                 <left>270</left>
@@ -129,7 +129,7 @@
                     </label>
                     <align>left</align>
                     <textcolor>blue</textcolor>
-                    <shadowcolor>black</shadowcolor>
+                    <shadowcolor>main</shadowcolor>
                 </control>
                 <control type="textbox" id="1400">
                     <left>300</left>
@@ -140,8 +140,8 @@
                     <label>
                     </label>
                     <align>left</align>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
+                    <textcolor>inverted</textcolor>
+                    <shadowcolor>main</shadowcolor>
                 </control>
                 <control type="group" id="1396">
                     <control type="label" id="1403">
@@ -153,7 +153,7 @@
                         </label>
                         <align>left</align>
                         <textcolor>blue</textcolor>
-                        <shadowcolor>black</shadowcolor>
+                        <shadowcolor>main</shadowcolor>
                     </control>
                     <control type="radiobutton" id="1406">
                         <left>300</left>
@@ -163,7 +163,7 @@
                         <label>
                         </label>
                         <textcolor>FF999999</textcolor>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>inverted</focusedcolor>
                         <texturefocus border="5">button-focus2.png</texturefocus>
                     </control>
                     <control type="radiobutton" id="1407">
@@ -174,7 +174,7 @@
                         <label>
                         </label>
                         <textcolor>FF999999</textcolor>
-                        <focusedcolor>white</focusedcolor>
+                        <focusedcolor>inverted</focusedcolor>
                         <texturefocus border="5">button-focus2.png</texturefocus>
                     </control>
                     <control type="button" id="1401">
@@ -230,7 +230,7 @@
                         </label>
                         <align>left</align>
                         <textcolor>blue</textcolor>
-                        <shadowcolor>black</shadowcolor>
+                        <shadowcolor>main</shadowcolor>
                     </control>
                     <control type="image">
                         <left>287</left>

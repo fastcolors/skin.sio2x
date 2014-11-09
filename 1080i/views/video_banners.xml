@@ -174,14 +174,14 @@
                 <top>139</top>
                 <width>1674</width>
                 <height>1</height>
-                <texture colordiffuse="black">lines/LineL.png</texture>
+                <texture colordiffuse="main">lines/LineL.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" description="Media details">
                 <left>129</left>
                 <top>90</top>
                 <width>1350</width>
-                <textcolor>Yellow</textcolor>
+                <textcolor>orange</textcolor>
                 <width>758</width>
                 <height>40</height>
                 <align>left</align>
@@ -203,7 +203,7 @@
                 <control type="label" description="Show status">
                     <width>650</width>
                     <height>60</height>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                     <width>758</width>
                     <height>40</height>
                     <align>left</align>
@@ -213,7 +213,7 @@
                 <control type="label" description="Next Episode">
                     <width>650</width>
                     <height>60</height>
-                    <textcolor>Silver</textcolor>
+                    <textcolor>dimgray</textcolor>
                     <width>758</width>
                     <height>40</height>
                     <align>left</align>
@@ -223,7 +223,7 @@
                 <control type="image">
                     <height>1</height>
                     <width>500</width>
-                    <texture colordiffuse="black">Lines/line.png</texture>
+                    <texture colordiffuse="main">Lines/line.png</texture>
                 </control>
                 <control type="textbox" description="Plot">
                     <top>300</top>
@@ -237,7 +237,7 @@
                 <control type="image">
                     <height>1</height>
                     <width>500</width>
-                    <texture colordiffuse="black">Lines/line.png</texture>
+                    <texture colordiffuse="main">Lines/line.png</texture>
                 </control>
             </control>
             <control type="scrollbar" id="60">

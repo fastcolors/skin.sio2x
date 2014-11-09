@@ -49,10 +49,10 @@
                 <texturenofocus></texturenofocus>
                 <label>-</label>
                 <font>size42B</font>
-                <textcolor>shelffont</textcolor>
-                <focusedcolor>shelffont</focusedcolor>
-                <selectedcolor>shelffont</selectedcolor>
-                <disabledcolor>Disabled</disabledcolor>
+                <textcolor>white</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <selectedcolor>white</selectedcolor>
+                <disabledcolor>dimgray</disabledcolor>
                 <ondown>150</ondown>
             </control>
         </control>
@@ -76,7 +76,7 @@
                 <top>80</top>
                 <width>500</width>
                 <font>size212</font>
-                <textcolor>shelffont</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>-</shadowcolor>
                 <align>center</align>
                 <height>30</height>
@@ -87,7 +87,7 @@
                 <top>170</top>
                 <width>500</width>
                 <height>30</height>
-                <textcolor>shelffont</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>-</shadowcolor>
                 <align>center</align>
                 <label>$LOCALIZE[402] : $INFO[Window.Property(Current.FeelsLike)]°</label>
@@ -97,7 +97,7 @@
                 <top>210</top>
                 <width>500</width>
                 <height>30</height>
-                <textcolor>shelffont</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>-</shadowcolor>
                 <align>center</align>
                 <label>$LOCALIZE[405] : $INFO[Window.Property(Current.DewPoint)]</label>
@@ -106,7 +106,7 @@
                 <top>120</top>
                 <width>600</width>
                 <height>30</height>
-                <textcolor>shelffont</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>-</shadowcolor>
                 <align>center</align>
                 <label>$LOCALIZE[406] : $INFO[Window.Property(Current.Humidity)]</label>
@@ -115,7 +115,7 @@
                 <top>160</top>
                 <width>600</width>
                 <height>30</height>
-                <textcolor>shelffont</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>-</shadowcolor>
                 <align>center</align>
                 <label>$LOCALIZE[403] : $INFO[Window.Property(Current.UVIndex)]</label>
@@ -125,7 +125,7 @@
                 <top>200</top>
                 <width>600</width>
                 <height>30</height>
-                <textcolor>shelffont</textcolor>
+                <textcolor>white</textcolor>
                 <shadowcolor>-</shadowcolor>
                 <align>center</align>
                 <label>$LOCALIZE[404] : $INFO[Window.Property(Current.Wind)]</label>
@@ -147,7 +147,7 @@
                     <top>0</top>
                     <height>120</height>
                     <width>220</width>
-                    <textcolor>shelffont</textcolor>
+                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <align>center</align>
                     <font>size36</font>
@@ -159,7 +159,7 @@
                     <height>100</height>
                     <width>220</width>
                     <align>center</align>
-                    <textcolor>shelffont</textcolor>
+                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.label2]</label>
                 </control>
@@ -170,7 +170,7 @@
                     <width>200</width>
                     <font>size21</font>
                     <align>center</align>
-                    <textcolor>shelffont</textcolor>
+                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.Property(Conditions)]</label>
                 </control>
@@ -196,7 +196,7 @@
                     <width>220</width>
                     <align>center</align>
                     <font>size36</font>
-                    <textcolor>shelffont</textcolor>
+                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.label]</label>
                     <visible>!Control.HasFocus(150)</visible>
@@ -208,7 +208,7 @@
                     <width>220</width>
                     <align>center</align>
                     <font>size36</font>
-                    <textcolor>Yellow</textcolor>
+                    <textcolor>orange</textcolor>
                     <label>$INFO[ListItem.label]</label>
                     <visible>Control.HasFocus(150)</visible>
                 </control>
@@ -218,7 +218,7 @@
                     <height>100</height>
                     <width>220</width>
                     <align>center</align>
-                    <textcolor>shelffont</textcolor>
+                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.label2]</label>
                 </control>
@@ -229,7 +229,7 @@
                     <width>200</width>
                     <font>size21</font>
                     <align>center</align>
-                    <textcolor>shelffont</textcolor>
+                    <textcolor>white</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.Property(Conditions)]</label>
                 </control>
