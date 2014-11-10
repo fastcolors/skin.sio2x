@@ -5,6 +5,7 @@
     <backgroundcolor>background</backgroundcolor>
     <controls>
         <include>BlackBackground</include>
+        <include>WindowsTopInfos</include>
         <control type="image">
             <centertop>430</centertop>
             <centerleft>590</centerleft>
@@ -135,19 +136,25 @@
         </control>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
-            <include>DialogOpenCloseVisible</include>
+            <include>9000slide</include>
             <control type="image" description="List back">
-                <left>540</left>
-                <top>200</top>
-                <width>840</width>
-                <height>680</height>
+                <top>-10</top>
+                <left>1430</left>
+                <width>550</width>
+                <height>1100</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="150">images/Dialog.png</texture>
+                <texture border="50">sidepanel/Back.png</texture>
             </control>
             <control type="grouplist" id="9000">
-                <onright>53</onright>
-                <onleft>53</onleft>
+                <left>1450</left>
+                <align>left</align>
                 <include>DialogGLs</include>
+                <control type="button" id="0">
+                    <enable>false</enable>
+                    <texturenofocus colordiffuse="silver">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>•• $LOCALIZE[33063] ••</label>
+                </control>
                 <control type="button" id="3" description="Sort">
                     <include>DialogButt</include>
                 </control>
@@ -160,7 +167,7 @@
                 <control type="button" id="6" description="Slideshow">
                     <disabledcolor>dimgray</disabledcolor>
                     <include>DialogButt</include>
-                    <label>108</label>
+                    <label>-</label>
                     <visible>!ListItem.IsFolder</visible>
                 </control>
                 <control type="button" id="7" description="Recursive slideshow">
@@ -185,7 +192,7 @@
                 </control>
             </control>
         </control>
-        <include>WindowsTopInfos</include>
+
         <control type="grouplist">
             <visible>!ListItem.IsFolder</visible>
             <visible>!Container.Content(addons)</visible>

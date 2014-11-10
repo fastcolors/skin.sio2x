@@ -32,7 +32,7 @@
                     <include>DialogGLs</include>
                     <control type="button" id="0">
                         <enable>false</enable>
-                        <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
+                        <texturenofocus colordiffuse="silver">images/buttonselect1.png</texturenofocus>
                         <include>DialogButt</include>
                         <label>•• $LOCALIZE[33063] ••</label>
                     </control>
@@ -104,7 +104,7 @@
                     </control>
                     <control type="button" id="599">
                         <enable>false</enable>
-                        <texturenofocus colordiffuse="FFCCCCCC">images/buttonselect1.png</texturenofocus>
+                        <texturenofocus colordiffuse="silver">images/buttonselect1.png</texturenofocus>
                         <include>DialogButt</include>
                         <label>•• $LOCALIZE[582] ••</label>
                     </control>

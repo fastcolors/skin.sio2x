@@ -136,19 +136,27 @@
                     <onright>noop</onright>
                 </control>
             </control>
-            <control type="group" description="Side menu 9000 group">
+           <control type="group" description="Side menu 9000 group">
                 <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
-                <include>DialogOpenCloseVisible</include>
+                <include>9000slide</include>
                 <control type="image" description="List back">
-                    <left>459</left>
-                    <top>168</top>
-                    <width>1002</width>
-                    <height>762</height>
+                    <top>-10</top>
+                    <left>1430</left>
+                    <width>550</width>
+                    <height>1100</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture border="150">images/Dialog.png</texture>
+                    <texture border="50">sidepanel/Back.png</texture>
                 </control>
                 <control type="grouplist" id="9000">
+                    <left>1450</left>
+                    <align>left</align>
                     <include>DialogGLs</include>
+                    <control type="button" id="0">
+                        <enable>false</enable>
+                        <texturenofocus colordiffuse="silver">images/buttonselect1.png</texturenofocus>
+                        <include>DialogButt</include>
+                        <label>•• $LOCALIZE[33063] ••</label>
+                    </control>
                     <control type="radiobutton" id="20" description="Shuffle">
                         <include>DialogButt</include>
                         <radioleft>530</radioleft>

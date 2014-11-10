@@ -695,7 +695,7 @@
         <centerleft>960</centerleft>
         <centertop>540</centertop>
         <width>470</width>
-        <height>1040</height>
+        <height>1000</height>
         <itemgap>3</itemgap>
         <onleft>50</onleft>
         <onright>50</onright>
@@ -898,7 +898,7 @@
                 <height>81</height>
                 <align>center</align>
                 <textcolor>red</textcolor>
-                <label>$INFO[Control.GetLabel(5)]</label>
+                <info>Control.GetLabel(5)</info>
             </control>
             <control type="label" description="Notifications">
                 <left>135</left>

@@ -17,8 +17,6 @@
         <scrollsuffix> • </scrollsuffix>
     </default>
     <default type="fadelabel">
-        <!--<left>0</left>-->
-        <!--<top>0</top>-->
         <height>75</height>
         <align>left</align>
         <aligny>center</aligny>

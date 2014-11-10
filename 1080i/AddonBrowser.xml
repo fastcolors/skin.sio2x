@@ -62,39 +62,85 @@
         <include>Left_Panel_Addons</include>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
-            <include>DialogOpenCloseVisible</include>
+            <include>9000slide</include>
             <control type="image" description="List back">
-                <left>540</left>
-                <top>250</top>
-                <width>840</width>
-                <height>580</height>
+                <top>-10</top>
+                <left>1430</left>
+                <width>550</width>
+                <height>1100</height>
                 <aspectratio>stretch</aspectratio>
-                <texture border="150">images/Dialog.png</texture>
+                <texture border="50">sidepanel/Back.png</texture>
             </control>
             <control type="grouplist" id="9000">
+                <left>1450</left>
+                <align>left</align>
                 <include>DialogGLs</include>
+                <control type="button" id="0">
+                    <enable>false</enable>
+                    <texturenofocus colordiffuse="silver">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>•• $LOCALIZE[33063] ••</label>
+                </control>
                 <control type="button" id="3" description="Sort">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <include>DialogButt</include>
                 </control>
-                <control type="button" id="5" description="Updates">
+                <control type="togglebutton" id="4" description="SortOrder">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
                     <include>DialogButt</include>
-                    <label>$LOCALIZE[24063]: $LOCALIZE[1223]</label>
-                    <altlabel>$LOCALIZE[24063]: $LOCALIZE[305]</altlabel>
+                    <label>584</label>
+                    <altlabel>585</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                </control>
+                <control type="radiobutton" id="7" description="language filter">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>25001</label>
+                </control>
+                <control type="button" id="100">
+                    <enable>false</enable>
+                    <texturenofocus colordiffuse="silver">images/buttonselect1.png</texturenofocus>
+                    <include>DialogButt</include>
+                    <label>•• $LOCALIZE[24069] ••</label>
+                </control>
+                <control type="group" id="105">
+                    <height>100</height>
+                    <control type="button" id="101" description="Updates_fakegroupbutton">
+                        <ondown>6</ondown>
+                        <onup>100</onup>
+                        <height>100</height>
+                        <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                        <include>DialogButt</include>
+                        <label></label>
+                        <onclick>SendClick(,5)</onclick>
+                    </control>
+                    <control type="textbox" description="Updates">
+                        <centerleft>235</centerleft>
+                        <height>100</height>
+                        <width>400</width>
+                        <font>size33</font>
+                        <align>center</align>
+                        <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                        <label>$INFO[Control.GetLabel(5)]</label>
+                    </control>
                 </control>
                 <control type="togglebutton" id="6" description="Notifications">
+                    <!--<height>120</height>-->
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
+                    <aligny>top</aligny>
                     <include>DialogButt</include>
-                    <label>$LOCALIZE[25000]: $LOCALIZE[1223]</label>
-                    <altlabel>$LOCALIZE[25000]: $LOCALIZE[305]</altlabel>
+                    <label>$LOCALIZE[25000]: $LOCALIZE[106]</label>
+                    <altlabel>$LOCALIZE[25000]: $LOCALIZE[107]</altlabel>
                 </control>
-                <control type="togglebutton" id="699" description="Playing">
+
+                <control type="button" id="699" description="Playing">
                     <enable>Player.HasMedia</enable>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <include>DialogButt</include>
-                    <label>$LOCALIZE[16003]</label>
-                    <altlabel>$LOCALIZE[31055]</altlabel>
-                    <usealttexture>Player.HasMedia</usealttexture>
+                    <label>16003</label>
                     <onclick>fullscreen</onclick>
-                    <altclick>fullscreen</altclick>
-                    <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
                 </control>
             </control>
         </control>
@@ -110,6 +156,11 @@
             <align>right</align>
             <aligny>center</aligny>
             <label>$LOCALIZE[31000] ([COLOR=White]$INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR])</label>
+        </control>
+        <control type="button" id="5" description="HIDDEN BUTTON Updates">
+            <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+            <font>-</font>
+            <include>DialogButt</include>
         </control>
     </controls>
 </window>
