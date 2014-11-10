@@ -18,12 +18,12 @@
         </item>
 
 
-        <item id="339">
-            <thumb>icons/movies.png</thumb>
-            <label>TEST</label>
-            <property name="color">icons/lightblue.png</property>
-            <onclick>Notification(header,message[,time,image])</onclick>
-        </item>
+        <!--<item id="339">-->
+            <!--<thumb>icons/movies.png</thumb>-->
+            <!--<label>TEST</label>-->
+            <!--<property name="color">icons/lightblue.png</property>-->
+            <!--<onclick>Notification(header,message,5000,DefaultIconError.png)</onclick>-->
+        <!--</item>-->
 
 
         <!--MOVIES-->
