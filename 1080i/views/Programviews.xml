@@ -279,20 +279,20 @@
                     <preloaditems>4</preloaditems>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>400</scrolltime>
-                    <itemlayout height="228" width="228">
+                    <itemlayout height="250" width="225">
                         <control type="image">
-                            <left>35</left>
                             <top>24</top>
+                            <left>35</left>
                             <width>225</width>
                             <height>225</height>
                             <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="228" width="228">
+                    <focusedlayout height="250" width="225">
                         <control type="group">
-                            <animation effect="zoom" center="140,35" end="130" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="140,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
+                            <animation effect="zoom" center="155,35" end="130" time="200" reversible="true">Focus</animation>
+                            <animation effect="zoom" center="155,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
                             <include>Scrollanim</include>
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
@@ -305,8 +305,8 @@
                                 <aspectratio>stretch</aspectratio>
                             </control>
                             <control type="image">
-                                <left>35</left>
                                 <top>24</top>
+                                <left>35</left>
                                 <width>225</width>
                                 <height>225</height>
                                 <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>

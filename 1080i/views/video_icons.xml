@@ -109,7 +109,7 @@
                     </focusedlayout>
                     <!--EPISODESEND-->
                     <!--ADDONS-->
-                    <itemlayout condition="Container.Content(Addons)" height="240" width="225">
+                    <itemlayout condition="Container.Content(Addons)" height="250" width="225">
                         <control type="image">
                             <top>24</top>
                             <left>35</left>
@@ -119,7 +119,7 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                     </itemlayout>
-                    <focusedlayout condition="Container.Content(Addons)" height="240" width="225">
+                    <focusedlayout condition="Container.Content(Addons)" height="250" width="225">
                         <control type="group">
                             <animation effect="zoom" center="155,35" end="130" time="200" reversible="true">Focus</animation>
                             <animation effect="zoom" center="155,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
