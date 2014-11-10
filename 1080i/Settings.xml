@@ -22,8 +22,6 @@
                 <height>1000</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
-                <!--<onup>SetFocus(576,2)</onup>-->
-                <!--<ondown>SetFocus(576,0)</ondown>-->
                 <onup>575</onup>
                 <ondown>575</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -120,6 +118,13 @@
                     <item id="16">
                         <label>$LOCALIZE[31082]</label>
                         <onclick>ActivateWindow(1111)</onclick>
+                    </item>
+                    <item id="17">
+                        <label>Kiosk</label>
+                        <onclick>Skin.Reset(ViewsMenuOff)</onclick>
+                        <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
+                        <onclick>Skin.Reset(hidesett)</onclick>
+                        <onclick>Skin.ToggleSetting(hidesett)</onclick>
                     </item>
                 </content>
             </control>
