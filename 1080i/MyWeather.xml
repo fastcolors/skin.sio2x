@@ -294,6 +294,12 @@
             <top>1002</top>
             <texture>Lines/line.png</texture>
         </control>
+        <control type="image">
+            <width>1920</width>
+            <height>77</height>
+            <top>1003</top>
+            <texture colordiffuse="inverted">images/white.png</texture>
+        </control>
         <control type="grouplist">
             <top>1003</top>
             <width>1020</width>
@@ -308,10 +314,10 @@
                 <align>center</align>
             </control>
             <!--todo label-->
-            <control type="button" id="100" description="Refresh">
+            <control type="button" id="100" description="location toggle">
                 <width>500</width>
                 <font>size36</font>
-                <label>Next Location</label>
+                <label>396</label>
                 <onclick>Weather.LocationNext</onclick>
                 <align>center</align>
             </control>
