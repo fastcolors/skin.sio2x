@@ -130,7 +130,7 @@
                     <label>31069</label>
                     <width>960</width>
                     <align>left</align>
-                    <selected>Skin.hasSetting(naked)</selected>
+                    <selected>!Skin.hasSetting(naked)</selected>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <onclick>Skin.ToggleSetting(naked)</onclick>
                 </control>

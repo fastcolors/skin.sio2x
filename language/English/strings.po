@@ -292,12 +292,12 @@ msgid "Random Movies"
 msgstr "Random Movies"
 
 msgctxt "#31069"
-msgid "Hide SiO2 - SiO2-x Views sliding Panel"
-msgstr "Hide SiO2 - SiO2-x Views sliding Panel"
+msgid "SiO2 - SiO2-x Views sliding Panel"
+msgstr "SiO2 - SiO2-x Views sliding Panel"
 
 msgctxt "#31070"
-msgid "Disables the Sliding fanart panel from Sio2 and Sio2x views. When disabed there will be no slider animation and the infos will be always showing."
-msgstr "Disables the Sliding fanart panel from Sio2 and Sio2x views. When disabed there will be no slider animation and the infos will be always showing."
+msgid "Enable or disable the Sliding fanart panel from Sio2 and Sio2x views. When disabed there will be no slider animation and the infos will be always showing."
+msgstr "Enable or disable the Sliding fanart panel from Sio2 and Sio2x views. When disabed there will be no slider animation and the infos will be always showing."
 
 msgctxt "#31077"
 msgid "Settings for the handling of your Video library, playback, subtitles, rendering and hardware acceleration"
