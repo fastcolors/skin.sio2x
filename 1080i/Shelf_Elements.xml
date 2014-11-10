@@ -387,6 +387,14 @@
                 <texture diffuse="images/ombra.png">images/Black.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
+            <control type="image">
+                <centerleft>160</centerleft>
+                <top>25</top>
+                <width>275</width>
+                <height>412</height>
+                <texture border="10" background="true">$VAR[dvdbox]</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
             <control type="textbox">
                 <centerleft>160</centerleft>
                 <top>245</top>
@@ -415,6 +423,14 @@
                 <width>275</width>
                 <height>330</height>
                 <texture diffuse="images/ombra.png">images/Black.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <centerleft>160</centerleft>
+                <top>25</top>
+                <width>275</width>
+                <height>412</height>
+                <texture border="10" background="true">$VAR[dvdbox]</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="textbox">
