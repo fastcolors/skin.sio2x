@@ -6,7 +6,7 @@
         <control type="image" description="List back">
             <centerleft>960</centerleft>
             <centertop>540</centertop>
-            <width>840</width>
+            <width>740</width>
             <height>800</height>
             <aspectratio>stretch</aspectratio>
             <texture border="150">images/Dialog.png</texture>
@@ -14,44 +14,43 @@
         <control type="grouplist" id="9000">
             <include>DialogGLs</include>
             <control type="label" description="Dialog heading">
-                <width>480</width>
+                <width>470</width>
                 <height>65</height>
                 <label>[B]$LOCALIZE[31053][/B]</label>
                 <align>center</align>
                 <aligny>center</aligny>
-                <font>size36</font>
                 <textcolor>maindim</textcolor>
             </control>
             <control type="radiobutton" id="701" description="Albums">
-                <width>480</width>
+                <width>470</width>
                 <label>$LOCALIZE[132]</label>
                 <onclick>Skin.SetString(MusicLink,Albums)</onclick>
                 <onclick>back</onclick>
                 <selected>StringCompare(Skin.String(MusicLink),Albums)</selected>
             </control>
             <control type="radiobutton" id="702" description="Artists">
-                <width>480</width>
+                <width>470</width>
                 <label>$LOCALIZE[133]</label>
                 <onclick>Skin.SetString(MusicLink,Artists)</onclick>
                 <onclick>back</onclick>
                 <selected>StringCompare(Skin.String(MusicLink),Artists)</selected>
             </control>
             <control type="radiobutton" id="703" description="Genres">
-                <width>480</width>
+                <width>470</width>
                 <label>$LOCALIZE[135]</label>
                 <onclick>Skin.SetString(MusicLink,Genres)</onclick>
                 <onclick>back</onclick>
                 <selected>StringCompare(Skin.String(MusicLink),Genres)</selected>
             </control>
             <control type="radiobutton" id="704" description="Songs">
-                <width>480</width>
+                <width>470</width>
                 <label>$LOCALIZE[134]</label>
                 <onclick>Skin.SetString(MusicLink,Songs)</onclick>
                 <onclick>back</onclick>
                 <selected>StringCompare(Skin.String(MusicLink),Songs)</selected>
             </control>
             <control type="radiobutton" id="705" description="Songs">
-                <width>480</width>
+                <width>470</width>
                 <label>$LOCALIZE[589]</label>
                 <onclick>Skin.SetString(MusicLink,Playlist)</onclick>
                 <onclick>back</onclick>

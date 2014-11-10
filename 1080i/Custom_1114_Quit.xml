@@ -6,25 +6,23 @@
         <control type="image" description="List back">
             <centerleft>960</centerleft>
             <centertop>540</centertop>
-            <width>840</width>
+            <width>740</width>
             <height>862</height>
             <aspectratio>stretch</aspectratio>
             <texture border="150">images/Dialog.png</texture>
         </control>
-
         <control type="grouplist" id="9000">
             <include>DialogGLs</include>
             <control type="label" description="Dialog heading">
-            <width>480</width>
+            <width>470</width>
             <height>65</height>
             <label>[B]$LOCALIZE[13008][/B]</label>
             <align>center</align>
             <aligny>center</aligny>
-            <font>size36</font>
             <textcolor>maindim</textcolor>
         </control>
             <control type="radiobutton" id="701" description="Quit">
-                <width>480</width>
+                <width>470</width>
                 <label>31050</label>
                 <onclick>Skin.Reset(shutdown)</onclick>
                 <onclick>Skin.Reset(quitter)</onclick>
@@ -32,7 +30,7 @@
                 <selected>IsEmpty(Skin.String(shutdown))</selected>
             </control>
             <control type="radiobutton" id="702" description="Suspend">
-                <width>480</width>
+                <width>470</width>
                 <enable>System.CanSuspend</enable>
                 <label>$LOCALIZE[13011]</label>
                 <onclick>Skin.SetString(shutdown,suspend)</onclick>
@@ -41,7 +39,7 @@
                 <selected>StringCompare(Skin.String(shutdown),suspend)</selected>
             </control>
             <control type="radiobutton" id="703" description="Hibernate">
-                <width>480</width>
+                <width>470</width>
                 <enable>System.CanHibernate</enable>
                 <label>$LOCALIZE[13010]</label>
                 <onclick>Skin.SetString(shutdown,hibernate)</onclick>
@@ -50,7 +48,7 @@
                 <selected>StringCompare(Skin.String(shutdown),hibernate)</selected>
             </control>
             <control type="radiobutton" id="704" description="Shutdown">
-                <width>480</width>
+                <width>470</width>
                 <enable>System.CanPowerdown</enable>
                 <label>13005</label>
                 <onclick>Skin.SetString(shutdown,powerdown)</onclick>
@@ -59,7 +57,7 @@
                 <selected>StringCompare(Skin.String(shutdown),powerdown)</selected>
             </control>
             <control type="radiobutton" id="705" description="Reboot">
-                <width>480</width>
+                <width>470</width>
                 <enable>System.CanReboot</enable>
                 <label>$LOCALIZE[13013]</label>
                 <onclick>Skin.SetString(shutdown,reboot)</onclick>
@@ -68,7 +66,7 @@
                 <selected>StringCompare(Skin.String(shutdown),reboot)</selected>
             </control>
             <control type="radiobutton" id="706" description="Quit">
-                <width>480</width>
+                <width>470</width>
                 <label>$LOCALIZE[13009]</label>
                 <onclick>Skin.SetString(shutdown,quit)</onclick>
                 <onclick condition="!Skin.HasSetting(quitter)">Skin.ToggleSetting(quitter)</onclick>
