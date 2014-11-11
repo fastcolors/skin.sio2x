@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="614">
-    <defaultcontrol></defaultcontrol>
-    <include>OpenClose</include>
+<window>
+    <defaultcontrol/>
     <controls>
         <control type="group">
             <left>1130</left>
@@ -24,7 +23,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
             </control>
-            <control type="label" id="31" description="Current Directory Label">
+            <control type="label" id="31" description="line 1 Label">
                 <left>22</left>
                 <top>36</top>
                 <width>755</width>
