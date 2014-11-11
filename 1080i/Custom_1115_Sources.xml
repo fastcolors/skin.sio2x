@@ -37,9 +37,10 @@
                 <control type="button" id="704" description="Update Library">
                     <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
                     <include>DialogButt</include>
-                    <label>$LOCALIZE[653]</label>
+                    <label>653</label>
                     <onclick>Close</onclick>
-                    <onclick>UpdateLibrary(video)</onclick>
+                    <onclick>CleanLibrary(video,true)</onclick>
+                    <onclick>UpdateLibrary(video,,true)</onclick>
                 </control>
                 <!--<control type="button" id="705" description="Update Library">-->
                     <!--<enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>-->
