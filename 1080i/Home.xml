@@ -21,7 +21,7 @@
         <control type="button" id="9009">
             <include>ShelfFade</include>
             <visible>[Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(315)] + Container(9000).Row(0)</visible>
-            <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+            <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-498" time="220">Conditonal</animation>
             <top>18</top>
             <left>10</left>
             <width>34</width>
@@ -54,7 +54,7 @@
         </control>
         <control type="group" description="Furniture">
             <top>480</top>
-            <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+            <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-498" time="220">Conditonal</animation>
             <control type="panel" id="9000" description="ICONE">
                 <width>1800</width>
                 <height>1080</height>
@@ -267,7 +267,7 @@
             </control>
         </control>
         <control type="group" id="700" description="Shelf items">
-            <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
+            <animation condition="![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-498" time="220">Conditonal</animation>
             <include>weather_shelf</include>
             <include>EPG_shelf</include>
             <include condition="Library.HasContent(TVShows)">TV</include>
