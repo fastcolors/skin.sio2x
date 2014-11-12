@@ -10,7 +10,7 @@
                 <texture colordiffuse="main" border="1">lines/LineV.png</texture>
             </control>
             <control type="fixedlist" id="54">
-                <!--<visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>-->
+                <visible>!IsEmpty(Container.FolderPath)</visible>
                 <top>135</top>
                 <left>1433</left>
                 <width>502</width>

@@ -163,7 +163,7 @@
             <control type="image" description="ColorMenu">
                 <visible>Controlgroup(575).HasFocus(5) + !Skin.HasSetting(colormenu)</visible>
                 <include>Help_Panel</include>
-                <texture>icons/DarkOrange.png</texture>
+                <texture>icons/darkorange.png</texture>
             </control>
             <control type="image" description="ColorMenuOff">
                 <visible>Controlgroup(575).HasFocus(5) + Skin.HasSetting(colormenu)</visible>

@@ -4,7 +4,7 @@
         <control type="group" description="sio2view">
             <visible>Control.IsVisible(52)</visible>
             <control type="fixedlist" id="52">
-                <!--<visible>!Container.Content(files) + !IsEmpty(Container.FolderPath)</visible>-->
+                <visible>!IsEmpty(Container.FolderPath)</visible>
                 <left>60</left>
                 <top>100</top>
                 <width>1920</width>
@@ -558,7 +558,7 @@
                 <top>130</top>
                 <height>1</height>
                 <width>1341</width>
-                <texture>lines/LineR.png</texture>
+                <texture colordiffuse="main">lines/LineR.png</texture>
             </control>
             <!--SLIDERPANEL-->
             <control type="group">

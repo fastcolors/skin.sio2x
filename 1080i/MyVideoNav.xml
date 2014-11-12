@@ -4,7 +4,7 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
-    <views>50,51,52,53,54,55,500</views>
+    <views>53,50,51,52,54,55,500</views>
     <!--
    50 Big List
    51 List

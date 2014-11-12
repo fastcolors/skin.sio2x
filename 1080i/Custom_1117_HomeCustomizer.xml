@@ -60,7 +60,7 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label" description="Main Label">
-                        <top>220</top>
+                        <top>230</top>
                         <width>300</width>
                         <height>24</height>
                         <align>center</align>
@@ -103,7 +103,7 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label" description="Main Label">
-                        <top>220</top>
+                        <top>230</top>
                         <width>300</width>
                         <height>24</height>
                         <align>center</align>
@@ -587,6 +587,19 @@
                         <thumb>help/Off.png</thumb>
                         <label>20094</label>
                         <onclick>Skin.ToggleSetting(hideSources)</onclick>
+                    </item>
+                    <!--todo label-->
+                    <item id="1011" description="video root">
+                        <visible>!Skin.HasSetting(hidevidroot)</visible>
+                        <thumb>icons/vidroot.png</thumb>
+                        <label>Video</label>
+                        <onclick>Skin.ToggleSetting(hidevidroot)</onclick>
+                    </item>
+                    <item id="1011" description="video root">
+                        <visible>Skin.HasSetting(hidevidroot)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>Video</label>
+                        <onclick>Skin.ToggleSetting(hidevidroot)</onclick>
                     </item>
                     <item id="1012" description="Browser">
                         <visible>!Skin.HasSetting(hidebro)</visible>

@@ -135,6 +135,7 @@
                             <font>size21</font>
                             <align>center</align>
                             <shadowcolor>-</shadowcolor>
+                            <textcolor>white</textcolor>
                             <label>[B]$INFO[ListItem.Property(unwatched)][/B]</label>
                         </control>
                     </control>
@@ -227,6 +228,7 @@
                             <width>50</width>
                             <font>size21</font>
                             <align>center</align>
+                            <textcolor>white</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>[B]$INFO[ListItem.Property(unwatched)][/B]</label>
                         </control>

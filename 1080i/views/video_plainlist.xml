@@ -10,6 +10,7 @@
                 <left>960</left>
                 <top>120</top>
                 <control type="fixedlist" id="51">
+                    <visible>!IsEmpty(Container.FolderPath)</visible>
                     <width>940</width>
                     <height>891</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>

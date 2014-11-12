@@ -263,58 +263,56 @@
         <!--ICONE-->
         <control type="group">
             <visible>Control.IsVisible(53)</visible>
-            <control type="group" description="Container and frame">
-                <control type="panel" id="53" description="Panel">
-                    <viewtype label="53">Icons</viewtype>
-                    <left>30</left>
-                    <top>100</top>
-                    <width>1920</width>
-                    <height>990</height>
-                    <onup>noop</onup>
-                    <ondown>noop</ondown>
-                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
-                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">53</onright>
-                    <preloaditems>4</preloaditems>
-                    <pagecontrol>60</pagecontrol>
-                    <scrolltime>400</scrolltime>
-                    <itemlayout height="250" width="225">
+            <control type="panel" id="53" description="Panel">
+                <viewtype label="53">Icons</viewtype>
+                <left>88</left>
+                <top>100</top>
+                <width>1760</width>
+                <height>990</height>
+                <onup>noop</onup>
+                <ondown>noop</ondown>
+                <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                <onright condition="Skin.HasSetting(Scrollbars_Passive)">53</onright>
+                <preloaditems>4</preloaditems>
+                <pagecontrol>60</pagecontrol>
+                <scrolltime>400</scrolltime>
+                <itemlayout height="266" width="246">
+                    <control type="image">
+                        <top>24</top>
+                        <centerleft>133</centerleft>
+                        <width>225</width>
+                        <height>225</height>
+                        <texture fallback="DefaultAddon.png" background="true" diffuse="images/logindiffuse.png">$VAR[locandine]</texture>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="266" width="246">
+                    <control type="group">
+                        <animation effect="zoom" center="123,35" end="130" time="200" reversible="true">Focus</animation>
+                        <animation effect="zoom" center="123,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
+                        <include>Scrollanim</include>
+                        <control type="image">
+                            <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                            <centerleft>133</centerleft>
+                            <top>9</top>
+                            <width>256</width>
+                            <height>256</height>
+                            <texture colordiffuse="$VAR[diffuseselect]" diffuse="images/logindiffuse.png">images/white.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
                         <control type="image">
                             <top>24</top>
-                            <left>35</left>
+                            <centerleft>133</centerleft>
                             <width>225</width>
                             <height>225</height>
-                            <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>
-                            <aspectratio>scale</aspectratio>
+                            <texture fallback="DefaultAddon.png" background="true" diffuse="images/logindiffuse.png">$VAR[locandine]</texture>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
-                    </itemlayout>
-                    <focusedlayout height="250" width="225">
-                        <control type="group">
-                            <animation effect="zoom" center="155,35" end="130" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="155,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
-                            <include>Scrollanim</include>
-                            <control type="image">
-                                <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                                <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                <left>19</left>
-                                <top>9</top>
-                                <width>256</width>
-                                <height>256</height>
-                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
-                                <aspectratio>stretch</aspectratio>
-                            </control>
-                            <control type="image">
-                                <top>24</top>
-                                <left>35</left>
-                                <width>225</width>
-                                <height>225</height>
-                                <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>
-                                <aspectratio>scale</aspectratio>
-                            </control>
-                        </control>
-                    </focusedlayout>
-                </control>
+                    </control>
+                </focusedlayout>
             </control>
             <control type="image" description="Line Split">
                 <centerleft>960</centerleft>

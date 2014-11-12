@@ -109,38 +109,100 @@
                     </focusedlayout>
                     <!--EPISODESEND-->
                     <!--ADDONS-->
-                    <itemlayout condition="Container.Content(Addons)" height="250" width="225">
+                    <itemlayout condition="Container.Content(Files) | Container.Content(Addons) | [ListItem.IsFolder + !Container.Content(tvshows)+ !Container.Content(movies) + !Container.Content(sets)]" height="250" width="246">
                         <control type="image">
+                            <centerleft>190</centerleft>
                             <top>24</top>
-                            <left>35</left>
                             <width>225</width>
                             <height>225</height>
-                            <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>
-                            <aspectratio>scale</aspectratio>
+                            <texture colordiffuse="aa222222" diffuse="images/logindiffuse.png">images/white.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <visible>!Container.Content(years) | StringCompare(ListItem.Label,..)</visible>
+                            <top>24</top>
+                            <centerleft>190</centerleft>
+                            <width>225</width>
+                            <height>225</height>
+                            <texture fallback="DefaultAddon.png" background="true" diffuse="images/logindiffuse.png">$VAR[locandine]</texture>
+                            <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="image">
+                            <visible>Container.Content(years) + !StringCompare(ListItem.Label,..)</visible>
+                            <top>24</top>
+                            <centerleft>190</centerleft>
+                            <width>225</width>
+                            <height>225</height>
+                            <texture fallback="DefaultAddon.png" background="true" diffuse="images/logindiffuse.png">DefaultYear_Blank.png</texture>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
+                        </control>
+                        <control type="textbox">
+                            <visible>!StringCompare(ListItem.Label,..) + [Container.Content(years) | Container.Content(directors)]</visible>
+                            <animation effect="slide" condition="Container.Content(directors)" end="0,19">Conditional</animation>
+                            <top>64</top>
+                            <centerleft>190</centerleft>
+                            <width>140</width>
+                            <height>70</height>
+                            <align>center</align>
+                            <font>size24</font>
+                            <textcolor>black</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <info>ListItem.Label</info>
                         </control>
                     </itemlayout>
-                    <focusedlayout condition="Container.Content(Addons)" height="250" width="225">
+                    <focusedlayout condition="Container.Content(Files) | Container.Content(Addons) | [ListItem.IsFolder + !Container.Content(tvshows) + !Container.Content(movies) + !Container.Content(sets)]" height="250" width="246">
                         <control type="group">
-                            <animation effect="zoom" center="155,35" end="130" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="155,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
+                            <animation effect="zoom" center="190,35" end="120" time="200" reversible="true">Focus</animation>
+                            <animation effect="zoom" center="190,35" start="120" end="100" time="100" reversible="true">unFocus</animation>
                             <include>Scrollanim</include>
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                                 <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
-                                <left>19</left>
+                                <centerleft>190</centerleft>
                                 <top>9</top>
                                 <width>256</width>
                                 <height>256</height>
-                                <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
+                                <texture colordiffuse="$VAR[diffuseselect]" diffuse="images/logindiffuse.png">images/white.png</texture>
                                 <aspectratio>stretch</aspectratio>
                             </control>
                             <control type="image">
+                                <centerleft>190</centerleft>
                                 <top>24</top>
-                                <left>35</left>
                                 <width>225</width>
                                 <height>225</height>
-                                <texture fallback="DefaultAddon.png" background="true">$VAR[locandine]</texture>
-                                <aspectratio>scale</aspectratio>
+                                <texture colordiffuse="aa222222" diffuse="images/logindiffuse.png">images/white.png</texture>
+                                <aspectratio>stretch</aspectratio>
+                            </control>
+                            <control type="image">
+                                <visible>!Container.Content(years) | StringCompare(ListItem.Label,..)</visible>
+                                <top>24</top>
+                                <centerleft>190</centerleft>
+                                <width>225</width>
+                                <height>225</height>
+                                <texture fallback="DefaultAddon.png" background="true" diffuse="images/logindiffuse.png">$VAR[locandine]</texture>
+                                <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+                            </control>
+                            <control type="image">
+                                <visible>Container.Content(years) + !StringCompare(ListItem.Label,..)</visible>
+                                <top>24</top>
+                                <centerleft>190</centerleft>
+                                <width>225</width>
+                                <height>225</height>
+                                <texture fallback="DefaultAddon.png" background="true" diffuse="images/logindiffuse.png">DefaultYear_Blank.png</texture>
+                                <aspectratio scalediffuse="false">scale</aspectratio>
+                            </control>
+                            <control type="textbox">
+                                <visible>!StringCompare(ListItem.Label,..) + [Container.Content(years) | Container.Content(directors)]</visible>
+                                <animation effect="slide" condition="Container.Content(directors)" end="0,19">Conditional</animation>
+                                <top>64</top>
+                                <centerleft>190</centerleft>
+                                <width>140</width>
+                                <height>70</height>
+                                <align>center</align>
+                                <font>size24</font>
+                                <textcolor>black</textcolor>
+                                <shadowcolor>-</shadowcolor>
+                                <info>ListItem.Label</info>
                             </control>
                         </control>
                     </focusedlayout>
@@ -520,6 +582,25 @@
                 </control>
             </control>
             <include>60slider</include>
+            <control type="group" description="ICONBOTTOMLABEL">
+                <visible>Container.Content(Files) | Container.Content(Addons) | [ListItem.IsFolder + !Container.Content(tvshows) + !Container.Content(movies) + !Container.Content(sets) + !Container.Content(episodes)]</visible>
+                <control type="image">
+                    <top>980</top>
+                    <centerleft>960</centerleft>
+                    <width>1500</width>
+                    <height>150</height>
+                    <texture colordiffuse="inverted" border="40">images/diffuserounded.png</texture>
+                </control>
+                <control type="label">
+                    <top>980</top>
+                    <centerleft>960</centerleft>
+                    <width>1500</width>
+                    <height>100</height>
+                    <textcolor>orange</textcolor>
+                    <align>center</align>
+                    <info>ListItem.Label</info>
+                </control>
+            </control>
         </control>
     </include>
 </includes>

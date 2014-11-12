@@ -7,9 +7,9 @@
             <control type="group" description="Container and frame">
                 <control type="panel" id="53" description="Panel">
                     <left>30</left>
-                    <top>100</top>
+                    <top>70</top>
                     <width>1920</width>
-                    <height>980</height>
+                    <height>1010</height>
                     <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                     <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
                     <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
@@ -20,17 +20,40 @@
                     <pagecontrol>60</pagecontrol>
                     <scrolltime tween="sine" easing="inout">300</scrolltime>
                     <preloaditems>2</preloaditems>
-                    <itemlayout height="250" width="225">
+                    <itemlayout height="225" width="225">
                         <control type="image">
+                            <visible>!Container.Content(years) | StringCompare(ListItem.Label,..)</visible>
                             <top>24</top>
                             <left>35</left>
                             <width>225</width>
                             <height>225</height>
-                            <texture fallback="DefaultAddonMusic.png" background="true">$VAR[locandine]</texture>
+                            <texture fallback="DefaultAddonMusic.png" background="true">$INFO[ListItem.Icon]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
+                        <control type="image">
+                            <visible>Container.Content(years) + !StringCompare(ListItem.Label,..)</visible>
+                            <top>24</top>
+                            <left>35</left>
+                            <width>225</width>
+                            <height>225</height>
+                            <texture fallback="DefaultAddonMusic.png">DefaultYear_Blank.png</texture>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
+                        </control>
+                        <control type="textbox">
+                            <visible>!StringCompare(ListItem.Label,..) + [Container.Content(years) | Container.Content(directors)]</visible>
+                            <animation effect="slide" condition="Container.Content(directors)" end="0,19">Conditional</animation>
+                            <top>64</top>
+                            <centerleft>147</centerleft>
+                            <width>140</width>
+                            <height>70</height>
+                            <align>center</align>
+                            <font>size24</font>
+                            <textcolor>black</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <info>ListItem.Label</info>
+                        </control>
                     </itemlayout>
-                    <focusedlayout height="250" width="225">
+                    <focusedlayout height="225" width="225">
                         <control type="group">
                             <animation effect="zoom" center="155,35" end="130" time="200" reversible="true">Focus</animation>
                             <animation effect="zoom" center="155,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
@@ -46,20 +69,43 @@
                                 <aspectratio>stretch</aspectratio>
                             </control>
                             <control type="image">
-                                <top>24</top>
-                                <left>35</left>
-                                <width>225</width>
-                                <height>225</height>
-                                <texture fallback="DefaultAddonMusic.png" background="true">$VAR[locandine]</texture>
-                                <aspectratio>scale</aspectratio>
-                            </control>
+                            <visible>!Container.Content(years) | StringCompare(ListItem.Label,..)</visible>
+                            <top>24</top>
+                            <left>35</left>
+                            <width>225</width>
+                            <height>225</height>
+                            <texture fallback="DefaultAddonMusic.png" background="true">$INFO[ListItem.Icon]</texture>
+                            <aspectratio>scale</aspectratio>
+                        </control>
+                        <control type="image">
+                            <visible>Container.Content(years) + !StringCompare(ListItem.Label,..)</visible>
+                            <top>24</top>
+                            <left>35</left>
+                            <width>225</width>
+                            <height>225</height>
+                            <texture fallback="DefaultAddonMusic.png">DefaultYear_Blank.png</texture>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
+                        </control>
+                        <control type="textbox">
+                            <visible>!StringCompare(ListItem.Label,..) + [Container.Content(years) | Container.Content(directors)]</visible>
+                            <animation effect="slide" condition="Container.Content(directors)" end="0,19">Conditional</animation>
+                            <top>64</top>
+                            <centerleft>147</centerleft>
+                            <width>140</width>
+                            <height>70</height>
+                            <align>center</align>
+                            <font>size24</font>
+                            <textcolor>black</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <info>ListItem.Label</info>
+                        </control>
                         </control>
                     </focusedlayout>
                 </control>
             </control>
             <control type="image" description="Line Split">
                 <centerleft>960</centerleft>
-                <top>100</top>
+                <top>70</top>
                 <width>1500</width>
                 <height>1</height>
                 <texture colordiffuse="main">lines/Line.png</texture>
@@ -189,6 +235,5 @@
                 </control>
             </control>
         </control>
-
     </include>
 </includes>

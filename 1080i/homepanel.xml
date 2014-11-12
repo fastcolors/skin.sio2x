@@ -40,7 +40,7 @@
             <visible>!Skin.HasSetting(hidemusic)</visible>
             <thumb>icons/music.png</thumb>
             <label>$VAR[musiclabel]</label>
-            <property name="color">icons/Orange.png</property>
+            <property name="color">icons/orange.png</property>
             <onclick condition="StringCompare(Skin.String(MusicLink),Playlist)">PlayerControl(Partymode(music))</onclick>
             <onclick condition="!StringCompare(Skin.String(MusicLink),Playlist)">ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
             <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
@@ -65,7 +65,7 @@
             <visible>!Skin.HasSetting(hideaddon)</visible>
             <thumb>icons/addons.png</thumb>
             <label>24001</label>
-            <property name="color">icons/Green.png</property>
+            <property name="color">icons/Green3.png</property>
             <onclick>ActivateWindow(1118)</onclick>
         </item>
         <!--FAVOURITES-->
@@ -105,7 +105,7 @@
             <visible>!Skin.HasSetting(hidewtr)</visible>
             <property name="weatherthumb">$INFO[Window(weather).Property(Current.FanartCode),weathershelf/,.png]</property>
             <label>$INFO[Weather.Temperature]</label>
-            <property name="color">icons/teak.png</property>
+            <property name="color">icons/orange.png</property>
             <onclick condition="IsEmpty(Weather.plugin)">activatewindow(WeatherSettings)</onclick>
             <onclick condition="!IsEmpty(Weather.plugin)">ActivateWindow(MyWeather)</onclick>
         </item>
@@ -160,7 +160,7 @@
             <visible>!IsEmpty(Skin.String(HomeFav.4.Label))</visible>
             <thumb>$INFO[Skin.String(HomeFav.4.Icon)]</thumb>
             <label>$INFO[Skin.String(HomeFav.4.Label)]</label>
-            <property name="color">icons/Orange.png</property>
+            <property name="color">icons/orange.png</property>
             <onclick>$INFO[Skin.String(HomeFav.4.Path)]</onclick>
         </item>
         <item id="605" description="Custom Fvourite">
@@ -182,7 +182,7 @@
             <thumb>$INFO[Skin.String(HomeAddon.1.Icon)]</thumb>
             <label2>$INFO[system.addonicon(Skin.String(HomeAddon.1.label))]</label2>
             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.1.Label))]</label>
-            <property name="color">icons/lightblue.png</property>
+            <property name="color">icons/orange.png</property>
             <onclick>RunAddon($INFO[Skin.String(HomeAddon.1.Label)])</onclick>
         </item>
         <item id="402" description="Custom addon">
@@ -214,7 +214,7 @@
             <thumb>$INFO[Skin.String(HomeAddon.5.Icon)]</thumb>
             <label2>$INFO[system.addonicon(Skin.String(HomeAddon.5.label))]</label2>
             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.5.Label))]</label>
-            <property name="color">icons/teak.png</property>
+            <property name="color">icons/orange.png</property>
             <onclick>RunAddon($INFO[Skin.String(HomeAddon.5.Label)])</onclick>
         </item>
         <item id="406" description="Custom addon">
@@ -314,8 +314,17 @@
             <visible>!Skin.HasSetting(hideSources) + [Library.HasContent(Movies) | Library.HasContent(TVShows)]</visible>
             <thumb>icons/sources.png</thumb>
             <label>20094</label>
-            <property name="color">icons/darkblue.png</property>
+            <property name="color">icons/dvdcolor.png</property>
             <onclick>activatewindow(1115)</onclick>
+        </item>
+         <!--VIDEOROOT-->
+        <!--todo label-->
+        <item id="347">
+            <visible>!Skin.HasSetting(hidevidroot)</visible>
+            <thumb>icons/vidroot.png</thumb>
+            <label>Video</label>
+            <property name="color">icons/green3.png</property>
+            <onclick>ActivateWindow(video,root,return)</onclick>
         </item>
         <!--FILE BROWSER-->
         <item id="353">
@@ -348,7 +357,7 @@
             <visible>!Skin.HasSetting(hidevidhelp)</visible>
             <thumb>icons/qmark.png</thumb>
             <label>$LOCALIZE[10043]</label>
-            <property name="color">icons/teak.png</property>
+            <property name="color">icons/orange.png</property>
             <onclick>ActivateWindow(1111)</onclick>
         </item>
         <!--FULLSCREEN-->

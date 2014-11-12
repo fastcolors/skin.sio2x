@@ -19,6 +19,15 @@
     <include name="left_Panel">
         <control type="group" description="ICON no PLOT">
             <visible>IsEmpty(ListItem.Plot) | Control.IsVisible(51)</visible>
+             <!--<control type="image" description="back">-->
+                <!--<visible>Skin.HasTheme(White) + !StringCompare(ListItem.Label,..) + ![Container.Content(genres) | Container.Content(actors)]</visible>-->
+                <!--<centerleft>480</centerleft>-->
+                <!--<centertop>540</centertop>-->
+                <!--<width>600</width>-->
+                <!--<height>800</height>-->
+                <!--<fadetime>200</fadetime>-->
+                <!--<texture colordiffuse="66000000">images/white.png</texture>-->
+            <!--</control>-->
             <control type="image" description="Thumb">
                 <!--<visible>ListItem.IsFolder + ![[Container.Content(sets) | Container.Content(Actors)] + !IsEmpty(ListItem.Thumb)]</visible>-->
                 <visible>IsEmpty(Container.FolderPath) | IsEmpty(ListItem.Thumb)</visible>
@@ -265,6 +274,14 @@
         <textcolor>orange</textcolor>
     </include>
     <include name="MusicInfo">
+        <!--<control type="image" description="back">-->
+            <!--<visible>Skin.HasTheme(White)</visible>-->
+            <!--<centerleft>480</centerleft>-->
+            <!--<centertop>450</centertop>-->
+            <!--<width>600</width>-->
+            <!--<height>600</height>-->
+            <!--<texture background="true" colordiffuse="66000000">images/white.png</texture>-->
+        <!--</control>-->
         <control type="image" description="Thumb">
             <centerleft>480</centerleft>
             <centertop>450</centertop>
