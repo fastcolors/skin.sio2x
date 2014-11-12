@@ -5,14 +5,15 @@
 # Addon Provider: FastColors
 # Translators:
 # Translators:
+# fastcolors <fastcolors@gmail.com>, 2014
 # nerve <herveturri@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Skin.Sio2-X\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2014-10-20 08:01+0000\n"
-"Last-Translator: nerve <herveturri@gmail.com>\n"
+"PO-Revision-Date: 2014-11-10 12:16+0000\n"
+"Last-Translator: fastcolors <fastcolors@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/skinsio2-x/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -309,6 +310,17 @@ msgstr "Infos en vue d'icône"
 msgctxt "#31068"
 msgid "Random Movies"
 msgstr "Films aléatoires"
+
+msgctxt "#31069"
+msgid "SiO2 - SiO2-x Views sliding Panel"
+msgstr "panneau coulissant de vues SiO2 - SiO2-x"
+
+msgctxt "#31070"
+msgid ""
+"Enable or disable the Sliding fanart panel from Sio2 and Sio2x views. When "
+"disabed there will be no slider animation and the infos will be always "
+"showing."
+msgstr "Activer ou désactiver le panneau coulissant des vues fanart de SiO2 et Sio2x. Si désactivé il n'y aura pas d'animation et les infos seront toujours visible."
 
 msgctxt "#31077"
 msgid ""

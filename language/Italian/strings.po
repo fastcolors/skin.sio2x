@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Skin.Sio2-X\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2014-10-20 15:03+0000\n"
-"Last-Translator: Betty Colombo <elisabetta.bettyseven@gmail.com>\n"
+"PO-Revision-Date: 2014-11-10 12:18+0000\n"
+"Last-Translator: fastcolors <fastcolors@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/skinsio2-x/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -137,7 +137,7 @@ msgstr "Badge Film/Programmi TV"
 
 msgctxt "#31028"
 msgid "Custom Background"
-msgstr "Personalizza Sfondo"
+msgstr "Sfondo Personalizzato"
 
 msgctxt "#31029"
 msgid ""
@@ -148,7 +148,7 @@ msgstr "Aggiungi uno sfondo personalizzato alla pagina principale. Si sposterà 
 
 msgctxt "#31030"
 msgid "Custom Shelf Icon"
-msgstr "Personalizza l'icona Shelf"
+msgstr "Icona Shelf Personalizzata"
 
 msgctxt "#31031"
 msgid "Replace Default Icon on Shelf with a Picture of Your choice."
@@ -301,15 +301,26 @@ msgstr "Attiva/Disattiva il badge di notifica che mostra il numero di film e pro
 
 msgctxt "#31066"
 msgid "Enable/Disable Sliding Info Window in Icon View"
-msgstr "Attiva/Disattiva la finestra scorrevole informativa sulla pagina delle icone"
+msgstr "Attiva/Disattiva la finestra scorrevole informativa quando in modalità di visualizzazione icone"
 
 msgctxt "#31067"
 msgid "Infos in Icon view"
-msgstr "Informazioni sulla pagina delle icone"
+msgstr "Informazioni in visualizzazione icone"
 
 msgctxt "#31068"
 msgid "Random Movies"
 msgstr "Film casuali"
+
+msgctxt "#31069"
+msgid "SiO2 - SiO2-x Views sliding Panel"
+msgstr "Pannelli Scorrevoli viste SiO2 / SiO2-x"
+
+msgctxt "#31070"
+msgid ""
+"Enable or disable the Sliding fanart panel from Sio2 and Sio2x views. When "
+"disabed there will be no slider animation and the infos will be always "
+"showing."
+msgstr "Attiva o Disattiva i pannelli scorrevoli contenteti le faranno dalle modalità di visualizzazione Sio2 e Sio2x. Se disattivato l'animazione di scorrimento della faranno non sarà presente. Le informazioni verranno comunque mostrate."
 
 msgctxt "#31077"
 msgid ""
