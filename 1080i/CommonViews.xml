@@ -24,8 +24,8 @@
                 <visible>IsEmpty(Container.FolderPath) | IsEmpty(ListItem.Thumb)</visible>
                 <centerleft>480</centerleft>
                 <centertop>540</centertop>
-                <width>800</width>
-                <height>900</height>
+                <width>600</width>
+                <height>800</height>
                 <fadetime>200</fadetime>
                 <texture diffuse="images/Diffuse.png" background="true">$VAR[locandine]</texture>
                 <aspectratio aligny="center">keep</aspectratio>
@@ -35,8 +35,8 @@
                 <visible>!IsEmpty(Container.FolderPath) + !IsEmpty(ListItem.Thumb)</visible>
                 <centerleft>480</centerleft>
                 <centertop>540</centertop>
-                <width>800</width>
-                <height>900</height>
+                <width>600</width>
+                <height>800</height>
                 <fadetime>200</fadetime>
                 <bordertexture colordiffuse="main">images/white.png</bordertexture>
                 <bordersize>4</bordersize>
@@ -62,7 +62,7 @@
                 <visible>!Container.Content(episodes)</visible>
                 <control type="image" description="Thumb">
                     <centerleft>480</centerleft>
-                    <width>756</width>
+                    <width>470</width>
                     <height>470</height>
                     <texture background="true">$VAR[locandine]</texture>
                     <fadetime>200</fadetime>
