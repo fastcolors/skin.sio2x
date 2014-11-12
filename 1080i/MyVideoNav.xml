@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="25">
-    <defaultcontrol always="true">52</defaultcontrol>
+<window>
+    <defaultcontrol always="true">53</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
@@ -36,21 +36,21 @@
             <include>9000slide</include>
             <control type="image" description="List back">
                 <top>-10</top>
-                <left>1430</left>
-                <width>550</width>
+                <left>-80</left>
+                <width>580</width>
                 <height>1100</height>
                 <aspectratio>stretch</aspectratio>
                 <texture border="50">sidepanel/Back.png</texture>
             </control>
             <control type="grouplist" id="9000">
-                <left>1450</left>
+                <left>0</left>
                 <align>left</align>
                 <include>DialogGLs</include>
                 <control type="button" id="0">
                     <enable>false</enable>
                     <texturenofocus colordiffuse="silver">images/buttonselect1.png</texturenofocus>
                     <include>DialogButt</include>
-                    <label>•• $LOCALIZE[33063] ••</label>
+                    <label>•• $LOCALIZE[33063] •• kshgaskfdaksfdskuad</label>
                 </control>
                 <control type="togglebutton" id="14" description="Toggle Watched">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -140,7 +140,7 @@
                 <!--todo label ?-->
                 <control type="radiobutton" id="600" description="sio2">
                     <include>DialogButt</include>
-                    <!--<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>-->
+                    <enable>!IsEmpty(Container.FolderPath)</enable>
                     <onclick>Container.SetViewMode(52)</onclick>
                     <onclick>Skin.Reset(naked)</onclick>
                     <selected>Control.IsVisible(52) + !Skin.HasSetting(naked)</selected>
@@ -160,13 +160,13 @@
                 </control>
                 <control type="radiobutton" id="604" description="View Big List">
                     <include>DialogButt</include>
-                    <enable>!IsEmpty(Container.FolderPath)</enable>
                     <onclick>Container.SetViewMode(50)</onclick>
                     <selected>Control.IsVisible(50)</selected>
                     <label>$LOCALIZE[537]</label>
                 </control>
                 <control type="radiobutton" id="605" description="List">
                     <include>DialogButt</include>
+                    <enable>!IsEmpty(Container.FolderPath)</enable>
                     <onclick>Container.SetViewMode(51)</onclick>
                     <selected>Control.IsVisible(51)</selected>
                     <label>$LOCALIZE[535]</label>

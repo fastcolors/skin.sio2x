@@ -13,14 +13,14 @@
             <include>9000slide</include>
             <control type="image" description="List back">
                 <top>-10</top>
-                <left>1430</left>
-                <width>550</width>
+                <left>-80</left>
+                <width>580</width>
                 <height>1100</height>
                 <aspectratio>stretch</aspectratio>
                 <texture border="50">sidepanel/Back.png</texture>
             </control>
             <control type="grouplist" id="9000">
-                <left>1450</left>
+                <left>0</left>
                 <align>left</align>
                 <include>DialogGLs</include>
                 <control type="button" id="607">

@@ -136,19 +136,19 @@
                     <onright>noop</onright>
                 </control>
             </control>
-           <control type="group" description="Side menu 9000 group">
+            <control type="group" description="Side menu 9000 group">
                 <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
                 <include>9000slide</include>
                 <control type="image" description="List back">
                     <top>-10</top>
-                    <left>1430</left>
-                    <width>550</width>
+                    <left>-80</left>
+                    <width>580</width>
                     <height>1100</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="50">sidepanel/Back.png</texture>
                 </control>
                 <control type="grouplist" id="9000">
-                    <left>1450</left>
+                    <left>0</left>
                     <align>left</align>
                     <include>DialogGLs</include>
                     <control type="button" id="0">
