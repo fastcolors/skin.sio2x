@@ -246,6 +246,7 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="label" description="Artist or Type">
+                    <left>192</left>
                     <top>8</top>
                     <width>384</width>
                     <height>30</height>
@@ -296,6 +297,7 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="label" description="Artist or Type">
+                    <left>192</left>
                     <top>8</top>
                     <width>384</width>
                     <height>30</height>
