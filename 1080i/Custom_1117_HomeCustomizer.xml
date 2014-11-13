@@ -544,8 +544,6 @@
                         <label>+ $LOCALIZE[24009]</label>
                         <onclick>Skin.SetAddon(HomeAddon.11.Label,xbmc.python.script)</onclick>
                     </item>
-
-
                     <item id="506" description="ScriptCustom">
                         <visible>!IsEmpty(Skin.String(HomeAddon.12.Label)) + IsEmpty(Skin.String(HomeAddon.12.Icon))</visible>
                         <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.12.Label))]</thumb>
@@ -662,19 +660,25 @@
                 <onclick>Skin.SetString(moviesshelf,WL)</onclick>
             </control>
             <control type="radiobutton" id="103" description="Random">
+                <ondown>104</ondown>
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[31068]</label>
                 <selected>StringCompare(Skin.String(moviesshelf),RND)</selected>
                 <enable>!Skin.HasSetting(hidemovie)</enable>
                 <onclick>Skin.SetString(moviesshelf,RND)</onclick>
             </control>
-            <control type="radiobutton" id="104" description="Trailers">
+            <control type="button" id="104">
+                <enable>false</enable>
+                <width>1500</width>
+                <height>1</height>
+                <texturenofocus>lines/Line1.png</texturenofocus>
+            </control>
+            <control type="radiobutton" id="105" description="Trailers">
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[31015]</label>
                 <selected>Skin.HasSetting(trailershelf)</selected>
                 <enable>!Skin.HasSetting(hidemovie) + System.HasAddon(plugin.video.itunes_trailers)</enable>
                 <onclick>Skin.ToggleSetting(trailershelf)</onclick>
-                <onclick>Skin.SetString(moviesshelf,TR)</onclick>
             </control>
         </control>
         <control type="grouplist" id="520" description="TV">
@@ -698,17 +702,17 @@
                 <enable>!Skin.HasSetting(hidetv)</enable>
                 <onclick>Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
             </control>
-            <control type="radiobutton" id="204" description="Intruder">
-                <include>SettingsSubmenuButtons</include>
-                <label>$LOCALIZE[31045]</label>
-                <selected>!Skin.HasSetting(intruderTV)</selected>
-                <enable>!Skin.HasSetting(hidetv) + !Skin.HasSetting(TVShelf_Watchlist)</enable>
-                <onclick>Skin.ToggleSetting(intruderTV)</onclick>
-            </control>
+            <!--<control type="radiobutton" id="204" description="Intruder">-->
+                <!--<include>SettingsSubmenuButtons</include>-->
+                <!--<label>$LOCALIZE[31045]</label>-->
+                <!--<selected>!Skin.HasSetting(intruderTV)</selected>-->
+                <!--<enable>!Skin.HasSetting(hidetv) + !Skin.HasSetting(TVShelf_Watchlist)</enable>-->
+                <!--<onclick>Skin.ToggleSetting(intruderTV)</onclick>-->
+            <!--</control>-->
         </control>
         <control type="grouplist" id="520" description="Music">
             <visible>Container(50).HasFocus(1003)</visible>
-            <top>120</top>
+            <top>100</top>
             <left>260</left>
             <ondown>50</ondown>
             <onright>50</onright>
