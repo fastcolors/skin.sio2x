@@ -24,6 +24,7 @@
         <value condition="System.Date(02-19,02-20)">holidays/batman.png</value>
         <value condition="System.Date(03-17,03-18)">holidays/stpatrick.png</value>
         <value condition="System.Date(04-15,04-16)">holidays/leonardo.png</value>
+        <value condition="System.Date(9-27,9-28)">holidays/cliff.png</value>
         <value condition="System.Date(10-31,11-01)">holidays/halloween.png</value>
         <value condition="System.Date(12-25,12-26)">holidays/xmas.png</value>
         <value condition="Skin.HasSetting(CustomImage)">$INFO[Skin.String(ShelfCustomImage)]</value>
