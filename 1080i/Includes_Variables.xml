@@ -340,19 +340,19 @@
     </variable>
 
     <variable name="genrefix">
-        <value condition="StringCompare(ListItem.Label,Action) | StringCompare(ListItem.Label,Azione)">special://home/movie_extrapack/Action.jpg</value>
-        <value condition="StringCompare(ListItem.Label,Storia) | StringCompare(ListItem.Label,History)">special://home/movie_extrapack/History.jpg</value>
-        <value condition="StringCompare(ListItem.Label,Avventura) | StringCompare(ListItem.Label,Adventure)">special://home/movie_extrapack/Adventure.jpg</value>
-        <value condition="StringCompare(ListItem.Label,Family) | StringCompare(ListItem.Label,Famiglia)">special://home/movie_extrapack/Family.jpg</value>
-        <value condition="StringCompare(ListItem.Label,War) | StringCompare(ListItem.Label,Guerra)">special://home/movie_extrapack/War.jpg</value>
-        <value condition="StringCompare(ListItem.Label,Musica) | StringCompare(ListItem.Label,Music)">special://home/movie_extrapack/War.jpg</value>
-        <value condition="StringCompare(ListItem.Label,Dramma) | StringCompare(ListItem.Label,Drama)">special://home/movie_extrapack/Drama.jpg</value>
-        <value condition="StringCompare(ListItem.Label,Comedy) | StringCompare(ListItem.Label,Commedia) | StringCompare(ListItem.Label,Comedia)">special://home/movie_extrapack/Comedy.jpg</value>
-        <value condition="StringCompare(ListItem.Label,Animation) | StringCompare(ListItem.Label,Animazione)">special://home/movie_extrapack/Animation.jpg</value>
-        <value condition="StringCompare(ListItem.Label,Mystery) | StringCompare(ListItem.Label,Mistero)">special://home/movie_extrapack/Mystery.jpg</value>
-        <value condition="StringCompare(ListItem.Label,Fantascienza) | StringCompare(ListItem.Label,Ciencia ficción) | StringCompare(ListItem.Label,Science Fiction)">special://home/movie_extrapack/Science Fiction.jpg</value>
-        <value condition="StringCompare(ListItem.Label,Documentario) | StringCompare(ListItem.Label,Documentary)">special://home/movie_extrapack/Documentary.jpg</value>
-        <value>$INFO[ListItem.Label,special://home/movie_extrapack/,.jpg]</value>
+        <value condition="StringCompare(ListItem.Label,Action) | StringCompare(ListItem.Label,Azione)">special://home/addons/sio2x.extrapack/movie_extrapack/Action.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Storia) | StringCompare(ListItem.Label,History)">special://home/addons/sio2x.extrapack/movie_extrapack/History.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Avventura) | StringCompare(ListItem.Label,Adventure)">special://home/addons/sio2x.extrapack/movie_extrapack/Adventure.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Family) | StringCompare(ListItem.Label,Famiglia)">special://home/addons/sio2x.extrapack/movie_extrapack/Family.jpg</value>
+        <value condition="StringCompare(ListItem.Label,War) | StringCompare(ListItem.Label,Guerra)">special://home/addons/sio2x.extrapack/movie_extrapack/War.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Musica) | StringCompare(ListItem.Label,Music)">special://home/addons/sio2x.extrapack/movie_extrapack/War.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Dramma) | StringCompare(ListItem.Label,Drama)">special://home/addons/sio2x.extrapack/movie_extrapack/Drama.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Comedy) | StringCompare(ListItem.Label,Commedia) | StringCompare(ListItem.Label,Comedia)">special://home/addons/sio2x.extrapack/movie_extrapack/Comedy.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Animation) | StringCompare(ListItem.Label,Animazione)">special://home/addons/sio2x.extrapack/movie_extrapack/Animation.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Mystery) | StringCompare(ListItem.Label,Mistero)">special://home/addons/sio2x.extrapack/movie_extrapack/Mystery.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Fantascienza) | StringCompare(ListItem.Label,Ciencia ficción) | StringCompare(ListItem.Label,Science Fiction)">special://home/addons/sio2x.extrapack/movie_extrapack/Science Fiction.jpg</value>
+        <value condition="StringCompare(ListItem.Label,Documentario) | StringCompare(ListItem.Label,Documentary)">special://home/addons/sio2x.extrapack/movie_extrapack/Documentary.jpg</value>
+        <value>$INFO[ListItem.Label,special://home/addons/sio2x.extrapack/movie_extrapack/,.jpg]</value>
     </variable>
 
 </includes>

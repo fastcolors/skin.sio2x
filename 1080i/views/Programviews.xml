@@ -284,7 +284,7 @@
                         <centerleft>133</centerleft>
                         <width>225</width>
                         <height>225</height>
-                        <texture fallback="DefaultAddon.png" background="true" diffuse="images/logindiffuse.png">$VAR[locandine]</texture>
+                        <texture fallback="DefaultAddon.png">$VAR[locandine]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                     </control>
                 </itemlayout>
@@ -300,7 +300,7 @@
                             <top>9</top>
                             <width>256</width>
                             <height>256</height>
-                            <texture colordiffuse="$VAR[diffuseselect]" diffuse="images/logindiffuse.png">images/white.png</texture>
+                            <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
@@ -308,7 +308,7 @@
                             <centerleft>133</centerleft>
                             <width>225</width>
                             <height>225</height>
-                            <texture fallback="DefaultAddon.png" background="true" diffuse="images/logindiffuse.png">$VAR[locandine]</texture>
+                            <texture fallback="DefaultAddon.png">$VAR[locandine]</texture>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
                     </control>
