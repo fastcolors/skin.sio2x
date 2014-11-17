@@ -45,31 +45,31 @@
                             <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),99)</visible>
                             <centerleft>60</centerleft>
                             <centertop>82</centertop>
-                            <height>45</height>
+                            <height>55</height>
                             <width>85</width>
-                            <texture background="true" border="20">badges/BadgeCount.png</texture>
+                            <texture background="true" border="25">badges/BadgeCount.png</texture>
                         </control>
                         <control type="image">
                             <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),9) + !IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),99)</visible>
                             <centerleft>60</centerleft>
                             <centertop>82</centertop>
-                            <height>45</height>
+                            <height>55</height>
                             <width>65</width>
-                            <texture background="true" border="20">badges/BadgeCount.png</texture>
+                            <texture background="true" border="25">badges/BadgeCount.png</texture>
                         </control>
                         <control type="image">
                             <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),9)</visible>
                             <centerleft>60</centerleft>
                             <centertop>82</centertop>
-                            <height>45</height>
-                            <width>45</width>
-                            <texture background="true" border="20">badges/BadgeCount.png</texture>
+                            <height>55</height>
+                            <width>55</width>
+                            <texture background="true" border="25">badges/BadgeCount.png</texture>
                         </control>
                         <control type="label" description="Label2">
                             <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                             <centerleft>60</centerleft>
                             <centertop>82</centertop>
-                            <height>45</height>
+                            <height>55</height>
                             <width>150</width>
                             <font>size26</font>
                             <scroll>true</scroll>
@@ -122,25 +122,25 @@
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),99)</visible>
                                 <centerleft>60</centerleft>
                                 <centertop>82</centertop>
-                                <height>45</height>
+                                <height>55</height>
                                 <width>85</width>
-                                <texture background="true" border="20">badges/BadgeCount.png</texture>
+                                <texture background="true" border="25">badges/BadgeCount.png</texture>
                             </control>
                             <control type="image">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),9) + !IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),99)</visible>
                                 <centerleft>60</centerleft>
                                 <centertop>82</centertop>
-                                <height>45</height>
+                                <height>55</height>
                                 <width>65</width>
-                                <texture background="true" border="20">badges/BadgeCount.png</texture>
+                                <texture background="true" border="25">badges/BadgeCount.png</texture>
                             </control>
                             <control type="image">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0) + !IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),9)</visible>
                                 <centerleft>60</centerleft>
                                 <centertop>82</centertop>
-                                <height>45</height>
-                                <width>45</width>
-                                <texture background="true" border="20">badges/BadgeCount.png</texture>
+                                <height>55</height>
+                                <width>55</width>
+                                <texture background="true" border="25">badges/BadgeCount.png</texture>
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>

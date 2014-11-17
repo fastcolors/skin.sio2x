@@ -152,6 +152,7 @@
                     <font>size42B</font>
                     <align>center</align>
                     <width>1724</width>
+                    <textcolor>orange</textcolor>
                     <info>ListItem.Label</info>
                 </control>
                 <control type="image" description="Line Split">
@@ -162,105 +163,95 @@
                     <texture colordiffuse="main">lines/LineL.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="group">
-                    <control type="image" description="lineplot">
-                        <top>70</top>
-                        <centerleft>960</centerleft>
-                        <width>620</width>
-                        <height>1</height>
-                        <texture colordiffuse="main">lines/LineSH.png</texture>
-                    </control>
-                    <control type="image" description="lineplot">
-                        <centerleft>960</centerleft>
-                        <top>80</top>
-                        <width>1724</width>
-                        <height>1</height>
-                        <texture colordiffuse="main">lines/LineSH.png</texture>
-                    </control>
-                    <control type="textbox" description="Plot">
-                        <top>80</top>
-                        <centerleft>960</centerleft>
-                        <width>1724</width>
-                        <height>330</height>
-                        <font>size30</font>
-                        <textcolor>dimgray</textcolor>
-                        <align>justify</align>
-                        <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
-                        <label>$VAR[Plots]</label>
-                        <!--<label>$INFO[ListItem.Plot]</label>-->
-                    </control>
-                    <control type="image" description="lineplot">
-                        <centerleft>960</centerleft>
-                        <top>410</top>
-                        <width>1724</width>
-                        <height>1</height>
-                        <texture colordiffuse="main">lines/LineSH.png</texture>
-                    </control>
-                    <control type="label">
-                        <centerleft>960</centerleft>
-                        <top>440</top>
-                        <font>size27</font>
-                        <height>40</height>
-                        <align>center</align>
-                        <width>1724</width>
-                        <label>$VAR[TopLabel]</label>
-                    </control>
-                    <control type="grouplist" description="Flags">
-                        <top>540</top>
-                        <centerleft>960</centerleft>
-                        <width min="90" max="1724">auto</width>
-                        <height>150</height>
-                        <itemgap>30</itemgap>
-                        <orientation>horizontal</orientation>
-                        <align>center</align>
-                        <control type="image">
-                            <height>50</height>
-                            <width>130</width>
-                            <bordersize>3</bordersize>
-                            <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
-                        </control>
-                        <control type="image">
-                            <visible>!IsEmpty(ListItem.VideoCodec)</visible>
-                            <height>50</height>
-                            <width>130</width>
-                            <bordersize>3</bordersize>
-                            <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
-                        </control>
-                        <control type="image">
-                            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
-                            <height>50</height>
-                            <width>130</width>
-                            <bordersize>3</bordersize>
-                            <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
-                        </control>
-                        <control type="image">
-                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
-                            <height>50</height>
-                            <width>130</width>
-                            <bordersize>3</bordersize>
-                            <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
-                        </control>
-                        <control type="image">
-                            <height>50</height>
-                            <width>130</width>
-                            <bordersize>3</bordersize>
-                            <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>
-                        </control>
-                    </control>
-                    <control type="label" description="Genre">
-                        <centerleft>960</centerleft>
-                        <top>470</top>
-                        <font>size27</font>
-                        <width>924</width>
+                <control type="image" description="lineplot">
+                    <centerleft>960</centerleft>
+                    <top>73</top>
+                    <width>1724</width>
+                    <height>1</height>
+                    <texture colordiffuse="main">lines/LineSH.png</texture>
+                </control>
+                <control type="textbox" description="Plot">
+                    <top>74</top>
+                    <centerleft>960</centerleft>
+                    <width>1724</width>
+                    <height>336</height>
+                    <font>size30</font>
+                    <align>justify</align>
+                    <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
+                    <label>$VAR[Plots]</label>
+                    <!--<label>$INFO[ListItem.Plot]</label>-->
+                </control>
+                <control type="image" description="lineplot">
+                    <centerleft>960</centerleft>
+                    <top>410</top>
+                    <width>1724</width>
+                    <height>1</height>
+                    <texture colordiffuse="main">lines/LineSH.png</texture>
+                </control>
+                <control type="label">
+                    <centerleft>960</centerleft>
+                    <top>440</top>
+                    <font>size27</font>
+                    <height>40</height>
+                    <align>center</align>
+                    <width>1724</width>
+                    <label>$VAR[TopLabel]</label>
+                </control>
+                <control type="grouplist" description="Flags">
+                    <top>540</top>
+                    <centerleft>960</centerleft>
+                    <width min="90" max="1724">auto</width>
+                    <height>150</height>
+                    <itemgap>30</itemgap>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <control type="image">
                         <height>50</height>
-                        <align>center</align>
-                        <label>[COLOR=gray]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
+                        <width>130</width>
+                        <bordersize>3</bordersize>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
                     </control>
+                    <control type="image">
+                        <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                        <height>50</height>
+                        <width>130</width>
+                        <bordersize>3</bordersize>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
+                    </control>
+                    <control type="image">
+                        <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                        <height>50</height>
+                        <width>130</width>
+                        <bordersize>3</bordersize>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+                    </control>
+                    <control type="image">
+                        <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                        <height>50</height>
+                        <width>130</width>
+                        <bordersize>3</bordersize>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
+                    </control>
+                    <control type="image">
+                        <height>50</height>
+                        <width>130</width>
+                        <bordersize>3</bordersize>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>
+                    </control>
+                </control>
+                <control type="label" description="Genre">
+                    <centerleft>960</centerleft>
+                    <top>470</top>
+                    <font>size27</font>
+                    <width>924</width>
+                    <height>50</height>
+                    <align>center</align>
+                    <label>[COLOR=gray]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
                 </control>
             </control>
             <control type="scrollbar" id="60">
