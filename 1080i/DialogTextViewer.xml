@@ -19,33 +19,29 @@
             <height>1110</height>
             <texture border="150">images/Dialog.png</texture>
         </control>
-        <control type="group">
-            <left>450</left>
-            <top>75</top>
-            <control type="label" id="1" description="Header">
-                <left>60</left>
-                <top>30</top>
-                <align>center</align>
-                <width>750</width>
-                <height>45</height>
-            </control>
-            <control type="textbox" id="5" description="Textarea">
-                <left>90</left>
-                <top>120</top>
-                <width>720</width>
-                <height>690</height>
-                <font>size27</font>
-                <align>justify</align>
-            </control>
-            <control type="scrollbar" id="61">
-                <left>960</left>
-                <top>105</top>
-                <height>690</height>
-                <onleft>Close</onleft>
-                <onright>Close</onright>
-                <ondown>61</ondown>
-                <onup>61</onup>
-            </control>
+        <control type="label" id="1" description="Header">
+            <centerleft>960</centerleft>
+            <top>105</top>
+            <align>center</align>
+            <width>750</width>
+            <height>45</height>
+        </control>
+        <control type="textbox" id="5" description="Textarea">
+            <centerleft>960</centerleft>
+            <top>155</top>
+            <width>720</width>
+            <height>690</height>
+            <font>size27</font>
+            <align>justify</align>
+        </control>
+        <control type="scrollbar" id="61">
+            <left>1400</left>
+            <top>140</top>
+            <height>690</height>
+            <onleft>Close</onleft>
+            <onright>Close</onright>
+            <ondown>61</ondown>
+            <onup>61</onup>
         </control>
     </controls>
 </window>
