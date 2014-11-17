@@ -22,7 +22,16 @@
                     <preloaditems>2</preloaditems>
                     <itemlayout height="225" width="225">
                         <control type="image">
-                            <visible>!Container.Content(years) | StringCompare(ListItem.Label,..)</visible>
+                            <visible>Container.Content(genres) + !StringCompare(ListItem.Label,..)</visible>
+                            <top>24</top>
+                            <left>35</left>
+                            <width>225</width>
+                            <height>225</height>
+                            <texture fallback="DefaultAddonMusic.png" background="true">special://home/addons/sio2x.extrapack/music_extrapack/$INFO[ListItem.Label].jpg</texture>
+                            <aspectratio>scale</aspectratio>
+                        </control>
+                        <control type="image">
+                            <visible>![Container.Content(years) | Container.Content(genres)] | StringCompare(ListItem.Label,..)</visible>
                             <top>24</top>
                             <left>35</left>
                             <width>225</width>
@@ -69,36 +78,45 @@
                                 <aspectratio>stretch</aspectratio>
                             </control>
                             <control type="image">
-                            <visible>!Container.Content(years) | StringCompare(ListItem.Label,..)</visible>
-                            <top>24</top>
-                            <left>35</left>
-                            <width>225</width>
-                            <height>225</height>
-                            <texture fallback="DefaultAddonMusic.png" background="true">$INFO[ListItem.Icon]</texture>
-                            <aspectratio>scale</aspectratio>
-                        </control>
-                        <control type="image">
-                            <visible>Container.Content(years) + !StringCompare(ListItem.Label,..)</visible>
-                            <top>24</top>
-                            <left>35</left>
-                            <width>225</width>
-                            <height>225</height>
-                            <texture fallback="DefaultAddonMusic.png">DefaultYear_Blank.png</texture>
-                            <aspectratio scalediffuse="false">scale</aspectratio>
-                        </control>
-                        <control type="textbox">
-                            <visible>!StringCompare(ListItem.Label,..) + [Container.Content(years) | Container.Content(directors)]</visible>
-                            <animation effect="slide" condition="Container.Content(directors)" end="0,19">Conditional</animation>
-                            <top>64</top>
-                            <centerleft>147</centerleft>
-                            <width>140</width>
-                            <height>70</height>
-                            <align>center</align>
-                            <font>size24</font>
-                            <textcolor>black</textcolor>
-                            <shadowcolor>-</shadowcolor>
-                            <info>ListItem.Label</info>
-                        </control>
+                                <visible>Container.Content(genres) + !StringCompare(ListItem.Label,..)</visible>
+                                <top>24</top>
+                                <left>35</left>
+                                <width>225</width>
+                                <height>225</height>
+                                <texture fallback="DefaultAddonMusic.png" background="true">special://home/addons/sio2x.extrapack/music_extrapack/$INFO[ListItem.Label].jpg</texture>
+                                <aspectratio>scale</aspectratio>
+                            </control>
+                            <control type="image">
+                                <visible>![Container.Content(years) | Container.Content(genres)] | StringCompare(ListItem.Label,..)</visible>
+                                <top>24</top>
+                                <left>35</left>
+                                <width>225</width>
+                                <height>225</height>
+                                <texture fallback="DefaultAddonMusic.png" background="true">$INFO[ListItem.Icon]</texture>
+                                <aspectratio>scale</aspectratio>
+                            </control>
+                            <control type="image">
+                                <visible>Container.Content(years) + !StringCompare(ListItem.Label,..)</visible>
+                                <top>24</top>
+                                <left>35</left>
+                                <width>225</width>
+                                <height>225</height>
+                                <texture fallback="DefaultAddonMusic.png">DefaultYear_Blank.png</texture>
+                                <aspectratio scalediffuse="false">scale</aspectratio>
+                            </control>
+                            <control type="textbox">
+                                <visible>!StringCompare(ListItem.Label,..) + [Container.Content(years) | Container.Content(directors)]</visible>
+                                <animation effect="slide" condition="Container.Content(directors)" end="0,19">Conditional</animation>
+                                <top>64</top>
+                                <centerleft>147</centerleft>
+                                <width>140</width>
+                                <height>70</height>
+                                <align>center</align>
+                                <font>size24</font>
+                                <textcolor>black</textcolor>
+                                <shadowcolor>-</shadowcolor>
+                                <info>ListItem.Label</info>
+                            </control>
                         </control>
                     </focusedlayout>
                 </control>
