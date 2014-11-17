@@ -11,7 +11,6 @@
             <texture background="true">$VAR[bgimg]</texture>
             <aspectratio align="left">scale</aspectratio>
         </control>
-
         <include>Clock</include>
         <control type="label" description="last updated label">
             <centerleft>960</centerleft>
@@ -54,7 +53,6 @@
                 <align>center</align>
                 <ondown>150</ondown>
             </control>
-
             <control type="group" id="51">
                 <visible>!StringCompare(Weather.Plugin,weather.weatherplus)</visible>
                 <left>200</left>
@@ -170,7 +168,6 @@
                         <aspectratio align="center">keep</aspectratio>
                     </control>
                     <control type="image">
-                        <left>214</left>
                         <width>3</width>
                         <height>482</height>
                         <texture>lines/LineV.png</texture>
@@ -228,12 +225,12 @@
                         <texture>$INFO[ListItem.thumb]</texture>
                         <aspectratio align="center">keep</aspectratio>
                     </control>
-                    <control type="image">
-                        <left>214</left>
-                        <width>3</width>
-                        <height>482</height>
-                        <texture>lines/LineV.png</texture>
-                    </control>
+                    <!--<control type="image">-->
+                        <!--<left>214</left>-->
+                        <!--<width>3</width>-->
+                        <!--<height>482</height>-->
+                        <!--<texture>lines/LineV.png</texture>-->
+                    <!--</control>-->
                 </focusedlayout>
                 <content>
                     <item id="0">
