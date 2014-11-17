@@ -19,7 +19,6 @@
         <include>BlackBackground</include>
         <!--VIEWS-->
         <include>sio2view</include>
-        <include>sio2naked</include>
         <include>sio2advanced</include>
         <include>plainlist</include>
         <include>fatlist</include>
@@ -50,7 +49,7 @@
                     <enable>false</enable>
                     <texturenofocus colordiffuse="silver">images/buttonselect1.png</texturenofocus>
                     <include>DialogButt</include>
-                    <label>•• $LOCALIZE[33063] •• kshgaskfdaksfdskuad</label>
+                    <label>•• $LOCALIZE[33063] ••</label>
                 </control>
                 <control type="togglebutton" id="14" description="Toggle Watched">
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
