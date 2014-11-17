@@ -11,8 +11,7 @@
             <left>960</left>
             <top>131</top>
             <control type="list" id="50">
-                <top>30</top>
-                <width>902</width>
+                <width>960</width>
                 <height>801</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
@@ -22,24 +21,23 @@
                 <focusposition>0</focusposition>
                 <movement>5</movement>
                 <scrolltime>250</scrolltime>
-                <itemlayout width="802" height="81">
+                <itemlayout width="960" height="111">
                     <control type="label" description="Main Label">
                         <include>SmallListMainLabel</include>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image" description="Icon">
                         <animation condition="true" effect="fade" start="100" end="60" time="0">Conditional</animation>
-                        <left>775</left>
-                        <top>0</top>
+                        <right>50</right>
                         <height>81</height>
                         <width>42</width>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Icon]</texture>
+                        <texture>DefaultIconWarning.png</texture>
                     </control>
                     <include>listline</include>
                 </itemlayout>
-                <focusedlayout width="802" height="81">
-                    <include>SmallSelector</include>
+                <focusedlayout width="960" height="111">
+                    <include>LargeSelector</include>
                     <control type="label" description="Main Label">
                         <textcolor>main</textcolor>
                         <include>SmallListMainLabel</include>
@@ -47,56 +45,49 @@
                     </control>
                     <control type="image" description="Icon">
                         <animation effect="fade" start="60" end="100" time="100" delay="200">Focus</animation>
-                        <left>775</left>
-                        <top>0</top>
+                        <right>50</right>
                         <height>81</height>
                         <width>42</width>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Icon]</texture>
+                        <texture>DefaultIconWarning.png</texture>
                     </control>
                     <include>listline</include>
                 </focusedlayout>
                 <content>
-                    <!--<item id="0" description="safe">
-                      <label>BACK</label>
-                      <onclick>Action(Back)</onclick>
-                      <icon>DefaultIconWarning.png</icon>
-                    </item>
-                    <item id="1" description="Cache">
-                      <label>31065</label>
-                      <onclick>RunScript(special://skin/resources/cache.py)</onclick>
-                      <icon>DefaultIconWarning.png</icon>
-                    </item-->
                     <item id="2" description="Thumbnails">
                         <label>$ADDON[service.clean.up 32001]</label>
                         <onclick>RunScript(service.clean.up,thumbs)</onclick>
-                        <icon>DefaultIconWarning.png</icon>
                     </item>
                     <item id="3" description="packages">
                         <label>$ADDON[service.clean.up 32002]</label>
                         <onclick>RunScript(service.clean.up,packages)</onclick>
-                        <icon>DefaultIconWarning.png</icon>
                     </item>
                     <item id="6" description="advanced settings">
                         <label>$ADDON[service.clean.up 32003]</label>
                         <onclick>RunScript(service.clean.up,advanced)</onclick>
-                        <icon>DefaultIconWarning.png</icon>
                     </item>
                     <item id="8" description="videodb">
                         <label>$ADDON[service.clean.up 32004]</label>
                         <onclick>RunScript(service.clean.up,videodb)</onclick>
-                        <icon>DefaultIconWarning.png</icon>
                     </item>
                     <item id="9" description="Musicdb">
                         <label>$ADDON[service.clean.up 32005]</label>
                         <onclick>RunScript(service.clean.up,musicdb)</onclick>
-                        <icon>DefaultIconWarning.png</icon>
+                    </item>
+                    <item id="10" description="test">
+                        <label>$ADDON[service.clean.up 32011]</label>
+                        <onclick>RunScript(service.clean.up,videoviews)</onclick>
                     </item>
                     <!--item id="10" description="test">
                       <label>LABELHERE</label>
                       <onclick>RunScript()</onclick>
                       <icon>DefaultIconWarning.png</icon>
                     </item-->
+                    <item id="11" description="test">
+                        <label>LABELHERE</label>
+                        <onclick>RunScript(script.toolbox,info=textviewer)</onclick>
+                        <icon>DefaultIconWarning.png</icon>
+                    </item>
                 </content>
             </control>
         </control>
@@ -106,14 +97,14 @@
             <texture>help/Warning.png</texture>
         </control>
         <control type="image" description="Line">
-            <left>150</left>
+            <centerleft>480</centerleft>
             <top>440</top>
             <height>1</height>
             <width>660</width>
             <texture>lines/Line.png</texture>
         </control>
         <control type="textbox" description="HelpDetails">
-            <left>170</left>
+            <centerleft>480</centerleft>
             <top>460</top>
             <width>660</width>
             <height>480</height>
