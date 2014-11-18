@@ -25,6 +25,7 @@
             <property name="unwatched">$INFO[Window(Home).Property(Movies.UnWatched)]</property>
             <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp",return)</onclick>
             <onclick condition="!Skin.HasSetting(no3d)">ActivateWindow(Videos,MovieTitles,return)</onclick>
+
         </item>
         <!--TV SHOWS-->
         <item id="341">
@@ -317,7 +318,7 @@
             <property name="color">icons/dvdcolor.png</property>
             <onclick>activatewindow(1115)</onclick>
         </item>
-         <!--VIDEOROOT-->
+        <!--VIDEOROOT-->
         <!--todo label-->
         <item id="347">
             <visible>!Skin.HasSetting(hidevidroot)</visible>
