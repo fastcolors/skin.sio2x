@@ -141,7 +141,6 @@
                     <include>DialogButt</include>
                     <enable>!IsEmpty(Container.FolderPath)</enable>
                     <onclick>Container.SetViewMode(52)</onclick>
-                    <onclick>Skin.Reset(naked)</onclick>
                     <selected>Control.IsVisible(52) + !Skin.HasSetting(naked)</selected>
                     <label>SiO2 View</label>
                 </control>
@@ -150,10 +149,6 @@
                     <include>DialogButt</include>
                     <enable>Container.Content(movies)</enable>
                     <onclick>Container.SetViewMode(54)</onclick>
-                    <onclick condition="!Skin.HasSetting(splashoff)">ActivateWindow(1113)</onclick>
-                    <!--<onclick>ActivateWindow(1113)</onclick>-->
-                    <!--<onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, silent=true, clearlogo,discart)</onclick>-->
-                    <onclick>Skin.Reset(nakedx)</onclick>
                     <selected>Control.IsVisible(54)</selected>
                     <label>SiO2-X View</label>
                 </control>

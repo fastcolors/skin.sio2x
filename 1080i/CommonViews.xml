@@ -274,117 +274,99 @@
         <textcolor>orange</textcolor>
     </include>
     <include name="MusicInfo">
-        <!--<control type="image" description="back">-->
-        <!--<visible>Skin.HasTheme(White)</visible>-->
-        <!--<centerleft>480</centerleft>-->
-        <!--<centertop>450</centertop>-->
-        <!--<width>600</width>-->
-        <!--<height>600</height>-->
-        <!--<texture background="true" colordiffuse="66000000">images/white.png</texture>-->
-        <!--</control>-->
         <control type="image" description="Thumb">
-            <visible>Container.Content(genres) + !StringCompare(ListItem.Label,..)</visible>
             <centerleft>480</centerleft>
             <centertop>450</centertop>
             <width>600</width>
             <height>600</height>
             <include>Icon_Fade</include>
-            <texture background="true" fallback="DefaultMusicGenres.png">special://home/addons/sio2x.extrapack/music_extrapack/$INFO[ListItem.Label].jpg</texture>
-            <aspectratio aligny="bottom">keep</aspectratio>
+            <texture background="true" fallback="defaultalbumcover.png">$VAR[locandine]</texture>
+            <aspectratio>keep</aspectratio>
         </control>
-        <control type="image" description="Thumb">
-            <visible>!Container.Content(genres) | StringCompare(ListItem.Label,..)</visible>
-            <centerleft>480</centerleft>
-            <centertop>450</centertop>
-            <width>600</width>
-            <height>600</height>
-            <include>Icon_Fade</include>
-            <texture background="true" fallback="defaultalbumcover.png">$INFO[ListItem.Icon]</texture>
-            <aspectratio aligny="bottom">keep</aspectratio>
-        </control>        <control type="group">
-        <visible>!StringCompare(ListItem.Label,..)</visible>
-        <visible>!IsEmpty(ListItem.Artist)</visible>
-        <left>120</left>
-        <top>770</top>
-        <control type="label" description="Artist">
-            <visible>!IsEmpty(ListItem.Artist) + IsEmpty(ListItem.Album)</visible>
-            <font>size36</font>
-            <width>720</width>
-            <height>36</height>
-            <align>center</align>
-            <scroll>false</scroll>
-            <textcolor>orange</textcolor>
-            <label>[B]$INFO[ListItem.Artist][/B]</label>
-        </control>
-        <control type="label" description="Album">
-            <visible>!IsEmpty(ListItem.Album)</visible>
-            <font>size36</font>
-            <width>720</width>
-            <height>36</height>
-            <align>center</align>
-            <scroll>false</scroll>
-            <textcolor>orange</textcolor>
-            <label>[B]$INFO[ListItem.Album] $INFO[ListItem.Year,(,)][/B]</label>
-        </control>
-        <control type="image" description="Rating">
-            <top>40</top>
-            <height>27</height>
-            <width>150</width>
-            <colordiffuse>main</colordiffuse>
-            <aspectratio align="left">keep</aspectratio>
-            <texture colordiffuse="main">$INFO[ListItem.StarRating]</texture>
-        </control>
-        <control type="image" description="Separator">
-            <top>82</top>
-            <height>1</height>
-            <width>780</width>
-            <aspectratio>stretch</aspectratio>
-            <texture colordiffuse="main">lines/Line1.png</texture>
-        </control>
-        <control type="grouplist" description="Labels">
-            <top>90</top>
-            <width>808</width>
-            <orientation>vertical</orientation>
+        <control type="group">
+            <visible>!StringCompare(ListItem.Label,..)</visible>
+            <visible>!IsEmpty(ListItem.Artist)</visible>
+            <left>120</left>
+            <top>770</top>
+            <control type="label" description="Artist">
+                <visible>!IsEmpty(ListItem.Artist) + IsEmpty(ListItem.Album)</visible>
+                <font>size36</font>
+                <width>720</width>
+                <height>36</height>
+                <align>center</align>
+                <scroll>false</scroll>
+                <textcolor>orange</textcolor>
+                <label>[B]$INFO[ListItem.Artist][/B]</label>
+            </control>
             <control type="label" description="Album">
                 <visible>!IsEmpty(ListItem.Album)</visible>
-                <font>size26</font>
-                <width>750</width>
-                <height>30</height>
+                <font>size36</font>
+                <width>720</width>
+                <height>36</height>
+                <align>center</align>
                 <scroll>false</scroll>
-                <label>$LOCALIZE[557]: $INFO[ListItem.Artist]</label>
+                <textcolor>orange</textcolor>
+                <label>[B]$INFO[ListItem.Album] $INFO[ListItem.Year,(,)][/B]</label>
             </control>
-            <control type="label" description="Born/Formed">
-                <visible>IsEmpty(ListItem.Album) + [!IsEmpty(ListItem.Property(Artist_Born)) | !IsEmpty(ListItem.Property(Artist_Formed))]</visible>
-                <font>size26</font>
-                <width>750</width>
-                <height>30</height>
-                <scroll>false</scroll>
-                <label>$LOCALIZE[21893]/$LOCALIZE[21894]: $INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Formed)]</label>
+            <control type="image" description="Rating">
+                <top>40</top>
+                <height>27</height>
+                <width>150</width>
+                <colordiffuse>main</colordiffuse>
+                <aspectratio align="left">keep</aspectratio>
+                <texture colordiffuse="main">$INFO[ListItem.StarRating]</texture>
             </control>
-            <control type="label" description="Died/Disbanded">
-                <visible>IsEmpty(ListItem.Album) + ![IsEmpty(ListItem.Property(Artist_Died)) + IsEmpty(ListItem.Property(Artist_Died))]</visible>
-                <font>size26</font>
-                <width>750</width>
-                <height>30</height>
-                <scroll>false</scroll>
-                <label>$LOCALIZE[21897]/$LOCALIZE[21896]: $INFO[ListItem.Property(Artist_Died)]$INFO[ListItem.Property(Artist_Disbanded)]</label>
+            <control type="image" description="Separator">
+                <top>82</top>
+                <height>1</height>
+                <width>780</width>
+                <aspectratio>stretch</aspectratio>
+                <texture colordiffuse="main">lines/Line1.png</texture>
             </control>
-            <control type="label" description="Genre">
-                <visible>!IsEmpty[ListItem.Genre]</visible>
-                <font>size26</font>
-                <width>750</width>
-                <height>30</height>
-                <label>$LOCALIZE[515]:  $INFO[ListItem.Genre]</label>
-            </control>
-            <control type="label" description="RecordLabel">
-                <visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
-                <font>size26</font>
-                <width>750</width>
-                <height>30</height>
-                <label>$LOCALIZE[21899]: $INFO[ListItem.Property(Album_Label)]</label>
+            <control type="grouplist" description="Labels">
+                <top>90</top>
+                <width>808</width>
+                <orientation>vertical</orientation>
+                <control type="label" description="Album">
+                    <visible>!IsEmpty(ListItem.Album)</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
+                    <scroll>false</scroll>
+                    <label>$LOCALIZE[557]: $INFO[ListItem.Artist]</label>
+                </control>
+                <control type="label" description="Born/Formed">
+                    <visible>IsEmpty(ListItem.Album) + [!IsEmpty(ListItem.Property(Artist_Born)) | !IsEmpty(ListItem.Property(Artist_Formed))]</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
+                    <scroll>false</scroll>
+                    <label>$LOCALIZE[21893]/$LOCALIZE[21894]: $INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Formed)]</label>
+                </control>
+                <control type="label" description="Died/Disbanded">
+                    <visible>IsEmpty(ListItem.Album) + ![IsEmpty(ListItem.Property(Artist_Died)) + IsEmpty(ListItem.Property(Artist_Died))]</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
+                    <scroll>false</scroll>
+                    <label>$LOCALIZE[21897]/$LOCALIZE[21896]: $INFO[ListItem.Property(Artist_Died)]$INFO[ListItem.Property(Artist_Disbanded)]</label>
+                </control>
+                <control type="label" description="Genre">
+                    <visible>!IsEmpty[ListItem.Genre]</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
+                    <label>$LOCALIZE[515]:  $INFO[ListItem.Genre]</label>
+                </control>
+                <control type="label" description="RecordLabel">
+                    <visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
+                    <label>$LOCALIZE[21899]: $INFO[ListItem.Property(Album_Label)]</label>
+                </control>
             </control>
         </control>
-    </control>
     </include>
 
     <!--todo can this be removed?-->

@@ -286,6 +286,8 @@
                         <height>225</height>
                         <texture fallback="DefaultAddon.png">$VAR[locandine]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
+                        <bordertexture border="4">images/dvdbox.png</bordertexture>
+                        <bordersize>1</bordersize>
                     </control>
                 </itemlayout>
                 <focusedlayout height="266" width="246">
@@ -310,6 +312,8 @@
                             <height>225</height>
                             <texture fallback="DefaultAddon.png">$VAR[locandine]</texture>
                             <aspectratio scalediffuse="false">scale</aspectratio>
+                            <bordertexture border="4">images/dvdbox.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                     </control>
                 </focusedlayout>
@@ -322,7 +326,7 @@
                 <texture colordiffuse="main">lines/Line.png</texture>
             </control>
             <control type="group">
-                <visible>!Container.Content(episodes)</visible>
+                <visible>!Skin.HasSetting(noslideicon)</visible>
                 <visible>[Container(53).Column(0) + !StringCompare(ListItem.Label,..)] | Container(53).Column(1) | Container(53).Column(2) | Container(53).Column(3)</visible>
                 <left>1230</left>
                 <top>450</top>
@@ -368,6 +372,7 @@
                 </control>
             </control>
             <control type="group">
+                <visible>!Skin.HasSetting(noslideicon)</visible>
                 <visible>Container(53).Column(4) | Container(53).Column(5) | Container(53).Column(6) | Container(53).Column(7) | Container(53).Column(8)</visible>
                 <left>-10</left>
                 <top>450</top>

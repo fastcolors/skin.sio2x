@@ -207,18 +207,20 @@
                     <width>758</width>
                     <height>40</height>
                     <align>left</align>
+                    <font>size28</font>
                     <scroll>false</scroll>
-                    <label>STATUS: [COLOR=black]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]</label>
+                    <label>STATUS: [COLOR=main]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]</label>
                 </control>
                 <control type="label" description="Next Episode">
-                    <width>650</width>
+                    <width>500</width>
                     <height>60</height>
                     <textcolor>dimgray</textcolor>
                     <width>758</width>
                     <height>40</height>
                     <align>left</align>
+                    <font>size28</font>
                     <scroll>false</scroll>
-                    <label>NEXT AIRTIME: [COLOR=black]$INFO[Window(Home).Property(NextAired.NextDay)][/COLOR]</label>
+                    <label>NEXT AIRTIME: [COLOR=main]$INFO[Window(Home).Property(NextAired.NextDay)][/COLOR]</label>
                 </control>
                 <control type="image">
                     <height>1</height>

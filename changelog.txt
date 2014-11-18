@@ -1,7 +1,21 @@
+3.1.2
+* Fix for unwatched badge on home not fitting 4 digits numbers
+* Fixed a bug showing wrong format for seasons in icon view
+* support for music genres icons
+* genre icons now are in extra addon pack
+* back to square icons
+* Fix for labels in banner view wrong color
+* 1px white border on icons
+* Iconview sliding info panel now is the same for addon content
+
+
 3.1.1
 * Fix for MPAA not showing correcty on Sio2 / Sio2x views
 * Moved Skin version label to bottom fo home (z order)
 * Cosmetics for Icons (no more dvd boxes) - Better view of Favourites on Shelf.
+* all new default icons
+* new (old) method for icon view (hell if they stealing it, i'm using it!!)
+* minor stuff here and there
 
 3.0.81 / 3.1.0
 * Cosmetics on Video Info
