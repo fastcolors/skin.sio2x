@@ -98,6 +98,11 @@
                     <include>DialogButt</include>
                     <label>25001</label>
                 </control>
+                <control type="radiobutton" id="8" description="Hide Broken">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>24999</label>
+                </control>
                 <control type="button" id="100">
                     <enable>false</enable>
                     <texturenofocus colordiffuse="silver">images/buttonselect1.png</texturenofocus>
