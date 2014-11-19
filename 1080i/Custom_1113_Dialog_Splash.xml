@@ -51,9 +51,9 @@
             <top>300</top>
             <width>1400</width>
             <height>515</height>
-            <font>Size33</font>
-            <align>center</align>
-            <label>IN ORDER TO FULLY ENJOY THIS VIEW DOWNLOAD ADDON "ARTWORK DOWNOLADER" FROM OFFICIAL REPO AND SCAN LOGO AND CDART INTO LIBRARY.</label>
+            <font>Size30</font>
+            <align>justify</align>
+            <label>  CHECK OUT THE NEW ADDON [COLOR red]SIO2X-TRA PACKS[/COLOR]: IT WILL ADD EXTRA ICONS TO YOUR MUSIC/VIDEO GENRES. YOU JUST NEED TO REFRESH THE FASTCOLORS REPOSITORY AND DOWNLOAD IT.[CR]  IT WILL INSTANTLY ACTIVATE THE NEW ICONS AND IT WILL BE AUTOMATICALLY UPDATED WITH NEW ONES AS THEY ARE MADE. IF YOU DON'T SEE THE ONE YOU'RE LOOKING FOR PLEASE VISIT THE SIO2 FORUM @ KODI.TV AND FEEL FREE TO REQUEST IT. CHEERS. ENJOY!</label>
         </control>
         <control type="grouplist">
             <centerleft>960</centerleft>
@@ -66,7 +66,7 @@
                 <width>550</width>
                 <height>81</height>
                 <onclick>close</onclick>
-                <onclick>Skin.ToggleSetting(splashoff)</onclick>
+                <onclick>Skin.SetString(version,$INFO[System.AddonVersion(skin.sio2x)])</onclick>
                 <label>$LOCALIZE[31415]</label>
             </control>
             <control type="button" id="2">

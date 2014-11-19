@@ -8,7 +8,6 @@
 * 1px white border on icons
 * Iconview sliding info panel now is the same for addon content
 
-
 3.1.1
 * Fix for MPAA not showing correcty on Sio2 / Sio2x views
 * Moved Skin version label to bottom fo home (z order)
