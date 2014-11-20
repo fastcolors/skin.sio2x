@@ -161,6 +161,7 @@
         </control>
     </include>
     <include name="WindowsTopInfos">
+        <!--todo move name of window icon view up-->
         <control type="grouplist">
             <right>15</right>
             <align>right</align>
@@ -223,7 +224,7 @@
         <control type="grouplist" description="centered">
             <visible>!Window.IsActive(DialogAlbumInfo.xml)</visible>
             <visible>Control.IsVisible(53) | [Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]]</visible>
-            <top>30</top>
+            <top>25</top>
             <centerleft>960</centerleft>
             <width>580</width>
             <align>center</align>

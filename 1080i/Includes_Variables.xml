@@ -66,16 +66,15 @@
 
     <variable name="TopLabel" description="INFOS">
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
-        <value condition="Container.content(Albums)">$INFO[ListItem.Label]</value>
-        <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
-        <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Creator)]</value>
+        <value condition="Container.content(Albums) | Container.content(Artists)">[COLOR orange]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Label2, • ,]$INFO[ListItem.Property(Album_Label), • ,]$INFO[ListItem.Year, • ,]</value>
+        <value condition="Container.Content(Episodes)">$INFO[ListItem.Season,S , • ]$INFO[ListItem.Episode,E , • ]$INFO[ListItem.Premiered,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391] • ]$INFO[ListItem.AudioLanguage,, • ]$INFO[ListItem.VideoCodec,, • ]$INFO[ListItem.AudioCodec,, • ]$INFO[ListItem.VideoResolution]</value>
+        <value condition="Container.Content(Addons)">[COLOR orange]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Property(Addon.Version), • ,]$INFO[ListItem.Property(Addon.Creator), • ,]</value>
         <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
-        <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Label]</value>
         <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$INFO[ListItem.Year]</value>
-        <value condition="Container.Content(Movies) + IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]]$INFO[ListItem.MPAA, • ]</value>
-        <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31038]] • $LOCALIZE[20410, • ]$INFO[ListItem.MPAA, • ]</value>
+        <value condition="[Container.Content(Movies) | Container.Content(MusicVideos)] + IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.AudioLanguage, • ]$INFO[ListItem.MPAA, • ]</value>
+        <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.AudioLanguage, • ] • $LOCALIZE[20410]$INFO[ListItem.MPAA, • ]</value>
         <value condition="Container.Content(Seasons) | Container.Content(TVShows)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]$INFO[ListItem.MPAA, • ]</value>
-        <value>$INFO[ListItem.Label2]</value>
+        <value>[COLOR orange]$INFO[ListItem.Label][/COLOR]</value>
     </variable>
 
     <variable name="MPAAS">
@@ -169,6 +168,7 @@
     </variable>
 
     <variable name="locandine">
+        <!--<value condition="Container.Content(countries)">$INFO[ListItem.Label,flags/,.png]</value>-->
         <value condition="Container.Content(episodes) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="StringCompare(ListItem.Label,..)">DefaultFolderBack.png</value>
@@ -358,4 +358,9 @@
         <value>$INFO[ListItem.Label,special://home/addons/sio2x.extrapack/movie_extrapack/,.jpg]</value>
     </variable>
 
+    <variable name="iconovertext">
+        <value condition="Container.Content(movies)">[B][COLOR orange]$INFO[ListItem.Title][/COLOR][/B][CR]$INFO[ListItem.Year,(,)][CR][CR]$INFO[ListItem.Duration,, $LOCALIZE[12391]][CR][CR]$INFO[ListItem.Genre]</value>
+        <value condition="Container.Content(tvshows) | Container.Content(seasons)">[B][COLOR orange]$INFO[ListItem.Title][/COLOR][/B][CR]$INFO[ListItem.Year,(,)][CR][CR]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20360]][CR]$INFO[ListItem.Property(UnwatchedEpisodes),, $LOCALIZE[16101]][CR][CR]$INFO[ListItem.Genre][CR][CR]</value>
+        <value condition="Container.Content(genres) | Container.Content(genres)">$INFO[Container.NumItems,, $LOCALIZE[20360]][CR]$INFO[ListItem.Property(UnwatchedEpisodes),, $LOCALIZE[16101]][CR][CR]$INFO[ListItem.Genre][CR][CR]</value>
+    </variable>
 </includes>
