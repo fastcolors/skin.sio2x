@@ -160,7 +160,7 @@
         </font>
         <font>
             <name>fancy</name>
-            <filename>fancy.ttf</filename>
+            <filename>journal.ttf</filename>
             <size>40</size>
         </font>
     </fontset>
@@ -290,7 +290,7 @@
         </font>
         <font>
             <name>fancy</name>
-            <filename>fancy.ttf</filename>
+            <filename>journal.ttf</filename>
             <size>40</size>
         </font>
     </fontset>
@@ -454,7 +454,7 @@
         </font>
         <font>
             <name>fancy</name>
-            <filename>fancy.ttf</filename>
+            <filename>journal.ttf</filename>
             <size>40</size>
         </font>
     </fontset>
@@ -618,7 +618,7 @@
         </font>
         <font>
             <name>fancy</name>
-            <filename>fancy.ttf</filename>
+            <filename>journal.ttf</filename>
             <size>40</size>
         </font>
     </fontset>
