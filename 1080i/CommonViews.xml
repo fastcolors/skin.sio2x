@@ -423,7 +423,7 @@
             <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes) | Control.IsVisible(13) | Control.IsVisible(10)</visible>
             <height>81</height>
             <width>30</width>
-            <texture>$VAR[WatchStatus,overlay/List/]</texture>
+            <texture>$VAR[WatchStatus,overlay/]</texture>
             <aspectratio>keep</aspectratio>
         </control>
     </include>
@@ -434,7 +434,7 @@
             <left>8</left>
             <height>111</height>
             <width>30</width>
-            <texture>$VAR[WatchStatus,overlay/List/]</texture>
+            <texture>$VAR[WatchStatus,overlay/]</texture>
             <aspectratio>keep</aspectratio>
         </control>
     </include>
@@ -596,7 +596,6 @@
             </control>
         </focusedlayout>
     </include>
-
     <include name="LargeListLayout">
         <itemlayout width="890" height="111">
             <include>Watched_MarksLW</include>

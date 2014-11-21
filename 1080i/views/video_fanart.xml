@@ -38,11 +38,10 @@
                         <texture border="4">$VAR[dvdbox]</texture>
                     </control>
                     <control type="image" description="WatchStatus">
-                        <left>76</left>
-                        <top>380</top>
+                        <left>77</left>
+                        <top>377</top>
                         <height>60</height>
                         <width>60</width>
-                        <aspectratio align="left">keep</aspectratio>
                         <texture>$VAR[WatchStatus]</texture>
                     </control>
                     <control type="group">
@@ -70,6 +69,25 @@
                             <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
                         </control>
                     </control>
+                    <control type="group">
+                            <visible>ListItem.IsResumable + !StringCompare(ListItem.Label,..)</visible>
+                            <control type="image">
+                                <top>419</top>
+                                <left>86</left>
+                                <height>10</height>
+                                <width>228</width>
+                                <texture>images/black.png</texture>
+                            </control>
+                            <control type="progress" description="progress">
+                                <top>420</top>
+                                <left>87</left>
+                                <height>8</height>
+                                <texturebg>images/black.png</texturebg>
+                                <midtexture>images/white.png</midtexture>
+                                <width>226</width>
+                                <info>ListItem.PercentPlayed</info>
+                            </control>
+                        </control>
                 </itemlayout>
                 <focusedlayout width="300" height="500">
                     <control type="group">
@@ -100,11 +118,10 @@
                             <texture border="4">$VAR[dvdbox]</texture>
                         </control>
                         <control type="image" description="WatchStatus">
-                            <left>76</left>
-                            <top>380</top>
+                            <left>77</left>
+                            <top>377</top>
                             <height>60</height>
                             <width>60</width>
-                            <aspectratio align="left">keep</aspectratio>
                             <texture>$VAR[WatchStatus]</texture>
                         </control>
                         <control type="group">
@@ -130,6 +147,25 @@
                                 <textcolor>FFFFFFFF</textcolor>
                                 <shadowcolor>-</shadowcolor>
                                 <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>ListItem.IsResumable + !StringCompare(ListItem.Label,..)</visible>
+                            <control type="image">
+                                <top>419</top>
+                                <left>86</left>
+                                <height>10</height>
+                                <width>228</width>
+                                <texture>images/black.png</texture>
+                            </control>
+                            <control type="progress" description="progress">
+                                <top>420</top>
+                                <left>87</left>
+                                <height>8</height>
+                                <texturebg>images/black.png</texturebg>
+                                <midtexture>images/white.png</midtexture>
+                                <width>226</width>
+                                <info>ListItem.PercentPlayed</info>
                             </control>
                         </control>
                     </control>

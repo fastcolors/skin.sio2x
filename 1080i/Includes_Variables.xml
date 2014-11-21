@@ -37,8 +37,8 @@
         <value>$LOCALIZE[20445] : $LOCALIZE[13113]</value>
     </variable>
 
-    <variable name="WatchStatus" description="status">
-        <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay/]</value>
+    <variable name="WatchStatus">
+        <value condition="ListItem.IsResumable + !Control.IsVisible(53)">inprogress.png</value>
         <value>$INFO[ListItem.Overlay]</value>
     </variable>
 
@@ -206,6 +206,7 @@
 
     <!--TODO colors fix-->
     <variable name="diffuseselect">
+        <value condition="Substring(ListItem.MPAA,NR,Right)">775555FF</value>
         <!--red-->
         <value condition="SubString(ListItem.MPAA,X,Right) | SubString(ListItem.MPAA,R,Right) | StringCompare(ListItem.MPAA,TV-MA) | SubString(ListItem.MPAA,18)">88FF2200</value>
         <!--orange-->
@@ -218,6 +219,7 @@
 
     <variable name="diffuseselectshelf">
         <value condition="![Control.IsVisible(311) | Control.IsVisible(312)]">reverse</value>
+        <value condition="Substring(Container(311).ListItem.MPAA,NR,Right)">CC5555FF</value>
         <!--movies-->
         <!--red-->
         <value condition="SubString(Container(311).ListItem.MPAA,R,Right)">CCFF0000</value>
@@ -230,7 +232,7 @@
         <!--green-->
         <value condition="SubString(Container(311).ListItem.MPAA,6)">CCFF8800</value>
         <value condition="SubString(Container(311).ListItem.MPAA,PG,Right)">CC00FF00</value>
-        <value condition="StringCompare(Container(311).ListItem.MPAA,G)">CC00FF00</value>
+        <value condition="SubString(Container(311).ListItem.MPAA,G,Right)">CC00FF00</value>
         <value condition="StringCompare(Container(311).ListItem.MPAA,U)">CC00FF00</value>
         <value condition="SubString(Container(311).ListItem.MPAA,T,Right)">CC00FF00</value>
         <value condition="SubString(Container(311).ListItem.MPAA,10)">CCFF8800</value>

@@ -31,14 +31,6 @@
                         <texture background="true">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
-                    <control type="image">
-                        <left>1710</left>
-                        <top>98</top>
-                        <width>40</width>
-                        <height>40</height>
-                        <texture>$VAR[WatchStatus,overlay/List/]</texture>
-                        <aspectratio>keep</aspectratio>
-                    </control>
                     <control type="textbox">
                         <left>1360</left>
                         <top>10</top>
@@ -73,6 +65,15 @@
                         </control>
                     </control>
                     <control type="image">
+                        <visible>ListItem.IsStereoscopic</visible>
+                        <left>1624</left>
+                        <top>104</top>
+                        <width>42</width>
+                        <height>26</height>
+                        <texture>badges/3d.png</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="image">
                         <left>1670</left>
                         <top>104</top>
                         <width>42</width>
@@ -81,12 +82,12 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
-                        <visible>ListItem.IsStereoscopic</visible>
-                        <left>1624</left>
-                        <top>104</top>
-                        <width>42</width>
-                        <height>26</height>
-                        <texture>badges/3d.png</texture>
+                        <visible>![Container.Content(tvshows) | Container.Content(seasons)]</visible>
+                        <left>1820</left>
+                        <top>98</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture>$VAR[WatchStatus,overlay/]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
@@ -120,14 +121,6 @@
                         <texture background="true">$VAR[locandine]</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
-                    <control type="image">
-                        <left>1710</left>
-                        <top>98</top>
-                        <width>40</width>
-                        <height>40</height>
-                        <texture>$VAR[WatchStatus,overlay/List/]</texture>
-                        <aspectratio>keep</aspectratio>
-                    </control>
                     <control type="textbox">
                         <left>1360</left>
                         <top>10</top>
@@ -162,6 +155,15 @@
                         </control>
                     </control>
                     <control type="image">
+                        <visible>ListItem.IsStereoscopic</visible>
+                        <left>1624</left>
+                        <top>104</top>
+                        <width>42</width>
+                        <height>26</height>
+                        <texture>badges/3d.png</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="image">
                         <left>1670</left>
                         <top>104</top>
                         <width>42</width>
@@ -170,12 +172,12 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
-                        <visible>ListItem.IsStereoscopic</visible>
-                        <left>1624</left>
-                        <top>104</top>
-                        <width>42</width>
-                        <height>26</height>
-                        <texture>badges/3d.png</texture>
+                        <visible>![Container.Content(tvshows) | Container.Content(seasons)]</visible>
+                        <left>1820</left>
+                        <top>98</top>
+                        <width>40</width>
+                        <height>40</height>
+                        <texture>$VAR[WatchStatus,overlay/]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
@@ -429,8 +431,8 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
-                        <left>-10</left>
-                        <top>390</top>
+                        <left>-8</left>
+                        <top>388</top>
                         <width>60</width>
                         <height>60</height>
                         <info>ListItem.Overlay</info>

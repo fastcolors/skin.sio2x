@@ -115,8 +115,8 @@
                 <control type="radiobutton" id="16">
                     <height>settingsheight</height>
                     <label>$LOCALIZE[31067]</label>
-                    <onclick>Skin.ToggleSetting(noslideicon)</onclick>
-                    <selected>!Skin.HasSetting(noslideicon)</selected>
+                    <onclick>Skin.ToggleSetting(noinfosicon)</onclick>
+                    <selected>!Skin.HasSetting(noinfosicon)</selected>
                 </control>
                 <control type="radiobutton" id="17">
                     <height>settingsheight</height>
