@@ -123,11 +123,13 @@
                     <onclick>left</onclick>
                 </control>
                 <control type="button" id="598">
-                    <visible>Container.Content(movies)</visible>
                     <include>DialogButt</include>
                     <label>$LOCALIZE[31026]</label>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
-                    <onclick>XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, clearlogo, discart)</onclick>
+                    <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
+                    <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
+                    <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=musicvideos, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
+                    <visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)]+system.hasaddon(script.artwork.downloader)</visible>
                     <onclick>left</onclick>
                 </control>
                 <control type="button" id="599">
@@ -139,7 +141,7 @@
                 <!--todo label ?-->
                 <control type="radiobutton" id="600" description="sio2">
                     <include>DialogButt</include>
-                    <enable>!IsEmpty(Container.FolderPath)</enable>
+                    <enable>Container.Content(musicvideos) | Container.content(movies) | container.content(seasons) | container.content(tvshows) | container.content(addons)</enable>
                     <onclick>Container.SetViewMode(52)</onclick>
                     <selected>Control.IsVisible(52) + !Skin.HasSetting(naked)</selected>
                     <label>SiO2 View</label>
@@ -147,7 +149,7 @@
                 <!--todo label ?-->
                 <control type="radiobutton" id="602" description="sio2x">
                     <include>DialogButt</include>
-                    <enable>Container.Content(movies)</enable>
+                    <enable>Container.Content(musicvideos) | Container.content(movies) | container.content(seasons) | container.content(tvshows)</enable>
                     <onclick>Container.SetViewMode(54)</onclick>
                     <selected>Control.IsVisible(54)</selected>
                     <label>SiO2-X View</label>
