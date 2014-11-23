@@ -177,6 +177,14 @@
                 <texture colordiffuse="main">lines/LineL.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
+            <control type="image" description="Rating">
+                <right>110</right>
+                <top>80</top>
+                <height>60</height>
+                <width>270</width>
+                <aspectratio align="right">keep</aspectratio>
+                <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
+            </control>
             <control type="label" description="Media details">
                 <left>129</left>
                 <top>90</top>
@@ -194,17 +202,12 @@
                 <top>150</top>
                 <left>129</left>
                 <itemgap>0</itemgap>
-                <control type="image" description="Rating">
-                    <height>60</height>
-                    <width>270</width>
-                    <aspectratio align="right">keep</aspectratio>
-                    <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
-                </control>
+
                 <control type="label" description="Show status">
                     <width>650</width>
                     <height>60</height>
                     <textcolor>dimgray</textcolor>
-                    <width>758</width>
+                    <width>500</width>
                     <height>40</height>
                     <align>left</align>
                     <font>size28</font>
@@ -221,6 +224,12 @@
                     <font>size28</font>
                     <scroll>false</scroll>
                     <label>NEXT AIRTIME: [COLOR=main]$INFO[Window(Home).Property(NextAired.NextDay)][/COLOR]</label>
+                </control>
+                <control type="image" description="Studio">
+                    <width>500</width>
+                    <height>109</height>
+                    <texture colordiffuse="main">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Studio].png</texture>
+                    <aspectratio align="center">keep</aspectratio>
                 </control>
                 <control type="image">
                     <height>1</height>
@@ -243,7 +252,7 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <left>45r</left>
+                <left>85r</left>
                 <top>219</top>
                 <height>780</height>
                 <onleft>53</onleft>

@@ -314,6 +314,13 @@
                     <label>[B][UPPERCASE]S $INFO[ListItem.Season] • E $INFO[ListItem.Episode][/UPPERCASE][/B]</label>
                     <align>center</align>
                 </control>
+                <control type="image" description="Studio">
+                    <left>15</left>
+                    <top>310</top>
+                    <width>161</width>
+                    <height>109</height>
+                    <texture colordiffuse="main">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Studio].png</texture>
+                </control>
             </control>
         </itemlayout>
         <focusedlayout height="357" width="480">
@@ -360,6 +367,13 @@
                     <label>[B][UPPERCASE]S $INFO[ListItem.Season] • E $INFO[ListItem.Episode][/UPPERCASE][/B]</label>
                     <align>center</align>
                 </control>
+                <control type="image" description="Studio">
+                    <left>15</left>
+                    <top>310</top>
+                    <width>161</width>
+                    <height>109</height>
+                    <texture colordiffuse="main">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Studio].png</texture>
+                </control>
             </control>
         </focusedlayout>
     </include>
@@ -370,7 +384,7 @@
         <height>450</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="350" width="320">
+        <itemlayout height="437" width="320">
             <control type="image">
                 <centerleft>160</centerleft>
                 <top>25</top>
@@ -381,9 +395,9 @@
             </control>
             <control type="image">
                 <centerleft>160</centerleft>
-                <top>107</top>
+                <top>25</top>
                 <width>275</width>
-                <height>330</height>
+                <height>412</height>
                 <texture diffuse="images/ombra.png">images/Black.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -392,23 +406,31 @@
                 <top>25</top>
                 <width>275</width>
                 <height>412</height>
-                <texture border="10" background="true">$VAR[dvdbox]</texture>
+                <texture border="3" background="true">$VAR[dvdbox]</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="textbox">
                 <centerleft>160</centerleft>
-                <top>245</top>
-                <width>260</width>
-                <height>170</height>
+                <top>270</top>
+                <width>270</width>
+                <height>111</height>
                 <font>size22</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <autoscroll>false</autoscroll>
-                <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
+                <label>[B]$INFO[ListItem.label2][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
                 <align>center</align>
+            </control>
+            <control type="image" description="Studio">
+                <centerleft>160</centerleft>
+                <bottom>1</bottom>
+                <width>80</width>
+                <height>55</height>
+                <texture colordiffuse="main">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Property(Studio)].png</texture>
+                <aspectratio>keep</aspectratio>
             </control>
         </itemlayout>
-        <focusedlayout height="420" width="320">
+        <focusedlayout height="437" width="320">
             <control type="image">
                 <centerleft>160</centerleft>
                 <top>25</top>
@@ -419,9 +441,9 @@
             </control>
             <control type="image">
                 <centerleft>160</centerleft>
-                <top>107</top>
+                <top>25</top>
                 <width>275</width>
-                <height>330</height>
+                <height>412</height>
                 <texture diffuse="images/ombra.png">images/Black.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -430,20 +452,28 @@
                 <top>25</top>
                 <width>275</width>
                 <height>412</height>
-                <texture border="10" background="true">$VAR[dvdbox]</texture>
+                <texture border="3" background="true">$VAR[dvdbox]</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="textbox">
                 <centerleft>160</centerleft>
-                <top>245</top>
-                <width>260</width>
-                <height>170</height>
+                <top>270</top>
+                <width>270</width>
+                <height>111</height>
                 <font>size22</font>
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <autoscroll>false</autoscroll>
-                <label>[B]$INFO[ListItem.Label][CR]$INFO[ListItem.label2][CR]$INFO[ListItem.Duration][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
+                <label>[B]$INFO[ListItem.label2][CR]$INFO[ListItem.Property(SeasonEpisode)][/B]</label>
                 <align>center</align>
+            </control>
+            <control type="image" description="Studio">
+                <centerleft>160</centerleft>
+                <bottom>1</bottom>
+                <width>80</width>
+                <height>55</height>
+                <texture colordiffuse="main">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Property(Studio)].png</texture>
+                <aspectratio>keep</aspectratio>
             </control>
         </focusedlayout>
     </include>
@@ -561,80 +591,90 @@
                         <label>$INFO[Window(Home).Property(NextAired.1.NextTitle)]</label>
                         <label2>$INFO[Window(Home).Property(NextAired.1.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.1.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.1.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.1.NextDay)]</property>
-                        <thumb>$INFO[Window(Home).Property(NextAired.1.Thumb)]</thumb>
-                        <onclick>noop</onclick>
+                        <property name="Studio">$INFO[Window(Home).Property(NextAired.1.Network)]</property>
+                        <thumb>$INFO[Window(Home).Property(NextAired.1.Art(poster))]</thumb>
+                        <onclick>ActivateWindow(Video,$INFO[Window.Property(NextAired.1.Library)])</onclick>
                     </item>
                     <item id="2" description="Episodes2">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.2.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.2.NextTitle)]</label>
                         <label2>$INFO[Window(Home).Property(NextAired.2.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.2.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.2.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.2.NextDay)]</property>
-                        <thumb>$INFO[Window(Home).Property(NextAired.2.Thumb)]</thumb>
-                        <onclick>noop</onclick>
+                        <property name="Studio">$INFO[Window(Home).Property(NextAired.2.Network)]</property>
+                        <thumb>$INFO[Window(Home).Property(NextAired.2.Art(poster))]</thumb>
+                        <onclick>ActivateWindow(Video,$INFO[Window.Property(NextAired.2.Library)])</onclick>
                     </item>
                     <item id="3" description="Episodes3">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.3.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.3.NextTitle)]</label>
                         <label2>$INFO[Window(Home).Property(NextAired.3.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.3.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.3.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.3.NextDay)]</property>
-                        <thumb>$INFO[Window(Home).Property(NextAired.3.Thumb)]</thumb>
-                        <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.3.File)])</onclick>
+                        <thumb>$INFO[Window(Home).Property(NextAired.3.Art(poster))]</thumb>
+                        <property name="Studio">$INFO[Window(Home).Property(NextAired.3.Network)]</property>
+                        <onclick>ActivateWindow(Video,$INFO[Window.Property(NextAired.3.Library)])</onclick>
                     </item>
                     <item id="4" description="Episodes4">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.4.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.4.NextTitle)]</label>
                         <label2>$INFO[Window(Home).Property(NextAired.4.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.4.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.4.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.4.NextDay)]</property>
-                        <thumb>$INFO[Window(Home).Property(NextAired.4.Thumb)]</thumb>
-                        <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.4.File)])</onclick>
+                        <thumb>$INFO[Window(Home).Property(NextAired.4.Art(poster))]</thumb>
+                        <property name="Studio">$INFO[Window(Home).Property(NextAired.4.Network)]</property>
+                        <onclick>ActivateWindow(Video,$INFO[Window.Property(NextAired.4.Library)])</onclick>
                     </item>
                     <item id="5" description="Episodes5">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.5.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.5.NextTitle)]</label>
                         <label2>$INFO[Window(Home).Property(NextAired.5.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.5.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.5.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.5.NextDay)]</property>
-                        <thumb>$INFO[Window(Home).Property(NextAired.5.Thumb)]</thumb>
-                        <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.5.File)])</onclick>
+                        <thumb>$INFO[Window(Home).Property(NextAired.5.Art(poster))]</thumb>
+                        <property name="Studio">$INFO[Window(Home).Property(NextAired.5.Network)]</property>
+                        <onclick>ActivateWindow(Video,$INFO[Window.Property(NextAired.5.Library)])</onclick>
                     </item>
                     <item id="6" description="Episodes6">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.6.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.6.NextTitle)]</label>
                         <label2>$INFO[Window(Home).Property(NextAired.6.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.6.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.6.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.6.NextDay)]</property>
-                        <thumb>$INFO[Window(Home).Property(NextAired.6.Thumb)]</thumb>
-                        <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.6.File)])</onclick>
+                        <thumb>$INFO[Window(Home).Property(NextAired.6.Art(poster))]</thumb>
+                        <property name="Studio">$INFO[Window(Home).Property(NextAired.6.Network)]</property>
+                        <onclick>ActivateWindow(Video,$INFO[Window.Property(NextAired.6.Library)])</onclick>
                     </item>
                     <item id="7" description="Episodes7">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.7.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.7.NextTitle)]</label>
                         <label2>$INFO[Window(Home).Property(NextAired.7.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.7.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.7.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.7.NextDay)]</property>
-                        <thumb>$INFO[Window(Home).Property(NextAired.7.Thumb)]</thumb>
-                        <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.7.File)])</onclick>
+                        <thumb>$INFO[Window(Home).Property(NextAired.7.Art(poster))]</thumb>
+                        <property name="Studio">$INFO[Window(Home).Property(NextAired.7.Network)]</property>
+                        <onclick>ActivateWindow(Video,$INFO[Window.Property(NextAired.7.Library)])</onclick>
                     </item>
                     <item id="8" description="Episodes8">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.8.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.8.NextTitle)]</label>
                         <label2>$INFO[Window(Home).Property(NextAired.8.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.8.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.8.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.8.NextDay)]</property>
-                        <thumb>$INFO[Window(Home).Property(NextAired.8.Thumb)]</thumb>
-                        <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.8.File)])</onclick>
+                        <thumb>$INFO[Window(Home).Property(NextAired.8.Art(poster))]</thumb>
+                        <property name="Studio">$INFO[Window(Home).Property(NextAired.8.Network)]</property>
+                        <onclick>ActivateWindow(Video,$INFO[Window.Property(NextAired.8.Library)])</onclick>
                     </item>
                     <item id="9" description="Episodes9">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.9.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.9.NextTitle)]</label>
                         <label2>$INFO[Window(Home).Property(NextAired.9.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.9.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.9.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.9.NextDay)]</property>
-                        <thumb>$INFO[Window(Home).Property(NextAired.9.Thumb)]</thumb>
-                        <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.9.File)])</onclick>
+                        <thumb>$INFO[Window(Home).Property(NextAired.9.Art(poster))]</thumb>
+                        <property name="Studio">$INFO[Window(Home).Property(NextAired.9.Network)]</property>
+                        <onclick>ActivateWindow(Video,$INFO[Window.Property(NextAired.9.Library)])</onclick>
                     </item>
                     <item id="10" description="Episodes10">
                         <visible>!IsEmpty(Window(Home).Property(NextAired.10.NextTitle))</visible>
                         <label>$INFO[Window(Home).Property(NextAired.10.NextTitle)]</label>
                         <label2>$INFO[Window(Home).Property(NextAired.10.Label)]</label2>
                         <property name="SeasonEpisode">S $INFO[Window(Home).Property(NextAired.10.NextSeasonNumber)] • E $INFO[Window(Home).Property(NextAired.10.NextEpisodeNumber)][CR]$INFO[Window(Home).Property(NextAired.10.NextDay)]</property>
-                        <thumb>$INFO[Window(Home).Property(NextAired.10.Thumb)]</thumb>
-                        <onclick>PlayMedia($ESCINFO[Window(Home).Property(NextAired.10.File)])</onclick>
+                        <thumb>$INFO[Window(Home).Property(NextAired.10.Art(poster))]</thumb>
+                        <property name="Studio">$INFO[Window(Home).Property(NextAired.10.Network)]</property>
+                        <onclick>ActivateWindow(Video,$INFO[Window.Property(NextAired.10.Library)])</onclick>
                     </item>
                     <!--item id="%d" description="Episodes%d">
 
@@ -1298,68 +1338,7 @@
                 <onleft>319</onleft>
                 <onright>319</onright>
                 <include>FavShortcutsCommons</include>
-                <content>
-                    <item id="1" description="Favss">
-                        <visible>IntegerGreaterThan(Window.Property(favourite.count),0)</visible>
-                        <label>$INFO[Window.Property(favourite.1.name)]</label>
-                        <thumb>$INFO[Window.Property(favourite.1.thumb)]</thumb>
-                        <onclick>$INFO[Window.Property(favourite.1.path)]</onclick>
-                    </item>
-                    <item id="2" description="Favss">
-                        <visible>IntegerGreaterThan(Window.Property(favourite.count),1)</visible>
-                        <label>$INFO[Window.Property(favourite.2.name)]</label>
-                        <thumb>$INFO[Window.Property(favourite.2.thumb)]</thumb>
-                        <onclick>$INFO[Window.Property(favourite.2.path)]</onclick>
-                    </item>
-                    <item id="3" description="Favss">
-                        <visible>IntegerGreaterThan(Window.Property(favourite.count),2)</visible>
-                        <label>$INFO[Window.Property(favourite.3.name)]</label>
-                        <thumb>$INFO[Window.Property(favourite.3.thumb)]</thumb>
-                        <onclick>$INFO[Window.Property(favourite.3.path)]</onclick>
-                    </item>
-                    <item id="4" description="Favss">
-                        <visible>IntegerGreaterThan(Window.Property(favourite.count),3)</visible>
-                        <label>$INFO[Window.Property(favourite.4.name)]</label>
-                        <thumb>$INFO[Window.Property(favourite.4.thumb)]</thumb>
-                        <onclick>$INFO[Window.Property(favourite.4.path)]</onclick>
-                    </item>
-                    <item id="5" description="Favss">
-                        <visible>IntegerGreaterThan(Window.Property(favourite.count),4)</visible>
-                        <label>$INFO[Window.Property(favourite.5.name)]</label>
-                        <thumb>$INFO[Window.Property(favourite.5.thumb)]</thumb>
-                        <onclick>$INFO[Window.Property(favourite.5.path)]</onclick>
-                    </item>
-                    <item id="6" description="Favss">
-                        <visible>IntegerGreaterThan(Window.Property(favourite.count),5)</visible>
-                        <label>$INFO[Window.Property(favourite.6.name)]</label>
-                        <thumb>$INFO[Window.Property(favourite.6.thumb)]</thumb>
-                        <onclick>$INFO[Window.Property(favourite.6.path)]</onclick>
-                    </item>
-                    <item id="7" description="Favss">
-                        <visible>IntegerGreaterThan(Window.Property(favourite.count),6)</visible>
-                        <label>$INFO[Window.Property(favourite.7.name)]</label>
-                        <thumb>$INFO[Window.Property(favourite.7.thumb)]</thumb>
-                        <onclick>$INFO[Window.Property(favourite.7.path)]</onclick>
-                    </item>
-                    <item id="8" description="Favss">
-                        <visible>IntegerGreaterThan(Window.Property(favourite.count),7)</visible>
-                        <label>$INFO[Window.Property(favourite.8.name)]</label>
-                        <thumb>$INFO[Window.Property(favourite.8.thumb)]</thumb>
-                        <onclick>$INFO[Window.Property(favourite.8.path)]</onclick>
-                    </item>
-                    <item id="9" description="Favss">
-                        <visible>IntegerGreaterThan(Window.Property(favourite.count),8)</visible>
-                        <label>$INFO[Window.Property(favourite.9.name)]</label>
-                        <thumb>$INFO[Window.Property(favourite.9.thumb)]</thumb>
-                        <onclick>$INFO[Window.Property(favourite.9.path)]</onclick>
-                    </item>
-                    <item id="10" description="Favss">
-                        <visible>IntegerGreaterThan(Window.Property(favourite.count),9)</visible>
-                        <label>$INFO[Window.Property(favourite.10.name)]</label>
-                        <thumb>$INFO[Window.Property(favourite.10.thumb)]</thumb>
-                        <onclick>$INFO[Window.Property(favourite.10.path)]</onclick>
-                    </item>
-                </content>
+                <content>favourites://</content>
             </control>
             <control type="image">
                 <visible>Control.HasFocus(319)</visible>

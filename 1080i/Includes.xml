@@ -223,7 +223,7 @@
         </control>
         <control type="grouplist" description="centered">
             <visible>!Window.IsActive(DialogAlbumInfo.xml)</visible>
-            <visible>Control.IsVisible(53) | [Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]]</visible>
+            <visible>[Window.IsActive(myPVR) + [Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14)]]</visible>
             <top>25</top>
             <centerleft>960</centerleft>
             <width>580</width>
@@ -232,7 +232,7 @@
         </control>
         <control type="grouplist" description="leftsided">
             <visible>!Window.IsActive(DialogAlbumInfo.xml)</visible>
-            <visible>Control.IsVisible(55) | Control.IsVisible(500)</visible>
+            <visible>Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(500)</visible>
             <top>10</top>
             <left>30</left>
             <width>580</width>
@@ -678,5 +678,8 @@
             </control>
         </control>
     </include>
-
+    <include name="border">
+        <bordertexture border="2">images/dvdbox.png</bordertexture>
+        <bordersize>1</bordersize>
+    </include>
 </includes>

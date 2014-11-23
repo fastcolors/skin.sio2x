@@ -81,28 +81,6 @@
             <height>898</height>
             <texture colordiffuse="main">lines/LineV.png</texture>
         </control>
-        <control type="label">
-            <visible>Control.IsVisible(50) + Container.Content(Artists)</visible>
-            <top>40</top>
-            <centerleft>1440</centerleft>
-            <width>880</width>
-            <font>size42B</font>
-            <scroll>false</scroll>
-            <align>center</align>
-            <aligny>center</aligny>
-            <label>21888</label>
-        </control>
-        <control type="label">
-            <visible>Control.IsVisible(50) + Container.Content(Albums)</visible>
-            <top>40</top>
-            <centerleft>1440</centerleft>
-            <width>880</width>
-            <font>size42B</font>
-            <scroll>false</scroll>
-            <align>center</align>
-            <alingy>center</alingy>
-            <label>182</label>
-        </control>
         <control type="list" id="50">
             <left>960</left>
             <top>100</top>

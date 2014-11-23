@@ -17,17 +17,9 @@
     </include>
     <!--PANEL FOR BIG LIST-->
     <include name="left_Panel">
+
         <control type="group" description="ICON no PLOT">
             <visible>IsEmpty(ListItem.Plot) | Control.IsVisible(51)</visible>
-            <!--<control type="image" description="back">-->
-            <!--<visible>Skin.HasTheme(White) + !StringCompare(ListItem.Label,..) + ![Container.Content(genres) | Container.Content(actors)]</visible>-->
-            <!--<centerleft>480</centerleft>-->
-            <!--<centertop>540</centertop>-->
-            <!--<width>600</width>-->
-            <!--<height>800</height>-->
-            <!--<fadetime>200</fadetime>-->
-            <!--<texture colordiffuse="66000000">images/white.png</texture>-->
-            <!--</control>-->
             <control type="image" description="Thumb">
                 <!--<visible>ListItem.IsFolder + ![[Container.Content(sets) | Container.Content(Actors)] + !IsEmpty(ListItem.Thumb)]</visible>-->
                 <visible>IsEmpty(Container.FolderPath) | IsEmpty(ListItem.Thumb)</visible>
@@ -67,6 +59,7 @@
         <control type="group" description="ICON + PLOT">
             <top>100</top>
             <visible>!IsEmpty(ListItem.Plot) + !Control.IsVisible(51)</visible>
+
             <control type="group">
                 <visible>!Container.Content(episodes)</visible>
                 <control type="image" description="Thumb">
@@ -82,6 +75,14 @@
             </control>
             <control type="group">
                 <visible>Container.Content(episodes)</visible>
+                <control type="label" description="Label2">
+                    <top>-40</top>
+                    <centerleft>480</centerleft>
+                    <width>600</width>
+                    <height>30</height>
+                    <align>center</align>
+                    <label>$INFO[ListItem.Premiered,$LOCALIZE[20416]: ]</label>
+                </control>
                 <control type="image" description="Thumb">
                     <centerleft>480</centerleft>
                     <width>756</width>
@@ -91,6 +92,16 @@
                     <bordersize>4</bordersize>
                     <aspectratio>keep</aspectratio>
                 </control>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Container.Content(episodes)</visible>
+                <centerleft>480</centerleft>
+                <top>500</top>
+                <width>400</width>
+                <height>70</height>
+                <fadetime>100</fadetime>
+                <texture background="true">$INFO[ListItem.Studio,special://home/addons/sio2x.extrapack/studios_extrapack/,.png]</texture>
+                <aspectratio>keep</aspectratio>
             </control>
             <control type="group" description="EPISODES BADGES">
                 <top>430</top>
@@ -283,6 +294,14 @@
             <texture background="true" fallback="defaultalbumcover.png">$VAR[locandine]</texture>
             <aspectratio>keep</aspectratio>
         </control>
+        <control type="image" description="border">
+            <visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + !StringCompare(ListItem.Label,..)</visible>
+            <centerleft>480</centerleft>
+            <centertop>450</centertop>
+            <width>600</width>
+            <height>600</height>
+            <texture background="true" border="3">$VAR[dvdbox]</texture>
+        </control>
         <control type="group">
             <visible>!StringCompare(ListItem.Label,..)</visible>
             <visible>!IsEmpty(ListItem.Artist)</visible>
@@ -364,6 +383,13 @@
                     <width>750</width>
                     <height>30</height>
                     <label>$LOCALIZE[21899]: $INFO[ListItem.Property(Album_Label)]</label>
+                </control>
+                <control type="label" description="format">
+                    <visible>!IsEmpty(ListItem.FileExtension)</visible>
+                    <font>size26</font>
+                    <width>750</width>
+                    <height>30</height>
+                    <label>$LOCALIZE[21446]: $INFO[ListItem.FileExtension]</label>
                 </control>
             </control>
         </control>
@@ -606,14 +632,7 @@
                     <left>45</left>
                     <width>725</width>
                     <include>BigListTitle</include>
-                    <label>$INFO[ListItem.Title]</label>
-                </control>
-                <control type="label" description="Main Label">
-                    <visible>IsEmpty(ListItem.Title) | Stringcompare(ListItem.label,..)</visible>
-                    <left>45</left>
-                    <width>725</width>
-                    <include>BigListTitleFO</include>
-                    <label>$INFO[ListItem.label]</label>
+                    <label>$INFO[ListItem.Label]</label>
                 </control>
             </control>
             <control type="group">
@@ -624,18 +643,18 @@
                     <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
                 </control>
                 <control type="label" description="Label2">
-                    <visible>container.content(episodes)</visible>
-                    <left>0r</left>
-                    <align>right</align>
+                    <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
+                    <left>45</left>
+                    <width>630</width>
                     <include>BigListDetails</include>
-                    <label>$INFO[ListItem.Premiered]</label>
+                    <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
                 </control>
                 <control type="label" description="Label2">
                     <visible>container.content(episodes) | Container.Content(songs)</visible>
                     <left>45</left>
                     <align>left</align>
                     <include>BigListDetails</include>
-                    <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
+                    <label>$INFO[ListItem.Duration,$LOCALIZE[180]: , $LOCALIZE[31038]]</label>
                 </control>
             </control>
             <include>listline</include>
@@ -650,14 +669,7 @@
                     <left>45</left>
                     <width>725</width>
                     <include>BigListTitleFO</include>
-                    <label>$INFO[ListItem.Title]</label>
-                </control>
-                <control type="label" description="Main Label">
-                    <visible>IsEmpty(ListItem.Title) | Stringcompare(ListItem.label,..)</visible>
-                    <left>45</left>
-                    <width>725</width>
-                    <include>BigListTitleFO</include>
-                    <label>$INFO[ListItem.label]</label>
+                    <label>$INFO[ListItem.Label]</label>
                 </control>
             </control>
             <control type="label" description="Label2">
@@ -672,15 +684,7 @@
                 <left>45</left>
                 <align>left</align>
                 <include>BigListDetails</include>
-                <label>$INFO[ListItem.Duration,, $LOCALIZE[31038]]</label>
-            </control>
-            <control type="label" description="Label2">
-                <visible>container.content(episodes)</visible>
-                <left>0r</left>
-                <width>480</width>
-                <align>right</align>
-                <include>BigListDetails</include>
-                <label>$INFO[ListItem.Premiered]</label>
+                <label>$INFO[ListItem.Duration,$LOCALIZE[180]: , $LOCALIZE[31038]]</label>
             </control>
             <include>listline</include>
         </focusedlayout>
