@@ -416,6 +416,16 @@
                             <info>ListItem.Overlay</info>
                         </control>
                     </control>
+                    <control type="image">
+                        <visible>System.HasAddon(sio2x.extrapack)</visible>
+                        <fadetime>200</fadetime>
+                        <left>780</left>
+                        <top>460</top>
+                        <width>161</width>
+                        <height>91</height>
+                        <texture>$INFO[ListItem.Studio,special://home/addons/sio2x.extrapack/studios_extrapack/,.png]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
                 </control>
                 <control type="image" description="sfumatura plot">
                     <top>630</top>
