@@ -17,7 +17,6 @@
     </include>
     <!--PANEL FOR BIG LIST-->
     <include name="left_Panel">
-
         <control type="group" description="ICON no PLOT">
             <visible>IsEmpty(ListItem.Plot) | Control.IsVisible(51)</visible>
             <control type="image" description="Thumb">
@@ -57,48 +56,33 @@
             </control>
         </control>
         <control type="group" description="ICON + PLOT">
-            <top>100</top>
+            <top>120</top>
             <visible>!IsEmpty(ListItem.Plot) + !Control.IsVisible(51)</visible>
-
-            <control type="group">
-                <visible>!Container.Content(episodes)</visible>
-                <control type="image" description="Thumb">
-                    <centerleft>480</centerleft>
-                    <width>470</width>
-                    <height>470</height>
-                    <texture background="true">$VAR[locandine]</texture>
-                    <fadetime>200</fadetime>
-                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
-                    <bordersize>4</bordersize>
-                    <aspectratio>keep</aspectratio>
-                </control>
-            </control>
-            <control type="group">
-                <visible>Container.Content(episodes)</visible>
-                <control type="label" description="Label2">
-                    <top>-40</top>
-                    <centerleft>480</centerleft>
-                    <width>600</width>
-                    <height>30</height>
-                    <align>center</align>
-                    <label>$INFO[ListItem.Premiered,$LOCALIZE[20416]: ]</label>
-                </control>
-                <control type="image" description="Thumb">
-                    <centerleft>480</centerleft>
-                    <width>756</width>
-                    <height>470</height>
-                    <texture background="true">$INFO[ListItem.Icon]</texture>
-                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
-                    <bordersize>4</bordersize>
-                    <aspectratio>keep</aspectratio>
-                </control>
-            </control>
             <control type="image" description="Thumb">
-                <visible>!Container.Content(episodes)</visible>
                 <centerleft>480</centerleft>
-                <top>500</top>
-                <width>400</width>
-                <height>70</height>
+                <width>756</width>
+                <height>470</height>
+                <texture background="true">$VAR[locandine]</texture>
+                <fadetime>200</fadetime>
+                <bordertexture border="2" colordiffuse="main">images/dvdbox.png</bordertexture>
+                <bordersize>1</bordersize>
+                <aspectratio>keep</aspectratio>
+            </control>
+            <control type="label" description="first aired">
+                <visible>Container.Content(episodes)</visible>
+                <top>400</top>
+                <centerleft>480</centerleft>
+                <width>600</width>
+                <height>30</height>
+                <align>center</align>
+                <shadowcolor>-</shadowcolor>
+                <label>[B]$INFO[ListItem.Premiered,$LOCALIZE[20416]: ][/B]</label>
+            </control>
+            <control type="image" description="Studio">
+                <centerleft>480</centerleft>
+                <top>-100</top>
+                <width>161</width>
+                <height>100</height>
                 <fadetime>100</fadetime>
                 <texture background="true">$INFO[ListItem.Studio,special://home/addons/sio2x.extrapack/studios_extrapack/,.png]</texture>
                 <aspectratio>keep</aspectratio>
@@ -116,7 +100,7 @@
                     <aspectratio>keep</aspectratio>
                     <texture>badges/Badgecount.png</texture>
                 </control>
-                <control type="label" description="Label2">
+                <control type="label" description="nuberofunwatched">
                     <centerleft>35</centerleft>
                     <height>72</height>
                     <width>80</width>
@@ -179,12 +163,12 @@
                 <height>100</height>
                 <width>100</width>
                 <aspectratio>keep</aspectratio>
-                <texture>$INFO[ListItem.MPAA,Mpaa/,.png]</texture>
+                <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
             </control>
             <control type="image" description="Stars">
                 <visible>!IsEmpty(ListItem.Rating)</visible>
                 <centerleft>480</centerleft>
-                <top>485</top>
+                <top>480</top>
                 <height>24</height>
                 <width>135</width>
                 <aspectratio>keep</aspectratio>
@@ -200,10 +184,10 @@
             <control type="textbox" description="plot">
                 <centerleft>480</centerleft>
                 <top>570</top>
-                <width>880</width>
+                <width>800</width>
                 <height>350</height>
                 <align>justify</align>
-                <font>size26B</font>
+                <font>size26</font>
                 <label>$INFO[ListItem.Plot]</label>
             </control>
             <control type="image">
@@ -416,23 +400,24 @@
 
     <include name="BigListTitle">
         <left>128</left>
-        <top>12</top>
+        <top>10</top>
         <height>50</height>
         <width>720</width>
         <aligny>center</aligny>
         <font>size30</font>
         <scroll>false</scroll>
-        <textcolor>gray</textcolor>
+        <textcolor>maindim</textcolor>
     </include>
 
     <include name="BigListTitleFO">
         <left>128</left>
-        <top>12</top>
+        <top>10</top>
         <height>50</height>
         <width>720</width>
         <aligny>center</aligny>
         <font>size30</font>
         <scroll>true</scroll>
+        <shadowcolor>-</shadowcolor>
     </include>
 
     <include name="BigListDetails">
@@ -442,6 +427,8 @@
         <width>350</width>
         <font>size27</font>
         <scroll>false</scroll>
+        <textcolor>maindim</textcolor>
+        <shadowcolor>-</shadowcolor>
     </include>
 
     <include name="Watched_Marks">
@@ -627,7 +614,7 @@
             <include>Watched_MarksLW</include>
             <include>HD_Badge_LL</include>
             <control type="group">
-                <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year) + IsEmpty(ListItem.Artist)" effect="slide" end="0,18" time="0" reversible="true">Conditional</animation>
+                <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year) + IsEmpty(ListItem.Artist)" effect="slide" end="0,20" time="0" reversible="true">Conditional</animation>
                 <control type="label" description="Main Label">
                     <left>45</left>
                     <width>725</width>
@@ -639,15 +626,9 @@
                 <control type="label" description="Label2">
                     <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
                     <left>45</left>
-                    <include>BigListDetails</include>
-                    <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
-                </control>
-                <control type="label" description="Label2">
-                    <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
-                    <left>45</left>
                     <width>630</width>
                     <include>BigListDetails</include>
-                    <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
+                    <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • $LOCALIZE[563]:]$INFO[ListItem.Votes, • ,$LOCALIZE[205]]</label>
                 </control>
                 <control type="label" description="Label2">
                     <visible>container.content(episodes) | Container.Content(songs)</visible>
@@ -664,7 +645,7 @@
             <include>Watched_MarksLW</include>
             <include>HD_Badge_LL</include>
             <control type="group">
-                <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year)  + IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year)  + IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,20" time="0" reversible="true">Conditional</animation>
                 <control type="label" description="Main Label">
                     <left>45</left>
                     <width>725</width>
@@ -677,7 +658,7 @@
                 <left>45</left>
                 <width>630</width>
                 <include>BigListDetails</include>
-                <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • ]</label>
+                <label>$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.label2, • $LOCALIZE[563]:]$INFO[ListItem.Votes, • ,$LOCALIZE[205]]</label>
             </control>
             <control type="label" description="Label2">
                 <visible>container.content(episodes) | Container.Content(songs)</visible>

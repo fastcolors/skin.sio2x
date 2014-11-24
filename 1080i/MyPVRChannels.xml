@@ -123,11 +123,10 @@
                                 <aligny>center</aligny>
                                 <textcolor>gray</textcolor>
                                 <font>font12</font>
-                                <selectedcolor>gray</selectedcolor>
                                 <label>$INFO[ListItem.Channelnumber]</label>
                             </control>
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,20" time="0" reversible="true">Conditional</animation>
                                 <left>50</left>
                                 <width>900</width>
                                 <selectedcolor>red</selectedcolor>
@@ -167,11 +166,10 @@
                                 <aligny>center</aligny>
                                 <textcolor>gray</textcolor>
                                 <font>font12</font>
-                                <selectedcolor>gray</selectedcolor>
                                 <label>$INFO[ListItem.Channelnumber]</label>
                             </control>
                             <control type="label">
-                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
+                                <animation condition="IsEmpty(ListItem.Title)" effect="slide" start="0,0" end="0,20" time="0" reversible="true">Conditional</animation>
                                 <left>50</left>
                                 <width>900</width>
                                 <selectedcolor>red</selectedcolor>
