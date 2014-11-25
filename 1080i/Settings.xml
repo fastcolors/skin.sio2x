@@ -120,11 +120,20 @@
                         <onclick>ActivateWindow(1111)</onclick>
                     </item>
                     <item id="17">
-                        <label>Kiosk</label>
+                        <label>Turn on Kiosk Mode</label>
+                        <visible>!Skin.HasSetting(kiosk)</visible>
+                        <onclick>Skin.ToggleSetting(kiosk)</onclick>
                         <onclick>Skin.Reset(ViewsMenuOff)</onclick>
                         <onclick>Skin.ToggleSetting(ViewsMenuOff)</onclick>
                         <onclick>Skin.Reset(hidesett)</onclick>
                         <onclick>Skin.ToggleSetting(hidesett)</onclick>
+                    </item>
+                    <item id="17">
+                        <label>Turn off Kiosk Mode</label>
+                        <visible>Skin.HasSetting(kiosk)</visible>
+                        <onclick>Skin.Reset(kiosk)</onclick>
+                        <onclick>Skin.Reset(ViewsMenuOff)</onclick>
+                        <onclick>Skin.Reset(hidesett)</onclick>
                     </item>
                 </content>
             </control>
