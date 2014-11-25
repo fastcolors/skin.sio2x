@@ -1514,57 +1514,35 @@
             </control>
         </control>
 
-            <control type="group">
-                <visible allowhiddenfocus="true">Control.HasFocus(8)</visible>
-                <animation effect="slide" start="-400,0" end="0,0" time="400">VisibleChange</animation>
-                <control type="image">
-                    <left>-50</left>
-                    <top>900</top>
-                    <width>300</width>
-                    <height>150</height>
-                    <texture border="50">sidepanel/Back.png</texture>
-                </control>
-                <control type="grouplist" id="9000">
-                    <top>935</top>
-                    <width>250</width>
-                    <height>150</height>
-                    <onleft>noop</onleft>
-                    <onright>200</onright>
-                    <onup>9000</onup>
-                    <ondown>9000</ondown>
-                    <itemgap>0</itemgap>
-                    <control type="button" id="8">
-                        <description>Settings</description>
-                        <height>80</height>
-                        <width>220</width>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <label>5</label>
-                    </control>
-                </control>
-            </control>
-        <control type="grouplist">
-            <right>15</right>
-            <align>right</align>
-            <orientation>horizontal</orientation>
-            <itemgap>5</itemgap>
-            <control type="label" description="Clock">
-                <visible>!Skin.HasSetting(HideClock)</visible>
-                <width>195</width>
-                <height>40</height>
-                <align>right</align>
-                <aligny>center</aligny>
-                <font>size21</font>
-                <textcolor>FFFFFFFF</textcolor>
-                <label>$INFO[System.Time]</label>
-            </control>
+        <control type="group">
+            <visible allowhiddenfocus="true">Control.HasFocus(8)</visible>
+            <animation effect="slide" start="-400,0" end="0,0" time="400">VisibleChange</animation>
             <control type="image">
-                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
-                <width>25</width>
-                <height>42</height>
-                <texture colordiffuse="main">wireless.png</texture>
-                <aspectratio>scale</aspectratio>
+                <left>-50</left>
+                <top>900</top>
+                <width>300</width>
+                <height>150</height>
+                <texture border="50">sidepanel/Back.png</texture>
+            </control>
+            <control type="grouplist" id="9000">
+                <top>935</top>
+                <width>250</width>
+                <height>150</height>
+                <onleft>noop</onleft>
+                <onright>200</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <itemgap>0</itemgap>
+                <control type="button" id="8">
+                    <description>Settings</description>
+                    <height>80</height>
+                    <width>220</width>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>5</label>
+                </control>
             </control>
         </control>
+        <include>clockandkodi</include>
     </controls>
 </window>

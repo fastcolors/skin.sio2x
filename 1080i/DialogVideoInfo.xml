@@ -135,7 +135,6 @@
                     <texture>$INFO[ListItem.FileExtension,badges/Video/,.png]</texture>
                 </control>
             </control>
-
             <control type="group" description="List Info">
                 <!--visible>![container.content(tvshows) | container.content(episodes) | SubString(Container.FolderPath,videodb://musicvideos/,left) | Control.HasFocus(10)]</visible-->
                 <include>VisibleFade</include>

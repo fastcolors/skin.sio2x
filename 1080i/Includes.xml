@@ -160,31 +160,39 @@
             <label>$INFO[Container.NumItems, (,)]</label>
         </control>
     </include>
-    <include name="WindowsTopInfos">
-        <!--todo move name of window icon view up-->
+    <include name="clockandkodi">
         <control type="grouplist">
             <right>15</right>
             <align>right</align>
             <orientation>horizontal</orientation>
-            <itemgap>5</itemgap>
+            <itemgap>6</itemgap>
             <control type="label" description="Clock">
                 <visible>!Skin.HasSetting(HideClock)</visible>
                 <width>195</width>
-                <height>40</height>
+                <height>48</height>
                 <align>right</align>
                 <aligny>center</aligny>
                 <font>size21</font>
-                <textcolor>maindim</textcolor>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="image">
                 <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
-                <width>25</width>
-                <height>42</height>
+                <width>30</width>
+                <height>48</height>
                 <texture colordiffuse="main">wireless.png</texture>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
+            </control>
+            <control type="image">
+                <width>35</width>
+                <height>48</height>
+                <texture colordiffuse="kodi">kodilogo.png</texture>
+                <aspectratio>keep</aspectratio>
             </control>
         </control>
+    </include>
+    <include name="WindowsTopInfos">
+        <!--todo move name of window icon view up-->
+        <include>clockandkodi</include>
         <!--VIEWTOPINFOS-->
         <control type="grouplist" description="LIST + BIGLIST">
             <visible>!Window.IsActive(DialogAlbumInfo.xml)</visible>
@@ -581,7 +589,6 @@
                     <selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>
                     <label>Small List</label>
                 </control>
-
             </control>
         </control>
     </include>

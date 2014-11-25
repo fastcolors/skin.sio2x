@@ -355,7 +355,6 @@
                                 <texture>$VAR[dvdbox]</texture>
                             </control>
                             <control type="image" description="WatchStatus">
-                                <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
                                 <left>68</left>
                                 <top>317</top>
                                 <height>32</height>
@@ -364,12 +363,20 @@
                                 <texture>$VAR[WatchStatus]</texture>
                             </control>
                             <control type="image" description="Mpaa">
+                                <visible>!IsEmpty(ListItem.Mpaa)</visible>
                                 <left>250</left>
                                 <top>240</top>
-                                <visible>!IsEmpty(ListItem.Mpaa)</visible>
                                 <height>32</height>
                                 <width>32</width>
                                 <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
+                            </control>
+                            <control type="image">
+                                <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+                                <left>250</left>
+                                <top>310</top>
+                                <height>32</height>
+                                <width>32</width>
+                                <texture>badges/setsFO.png</texture>
                             </control>
                             <control type="textbox">
                                 <visible>Container.Content(genres) + !StringCompare(ListItem.Label,..)</visible>
@@ -386,8 +393,8 @@
                     </itemlayout>
                     <focusedlayout height="500" width="286">
                         <control type="group">
-                            <animation effect="zoom" center="183,22" start="80" end="100" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="183,22" start="100" end="80" time="100" reversible="true">unFocus</animation>
+                            <animation effect="zoom" center="183,22" start="77" end="100" time="200" reversible="true">Focus</animation>
+                            <animation effect="zoom" center="183,22" start="100" end="77" time="50" reversible="true">unFocus</animation>
                             <control type="group">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
                                 <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
@@ -507,7 +514,6 @@
                                 </control>
                             </control>
                             <control type="image" description="WatchStatus">
-                                <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
                                 <left>36</left>
                                 <top>418</top>
                                 <height>32</height>
@@ -516,12 +522,20 @@
                                 <texture>$VAR[WatchStatus]</texture>
                             </control>
                             <control type="image" description="Mpaa">
+                                <visible>!IsEmpty(ListItem.Mpaa)</visible>
                                 <left>274</left>
                                 <top>306</top>
-                                <visible>!IsEmpty(ListItem.Mpaa)</visible>
                                 <height>42</height>
                                 <width>42</width>
                                 <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
+                            </control>
+                            <control type="image">
+                                <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+                                <left>274</left>
+                                <top>395</top>
+                                <height>42</height>
+                                <width>42</width>
+                                <texture>badges/SetsFO.png</texture>
                             </control>
                             <control type="textbox">
                                 <visible>Container.Content(genres) + !StringCompare(ListItem.Label,..)</visible>

@@ -336,5 +336,6 @@
         <!--<height>200</height>-->
         <!--<imagepath>$INFO[Window.Property(MapPath)]</imagepath>-->
         <!--</control>-->
+        <include>clockandkodi</include>
     </controls>
 </window>

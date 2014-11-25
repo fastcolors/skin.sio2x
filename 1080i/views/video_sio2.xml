@@ -325,13 +325,13 @@
                         <align>center</align>
                         <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
                         <control type="image">
-                            <width>600</width>
-                            <height>40</height>
+                            <width>610</width>
+                            <height>34</height>
                             <texture colordiffuse="main">$INFO[ListItem.Rating,badges/,.png]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="label">
-                            <width>600</width>
+                            <width>610</width>
                             <height>20</height>
                             <font>size20</font>
                             <align>center</align>

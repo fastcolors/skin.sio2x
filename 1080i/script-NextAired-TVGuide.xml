@@ -730,28 +730,6 @@
                 <onclick>ActivateWindow(Home)</onclick>
             </control>
         </control>
-        <control type="grouplist">
-            <right>15</right>
-            <align>right</align>
-            <orientation>horizontal</orientation>
-            <itemgap>5</itemgap>
-            <control type="label" description="Clock">
-                <visible>!Skin.HasSetting(HideClock)</visible>
-                <width>195</width>
-                <height>40</height>
-                <align>right</align>
-                <aligny>center</aligny>
-                <font>size21</font>
-                <textcolor>FFFFFFFF</textcolor>
-                <label>$INFO[System.Time]</label>
-            </control>
-            <control type="image">
-                <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
-                <width>25</width>
-                <height>42</height>
-                <texture colordiffuse="main">wireless.png</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-        </control>
+        <include>clockandkodi</include>
     </controls>
 </window>

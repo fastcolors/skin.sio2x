@@ -8,15 +8,23 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
+        <control type="image">
+            <right>10</right>
+            <bottom>28</bottom>
+            <width>60</width>
+            <height>60</height>
+            <texture colordiffuse="6612b2e7">images/sio2xlogo.png</texture>
+        </control>
         <control type="label">
             <description>SKIN VERSION</description>
             <right>10</right>
-            <top>1060</top>
-            <width>80</width>
+            <bottom>10</bottom>
+            <width>60</width>
             <height>20</height>
             <font>XS</font>
-            <textcolor>lightblue</textcolor>
-            <align>right</align>
+            <textcolor>6612b2e7</textcolor>
+            <align>center</align>
+            <scroll>false</scroll>
             <info>System.AddonVersion(skin.sio2x)</info>
         </control>
         <control type="button" id="9009">
@@ -27,7 +35,7 @@
             <left>10</left>
             <width>34</width>
             <height>34</height>
-            <texturenofocus aspectratio="keep" colordiffuse="darkgray">images/hometoggle.png</texturenofocus>
+            <texturenofocus aspectratio="keep" colordiffuse="kodi">images/hometoggle.png</texturenofocus>
             <texturefocus aspectratio="keep" colordiffuse="red">images/hometoggle.png</texturefocus>
             <!--MOVIES-->
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),)">Skin.SetString(moviesshelf,WL)</onclick>
@@ -371,32 +379,40 @@
         <!--</control>-->
         <control type="grouplist">
             <visible>[Container(9000).Row(0) | Container(9000).Row(1)]</visible>
-            <top>13</top>
+            <top>10</top>
             <right>30</right>
             <orientation>horizontal</orientation>
-            <itemgap>16</itemgap>
+            <itemgap>12</itemgap>
             <align>right</align>
             <control type="label" description="Battery">
                 <visible>IntegerGreaterThan(System.BatteryLevel,0) + !IntegerGreaterThan(System.BatteryLevel,10) + !Skin.HasSetting(hideconnection)</visible>
-                <width min="30" max="500">auto</width>
-                <height>45</height>
+                <width>auto</width>
+                <height>48</height>
                 <font>size30</font>
                 <textcolor>red</textcolor>
+                <aligny>center</aligny>
                 <label>$INFO[System.BatteryLevel] Batt.</label>
             </control>
             <control type="label" description="Clock">
                 <visible>!Skin.HasSetting(HideClock)</visible>
-                <width min="30" max="500">auto</width>
-                <height>45</height>
+                <width>auto</width>
+                <height>48</height>
                 <font>size28</font>
-                <label>$INFO[System.Date]  $INFO[System.Time]</label>
+                <aligny>center</aligny>
+                <label>$INFO[System.Date] • $INFO[System.Time]</label>
             </control>
             <control type="image" description="WebLink">
                 <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
                 <width>30</width>
                 <height>48</height>
                 <texture colordiffuse="main">wireless.png</texture>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
+            </control>
+            <control type="image">
+                <width>35</width>
+                <height>48</height>
+                <texture colordiffuse="kodi">kodilogo.png</texture>
+                <aspectratio>keep</aspectratio>
             </control>
         </control>
     </controls>
