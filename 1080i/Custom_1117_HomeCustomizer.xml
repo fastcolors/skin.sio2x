@@ -590,13 +590,13 @@
                     <item id="1011" description="video root">
                         <visible>!Skin.HasSetting(hidevidroot)</visible>
                         <thumb>icons/vidroot.png</thumb>
-                        <label>Video</label>
+                        <label>3</label>
                         <onclick>Skin.ToggleSetting(hidevidroot)</onclick>
                     </item>
                     <item id="1011" description="video root">
                         <visible>Skin.HasSetting(hidevidroot)</visible>
                         <thumb>help/Off.png</thumb>
-                        <label>Video</label>
+                        <label>3</label>
                         <onclick>Skin.ToggleSetting(hidevidroot)</onclick>
                     </item>
                     <item id="1012" description="Browser">

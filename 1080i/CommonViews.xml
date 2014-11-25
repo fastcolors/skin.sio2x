@@ -380,14 +380,6 @@
         </control>
     </include>
 
-    <!--todo can this be removed?-->
-    <!--<include name="MusicRating">-->
-    <!--<height>24</height>-->
-    <!--<width>135</width>-->
-    <!--<aspectratio align="right">keep</aspectratio>-->
-    <!--<texture colordiffuse="main">$INFO[ListItem.StarRating]</texture>-->
-    <!--</include>-->
-
     <include name="SmallListMainLabel">
         <left>45</left>
         <height>80</height>

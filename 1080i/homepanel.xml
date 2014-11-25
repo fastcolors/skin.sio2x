@@ -319,11 +319,10 @@
             <onclick>activatewindow(1115)</onclick>
         </item>
         <!--VIDEOROOT-->
-        <!--todo label-->
         <item id="347">
             <visible>!Skin.HasSetting(hidevidroot)</visible>
             <thumb>icons/vidroot.png</thumb>
-            <label>Video</label>
+            <label>3</label>
             <property name="color">icons/green3.png</property>
             <onclick>ActivateWindow(video,root,return)</onclick>
         </item>

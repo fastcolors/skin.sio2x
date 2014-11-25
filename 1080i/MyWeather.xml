@@ -310,7 +310,6 @@
                 <label>-</label>
                 <align>center</align>
             </control>
-            <!--todo label-->
             <control type="button" id="100" description="location toggle">
                 <width>500</width>
                 <font>size36</font>

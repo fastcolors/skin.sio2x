@@ -14,7 +14,6 @@
                 <aspectratio>stretch</aspectratio>
                 <texture border="150">images/Dialog.png</texture>
             </control>
-            <!--todo labels-->
             <control type="grouplist" id="9000">
                 <include>DialogGLs</include>
                 <control type="button" id="0">

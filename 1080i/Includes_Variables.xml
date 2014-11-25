@@ -159,13 +159,6 @@
         <value condition="Container(575).HasFocus(16)">icons/qmark.png</value>
     </variable>
 
-    <!--todo nowplay back in first???-->
-    <variable name="nowplay">
-        <value condition="Pvr.IsPlayingTV">$INFO[]</value>
-        <value condition="IsEmpty(Player.Art(tvshow.poster))">$INFO[VideoPlayer.Cover]</value>
-        <value>$INFO[Player.Art(tvshow.poster)]</value>
-    </variable>
-
     <variable name="locandine">
         <!--<value condition="Container.Content(countries)">$INFO[ListItem.Label,flags/,.png]</value>-->
         <value condition="Container.Content(episodes) + !IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>

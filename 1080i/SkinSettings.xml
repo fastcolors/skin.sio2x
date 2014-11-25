@@ -84,14 +84,14 @@
                 </control>
                 <control type="radiobutton" id="11">
                     <height>settingsheight</height>
-                    <label>$LOCALIZE[31028]</label>
+                    <label>31028</label>
                     <onclick condition="IsEmpty(Skin.String(CustomBgHome))">Skin.SetFile(CustomBgHome,.jpg|.png,special://skin/backgrounds)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(CustomBgHome))">Skin.Reset(CustomBgHome)</onclick>
                     <selected>!IsEmpty(Skin.String(CustomBgHome))</selected>
                 </control>
                 <control type="radiobutton" id="12">
                     <height>settingsheight</height>
-                    <label>$LOCALIZE[31030]</label>
+                    <label>31030</label>
                     <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetImage(ShelfCustomImage)</onclick>
                     <onclick condition="Skin.HasSetting(CustomImage)">Skin.Reset(CustomImage)</onclick>
                     <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetBool(CustomImage)</onclick>
@@ -107,24 +107,23 @@
                     <height>settingsheight</height>
                     <description>NO3D Option</description>
                     <align>left</align>
-                    <label>$LOCALIZE[31421]</label>
+                    <label>31421</label>
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <onclick>Skin.ToggleSetting(no3d)</onclick>
                     <selected>!Skin.HasSetting(no3d)</selected>
                 </control>
                 <control type="radiobutton" id="16">
                     <height>settingsheight</height>
-                    <label>$LOCALIZE[31067]</label>
+                    <label>31067</label>
                     <onclick>Skin.ToggleSetting(noinfosicon)</onclick>
                     <selected>!Skin.HasSetting(noinfosicon)</selected>
                 </control>
                 <control type="radiobutton" id="17">
                     <height>settingsheight</height>
-                    <label>$LOCALIZE[31027]</label>
+                    <label>31027</label>
                     <onclick>Skin.ToggleSetting(unwatchedbadge)</onclick>
                     <selected>!Skin.HasSetting(unwatchedbadge)</selected>
                 </control>
-                <!--todo label-->
                  <control type="radiobutton" id="18">
                     <height>settingsheight</height>
                     <label>31069</label>

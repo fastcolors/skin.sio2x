@@ -191,7 +191,6 @@
         </control>
     </include>
     <include name="WindowsTopInfos">
-        <!--todo move name of window icon view up-->
         <include>clockandkodi</include>
         <!--VIEWTOPINFOS-->
         <control type="grouplist" description="LIST + BIGLIST">
