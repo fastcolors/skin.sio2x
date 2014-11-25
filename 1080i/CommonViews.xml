@@ -79,12 +79,13 @@
                 <label>[B]$INFO[ListItem.Premiered,$LOCALIZE[20416]: ][/B]</label>
             </control>
             <control type="image" description="Studio">
+                <visible>!IsEmpty(listItem.Studio)</visible>
                 <centerleft>480</centerleft>
                 <top>-100</top>
                 <width>161</width>
                 <height>100</height>
                 <fadetime>100</fadetime>
-                <texture background="true">$INFO[ListItem.Studio,special://home/addons/sio2x.extrapack/studios_extrapack/,.png]</texture>
+                <texture background="true" fallback="defaultgenericstudio.png">$INFO[ListItem.Studio,special://home/addons/sio2x.extrapack/studios_extrapack/,.png]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="group" description="EPISODES BADGES">

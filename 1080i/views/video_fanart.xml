@@ -15,14 +15,6 @@
                     <textcolor>orange</textcolor>
                     <info>ListItem.Label</info>
                 </control>
-                <control type="image" description="Line Split">
-                    <centerleft>960</centerleft>
-                    <top>512</top>
-                    <width>161</width>
-                    <height>91</height>
-                    <texture colordiffuse="main">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Studio].png</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
                 <control type="image" description="lineplot">
                     <centerleft>960</centerleft>
                     <top>73</top>
@@ -48,20 +40,19 @@
                     <texture colordiffuse="main">lines/LineSH.png</texture>
                 </control>
                 <control type="image" description="Stars rating">
-                    <centerleft>960</centerleft>
-                    <top>410</top>
+                    <left>645</left>
+                    <top>415</top>
                     <height>40</height>
                     <width>255</width>
                     <aspectratio>keep</aspectratio>
                     <texture colordiffuse="main">$INFO[ListItem.Rating,badges/,.png]</texture>
                 </control>
                 <control type="label">
-                    <centerleft>960</centerleft>
-                    <top>442</top>
+                    <left>645</left>
+                    <top>450</top>
                     <font>size27</font>
                     <height>40</height>
-                    <align>center</align>
-                    <width>1724</width>
+                    <width>1275</width>
                     <label>$VAR[TopLabel]</label>
                 </control>
                 <control type="grouplist" description="Flags">
@@ -111,17 +102,24 @@
                         <texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>
                     </control>
                 </control>
+                <control type="image" description="StudioLogo">
+                    <top>435</top>
+                    <left>480</left>
+                    <height>91</height>
+                    <width>161</width>
+                    <texture colordiffuse="main" fallback="defaultgenericstudio.png">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Studio].png</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
                 <control type="label" description="Genre">
-                    <centerleft>960</centerleft>
-                    <top>470</top>
+                    <left>645</left>
+                    <top>485</top>
                     <font>size27</font>
-                    <width>924</width>
+                    <width>1275</width>
                     <height>50</height>
-                    <align>center</align>
                     <label>[COLOR=gray]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
                 </control>
             </control>
-            <control type="fixedlist" id="500" description="Shortcuts">
+            <control type="fixedlist" id="500">
                 <visible>Container.content(movies) | container.content(seasons) | container.content(musicvideos) | container.content(tvshows)</visible>
                 <onup condition="!Skin.HasSetting(ViewsMenuOff)">9000</onup>
                 <onup condition="Skin.HasSetting(ViewsMenuOff)">noop</onup>
