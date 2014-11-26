@@ -25,7 +25,7 @@
             <control type="panel" id="50" description="ICON PANEL">
                 <width>1800</width>
                 <height>600</height>
-                <top>518</top>
+                <top>491</top>
                 <left>60</left>
                 <onleft>50</onleft>
                 <onright>50</onright>
@@ -574,26 +574,51 @@
                     <!--<label>$LOCALIZE[0]</label>-->
                     <!--<onclick>Skin.ToggleSetting(hideprog)</onclick>-->
                     <!--</item>-->
-                    <item id="1011" description="Sources">
+                    <!--todo label-->
+                    <item id="359">
+                        <visible>!Skin.HasSetting(hidetheater)</visible>
+                        <thumb>icons/extendedinfotheater.png</thumb>
+                        <label>31422</label>
+                        <onclick>Skin.ToggleSetting(hidetheater)</onclick>
+                    </item>
+                    <item id="359">
+                        <visible>Skin.HasSetting(hidetheater)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>31422</label>
+                        <onclick>Skin.ToggleSetting(hidetheater)</onclick>
+                    </item>
+                    <!--todo label-->
+                    <item id="360">
+                        <visible>!Skin.HasSetting(hidedvdrel)</visible>
+                        <thumb>icons/extendedinfodvd.png</thumb>
+                        <label>31423</label>
+                        <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
+                    </item>
+                    <item id="360">
+                        <visible>Skin.HasSetting(hidedvdrel)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>31423</label>
+                        <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
+                    </item>
+                    <item id="347" description="Sources">
                         <visible>!Skin.HasSetting(hideSources)</visible>
                         <thumb>icons/Sources.png</thumb>
                         <label>20094</label>
                         <onclick>Skin.ToggleSetting(hideSources)</onclick>
                     </item>
-                    <item id="1011" description="Sources">
+                    <item id="347" description="Sources">
                         <visible>Skin.HasSetting(hideSources)</visible>
                         <thumb>help/Off.png</thumb>
                         <label>20094</label>
                         <onclick>Skin.ToggleSetting(hideSources)</onclick>
                     </item>
-                    <!--todo label-->
-                    <item id="1011" description="video root">
+                    <item id="361" description="video root">
                         <visible>!Skin.HasSetting(hidevidroot)</visible>
                         <thumb>icons/vidroot.png</thumb>
                         <label>3</label>
                         <onclick>Skin.ToggleSetting(hidevidroot)</onclick>
                     </item>
-                    <item id="1011" description="video root">
+                    <item id="361" description="video root">
                         <visible>Skin.HasSetting(hidevidroot)</visible>
                         <thumb>help/Off.png</thumb>
                         <label>3</label>
@@ -667,19 +692,6 @@
                 <enable>!Skin.HasSetting(hidemovie)</enable>
                 <onclick>Skin.SetString(moviesshelf,RND)</onclick>
             </control>
-            <control type="button" id="104">
-                <enable>false</enable>
-                <width>1500</width>
-                <height>1</height>
-                <texturenofocus>lines/Line1.png</texturenofocus>
-            </control>
-            <control type="radiobutton" id="105" description="Trailers">
-                <include>SettingsSubmenuButtons</include>
-                <label>$LOCALIZE[31015]</label>
-                <selected>Skin.HasSetting(trailershelf)</selected>
-                <enable>!Skin.HasSetting(hidemovie) + System.HasAddon(plugin.video.itunes_trailers)</enable>
-                <onclick>Skin.ToggleSetting(trailershelf)</onclick>
-            </control>
         </control>
         <control type="grouplist" id="520" description="TV">
             <top>100</top>
@@ -703,11 +715,11 @@
                 <onclick>Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
             </control>
             <!--<control type="radiobutton" id="204" description="Intruder">-->
-                <!--<include>SettingsSubmenuButtons</include>-->
-                <!--<label>$LOCALIZE[31045]</label>-->
-                <!--<selected>!Skin.HasSetting(intruderTV)</selected>-->
-                <!--<enable>!Skin.HasSetting(hidetv) + !Skin.HasSetting(TVShelf_Watchlist)</enable>-->
-                <!--<onclick>Skin.ToggleSetting(intruderTV)</onclick>-->
+            <!--<include>SettingsSubmenuButtons</include>-->
+            <!--<label>$LOCALIZE[31045]</label>-->
+            <!--<selected>!Skin.HasSetting(intruderTV)</selected>-->
+            <!--<enable>!Skin.HasSetting(hidetv) + !Skin.HasSetting(TVShelf_Watchlist)</enable>-->
+            <!--<onclick>Skin.ToggleSetting(intruderTV)</onclick>-->
             <!--</control>-->
         </control>
         <control type="grouplist" id="520" description="Music">

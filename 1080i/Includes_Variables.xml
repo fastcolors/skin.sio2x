@@ -244,7 +244,6 @@
     </variable>
 
     <variable name="shelfmovies">
-        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),TR)">plugin://plugin.video.itunes_trailers/</value>
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">special://skin/resources/laststarted.xsp</value>
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),RND)">special://skin/resources/random.xsp</value>
         <value condition="Container(9000).HasFocus(601)">$INFO[Skin.String(HomeFav.1.List)]</value>
@@ -256,6 +255,10 @@
         <value condition="Container(9000).HasFocus(607)">$INFO[Skin.String(HomeFav.7.List)]</value>
         <value condition="Container(9000).HasFocus(608)">$INFO[Skin.String(HomeFav.8.List)]</value>
         <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
+        <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">plugin://script.extendedinfo?info=upcoming&amp;&amp;limit=18</value>
+        <value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=intheaters&amp;&amp;limit=18</value>
+        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">plugin://script.extendedinfo?info=upcomingdvds&amp;&amp;limit=18</value>
+        <value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=currentdvdreleases&amp;&amp;limit=18</value>
         <value condition="Container(9000).HasFocus(340)">videodb://recentlyaddedmovies/</value>
         <value>-</value>
     </variable>
@@ -282,6 +285,12 @@
     </variable>
 
     <variable name="shelflabel">
+        <!--THEATERS-->
+        <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">UPCOMING</value>
+        <value condition="Container(9000).HasFocus(359)">IN THEATHRES</value>
+        <!--DVDS-->
+        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">UPCOMING</value>
+        <value condition="Container(9000).HasFocus(360)">NOW ON DVD</value>
         <!--MOVIES-->
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">$LOCALIZE[31419]</value>
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[31015]</value>

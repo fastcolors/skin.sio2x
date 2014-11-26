@@ -57,6 +57,7 @@
                         <texture>$VAR[dvdbox]</texture>
                     </control>
                     <control type="textbox">
+                        <visible>!Container(9000).HasFocus(359)</visible>
                         <centerleft>160</centerleft>
                         <top>28</top>
                         <width>268</width>
@@ -66,6 +67,19 @@
                         <shadowcolor>black</shadowcolor>
                         <autoscroll>false</autoscroll>
                         <label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Year,(,)][CR][CR]$INFO[ListItem.Duration] $LOCALIZE[12391][CR][CR]$INFO[ListItem.Genre][CR][CR]$INFO[ListItem.MPAA]</label>
+                        <align>center</align>
+                    </control>
+                    <control type="textbox">
+                        <visible>Container(9000).HasFocus(359)</visible>
+                        <centerleft>160</centerleft>
+                        <top>28</top>
+                        <width>268</width>
+                        <height>405</height>
+                        <font>size26</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <autoscroll>false</autoscroll>
+                        <label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Property(Year),(,)][CR][CR]$INFO[ListItem.Property(Duration),,$LOCALIZE[12391]][CR][CR]Release Date:[CR]$INFO[ListItem.Property(premiered)][CR][CR]$INFO[ListItem.Property(mpaa)]</label>
                         <align>center</align>
                     </control>
                     <control type="image">
@@ -552,7 +566,22 @@
     </include>
     <include name="Movies">
         <control type="panel" id="311" description="Movies Shelf Shortcuts">
-            <visible>Library.HasContent(Movies) + [Container(9000).HasFocus(340) | Container(9000).HasFocus(357) | Control.HasFocus(311) | [Container(9000).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.List))] | [Container(9000).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.List))] | [Container(9000).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.List))] | [Container(9000).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.List))] | [Container(9000).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.List))] | [Container(9000).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.List))] | [Container(9000).HasFocus(607) + !IsEmpty(Skin.String(HomeFav.7.List))] | [Container(9000).HasFocus(608) + !IsEmpty(Skin.String(HomeFav.8.List))]]</visible>
+            <visible>
+                Library.HasContent(Movies) +
+                [Container(9000).HasFocus(340)
+                | Container(9000).HasFocus(357)
+                | Container(9000).HasFocus(359)
+                | Container(9000).HasFocus(360)
+                | Control.HasFocus(311)
+                | [Container(9000).HasFocus(601) + !IsEmpty(Skin.String(HomeFav.1.List))]
+                | [Container(9000).HasFocus(602) + !IsEmpty(Skin.String(HomeFav.2.List))]
+                | [Container(9000).HasFocus(603) + !IsEmpty(Skin.String(HomeFav.3.List))]
+                | [Container(9000).HasFocus(604) + !IsEmpty(Skin.String(HomeFav.4.List))]
+                | [Container(9000).HasFocus(605) + !IsEmpty(Skin.String(HomeFav.5.List))]
+                | [Container(9000).HasFocus(606) + !IsEmpty(Skin.String(HomeFav.6.List))]
+                | [Container(9000).HasFocus(607) + !IsEmpty(Skin.String(HomeFav.7.List))]
+                | [Container(9000).HasFocus(608) + !IsEmpty(Skin.String(HomeFav.8.List))]]
+            </visible>
             <onup condition="IsEmpty(Container(311).ListItem.Trailer)">9009</onup>
             <onup condition="!IsEmpty(Container(311).ListItem.Trailer)">9010</onup>
             <ondown>9000</ondown>
@@ -1338,7 +1367,7 @@
                 <onleft>319</onleft>
                 <onright>319</onright>
                 <include>FavShortcutsCommons</include>
-                <content>favourites://</content>
+                <content>plugin://script.extendedinfo?info=favourites</content>
             </control>
             <control type="image">
                 <visible>Control.HasFocus(319)</visible>

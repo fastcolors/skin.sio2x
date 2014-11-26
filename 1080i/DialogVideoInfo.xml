@@ -55,7 +55,7 @@
             <control type="label">
                 <animation effect="slide" end="132,0" condition="System.HasAddon(sio2x.extrapack)">Conditional</animation>
                 <top>96</top>
-                 <left>0</left>
+                <left>0</left>
                 <width>880</width>
                 <height>45</height>
                 <font>size27</font>
@@ -421,5 +421,23 @@
             <texture colordiffuse="main" fallback="defaultgenericstudio.png">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Studio].png</texture>
             <aspectratio>keep</aspectratio>
         </control>
+        <!--<control type="list">-->
+            <!--<height>1080</height>-->
+            <!--<itemlayout height="80">-->
+                <!--<control type="label">-->
+                    <!--<width>132</width>-->
+                    <!--<height>80</height>-->
+                    <!--<info>ListItem.Label</info>-->
+                <!--</control>-->
+            <!--</itemlayout>-->
+            <!--<focusedlayout height="80">-->
+                <!--<control type="label">-->
+                    <!--<width>132</width>-->
+                    <!--<height>80</height>-->
+                    <!--<info>ListItem.Label</info>-->
+                <!--</control>-->
+            <!--</focusedlayout>-->
+            <!--<content>plugin://script.populate.set/</content>-->
+        <!--</control>-->
     </controls>
 </window>

@@ -386,3 +386,11 @@ msgstr "Show or Hide 3D movies from Regular Library List. If Off, when Library i
 msgctxt "#31421"
 msgid "3D Content in Movies List"
 msgstr "3D Content in Movies List"
+
+msgctxt "#31422"
+msgid "Theaters"
+msgstr "Theaters"
+
+msgctxt "#31423"
+msgid "DVD Releases"
+msgstr "DVD Releases"
