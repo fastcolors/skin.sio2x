@@ -25,6 +25,7 @@
             <property name="unwatched">$INFO[Window(Home).Property(Movies.UnWatched)]</property>
             <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp",return)</onclick>
             <onclick condition="!Skin.HasSetting(no3d)">ActivateWindow(Videos,MovieTitles,return)</onclick>
+            <!--<onclick>RunScript(plugin.synology.ds)</onclick>-->
         </item>
         <!--TV SHOWS-->
         <item id="341">
@@ -101,6 +102,7 @@
             <onclick>ActivateWindow(2)</onclick>
         </item>
         <!--WEATHER-->
+        <!--todo setting to swithc between page or shelf maps-->
         <item id="345">
             <visible>!Skin.HasSetting(hidewtr)</visible>
             <property name="weatherthumb">$INFO[Window(weather).Property(Current.FanartCode),weathershelf/,.png]</property>
@@ -108,6 +110,7 @@
             <property name="color">orange</property>>
             <onclick condition="IsEmpty(Weather.plugin)">activatewindow(WeatherSettings)</onclick>
             <onclick condition="!IsEmpty(Weather.plugin)">ActivateWindow(MyWeather)</onclick>
+            <!--<onclick condition="!IsEmpty(Weather.plugin)">SetFocus(414)</onclick>-->
         </item>
         <!--3D MOVIES-->
         <item id="357">
@@ -133,6 +136,22 @@
             <label>137</label>
             <property name="color">lightblue</property>>
             <onclick>RunAddon(script.globalsearch)</onclick>
+        </item>
+        <!--EXTENDEDINFO-->
+        <item id="359">
+            <visible>!Skin.HasSetting(hidetheater) + System.HasAddon(script.extendedinfo)</visible>
+            <thumb>icons/extendedinfotheater.png</thumb>
+            <label>31422</label>
+            <property name="color">orange</property>
+            <onclick>SetFocus(700)</onclick>
+        </item>
+         <!--EXTENDEDINFO2-->
+        <item id="360">
+            <visible>!Skin.HasSetting(hidedvdrel) + System.HasAddon(script.extendedinfo)</visible>
+            <thumb>icons/extendedinfodvd.png</thumb>
+            <label>31423</label>
+            <property name="color">green3</property>
+            <onclick>SetFocus(700)</onclick>
         </item>
         <!--CUSTOM-->
         <item id="601" description="Custom Fvourite">
@@ -308,24 +327,6 @@
             <label>$INFO[system.addonTitle(Skin.String(HomeAddon.12.Label))]</label>
             <property name="color">progcolor</property>>
             <onclick>RunAddon($INFO[Skin.String(HomeAddon.12.Label)])</onclick>
-        </item>
-        <!--EXTENDEDINFO-->
-        <!--todo label-->
-        <item id="359">
-            <visible>!Skin.HasSetting(hidetheater)</visible>
-            <thumb>icons/extendedinfotheater.png</thumb>
-            <label>31422</label>
-            <property name="color">orange</property>
-            <onclick>SetFocus(700)</onclick>
-        </item>
-         <!--EXTENDEDINFO2-->
-        <!--todo label-->
-        <item id="360">
-            <visible>!Skin.HasSetting(hidedvdrel)</visible>
-            <thumb>icons/extendedinfodvd.png</thumb>
-            <label>31423</label>
-            <property name="color">green3</property>
-            <onclick>SetFocus(700)</onclick>
         </item>
         <!--SOURCES-->
         <item id="347">

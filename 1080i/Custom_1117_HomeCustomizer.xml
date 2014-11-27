@@ -485,7 +485,6 @@
                         <label>+ $LOCALIZE[24009]</label>
                         <onclick>Skin.SetAddon(HomeAddon.8.Label,xbmc.python.script)</onclick>
                     </item>
-
                     <item id="503" description="ScriptCustom">
                         <visible>!IsEmpty(Skin.String(HomeAddon.9.Label)) + IsEmpty(Skin.String(HomeAddon.9.Icon))</visible>
                         <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.9.Label))]</thumb>
@@ -504,8 +503,6 @@
                         <label>+ $LOCALIZE[24009]</label>
                         <onclick>Skin.SetAddon(HomeAddon.9.Label,xbmc.python.script)</onclick>
                     </item>
-
-
                     <item id="504" description="ScriptCustom">
                         <visible>!IsEmpty(Skin.String(HomeAddon.10.Label)) + IsEmpty(Skin.String(HomeAddon.10.Icon))</visible>
                         <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.10.Label))]</thumb>
@@ -524,8 +521,6 @@
                         <label>+ $LOCALIZE[24009]</label>
                         <onclick>Skin.SetAddon(HomeAddon.10.Label,xbmc.python.script)</onclick>
                     </item>
-
-
                     <item id="505" description="ScriptCustom">
                         <visible>!IsEmpty(Skin.String(HomeAddon.11.Label)) + IsEmpty(Skin.String(HomeAddon.11.Icon))</visible>
                         <thumb>$INFO[system.addonicon(Skin.String(HomeAddon.11.Label))]</thumb>
@@ -562,37 +557,23 @@
                         <label>+ $LOCALIZE[24009]</label>
                         <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
                     </item>
-                    <!--<item id="1008" description="Programs">-->
-                    <!--<visible>!Skin.HasSetting(hideprog)</visible>-->
-                    <!--<thumb>icons/program.png</thumb>-->
-                    <!--<label>$LOCALIZE[0]</label>-->
-                    <!--<onclick>Skin.ToggleSetting(hideprog)</onclick>-->
-                    <!--</item>-->
-                    <!--<item id="1008" description="Programs">-->
-                    <!--<visible>Skin.HasSetting(hideprog)</visible>-->
-                    <!--<thumb>help/Off.png</thumb>-->
-                    <!--<label>$LOCALIZE[0]</label>-->
-                    <!--<onclick>Skin.ToggleSetting(hideprog)</onclick>-->
-                    <!--</item>-->
-                    <!--todo label-->
                     <item id="359">
-                        <visible>!Skin.HasSetting(hidetheater)</visible>
+                        <visible>!Skin.HasSetting(hidetheater) + System.HasAddon(script.extendedinfo)</visible>
                         <thumb>icons/extendedinfotheater.png</thumb>
                         <label>31422</label>
                         <onclick>Skin.ToggleSetting(hidetheater)</onclick>
                     </item>
                     <item id="359">
-                        <visible>Skin.HasSetting(hidetheater)</visible>
+                        <visible>Skin.HasSetting(hidetheater) + System.HasAddon(script.extendedinfo)</visible>
                         <thumb>help/Off.png</thumb>
                         <label>31422</label>
                         <onclick>Skin.ToggleSetting(hidetheater)</onclick>
                     </item>
-                    <!--todo label-->
                     <item id="360">
-                        <visible>!Skin.HasSetting(hidedvdrel)</visible>
+                        <visible>!Skin.HasSetting(hidedvdrel) + System.HasAddon(script.extendedinfo)</visible>
                         <thumb>icons/extendedinfodvd.png</thumb>
                         <label>31423</label>
-                        <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
+                        <onclick>Skin.ToggleSetting(hidedvdrel) + System.HasAddon(script.extendedinfo)</onclick>
                     </item>
                     <item id="360">
                         <visible>Skin.HasSetting(hidedvdrel)</visible>

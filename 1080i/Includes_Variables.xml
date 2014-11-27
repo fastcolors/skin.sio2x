@@ -218,11 +218,19 @@
         <!--red-->
         <value condition="SubString(Container(311).ListItem.MPAA,R,Right)">CCFF0000</value>
         <value condition="SubString(Container(311).ListItem.MPAA,18)">CCFF0000</value>
+        <!--PROPERTY-->
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),R,Right)">CCFF0000</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),18)">CCFF0000</value>
         <!--orange-->
         <value condition="SubString(Container(311).ListItem.MPAA,PG-13)">CCFF8800</value>
         <value condition="SubString(Container(311).ListItem.MPAA,12)">CCFF8800</value>
         <value condition="SubString(Container(311).ListItem.MPAA,15)">CCFF8800</value>
         <value condition="SubString(Container(311).ListItem.MPAA,16)">CCFF8800</value>
+        <!--PROPERTY-->
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),PG-13)">CCFF8800</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),12)">CCFF8800</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),15)">CCFF8800</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),16)">CCFF8800</value>
         <!--green-->
         <value condition="SubString(Container(311).ListItem.MPAA,6)">CCFF8800</value>
         <value condition="SubString(Container(311).ListItem.MPAA,PG,Right)">CC00FF00</value>
@@ -231,7 +239,16 @@
         <value condition="SubString(Container(311).ListItem.MPAA,T,Right)">CC00FF00</value>
         <value condition="SubString(Container(311).ListItem.MPAA,10)">CCFF8800</value>
         <value condition="SubString(Container(311).ListItem.MPAA,Livre)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.MPAA,o.A) | StringCompare(Container(311).ListItem.MPAA,Germany)">CCFF8800</value>
+        <!--PROPERTY-->
+        <value condition="SubString(Container(311).ListItem.MPAA,o.A) | StringCompare(Container(311).ListItem.Property(mpaa),Germany)">CCFF8800</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa)AA,6)">CCFF8800</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),PG,Right)">CC00FF00</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),G,Right)">CC00FF00</value>
+        <value condition="StringCompare(Container(311).ListItem.Property(mpaa),U)">CC00FF00</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),T,Right)">CC00FF00</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),10)">CCFF8800</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),Livre)">CCFF8800</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),o.A) | StringCompare(Container(311).ListItem.Property(mpaa),Germany)">CCFF8800</value>
         <!--tv-->
         <!--red-->
         <value condition="Control.HasFocus(312) + SubString(Container(312).ListItem.MPAA,TV-MA)">CCFF0000</value>
@@ -257,7 +274,8 @@
         <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
         <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">plugin://script.extendedinfo?info=upcoming&amp;&amp;limit=18</value>
         <value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=intheaters&amp;&amp;limit=18</value>
-        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">plugin://script.extendedinfo?info=upcomingdvds&amp;&amp;limit=18</value>
+        <!--<value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">plugin://script.extendedinfo?info=upcomingdvds&amp;&amp;limit=18</value>-->
+        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">plugin://script.extendedinfo?info=populartvshows&amp;&amp;limit=18</value>
         <value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=currentdvdreleases&amp;&amp;limit=18</value>
         <value condition="Container(9000).HasFocus(340)">videodb://recentlyaddedmovies/</value>
         <value>-</value>
@@ -286,11 +304,12 @@
 
     <variable name="shelflabel">
         <!--THEATERS-->
-        <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">UPCOMING</value>
-        <value condition="Container(9000).HasFocus(359)">IN THEATHRES</value>
-        <!--DVDS-->
-        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">UPCOMING</value>
-        <value condition="Container(9000).HasFocus(360)">NOW ON DVD</value>
+        <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">$LOCALIZE[31424]</value>
+        <value condition="Container(9000).HasFocus(359)">$LOCALIZE[31426]</value>
+        <!--HOME-->
+        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">popular tvshows</value>
+        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">$LOCALIZE[31427]</value>
+        <value condition="Container(9000).HasFocus(360)">$LOCALIZE[31425]</value>
         <!--MOVIES-->
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">$LOCALIZE[31419]</value>
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[31015]</value>
