@@ -45,7 +45,7 @@
                 <!--CINEMAS-->
                 <onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),)">Skin.SetString(theatersshelf,1)</onclick>
                 <onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,)</onclick>
-                 <!--DVDS-->
+                <!--DVDS-->
                 <onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),)">Skin.SetString(dvdsshelf,1)</onclick>
                 <onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">Skin.SetString(dvdsshelf,2)</onclick>
                 <onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">Skin.SetString(dvdsshelf,)</onclick>
@@ -70,61 +70,61 @@
             <control type="group" description="Furniture">
                 <top>480</top>
                 <control type="panel" id="9000" description="ICONE">
-                    <width>1800</width>
+                    <width>1820</width>
                     <height>1080</height>
                     <top>52</top>
-                    <left>60</left>
+                    <centerleft>960</centerleft>
                     <onleft>9000</onleft>
                     <onright>9000</onright>
                     <onup>700</onup>
                     <ondown>noop</ondown>
                     <orientation>vertical</orientation>
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
-                    <itemlayout height="220" width="300">
+                    <itemlayout height="220" width="260">
                         <control type="image" description="Always Colored Base">
                             <visible>Skin.HasSetting(colormenu)</visible>
-                            <centerleft>150</centerleft>
+                            <centerleft>130</centerleft>
                             <centertop>110</centertop>
-                            <width>260</width>
+                            <width>220</width>
                             <height>168</height>
-                            <texture>icons/base.png</texture>
+                            <texture border="40">icons/base.png</texture>
                         </control>
                         <control type="image" description="Gray Base">
                             <visible>!Skin.HasSetting(colormenu)</visible>
-                            <centerleft>150</centerleft>
+                            <centerleft>130</centerleft>
                             <centertop>110</centertop>
-                            <width>260</width>
+                            <width>220</width>
                             <height>168</height>
-                            <texture>$INFO[ListItem.Property(color),icons/,.png]</texture>
+                            <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
                         </control>
                         <control type="image" description="Thumb">
                             <visible>!IsEmpty(Listitem.thumb)</visible>
-                            <centerleft>150</centerleft>
+                            <centerleft>130</centerleft>
                             <centertop>110</centertop>
-                            <width>260</width>
+                            <width>220</width>
                             <height>168</height>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                         </control>
                         <control type="image" description="Thumb">
                             <visible>IsEmpty(Listitem.thumb)</visible>
-                            <centerleft>150</centerleft>
+                            <centerleft>130</centerleft>
                             <centertop>110</centertop>
-                            <width>260</width>
+                            <width>220</width>
                             <height>168</height>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                         </control>
                         <control type="image" description="THMBS weather">
-                            <centerleft>150</centerleft>
+                            <centerleft>130</centerleft>
                             <centertop>110</centertop>
-                            <width>260</width>
+                            <width>220</width>
                             <height>138</height>
                             <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="label">
-                            <centerleft>150</centerleft>
+                            <centerleft>130</centerleft>
                             <top>198</top>
-                            <width>300</width>
+                            <width>240</width>
                             <height>24</height>
                             <font>size24</font>
                             <align>center</align>
@@ -133,11 +133,11 @@
                         <control type="group">
                             <visible>!Skin.HasSetting(unwatchedbadge)</visible>
                             <visible>IntegerGreaterThan(ListItem.Property(unwatched),0)</visible>
-                            <animation effect="zoom" center="260,47" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
+                            <animation effect="zoom" center="230,47" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
                             <top>20</top>
                             <control type="image">
                                 <visible>!IntegerGreaterThan(ListItem.Property(unwatched),999)</visible>
-                                <centerleft>260</centerleft>
+                                <centerleft>230</centerleft>
                                 <height>55</height>
                                 <width>55</width>
                                 <aspectratio>keep</aspectratio>
@@ -145,14 +145,14 @@
                             </control>
                             <control type="image">
                                 <visible>IntegerGreaterThan(ListItem.Property(unwatched),999)</visible>
-                                <centerleft>260</centerleft>
+                                <centerleft>230</centerleft>
                                 <height>55</height>
                                 <width>75</width>
                                 <!--<aspectratio>keep</aspectratio>-->
                                 <texture border="25">Badges/Badgecount.png</texture>
                             </control>
                             <control type="label">
-                                <centerleft>260</centerleft>
+                                <centerleft>230</centerleft>
                                 <height>55</height>
                                 <width>65</width>
                                 <font>size21</font>
@@ -163,75 +163,74 @@
                             </control>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="220" width="300">
-                        <control type="image" description="Gray Base">
+                    <focusedlayout height="220" width="260">
+                        <control type="image" description="Always Colored Base">
                             <visible>Skin.HasSetting(colormenu)</visible>
-                            <centerleft>150</centerleft>
+                            <centerleft>130</centerleft>
                             <centertop>110</centertop>
-                            <width>260</width>
+                            <width>220</width>
                             <height>168</height>
-                            <texture>icons/base.png</texture>
+                            <texture border="40">icons/base.png</texture>
                         </control>
-                        <control type="image" description="Coloring Icon">
-                            <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
-                            <animation condition="Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
-                            <centerleft>150</centerleft>
+                        <control type="image" description="Gray Base">
+                            <visible>!Skin.HasSetting(colormenu)</visible>
+                            <centerleft>130</centerleft>
                             <centertop>110</centertop>
-                            <width>260</width>
+                            <width>220</width>
                             <height>168</height>
-                            <texture>$INFO[ListItem.Property(color),icons/,.png]</texture>
+                            <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
                         </control>
                         <control type="image" description="Thumb">
                             <visible>!IsEmpty(Listitem.thumb)</visible>
-                            <centerleft>150</centerleft>
+                            <centerleft>130</centerleft>
                             <centertop>110</centertop>
-                            <width>260</width>
+                            <width>220</width>
                             <height>168</height>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                         </control>
                         <control type="image" description="Thumb">
                             <visible>IsEmpty(Listitem.thumb)</visible>
-                            <centerleft>150</centerleft>
+                            <centerleft>130</centerleft>
                             <centertop>110</centertop>
-                            <width>260</width>
+                            <width>220</width>
                             <height>168</height>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                         </control>
-                        <control type="image" description="THMBS WEATHER">
-                            <centerleft>150</centerleft>
+                        <control type="image" description="THMBS weather">
+                            <centerleft>130</centerleft>
                             <centertop>110</centertop>
-                            <width>260</width>
+                            <width>220</width>
                             <height>138</height>
                             <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
-                        <control type="image">
-                            <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
-                            <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
-                            <centerleft>150</centerleft>
-                            <centertop>110</centertop>
-                            <width>260</width>
-                            <height>168</height>
-                            <texture>images/atvslider.png</texture>
-                            <colordiffuse>main</colordiffuse>
-                        </control>
                         <control type="label">
-                            <centerleft>150</centerleft>
+                            <centerleft>130</centerleft>
                             <top>198</top>
-                            <width>300</width>
+                            <width>240</width>
                             <height>24</height>
                             <font>size24</font>
                             <align>center</align>
                             <label>[B]$INFO[ListItem.label][/B]</label>
                         </control>
+                        <control type="image">
+                            <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
+                            <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
+                            <centerleft>130</centerleft>
+                            <centertop>110</centertop>
+                            <width>220</width>
+                            <height>168</height>
+                            <texture border="40">images/atvslider.png</texture>
+                            <colordiffuse>main</colordiffuse>
+                        </control>
                         <control type="group">
                             <visible>!Skin.HasSetting(unwatchedbadge)</visible>
                             <visible>IntegerGreaterThan(ListItem.Property(unwatched),0)</visible>
-                            <animation effect="zoom" center="260,47" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
+                            <animation effect="zoom" center="230,47" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
                             <top>20</top>
                             <control type="image">
                                 <visible>!IntegerGreaterThan(ListItem.Property(unwatched),999)</visible>
-                                <centerleft>260</centerleft>
+                                <centerleft>230</centerleft>
                                 <height>55</height>
                                 <width>55</width>
                                 <aspectratio>keep</aspectratio>
@@ -239,14 +238,14 @@
                             </control>
                             <control type="image">
                                 <visible>IntegerGreaterThan(ListItem.Property(unwatched),999)</visible>
-                                <centerleft>260</centerleft>
+                                <centerleft>230</centerleft>
                                 <height>55</height>
                                 <width>75</width>
                                 <!--<aspectratio>keep</aspectratio>-->
                                 <texture border="25">Badges/Badgecount.png</texture>
                             </control>
                             <control type="label">
-                                <centerleft>260</centerleft>
+                                <centerleft>230</centerleft>
                                 <height>55</height>
                                 <width>65</width>
                                 <font>size21</font>
