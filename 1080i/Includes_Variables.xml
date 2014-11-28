@@ -387,4 +387,28 @@
         <value condition="Container.Content(tvshows) | Container.Content(seasons)">[B][COLOR orange]$INFO[ListItem.Title][/COLOR][/B][CR]$INFO[ListItem.Year,(,)][CR][CR]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20360]][CR]$INFO[ListItem.Property(UnwatchedEpisodes),, $LOCALIZE[16101]][CR][CR]$INFO[ListItem.Genre][CR][CR]</value>
         <value condition="Container.Content(genres) | Container.Content(genres)">$INFO[Container.NumItems,, $LOCALIZE[20360]][CR]$INFO[ListItem.Property(UnwatchedEpisodes),, $LOCALIZE[16101]][CR][CR]$INFO[ListItem.Genre][CR][CR]</value>
     </variable>
+    
+    <variable name="weathermap">
+        <value condition="">$INFO[Window(weather).Property(Map.5.Layer)]</value>
+        <value condition="">$INFO[Window(weather).Property(Map.4.Layer)]</value>
+        <value condition="">$INFO[Window(weather).Property(Map.3.Layer)]</value>
+        <value condition="">$INFO[Window(weather).Property(Map.2.Layer)]</value>
+        <value>$INFO[Window(weather).Property(Map.1.Layer)]</value>
+    </variable>
+    
+    <variable name="weatherlegend">
+        <value condition="">$INFO[Window(weather).Property(Map.5.Legend)]</value>
+        <value condition="">$INFO[Window(weather).Property(Map.4.Legend)]</value>
+        <value condition="">$INFO[Window(weather).Property(Map.3.Legend)]</value>
+        <value condition="">$INFO[Window(weather).Property(Map.2.Legend)]</value>
+        <value>$INFO[Window(weather).Property(Map.1.Legend)]</value>
+    </variable>
+    
+    <variable name="weatherheading">
+        <value condition="">$INFO[Window(weather).Property(Map.5.Heading)]</value>
+        <value condition="">$INFO[Window(weather).Property(Map.4.Heading)]</value>
+        <value condition="">$INFO[Window(weather).Property(Map.3.Heading)]</value>
+        <value condition="">$INFO[Window(weather).Property(Map.2.Heading)]</value>
+        <value>$INFO[Window(weather).Property(Map.1.Heading)]</value>
+    </variable>
 </includes>
