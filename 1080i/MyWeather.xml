@@ -38,12 +38,13 @@
             <top>22</top>
             <control type="label" id="3">
                 <description>Location</description>
-                <centerleft>250</centerleft>
-                <top>90</top>
-                <width>400</width>
+                <centerleft>230</centerleft>
+                <top>100</top>
+                <width>240</width>
                 <label>-</label>
                 <font>size26</font>
                 <textcolor>white</textcolor>
+                <wrapmultiline>true</wrapmultiline>
                 <focusedcolor>white</focusedcolor>
                 <selectedcolor>white</selectedcolor>
                 <disabledcolor>dimgray</disabledcolor>
@@ -250,11 +251,22 @@
                 <align>center</align>
             </control>
         </control>
-        <control type="image" description="Current weather OVERLAY">
+        <!--<control type="image" description="Current weather OVERLAY">-->
+            <!--<height>540</height>-->
+            <!--<width>960</width>-->
+            <!--<aspectratio>stretch</aspectratio>-->
+            <!--<texture>$INFO[Window.Property(Current.FanartCode),weather/,.png]</texture>-->
+        <!--</control>-->
+        <control type="multiimage">
+            <description>My first slideshow control</description>
             <height>540</height>
             <width>960</width>
+            <visible>true</visible>
+            <imagepath>weather</imagepath>
+            <timeperimage>2000</timeperimage>
+            <fadetime>100</fadetime>
+            <pauseatend>10000</pauseatend>
             <aspectratio>stretch</aspectratio>
-            <texture>$INFO[Window.Property(Current.FanartCode),weather/,.png]</texture>
         </control>
         <include>clockandkodi</include>
         <!--<control type="label" description="Feels like label">-->
