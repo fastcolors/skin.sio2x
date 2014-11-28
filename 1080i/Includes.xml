@@ -688,4 +688,10 @@
         <bordertexture border="2">images/dvdbox.png</bordertexture>
         <bordersize>1</bordersize>
     </include>
+    <include name="weatherinfo">
+        <width>350</width>
+        <height>40</height>
+        <font>size36B</font>
+        <shadowcolor>-</shadowcolor>
+    </include>
 </includes>

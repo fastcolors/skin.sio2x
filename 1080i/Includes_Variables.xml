@@ -389,26 +389,26 @@
     </variable>
     
     <variable name="weathermap">
-        <value condition="">$INFO[Window(weather).Property(Map.5.Layer)]</value>
-        <value condition="">$INFO[Window(weather).Property(Map.4.Layer)]</value>
-        <value condition="">$INFO[Window(weather).Property(Map.3.Layer)]</value>
-        <value condition="">$INFO[Window(weather).Property(Map.2.Layer)]</value>
+        <value condition="StringCompare(Skin.String(maps),4)">$INFO[Window(weather).Property(Map.5.Layer)]</value>
+        <value condition="StringCompare(Skin.String(maps),3)">$INFO[Window(weather).Property(Map.4.Layer)]</value>
+        <value condition="StringCompare(Skin.String(maps),2)">$INFO[Window(weather).Property(Map.3.Layer)]</value>
+        <value condition="StringCompare(Skin.String(maps),1)">$INFO[Window(weather).Property(Map.2.Layer)]</value>
         <value>$INFO[Window(weather).Property(Map.1.Layer)]</value>
     </variable>
     
     <variable name="weatherlegend">
-        <value condition="">$INFO[Window(weather).Property(Map.5.Legend)]</value>
-        <value condition="">$INFO[Window(weather).Property(Map.4.Legend)]</value>
-        <value condition="">$INFO[Window(weather).Property(Map.3.Legend)]</value>
-        <value condition="">$INFO[Window(weather).Property(Map.2.Legend)]</value>
+        <value condition="StringCompare(Skin.String(maps),4)">$INFO[Window(weather).Property(Map.5.Legend)]</value>
+        <value condition="StringCompare(Skin.String(maps),3)">$INFO[Window(weather).Property(Map.4.Legend)]</value>
+        <value condition="StringCompare(Skin.String(maps),2)">$INFO[Window(weather).Property(Map.3.Legend)]</value>
+        <value condition="StringCompare(Skin.String(maps),1)">$INFO[Window(weather).Property(Map.2.Legend)]</value>
         <value>$INFO[Window(weather).Property(Map.1.Legend)]</value>
     </variable>
     
     <variable name="weatherheading">
-        <value condition="">$INFO[Window(weather).Property(Map.5.Heading)]</value>
-        <value condition="">$INFO[Window(weather).Property(Map.4.Heading)]</value>
-        <value condition="">$INFO[Window(weather).Property(Map.3.Heading)]</value>
-        <value condition="">$INFO[Window(weather).Property(Map.2.Heading)]</value>
+        <value condition="StringCompare(Skin.String(maps),4)">$INFO[Window(weather).Property(Map.5.Heading)]</value>
+        <value condition="StringCompare(Skin.String(maps),3)">$INFO[Window(weather).Property(Map.4.Heading)]</value>
+        <value condition="StringCompare(Skin.String(maps),2)">$INFO[Window(weather).Property(Map.3.Heading)]</value>
+        <value condition="StringCompare(Skin.String(maps),1)">$INFO[Window(weather).Property(Map.2.Heading)]</value>
         <value>$INFO[Window(weather).Property(Map.1.Heading)]</value>
     </variable>
 </includes>
