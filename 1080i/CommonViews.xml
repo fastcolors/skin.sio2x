@@ -379,7 +379,6 @@
             </control>
         </control>
     </include>
-
     <include name="SmallListMainLabel">
         <left>45</left>
         <height>80</height>
