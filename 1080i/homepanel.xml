@@ -66,7 +66,7 @@
             <visible>!Skin.HasSetting(hideaddon)</visible>
             <thumb>icons/addons.png</thumb>
             <label>24001</label>
-            <property name="color">Green3</property>>
+            <property name="color">green3</property>>
             <onclick>ActivateWindow(1118)</onclick>
         </item>
         <!--FAVOURITES-->

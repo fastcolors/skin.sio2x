@@ -141,7 +141,7 @@
                                 <height>55</height>
                                 <width>55</width>
                                 <aspectratio>keep</aspectratio>
-                                <texture>Badges/Badgecount.png</texture>
+                                <texture>badges/badgecount.png</texture>
                             </control>
                             <control type="image">
                                 <visible>IntegerGreaterThan(ListItem.Property(unwatched),999)</visible>
@@ -149,7 +149,7 @@
                                 <height>55</height>
                                 <width>75</width>
                                 <!--<aspectratio>keep</aspectratio>-->
-                                <texture border="25">Badges/Badgecount.png</texture>
+                                <texture border="25">badges/badgecount.png</texture>
                             </control>
                             <control type="label">
                                 <centerleft>230</centerleft>
@@ -242,7 +242,7 @@
                                 <height>55</height>
                                 <width>75</width>
                                 <!--<aspectratio>keep</aspectratio>-->
-                                <texture border="25">Badges/Badgecount.png</texture>
+                                <texture border="25">badges/badgecount.png</texture>
                             </control>
                             <control type="label">
                                 <centerleft>230</centerleft>
@@ -397,7 +397,7 @@
                     <label>$INFO[System.Date] • $INFO[System.Time]</label>
                 </control>
                 <control type="image" description="WebLink">
-                    <visible>System.InternetState + !Skin.HasSetting(hideconnection)</visible>
+                    <visible>StringCompare(System.InternetState,Connected) + !Skin.HasSetting(hideconnection)</visible>
                     <width>30</width>
                     <height>48</height>
                     <texture colordiffuse="main">wireless.png</texture>

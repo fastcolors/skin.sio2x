@@ -99,7 +99,7 @@
                     <height>75</height>
                     <width>75</width>
                     <aspectratio>keep</aspectratio>
-                    <texture>badges/Badgecount.png</texture>
+                    <texture>badges/badgecount.png</texture>
                 </control>
                 <control type="label" description="nuberofunwatched">
                     <centerleft>35</centerleft>

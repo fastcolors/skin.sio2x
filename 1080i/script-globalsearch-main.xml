@@ -364,7 +364,7 @@
                             <height>55</height>
                             <width>100</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>badges/Badgecount.png</texture>
+                            <texture>badges/badgecount.png</texture>
                         </control>
                         <control type="label" id="110">
                             <height>44</height>
@@ -593,7 +593,7 @@
                             <height>55</height>
                             <width>100</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>badges/Badgecount.png</texture>
+                            <texture>badges/badgecount.png</texture>
                         </control>
                         <control type="label" id="210">
                             <height>44</height>
@@ -756,7 +756,7 @@
                             <height>55</height>
                             <width>100</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>badges/Badgecount.png</texture>
+                            <texture>badges/badgecount.png</texture>
                         </control>
                         <control type="label" id="120">
                             <height>44</height>
@@ -869,7 +869,7 @@
                             <height>55</height>
                             <width>100</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>badges/Badgecount.png</texture>
+                            <texture>badges/badgecount.png</texture>
                         </control>
                         <control type="label" id="130">
                             <height>44</height>
@@ -1084,7 +1084,7 @@
                             <height>55</height>
                             <width>100</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>badges/Badgecount.png</texture>
+                            <texture>badges/badgecount.png</texture>
                         </control>
                         <control type="label" id="140">
                             <height>44</height>
@@ -1249,7 +1249,7 @@
                             <height>55</height>
                             <width>100</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>badges/Badgecount.png</texture>
+                            <texture>badges/badgecount.png</texture>
                         </control>
                         <control type="label" id="150">
                             <height>44</height>
@@ -1394,7 +1394,7 @@
                             <height>55</height>
                             <width>100</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>badges/Badgecount.png</texture>
+                            <texture>badges/badgecount.png</texture>
                         </control>
                         <control type="label" id="160">
                             <height>44</height>
@@ -1555,7 +1555,7 @@
                             <height>55</height>
                             <width>100</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>badges/Badgecount.png</texture>
+                            <texture>badges/badgecount.png</texture>
                         </control>
                         <control type="label" id="170">
                             <height>44</height>
@@ -1716,7 +1716,7 @@
                             <height>55</height>
                             <width>100</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>badges/Badgecount.png</texture>
+                            <texture>badges/badgecount.png</texture>
                         </control>
                         <control type="label" id="180">
                             <height>44</height>

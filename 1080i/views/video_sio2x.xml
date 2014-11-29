@@ -87,7 +87,7 @@
                         <left>95</left>
                         <width>392</width>
                         <height>135</height>
-                        <texture colordiffuse="$VAR[diffuseselect]">images/Buttonselect1.png</texture>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
                     </control>
                     <!--SELECTIMG-->
                     <control type="image">

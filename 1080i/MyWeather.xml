@@ -158,7 +158,6 @@
                     </control>
                 </focusedlayout>
                 <content>
-                    <!--todo infos-->
                     <item id="0">
                         <label>$INFO[Window.Property(Day0.Title)]</label>
                         <label2>$INFO[Window.Property(Day0.HighTemp)]°</label2>
@@ -233,7 +232,7 @@
             <control type="button" id="1" description="MapsToggle">
                 <width>500</width>
                 <font>size36</font>
-                <!--todo lable-->
+                <!--todo label-->
                 <label> Select Map</label>
                 <align>center</align>
                 <onclick condition="StringCompare(Skin.String(maps),4)">Skin.SetString(maps,)</onclick>
@@ -276,9 +275,9 @@
         <include>clockandkodi</include>
         <control type="grouplist">
             <top>540</top>
-            <left>120</left>
+            <left>20</left>
             <height>480</height>
-            <width>350</width>
+            <width>450</width>
             <control type="label" description="Feels like label">
                 <align>right</align>
                 <include>weatherinfo</include>
@@ -319,7 +318,7 @@
             <top>540</top>
             <left>480</left>
             <height>480</height>
-            <width>700</width>
+            <width>450</width>
             <control type="label" description="Feels like label">
                 <include>weatherinfo</include>
                 <label>$INFO[Window.Property(Current.FeelsLike)]°</label>
@@ -350,46 +349,61 @@
             </control>
         </control>
         <!--MAPS-->
-        <control type="image">
-            <left>960</left>
-            <centertop>510</centertop>
-            <width>860</width>
-            <height>860</height>
-            <texture colordiffuse="main">images/white.png</texture>
-        </control>
-        <control type="image">
-            <left>965</left>
-            <centertop>510</centertop>
-            <width>850</width>
-            <height>850</height>
-            <texture>$INFO[Window(weather).Property(Map.1.Area)]</texture>
-            <aspectratio aligny="bottom">keep</aspectratio>
-        </control>
-        <control type="image">
-            <left>965</left>
-            <centertop>510</centertop>
-            <width>850</width>
-            <height>850</height>
-            <texture>$VAR[weathermap]</texture>
-            <colordiffuse>70ffffff</colordiffuse>
-            <aspectratio aligny="bottom">keep</aspectratio>
-        </control>
-        <control type="image">
-            <right>130</right>
-            <bottom>160</bottom>
-            <width>400</width>
-            <height>60</height>
-            <texture>$VAR[weatherlegend]</texture>
+        <control type="group">
+            <visible>StringCompare(Weather.plugin,weather.openweathermap.extended)</visible>
+            <control type="image">
+                <left>960</left>
+                <centertop>510</centertop>
+                <width>860</width>
+                <height>860</height>
+                <texture colordiffuse="main">images/white.png</texture>
+            </control>
+            <control type="image">
+                <left>965</left>
+                <centertop>510</centertop>
+                <width>850</width>
+                <height>850</height>
+                <texture>$INFO[Window(weather).Property(Map.1.Area)]</texture>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+            <control type="image">
+                <left>965</left>
+                <centertop>510</centertop>
+                <width>850</width>
+                <height>850</height>
+                <texture>$VAR[weathermap]</texture>
+                <colordiffuse>70ffffff</colordiffuse>
+                <aspectratio aligny="bottom">keep</aspectratio>
+            </control>
+            <control type="image">
+                <right>130</right>
+                <bottom>160</bottom>
+                <width>400</width>
+                <height>60</height>
+                <texture>$VAR[weatherlegend]</texture>
+            </control>
+            <control type="label">
+                <left>980</left>
+                <top>80</top>
+                <width>400</width>
+                <align>left</align>
+                <font>size42B</font>
+                <textcolor>black</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>[UPPERCASE]$VAR[weatherheading][/UPPERCASE]</label>
+            </control>
         </control>
         <control type="label">
-            <left>980</left>
-            <top>80</top>
-            <width>400</width>
-            <align>left</align>
-            <font>size42B</font>
-            <textcolor>black</textcolor>
+            <visible>!StringCompare(Weather.plugin,weather.openweathermap.extended)</visible>
+            <centerleft>1390</centerleft>
+            <centertop>540</centertop>
+            <width>660</width>
+            <align>center</align>
+            <height>500</height>
+            <wrapmultiline>true</wrapmultiline>
             <shadowcolor>-</shadowcolor>
-            <label>[UPPERCASE]$VAR[weatherheading][/UPPERCASE]</label>
+            <!--todo label-->
+            <label>INSTALL [COLOR orange]OPENWEATHERMAP.EXTENDED[/COLOR][CR]IN ORDER TO GET MAP VIEWS FOR WEATHER.</label>
         </control>
         <control type="image">
             <centerleft>480</centerleft>

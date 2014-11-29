@@ -689,7 +689,7 @@
         <bordersize>1</bordersize>
     </include>
     <include name="weatherinfo">
-        <width>350</width>
+        <width>450</width>
         <height>40</height>
         <font>size36B</font>
         <shadowcolor>-</shadowcolor>
