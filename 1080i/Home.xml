@@ -234,7 +234,7 @@
                                 <height>55</height>
                                 <width>55</width>
                                 <aspectratio>keep</aspectratio>
-                                <texture>Badges/Badgecount.png</texture>
+                                <texture>badges/badgecount.png</texture>
                             </control>
                             <control type="image">
                                 <visible>IntegerGreaterThan(ListItem.Property(unwatched),999)</visible>
