@@ -25,7 +25,7 @@
             <property name="unwatched">$INFO[Window(Home).Property(Movies.UnWatched)]</property>
             <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp",return)</onclick>
             <onclick condition="!Skin.HasSetting(no3d)">ActivateWindow(Videos,MovieTitles,return)</onclick>
-            <!--<onclick>RunScript(plugin.synology.ds)</onclick>-->
+            <!--<onclick>ActivateWindow(1119,return)</onclick>-->
         </item>
         <!--TV SHOWS-->
         <item id="341">

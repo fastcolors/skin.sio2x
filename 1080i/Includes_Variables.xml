@@ -411,4 +411,10 @@
         <value condition="StringCompare(Skin.String(maps),1)">$INFO[Window(weather).Property(Map.2.Heading)]</value>
         <value>$INFO[Window(weather).Property(Map.1.Heading)]</value>
     </variable>
+
+    <variable name="functionshelf">
+        <value condition="Container(9000).HasFocus(359) | [Container(9000).HasFocus(360) + !StringCompare(Skin.String(dvdsshelf),2)]">images/couchpotato.png</value>
+        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">images/sickbeard.png</value>
+        <value>info/trailerFO.png</value>
+    </variable>
 </includes>

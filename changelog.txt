@@ -1,5 +1,11 @@
+3.1.4
+* CouchPotato Shelf Integration
+* SickBeard Shelf Integration (for now requires my custom build of the addon)
+* Added support fo extended info now populating Home releases, Theater Releases and trending TVShows
+    easily addable to SickBeard & CouchPotato
+
 3.1.3
-* AddonBrowser noh has button to hide Addons marked as Broken
+* AddonBrowser now has button to hide Addons marked as Broken
 * Fix for unwatched overlay (Icons now show unwatched for show in progress)
 * in videoview get extra artwork button now gets artwork for the selected item only
 
