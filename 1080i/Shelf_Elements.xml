@@ -9,34 +9,34 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="350" width="320">
             <control type="group">
-                <animation condition="true" center="160,22" effect="zoom" end="90">Conditional</animation>
+                <!--<animation condition="true" center="160,22" effect="zoom" end="90">Conditional</animation>-->
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>22</top>
-                    <width>279</width>
-                    <height>420</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$INFO[ListItem.Icon]</texture>
+                    <width>274</width>
+                    <height>410</height>
+                    <texture fallback="DefaultVideoCover.png" background="true">$VAR[locandine]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>22</top>
-                    <width>279</width>
-                    <height>420</height>
+                    <width>274</width>
+                    <height>410</height>
                     <texture>$VAR[dvdbox]</texture>
                 </control>
             </control>
         </itemlayout>
         <focusedlayout height="420" width="320">
             <control type="group">
-                <animation center="160,22" effect="zoom" start="90" end="100" time="200">Focus</animation>
-                <animation center="160,22" effect="zoom" start="100" end="90" time="100">unFocus</animation>
+                <!--<animation center="160,22" effect="zoom" start="90" end="100" time="200">Focus</animation>-->
+                <!--<animation center="160,22" effect="zoom" start="100" end="90" time="100">unFocus</animation>-->
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>22</top>
-                    <width>279</width>
-                    <height>420</height>
-                    <texture fallback="DefaultVideoCover.png" diffuse="images/diffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+                    <width>274</width>
+                    <height>410</height>
+                    <texture fallback="DefaultVideoCover.png" background="true">$VAR[locandine]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
                 <control type="group">
@@ -45,15 +45,15 @@
                     <control type="image">
                         <centerleft>160</centerleft>
                         <top>22</top>
-                        <width>279</width>
-                        <height>420</height>
+                        <width>274</width>
+                        <height>410</height>
                         <texture colordiffuse="$VAR[diffuseselectshelf]">images/darkgrey.png</texture>
                     </control>
                     <control type="image">
                         <centerleft>160</centerleft>
                         <top>22</top>
-                        <width>279</width>
-                        <height>420</height>
+                        <width>274</width>
+                        <height>410</height>
                         <texture>$VAR[dvdbox]</texture>
                     </control>
                     <control type="textbox">
@@ -61,7 +61,7 @@
                         <centerleft>160</centerleft>
                         <top>28</top>
                         <width>268</width>
-                        <height>405</height>
+                        <height>400</height>
                         <font>size26</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
@@ -74,7 +74,7 @@
                         <centerleft>160</centerleft>
                         <top>28</top>
                         <width>268</width>
-                        <height>405</height>
+                        <height>400</height>
                         <font>size26</font>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
@@ -84,7 +84,7 @@
                     </control>
                     <control type="image">
                         <visible>!IsEmpty(ListItem.Trailer)</visible>
-                        <top>386</top>
+                        <top>379</top>
                         <right>34</right>
                         <width>44</width>
                         <height>44</height>
@@ -107,8 +107,8 @@
                     <control type="image">
                         <centerleft>160</centerleft>
                         <top>18</top>
-                        <width>262</width>
-                        <height>389</height>
+                        <width>274</width>
+                        <height>410</height>
                         <texture colordiffuse="inverted">images/transparent.png</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
@@ -125,8 +125,8 @@
                     <control type="image">
                         <centerleft>160</centerleft>
                         <top>18</top>
-                        <width>262</width>
-                        <height>389</height>
+                        <width>274</width>
+                        <height>410</height>
                         <texture border="10" background="true">$VAR[dvdbox]</texture>
                         <aspectratio>stretch</aspectratio>
                     </control>
@@ -145,13 +145,11 @@
         </itemlayout>
         <focusedlayout height="420" width="320" condition="Control.IsVisible(319)">
             <control type="group">
-                <animation center="160,25" effect="zoom" start="100" end="108" time="200">Focus</animation>
-                <animation center="160,25" effect="zoom" start="108" end="100" time="100">unFocus</animation>
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>18</top>
-                    <width>262</width>
-                    <height>389</height>
+                    <width>274</width>
+                    <height>410</height>
                     <texture colordiffuse="inverted">images/transparent.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -168,8 +166,8 @@
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>18</top>
-                    <width>262</width>
-                    <height>389</height>
+                    <width>274</width>
+                    <height>410</height>
                     <texture border="10" background="true">$VAR[dvdbox]</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -285,7 +283,7 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="357" width="480">
             <control type="group">
-                <animation effect="zoom" condition="true" start="100" end="90" center="240,180">Conditional</animation>
+                <!--<animation effect="zoom" condition="true" start="100" end="90" center="240,180">Conditional</animation>-->
                 <control type="image">
                     <left>23</left>
                     <top>168</top>
@@ -315,7 +313,7 @@
                     <font>size26</font>
                     <scroll>false</scroll>
                     <textcolor>darkgray</textcolor>
-                    <label>[B]$INFO[ListItem.Title][/B]</label>
+                    <label>[B]$INFO[ListItem.Title]$INFO[ListItem.PercentPlayed][/B]</label>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -339,8 +337,8 @@
         </itemlayout>
         <focusedlayout height="357" width="480">
             <control type="group">
-                <animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>
-                <animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>
+                <!--<animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>-->
+                <!--<animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>-->
                 <control type="image">
                     <left>23</left>
                     <top>168</top>
@@ -582,9 +580,8 @@
                 | [Container(9000).HasFocus(607) + !IsEmpty(Skin.String(HomeFav.7.List))]
                 | [Container(9000).HasFocus(608) + !IsEmpty(Skin.String(HomeFav.8.List))]]
             </visible>
-            <onup condition="!IsEmpty(Container(311).ListItem.Trailer)
-            | [SubString(Container(311).ListItem.Path,plugin://) + System.HasAddon(plugin.video.couchpotato_manager)]
-            | [IsEmpty(Container(311).ListItem.Path) + System.HasAddon(plugin.program.sickbeard)]">9010</onup>
+            <!--todo better way to know when to go up-->
+            <onup condition="!IsEmpty(Container(311).ListItem.Trailer) | System.HasAddon(plugin.video.couchpotato_manager) | System.HasAddon(plugin.program.sickbeard)">9010</onup>
             <onup condition="IsEmpty(Container(311).ListItem.Trailer)">9009</onup>
             <ondown>9000</ondown>
             <onleft>311</onleft>

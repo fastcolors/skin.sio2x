@@ -218,6 +218,7 @@
         <!--red-->
         <value condition="SubString(Container(311).ListItem.MPAA,R,Right)">CCFF0000</value>
         <value condition="SubString(Container(311).ListItem.MPAA,18)">CCFF0000</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),TV-MA)">CCFF0000</value>
         <!--PROPERTY-->
         <value condition="SubString(Container(311).ListItem.Property(mpaa),R,Right)">CCFF0000</value>
         <value condition="SubString(Container(311).ListItem.Property(mpaa),18)">CCFF0000</value>
@@ -231,6 +232,7 @@
         <value condition="SubString(Container(311).ListItem.Property(mpaa),12)">CCFF8800</value>
         <value condition="SubString(Container(311).ListItem.Property(mpaa),15)">CCFF8800</value>
         <value condition="SubString(Container(311).ListItem.Property(mpaa),16)">CCFF8800</value>
+        <value condition="SubString(Container(311).ListItem.Property(mpaa),14)">CCFF8800</value>
         <!--green-->
         <value condition="SubString(Container(311).ListItem.MPAA,6)">CCFF8800</value>
         <value condition="SubString(Container(311).ListItem.MPAA,PG,Right)">CC00FF00</value>
@@ -272,11 +274,12 @@
         <value condition="Container(9000).HasFocus(607)">$INFO[Skin.String(HomeFav.7.List)]</value>
         <value condition="Container(9000).HasFocus(608)">$INFO[Skin.String(HomeFav.8.List)]</value>
         <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
+        <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),2)">plugin://script.extendedinfo?info=newdvdreleases&amp;&amp;limit=18</value>
         <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">plugin://script.extendedinfo?info=upcoming&amp;&amp;limit=18</value>
         <value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=intheaters&amp;&amp;limit=18</value>
-        <!--<value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">plugin://script.extendedinfo?info=upcomingdvds&amp;&amp;limit=18</value>-->
-        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">plugin://script.extendedinfo?info=populartvshows&amp;&amp;limit=18</value>
-        <value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=currentdvdreleases&amp;&amp;limit=18</value>
+        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">plugin://script.extendedinfo?info=topratedtvshows&amp;&amp;limit=18</value>
+        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">plugin://script.extendedinfo?info=trendingshows&amp;&amp;limit=18</value>
+        <value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=airingshows&amp;&amp;limit=18</value>
         <value condition="Container(9000).HasFocus(340)">videodb://recentlyaddedmovies/</value>
         <value>-</value>
     </variable>
@@ -304,12 +307,14 @@
 
     <variable name="shelflabel">
         <!--THEATERS-->
+        <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),2)">$LOCALIZE[31425]</value>
         <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">$LOCALIZE[31424]</value>
         <value condition="Container(9000).HasFocus(359)">$LOCALIZE[31426]</value>
         <!--HOME-->
-        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">popular tvshows</value>
-        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">$LOCALIZE[31427]</value>
-        <value condition="Container(9000).HasFocus(360)">$LOCALIZE[31425]</value>
+        <!--todo label-->
+        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">$LOCALIZE[31427]</value>
+        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">$LOCALIZE[31428]</value>
+        <value condition="Container(9000).HasFocus(360)">$LOCALIZE[31429]</value>
         <!--MOVIES-->
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">$LOCALIZE[31419]</value>
         <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[31015]</value>
@@ -413,8 +418,8 @@
     </variable>
 
     <variable name="functionshelf">
-        <value condition="Container(9000).HasFocus(359) | [Container(9000).HasFocus(360) + !StringCompare(Skin.String(dvdsshelf),2)]">images/couchpotato.png</value>
-        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">images/sickbeard.png</value>
+        <value condition="Container(9000).HasFocus(359)">images/couchpotato.png</value>
+        <value condition="Container(9000).HasFocus(360)">images/sickbeard.png</value>
         <value>info/trailerFO.png</value>
     </variable>
 </includes>

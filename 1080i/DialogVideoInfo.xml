@@ -304,18 +304,18 @@
                 <control type="togglebutton" id="8" description="Play/browse to Show">
                     <height>150</height>
                     <width>150</width>
-                    <texturefocus>info/PlayFO.png</texturefocus>
-                    <texturenofocus>info/Play.png</texturenofocus>
-                    <alttexturefocus>info/BrowseFO.png</alttexturefocus>
-                    <alttexturenofocus>info/Browse.png</alttexturenofocus>
+                    <texturefocus>info/playFO.png</texturefocus>
+                    <texturenofocus>info/play.png</texturenofocus>
+                    <alttexturefocus>info/browseFO.png</alttexturefocus>
+                    <alttexturenofocus>info/browse.png</alttexturenofocus>
                     <usealttexture>Container.Content(TVShows)</usealttexture>
                 </control>
                 <control type="button" id="299" description="Cinema">
                     <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
                     <height>150</height>
                     <width>150</width>
-                    <texturefocus>info/CinemaFO.png</texturefocus>
-                    <texturenofocus>info/Cinema.png</texturenofocus>
+                    <texturefocus>info/cinemaFO.png</texturefocus>
+                    <texturenofocus>info/cinema.png</texturenofocus>
                     <onclick>Dialog.Close(all,true)</onclick>
                     <onclick>Playlist.Clear</onclick>
                     <onclick>RunScript(script.cinema.experience)</onclick>

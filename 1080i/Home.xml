@@ -44,7 +44,8 @@
                 <onclick  condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
                 <!--CINEMAS-->
                 <onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),)">Skin.SetString(theatersshelf,1)</onclick>
-                <onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,)</onclick>
+                <onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">Skin.SetString(theatersshelf,2)</onclick>
+                <onclick  condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),2)">Skin.SetString(theatersshelf,)</onclick>
                 <!--DVDS-->
                 <onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),)">Skin.SetString(dvdsshelf,1)</onclick>
                 <onclick  condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),1)">Skin.SetString(dvdsshelf,2)</onclick>
@@ -67,6 +68,14 @@
                 <!--<ondown condition="!IntegerGreaterThan(Container(313).NumItems,0)">noop</ondown>-->
                 <ondown>700</ondown>
             </control>
+            <!--todo INTERCEPT CLICKS ON MOVIES-->
+            <!--<control type="button" id="900">-->
+                <!--<onfocus>SetFocus(700)</onfocus>-->
+                <!--<ondown>9000</ondown>-->
+                <!--<onleft>Control.Move(311,-1)</onleft>-->
+                <!--<onright>Control.Move(311,1)</onright>-->
+                <!--<label>FUCK</label>-->
+            <!--</control>-->
             <control type="group" description="Furniture">
                 <top>480</top>
                 <control type="panel" id="9000" description="ICONE">
@@ -446,11 +455,11 @@
                 <!--TRAILERS-->
                 <onclick condition="!IsEmpty(Container(311).ListItem.Trailer)">PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
                 <!--SICK_BEARDO-->
-                <onclick condition="IsEmpty(Container(311).ListItem.Trailer) + [Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)]">Notification(Sick Beard,$LOCALIZE[194],3000)</onclick>
-                <onclick condition="IsEmpty(Container(311).ListItem.Trailer) + [Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)]">RunScript(special://home/addons/plugin.program.sickbeard/resources/lib/addshow.py,$INFO[Container(311).ListItem.Label])</onclick>
+                <onclick condition="IsEmpty(Container(311).ListItem.Trailer) + Container(9000).HasFocus(360)">Notification(Sick Beard,$LOCALIZE[194],3000,images/sickbeard.png)</onclick>
+                <onclick condition="IsEmpty(Container(311).ListItem.Trailer) + Container(9000).HasFocus(360)">RunScript(special://home/addons/plugin.program.sickbeard/resources/lib/addshow.py,$INFO[Container(311).ListItem.Label])</onclick>
                 <!--COUCHO_POTAtO-->
-                <onclick condition="IsEmpty(Container(311).ListItem.Trailer)">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onclick>
-                <onclick condition="IsEmpty(Container(311).ListItem.Trailer)">Notification(Couch Potato,$LOCALIZE[194],3000)</onclick>
+                <onclick condition="IsEmpty(Container(311).ListItem.Trailer) + Container(9000).HasFocus(359)">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onclick>
+                <onclick condition="IsEmpty(Container(311).ListItem.Trailer) + Container(9000).HasFocus(359)">Notification(Couch Potato,$LOCALIZE[194],3000,images/couchpotato.png)</onclick>
                 <onleft>Control.Move(311,-1)</onleft>
                 <onleft>311</onleft>
                 <onright>Control.Move(311,1)</onright>

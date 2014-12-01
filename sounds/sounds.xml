@@ -51,7 +51,7 @@
         </action>
         <action>
             <name>Select</name>
-            <file>click_.aif</file>
+            <file>click_.wav</file>
         </action>
         <action>
             <name>ParentDir</name>
@@ -63,17 +63,17 @@
         </action>
         <action>
             <name>screenshot</name>
-            <file>shutter.aiff</file>
+            <file>shutter.wav</file>
         </action>
     </actions>
     <windows>
         <window>
             <name>InfoDialog</name>
-            <activate>notify.aif</activate>
+            <activate>notify.wav</activate>
         </window>
         <window>
             <name>1116</name>
-            <activate>error.aif</activate>
+            <activate>error.wav</activate>
         </window>
     </windows>
 </sounds>

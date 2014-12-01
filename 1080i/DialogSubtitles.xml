@@ -62,7 +62,7 @@
                 <height>95</height>
                 <width>95</width>
                 <aspectratio>keep</aspectratio>
-                <texture>badges/BadgeCount.png</texture>
+                <texture>badges/badgecount.png</texture>
             </control>
             <control type="label" id="140" description="# of Subtitles Found">
                 <visible>false</visible>
