@@ -30,13 +30,23 @@
                 </control>
                 <control type="textbox" description="Plot">
                     <top>74</top>
-                    <centerleft>960</centerleft>
-                    <width>1700</width>
+                    <left>110</left>
+                    <width>1200</width>
                     <height>336</height>
                     <font>size28</font>
                     <align>justify</align>
                     <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
                     <label>$VAR[Plots]</label>
+                </control>
+                <control type="image" description="fanart">
+                    <right>110</right>
+                    <top>80</top>
+                    <width>430</width>
+                    <height>330</height>
+                    <texture>$VAR[fanart]</texture>
+                    <aspectratio>keep</aspectratio>
+                    <bordertexture colordiffuse="main">images/white.png</bordertexture>
+                    <bordersize>4</bordersize>
                 </control>
                 <control type="group">
                     <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
@@ -47,7 +57,7 @@
                         <height>150</height>
                         <itemgap>30</itemgap>
                         <orientation>horizontal</orientation>
-                        <align>center</align>
+                        <align>left</align>
                         <control type="image">
                             <height>50</height>
                             <width>130</width>
@@ -95,7 +105,7 @@
                     </control>
                     <control type="image" description="StudioLogo">
                         <top>455</top>
-                        <centerleft>590</centerleft>
+                        <centerleft>614</centerleft>
                         <height>130</height>
                         <width>250</width>
                         <fadetime>120</fadetime>
@@ -103,7 +113,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label" description="toplabel">
-                        <left>760</left>
+                        <left>768</left>
                         <top>440</top>
                         <font>size27</font>
                         <height>40</height>
@@ -111,7 +121,7 @@
                         <label>$VAR[TopLabel]</label>
                     </control>
                     <control type="label" description="Genre">
-                        <left>760</left>
+                        <left>768</left>
                         <top>480</top>
                         <font>size27</font>
                         <width>1275</width>
@@ -200,7 +210,7 @@
                             <left>87</left>
                             <height>8</height>
                             <texturebg>images/black.png</texturebg>
-                            <midtexture>images/white.png</midtexture>
+                            <midtexture border="1">images/white.png</midtexture>
                             <width>226</width>
                             <info>ListItem.PercentPlayed</info>
                         </control>

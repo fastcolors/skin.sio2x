@@ -181,5 +181,7 @@
                 </control>
             </control>
         </control>
+
+        <include>cpu_use</include>
     </controls>
 </window>

@@ -15,29 +15,17 @@
             <height>60</height>
             <texture colordiffuse="6612b2e7">images/sio2xlogo.png</texture>
         </control>
-        <!--<control type="label">-->
-        <!--<description>SKIN VERSION</description>-->
-        <!--<right>10</right>-->
-        <!--<bottom>10</bottom>-->
-        <!--<width>60</width>-->
-        <!--<height>20</height>-->
-        <!--<font>XS</font>-->
-        <!--<textcolor>6612b2e7</textcolor>-->
-        <!--<align>center</align>-->
-        <!--<scroll>false</scroll>-->
-        <!--<info>System.AddonVersion(skin.sio2x)</info>-->
-        <!--</control>-->
         <control type="label">
-            <description>SKIN VERSION</description>
-            <right>10</right>
-            <bottom>10</bottom>
-            <width>160</width>
-            <height>20</height>
-            <font>XS</font>
-            <textcolor>6612b2e7</textcolor>
-            <align>center</align>
-            <scroll>false</scroll>
-            <info>System.CpuUsage</info>
+        <description>SKIN VERSION</description>
+        <right>10</right>
+        <bottom>10</bottom>
+        <width>60</width>
+        <height>20</height>
+        <font>XS</font>
+        <textcolor>6612b2e7</textcolor>
+        <align>center</align>
+        <scroll>false</scroll>
+        <info>System.AddonVersion(skin.sio2x)</info>
         </control>
         <control type="group">
             <animation condition="Control.HasFocus(9000) + ![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-498" time="220">Conditonal</animation>
@@ -299,8 +287,7 @@
                     <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
                 </control>
                 <control type="rss" description="RSS Feed">
-                    <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                    <centertop>30</centertop>
+                    <top>18</top>
                     <width>1920</width>
                     <height>34</height>
                     <font>size24</font>
