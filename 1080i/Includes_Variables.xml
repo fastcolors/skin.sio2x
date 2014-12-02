@@ -338,6 +338,8 @@
         <value condition="Container(9000).HasFocus(344)">$LOCALIZE[111]</value>
         <!--LIVETV(RECORDINGS)-->
         <value condition="Container(9000).HasFocus(355)">$LOCALIZE[19017]</value>
+        <!--Weather-->
+        <value condition="Container(9000).HasFocus(345)">$INFO[Weather.Location]</value>
         <!--GENERAL-->
         <value>$INFO[Control.GetLabel(9000)]</value>
     </variable>

@@ -108,10 +108,11 @@
                 <focusedlayout height="140">
                     <control type="image">
                         <animation effect="fade" end="0" time="30">UnFocus</animation>
+                        <top>5</top>
                         <left>1280</left>
-                        <width>560</width>
-                        <height>140</height>
-                        <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
+                        <width>590</width>
+                        <height>130</height>
+                        <texture colordiffuse="$VAR[diffuseselect]">images/white.png</texture>
                     </control>
                     <control type="image">
                         <left>1730</left>
@@ -440,7 +441,7 @@
                     <width>1210</width>
                     <height>480</height>
                     <align>justify</align>
-                    <font>size30</font>
+                    <font>size28</font>
                     <shadowcolor>inverted</shadowcolor>
                     <label>$VAR[Plots]</label>
                 </control>

@@ -277,7 +277,7 @@
                     <left>700</left>
                     <top>155</top>
                     <height>600</height>
-                    <width>820</width>
+                    <width>720</width>
                     <itemgap>3</itemgap>
                     <control type="label">
                         <width>780</width>
@@ -459,7 +459,7 @@
                     <left>50</left>
                     <top>160</top>
                     <control type="image">
-                        <animation effect="rotate" end="-360" center="auto" time="9000" loop="true" reversible="false" condition="true">Conditional</animation>
+                        <animation effect="rotate" end="-360" center="auto" time="9000" loop="true" reversible="false" condition="!System.Platform.Linux.RaspberryPi + !System.Platform.ATV2">Conditional</animation>
                         <left>150</left>
                         <height>294</height>
                         <width>294</width>

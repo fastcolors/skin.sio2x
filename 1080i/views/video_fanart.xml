@@ -3,6 +3,12 @@
     <include name="fanart">
         <control type="group" description="Fanart">
             <visible>Control.IsVisible(500)</visible>
+            <control type="image">
+                <top>451</top>
+                <width>1920</width>
+                <height>629</height>
+                <texture colordiffuse="inverted">images/gradientleft_transparent.png</texture>
+            </control>
             <control type="group" description="Media Info">
                 <visible>!StringCompare(ListItem.label,..)</visible>
                 <top>40</top>
@@ -25,101 +31,96 @@
                 <control type="textbox" description="Plot">
                     <top>74</top>
                     <centerleft>960</centerleft>
-                    <width>1724</width>
+                    <width>1700</width>
                     <height>336</height>
-                    <font>size30</font>
+                    <font>size28</font>
                     <align>justify</align>
                     <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
                     <label>$VAR[Plots]</label>
                 </control>
-                <control type="image" description="lineplot">
-                    <centerleft>960</centerleft>
-                    <top>410</top>
-                    <width>1724</width>
-                    <height>1</height>
-                    <texture colordiffuse="main">lines/LineSH.png</texture>
-                </control>
-                <control type="image" description="Stars rating">
-                    <left>645</left>
-                    <top>415</top>
-                    <height>40</height>
-                    <width>255</width>
-                    <aspectratio>keep</aspectratio>
-                    <texture colordiffuse="main">$INFO[ListItem.Rating,badges/,.png]</texture>
-                </control>
-                <control type="label">
-                    <left>645</left>
-                    <top>450</top>
-                    <font>size27</font>
-                    <height>40</height>
-                    <width>1275</width>
-                    <label>$VAR[TopLabel]</label>
-                </control>
-                <control type="grouplist" description="Flags">
-                    <top>540</top>
-                    <centerleft>960</centerleft>
-                    <width min="90" max="1724">auto</width>
-                    <height>150</height>
-                    <itemgap>30</itemgap>
-                    <orientation>horizontal</orientation>
-                    <align>center</align>
-                    <control type="image">
-                        <height>50</height>
-                        <width>130</width>
-                        <bordersize>3</bordersize>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
+                <control type="group">
+                    <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
+                    <control type="grouplist" description="Flags">
+                        <top>540</top>
+                        <left>760</left>
+                        <width>auto</width>
+                        <height>150</height>
+                        <itemgap>30</itemgap>
+                        <orientation>horizontal</orientation>
+                        <align>center</align>
+                        <control type="image">
+                            <height>50</height>
+                            <width>130</width>
+                            <bordersize>3</bordersize>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
+                        </control>
+                        <control type="image">
+                            <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                            <height>50</height>
+                            <width>130</width>
+                            <bordersize>3</bordersize>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
+                        </control>
+                        <control type="image">
+                            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                            <height>50</height>
+                            <width>130</width>
+                            <bordersize>3</bordersize>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+                        </control>
+                        <control type="image">
+                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                            <height>50</height>
+                            <width>130</width>
+                            <bordersize>3</bordersize>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
+                        </control>
+                        <control type="image">
+                            <height>50</height>
+                            <width>130</width>
+                            <bordersize>3</bordersize>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>
+                        </control>
+                        <control type="image" description="Stars rating">
+                            <height>35</height>
+                            <width>250</width>
+                            <aspectratio aligny="bottom">keep</aspectratio>
+                            <texture colordiffuse="main">$INFO[ListItem.Rating,badges/,.png]</texture>
+                        </control>
                     </control>
-                    <control type="image">
-                        <visible>!IsEmpty(ListItem.VideoCodec)</visible>
-                        <height>50</height>
-                        <width>130</width>
-                        <bordersize>3</bordersize>
+                    <control type="image" description="StudioLogo">
+                        <top>455</top>
+                        <centerleft>590</centerleft>
+                        <height>130</height>
+                        <width>250</width>
+                        <fadetime>120</fadetime>
+                        <texture colordiffuse="main" fallback="defaultgenericstudio.png">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Studio].png</texture>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
                     </control>
-                    <control type="image">
-                        <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                    <control type="label" description="toplabel">
+                        <left>760</left>
+                        <top>440</top>
+                        <font>size27</font>
+                        <height>40</height>
+                        <width>1275</width>
+                        <label>$VAR[TopLabel]</label>
+                    </control>
+                    <control type="label" description="Genre">
+                        <left>760</left>
+                        <top>480</top>
+                        <font>size27</font>
+                        <width>1275</width>
                         <height>50</height>
-                        <width>130</width>
-                        <bordersize>3</bordersize>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+                        <label>[COLOR=gray]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
                     </control>
-                    <control type="image">
-                        <visible>!IsEmpty(ListItem.AudioChannels)</visible>
-                        <height>50</height>
-                        <width>130</width>
-                        <bordersize>3</bordersize>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
-                    </control>
-                    <control type="image">
-                        <height>50</height>
-                        <width>130</width>
-                        <bordersize>3</bordersize>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.FileExtension,badges/video/,.png]</texture>
-                    </control>
-                </control>
-                <control type="image" description="StudioLogo">
-                    <top>435</top>
-                    <left>480</left>
-                    <height>91</height>
-                    <width>161</width>
-                    <texture colordiffuse="main" fallback="defaultgenericstudio.png">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Studio].png</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="label" description="Genre">
-                    <left>645</left>
-                    <top>485</top>
-                    <font>size27</font>
-                    <width>1275</width>
-                    <height>50</height>
-                    <label>[COLOR=gray]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
                 </control>
             </control>
-            <control type="fixedlist" id="500">
+            <control type="wraplist" id="500">
                 <visible>Container.content(movies) | container.content(seasons) | container.content(musicvideos) | container.content(tvshows)</visible>
                 <onup condition="!Skin.HasSetting(ViewsMenuOff)">9000</onup>
                 <onup condition="Skin.HasSetting(ViewsMenuOff)">noop</onup>

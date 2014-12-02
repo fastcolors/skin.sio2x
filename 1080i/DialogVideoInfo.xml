@@ -22,7 +22,7 @@
                 <top>610</top>
                 <width>500</width>
                 <height>550</height>
-                <texture flipy="true" background="true" diffuse="images/Reflection0.png">$VAR[locandine]</texture>
+                <texture flipy="true" background="true" diffuse="images/Reflection.png">$VAR[locandine]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
         </control>

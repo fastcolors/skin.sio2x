@@ -299,6 +299,16 @@
                     <height>93</height>
                     <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
                 </control>
+                <control type="progress" description="progress">
+                    <visible>ListItem.IsResumable</visible>
+                    <left>24</left>
+                    <top>168</top>
+                    <width>433</width>
+                    <height>8</height>
+                    <texturebg>images/transparent.png</texturebg>
+                    <midtexture>images/white.png</midtexture>
+                    <info>ListItem.PercentPlayed</info>
+                </control>
                 <control type="image">
                     <left>21</left>
                     <top>73</top>
@@ -312,8 +322,8 @@
                     <height>40</height>
                     <font>size26</font>
                     <scroll>false</scroll>
-                    <textcolor>darkgray</textcolor>
-                    <label>[B]$INFO[ListItem.Title]$INFO[ListItem.PercentPlayed][/B]</label>
+                    <textcolor>maindim</textcolor>
+                    <label>[B]$INFO[ListItem.Title][/B]</label>
                     <align>center</align>
                 </control>
                 <control type="label">
@@ -322,7 +332,7 @@
                     <width>400</width>
                     <height>36</height>
                     <font>size26</font>
-                    <textcolor>darkgray</textcolor>
+                    <textcolor>maindim</textcolor>
                     <label>[B][UPPERCASE]S $INFO[ListItem.Season] • E $INFO[ListItem.Episode][/UPPERCASE][/B]</label>
                     <align>center</align>
                 </control>
@@ -353,6 +363,16 @@
                     <width>433</width>
                     <height>93</height>
                     <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
+                </control>
+                <control type="progress" description="progress">
+                    <visible>ListItem.IsResumable</visible>
+                    <left>24</left>
+                    <top>168</top>
+                    <width>433</width>
+                    <height>8</height>
+                    <texturebg>images/transparent.png</texturebg>
+                    <midtexture>images/white.png</midtexture>
+                    <info>ListItem.PercentPlayed</info>
                 </control>
                 <control type="image">
                     <left>21</left>
@@ -1235,15 +1255,15 @@
             <top>30</top>
             <visible>[Container(9000).HasFocus(345)]</visible>
             <include>ShelfFade</include>
-            <control type="label">
-                <left>83</left>
-                <top>10</top>
-                <width>1754</width>
-                <height>40</height>
-                <align>center</align>
-                <font>Size33B</font>
-                <info>Weather.Location</info>
-            </control>
+            <!--<control type="label">-->
+                <!--<left>83</left>-->
+                <!--<top>10</top>-->
+                <!--<width>1754</width>-->
+                <!--<height>40</height>-->
+                <!--<align>center</align>-->
+                <!--<font>Size33B</font>-->
+                <!--<info>Weather.Location</info>-->
+            <!--</control>-->
             <control type="image">
                 <left>75</left>
                 <top>62</top>
@@ -1252,16 +1272,9 @@
                 <aspectratio>stretch</aspectratio>
                 <texture border="30">images/weathersingle.png</texture>
             </control>
-            <control type="image">
-                <left>75</left>
-                <top>420</top>
-                <width>1770</width>
-                <height>350</height>
-                <aspectratio>stretch</aspectratio>
-                <texture diffuse="images/ReflectionShelf.png" flipy="true">images/weathersingle.png</texture>
-            </control>
-            <control type="list" description="TOP Weather">
-                <onup>9000</onup>
+            <control type="list" id="399" description="TOP Weather">
+                <visible>[Container(9000).HasFocus(345)]</visible>
+                <onup>9009</onup>
                 <ondown>9000</ondown>
                 <onleft>9000</onleft>
                 <onright>9000</onright>

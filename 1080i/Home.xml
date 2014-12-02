@@ -15,23 +15,35 @@
             <height>60</height>
             <texture colordiffuse="6612b2e7">images/sio2xlogo.png</texture>
         </control>
+        <!--<control type="label">-->
+        <!--<description>SKIN VERSION</description>-->
+        <!--<right>10</right>-->
+        <!--<bottom>10</bottom>-->
+        <!--<width>60</width>-->
+        <!--<height>20</height>-->
+        <!--<font>XS</font>-->
+        <!--<textcolor>6612b2e7</textcolor>-->
+        <!--<align>center</align>-->
+        <!--<scroll>false</scroll>-->
+        <!--<info>System.AddonVersion(skin.sio2x)</info>-->
+        <!--</control>-->
         <control type="label">
             <description>SKIN VERSION</description>
             <right>10</right>
             <bottom>10</bottom>
-            <width>60</width>
+            <width>160</width>
             <height>20</height>
             <font>XS</font>
             <textcolor>6612b2e7</textcolor>
             <align>center</align>
             <scroll>false</scroll>
-            <info>System.AddonVersion(skin.sio2x)</info>
+            <info>System.CpuUsage</info>
         </control>
         <control type="group">
             <animation condition="Control.HasFocus(9000) + ![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-498" time="220">Conditonal</animation>
             <control type="button" id="9009">
                 <include>ShelfFade</include>
-                <visible>[Control.HasFocus(9008) | Control.HasFocus(9009) | Control.HasFocus(9010) | Control.HasFocus(311) | Control.HasFocus(312) | Control.HasFocus(313) | Control.HasFocus(315)]</visible>
+                <visible>Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(313) | Control.IsVisible(315)</visible>
                 <top>18</top>
                 <left>10</left>
                 <width>34</width>
@@ -63,18 +75,18 @@
                 <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),2)">Skin.SetString(addonsshelf,3)</onclick>
                 <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),3)">Skin.SetString(addonsshelf,)</onclick>
                 <onclick  condition="Control.IsVisible(315) + StringCompare(Skin.String(addonsshelf),)">Skin.SetString(addonsshelf,1)</onclick>
-                <colordiffuse>main</colordiffuse>
+               <colordiffuse>main</colordiffuse>
                 <onup>noop</onup>
                 <!--<ondown condition="!IntegerGreaterThan(Container(313).NumItems,0)">noop</ondown>-->
                 <ondown>700</ondown>
             </control>
             <!--todo INTERCEPT CLICKS ON MOVIES-->
             <!--<control type="button" id="900">-->
-                <!--<onfocus>SetFocus(700)</onfocus>-->
-                <!--<ondown>9000</ondown>-->
-                <!--<onleft>Control.Move(311,-1)</onleft>-->
-                <!--<onright>Control.Move(311,1)</onright>-->
-                <!--<label>FUCK</label>-->
+            <!--<onfocus>SetFocus(700)</onfocus>-->
+            <!--<ondown>9000</ondown>-->
+            <!--<onleft>Control.Move(311,-1)</onleft>-->
+            <!--<onright>Control.Move(311,1)</onright>-->
+            <!--<label>FUCK</label>-->
             <!--</control>-->
             <control type="group" description="Furniture">
                 <top>480</top>
@@ -85,7 +97,8 @@
                     <centerleft>960</centerleft>
                     <onleft>9000</onleft>
                     <onright>9000</onright>
-                    <onup>700</onup>
+                    <onup condition="Container(9000).HasFocus(345)">noop</onup>
+                    <onup condition="!Container(9000).HasFocus(345)">700</onup>
                     <ondown>noop</ondown>
                     <orientation>vertical</orientation>
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
@@ -223,8 +236,8 @@
                             <label>[B]$INFO[ListItem.label][/B]</label>
                         </control>
                         <control type="image">
-                            <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
-                            <animation condition="!Skin.HasSetting(colormenu)" effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
+                            <animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
                             <centerleft>130</centerleft>
                             <centertop>110</centertop>
                             <width>220</width>
@@ -321,7 +334,8 @@
                         [Container(9000).HasFocus(355) + Control.IsVisible(311)] |
                         [Container(9000).HasFocus(358) + Control.IsVisible(311)] |
                         [Container(9000).HasFocus(359) + Control.IsVisible(311)] |
-                        [Container(9000).HasFocus(360) + Control.IsVisible(311)]
+                        [Container(9000).HasFocus(360) + Control.IsVisible(311)] |
+                        Container(9000).HasFocus(345)
                     </visible>
                     <animation effect="fade" end="100" time="250" delay="150">Visible</animation>
                     <animation effect="fade" end="0" time="0">Hidden</animation>

@@ -785,14 +785,6 @@
                 <label>+ $INFO[ListItem.label2]</label>
                 <align>center</align>
             </control>
-            <control type="image" description="Reflection">
-                <left>27</left>
-                <top>330</top>
-                <width>303</width>
-                <height>303</height>
-                <texture background="true" diffuse="images/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-                <aspectratio scalediffuse="false">scale</aspectratio>
-            </control>
             <control type="image">
                 <left>27</left>
                 <top>27</top>
@@ -917,20 +909,18 @@
             <control type="group">
                 <left>260</left>
                 <top>80</top>
-                <control type="image" description="Thumb Reflection">
-                    <top>500</top>
-                    <width>500</width>
-                    <height>500</height>
-                    <include>Icon_Fade</include>
-                    <texture diffuse="images/Reflection0.png" flipy="true">$INFO[ListItem.Icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
                 <control type="image" description="Thumb">
                     <width>500</width>
                     <height>500</height>
                     <include>Icon_Fade</include>
                     <texture>$INFO[ListItem.Icon]</texture>
                     <aspectratio aligny="bottom">keep</aspectratio>
+                </control>
+                 <control type="image" description="Thumb">
+                    <width>500</width>
+                    <height>500</height>
+                    <include>Icon_Fade</include>
+                    <texture border="1">images/dvdbox.png</texture>
                 </control>
             </control>
         </control>
@@ -951,6 +941,7 @@
                     <width>758</width>
                     <height>40</height>
                     <align>left</align>
+                    <textcolor>orange</textcolor>
                     <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
@@ -958,34 +949,38 @@
                     <width>758</width>
                     <height>40</height>
                     <align>left</align>
+                    <font>size26</font>
                     <scroll>false</scroll>
-                    <label>$LOCALIZE[24051] [COLOR=red]$INFO[ListItem.Property(Addon.Version)] [/COLOR] $VAR[TopLabel, •]</label>
+                    <label>$LOCALIZE[24051] [COLOR red]$INFO[ListItem.Property(Addon.Version)][/COLOR]$INFO[ListItem.Property(Addon.Creator), • ]</label>
+                </control>
+                 <control type="image">
+                    <height>1</height>
+                    <width>758</width>
+                    <texture>lines/Line1.png</texture>
                 </control>
                 <control type="textbox">
-                    <height>210</height>
+                    <height>270</height>
                     <width>758</width>
-                    <textcolor>dimgray</textcolor>
+                    <textcolor>maindim</textcolor>
                     <align>justify</align>
                     <autoscroll delay="8000" time="4300" repeat="10000"></autoscroll>
                     <label>$VAR[Plots]</label>
                 </control>
-                <control type="label" description="Bottom Label">
+                <control type="image">
+                    <height>1</height>
                     <width>758</width>
-                    <height>40</height>
-                    <align>left</align>
-                    <scroll>false</scroll>
-                    <label>$INFO[ListItem.Genre]</label>
+                    <texture>lines/Line1.png</texture>
                 </control>
-                <control type="label" description="Bottom Label">
+                <control type="label" description="Disclaimer">
                     <visible>container.content(addons)</visible>
                     <scroll>true</scroll>
                     <font>size21</font>
                     <textcolor>main</textcolor>
                     <width>758</width>
-                    <height>40</height>
-                    <align>left</align>
+                    <height>50</height>
+                    <align>center</align>
                     <scroll>false</scroll>
-                    <label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
+                    <label>[COLOR red]$INFO[ListItem.Property(Addon.Disclaimer)][/COLOR]</label>
                 </control>
             </control>
         </control>
