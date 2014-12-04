@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <views>14</views>
-    <defaultcontrol>32</defaultcontrol>
+    <defaultcontrol>14</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
@@ -15,7 +15,6 @@
             <description>passes the values up one level</description>
             <visible>False</visible>
         </control>
-
         <control type="group" id="50">
             <include>OpenClose</include>
             <control type="group">

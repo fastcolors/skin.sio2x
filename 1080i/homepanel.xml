@@ -82,7 +82,7 @@
             <thumb>icons/LiveTV.png</thumb>
             <label>31059</label>
             <property name="color">green3</property>>
-            <onclick>ActivateWindow(TVGuide)</onclick>
+            <onclick>ActivateWindow(1718)</onclick>
             <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
         <!--LIVE TV RECORDING-->
@@ -90,7 +90,7 @@
             <thumb>icons/LiveTVrec.png</thumb>
             <label>$INFO[Pvr.NowRecordingTitle]</label>
             <property name="color">green3</property>>
-            <onclick>ActivateWindow(TVGuide)</onclick>
+            <onclick>ActivateWindow(1718)</onclick>
             <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
         <!--PICTURES-->
