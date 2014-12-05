@@ -20,7 +20,8 @@
                     <include>DialogButt</include>
                     <label>3</label>
                     <onclick>Close</onclick>
-                    <onclick>ActivateWindow(Videos,files)</onclick>
+                    <onclick condition="StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos)</onclick>
+                    <onclick condition="!StringCompare(Window.Property(VideosDirectLink),True)">ActivateWindow(Videos,sources://video/)</onclick>
                 </control>
                 <control type="button" id="702" description="Music">
                     <include>DialogButt</include>
@@ -43,11 +44,11 @@
                     <onclick>UpdateLibrary(video,,true)</onclick>
                 </control>
                 <!--<control type="button" id="705" description="Update Library">-->
-                    <!--<enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>-->
-                    <!--<include>DialogButt</include>-->
-                    <!--<label>Clean Library</label>-->
-                    <!--<onclick>Close</onclick>-->
-                    <!--<onclick>CleanLibrary(video)</onclick>-->
+                <!--<enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>-->
+                <!--<include>DialogButt</include>-->
+                <!--<label>Clean Library</label>-->
+                <!--<onclick>Close</onclick>-->
+                <!--<onclick>CleanLibrary(video)</onclick>-->
                 <!--</control>-->
             </control>
         </control>

@@ -776,7 +776,7 @@
     <include name="Addons_Auto">
         <control type="group">
             <control type="panel" id="315" description="TOP Shortcuts">
-                <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + !StringCompare(Skin.String(addonsshelf),1)</visible>
+                 <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + !StringCompare(Skin.String(addonsshelf),1)</visible>
                 <include>SquareShortcutsCommons</include>
                 <content target="video">$VAR[addonsshelfcontent]</content>
             </control>

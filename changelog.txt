@@ -1,8 +1,16 @@
-3.1.4
+3.1.5
+* squash 3.1.4 changes into 3.1.5
 * CouchPotato Shelf Integration
 * SickBeard Shelf Integration (for now requires my custom build of the addon)
 * Added support fo extended info now populating Home releases, Theater Releases and trending TVShows
-    easily addable to SickBeard & CouchPotato
+* Added Support for onshelf SickBeard & CouchPotato (add movies and show from extendedinfo results)
+* choiche dialog for PVR is now back
+* Airing show on shelf (tvnexaired) are now highlighted
+* Cosmetics on Iconview - fanartview
+* Tvshows Level sio2xview, now opens the flattened episode list under sliding panel. (like Sets in Movie view)
+
+3.1.4
+SKIPPED
 
 3.1.3
 * AddonBrowser now has button to hide Addons marked as Broken
