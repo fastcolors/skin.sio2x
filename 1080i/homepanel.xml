@@ -139,7 +139,7 @@
         </item>
         <!--EXTENDEDINFO-->
         <item id="359">
-            <visible>!Skin.HasSetting(hidetheater) + System.HasAddon(script.extendedinfo)</visible>
+            <visible>Skin.HasSetting(showtheater) + System.HasAddon(script.extendedinfo)</visible>
             <thumb>icons/extendedinfotheater.png</thumb>
             <label>31422</label>
             <property name="color">orange</property>
@@ -147,7 +147,7 @@
         </item>
          <!--EXTENDEDINFO2-->
         <item id="360">
-            <visible>!Skin.HasSetting(hidedvdrel) + System.HasAddon(script.extendedinfo)</visible>
+            <visible>Skin.HasSetting(showdvdrel) + System.HasAddon(script.extendedinfo)</visible>
             <thumb>icons/extendedinfodvd.png</thumb>
             <label>31423</label>
             <property name="color">green3</property>

@@ -414,7 +414,3 @@ msgstr "Popular TvShows"
 msgctxt "#31428"
 msgid "Top Rated TvShows"
 msgstr "Top Rated TvShows"
-
-msgctxt "#31429"
-msgid "still to be"
-msgstr "still to be"

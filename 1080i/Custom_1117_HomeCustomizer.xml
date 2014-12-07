@@ -42,6 +42,14 @@
                             <height>168</height>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                         </control>
+                        <control type="image" description="Thumb">
+                            <visible>IsEmpty(Listitem.thumb)</visible>
+                            <centerleft>130</centerleft>
+                            <centertop>110</centertop>
+                            <width>220</width>
+                            <height>168</height>
+                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
+                        </control>
                         <control type="label">
                             <centerleft>130</centerleft>
                             <top>198</top>
@@ -53,7 +61,6 @@
                         </control>
                     </itemlayout>
                     <focusedlayout height="220" width="260">
-
                         <control type="image" description="Thumb">
                             <visible>!IsEmpty(Listitem.thumb)</visible>
                             <centerleft>130</centerleft>
@@ -62,7 +69,14 @@
                             <height>168</height>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                         </control>
-
+                        <control type="image" description="Thumb">
+                            <visible>IsEmpty(Listitem.thumb)</visible>
+                            <centerleft>130</centerleft>
+                            <centertop>110</centertop>
+                            <width>220</width>
+                            <height>168</height>
+                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
+                        </control>
                         <control type="label">
                             <centerleft>130</centerleft>
                             <top>198</top>
@@ -531,28 +545,28 @@
                         <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
                     </item>
                     <item id="359">
-                        <visible>!Skin.HasSetting(hidetheater) + System.HasAddon(script.extendedinfo)</visible>
+                        <visible>Skin.HasSetting(showtheater)</visible>
                         <thumb>icons/extendedinfotheater.png</thumb>
                         <label>31422</label>
-                        <onclick>Skin.ToggleSetting(hidetheater)</onclick>
+                        <onclick>Skin.ToggleSetting(showtheater)</onclick>
                     </item>
                     <item id="359">
-                        <visible>Skin.HasSetting(hidetheater) + System.HasAddon(script.extendedinfo)</visible>
+                        <visible>!Skin.HasSetting(showtheater)</visible>
                         <thumb>help/Off.png</thumb>
                         <label>31422</label>
-                        <onclick>Skin.ToggleSetting(hidetheater)</onclick>
+                        <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showtheater)</onclick>
                     </item>
                     <item id="360">
-                        <visible>!Skin.HasSetting(hidedvdrel) + System.HasAddon(script.extendedinfo)</visible>
+                        <visible>Skin.HasSetting(showdvdrel)</visible>
                         <thumb>icons/extendedinfodvd.png</thumb>
                         <label>31423</label>
-                        <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
+                        <onclick>Skin.ToggleSetting(showdvdrel)</onclick>
                     </item>
                     <item id="360">
-                        <visible>Skin.HasSetting(hidedvdrel)</visible>
+                        <visible>!Skin.HasSetting(showdvdrel)</visible>
                         <thumb>help/Off.png</thumb>
                         <label>31423</label>
-                        <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
+                        <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showdvdrel)</onclick>
                     </item>
                     <item id="347" description="Sources">
                         <visible>!Skin.HasSetting(hideSources)</visible>
@@ -655,19 +669,26 @@
             <onright>50</onright>
             <visible>Library.HasContent(TVShows)</visible>
             <visible>Container(50).HasFocus(1002)</visible>
-            <control type="radiobutton" id="200" description="TV Auto">
+            <control type="radiobutton" id="200" description="Recent episodes">
                 <include>SettingsSubmenuButtons</include>
                 <label>20387</label>
-                <selected>Skin.HasSetting(TVShelf_Watchlist)</selected>
+                <selected>StringCompare(Skin.String(TVshelf),2)</selected>
                 <enable>!Skin.HasSetting(hidetv)</enable>
-                <onclick>Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+                <onclick>Skin.SetString(TVshelf,2)</onclick>
             </control>
-            <control type="radiobutton" id="203" description="TV Watchlist">
+            <control type="radiobutton" id="203" description="Inprog shows">
+                <include>SettingsSubmenuButtons</include>
+                <label>$LOCALIZE[590]</label>
+                <selected>StringCompare(Skin.String(TVshelf),1)</selected>
+                <enable>!Skin.HasSetting(hidetv)</enable>
+                <onclick>Skin.SetString(TVshelf,1)</onclick>
+            </control>
+            <control type="radiobutton" id="204" description="TV Watchlist">
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[31048] $LOCALIZE[20364]</label>
-                <selected>!Skin.HasSetting(TVShelf_Watchlist)</selected>
+                <selected>StringCompare(Skin.String(TVshelf),)</selected>
                 <enable>!Skin.HasSetting(hidetv)</enable>
-                <onclick>Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+                <onclick>Skin.SetString(TVshelf,)</onclick>
             </control>
             <!--<control type="radiobutton" id="204" description="Intruder">-->
             <!--<include>SettingsSubmenuButtons</include>-->
@@ -1080,6 +1101,7 @@
             <width>1000</width>
             <textcolor>gray</textcolor>
             <font>size30</font>
+            <align>center</align>
             <label>31035</label>
         </control>
 

@@ -281,59 +281,70 @@
         <height>452</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="357" width="480">
+        <itemlayout height="357" width="384">
             <control type="group">
                 <!--<animation effect="zoom" condition="true" start="100" end="90" center="240,180">Conditional</animation>-->
                 <control type="image">
                     <left>23</left>
-                    <top>168</top>
-                    <width>433</width>
-                    <height>242</height>
+                    <top>156</top>
+                    <width>335</width>
+                    <height>254</height>
                     <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
                 <control type="image">
+                    <visible>!IsEmpty(ListItem.Art(tvshow.banner))</visible>
                     <left>23</left>
                     <top>75</top>
-                    <width>433</width>
-                    <height>93</height>
+                    <width>335</width>
+                    <height>73</height>
                     <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
+                </control>
+                <control type="image">
+                    <visible>IsEmpty(ListItem.Art(tvshow.banner))</visible>
+                    <left>23</left>
+                    <top>75</top>
+                    <width>335</width>
+                    <height>73</height>
+                    <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(banner)]</texture>
                 </control>
                 <control type="progress" description="progress">
                     <visible>ListItem.IsResumable</visible>
                     <left>24</left>
-                    <top>168</top>
-                    <width>433</width>
+                    <top>148</top>
+                    <width>335</width>
                     <height>8</height>
                     <texturebg>images/transparent.png</texturebg>
-                    <midtexture>images/white.png</midtexture>
+                    <midtexture border="1">images/white.png</midtexture>
                     <info>ListItem.PercentPlayed</info>
                 </control>
                 <control type="image">
                     <left>21</left>
                     <top>73</top>
-                    <width>437</width>
+                    <width>339</width>
                     <height>339</height>
                     <texture border="20" colordiffuse="7AFFFFFF">images/soapshelf.png</texture>
                 </control>
                 <control type="label">
+                    <centerleft>192</centerleft>
                     <top>30</top>
-                    <width>480</width>
+                    <width>335</width>
                     <height>40</height>
-                    <font>size26</font>
+                    <font>size24</font>
                     <scroll>false</scroll>
                     <textcolor>maindim</textcolor>
                     <label>[B]$INFO[ListItem.Title][/B]</label>
                     <align>center</align>
                 </control>
                 <control type="label">
+                    <!--<visible>!StringCompare(Skin.String(TVshelf),1)</visible>-->
                     <top>420</top>
-                    <left>40</left>
-                    <width>400</width>
+                    <centerleft>192</centerleft>
+                    <width>335</width>
                     <height>36</height>
                     <font>size26</font>
                     <textcolor>maindim</textcolor>
-                    <label>[B][UPPERCASE]S $INFO[ListItem.Season] • E $INFO[ListItem.Episode][/UPPERCASE][/B]</label>
+                    <label>[B][UPPERCASE]$INFO[ListItem.Season,S , • ]$INFO[ListItem.Episode,E ][/UPPERCASE][/B]</label>
                     <align>center</align>
                 </control>
                 <control type="image" description="Studio">
@@ -351,52 +362,65 @@
                 <!--<animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>-->
                 <control type="image">
                     <left>23</left>
-                    <top>168</top>
-                    <width>433</width>
-                    <height>242</height>
+                    <top>156</top>
+                    <width>335</width>
+                    <height>254</height>
                     <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
                 <control type="image">
+                    <visible>!IsEmpty(ListItem.Art(tvshow.banner))</visible>
                     <left>23</left>
                     <top>75</top>
-                    <width>433</width>
-                    <height>93</height>
+                    <width>335</width>
+                    <height>73</height>
                     <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
+                </control>
+                <control type="image">
+                    <visible>IsEmpty(ListItem.Art(tvshow.banner))</visible>
+                    <left>23</left>
+                    <top>75</top>
+                    <width>335</width>
+                    <height>73</height>
+                    <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(banner)]</texture>
                 </control>
                 <control type="progress" description="progress">
                     <visible>ListItem.IsResumable</visible>
                     <left>24</left>
-                    <top>168</top>
-                    <width>433</width>
+                    <top>148</top>
+                    <width>335</width>
                     <height>8</height>
                     <texturebg>images/transparent.png</texturebg>
-                    <midtexture>images/white.png</midtexture>
+                    <midtexture border="1">images/white.png</midtexture>
                     <info>ListItem.PercentPlayed</info>
                 </control>
                 <control type="image">
                     <left>21</left>
                     <top>73</top>
-                    <width>437</width>
+                    <width>339</width>
                     <height>339</height>
                     <texture border="20" colordiffuse="$VAR[diffuseselectshelf]">images/soapshelf.png</texture>
                 </control>
                 <control type="label">
+                    <centerleft>192</centerleft>
                     <top>30</top>
-                    <width>480</width>
+                    <width>335</width>
                     <height>40</height>
-                    <font>size26</font>
+                    <font>size24</font>
                     <scroll>false</scroll>
+                    <textcolor>maindim</textcolor>
                     <label>[B]$INFO[ListItem.Title][/B]</label>
                     <align>center</align>
                 </control>
                 <control type="label">
+                    <!--<visible>!StringCompare(Skin.String(TVshelf),1)</visible>-->
                     <top>420</top>
-                    <left>40</left>
-                    <width>400</width>
+                    <centerleft>192</centerleft>
+                    <width>335</width>
                     <height>36</height>
                     <font>size26</font>
-                    <label>[B][UPPERCASE]S $INFO[ListItem.Season] • E $INFO[ListItem.Episode][/UPPERCASE][/B]</label>
+                    <textcolor>maindim</textcolor>
+                    <label>[B][UPPERCASE]$INFO[ListItem.Season,S , • ]$INFO[ListItem.Episode,E ][/UPPERCASE][/B]</label>
                     <align>center</align>
                 </control>
                 <control type="image" description="Studio">
@@ -578,7 +602,7 @@
     <include name="tvshelslider">
         <control type="image">
             <visible>Control.HasFocus(312)</visible>
-            <left>190</left>
+            <centerleft>192</centerleft>
             <top>489</top>
             <width>100</width>
             <height>10</height>
@@ -586,9 +610,10 @@
             <aspectratio>stretch</aspectratio>
             <animation effect="fade" time="220">VisibleChange</animation>
             <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="480,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="960,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1440,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="384,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="768,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1154,0" time="220" easing="inout" reversible="true">Conditional</animation>
+            <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1536,0" time="220" easing="inout" reversible="true">Conditional</animation>
         </control>
     </include>
     <include name="Movies">
@@ -776,7 +801,7 @@
     <include name="Addons_Auto">
         <control type="group">
             <control type="panel" id="315" description="TOP Shortcuts">
-                 <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + !StringCompare(Skin.String(addonsshelf),1)</visible>
+                <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + !StringCompare(Skin.String(addonsshelf),1)</visible>
                 <include>SquareShortcutsCommons</include>
                 <content target="video">$VAR[addonsshelfcontent]</content>
             </control>
