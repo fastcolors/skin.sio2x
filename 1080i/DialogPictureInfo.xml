@@ -61,7 +61,7 @@
                     <control type="image">
                         <height>70</height>
                         <width>1600</width>
-                        <texture border="8">images/Buttonselect1.png</texture>
+                        <texture border="8">images/buttonselect1.png</texture>
                     </control>
                      <control type="label">
                         <left>30</left>

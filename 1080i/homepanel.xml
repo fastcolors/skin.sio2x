@@ -25,7 +25,7 @@
             <property name="unwatched">$INFO[Window(Home).Property(Movies.UnWatched)]</property>
             <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp",return)</onclick>
             <onclick condition="!Skin.HasSetting(no3d)">ActivateWindow(Videos,MovieTitles,return)</onclick>
-            <!--<onclick>RunScript(plugin.synology.ds)</onclick>-->
+            <!--<onclick>Notification(TEST di Notifica,contenuto! si prova CONTIE,20000)</onclick>-->
         </item>
         <!--TV SHOWS-->
         <item id="341">
@@ -66,7 +66,7 @@
             <visible>!Skin.HasSetting(hideaddon)</visible>
             <thumb>icons/addons.png</thumb>
             <label>24001</label>
-            <property name="color">Green3</property>>
+            <property name="color">green3</property>>
             <onclick>ActivateWindow(1118)</onclick>
         </item>
         <!--FAVOURITES-->
@@ -82,7 +82,7 @@
             <thumb>icons/LiveTV.png</thumb>
             <label>31059</label>
             <property name="color">green3</property>>
-            <onclick>ActivateWindow(TVGuide)</onclick>
+            <onclick>ActivateWindow(1718)</onclick>
             <visible>!Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
         <!--LIVE TV RECORDING-->
@@ -90,7 +90,7 @@
             <thumb>icons/LiveTVrec.png</thumb>
             <label>$INFO[Pvr.NowRecordingTitle]</label>
             <property name="color">green3</property>>
-            <onclick>ActivateWindow(TVGuide)</onclick>
+            <onclick>ActivateWindow(1718)</onclick>
             <visible>Pvr.IsRecording + System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
         </item>
         <!--PICTURES-->
@@ -139,7 +139,7 @@
         </item>
         <!--EXTENDEDINFO-->
         <item id="359">
-            <visible>!Skin.HasSetting(hidetheater) + System.HasAddon(script.extendedinfo)</visible>
+            <visible>Skin.HasSetting(showtheater) + System.HasAddon(script.extendedinfo)</visible>
             <thumb>icons/extendedinfotheater.png</thumb>
             <label>31422</label>
             <property name="color">orange</property>
@@ -147,7 +147,7 @@
         </item>
          <!--EXTENDEDINFO2-->
         <item id="360">
-            <visible>!Skin.HasSetting(hidedvdrel) + System.HasAddon(script.extendedinfo)</visible>
+            <visible>Skin.HasSetting(showdvdrel) + System.HasAddon(script.extendedinfo)</visible>
             <thumb>icons/extendedinfodvd.png</thumb>
             <label>31423</label>
             <property name="color">green3</property>

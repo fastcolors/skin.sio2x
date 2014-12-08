@@ -388,25 +388,29 @@ msgid "3D Content in Movies List"
 msgstr "3D Content in Movies List"
 
 msgctxt "#31422"
-msgid "Theaters"
-msgstr "Theaters"
+msgid "Movie Releases"
+msgstr "Movie Releases"
 
 msgctxt "#31423"
-msgid "Home Releases"
-msgstr "Home Releases"
+msgid "TV Releases"
+msgstr "TV Releases"
 
 msgctxt "#31424"
 msgid "Cooming Soon"
 msgstr "Cooming Soon"
 
 msgctxt "#31425"
-msgid "Now Available"
-msgstr "Now Available"
+msgid "New Home Releases"
+msgstr "New Home Releases"
 
 msgctxt "#31426"
 msgid "Now in Theatres"
 msgstr "Now in Theatres"
 
 msgctxt "#31427"
-msgid "Upcoming Home Releases"
-msgstr "Upcoming Home Releases"
+msgid "Popular TvShows"
+msgstr "Popular TvShows"
+
+msgctxt "#31428"
+msgid "Top Rated TvShows"
+msgstr "Top Rated TvShows"

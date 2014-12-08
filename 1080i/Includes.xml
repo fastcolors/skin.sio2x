@@ -11,6 +11,7 @@
     <include file="views/video_banners.xml" />
     <include file="views/video_fanart.xml" />
     <include file="views/video_icons.xml" />
+    <include file="views/video_icons_eps.xml" />
     <include file="views/video_sio2.xml" />
     <include file="views/video_sio2x.xml" />
     <!--OTHERVIEWS-->
@@ -36,22 +37,30 @@
             </control>
             <control type="image" description="Default BG">
                 <visible>!Window.IsActive(Home.xml) + IsEmpty(ListItem.Art(fanart))</visible>
-                <visible>![Container.Content(episodes) | Container.Content(seasons)]</visible>
+                <visible>
+                    ![Container.Content(episodes)
+                    | Container.Content(tvshows)
+                    | Container.Content(seasons)]
+                </visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
                 <texture background="true">$VAR[bgimg]</texture>
                 <aspectratio align="left">scale</aspectratio>
-                <colordiffuse>AFFFFFFF</colordiffuse>
+                <colordiffuse>afffffff</colordiffuse>
             </control>
             <control type="image" description="Default BG">
-                <visible>![Window.IsActive(Home.xml) | IsEmpty(ListItem.Art(fanart))] | Container.Content(episodes) | Container.Content(seasons)</visible>
+                <visible>
+                    ![Window.IsActive(Home.xml) | IsEmpty(ListItem.Art(fanart)) | Container.Content(tvshows)]
+                    | Container.Content(episodes)
+                    | Container.Content(seasons)
+                </visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>200</fadetime>
                 <texture background="true">$VAR[bgimg]</texture>
                 <aspectratio align="left">scale</aspectratio>
-                <colordiffuse>33FFFFFF</colordiffuse>
+                <colordiffuse>30ffffff</colordiffuse>
             </control>
             <control type="image" description="Default BG">
                 <visible>Window.IsActive(Home.xml)</visible>
@@ -193,17 +202,21 @@
     <include name="WindowsTopInfos">
         <include>clockandkodi</include>
         <!--VIEWTOPINFOS-->
-        <control type="grouplist" description="LIST + BIGLIST">
-            <visible>!Window.IsActive(DialogAlbumInfo.xml)</visible>
-            <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
+        <control type="grouplist" description="BIGLIST">
+            <visible>
+                !Window.IsActive(DialogAlbumInfo.xml)
+                + Control.IsVisible(50)
+            </visible>
             <top>40</top>
             <centerleft>1440</centerleft>
             <width>880</width>
             <include>windowtitle</include>
         </control>
         <control type="grouplist" description="sio2">
-            <visible>!Window.IsActive(DialogAlbumInfo.xml)</visible>
-            <visible>Control.IsVisible(52)</visible>
+            <visible>
+                !Window.IsActive(DialogAlbumInfo.xml)
+                + Control.IsVisible(52)
+            </visible>
             <top>40</top>
             <left>1360</left>
             <width>560</width>
@@ -319,7 +332,6 @@
             <align>center</align>
             <aligny>center</aligny>
             <textcolor>orange</textcolor>
-
         </control>
         <control type="label">
             <description>Start time</description>
@@ -687,5 +699,20 @@
     <include name="border">
         <bordertexture border="2">images/dvdbox.png</bordertexture>
         <bordersize>1</bordersize>
+    </include>
+    <include name="weatherinfo">
+        <width>450</width>
+        <height>40</height>
+        <font>size36B</font>
+        <shadowcolor>-</shadowcolor>
+    </include>
+    <include name="cpu_use">
+        <control type="label">
+            <centerleft>960</centerleft>
+            <width>260</width>
+            <height>20</height>
+            <align>center</align>
+            <info>System.CpuUsage</info>
+        </control>
     </include>
 </includes>

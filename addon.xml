@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.sio2x" version="3.1.4" name="SiO2-X" provider-name="FastColors">
+<addon id="skin.sio2x" version="3.1.6" name="SiO2-X" provider-name="FastColors">
     <requires>
         <import addon="xbmc.gui" version="5.3.0"/>
         <import addon="service.library.data.provider" version="0.0.4"/>
         <import addon="script.artwork.downloader" version="12.0.0"/>
         <import addon="script.favourites" version="3.2.5"/>
-        <import addon="script.cinema.experience" version="3.0.3"/>
+        <import addon="script.extendedinfo" version="1.0.0"/>
         <import addon="script.globalsearch" version="2.0.8"/>
+        <import addon="script.tv.show.next.aired" version="6.0.10"/>
     </requires>
     <extension
             point="xbmc.gui.skin"
@@ -15,11 +16,12 @@
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary></summary>
-        <description>Sio2-X</description>
+        <summary>Evolution of a Skin.</summary>
+        <description>Sio2-X - Places everything You need just a few clicks away. Simple yet fully featured skin. Oh and it's wife friendly.</description>
+        <disclaimer>Aliens'R'Us</disclaimer>
         <platform>all</platform>
         <licence></licence>
-        <forum>http://forum.xbmc.org/showthread.php?tid=179189</forum>
+        <forum>http://forum.kodi.tv/showthread.php?tid=207225</forum>
         <source>https://github.com/fastcolors/skin.sio2x</source>
         <email></email>
     </extension>

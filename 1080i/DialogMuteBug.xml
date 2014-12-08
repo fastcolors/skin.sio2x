@@ -2,16 +2,26 @@
 <window id="113">
     <defaultcontrol always="true">901</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <include>OpenClose</include>
+    <animation effect="fade" start="100" end="0" time="400" reversible="false">WindowClose</animation>
     <controls>
+        <control type="image">
+            <animation effect="fade" end="85" condition="true">Conditional</animation>
+            <centerleft>960</centerleft>
+            <centertop>800</centertop>
+            <width>240</width>
+            <height>236</height>
+            <texture colordiffuse="inverted" border="30">images/diffuserounded.png</texture>
+        </control>
         <control type="group">
-            <left>855</left>
-            <top>666</top>
+            <width>210</width>
+            <height>206</height>
+            <centerleft>960</centerleft>
+            <centertop>800</centertop>
             <control type="image" id="901" description="Muted">
                 <width>210</width>
                 <height>206</height>
                 <aspectratio>keep</aspectratio>
-                <texture>images/MutedSpeaker.png</texture>
+                <texture colordiffuse="main">images/MutedSpeaker.png</texture>
             </control>
         </control>
     </controls>

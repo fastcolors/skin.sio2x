@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="icons_episodes">
+        <control type="group" description="Icons view">
+            <visible>Control.IsVisible(56)</visible>
+            <control type="group">
+                <control type="panel" id="56">
+                    <centerleft>960</centerleft>
+                    <top>100</top>
+                    <width>1760</width>
+                    <height>810</height>
+                    <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
+                    <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
+                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                    <onright condition="Skin.HasSetting(Scrollbars_Passive)">noop</onright>
+                    <onup>56</onup>
+                    <ondown>56</ondown>
+                    <viewtype label="56">Grid</viewtype>
+                    <pagecontrol>60</pagecontrol>
+                    <scrolltime tween="sine" easing="inout">400</scrolltime>
+                    <preloaditems>2</preloaditems>
+                    <itemlayout width="440" height="390">
+                        <control type="image">
+                            <centerleft>220</centerleft>
+                            <top>10</top>
+                            <height>300</height>
+                            <width>400</width>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                            <aspectratio>scale</aspectratio>
+                        </control>
+                        <control type="image">
+                            <centerleft>220</centerleft>
+                            <top>10</top>
+                            <height>300</height>
+                            <width>400</width>
+                            <texture border="1">images/dvdbox.png</texture>
+                        </control>
+                        <control type="image">
+                            <centerleft>220</centerleft>
+                            <top>280</top>
+                            <height>24</height>
+                            <width>400</width>
+                            <texture border="1">$INFO[ListItem.Label2,badges/,.png]</texture>
+                            <aspectratio align="center">keep</aspectratio>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>220</centerleft>
+                            <top>330</top>
+                            <width>350</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <font>size20</font>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="image">
+                            <left>14</left>
+                            <top>276</top>
+                            <width>40</width>
+                            <height>40</height>
+                            <info>ListItem.Overlay</info>
+                        </control>
+                        <control type="progress" description="progress">
+                            <visible>ListItem.IsResumable</visible>
+                            <centerleft>220</centerleft>
+                            <top>321</top>
+                            <height>8</height>
+                            <texturebg>images/transparent.png</texturebg>
+                            <midtexture border="1">images/white.png</midtexture>
+                            <width>400</width>
+                            <info>ListItem.PercentPlayed</info>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="440" height="390">
+                        <control type="image">
+                            <centerleft>220</centerleft>
+                            <top>10</top>
+                            <height>300</height>
+                            <width>400</width>
+                            <texture>$INFO[ListItem.Icon]</texture>
+                            <aspectratio>scale</aspectratio>
+                        </control>
+                        <control type="image">
+                            <centerleft>220</centerleft>
+                            <top>10</top>
+                            <height>300</height>
+                            <width>400</width>
+                            <texture border="1">images/dvdbox.png</texture>
+                        </control>
+                        <control type="group">
+                            <animation effect="fade" start="0" end="100" time="250">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="50">unFocus</animation>
+                            <control type="image">
+                                <centerleft>220</centerleft>
+                                <width>420</width>
+                                <height>320</height>
+                                <texture border="9">images/SetsOver.png</texture>
+                            </control>
+                            <control type="textbox">
+                                <centerleft>220</centerleft>
+                                <top>10</top>
+                                <height>270</height>
+                                <width>380</width>
+                                <font>size22</font>
+                                <align>center</align>
+                                <label>[B][COLOR orange]$INFO[ListItem.Title][/COLOR]$INFO[ListItem.Premiered,[CR][CR][COLOR lightblue]$LOCALIZE[20416]:[/COLOR] ]$INFO[ListItem.Director,[CR][CR][COLOR lightblue]$LOCALIZE[20339]: [/COLOR]]$INFO[ListItem.Duration,[CR][CR][COLOR lightblue]$LOCALIZE[180]: [/COLOR], $LOCALIZE[12391]]$INFO[Listitem.Label2,[CR][CR]][/B]</label>
+                            </control>
+                        </control>
+                        <control type="image">
+                            <centerleft>220</centerleft>
+                            <top>280</top>
+                            <height>24</height>
+                            <width>400</width>
+                            <texture border="1">$INFO[ListItem.Label2,badges/,.png]</texture>
+                            <aspectratio align="center">keep</aspectratio>
+                        </control>
+                        <control type="textbox">
+                            <centerleft>220</centerleft>
+                            <top>330</top>
+                            <width>350</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <font>size20</font>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="progress" description="progress">
+                            <visible>ListItem.IsResumable</visible>
+                            <centerleft>220</centerleft>
+                            <top>321</top>
+                            <height>8</height>
+                            <texturebg>images/transparent.png</texturebg>
+                            <midtexture border="1">images/white.png</midtexture>
+                            <width>400</width>
+                            <info>ListItem.PercentPlayed</info>
+                        </control>
+                        <control type="image">
+                            <left>14</left>
+                            <top>276</top>
+                            <width>40</width>
+                            <height>40</height>
+                            <info>ListItem.Overlay</info>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+            <control type="image" description="Line Split">
+                <centerleft>960</centerleft>
+                <top>98</top>
+                <width>1500</width>
+                <height>1</height>
+                <texture colordiffuse="main">lines/Line1.png</texture>
+            </control>
+            <control type="image" description="Line Split">
+                <centerleft>960</centerleft>
+                <top>909</top>
+                <width>1500</width>
+                <height>1</height>
+                <texture colordiffuse="main">lines/Line1.png</texture>
+            </control>
+            <include>60slider</include>
+            <control type="image">
+                <top>910</top>
+                <width>1920</width>
+                <height>400</height>
+                <texture border="30">images/transparent.png</texture>
+                <colordiffuse>inverted</colordiffuse>
+            </control>
+            <control type="textbox">
+                <centerleft>960</centerleft>
+                <top>910</top>
+                <width>1620</width>
+                <height>170</height>
+                <align>justify</align>
+                <info>ListItem.Plot</info>
+            </control>
+            <control type="label">
+                <top>40</top>
+                <centerleft>960</centerleft>
+                <width>1500</width>
+                <height>60</height>
+                <align>center</align>
+                <textcolor>orange</textcolor>
+                <label>$INFO[ListItem.TvShowTitle]$INFO[ListItem.Season, / $LOCALIZE[20373] ]</label>
+            </control>
+            <control type="label">
+                <visible>IsEmpty(ListItem.TvShowTitle)</visible>
+                <top>40</top>
+                <centerleft>960</centerleft>
+                <width>1500</width>
+                <height>60</height>
+                <align>center</align>
+                <textcolor>orange</textcolor>
+                <label>..</label>
+            </control>
+        </control>
+    </include>
+</includes>

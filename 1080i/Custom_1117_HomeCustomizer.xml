@@ -23,93 +23,80 @@
                 <texture>lines/Line1.png</texture>
             </control>
             <control type="panel" id="50" description="ICON PANEL">
-                <width>1800</width>
-                <height>600</height>
-                <top>491</top>
-                <left>60</left>
-                <onleft>50</onleft>
-                <onright>50</onright>
-                <onup>520</onup>
-                <ondown>noop</ondown>
-                <scrolltime tween="sine" easing="inout">280</scrolltime>
-                <itemlayout height="230" width="300">
-                    <control type="image" description="THMBSBASE">
-                        <left>20</left>
-                        <top>48</top>
-                        <width>260</width>
-                        <height>168</height>
-                        <colordiffuse>FF555555</colordiffuse>
-                        <texture>icons/base.png</texture>
-                    </control>
-                    <control type="Image" description="THUMB">
-                        <visible>!IsEmpty(Listitem.thumb)</visible>
-                        <left>20</left>
-                        <top>48</top>
-                        <height>168</height>
-                        <width>260</width>
-                        <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                    <control type="Image" description="THUMB">
-                        <visible>IsEmpty(Listitem.thumb)</visible>
-                        <left>20</left>
-                        <top>48</top>
-                        <height>168</height>
-                        <width>260</width>
-                        <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                    <control type="label" description="Main Label">
-                        <top>230</top>
-                        <width>300</width>
-                        <height>24</height>
-                        <align>center</align>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout  height="230" width="370">
-                    <control type="image" description="THMBSBASE">
-                        <left>20</left>
-                        <top>48</top>
-                        <width>260</width>
-                        <height>168</height>
-                        <colordiffuse>FF666666</colordiffuse>
-                        <texture>icons/base.png</texture>
-                    </control>
-                    <control type="Image" description="THUMB">
-                        <visible>!IsEmpty(Listitem.thumb)</visible>
-                        <left>20</left>
-                        <top>48</top>
-                        <height>168</height>
-                        <width>260</width>
-                        <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                    <control type="Image" description="THUMB">
-                        <visible>IsEmpty(Listitem.thumb)</visible>
-                        <left>20</left>
-                        <top>48</top>
-                        <height>168</height>
-                        <width>260</width>
-                        <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                    <control type="image" description="Selection Overlay">
-                        <left>20</left>
-                        <top>48</top>
-                        <height>168</height>
-                        <width>260</width>
-                        <texture colordiffuse="main">images/atvslider.png</texture>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                    <control type="label" description="Main Label">
-                        <top>230</top>
-                        <width>300</width>
-                        <height>24</height>
-                        <align>center</align>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                </focusedlayout>
+                <width>1820</width>
+                    <height>589</height>
+                    <top>491</top>
+                    <centerleft>960</centerleft>
+                    <onleft>50</onleft>
+                    <onright>50</onright>
+                    <onup>700</onup>
+                    <ondown>noop</ondown>
+                    <orientation>vertical</orientation>
+                    <scrolltime tween="sine" easing="inout">280</scrolltime>
+                    <itemlayout height="220" width="260">
+                        <control type="image" description="Thumb">
+                            <visible>!IsEmpty(Listitem.thumb)</visible>
+                            <centerleft>130</centerleft>
+                            <centertop>110</centertop>
+                            <width>220</width>
+                            <height>168</height>
+                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+                        </control>
+                        <control type="image" description="Thumb">
+                            <visible>IsEmpty(Listitem.thumb)</visible>
+                            <centerleft>130</centerleft>
+                            <centertop>110</centertop>
+                            <width>220</width>
+                            <height>168</height>
+                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
+                        </control>
+                        <control type="label">
+                            <centerleft>130</centerleft>
+                            <top>198</top>
+                            <width>240</width>
+                            <height>24</height>
+                            <font>size24</font>
+                            <align>center</align>
+                            <label>[B]$INFO[ListItem.label][/B]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="220" width="260">
+                        <control type="image" description="Thumb">
+                            <visible>!IsEmpty(Listitem.thumb)</visible>
+                            <centerleft>130</centerleft>
+                            <centertop>110</centertop>
+                            <width>220</width>
+                            <height>168</height>
+                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+                        </control>
+                        <control type="image" description="Thumb">
+                            <visible>IsEmpty(Listitem.thumb)</visible>
+                            <centerleft>130</centerleft>
+                            <centertop>110</centertop>
+                            <width>220</width>
+                            <height>168</height>
+                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
+                        </control>
+                        <control type="label">
+                            <centerleft>130</centerleft>
+                            <top>198</top>
+                            <width>240</width>
+                            <height>24</height>
+                            <font>size24</font>
+                            <align>center</align>
+                            <label>[B]$INFO[ListItem.label][/B]</label>
+                        </control>
+                        <control type="image">
+                            <animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
+                            <centerleft>130</centerleft>
+                            <centertop>110</centertop>
+                            <width>220</width>
+                            <height>168</height>
+                            <texture border="40">images/atvslider.png</texture>
+                            <colordiffuse>main</colordiffuse>
+                        </control>
+                    </focusedlayout>
                 <content>
                     <item id="1013" description="VAddons">
                         <visible>!Skin.HasSetting(hidevaddons) + Skin.HasSetting(hidetv) + Skin.HasSetting(hidemovie)</visible>
@@ -558,28 +545,28 @@
                         <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
                     </item>
                     <item id="359">
-                        <visible>!Skin.HasSetting(hidetheater) + System.HasAddon(script.extendedinfo)</visible>
+                        <visible>Skin.HasSetting(showtheater)</visible>
                         <thumb>icons/extendedinfotheater.png</thumb>
                         <label>31422</label>
-                        <onclick>Skin.ToggleSetting(hidetheater)</onclick>
+                        <onclick>Skin.ToggleSetting(showtheater)</onclick>
                     </item>
                     <item id="359">
-                        <visible>Skin.HasSetting(hidetheater) + System.HasAddon(script.extendedinfo)</visible>
+                        <visible>!Skin.HasSetting(showtheater)</visible>
                         <thumb>help/Off.png</thumb>
                         <label>31422</label>
-                        <onclick>Skin.ToggleSetting(hidetheater)</onclick>
+                        <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showtheater)</onclick>
                     </item>
                     <item id="360">
-                        <visible>!Skin.HasSetting(hidedvdrel) + System.HasAddon(script.extendedinfo)</visible>
+                        <visible>Skin.HasSetting(showdvdrel)</visible>
                         <thumb>icons/extendedinfodvd.png</thumb>
                         <label>31423</label>
-                        <onclick>Skin.ToggleSetting(hidedvdrel) + System.HasAddon(script.extendedinfo)</onclick>
+                        <onclick>Skin.ToggleSetting(showdvdrel)</onclick>
                     </item>
                     <item id="360">
-                        <visible>Skin.HasSetting(hidedvdrel)</visible>
+                        <visible>!Skin.HasSetting(showdvdrel)</visible>
                         <thumb>help/Off.png</thumb>
                         <label>31423</label>
-                        <onclick>Skin.ToggleSetting(hidedvdrel)</onclick>
+                        <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showdvdrel)</onclick>
                     </item>
                     <item id="347" description="Sources">
                         <visible>!Skin.HasSetting(hideSources)</visible>
@@ -644,6 +631,7 @@
                 </content>
             </control>
         </control>
+        <control type="group" id="700">
         <control type="grouplist" id="520" description="MOVIES">
             <top>100</top>
             <left>260</left>
@@ -681,19 +669,26 @@
             <onright>50</onright>
             <visible>Library.HasContent(TVShows)</visible>
             <visible>Container(50).HasFocus(1002)</visible>
-            <control type="radiobutton" id="200" description="TV Auto">
+            <control type="radiobutton" id="200" description="Recent episodes">
                 <include>SettingsSubmenuButtons</include>
                 <label>20387</label>
-                <selected>Skin.HasSetting(TVShelf_Watchlist)</selected>
+                <selected>StringCompare(Skin.String(TVshelf),2)</selected>
                 <enable>!Skin.HasSetting(hidetv)</enable>
-                <onclick>Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+                <onclick>Skin.SetString(TVshelf,2)</onclick>
             </control>
-            <control type="radiobutton" id="203" description="TV Watchlist">
+            <control type="radiobutton" id="203" description="Inprog shows">
+                <include>SettingsSubmenuButtons</include>
+                <label>$LOCALIZE[590]</label>
+                <selected>StringCompare(Skin.String(TVshelf),1)</selected>
+                <enable>!Skin.HasSetting(hidetv)</enable>
+                <onclick>Skin.SetString(TVshelf,1)</onclick>
+            </control>
+            <control type="radiobutton" id="204" description="TV Watchlist">
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[31048] $LOCALIZE[20364]</label>
-                <selected>!Skin.HasSetting(TVShelf_Watchlist)</selected>
+                <selected>StringCompare(Skin.String(TVshelf),)</selected>
                 <enable>!Skin.HasSetting(hidetv)</enable>
-                <onclick>Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+                <onclick>Skin.SetString(TVshelf,)</onclick>
             </control>
             <!--<control type="radiobutton" id="204" description="Intruder">-->
             <!--<include>SettingsSubmenuButtons</include>-->
@@ -720,18 +715,6 @@
                 <onclick condition="!StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,)</onclick>
                 <onclick condition="StringCompare(Skin.String(musicshelf),)">Skin.SetString(musicshelf,mushoff)</onclick>
             </control>
-            <control type="radiobutton" id="303" description="Custom">
-                <onup>300</onup>
-                <ondown>304</ondown>
-                <include>SettingsSubmenuButtons</include>
-                <label>31051</label>
-                <selected>StringCompare(Skin.String(Musicshelf),custom)</selected>
-                <enable>!Skin.HasSetting(hidemusic)</enable>
-                <onclick>Skin.ToggleSetting(MusicShelf_Custom)</onclick>
-                <onclick condition="Skin.HasSetting(MusicShelf_Custom)">Skin.Reset(MusicShelf_Custom)</onclick>
-                <onclick condition="!StringCompare(Skin.String(musicshelf),custom)">Skin.SetString(musicshelf,custom)</onclick>
-                <onclick condition="StringCompare(Skin.String(musicshelf),custom)">Skin.SetString(musicshelf,mushoff)</onclick>
-            </control>
             <control type="radiobutton" id="304" description="100">
                 <include>SettingsSubmenuButtons</include>
                 <onup>303</onup>
@@ -748,15 +731,6 @@
             <visible>Container(50).HasFocus(1004)</visible>
             <top>120</top>
             <left>260</left>
-            <control type="label">
-                <top>40</top>
-                <left>20</left>
-                <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
-                <width>1000</width>
-                <textcolor>gray</textcolor>
-                <font>size22</font>
-                <label>Scroll Right to Add > 5 Addons > 5 Scripts > 3 Favourites</label>
-            </control>
             <control type="radiobutton" id="303" description="Custom">
                 <onup>300</onup>
                 <ondown>52</ondown>
@@ -848,17 +822,8 @@
         </control>
         <control type="group" id="520" description="ADDONS">
             <visible>Container(50).HasFocus(1005)</visible>
-            <top>120</top>
+            <top>80</top>
             <left>260</left>
-            <control type="label">
-                <top>40</top>
-                <left>20</left>
-                <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
-                <width>1000</width>
-                <textcolor>gray</textcolor>
-                <font>size22</font>
-                <label>Scroll Right to Add > 10 Addons > 5 Scripts > 3 Favourites</label>
-            </control>
             <control type="radiobutton" id="303" description="Custom">
                 <onup>300</onup>
                 <ondown>52</ondown>
@@ -869,6 +834,7 @@
             </control>
         </control>
         <control type="panel" id="52">
+            <top>100</top>
             <enable>!Skin.HasSetting(hideaddon)</enable>
             <visible>Container(50).HasFocus(1005)</visible>
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -1135,7 +1101,61 @@
             <width>1000</width>
             <textcolor>gray</textcolor>
             <font>size30</font>
+            <align>center</align>
             <label>31035</label>
+        </control>
+
+        <control type="group" id="520" description="WEATHER">
+            <top>60</top>
+            <left>60</left>
+            <visible>Container(50).HasFocus(1006)</visible>
+            <control type="label">
+                <left>450</left>
+                <top>80</top>
+                <width>900</width>
+                <height>60</height>
+                <align>center</align>
+                <textcolor>gray</textcolor>
+                <font>size26</font>
+                <label>Current Location:</label>
+            </control>
+            <control type="label">
+                <left>450</left>
+                <top>150</top>
+                <width>900</width>
+                <height>60</height>
+                <align>center</align>
+                <font>size60B</font>
+                <label>$INFO[Weather.Location]</label>
+            </control>
+            <control type="button" id="100">
+                <ondown>50</ondown>
+                <left>750</left>
+                <top>250</top>
+                <width>300</width>
+                <height>81</height>
+                <align>center</align>
+                <label>5</label>
+                <enable>!Skin.HasSetting(hidewtr)</enable>
+                <onclick>activatewindow(weathersettings)</onclick>
+            </control>
+        </control>
+        <control type="group" id="521" description="SEARCH">
+            <top>60</top>
+            <left>60</left>
+            <visible>Container(50).HasFocus(356)</visible>
+            <control type="textbox">
+                <!--todo label maybe-->
+                <left>450</left>
+                <top>100</top>
+                <width>900</width>
+                <height>300</height>
+                <align>center</align>
+                <textcolor>gray</textcolor>
+                <font>size26</font>
+                <label></label>
+            </control>
+        </control>
         </control>
         <control type="group" description="Options">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus()</visible>
@@ -1222,57 +1242,6 @@
                     <onclick condition="Container(50).Hasfocus(506)">Skin.Reset(HomeAddon.12.Icon)</onclick>
                     <onclick>SetFocus(50)</onclick>
                 </control>
-            </control>
-        </control>
-        <control type="group" id="520" description="WEATHER">
-            <top>60</top>
-            <left>60</left>
-            <visible>Container(50).HasFocus(1006)</visible>
-            <control type="label">
-                <left>450</left>
-                <top>80</top>
-                <width>900</width>
-                <height>60</height>
-                <align>center</align>
-                <textcolor>gray</textcolor>
-                <font>size26</font>
-                <label>Current Location:</label>
-            </control>
-            <control type="label">
-                <left>450</left>
-                <top>150</top>
-                <width>900</width>
-                <height>60</height>
-                <align>center</align>
-                <font>size60B</font>
-                <label>$INFO[Weather.Location]</label>
-            </control>
-            <control type="button" id="100">
-                <ondown>50</ondown>
-                <left>750</left>
-                <top>250</top>
-                <width>300</width>
-                <height>81</height>
-                <align>center</align>
-                <label>5</label>
-                <enable>!Skin.HasSetting(hidewtr)</enable>
-                <onclick>activatewindow(weathersettings)</onclick>
-            </control>
-        </control>
-        <control type="group" id="521" description="SEARCH">
-            <top>60</top>
-            <left>60</left>
-            <visible>Container(50).HasFocus(356)</visible>
-            <control type="textbox">
-                <!--todo label maybe-->
-                <left>450</left>
-                <top>100</top>
-                <width>900</width>
-                <height>300</height>
-                <align>center</align>
-                <textcolor>gray</textcolor>
-                <font>size26</font>
-                <label></label>
             </control>
         </control>
     </controls>

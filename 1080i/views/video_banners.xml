@@ -4,6 +4,12 @@
         <control type="group" description="BANNERS">
             <visible>Control.IsVisible(55)</visible>
             <control type="group" description="Container and frame">
+                <control type="image">
+                    <top>141</top>
+                    <width>900</width>
+                    <height>940</height>
+                    <texture colordiffuse="inverted">images/gradientleft_transparent.png</texture>
+                </control>
                 <control type="fixedlist" id="55" description="bannerlist">
                     <visible>container.content(tvshows)</visible>
                     <visible>!IsEmpty(Container.FolderPath)</visible>
@@ -170,9 +176,8 @@
                 </control>
             </control>
             <control type="image" description="Line Split">
-                <left>129</left>
                 <top>139</top>
-                <width>1674</width>
+                <width>1920</width>
                 <height>1</height>
                 <texture colordiffuse="main">lines/LineL.png</texture>
                 <aspectratio>stretch</aspectratio>
@@ -197,12 +202,9 @@
                 <label>[B]$INFO[ListItem.Label][/B]  [COLOR=gray]$VAR[TopLabel][/COLOR]</label>
             </control>
             <control type="grouplist">
-                <!--<animation effect="fade" time="150" reversible="false">VisibleChange</animation>-->
-                <!--<visible>!Container(55).OnNext + !Container(55).OnPrevious + !StringCompare(ListItem.Label,..)</visible>-->
                 <top>150</top>
                 <left>129</left>
                 <itemgap>0</itemgap>
-
                 <control type="label" description="Show status">
                     <width>650</width>
                     <height>60</height>
@@ -239,8 +241,8 @@
                 <control type="textbox" description="Plot">
                     <top>300</top>
                     <width>500</width>
-                    <height>650</height>
-                    <font>size30</font>
+                    <height>600</height>
+                    <font>size28</font>
                     <align>justify</align>
                     <autoscroll delay="7000" time="4300" repeat="10000"></autoscroll>
                     <label>$VAR[Plots]</label>

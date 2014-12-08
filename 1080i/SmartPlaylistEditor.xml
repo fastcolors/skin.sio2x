@@ -109,7 +109,7 @@
                             <top>0</top>
                             <width>840</width>
                             <height>63</height>
-                            <texture colordiffuse="$VAR[diffuseselect]" border="8">images/Buttonselect1.png</texture>
+                            <texture colordiffuse="$VAR[diffuseselect]" border="8">images/buttonselect1.png</texture>
                             <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(10)">Conditional</animation>
                         </control>
                         <control type="label">

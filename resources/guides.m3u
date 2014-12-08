@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1, ExtendedInfo SickBeard and CouchPotato in SiO2-x
+plugin://plugin.video.youtube/?action=play_video&videoid=xBQzVSOhas4
 #EXTINF:-1, SiO2-X: Add Playlist to Homescreen shelf
 plugin://plugin.video.youtube/?action=play_video&videoid=pLF0TdgHDVM
 #EXTINF:-1, SiO2-X: Add Genres to Homescreen Shelf
