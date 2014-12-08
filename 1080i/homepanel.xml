@@ -25,7 +25,7 @@
             <property name="unwatched">$INFO[Window(Home).Property(Movies.UnWatched)]</property>
             <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp",return)</onclick>
             <onclick condition="!Skin.HasSetting(no3d)">ActivateWindow(Videos,MovieTitles,return)</onclick>
-            <!--<onclick>Window(weather).Weather.LocationNext</onclick>-->
+            <!--<onclick>Notification(TEST di Notifica,contenuto! si prova CONTIE,20000)</onclick>-->
         </item>
         <!--TV SHOWS-->
         <item id="341">
