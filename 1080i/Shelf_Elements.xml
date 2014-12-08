@@ -29,8 +29,6 @@
         </itemlayout>
         <focusedlayout height="420" width="320">
             <control type="group">
-                <!--<animation center="160,22" effect="zoom" start="90" end="100" time="200">Focus</animation>-->
-                <!--<animation center="160,22" effect="zoom" start="100" end="90" time="100">unFocus</animation>-->
                 <control type="image">
                     <centerleft>160</centerleft>
                     <top>22</top>
@@ -38,6 +36,13 @@
                     <height>410</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$VAR[locandine]</texture>
                     <aspectratio>scale</aspectratio>
+                </control>
+                <control type="image">
+                    <centerleft>160</centerleft>
+                    <top>22</top>
+                    <width>274</width>
+                    <height>410</height>
+                    <texture>$VAR[dvdbox]</texture>
                 </control>
                 <control type="group">
                     <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
@@ -48,13 +53,6 @@
                         <width>274</width>
                         <height>410</height>
                         <texture colordiffuse="$VAR[diffuseselectshelf]">images/darkgrey.png</texture>
-                    </control>
-                    <control type="image">
-                        <centerleft>160</centerleft>
-                        <top>22</top>
-                        <width>274</width>
-                        <height>410</height>
-                        <texture>$VAR[dvdbox]</texture>
                     </control>
                     <control type="textbox">
                         <visible>![Container(9000).HasFocus(359) | Container(9000).HasFocus(360)]</visible>
