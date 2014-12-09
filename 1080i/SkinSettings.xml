@@ -142,6 +142,15 @@
                     <onclick>Skin.ResetSettings</onclick>
                     <onclick>XBMC.ReloadSkin()</onclick>
                 </control>
+                <control type="radiobutton" id="19">
+                    <height>settingsheight</height>
+                    <label>CPU DEBUG</label>
+                    <width>960</width>
+                    <align>left</align>
+                    <selected>Skin.hasSetting(cpudebug)</selected>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <onclick>Skin.ToggleSetting(cpudebug)</onclick>
+                </control>
             </control>
         </control>
         <include>Linemiddle</include>

@@ -709,10 +709,10 @@
     <include name="cpu_use">
         <control type="label">
             <centerleft>960</centerleft>
-            <width>260</width>
-            <height>20</height>
+            <width>1920</width>
+            <height>40</height>
             <align>center</align>
-            <info>System.CpuUsage</info>
+            <label>$INFO[System.CpuUsage] - $INFO[System.Memory(used)]/$INFO[System.Memory(total)] - $INFO[System.CpuFrequency]</label>
         </control>
     </include>
 </includes>

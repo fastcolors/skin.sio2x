@@ -4,7 +4,7 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
-    <views>53,50,52,54,55,56,500</views>
+    <views>52,53,50,54,55,56,500</views>
     <!--
    50 Big List
    52 Sio2
@@ -190,7 +190,6 @@
                 </control>
             </control>
         </control>
-
-        <!--<include>cpu_use</include>-->
+        <include condition="Skin.hasSetting(cpudebug)">cpu_use</include>
     </controls>
 </window>

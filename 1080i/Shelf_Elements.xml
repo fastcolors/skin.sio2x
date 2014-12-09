@@ -196,7 +196,6 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="357" width="384">
             <control type="group">
-                <animation condition="true" center="192,30" effect="zoom" end="90">Conditional</animation>
                 <control type="image">
                     <left>30</left>
                     <top>46</top>
@@ -235,8 +234,6 @@
         </itemlayout>
         <focusedlayout height="357" width="384">
             <control type="group">
-                <animation center="192,30" effect="zoom" start="90" end="100" time="200">Focus</animation>
-                <animation center="192,30" effect="zoom" start="100" end="90" time="100">unFocus</animation>
                 <control type="image">
                     <left>30</left>
                     <top>46</top>
@@ -527,7 +524,7 @@
                 <textcolor>white</textcolor>
                 <shadowcolor>black</shadowcolor>
                 <autoscroll>false</autoscroll>
-                <label>[B]$INFO[ListItem.label2][CR]$INFO[ListItem.label2][/B]</label>
+                <label>[B]$INFO[ListItem.label][CR]$INFO[ListItem.label2][/B]</label>
                 <align>center</align>
             </control>
             <control type="image" description="Studio">
@@ -1398,12 +1395,6 @@
     </include>
     <include name="Favsshelf">
         <control type="group">
-            <control type="label" description="Top Label">
-                <visible>Control.IsVisible(319)</visible>
-                <include>ShelfFade</include>
-                <include>ShelfTitle</include>
-                <label> $LOCALIZE[1036]</label>
-            </control>
             <control type="panel" id="319" description="TOP Shortcuts">
                 <visible>IntegerGreaterThan(Window.Property(favourite.count),0) + [Container(9000).HasFocus(352) | Control.HasFocus(319)] + Container(9000).Row(0)</visible>
                 <onup>noop</onup>
