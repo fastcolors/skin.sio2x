@@ -42,7 +42,7 @@
             <align>center</align>
             <aligny>center</aligny>
         </control>
-        <control type="group">
+        <control type="group" id="897">
             <left>195</left>
             <top>465</top>
             <control type="button" id="11">
@@ -54,9 +54,9 @@
                 <align>center</align>
                 <font>size39</font>
                 <label>12311</label>
-                <onleft>23</onleft>
+                <onleft>13</onleft>
                 <onright>12</onright>
-                <onup>20</onup>
+                <onup>23</onup>
                 <ondown>14</ondown>
             </control>
             <control type="button" id="12">
@@ -70,7 +70,7 @@
                 <label>12312</label>
                 <onleft>11</onleft>
                 <onright>13</onright>
-                <onup>10</onup>
+                <onup>23</onup>
                 <ondown>15</ondown>
             </control>
             <control type="button" id="13">
@@ -83,8 +83,8 @@
                 <font>size39</font>
                 <label>12313</label>
                 <onleft>12</onleft>
-                <onright>23</onright>
-                <onup>22</onup>
+                <onright>11</onright>
+                <onup>23</onup>
                 <ondown>16</ondown>
             </control>
             <control type="button" id="14">
@@ -96,7 +96,7 @@
                 <align>center</align>
                 <font>size39</font>
                 <label>12314</label>
-                <onleft>23</onleft>
+                <onleft>16</onleft>
                 <onright>15</onright>
                 <onup>11</onup>
                 <ondown>17</ondown>
@@ -125,7 +125,7 @@
                 <font>size39</font>
                 <label>12316</label>
                 <onleft>15</onleft>
-                <onright>23</onright>
+                <onright>14</onright>
                 <onup>13</onup>
                 <ondown>19</ondown>
             </control>
@@ -138,7 +138,7 @@
                 <align>center</align>
                 <font>size39</font>
                 <label>12317</label>
-                <onleft>21</onleft>
+                <onleft>19</onleft>
                 <onright>18</onright>
                 <onup>14</onup>
                 <ondown>20</ondown>
@@ -167,7 +167,7 @@
                 <font>size39</font>
                 <label>12319</label>
                 <onleft>18</onleft>
-                <onright>21</onright>
+                <onright>17</onright>
                 <onup>16</onup>
                 <ondown>22</ondown>
             </control>
@@ -178,12 +178,11 @@
                 <width>90</width>
                 <height>90</height>
                 <label>&lt;</label>
-                <font>size39</font>
                 <align>center</align>
-                <onleft>21</onleft>
+                <onleft>22</onleft>
                 <onright>10</onright>
                 <onup>17</onup>
-                <ondown>11</ondown>
+                <ondown>21</ondown>
             </control>
             <control type="button" id="10">
                 <description>0 button</description>
@@ -197,7 +196,7 @@
                 <onleft>20</onleft>
                 <onright>22</onright>
                 <onup>18</onup>
-                <ondown>12</ondown>
+                <ondown>21</ondown>
             </control>
             <control type="button" id="22">
                 <description>next button</description>
@@ -206,12 +205,11 @@
                 <width>90</width>
                 <height>90</height>
                 <label>&gt;</label>
-                <font>size39</font>
                 <align>center</align>
                 <onleft>10</onleft>
-                <onright>21</onright>
+                <onright>20</onright>
                 <onup>19</onup>
-                <ondown>13</ondown>
+                <ondown>21</ondown>
             </control>
         </control>
         <control type="button" id="23">
@@ -226,7 +224,7 @@
             <onleft>13</onleft>
             <onright>11</onright>
             <onup>21</onup>
-            <ondown>21</ondown>
+            <ondown>897</ondown>
             <texturenofocus colordiffuse="inverted">images/white.png</texturenofocus>
         </control>
         <control type="button" id="21">
@@ -240,7 +238,7 @@
             <label>[UPPERCASE]$LOCALIZE[20177][/UPPERCASE]</label>
             <onleft>19</onleft>
             <onright>17</onright>
-            <onup>23</onup>
+            <onup>897</onup>
             <ondown>23</ondown>
             <texturenofocus colordiffuse="inverted">images/white.png</texturenofocus>
         </control>
