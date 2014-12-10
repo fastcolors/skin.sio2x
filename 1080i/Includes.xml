@@ -641,56 +641,63 @@
         <control type="group">
             <visible>Player.HasAudio</visible>
             <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
-            <left>1230</left>
-            <top>965</top>
-            <animation effect="slide" start="710,0" end="0,0" time="450">Visiblechange</animation>
+            <animation effect="slide" end="0,-138" condition="Window.IsActive(DialogExtendedProgressBar.xml)">Conditional</animation>
+            <animation effect="slide" end="0,-138" condition="Window.IsActive(DialogKaiToast.xml)">Conditional</animation>
+            <left>1190</left>
+            <top>944</top>
+            <animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" time="500">WindowClose</animation>
             <control type="image" description="Dialog BG">
-                <left>0</left>
-                <top>0</top>
-                <width>700</width>
-                <height>108</height>
-                <texture border="30">images/ProgressBG.png</texture>
+                <width>720</width>
+                <height>128</height>
+                <texture border="25">images/notification.png</texture>
+                <colordiffuse>main</colordiffuse>
             </control>
             <control type="group">
                 <left>20</left>
+                <top>19</top>
                 <control type="image" description="File Icon">
-                    <top>14</top>
-                    <width>80</width>
-                    <height>80</height>
-                    <aspectratio align="left" aligny="center">keep</aspectratio>
+                    <width>90</width>
+                    <height>90</height>
+                    <aspectratio>keep</aspectratio>
                     <texture>$INFO[MusicPlayer.Cover]</texture>
                 </control>
+            </control>
+            <control type="group">
+                <top>13</top>
                 <control type="label" description="Heading">
-                    <top>3</top>
-                    <left>90</left>
-                    <width>610</width>
-                    <height>22</height>
-                    <font>size26</font>
+                    <left>130</left>
+                    <width>575</width>
+                    <height>44</height>
+                    <font>size21</font>
                     <align>left</align>
                     <aligny>bottom</aligny>
                     <textcolor>orange</textcolor>
                     <scroll>true</scroll>
-                    <label>$INFO[MusicPlayer.Title,","]</label>
+                    <label>$INFO[MusicPlayer.Title]</label>
                 </control>
                 <control type="label" description="Artist">
-                    <left>90</left>
-                    <top>20</top>
-                    <width>auto</width>
-                    <height>70</height>
+                    <top>28</top>
+                    <left>130</left>
+                    <width>575</width>
+                    <height>44</height>
                     <scroll>true</scroll>
-                    <font>size26</font>
+                    <font>size21</font>
                     <align>left</align>
+                    <textcolor>inverted</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>$INFO[MusicPlayer.Artist]</label>
                 </control>
                 <control type="label" description="album">
-                    <left>90</left>
-                    <top>50</top>
-                    <width>auto</width>
-                    <height>70</height>
+                    <top>60</top>
+                    <left>130</left>
+                    <width>575</width>
+                    <height>44</height>
                     <scroll>true</scroll>
-                    <font>size20</font>
+                    <font>size21</font>
                     <align>left</align>
-                    <textcolor>dimgray</textcolor>
+                    <textcolor>inverted</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>$INFO[MusicPlayer.Album,Album: (,)]</label>
                 </control>
             </control>
