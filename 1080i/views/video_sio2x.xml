@@ -736,7 +736,7 @@
                             <info>ListItem.Overlay</info>
                         </control>
                     </focusedlayout>
-                    <content>$INFO[ListItem.DBID,videodb://tvshows/titles/,/-1]</content>
+                    <content>$INFO[ListItem.DBID,videodb://tvshows/titles/]</content>
                 </control>
                 <control type="image">
                     <top>90</top>
