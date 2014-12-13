@@ -291,11 +291,10 @@
 
     <variable name="musicshelfcontent">
         <value condition="StringCompare(Skin.String(musicshelf),custom)">addons://sources/audio</value>
-        <value condition="Container(9000).HasFocus(342) + StringCompare(Skin.String(musicshelf),artists) + Library.HasContent(Music)">special://skin/resources/randomsongs.xsp</value>
-        <value condition="StringCompare(Skin.String(musicshelf),albums) + Library.HasContent(Music)">special://skin/resources/rcmalbums.xsp</value>
+        <value condition="Container(9000).HasFocus(342) + StringCompare(Skin.String(musicshelf),artists) + Library.HasContent(Music)">plugin://service.library.data.provider?type=randomalbums&limit=5</value>
+        <value condition="StringCompare(Skin.String(musicshelf),albums) + Library.HasContent(Music)">plugin://service.library.data.provider?type=recommendedalbums&limit=10</value>
         <value condition="StringCompare(Skin.String(musicshelf),videos) + Library.HasContent(MusicVideos)">videodb://recentlyaddedmusicvideos</value>
-        <!--<value condition="Library.HasContent(Music)">musicdb://recentlyaddedalbums/</value>-->
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music)">special://skin/resources/rcntalbums.xsp</value>
+        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music)">plugin://service.library.data.provider?type=recentalbums&limit=10</value>
     </variable>
 
     <variable name="addonsshelfcontent">
