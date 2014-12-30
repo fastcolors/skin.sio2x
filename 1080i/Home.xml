@@ -368,6 +368,14 @@
                     <texture colordiffuse="main">wireless.png</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
+                <control type="image" description="BoilerOn">
+                    <visible>!IsEmpty(Window(Home).Property(netatmo_RelayCommand))</visible>
+                    <visible>!StringCompare(Window(Home).Property(netatmo_RelayCommand),0)</visible>
+                    <width>42</width>
+                    <height>48</height>
+                    <texture colordiffuse="red">boiler.png</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
                 <control type="image">
                     <width>35</width>
                     <height>48</height>

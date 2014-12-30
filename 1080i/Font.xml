@@ -163,6 +163,16 @@
             <filename>journal.ttf</filename>
             <size>40</size>
         </font>
+         <font>
+            <name>thermo</name>
+            <filename>square.ttf</filename>
+            <size>90</size>
+        </font>
+         <font>
+            <name>thermo2</name>
+            <filename>squareo.ttf</filename>
+            <size>90</size>
+        </font>
     </fontset>
     <fontset id="Bold">
         <font>
@@ -291,6 +301,11 @@
         <font>
             <name>fancy</name>
             <filename>journal.ttf</filename>
+            <size>40</size>
+        </font>
+         <font>
+            <name>thermo</name>
+            <filename>square.ttf</filename>
             <size>40</size>
         </font>
     </fontset>
@@ -457,6 +472,11 @@
             <filename>journal.ttf</filename>
             <size>40</size>
         </font>
+        <font>
+            <name>thermo</name>
+            <filename>square.ttf</filename>
+            <size>40</size>
+        </font>
     </fontset>
     <fontset id="Alternative">
         <!--Fonts for GeneralAddons-->
@@ -619,6 +639,11 @@
         <font>
             <name>fancy</name>
             <filename>journal.ttf</filename>
+            <size>40</size>
+        </font>
+         <font>
+            <name>thermo</name>
+            <filename>square.ttf</filename>
             <size>40</size>
         </font>
     </fontset>
