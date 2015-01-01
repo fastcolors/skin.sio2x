@@ -1,0 +1,431 @@
+# XBMC Media Center language file
+# Addon Name: SiO2x
+# Addon id: skin.SiO2x
+# Addon version: 3.0.5
+# Addon Provider: FastColors
+# Translators:
+# Translators:
+# Blas Ortega Peñas <bop.ortega@gmail.com>, 2015
+# fastcolors <fastcolors@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Skin.Sio2-X\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2015-01-01 20:35+0000\n"
+"Last-Translator: Blas Ortega Peñas <bop.ortega@gmail.com>\n"
+"Language-Team: Spanish (Spain) (http://www.transifex.com/projects/p/skinsio2-x/language/es_ES/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31000"
+msgid "Page"
+msgstr "Página"
+
+msgctxt "#31001"
+msgid "Items"
+msgstr "Elementos"
+
+msgctxt "#31002"
+msgid "Karaoke Song"
+msgstr "Cancion Karaoke"
+
+msgctxt "#31003"
+msgid "Choose Shortcut function for Music Icon : Albums  Artists Genres Songs"
+msgstr "Elegir funcion enlace Musica : Albums Artistas Géneros Canciones"
+
+msgctxt "#31004"
+msgid "Visualization Presets"
+msgstr "Presets de Visalizacion"
+
+msgctxt "#31005"
+msgid "End Time"
+msgstr "Fin"
+
+msgctxt "#31006"
+msgid "Last Added"
+msgstr "Ultimo Añadido"
+
+msgctxt "#31007"
+msgid "Last Started"
+msgstr "Ultimo Empezado"
+
+msgctxt "#31008"
+msgid ""
+"Enable/Disable Always Colored Icons on Home Screen, when Disabled Icons will"
+" only become colored when Focused"
+msgstr "Activar/Desactivar Iconos Siempre Coloreados en la pantalla de Inicio, si Desactivado los iconos solo mostrarán color al ser selecionados"
+
+msgctxt "#31010"
+msgid "Open playlist"
+msgstr "Abrir Lista de Reproduccion"
+
+msgctxt "#31011"
+msgid "Save playlist"
+msgstr "Guardar Lista de Reproduccion"
+
+msgctxt "#31012"
+msgid "Clear playlist"
+msgstr "Borrar Lista de Reproduccion"
+
+msgctxt "#31013"
+msgid "Available Audio"
+msgstr "Audio Disponible"
+
+msgctxt "#31014"
+msgid "Current Playlist"
+msgstr "Lista de Reproduccion Actual"
+
+msgctxt "#31015"
+msgid "Trailers"
+msgstr "Trailers"
+
+msgctxt "#31016"
+msgid "Last Updated"
+msgstr "Última actualización"
+
+msgctxt "#31017"
+msgid ""
+"Enable or disable the panel for changing views, filter, search and other "
+"options"
+msgstr "Activar o desactivar el panel para cambiar vistas, filtro, búsqueda y otras opciones"
+
+msgctxt "#31018"
+msgid "Choose Addon for Lyrics Search & Download"
+msgstr "Elija el Addon para Buscar y Descargar Letras"
+
+msgctxt "#31019"
+msgid ""
+"Enable or Disable Clock On top right of All Pages (not while watching "
+"Movies).[CR]Home Menu Will show Time and date."
+msgstr "Activar o Desactivar reloj en la parte superior derecha de todas las páginas (no durante la reproduccion). [CR] Pagina principal mostrará la hora y la fecha."
+
+msgctxt "#31020"
+msgid "Now Watching"
+msgstr "Ahora viendo"
+
+msgctxt "#31021"
+msgid "Memory Used:"
+msgstr "Memoria en Uso:"
+
+msgctxt "#31022"
+msgid "Specify Action for Power Icon in Menu"
+msgstr "Elegir Acción para el icono del menu Power"
+
+msgctxt "#31023"
+msgid "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
+msgstr "Imagen de Fanart[CR][CR]Indisponible[CR][CR] Pulsar botón para elegir"
+
+msgctxt "#31024"
+msgid "Aired"
+msgstr "Emitido"
+
+msgctxt "#31025"
+msgid "Playlist Options"
+msgstr "Opciones de Lista de Reproducción"
+
+msgctxt "#31026"
+msgid "Get Extra Artwork"
+msgstr "Conseguir Artwork extra"
+
+msgctxt "#31027"
+msgid "Movies/TVShows Badge"
+msgstr "Contador de Películas/Series"
+
+msgctxt "#31028"
+msgid "Custom Background"
+msgstr "Fondo Personalizado"
+
+msgctxt "#31029"
+msgid ""
+"Adds a custom Background to Home Screen. This will automatically switch On "
+"the setting for Always Colored Icons on Home screen. This can be manually "
+"switched Off from this page."
+msgstr "Añadir un Fondo personalizado a la pantalla de Inicio. Se seleccionará automáticamente On el ajuste Iconos Siempre Coloreados en la pantalla de Inicio. Esto puede cambiarse manualmente a Off desde esta pantalla."
+
+msgctxt "#31030"
+msgid "Custom Shelf Icon"
+msgstr "Icono de Estantería Personalizado"
+
+msgctxt "#31031"
+msgid "Replace Default Icon on Shelf with a Picture of Your choice."
+msgstr "Cambiar el Icono de Estantería por defecto, con una imagen a elegir"
+
+msgctxt "#31032"
+msgid "Log Off"
+msgstr "Desconectar"
+
+msgctxt "#31033"
+msgid "Always Colored Menu Icons"
+msgstr "Iconos de Menu Siempre Coloreados"
+
+msgctxt "#31034"
+msgid "Click to Add Custom Item to Home Page"
+msgstr "Haz Click para agregar Favorito a Pagina Principal"
+
+msgctxt "#31035"
+msgid "Click to Pick Icon, Change or Remove Item"
+msgstr "Haz Click para cambiar icono, borrar o modificar Favorito"
+
+msgctxt "#31036"
+msgid "Reset ALL skin settings to default"
+msgstr "Reiniciar Configuración de Skin"
+
+msgctxt "#31037"
+msgid "Add-ons manager"
+msgstr "Gestor de Add-ons"
+
+msgctxt "#31038"
+msgid "min"
+msgstr "min"
+
+msgctxt "#31039"
+msgid ""
+"Enable or disable the icon for network connection and battery percentage "
+"info (only shown if battery lower than 20%)"
+msgstr "Activar o desactivar los iconos de información de la conexión de red y del porcentaje de batería (solamente visible si la batería baja del 20%)"
+
+msgctxt "#31040"
+msgid "Shelf items"
+msgstr "Elementos en Estanteria"
+
+msgctxt "#31041"
+msgid "Active  Scrollbars"
+msgstr "Barras de desplazamiento Activas"
+
+msgctxt "#31042"
+msgid "Active"
+msgstr "Activo"
+
+msgctxt "#31043"
+msgid "Passive"
+msgstr "Inactivo"
+
+msgctxt "#31044"
+msgid "View options dialog"
+msgstr "Dialogo de Opciónes de Vista"
+
+msgctxt "#31045"
+msgid "Recent/Recommended Inverted First Item"
+msgstr "Recien/Recomendado Invertir primer Elemento"
+
+msgctxt "#31046"
+msgid ""
+"Customize What Is Displayed On Home Page. Enable or disable buttons and "
+"create links for addons or favourites."
+msgstr "Personalizar la pantalla de Inicio. Activar o desactivar botones y crear enlaces a addons o favoritos."
+
+msgctxt "#31047"
+msgid "Show Clock"
+msgstr "Muestra Reloj"
+
+msgctxt "#31048"
+msgid "Recommended"
+msgstr "Recomendados"
+
+msgctxt "#31049"
+msgid "Power icon - Now Set to:"
+msgstr "Funcion de Icona \"Apagar\" en la Pagina Principal"
+
+msgctxt "#31050"
+msgid "Quit Menu"
+msgstr "Menu de Elecciónes"
+
+msgctxt "#31051"
+msgid "Custom Shelf Shortcuts"
+msgstr "Atajos Personalizados en Estanteria"
+
+msgctxt "#31052"
+msgid "Home Page Customizer"
+msgstr "Personalizador de Pagina Principal"
+
+msgctxt "#31053"
+msgid "Link For Music Icon"
+msgstr "Enlace al Icono de Música"
+
+msgctxt "#31054"
+msgid ""
+"Enable Views Menu in order to change the way Items are presented to you."
+msgstr "Activar el Menú de Vistas para cambiar la manera que los elementos son presentados."
+
+msgctxt "#31055"
+msgid "Fullscreen player"
+msgstr "Reproductor a Pantalla Completa"
+
+msgctxt "#31056"
+msgid "Change Icon"
+msgstr "Cambiar Icono"
+
+msgctxt "#31057"
+msgid "Replace Item"
+msgstr "Sustituir Elemento"
+
+msgctxt "#31058"
+msgid "Show Network Connection Status (and Battery Level on home)"
+msgstr "Mostrar el Estado de la Conexión de Red (y el Nivel de la Batería en la pantalla de Inicio)"
+
+msgctxt "#31059"
+msgid "LiveTV"
+msgstr "LiveTv"
+
+msgctxt "#31060"
+msgid "Add"
+msgstr "Añadir"
+
+msgctxt "#31061"
+msgid "Extra infos"
+msgstr "Información Extra"
+
+msgctxt "#31062"
+msgid "Select Lyrics Add-on"
+msgstr "Seleccionar Addon de Letras"
+
+msgctxt "#31063"
+msgid ""
+"Settings for the handling of your audio library, playback of your songs and "
+"karaoke"
+msgstr "Ajustes para el manejo de la Biblioteca de audio, reproducción de las canciones y karaoke"
+
+msgctxt "#31064"
+msgid "Fullscreen"
+msgstr "Pantalla Plena"
+
+msgctxt "#31065"
+msgid ""
+"Enable/Disable notification badge showing the number of unwatched Movies and"
+" TVShows on Home Icons"
+msgstr "Activar/Desactivar el badge contador que muestra el número de Películas o Capítulos no vistos en los iconos de la pantalla de Inicio"
+
+msgctxt "#31066"
+msgid "Enable/Disable Sliding Info Window in Icon View"
+msgstr "Ativar/Desactivar la ventana de información deslizante en la vista de Iconos"
+
+msgctxt "#31067"
+msgid "Infos in Icon view"
+msgstr "Información en la vista de Iconos"
+
+msgctxt "#31068"
+msgid "Random Movies"
+msgstr "Películas Aleatorias"
+
+msgctxt "#31069"
+msgid "SiO2 - SiO2-x Views sliding Panel"
+msgstr "Panel deslizante de Vistas de SIO2 - SIO2-x"
+
+msgctxt "#31070"
+msgid ""
+"Enable or disable the Sliding fanart panel from Sio2 and Sio2x views. When "
+"disabed there will be no slider animation and the infos will be always "
+"showing."
+msgstr "Activar o desactivar el panel de fanart deslizante en las vistas de Sio2 y Sio2x. Si desactivado no habrá animación deslizante y la información aparecerá siempre."
+
+msgctxt "#31077"
+msgid ""
+"Settings for the handling of your Video library, playback, subtitles, "
+"rendering and hardware acceleration"
+msgstr "Ajustes para el manejo de la Biblioteca de Video, reproducción, subtítulos, rendering y aceleración de hardware"
+
+msgctxt "#31079"
+msgid "Change the look and feel of the XBMC interface"
+msgstr "Cambiar el look y la experiencia a la interfaz de KODI"
+
+msgctxt "#31082"
+msgid "Video Guides"
+msgstr "guías vídeo"
+
+msgctxt "#31087"
+msgid "Percent Played"
+msgstr "Porcentaje reproducido"
+
+msgctxt "#31088"
+msgid "Cinema"
+msgstr "Cinema"
+
+msgctxt "#31089"
+msgid ""
+"Returns all Skin's specifics Settings to defaults. Doesn't change any of the"
+" XBMC general settings."
+msgstr "Devuelve los ajustes del skin a aquellos por defecto. Ninguno de los ajustes generales de KODI serán cambiados."
+
+msgctxt "#31090"
+msgid ""
+"Modify LiveTV/PVR setup, playback and recording options, Electronic Program "
+"Guide, Parental Control and Power Savings for Live TV"
+msgstr "Modificar los ajustes de LiveTV/PVR, las opciones de reproducción y grabación, de la Guía Electrónica de Programas, el Control Paterno y el Ahorro de Energía para LiveTV"
+
+msgctxt "#31091"
+msgid "Pictures listings and slideshow options"
+msgstr "Listado de Imágenes y opciones de Presentación"
+
+msgctxt "#31092"
+msgid "Pick Weather provider and setup locations"
+msgstr "Seleccionar proveedor del Tiempo y ajustes de localización"
+
+msgctxt "#31093"
+msgid ""
+"Network related services. Choose device name and decide how/if XBMC can be "
+"controlled over the network. Also modify sharing options"
+msgstr "Servicios relacionados a la Red. Elegir nombre del dispositivo y decidir cómo/s KODI puede ser controlado a través de la red. También modificar opciones para compartir"
+
+msgctxt "#31094"
+msgid ""
+"Core Settings. Enable or disable use of specific audio/video hardware and "
+"modify its setup, control master lock and enable or disable debug logging"
+msgstr "Ajustes del núcleo. Activar o desactivar el uso de hardware específico de audio/video y modificar sus ajustes, controlar el bloqueo principal y activar o desactivar informes de debug"
+
+msgctxt "#31095"
+msgid "Skin Specific Options"
+msgstr "Opciones específicas de Skin"
+
+msgctxt "#31096"
+msgid "Started Movies"
+msgstr "Películas Empezadas"
+
+msgctxt "#31097"
+msgid ""
+"Manage your OpenELEC system's underlying operating system. From here you can"
+" manage the entire system so you don't have to worry about what runs under "
+"the hood.[CR][CR]Change your network connectivity, your keyboard layout and "
+"language and enable/disable remote access including Samba and SSH."
+msgstr "Controlar sistemas OpenELEC. Desde aquí puedes controlar el sistema al completo sin muchas preocupaciones.[CR][CR]Cambiar la conectividad de la red, la disposición e idioma del teclado y activar/desactivar el acceso remoto incluyendo Samba y SSH."
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Subtítulos disponibles"
+
+msgctxt "#31414"
+msgid "TEST"
+msgstr "Prueba"
+
+msgctxt "#31415"
+msgid "Don't Show Anymore"
+msgstr "No mostrar más"
+
+msgctxt "#31416"
+msgid "Show Again next time"
+msgstr "Mostrar la próxima vez"
+
+msgctxt "#31418"
+msgid ""
+"Opens a list of video files made to help,but also to learn how to maximize "
+"Your SiO2-X experience"
+msgstr "Abre una lista de ficheros de video de ayuda, y para aprender a mejorar la experiencia con SiO2-X"
+
+msgctxt "#31419"
+msgid "Started Movies"
+msgstr "Películas Iniciadas"
+
+msgctxt "#31420"
+msgid ""
+"Show or Hide 3D movies from Regular Library List. If Off, when Library is "
+"accessed from Home Icon, it won't show any 3D content. Works only if files "
+"are named following Kodi/XBMC rules for 3D automatic identification -- i.e. "
+"Must Contain the word 3D"
+msgstr "Mostrar u ocultar las Películas 3D de la Biblioteca Regular. Si Off, cuando se accede a la Biblioteca desde el Icono de la Pantalla de Inicio, el contenido en 3D no se mostrará. Funciona solamente si los ficheros son nombrados según las normas de Kodi/XBMC para la identificación automática de contenido en 3D -- Debe contener la palabra 3D"
+
+msgctxt "#31421"
+msgid "3D Content in Movies List"
+msgstr "Contenido 3D en la Lista de Películas"
