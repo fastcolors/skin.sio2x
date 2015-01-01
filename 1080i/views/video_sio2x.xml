@@ -57,6 +57,7 @@
                         <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
                     </control>
                     <control type="image">
+                        <visible>![container.content(TVshows) | container.content(seasons)]</visible>
                         <left>89</left>
                         <top>101</top>
                         <width>40</width>
@@ -90,6 +91,29 @@
                         <height>30</height>
                         <texture>badges/720.png</texture>
                         <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="group" description="unwatched">
+                        <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                        <top>10</top>
+                        <left>65</left>
+                        <control type="image">
+                            <centerleft>30</centerleft>
+                            <height>50</height>
+                            <width>50</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>Badges/Badgecount.png</texture>
+                        </control>
+                        <control type="label">
+                            <top>5</top>
+                            <centerleft>30</centerleft>
+                            <height>40</height>
+                            <width>50</width>
+                            <font>size21</font>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+                        </control>
                     </control>
                     <control type="image">
                         <width>447</width>
@@ -128,6 +152,7 @@
                         <texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
                     </control>
                     <control type="image">
+                        <visible>![container.content(TVshows) | container.content(seasons)]</visible>
                         <left>89</left>
                         <top>101</top>
                         <width>40</width>
@@ -161,6 +186,29 @@
                         <height>30</height>
                         <texture>badges/720.png</texture>
                         <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="group" description="unwatched">
+                        <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                        <top>10</top>
+                        <left>65</left>
+                        <control type="image">
+                            <centerleft>30</centerleft>
+                            <height>50</height>
+                            <width>50</width>
+                            <aspectratio>keep</aspectratio>
+                            <texture>Badges/Badgecount.png</texture>
+                        </control>
+                        <control type="label">
+                            <top>5</top>
+                            <centerleft>30</centerleft>
+                            <height>40</height>
+                            <width>50</width>
+                            <font>size21</font>
+                            <align>center</align>
+                            <textcolor>FFFFFFFF</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+                        </control>
                     </control>
                     <control type="image">
                         <width>447</width>
@@ -718,7 +766,7 @@
                             <font>size20</font>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
-                         <control type="progress" description="progress">
+                        <control type="progress" description="progress">
                             <visible>ListItem.IsResumable</visible>
                             <centerleft>220</centerleft>
                             <top>341</top>

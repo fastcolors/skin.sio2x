@@ -1,3 +1,8 @@
+3.1.6
+* Spanish Localization by Blas Ortega Peñas
+* Fix for time being wrong color in fullscreen infos
+* Unwatched Episodes for sio2-x view
+
 3.1.5
 * squash 3.1.4 changes into 3.1.5
 * CouchPotato Shelf Integration
