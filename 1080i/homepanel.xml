@@ -16,8 +16,16 @@
             <property name="color">darkblue</property>>
             <onclick>activatewindow(1115)</onclick>
         </item>
+        <!--<item id="0">-->
+            <!--&lt;!&ndash;<visible>StringCompare(Window(Home).Property(HomeSetMode),program)</visible>&ndash;&gt;-->
+            <!--<thumb>icons/netatmo.png</thumb>-->
+            <!--<label>$INFO[Window(Home).Property(netatmo_HomeTemperature),,°] / $INFO[Window(Home).Property(netatmo_HomeSetTemperature),,°]</label>-->
+            <!--<property name="color">orange</property>>-->
+            <!--&lt;!&ndash;<property name="unwatched"></property>&ndash;&gt;-->
+            <!--<onclick>RunScript(service.netatmo.thermostat)</onclick>-->
+        <!--</item>-->
         <!--MOVIES-->
-        <item id="340">
+            <item id="340">
             <visible>!Skin.HasSetting(hidemovie) + Library.HasContent(Movies)</visible>
             <thumb>icons/movies.png</thumb>
             <label>342</label>
@@ -25,7 +33,7 @@
             <property name="unwatched">$INFO[Window(Home).Property(Movies.UnWatched)]</property>
             <onclick condition="Skin.HasSetting(no3d)">ActivateWindow(Videos,"special://skin/resources/no3d.xsp",return)</onclick>
             <onclick condition="!Skin.HasSetting(no3d)">ActivateWindow(Videos,MovieTitles,return)</onclick>
-            <!--<onclick>Notification(TEST di Notifica,contenuto! si prova CONTIE,20000)</onclick>-->
+            <!--<onclick>RunScript(plugin.netatmo.thermostat)</onclick>-->
         </item>
         <!--TV SHOWS-->
         <item id="341">
@@ -43,7 +51,7 @@
             <label>$VAR[musiclabel]</label>
             <property name="color">orange</property>>
             <onclick condition="StringCompare(Skin.String(MusicLink),Playlist)">PlayerControl(Partymode(music))</onclick>
-            <onclick condition="!StringCompare(Skin.String(MusicLink),Playlist)">ActivateWindow(502,$INFO[Skin.String(MusicLink)])</onclick>
+            <onclick condition="!StringCompare(Skin.String(MusicLink),Playlist)">ActivateWindow(502,$INFO[Skin.String(MusicLink)],return)</onclick>
             <onclick condition="!Library.HasContent(Music)">ActivateWindow(501,root)</onclick>
         </item>
         <!--SHELF POPULATING CUSTOM FAVOURITES-->
@@ -112,14 +120,6 @@
             <onclick condition="!IsEmpty(Weather.plugin)">ActivateWindow(MyWeather)</onclick>
             <!--<onclick condition="!IsEmpty(Weather.plugin)">SetFocus(414)</onclick>-->
         </item>
-        <!--3D MOVIES-->
-        <item id="357">
-            <visible>Skin.HasSetting(3dmovs)</visible>
-            <thumb>icons/3d.png</thumb>
-            <label>3D $LOCALIZE[342]</label>
-            <property name="color">bluegray</property>>
-            <onclick>ActivateWindow(Videos,"special://skin/resources/3d.xsp", return)</onclick>
-        </item>
         <!--NEXT AIRED ADDON-->
         <item id="358">
             <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
@@ -136,6 +136,14 @@
             <label>137</label>
             <property name="color">lightblue</property>>
             <onclick>RunAddon(script.globalsearch)</onclick>
+        </item>
+         <!--3D MOVIES-->
+        <item id="357">
+            <visible>Skin.HasSetting(3dmovs)</visible>
+            <thumb>icons/3d.png</thumb>
+            <label>3D $LOCALIZE[342]</label>
+            <property name="color">bluegray</property>>
+            <onclick>ActivateWindow(Videos,"special://skin/resources/3d.xsp", return)</onclick>
         </item>
         <!--EXTENDEDINFO-->
         <item id="359">

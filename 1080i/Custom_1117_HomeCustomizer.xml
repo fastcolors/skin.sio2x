@@ -184,6 +184,24 @@
                         <label>$LOCALIZE[24001]</label>
                         <onclick>Skin.ToggleSetting(hideaddon)</onclick>
                     </item>
+                     <item id="1014">
+                        <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
+                        <thumb>icons/LiveTV.png</thumb>
+                        <label>31059</label>
+                        <onclick>Skin.ToggleSetting(PVRhide)</onclick>
+                    </item>
+                    <item id="1014">
+                        <visible>System.GetBool(pvrmanager.enabled) + Skin.HasSetting(PVRhide)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>31059</label>
+                        <onclick>Skin.ToggleSetting(PVRhide)</onclick>
+                    </item>
+                    <item id="1014">
+                        <visible>!System.GetBool(pvrmanager.enabled)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>31059</label>
+                        <onclick>ActivateWindow(pvrsettings)</onclick>
+                    </item>
                     <item id="1004" description="Photos">
                         <visible>!Skin.HasSetting(hidepic)</visible>
                         <thumb>icons/photos.png</thumb>
@@ -220,6 +238,18 @@
                         <label>$LOCALIZE[1036]</label>
                         <onclick>Skin.ToggleSetting(hidefav)</onclick>
                     </item>
+                     <item id="358" description="next aired">
+                        <visible>Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>$ADDON[script.tv.show.next.aired 32019]</label>
+                        <onclick>Skin.ToggleSetting(nextair)</onclick>
+                    </item>
+                    <item id="358" description="next aired -OFF">
+                        <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
+                        <thumb>icons/nextaired.png</thumb>
+                        <label>$ADDON[script.tv.show.next.aired 32019]</label>
+                        <onclick>Skin.ToggleSetting(nextair)</onclick>
+                    </item>
                     <item id="356" description="search">
                         <visible>Skin.HasSetting(sear)</visible>
                         <thumb>help/Off.png</thumb>
@@ -244,35 +274,29 @@
                         <label>3D $LOCALIZE[342]</label>
                         <onclick>Skin.ToggleSetting(3dmovs)</onclick>
                     </item>
-                    <item id="358" description="next aired">
-                        <visible>Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
+                     <item id="359">
+                        <visible>Skin.HasSetting(showtheater)</visible>
+                        <thumb>icons/extendedinfotheater.png</thumb>
+                        <label>31422</label>
+                        <onclick>Skin.ToggleSetting(showtheater)</onclick>
+                    </item>
+                    <item id="359">
+                        <visible>!Skin.HasSetting(showtheater)</visible>
                         <thumb>help/Off.png</thumb>
-                        <label>$ADDON[script.tv.show.next.aired 32019]</label>
-                        <onclick>Skin.ToggleSetting(nextair)</onclick>
+                        <label>31422</label>
+                        <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showtheater)</onclick>
                     </item>
-                    <item id="358" description="next aired -OFF">
-                        <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
-                        <thumb>icons/nextaired.png</thumb>
-                        <label>$ADDON[script.tv.show.next.aired 32019]</label>
-                        <onclick>Skin.ToggleSetting(nextair)</onclick>
+                    <item id="360">
+                        <visible>Skin.HasSetting(showdvdrel)</visible>
+                        <thumb>icons/extendedinfodvd.png</thumb>
+                        <label>31423</label>
+                        <onclick>Skin.ToggleSetting(showdvdrel)</onclick>
                     </item>
-                    <item id="1014">
-                        <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(PVRhide)</visible>
-                        <thumb>icons/LiveTV.png</thumb>
-                        <label>31059</label>
-                        <onclick>Skin.ToggleSetting(PVRhide)</onclick>
-                    </item>
-                    <item id="1014">
-                        <visible>System.GetBool(pvrmanager.enabled) + Skin.HasSetting(PVRhide)</visible>
+                    <item id="360">
+                        <visible>!Skin.HasSetting(showdvdrel)</visible>
                         <thumb>help/Off.png</thumb>
-                        <label>31059</label>
-                        <onclick>Skin.ToggleSetting(PVRhide)</onclick>
-                    </item>
-                    <item id="1014">
-                        <visible>!System.GetBool(pvrmanager.enabled)</visible>
-                        <thumb>help/Off.png</thumb>
-                        <label>31059</label>
-                        <onclick>ActivateWindow(pvrsettings)</onclick>
+                        <label>31423</label>
+                        <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showdvdrel)</onclick>
                     </item>
                     <item id="601" description="HomeFav">
                         <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
@@ -543,30 +567,6 @@
                         <thumb>DefaultAddon.png</thumb>
                         <label>+ $LOCALIZE[24009]</label>
                         <onclick>Skin.SetAddon(HomeAddon.12.Label,xbmc.python.script)</onclick>
-                    </item>
-                    <item id="359">
-                        <visible>Skin.HasSetting(showtheater)</visible>
-                        <thumb>icons/extendedinfotheater.png</thumb>
-                        <label>31422</label>
-                        <onclick>Skin.ToggleSetting(showtheater)</onclick>
-                    </item>
-                    <item id="359">
-                        <visible>!Skin.HasSetting(showtheater)</visible>
-                        <thumb>help/Off.png</thumb>
-                        <label>31422</label>
-                        <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showtheater)</onclick>
-                    </item>
-                    <item id="360">
-                        <visible>Skin.HasSetting(showdvdrel)</visible>
-                        <thumb>icons/extendedinfodvd.png</thumb>
-                        <label>31423</label>
-                        <onclick>Skin.ToggleSetting(showdvdrel)</onclick>
-                    </item>
-                    <item id="360">
-                        <visible>!Skin.HasSetting(showdvdrel)</visible>
-                        <thumb>help/Off.png</thumb>
-                        <label>31423</label>
-                        <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showdvdrel)</onclick>
                     </item>
                     <item id="347" description="Sources">
                         <visible>!Skin.HasSetting(hideSources)</visible>

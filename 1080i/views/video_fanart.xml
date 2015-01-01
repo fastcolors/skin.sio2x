@@ -130,7 +130,7 @@
                     </control>
                 </control>
             </control>
-            <control type="wraplist" id="500">
+            <control type="fixedlist" id="500">
                 <visible>Container.content(movies) | container.content(seasons) | container.content(musicvideos) | container.content(tvshows)</visible>
                 <onup condition="!Skin.HasSetting(ViewsMenuOff)">9000</onup>
                 <onup condition="Skin.HasSetting(ViewsMenuOff)">noop</onup>
