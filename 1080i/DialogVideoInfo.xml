@@ -383,7 +383,7 @@
                 <height>100</height>
                 <width>790</width>
                 <texture>images/white.png</texture>
-                <colordiffuse>AAFFFFFF</colordiffuse>
+                <colordiffuse>white</colordiffuse>
             </control>
             <control type="label" description="Media details">
                 <left>120</left>
