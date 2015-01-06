@@ -80,7 +80,6 @@
         </control>
         <control type="group" id="50">
             <include>OpenClose</include>
-
             <control type="group">
                 <description>TV Guide Timeline</description>
                 <visible>Control.IsVisible(10)</visible>
@@ -187,7 +186,7 @@
                             <height>52</height>
                             <font>font12</font>
                             <aligny>center</aligny>
-                            <textcolor>inverted</textcolor>
+                            <textcolor>white</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <align>left</align>
                             <scroll>false</scroll>
@@ -200,7 +199,7 @@
                             <height>52</height>
                             <font>font12</font>
                             <aligny>center</aligny>
-                            <textcolor>red</textcolor>
+                            <textcolor>white</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
@@ -242,7 +241,7 @@
                             <height>52</height>
                             <font>font12</font>
                             <aligny>center</aligny>
-                            <textcolor>inverted</textcolor>
+                            <textcolor>white</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
@@ -254,7 +253,7 @@
                             <height>52</height>
                             <font>font12</font>
                             <aligny>center</aligny>
-                            <textcolor>inverted</textcolor>
+                            <textcolor>white</textcolor>
                             <shadowcolor>-</shadowcolor>
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
