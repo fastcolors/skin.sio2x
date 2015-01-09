@@ -94,7 +94,7 @@
                     <orientation>vertical</orientation>
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
                     <itemlayout height="220" width="260">
-                        <control type="image" description="Always Colored Base">
+                        <control type="image" description="gray Base">
                             <visible>Skin.HasSetting(colormenu)</visible>
                             <centerleft>130</centerleft>
                             <centertop>110</centertop>
@@ -102,7 +102,7 @@
                             <height>168</height>
                             <texture border="40">icons/base.png</texture>
                         </control>
-                        <control type="image" description="Gray Base">
+                        <control type="image" description="color">
                             <visible>!Skin.HasSetting(colormenu)</visible>
                             <centerleft>130</centerleft>
                             <centertop>110</centertop>
@@ -177,7 +177,7 @@
                         </control>
                     </itemlayout>
                     <focusedlayout height="220" width="260">
-                        <control type="image" description="Always Colored Base">
+                        <control type="image" description="gray Base">
                             <visible>Skin.HasSetting(colormenu)</visible>
                             <centerleft>130</centerleft>
                             <centertop>110</centertop>
@@ -185,7 +185,17 @@
                             <height>168</height>
                             <texture border="40">icons/base.png</texture>
                         </control>
-                        <control type="image" description="Gray Base">
+                        <control type="image" description="Color Base">
+                            <visible>Skin.HasSetting(colormenu)</visible>
+                            <animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
+                            <animation effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
+                            <centerleft>130</centerleft>
+                            <centertop>110</centertop>
+                            <width>220</width>
+                            <height>168</height>
+                            <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
+                        </control>
+                        <control type="image" description="Color Base">
                             <visible>!Skin.HasSetting(colormenu)</visible>
                             <centerleft>130</centerleft>
                             <centertop>110</centertop>
