@@ -50,7 +50,7 @@
                             <height>55</height>
                             <width>55</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>Badges/Badgecount.png</texture>
+                            <texture>badges/BadgeCount.png</texture>
                         </control>
                         <control type="label">
                             <top>5</top>
@@ -141,7 +141,7 @@
                             <height>55</height>
                             <width>55</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>Badges/Badgecount.png</texture>
+                            <texture>badges/BadgeCount.png</texture>
                         </control>
                         <control type="label">
                             <top>5</top>
