@@ -118,7 +118,6 @@
         <value condition="Controlgroup(575).HasFocus(9)">$LOCALIZE[31019]</value>
         <value condition="Controlgroup(575).HasFocus(10)">$LOCALIZE[31003]</value>
         <value condition="Controlgroup(575).HasFocus(11)">$LOCALIZE[31029]</value>
-        <value condition="Controlgroup(575).HasFocus(12)">$LOCALIZE[31031]</value>
         <value condition="Controlgroup(575).HasFocus(13)">$LOCALIZE[31039]</value>
         <value condition="Controlgroup(575).HasFocus(14)">$LOCALIZE[31420]</value>
         <value condition="Controlgroup(575).HasFocus(15)">$LOCALIZE[31089]</value>
@@ -210,141 +209,6 @@
         <value>775555FF</value>
     </variable>
 
-    <variable name="diffuseselectshelf">
-        <value condition="![Control.IsVisible(311) | Control.IsVisible(312)]">reverse</value>
-        <value condition="Substring(Container(311).ListItem.MPAA,NR,Right)">CC5555FF</value>
-        <!--movies-->
-        <!--red-->
-        <value condition="SubString(Container(311).ListItem.MPAA,R,Right)">CCFF0000</value>
-        <value condition="SubString(Container(311).ListItem.MPAA,18)">CCFF0000</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),TV-MA)">CCFF0000</value>
-        <!--PROPERTY-->
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),R,Right)">CCFF0000</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),18)">CCFF0000</value>
-        <!--orange-->
-        <value condition="SubString(Container(311).ListItem.MPAA,PG-13)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.MPAA,12)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.MPAA,15)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.MPAA,16)">CCFF8800</value>
-        <!--PROPERTY-->
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),PG-13)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),12)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),15)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),16)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),14)">CCFF8800</value>
-        <!--green-->
-        <value condition="SubString(Container(311).ListItem.MPAA,6)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.MPAA,PG,Right)">CC00FF00</value>
-        <value condition="SubString(Container(311).ListItem.MPAA,G,Right)">CC00FF00</value>
-        <value condition="StringCompare(Container(311).ListItem.MPAA,U)">CC00FF00</value>
-        <value condition="SubString(Container(311).ListItem.MPAA,T,Right)">CC00FF00</value>
-        <value condition="SubString(Container(311).ListItem.MPAA,10)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.MPAA,Livre)">CCFF8800</value>
-        <!--PROPERTY-->
-        <value condition="SubString(Container(311).ListItem.MPAA,o.A) | StringCompare(Container(311).ListItem.Property(mpaa),Germany)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa)AA,6)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),PG,Right)">CC00FF00</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),G,Right)">CC00FF00</value>
-        <value condition="StringCompare(Container(311).ListItem.Property(mpaa),U)">CC00FF00</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),T,Right)">CC00FF00</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),10)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),Livre)">CCFF8800</value>
-        <value condition="SubString(Container(311).ListItem.Property(mpaa),o.A) | StringCompare(Container(311).ListItem.Property(mpaa),Germany)">CCFF8800</value>
-        <!--tv-->
-        <!--red-->
-        <value condition="Control.HasFocus(312) + SubString(Container(312).ListItem.MPAA,TV-MA)">CCFF0000</value>
-        <!--green-->
-        <value condition="Control.HasFocus(312) + SubString(Container(312).ListItem.MPAA,G,Right)">CC00FF00</value>
-        <!--orange-->
-        <value condition="Control.HasFocus(312) + SubString(Container(312).ListItem.MPAA,14)">CCFF8800</value>
-        <!--general-->
-        <value>CC5555FF</value>
-    </variable>
-
-    <variable name="shelfmovies">
-        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">special://skin/resources/laststarted.xsp</value>
-        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),RND)">special://skin/resources/random.xsp</value>
-        <value condition="Container(9000).HasFocus(601)">$INFO[Skin.String(HomeFav.1.List)]</value>
-        <value condition="Container(9000).HasFocus(602)">$INFO[Skin.String(HomeFav.2.List)]</value>
-        <value condition="Container(9000).HasFocus(603)">$INFO[Skin.String(HomeFav.3.List)]</value>
-        <value condition="Container(9000).HasFocus(604)">$INFO[Skin.String(HomeFav.4.List)]</value>
-        <value condition="Container(9000).HasFocus(605)">$INFO[Skin.String(HomeFav.5.List)]</value>
-        <value condition="Container(9000).HasFocus(606)">$INFO[Skin.String(HomeFav.6.List)]</value>
-        <value condition="Container(9000).HasFocus(607)">$INFO[Skin.String(HomeFav.7.List)]</value>
-        <value condition="Container(9000).HasFocus(608)">$INFO[Skin.String(HomeFav.8.List)]</value>
-        <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
-        <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),2)">plugin://script.extendedinfo?info=newdvdreleases&amp;&amp;limit=18</value>
-        <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">plugin://script.extendedinfo?info=upcoming&amp;&amp;limit=18</value>
-        <value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=intheaters&amp;&amp;limit=18</value>
-        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),)">plugin://script.extendedinfo?info=topratedtvshows&amp;&amp;limit=18</value>
-        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">plugin://script.extendedinfo?info=trendingshows&amp;&amp;limit=18</value>
-        <!--<value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=airingshows&amp;&amp;limit=18</value>-->
-        <value condition="Container(9000).HasFocus(340)">videodb://recentlyaddedmovies/</value>
-        <value>-</value>
-    </variable>
-
-    <variable name="shelfTV">
-        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),1)">special://skin/resources/randomTV.xsp</value>
-        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),2)">videodb://recentlyaddedepisodes</value>
-        <value condition="Container(9000).HasFocus(341)">plugin://service.library.data.provider?type=recommendedepisodes&limit=18&reload=$INFO[Window.Property(recommendedepisodes)]</value>
-    </variable>
-
-    <variable name="musicshelfcontent">
-        <value condition="StringCompare(Skin.String(musicshelf),custom)">addons://sources/audio</value>
-        <value condition="Container(9000).HasFocus(342) + StringCompare(Skin.String(musicshelf),artists) + Library.HasContent(Music)">plugin://service.library.data.provider?type=randomalbums&limit=5</value>
-        <value condition="StringCompare(Skin.String(musicshelf),albums) + Library.HasContent(Music)">plugin://service.library.data.provider?type=recommendedalbums&limit=10</value>
-        <value condition="StringCompare(Skin.String(musicshelf),videos) + Library.HasContent(MusicVideos)">videodb://recentlyaddedmusicvideos</value>
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music)">plugin://service.library.data.provider?type=recentalbums&limit=10</value>
-    </variable>
-
-    <variable name="addonsshelfcontent">
-        <value condition="StringCompare(Skin.String(addonsshelf),1)">addons://sources/audio/</value>
-        <value condition="StringCompare(Skin.String(addonsshelf),2)">addons://sources/executable/</value>
-        <value condition="StringCompare(Skin.String(addonsshelf),3)">addons://sources/image/</value>
-        <value>addons://sources/video/</value>
-    </variable>
-
-    <variable name="shelflabel">
-        <!--THEATERS-->
-        <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),2)">$LOCALIZE[31425]</value>
-        <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">$LOCALIZE[31424]</value>
-        <value condition="Container(9000).HasFocus(359)">$LOCALIZE[31426]</value>
-        <!--HOME-->
-        <!--todo label-->
-        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">$LOCALIZE[31427]</value>
-        <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),)">$LOCALIZE[31428]</value>
-        <!--<value condition="Container(9000).HasFocus(360)">-</value>-->
-        <!--MOVIES-->
-        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),WL)">$LOCALIZE[31419]</value>
-        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),TR)">$LOCALIZE[31015]</value>
-        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),RND)">$LOCALIZE[31068]</value>
-        <value condition="Container(9000).HasFocus(340) + StringCompare(Skin.String(moviesshelf),)">$LOCALIZE[20386]</value>
-        <!--TV-->
-        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),2)">$LOCALIZE[20387]</value>
-        <value condition="Container(9000).HasFocus(341) + StringCompare(Skin.String(TVshelf),1)">$LOCALIZE[590]</value>
-        <value condition="Container(9000).HasFocus(341)">$LOCALIZE[31048]</value>
-        <!--MUSIC-->
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),custom)">$LOCALIZE[1038]</value>
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),albums)">$LOCALIZE[517]</value>
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),artists)">$LOCALIZE[590]</value>
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music) + StringCompare(Skin.String(musicshelf),videos)">$LOCALIZE[20389]</value>
-        <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music)">$LOCALIZE[359]</value>
-        <!--ADDONS-->
-        <!--todo label-->
-        <value condition="Skin.HasSetting(AddonsShelf_Custom)">Custom Shelf Addons</value>
-        <value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),1)">$LOCALIZE[1038] </value>
-        <value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),2)">$LOCALIZE[1043] </value>
-        <value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),3)">$LOCALIZE[1039] </value>
-        <value condition="Container(9000).HasFocus(343)">$LOCALIZE[1037] </value>
-        <!--PICTURES-->
-        <value condition="Container(9000).HasFocus(344) + Skin.HasSetting(PicturesShelf_Custom)">$LOCALIZE[111]</value>
-        <!--LIVETV(RECORDINGS)-->
-        <value condition="Container(9000).HasFocus(355)">$LOCALIZE[19017]</value>
-        <!--Weather-->
-        <value condition="Container(9000).HasFocus(345)">$INFO[Weather.Location]</value>
-        <!--GENERAL-->
-        <value>$INFO[Control.GetLabel(9000)]</value>
-    </variable>
 
     <variable name="nextairedfanart">
         <value condition="Control.HasFocus(200)">$INFO[Container(200).ListItem.Property(Fanart)]</value>
@@ -421,9 +285,4 @@
         <value>$INFO[Window(weather).Property(Map.1.Heading)]</value>
     </variable>
 
-    <variable name="functionshelf">
-        <value condition="Container(9000).HasFocus(359)">images/couchpotato.png</value>
-        <value condition="Container(9000).HasFocus(360)">images/sickbeard.png</value>
-        <value>info/trailerFO.png</value>
-    </variable>
 </includes>

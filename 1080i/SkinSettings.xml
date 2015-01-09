@@ -89,14 +89,6 @@
                     <onclick condition="!IsEmpty(Skin.String(CustomBgHome))">Skin.Reset(CustomBgHome)</onclick>
                     <selected>!IsEmpty(Skin.String(CustomBgHome))</selected>
                 </control>
-                <control type="radiobutton" id="12">
-                    <height>settingsheight</height>
-                    <label>31030</label>
-                    <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetImage(ShelfCustomImage)</onclick>
-                    <onclick condition="Skin.HasSetting(CustomImage)">Skin.Reset(CustomImage)</onclick>
-                    <onclick condition="!Skin.HasSetting(CustomImage)">Skin.SetBool(CustomImage)</onclick>
-                    <selected>Skin.HasSetting(CustomImage)</selected>
-                </control>
                 <control type="radiobutton" id="13">
                     <height>settingsheight</height>
                     <label>31061</label>
@@ -246,11 +238,6 @@
                 <bordertexture colordiffuse="main">images/white.png</bordertexture>
                 <texture>$VAR[bgimg]</texture>
             </control>
-            <control type="image" description="icon shelf">
-                <visible>Controlgroup(575).HasFocus(12)</visible>
-                <include>Help_Panel</include>
-                <texture>$VAR[ShelfLogo]</texture>
-            </control>
             <control type="image" description="3d">
                 <visible>Controlgroup(575).HasFocus(14)</visible>
                 <include>Help_Panel</include>
@@ -303,17 +290,6 @@
             <font>size33</font>
             <align>justify</align>
             <label>$VAR[helptext]</label>
-        </control>
-        <control type="label" description="custom shelfimage path">
-            <include>VisibleFade</include>
-            <visible>Controlgroup(575).HasFocus(12) + Skin.HasSetting(CustomImage)</visible>
-            <top>500</top>
-            <width>960</width>
-            <height>25</height>
-            <font>size21</font>
-            <align>center</align>
-            <textcolor>main</textcolor>
-            <label>$VAR[ShelfLogo]</label>
         </control>
         <control type="label" description="custom background path">
             <include>VisibleFade</include>
