@@ -128,41 +128,22 @@
                         <visible>!ControlGroup(101).HasFocus()</visible>
                         <left>1610</left>
                         <top>600</top>
-                        <!--<control type="image" description="CoverReal">-->
-                        <!--<height>300</height>-->
-                        <!--<width>220</width>-->
-                        <!--<aspectratio>keep</aspectratio>-->
-                        <!--<texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>-->
-                        <!--</control>-->
                         <control type="image" description="CoverReal">
+                            <visible>IsEmpty(Player.Art(tvshow.poster))</visible>
                             <height>300</height>
                             <width>220</width>
                             <aspectratio>keep</aspectratio>
-                            <texture diffuse="images/Diffuse.png">$INFO[Player.Art(poster)]</texture>
+                            <texture diffuse="images/Diffuse.png">$INFO[VideoPlayer.Cover]</texture>
                         </control>
-                        <!--<control type="image" description="CoverRef">-->
-                        <!--<top>300</top>-->
-                        <!--<height>300</height>-->
-                        <!--<width>220</width>-->
-                        <!--<aspectratio>keep</aspectratio>-->
-                        <!--<texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(poster)]</texture>-->
-                        <!--</control>-->
-                        <control type="image" description="CoverReal">
+                        <control type="image" description="CoverReal-tvshows">
                             <height>300</height>
                             <width>220</width>
                             <aspectratio>keep</aspectratio>
                             <texture diffuse="images/Diffuse.png">$INFO[Player.Art(tvshow.poster)]</texture>
                         </control>
-                        <!--<control type="image" description="CoverRef">-->
-                        <!--<top>300</top>-->
-                        <!--<height>300</height>-->
-                        <!--<width>220</width>-->
-                        <!--<aspectratio>keep</aspectratio>-->
-                        <!--<texture flipy="true" diffuse="images/Reflection.png">$INFO[Player.Art(tvshow.poster)]</texture>-->
-                        <!--</control>-->
                         <control type="label" description="Episode">
                             <visible>VideoPlayer.Content(Episodes)</visible>
-                            <left>190</left>
+                            <left>0</left>
                             <top>290</top>
                             <height>60</height>
                             <width>220</width>
@@ -174,7 +155,7 @@
                         </control>
                         <control type="label" description="Channel">
                             <visible>Pvr.IsPlayingTV</visible>
-                            <left>190</left>
+                            <left>0</left>
                             <top>290</top>
                             <height>60</height>
                             <width>220</width>
