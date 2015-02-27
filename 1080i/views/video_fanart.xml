@@ -180,7 +180,7 @@
                             <height>65</height>
                             <width>65</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>badges/BadgeCount.png</texture>
+                            <texture>badges/badgecount.png</texture>
                         </control>
                         <control type="label" description="Label2">
                             <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
@@ -260,7 +260,7 @@
                                 <height>65</height>
                                 <width>65</width>
                                 <aspectratio>keep</aspectratio>
-                                <texture>badges/BadgeCount.png</texture>
+                                <texture>badges/badgecount.png</texture>
                             </control>
                             <control type="label" description="Label2">
                                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
