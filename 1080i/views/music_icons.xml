@@ -47,11 +47,11 @@
                     <focusedlayout condition="Container.Content(Albums) | Container.Content(Artists)" height="225" width="225">
                         <control type="group">
                             <animation effect="zoom" center="185,50" end="120" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="185,50" start="120" end="100" time="100" reversible="true">unFocus</animation>
+                            <animation effect="zoom" center="185,50" start="120" end="100" time="100" reversible="true">Unfocus</animation>
                             <include>Scrollanim</include>
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                                <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                                <animation effect="fade" start="100" end="0" time="50" reversible="false">Unfocus</animation>
                                 <left>49</left>
                                 <top>9</top>
                                 <width>256</width>
@@ -122,11 +122,11 @@
                     <focusedlayout height="250" width="246">
                         <control type="group">
                             <animation effect="zoom" center="190,35" end="120" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="190,35" start="120" end="100" time="100" reversible="true">unFocus</animation>
+                            <animation effect="zoom" center="190,35" start="120" end="100" time="100" reversible="true">Unfocus</animation>
                             <include>Scrollanim</include>
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                                <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                                <animation effect="fade" start="100" end="0" time="50" reversible="false">Unfocus</animation>
                                 <centerleft>220</centerleft>
                                 <top>9</top>
                                 <width>256</width>
@@ -274,7 +274,7 @@
             </control>
             <control type="group">
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
-                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">Unfocus</animation>
                 <control type="image">
                     <left>-8r</left>
                     <top>90</top>

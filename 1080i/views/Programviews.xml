@@ -209,7 +209,7 @@
             <control type="group">
                 <top>85</top>
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
-                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">Unfocus</animation>
                 <control type="image">
                     <left>1912</left>
                     <height>910</height>
@@ -293,11 +293,11 @@
                 <focusedlayout height="266" width="246">
                     <control type="group">
                         <animation effect="zoom" center="123,35" end="130" time="200" reversible="true">Focus</animation>
-                        <animation effect="zoom" center="123,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
+                        <animation effect="zoom" center="123,35" start="130" end="100" time="100" reversible="true">Unfocus</animation>
                         <include>Scrollanim</include>
                         <control type="image">
                             <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                            <animation effect="fade" start="100" end="0" time="50" reversible="false">Unfocus</animation>
                             <centerleft>133</centerleft>
                             <top>9</top>
                             <width>256</width>
@@ -420,7 +420,7 @@
             </control>
             <control type="group">
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
-                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">Unfocus</animation>
                 <control type="image">
                     <left>-8r</left>
                     <top>90</top>

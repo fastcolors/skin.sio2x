@@ -13,15 +13,15 @@
             <texture colordiffuse="FF000000">images/white.png</texture>
         </control>
         <control type="image">
-           <!-- <animation type="WindowClose">
+           <animation type="WindowClose">
                 <effect type="fade" start="100" end="0" time="600" delay="200" />
                 <effect type="zoom" center="960,540" start="100" end="0" time="600" delay="200" tween="back" easing="in" />
-            </animation>-->
+            </animation>
             <centerleft>960</centerleft>
             <centertop>540</centertop>
             <width>256</width>
             <height>256</height>
-            <texture>special://skin/icon.gif</texture>
+            <texture>special://skin/icon.png</texture>
         </control>
     </controls>
 </window>

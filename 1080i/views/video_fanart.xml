@@ -219,7 +219,7 @@
                 <focusedlayout width="300" height="500">
                     <control type="group">
                         <animation effect="zoom" end="142" center="200,430" time="300" tween="Quadratic" easing="in">Focus</animation>
-                        <animation effect="zoom" start="142" end="100" center="200,430" time="80" tween="Circle" easing="out">unFocus</animation>
+                        <animation effect="zoom" start="142" end="100" center="200,430" time="80" tween="Circle" easing="out">Unfocus</animation>
                         <control type="image" description="main">
                             <left>77</left>
                             <top>72</top>

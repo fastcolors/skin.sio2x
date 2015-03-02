@@ -50,12 +50,12 @@
                     <focusedlayout height="337" width="225">
                         <control type="group">
                             <animation effect="zoom" center="155,35" end="130" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="155,35" start="130" end="100" time="100" reversible="true">unFocus</animation>
+                            <animation effect="zoom" center="155,35" start="130" end="100" time="100" reversible="true">Unfocus</animation>
                             <control type="group" description="Selection">
                                 <include>Scrollanim</include>
                                 <control type="image">
                                     <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                                    <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                                    <animation effect="fade" start="100" end="0" time="50" reversible="false">Unfocus</animation>
                                     <left>19</left>
                                     <top>9</top>
                                     <width>253</width>

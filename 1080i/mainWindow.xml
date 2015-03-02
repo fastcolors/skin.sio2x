@@ -91,7 +91,7 @@
                     <width>500</width>
                     <height>81</height>
                     <texture flipx="true" colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
-                    <animation effect="fade" end="50">unFocus</animation>
+                    <animation effect="fade" end="50">Unfocus</animation>
                 </control>
                 <control type="label">
                     <width>480</width>

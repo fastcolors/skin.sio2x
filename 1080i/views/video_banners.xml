@@ -98,7 +98,7 @@
                     <focusedlayout condition="container.content(tvshows)" height="180" width="1800">
                         <control type="group">
                             <animation effect="zoom" end="140" center="409,150" time="350">Focus</animation>
-                            <animation effect="zoom" start="140" end="100" center="409,150" time="250">unFocus</animation>
+                            <animation effect="zoom" start="140" end="100" center="409,150" time="250">Unfocus</animation>
                             <control type="image">
                                 <left>39</left>
                                 <top>0</top>

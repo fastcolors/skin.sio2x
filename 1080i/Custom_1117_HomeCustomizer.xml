@@ -88,7 +88,7 @@
                         </control>
                         <control type="image">
                             <animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="180" reversible="true">unFocus</animation>
+                            <animation effect="fade" start="100" end="0" time="180" reversible="true">Unfocus</animation>
                             <centerleft>130</centerleft>
                             <centertop>110</centertop>
                             <width>220</width>

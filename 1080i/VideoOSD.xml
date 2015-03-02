@@ -11,7 +11,7 @@
                 <animation type="Focus">
                     <effect type="slide" tween="Cubic" easing="out" start="0,0" end="0,-800" time="800"/>
                 </animation>
-                <animation type="unFocus">
+                <animation type="Unfocus">
                     <effect type="slide" tween="Cubic" easing="in" start="0,-800" end="0,0" time="500"/>
                 </animation>
                 <control type="image">

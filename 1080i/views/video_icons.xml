@@ -63,11 +63,11 @@
                     <focusedlayout condition="Container.Content(Files) | Container.Content(Addons) | Container.Content(tags) | [ListItem.IsFolder + !Container.Content(genres) + !Container.Content(tvshows)+ !Container.Content(movies) + !Container.Content(sets) + !Container.Content(seasons) + !Container.Content(actors) + !Container.Content(musicvideos)]" height="250" width="246">
                         <control type="group">
                             <animation effect="zoom" center="220,35" end="120" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="220,35" start="120" end="100" time="100" reversible="true">unFocus</animation>
+                            <animation effect="zoom" center="220,35" start="120" end="100" time="100" reversible="true">Unfocus</animation>
                             <include>Scrollanim</include>
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                                <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                                <animation effect="fade" start="100" end="0" time="50" reversible="false">Unfocus</animation>
                                 <centerleft>220</centerleft>
                                 <top>9</top>
                                 <width>256</width>
@@ -150,10 +150,10 @@
                     <focusedlayout condition="Container.Content(actors)" height="300" width="246">
                         <control type="group">
                             <animation effect="zoom" center="190,35" end="120" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="190,35" start="120" end="100" time="100" reversible="true">unFocus</animation>
+                            <animation effect="zoom" center="190,35" start="120" end="100" time="100" reversible="true">Unfocus</animation>
                             <control type="image">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                                <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                                <animation effect="fade" start="100" end="0" time="50" reversible="false">Unfocus</animation>
                                 <centerleft>220</centerleft>
                                 <top>9</top>
                                 <width>256</width>
@@ -252,10 +252,10 @@
                     <focusedlayout height="500" width="286">
                         <control type="group">
                             <animation effect="zoom" center="183,22" start="77" end="100" time="200" reversible="true">Focus</animation>
-                            <animation effect="zoom" center="183,22" start="100" end="77" time="50" reversible="true">unFocus</animation>
+                            <animation effect="zoom" center="183,22" start="100" end="77" time="50" reversible="true">Unfocus</animation>
                             <control type="group">
                                 <animation effect="fade" start="0" end="100" time="100" reversible="false">Focus</animation>
-                                <animation effect="fade" start="100" end="0" time="50" reversible="false">unFocus</animation>
+                                <animation effect="fade" start="100" end="0" time="50" reversible="false">Unfocus</animation>
                                 <control type="image">
                                     <centertop>231</centertop>
                                     <centerleft>183</centerleft>

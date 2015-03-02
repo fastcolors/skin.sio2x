@@ -79,7 +79,7 @@
                 <focusedlayout width="300">
                     <control type="group">
                         <animation effect="zoom" start="100" end="150" center="10,910" time="250" tween="Quadratic" easing="in">Focus</animation>
-                        <animation effect="zoom" start="150" end="100" center="10,910" time="60">unFocus</animation>
+                        <animation effect="zoom" start="150" end="100" center="10,910" time="60">Unfocus</animation>
                         <top>620</top>
                         <control type="image" description="inverted">
                             <left>1</left>
@@ -90,7 +90,7 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image" description="maindim">
-                            <animation effect ="fade" start="100" end="0" time="10">unFocus</animation>
+                            <animation effect ="fade" start="100" end="0" time="10">Unfocus</animation>
                             <left>8</left>
                             <top>8</top>
                             <height>284</height>

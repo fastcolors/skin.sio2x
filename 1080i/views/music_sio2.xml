@@ -391,7 +391,7 @@
             </control>
             <control type="group">
                 <animation effect="slide" end="-60,0" time="250" reversible="true">Focus</animation>
-                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">unFocus</animation>
+                <animation effect="slide" start="-60,0" end="0,0" time="250" reversible="true">Unfocus</animation>
                 <control type="image">
                     <left>-8r</left>
                     <top>90</top>

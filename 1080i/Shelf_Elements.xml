@@ -45,7 +45,7 @@
                     <texture>$VAR[dvdbox]</texture>
                 </control>
                 <control type="group">
-                    <animation effect="fade" start="100" end="0" time="100">unFocus</animation>
+                    <animation effect="fade" start="100" end="0" time="100">Unfocus</animation>
                     <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
                     <control type="image">
                         <centerleft>160</centerleft>
@@ -354,7 +354,7 @@
         <focusedlayout height="357" width="480">
             <control type="group">
                 <!--<animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>-->
-                <!--<animation effect="zoom" start="100" end="90" center="240,180" time="100">unFocus</animation>-->
+                <!--<animation effect="zoom" start="100" end="90" center="240,180" time="100">Unfocus</animation>-->
                 <control type="image">
                     <left>23</left>
                     <top>156</top>

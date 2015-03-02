@@ -62,7 +62,7 @@
                     <focusedlayout height="300" width="210">
                         <control type="group">
                             <animation effect="zoom" start="90" end="100" center="120,300" time="400" reversible="false">Focus</animation>
-                            <animation effect="zoom" start="100" end="90" center="120,300" time="300" reversible="false">unFocus</animation>
+                            <animation effect="zoom" start="100" end="90" center="120,300" time="300" reversible="false">Unfocus</animation>
                             <control type="image">
                                 <visible>!StringCompare(ListItem.Label,..)</visible>
                                 <centerleft>120</centerleft>
