@@ -143,7 +143,7 @@
             <thumb>icons/3d.png</thumb>
             <label>3D $LOCALIZE[342]</label>
             <property name="color">bluegray</property>
-            <onclick>ActivateWindow(Videos,"special://skin/resources/3d.xsp", return)</onclick>
+            <onclick>ActivateWindow(Videos,"special://skin/resources/all3d.xsp", return)</onclick>
         </item>
         <!--EXTENDEDINFO-->
         <item id="359">
