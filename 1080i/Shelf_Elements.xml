@@ -195,28 +195,28 @@
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <itemlayout height="357" width="384">
+            <control type="image">
+                <left>30</left>
+                <top>46</top>
+                <width>324</width>
+                <height>324</height>
+                <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <left>30</left>
+                <top>46</top>
+                <width>324</width>
+                <height>324</height>
+                <texture border="4">$VAR[dvdbox]</texture>
+            </control>
             <control type="group">
-                <control type="image">
-                    <left>30</left>
-                    <top>46</top>
-                    <width>324</width>
-                    <height>324</height>
-                    <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio>scale</aspectratio>
-                </control>
-                <control type="image">
-                    <left>30</left>
-                    <top>46</top>
-                    <width>324</width>
-                    <height>324</height>
-                    <texture border="4">$VAR[dvdbox]</texture>
-                </control>
+                <animation effect="fade" end="67" time="0" condition="true">Conditional</animation>
                 <control type="label" description="Artist or Type">
                     <top>8</top>
                     <width>384</width>
                     <height>30</height>
                     <font>size24B</font>
-                    <textcolor>darkgray</textcolor>
                     <label>$INFO[ListItem.Property(ItemType)]$INFO[ListItem.Artist]</label>
                     <align>center</align>
                 </control>
@@ -225,7 +225,6 @@
                     <width>384</width>
                     <height>62</height>
                     <font>size24B</font>
-                    <textcolor>darkgray</textcolor>
                     <autoscroll>false</autoscroll>
                     <label>$INFO[ListItem.Label]</label>
                     <align>center</align>
@@ -233,22 +232,23 @@
             </control>
         </itemlayout>
         <focusedlayout height="357" width="384">
+            <control type="image">
+                <left>30</left>
+                <top>46</top>
+                <width>324</width>
+                <height>324</height>
+                <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <left>30</left>
+                <top>46</top>
+                <width>324</width>
+                <height>324</height>
+                <texture border="4">$VAR[dvdbox]</texture>
+            </control>
             <control type="group">
-                <control type="image">
-                    <left>30</left>
-                    <top>46</top>
-                    <width>324</width>
-                    <height>324</height>
-                    <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio>scale</aspectratio>
-                </control>
-                <control type="image">
-                    <left>30</left>
-                    <top>46</top>
-                    <width>324</width>
-                    <height>324</height>
-                    <texture border="4">$VAR[dvdbox]</texture>
-                </control>
+                <animation effect="fade" start="67" end="100" time="250" delay="250" reversible="false">Focus</animation>
                 <control type="label" description="Artist or Type">
                     <top>8</top>
                     <width>384</width>

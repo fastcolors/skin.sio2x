@@ -211,7 +211,7 @@
     </variable>
 
     <variable name="diffuseselectshelf">
-        <value condition="![Control.IsVisible(311) | Control.IsVisible(312)]">reverse</value>
+        <value condition="Control.IsVisible(313) | Control.IsVisible(314) | Control.IsVisible(315) | Control.IsVisible(317) | Control.IsVisible(319)">reverse</value>
         <value condition="Substring(Container(311).ListItem.MPAA,NR,Right)">CC5555FF</value>
         <!--movies-->
         <!--red-->
@@ -275,7 +275,7 @@
         <value condition="Container(9000).HasFocus(357)">special://skin/resources/3d.xsp</value>
         <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),2)">plugin://script.extendedinfo?info=newdvdreleases&amp;&amp;limit=18</value>
         <value condition="Container(9000).HasFocus(359) + StringCompare(Skin.String(theatersshelf),1)">plugin://script.extendedinfo?info=upcoming&amp;&amp;limit=18</value>
-        <value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=intheaters&amp;&amp;limit=18</value>
+        <value condition="Container(9000).HasFocus(359)">plugin://script.extendedinfo?info=incinemas&amp;&amp;limit=18</value>
         <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),)">plugin://script.extendedinfo?info=topratedtvshows&amp;&amp;limit=18</value>
         <value condition="Container(9000).HasFocus(360) + StringCompare(Skin.String(dvdsshelf),2)">plugin://script.extendedinfo?info=trendingshows&amp;&amp;limit=18</value>
         <!--<value condition="Container(9000).HasFocus(360)">plugin://script.extendedinfo?info=airingshows&amp;&amp;limit=18</value>-->

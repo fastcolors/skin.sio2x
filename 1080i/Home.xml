@@ -16,16 +16,16 @@
             <texture colordiffuse="6612b2e7">images/sio2xlogo.png</texture>
         </control>
         <control type="label">
-        <description>SKIN VERSION</description>
-        <right>10</right>
-        <bottom>10</bottom>
-        <width>60</width>
-        <height>20</height>
-        <font>XS</font>
-        <textcolor>6612b2e7</textcolor>
-        <align>center</align>
-        <scroll>false</scroll>
-        <info>System.AddonVersion(skin.sio2x)</info>
+            <description>SKIN VERSION</description>
+            <right>10</right>
+            <bottom>10</bottom>
+            <width>60</width>
+            <height>20</height>
+            <font>XS</font>
+            <textcolor>6612b2e7</textcolor>
+            <align>center</align>
+            <scroll>false</scroll>
+            <info>System.AddonVersion(skin.sio2x)</info>
         </control>
         <control type="group">
             <animation condition="Control.HasFocus(9000) + ![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-498" time="220">Conditonal</animation>
@@ -324,16 +324,16 @@
                 <include>Favsshelf</include>
                 <control type="label" description="Top Label">
                     <!--<visible>-->
-                        <!--[Container(9000).HasFocus(340) + Control.IsVisible(311)] |-->
-                        <!--[Container(9000).HasFocus(341) + Control.IsVisible(312)] |-->
-                        <!--[Container(9000).HasFocus(342) + Control.IsVisible(313)] |-->
-                        <!--[Container(9000).HasFocus(343) + Control.IsVisible(315)] |-->
-                        <!--[Container(9000).HasFocus(352) + Control.IsVisible(314)] |-->
-                        <!--[Container(9000).HasFocus(355) + Control.IsVisible(311)] |-->
-                        <!--[Container(9000).HasFocus(358) + Control.IsVisible(311)] |-->
-                        <!--[Container(9000).HasFocus(359) + Control.IsVisible(311)] |-->
-                        <!--[Container(9000).HasFocus(360) + Control.IsVisible(311)] |-->
-                        <!--Container(9000).HasFocus(345)-->
+                    <!--[Container(9000).HasFocus(340) + Control.IsVisible(311)] |-->
+                    <!--[Container(9000).HasFocus(341) + Control.IsVisible(312)] |-->
+                    <!--[Container(9000).HasFocus(342) + Control.IsVisible(313)] |-->
+                    <!--[Container(9000).HasFocus(343) + Control.IsVisible(315)] |-->
+                    <!--[Container(9000).HasFocus(352) + Control.IsVisible(314)] |-->
+                    <!--[Container(9000).HasFocus(355) + Control.IsVisible(311)] |-->
+                    <!--[Container(9000).HasFocus(358) + Control.IsVisible(311)] |-->
+                    <!--[Container(9000).HasFocus(359) + Control.IsVisible(311)] |-->
+                    <!--[Container(9000).HasFocus(360) + Control.IsVisible(311)] |-->
+                    <!--Container(9000).HasFocus(345)-->
                     <!--</visible>-->
                     <include>ShelfTitle</include>
                     <label> $VAR[shelflabel] </label>
@@ -421,14 +421,14 @@
                 <height>125</height>
                 <label>-</label>
                 <texturefocus>-</texturefocus>
+                <!--&lt;!&ndash;SICK_BEARDO&ndash;&gt;-->
+                <!--<onclick condition="Container(9000).HasFocus(360)">Notification(Sick Beard,$LOCALIZE[194],3000,images/sickbeard.png)</onclick>-->
+                <!--<onclick condition="Container(9000).HasFocus(360)">RunScript(special://home/addons/plugin.program.sickbeard/resources/lib/addshow.py,$INFO[Container(311).ListItem.Label])</onclick>-->
+                <!--&lt;!&ndash;COUCHO_POTAtO&ndash;&gt;-->
+                <!--<onclick condition="Container(9000).HasFocus(359)">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onclick>-->
+                <!--<onclick condition="Container(9000).HasFocus(359)">Notification(Couch Potato,$LOCALIZE[194],3000,images/couchpotato.png)</onclick>-->
                 <!--TRAILERS-->
                 <onclick condition="!IsEmpty(Container(311).ListItem.Trailer)">PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
-                <!--SICK_BEARDO-->
-                <onclick condition="IsEmpty(Container(311).ListItem.Trailer) + Container(9000).HasFocus(360)">Notification(Sick Beard,$LOCALIZE[194],3000,images/sickbeard.png)</onclick>
-                <onclick condition="IsEmpty(Container(311).ListItem.Trailer) + Container(9000).HasFocus(360)">RunScript(special://home/addons/plugin.program.sickbeard/resources/lib/addshow.py,$INFO[Container(311).ListItem.Label])</onclick>
-                <!--COUCHO_POTAtO-->
-                <onclick condition="IsEmpty(Container(311).ListItem.Trailer) + Container(9000).HasFocus(359)">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onclick>
-                <onclick condition="IsEmpty(Container(311).ListItem.Trailer) + Container(9000).HasFocus(359)">Notification(Couch Potato,$LOCALIZE[194],3000,images/couchpotato.png)</onclick>
                 <onleft>Control.Move(311,-1)</onleft>
                 <onleft>311</onleft>
                 <onright>Control.Move(311,1)</onright>
