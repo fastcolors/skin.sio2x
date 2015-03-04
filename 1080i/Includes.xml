@@ -503,6 +503,14 @@
                     <label>19270</label>
                     <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
                 </control>
+                <control type="radiobutton" id="5">
+                    <description>Show deleted recordings</description>
+                    <left>0</left>
+                    <right>40</right>
+                    <include>DialogButt</include>
+                    <label>19184</label>
+                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+                </control>
                 <control type="button" id="31">
                     <description>TV Guide</description>
                     <include>DialogButt</include>
