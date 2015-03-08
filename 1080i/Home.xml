@@ -88,6 +88,7 @@
                     <centerleft>960</centerleft>
                     <onleft>9000</onleft>
                     <onright>9000</onright>
+                    <onup condition="Control.IsVisible(319)">9090</onup>
                     <onup condition="Container(9000).HasFocus(345)">noop</onup>
                     <onup condition="!Container(9000).HasFocus(345)">700</onup>
                     <ondown>noop</ondown>
