@@ -191,24 +191,6 @@
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/ButtonSelect1.png</texturefocus>
                 </control>
                 <control type="button" id ="31">
-                    <description>Edit channel Button</description>
-                    <width>900</width>
-                    <height>60</height>
-                    <font>size26</font>
-                    <align>left</align>
-                    <label>19203</label>
-                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/ButtonSelect1.png</texturefocus>
-                </control>
-                <control type="button" id ="32">
-                    <description>Delete channel Button</description>
-                    <width>900</width>
-                    <height>60</height>
-                    <font>size26</font>
-                    <align>left</align>
-                    <label>19211</label>
-                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/ButtonSelect1.png</texturefocus>
-                </control>
-                <control type="button" id ="33">
                     <description>New channel Button</description>
                     <width>900</width>
                     <height>60</height>

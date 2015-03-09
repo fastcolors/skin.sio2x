@@ -300,6 +300,15 @@
                 <colordiffuse>445555FF</colordiffuse>
                 <label>$LOCALIZE[118] $LOCALIZE[19141]</label>
             </control>
+            <control type="radiobutton" id="25">
+                <description>Hide Group</description>
+                <width>266</width>
+                <height>80</height>
+                <font>font13</font>
+                <texturefocus>images/white.png</texturefocus>
+                <colordiffuse>445555FF</colordiffuse>
+                <label>19289</label>
+            </control>
             <control type="button" id="28">
                 <description>Delete Group</description>
                 <width>266</width>
