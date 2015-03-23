@@ -16,14 +16,6 @@
             <property name="color">darkblue</property>
             <onclick>activatewindow(1115)</onclick>
         </item>
-        <!--<item id="0">-->
-            <!--&lt;!&ndash;<visible>StringCompare(Window(Home).Property(HomeSetMode),program)</visible>&ndash;&gt;-->
-            <!--<thumb>icons/netatmo.png</thumb>-->
-            <!--<label>$INFO[Window(Home).Property(netatmo_HomeTemperature),,°] / $INFO[Window(Home).Property(netatmo_HomeSetTemperature),,°]</label>-->
-            <!--<property name="color">orange</property>>-->
-            <!--&lt;!&ndash;<property name="unwatched"></property>&ndash;&gt;-->
-            <!--<onclick>RunScript(service.netatmo.thermostat)</onclick>-->
-        <!--</item>-->
         <!--MOVIES-->
             <item id="340">
             <visible>!Skin.HasSetting(hidemovie) + Library.HasContent(Movies)</visible>
