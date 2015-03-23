@@ -31,7 +31,7 @@
             <animation condition="Control.HasFocus(9000) + ![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-498" time="220">Conditonal</animation>
             <control type="button" id="9009">
                 <include>ShelfFade</include>
-                <visible>Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(313) | [Control.IsVisible(315) + !Skin.HasSetting(AddonsShelf_Custom)]</visible>
+                <visible>[Control.IsVisible(311) + IntegerGreaterThan(Container(311).NumItems,0)] | [Control.IsVisible(312) + IntegerGreaterThan(Container(312).NumItems,0)] | [Control.IsVisible(313) + IntegerGreaterThan(Container(313).NumItems,0)] | [Control.IsVisible(315) + !Skin.HasSetting(AddonsShelf_Custom)]</visible>
                 <top>18</top>
                 <left>10</left>
                 <width>34</width>
