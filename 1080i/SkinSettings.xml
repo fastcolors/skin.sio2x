@@ -270,7 +270,7 @@
                 <control type="image" description="3d">
                     <width>65</width>
                     <height>65</height>
-                    <texture>Badges/Badgecount.png</texture>
+                    <texture>badges/badgecount.png</texture>
                 </control>
                 <control type="label">
                     <height>62</height>
