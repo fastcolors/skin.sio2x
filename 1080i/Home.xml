@@ -3,7 +3,7 @@
     <defaultcontrol always="false">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
-    <onload condition="!StringCompare(System.AddonVersion(skin.sio2x),Skin.String(version))">ActivateWindow(1113)</onload>
+    <!--<onload condition="!StringCompare(System.AddonVersion(skin.sio2x),Skin.String(version))">ActivateWindow(1113)</onload>-->
     <!--<onload>RunScript(script.favourites)</onload>-->
     <include>OpenClose</include>
     <controls>
