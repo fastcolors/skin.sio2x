@@ -7,6 +7,7 @@
     <include file="musicpage.xml" />
     <!--VIDEOVIEWS-->
     <include file="views/video_fatlist.xml" />
+    <include file="views/video_widelist.xml" />
     <include file="views/video_plainlist.xml" />
     <include file="views/video_banners.xml" />
     <include file="views/video_fanart.xml" />
