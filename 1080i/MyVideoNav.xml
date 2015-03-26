@@ -4,7 +4,7 @@
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
-    <views>52,53,50,54,55,56,500</views>
+    <views>52,53,50,54,55,56,500,501</views>
     <!--
    50 Big List
    52 Sio2
@@ -13,6 +13,7 @@
    55 Banners
    56 Icon episodes
    500 Fanart
+   501 Widelist
    -->
     <include>OpenClose</include>
     <controls>
@@ -21,6 +22,7 @@
         <include>sio2view</include>
         <include>sio2advanced</include>
         <include>fatlist</include>
+        <include>widelist</include>
         <include>fanart</include>
         <include>icons</include>
         <include>icons_episodes</include>
