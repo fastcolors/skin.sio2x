@@ -13,7 +13,6 @@
    55 Banners
    56 Icon episodes
    500 Fanart
-   501 Widelist
    -->
     <include>OpenClose</include>
     <controls>
@@ -60,18 +59,12 @@
                     <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
                     <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
                 </control>
-                <!--<control type="button" id="19">-->
-                <!--<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>-->
-                <!--<description>Filter</description>-->
-                <!--<include>DialogButt</include>-->
-                <!--<label>587</label>-->
-                <!--</control>-->
                 <control type="radiobutton" id="98">
                     <enable>Container.CanFilterAdvanced</enable>
                     <include>DialogButt</include>
                     <label>587</label>
                     <selected>Container.Filtered</selected>
-                    <onclick>left</onclick>
+                    <onclick>right</onclick>
                     <onclick>Filter</onclick>
                 </control>
                 <control type="button" id="3" description="Sort">
@@ -104,7 +97,7 @@
                     <include>DialogButt</include>
                     <visible>System.HasAddon(script.trakt) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)]</visible>
                     <label>Trakt</label>
-                    <onclick>left</onclick>
+                    <onclick>right</onclick>
                     <onclick>ActivateWindow(1122)</onclick>
                 </control>
                 <control type="button" id="699" description="Playing">
@@ -122,7 +115,7 @@
                     <label>653</label>
                     <altlabel>13353</altlabel>
                     <usealttexture>library.isscanningvideo</usealttexture>
-                    <onclick>left</onclick>
+                    <onclick>right</onclick>
                 </control>
                 <control type="button" id="598">
                     <include>DialogButt</include>
@@ -132,7 +125,7 @@
                     <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
                     <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=musicvideos, dbid=$INFO[ListItem.DBID], clearlogo, discart)</onclick>
                     <visible>[Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)]+system.hasaddon(script.artwork.downloader)</visible>
-                    <onclick>left</onclick>
+                    <onclick>right</onclick>
                 </control>
                 <control type="button" id="599">
                     <enable>false</enable>
@@ -189,6 +182,13 @@
                     <onclick>Container.SetViewMode(55)</onclick>
                     <selected>Control.IsVisible(55)</selected>
                     <label>$LOCALIZE[539]</label>
+                </control>
+                <control type="radiobutton" id="610" description="Widelist">
+                    <!--<visible>Container.Content(episodes)</visible>-->
+                    <include>DialogButt</include>
+                    <onclick>Container.SetViewMode(501)</onclick>
+                    <selected>Control.IsVisible(501)</selected>
+                    <label>Widelist</label>
                 </control>
             </control>
         </control>
