@@ -13,6 +13,7 @@
    55 Banners
    56 Icon episodes
    500 Fanart
+   501 Widelist
    -->
     <include>OpenClose</include>
     <controls>
@@ -184,7 +185,7 @@
                     <label>$LOCALIZE[539]</label>
                 </control>
                 <control type="radiobutton" id="610" description="Widelist">
-                    <visible>Container.Content(episodes)</visible>
+                    <!--<visible>Container.Content(episodes)</visible>-->
                     <include>DialogButt</include>
                     <onclick>Container.SetViewMode(501)</onclick>
                     <selected>Control.IsVisible(501)</selected>
