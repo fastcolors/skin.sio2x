@@ -10,7 +10,7 @@
                 <centerleft>960</centerleft>
                 <centertop>540</centertop>
                 <width>840</width>
-                <height>540</height>
+                <height>600</height>
                 <aspectratio>stretch</aspectratio>
                 <texture border="150">images/Dialog.png</texture>
             </control>
@@ -40,8 +40,14 @@
                     <include>DialogButt</include>
                     <label>653</label>
                     <onclick>Close</onclick>
-                    <onclick>CleanLibrary(video,true)</onclick>
                     <onclick>UpdateLibrary(video,,true)</onclick>
+                </control>
+                <control type="button" id="705" description="Update Library">
+                    <enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>
+                    <include>DialogButt</include>
+                    <label>334</label>
+                    <onclick>Close</onclick>
+                    <onclick>CleanLibrary(video,true)</onclick>
                 </control>
                 <!--<control type="button" id="705" description="Update Library">-->
                 <!--<enable>Library.HasContent(Movies) | Library.HasContent(TVShows)</enable>-->
