@@ -8,23 +8,30 @@
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
         <itemlayout height="350" width="320">
-            <control type="group">
-                <!--<animation condition="true" center="160,22" effect="zoom" end="90">Conditional</animation>-->
-                <control type="image">
-                    <centerleft>160</centerleft>
-                    <top>22</top>
-                    <width>274</width>
-                    <height>410</height>
-                    <texture fallback="DefaultVideoCover.png" background="true">$VAR[locandine]</texture>
-                    <aspectratio>scale</aspectratio>
-                </control>
-                <control type="image">
-                    <centerleft>160</centerleft>
-                    <top>22</top>
-                    <width>274</width>
-                    <height>410</height>
-                    <texture>$VAR[dvdbox]</texture>
-                </control>
+            <control type="image">
+                <centerleft>160</centerleft>
+                <top>22</top>
+                <width>274</width>
+                <height>410</height>
+                <texture fallback="DefaultVideoCover.png" background="true">$VAR[locandine]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="progress" description="progress">
+                <visible>ListItem.IsResumable</visible>
+                <left>23</left>
+                <top>424</top>
+                <width>274</width>
+                <height>8</height>
+                <texturebg>images/transparent.png</texturebg>
+                <midtexture border="1">images/white.png</midtexture>
+                <info>ListItem.PercentPlayed</info>
+            </control>
+            <control type="image">
+                <centerleft>160</centerleft>
+                <top>22</top>
+                <width>274</width>
+                <height>410</height>
+                <texture>$VAR[dvdbox]</texture>
             </control>
         </itemlayout>
         <focusedlayout height="420" width="320">
@@ -36,6 +43,16 @@
                     <height>410</height>
                     <texture fallback="DefaultVideoCover.png" background="true">$VAR[locandine]</texture>
                     <aspectratio>scale</aspectratio>
+                </control>
+                <control type="progress" description="progress">
+                    <visible>ListItem.IsResumable</visible>
+                    <left>23</left>
+                    <top>424</top>
+                    <width>274</width>
+                    <height>8</height>
+                    <texturebg>images/transparent.png</texturebg>
+                    <midtexture border="1">images/white.png</midtexture>
+                    <info>ListItem.PercentPlayed</info>
                 </control>
                 <control type="image">
                     <centerleft>160</centerleft>
