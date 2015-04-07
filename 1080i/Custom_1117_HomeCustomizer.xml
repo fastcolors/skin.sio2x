@@ -1140,22 +1140,22 @@
                 <onclick>activatewindow(weathersettings)</onclick>
             </control>
         </control>
-        <control type="group" id="521" description="SEARCH">
-            <top>60</top>
-            <left>60</left>
-            <visible>Container(50).HasFocus(356)</visible>
-            <control type="textbox">
-                <!--todo label maybe-->
-                <left>450</left>
-                <top>100</top>
-                <width>900</width>
-                <height>300</height>
-                <align>center</align>
-                <textcolor>gray</textcolor>
-                <font>size26</font>
-                <label></label>
-            </control>
-        </control>
+        <!--<control type="group" id="521" description="SEARCH">-->
+            <!--<top>60</top>-->
+            <!--<left>60</left>-->
+            <!--<visible>Container(50).HasFocus(356)</visible>-->
+            <!--<control type="textbox">-->
+                <!--&lt;!&ndash;todo label maybe&ndash;&gt;-->
+                <!--<left>450</left>-->
+                <!--<top>100</top>-->
+                <!--<width>900</width>-->
+                <!--<height>300</height>-->
+                <!--<align>center</align>-->
+                <!--<textcolor>gray</textcolor>-->
+                <!--<font>size26</font>-->
+                <!--<label></label>-->
+            <!--</control>-->
+        <!--</control>-->
         </control>
         <control type="group" description="Options">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus()</visible>
