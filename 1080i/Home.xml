@@ -71,7 +71,7 @@
                 <!--<ondown condition="!IntegerGreaterThan(Container(313).NumItems,0)">noop</ondown>-->
                 <ondown>700</ondown>
             </control>
-            <!--todo INTERCEPT CLICKS ON MOVIES-->
+            <!--INTERCEPT CLICKS ON MOVIES???-->
             <!--<control type="button" id="900">-->
             <!--<onfocus>SetFocus(700)</onfocus>-->
             <!--<ondown>9000</ondown>-->
@@ -422,13 +422,13 @@
                 <height>125</height>
                 <label>-</label>
                 <texturefocus>-</texturefocus>
-                <!--&lt;!&ndash;SICK_BEARDO&ndash;&gt;-->
-                <!--<onclick condition="Container(9000).HasFocus(360)">Notification(Sick Beard,$LOCALIZE[194],3000,images/sickbeard.png)</onclick>-->
-                <!--<onclick condition="Container(9000).HasFocus(360)">RunScript(special://home/addons/plugin.program.sickbeard/resources/lib/addshow.py,$INFO[Container(311).ListItem.Label])</onclick>-->
-                <!--&lt;!&ndash;COUCHO_POTAtO&ndash;&gt;-->
-                <!--<onclick condition="Container(9000).HasFocus(359)">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onclick>-->
-                <!--<onclick condition="Container(9000).HasFocus(359)">Notification(Couch Potato,$LOCALIZE[194],3000,images/couchpotato.png)</onclick>-->
-                <!--TRAILERS-->
+                <!--SICK_BEARDO-->
+                <onclick condition="Container(9000).HasFocus(360)">Notification(Sick Beard,$LOCALIZE[194],3000,images/sickbeard.png)</onclick>
+                <onclick condition="Container(9000).HasFocus(360)">RunScript(special://home/addons/plugin.program.sickbeard/resources/lib/addshow.py,$INFO[Container(311).ListItem.Label])</onclick>
+                <!--COUCHO_POTAtO-->
+                <onclick condition="Container(9000).HasFocus(359)">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onclick>
+                <onclick condition="Container(9000).HasFocus(359)">Notification(Couch Potato,$LOCALIZE[194],3000,images/couchpotato.png)</onclick>
+                TRAILERS
                 <onclick condition="!IsEmpty(Container(311).ListItem.Trailer)">PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
                 <onleft>Control.Move(311,-1)</onleft>
                 <onleft>311</onleft>

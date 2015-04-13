@@ -69,7 +69,7 @@
         <value condition="Container.Content(Episodes)">$INFO[ListItem.Season,S , • ]$INFO[ListItem.Episode,E , • ]$INFO[ListItem.Premiered,, • ]$INFO[ListItem.Duration,, $LOCALIZE[12391] • ]$INFO[ListItem.AudioLanguage,, • ]$INFO[ListItem.VideoCodec,, • ]$INFO[ListItem.AudioCodec,, • ]$INFO[ListItem.VideoResolution]</value>
         <value condition="Container.Content(Addons)">[COLOR orange]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Property(Addon.Version), • ,]$INFO[ListItem.Property(Addon.Creator), • ,]</value>
         <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
-        <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$INFO[ListItem.Year]</value>
+        <value condition="ListItem.IsCollection">$INFO[ListItem.Year]</value>
         <value condition="[Container.Content(Movies) | Container.Content(MusicVideos)] + IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.AudioLanguage, • ]$INFO[ListItem.MPAA, • ]</value>
         <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31038]]$INFO[ListItem.AudioLanguage, • ] • $LOCALIZE[20410]$INFO[ListItem.MPAA, • ]</value>
         <value condition="Container.Content(Seasons) | Container.Content(TVShows)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]$INFO[ListItem.MPAA, • ]</value>
@@ -94,7 +94,7 @@
 
     <variable name="Plots">
         <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
-        <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
+        <value condition="ListItem.IsCollection">$LOCALIZE[20457]</value>
         <value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
         <value condition="Container.Content(Seasons) + !IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
         <value condition="Container.Content(albums) + !IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>

@@ -1301,91 +1301,130 @@
             <top>30</top>
             <visible>[Container(9000).HasFocus(345)]</visible>
             <include>ShelfFade</include>
-            <!--<control type="label">-->
-            <!--<left>83</left>-->
-            <!--<top>10</top>-->
-            <!--<width>1754</width>-->
-            <!--<height>40</height>-->
-            <!--<align>center</align>-->
-            <!--<font>Size33B</font>-->
-            <!--<info>Weather.Location</info>-->
-            <!--</control>-->
-            <control type="image">
-                <left>75</left>
-                <top>62</top>
-                <width>1770</width>
-                <height>366</height>
-                <aspectratio>stretch</aspectratio>
-                <texture border="30">images/weathersingle.png</texture>
-            </control>
-            <control type="list" id="399" description="TOP Weather">
-                <visible>[Container(9000).HasFocus(345)]</visible>
-                <onup>9009</onup>
+            <control type="button" id="9095" description="FakeButton">
+                <visible>Container(9000).HasFocus(345)</visible>
+                <left>-20</left>
+                <top>-20</top>
+                <height>100</height>
+                <width>1000</width>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <font>Size33</font>
+                <onup>noop</onup>
                 <ondown>9000</ondown>
-                <onleft>9000</onleft>
-                <onright>9000</onright>
-                <orientation>horizontal</orientation>
-                <left>85</left>
-                <top>80</top>
-                <width>1760</width>
-                <height>418</height>
-                <itemlayout width="250">
-                    <include>WeatherCommons</include>
-                </itemlayout>
-                <focusedlayout width="250">
-                    <include>WeatherCommons</include>
-                </focusedlayout>
-                <content>
-                    <item id="0">
-                        <label>33006</label>
-                        <label2>Max:  $INFO[Window(Weather).Property(Day0.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day0.LowTemp)]</label2>
-                        <thumb>$INFO[Window(Weather).Property(Day0.FanartCode),weathershelf/,.png]</thumb>
-                        <property name="conds">$INFO[Window(Weather).Property(Day0.Outlook)]</property>
-                        <onclick>SetFocus(9000)</onclick>
-                    </item>
-                    <item id="1">
-                        <label>$INFO[Window(Weather).Property(Day1.Title)]</label>
-                        <label2>Max:  $INFO[Window(Weather).Property(Day1.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day1.LowTemp)]</label2>
-                        <thumb>$INFO[Window(Weather).Property(Day1.FanartCode),weathershelf/,.png]</thumb>
-                        <property name="conds">$INFO[Window(Weather).Property(Day1.Outlook)]</property>
-                        <onclick>SetFocus(9000)</onclick>
-                    </item>
-                    <item id="2">
-                        <label>$INFO[Window(Weather).Property(Day2.Title)]</label>
-                        <label2>Max:  $INFO[Window(Weather).Property(Day2.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day2.LowTemp)]</label2>
-                        <thumb>$INFO[Window(Weather).Property(Day2.FanartCode),weathershelf/,.png]</thumb>
-                        <property name="conds">$INFO[Window(Weather).Property(Day2.Outlook)]</property>
-                        <onclick>SetFocus(9000)</onclick>
-                    </item>
-                    <item id="3">
-                        <label>$INFO[Window(Weather).Property(Day3.Title)]</label>
-                        <label2>Max:  $INFO[Window(Weather).Property(Day3.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day3.LowTemp)]</label2>
-                        <thumb>$INFO[Window(Weather).Property(Day3.FanartCode),weathershelf/,.png]</thumb>
-                        <property name="conds">$INFO[Window(Weather).Property(Day3.Outlook)]</property>
-                        <onclick>SetFocus(9000)</onclick>
-                    </item>
-                    <item id="4">
-                        <label>$INFO[Window(Weather).Property(Day4.Title)]</label>
-                        <label2>Max:  $INFO[Window(Weather).Property(Day4.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day4.LowTemp)]</label2>
-                        <thumb>$INFO[Window(Weather).Property(Day4.FanartCode),weathershelf/,.png]</thumb>
-                        <property name="conds">$INFO[Window(Weather).Property(Day4.Outlook)]</property>
-                        <onclick>SetFocus(9000)</onclick>
-                    </item>
-                    <item id="5">
-                        <label>$INFO[Window(Weather).Property(Day5.Title)]</label>
-                        <label2>Max:  $INFO[Window(Weather).Property(Day5.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day5.LowTemp)]</label2>
-                        <thumb>$INFO[Window(Weather).Property(Day5.FanartCode),weathershelf/,.png]</thumb>
-                        <property name="conds">$INFO[Window(Weather).Property(Day5.Outlook)]</property>
-                        <onclick>SetFocus(9000)</onclick>
-                    </item>
-                    <item id="6">
-                        <label>$INFO[Window(Weather).Property(Day6.Title)]</label>
-                        <label2>Max:  $INFO[Window(Weather).Property(Day6.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day6.LowTemp)]</label2>
-                        <thumb>$INFO[Window(Weather).Property(Day6.FanartCode),weathershelf/,.png]</thumb>
-                        <property name="conds">$INFO[Window(Weather).Property(Day6.Outlook)]</property>
-                        <onclick>SetFocus(9000)</onclick>
-                    </item>
-                </content>
+                <onleft>noop</onleft>
+                <onright>9096</onright>
+                <label>-</label>
+                <onclick>SetFocus(9000)</onclick>
+            </control>
+            <control type="button" id="9096" description="FakeButton">
+                <visible>Container(9000).HasFocus(345)</visible>
+                <left>-20</left>
+                <top>-20</top>
+                <height>100</height>
+                <width>1000</width>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <font>Size33</font>
+                <onup>noop</onup>
+                <ondown>9000</ondown>
+                <onleft>9095</onleft>
+                <onright>noop</onright>
+                <label>-</label>
+                <onclick>SetFocus(9000)</onclick>
+            </control>
+
+            <control type="group">
+                <animation effect="slide" condition="Control.HasFocus(9096)" end="-1920,0" time="500">Conditional</animation>
+                <control type="image">
+                    <left>75</left>
+                    <top>62</top>
+                    <width>1770</width>
+                    <height>366</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture border="30">images/weathersingle.png</texture>
+                </control>
+                <control type="list" id="399" description="TOP Weather">
+                    <visible>[Container(9000).HasFocus(345)]</visible>
+                    <onup>9009</onup>
+                    <ondown>9000</ondown>
+                    <onleft>9000</onleft>
+                    <onright>9000</onright>
+                    <orientation>horizontal</orientation>
+                    <left>85</left>
+                    <top>80</top>
+                    <width>1760</width>
+                    <height>418</height>
+                    <itemlayout width="250">
+                        <include>WeatherCommons</include>
+                    </itemlayout>
+                    <focusedlayout width="250">
+                        <include>WeatherCommons</include>
+                    </focusedlayout>
+                    <content>
+                        <item id="0">
+                            <label>33006</label>
+                            <label2>Max:  $INFO[Window(Weather).Property(Day0.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day0.LowTemp)]</label2>
+                            <thumb>$INFO[Window(Weather).Property(Day0.FanartCode),weathershelf/,.png]</thumb>
+                            <property name="conds">$INFO[Window(Weather).Property(Day0.Outlook)]</property>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="1">
+                            <label>$INFO[Window(Weather).Property(Day1.Title)]</label>
+                            <label2>Max:  $INFO[Window(Weather).Property(Day1.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day1.LowTemp)]</label2>
+                            <thumb>$INFO[Window(Weather).Property(Day1.FanartCode),weathershelf/,.png]</thumb>
+                            <property name="conds">$INFO[Window(Weather).Property(Day1.Outlook)]</property>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="2">
+                            <label>$INFO[Window(Weather).Property(Day2.Title)]</label>
+                            <label2>Max:  $INFO[Window(Weather).Property(Day2.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day2.LowTemp)]</label2>
+                            <thumb>$INFO[Window(Weather).Property(Day2.FanartCode),weathershelf/,.png]</thumb>
+                            <property name="conds">$INFO[Window(Weather).Property(Day2.Outlook)]</property>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="3">
+                            <label>$INFO[Window(Weather).Property(Day3.Title)]</label>
+                            <label2>Max:  $INFO[Window(Weather).Property(Day3.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day3.LowTemp)]</label2>
+                            <thumb>$INFO[Window(Weather).Property(Day3.FanartCode),weathershelf/,.png]</thumb>
+                            <property name="conds">$INFO[Window(Weather).Property(Day3.Outlook)]</property>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="4">
+                            <label>$INFO[Window(Weather).Property(Day4.Title)]</label>
+                            <label2>Max:  $INFO[Window(Weather).Property(Day4.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day4.LowTemp)]</label2>
+                            <thumb>$INFO[Window(Weather).Property(Day4.FanartCode),weathershelf/,.png]</thumb>
+                            <property name="conds">$INFO[Window(Weather).Property(Day4.Outlook)]</property>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="5">
+                            <label>$INFO[Window(Weather).Property(Day5.Title)]</label>
+                            <label2>Max:  $INFO[Window(Weather).Property(Day5.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day5.LowTemp)]</label2>
+                            <thumb>$INFO[Window(Weather).Property(Day5.FanartCode),weathershelf/,.png]</thumb>
+                            <property name="conds">$INFO[Window(Weather).Property(Day5.Outlook)]</property>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                        <item id="6">
+                            <label>$INFO[Window(Weather).Property(Day6.Title)]</label>
+                            <label2>Max:  $INFO[Window(Weather).Property(Day6.HighTemp)][CR]Min:  $INFO[Window(Weather).Property(Day6.LowTemp)]</label2>
+                            <thumb>$INFO[Window(Weather).Property(Day6.FanartCode),weathershelf/,.png]</thumb>
+                            <property name="conds">$INFO[Window(Weather).Property(Day6.Outlook)]</property>
+                            <onclick>SetFocus(9000)</onclick>
+                        </item>
+                    </content>
+                </control>
+            </control>
+            <control type="group">
+                <left>1920</left>
+                <animation effect="slide" condition="Control.HasFocus(9096)" end="-1920,0" time="500">Conditional</animation>
+                <control type="image">
+                    <left>75</left>
+                    <top>62</top>
+                    <width>1770</width>
+                    <height>366</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture border="30">images/weathersingle.png</texture>
+                </control>
             </control>
             <control type="label">
                 <right>60</right>

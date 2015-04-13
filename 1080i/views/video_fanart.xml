@@ -49,7 +49,7 @@
                     <bordersize>4</bordersize>
                 </control>
                 <control type="group">
-                    <visible>!SubString(ListItem.path,videodb://movies/sets/)</visible>
+                    <visible>!ListItem.IsCollection</visible>
                     <control type="grouplist" description="Flags">
                         <top>540</top>
                         <left>760</left>

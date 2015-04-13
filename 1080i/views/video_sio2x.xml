@@ -21,7 +21,7 @@
                 <left>1433</left>
                 <width>502</width>
                 <height>945</height>
-                <onleft condition="SubString(ListItem.path,videodb://movies/sets/) | Container.Content(tvshows) +!Control.IsVisible(1234)">990</onleft>
+                <onleft condition="ListItem.IsCollection | Container.Content(tvshows) +!Control.IsVisible(1234)">990</onleft>
                 <onleft condition="!Skin.HasSetting(ViewsMenuOff)">9000</onleft>
                 <onleft condition="Skin.HasSetting(ViewsMenuOff)">noop</onleft>
                 <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
@@ -75,7 +75,7 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="image">
-                        <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+                        <visible>ListItem.IsCollection</visible>
                         <left>435</left>
                         <top>101</top>
                         <width>40</width>
@@ -170,7 +170,7 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="image">
-                        <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+                        <visible>ListItem.IsCollection</visible>
                         <left>435</left>
                         <top>101</top>
                         <width>40</width>
@@ -232,7 +232,7 @@
                     <label>[UPPERCASE]$INFO[ListItem.label][/UPPERCASE]</label>
                 </control>
                 <control type="label">
-                    <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+                    <visible>ListItem.IsCollection</visible>
                     <width>auto</width>
                     <height>50</height>
                     <font>size26</font>
@@ -243,7 +243,7 @@
             </control>
             <!--NONSETS-->
             <control type="group">
-                <visible>!SubString(ListItem.path,videodb://movies/sets/) + !Container.Content(Addons)</visible>
+                <visible>!ListItem.IsCollection + !Container.Content(Addons)</visible>
                 <control type="textbox">
                     <centerleft>716</centerleft>
                     <top>70</top>
@@ -560,7 +560,7 @@
             <!--NONSET-END-->
             <!--SETS-->
             <control type="group" description="setinfos">
-                <visible>SubString(ListItem.path,videodb://movies/sets/)</visible>
+                <visible>ListItem.IsCollection</visible>
                 <control type="panel" id="990">
                     <centerleft>705</centerleft>
                     <top>100</top>
