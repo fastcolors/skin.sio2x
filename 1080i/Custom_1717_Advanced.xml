@@ -83,11 +83,11 @@
                       <onclick>RunScript()</onclick>
                       <icon>DefaultIconWarning.png</icon>
                     </item-->
-                    <item id="11" description="test">
-                        <label>LABELHERE</label>
-                        <onclick>RunScript(script.toolbox,info=textviewer)</onclick>
-                        <icon>DefaultIconWarning.png</icon>
-                    </item>
+                    <!--<item id="11" description="test">-->
+                        <!--<label>LABELHERE</label>-->
+                        <!--<onclick>RunScript(script.toolbox,info=textviewer)</onclick>-->
+                        <!--<icon>DefaultIconWarning.png</icon>-->
+                    <!--</item>-->
                 </content>
             </control>
         </control>
