@@ -280,8 +280,8 @@ msgid "Enable/Disable notification badge showing the number of unwatched Movies 
 msgstr "Enable/Disable notification badge showing the number of unwatched Movies and TVShows on Home Icons"
 
 msgctxt "#31066"
-msgid "Enable/Disable Sliding Info Window in Icon View"
-msgstr "Enable/Disable Sliding Info Window in Icon View"
+msgid "Enable/Disable fading Infos over Thumb in Icon View"
+msgstr "Enable/Disable fading Infos over Thumb in Icon View"
 
 msgctxt "#31067"
 msgid "Infos in Icon view"

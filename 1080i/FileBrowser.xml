@@ -151,7 +151,7 @@
             <left>959</left>
             <centertop>540</centertop>
             <width>1</width>
-            <height>900</height>
+            <height>910</height>
             <texture>lines/LineV.png</texture>
         </control>
         <control type="scrollbar" id="60">
