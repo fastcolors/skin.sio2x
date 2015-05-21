@@ -5,7 +5,6 @@
     <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>
-        <include>WindowsTopInfos</include>
         <control type="group">
             <control type="group" description="50">
                 <visible>Control.IsVisible(50)</visible>
@@ -130,6 +129,7 @@
                 <height>1080</height>
                 <texture>lines/LineV.png</texture>
             </control>
+            <include>WindowsTopInfos</include>
             <control type="group" description="Side menu 9000 group">
                 <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
                 <include>9000slide</include>
