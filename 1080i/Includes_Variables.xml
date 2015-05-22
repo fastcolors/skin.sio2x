@@ -426,4 +426,9 @@
         <value condition="Container(9000).HasFocus(360)">images/sickbeard.png</value>
         <value>info/trailerFO.png</value>
     </variable>
+
+    <variable name="SeekLabel">
+        <value condition="Player.DisplayAfterSeek + !Player.Seeking">$INFO[Player.SeekOffset]</value>
+		<value condition="!IsEmpty(Player.SeekStepSize) + Player.Seeking">$INFO[Player.SeekStepSize]</value>
+	</variable>
 </includes>
