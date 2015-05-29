@@ -415,6 +415,7 @@
                 <label>-</label>
                 <texture>$VAR[functionshelf]</texture>
             </control>
+            <!--TRAILER BUTTON-->
             <control type="button" id="9010">
                 <visible allowhiddenfocus="true">Control.HasFocus(9010)</visible>
                 <left>98</left>
@@ -428,8 +429,8 @@
                 <!--COUCHO_POTAtO-->
                 <onclick condition="Container(9000).HasFocus(359)">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onclick>
                 <onclick condition="Container(9000).HasFocus(359)">Notification(Couch Potato,$LOCALIZE[194],3000,images/couchpotato.png)</onclick>
-                TRAILERS
-                <onclick condition="!IsEmpty(Container(311).ListItem.Trailer)">PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
+                <!--TRAILERS-->
+                <onclick condition="!IsEmpty(Container(311).ListItem.Trailer) + ![Container(9000).HasFocus(359) | Container(9000).HasFocus(360)]">PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
                 <onleft>Control.Move(311,-1)</onleft>
                 <onleft>311</onleft>
                 <onright>Control.Move(311,1)</onright>
