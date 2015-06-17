@@ -2,10 +2,11 @@
 <includes>
     <include name="homepanel">
         <!--VADDONS IF BOTH MOVIE AND TVSHOWS HIDDEN-->
-        <item id="355">
+        <item id="1055">
             <visible>Skin.HasSetting(hidemovie) + Skin.HasSetting(hidetv)  + !Skin.HasSetting(hidevaddons)</visible>
             <thumb>icons/vaddons.png</thumb>
             <label>$LOCALIZE[157] $LOCALIZE[24001]</label>
+            <property name="color">darkblue</property>
             <onclick>noop</onclick>
         </item>
         <!--SOURCES IF NO LIBRARY-->

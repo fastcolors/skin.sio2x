@@ -107,7 +107,7 @@
                             <height>150</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="70">Seekbar/OSDBackground.png</texture>
-                            <colordiffuse>CCFFFFFF</colordiffuse>
+                            <colordiffuse>seekbar</colordiffuse>
                         </control>
                     </control>
                     <control type="label" description="Title">
@@ -183,6 +183,7 @@
                             <width>90</width>
                             <height>98</height>
                             <texture>$INFO[ListItem.thumb]</texture>
+                            <colordiffuse>main</colordiffuse>
                         </control>
                     </itemlayout>
                     <focusedlayout width="90">
@@ -190,6 +191,7 @@
                             <width>90</width>
                             <height>98</height>
                             <texture>$INFO[ListItem.label]</texture>
+                            <colordiffuse>main</colordiffuse>
                         </control>
                     </focusedlayout>
                     <content>

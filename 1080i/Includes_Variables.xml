@@ -211,7 +211,7 @@
     </variable>
 
     <variable name="diffuseselectshelf">
-        <value condition="Control.IsVisible(313) | Control.IsVisible(314) | Control.IsVisible(315) | Control.IsVisible(317) | Control.IsVisible(319)">reverse</value>
+        <value condition="Control.IsVisible(313) | Control.IsVisible(314) | Control.IsVisible(315) | Control.IsVisible(317) | Control.IsVisible(319)">main</value>
         <value condition="Substring(Container(311).ListItem.MPAA,NR,Right)">CC5555FF</value>
         <!--movies-->
         <!--red-->
@@ -331,7 +331,7 @@
         <value condition="Container(9000).HasFocus(342) + Library.HasContent(Music)">$LOCALIZE[359]</value>
         <!--ADDONS-->
         <!--todo label-->
-        <value condition="Skin.HasSetting(AddonsShelf_Custom)">Custom Shelf Addons</value>
+        <value condition="Container(9000).HasFocus(1055) + Skin.HasSetting(AddonsShelf_Custom)">$LOCALIZE[31051]</value>
         <value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),1)">$LOCALIZE[1038] </value>
         <value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),2)">$LOCALIZE[1043] </value>
         <value condition="Container(9000).HasFocus(343) + StringCompare(Skin.String(addonsshelf),3)">$LOCALIZE[1039] </value>

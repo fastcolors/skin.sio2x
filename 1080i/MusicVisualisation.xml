@@ -24,7 +24,7 @@
                 <fadetime>400</fadetime>
                 <aspectratio>scale</aspectratio>
                 <texture background="true" diffuse="66FFFFFF">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-                 <colordiffuse>88FFFFFF</colordiffuse>
+                <colordiffuse>88FFFFFF</colordiffuse>
             </control>
             <control type="visualisation" id="2">
                 <left>0</left>
@@ -37,7 +37,7 @@
                 <animation effect="fade" time="500">Visible</animation>
                 <animation effect="fade" time="200">Hidden</animation>
                 <control type="group" description="Info panel LEFT">
-                  <control type="group" description="Music Cover group">
+                    <control type="group" description="Music Cover group">
                         <camera x="450" y="540" />
                         <animation effect="rotatey" start="0" end="-20" center="450,0" time="0" reversible="false" condition="true">Conditional</animation>
                         <top>175</top>
@@ -229,13 +229,14 @@
                     <width>750</width>
                     <label>$LOCALIZE[210]</label>
                     <font>size22</font>
-                    <textcolor>dimgray</textcolor>
+                    <textcolor>ffffffff</textcolor>
                 </control>
                 <control type="label" description="Previous">
                     <left>30</left>
                     <top>34</top>
                     <height>36</height>
                     <width>750</width>
+                    <textcolor>ffffffff</textcolor>
                     <label>$INFO[MusicPlayer.offset(-1).Title]</label>
                 </control>
                 <control type="label" description="Previous">
@@ -244,7 +245,7 @@
                     <height>36</height>
                     <width>750</width>
                     <font>size22</font>
-                    <textcolor>dimgray</textcolor>
+                    <textcolor>ffffffff</textcolor>
                     <label>$INFO[MusicPlayer.offset(-1).Artist]</label>
                 </control>
             </control>
@@ -257,7 +258,7 @@
                     <align>right</align>
                     <label>$LOCALIZE[209]</label>
                     <font>size22</font>
-                    <textcolor>dimgray</textcolor>
+                    <textcolor>ffffffff</textcolor>
                 </control>
                 <control type="label" description="Next">
                     <right>30</right>
@@ -265,6 +266,7 @@
                     <height>36</height>
                     <width>750</width>
                     <align>right</align>
+                    <textcolor>ffffffff</textcolor>
                     <label>$INFO[MusicPlayer.offset(1).Title]</label>
                 </control>
                 <control type="label" description="Previous">
@@ -274,7 +276,7 @@
                     <width>750</width>
                     <align>right</align>
                     <font>size22</font>
-                    <textcolor>dimgray</textcolor>
+                    <textcolor>ffffffff</textcolor>
                     <label>$INFO[MusicPlayer.offset(1).Artist]</label>
                 </control>
             </control>
