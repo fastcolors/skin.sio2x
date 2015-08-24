@@ -220,7 +220,7 @@
                             <width>60</width>
                             <height>81</height>
                             <aspectratio>keep</aspectratio>
-                            <texture border="5">images/radioOFF.png</texture>
+                            <texture border="5">images/RadioOFF.png</texture>
                             <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value), false) | IsEmpty(ListItem.Property(value))</visible>
                         </control>
                         <control type="image">
@@ -229,7 +229,7 @@
                             <width>60</width>
                             <height>81</height>
                             <aspectratio>keep</aspectratio>
-                            <texture border="5">images/radioON.png</texture>
+                            <texture border="5">images/RadioON.png</texture>
                             <visible>StringCompare(ListItem.Property(value), 1) | StringCompare(ListItem.Property(value), true)</visible>
                         </control>
                     </control>
@@ -288,7 +288,7 @@
                             <width>60</width>
                             <height>81</height>
                             <aspectratio>keep</aspectratio>
-                            <texture border="5">images/radioOFF.png</texture>
+                            <texture border="5">images/RadioOFF.png</texture>
                             <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value), false) | IsEmpty(ListItem.Property(value))</visible>
                         </control>
                         <control type="image">
@@ -297,7 +297,7 @@
                             <width>60</width>
                             <height>81</height>
                             <aspectratio>keep</aspectratio>
-                            <texture border="5">images/radioON.png</texture>
+                            <texture border="5">images/RadioON.png</texture>
                             <visible>StringCompare(ListItem.Property(value), 1) | StringCompare(ListItem.Property(value), true)</visible>
                         </control>
                     </control>

@@ -256,7 +256,7 @@
                 <include>Help_Panel</include>
                 <texture>icons/3D.png</texture>
             </control>
-            <control type="image" description="3d">
+            <control type="image" description="badge">
                 <visible>Controlgroup(575).HasFocus(17)</visible>
                 <include>Help_Panel</include>
                 <texture>help/badge.png</texture>

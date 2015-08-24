@@ -20,42 +20,66 @@
                 <align>center</align>
                 <label>-</label>
             </control>
-            <control type="group">
-                <control type="list" id="450">
-                    <top>185</top>
-                    <left>960</left>
-                    <width>740</width>
-                    <height>800</height>
-                    <onleft>9000</onleft>
-                    <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
-                    <onup>450</onup>
-                    <ondown>450</ondown>
-                    <pagecontrol>60</pagecontrol>
-                    <scrolltime tween="sine" easing="inout">280</scrolltime>
-                    <itemlayout width="720" height="81">
-                        <include>listline</include>
-                        <control type="label" description="Main Label">
-                            <width>720</width>
-                            <include>SmallListMainLabel</include>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout width="720" height="81">
-                        <include>listline</include>
-                        <include>SmallSelector</include>
-                        <control type="label" description="Main Label">
-                            <width>720</width>
-                            <textcolor>main</textcolor>
-                            <include>SmallListMainLabel</include>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                    </focusedlayout>
-                </control>
+            <control type="list" id="450">
+                <top>180</top>
+                <left>960</left>
+                <width>740</width>
+                <height>810</height>
+                <onleft>9000</onleft>
+                <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+                <onup>450</onup>
+                <ondown>450</ondown>
+                <pagecontrol>60</pagecontrol>
+                <scrolltime tween="sine" easing="inout">280</scrolltime>
+                <itemlayout width="720" height="81">
+                    <include>listline</include>
+                    <control type="label" description="Main Label">
+                        <width>720</width>
+                        <include>SmallListMainLabel</include>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="720" height="81">
+                    <include>listline</include>
+                    <include>SmallSelector</include>
+                    <control type="label" description="Main Label">
+                        <width>720</width>
+                        <textcolor>main</textcolor>
+                        <include>SmallListMainLabel</include>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </focusedlayout>
             </control>
         </control>
         <control type="list" id="451">
-            <width>-</width>
-            <height>-</height>
+            <top>180</top>
+            <left>960</left>
+            <width>740</width>
+            <height>810</height>
+            <onleft>9000</onleft>
+            <onright condition="!Skin.HasSetting(Scrollbars_Passive)">60</onright>
+            <onup>450</onup>
+            <ondown>450</ondown>
+            <pagecontrol>60</pagecontrol>
+            <scrolltime tween="sine" easing="inout">280</scrolltime>
+            <itemlayout width="720" height="81">
+                <include>listline</include>
+                <control type="label" description="Main Label">
+                    <width>720</width>
+                    <include>SmallListMainLabel</include>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </itemlayout>
+            <focusedlayout width="720" height="81">
+                <include>listline</include>
+                <include>SmallSelector</include>
+                <control type="label" description="Main Label">
+                    <width>720</width>
+                    <textcolor>main</textcolor>
+                    <include>SmallListMainLabel</include>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+            </focusedlayout>
         </control>
         <control type="image" description="Item Thumb">
             <centerleft>520</centerleft>
@@ -108,13 +132,13 @@
             <control type="radiobutton" id="416" description="Horizontal Flip">
                 <width>400</width>
                 <radioleft>300</radioleft>
-               <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+                <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
                 <label>$LOCALIZE[749]</label>
             </control>
         </control>
         <control type="label" id="412" description="Main Label">
-            <left>30</left>
-            <top>1029</top>
+            <left>114</left>
+            <top>960</top>
             <height>45</height>
             <width>1050</width>
             <scroll>false</scroll>
@@ -127,13 +151,13 @@
             <left>959</left>
             <centertop>540</centertop>
             <width>1</width>
-            <height>880</height>
+            <height>910</height>
             <texture>lines/LineV.png</texture>
         </control>
         <control type="scrollbar" id="60">
-            <left>151r</left>
-            <top>147</top>
-            <height>780</height>
+            <right>151</right>
+            <top>137</top>
+            <height>800</height>
             <onleft>450</onleft>
             <onright>9000</onright>
         </control>

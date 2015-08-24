@@ -822,7 +822,7 @@
         </control>
         <control type="group" id="520" description="ADDONS">
             <visible>Container(50).HasFocus(1005)</visible>
-            <top>80</top>
+            <top>70</top>
             <left>260</left>
             <control type="radiobutton" id="303" description="Custom">
                 <onup>300</onup>
@@ -834,7 +834,7 @@
             </control>
         </control>
         <control type="panel" id="52">
-            <top>100</top>
+            <top>120</top>
             <enable>!Skin.HasSetting(hideaddon)</enable>
             <visible>Container(50).HasFocus(1005)</visible>
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -969,91 +969,91 @@
             <include>CustomizerList</include>
             <content>
                 <item id="1">
-                    <label>$INFO[Skin.String(ShelfVaddons.1.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.1.Label))]</label>
                     <label2>Addon</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.1.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.1.Label,xbmc.python.pluginsource)</onclick>
                 </item>
                 <item id="2">
-                    <label>$INFO[Skin.String(ShelfVaddons.2.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.2.Label))]</label>
                     <label2>Addon</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.2.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.2.Label,xbmc.python.pluginsource)</onclick>
                 </item>
                 <item id="3">
-                    <label>$INFO[Skin.String(ShelfVaddons.3.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.3.Label))]</label>
                     <label2>Addon</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.3.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.3.Label,xbmc.python.pluginsource)</onclick>
                 </item>
                 <item id="4">
-                    <label>$INFO[Skin.String(ShelfVaddons.4.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.4.Label))]</label>
                     <label2>Addon</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.4.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.4.Label,xbmc.python.pluginsource)</onclick>
                 </item>
                 <item id="5">
-                    <label>$INFO[Skin.String(ShelfVaddons.5.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.5.Label))]</label>
                     <label2>Addon</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.5.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.5.Label,xbmc.python.pluginsource)</onclick>
                 </item>
                 <item id="6">
-                    <label>$INFO[Skin.String(ShelfVaddons.6.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.6.Label))]</label>
                     <label2>Addon</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.6.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.6.Label,xbmc.python.pluginsource)</onclick>
                 </item>
                 <item id="7">
-                    <label>$INFO[Skin.String(ShelfVaddons.7.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.7.Label))]</label>
                     <label2>Addon</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.7.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.7.Label,xbmc.python.pluginsource)</onclick>
                 </item>
                 <item id="8">
-                    <label>$INFO[Skin.String(ShelfVaddons.8.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.8.Label))]</label>
                     <label2>Addon</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.8.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.8.Label,xbmc.python.pluginsource)</onclick>
                 </item>
                 <item id="9">
-                    <label>$INFO[Skin.String(ShelfVaddons.9.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.9.Label))]</label>
                     <label2>Addon</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.9.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.9.Label,xbmc.python.pluginsource)</onclick>
                 </item>
                 <item id="10">
-                    <label>$INFO[Skin.String(ShelfVaddons.10.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.10.Label))]</label>
                     <label2>Addon</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.10.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.10.Label,xbmc.python.pluginsource)</onclick>
                 </item>
                 <item id="11">
-                    <label>$INFO[Skin.String(ShelfVaddons.11.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.11.Label))]</label>
                     <label2>Script</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.11.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.11.Label,xbmc.python.script)</onclick>
                 </item>
                 <item id="12">
-                    <label>$INFO[Skin.String(ShelfVaddons.12.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.12.Label))]</label>
                     <label2>Script</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.12.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.12.Label,xbmc.python.script)</onclick>
                 </item>
                 <item id="13">
-                    <label>$INFO[Skin.String(ShelfVaddons.13.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.13.Label))]</label>
                     <label2>Script</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.13.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.13.Label,xbmc.python.script)</onclick>
                 </item>
                 <item id="14">
-                    <label>$INFO[Skin.String(ShelfVaddons.14.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.14.Label))]</label>
                     <label2>Script</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.14.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.14.Label,xbmc.python.script)</onclick>
                 </item>
                 <item id="15">
-                    <label>$INFO[Skin.String(ShelfVaddons.15.Label)]</label>
+                    <label>$INFO[system.addonTitle(Skin.String(ShelfVaddons.15.Label))]</label>
                     <label2>Script</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfVaddons.15.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfVaddons.15.Label,xbmc.python.script)</onclick>
@@ -1140,22 +1140,22 @@
                 <onclick>activatewindow(weathersettings)</onclick>
             </control>
         </control>
-        <control type="group" id="521" description="SEARCH">
-            <top>60</top>
-            <left>60</left>
-            <visible>Container(50).HasFocus(356)</visible>
-            <control type="textbox">
-                <!--todo label maybe-->
-                <left>450</left>
-                <top>100</top>
-                <width>900</width>
-                <height>300</height>
-                <align>center</align>
-                <textcolor>gray</textcolor>
-                <font>size26</font>
-                <label></label>
-            </control>
-        </control>
+        <!--<control type="group" id="521" description="SEARCH">-->
+            <!--<top>60</top>-->
+            <!--<left>60</left>-->
+            <!--<visible>Container(50).HasFocus(356)</visible>-->
+            <!--<control type="textbox">-->
+                <!--&lt;!&ndash;todo label maybe&ndash;&gt;-->
+                <!--<left>450</left>-->
+                <!--<top>100</top>-->
+                <!--<width>900</width>-->
+                <!--<height>300</height>-->
+                <!--<align>center</align>-->
+                <!--<textcolor>gray</textcolor>-->
+                <!--<font>size26</font>-->
+                <!--<label></label>-->
+            <!--</control>-->
+        <!--</control>-->
         </control>
         <control type="group" description="Options">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus() | ControlGroup(9001).HasFocus()</visible>
@@ -1183,27 +1183,26 @@
                 <control type="button" id="666">
                     <include>DialogButt</include>
                     <label>$LOCALIZE[31056]</label>
-                    <onclick condition="Container(50).Hasfocus(601)">Skin.SetFile(HomeFav.1.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(602)">Skin.SetFile(HomeFav.2.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(603)">Skin.SetFile(HomeFav.3.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(604)">Skin.SetFile(HomeFav.4.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(605)">Skin.SetFile(HomeFav.5.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(606)">Skin.SetFile(HomeFav.6.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(607)">Skin.SetFile(HomeFav.7.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(608)">Skin.SetFile(HomeFav.8.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(401)">Skin.SetFile(HomeAddon.1.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(402)">Skin.SetFile(HomeAddon.2.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(403)">Skin.SetFile(HomeAddon.3.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(404)">Skin.SetFile(HomeAddon.4.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(405)">Skin.SetFile(HomeAddon.5.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(406)">Skin.SetFile(HomeAddon.6.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(501)">Skin.SetFile(HomeAddon.7.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(502)">Skin.SetFile(HomeAddon.8.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(503)">Skin.SetFile(HomeAddon.9.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(504)">Skin.SetFile(HomeAddon.10.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(505)">Skin.SetFile(HomeAddon.11.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(506)">Skin.SetFile(HomeAddon.12.Icon,,special://skin/icons)</onclick>
-                    <onclick condition="Container(50).Hasfocus(506)">Skin.SetFile(HomeAddon.12.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(601)">Skin.SetImage(HomeFav.1.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(602)">Skin.SetImage(HomeFav.2.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(603)">Skin.SetImage(HomeFav.3.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(604)">Skin.SetImage(HomeFav.4.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(605)">Skin.SetImage(HomeFav.5.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(606)">Skin.SetImage(HomeFav.6.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(607)">Skin.SetImage(HomeFav.7.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(608)">Skin.SetImage(HomeFav.8.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(401)">Skin.SetImage(HomeAddon.1.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(402)">Skin.SetImage(HomeAddon.2.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(403)">Skin.SetImage(HomeAddon.3.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(404)">Skin.SetImage(HomeAddon.4.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(405)">Skin.SetImage(HomeAddon.5.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(406)">Skin.SetImage(HomeAddon.6.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(501)">Skin.SetImage(HomeAddon.7.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(502)">Skin.SetImage(HomeAddon.8.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(503)">Skin.SetImage(HomeAddon.9.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(504)">Skin.SetImage(HomeAddon.10.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(505)">Skin.SetImage(HomeAddon.11.Icon,,special://skin/icons)</onclick>
+                    <onclick condition="Container(50).Hasfocus(506)">Skin.SetImage(HomeAddon.12.Icon,,special://skin/icons)</onclick>
                     <onclick>SetFocus(50)</onclick>
                 </control>
                 <control type="button" id="667">

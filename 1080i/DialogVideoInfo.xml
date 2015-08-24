@@ -6,23 +6,15 @@
     <include>OpenClose</include>
     <controls>
         <include>BlackBackground</include>
-        <control type="group" description="rotate Poster">
-            <camera x="465" y="400" />
-            <animation condition="true" effect="rotatey" center="265,0" end="-16">conditional</animation>
+        <control type="group" description="Poster">
             <control type="image" description="Thumb">
-                <left>60</left>
-                <top>60</top>
-                <width>500</width>
-                <height>550</height>
+                <centerleft>300</centerleft>
+                <centertop>350</centertop>
+                <width>560</width>
+                <height>580</height>
                 <texture background="true" diffuse="images/diffuse.png">$VAR[locandine]</texture>
-                <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image" description="Thumb">
-                <left>60</left>
-                <top>610</top>
-                <width>500</width>
-                <height>550</height>
-                <texture flipy="true" background="true" diffuse="images/Reflection.png">$VAR[locandine]</texture>
+                <bordertexture colordiffuse="main">images/white.png</bordertexture>
+                <bordersize>4</bordersize>
                 <aspectratio>keep</aspectratio>
             </control>
         </control>
@@ -155,13 +147,12 @@
                             <height>45</height>
                             <font>size21</font>
                             <align>right</align>
-                            <textcolor>red</textcolor>
-                            <textcolor>gray</textcolor>
+                            <textcolor>orange</textcolor>
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <left>635r</left>
-                            <width>649</width>
+                            <right>0</right>
+                            <width>635</width>
                             <height>45</height>
                             <font>size21</font>
                             <textcolor>gray</textcolor>
@@ -175,12 +166,12 @@
                             <height>45</height>
                             <font>size21</font>
                             <align>right</align>
-                            <textcolor>red</textcolor>
+                            <textcolor>orange</textcolor>
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <left>635r</left>
-                            <width>649</width>
+                            <right>0</right>
+                            <width>635</width>
                             <height>45</height>
                             <font>size21</font>
                             <textcolor>gray</textcolor>
@@ -192,7 +183,6 @@
                             <label>$LOCALIZE[20376]:</label>
                             <label2>$INFO[ListItem.OriginalTitle]</label2>
                             <onclick>noop</onclick>
-                            <visible>!IsEmpty(ListItem.OriginalTitle) + !stringcompare(ListItem.OriginalTitle,Listitem.Title)</visible>
                         </item>
                         <item>
                             <label>$LOCALIZE[20339]:</label>
@@ -394,9 +384,9 @@
                 <centerleft>520</centerleft>
                 <width>800</width>
                 <align>center</align>
-                <textcolor>dimgray</textcolor>
+                <textcolor>maindim</textcolor>
                 <font>size26</font>
-                <label>$INFO[Container(50).ListItem.Label]</label>
+                <label>[COLOR main]$INFO[Container(50).ListItem.Label][/COLOR]$INFO[Container(50).ListItem.Label2, $LOCALIZE[20347] ,]</label>
             </control>
         </control>
         <control type="image" description="line central">

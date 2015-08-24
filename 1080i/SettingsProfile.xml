@@ -23,6 +23,7 @@
             <font>size36</font>
             <textoffsetx>90</textoffsetx>
             <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+            <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
         </control>
         <control type="group" description="List" id="575">
             <left>960</left>

@@ -488,7 +488,7 @@
             <texture>badges/3d.png</texture>
         </control>
         <control type="image">
-            <visible>SubString(ListItem.path,videodb://movies/sets/) + !SubString(ListItem.Label,..)</visible>
+            <visible>ListItem.IsCollection + !SubString(ListItem.Label,..)</visible>
             <top>28</top>
             <left>42r</left>
             <height>50</height>
@@ -501,7 +501,7 @@
     <include name="Sets">
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
-            <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+            <visible>ListItem.IsCollection</visible>
             <left>82r</left>
             <height>81</height>
             <width>45</width>
@@ -513,7 +513,7 @@
     <include name="SetsFO">
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
-            <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+            <visible>ListItem.IsCollection</visible>
             <left>82r</left>
             <height>81</height>
             <width>45</width>
@@ -525,7 +525,7 @@
     <include name="SetsLW">
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
-            <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+            <visible>ListItem.IsCollection</visible>
             <left>82r</left>
             <height>111</height>
             <width>45</width>
@@ -537,7 +537,7 @@
     <include name="SetsFOLW">
         <control type="image" description="Sets">
             <visible>Window.IsActive(MyVideoNav.xml)</visible>
-            <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+            <visible>ListItem.IsCollection</visible>
             <left>82r</left>
             <height>111</height>
             <width>45</width>
@@ -839,10 +839,11 @@
                 <texture border="10">images/generalslider.png</texture>
             </control>
             <control type="label" description="title">
-                <left>177</left>
-                <top>310</top>
+                <left>0</left>
+                <top>316</top>
                 <width>360</width>
                 <align>center</align>
+                <font>size22</font>
                 <label>$INFO[ListItem.label]</label>
             </control>
         </focusedlayout>

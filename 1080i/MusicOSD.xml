@@ -29,6 +29,7 @@
                         <width>90</width>
                         <height>98</height>
                         <texture>$INFO[ListItem.thumb]</texture>
+                        <colordiffuse>main</colordiffuse>
                     </control>
                 </itemlayout>
                 <focusedlayout width="90">
@@ -38,6 +39,7 @@
                         <width>90</width>
                         <height>98</height>
                         <texture>$INFO[ListItem.label]</texture>
+                        <colordiffuse>main</colordiffuse>
                     </control>
                 </focusedlayout>
                 <content>

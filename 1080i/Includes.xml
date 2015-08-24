@@ -496,7 +496,7 @@
                     <altlabel>585</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
-                <control type="radiobutton" id="5">
+                <control type="radiobutton" id="205">
                     <description>Group recording items by folder structure</description>
                     <left>0</left>
                     <right>40</right>
@@ -504,13 +504,39 @@
                     <label>19270</label>
                     <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
                 </control>
-                <control type="button" id="31">
-                    <description>TV Guide</description>
+                <control type="radiobutton" id="5">
+                    <description>Show deleted recordings</description>
+                    <left>0</left>
+                    <right>40</right>
                     <include>DialogButt</include>
-                    <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">noop</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
-                    <label>22020</label>
+                    <label>19184</label>
+                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+                </control>
+                <control type="radiobutton" id="6">
+                    <description>Show hidden channels</description>
+                    <left>0</left>
+                    <right>40</right>
+                    <include>DialogButt</include>
+                    <label>19051</label>
+                    <visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
+                </control>
+                <control type="radiobutton" id="7">
+                    <description>Show deleted recordings</description>
+                    <left>0</left>
+                    <right>40</right>
+                    <include>DialogButt</include>
+                    <label>19184</label>
+                    <visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
+                </control>
+                <control type="radiobutton" id="31">
+                    <description>Filter</description>
+                    <left>0</left>
+                    <right>40</right>
+                    <include>DialogButt</include>
+                    <label>587</label>
+                    <selected>Container.Filtered</selected>
+                    <onclick>right</onclick>
+                    <visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
                 </control>
                 <control type="button" id="32">
                     <description>TV Channels</description>

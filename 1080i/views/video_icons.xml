@@ -229,7 +229,7 @@
                                 <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
                             </control>
                             <control type="image">
-                                <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+                                <visible>ListItem.IsCollection</visible>
                                 <left>250</left>
                                 <top>310</top>
                                 <height>32</height>
@@ -388,7 +388,7 @@
                                 <texture>$VAR[MPAAS,Mpaa/,.png]</texture>
                             </control>
                             <control type="image">
-                                <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
+                                <visible>ListItem.IsCollection</visible>
                                 <left>274</left>
                                 <top>395</top>
                                 <height>42</height>

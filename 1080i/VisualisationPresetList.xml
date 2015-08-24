@@ -15,15 +15,16 @@
             <animation effect="zoom" start="90" end="100" time="200" center="640,360">WindowOpen</animation>
             <left>510</left>
             <top>150</top>
-            <control type="label" description="Header Label">
+            <control type="label" id="2">
+                <description>Header Label</description>
                 <left>15</left>
                 <top>0</top>
                 <width>840</width>
-                <label>31004</label>
+                <label>-</label>
                 <font>size39B</font>
                 <align>center</align>
             </control>
-            <control type="fixedlist" id="2">
+            <control type="fixedlist" id="5">
                 <description>Preset List</description>
                 <left>15</left>
                 <top>120</top>

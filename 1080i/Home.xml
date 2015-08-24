@@ -3,7 +3,7 @@
     <defaultcontrol always="false">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
-    <onload condition="!StringCompare(System.AddonVersion(skin.sio2x),Skin.String(version))">ActivateWindow(1113)</onload>
+    <!--<onload condition="!StringCompare(System.AddonVersion(skin.sio2x),Skin.String(version))">ActivateWindow(1113)</onload>-->
     <!--<onload>RunScript(script.favourites)</onload>-->
     <include>OpenClose</include>
     <controls>
@@ -31,7 +31,7 @@
             <animation condition="Control.HasFocus(9000) + ![Container(9000).Row(0) | Container(9000).Row(1)]" effect="slide" start="0,0" end="0,-498" time="220">Conditonal</animation>
             <control type="button" id="9009">
                 <include>ShelfFade</include>
-                <visible>Control.IsVisible(311) | Control.IsVisible(312) | Control.IsVisible(313) | [Control.IsVisible(315) + !Skin.HasSetting(AddonsShelf_Custom)]</visible>
+                <visible>[Control.IsVisible(311) + IntegerGreaterThan(Container(311).NumItems,0)] | [Control.IsVisible(312) + IntegerGreaterThan(Container(312).NumItems,0)] | [Control.IsVisible(313) + IntegerGreaterThan(Container(313).NumItems,0)] | [Control.IsVisible(315) + !Skin.HasSetting(AddonsShelf_Custom)]</visible>
                 <top>18</top>
                 <left>10</left>
                 <width>34</width>
@@ -71,7 +71,7 @@
                 <!--<ondown condition="!IntegerGreaterThan(Container(313).NumItems,0)">noop</ondown>-->
                 <ondown>700</ondown>
             </control>
-            <!--todo INTERCEPT CLICKS ON MOVIES-->
+            <!--INTERCEPT CLICKS ON MOVIES???-->
             <!--<control type="button" id="900">-->
             <!--<onfocus>SetFocus(700)</onfocus>-->
             <!--<ondown>9000</ondown>-->
@@ -415,6 +415,7 @@
                 <label>-</label>
                 <texture>$VAR[functionshelf]</texture>
             </control>
+            <!--TRAILER BUTTON-->
             <control type="button" id="9010">
                 <visible allowhiddenfocus="true">Control.HasFocus(9010)</visible>
                 <left>98</left>
@@ -424,12 +425,12 @@
                 <texturefocus>-</texturefocus>
                 <!--SICK_BEARDO-->
                 <onclick condition="Container(9000).HasFocus(360)">Notification(Sick Beard,$LOCALIZE[194],3000,images/sickbeard.png)</onclick>
-                <onclick condition="Container(9000).HasFocus(360)">RunScript(special://home/addons/plugin.program.sickbeard/resources/lib/addshow.py,$INFO[Container(311).ListItem.Label])</onclick>
+                <onclick condition="Container(9000).HasFocus(360)">RunPlugin(plugin://plugin.program.sickrage?title=$INFO[Container(311).ListItem.Label])</onclick>
                 <!--COUCHO_POTAtO-->
                 <onclick condition="Container(9000).HasFocus(359)">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onclick>
                 <onclick condition="Container(9000).HasFocus(359)">Notification(Couch Potato,$LOCALIZE[194],3000,images/couchpotato.png)</onclick>
                 <!--TRAILERS-->
-                <onclick condition="!IsEmpty(Container(311).ListItem.Trailer)">PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
+                <onclick condition="!IsEmpty(Container(311).ListItem.Trailer) + ![Container(9000).HasFocus(359) | Container(9000).HasFocus(360)]">PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
                 <onleft>Control.Move(311,-1)</onleft>
                 <onleft>311</onleft>
                 <onright>Control.Move(311,1)</onright>
