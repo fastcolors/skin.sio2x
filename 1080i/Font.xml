@@ -173,6 +173,12 @@
             <filename>squareo.ttf</filename>
             <size>90</size>
         </font>
+        <font>
+            <name>Clock</name>
+            <filename>arial.ttf</filename>
+            <size>85</size>
+            <style>bold</style>
+        </font>        
     </fontset>
     <fontset id="Bold">
         <font>
@@ -308,6 +314,11 @@
             <filename>square.ttf</filename>
             <size>40</size>
         </font>
+        <font>
+            <name>Clock</name>
+            <filename>Strong.ttf</filename>
+            <size>85</size>
+        </font>          
     </fontset>
     <fontset id="Thin">
         <!--Fonts for GeneralAddons-->
@@ -477,6 +488,12 @@
             <filename>square.ttf</filename>
             <size>40</size>
         </font>
+        <font>
+            <name>Clock</name>
+            <filename>Thin.ttf</filename>
+            <size>85</size>
+            <style>bold</style>
+        </font>            
     </fontset>
     <fontset id="Alternative">
         <!--Fonts for GeneralAddons-->
@@ -646,5 +663,11 @@
             <filename>square.ttf</filename>
             <size>40</size>
         </font>
+        <font>
+            <name>Clock</name>
+            <filename>Alternative.ttf</filename>
+            <size>85</size>
+            <style>bold</style>
+        </font>         
     </fontset>
 </fonts>
