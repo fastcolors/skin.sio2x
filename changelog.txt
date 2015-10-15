@@ -1,3 +1,6 @@
+3.5.5
+* Isengard
+
 3.1.6
 * Spanish Localization by Blas Ortega Peñas
 * Fix for time being wrong color in fullscreen infos
