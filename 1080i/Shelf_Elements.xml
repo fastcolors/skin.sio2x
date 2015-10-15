@@ -364,7 +364,7 @@
                     <top>310</top>
                     <width>161</width>
                     <height>109</height>
-                    <texture colordiffuse="main">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Studio].png</texture>
+                    <texture colordiffuse="main">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
                 </control>
             </control>
         </itemlayout>
@@ -440,7 +440,7 @@
                     <top>310</top>
                     <width>161</width>
                     <height>109</height>
-                    <texture colordiffuse="main">special://home/addons/sio2x.extrapack/studios_extrapack/$INFO[ListItem.Studio].png</texture>
+                    <texture colordiffuse="main">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
                 </control>
             </control>
         </focusedlayout>

@@ -2,7 +2,6 @@
 <window type="dialog" id="142">
     <defaultcontrol always="false">9000</defaultcontrol>
     <include>OpenClose</include>
-    <zorder>2</zorder>
     <controls>
         <control type="button" id="9000">
             <include>HiddenButton</include>

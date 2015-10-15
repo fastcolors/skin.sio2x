@@ -52,6 +52,7 @@
         <value condition="Window.IsActive(AddonBrowser.xml) + IsEmpty(Container.FolderName)">$LOCALIZE[31037]</value>
         <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
         <value condition="Window.IsActive(MyMusicPlaylist.xml)">$LOCALIZE[20011]</value>
+        <value condition="Window.IsActive(EventLog.xml)">$LOCALIZE[14111]</value>
         <!--<value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20159]</value>-->
         <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(albums) + Control.IsVisible(50)">$LOCALIZE[182]</value>
         <value condition="Window.IsActive(DialogAlbumInfo.xml) + container.content(artists) + Control.IsVisible(50)">$LOCALIZE[21888]</value>

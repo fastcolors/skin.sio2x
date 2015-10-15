@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">570</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <views>570</views>
+    <controls>
+        <include>BlackBackground</include>
+        <control type="group">
+            <visible>Control.IsVisible(570)</visible>
+            <include>left_Panel</include>
+            <control type="list" id="570">
+                <left>960</left>
+                <top>125</top>
+                <width>920</width>
+                <height>890</height>
+                <onleft>9000</onleft>
+                <onright>60</onright>
+                <onup>570</onup>
+                <ondown>570</ondown>
+                <viewtype label="535">list</viewtype>
+                <pagecontrol>60</pagecontrol>
+                <scrolltime>200</scrolltime>
+                <itemlayout width="890" height="111">
+                    <control type="label" description="Main Label">
+                        <left>45</left>
+                        <width>725</width>
+                        <include>BigListTitle</include>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label" description="event description">
+                        <left>45</left>
+                        <width>630</width>
+                        <include>BigListDetails</include>
+                        <label>$INFO[ListItem.Property(Event.Description)]</label>
+                    </control>
+                    <control type="label" description="event description">
+                        <right>0</right>
+                        <width>400</width>
+                        <align>right</align>
+                        <font>Size22</font>
+                        <textcolor>maindim</textcolor>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                    <include>listline</include>
+                </itemlayout>
+                <focusedlayout width="890" height="111">
+                    <include>LargeSelector</include>
+                    <control type="group">
+                        <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year)  + IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,20" time="0" reversible="true">Conditional</animation>
+                        <control type="label" description="Main Label">
+                            <left>45</left>
+                            <width>725</width>
+                            <include>BigListTitleFO</include>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                    </control>
+                    <control type="label" description="Label2">
+                        <left>45</left>
+                        <width>630</width>
+                        <include>BigListDetails</include>
+                        <label>$INFO[ListItem.Property(Event.Description)]</label>
+                    </control>
+                    <control type="label" description="event description">
+                        <right>0</right>
+                        <width>400</width>
+                        <align>right</align>
+                        <font>Size22</font>
+                        <textcolor>maindim</textcolor>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                    <include>listline</include>
+                </focusedlayout>
+            </control>
+            <include>Linemiddle</include>
+            <control type="scrollbar" id="60">
+                <left>39r</left>
+                <top>135</top>
+                <height>870</height>
+                <onleft>51</onleft>
+                <onright>noop</onright>
+                <showonepage>true</showonepage>
+            </control>
+        </control>
+        <control type="grouplist">
+            <top>40</top>
+            <centerleft>1440</centerleft>
+            <width>880</width>
+            <orientation>horizontal</orientation>
+            <align>left</align>
+            <itemgap>5</itemgap>
+            <include>windowtitle</include>
+            <!--TODO NUMITEMS-->
+        </control>
+        <control type="group" description="Side menu 9000 group">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+            <include>9000slide</include>
+            <control type="image" description="List back">
+                <top>-10</top>
+                <left>-80</left>
+                <width>580</width>
+                <height>1100</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="50">sidepanel/Back.png</texture>
+            </control>
+            <control type="grouplist" id="9000">
+                <left>0</left>
+                <align>left</align>
+                <onright>570</onright>
+                <include>DialogGLs</include>
+                <control type="togglebutton" id="4">
+                    <description>Sort asc</description>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
+                    <include>DialogButt</include>
+                    <label>584</label>
+                    <altlabel>585</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                </control>
+                <control type="button" id="21">
+                    <description>Level button</description>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>-</label>
+                </control>
+                <control type="radiobutton" id="22">
+                    <description>Only show current level</description>
+                    <include>DialogButt</include>
+                    <label>-</label>
+                </control>
+                <control type="button" id="20">
+                    <description>Clear button</description>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <include>DialogButt</include>
+                    <label>192</label>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
