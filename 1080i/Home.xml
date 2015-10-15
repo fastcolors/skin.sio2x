@@ -425,7 +425,7 @@
                 <texturefocus>-</texturefocus>
                 <!--SICK_BEARDO-->
                 <onclick condition="Container(9000).HasFocus(360)">Notification(Sick Beard,$LOCALIZE[194],3000,images/sickbeard.png)</onclick>
-                <onclick condition="Container(9000).HasFocus(360)">RunScript(special://home/addons/plugin.program.sickbeard/resources/lib/addshow.py,$INFO[Container(311).ListItem.Label])</onclick>
+                <onclick condition="Container(9000).HasFocus(360)">RunPlugin(plugin://plugin.program.sickrage?title=$INFO[Container(311).ListItem.Label])</onclick>
                 <!--COUCHO_POTAtO-->
                 <onclick condition="Container(9000).HasFocus(359)">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onclick>
                 <onclick condition="Container(9000).HasFocus(359)">Notification(Couch Potato,$LOCALIZE[194],3000,images/couchpotato.png)</onclick>
