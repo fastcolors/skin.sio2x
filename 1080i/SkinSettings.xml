@@ -151,6 +151,14 @@
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <onclick>Skin.ToggleSetting(cpudebug)</onclick>
                 </control>
+                <control type="button" id="20">
+                    <height>settingsheight</height>
+                    <label>Debug</label>
+                    <width>960</width>
+                    <align>left</align>
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
+                    <onclick>Skin.ToggleDebug</onclick>
+                </control>
             </control>
         </control>
         <include>Linemiddle</include>
