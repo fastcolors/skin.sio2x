@@ -111,8 +111,7 @@
                     <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
                     <alttexturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</alttexturefocus>
                     <include>DialogButt</include>
-                    <label>584</label>
-                    <altlabel>585</altlabel>
+                    <label>$INFO[Container.SortOrder]</label>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
                 <control type="button" id="21">

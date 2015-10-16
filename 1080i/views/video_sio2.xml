@@ -512,7 +512,7 @@
                             <label>$INFO[ListItem.Title]</label>
                         </control>
                     </focusedlayout>
-                    <content>$INFO[ListItem.Path]</content>
+                    <content sortby="year">$INFO[ListItem.Path]</content>
                 </control>
             </control>
             <!--SETS-END-->

@@ -160,8 +160,7 @@
                 </control>
                 <control type="togglebutton" id="4" description="SortOrder">
                     <include>DialogButt</include>
-                    <label>584</label>
-                    <altlabel>585</altlabel>
+                    <label>$INFO[Container.SortOrder]</label>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
                 <control type="button" id="6" description="Slideshow">
