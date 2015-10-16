@@ -2,7 +2,7 @@
 <!--openelec-->
 <window id="13003">
     <defaultcontrol always="true">1500</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+
     <controls>
         <control type="image">
             <left>0</left>

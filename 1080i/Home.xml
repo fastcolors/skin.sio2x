@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+
     <backgroundcolor>background</backgroundcolor>
     <!--<onload condition="!StringCompare(System.AddonVersion(skin.sio2x),Skin.String(version))">ActivateWindow(1113)</onload>-->
     <!--<onload>RunScript(script.favourites)</onload>-->

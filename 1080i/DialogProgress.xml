@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="101">
     <defaultcontrol always="true">10</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <include>DialogOpenClose</include>
     <controls>

@@ -2,7 +2,6 @@
 <window id="2002">
     <type>dialog</type>
     <defaultcontrol always="true">10</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <include>DialogOpenClose</include>
     <controls>

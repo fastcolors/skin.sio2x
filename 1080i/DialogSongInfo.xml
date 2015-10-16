@@ -2,7 +2,6 @@
 <window id="135">
     <!--todo ALL DIALOG REMAKE-->
     <defaultcontrol always="true">300</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>

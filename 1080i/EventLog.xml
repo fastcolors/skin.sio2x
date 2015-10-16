@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">570</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+
     <views>570</views>
     <controls>
         <include>BlackBackground</include>
@@ -89,7 +89,6 @@
             <align>left</align>
             <itemgap>5</itemgap>
             <include>windowtitle</include>
-            <!--TODO NUMITEMS-->
         </control>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>

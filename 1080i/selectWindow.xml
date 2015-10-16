@@ -2,7 +2,7 @@
 <!--openelec-->
 <window id="5535">
     <defaultcontrol always="true">2000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+
     <backgroundcolor>background</backgroundcolor>
     <include>DialogOpenClose</include>
     <controls>

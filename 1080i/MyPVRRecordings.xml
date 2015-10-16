@@ -2,7 +2,7 @@
 <window>
     <views>13</views>
     <defaultcontrol>13</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+
     <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>

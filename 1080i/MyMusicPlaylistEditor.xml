@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="503">
     <defaultcontrol allways="true">50</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+
     <backgroundcolor>0xffffffff</backgroundcolor>
     <include>OpenClose</include>
     <views>50</views>

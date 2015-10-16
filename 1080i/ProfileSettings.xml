@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="130" type="dialog">
-    <allowoverlay>no</allowoverlay>
+
     <backgroundcolor>0xffffffff</backgroundcolor>
     <include>OpenClose</include>
     <controls>

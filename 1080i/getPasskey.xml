@@ -3,7 +3,7 @@
 <window id="5533">
     <!--todo wtf is passkey-->
     <defaultcontrol always="true">2000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+
     <controls>
         <control type="group">
             <left>440</left>

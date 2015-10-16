@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <allowoverlay>no</allowoverlay>
+
     <backgroundcolor>background</backgroundcolor>
     <animation type="WindowOpen" reversible="false">
         <effect type="zoom" start="80" end="100" center="860,540" easing="out" tween="back" time="300" />
