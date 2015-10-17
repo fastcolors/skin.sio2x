@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2003">
+    <!--TODO check if i want extendedinfo-->
+    <!--<onload condition="true">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID])</onload>-->
     <defaultcontrol always="false">8</defaultcontrol>
-
     <backgroundcolor>0xffffffff</backgroundcolor>
     <include>OpenClose</include>
     <controls>
