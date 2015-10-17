@@ -2,7 +2,7 @@
 <window>
     <views>10,11,12</views>
     <defaultcontrol>10</defaultcontrol>
-
+    <menucontrol>9000</menucontrol>
     <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>
@@ -348,246 +348,246 @@
             </control>
 
             <!--<control type="group">-->
-                <!--<description>TV Guide Channel</description>-->
-                <!--<visible>Control.IsVisible(13)</visible>-->
-                <!--<include>VisibleFade</include>-->
-                <!--<control type="group">-->
-                    <!--<left>80</left>-->
-                    <!--<top>520</top>-->
-                    <!--<control type="label">-->
-                        <!--<description>Date Time label</description>-->
-                        <!--<left>0</left>-->
-                        <!--<top>20</top>-->
-                        <!--<width>300</width>-->
-                        <!--<height>20</height>-->
-                        <!--<font>Size26</font>-->
-                        <!--<textcolor>main</textcolor>-->
-                        <!--<align>center</align>-->
-                        <!--<aligny>center</aligny>-->
-                        <!--<label>21820</label>-->
-                    <!--</control>-->
-                    <!--<control type="label">-->
-                        <!--<description>Title</description>-->
-                        <!--<left>300</left>-->
-                        <!--<top>20</top>-->
-                        <!--<width>600</width>-->
-                        <!--<height>20</height>-->
-                        <!--<font>Size26</font>-->
-                        <!--<textcolor>main</textcolor>-->
-                        <!--<align>center</align>-->
-                        <!--<aligny>center</aligny>-->
-                        <!--<label>369</label>-->
-                    <!--</control>-->
-                    <!--<control type="label">-->
-                        <!--<description>Status header label</description>-->
-                        <!--<left>960</left>-->
-                        <!--<top>20</top>-->
-                        <!--<width>140</width>-->
-                        <!--<height>20</height>-->
-                        <!--<font>Size26</font>-->
-                        <!--<textcolor>main</textcolor>-->
-                        <!--<align>center</align>-->
-                        <!--<aligny>center</aligny>-->
-                        <!--<label>126</label>-->
-                    <!--</control>-->
-                    <!--<control type="image">-->
-                        <!--<description>separator image</description>-->
-                        <!--<left>-480</left>-->
-                        <!--<top>50</top>-->
-                        <!--<width>2720</width>-->
-                        <!--<height>2</height>-->
-                        <!--<texture>images/line.png</texture>-->
-                    <!--</control>-->
-                    <!--<control type="list" id="13">-->
-                        <!--<left>0</left>-->
-                        <!--<top>60</top>-->
-                        <!--<width>1760</width>-->
-                        <!--<height>480</height>-->
-                        <!--<onup>15</onup>-->
-                        <!--<ondown>15</ondown>-->
-                        <!--<onleft>31</onleft>-->
-                        <!--<onright>75</onright>-->
-                        <!--<pagecontrol>75</pagecontrol>-->
-                        <!--<scrolltime>200</scrolltime>-->
-                        <!--<itemlayout height="40">-->
-                            <!--<control type="image">-->
-                                <!--<width>1760</width>-->
-                                <!--<height>40</height>-->
-                                <!--<texture border="5">pstvButtonNoFocus.png</texture>-->
-                            <!--</control>-->
-                            <!--<control type="label">-->
-                                <!--<left>120</left>-->
-                                <!--<top>0</top>-->
-                                <!--<width>400</width>-->
-                                <!--<height>40</height>-->
-                                <!--<font>font12</font>-->
-                                <!--<align>center</align>-->
-                                <!--<aligny>center</aligny>-->
-                                <!--<textcolor>gray</textcolor>-->
-                                <!--<selectedcolor>red</selectedcolor>-->
-                                <!--<info>ListItem.Date</info>-->
-                            <!--</control>-->
-                            <!--<control type="label">-->
-                                <!--<left>550</left>-->
-                                <!--<top>0</top>-->
-                                <!--<width>640</width>-->
-                                <!--<height>40</height>-->
-                                <!--<font>Size26</font>-->
-                                <!--<align>left</align>-->
-                                <!--<aligny>center</aligny>-->
-                                <!--<textcolor>gray</textcolor>-->
-                                <!--<selectedcolor>red</selectedcolor>-->
-                                <!--<info>ListItem.Label</info>-->
-                            <!--</control>-->
-                            <!--<control type="image">-->
-                                <!--<left>970</left>-->
-                                <!--<top>10</top>-->
-                                <!--<width>30</width>-->
-                                <!--<height>20</height>-->
-                                <!--<texture>PVR-IsRecording.png</texture>-->
-                                <!--<visible>ListItem.IsRecording</visible>-->
-                            <!--</control>-->
-                            <!--<control type="label">-->
-                                <!--<left>1005</left>-->
-                                <!--<top>0</top>-->
-                                <!--<width>80</width>-->
-                                <!--<height>40</height>-->
-                                <!--<font>font10</font>-->
-                                <!--<align>left</align>-->
-                                <!--<aligny>center</aligny>-->
-                                <!--<textcolor>gray</textcolor>-->
-                                <!--<selectedcolor>red</selectedcolor>-->
-                                <!--<label>19043</label>-->
-                                <!--<visible>ListItem.IsRecording</visible>-->
-                            <!--</control>-->
-                            <!--<control type="image">-->
-                                <!--<left>970</left>-->
-                                <!--<top>10</top>-->
-                                <!--<width>20</width>-->
-                                <!--<height>20</height>-->
-                                <!--<texture>PVR-HasTimer.png</texture>-->
-                                <!--<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>-->
-                            <!--</control>-->
-                            <!--<control type="label">-->
-                                <!--<left>1600</left>-->
-                                <!--<width>80</width>-->
-                                <!--<height>40</height>-->
-                                <!--<font>font10</font>-->
-                                <!--<align>left</align>-->
-                                <!--<aligny>center</aligny>-->
-                                <!--<textcolor>maindim</textcolor>-->
-                                <!--<selectedcolor>red</selectedcolor>-->
-                                <!--<label>31510</label>-->
-                                <!--<visible>ListItem.HasTimer</visible>-->
-                            <!--</control>-->
-                        <!--</itemlayout>-->
-                        <!--<focusedlayout height="120">-->
-                            <!--<control type="image">-->
-                                <!--<width>1760</width>-->
-                                <!--<height>120</height>-->
-                                <!--<texture border="5">pstvButtonFocus.png</texture>-->
-                            <!--</control>-->
-                            <!--<control type="label">-->
-                                <!--<left>120</left>-->
-                                <!--<top>0</top>-->
-                                <!--<width>400</width>-->
-                                <!--<height>40</height>-->
-                                <!--<font>font12</font>-->
-                                <!--<align>center</align>-->
-                                <!--<aligny>center</aligny>-->
-                                <!--<textcolor>maindim</textcolor>-->
-                                <!--<selectedcolor>red</selectedcolor>-->
-                                <!--<info>ListItem.Date</info>-->
-                            <!--</control>-->
-                            <!--<control type="label">-->
-                                <!--<left>550</left>-->
-                                <!--<top>0</top>-->
-                                <!--<width>640</width>-->
-                                <!--<height>40</height>-->
-                                <!--<font>Size26</font>-->
-                                <!--<align>left</align>-->
-                                <!--<aligny>center</aligny>-->
-                                <!--<textcolor>maindim</textcolor>-->
-                                <!--<selectedcolor>red</selectedcolor>-->
-                                <!--<info>ListItem.Label</info>-->
-                            <!--</control>-->
-                            <!--<control type="textbox">-->
-                                <!--<description>Plot Value for TVShow</description>-->
-                                <!--<left>60</left>-->
-                                <!--<top>40</top>-->
-                                <!--<width>1600</width>-->
-                                <!--<height>70</height>-->
-                                <!--<font>font12</font>-->
-                                <!--<align>justify</align>-->
-                                <!--<textcolor>maindim</textcolor>-->
-                                <!--<label>$INFO[ListItem.Plot]</label>-->
-                            <!--</control>-->
-                            <!--<control type="image">-->
-                                <!--<left>970</left>-->
-                                <!--<top>10</top>-->
-                                <!--<width>30</width>-->
-                                <!--<height>20</height>-->
-                                <!--<texture>PVR-IsRecording.png</texture>-->
-                                <!--<visible>ListItem.IsRecording</visible>-->
-                            <!--</control>-->
-                            <!--<control type="label">-->
-                                <!--<left>1005</left>-->
-                                <!--<top>0</top>-->
-                                <!--<width>80</width>-->
-                                <!--<height>40</height>-->
-                                <!--<font>font10</font>-->
-                                <!--<align>left</align>-->
-                                <!--<aligny>center</aligny>-->
-                                <!--<textcolor>maindim</textcolor>-->
-                                <!--<selectedcolor>red</selectedcolor>-->
-                                <!--<label>19043</label>-->
-                                <!--<visible>ListItem.IsRecording</visible>-->
-                            <!--</control>-->
-                            <!--<control type="image">-->
-                                <!--<left>970</left>-->
-                                <!--<top>10</top>-->
-                                <!--<width>20</width>-->
-                                <!--<height>20</height>-->
-                                <!--<texture>PVR-HasTimer.png</texture>-->
-                                <!--<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>-->
-                            <!--</control>-->
-                            <!--<control type="label">-->
-                                <!--<left>1600</left>-->
-                                <!--<width>80</width>-->
-                                <!--<height>40</height>-->
-                                <!--<font>font10</font>-->
-                                <!--<align>left</align>-->
-                                <!--<aligny>center</aligny>-->
-                                <!--<textcolor>maindim</textcolor>-->
-                                <!--<selectedcolor>red</selectedcolor>-->
-                                <!--<label>31510</label>-->
-                                <!--<visible>ListItem.HasTimer</visible>-->
-                            <!--</control>-->
-                        <!--</focusedlayout>-->
-                    <!--</control>-->
-                    <!--<control type="scrollbar" id="75">-->
-                        <!--<left>1780</left>-->
-                        <!--<top>60</top>-->
-                        <!--<height>480</height>-->
-                        <!--<onleft>15</onleft>-->
-                        <!--<onright>noop</onright>-->
-                        <!--<showonepage>false</showonepage>-->
-                        <!--<orientation>vertical</orientation>-->
-                    <!--</control>-->
-                <!--</control>-->
-                <!--<control type="label">-->
-                    <!--<description>Page Count Label</description>-->
-                    <!--<left>50r</left>-->
-                    <!--<top>540</top>-->
-                    <!--<width>500</width>-->
-                    <!--<height>20</height>-->
-                    <!--<font>font12</font>-->
-                    <!--<textcolor>gray</textcolor>-->
-                    <!--<scroll>false</scroll>-->
-                    <!--<align>right</align>-->
-                    <!--<aligny>center</aligny>-->
-                    <!--<label>$LOCALIZE[31000] ([COLOR=gray]$INFO[Container(15).CurrentPage]/$INFO[Container(15).NumPages][/COLOR])</label>-->
-                <!--</control>-->
+            <!--<description>TV Guide Channel</description>-->
+            <!--<visible>Control.IsVisible(13)</visible>-->
+            <!--<include>VisibleFade</include>-->
+            <!--<control type="group">-->
+            <!--<left>80</left>-->
+            <!--<top>520</top>-->
+            <!--<control type="label">-->
+            <!--<description>Date Time label</description>-->
+            <!--<left>0</left>-->
+            <!--<top>20</top>-->
+            <!--<width>300</width>-->
+            <!--<height>20</height>-->
+            <!--<font>Size26</font>-->
+            <!--<textcolor>main</textcolor>-->
+            <!--<align>center</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<label>21820</label>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<description>Title</description>-->
+            <!--<left>300</left>-->
+            <!--<top>20</top>-->
+            <!--<width>600</width>-->
+            <!--<height>20</height>-->
+            <!--<font>Size26</font>-->
+            <!--<textcolor>main</textcolor>-->
+            <!--<align>center</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<label>369</label>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<description>Status header label</description>-->
+            <!--<left>960</left>-->
+            <!--<top>20</top>-->
+            <!--<width>140</width>-->
+            <!--<height>20</height>-->
+            <!--<font>Size26</font>-->
+            <!--<textcolor>main</textcolor>-->
+            <!--<align>center</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<label>126</label>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<description>separator image</description>-->
+            <!--<left>-480</left>-->
+            <!--<top>50</top>-->
+            <!--<width>2720</width>-->
+            <!--<height>2</height>-->
+            <!--<texture>images/line.png</texture>-->
+            <!--</control>-->
+            <!--<control type="list" id="13">-->
+            <!--<left>0</left>-->
+            <!--<top>60</top>-->
+            <!--<width>1760</width>-->
+            <!--<height>480</height>-->
+            <!--<onup>15</onup>-->
+            <!--<ondown>15</ondown>-->
+            <!--<onleft>31</onleft>-->
+            <!--<onright>75</onright>-->
+            <!--<pagecontrol>75</pagecontrol>-->
+            <!--<scrolltime>200</scrolltime>-->
+            <!--<itemlayout height="40">-->
+            <!--<control type="image">-->
+            <!--<width>1760</width>-->
+            <!--<height>40</height>-->
+            <!--<texture border="5">pstvButtonNoFocus.png</texture>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<left>120</left>-->
+            <!--<top>0</top>-->
+            <!--<width>400</width>-->
+            <!--<height>40</height>-->
+            <!--<font>font12</font>-->
+            <!--<align>center</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<textcolor>gray</textcolor>-->
+            <!--<selectedcolor>red</selectedcolor>-->
+            <!--<info>ListItem.Date</info>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<left>550</left>-->
+            <!--<top>0</top>-->
+            <!--<width>640</width>-->
+            <!--<height>40</height>-->
+            <!--<font>Size26</font>-->
+            <!--<align>left</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<textcolor>gray</textcolor>-->
+            <!--<selectedcolor>red</selectedcolor>-->
+            <!--<info>ListItem.Label</info>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<left>970</left>-->
+            <!--<top>10</top>-->
+            <!--<width>30</width>-->
+            <!--<height>20</height>-->
+            <!--<texture>PVR-IsRecording.png</texture>-->
+            <!--<visible>ListItem.IsRecording</visible>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<left>1005</left>-->
+            <!--<top>0</top>-->
+            <!--<width>80</width>-->
+            <!--<height>40</height>-->
+            <!--<font>font10</font>-->
+            <!--<align>left</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<textcolor>gray</textcolor>-->
+            <!--<selectedcolor>red</selectedcolor>-->
+            <!--<label>19043</label>-->
+            <!--<visible>ListItem.IsRecording</visible>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<left>970</left>-->
+            <!--<top>10</top>-->
+            <!--<width>20</width>-->
+            <!--<height>20</height>-->
+            <!--<texture>PVR-HasTimer.png</texture>-->
+            <!--<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<left>1600</left>-->
+            <!--<width>80</width>-->
+            <!--<height>40</height>-->
+            <!--<font>font10</font>-->
+            <!--<align>left</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<textcolor>maindim</textcolor>-->
+            <!--<selectedcolor>red</selectedcolor>-->
+            <!--<label>31510</label>-->
+            <!--<visible>ListItem.HasTimer</visible>-->
+            <!--</control>-->
+            <!--</itemlayout>-->
+            <!--<focusedlayout height="120">-->
+            <!--<control type="image">-->
+            <!--<width>1760</width>-->
+            <!--<height>120</height>-->
+            <!--<texture border="5">pstvButtonFocus.png</texture>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<left>120</left>-->
+            <!--<top>0</top>-->
+            <!--<width>400</width>-->
+            <!--<height>40</height>-->
+            <!--<font>font12</font>-->
+            <!--<align>center</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<textcolor>maindim</textcolor>-->
+            <!--<selectedcolor>red</selectedcolor>-->
+            <!--<info>ListItem.Date</info>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<left>550</left>-->
+            <!--<top>0</top>-->
+            <!--<width>640</width>-->
+            <!--<height>40</height>-->
+            <!--<font>Size26</font>-->
+            <!--<align>left</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<textcolor>maindim</textcolor>-->
+            <!--<selectedcolor>red</selectedcolor>-->
+            <!--<info>ListItem.Label</info>-->
+            <!--</control>-->
+            <!--<control type="textbox">-->
+            <!--<description>Plot Value for TVShow</description>-->
+            <!--<left>60</left>-->
+            <!--<top>40</top>-->
+            <!--<width>1600</width>-->
+            <!--<height>70</height>-->
+            <!--<font>font12</font>-->
+            <!--<align>justify</align>-->
+            <!--<textcolor>maindim</textcolor>-->
+            <!--<label>$INFO[ListItem.Plot]</label>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<left>970</left>-->
+            <!--<top>10</top>-->
+            <!--<width>30</width>-->
+            <!--<height>20</height>-->
+            <!--<texture>PVR-IsRecording.png</texture>-->
+            <!--<visible>ListItem.IsRecording</visible>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<left>1005</left>-->
+            <!--<top>0</top>-->
+            <!--<width>80</width>-->
+            <!--<height>40</height>-->
+            <!--<font>font10</font>-->
+            <!--<align>left</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<textcolor>maindim</textcolor>-->
+            <!--<selectedcolor>red</selectedcolor>-->
+            <!--<label>19043</label>-->
+            <!--<visible>ListItem.IsRecording</visible>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<left>970</left>-->
+            <!--<top>10</top>-->
+            <!--<width>20</width>-->
+            <!--<height>20</height>-->
+            <!--<texture>PVR-HasTimer.png</texture>-->
+            <!--<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<left>1600</left>-->
+            <!--<width>80</width>-->
+            <!--<height>40</height>-->
+            <!--<font>font10</font>-->
+            <!--<align>left</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<textcolor>maindim</textcolor>-->
+            <!--<selectedcolor>red</selectedcolor>-->
+            <!--<label>31510</label>-->
+            <!--<visible>ListItem.HasTimer</visible>-->
+            <!--</control>-->
+            <!--</focusedlayout>-->
+            <!--</control>-->
+            <!--<control type="scrollbar" id="75">-->
+            <!--<left>1780</left>-->
+            <!--<top>60</top>-->
+            <!--<height>480</height>-->
+            <!--<onleft>15</onleft>-->
+            <!--<onright>noop</onright>-->
+            <!--<showonepage>false</showonepage>-->
+            <!--<orientation>vertical</orientation>-->
+            <!--</control>-->
+            <!--</control>-->
+            <!--<control type="label">-->
+            <!--<description>Page Count Label</description>-->
+            <!--<left>50r</left>-->
+            <!--<top>540</top>-->
+            <!--<width>500</width>-->
+            <!--<height>20</height>-->
+            <!--<font>font12</font>-->
+            <!--<textcolor>gray</textcolor>-->
+            <!--<scroll>false</scroll>-->
+            <!--<align>right</align>-->
+            <!--<aligny>center</aligny>-->
+            <!--<label>$LOCALIZE[31000] ([COLOR=gray]$INFO[Container(15).CurrentPage]/$INFO[Container(15).NumPages][/COLOR])</label>-->
+            <!--</control>-->
             <!--</control>-->
 
 

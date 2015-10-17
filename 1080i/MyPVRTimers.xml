@@ -2,7 +2,7 @@
 <window>
     <views>14</views>
     <defaultcontrol>14</defaultcontrol>
-
+    <menucontrol>9000</menucontrol>
     <backgroundcolor>background</backgroundcolor>
     <include>OpenClose</include>
     <controls>
