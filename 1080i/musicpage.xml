@@ -2,7 +2,7 @@
 <includes>
     <include name="music">
         <defaultcontrol always="true">50</defaultcontrol>
-
+        <menucontrol>9000</menucontrol>
         <backgroundcolor>background</backgroundcolor>
         <views>50,52,53,500</views>
         <include>OpenClose</include>

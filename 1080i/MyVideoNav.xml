@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">53</defaultcontrol>
-
+    <menucontrol>9000</menucontrol>
     <backgroundcolor>background</backgroundcolor>
     <onload>RunScript(script.tv.show.next.aired,backend=True)</onload>
     <views>52,53,50,54,55,56,500,501</views>

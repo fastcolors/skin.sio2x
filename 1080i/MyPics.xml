@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2">
     <defaultcontrol always="true">53</defaultcontrol>
-
+    <menucontrol>9000</menucontrol>
     <backgroundcolor>background</backgroundcolor>
     <controls>
         <include>BlackBackground</include>
