@@ -109,9 +109,9 @@
             <property name="weatherthumb">$INFO[Window(weather).Property(Current.FanartCode),weathershelf/,.png]</property>
             <label>$INFO[Weather.Temperature]</label>
             <property name="color">orange</property>
-            <!--<onclick condition="IsEmpty(Weather.plugin)">activatewindow(WeatherSettings)</onclick>-->
-            <!--<onclick condition="!IsEmpty(Weather.plugin)">ActivateWindow(MyWeather)</onclick>-->
-            <onclick condition="!IsEmpty(Weather.plugin)">SetFocus(9095)</onclick>
+            <onclick condition="IsEmpty(Weather.plugin)">activatewindow(WeatherSettings)</onclick>
+            <onclick condition="!IsEmpty(Weather.plugin)">ActivateWindow(MyWeather)</onclick>
+            <!--<onclick condition="!IsEmpty(Weather.plugin)">SetFocus(9095)</onclick>-->
         </item>
         <!--NEXT AIRED ADDON-->
         <item id="358">
