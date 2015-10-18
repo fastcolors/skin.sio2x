@@ -248,6 +248,13 @@
                             <height>20</height>
                             <font>size20</font>
                             <textcolor>darkgray</textcolor>
+                            <label>Language: [COLOR main][B]$INFO[ListItem.Property(AudioLanguage.1)]$INFO[ListItem.Property(AudioLanguage.2), • ]$INFO[ListItem.Property(AudioLanguage.3), • ]$INFO[ListItem.Property(AudioLanguage.4), • ][/B][/COLOR]</label>
+                        </control>
+                        <control type="label">
+                            <width>800</width>
+                            <height>20</height>
+                            <font>size20</font>
+                            <textcolor>darkgray</textcolor>
                             <label>$LOCALIZE[180]: [COLOR main][B]$INFO[ListItem.Duration] $LOCALIZE[12391][/B][/COLOR]</label>
                         </control>
                         <control type="label">
@@ -292,30 +299,6 @@
                             <textcolor>darkgray</textcolor>
                             <scroll>false</scroll>
                             <label>$LOCALIZE[20388]: [COLOR main][B]$INFO[ListItem.Studio][/B][/COLOR]</label>
-                        </control>
-                        <control type="label">
-                            <visible>!IsEmpty(ListItem.PlayCount)</visible>
-                            <width>800</width>
-                            <height>20</height>
-                            <font>size20</font>
-                            <textcolor>darkgray</textcolor>
-                            <label>$LOCALIZE[576]: [COLOR main][B]$INFO[ListItem.PlayCount][/B][/COLOR]</label>
-                        </control>
-                        <control type="label">
-                            <visible>!IsEmpty(ListItem.LastPlayed)</visible>
-                            <width>800</width>
-                            <height>20</height>
-                            <font>size20</font>
-                            <textcolor>darkgray</textcolor>
-                            <label>$LOCALIZE[568]: [COLOR main][B]$INFO[ListItem.LastPlayed][/B][/COLOR]</label>
-                        </control>
-                        <control type="label">
-                            <visible>!IsEmpty(ListItem.PercentPlayed) + !Container.Content(Addons)</visible>
-                            <width>800</width>
-                            <height>20</height>
-                            <font>size20</font>
-                            <textcolor>darkgray</textcolor>
-                            <label>$LOCALIZE[31087]: [COLOR main][B]$INFO[ListItem.PercentPlayed] %[/B][/COLOR]</label>
                         </control>
                     </control>
                     <control type="grouplist">

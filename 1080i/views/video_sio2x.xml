@@ -261,6 +261,17 @@
                     <width>300</width>
                     <itemgap>3</itemgap>
                     <control type="label">
+                        <visible>!IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
+                        <align>right</align>
+                        <textcolor>darkgray</textcolor>
+                        <width>200</width>
+                        <height>30</height>
+                        <font>size20</font>
+                        <scroll>false</scroll>
+                        <label>Language:</label>
+                    </control>
+                    <control type="label">
+                        <visible>!IsEmpty(ListItem.Duration)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -269,6 +280,7 @@
                         <label>$LOCALIZE[180]:</label>
                     </control>
                     <control type="label">
+                        <visible>!IsEmpty(ListItem.Genre)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -277,6 +289,7 @@
                         <label>$LOCALIZE[515]:</label>
                     </control>
                     <control type="label">
+                        <visible>!IsEmpty(ListItem.Year)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -285,6 +298,7 @@
                         <label>$LOCALIZE[562]:</label>
                     </control>
                     <control type="label">
+                        <visible>!IsEmpty(ListItem.OriginalTitle)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -293,6 +307,7 @@
                         <label>$LOCALIZE[20376]:</label>
                     </control>
                     <control type="label">
+                        <visible>!IsEmpty(ListItem.Director)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -301,6 +316,7 @@
                         <label>$LOCALIZE[20339]:</label>
                     </control>
                     <control type="label">
+                        <visible>!IsEmpty(ListItem.Country)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -309,6 +325,7 @@
                         <label>$LOCALIZE[21875]:</label>
                     </control>
                     <control type="textbox">
+                        <visible>!IsEmpty(ListItem.Studio)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -318,26 +335,6 @@
                         <shadowcolor>black</shadowcolor>
                         <label>$LOCALIZE[20388]:</label>
                     </control>
-                    <control type="label">
-                        <visible>!IsEmpty(ListItem.PlayCount)</visible>
-                        <align>right</align>
-                        <textcolor>darkgray</textcolor>
-                        <width>200</width>
-                        <height>30</height>
-                        <font>size20</font>
-                        <scroll>false</scroll>
-                        <label>$LOCALIZE[576]:</label>
-                    </control>
-                    <control type="label">
-                        <visible>!IsEmpty(ListItem.LastPlayed)</visible>
-                        <align>right</align>
-                        <textcolor>darkgray</textcolor>
-                        <width>200</width>
-                        <height>30</height>
-                        <font>size20</font>
-                        <scroll>false</scroll>
-                        <label>$LOCALIZE[568]:</label>
-                    </control>
                 </control>
                 <control type="grouplist" description="detailedinfos">
                     <visible>!Container.Content(Addons)</visible>
@@ -346,6 +343,12 @@
                     <height>600</height>
                     <width>710</width>
                     <itemgap>3</itemgap>
+                    <control type="label">
+                        <width>780</width>
+                        <height>30</height>
+                        <font>size20</font>
+                        <label>[B]$INFO[ListItem.Property(AudioLanguage.1)]$INFO[ListItem.Property(AudioLanguage.2), • ]$INFO[ListItem.Property(AudioLanguage.3), • ]$INFO[ListItem.Property(AudioLanguage.4), • ][/B]</label>
+                    </control>
                     <control type="label">
                         <width>780</width>
                         <height>30</height>
@@ -388,20 +391,6 @@
                         <font>size20</font>
                         <autoscroll>false</autoscroll>
                         <label>[B]$INFO[ListItem.Studio][/B]</label>
-                    </control>
-                    <control type="label">
-                        <visible>!IsEmpty(ListItem.PlayCount)</visible>
-                        <width>780</width>
-                        <height>30</height>
-                        <font>size20</font>
-                        <label>[B]$INFO[ListItem.PlayCount][/B]</label>
-                    </control>
-                    <control type="label">
-                        <visible>!IsEmpty(ListItem.LastPlayed)</visible>
-                        <width>780</width>
-                        <height>30</height>
-                        <font>size20</font>
-                        <label>[B]$INFO[ListItem.LastPlayed][/B]</label>
                     </control>
                 </control>
                 <control type="grouplist">
@@ -492,7 +481,7 @@
                     <height>91</height>
                     <width>161</width>
                     <aspectratio>keep</aspectratio>
-                    <texture>$INFO[ListItem.Studio,special://home/addons/sio2x.extrapack/studios_extrapack/,.png]</texture>
+                    <texture>resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
                 </control>
                 <control type="image" description="sfumatura plot">
                     <top>630</top>
@@ -667,131 +656,131 @@
             <!--SETS-END-->
             <!--TVHSOW-->
             <!--<control type="group" description="tvshows">-->
-                <!--<visible>Container.Content(tvshows)</visible>-->
-                <!--<control type="panel" id="990">-->
-                    <!--<centerleft>715</centerleft>-->
-                    <!--<top>100</top>-->
-                    <!--<width>1320</width>-->
-                    <!--<height>980</height>-->
-                    <!--<onup>noop</onup>-->
-                    <!--<ondown>noop</ondown>-->
-                    <!--<onright>54</onright>-->
-                    <!--<onleft>9000</onleft>-->
-                    <!--<scrolltime>400</scrolltime>-->
-                    <!--<itemlayout width="440" height="400">-->
-                        <!--<control type="image">-->
-                            <!--<centerleft>220</centerleft>-->
-                            <!--<top>30</top>-->
-                            <!--<height>300</height>-->
-                            <!--<width>400</width>-->
-                            <!--<texture>$INFO[ListItem.Thumb]</texture>-->
-                            <!--<aspectratio>scale</aspectratio>-->
-                        <!--</control>-->
-                        <!--<control type="image">-->
-                            <!--<centerleft>220</centerleft>-->
-                            <!--<top>30</top>-->
-                            <!--<height>300</height>-->
-                            <!--<width>400</width>-->
-                            <!--<texture border="1">images/dvdbox.png</texture>-->
-                        <!--</control>-->
-                        <!--<control type="textbox">-->
-                            <!--<centerleft>220</centerleft>-->
-                            <!--<top>350</top>-->
-                            <!--<width>350</width>-->
-                            <!--<height>60</height>-->
-                            <!--<align>center</align>-->
-                            <!--<font>size20</font>-->
-                            <!--<label>$INFO[ListItem.Label]</label>-->
-                        <!--</control>-->
-                        <!--<control type="image">-->
-                            <!--<left>14</left>-->
-                            <!--<top>296</top>-->
-                            <!--<width>40</width>-->
-                            <!--<height>40</height>-->
-                            <!--<info>ListItem.Overlay</info>-->
-                        <!--</control>-->
-                        <!--<control type="progress" description="progress">-->
-                            <!--<visible>ListItem.IsResumable</visible>-->
-                            <!--<centerleft>220</centerleft>-->
-                            <!--<top>341</top>-->
-                            <!--<height>8</height>-->
-                            <!--<texturebg>images/transparent.png</texturebg>-->
-                            <!--<midtexture border="1">images/white.png</midtexture>-->
-                            <!--<width>400</width>-->
-                            <!--<info>ListItem.PercentPlayed</info>-->
-                        <!--</control>-->
-                    <!--</itemlayout>-->
-                    <!--<focusedlayout width="440" height="480">-->
-                        <!--<control type="image">-->
-                            <!--<centerleft>220</centerleft>-->
-                            <!--<top>30</top>-->
-                            <!--<height>300</height>-->
-                            <!--<width>400</width>-->
-                            <!--<texture>$INFO[ListItem.Thumb]</texture>-->
-                            <!--<aspectratio>scale</aspectratio>-->
-                        <!--</control>-->
-                        <!--<control type="image">-->
-                            <!--<centerleft>220</centerleft>-->
-                            <!--<top>30</top>-->
-                            <!--<height>300</height>-->
-                            <!--<width>400</width>-->
-                            <!--<texture border="1">images/dvdbox.png</texture>-->
-                        <!--</control>-->
-                        <!--<control type="group">-->
-                            <!--<animation effect="fade" start="0" end="100" time="250">Focus</animation>-->
-                            <!--<animation effect="fade" start="100" end="0" time="50">Unfocus</animation>-->
-                            <!--<control type="image">-->
-                                <!--<top>20</top>-->
-                                <!--<centerleft>220</centerleft>-->
-                                <!--<width>420</width>-->
-                                <!--<height>320</height>-->
-                                <!--<texture border="9">images/SetsOver.png</texture>-->
-                            <!--</control>-->
-                            <!--<control type="textbox">-->
-                                <!--<centerleft>220</centerleft>-->
-                                <!--<top>30</top>-->
-                                <!--<height>300</height>-->
-                                <!--<width>380</width>-->
-                                <!--<font>size22</font>-->
-                                <!--<align>justify</align>-->
-                                <!--<label>[B]$INFO[ListItem.Plot,[COLOR lightblue]$LOCALIZE[207]:[/COLOR] ][CR]$INFO[ListItem.Premiered,[COLOR lightblue]$LOCALIZE[20416]:[/COLOR] ][CR]$INFO[ListItem.Director,[COLOR lightblue]$LOCALIZE[20339]: [/COLOR]][/B]</label>-->
-                            <!--</control>-->
-                        <!--</control>-->
-                        <!--<control type="textbox">-->
-                            <!--<centerleft>220</centerleft>-->
-                            <!--<top>350</top>-->
-                            <!--<width>350</width>-->
-                            <!--<height>60</height>-->
-                            <!--<align>center</align>-->
-                            <!--<font>size20</font>-->
-                            <!--<label>$INFO[ListItem.Label]</label>-->
-                        <!--</control>-->
-                        <!--<control type="progress" description="progress">-->
-                            <!--<visible>ListItem.IsResumable</visible>-->
-                            <!--<centerleft>220</centerleft>-->
-                            <!--<top>341</top>-->
-                            <!--<height>8</height>-->
-                            <!--<texturebg>images/transparent.png</texturebg>-->
-                            <!--<midtexture border="1">images/white.png</midtexture>-->
-                            <!--<width>400</width>-->
-                            <!--<info>ListItem.PercentPlayed</info>-->
-                        <!--</control>-->
-                        <!--<control type="image">-->
-                            <!--<left>14</left>-->
-                            <!--<top>296</top>-->
-                            <!--<width>40</width>-->
-                            <!--<height>40</height>-->
-                            <!--<info>ListItem.Overlay</info>-->
-                        <!--</control>-->
-                    <!--</focusedlayout>-->
-                    <!--<content target="video">$INFO[ListItem.DBID,videodb://tvshows/titles/]</content>-->
-                <!--</control>-->
-                <!--<control type="image">-->
-                    <!--<top>90</top>-->
-                    <!--<height>1</height>-->
-                    <!--<width>1432</width>-->
-                    <!--<texture>lines/Line.png</texture>-->
-                <!--</control>-->
+            <!--<visible>Container.Content(tvshows)</visible>-->
+            <!--<control type="panel" id="990">-->
+            <!--<centerleft>715</centerleft>-->
+            <!--<top>100</top>-->
+            <!--<width>1320</width>-->
+            <!--<height>980</height>-->
+            <!--<onup>noop</onup>-->
+            <!--<ondown>noop</ondown>-->
+            <!--<onright>54</onright>-->
+            <!--<onleft>9000</onleft>-->
+            <!--<scrolltime>400</scrolltime>-->
+            <!--<itemlayout width="440" height="400">-->
+            <!--<control type="image">-->
+            <!--<centerleft>220</centerleft>-->
+            <!--<top>30</top>-->
+            <!--<height>300</height>-->
+            <!--<width>400</width>-->
+            <!--<texture>$INFO[ListItem.Thumb]</texture>-->
+            <!--<aspectratio>scale</aspectratio>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<centerleft>220</centerleft>-->
+            <!--<top>30</top>-->
+            <!--<height>300</height>-->
+            <!--<width>400</width>-->
+            <!--<texture border="1">images/dvdbox.png</texture>-->
+            <!--</control>-->
+            <!--<control type="textbox">-->
+            <!--<centerleft>220</centerleft>-->
+            <!--<top>350</top>-->
+            <!--<width>350</width>-->
+            <!--<height>60</height>-->
+            <!--<align>center</align>-->
+            <!--<font>size20</font>-->
+            <!--<label>$INFO[ListItem.Label]</label>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<left>14</left>-->
+            <!--<top>296</top>-->
+            <!--<width>40</width>-->
+            <!--<height>40</height>-->
+            <!--<info>ListItem.Overlay</info>-->
+            <!--</control>-->
+            <!--<control type="progress" description="progress">-->
+            <!--<visible>ListItem.IsResumable</visible>-->
+            <!--<centerleft>220</centerleft>-->
+            <!--<top>341</top>-->
+            <!--<height>8</height>-->
+            <!--<texturebg>images/transparent.png</texturebg>-->
+            <!--<midtexture border="1">images/white.png</midtexture>-->
+            <!--<width>400</width>-->
+            <!--<info>ListItem.PercentPlayed</info>-->
+            <!--</control>-->
+            <!--</itemlayout>-->
+            <!--<focusedlayout width="440" height="480">-->
+            <!--<control type="image">-->
+            <!--<centerleft>220</centerleft>-->
+            <!--<top>30</top>-->
+            <!--<height>300</height>-->
+            <!--<width>400</width>-->
+            <!--<texture>$INFO[ListItem.Thumb]</texture>-->
+            <!--<aspectratio>scale</aspectratio>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<centerleft>220</centerleft>-->
+            <!--<top>30</top>-->
+            <!--<height>300</height>-->
+            <!--<width>400</width>-->
+            <!--<texture border="1">images/dvdbox.png</texture>-->
+            <!--</control>-->
+            <!--<control type="group">-->
+            <!--<animation effect="fade" start="0" end="100" time="250">Focus</animation>-->
+            <!--<animation effect="fade" start="100" end="0" time="50">Unfocus</animation>-->
+            <!--<control type="image">-->
+            <!--<top>20</top>-->
+            <!--<centerleft>220</centerleft>-->
+            <!--<width>420</width>-->
+            <!--<height>320</height>-->
+            <!--<texture border="9">images/SetsOver.png</texture>-->
+            <!--</control>-->
+            <!--<control type="textbox">-->
+            <!--<centerleft>220</centerleft>-->
+            <!--<top>30</top>-->
+            <!--<height>300</height>-->
+            <!--<width>380</width>-->
+            <!--<font>size22</font>-->
+            <!--<align>justify</align>-->
+            <!--<label>[B]$INFO[ListItem.Plot,[COLOR lightblue]$LOCALIZE[207]:[/COLOR] ][CR]$INFO[ListItem.Premiered,[COLOR lightblue]$LOCALIZE[20416]:[/COLOR] ][CR]$INFO[ListItem.Director,[COLOR lightblue]$LOCALIZE[20339]: [/COLOR]][/B]</label>-->
+            <!--</control>-->
+            <!--</control>-->
+            <!--<control type="textbox">-->
+            <!--<centerleft>220</centerleft>-->
+            <!--<top>350</top>-->
+            <!--<width>350</width>-->
+            <!--<height>60</height>-->
+            <!--<align>center</align>-->
+            <!--<font>size20</font>-->
+            <!--<label>$INFO[ListItem.Label]</label>-->
+            <!--</control>-->
+            <!--<control type="progress" description="progress">-->
+            <!--<visible>ListItem.IsResumable</visible>-->
+            <!--<centerleft>220</centerleft>-->
+            <!--<top>341</top>-->
+            <!--<height>8</height>-->
+            <!--<texturebg>images/transparent.png</texturebg>-->
+            <!--<midtexture border="1">images/white.png</midtexture>-->
+            <!--<width>400</width>-->
+            <!--<info>ListItem.PercentPlayed</info>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<left>14</left>-->
+            <!--<top>296</top>-->
+            <!--<width>40</width>-->
+            <!--<height>40</height>-->
+            <!--<info>ListItem.Overlay</info>-->
+            <!--</control>-->
+            <!--</focusedlayout>-->
+            <!--<content target="video">$INFO[ListItem.DBID,videodb://tvshows/titles/]</content>-->
+            <!--</control>-->
+            <!--<control type="image">-->
+            <!--<top>90</top>-->
+            <!--<height>1</height>-->
+            <!--<width>1432</width>-->
+            <!--<texture>lines/Line.png</texture>-->
+            <!--</control>-->
             <!--</control>-->
             <!--TVSHOW-END-->
             <!--SLIDERPANEL-->
