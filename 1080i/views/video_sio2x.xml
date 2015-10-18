@@ -503,7 +503,7 @@
                     <left>50</left>
                     <top>160</top>
                     <control type="image">
-                        <animation effect="rotate" end="-360" center="auto" time="9000" loop="true" reversible="false" condition="!System.Platform.Linux.RaspberryPi + !System.Platform.ATV2 + !IsEmpty(ListItem.Art(discart))">Conditional</animation>
+                        <animation effect="rotate" end="-360" center="auto" time="9000" loop="true" reversible="false" condition="!System.Platform.Linux + !System.Platform.Linux.RaspberryPi + !System.Platform.ATV2 + !IsEmpty(ListItem.Art(discart))">Conditional</animation>
                         <left>150</left>
                         <height>294</height>
                         <width>294</width>
