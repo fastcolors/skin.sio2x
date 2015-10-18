@@ -6,7 +6,7 @@
         <control type="image">
             <left>160</left>
             <top>100r</top>
-            <width>800</width>
+            <width>890</width>
             <height>500</height>
             <aspectratio>stretch</aspectratio>
             <texture border="50">sidepanel/Back.png</texture>
@@ -70,6 +70,12 @@
                         <thumb>Seekbar/OSDRWNF.png</thumb>
                         <label>Seekbar/OSDRWFO.png</label>
                         <onclick>PlayerControl(Rewind)</onclick>
+                    </item>
+                    <item id="10">
+                        <visible>Player.CanRecord</visible>
+                        <thumb>Seekbar/OSDRecNF.png</thumb>
+                        <label>Seekbar/OSDRecFO.png</label>
+                        <onclick>PlayerControl(record)</onclick>
                     </item>
                     <item id="5">
                         <visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
@@ -149,14 +155,7 @@
                 <ondown>100</ondown>
                 <itemgap>0</itemgap>
                 <scrolltime>280</scrolltime>
-                <control type="button" id="555">
-                    <description>Playlist</description>
-                    <include>ButtonMenu</include>
-                    <label>559</label>
-                    <onclick>left</onclick>
-                    <onclick>ActivateWindow(MusicPlaylist)</onclick>
-                </control>
-                <control type="button" id="556" description="Fanart">
+                <control type="button" id="555" description="Fanart">
                     <include>ButtonMenu</include>
                     <label>$VAR[Fanartdisplaystatus]</label>
                     <onclick>Skin.ToggleSetting(MusicPlayingFanart)</onclick>
@@ -172,23 +171,21 @@
                     <label>$LOCALIZE[250] $LOCALIZE[10004]</label>
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                     <enable>Visualisation.Enabled</enable>
-                    <animation effect="fade" start="100" end="50" time="100" condition="!Visualisation.Enabled">Conditional</animation>
                 </control>
                 <control type="button" id="20">
                     <description>Visualisation Presets</description>
                     <include>ButtonMenu</include>
                     <label>31004</label>
                     <onclick>ActivateWindow(122)</onclick>
-                    <enable>Visualisation.Enabled</enable>
-                    <animation effect="fade" start="100" end="50" time="100" condition="!Visualisation.Enabled">Conditional</animation>
+                    <enable>Visualisation.HasPresets</enable>
                 </control>
                 <control type="button" id="9">
                     <description>Lyrics</description>
                     <include>ButtonMenu</include>
                     <label>24013</label>
-                    <onclick>left</onclick>
                     <onclick condition="IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
-                    <onclick condition="!IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(LyricPath))">RunScript($INFO[Skin.String(LyricPath)])</onclick>
+                    <onclick>left</onclick>
                 </control>
                 <control type="button" id="301">
                     <description>CodecInfo</description>
