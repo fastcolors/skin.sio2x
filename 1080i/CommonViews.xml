@@ -85,7 +85,7 @@
                 <width>161</width>
                 <height>100</height>
                 <fadetime>100</fadetime>
-                <texture background="true" fallback="defaultgenericstudio.png">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+                <texture background="true">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="group" description="EPISODES BADGES">

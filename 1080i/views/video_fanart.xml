@@ -109,7 +109,7 @@
                         <height>130</height>
                         <width>250</width>
                         <fadetime>120</fadetime>
-                        <texture colordiffuse="main" fallback="defaultgenericstudio.png">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+                        <texture colordiffuse="main">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label" description="toplabel">
