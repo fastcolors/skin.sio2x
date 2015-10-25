@@ -133,11 +133,6 @@
                     <label>24054</label>
                     <width>250</width>
                 </control>
-                <control type="button" id="11" description="rollback">
-                    <font>Size30</font>
-                    <label>$LOCALIZE[24048]</label>
-                    <width>250</width>
-                </control>
                 <control type="button" id="12" description="run">
                     <font>Size30</font>
                     <label>335</label>
