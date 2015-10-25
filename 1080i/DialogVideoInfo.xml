@@ -228,6 +228,12 @@
                             <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
                         </item>
                         <item>
+                            <label>My $LOCALIZE[563]:</label>
+                            <label2>$INFO[ListItem.UserRating]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(ListItem.UserRating)</visible>
+                        </item>
+                        <item>
                             <label>MPAA:</label>
                             <label2>$INFO[ListItem.mpaa]</label2>
                             <onclick>noop</onclick>
@@ -330,6 +336,12 @@
                     <texturefocus>info/getartFO.png</texturefocus>
                     <texturenofocus>info/getart.png</texturenofocus>
                 </control>
+                <control type="button" id="7" description="Get Art">
+                    <height>150</height>
+                    <width>150</width>
+                    <texturefocus>info/rateFO.png</texturefocus>
+                    <texturenofocus>info/rate.png</texturenofocus>
+                </control>
             </control>
         </control>
         <control type="fixedlist" id="50">
@@ -413,22 +425,22 @@
             <aspectratio>keep</aspectratio>
         </control>
         <!--<control type="list">-->
-            <!--<height>1080</height>-->
-            <!--<itemlayout height="80">-->
-                <!--<control type="label">-->
-                    <!--<width>132</width>-->
-                    <!--<height>80</height>-->
-                    <!--<info>ListItem.Label</info>-->
-                <!--</control>-->
-            <!--</itemlayout>-->
-            <!--<focusedlayout height="80">-->
-                <!--<control type="label">-->
-                    <!--<width>132</width>-->
-                    <!--<height>80</height>-->
-                    <!--<info>ListItem.Label</info>-->
-                <!--</control>-->
-            <!--</focusedlayout>-->
-            <!--<content>plugin://script.populate.set/</content>-->
+        <!--<height>1080</height>-->
+        <!--<itemlayout height="80">-->
+        <!--<control type="label">-->
+        <!--<width>132</width>-->
+        <!--<height>80</height>-->
+        <!--<info>ListItem.Label</info>-->
+        <!--</control>-->
+        <!--</itemlayout>-->
+        <!--<focusedlayout height="80">-->
+        <!--<control type="label">-->
+        <!--<width>132</width>-->
+        <!--<height>80</height>-->
+        <!--<info>ListItem.Label</info>-->
+        <!--</control>-->
+        <!--</focusedlayout>-->
+        <!--<content>plugin://script.populate.set/</content>-->
         <!--</control>-->
     </controls>
 </window>
