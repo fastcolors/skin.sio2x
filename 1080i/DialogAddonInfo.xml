@@ -126,12 +126,18 @@
                 <control type="button" id="9" description="settings">
                     <font>Size30</font>
                     <label>5</label>
-                    <width>300</width>
+                    <width>250</width>
                 </control>
                 <control type="button" id="10" description="changelog">
                     <font>Size30</font>
                     <label>24054</label>
                     <width>250</width>
+                </control>
+                <control type="radiobutton" id="13" description="update">
+                    <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect2.png</texturefocus>
+                    <font>Size30</font>
+                    <label>test</label>
+                    <width>300</width>
                 </control>
                 <control type="button" id="12" description="run">
                     <font>Size30</font>
