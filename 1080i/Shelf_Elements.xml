@@ -1444,34 +1444,36 @@
     </include>
     <include name="Favsshelf">
         <control type="group">
-            <control type="panel" id="319" description="TOP Shortcuts">
+            <control type="list" id="319" description="TOP Shortcuts">
                 <visible>[Container(9000).HasFocus(352) | Control.HasFocus(319)] + Container(9000).Row(0)</visible>
-                <onfocus>SetFocus(9090)</onfocus>
+                <!--<onfocus>SetFocus(9090)</onfocus>-->
                 <onup>9090</onup>
                 <ondown>9000</ondown>
                 <onleft>319</onleft>
                 <onright>319</onright>
                 <include>FavShortcutsCommons</include>
+                <!--TODO onclick for dynamic content-->
+                <!--<onclick>PlayMedia("$INFO[ListItem.FileNameAndPath]")</onclick>-->
                 <content>favourites://</content>
             </control>
-            <control type="button" id="9090" description="FakeButton">
-                <visible>Container(9000).HasFocus(352)</visible>
-                <left>-20</left>
-                <top>-20</top>
-                <height>100</height>
-                <width>1000</width>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <font>Size33</font>
-                <onup>noop</onup>
-                <ondown>9000</ondown>
-                <onleft>Control.Move(319,-1)</onleft>
-                <onright>Control.Move(319,1)</onright>
-                <label>-</label>
-                <onclick>$INFO[Container(319).ListItem.FileNameAndPath]</onclick>
-            </control>
+            <!--<control type="button" id="9090" description="FakeButton">-->
+                <!--<visible>Container(9000).HasFocus(352)</visible>-->
+                <!--<left>-20</left>-->
+                <!--<top>-20</top>-->
+                <!--<height>100</height>-->
+                <!--<width>1000</width>-->
+                <!--<texturefocus>-</texturefocus>-->
+                <!--<texturenofocus>-</texturenofocus>-->
+                <!--<font>Size33</font>-->
+                <!--<onup>noop</onup>-->
+                <!--<ondown>9000</ondown>-->
+                <!--<onleft>Control.Move(319,-1)</onleft>-->
+                <!--<onright>Control.Move(319,1)</onright>-->
+                <!--<label>-</label>-->
+                <!--<onclick>$INFO[Container(319).ListItem.FileNameAndPath]</onclick>-->
+            <!--</control>-->
             <control type="image">
-                <visible>Control.HasFocus(319) | Control.HasFocus(9090)</visible>
+                <visible>Control.HasFocus(319)</visible>
                 <left>110</left>
                 <top>489</top>
                 <width>100</width>

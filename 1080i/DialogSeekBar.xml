@@ -2,10 +2,9 @@
 <window type="dialog" id="115">
     <onload>Dialog.Close(142)</onload>
     <defaultcontrol always="true">901</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
     <include>OpenClose</include>
     <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
-    <visible>Window.IsVisible(FullScreenVideo) + [Window.IsActive(videoosd.xml) | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding | Player.Caching]</visible>
+    <visible>Window.IsActive(videoosd.xml) | Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding | Player.Caching</visible>
     <animation effect="fade" start="0" end="100" time="400">Visible</animation>
     <animation effect="fade" start="100" end="0" time="100">Hidden</animation>
     <controls>
@@ -92,6 +91,16 @@
                 <animation effect="fade" time="200">VisibleChange</animation>
                 <label>$VAR[SeekLabel]</label>
             </control>
+            <control type="image">
+                <visible>Window.IsActive(videoosd.xml) | VideoPlayer.Content(LiveTV)</visible>
+                <left>35</left>
+                <top>873</top>
+                <width>1850</width>
+                <height>150</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="70">Seekbar/OSDBackground.png</texture>
+                <colordiffuse>seekbar</colordiffuse>
+            </control>
             <control type="group">
                 <top>932</top>
                 <control type="image" description="Background">
@@ -121,7 +130,6 @@
                     <midtexture border="2">Seekbar/M.png</midtexture>
                     <info>Player.Progress</info>
                 </control>
-
             </control>
             <control type="group" description="Icons on Seekbar">
                 <top>934</top>
@@ -214,6 +222,17 @@
                 <height>100</height>
                 <texture>$INFO[VideoPlayer.mpaa,Mpaa/,.png]</texture>
                 <colordiffuse>77FFFFFF</colordiffuse>
+            </control>
+            <control type="label">
+                <visible>VideoPlayer.Content(LiveTV)</visible>
+                <left>150</left>
+                <top>880</top>
+                <width>695</width>
+                <height>60</height>
+                <font>size33B</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>$INFO[VideoPlayer.ChannelNumber]$INFO[VideoPlayer.ChannelName, • ]</label>
             </control>
         </control>
         <!-- 3D -->

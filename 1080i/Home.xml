@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
-
     <backgroundcolor>background</backgroundcolor>
     <!--<onload condition="!StringCompare(System.AddonVersion(skin.sio2x),Skin.String(version))">ActivateWindow(1113)</onload>-->
     <!--<onload>RunScript(script.favourites)</onload>-->
@@ -88,7 +87,7 @@
                     <centerleft>960</centerleft>
                     <onleft>9000</onleft>
                     <onright>9000</onright>
-                    <onup condition="Control.IsVisible(319)">9090</onup>
+                    <onup condition="Control.IsVisible(319)">319</onup>
                     <onup condition="Container(9000).HasFocus(345)">noop</onup>
                     <onup condition="!Container(9000).HasFocus(345)">700</onup>
                     <ondown>noop</ondown>
@@ -97,34 +96,22 @@
                     <itemlayout height="220" width="260">
                         <control type="image" description="gray Base">
                             <visible>Skin.HasSetting(colormenu)</visible>
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>168</height>
+                            <include>homeiconsdef</include>
                             <texture border="40">icons/base.png</texture>
                         </control>
                         <control type="image" description="color">
                             <visible>!Skin.HasSetting(colormenu)</visible>
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>168</height>
+                            <include>homeiconsdef</include>
                             <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
                         </control>
                         <control type="image" description="Thumb">
                             <visible>!IsEmpty(Listitem.thumb)</visible>
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>168</height>
+                            <include>homeiconsdef</include>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                         </control>
                         <control type="image" description="Thumb">
                             <visible>IsEmpty(Listitem.thumb)</visible>
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>168</height>
+                            <include>homeiconsdef</include>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                         </control>
                         <control type="image" description="THMBS weather">
@@ -180,44 +167,29 @@
                     <focusedlayout height="220" width="260">
                         <control type="image" description="gray Base">
                             <visible>Skin.HasSetting(colormenu)</visible>
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>168</height>
+                            <include>homeiconsdef</include>
                             <texture border="40">icons/base.png</texture>
                         </control>
                         <control type="image" description="Color Base">
                             <visible>Skin.HasSetting(colormenu)</visible>
                             <animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
                             <animation effect="fade" start="100" end="0" time="180" reversible="true">Unfocus</animation>
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>168</height>
+                            <include>homeiconsdef</include>
                             <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
                         </control>
                         <control type="image" description="Color Base">
                             <visible>!Skin.HasSetting(colormenu)</visible>
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>168</height>
+                            <include>homeiconsdef</include>
                             <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
                         </control>
                         <control type="image" description="Thumb">
                             <visible>!IsEmpty(Listitem.thumb)</visible>
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>168</height>
+                            <include>homeiconsdef</include>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                         </control>
                         <control type="image" description="Thumb">
                             <visible>IsEmpty(Listitem.thumb)</visible>
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>168</height>
+                            <include>homeiconsdef</include>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                         </control>
                         <control type="image" description="THMBS weather">
@@ -240,10 +212,7 @@
                         <control type="image">
                             <animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
                             <animation effect="fade" start="100" end="0" time="180" reversible="true">Unfocus</animation>
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>168</height>
+                            <include>homeiconsdef</include>
                             <texture border="40">images/atvslider.png</texture>
                             <colordiffuse>main</colordiffuse>
                         </control>
@@ -324,18 +293,6 @@
                 <include>Music</include>
                 <include>Favsshelf</include>
                 <control type="label" description="Top Label">
-                    <!--<visible>-->
-                    <!--[Container(9000).HasFocus(340) + Control.IsVisible(311)] |-->
-                    <!--[Container(9000).HasFocus(341) + Control.IsVisible(312)] |-->
-                    <!--[Container(9000).HasFocus(342) + Control.IsVisible(313)] |-->
-                    <!--[Container(9000).HasFocus(343) + Control.IsVisible(315)] |-->
-                    <!--[Container(9000).HasFocus(352) + Control.IsVisible(314)] |-->
-                    <!--[Container(9000).HasFocus(355) + Control.IsVisible(311)] |-->
-                    <!--[Container(9000).HasFocus(358) + Control.IsVisible(311)] |-->
-                    <!--[Container(9000).HasFocus(359) + Control.IsVisible(311)] |-->
-                    <!--[Container(9000).HasFocus(360) + Control.IsVisible(311)] |-->
-                    <!--Container(9000).HasFocus(345)-->
-                    <!--</visible>-->
                     <include>ShelfTitle</include>
                     <label> $VAR[shelflabel] </label>
                 </control>
@@ -379,14 +336,14 @@
                     <texture colordiffuse="main">wireless.png</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
-                <control type="image" description="BoilerOn">
-                    <visible>!IsEmpty(Window(Home).Property(netatmo_RelayCommand))</visible>
-                    <visible>!StringCompare(Window(Home).Property(netatmo_RelayCommand),0)</visible>
-                    <width>42</width>
-                    <height>48</height>
-                    <texture colordiffuse="red">boiler.png</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
+                <!--<control type="image" description="BoilerOn">-->
+                    <!--<visible>!IsEmpty(Window(Home).Property(netatmo_RelayCommand))</visible>-->
+                    <!--<visible>!StringCompare(Window(Home).Property(netatmo_RelayCommand),0)</visible>-->
+                    <!--<width>42</width>-->
+                    <!--<height>48</height>-->
+                    <!--<texture colordiffuse="red">boiler.png</texture>-->
+                    <!--<aspectratio>keep</aspectratio>-->
+                <!--</control>-->
                 <control type="image">
                     <width>35</width>
                     <height>48</height>
