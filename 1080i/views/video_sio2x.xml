@@ -482,7 +482,7 @@
                     <height>91</height>
                     <width>161</width>
                     <aspectratio>keep</aspectratio>
-                    <texture>resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+                    <texture colordiffuse="main">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
                 </control>
                 <control type="image" description="sfumatura plot">
                     <top>630</top>
@@ -645,7 +645,7 @@
                             <info>ListItem.Overlay</info>
                         </control>
                     </focusedlayout>
-                    <content sortby="year">$INFO[ListItem.Path]</content>
+                    <content target="video" sortby="year">$INFO[ListItem.Path]</content>
                 </control>
                 <control type="image">
                     <top>90</top>

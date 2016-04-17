@@ -186,9 +186,9 @@
     </variable>
 
     <variable name="bgimg">
-        <value condition="!Control.IsVisible(501) + Container.Content(episodes) | Container.Content(seasons)">$INFO[Fanart.Image]</value>
-        <value condition="!IsEmpty(Skin.String(CustomBgHome)) + !Window.IsActive(DialogVideoInfo.xml) + IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
-        <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+        <value condition="!Control.IsVisible(501) + Container.Content(episodes) | Container.Content(seasons)">$INFO[ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(Skin.String(CustomBgHome)) + String.IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="Skin.HasTheme(White)">special://skin/backgrounds/dark_texture.jpg</value>
         <value>special://skin/backgrounds/light_texture.jpg</value>
     </variable>

@@ -40,43 +40,37 @@
                 <lefttexture border="5,1,1,1">progress/ProgressL.png</lefttexture>
             </control>
             <control type="grouplist" id="9000">
-+			<centerleft>960</centerleft>
-+			<top>330</top>
-+			<height>40</height>
-+			<align>center</align>
-+			<itemgap>0</itemgap>
-+			<orientation>horizontal</orientation>
-+			<control type="button" id="11">
-+				<description>OK button</description>
-+				<width>300</width>
-+				<height>40</height>
-+				<label>107</label>
-+				<font>font12_title</font>
-+				<textcolor>white</textcolor>
-+				<focusedcolor>white</focusedcolor>
-+				<align>center</align>
-+			</control>
-+			<control type="button" id="10">
-+				<description>Cancel button</description>
-+				<width>300</width>
-+				<height>40</height>
-+				<label>106</label>
-+				<font>font12_title</font>
-+				<textcolor>white</textcolor>
-+				<focusedcolor>white</focusedcolor>
-+				<align>center</align>
-+			</control>
-+			<control type="button" id="12">
-+				<description>Custom button</description>
-+				<width>300</width>
-+				<height>40</height>
-+				<label>106</label>
-+				<font>font12_title</font>
-+				<textcolor>white</textcolor>
-+				<focusedcolor>white</focusedcolor>
-+				<align>center</align>
-+			</control>
-+		</control>
+                <width>960</width>
+                <top>330</top>
+                <height>60</height>
+                <align>center</align>
+                <itemgap>0</itemgap>
+                <orientation>horizontal</orientation>
+                <control type="button" id="11">
+                    <description>OK button</description>
+                    <width>300</width>
+                    <label>107</label>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <align>center</align>
+                </control>
+                <control type="button" id="10">
+                    <description>Cancel button</description>
+                    <width>300</width>
+                    <label>106</label>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <align>center</align>
+                </control>
+                <control type="button" id="12">
+                    <description>Custom button</description>
+                    <width>300</width>
+                    <label>106</label>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <align>center</align>
+                </control>
+            </control>
         </control>
     </controls>
 </window>

@@ -3,9 +3,14 @@
     <!--TODO check if i want extendedinfo-->
     <!--<onload condition="true">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID])</onload>-->
     <defaultcontrol always="false">8</defaultcontrol>
-    <backgroundcolor>0xffffffff</backgroundcolor>
+    <backgroundcolor>ffffffff</backgroundcolor>
     <include>OpenClose</include>
     <controls>
+        <control type="image">
+            <width>1920</width>
+            <height>1080</height>
+            <texture>images/white.png</texture>
+        </control>
         <include>BlackBackground</include>
         <control type="group" description="Poster">
             <control type="image" description="Thumb">
