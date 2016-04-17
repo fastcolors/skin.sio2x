@@ -9,7 +9,7 @@
         <focusedcolor>main</focusedcolor>
         <selectedcolor>orange</selectedcolor>
         <disabledcolor>dimgray</disabledcolor>
-        <shadowcolor>inverted</shadowcolor>
+        <shadowcolor>-</shadowcolor>
         <scroll>true</scroll>
         <scrollspeed>50</scrollspeed>
         <scrollsuffix> • </scrollsuffix>

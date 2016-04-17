@@ -2,14 +2,14 @@
 <includes>
     <include name="MoviesShortcutsCommons">
         <include>ShelfFade</include>
-        <top>45</top>
+        <top>75</top>
         <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="350" width="320">
+        <itemlayout height="350" width="370">
             <control type="image">
-                <centerleft>160</centerleft>
+                <centerleft>185</centerleft>
                 <top>22</top>
                 <width>274</width>
                 <height>410</height>
@@ -18,7 +18,7 @@
             </control>
             <control type="progress" description="progress">
                 <visible>ListItem.IsResumable</visible>
-                <left>23</left>
+                <centerleft>185</centerleft>
                 <top>424</top>
                 <width>274</width>
                 <height>8</height>
@@ -27,17 +27,18 @@
                 <info>ListItem.PercentPlayed</info>
             </control>
             <control type="image">
-                <centerleft>160</centerleft>
+                <centerleft>185</centerleft>
                 <top>22</top>
                 <width>274</width>
                 <height>410</height>
                 <texture>$VAR[dvdbox]</texture>
             </control>
         </itemlayout>
-        <focusedlayout height="420" width="320">
+        <focusedlayout height="420" width="370">
             <control type="group">
+                <include>selection</include>
                 <control type="image">
-                    <centerleft>160</centerleft>
+                    <centerleft>185</centerleft>
                     <top>22</top>
                     <width>274</width>
                     <height>410</height>
@@ -46,7 +47,7 @@
                 </control>
                 <control type="progress" description="progress">
                     <visible>ListItem.IsResumable</visible>
-                    <left>23</left>
+                    <centerleft>185</centerleft>
                     <top>424</top>
                     <width>274</width>
                     <height>8</height>
@@ -55,7 +56,7 @@
                     <info>ListItem.PercentPlayed</info>
                 </control>
                 <control type="image">
-                    <centerleft>160</centerleft>
+                    <centerleft>185</centerleft>
                     <top>22</top>
                     <width>274</width>
                     <height>410</height>
@@ -65,7 +66,7 @@
                     <animation effect="fade" start="100" end="0" time="100">Unfocus</animation>
                     <animation effect="fade" start="0" end="100" time="150" delay="80">Focus</animation>
                     <control type="image">
-                        <centerleft>160</centerleft>
+                        <centerleft>185</centerleft>
                         <top>22</top>
                         <width>274</width>
                         <height>410</height>
@@ -73,7 +74,7 @@
                     </control>
                     <control type="textbox">
                         <visible>![Container(9000).HasFocus(359) | Container(9000).HasFocus(360)]</visible>
-                        <centerleft>160</centerleft>
+                        <centerleft>185</centerleft>
                         <top>28</top>
                         <width>268</width>
                         <height>400</height>
@@ -86,7 +87,7 @@
                     </control>
                     <control type="textbox">
                         <visible>Container(9000).HasFocus(359) | Container(9000).HasFocus(360)</visible>
-                        <centerleft>160</centerleft>
+                        <centerleft>185</centerleft>
                         <top>28</top>
                         <width>268</width>
                         <height>400</height>
@@ -111,16 +112,16 @@
     </include>
     <include name="FavShortcutsCommons">
         <include>ShelfFade</include>
-        <top>45</top>
+        <top>75</top>
         <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="350" width="320" condition="Control.IsVisible(319)">
+        <itemlayout height="350" width="370" condition="Control.IsVisible(319)">
             <control type="group">
                 <control type="group">
                     <control type="image">
-                        <centerleft>160</centerleft>
+                        <centerleft>185</centerleft>
                         <top>18</top>
                         <width>274</width>
                         <height>410</height>
@@ -128,7 +129,7 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
-                        <centerleft>160</centerleft>
+                        <centerleft>185</centerleft>
                         <top>145</top>
                         <width>240</width>
                         <height>240</height>
@@ -138,7 +139,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
-                        <centerleft>160</centerleft>
+                        <centerleft>185</centerleft>
                         <top>18</top>
                         <width>274</width>
                         <height>410</height>
@@ -147,7 +148,7 @@
                     </control>
                 </control>
                 <control type="textbox">
-                    <centerleft>160</centerleft>
+                    <centerleft>185</centerleft>
                     <top>28</top>
                     <width>244</width>
                     <height>117</height>
@@ -158,10 +159,11 @@
                 </control>
             </control>
         </itemlayout>
-        <focusedlayout height="420" width="320" condition="Control.IsVisible(319)">
+        <focusedlayout height="420" width="370" condition="Control.IsVisible(319)">
             <control type="group">
+                <include>selection</include>
                 <control type="image">
-                    <centerleft>160</centerleft>
+                    <centerleft>185</centerleft>
                     <top>18</top>
                     <width>274</width>
                     <height>410</height>
@@ -169,7 +171,7 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
-                    <centerleft>160</centerleft>
+                    <centerleft>185</centerleft>
                     <top>145</top>
                     <width>240</width>
                     <height>240</height>
@@ -179,7 +181,7 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="image">
-                    <centerleft>160</centerleft>
+                    <centerleft>185</centerleft>
                     <top>18</top>
                     <width>274</width>
                     <height>410</height>
@@ -187,7 +189,7 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="textbox">
-                    <centerleft>160</centerleft>
+                    <centerleft>185</centerleft>
                     <top>28</top>
                     <width>244</width>
                     <height>117</height>
@@ -201,7 +203,7 @@
     </include>
     <include name="SquareShortcutsCommons">
         <include>ShelfFade</include>
-        <top>55</top>
+        <top>85</top>
         <width>1920</width>
         <height>450</height>
         <onup>9009</onup>
@@ -213,24 +215,61 @@
         <scrolltime>400</scrolltime>
         <itemlayout height="357" width="384">
             <control type="image">
-                <left>30</left>
+                <centerleft>192</centerleft>
                 <top>46</top>
-                <width>324</width>
-                <height>324</height>
+                <width>310</width>
+                <height>310</height>
                 <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <left>30</left>
+                <centerleft>192</centerleft>
                 <top>46</top>
-                <width>324</width>
-                <height>324</height>
+                <width>310</width>
+                <height>310</height>
                 <texture border="4">$VAR[dvdbox]</texture>
             </control>
+            <control type="label" description="Artist or Type">
+                <top>8</top>
+                <centerleft>192</centerleft>
+                <width>384</width>
+                <height>30</height>
+                <font>size24B</font>
+                <label>$INFO[ListItem.Property(ItemType)]$INFO[ListItem.Artist]</label>
+                <align>center</align>
+            </control>
+            <control type="textbox" description="Title">
+                <centerleft>192</centerleft>
+                <top>370</top>
+                <width>350</width>
+                <height>62</height>
+                <font>size24B</font>
+                <autoscroll>false</autoscroll>
+                <label>$INFO[ListItem.Label]</label>
+                <align>center</align>
+            </control>
+        </itemlayout>
+        <focusedlayout height="357" width="384">
             <control type="group">
-                <animation effect="fade" end="67" time="0" condition="true">Conditional</animation>
+                <include>selection</include>
+                <control type="image">
+                    <centerleft>192</centerleft>
+                    <top>46</top>
+                    <width>310</width>
+                    <height>310</height>
+                    <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="image">
+                    <centerleft>192</centerleft>
+                    <top>46</top>
+                    <width>310</width>
+                    <height>310</height>
+                    <texture border="4">$VAR[dvdbox]</texture>
+                </control>
                 <control type="label" description="Artist or Type">
                     <top>8</top>
+                    <centerleft>192</centerleft>
                     <width>384</width>
                     <height>30</height>
                     <font>size24B</font>
@@ -238,45 +277,9 @@
                     <align>center</align>
                 </control>
                 <control type="textbox" description="Title">
+                    <centerleft>192</centerleft>
                     <top>370</top>
-                    <width>384</width>
-                    <height>62</height>
-                    <font>size24B</font>
-                    <autoscroll>false</autoscroll>
-                    <label>$INFO[ListItem.Label]</label>
-                    <align>center</align>
-                </control>
-            </control>
-        </itemlayout>
-        <focusedlayout height="357" width="384">
-            <control type="image">
-                <left>30</left>
-                <top>46</top>
-                <width>324</width>
-                <height>324</height>
-                <texture fallback="DefaultAlbumcover.png" background="true">$INFO[ListItem.Thumb]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <left>30</left>
-                <top>46</top>
-                <width>324</width>
-                <height>324</height>
-                <texture border="4">$VAR[dvdbox]</texture>
-            </control>
-            <control type="group">
-                <animation effect="fade" start="67" end="100" time="250" delay="250" reversible="false">Focus</animation>
-                <control type="label" description="Artist or Type">
-                    <top>8</top>
-                    <width>384</width>
-                    <height>30</height>
-                    <font>size24B</font>
-                    <label>$INFO[ListItem.Property(ItemType)]$INFO[ListItem.Artist]</label>
-                    <align>center</align>
-                </control>
-                <control type="textbox" description="Album">
-                    <top>370</top>
-                    <width>384</width>
+                    <width>350</width>
                     <height>62</height>
                     <font>size24B</font>
                     <autoscroll>false</autoscroll>
@@ -288,7 +291,7 @@
     </include>
     <include name="EpisodeShortcutsCommons">
         <include>ShelfFade</include>
-        <top>30</top>
+        <top>60</top>
         <width>1920</width>
         <height>452</height>
         <orientation>horizontal</orientation>
@@ -447,7 +450,7 @@
     </include>
     <include name="EpisodeNextCommons">
         <include>ShelfFade</include>
-        <top>45</top>
+        <top>75</top>
         <width>1920</width>
         <height>450</height>
         <orientation>horizontal</orientation>
@@ -594,40 +597,6 @@
             <label>$INFO[ListItem.Property(conds)]</label>
         </control>
     </include>
-    <include name="movshelslider">
-        <control type="image">
-            <visible>Control.HasFocus(311)</visible>
-            <left>110</left>
-            <top>489</top>
-            <width>100</width>
-            <height>10</height>
-            <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
-            <animation effect="fade" time="220">VisibleChange</animation>
-            <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(1) | Container(311).Position(7) | Container(311).Position(13)" effect="slide" start="0,0" end="320,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(2) | Container(311).Position(8) | Container(311).Position(14)" effect="slide" start="0,0" end="640,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(3) | Container(311).Position(9) | Container(311).Position(15)" effect="slide" start="0,0" end="960,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(4) | Container(311).Position(10) | Container(311).Position(16)" effect="slide" start="0,0" end="1280,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(311).Position(5) | Container(311).Position(11) | Container(311).Position(17)" effect="slide" start="0,0" end="1600,0" time="220" easing="inout" reversible="true">Conditional</animation>
-        </control>
-    </include>
-    <include name="tvshelslider">
-        <control type="image">
-            <visible>Control.HasFocus(312)</visible>
-            <centerleft>192</centerleft>
-            <top>489</top>
-            <width>100</width>
-            <height>10</height>
-            <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <animation effect="fade" time="220">VisibleChange</animation>
-            <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="384,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="768,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1154,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1536,0" time="220" easing="inout" reversible="true">Conditional</animation>
-        </control>
-    </include>
     <include name="Movies">
         <control type="panel" id="311" description="Movies Shelf Shortcuts">
             <visible>
@@ -655,7 +624,6 @@
             <include>MoviesShortcutsCommons</include>
             <content target="video">$VAR[shelfmovies]</content>
         </control>
-        <include>movshelslider</include>
     </include>
     <include name="TV">
         <control type="panel" id="312" description="TOP Shortcuts">
@@ -668,7 +636,6 @@
             <include>EpisodeShortcutsCommons</include>
             <content target="video">$VAR[shelfTV]</content>
         </control>
-        <include>tvshelslider</include>
     </include>
     <include name="TV_NA">
         <control type="group">
@@ -782,7 +749,6 @@
                     </item-->
                 </content>
             </control>
-            <include>tvshelslider</include>
         </control>
     </include>
     <include name="Music">
@@ -792,21 +758,6 @@
                 <visible>[Container(9000).HasFocus(342) | Control.HasFocus(313)] + !StringCompare(Skin.String(musicshelf),mushoff)</visible>
                 <include>SquareShortcutsCommons</include>
                 <content target="music">$VAR[musicshelfcontent]</content>
-            </control>
-            <control type="image">
-                <visible>Control.HasFocus(313)</visible>
-                <left>142</left>
-                <top>489</top>
-                <width>100</width>
-                <height>10</height>
-                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(313).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(313).Position(1)" effect="slide" start="0,0" end="384,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(313).Position(2)" effect="slide" start="0,0" end="768,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(313).Position(3)" effect="slide" start="0,0" end="1152,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(313).Position(4)" effect="slide" start="0,0" end="1536,0" time="220" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>
@@ -821,21 +772,6 @@
                 <visible>[Container(9000).HasFocus(343) | Control.HasFocus(315)] + StringCompare(Skin.String(addonsshelf),1)</visible>
                 <include>SquareShortcutsCommons</include>
                 <content target="music">$VAR[addonsshelfcontent]</content>
-            </control>
-            <control type="image">
-                <visible>Control.HasFocus(315)</visible>
-                <left>142</left>
-                <top>489</top>
-                <width>100</width>
-                <height>10</height>
-                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(315).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(1)" effect="slide" start="0,0" end="384,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(2)" effect="slide" start="0,0" end="768,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(3)" effect="slide" start="0,0" end="1152,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(4)" effect="slide" start="0,0" end="1536,0" time="220" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>
@@ -991,21 +927,6 @@
                     </item>
                 </content>
             </control>
-            <control type="image">
-                <visible>Control.HasFocus(315)</visible>
-                <left>142</left>
-                <top>489</top>
-                <width>100</width>
-                <height>10</height>
-                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(315).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(1)" effect="slide" start="0,0" end="384,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(2)" effect="slide" start="0,0" end="768,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(3)" effect="slide" start="0,0" end="1152,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(315).Position(4)" effect="slide" start="0,0" end="1536,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            </control>
         </control>
     </include>
     <include name="VAddons_Shortcuts">
@@ -1124,21 +1045,6 @@
                         <property name="ItemType">$LOCALIZE[24009]</property>
                     </item>
                 </content>
-            </control>
-            <control type="image">
-                <visible>Control.HasFocus(317)</visible>
-                <left>142</left>
-                <top>489</top>
-                <width>100</width>
-                <height>10</height>
-                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(317).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(317).Position(1)" effect="slide" start="0,0" end="384,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(317).Position(2)" effect="slide" start="0,0" end="768,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(317).Position(3)" effect="slide" start="0,0" end="1152,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(317).Position(4)" effect="slide" start="0,0" end="1536,0" time="220" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>
@@ -1272,21 +1178,6 @@
                 </item>
             </content>
         </control>
-            <control type="image">
-                <visible>Control.HasFocus(314)</visible>
-                <left>142</left>
-                <top>489</top>
-                <width>100</width>
-                <height>10</height>
-                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(314).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(314).Position(1)" effect="slide" start="0,0" end="384,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(314).Position(2)" effect="slide" start="0,0" end="768,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(314).Position(3)" effect="slide" start="0,0" end="1152,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(314).Position(4)" effect="slide" start="0,0" end="1536,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            </control>
         </control>
     </include>
     <include name="weather_shelf">
@@ -1457,37 +1348,21 @@
                 <content>favourites://</content>
             </control>
             <!--<control type="button" id="9090" description="FakeButton">-->
-                <!--<visible>Container(9000).HasFocus(352)</visible>-->
-                <!--<left>-20</left>-->
-                <!--<top>-20</top>-->
-                <!--<height>100</height>-->
-                <!--<width>1000</width>-->
-                <!--<texturefocus>-</texturefocus>-->
-                <!--<texturenofocus>-</texturenofocus>-->
-                <!--<font>Size33</font>-->
-                <!--<onup>noop</onup>-->
-                <!--<ondown>9000</ondown>-->
-                <!--<onleft>Control.Move(319,-1)</onleft>-->
-                <!--<onright>Control.Move(319,1)</onright>-->
-                <!--<label>-</label>-->
-                <!--<onclick>$INFO[Container(319).ListItem.FileNameAndPath]</onclick>-->
+            <!--<visible>Container(9000).HasFocus(352)</visible>-->
+            <!--<left>-20</left>-->
+            <!--<top>-20</top>-->
+            <!--<height>100</height>-->
+            <!--<width>1000</width>-->
+            <!--<texturefocus>-</texturefocus>-->
+            <!--<texturenofocus>-</texturenofocus>-->
+            <!--<font>Size33</font>-->
+            <!--<onup>noop</onup>-->
+            <!--<ondown>9000</ondown>-->
+            <!--<onleft>Control.Move(319,-1)</onleft>-->
+            <!--<onright>Control.Move(319,1)</onright>-->
+            <!--<label>-</label>-->
+            <!--<onclick>$INFO[Container(319).ListItem.FileNameAndPath]</onclick>-->
             <!--</control>-->
-            <control type="image">
-                <visible>Control.HasFocus(319)</visible>
-                <left>110</left>
-                <top>489</top>
-                <width>100</width>
-                <height>10</height>
-                <texture colordiffuse="$VAR[diffuseselectshelf]">images/dockfocus.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <animation effect="fade" time="220">VisibleChange</animation>
-                <animation condition="Container(319).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(1) | Container(319).Position(7) | Container(319).Position(13)" effect="slide" start="0,0" end="320,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(2) | Container(319).Position(8) | Container(319).Position(14)" effect="slide" start="0,0" end="640,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(3) | Container(319).Position(9) | Container(319).Position(15)" effect="slide" start="0,0" end="960,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(4) | Container(319).Position(10) | Container(319).Position(16)" effect="slide" start="0,0" end="1280,0" time="220" easing="inout" reversible="true">Conditional</animation>
-                <animation condition="Container(319).Position(5) | Container(319).Position(11) | Container(319).Position(17)" effect="slide" start="0,0" end="1600,0" time="220" easing="inout" reversible="true">Conditional</animation>
-            </control>
         </control>
     </include>
     <include name="EPG_shelf">

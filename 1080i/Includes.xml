@@ -750,4 +750,8 @@
         <width>220</width>
         <height>168</height>
     </include>
+
+    <include name="selection">
+        <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation></include>
 </includes>

@@ -79,7 +79,7 @@
             <!--<label>FUCK</label>-->
             <!--</control>-->
             <control type="group" description="Furniture">
-                <top>480</top>
+                <top>510</top>
                 <control type="panel" id="9000" description="ICONE">
                     <width>1820</width>
                     <height>1080</height>
@@ -165,100 +165,89 @@
                         </control>
                     </itemlayout>
                     <focusedlayout height="220" width="260">
-                        <control type="image" description="gray Base">
-                            <visible>Skin.HasSetting(colormenu)</visible>
-                            <include>homeiconsdef</include>
-                            <texture border="40">icons/base.png</texture>
-                        </control>
-                        <control type="image" description="Color Base">
-                            <visible>Skin.HasSetting(colormenu)</visible>
-                            <animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="180" reversible="true">Unfocus</animation>
-                            <include>homeiconsdef</include>
-                            <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
-                        </control>
-                        <control type="image" description="Color Base">
-                            <visible>!Skin.HasSetting(colormenu)</visible>
-                            <include>homeiconsdef</include>
-                            <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
-                        </control>
-                        <control type="image" description="Thumb">
-                            <visible>!IsEmpty(Listitem.thumb)</visible>
-                            <include>homeiconsdef</include>
-                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
-                        </control>
-                        <control type="image" description="Thumb">
-                            <visible>IsEmpty(Listitem.thumb)</visible>
-                            <include>homeiconsdef</include>
-                            <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
-                        </control>
-                        <control type="image" description="THMBS weather">
-                            <centerleft>130</centerleft>
-                            <centertop>110</centertop>
-                            <width>220</width>
-                            <height>138</height>
-                            <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
-                            <aspectratio>keep</aspectratio>
-                        </control>
-                        <control type="label">
-                            <centerleft>130</centerleft>
-                            <top>198</top>
-                            <width>240</width>
-                            <height>24</height>
-                            <font>size24</font>
-                            <align>center</align>
-                            <label>[B]$INFO[ListItem.label][/B]</label>
-                        </control>
-                        <control type="image">
-                            <animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
-                            <animation effect="fade" start="100" end="0" time="180" reversible="true">Unfocus</animation>
-                            <include>homeiconsdef</include>
-                            <texture border="40">images/atvslider.png</texture>
-                            <colordiffuse>main</colordiffuse>
-                        </control>
                         <control type="group">
-                            <visible>!Skin.HasSetting(unwatchedbadge)</visible>
-                            <visible>IntegerGreaterThan(ListItem.Property(unwatched),0)</visible>
-                            <animation effect="zoom" center="230,47" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
-                            <top>20</top>
-                            <control type="image">
-                                <visible>!IntegerGreaterThan(ListItem.Property(unwatched),999)</visible>
-                                <centerleft>230</centerleft>
-                                <height>55</height>
-                                <width>55</width>
-                                <aspectratio>keep</aspectratio>
-                                <texture>badges/badgecount.png</texture>
+                            <include>selection</include>
+                            <control type="image" description="gray Base">
+                                <visible>Skin.HasSetting(colormenu)</visible>
+                                <include>homeiconsdef</include>
+                                <texture border="40">icons/base.png</texture>
                             </control>
-                            <control type="image">
-                                <visible>IntegerGreaterThan(ListItem.Property(unwatched),999)</visible>
-                                <centerleft>230</centerleft>
-                                <height>55</height>
-                                <width>75</width>
-                                <!--<aspectratio>keep</aspectratio>-->
-                                <texture border="25">badges/badgecount.png</texture>
+                            <control type="image" description="Color Base">
+                                <visible>Skin.HasSetting(colormenu)</visible>
+                                <animation effect="fade" start="0" end="100" time="100" delay="100" reversible="false">Focus</animation>
+                                <animation effect="fade" start="100" end="0" time="180" reversible="true">Unfocus</animation>
+                                <include>homeiconsdef</include>
+                                <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
+                            </control>
+                            <control type="image" description="Color Base">
+                                <visible>!Skin.HasSetting(colormenu)</visible>
+                                <include>homeiconsdef</include>
+                                <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
+                            </control>
+                            <control type="image" description="Thumb">
+                                <visible>!IsEmpty(Listitem.thumb)</visible>
+                                <include>homeiconsdef</include>
+                                <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
+                            </control>
+                            <control type="image" description="Thumb">
+                                <visible>IsEmpty(Listitem.thumb)</visible>
+                                <include>homeiconsdef</include>
+                                <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
+                            </control>
+                            <control type="image" description="THMBS weather">
+                                <centerleft>130</centerleft>
+                                <centertop>110</centertop>
+                                <width>220</width>
+                                <height>138</height>
+                                <texture>$INFO[ListItem.Property(weatherthumb)]</texture>
+                                <aspectratio>keep</aspectratio>
                             </control>
                             <control type="label">
-                                <centerleft>230</centerleft>
-                                <height>55</height>
-                                <width>65</width>
-                                <font>size21</font>
+                                <centerleft>130</centerleft>
+                                <top>198</top>
+                                <width>240</width>
+                                <height>24</height>
+                                <font>size24</font>
                                 <align>center</align>
-                                <textcolor>white</textcolor>
-                                <shadowcolor>-</shadowcolor>
-                                <label>[B]$INFO[ListItem.Property(unwatched)][/B]</label>
+                                <label>[B]$INFO[ListItem.label][/B]</label>
+                            </control>
+                            <control type="group">
+                                <visible>!Skin.HasSetting(unwatchedbadge)</visible>
+                                <visible>IntegerGreaterThan(ListItem.Property(unwatched),0)</visible>
+                                <animation effect="zoom" center="230,47" start="0" end="100" time="300" tween="Back" easing="Out">Visible</animation>
+                                <top>20</top>
+                                <control type="image">
+                                    <visible>!IntegerGreaterThan(ListItem.Property(unwatched),999)</visible>
+                                    <centerleft>230</centerleft>
+                                    <height>55</height>
+                                    <width>55</width>
+                                    <aspectratio>keep</aspectratio>
+                                    <texture>badges/badgecount.png</texture>
+                                </control>
+                                <control type="image">
+                                    <visible>IntegerGreaterThan(ListItem.Property(unwatched),999)</visible>
+                                    <centerleft>230</centerleft>
+                                    <height>55</height>
+                                    <width>75</width>
+                                    <!--<aspectratio>keep</aspectratio>-->
+                                    <texture border="25">badges/badgecount.png</texture>
+                                </control>
+                                <control type="label">
+                                    <centerleft>230</centerleft>
+                                    <height>55</height>
+                                    <width>65</width>
+                                    <font>size21</font>
+                                    <align>center</align>
+                                    <textcolor>white</textcolor>
+                                    <shadowcolor>-</shadowcolor>
+                                    <label>[B]$INFO[ListItem.Property(unwatched)][/B]</label>
+                                </control>
                             </control>
                         </control>
                     </focusedlayout>
                     <content>
                         <include>homepanel</include>
                     </content>
-                </control>
-                <control type="image" description="Line">
-                    <top>18</top>
-                    <width>1920</width>
-                    <height>1</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture colordiffuse="$VAR[diffuseselectshelf]">lines/Line1.png</texture>
                 </control>
                 <control type="image" description="Line">
                     <top>52</top>
@@ -337,12 +326,12 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                 <!--<control type="image" description="BoilerOn">-->
-                    <!--<visible>!IsEmpty(Window(Home).Property(netatmo_RelayCommand))</visible>-->
-                    <!--<visible>!StringCompare(Window(Home).Property(netatmo_RelayCommand),0)</visible>-->
-                    <!--<width>42</width>-->
-                    <!--<height>48</height>-->
-                    <!--<texture colordiffuse="red">boiler.png</texture>-->
-                    <!--<aspectratio>keep</aspectratio>-->
+                <!--<visible>!IsEmpty(Window(Home).Property(netatmo_RelayCommand))</visible>-->
+                <!--<visible>!StringCompare(Window(Home).Property(netatmo_RelayCommand),0)</visible>-->
+                <!--<width>42</width>-->
+                <!--<height>48</height>-->
+                <!--<texture colordiffuse="red">boiler.png</texture>-->
+                <!--<aspectratio>keep</aspectratio>-->
                 <!--</control>-->
                 <control type="image">
                     <width>35</width>
