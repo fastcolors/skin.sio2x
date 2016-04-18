@@ -296,96 +296,86 @@
         <height>452</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout height="357" width="384">
-            <control type="group">
-                <!--<animation effect="zoom" condition="true" start="100" end="90" center="240,180">Conditional</animation>-->
-                <control type="image">
-                    <left>23</left>
-                    <top>156</top>
-                    <width>335</width>
-                    <height>254</height>
-                    <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                </control>
-                <control type="image">
-                    <visible>!IsEmpty(ListItem.Art(tvshow.banner))</visible>
-                    <left>23</left>
-                    <top>75</top>
-                    <width>335</width>
-                    <height>73</height>
-                    <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
-                </control>
-                <control type="image">
-                    <visible>IsEmpty(ListItem.Art(tvshow.banner))</visible>
-                    <left>23</left>
-                    <top>75</top>
-                    <width>335</width>
-                    <height>73</height>
-                    <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(banner)]</texture>
-                </control>
-                <control type="progress" description="progress">
-                    <visible>ListItem.IsResumable</visible>
-                    <left>24</left>
-                    <top>148</top>
-                    <width>335</width>
-                    <height>8</height>
-                    <texturebg>images/transparent.png</texturebg>
-                    <midtexture border="1">images/white.png</midtexture>
-                    <info>ListItem.PercentPlayed</info>
-                </control>
-                <control type="image">
-                    <left>21</left>
-                    <top>73</top>
-                    <width>339</width>
-                    <height>339</height>
-                    <texture border="20" colordiffuse="7AFFFFFF">images/soapshelf.png</texture>
-                </control>
-                <control type="label">
-                    <centerleft>192</centerleft>
-                    <top>30</top>
-                    <width>335</width>
-                    <height>40</height>
-                    <font>size24</font>
-                    <scroll>false</scroll>
-                    <textcolor>maindim</textcolor>
-                    <label>[B]$INFO[ListItem.Title][/B]</label>
-                    <align>center</align>
-                </control>
-                <control type="label">
-                    <!--<visible>!StringCompare(Skin.String(TVshelf),1)</visible>-->
-                    <top>420</top>
-                    <centerleft>192</centerleft>
-                    <width>335</width>
-                    <height>36</height>
-                    <font>size26</font>
-                    <textcolor>maindim</textcolor>
-                    <label>[B][UPPERCASE]$INFO[ListItem.Season,S , • ]$INFO[ListItem.Episode,E ][/UPPERCASE][/B]</label>
-                    <align>center</align>
-                </control>
-                <control type="image" description="Studio">
-                    <left>15</left>
-                    <top>310</top>
-                    <width>161</width>
-                    <height>109</height>
-                    <texture colordiffuse="main">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
-                </control>
+        <itemlayout height="357" width="400">
+            <control type="image">
+                <centerleft>210</centerleft>
+                <top>156</top>
+                <width>335</width>
+                <height>200</height>
+                <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
+                <aspectratio scalediffuse="false">scale</aspectratio>
+            </control>
+            <control type="image">
+                <visible>!IsEmpty(ListItem.Art(tvshow.banner))</visible>
+                <centerleft>210</centerleft>
+                <top>75</top>
+                <width>335</width>
+                <height>73</height>
+                <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(tvshow.banner)]</texture>
+            </control>
+            <control type="image">
+                <visible>IsEmpty(ListItem.Art(tvshow.banner))</visible>
+                <centerleft>210</centerleft>
+                <top>75</top>
+                <width>335</width>
+                <height>73</height>
+                <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(banner)]</texture>
+            </control>
+            <control type="progress" description="progress">
+                <!--<visible>ListItem.IsResumable</visible>-->
+                <centerleft>210</centerleft>
+                <top>148</top>
+                <width>335</width>
+                <height>8</height>
+                <texturebg>images/black.png</texturebg>
+                <midtexture border="1">images/white.png</midtexture>
+                <info>ListItem.PercentPlayed</info>
+            </control>
+            <control type="label">
+                <centerleft>210</centerleft>
+                <top>30</top>
+                <width>335</width>
+                <height>40</height>
+                <font>size24</font>
+                <scroll>false</scroll>
+                <textcolor>maindim</textcolor>
+                <label>[B]$INFO[ListItem.Title][/B]</label>
+                <align>center</align>
+            </control>
+            <control type="label">
+                <!--<visible>!StringCompare(Skin.String(TVshelf),1)</visible>-->
+                <top>370</top>
+                <centerleft>210</centerleft>
+                <width>335</width>
+                <height>36</height>
+                <font>size26</font>
+                <textcolor>maindim</textcolor>
+                <label>[B][UPPERCASE]$INFO[ListItem.Season,S , • ]$INFO[ListItem.Episode,E ][/UPPERCASE][/B]</label>
+                <align>center</align>
+            </control>
+            <control type="image" description="Studio">
+                <left>40</left>
+                <top>280</top>
+                <width>120</width>
+                <height>80</height>
+                <texture colordiffuse="white">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+                <aspectratio>keep</aspectratio>
             </control>
         </itemlayout>
-        <focusedlayout height="357" width="480">
+        <focusedlayout height="357" width="400">
             <control type="group">
-                <!--<animation effect="zoom" start="90" end="100" center="240,180" time="200">Focus</animation>-->
-                <!--<animation effect="zoom" start="100" end="90" center="240,180" time="100">Unfocus</animation>-->
+                <include>selection</include>
                 <control type="image">
-                    <left>23</left>
+                    <centerleft>210</centerleft>
                     <top>156</top>
                     <width>335</width>
-                    <height>254</height>
+                    <height>200</height>
                     <texture background="true" diffuse="images/EpisodesBottom.png">$INFO[ListItem.Thumb]</texture>
                     <aspectratio scalediffuse="false">scale</aspectratio>
                 </control>
                 <control type="image">
                     <visible>!IsEmpty(ListItem.Art(tvshow.banner))</visible>
-                    <left>23</left>
+                    <centerleft>210</centerleft>
                     <top>75</top>
                     <width>335</width>
                     <height>73</height>
@@ -393,31 +383,24 @@
                 </control>
                 <control type="image">
                     <visible>IsEmpty(ListItem.Art(tvshow.banner))</visible>
-                    <left>23</left>
+                    <centerleft>210</centerleft>
                     <top>75</top>
                     <width>335</width>
                     <height>73</height>
                     <texture diffuse="images/EpisodesTop.png">$INFO[ListItem.Art(banner)]</texture>
                 </control>
                 <control type="progress" description="progress">
-                    <visible>ListItem.IsResumable</visible>
-                    <left>24</left>
+                    <!--<visible>ListItem.IsResumable</visible>-->
+                    <centerleft>210</centerleft>
                     <top>148</top>
                     <width>335</width>
                     <height>8</height>
-                    <texturebg>images/transparent.png</texturebg>
+                    <texturebg>images/black.png</texturebg>
                     <midtexture border="1">images/white.png</midtexture>
                     <info>ListItem.PercentPlayed</info>
                 </control>
-                <control type="image">
-                    <left>21</left>
-                    <top>73</top>
-                    <width>339</width>
-                    <height>339</height>
-                    <texture border="20" colordiffuse="$VAR[diffuseselectshelf]">images/soapshelf.png</texture>
-                </control>
                 <control type="label">
-                    <centerleft>192</centerleft>
+                    <centerleft>210</centerleft>
                     <top>30</top>
                     <width>335</width>
                     <height>40</height>
@@ -429,8 +412,8 @@
                 </control>
                 <control type="label">
                     <!--<visible>!StringCompare(Skin.String(TVshelf),1)</visible>-->
-                    <top>420</top>
-                    <centerleft>192</centerleft>
+                    <top>370</top>
+                    <centerleft>210</centerleft>
                     <width>335</width>
                     <height>36</height>
                     <font>size26</font>
@@ -439,11 +422,12 @@
                     <align>center</align>
                 </control>
                 <control type="image" description="Studio">
-                    <left>15</left>
-                    <top>310</top>
-                    <width>161</width>
-                    <height>109</height>
-                    <texture colordiffuse="main">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+                    <left>40</left>
+                    <top>280</top>
+                    <width>120</width>
+                    <height>80</height>
+                    <texture colordiffuse="white">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+                    <aspectratio>keep</aspectratio>
                 </control>
             </control>
         </focusedlayout>

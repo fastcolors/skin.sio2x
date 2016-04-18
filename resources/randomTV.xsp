@@ -2,6 +2,6 @@
 <smartplaylist type="episodes">
     <name>Random</name>
     <match>all</match>
-    <limit>5</limit>
+    <limit>10</limit>
     <order>random</order>
 </smartplaylist>
