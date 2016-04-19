@@ -44,6 +44,8 @@
         <aspectratio>stretch</aspectratio>
     </default>
     <default type="button">
+        <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="110" end="100" time="120" center="auto">unFocus</animation>
         <width>390</width>
         <height>75</height>
         <align>center</align>

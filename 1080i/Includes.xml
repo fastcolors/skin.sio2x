@@ -29,23 +29,26 @@
         <animation effect="slide" start="-520,0" end="0,0" time="300" reversible="false">visiblechange</animation>
     </include>
     <include name="BlackBackground">
-        <control type="group">
-            <control type="image" description="Default BG">
-                <visible>!Window.IsActive(Home.xml)</visible>
-                <width>1920</width>
-                <height>1080</height>
-                <fadetime>200</fadetime>
-                <texture>$VAR[bgimg]</texture>
-                <aspectratio align="left">scale</aspectratio>
-                <colordiffuse>40ffffff</colordiffuse>
-            </control>
-            <control type="image" description="Default BG">
-                <visible>Window.IsActive(Home.xml) | String.IsEmpty(ListItem.Art(fanart))</visible>
-                <width>1920</width>
-                <height>1080</height>
-                <fadetime>200</fadetime>
-                <texture background="true">$VAR[bgimg]</texture>
-            </control>
+        <control type="image" description="Default BG">
+            <width>1920</width>
+            <height>1080</height>
+            <texture>images/white.png</texture>
+        </control>
+        <control type="image" description="Default BG">
+            <visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
+            <width>1920</width>
+            <height>1080</height>
+            <fadetime>200</fadetime>
+            <texture>$VAR[bgimg]</texture>
+            <aspectratio align="left">scale</aspectratio>
+            <colordiffuse>40ffffff</colordiffuse>
+        </control>
+        <control type="image" description="Default BG">
+            <visible>String.IsEmpty(ListItem.Art(fanart))</visible>
+            <width>1920</width>
+            <height>1080</height>
+            <fadetime>200</fadetime>
+            <texture>$VAR[bgimg]</texture>
         </control>
     </include>
     <include name="OpenClose">
@@ -729,5 +732,21 @@
 
     <include name="selection">
         <animation effect="zoom" start="100" end="120" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
-        <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation></include>
+        <animation effect="zoom" start="120" end="100" time="120" center="auto">unFocus</animation>
+    </include>
+
+    <include name="diavidinfobuttons">
+        <animation effect="zoom" start="100" end="110" time="120" center="350,50" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="110" end="100" time="120" center="350,50">unFocus</animation>
+        <width>350</width>
+        <height>80</height>
+        <font>size21</font>
+        <align>right</align>
+        <aligny>top</aligny>
+        <wrapmultiline>true</wrapmultiline>
+        <textoffsetx>0</textoffsetx>
+        <texturefocus>-</texturefocus>
+        <onclick>noop</onclick>
+    </include>
+
 </includes>
