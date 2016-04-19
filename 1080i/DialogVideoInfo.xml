@@ -2,7 +2,7 @@
 <window id="2003">
     <!--TODO check if i want extendedinfo-->
     <!--<onload condition="true">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID])</onload>-->
-    <defaultcontrol always="false">8</defaultcontrol>
+    <defaultcontrol always="false">195</defaultcontrol>
     <backgroundcolor>ffffffff</backgroundcolor>
     <include>OpenClose</include>
     <controls>
@@ -14,6 +14,7 @@
             <top>-100</top>
         </control>
         <control type="group">
+            <animation effect="slide" end="0,-200" condition="Control.HasFocus(999)" time="300">Conditional</animation>
             <animation effect="slide" end="0,-600" condition="Control.HasFocus(50)" time="300">Conditional</animation>
             <control type="image" description="Thumb">
                 <centerleft>1620</centerleft>
@@ -62,7 +63,7 @@
             <control type="group" description="Left INOFS">
                 <include>VisibleFade</include>
                 <control type="grouplist" id="190">
-                    <left>20</left>
+                    <left>50</left>
                     <top>150</top>
                     <width>350</width>
                     <height>920</height>
@@ -71,7 +72,7 @@
                     <onup>noop</onup>
                     <ondown>50</ondown>
                     <control type="label">
-                        <width>350</width>
+                        <width>320</width>
                         <height>26</height>
                         <font>size21</font>
                         <align>right</align>
@@ -83,11 +84,11 @@
                         <label>$INFO[ListItem.Genre]</label>
                     </control>
                     <control type="label" id="790">
-                        <width>350</width>
+                        <width>320</width>
                         <height>26</height>
                         <font>size21</font>
                         <align>right</align>
-                         <aligny>bottom</aligny>
+                        <aligny>bottom</aligny>
                         <label>[UPPERCASE][B]$LOCALIZE[20339][/B][/UPPERCASE]</label>
                     </control>
                     <control type="button" id="791">
@@ -96,7 +97,7 @@
                         <label>$INFO[ListItem.Director]</label>
                     </control>
                     <control type="label" id="794">
-                        <width>350</width>
+                        <width>320</width>
                         <height>26</height>
                         <font>size21</font>
                         <align>right</align>
@@ -108,7 +109,7 @@
                         <label>$INFO[ListItem.Writer]</label>
                     </control>
                     <control type="label" id="796">
-                        <width>350</width>
+                        <width>320</width>
                         <height>26</height>
                         <font>size21</font>
                         <align>right</align>
@@ -121,7 +122,7 @@
                         <label>$INFO[ListItem.RatingAndVotes]</label>
                     </control>
                     <control type="label" id="798">
-                        <width>350</width>
+                        <width>320</width>
                         <height>26</height>
                         <font>size21</font>
                         <align>right</align>
@@ -141,28 +142,15 @@
                         <label>Rate Movie</label>
                         <onclick>SendClick(2003,7)</onclick>
                     </control>
-                    <control type="label" id="800">
-                        <width>350</width>
-                        <height>26</height>
-                        <font>size21</font>
-                        <align>right</align>
-                        <aligny>bottom</aligny>
-                        <label>[UPPERCASE][B]$LOCALIZE[31024][/B][/UPPERCASE]</label>
-                    </control>
-                    <control type="button" id="801">
-                        <height>50</height>
-                        <include>diavidinfobuttons</include>
-                        <label>$INFO[ListItem.Premiered]</label>
-                    </control>
                 </control>
             </control>
-            <control type="grouplist">
+            <control type="grouplist" id="195">
                 <top>520</top>
                 <left>390</left>
                 <width>1100</width>
                 <onup>191</onup>
                 <onleft>190</onleft>
-                <ondown>50</ondown>
+                <ondown>999</ondown>
                 <itemgap>10</itemgap>
                 <aligny>bottom</aligny>
                 <align>left</align>
@@ -206,13 +194,63 @@
                     <texturenofocus>info/getart.png</texturenofocus>
                 </control>
             </control>
-            <control type="list" id="50">
-                <top>1200</top>
+            <control type="image" description="line central">
+                <top>690</top>
+                <height>1920</height>
+                <width>1920</width>
+                <texture colordiffuse="80ffffff">images/white.png</texture>
+            </control>
+            <control type="list" id="999">
+                <top>750</top>
                 <width>1920</width>
                 <height>400</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
                 <onup>8</onup>
+                <ondown>50</ondown>
+                <movement>-</movement>
+                <orientation>horizontal</orientation>
+                <scrolltime easing="inout">280</scrolltime>
+                <itemlayout width="205" height="400">
+                    <control type="image" description="Thumb">
+                        <centerleft>120</centerleft>
+                        <centertop>150</centertop>
+                        <height>225</height>
+                        <width>160</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.Thumb]</texture>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="205" height="400">
+                    <control type="group">
+                        <include>selection</include>
+                        <control type="image" description="Thumb">
+                        <centerleft>120</centerleft>
+                        <centertop>150</centertop>
+                        <height>225</height>
+                        <width>160</width>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.Thumb]</texture>
+                    </control>
+                        <control type="textbox" description="actors-roles">
+                            <top>270</top>
+                            <centerleft>120</centerleft>
+                            <width>190</width>
+                            <align>center</align>
+                            <font>XS</font>
+                            <label>$INFO[ListItem.Label][CR]$INFO[ListItem.Label2]</label>
+                        </control>
+                    </control>
+                </focusedlayout>
+                <content target="video">videodb://recentlyaddedmovies/</content>
+            </control>
+            <control type="list" id="50">
+                <top>1080</top>
+                <width>1920</width>
+                <height>400</height>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+                <onup>999</onup>
                 <ondown>noop</ondown>
                 <viewtype>ActorsandRoles</viewtype>
                 <movement>-</movement>
@@ -259,19 +297,6 @@
                         </control>
                     </control>
                 </focusedlayout>
-            </control>
-            <control type="image" description="line central">
-                <top>690</top>
-                <height>1</height>
-                <width>1920</width>
-                <texture>lines/Line.png</texture>
-            </control>
-            <control type="image" description="line central">
-                <top>691</top>
-                <left>1040</left>
-                <height>420</height>
-                <width>1</width>
-                <texture>lines/LineV1.png</texture>
             </control>
         </control>
     </controls>

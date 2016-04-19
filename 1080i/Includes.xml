@@ -736,9 +736,9 @@
     </include>
 
     <include name="diavidinfobuttons">
-        <animation effect="zoom" start="100" end="110" time="120" center="350,50" tween="Back" easing="Out">Focus</animation>
-        <animation effect="zoom" start="110" end="100" time="120" center="350,50">unFocus</animation>
-        <width>350</width>
+        <animation effect="zoom" start="100" end="110" time="120" center="320,50" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="110" end="100" time="120" center="320,50">unFocus</animation>
+        <width>320</width>
         <height>80</height>
         <font>size21</font>
         <align>right</align>
