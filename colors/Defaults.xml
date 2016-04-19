@@ -2,6 +2,7 @@
     <color name="background">FFEEEEEE</color>
     <color name="maindim">FF222222</color>
     <color name="main">FF000000</color>
+    <color name="focus">ff000000</color>
     <color name="inverted">FFFFFFFF</color>
     <color name="gray">FF555555</color>
     <color name="searchband">99FFFFFF</color>

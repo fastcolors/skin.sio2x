@@ -739,14 +739,23 @@
         <animation effect="zoom" start="100" end="110" time="120" center="320,50" tween="Back" easing="Out">Focus</animation>
         <animation effect="zoom" start="110" end="100" time="120" center="320,50">unFocus</animation>
         <width>320</width>
-        <height>80</height>
+        <height>70</height>
         <font>size21</font>
         <align>right</align>
         <aligny>top</aligny>
         <wrapmultiline>true</wrapmultiline>
-        <textoffsetx>0</textoffsetx>
-        <texturefocus>-</texturefocus>
+        <textoffsetx>10</textoffsetx>
+        <texturefocus colordiffuse="$VAR[diffuseselect]" flipx="true">images/buttonselect1.png</texturefocus>
         <onclick>noop</onclick>
+    </include>
+
+    <include name="diavidinfolabels">
+        <width>320</width>
+        <height>24</height>
+        <font>size21</font>
+        <textoffsetx>10</textoffsetx>
+        <align>right</align>
+        <aligny>bottom</aligny>
     </include>
 
 </includes>

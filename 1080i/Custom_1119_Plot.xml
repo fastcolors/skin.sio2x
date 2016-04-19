@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1119">
+    <defaultcontrol always="true">1119</defaultcontrol>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="group">
+            <include>DialogOpenCloseVisible</include>
+            <control type="button" id="1119">
+                <visible allowhiddenfocus="true">Control.HasFocus</visible>
+                <onclick>Close</onclick>
+            </control>
+            <control type="image" description="List back">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>1240</width>
+                <height>980</height>
+                <texture border="150">images/Dialog.png</texture>
+            </control>
+            <control type="textbox">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>740</width>
+                <height>580</height>
+                <align>justify</align>
+                <label>$INFO[Skin.String(infoplot)]</label>
+            </control>
+        </control>
+    </controls>
+</window>

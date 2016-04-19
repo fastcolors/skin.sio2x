@@ -52,8 +52,8 @@
         <aligny>center</aligny>
         <font>size33</font>
         <textoffsetx>30</textoffsetx>
-        <textcolor>maindim</textcolor>
-        <focusedcolor>main</focusedcolor>
+        <textcolor>main</textcolor>
+        <focusedcolor>focus</focusedcolor>
         <selectedcolor>orange</selectedcolor>
         <disabledcolor>dimgray</disabledcolor>
         <invalidcolor>red</invalidcolor>
@@ -84,7 +84,7 @@
         <font>size33</font>
         <textoffsetx>30</textoffsetx>
         <textcolor>maindim</textcolor>
-        <focusedcolor>main</focusedcolor>
+        <focusedcolor>focus</focusedcolor>
         <selectedcolor>main</selectedcolor>
         <altselectedcolor>orange</altselectedcolor>
         <disabledcolor>dimgray</disabledcolor>

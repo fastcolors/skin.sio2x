@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2003">
-    <!--TODO check if i want extendedinfo-->
-    <!--<onload condition="true">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID])</onload>-->
-    <defaultcontrol always="false">195</defaultcontrol>
+    <defaultcontrol always="true">195</defaultcontrol>
     <backgroundcolor>ffffffff</backgroundcolor>
     <include>OpenClose</include>
     <controls>
@@ -12,10 +10,12 @@
             <ondown>8</ondown>
             <onleft>190</onleft>
             <top>-100</top>
+            <onclick>Skin.SetString(infoplot,$ESCINFO[Control.GetLabel(4)])</onclick>
+            <onclick>ActivateWindow(1119)</onclick>
         </control>
         <control type="group">
-            <animation effect="slide" end="0,-200" condition="Control.HasFocus(999)" time="300">Conditional</animation>
-            <animation effect="slide" end="0,-600" condition="Control.HasFocus(50)" time="300">Conditional</animation>
+            <animation effect="slide" end="0,-600" condition="Control.HasFocus(999) | Control.HasFocus(50)" time="300">Conditional</animation>
+            <!--<animation effect="slide" end="0,-900" condition="Control.HasFocus(50)" time="300">Conditional</animation>-->
             <control type="image" description="Thumb">
                 <centerleft>1620</centerleft>
                 <centertop>350</centertop>
@@ -64,19 +64,16 @@
                 <include>VisibleFade</include>
                 <control type="grouplist" id="190">
                     <left>50</left>
-                    <top>150</top>
+                    <top>152</top>
                     <width>350</width>
                     <height>920</height>
                     <onleft>noop</onleft>
                     <onright>191</onright>
                     <onup>noop</onup>
-                    <ondown>50</ondown>
+                    <ondown>999</ondown>
+                    <itemgap>12</itemgap>
                     <control type="label">
-                        <width>320</width>
-                        <height>26</height>
-                        <font>size21</font>
-                        <align>right</align>
-                        <aligny>bottom</aligny>
+                        <include>diavidinfolabels</include>
                         <label>[UPPERCASE][B]$LOCALIZE[515][/B][/UPPERCASE]</label>
                     </control>
                     <control type="button" id="789">
@@ -84,11 +81,7 @@
                         <label>$INFO[ListItem.Genre]</label>
                     </control>
                     <control type="label" id="790">
-                        <width>320</width>
-                        <height>26</height>
-                        <font>size21</font>
-                        <align>right</align>
-                        <aligny>bottom</aligny>
+                        <include>diavidinfolabels</include>
                         <label>[UPPERCASE][B]$LOCALIZE[20339][/B][/UPPERCASE]</label>
                     </control>
                     <control type="button" id="791">
@@ -97,11 +90,7 @@
                         <label>$INFO[ListItem.Director]</label>
                     </control>
                     <control type="label" id="794">
-                        <width>320</width>
-                        <height>26</height>
-                        <font>size21</font>
-                        <align>right</align>
-                        <aligny>bottom</aligny>
+                        <include>diavidinfolabels</include>
                         <label>[UPPERCASE][B]$LOCALIZE[20417][/B][/UPPERCASE]</label>
                     </control>
                     <control type="button" id="795">
@@ -109,11 +98,7 @@
                         <label>$INFO[ListItem.Writer]</label>
                     </control>
                     <control type="label" id="796">
-                        <width>320</width>
-                        <height>26</height>
-                        <font>size21</font>
-                        <align>right</align>
-                        <aligny>bottom</aligny>
+                        <include>diavidinfolabels</include>
                         <label>[UPPERCASE][B]$LOCALIZE[563][/B][/UPPERCASE]</label>
                     </control>
                     <control type="button" id="797">
@@ -122,11 +107,7 @@
                         <label>$INFO[ListItem.RatingAndVotes]</label>
                     </control>
                     <control type="label" id="798">
-                        <width>320</width>
-                        <height>26</height>
-                        <font>size21</font>
-                        <align>right</align>
-                        <aligny>bottom</aligny>
+                        <include>diavidinfolabels</include>
                         <label>[UPPERCASE][B]$LOCALIZE[563][/B][/UPPERCASE]</label>
                     </control>
                     <control type="button" id="799">
@@ -146,96 +127,112 @@
             </control>
             <control type="grouplist" id="195">
                 <top>520</top>
-                <left>390</left>
+                <left>400</left>
                 <width>1100</width>
                 <onup>191</onup>
                 <onleft>190</onleft>
                 <ondown>999</ondown>
-                <itemgap>10</itemgap>
+                <onright>noop</onright>
+                <itemgap>20</itemgap>
                 <aligny>bottom</aligny>
                 <align>left</align>
                 <orientation>horizontal</orientation>
                 <control type="button" id="11" description="Trailer">
                     <height>100</height>
                     <width>150</width>
-                    <texturefocus>info/trailerFO.png</texturefocus>
-                    <texturenofocus>info/trailer.png</texturenofocus>
+                    <texturefocus>images/diffuserounded.png</texturefocus>
+                    <texturenofocus>images/diffuserounded.png</texturenofocus>
                     <visible>!IsEmpty(ListItem.Trailer)</visible>
+                    <font>XS</font>
+                    <textoffsetx>0</textoffsetx>
+                    <label>20410</label>
                 </control>
                 <control type="togglebutton" id="8" description="Play/browse to Show">
+                    <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+                    <animation effect="zoom" start="110" end="100" time="120" center="auto">unFocus</animation>
                     <height>100</height>
                     <width>150</width>
-                    <texturefocus>info/playFO.png</texturefocus>
-                    <texturenofocus>info/play.png</texturenofocus>
-                    <alttexturefocus>info/browseFO.png</alttexturefocus>
-                    <alttexturenofocus>info/browse.png</alttexturenofocus>
+                    <texturefocus>images/diffuserounded.png</texturefocus>
+                    <texturenofocus>images/diffuserounded.png</texturenofocus>
                     <usealttexture>Container.Content(TVShows)</usealttexture>
+                    <font>XS</font>
+                    <textoffsetx>0</textoffsetx>
+                    <label>208</label>
                 </control>
                 <control type="button" id="299" description="Cinema">
                     <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
                     <height>100</height>
                     <width>150</width>
-                    <texturefocus>info/cinemaFO.png</texturefocus>
-                    <texturenofocus>info/cinema.png</texturenofocus>
+                    <texturefocus>images/diffuserounded.png</texturefocus>
+                    <texturenofocus>images/diffuserounded.png</texturenofocus>
                     <onclick>Dialog.Close(all,true)</onclick>
                     <onclick>Playlist.Clear</onclick>
                     <onclick>RunScript(script.cinema.experience)</onclick>
+                    <font>XS</font>
+                    <textoffsetx>0</textoffsetx>
+                    <label>Cinema</label>
                 </control>
                 <control type="button" id="6" description="Refresh">
                     <height>100</height>
                     <width>150</width>
-                    <texturefocus>info/refreshFO.png</texturefocus>
-                    <texturenofocus>info/refresh.png</texturenofocus>
+                    <texturefocus>images/diffuserounded.png</texturefocus>
+                    <texturenofocus>images/diffuserounded.png</texturenofocus>
+                    <font>XS</font>
+                    <textoffsetx>0</textoffsetx>
+                    <label>184</label>
                 </control>
                 <control type="button" id="10" description="Get Art">
                     <height>100</height>
                     <width>150</width>
-                    <texturefocus>info/getartFO.png</texturefocus>
-                    <texturenofocus>info/getart.png</texturenofocus>
+                    <texturefocus>images/diffuserounded.png</texturefocus>
+                    <texturenofocus>images/diffuserounded.png</texturenofocus>
+                    <font>XS</font>
+                    <textoffsetx>0</textoffsetx>
+                    <label>13511</label>
                 </control>
             </control>
-            <control type="image" description="line central">
+            <control type="image" description="whiteoverlay">
                 <top>690</top>
                 <height>1920</height>
                 <width>1920</width>
                 <texture colordiffuse="80ffffff">images/white.png</texture>
             </control>
             <control type="list" id="999">
-                <top>750</top>
+                <top>780</top>
                 <width>1920</width>
                 <height>400</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>
-                <onup>8</onup>
+                <onup>195</onup>
                 <ondown>50</ondown>
                 <movement>-</movement>
                 <orientation>horizontal</orientation>
                 <scrolltime easing="inout">280</scrolltime>
-                <itemlayout width="205" height="400">
+                <itemlayout width="250" height="400">
                     <control type="image" description="Thumb">
-                        <centerleft>120</centerleft>
+                        <centerleft>145</centerleft>
                         <centertop>150</centertop>
-                        <height>225</height>
-                        <width>160</width>
-                        <aspectratio>keep</aspectratio>
+                        <height>300</height>
+                        <width>200</width>
+                        <!--<aspectratio>keep</aspectratio>-->
                         <texture>$INFO[ListItem.Thumb]</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout width="205" height="400">
+                <focusedlayout width="250" height="400">
                     <control type="group">
                         <include>selection</include>
                         <control type="image" description="Thumb">
-                        <centerleft>120</centerleft>
-                        <centertop>150</centertop>
-                        <height>225</height>
-                        <width>160</width>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Thumb]</texture>
-                    </control>
-                        <control type="textbox" description="actors-roles">
-                            <top>270</top>
-                            <centerleft>120</centerleft>
-                            <width>190</width>
+                            <centerleft>145</centerleft>
+                            <centertop>150</centertop>
+                            <height>300</height>
+                            <width>200</width>
+                            <!--<aspectratio>keep</aspectratio>-->
+                            <texture>$INFO[ListItem.Thumb]</texture>
+                        </control>
+                        <control type="textbox">
+                            <top>300</top>
+                            <centerleft>145</centerleft>
+                            <width>210</width>
                             <align>center</align>
                             <font>XS</font>
                             <label>$INFO[ListItem.Label][CR]$INFO[ListItem.Label2]</label>
@@ -245,7 +242,7 @@
                 <content target="video">videodb://recentlyaddedmovies/</content>
             </control>
             <control type="list" id="50">
-                <top>1080</top>
+                <top>1120</top>
                 <width>1920</width>
                 <height>400</height>
                 <onleft>noop</onleft>
