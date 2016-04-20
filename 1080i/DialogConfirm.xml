@@ -42,7 +42,7 @@
             <control type="grouplist" id="9000">
                 <width>960</width>
                 <top>330</top>
-                <height>60</height>
+                <height>80</height>
                 <align>center</align>
                 <itemgap>0</itemgap>
                 <orientation>horizontal</orientation>

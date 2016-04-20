@@ -55,6 +55,8 @@
             <itemgap>0</itemgap>
         </control>
         <control type="button" id="7" description="Button">
+            <animation effect="zoom" end="100">Focus</animation>
+            <animation effect="zoom" end="100">unFocus</animation>
             <width>300</width>
             <height>81</height>
             <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -63,6 +65,8 @@
             <align>left</align>
         </control>
         <control type="radiobutton" id="8" description="Radio Button">
+            <animation effect="zoom" end="100">Focus</animation>
+            <animation effect="zoom" end="100">unFocus</animation>
             <width>300</width>
             <height>81</height>
             <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
@@ -71,6 +75,8 @@
             <align>left</align>
         </control>
         <control type="spincontrolex" id="9" description="Spin control">
+            <animation effect="zoom" end="100">Focus</animation>
+            <animation effect="zoom" end="100">unFocus</animation>
             <width>1260</width>
             <height>81</height>
             <align>left</align>
@@ -78,6 +84,8 @@
             <texturefocus colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texturefocus>
         </control>
         <control type="button" id="10" description="Category Button">
+            <animation effect="zoom" end="100">Focus</animation>
+            <animation effect="zoom" end="100">unFocus</animation>
             <width>500</width>
             <height>81</height>
             <align>right</align>
@@ -126,6 +134,8 @@
                 <label>:</label>
             </control>
             <control type="button" id="20">
+                <animation effect="zoom" end="100">Focus</animation>
+                <animation effect="zoom" end="100">unFocus</animation>
                 <description>Setting level button</description>
                 <width>390</width>
                 <height>80</height>

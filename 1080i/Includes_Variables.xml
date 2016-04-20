@@ -109,23 +109,22 @@
     </variable>
 
     <variable name="helptext">
-        <value condition="Controlgroup(575).HasFocus(1)">$LOCALIZE[31018]</value>
-        <value condition="Controlgroup(575).HasFocus(2)">$LOCALIZE[21383]</value>
-        <value condition="Controlgroup(575).HasFocus(3)">$LOCALIZE[31017]</value>
-        <value condition="Controlgroup(575).HasFocus(4)">$LOCALIZE[31086]</value>
-        <value condition="Controlgroup(575).HasFocus(5)">$LOCALIZE[31008]</value>
-        <value condition="Controlgroup(575).HasFocus(6)">$LOCALIZE[31046]</value>
-        <value condition="Controlgroup(575).HasFocus(8)">$LOCALIZE[31022]</value>
-        <value condition="Controlgroup(575).HasFocus(9)">$LOCALIZE[31019]</value>
-        <value condition="Controlgroup(575).HasFocus(10)">$LOCALIZE[31003]</value>
-        <value condition="Controlgroup(575).HasFocus(11)">$LOCALIZE[31029]</value>
-        <value condition="Controlgroup(575).HasFocus(12)">$LOCALIZE[31031]</value>
-        <value condition="Controlgroup(575).HasFocus(13)">$LOCALIZE[31039]</value>
-        <value condition="Controlgroup(575).HasFocus(14)">$LOCALIZE[31420]</value>
-        <value condition="Controlgroup(575).HasFocus(15)">$LOCALIZE[31089]</value>
-        <value condition="Controlgroup(575).HasFocus(16)">$LOCALIZE[31066]</value>
-        <value condition="Controlgroup(575).HasFocus(17)">$LOCALIZE[31065]</value>
-        <value condition="Controlgroup(575).HasFocus(18)">$LOCALIZE[31070]</value>
+        <value condition="Container(575).HasFocus(0)">$LOCALIZE[31046]</value>
+        <value condition="Container(575).HasFocus(1)">$LOCALIZE[31018]</value>
+        <value condition="Container(575).HasFocus(2)">$LOCALIZE[31017]</value>
+        <value condition="Container(575).HasFocus(3)">$LOCALIZE[31008]</value>
+        <value condition="Container(575).HasFocus(4)">$LOCALIZE[31022]</value>
+        <value condition="Container(575).HasFocus(5)">$LOCALIZE[31019]</value>
+        <value condition="Container(575).HasFocus(6)">$LOCALIZE[31003]</value>
+        <value condition="Container(575).HasFocus(7)">$LOCALIZE[31029]</value>
+        <value condition="Container(575).HasFocus(8)">$LOCALIZE[31031]</value>
+        <value condition="Container(575).HasFocus(9)">$LOCALIZE[31039]</value>
+        <value condition="Container(575).HasFocus(10)">$LOCALIZE[31420]</value>
+        <value condition="Container(575).HasFocus(11)">$LOCALIZE[31066]</value>
+        <value condition="Container(575).HasFocus(12)">$LOCALIZE[31065]</value>
+        <value condition="Container(575).HasFocus(13)">$LOCALIZE[31070]</value>
+        <value condition="Container(575).HasFocus(14)">$LOCALIZE[31089]</value>
+        <value condition="Container(575).HasFocus(15)"></value>
     </variable>
 
     <variable name="settingsmain">
@@ -430,5 +429,10 @@
     <variable name="SeekLabel">
         <value condition="Player.DisplayAfterSeek + !Player.Seeking">$INFO[Player.SeekOffset]</value>
 		<value condition="!IsEmpty(Player.SeekStepSize) + Player.Seeking">$INFO[Player.SeekStepSize]</value>
+	</variable>
+
+     <variable name="infosicon">
+        <value condition="Skin.HasSetting(noinfosicon)">$LOCALIZE[16039]</value>
+		<value condition="!Skin.HasSetting(noinfosicon)">$LOCALIZE[16041]</value>
 	</variable>
 </includes>

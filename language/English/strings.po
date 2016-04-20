@@ -148,8 +148,8 @@ msgid "Log Off"
 msgstr "Log Off"
 
 msgctxt "#31033"
-msgid "Always Colored Menu Icons"
-msgstr "Always Colored Menu Icons"
+msgid "Colored Menu Icons"
+msgstr "Colored Menu Icons"
 
 msgctxt "#31034"
 msgid "Click to Add Custom Item to Home Page"

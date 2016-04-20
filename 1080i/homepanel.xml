@@ -115,7 +115,7 @@
         </item>
         <!--NEXT AIRED ADDON-->
         <item id="358">
-            <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
+            <visible>Skin.HasSetting(nextair) + Library.HasContent(TVShows)</visible>
             <thumb>icons/nextaired.png</thumb>
             <label>$ADDON[script.tv.show.next.aired 32019]</label>
             <property name="color">red</property>
@@ -128,7 +128,8 @@
             <thumb>icons/search.png</thumb>
             <label>137</label>
             <property name="color">lightblue</property>
-            <onclick>RunAddon(script.globalsearch)</onclick>
+            <onclick condition="System.HasAddon(script.globalsearch)">RunAddon(script.globalsearch)</onclick>
+            <onclick condition="!System.HasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
         </item>
          <!--3D MOVIES-->
         <item id="357">
@@ -372,13 +373,13 @@
             <onclick>ActivateWindow(1120)</onclick>
         </item>
         <!--VIDEO GUIDES-->
-        <item id="3490">
-            <visible>!Skin.HasSetting(hidevidhelp)</visible>
-            <thumb>icons/qmark.png</thumb>
-            <label>$LOCALIZE[10043]</label>
-            <property name="color">orange</property>
-            <onclick>ActivateWindow(1111)</onclick>
-        </item>
+        <!--<item id="3490">-->
+            <!--<visible>!Skin.HasSetting(hidevidhelp)</visible>-->
+            <!--<thumb>icons/qmark.png</thumb>-->
+            <!--<label>$LOCALIZE[10043]</label>-->
+            <!--<property name="color">orange</property>-->
+            <!--<onclick>ActivateWindow(1111)</onclick>-->
+        <!--</item>-->
         <!--FULLSCREEN-->
         <item id="349">
             <visible>Player.HasMedia</visible>

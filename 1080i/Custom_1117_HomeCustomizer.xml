@@ -227,16 +227,17 @@
                         <onclick>Skin.ToggleSetting(hidefav)</onclick>
                     </item>
                     <item id="358" description="next aired">
-                        <visible>Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
-                        <thumb>help/Off.png</thumb>
-                        <label>$ADDON[script.tv.show.next.aired 32019]</label>
+                        <visible>Skin.HasSetting(nextair) + Library.HasContent(TVShows)</visible>
+                        <thumb>icons/nextaired.png</thumb>
+                        <label>Next Aired</label>
                         <onclick>Skin.ToggleSetting(nextair)</onclick>
                     </item>
                     <item id="358" description="next aired -OFF">
-                        <visible>!Skin.HasSetting(nextair) + System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
-                        <thumb>icons/nextaired.png</thumb>
-                        <label>$ADDON[script.tv.show.next.aired 32019]</label>
-                        <onclick>Skin.ToggleSetting(nextair)</onclick>
+                        <visible>!Skin.HasSetting(nextair) + Library.HasContent(TVShows)</visible>
+                        <thumb>help/Off.png</thumb>
+                        <label>Next Aired</label>
+                        <onclick condition="!System.HasAddon(script.tv.show.next.aired)">InstallAddon(script.tv.show.next.aired)</onclick>
+                        <onclick condition="System.HasAddon(script.tv.show.next.aired)">Skin.ToggleSetting(nextair)</onclick>
                     </item>
                     <item id="356" description="search">
                         <visible>Skin.HasSetting(sear)</visible>
@@ -273,6 +274,7 @@
                         <thumb>help/Off.png</thumb>
                         <label>31422</label>
                         <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showtheater)</onclick>
+                        <onclick condition="!System.HasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onclick>
                     </item>
                     <item id="360">
                         <visible>Skin.HasSetting(showdvdrel)</visible>
@@ -285,6 +287,7 @@
                         <thumb>help/Off.png</thumb>
                         <label>31423</label>
                         <onclick condition="System.HasAddon(script.extendedinfo)">Skin.ToggleSetting(showdvdrel)</onclick>
+                        <onclick condition="!System.HasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onclick>
                     </item>
                     <item id="601" description="HomeFav">
                         <visible>!IsEmpty(Skin.String(HomeFav.1.Label))</visible>
@@ -604,18 +607,18 @@
                         <label>5</label>
                         <onclick>Skin.ToggleSetting(hidesett)</onclick>
                     </item>
-                    <item id="1014" description="vidhelp">
-                        <visible>!Skin.HasSetting(hidevidhelp)</visible>
-                        <thumb>icons/qmark.png</thumb>
-                        <label>$LOCALIZE[10043]</label>
-                        <onclick>Skin.ToggleSetting(hidevidhelp)</onclick>
-                    </item>
-                    <item id="1014" description="vidhelp">
-                        <visible>Skin.HasSetting(hidevidhelp)</visible>
-                        <thumb>help/Off.png</thumb>
-                        <label>$LOCALIZE[10043]</label>
-                        <onclick>Skin.ToggleSetting(hidevidhelp)</onclick>
-                    </item>
+                    <!--<item id="1014" description="vidhelp">-->
+                        <!--<visible>!Skin.HasSetting(hidevidhelp)</visible>-->
+                        <!--<thumb>icons/qmark.png</thumb>-->
+                        <!--<label>$LOCALIZE[10043]</label>-->
+                        <!--<onclick>Skin.ToggleSetting(hidevidhelp)</onclick>-->
+                    <!--</item>-->
+                    <!--<item id="1014" description="vidhelp">-->
+                        <!--<visible>Skin.HasSetting(hidevidhelp)</visible>-->
+                        <!--<thumb>help/Off.png</thumb>-->
+                        <!--<label>$LOCALIZE[10043]</label>-->
+                        <!--<onclick>Skin.ToggleSetting(hidevidhelp)</onclick>-->
+                    <!--</item>-->
                 </content>
             </control>
         </control>

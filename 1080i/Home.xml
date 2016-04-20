@@ -385,6 +385,5 @@
                 <ondown>311</ondown>
             </control>
         </control>
-        <include condition="Skin.hasSetting(cpudebug)">cpu_use</include>
     </controls>
 </window>

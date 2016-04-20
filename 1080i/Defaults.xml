@@ -77,6 +77,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="togglebutton">
+        <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="110" end="100" time="120" center="auto">unFocus</animation>
         <width>450</width>
         <height>75</height>
         <align>center</align>
@@ -112,6 +114,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrol">
+        <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="110" end="100" time="120" center="auto">unFocus</animation>
         <textureup>images/ArrowUpNF.png</textureup>
         <textureupfocus>images/ArrowUpFO.png</textureupfocus>
         <texturedown>images/ArrowDownNF.png</texturedown>
@@ -131,6 +135,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrolex">
+        <animation effect="zoom" start="100" end="110" time="120" center="auto" tween="Back" easing="Out">Focus</animation>
+        <animation effect="zoom" start="110" end="100" time="120" center="auto">unFocus</animation>
         <width>450</width>
         <height>75</height>
         <font>size33</font>

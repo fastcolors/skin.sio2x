@@ -214,7 +214,7 @@
                         <centertop>150</centertop>
                         <height>300</height>
                         <width>200</width>
-                        <!--<aspectratio>keep</aspectratio>-->
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Thumb]</texture>
                     </control>
                 </itemlayout>
@@ -226,7 +226,7 @@
                             <centertop>150</centertop>
                             <height>300</height>
                             <width>200</width>
-                            <!--<aspectratio>keep</aspectratio>-->
+                            <aspectratio>keep</aspectratio>
                             <texture>$INFO[ListItem.Thumb]</texture>
                         </control>
                         <control type="textbox">
@@ -235,11 +235,11 @@
                             <width>210</width>
                             <align>center</align>
                             <font>XS</font>
-                            <label>$INFO[ListItem.Label][CR]$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Label]</label>
                         </control>
                     </control>
                 </focusedlayout>
-                <content target="video">videodb://recentlyaddedmovies/</content>
+                <content target="video">videodb://movies/titles/</content>
             </control>
             <control type="list" id="50">
                 <top>1120</top>
