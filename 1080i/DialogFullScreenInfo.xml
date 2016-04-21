@@ -122,7 +122,7 @@
             <align>center</align>
             <orientation>horizontal</orientation>
             <control type="image">
-                <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
+                <visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
                 <height>50</height>
                 <width>130</width>
                 <bordersize>3</bordersize>
@@ -137,7 +137,7 @@
                 <texture>$INFO[VideoPlayer.VideoResolution,badges/video/,.png]</texture>
             </control>
             <control type="image">
-                <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
+                <visible>!String.IsEmpty(VideoPlayer.VideoCodec)</visible>
                 <height>50</height>
                 <width>130</width>
                 <bordersize>3</bordersize>
@@ -145,7 +145,7 @@
                 <texture>$INFO[VideoPlayer.VideoCodec,badges/video/,.png]</texture>
             </control>
             <control type="image">
-                <visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+                <visible>!String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                 <height>50</height>
                 <width>130</width>
                 <bordersize>3</bordersize>
@@ -153,7 +153,7 @@
                 <texture>$INFO[VideoPlayer.AudioCodec,badges/audio/,.png]</texture>
             </control>
             <control type="image">
-                <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+                <visible>!String.IsEmpty(VideoPlayer.AudioChannels)</visible>
                 <height>50</height>
                 <width>130</width>
                 <bordersize>3</bordersize>

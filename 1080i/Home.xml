@@ -105,12 +105,12 @@
                             <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
                         </control>
                         <control type="image" description="Thumb">
-                            <visible>!IsEmpty(Listitem.thumb)</visible>
+                            <visible>!String.IsEmpty(Listitem.thumb)</visible>
                             <include>homeiconsdef</include>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                         </control>
                         <control type="image" description="Thumb">
-                            <visible>IsEmpty(Listitem.thumb)</visible>
+                            <visible>String.IsEmpty(Listitem.thumb)</visible>
                             <include>homeiconsdef</include>
                             <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                         </control>
@@ -185,12 +185,12 @@
                                 <texture border="40">$INFO[ListItem.Property(color),icons/,.png]</texture>
                             </control>
                             <control type="image" description="Thumb">
-                                <visible>!IsEmpty(Listitem.thumb)</visible>
+                                <visible>!String.IsEmpty(Listitem.thumb)</visible>
                                 <include>homeiconsdef</include>
                                 <texture diffuse="images/diffusehome.png">$INFO[ListItem.thumb]</texture>
                             </control>
                             <control type="image" description="Thumb">
-                                <visible>IsEmpty(Listitem.thumb)</visible>
+                                <visible>String.IsEmpty(Listitem.thumb)</visible>
                                 <include>homeiconsdef</include>
                                 <texture diffuse="images/diffusehome.png">$INFO[ListItem.label2]</texture>
                             </control>
@@ -326,7 +326,7 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                 <!--<control type="image" description="BoilerOn">-->
-                <!--<visible>!IsEmpty(Window(Home).Property(netatmo_RelayCommand))</visible>-->
+                <!--<visible>!String.IsEmpty(Window(Home).Property(netatmo_RelayCommand))</visible>-->
                 <!--<visible>!StringCompare(Window(Home).Property(netatmo_RelayCommand),0)</visible>-->
                 <!--<width>42</width>-->
                 <!--<height>48</height>-->
@@ -376,7 +376,7 @@
                 <onclick condition="Container(9000).HasFocus(359)">RunPlugin(plugin://plugin.video.couchpotato_manager/movies/add?title=$INFO[Container(311).ListItem.Label])</onclick>
                 <onclick condition="Container(9000).HasFocus(359)">Notification(Couch Potato,$LOCALIZE[194],3000,images/couchpotato.png)</onclick>
                 <!--TRAILERS-->
-                <onclick condition="!IsEmpty(Container(311).ListItem.Trailer) + ![Container(9000).HasFocus(359) | Container(9000).HasFocus(360)]">PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
+                <onclick condition="!String.IsEmpty(Container(311).ListItem.Trailer) + ![Container(9000).HasFocus(359) | Container(9000).HasFocus(360)]">PlayMedia($ESCINFO[Container(311).ListItem.Trailer])</onclick>
                 <onleft>Control.Move(311,-1)</onleft>
                 <onleft>311</onleft>
                 <onright>Control.Move(311,1)</onright>

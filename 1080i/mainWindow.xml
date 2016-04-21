@@ -221,7 +221,7 @@
                             <height>81</height>
                             <aspectratio>keep</aspectratio>
                             <texture border="5">images/RadioOFF.png</texture>
-                            <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value), false) | IsEmpty(ListItem.Property(value))</visible>
+                            <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value), false) | String.IsEmpty(ListItem.Property(value))</visible>
                         </control>
                         <control type="image">
                             <left>1300</left>
@@ -289,7 +289,7 @@
                             <height>81</height>
                             <aspectratio>keep</aspectratio>
                             <texture border="5">images/RadioOFF.png</texture>
-                            <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value), false) | IsEmpty(ListItem.Property(value))</visible>
+                            <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value), false) | String.IsEmpty(ListItem.Property(value))</visible>
                         </control>
                         <control type="image">
                             <left>1300</left>
@@ -363,7 +363,7 @@
                         <width>350</width>
                         <height>81</height>
                         <label>$ADDON[service.openelec.settings 601]: [COLOR=red]$INFO[ListItem.Property(Interface)][/COLOR]</label>
-                        <visible>!IsEmpty(ListItem.Property(Interface))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(Interface))</visible>
                     </control>
                     <!-- Connection Address -->
                     <control type="label">
@@ -479,7 +479,7 @@
                         <width>350</width>
                         <height>81</height>
                         <label>$ADDON[service.openelec.settings 601]: [COLOR=red]$INFO[ListItem.Property(Interface)][/COLOR]</label>
-                        <visible>!IsEmpty(ListItem.Property(Interface))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(Interface))</visible>
                     </control>
                     <!-- Connection Address -->
                     <control type="label">
@@ -973,7 +973,7 @@
                 <label>
                 </label>
                 <align>center</align>
-                <visible>!IsEmpty(Control.GetLabel(1504))</visible>
+                <visible>!String.IsEmpty(Control.GetLabel(1504))</visible>
             </control>
             <control type="button" id="1503">
                 <width>300</width>
@@ -981,7 +981,7 @@
                 <label>
                 </label>
                 <align>center</align>
-                <visible>!IsEmpty(Control.GetLabel(1503))</visible>
+                <visible>!String.IsEmpty(Control.GetLabel(1503))</visible>
             </control>
             <control type="button" id="1502">
                 <width>300</width>
@@ -989,7 +989,7 @@
                 <label>
                 </label>
                 <align>center</align>
-                <visible>!IsEmpty(Control.GetLabel(1502))</visible>
+                <visible>!String.IsEmpty(Control.GetLabel(1502))</visible>
             </control>
             <control type="button" id="1501">
                 <width>300</width>
@@ -997,7 +997,7 @@
                 <label>
                 </label>
                 <align>center</align>
-                <visible>!IsEmpty(Control.GetLabel(1501))</visible>
+                <visible>!String.IsEmpty(Control.GetLabel(1501))</visible>
             </control>
             <control type="button" id="1500">
                 <width>300</width>
@@ -1005,7 +1005,7 @@
                 <label>
                 </label>
                 <align>center</align>
-                <visible>!IsEmpty(Control.GetLabel(1500))</visible>
+                <visible>!String.IsEmpty(Control.GetLabel(1500))</visible>
             </control>
 
         </control>

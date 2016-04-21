@@ -132,7 +132,7 @@
             <control type="group" description="EPISODES BLADE">
                 <visible>Container.Content(episodes)</visible>
                 <control type="image">
-                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart))]</visible>
+                    <visible>Container(52).OnNext | Container(52).OnPrevious | [String.IsEmpty(ListItem.Plot) + String.IsEmpty(ListItem.Art(fanart))]</visible>
                     <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
                     <width>1340</width>
                     <height>1080</height>
@@ -171,7 +171,7 @@
                     <label>$LOCALIZE[20359]: $INFO[ListItem.label]</label>
                 </control>
                 <control type="image">
-                    <visible>IsEmpty(ListItem.Art(fanart)) + IsEmpty(ListItem.Plot)</visible>
+                    <visible>String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Plot)</visible>
                     <fadetime>200</fadetime>
                     <width>1340</width>
                     <height>1080</height>
@@ -182,7 +182,7 @@
             <control type="group">
                 <visible>!Container.Content(episodes)</visible>
                 <control type="image">
-                    <visible>Container(52).OnNext | Container(52).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart))]</visible>
+                    <visible>Container(52).OnNext | Container(52).OnPrevious | [String.IsEmpty(ListItem.Plot) + String.IsEmpty(ListItem.Art(fanart))]</visible>
                     <animation effect="slide" end="-1340,0" time="500" delay="1000" reversible="false">Hidden</animation>
                     <width>1340</width>
                     <height>1080</height>
@@ -198,7 +198,7 @@
                     <aspectratio align="left">scale</aspectratio>
                 </control>
                 <control type="image">
-                    <visible>IsEmpty(ListItem.Art(fanart)) + IsEmpty(ListItem.Plot)</visible>
+                    <visible>String.IsEmpty(ListItem.Art(fanart)) + String.IsEmpty(ListItem.Plot)</visible>
                     <fadetime>200</fadetime>
                     <width>1340</width>
                     <height>1080</height>
@@ -612,31 +612,31 @@
                 </focusedlayout>
                 <content>
                     <item>
-                        <visible>!IsEmpty(ListItem.Property(Artist_Genre))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(Artist_Genre))</visible>
                         <label>515</label>
                         <label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
                         <onclick>noop</onclick>
                     </item>
                     <item>
-                        <visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible>
                         <label>21894</label>
                         <label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
                         <onclick>noop</onclick>
                     </item>
                     <item>
-                        <visible>!IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
                         <label>21896</label>
                         <label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
                         <onclick>noop</onclick>
                     </item>
                     <item>
-                        <visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible>
                         <label>21893</label>
                         <label2>$INFO[ListItem.Property(Artist_Born)]</label2>
                         <onclick>noop</onclick>
                     </item>
                     <item>
-                        <visible>!IsEmpty(ListItem.Property(Artist_Died))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(Artist_Died))</visible>
                         <label>21897</label>
                         <label2>$INFO[ListItem.Property(Artist_Died)]</label2>
                         <onclick>noop</onclick>

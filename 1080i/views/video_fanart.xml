@@ -66,7 +66,7 @@
                             <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                            <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
                             <height>50</height>
                             <width>130</width>
                             <bordersize>3</bordersize>
@@ -74,7 +74,7 @@
                             <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                            <visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
                             <height>50</height>
                             <width>130</width>
                             <bordersize>3</bordersize>
@@ -82,7 +82,7 @@
                             <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                            <visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
                             <height>50</height>
                             <width>130</width>
                             <bordersize>3</bordersize>

@@ -21,7 +21,7 @@
                     <itemlayout width="890" height="111">
                         <control type="image">
                             <animation effect="slide" end="0,-24" condition="ListItem.IsStereoscopic">Conditional</animation>
-                            <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                            <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                             <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
                             <left>10</left>
                             <centertop>55</centertop>
@@ -40,7 +40,7 @@
                             <texture>badges/3d.png</texture>
                         </control>
                         <control type="label" description="Main Label">
-                            <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year) + IsEmpty(ListItem.Artist)" effect="slide" end="0,20" time="0" reversible="true">Conditional</animation>
+                            <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Artist)" effect="slide" end="0,20" time="0" reversible="true">Conditional</animation>
                             <left>65</left>
                             <width>1760</width>
                             <include>BigListTitle</include>
@@ -77,7 +77,7 @@
                         </control>
                         <control type="image">
                             <animation effect="slide" end="0,-24" condition="ListItem.IsStereoscopic">Conditional</animation>
-                            <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                            <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                             <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
                             <left>10</left>
                             <centertop>55</centertop>
@@ -96,7 +96,7 @@
                             <texture>badges/3d.png</texture>
                         </control>
                         <control type="label" description="Main Label">
-                            <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year) + IsEmpty(ListItem.Artist)" effect="slide" end="0,20" time="0" reversible="true">Conditional</animation>
+                            <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.Artist)" effect="slide" end="0,20" time="0" reversible="true">Conditional</animation>
                             <left>65</left>
                             <width>1760</width>
                             <include>BigListTitle</include>
@@ -227,7 +227,7 @@
                     <label>$LOCALIZE[20388]: [COLOR main][B]$INFO[ListItem.Studio][/B][/COLOR]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.PlayCount)</visible>
+                    <visible>!String.IsEmpty(ListItem.PlayCount)</visible>
                     <width>600</width>
                     <height>20</height>
                     <font>size20</font>

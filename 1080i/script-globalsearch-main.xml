@@ -242,7 +242,7 @@
                                 <align>justify</align>
                             </control>
                             <control type="textbox">
-                                <visible>IsEmpty(ListItem.Property(TagLine))</visible>
+                                <visible>String.IsEmpty(ListItem.Property(TagLine))</visible>
                                 <autoscroll>false</autoscroll>
                                 <left>170</left>
                                 <top>60</top>
@@ -253,7 +253,7 @@
                                 <align>justify</align>
                             </control>
                             <control type="textbox">
-                                <visible>IsEmpty(ListItem.Property(TagLine)) + IsEmpty(ListItem.Property(PlotOutline))</visible>
+                                <visible>String.IsEmpty(ListItem.Property(TagLine)) + String.IsEmpty(ListItem.Property(PlotOutline))</visible>
                                 <autoscroll>false</autoscroll>
                                 <left>170</left>
                                 <top>60</top>
@@ -334,7 +334,7 @@
                                 <height>170</height>
                                 <label>$INFO[ListItem.Property(PlotOutline)]</label>
                                 <font>size21</font>
-                                <visible>IsEmpty(ListItem.Property(TagLine))</visible>
+                                <visible>String.IsEmpty(ListItem.Property(TagLine))</visible>
                                 <align>justify</align>
                             </control>
                             <control type="textbox">
@@ -346,7 +346,7 @@
                                 <label>$INFO[ListItem.Property(Plot)]</label>
                                 <font>size21</font>
                                 <align>justify</align>
-                                <visible>IsEmpty(ListItem.Property(TagLine)) + IsEmpty(ListItem.Property(PlotOutline))</visible>
+                                <visible>String.IsEmpty(ListItem.Property(TagLine)) + String.IsEmpty(ListItem.Property(PlotOutline))</visible>
                             </control>
                         </focusedlayout>
                     </control>
@@ -471,7 +471,7 @@
                                 <align>justify</align>
                             </control>
                             <control type="textbox">
-                                <visible>IsEmpty(ListItem.Property(TagLine))</visible>
+                                <visible>String.IsEmpty(ListItem.Property(TagLine))</visible>
                                 <autoscroll>false</autoscroll>
                                 <left>170</left>
                                 <top>60</top>
@@ -482,7 +482,7 @@
                                 <align>justify</align>
                             </control>
                             <control type="textbox">
-                                <visible>IsEmpty(ListItem.Property(TagLine)) + IsEmpty(ListItem.Property(PlotOutline))</visible>
+                                <visible>String.IsEmpty(ListItem.Property(TagLine)) + String.IsEmpty(ListItem.Property(PlotOutline))</visible>
                                 <autoscroll>false</autoscroll>
                                 <left>170</left>
                                 <top>60</top>
@@ -563,7 +563,7 @@
                                 <height>170</height>
                                 <label>$INFO[ListItem.Property(PlotOutline)]</label>
                                 <font>size21</font>
-                                <visible>IsEmpty(ListItem.Property(TagLine))</visible>
+                                <visible>String.IsEmpty(ListItem.Property(TagLine))</visible>
                                 <align>justify</align>
                             </control>
                             <control type="textbox">
@@ -575,7 +575,7 @@
                                 <label>$INFO[ListItem.Property(Plot)]</label>
                                 <font>size21</font>
                                 <align>justify</align>
-                                <visible>IsEmpty(ListItem.Property(TagLine)) + IsEmpty(ListItem.Property(PlotOutline))</visible>
+                                <visible>String.IsEmpty(ListItem.Property(TagLine)) + String.IsEmpty(ListItem.Property(PlotOutline))</visible>
                             </control>
                         </focusedlayout>
                     </control>

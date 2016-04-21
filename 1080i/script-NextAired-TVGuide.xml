@@ -5,14 +5,14 @@
     <backgroundcolor>background</backgroundcolor>
     <controls>
         <control type="group">
-            <visible>IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
+            <visible>String.IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
             <include>BlackBackground</include>
         </control>
         <control type="group">
             <animation effect="fade" time="250">WindowOpen</animation>
             <animation effect="fade" time="250">WindowClose</animation>
             <control type="image">
-                <visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <aspectratio>scale</aspectratio>
@@ -263,7 +263,7 @@
             <itemgap>2</itemgap>
             <control type="group">
                 <description>Monday</description>
-                <visible>!IsEmpty(Window(Home).Property(NextAired.200.Wday))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(NextAired.200.Wday))</visible>
                 <width>250</width>
                 <height>960</height>
                 <control type="image">
@@ -322,7 +322,7 @@
             </control>
             <control type="group">
                 <description>Tuesday</description>
-                <visible>!IsEmpty(Window(Home).Property(NextAired.201.Wday))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(NextAired.201.Wday))</visible>
                 <width>250</width>
                 <height>960</height>
                 <control type="image">
@@ -381,7 +381,7 @@
             </control>
             <control type="group">
                 <description>Wednesday</description>
-                <visible>!IsEmpty(Window(Home).Property(NextAired.202.Wday))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(NextAired.202.Wday))</visible>
                 <width>250</width>
                 <height>960</height>
                 <control type="image">
@@ -440,7 +440,7 @@
             </control>
             <control type="group">
                 <description>Thursday</description>
-                <visible>!IsEmpty(Window(Home).Property(NextAired.203.Wday))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(NextAired.203.Wday))</visible>
                 <width>250</width>
                 <height>960</height>
                 <control type="image">
@@ -499,7 +499,7 @@
             </control>
             <control type="group">
                 <description>Friday</description>
-                <visible>!IsEmpty(Window(Home).Property(NextAired.204.Wday))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(NextAired.204.Wday))</visible>
                 <width>250</width>
                 <height>960</height>
                 <control type="image">
@@ -559,7 +559,7 @@
 
             <control type="group">
                 <description>Saturday</description>
-                <visible>!IsEmpty(Window(Home).Property(NextAired.205.Wday))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(NextAired.205.Wday))</visible>
                 <width>250</width>
                 <height>960</height>
                 <control type="image">
@@ -618,7 +618,7 @@
             </control>
             <control type="group">
                 <description>Sunday</description>
-                <visible>!IsEmpty(Window(Home).Property(NextAired.206.Wday))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(NextAired.206.Wday))</visible>
                 <width>250</width>
                 <height>960</height>
                 <control type="image">

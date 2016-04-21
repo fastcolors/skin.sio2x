@@ -46,7 +46,7 @@
                 <focusedlayout width="890" height="111">
                     <include>LargeSelector</include>
                     <control type="group">
-                        <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Year)  + IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,20" time="0" reversible="true">Conditional</animation>
+                        <animation condition="String.IsEmpty(ListItem.Label2) + String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Year)  + String.IsEmpty(ListItem.Artist)" effect="slide" start="0,0" end="0,20" time="0" reversible="true">Conditional</animation>
                         <control type="label" description="Main Label">
                             <left>45</left>
                             <width>725</width>

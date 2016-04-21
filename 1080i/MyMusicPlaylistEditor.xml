@@ -104,7 +104,7 @@
                 <label>-</label>
             </control>
             <control type="fixedlist" id="100">
-                <visible>!IsEmpty(Container(100).ListItem.Label)</visible>
+                <visible>!String.IsEmpty(Container(100).ListItem.Label)</visible>
                 <right>40</right>
                 <top>160</top>
                 <width>690</width>

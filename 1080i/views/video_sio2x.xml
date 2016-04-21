@@ -16,7 +16,7 @@
                 <texture colordiffuse="main" border="1">lines/LineV.png</texture>
             </control>
             <control type="fixedlist" id="54">
-                <visible>!IsEmpty(Container.FolderPath)</visible>
+                <visible>!String.IsEmpty(Container.FolderPath)</visible>
                 <top>135</top>
                 <left>1433</left>
                 <width>502</width>
@@ -68,7 +68,7 @@
                     </control>
                     <control type="textbox">
                         <left>95</left>
-                        <visible>IsEmpty(ListItem.Art(clearlogo))</visible>
+                        <visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
                         <width>340</width>
                         <height>135</height>
                         <font>size33</font>
@@ -94,7 +94,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="group" description="unwatched">
-                        <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
                         <top>80</top>
                         <left>65</left>
                         <control type="image">
@@ -163,7 +163,7 @@
                     </control>
                     <control type="textbox">
                         <left>95</left>
-                        <visible>IsEmpty(ListItem.Art(clearlogo))</visible>
+                        <visible>String.IsEmpty(ListItem.Art(clearlogo))</visible>
                         <width>340</width>
                         <height>135</height>
                         <font>size33</font>
@@ -189,7 +189,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="group" description="unwatched">
-                        <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
                         <top>80</top>
                         <left>65</left>
                         <control type="image">
@@ -262,7 +262,7 @@
                     <width>300</width>
                     <itemgap>3</itemgap>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
+                        <visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -272,7 +272,7 @@
                         <label>Language:</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Duration)</visible>
+                        <visible>!String.IsEmpty(ListItem.Duration)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -281,7 +281,7 @@
                         <label>$LOCALIZE[180]:</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Genre)</visible>
+                        <visible>!String.IsEmpty(ListItem.Genre)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -290,7 +290,7 @@
                         <label>$LOCALIZE[515]:</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Year)</visible>
+                        <visible>!String.IsEmpty(ListItem.Year)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -299,7 +299,7 @@
                         <label>$LOCALIZE[562]:</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.OriginalTitle)</visible>
+                        <visible>!String.IsEmpty(ListItem.OriginalTitle)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -308,7 +308,7 @@
                         <label>$LOCALIZE[20376]:</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Director)</visible>
+                        <visible>!String.IsEmpty(ListItem.Director)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -317,7 +317,7 @@
                         <label>$LOCALIZE[20339]:</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Country)</visible>
+                        <visible>!String.IsEmpty(ListItem.Country)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -326,7 +326,7 @@
                         <label>$LOCALIZE[21875]:</label>
                     </control>
                     <control type="textbox">
-                        <visible>!IsEmpty(ListItem.Studio)</visible>
+                        <visible>!String.IsEmpty(ListItem.Studio)</visible>
                         <align>right</align>
                         <textcolor>darkgray</textcolor>
                         <width>200</width>
@@ -400,7 +400,7 @@
                     <height>80</height>
                     <width>610</width>
                     <align>left</align>
-                    <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
+                    <visible>!String.IsEmpty(ListItem.RatingAndVotes)</visible>
                     <control type="image">
                         <width>600</width>
                         <height>34</height>
@@ -443,14 +443,14 @@
                         <height>110</height>
                         <width>130</width>
                         <control type="image">
-                            <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                            <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
                             <height>50</height>
                             <width>130</width>
                             <aspectratio>keep</aspectratio>
                             <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                            <visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
                             <height>50</height>
                             <width>130</width>
                             <aspectratio>keep</aspectratio>
@@ -461,14 +461,14 @@
                         <height>110</height>
                         <width>130</width>
                         <control type="image">
-                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                            <visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
                             <height>50</height>
                             <width>130</width>
                             <aspectratio>keep</aspectratio>
                             <texture>$INFO[ListItem.AudioChannels,badges/,.png]</texture>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(ListItem.FileExtension)</visible>
+                            <visible>!String.IsEmpty(ListItem.FileExtension)</visible>
                             <height>50</height>
                             <width>130</width>
                             <aspectratio>keep</aspectratio>
@@ -504,7 +504,7 @@
                     <left>50</left>
                     <top>160</top>
                     <control type="image">
-                        <animation effect="rotate" end="-360" center="auto" time="9000" loop="true" reversible="false" condition="!System.Platform.Linux + !System.Platform.Linux.RaspberryPi + !System.Platform.ATV2 + !IsEmpty(ListItem.Art(discart))">Conditional</animation>
+                        <animation effect="rotate" end="-360" center="auto" time="9000" loop="true" reversible="false" condition="!System.Platform.Linux + !System.Platform.Linux.RaspberryPi + !System.Platform.ATV2 + !String.IsEmpty(ListItem.Art(discart))">Conditional</animation>
                         <left>150</left>
                         <height>294</height>
                         <width>294</width>
@@ -788,7 +788,7 @@
             <control type="group">
                 <visible>!Container.Content(seasons) + !Skin.HasSetting(naked) | StringCompare(ListItem.Label,..)</visible>
                 <control type="group" id="1234">
-                    <visible>Container(54).OnNext | Container(54).OnPrevious | [IsEmpty(ListItem.Plot) + IsEmpty(ListItem.Art(fanart))]</visible>
+                    <visible>Container(54).OnNext | Container(54).OnPrevious | [String.IsEmpty(ListItem.Plot) + String.IsEmpty(ListItem.Art(fanart))]</visible>
                     <animation effect="slide" end="-1433,0" time="500" delay="1500" reversible="false">Hidden</animation>
                     <control type="image">
                         <width>1432</width>

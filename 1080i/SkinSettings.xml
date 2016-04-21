@@ -82,8 +82,8 @@
                 </item>
                 <item id="7" description="bkgrnd">
                     <label>31028</label>
-                    <onclick condition="IsEmpty(Skin.String(CustomBgHome))">Skin.SetFile(CustomBgHome,.jpg|.png,special://skin/backgrounds)</onclick>
-                    <onclick condition="!IsEmpty(Skin.String(CustomBgHome))">Skin.Reset(CustomBgHome)</onclick>
+                    <onclick condition="String.IsEmpty(Skin.String(CustomBgHome))">Skin.SetFile(CustomBgHome,.jpg|.png,special://skin/backgrounds)</onclick>
+                    <onclick condition="!String.IsEmpty(Skin.String(CustomBgHome))">Skin.Reset(CustomBgHome)</onclick>
                     <onclick>activatewindow(SystemSettings)</onclick>
                 </item>
                 <item id="8" description="ShelfImg">
@@ -142,7 +142,7 @@
                 <texture>$INFO[System.AddonIcon(Skin.String(LyricPath))]</texture>
             </control>
             <control type="image" description="lyrics">
-                <visible>Container(575).HasFocus(1) + String.IsEmpty(Skin.String(LyricPath))</visible>
+                <visible>Container(575).HasFocus(1) + String.String.IsEmpty(Skin.String(LyricPath))</visible>
                 <include>Help_Panel</include>
                 <texture>help/off.png</texture>
             </control>

@@ -103,7 +103,7 @@
                 <texture border="5">black-back2.png</texture>
             </control>
             <control type="group" id="1398">
-                <visible>IsEmpty(Control.GetLabel(1390))</visible>
+                <visible>String.IsEmpty(Control.GetLabel(1390))</visible>
                 <animation type="Visible" reversible="false">
                     <effect type="fade" start="0" end="100" time="300" />
                 </animation>
@@ -211,7 +211,7 @@
                     </control>
                 </control>
                 <control type="group" id="1397">
-                    <visible>!IsEmpty(Control.GetLabel(1391))</visible>
+                    <visible>!String.IsEmpty(Control.GetLabel(1391))</visible>
                     <control type="label" id="1391">
                         <left>300</left>
                         <top>120</top>
@@ -473,7 +473,7 @@
                 <align>center</align>
                 <onup>1000</onup>
                 <onleft>1000</onleft>
-                <visible>!IsEmpty(Control.GetLabel(1500))</visible>
+                <visible>!String.IsEmpty(Control.GetLabel(1500))</visible>
             </control>
         </control>
     </controls>

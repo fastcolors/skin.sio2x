@@ -35,7 +35,7 @@
             <texture>images/white.png</texture>
         </control>
         <control type="image" description="Default BG">
-            <visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
+            <visible>!String.String.IsEmpty(ListItem.Art(fanart))</visible>
             <width>1920</width>
             <height>1080</height>
             <fadetime>200</fadetime>
@@ -44,7 +44,7 @@
             <colordiffuse>40ffffff</colordiffuse>
         </control>
         <control type="image" description="Default BG">
-            <visible>String.IsEmpty(ListItem.Art(fanart))</visible>
+            <visible>String.String.IsEmpty(ListItem.Art(fanart))</visible>
             <width>1920</width>
             <height>1080</height>
             <fadetime>200</fadetime>
@@ -556,31 +556,31 @@
                 <control type="radiobutton" id="34">
                     <description>Recordings</description>
                     <include>DialogButt</include>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
                     <selected>Window.IsActive(MyPVRRecordings.xml)</selected>
                     <label>19163</label>
                 </control>
                 <control type="radiobutton" id="35">
                     <description>Timers</description>
                     <include>DialogButt</include>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
                     <selected>Window.IsActive(MyPVRTimers.xml)</selected>
                     <label>19040</label>
                 </control>
                 <control type="radiobutton" id="36">
                     <description>Search</description>
                     <include>DialogButt</include>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
                     <selected>Window.IsActive(MyPVRSearch.xml)</selected>
                     <label>137</label>
                 </control>
                 <!--<control type="radiobutton" id="600" description="EPG">-->
                 <!--<visible>Window.IsActive(MyPVRGuide.xml)</visible>-->
                 <!--<include>DialogButt</include>-->
-                <!--&lt;!&ndash;<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
+                <!--&lt;!&ndash;<enable>!Container.Content(files) + !String.IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
                 <!--<onclick>Container.SetViewMode(10)</onclick>-->
                 <!--<selected>Control.IsVisible(10)</selected>-->
                 <!--<label>EPG</label>-->
@@ -588,7 +588,7 @@
                 <!--<control type="radiobutton" id="602" description="Now">-->
                 <!--<visible>Window.IsActive(MyPVRGuide.xml)</visible>-->
                 <!--<include>DialogButt</include>-->
-                <!--&lt;!&ndash;<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
+                <!--&lt;!&ndash;<enable>!Container.Content(files) + !String.IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
                 <!--<onclick>Container.SetViewMode(11)</onclick>-->
                 <!--<selected>Control.IsVisible(11) + !Control.IsVisible(10)</selected>-->
                 <!--<label>Now</label>-->
@@ -596,7 +596,7 @@
                 <!--<control type="radiobutton" id="603" description="Next">-->
                 <!--<visible>Window.IsActive(MyPVRGuide.xml)</visible>-->
                 <!--<include>DialogButt</include>-->
-                <!--&lt;!&ndash;<enable>!Container.Content(files) + !IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
+                <!--&lt;!&ndash;<enable>!Container.Content(files) + !String.IsEmpty(Container.FolderPath)</enable>&ndash;&gt;-->
                 <!--<onclick>Container.SetViewMode(12)</onclick>-->
                 <!--<selected>Control.IsVisible(12) + !Control.IsVisible(10)</selected>-->
                 <!--<label>Next</label>-->

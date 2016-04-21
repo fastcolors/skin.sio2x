@@ -7,7 +7,7 @@
     <controls>
         <control type="group">
             <control type="multiimage" description="Slideshow">
-                <visible>Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+                <visible>Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
@@ -18,7 +18,7 @@
                 <randomize>true</randomize>
             </control>
             <control type="image" description="Fanart only">
-                <visible>Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+                <visible>Skin.HasSetting(MusicPlayingFanart) + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <fadetime>400</fadetime>

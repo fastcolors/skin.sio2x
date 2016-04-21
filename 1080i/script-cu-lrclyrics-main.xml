@@ -347,7 +347,7 @@
                 <width>32</width>
                 <height>32</height>
                 <texture>default-lyricslist.png</texture>
-                <visible>!IsEmpty(Window(Home).Property(culrc.haslist))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(culrc.haslist))</visible>
             </control>
             <control type="label">
                 <width>auto</width>
@@ -356,7 +356,7 @@
                 <font>Size20</font>
                 <align>right</align>
                 <disabledcolor>60FFFFFF</disabledcolor>
-                <visible>!IsEmpty(Window(Home).Property(culrc.haslist))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(culrc.haslist))</visible>
             </control>
             <control type="label">
                 <description>Scraper Label</description>

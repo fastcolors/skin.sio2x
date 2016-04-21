@@ -221,7 +221,7 @@
                                 <texture>$VAR[WatchStatus]</texture>
                             </control>
                             <control type="image" description="Mpaa">
-                                <visible>!IsEmpty(ListItem.Mpaa)</visible>
+                                <visible>!String.IsEmpty(ListItem.Mpaa)</visible>
                                 <left>250</left>
                                 <top>240</top>
                                 <height>32</height>
@@ -330,14 +330,14 @@
                                     <centerleft>172</centerleft>
                                     <top>360</top>
                                     <control type="image">
-                                        <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                                        <visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
                                         <height>35</height>
                                         <width>80</width>
                                         <aspectratio>keep</aspectratio>
                                         <texture>$INFO[ListItem.VideoResolution,badges/Video/,.png]</texture>
                                     </control>
                                     <control type="image">
-                                        <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                                        <visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
                                         <top>40</top>
                                         <height>35</height>
                                         <width>80</width>
@@ -345,7 +345,7 @@
                                         <texture>$INFO[ListItem.VideoCodec,badges/Video/,.png]</texture>
                                     </control>
                                     <control type="image">
-                                        <visible>!IsEmpty(ListItem.FileExtension)</visible>
+                                        <visible>!String.IsEmpty(ListItem.FileExtension)</visible>
                                         <left>85</left>
                                         <height>35</height>
                                         <width>80</width>
@@ -353,7 +353,7 @@
                                         <texture>$INFO[ListItem.FileExtension,badges/Video/,.png]</texture>
                                     </control>
                                     <control type="image">
-                                        <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                                        <visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
                                         <left>170</left>
                                         <height>35</height>
                                         <width>80</width>
@@ -361,7 +361,7 @@
                                         <texture>$INFO[ListItem.AudioCodec,badges/Audio/,.png]</texture>
                                     </control>
                                     <control type="image">
-                                        <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                                        <visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
                                         <left>170</left>
                                         <top>40</top>
                                         <height>35</height>
@@ -380,7 +380,7 @@
                                 <texture>$VAR[WatchStatus]</texture>
                             </control>
                             <control type="image" description="Mpaa">
-                                <visible>!IsEmpty(ListItem.Mpaa)</visible>
+                                <visible>!String.IsEmpty(ListItem.Mpaa)</visible>
                                 <left>274</left>
                                 <top>306</top>
                                 <height>42</height>
@@ -420,7 +420,7 @@
             </control>
             <include>60slider</include>
             <!--<control type="group" description="Bottom Label">-->
-            <!--<visible>Container.Content(files) | Container.Content(Addons) | IsEmpty(Container.FolderPath) | SubString(Container.FolderPath,sources://) | StringCompare(Container.FolderPath,videodb://movies/) | StringCompare(Container.FolderPath,videodb://tvshows/)</visible>-->
+            <!--<visible>Container.Content(files) | Container.Content(Addons) | String.IsEmpty(Container.FolderPath) | SubString(Container.FolderPath,sources://) | StringCompare(Container.FolderPath,videodb://movies/) | StringCompare(Container.FolderPath,videodb://tvshows/)</visible>-->
             <!--<control type="image">-->
             <!--<top>980</top>-->
             <!--<centerleft>960</centerleft>-->

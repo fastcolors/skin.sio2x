@@ -111,13 +111,13 @@
                         <label>[UPPERCASE][B]$LOCALIZE[563][/B][/UPPERCASE]</label>
                     </control>
                     <control type="button" id="799">
-                        <visible>!String.IsEmpty(ListItem.UserRating)</visible>
+                        <visible>!String.String.IsEmpty(ListItem.UserRating)</visible>
                         <height>50</height>
                         <include>diavidinfobuttons</include>
                         <label>$INFO[ListItem.UserRating]</label>
                     </control>
                     <control type="button" id="807">
-                        <visible>String.IsEmpty(ListItem.UserRating)</visible>
+                        <visible>String.String.IsEmpty(ListItem.UserRating)</visible>
                         <height>50</height>
                         <include>diavidinfobuttons</include>
                         <label>Rate Movie</label>
@@ -142,7 +142,7 @@
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
                     <texturenofocus>images/diffuserounded.png</texturenofocus>
-                    <visible>!IsEmpty(ListItem.Trailer)</visible>
+                    <visible>!String.IsEmpty(ListItem.Trailer)</visible>
                     <font>XS</font>
                     <textoffsetx>0</textoffsetx>
                     <label>20410</label>

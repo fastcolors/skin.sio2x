@@ -59,7 +59,7 @@
                             </control>
                         </control>
                         <control type="label" description="Label2">
-                            <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
+                            <visible>[!String.IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
                             <left>45</left>
                             <include>BigListDetails</include>
                             <label>$INFO[ListItem.label2]</label>
@@ -76,7 +76,7 @@
                             </control>
                         </control>
                         <control type="label" description="Label2">
-                            <visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
+                            <visible>[!String.IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>
                             <left>45</left>
                             <width>630</width>
                             <include>BigListDetails</include>
@@ -113,7 +113,7 @@
                             </control>
                         </control>
                         <control type="label" description="Label2">
-                            <!--<visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>-->
+                            <!--<visible>[!String.IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>-->
                             <left>45</left>
                             <include>BigListDetails</include>
                             <label>$INFO[ListItem.label2]</label>
@@ -130,7 +130,7 @@
                             </control>
                         </control>
                         <control type="label" description="Label2">
-                            <!--<visible>[!IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>-->
+                            <!--<visible>[!String.IsEmpty(ListItem.Artist) | Container.Content(Movies) | Container.Content(TvShows)] + !Container.Content(songs)</visible>-->
                             <left>45</left>
                             <width>630</width>
                             <include>BigListDetails</include>

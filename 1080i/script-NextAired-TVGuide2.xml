@@ -5,14 +5,14 @@
     <defaultcontrol always="true">201</defaultcontrol>
     <controls>
         <control type="group">
-            <visible>IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
+            <visible>String.IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
             <include>BlackBackground</include>
         </control>
         <control type="group">
             <animation effect="fade" time="250">WindowOpen</animation>
             <animation effect="fade" time="250">WindowClose</animation>
             <control type="image">
-                <visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
+                <visible>!String.IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
                 <width>1920</width>
                 <height>1080</height>
                 <aspectratio>scale</aspectratio>

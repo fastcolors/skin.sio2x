@@ -182,7 +182,7 @@
                 <label>$INFO[ListItem.TvShowTitle]$INFO[ListItem.Season, / $LOCALIZE[20373] ]</label>
             </control>
             <control type="label">
-                <visible>IsEmpty(ListItem.TvShowTitle)</visible>
+                <visible>String.IsEmpty(ListItem.TvShowTitle)</visible>
                 <top>40</top>
                 <centerleft>960</centerleft>
                 <width>1500</width>

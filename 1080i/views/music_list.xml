@@ -6,7 +6,7 @@
             <visible>Control.IsVisible(50)</visible>
             <control type="group" description="Thumbnails with info">
                 <visible>!Container.Content(Songs)</visible>
-                <visible>[!IsEmpty(ListItem.Property(Album_Description)) + Container.Content(Albums)] | [!IsEmpty(ListItem.Property(Artist_Description)) + Container.Content(artists)]</visible>
+                <visible>[!String.IsEmpty(ListItem.Property(Album_Description)) + Container.Content(Albums)] | [!String.IsEmpty(ListItem.Property(Artist_Description)) + Container.Content(artists)]</visible>
                 <animation effect="fade" time="400">Visible</animation>
                 <animation effect="fade" time="0">Hidden</animation>
                 <control type="image" description="Icon">
@@ -57,8 +57,8 @@
                 </control>
             </control>
             <control type="group" description="Thumbnails without info">
-                <visible>IsEmpty(ListItem.Property(Artist_Description))</visible>
-                <visible>IsEmpty(ListItem.Property(Album_Description))</visible>
+                <visible>String.IsEmpty(ListItem.Property(Artist_Description))</visible>
+                <visible>String.IsEmpty(ListItem.Property(Album_Description))</visible>
                 <animation effect="fade" delay="100" time="300">Visible</animation>
                 <animation effect="fade" time="0">Hidden</animation>
                 <include>MusicInfo</include>
