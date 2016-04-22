@@ -215,7 +215,7 @@
                         <height>300</height>
                         <width>200</width>
                         <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Thumb]</texture>
+                        <texture>$INFO[ListItem.Art(poster)]$INFO[ListItem.Art(season.poster)]</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout width="250" height="400">
@@ -227,7 +227,7 @@
                             <height>300</height>
                             <width>200</width>
                             <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.Thumb]</texture>
+                            <texture>$INFO[ListItem.Art(poster)]$INFO[ListItem.Art(season.poster)]</texture>
                         </control>
                         <control type="textbox">
                             <top>300</top>
@@ -239,7 +239,7 @@
                         </control>
                     </control>
                 </focusedlayout>
-                <content target="video">videodb://movies/titles/</content>
+                <content target="video">$VAR[infosuggestions]</content>
             </control>
             <control type="list" id="50">
                 <top>1120</top>
