@@ -61,28 +61,20 @@
                 </focusedlayout>
                 <content>
                     <item id="1" description="Appearance">
-                        <label>480</label>
-                        <onclick>activatewindow(AppearanceSettings)</onclick>
+                        <label>Interface</label>
+                        <onclick>activatewindow(InterfaceSettings)</onclick>
                     </item>
-                    <item id="3" description="Videos">
-                        <label>3</label>
-                        <onclick>activatewindow(VideosSettings)</onclick>
+                    <item id="3" description="Player">
+                        <label>Player</label>
+                        <onclick>activatewindow(PlayerSettings)</onclick>
                     </item>
-                    <item id="4" description="Music">
-                        <label>2</label>
-                        <onclick>activatewindow(MusicSettings)</onclick>
+                    <item id="4" description="Library">
+                        <label>Library</label>
+                        <onclick>activatewindow(LibrarySettings)</onclick>
                     </item>
                     <item id="14" description="LiveTV">
                         <label>31059</label>
                         <onclick>activatewindow(PVRSettings)</onclick>
-                    </item>
-                    <item id="5" description="Pictures">
-                        <label>1</label>
-                        <onclick>activatewindow(PicturesSettings)</onclick>
-                    </item>
-                    <item id="8" description="Weather">
-                        <label>8</label>
-                        <onclick>activatewindow(WeatherSettings)</onclick>
                     </item>
                     <item id="9" description="Services">
                         <label>14036</label>

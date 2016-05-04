@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="skin.sio2x" version="4.0.0" name="SiO2-X" provider-name="FastColors">
     <requires>
-        <import addon="xbmc.gui" version="5.11.0"/>
+        <import addon="xbmc.gui" version="5.12.0"/>
         <import addon="service.library.data.provider" version="0.0.4"/>
         <import addon="resource.uisounds.sio2x" version="0.0.1"/>
         <import addon="script.favourites" version="3.2.5"/>

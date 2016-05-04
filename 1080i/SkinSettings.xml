@@ -142,7 +142,7 @@
                 <texture>$INFO[System.AddonIcon(Skin.String(LyricPath))]</texture>
             </control>
             <control type="image" description="lyrics">
-                <visible>Container(575).HasFocus(1) + String.String.IsEmpty(Skin.String(LyricPath))</visible>
+                <visible>Container(575).HasFocus(1) + String.IsEmpty(Skin.String(LyricPath))</visible>
                 <include>Help_Panel</include>
                 <texture>help/off.png</texture>
             </control>

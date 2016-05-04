@@ -111,13 +111,13 @@
                         <label>[UPPERCASE][B]$LOCALIZE[563][/B][/UPPERCASE]</label>
                     </control>
                     <control type="button" id="799">
-                        <visible>!String.String.IsEmpty(ListItem.UserRating)</visible>
+                        <visible>!String.IsEmpty(ListItem.UserRating)</visible>
                         <height>50</height>
                         <include>diavidinfobuttons</include>
                         <label>$INFO[ListItem.UserRating]</label>
                     </control>
                     <control type="button" id="807">
-                        <visible>String.String.IsEmpty(ListItem.UserRating)</visible>
+                        <visible>String.IsEmpty(ListItem.UserRating)</visible>
                         <height>50</height>
                         <include>diavidinfobuttons</include>
                         <label>Rate Movie</label>

@@ -35,7 +35,7 @@
             <texture>images/white.png</texture>
         </control>
         <control type="image" description="Default BG">
-            <visible>!String.String.IsEmpty(ListItem.Art(fanart))</visible>
+            <visible>!String.IsEmpty(ListItem.Art(fanart))</visible>
             <width>1920</width>
             <height>1080</height>
             <fadetime>200</fadetime>
@@ -44,7 +44,7 @@
             <colordiffuse>40ffffff</colordiffuse>
         </control>
         <control type="image" description="Default BG">
-            <visible>String.String.IsEmpty(ListItem.Art(fanart))</visible>
+            <visible>String.IsEmpty(ListItem.Art(fanart))</visible>
             <width>1920</width>
             <height>1080</height>
             <fadetime>200</fadetime>

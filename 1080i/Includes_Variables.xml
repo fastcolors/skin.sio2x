@@ -186,8 +186,8 @@
 
     <variable name="bgimg">
         <value condition="!Control.IsVisible(501) + Container.Content(episodes) | Container.Content(seasons)">$INFO[ListItem.Art(fanart)]</value>
-        <value condition="!String.String.IsEmpty(Skin.String(CustomBgHome)) + String.String.IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
-        <value condition="!String.String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+        <value condition="!String.IsEmpty(Skin.String(CustomBgHome)) + String.IsEmpty(ListItem.Art(fanart))">$INFO[Skin.String(CustomBgHome)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value>bkg.jpg</value>
     </variable>
 

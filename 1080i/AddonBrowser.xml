@@ -24,7 +24,7 @@
                 <scrolltime tween="sine" easing="inout">280</scrolltime>
                 <itemlayout width="970" height="81">
                     <control type="label" description="Main Label">
-                        <animation effect="slide" end="0,18" condition="String.String.IsEmpty(ListItem.Label2)">Conditional</animation>
+                        <animation effect="slide" end="0,18" condition="String.IsEmpty(ListItem.Label2)">Conditional</animation>
                         <width>830</width>
                         <left>30</left>
                         <wrapmultiline>true</wrapmultiline>
@@ -62,7 +62,7 @@
                         <texture colordiffuse="$VAR[diffuseselect]">images/buttonselect1.png</texture>
                     </control>
                     <control type="label" description="Main Label">
-                        <animation effect="slide" end="0,18" condition="String.String.IsEmpty(ListItem.Label2)">Conditional</animation>
+                        <animation effect="slide" end="0,18" condition="String.IsEmpty(ListItem.Label2)">Conditional</animation>
                         <width>830</width>
                         <left>30</left>
                         <height>44</height>
