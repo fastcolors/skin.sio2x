@@ -1,11 +1,11 @@
 <colors>
-    <color name="background">FFEEEEEE</color>
-    <color name="maindim">FF222222</color>
-    <color name="main">FF000000</color>
-    <color name="focus">ff000000</color>
-    <color name="inverted">FFFFFFFF</color>
-    <color name="gray">FF555555</color>
-    <color name="searchband">99FFFFFF</color>
+    <color name="background">FF000000</color>
+    <color name="maindim">FFDDDDDD</color>
+    <color name="main">FFFFFFFF</color>
+    <color name="focus">FFFFFFFF</color>
+    <color name="inverted">FF000000</color>
+    <color name="gray">FF888888</color>
+    <color name="searchband">99000000</color>
     <color name="kodi">ff12b2e7</color>
-    <color name="seekbar">D2FFFFFF</color>
+    <color name="seekbar">D2000000</color>
 </colors>

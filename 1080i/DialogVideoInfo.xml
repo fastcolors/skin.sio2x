@@ -142,6 +142,7 @@
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
                     <texturenofocus>images/diffuserounded.png</texturenofocus>
+                    <colordiffuse>inverted</colordiffuse>
                     <visible>!String.IsEmpty(ListItem.Trailer)</visible>
                     <font>XS</font>
                     <textoffsetx>0</textoffsetx>
@@ -155,6 +156,7 @@
                     <texturefocus>images/diffuserounded.png</texturefocus>
                     <texturenofocus>images/diffuserounded.png</texturenofocus>
                     <usealttexture>Container.Content(TVShows)</usealttexture>
+                    <colordiffuse>inverted</colordiffuse>
                     <font>XS</font>
                     <textoffsetx>0</textoffsetx>
                     <label>208</label>
@@ -177,6 +179,7 @@
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
                     <texturenofocus>images/diffuserounded.png</texturenofocus>
+                    <colordiffuse>inverted</colordiffuse>
                     <font>XS</font>
                     <textoffsetx>0</textoffsetx>
                     <label>184</label>
@@ -186,6 +189,7 @@
                     <width>150</width>
                     <texturefocus>images/diffuserounded.png</texturefocus>
                     <texturenofocus>images/diffuserounded.png</texturenofocus>
+                    <colordiffuse>inverted</colordiffuse>
                     <font>XS</font>
                     <textoffsetx>0</textoffsetx>
                     <label>13511</label>
@@ -195,7 +199,7 @@
                 <top>690</top>
                 <height>1920</height>
                 <width>1920</width>
-                <texture colordiffuse="80ffffff">images/white.png</texture>
+                <texture colordiffuse="inverted">images/transparent.png</texture>
             </control>
             <control type="list" id="999">
                 <top>780</top>
